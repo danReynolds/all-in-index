@@ -714,5 +714,9 @@
   "duol": {
     "description": "Operates a free language-learning platform offering gamified lessons across dozens of languages.",
     "domain": "duolingo.com"
+  },
+  "fig": {
+    "description": "Figma provides a cloud-based collaborative interface design and prototyping platform for teams.",
+    "domain": "figma.com"
   }
 }

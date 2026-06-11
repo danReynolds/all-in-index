@@ -5,14 +5,14 @@
     "episodeNumber": 234,
     "episodeDate": "2025-07-04T14:07:00.000Z",
     "company": "Figma",
-    "ticker": null,
-    "isPublic": false,
+    "ticker": "FIG",
+    "isPublic": true,
     "host": "Chamath",
-    "stance": "mixed",
+    "stance": "bull",
     "conviction": "medium",
     "summary": "Chamath sees Figma as a phenomenal business on current metrics but is cautious about years 3-5 given the unknown of how much foundational AI models will absorb into what they do, suggesting a long Figma / short Adobe spread as the safer trade.",
-    "quote": "On the surface, in the absence of these AI businesses, I would say, man, what a gangbusters business growing by 40-something percent a year at this scale... The question that I think the institutional investor will have is, what am I buying?",
-    "quoteStartMs": 4382688,
+    "quote": "if I could get like $50 or $100 million of Figma, I would probably be long it and I would short an equivalent Quantum of Adobe, and I would just book the spread. And I think you make a ton of money that way.",
+    "quoteStartMs": 4589321,
     "topics": [
       "IPO",
       "AI disruption",
@@ -20,7 +20,7 @@
       "SaaS"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true
   },
   {
     "id": "E234-figma-Friedberg-1",
@@ -28,8 +28,8 @@
     "episodeNumber": 234,
     "episodeDate": "2025-07-04T14:07:00.000Z",
     "company": "Figma",
-    "ticker": null,
-    "isPublic": false,
+    "ticker": "FIG",
+    "isPublic": true,
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "medium",
@@ -66,7 +66,7 @@
       "short"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true
   },
   {
     "id": "E234-meta-Chamath-3",
