@@ -1,0 +1,140 @@
+[
+  {
+    "id": "E247-mp-Chamath-0",
+    "episodeId": "E247",
+    "episodeNumber": 247,
+    "episodeDate": "2025-10-17T23:45:00.000Z",
+    "company": "MP Materials",
+    "ticker": "MP",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Chamath argues MP Materials and similar US rare-earth producers are strategically essential and that government-backed take-or-pay agreements and strategic reserves are the necessary structure to protect them from Chinese price dumping, making the investment viable.",
+    "quote": "MP has a deal with General Motors, one of my businesses that makes LFP cathode, same deal with GM. You do what's called a take or pay, which means that General Motors steps up and says, great, I will buy X amount of volume from you at Y price.",
+    "quoteStartMs": 1689632,
+    "topics": [
+      "rare earths",
+      "supply chain",
+      "government backstop",
+      "strategic reserves"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E247-googl-Chamath-1",
+    "episodeId": "E247",
+    "episodeNumber": 247,
+    "episodeDate": "2025-10-17T23:45:00.000Z",
+    "company": "Google",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "medium",
+    "summary": "Chamath warns that Google's cancellation of its Indianapolis data center—driven by community backlash over electricity costs, water, and noise—signals a broader PR and political risk that hyperscalers must address by deploying their free cash to benefit local communities, or risk slowing the AI capex supercycle.",
+    "quote": "Google was planning a $1 billion spend on a data center in Indianapolis County or Indianapolis. And essentially what happened was there was enough pushback that it looked like if it went to vote in the city council, they would've voted against the approval.",
+    "quoteStartMs": 3220088,
+    "topics": [
+      "AI capex",
+      "data centers",
+      "community backlash",
+      "energy costs"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E247-msft-Chamath-2",
+    "episodeId": "E247",
+    "episodeNumber": 247,
+    "episodeDate": "2025-10-17T23:45:00.000Z",
+    "company": "Microsoft",
+    "ticker": "MSFT",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "medium",
+    "summary": "Chamath flags Microsoft's Wisconsin data center withdrawal as part of a troubling pattern where hyperscalers are retreating from AI infrastructure buildout due to local opposition, which could impede the broader AI investment cycle if not addressed.",
+    "quote": "In Wisconsin, there was a proposal very similar to Google's, but this time from Microsoft, where again, those local residents got pretty upset, and in the 11th hour, Microsoft pulled it.",
+    "quoteStartMs": 3257878,
+    "topics": [
+      "AI capex",
+      "data centers",
+      "community backlash",
+      "regulatory risk"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E247-googl-Jason-3",
+    "episodeId": "E247",
+    "episodeNumber": 247,
+    "episodeDate": "2025-10-17T23:45:00.000Z",
+    "company": "Alphabet",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Jason notes that Alphabet's headcount has declined from its 2022 peak despite record earnings and profits, citing this as evidence that AI-driven efficiency is leading to structural headcount reduction rather than job growth, which he views as a concerning trend for employment even if financially positive for the company.",
+    "quote": "If you look at Alphabet, you know, they had peak Googlers in 2022, 190,000, and they've had massive earnings and profits increase and have 187,000 people now. In other words, less.",
+    "quoteStartMs": 4363284,
+    "topics": [
+      "AI automation",
+      "headcount",
+      "margins",
+      "employment"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E247-meta-Jason-4",
+    "episodeId": "E247",
+    "episodeNumber": 247,
+    "episodeDate": "2025-10-17T23:45:00.000Z",
+    "company": "Meta",
+    "ticker": "META",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Jason observes Meta has shed headcount from its 86,000-employee peak to 75,000 while growing profits, using this as evidence that AI is enabling tech companies to structurally reduce labor costs—positive for margins but raising displacement concerns.",
+    "quote": "Meta peaked at 86,000 employees, now at 75,000. Uber at 33,000, now at 31,000.",
+    "quoteStartMs": 4379680,
+    "topics": [
+      "AI automation",
+      "headcount",
+      "margins",
+      "employment"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E247-amzn-Jason-5",
+    "episodeId": "E247",
+    "episodeNumber": 247,
+    "episodeDate": "2025-10-17T23:45:00.000Z",
+    "company": "Amazon",
+    "ticker": "AMZN",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Jason points to Amazon's headcount declining from a peak of 1.6 million to 1.55 million as further evidence that even large labor-intensive companies are using AI and automation to shrink workforces while growing profits, signaling a structural employment shift.",
+    "quote": "And Amazon, where you would think you'd have a lot of growth here, uh, they're at— they peaked at 1.6 million and now they're down at 1.55 million. So these companies are not hiring.",
+    "quoteStartMs": 4386096,
+    "topics": [
+      "AI automation",
+      "headcount",
+      "employment",
+      "logistics"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

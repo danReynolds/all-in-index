@@ -1,0 +1,92 @@
+[
+  {
+    "id": "E216-stripe-Guest-0",
+    "episodeId": "E216",
+    "episodeNumber": 216,
+    "episodeDate": "2025-02-21T23:41:00.000Z",
+    "company": "Stripe",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Patrick Collison argues Stripe is better off remaining private because stable private markets now provide sufficient capital and liquidity, the company is profitable on a GAAP basis, and public market discipline is unnecessary for a well-run company — framing staying private as a long-term compounding advantage rather than a limitation.",
+    "quote": "is Stripe better off at the moment as a private or a public company? Up to this point, we have determined private... If you need a 25-year-old Fidelity analyst asking you to double-click on your CapEx... to run the company with discipline, something is horribly wrong",
+    "quoteStartMs": 5808711,
+    "topics": [
+      "IPO timing",
+      "private markets",
+      "profitability",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E216-nvda-Chamath-1",
+    "episodeId": "E216",
+    "episodeNumber": 216,
+    "episodeDate": "2025-02-21T23:41:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath turned bullish on NVIDIA after xAI's Grok 3 results demonstrated that large pre-training clusters still yield meaningful model quality gains, suggesting the massive GPU capex build-out is justified.",
+    "quote": "So now I'm a little bullish on NVIDIA. I'm like, oh my God, if this is true, then all this CapEx may be justified. You could be buying a lot of stuff.",
+    "quoteStartMs": 4791179,
+    "topics": [
+      "AI capex",
+      "pre-training",
+      "GPU demand",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E216-sq-Guest-2",
+    "episodeId": "E216",
+    "episodeNumber": 216,
+    "episodeDate": "2025-02-21T23:41:00.000Z",
+    "company": "Block",
+    "ticker": "SQ",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bear",
+    "conviction": "low",
+    "summary": "John Collison cites Square's 70% decline from its 2021 peak as evidence that fintech IPO valuations can badly hurt employees and shareholders, implicitly arguing the public-market path carries significant downside risk for fintech companies.",
+    "quote": "Square, really great company, 70% off its 2021 peak, PayPal, 80% off their 2021 peak. If you're an employee and you joined those companies in 2021, it's not a great feeling.",
+    "quoteStartMs": 5996440,
+    "topics": [
+      "valuation",
+      "fintech",
+      "IPO risk"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E216-pypl-Guest-3",
+    "episodeId": "E216",
+    "episodeNumber": 216,
+    "episodeDate": "2025-02-21T23:41:00.000Z",
+    "company": "PayPal",
+    "ticker": "PYPL",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bear",
+    "conviction": "low",
+    "summary": "John Collison cites PayPal's 80% drawdown from its 2021 peak as a cautionary data point about the risks of public-market pricing for fintech companies, implying the stock destroyed significant shareholder value.",
+    "quote": "PayPal, 80% off their 2021 peak. If you're an employee and you joined those companies in 2021, it's not a great feeling.",
+    "quoteStartMs": 5999802,
+    "topics": [
+      "valuation",
+      "fintech",
+      "IPO risk"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

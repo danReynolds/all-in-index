@@ -1,0 +1,94 @@
+[
+  {
+    "id": "E180-nvda-Chamath-0",
+    "episodeId": "E180",
+    "episodeNumber": 180,
+    "episodeDate": "2024-05-24T20:15:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "mixed",
+    "conviction": "high",
+    "summary": "Chamath is bullish on NVIDIA's current dominance and extraordinary growth but argues that historical precedent (Intel, Cisco) and the laws of capitalism will inevitably erode its margins as hyperscalers build their own chips and startups attack its position, causing value to migrate up the stack.",
+    "quote": "At some point the laws of capitalism kick in. When you are over-earning so massively, the rational thing to do for other actors in the arena is to come and attack that margin... The spread trade will be that NVIDIA loses share even though revenues keep compounding to these upstarts.",
+    "quoteStartMs": 1698248,
+    "topics": [
+      "AI capex",
+      "valuation",
+      "competitive moat",
+      "semiconductors"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E180-nvda-Sacks-1",
+    "episodeId": "E180",
+    "episodeNumber": 180,
+    "episodeDate": "2024-05-24T20:15:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Sacks argues NVIDIA has a stronger moat than Cisco did because its GPU products are vastly more complex to manufacture and replicate, and its continuous R&D cycle keeps it ahead of competitors, though he acknowledges it remains an open question.",
+    "quote": "NVIDIA has a much better moat than Cisco. And just by the way, on this Cisco comparison, people were making this comparison 6 months ago. And what's happened since then? NVIDIA's had 2 blowout quarters and the competitors don't seem to be that much closer.",
+    "quoteStartMs": 2025083,
+    "topics": [
+      "competitive moat",
+      "semiconductors",
+      "AI capex",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E180-nvda-Friedberg-2",
+    "episodeId": "E180",
+    "episodeNumber": 180,
+    "episodeDate": "2024-05-24T20:15:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Friedberg is cautious on NVIDIA's long-term prospects due to deep customer concentration risk — roughly one-third of quarterly revenue comes from just four hyperscalers — and limited strategic maneuvering room compared to Cisco, making it vulnerable to shifts in hyperscaler capex priorities.",
+    "quote": "I think that they're going to have less maneuvering capability than Cisco had in the future. And obviously there's this deep concentration risk, which is going to be deeply challenging.",
+    "quoteStartMs": 2182000,
+    "topics": [
+      "customer concentration",
+      "competitive moat",
+      "valuation",
+      "semiconductors"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E180-openai-Chamath-3",
+    "episodeId": "E180",
+    "episodeNumber": 180,
+    "episodeDate": "2024-05-24T20:15:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Chamath believes OpenAI is technically unrivaled and rationally structured to capture value for employees via secondaries, but sees its recurring drama and cultural tension between a lax Silicon Valley ethos and the security-intensive demands of AGI development as a structural risk to its long-term trajectory.",
+    "quote": "This company is going to go down in the history books... they're technically ahead of everybody else. A lot of people want to put in money at crazy prices. A bunch of that value is transferred immediately to the employees who circle the wagons and do what's necessary to keep the taps flowing.",
+    "quoteStartMs": 399000,
+    "topics": [
+      "management risk",
+      "AGI",
+      "valuation",
+      "culture"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "E261-coreweave-Chamath-0",
+    "episodeId": "E261",
+    "episodeNumber": 261,
+    "episodeDate": "2026-02-13T21:56:00.000Z",
+    "company": "CoreWeave",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Chamath acknowledges CoreWeave is an excellent business but flags structural pricing issues — too much capacity locked into guaranteed contracts, and spot pricing causes unmanageable surges — making it an imperfect solution for enterprise AI inference at scale.",
+    "quote": "Then you go to CoreWeave. Okay, fine. But what does CoreWeave tell you? They're an excellent business. A, it's all training. B, you have this situation where too much of what you have has to be guaranteed into the future because for them it makes no sense to price it on spot.",
+    "quoteStartMs": 1047394,
+    "topics": [
+      "AI infrastructure",
+      "cloud computing",
+      "enterprise AI",
+      "pricing"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E261-race-Chamath-1",
+    "episodeId": "E261",
+    "episodeNumber": 261,
+    "episodeDate": "2026-02-13T21:56:00.000Z",
+    "company": "Ferrari",
+    "ticker": "RACE",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath is broadly positive on Ferrari's long-term positioning as a luxury experience brand, arguing that as autonomous driving erodes mass car culture, Ferrari and ultra-high-end marques will retain a premium audience willing to pay for the experience, insurance, and exclusivity.",
+    "quote": "I think in places like the United States, it's going to become so expensive to pay for the insurance if you are driving yourself... probably is that there's going to be a bunch of high-end cars like Ferrari where you pay for the experience... the rest of us will be using FSD or Waymo.",
+    "quoteStartMs": 4145595,
+    "topics": [
+      "luxury autos",
+      "autonomous driving",
+      "brand moat",
+      "EV"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E261-nvda-Chamath-5",
+    "episodeId": "E261",
+    "episodeNumber": 261,
+    "episodeDate": "2026-02-13T21:56:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath argues NVIDIA (along with Groq, Google, and AMD) is strongly incentivized to massively increase energy density and drive down token costs, making it a key beneficiary of the AI inference scaling trend.",
+    "quote": "I think NVIDIA and Groq and Google and AMD, they're all incentivized to massively ramp up the energy density and massively push down the token cost. That's going to happen.",
+    "quoteStartMs": 1144692,
+    "topics": [
+      "AI infrastructure",
+      "token costs",
+      "semiconductor",
+      "capex"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

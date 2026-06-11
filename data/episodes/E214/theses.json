@@ -1,0 +1,116 @@
+[
+  {
+    "id": "E214-googl-Chamath-0",
+    "episodeId": "E214",
+    "episodeNumber": 214,
+    "episodeDate": "2025-02-07T22:20:00.000Z",
+    "company": "Alphabet (Google)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath argues Google's models are best-in-class and its ad business structurally benefits from AI optimization, making the $75B CapEx more a disclosure problem than a fundamental one — the investment is justified but needs better breakdown.",
+    "quote": "Google's models are probably the best of all the models across a broad base of capabilities... The other thing that Google has is a money machine that directly benefits from these AI-driven optimizations on ad targeting.",
+    "quoteStartMs": 4239000,
+    "topics": [
+      "AI capex",
+      "ad business",
+      "valuation",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E214-googl-Friedberg-1",
+    "episodeId": "E214",
+    "episodeNumber": 214,
+    "episodeDate": "2025-02-07T22:20:00.000Z",
+    "company": "Alphabet (Google)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Friedberg views Google's $75B CapEx as a strong positive signal, citing the company's historically superior infrastructure management and ROIC discipline, and argues the math easily supports the investment given Google's operating profit base.",
+    "quote": "I would view the $75 billion CapEx actually as a very positive signal for the company. I think that it means that they have a really strong line of sight on how they're going to have full utilization and great return on this.",
+    "quoteStartMs": 4525978,
+    "topics": [
+      "AI capex",
+      "infrastructure",
+      "ROIC",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E214-googl-Guest-2",
+    "episodeId": "E214",
+    "episodeNumber": 214,
+    "episodeDate": "2025-02-07T22:20:00.000Z",
+    "company": "Alphabet (Google)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Antonio Gracias argues Google will win the AI race because it has proprietary TPU chips, focuses on ROIC, and has a dominant monopoly cash engine to fund the buildout — making it one of the likely long-term AI infrastructure winners.",
+    "quote": "Google will also win because they have their TensorFlow chips. They make some of their own chips. They do focus on ROIC, and they have a great monopoly to kind of fund it all.",
+    "quoteStartMs": 4428014,
+    "topics": [
+      "AI capex",
+      "competitive moat",
+      "ROIC",
+      "chips"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E214-xai-Guest-3",
+    "episodeId": "E214",
+    "episodeNumber": 214,
+    "episodeDate": "2025-02-07T22:20:00.000Z",
+    "company": "xAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Antonio Gracias argues xAI will achieve the highest return on invested capital in AI infrastructure due to its world-leading dense GPU cluster (Colossus), lowest-cost and fastest build, and superior training data.",
+    "quote": "XAI will have the highest return on capital, and I also think the best training data, and therefore will win.",
+    "quoteStartMs": 4421977,
+    "topics": [
+      "AI infrastructure",
+      "ROIC",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E214-lly-Friedberg-4",
+    "episodeId": "E214",
+    "episodeNumber": 214,
+    "episodeDate": "2025-02-07T22:20:00.000Z",
+    "company": "Eli Lilly",
+    "ticker": "LLY",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Friedberg highlights large-scale VA data showing GLP-1 agonists dramatically reduce cardiac arrest, liver failure, schizophrenia and other serious conditions beyond weight loss — broadening the addressable market and strengthening Eli Lilly's long-term growth thesis.",
+    "quote": "On cardiac arrest, you see a 30% decrease in the probability of having cardiac arrest from the cohort that's on the GLP-1s... they have all these clinical trials going on right now for different indications for the GLP-1 receptor agonists.",
+    "quoteStartMs": 5149833,
+    "topics": [
+      "GLP-1",
+      "drug pipeline",
+      "addressable market",
+      "clinical data"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

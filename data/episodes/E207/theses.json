@@ -1,0 +1,138 @@
+[
+  {
+    "id": "E207-googl-Chamath-0",
+    "episodeId": "E207",
+    "episodeNumber": 207,
+    "episodeDate": "2024-12-13T16:58:00.000Z",
+    "company": "Google",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath argues that Google's search cash flows have funded extraordinary long-term R&D (quantum computing via Willow, Waymo, DeepMind), demonstrating the compounding value of its core business in ways outsiders — including regulators — fail to appreciate.",
+    "quote": "Google had the money to fund him for the last 12 years... the business they built was able to fund this... it's really awesome.",
+    "quoteStartMs": 2110754,
+    "topics": [
+      "R&D moat",
+      "quantum computing",
+      "valuation",
+      "antitrust"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E207-aapl-Guest-1",
+    "episodeId": "E207",
+    "episodeNumber": 207,
+    "episodeDate": "2024-12-13T16:58:00.000Z",
+    "company": "Apple",
+    "ticker": "AAPL",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "mixed",
+    "conviction": "high",
+    "summary": "Keith Rabois is long-term bullish on Apple's vertical integration moat (hardware + software + custom chips giving a 5–10 year competitive edge) but warns of a cultural decay function post-Jobs/Ive — Apple has lost its taste scaffolding and lacks the data-driven backstop other companies use, leaving it vulnerable on the AI/UX battleground of the next 5 years.",
+    "quote": "Apple has a lot of competitive advantages... but they're showing like the decay function... eventually somebody will figure out an angle to rip them out.",
+    "quoteStartMs": 2877000,
+    "topics": [
+      "vertical integration",
+      "competitive moat",
+      "AI",
+      "product quality"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E207-aapl-Chamath-2",
+    "episodeId": "E207",
+    "episodeNumber": 207,
+    "episodeDate": "2024-12-13T16:58:00.000Z",
+    "company": "Apple",
+    "ticker": "AAPL",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Chamath argues Apple's iOS 18 quality failures — bricking, broken Photos app, degraded core phone functionality — reflect a structural engineering and product management problem that makes the iPhone 10–30% less usable, signaling deeper organizational issues.",
+    "quote": "It's literally not just photos. It's like the phone doesn't work. So there are just core structural issues with this operating system now that makes the iPhone maybe 10 to 30% less usable.",
+    "quoteStartMs": 3040542,
+    "topics": [
+      "product quality",
+      "execution risk",
+      "iOS"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E207-stripe-Guest-3",
+    "episodeId": "E207",
+    "episodeNumber": 207,
+    "episodeDate": "2024-12-13T16:58:00.000Z",
+    "company": "Stripe",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Keith Rabois believes Stripe should go public as early as possible to gain public currency for M&A and strategic optionality, arguing that staying private forces the company to expend energy constructing alternatives to public-market advantages rather than focusing on higher-value creation.",
+    "quote": "Stripe should go public, but they don't listen to me... I personally believe and subscribe to the view that companies should go public as early as possible.",
+    "quoteStartMs": 3991000,
+    "topics": [
+      "IPO",
+      "optionality",
+      "M&A",
+      "private vs public"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E207-mstr-Friedberg-4",
+    "episodeId": "E207",
+    "episodeNumber": 207,
+    "episodeDate": "2024-12-13T16:58:00.000Z",
+    "company": "MicroStrategy",
+    "ticker": "MSTR",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "low",
+    "summary": "Friedberg explains that MicroStrategy's convertible-note structure is effectively a synthetic call option on Bitcoin, with the premium functioning as the option price and the coupon as carry — a structure that hedge funds are actively trading, suggesting genuine financial logic behind the instrument.",
+    "quote": "It looks a lot like a synthetic call option on Bitcoin... there's a reason people are paying for it. They think that there's value there.",
+    "quoteStartMs": 5092272,
+    "topics": [
+      "Bitcoin",
+      "convertible notes",
+      "structured finance",
+      "crypto"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E207-shop-Guest-5",
+    "episodeId": "E207",
+    "episodeNumber": 207,
+    "episodeDate": "2024-12-13T16:58:00.000Z",
+    "company": "Shopify",
+    "ticker": "SHOP",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Keith Rabois cites Shopify as proof of a fully competitive D2C commerce market, noting it rose from a low valuation to dominate direct-to-consumer commerce against Amazon — evidence that antitrust fears about Amazon's alleged monopoly were overblown.",
+    "quote": "Shopify is one of the biggest success stories of the last decade, right down the middle, competitive with Amazon... Nobody builds a D2C commerce brand except on Shopify.",
+    "quoteStartMs": 4381016,
+    "topics": [
+      "competitive positioning",
+      "D2C commerce",
+      "antitrust"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

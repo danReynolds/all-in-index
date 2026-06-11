@@ -1,0 +1,117 @@
+[
+  {
+    "id": "E236-nvda-Guest-0",
+    "episodeId": "E236",
+    "episodeNumber": 236,
+    "episodeDate": "2025-07-19T02:21:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Gavin Baker argues that allowing H20 chip sales to China is the right call for America because the H20 keeps the US ahead of Huawei's alternatives while preventing China from developing a domestic NVIDIA competitor, thereby protecting NVIDIA's global dominance in AI accelerators.",
+    "quote": "it's a smart decision for America to sell this chip that gives America advantage in AI and keeps China from developing kind of their own domestic alternatives, which could eventually kind of challenge, you know, NVIDIA, AMD, you know, other kind of American AI accelerator champions globally.",
+    "quoteStartMs": 3722253,
+    "topics": [
+      "export controls",
+      "competitive moat",
+      "AI hardware",
+      "China"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E236-xai-Guest-1",
+    "episodeId": "E236",
+    "episodeNumber": 236,
+    "episodeDate": "2025-07-19T02:21:00.000Z",
+    "company": "xAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Gavin Baker argues that Grok 4 represents the biggest AI benchmark leapfrog in years (roughly 2x on ARC-AGI-2 vs. peers) and that xAI and Apple are natural distribution partners, making a potential Apple-Grok deal compelling for both companies' competitive positions.",
+    "quote": "There's solid industrial logic for partnership. You could have Apple Groq, Safe Groq, whatever you want to call it... that partnership makes a lot of sense for both companies.",
+    "quoteStartMs": 2148000,
+    "topics": [
+      "AI benchmarks",
+      "distribution",
+      "partnerships",
+      "competitive position"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E236-aapl-Guest-2",
+    "episodeId": "E236",
+    "episodeNumber": 236,
+    "episodeDate": "2025-07-19T02:21:00.000Z",
+    "company": "Apple",
+    "ticker": "AAPL",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Gavin Baker argues Apple needs a credible AI partner and that an xAI partnership would be far more valuable than buying Perplexity or Mistral, which are 'just a bandaid,' potentially helping Apple's competitive position and its DOJ antitrust situation.",
+    "quote": "Apple's had an incredible partnership for many years now with Google that's generating tens of billions of dollars for both companies. And I think there is solid industrial logic for partnership... those companies don't get Apple what they need.",
+    "quoteStartMs": 2130066,
+    "topics": [
+      "AI strategy",
+      "distribution",
+      "antitrust",
+      "partnerships"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E236-googl-Guest-3",
+    "episodeId": "E236",
+    "episodeNumber": 236,
+    "episodeDate": "2025-07-19T02:21:00.000Z",
+    "company": "Google",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "neutral",
+    "conviction": "low",
+    "summary": "Gavin Baker notes Google faces competitive risk from Grok 4 leapfrogging its models but could benefit from an Apple-xAI partnership that helps both Google and Apple with their DOJ antitrust issues, making the competitive landscape mixed for Google.",
+    "quote": "it also helps both Apple and Google with this DOJ trial. And so I think in this, you know, incredibly high elo chess match that is being played between the leading labs, that is— that partnership makes a lot of sense for both companies.",
+    "quoteStartMs": 2154202,
+    "topics": [
+      "AI competition",
+      "antitrust",
+      "distribution",
+      "partnerships"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E236-tether-Guest-4",
+    "episodeId": "E236",
+    "episodeNumber": 236,
+    "episodeDate": "2025-07-19T02:21:00.000Z",
+    "company": "Tether",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Gavin Baker (via Bo Hines' framing) highlights that Tether will be the fourth largest purchaser of US Treasuries this year, and views its integration into the US regulatory framework under the GENIUS Act as a positive development for the broader stablecoin ecosystem.",
+    "quote": "this year they'll be the fourth largest purchaser of US Treasuries. And I think that's something that, you know, we should really contemplate... I'm excited to see what they do here in the US.",
+    "quoteStartMs": 3505862,
+    "topics": [
+      "stablecoins",
+      "regulation",
+      "US Treasuries",
+      "crypto"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

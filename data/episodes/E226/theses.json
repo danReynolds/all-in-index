@@ -1,0 +1,160 @@
+[
+  {
+    "id": "E226-uber-Jason-0",
+    "episodeId": "E226",
+    "episodeNumber": 226,
+    "episodeDate": "2025-05-02T23:31:00.000Z",
+    "company": "Uber",
+    "ticker": "UBER",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Jason views Uber as the 'anti-tariff stock' that benefits from the current trade war environment, unaffected by tariffs, and is personally long with a specific price target of $88.",
+    "quote": "All that matters to me is that Uber is the anti-tariff stock. It just does great. It's not impacted by tariffs.",
+    "quoteStartMs": 182000,
+    "topics": [
+      "tariffs",
+      "macro resilience",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E226-openai-Sacks-1",
+    "episodeId": "E226",
+    "episodeNumber": 226,
+    "episodeDate": "2025-05-02T23:31:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Sacks argues that AI agents—exemplified by OpenAI's planned $2K–$20K/month agentic offerings—represent a massive leap forward in AI capability driven by exponential improvements in algorithms, chips, and data center scale, making the overall AI investment thesis far from its peak.",
+    "quote": "I don't see the disillusionment. I don't know where this is coming from. I don't even think we're at the peak yet.",
+    "quoteStartMs": 4648000,
+    "topics": [
+      "AI agents",
+      "AI capex",
+      "growth trajectory"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E226-anthropic-Sacks-2",
+    "episodeId": "E226",
+    "episodeNumber": 226,
+    "episodeDate": "2025-05-02T23:31:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Sacks identifies Anthropic's Claude (specifically 3.7 Sonnet) as the current leader in AI coding assistance, noting that code's objective validation makes it the fastest-improving AI domain and that Manus significantly relies on Claude for its coding agent capabilities.",
+    "quote": "I think they're the leader, and in fact, I think the Manus demo that we showed...they are significantly using Anthropic for the code assistant part of it.",
+    "quoteStartMs": 5205150,
+    "topics": [
+      "AI coding",
+      "competitive position",
+      "model quality"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E226-box-Guest-4",
+    "episodeId": "E226",
+    "episodeNumber": 226,
+    "episodeDate": "2025-05-02T23:31:00.000Z",
+    "company": "Box",
+    "ticker": "BOX",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Aaron Levie (Box CEO) argues that AI agents represent a massive TAM expansion for enterprise software—shifting addressable market from per-seat pricing to capturing labor spend on work that was previously unaffordable—which is structurally bullish for Box's business model.",
+    "quote": "When your software actually brings the underlying workflow to the customer...all of a sudden you might be able to sell a multiple of the initial kind of 10 seats that you would've sold previously.",
+    "quoteStartMs": 4207606,
+    "topics": [
+      "AI agents",
+      "TAM expansion",
+      "enterprise SaaS",
+      "business model"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E226-nvda-Sacks-5",
+    "episodeId": "E226",
+    "episodeNumber": 226,
+    "episodeDate": "2025-05-02T23:31:00.000Z",
+    "company": "Nvidia",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Sacks argues that Nvidia's chip generations are improving ~3-4x annually (Hopper→Blackwell→Rubin→Feynman), combined with exponential GPU deployment in data centers scaling toward millions of units, justifying the massive AI CapEx buildout and making the compute investment thesis compelling.",
+    "quote": "The chips are getting better at, I don't know, 3 to 4x a year. We've gone from the H100 to the 200. Now we're on the GB200, we'll be at GB300 soon...NVIDIA is back to rolling out new chip, new generation of products roughly annually.",
+    "quoteStartMs": 4812553,
+    "topics": [
+      "AI capex",
+      "chip scaling",
+      "data center",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E226-flexport-Guest-6",
+    "episodeId": "E226",
+    "episodeNumber": 226,
+    "episodeDate": "2025-05-02T23:31:00.000Z",
+    "company": "Flexport",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Ryan Peterson highlights Flexport's use of AI voice agents to activate its 400,000-truck-driver network at near-zero marginal cost—work that was previously too expensive to do with humans—as a genuine new revenue-generating capability that expands the business.",
+    "quote": "With AI, it's almost free. I'm calling thousands of them a day going, hey, this load looks like it's a good match for you...That's new work that wasn't going to happen before, not just a replacement.",
+    "quoteStartMs": 4298833,
+    "topics": [
+      "AI agents",
+      "logistics tech",
+      "cost efficiency",
+      "growth"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E226-amzn-Guest-7",
+    "episodeId": "E226",
+    "episodeNumber": 226,
+    "episodeDate": "2025-05-02T23:31:00.000Z",
+    "company": "Amazon",
+    "ticker": "AMZN",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bear",
+    "conviction": "low",
+    "summary": "Ryan Peterson argues Amazon structurally undermines American sellers by allowing unregistered foreign (primarily Chinese) companies to import and sell directly on its platform with little enforcement, creating an unfair competitive dynamic that is a long-term vulnerability for the business.",
+    "quote": "60% of all the sellers on Amazon are these Chinese registered. They're not registered in the United States at all, just Chinese companies.",
+    "quoteStartMs": 3240580,
+    "topics": [
+      "regulation risk",
+      "competitive dynamics",
+      "tariffs",
+      "marketplace"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

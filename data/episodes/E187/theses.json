@@ -1,0 +1,179 @@
+[
+  {
+    "id": "E187-nvda-Chamath-0",
+    "episodeId": "E187",
+    "episodeNumber": 187,
+    "episodeDate": "2024-07-12T05:09:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Chamath argues NVIDIA's valuation is unsustainable because AI customers cannot justify trillion-dollar CapEx with current revenues, face dangerous hardware lock-in that competitors are working to break, and the resulting reset will punish NVIDIA as overpriced GPU scarcity fades.",
+    "quote": "you can't spend this kind of money to have technology lock-in to one hardware vendor. And that makes no sense... we have this massive lock-in right now because the code is littered with all these NVIDIA-specific ways of implementing access to GPUs. That's not sustainable.",
+    "quoteStartMs": 1642461,
+    "topics": [
+      "AI capex",
+      "valuation",
+      "competitive moat",
+      "hardware"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E187-nvda-Sacks-1",
+    "episodeId": "E187",
+    "episodeNumber": 187,
+    "episodeDate": "2024-07-12T05:09:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Sacks believes AI investment will ultimately prove worthwhile like broadband buildout, but acknowledges GPU prices are artificially elevated by scarcity and will inevitably fall as supply normalizes, making the current premium in NVIDIA's chips unsustainable.",
+    "quote": "I do think that over time the price of these chips just has to come down. It just doesn't make sense that they'd be so expensive. Just as production increases and they don't have this rate limit on the supply, then I think the price should come down.",
+    "quoteStartMs": 1347877,
+    "topics": [
+      "AI capex",
+      "valuation",
+      "supply chain"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E187-openai-Sacks-2",
+    "episodeId": "E187",
+    "episodeNumber": 187,
+    "episodeDate": "2024-07-12T05:09:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Sacks is bullish on OpenAI, framing it as the dominant next-generation search engine with $3.4B in revenue doubling year-over-year after only two years on the market, positioning it to capture value analogous to Google's search dominance.",
+    "quote": "OpenAI is effectively semantic search, right? It's a different kind of search engine where it understands the question you're asking and gives you an answer instead of blue links. And they're already at... $3.4 billion in revenue... this company's only been around for 2 years with a product on the market and it's doubling year over year.",
+    "quoteStartMs": 2071489,
+    "topics": [
+      "AI",
+      "revenue growth",
+      "competitive position"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E187-openai-Chamath-3",
+    "episodeId": "E187",
+    "episodeNumber": 187,
+    "episodeDate": "2024-07-12T05:09:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Chamath argues OpenAI, despite being a winner, generates far too little revenue relative to the $1.5T in AI infrastructure spend it is meant to justify, and unless it reaches $50B+ in revenue the economics of the broader AI buildout don't pencil out.",
+    "quote": "OpenAI is a good example of a company that's winning, but unless they somehow figure out a way to start making $50 billion, there's another $47 billion of revenue that's missing. That's my point.",
+    "quoteStartMs": 2362574,
+    "topics": [
+      "AI capex",
+      "valuation",
+      "revenue"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E187-aapl-Sacks-4",
+    "episodeId": "E187",
+    "episodeNumber": 187,
+    "episodeDate": "2024-07-12T05:09:00.000Z",
+    "company": "Apple",
+    "ticker": "AAPL",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Sacks expects Apple's iPhone 16 with LLM-powered Siri to trigger a major upgrade cycle, driving meaningful revenue growth, with the caveat that the bull case depends on Apple using its own on-device LLM rather than routing data to a third party like OpenAI.",
+    "quote": "when Apple comes out with iPhone 16, you know, with LLM-powered Siri, assuming they do a decent job with that. I, it's gonna lead to a huge upgrade cycle. I mean, I'm still on an iPhone 13 because I haven't seen a reason to upgrade. I will definitely upgrade to the iPhone 16.",
+    "quoteStartMs": 2124008,
+    "topics": [
+      "AI",
+      "product cycle",
+      "upgrade cycle"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E187-coreweave-Chamath-5",
+    "episodeId": "E187",
+    "episodeNumber": 187,
+    "episodeDate": "2024-07-12T05:09:00.000Z",
+    "company": "CoreWeave",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "low",
+    "summary": "Chamath uses CoreWeave's financing structure—40% equity, 60% debt—as an illustrative reference point when analyzing the economics of GPU cluster investments, implying the leveraged model is speculative given uncertainty around GPU depreciation and AI ROI.",
+    "quote": "the most typical deal, so for example, the CoreWeave deal, which was floating around, was something along the lines of 40% of the cost of all the GPUs was put up in cash and 60% was lent to CoreWeave by a whole group of bankers.",
+    "quoteStartMs": 2534088,
+    "topics": [
+      "AI capex",
+      "leverage",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E187-andreessen-horowitz-Chamath-6",
+    "episodeId": "E187",
+    "episodeNumber": 187,
+    "episodeDate": "2024-07-12T05:09:00.000Z",
+    "company": "Andreessen Horowitz",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Chamath is skeptical of a16z's 20,000-GPU cluster investment, arguing the ~$100M+ equity outlay represents $2B+ of foregone enterprise value for the management company and the equity stakes from portfolio startups would need to return that amount plus a premium—a very speculative bet given hardware commoditization risk.",
+    "quote": "if that's $100 million of management fees, the reality is that that's actually $2 billion of value... So whatever equity you get from these startups will need to make about $2 billion plus a little bit to account for the time value of money. Otherwise, you were probably better off not doing this.",
+    "quoteStartMs": 2579784,
+    "topics": [
+      "AI capex",
+      "venture strategy",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E187-andreessen-horowitz-Sacks-7",
+    "episodeId": "E187",
+    "episodeNumber": 187,
+    "episodeDate": "2024-07-12T05:09:00.000Z",
+    "company": "Andreessen Horowitz",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "low",
+    "summary": "Sacks views a16z's GPU cluster as a reasonable business development strategy—timesharing chips to portfolio companies, charging back costs, and breaking even or profiting if GPUs don't depreciate too rapidly—and sees it as smart competitive positioning for a VC firm.",
+    "quote": "they're buying these chips and then they're effectively timesharing them out to portfolio companies. And so they're going to charge for their use. They're going to amortize this cost... I don't think this is a bad idea at all.",
+    "quoteStartMs": 2702000,
+    "topics": [
+      "AI capex",
+      "venture strategy",
+      "competitive positioning"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

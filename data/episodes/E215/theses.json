@@ -1,0 +1,70 @@
+[
+  {
+    "id": "E215-openai-Guest-0",
+    "episodeId": "E215",
+    "episodeNumber": 215,
+    "episodeDate": "2025-02-15T01:48:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Naval argues OpenAI's conversion from nonprofit to fully private entity is self-dealing and structurally wrong — the nonprofit portion should remain intact with independent board control, and the current structure amounts to Sam Altman grabbing all value for himself at the expense of the original mission and funders.",
+    "quote": "I just don't understand this conversion... it also looks like self-dealing, right? And yeah, they'll get an independent valuation, but we all know that game.",
+    "quoteStartMs": 5658765,
+    "topics": [
+      "governance",
+      "nonprofit conversion",
+      "valuation",
+      "OpenAI structure"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E215-openai-Jason-1",
+    "episodeId": "E215",
+    "episodeNumber": 215,
+    "episodeDate": "2025-02-15T01:48:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Jason",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Jason predicts OpenAI could lose the New York Times copyright lawsuit badly, potentially facing injunctions and being forced into a Spotify-like licensing model that pays a large share of revenue to content holders.",
+    "quote": "I think this is a non-zero chance, like it might be 5 or 10%, that OpenAI is going to lose the New York Times lawsuit and they're going to lose it hard and there could be injunctions.",
+    "quoteStartMs": 5113000,
+    "topics": [
+      "copyright",
+      "legal risk",
+      "licensing",
+      "content"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E215-rmni-Chamath-2",
+    "episodeId": "E215",
+    "episodeNumber": 215,
+    "episodeDate": "2025-02-15T01:48:00.000Z",
+    "company": "Rimini Street",
+    "ticker": "RMNI",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "low",
+    "summary": "Chamath mentions Rimini Street as an example of a company where a major copyright lawsuit against Oracle was vacated on appeal, using it to illustrate the legal uncertainty around AI copyright cases rather than making a directional investment call.",
+    "quote": "They lost this huge lawsuit, Oracle won, and then it went to appellate court and then it was all vacated. Why am I bringing this up? I think that the legal community has absolutely no idea how these models work.",
+    "quoteStartMs": 5162669,
+    "topics": [
+      "copyright",
+      "legal risk",
+      "AI training data"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

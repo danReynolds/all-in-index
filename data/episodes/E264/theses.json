@@ -1,0 +1,135 @@
+[
+  {
+    "id": "E264-anthropic-Guest-0",
+    "episodeId": "E264",
+    "episodeNumber": 264,
+    "episodeDate": "2026-03-13T17:53:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Brad Gerstner argues Anthropic's $6B single-month revenue in February 2026 — exceeding the annual revenue of Databricks and Snowflake after 12 years — proves AI has crossed a threshold where agents compete with labor budgets, not just IT budgets, making Anthropic a compelling investment despite its $380B valuation.",
+    "quote": "We had a $6 billion month out of Anthropic in February, right? What widely reported. Okay, let that set in for a second, right? $6 billion in a month. It was only a 28-day month.",
+    "quoteStartMs": 1784253,
+    "topics": [
+      "AI revenue",
+      "valuation",
+      "growth trajectory",
+      "IPO"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E264-openai-Guest-1",
+    "episodeId": "E264",
+    "episodeNumber": 264,
+    "episodeDate": "2026-03-13T17:53:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Brad Gerstner is bullish on OpenAI, having bought more shares after the BG2 episode, citing its $20B annualized run rate, accelerating revenue momentum, and argues both OpenAI and Anthropic should go public to access cheap capital for compute build-out and to give retail investors access to two of the most important companies in history.",
+    "quote": "I bought a lot more since then, Jason... Should they go public? I've said yes, they should go public for several reasons. There's tons of institutional demand. They need cheap access to money to continue to build out the compute they need.",
+    "quoteStartMs": 1725000,
+    "topics": [
+      "AI revenue",
+      "IPO",
+      "valuation",
+      "compute capex"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E264-anthropic-Chamath-2",
+    "episodeId": "E264",
+    "episodeNumber": 264,
+    "episodeDate": "2026-03-13T17:53:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "medium",
+    "summary": "Chamath is skeptical that Anthropic's revenue reflects durable enterprise adoption, arguing much of it stems from checkbox-driven experimentation rather than production-critical workflows, and warns the industry's reckless messaging is causing data center cancellations that threaten the entire AI revenue buildout.",
+    "quote": "There's not a single good example that we can find of sustained positive margin expansion and impact of AI inside of a true corporate enterprise that is not right now a small test. There's not.",
+    "quoteStartMs": 1938000,
+    "topics": [
+      "AI revenue quality",
+      "enterprise adoption",
+      "data center buildout"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E264-openai-Chamath-3",
+    "episodeId": "E264",
+    "episodeNumber": 264,
+    "episodeDate": "2026-03-13T17:53:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "medium",
+    "summary": "Chamath acknowledges OpenAI and Anthropic are the 'pick and shovel' sellers winning the AI gold rush — selling tokens at a profit — but warns the revenue is still largely experimental and the industry needs to be more honest about how far it is from solved production workflows.",
+    "quote": "In the 1849 Gold Rush, Anthropic and OpenAI and all of these model makers are selling the pick and shovel in the gold rush. I am buying it and I'm trying to pan for gold. But as with the gold rush, most of these companies will go out of business.",
+    "quoteStartMs": 3338528,
+    "topics": [
+      "AI revenue quality",
+      "valuation",
+      "enterprise adoption"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E264-pltr-Guest-4",
+    "episodeId": "E264",
+    "episodeNumber": 264,
+    "episodeDate": "2026-03-13T17:53:00.000Z",
+    "company": "Palantir",
+    "ticker": "PLTR",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "low",
+    "summary": "Brad Gerstner cites Palantir as an example of an enterprise that has moved AI deployments from experimental to full production, including existential wartime use cases, countering the bear case that enterprise AI revenue is purely experimental.",
+    "quote": "I suspect, right, that Palantir, the US government, the US military, NVIDIA, and a lot of other major enterprises would argue they've gone full production. In fact, it's existential to the wartime effort going on in Iran right now.",
+    "quoteStartMs": 2224526,
+    "topics": [
+      "AI adoption",
+      "enterprise production",
+      "defense"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E264-snow-Guest-5",
+    "episodeId": "E264",
+    "episodeNumber": 264,
+    "episodeDate": "2026-03-13T17:53:00.000Z",
+    "company": "Snowflake",
+    "ticker": "SNOW",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "neutral",
+    "conviction": "low",
+    "summary": "Brad Gerstner uses Snowflake as a benchmark, noting that Anthropic's single-month revenue of $6B already exceeds Snowflake's full annual revenue after 12 years, implying AI revenue scale is genuinely unprecedented rather than hype.",
+    "quote": "That's more revenue than the annual revenue of Databricks and Snowflake that are two of the greatest software companies of all time after 12 years, right?",
+    "quoteStartMs": 1796966,
+    "topics": [
+      "AI revenue",
+      "competitive benchmarking"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

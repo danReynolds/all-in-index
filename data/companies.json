@@ -1,0 +1,698 @@
+{
+  "aapl": {
+    "description": "Designs and sells consumer electronics, software, and services including iPhone, Mac, and App Store.",
+    "domain": "apple.com"
+  },
+  "meta": {
+    "description": "Operates social media platforms Facebook, Instagram, and WhatsApp; develops AR/VR hardware.",
+    "domain": "meta.com"
+  },
+  "waymo": {
+    "description": "Develops autonomous vehicle technology and operates commercial robotaxi services in the US.",
+    "domain": "waymo.com"
+  },
+  "sq": {
+    "description": "Provides payment processing, financial services, and tools for businesses and individuals.",
+    "domain": "block.xyz"
+  },
+  "anthropic": {
+    "description": "AI safety company that develops and deploys large language models, including the Claude series.",
+    "domain": "anthropic.com"
+  },
+  "wix": {
+    "description": "Offers a cloud-based website building and hosting platform for individuals and businesses.",
+    "domain": "wix.com"
+  },
+  "nvda": {
+    "description": "Designs GPUs and system-on-chip units for gaming, data centers, and AI computing workloads.",
+    "domain": "nvidia.com"
+  },
+  "spacex": {
+    "description": "Develops and launches rockets and spacecraft; operates the Starlink satellite internet network.",
+    "domain": "spacex.com"
+  },
+  "xai": {
+    "description": "AI startup founded by Elon Musk that develops large language models, including the Grok series.",
+    "domain": "x.ai"
+  },
+  "crwv": {
+    "description": "Provides cloud infrastructure and GPU computing resources primarily for AI and machine learning workloads.",
+    "domain": "coreweave.com"
+  },
+  "cursor": {
+    "description": "Develops an AI-powered code editor designed to assist software developers with writing and editing code.",
+    "domain": "cursor.com"
+  },
+  "openai": {
+    "description": "AI research company that develops large language models and products including ChatGPT and the GPT series.",
+    "domain": "openai.com"
+  },
+  "crm": {
+    "description": "Provides cloud-based customer relationship management software and enterprise business applications.",
+    "domain": "salesforce.com"
+  },
+  "googl": {
+    "description": "Operates the world's largest search engine and offers advertising, cloud computing, and consumer tech products.",
+    "domain": "google.com"
+  },
+  "ba": {
+    "description": "Manufactures commercial jetliners, military aircraft, and space and defense systems globally.",
+    "domain": "boeing.com"
+  },
+  "tsla": {
+    "description": "Designs and manufactures electric vehicles, energy storage systems, and solar energy products.",
+    "domain": "tesla.com"
+  },
+  "msft": {
+    "description": "Develops software, cloud services, and hardware including Windows, Azure, and Microsoft 365.",
+    "domain": "microsoft.com"
+  },
+  "amzn": {
+    "description": "Operates e-commerce marketplaces, cloud computing via AWS, and digital streaming and advertising services.",
+    "domain": "amazon.com"
+  },
+  "000660.ks": {
+    "description": "South Korean semiconductor manufacturer specializing in DRAM, NAND flash, and high-bandwidth memory chips.",
+    "domain": "skhynix.com"
+  },
+  "mu": {
+    "description": "Manufactures DRAM, NAND flash, and other memory and storage semiconductor products.",
+    "domain": "micron.com"
+  },
+  "phm": {
+    "description": "One of the largest US homebuilders, constructing and selling single-family homes across multiple brands.",
+    "domain": "pultegroup.com"
+  },
+  "lly": {
+    "description": "Pharmaceutical company that researches, develops, and markets drugs including treatments for diabetes and obesity.",
+    "domain": "lilly.com"
+  },
+  "medallia": {
+    "description": "Provides enterprise experience management software for capturing and analyzing customer and employee feedback.",
+    "domain": "medallia.com"
+  },
+  "brk.b": {
+    "description": "Diversified holding company owning subsidiaries in insurance, rail, energy, and consumer industries.",
+    "domain": "berkshirehathaway.com"
+  },
+  "be": {
+    "description": "Manufactures solid oxide fuel cell systems that generate electricity on-site for commercial and industrial users.",
+    "domain": "bloomenergy.com"
+  },
+  "bird": {
+    "description": "Operates shared electric scooter rentals in cities across the US and internationally.",
+    "domain": "bird.co"
+  },
+  "pltr": {
+    "description": "Develops data analytics and AI software platforms for government intelligence and commercial enterprise clients.",
+    "domain": "palantir.com"
+  },
+  "bittensor-tao": {
+    "description": "Decentralized blockchain network designed to incentivize and coordinate the development of machine learning models.",
+    "domain": "bittensor.com"
+  },
+  "perplexity": {
+    "description": "Develops an AI-powered conversational search engine that provides sourced answers to user queries.",
+    "domain": "perplexity.ai"
+  },
+  "snow": {
+    "description": "Provides a cloud-based data warehousing and analytics platform enabling data sharing across organizations.",
+    "domain": "snowflake.com"
+  },
+  "lng": {
+    "description": "Operates liquefied natural gas export terminals and sells LNG under long-term contracts globally.",
+    "domain": "cheniere.com"
+  },
+  "anduril": {
+    "description": "Develops autonomous defense systems and technology products, including drones and surveillance hardware, for military use.",
+    "domain": "anduril.com"
+  },
+  "polymarket": {
+    "description": "Operates a decentralized prediction market platform where users bet on real-world event outcomes.",
+    "domain": "polymarket.com"
+  },
+  "race": {
+    "description": "Designs, manufactures, and sells luxury high-performance sports cars and racing vehicles under the Ferrari brand.",
+    "domain": "ferrari.com"
+  },
+  "kalshi": {
+    "description": "Operates a regulated financial exchange allowing users to trade contracts on real-world event outcomes.",
+    "domain": "kalshi.com"
+  },
+  "tri": {
+    "description": "Provides news, legal, tax, and professional information and software tools to businesses and professionals.",
+    "domain": "thomsonreuters.com"
+  },
+  "figma": {
+    "description": "Offers a cloud-based collaborative interface design and prototyping platform for product and UX teams.",
+    "domain": "figma.com"
+  },
+  "databricks": {
+    "description": "Provides a cloud-based unified data analytics and AI platform built on Apache Spark and Delta Lake.",
+    "domain": "databricks.com"
+  },
+  "moonshot-ai-kimi": {
+    "description": "Chinese AI startup that develops large language models and consumer AI products under the Kimi brand.",
+    "domain": "moonshot.cn"
+  },
+  "cerebras": {
+    "description": "Designs large-scale AI accelerator chips and systems optimized for training and running neural networks.",
+    "domain": "cerebras.net"
+  },
+  "utilities-us-grid": {
+    "description": "Encompasses US electric utility companies that generate, transmit, and distribute electricity through the national grid.",
+    "domain": null
+  },
+  "nflx": {
+    "description": "Operates a global subscription streaming service offering movies, TV series, and original content.",
+    "domain": "netflix.com"
+  },
+  "huawei": {
+    "description": "Chinese multinational that manufactures telecommunications equipment, smartphones, and enterprise networking products.",
+    "domain": "huawei.com"
+  },
+  "groq": {
+    "description": "Designs AI inference chips and provides cloud-based API services for fast large language model inference.",
+    "domain": "groq.com"
+  },
+  "unh": {
+    "description": "Provides health insurance plans and pharmacy benefit management services through UnitedHealthcare and Optum.",
+    "domain": "unitedhealthgroup.com"
+  },
+  "asml": {
+    "description": "Manufactures photolithography systems, including extreme ultraviolet machines, used to produce semiconductor chips.",
+    "domain": "asml.com"
+  },
+  "ttan": {
+    "description": "Provides cloud-based business management software for residential and commercial field service contractors.",
+    "domain": "servicetitan.com"
+  },
+  "nyt": {
+    "description": "Publishes digital and print news, journalism, and lifestyle content including games and cooking products.",
+    "domain": "nytco.com"
+  },
+  "wbd": {
+    "description": "Global media and entertainment company operating streaming, cable networks, and film and TV production studios.",
+    "domain": "wbd.com"
+  },
+  "tether": {
+    "description": "Issues USDT, one of the largest US dollar-pegged stablecoins used across cryptocurrency markets globally.",
+    "domain": "tether.to"
+  },
+  "crcl": {
+    "description": "Fintech company issuing USDC stablecoin and providing digital currency infrastructure and payments.",
+    "domain": "circle.com"
+  },
+  "orcl": {
+    "description": "Enterprise software and cloud services company offering databases, applications, and infrastructure.",
+    "domain": "oracle.com"
+  },
+  "intc": {
+    "description": "Semiconductor manufacturer designing and producing CPUs, chips, and computing hardware.",
+    "domain": "intel.com"
+  },
+  "mp": {
+    "description": "Mines and processes rare earth materials used in magnets, electric vehicles, and defense applications.",
+    "domain": "mpmaterials.com"
+  },
+  "uber": {
+    "description": "Global platform providing ride-hailing, food delivery, and freight logistics services.",
+    "domain": "uber.com"
+  },
+  "hood": {
+    "description": "Commission-free retail brokerage and financial services app for stocks, options, and crypto.",
+    "domain": "robinhood.com"
+  },
+  "amd": {
+    "description": "Semiconductor company designing CPUs, GPUs, and data center chips for computing and AI workloads.",
+    "domain": "amd.com"
+  },
+  "dkng": {
+    "description": "Online sports betting and daily fantasy sports platform operating across the United States.",
+    "domain": "draftkings.com"
+  },
+  "ea": {
+    "description": "Video game developer and publisher of major sports, action, and entertainment game franchises.",
+    "domain": "ea.com"
+  },
+  "silver-lake": {
+    "description": "Global private equity firm focused on technology, technology-enabled, and related industries.",
+    "domain": "silverlake.com"
+  },
+  "u": {
+    "description": "Real-time 3D development platform and game engine used for games, simulation, and visualization.",
+    "domain": "unity.com"
+  },
+  "chamath-s-spac-american-exceptionalism-raptor-2": {
+    "description": "Special purpose acquisition company sponsored by Chamath Palihapitiya targeting growth investments.",
+    "domain": null
+  },
+  "youtube": {
+    "description": "Google-owned video streaming and sharing platform hosting user and professional content globally.",
+    "domain": "youtube.com"
+  },
+  "para": {
+    "description": "Merged media company combining Skydance and Paramount's film, TV, and streaming assets.",
+    "domain": "paramount.com"
+  },
+  "dis": {
+    "description": "Diversified global media and entertainment company operating theme parks, studios, and streaming.",
+    "domain": "disney.com"
+  },
+  "x-energy": {
+    "description": "Nuclear energy company developing small modular reactors using high-assay low-enriched uranium fuel.",
+    "domain": "x-energy.com"
+  },
+  "xai-grok": {
+    "description": "Elon Musk-founded AI company developing the Grok large language model and AI research systems.",
+    "domain": "x.ai"
+  },
+  "scale-ai": {
+    "description": "AI data labeling and infrastructure company providing training data and evaluation for AI models.",
+    "domain": "scale.com"
+  },
+  "bloomberg": {
+    "description": "Financial data, news, and analytics company serving professionals across global capital markets.",
+    "domain": "bloomberg.com"
+  },
+  "adbe": {
+    "description": "Software company providing creative, marketing, and document management tools and cloud platforms.",
+    "domain": "adobe.com"
+  },
+  "superhuman": {
+    "description": "Premium email productivity app designed for speed and efficiency for professional users.",
+    "domain": "superhuman.com"
+  },
+  "coin": {
+    "description": "Publicly traded cryptocurrency exchange offering trading, custody, and blockchain financial services.",
+    "domain": "coinbase.com"
+  },
+  "spy": {
+    "description": "Exchange-traded fund tracking the S&P 500 index of 500 large-cap U.S. publicly traded companies.",
+    "domain": "ssga.com"
+  },
+  "spot": {
+    "description": "Global audio streaming platform offering music, podcasts, and audiobooks to subscribers worldwide.",
+    "domain": "spotify.com"
+  },
+  "app": {
+    "description": "Mobile advertising and marketing technology platform optimizing performance-based app campaigns.",
+    "domain": "applovin.com"
+  },
+  "axp": {
+    "description": "Global financial services company offering charge cards, credit cards, and travel and expense tools.",
+    "domain": "americanexpress.com"
+  },
+  "x": {
+    "description": "Integrated steel producer manufacturing flat-rolled and tubular steel products across North America.",
+    "domain": "ussteel.com"
+  },
+  "cvs": {
+    "description": "Pharmacy and healthcare company operating retail pharmacies, clinics, and health insurance services.",
+    "domain": "cvshealth.com"
+  },
+  "ci": {
+    "description": "Global health services company providing medical, pharmacy, and behavioral health insurance plans.",
+    "domain": "cigna.com"
+  },
+  "stripe": {
+    "description": "Financial infrastructure platform providing payment processing and business tools for online commerce.",
+    "domain": "stripe.com"
+  },
+  "dash": {
+    "description": "On-demand food and grocery delivery platform connecting consumers with local restaurants and stores.",
+    "domain": "doordash.com"
+  },
+  "cacc": {
+    "description": "Auto finance company providing vehicle loan programs to car dealers serving subprime borrowers.",
+    "domain": "creditacceptance.com"
+  },
+  "coatue-management": {
+    "description": "Technology-focused hedge fund and private equity firm investing in public and private tech companies.",
+    "domain": "coatue.com"
+  },
+  "box": {
+    "description": "Cloud content management and collaboration platform for enterprise file storage and workflow.",
+    "domain": "box.com"
+  },
+  "flexport": {
+    "description": "Digital freight forwarding and supply chain logistics platform for importers and exporters.",
+    "domain": "flexport.com"
+  },
+  "nws": {
+    "description": "News Corp subsidiary publishing the Wall Street Journal and other financial and news media.",
+    "domain": "wsj.com"
+  },
+  "starlink": {
+    "description": "SpaceX satellite internet service providing broadband connectivity via low Earth orbit satellites.",
+    "domain": "starlink.com"
+  },
+  "nmax": {
+    "description": "Conservative U.S. news television network and digital media outlet offering political commentary.",
+    "domain": "newsmax.com"
+  },
+  "daily-wire": {
+    "description": "Conservative news and entertainment media company producing podcasts, commentary, and film content.",
+    "domain": "dailywire.com"
+  },
+  "wiz": {
+    "description": "Cloud security company providing agentless visibility and risk management across multi-cloud environments.",
+    "domain": "wiz.io"
+  },
+  "relativity-space": {
+    "description": "Aerospace startup manufacturing 3D-printed rockets for small satellite orbital launch services.",
+    "domain": "relativityspace.com"
+  },
+  "niantic": {
+    "description": "Mobile game developer known for augmented reality games including Pokémon GO and Ingress.",
+    "domain": "nianticlabs.com"
+  },
+  "bitcoin": {
+    "description": "Decentralized digital cryptocurrency operating on a peer-to-peer blockchain network without central authority.",
+    "domain": "bitcoin.org"
+  },
+  "baba": {
+    "description": "Chinese multinational conglomerate operating e-commerce, cloud computing, and digital payments platforms.",
+    "domain": "alibaba.com"
+  },
+  "cognition-ai": {
+    "description": "AI startup developing autonomous software engineering agents, notably the Devin AI coding assistant.",
+    "domain": "cognition.ai"
+  },
+  "now": {
+    "description": "Enterprise cloud platform automating IT, employee, and customer workflows for large organizations.",
+    "domain": "servicenow.com"
+  },
+  "figure-ai": {
+    "description": "Robotics company developing general-purpose humanoid robots for commercial and industrial applications.",
+    "domain": "figure.ai"
+  },
+  "magnificent-7": {
+    "description": "Informal grouping of seven large-cap U.S. tech stocks: Apple, Microsoft, Nvidia, Alphabet, Amazon, Meta, Tesla.",
+    "domain": null
+  },
+  "washington-post": {
+    "description": "Major U.S. newspaper and digital news outlet covering national politics, policy, and world affairs.",
+    "domain": "washingtonpost.com"
+  },
+  "v": {
+    "description": "Global payments technology company operating one of the world's largest electronic payment networks.",
+    "domain": "visa.com"
+  },
+  "ma": {
+    "description": "Global payment network enabling credit, debit, and prepaid card transactions worldwide.",
+    "domain": "mastercard.com"
+  },
+  "pypl": {
+    "description": "Online payments platform offering digital wallets, money transfers, and merchant services.",
+    "domain": "paypal.com"
+  },
+  "sftby": {
+    "description": "Japanese multinational conglomerate investing in technology companies and funds globally.",
+    "domain": "softbank.jp"
+  },
+  "friedberg-s-eatsa-itza": {
+    "description": "Restaurant concept operator known for automated, tech-enabled fast-casual dining experiences.",
+    "domain": null
+  },
+  "tiktok-bytedance": {
+    "description": "Chinese technology company operating short-form video platform TikTok and related apps.",
+    "domain": "bytedance.com"
+  },
+  "arm": {
+    "description": "Semiconductor IP company designing energy-efficient processor architectures licensed to chipmakers worldwide.",
+    "domain": "arm.com"
+  },
+  "ceg": {
+    "description": "US clean energy company operating nuclear, hydro, and renewable power generation facilities.",
+    "domain": "constellationenergy.com"
+  },
+  "avgo": {
+    "description": "Semiconductor and infrastructure software company supplying chips for networking, storage, and wireless.",
+    "domain": "broadcom.com"
+  },
+  "and-ril-industries": {
+    "description": "Defense technology company developing autonomous weapons systems and hardware for national security.",
+    "domain": "anduril.com"
+  },
+  "kin-insurance": {
+    "description": "Direct-to-consumer home insurance startup focused on technology-driven underwriting in catastrophe-prone areas.",
+    "domain": "kin.com"
+  },
+  "mstr": {
+    "description": "Business intelligence software firm that has converted its treasury primarily into Bitcoin holdings.",
+    "domain": "microstrategy.com"
+  },
+  "mag-seven-basket": {
+    "description": "Basket representing the seven largest US mega-cap technology and consumer internet companies.",
+    "domain": null
+  },
+  "enterprise-saas-basket": {
+    "description": "Basket representing publicly traded enterprise software-as-a-service companies across various verticals.",
+    "domain": null
+  },
+  "government-contractors-basket": {
+    "description": "Basket representing companies deriving significant revenue from US federal government contracts.",
+    "domain": null
+  },
+  "legacy-auto-oems-basket": {
+    "description": "Basket representing traditional automobile manufacturers transitioning from internal combustion to electric vehicles.",
+    "domain": null
+  },
+  "zipline": {
+    "description": "Autonomous drone logistics company delivering medical supplies and packages in multiple countries.",
+    "domain": "zipline.com"
+  },
+  "chinese-tech-stocks-basket": {
+    "description": "Basket representing publicly traded Chinese technology and internet companies listed on major exchanges.",
+    "domain": null
+  },
+  "unitree-robotics": {
+    "description": "Chinese robotics company designing and manufacturing low-cost quadruped and humanoid robots.",
+    "domain": "unitree.com"
+  },
+  "djt": {
+    "description": "Media and technology company operating Truth Social, a conservative-leaning social media platform.",
+    "domain": "truthsocial.com"
+  },
+  "rddt": {
+    "description": "Online platform hosting thousands of community forums for discussion, content sharing, and voting.",
+    "domain": "reddit.com"
+  },
+  "acn": {
+    "description": "Global professional services firm providing IT consulting, outsourcing, and digital transformation services.",
+    "domain": "accenture.com"
+  },
+  "shop": {
+    "description": "E-commerce platform enabling merchants to build, manage, and scale online and retail stores.",
+    "domain": "shopify.com"
+  },
+  "bac": {
+    "description": "Major US multinational bank offering consumer banking, wealth management, and investment services.",
+    "domain": "bankofamerica.com"
+  },
+  "dbx": {
+    "description": "Cloud storage and collaboration platform offering file sync, sharing, and productivity tools.",
+    "domain": "dropbox.com"
+  },
+  "sbux": {
+    "description": "Global coffeehouse chain selling coffee, beverages, and food through company-operated and licensed stores.",
+    "domain": "starbucks.com"
+  },
+  "us-treasuries": {
+    "description": "Debt securities issued by the US federal government, used as benchmark risk-free instruments.",
+    "domain": "treasurydirect.gov"
+  },
+  "spacex-starlink": {
+    "description": "Private aerospace company developing rockets and operating Starlink satellite broadband internet service.",
+    "domain": "spacex.com"
+  },
+  "expe": {
+    "description": "Online travel platform offering bookings for flights, hotels, vacation rentals, and activities.",
+    "domain": "expedia.com"
+  },
+  "florida-real-estate-general": {
+    "description": "Broad exposure to residential and commercial property markets across the state of Florida.",
+    "domain": null
+  },
+  "crv-charles-river-ventures": {
+    "description": "Early-stage venture capital firm investing in technology and life sciences startups since 1970.",
+    "domain": "crv.com"
+  },
+  "cost-plus-drugs-costplusdrugs-com": {
+    "description": "Online pharmacy offering generic and brand prescription drugs at transparent, low-markup prices.",
+    "domain": "costplusdrugs.com"
+  },
+  "dallas-mavericks": {
+    "description": "Professional NBA basketball franchise based in Dallas, Texas, competing in the Western Conference.",
+    "domain": "mavs.com"
+  },
+  "chamath-s-ai-framing-large-incumbents-google-microsoft-meta-apple-amazon": {
+    "description": "Thematic basket of large incumbent tech platforms positioned to benefit from AI integration and deployment.",
+    "domain": null
+  },
+  "wday": {
+    "description": "Cloud-based enterprise software provider for human resources, finance, and workforce management.",
+    "domain": "workday.com"
+  },
+  "abnb": {
+    "description": "Online marketplace connecting travelers with hosts offering short-term lodging and experiences globally.",
+    "domain": "airbnb.com"
+  },
+  "adyen": {
+    "description": "Dutch payments technology company providing end-to-end payment processing for global merchants.",
+    "domain": "adyen.com"
+  },
+  "nvo": {
+    "description": "Danish pharmaceutical company specializing in diabetes, obesity, and rare disease treatments including GLP-1 drugs.",
+    "domain": "novonordisk.com"
+  },
+  "cmg": {
+    "description": "Fast-casual restaurant chain serving customizable Mexican-inspired burritos, bowls, and tacos.",
+    "domain": "chipotle.com"
+  },
+  "wmt": {
+    "description": "World's largest retailer operating discount stores, supercenters, and e-commerce across multiple countries.",
+    "domain": "walmart.com"
+  },
+  "pershing-square-capital-management": {
+    "description": "Activist hedge fund managed by Bill Ackman investing in concentrated public equity positions.",
+    "domain": "pershingsquareholdings.com"
+  },
+  "crwd": {
+    "description": "Cloud-native cybersecurity company providing endpoint protection, threat intelligence, and incident response.",
+    "domain": "crowdstrike.com"
+  },
+  "fox": {
+    "description": "US media company operating Fox News, Fox Sports, broadcast television, and related properties.",
+    "domain": "foxcorporation.com"
+  },
+  "sequoia-capital": {
+    "description": "Prominent venture capital firm investing in early- to growth-stage technology companies globally.",
+    "domain": "sequoiacap.com"
+  },
+  "lina-khan-ftc": {
+    "description": "US Federal Trade Commission chairperson known for aggressive antitrust enforcement against large technology companies.",
+    "domain": "ftc.gov"
+  },
+  "andreessen-horowitz": {
+    "description": "Venture capital firm investing across consumer, enterprise, crypto, and bio technology startups.",
+    "domain": "a16z.com"
+  },
+  "rick": {
+    "description": "Operator of adult entertainment clubs and related hospitality venues across the United States.",
+    "domain": "rcihospitality.com"
+  },
+  "safe-superintelligence-ssi": {
+    "description": "AI safety research company focused exclusively on developing safe artificial superintelligence systems.",
+    "domain": "ssi.inc"
+  },
+  "gme": {
+    "description": "Specialty retail chain selling video games, consoles, electronics, and entertainment merchandise.",
+    "domain": "gamestop.com"
+  },
+  "texas-stock-exchange-txse": {
+    "description": "Planned new US national stock exchange headquartered in Dallas, Texas, currently in development.",
+    "domain": "txse.com"
+  },
+  "dell": {
+    "description": "Multinational technology company selling PCs, servers, storage, and IT infrastructure solutions.",
+    "domain": "dell.com"
+  },
+  "mcd": {
+    "description": "Global fast-food chain operating and franchising burger-focused quick-service restaurants in over 100 countries.",
+    "domain": "mcdonalds.com"
+  },
+  "hubs": {
+    "description": "Provides cloud-based CRM, marketing, sales, and customer service software platforms.",
+    "domain": "hubspot.com"
+  },
+  "panw": {
+    "description": "Delivers cybersecurity solutions including network security, cloud security, and AI-driven threat detection.",
+    "domain": "paloaltonetworks.com"
+  },
+  "sacks": {
+    "description": "Private company; specific business description not publicly available.",
+    "domain": null
+  },
+  "vast-space": {
+    "description": "Private aerospace company developing commercial space stations for human habitation in orbit.",
+    "domain": "vastspace.com"
+  },
+  "spacex-xai": {
+    "description": "SpaceX builds rockets and satellite networks; xAI develops large-scale artificial intelligence models.",
+    "domain": null
+  },
+  "cerebras-systems": {
+    "description": "Designs and manufactures large-scale AI chips and systems optimized for deep learning workloads.",
+    "domain": "cerebras.net"
+  },
+  "utility-sector-us-electric-utilities": {
+    "description": "Sector comprising US companies that generate, transmit, and distribute electric power to consumers.",
+    "domain": null
+  },
+  "siegy": {
+    "description": "German industrial conglomerate offering automation, energy, infrastructure, and healthcare technology solutions.",
+    "domain": "siemens.com"
+  },
+  "california-muni-bonds": {
+    "description": "Tax-exempt debt securities issued by California state and local governments to fund public projects.",
+    "domain": null
+  },
+  "s-p-500-us-equities-broad-market": {
+    "description": "Index tracking 500 large-cap US publicly traded companies across diverse sectors of the economy.",
+    "domain": null
+  },
+  "federal-reserve": {
+    "description": "US central banking system managing monetary policy, financial stability, and currency supply.",
+    "domain": "federalreserve.gov"
+  },
+  "coatue-interval-fund": {
+    "description": "Semi-liquid private fund managed by Coatue offering exposure to private and public technology investments.",
+    "domain": "coatue.com"
+  },
+  "mag-7-basket": {
+    "description": "Basket of seven mega-cap US technology companies: Apple, Microsoft, Nvidia, Alphabet, Amazon, Meta, and Tesla.",
+    "domain": null
+  },
+  "enterprise-application-software-saas": {
+    "description": "Sector of cloud-delivered software companies providing business process applications to enterprise customers.",
+    "domain": null
+  },
+  "government-service-providers": {
+    "description": "Companies providing IT, consulting, logistics, and operational services primarily to government clients.",
+    "domain": null
+  },
+  "lmt": {
+    "description": "Develops and manufactures advanced defense systems, aerospace products, and government technology solutions.",
+    "domain": "lockheedmartin.com"
+  },
+  "traditional-auto-oems": {
+    "description": "Legacy automobile manufacturers producing and selling internal combustion and transitional electric vehicles.",
+    "domain": null
+  },
+  "chinese-tech-stocks": {
+    "description": "Basket of publicly traded Chinese technology companies spanning e-commerce, cloud, fintech, and AI sectors.",
+    "domain": null
+  },
+  "stablecoins-usd-stablecoin-sector": {
+    "description": "Sector of USD-pegged digital assets designed to maintain stable value on blockchain networks.",
+    "domain": null
+  },
+  "addepar": {
+    "description": "Provides wealth management technology and data aggregation platforms for financial advisors and institutions.",
+    "domain": "addepar.com"
+  },
+  "bx": {
+    "description": "Global alternative asset manager investing across private equity, real estate, credit, and hedge funds.",
+    "domain": "blackstone.com"
+  },
+  "foxa": {
+    "description": "Operates news, sports, and entertainment television networks and broadcasting properties in the US.",
+    "domain": "foxcorporation.com"
+  },
+  "safe-superintelligence": {
+    "description": "AI research company focused on developing safe superintelligent systems, founded by Ilya Sutskever.",
+    "domain": "ssi.inc"
+  }
+}

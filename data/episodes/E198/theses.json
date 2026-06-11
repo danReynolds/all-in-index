@@ -1,0 +1,91 @@
+[
+  {
+    "id": "E198-openai-Sacks-0",
+    "episodeId": "E198",
+    "episodeNumber": 198,
+    "episodeDate": "2024-10-03T20:19:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Sacks is skeptical of OpenAI's trajectory, citing its shift from nonprofit to aggressive for-profit behavior, co-founder departures, and demands that new investors not fund rival AI companies as red flags.",
+    "quote": "They originally started that enterprise with $50 million or so from Elon. It was a nonprofit. Then they became a for-profit. Now there's a report saying that they're telling investors in this round that they can't invest in any other AI companies.",
+    "quoteStartMs": 7164035,
+    "topics": [
+      "AI",
+      "valuation",
+      "governance",
+      "competition"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E198-openai-Guest-1",
+    "episodeId": "E198",
+    "episodeNumber": 198,
+    "episodeDate": "2024-10-03T20:19:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Mark Cuban argues OpenAI's restrictive investor terms reflect fear of competition, not strength, and that Google (Gemini), Meta (open source), and others are serious rivals that make OpenAI's dominance far from certain.",
+    "quote": "There is no, you know, there's nothing that says that OpenAI is going to win, nothing at all. And so I don't feel bad about what they're doing. And to me, it tells me they're more scared than anything by trying to restrict what people are doing.",
+    "quoteStartMs": 7286319,
+    "topics": [
+      "AI",
+      "competition",
+      "governance"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E198-x-twitter-Guest-2",
+    "episodeId": "E198",
+    "episodeNumber": 198,
+    "episodeDate": "2024-10-03T20:19:00.000Z",
+    "company": "X (Twitter)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Mark Cuban argues X is a structurally challenged advertising business: its embrace of extreme free speech drove away major advertisers, and the proliferation of hate speech and adult content makes the platform toxic for brands, undermining its revenue model.",
+    "quote": "There is no upside for being on Twitter right now, or X right now. And you add to that the porn. Kids 13 years old can go on that site and you can find any insane thing you want on X right now. And that also is a problem for advertisers.",
+    "quoteStartMs": 6984614,
+    "topics": [
+      "advertising",
+      "content moderation",
+      "business model"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E198-groq-Guest-4",
+    "episodeId": "E198",
+    "episodeNumber": 198,
+    "episodeDate": "2024-10-03T20:19:00.000Z",
+    "company": "Groq",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "low",
+    "summary": "Mark Cuban co-invested in Groq alongside Chamath, viewing AI infrastructure ('picks and shovels') as the most attractive place to invest in the current AI gold rush.",
+    "quote": "So now I've kind of slowed down. I invested in Groq, right, with Chamath, right? Chamath is like, yeah, let's go, right? And he can tell you all the reasons.",
+    "quoteStartMs": 6302000,
+    "topics": [
+      "AI",
+      "infrastructure",
+      "venture"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  }
+]

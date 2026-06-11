@@ -1,0 +1,137 @@
+[
+  {
+    "id": "E194-nvda-Guest-0",
+    "episodeId": "E194",
+    "episodeNumber": 194,
+    "episodeDate": "2024-08-30T15:04:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Reid Hoffman argues NVIDIA's dominance in training chips is sustainable for roughly two more years, but faces a growing competitive threat on the inference side that will pressure margins and moderate growth thereafter; he nonetheless would not recommend shorting the stock.",
+    "quote": "NVIDIA has a very sharp, you know, kind of lead on the importance of the chips for the training clusters... I think it's not sustainable— the pure heat is not sustainable. But I think NVIDIA's got a very strong position... I would recommend people not be short on NVIDIA.",
+    "quoteStartMs": 564110,
+    "topics": [
+      "AI capex",
+      "competition",
+      "valuation",
+      "semiconductors"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E194-msft-Guest-1",
+    "episodeId": "E194",
+    "episodeNumber": 194,
+    "episodeDate": "2024-08-30T15:04:00.000Z",
+    "company": "Microsoft",
+    "ticker": "MSFT",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Reid Hoffman praises Satya Nadella as the best public-market CEO of his generation, citing his disciplined blending of platform-change conviction with return-on-capital discipline as a reason to be confident in Microsoft's AI infrastructure investments.",
+    "quote": "I think Satya is like the best public market CEO of our generation. I think he is stunning in kind of blending combination of strategic insight with also kind of being, you know, kind of return on capital, you know, sensible risk-taking.",
+    "quoteStartMs": 738854,
+    "topics": [
+      "AI capex",
+      "management quality",
+      "cloud"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E194-openai-Guest-2",
+    "episodeId": "E194",
+    "episodeNumber": 194,
+    "episodeDate": "2024-08-30T15:04:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Reid Hoffman, as the lead investor in OpenAI's first commercial round, expresses continued confidence in its scale thesis and leadership position, defending its corporate structure as sound and dismissing Elon Musk's legal challenges as without merit.",
+    "quote": "We're betting on the scale thesis of generating something magical... I would recommend people not be short on NVIDIA. Yeah.",
+    "quoteStartMs": 1337214,
+    "topics": [
+      "AI",
+      "corporate structure",
+      "scale thesis"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E194-aapl-Guest-3",
+    "episodeId": "E194",
+    "episodeNumber": 194,
+    "episodeDate": "2024-08-30T15:04:00.000Z",
+    "company": "Apple",
+    "ticker": "AAPL",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Reid Hoffman singles out Apple's App Store as the prime candidate for antitrust intervention, arguing that mandatory payment rails, no sideloading, and a 30% take rate quell startup innovation and represent an anti-competitive monopoly that regulators should address.",
+    "quote": "I think the prime candidate is likely to be, and I'm speaking as an individual and as a venture capitalist here, is Apple with the App Store... you could just give the consumers the option to allow sideloading.",
+    "quoteStartMs": 2257000,
+    "topics": [
+      "antitrust",
+      "App Store",
+      "regulation",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E194-aapl-Sacks-4",
+    "episodeId": "E194",
+    "episodeNumber": 194,
+    "episodeDate": "2024-08-30T15:04:00.000Z",
+    "company": "Apple",
+    "ticker": "AAPL",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Sacks argues Apple's App Store monopoly—mandatory 30% fees, no sideloading, no competing payment links—constitutes anti-competitive behavior that regulators should crack down on, even if broad M&A restrictions are wrong.",
+    "quote": "Apple, really good example, because they drive everything through the App Store. You're not allowed to do sideloading. They want to take, what is it, 30% piece of any sales. You're not even allowed to have a link inside an application to drive to the website.",
+    "quoteStartMs": 2270982,
+    "topics": [
+      "antitrust",
+      "App Store",
+      "regulation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E194-nvo-Guest-5",
+    "episodeId": "E194",
+    "episodeNumber": 194,
+    "episodeDate": "2024-08-30T15:04:00.000Z",
+    "company": "Novo Nordisk",
+    "ticker": "NVO",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bear",
+    "conviction": "low",
+    "summary": "RFK Jr. argues that Novo Nordisk's entire valuation rests on projected Ozempic sales in the US, enabled by lobbying for Medicare coverage, while the drug's home country does not recommend it for diabetes—suggesting the business model is built on regulatory capture rather than superior outcomes.",
+    "quote": "That company's entire value is based upon the projections of what it's gonna sell in the United States. And it has, and that company is pouring tens of millions of dollars into lobbying to pass this bill that will make Medicare pay for it.",
+    "quoteStartMs": 6636391,
+    "topics": [
+      "pharmaceuticals",
+      "regulation",
+      "lobbying",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

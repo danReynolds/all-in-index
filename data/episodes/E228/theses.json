@@ -1,0 +1,93 @@
+[
+  {
+    "id": "E228-groq-Chamath-0",
+    "episodeId": "E228",
+    "episodeNumber": 228,
+    "episodeDate": "2025-05-17T04:04:00.000Z",
+    "company": "Groq",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Chamath highlights Groq's $1.7B AI inference deal in Saudi Arabia and its unique US export license as evidence of a dominant competitive position in the global AI inference market.",
+    "quote": "We announced almost $2 billion deal, $1.7 I think is what it was. This is Groq. Groq did a deal. Yeah, for AI inference. We are the only inference company in the world with an export license from the United States to do this.",
+    "quoteStartMs": 879861,
+    "topics": [
+      "AI inference",
+      "international expansion",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E228-cvs-Friedberg-1",
+    "episodeId": "E228",
+    "episodeNumber": 228,
+    "episodeDate": "2025-05-17T04:04:00.000Z",
+    "company": "CVS Health",
+    "ticker": "CVS",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Friedberg argues PBMs like CVS Caremark are extracting billions in excess profit as middlemen and face growing FTC scrutiny and political pressure to be cut out of the drug supply chain, threatening their business model.",
+    "quote": "Between 2017 and 2022, the estimate that these companies generated $7.3 billion in excess profit by marking up prices. On specialty generic drugs. The list goes on, on kind of the egregious behavior and the role that they play as middlemen.",
+    "quoteStartMs": 5706008,
+    "topics": [
+      "PBMs",
+      "regulation",
+      "drug pricing",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E228-ci-Friedberg-2",
+    "episodeId": "E228",
+    "episodeNumber": 228,
+    "episodeDate": "2025-05-17T04:04:00.000Z",
+    "company": "Cigna (Express Scripts)",
+    "ticker": "CI",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Friedberg argues PBMs like Express Scripts generate billions in excess profit through opaque markups and are subject to FTC investigations, with regulatory and political risk threatening the middleman model.",
+    "quote": "There's 3 major PBMs: CVS Caremark, Express Scripts, and OptumRx. These 3 companies make on average approximately $3 in operating profit per prescription claim processed. They make money in markups. The FTC has been investigating them.",
+    "quoteStartMs": 5692930,
+    "topics": [
+      "PBMs",
+      "regulation",
+      "drug pricing",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E228-unh-Friedberg-3",
+    "episodeId": "E228",
+    "episodeNumber": 228,
+    "episodeDate": "2025-05-17T04:04:00.000Z",
+    "company": "UnitedHealth Group (OptumRx)",
+    "ticker": "UNH",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Friedberg flags OptumRx as part of a PBM oligopoly generating excess profits through markups and obfuscation, and argues the vertical integration of PBMs with payers is a structural distortion that faces serious reform risk.",
+    "quote": "They're allowed to be owned by the payer, which is crazy... there's a lot of obfuscation of the true cost of the drugs. There's a lot of markups, a lot of spread taking. And so if you took the PBMs out of the market, that would solve one of the problems.",
+    "quoteStartMs": 5742002,
+    "topics": [
+      "PBMs",
+      "regulation",
+      "drug pricing",
+      "vertical integration"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

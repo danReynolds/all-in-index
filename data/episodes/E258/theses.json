@@ -1,0 +1,71 @@
+[
+  {
+    "id": "E258-cerebras-systems-Friedberg-0",
+    "episodeId": "E258",
+    "episodeNumber": 258,
+    "episodeDate": "2026-01-17T00:00:00.000Z",
+    "company": "Cerebras Systems",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Friedberg argues Cerebras's wafer-scale chip architecture delivers blazing-fast inference, and OpenAI's major compute deal validates its competitive position ahead of an expected IPO, pointing to a broader silicon renaissance opportunity.",
+    "quote": "If you look at the trail of breadcrumbs, my belief, there's going to be a renaissance in silicon. Young, small teams building decode silicon can make a fortune over the next 10 to 20 years. It's a huge opportunity.",
+    "quoteStartMs": 2011518,
+    "topics": [
+      "AI chips",
+      "inference",
+      "IPO",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E258-msft-Chamath-1",
+    "episodeId": "E258",
+    "episodeNumber": 258,
+    "episodeDate": "2026-01-17T00:00:00.000Z",
+    "company": "Microsoft",
+    "ticker": "MSFT",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath views Microsoft's pledge to pay fair electricity rates and cover infrastructure costs for data centers as a smart first step that removes political friction and gives hyperscalers a social license to operate, supporting continued AI buildout.",
+    "quote": "I really like it. It's a very good first order set of things to do, which is to step into a local area and take all of these energy issues off the table, at least to the extent that you're contributing to it.",
+    "quoteStartMs": 972667,
+    "topics": [
+      "AI capex",
+      "data centers",
+      "energy",
+      "regulation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E258-utility-sector-us-electric-utilities-Chamath-2",
+    "episodeId": "E258",
+    "episodeNumber": 258,
+    "episodeDate": "2026-01-17T00:00:00.000Z",
+    "company": "Utility sector (US electric utilities)",
+    "ticker": null,
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Chamath argues that if even a fraction of the proposed decentralized solar/storage/private-power buildout materializes, regulated utilities face an existential threat to their rate base, bond repayment, and CapEx model, making them the 'biggest dollar short.'",
+    "quote": "I think the single biggest dollar short, it's not clear when, that one will be able to make will be on these utilities. Because if any version of what we just talked about happens... what do the utilities do? What does all this CapEx go to? How do they pay back their bonds?",
+    "quoteStartMs": 1824988,
+    "topics": [
+      "energy transition",
+      "valuation",
+      "rate base",
+      "short thesis"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  }
+]

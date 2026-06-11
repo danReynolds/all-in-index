@@ -1,0 +1,487 @@
+{
+  "generatedAt": "2026-06-09T16:04:34.341Z",
+  "holdings": [
+    {
+      "slug": "nvda",
+      "company": "Nvidia",
+      "ticker": "NVDA",
+      "isPublic": true,
+      "theses": [
+        {
+          "id": "E274-nvda-Chamath-0",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T00:00:00.000Z",
+          "company": "Nvidia",
+          "ticker": "NVDA",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "summary": "[Sample] Illustrative bullish position on data-center demand.",
+          "quote": "",
+          "quoteStartMs": null,
+          "topics": [
+            "AI capex",
+            "data center"
+          ],
+          "isSample": true
+        },
+        {
+          "id": "E274-nvda-Sacks-1",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T00:00:00.000Z",
+          "company": "Nvidia",
+          "ticker": "NVDA",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "neutral",
+          "conviction": "medium",
+          "summary": "[Sample] Illustrative balanced take on valuation vs. growth.",
+          "quote": "",
+          "quoteStartMs": null,
+          "topics": [
+            "valuation"
+          ],
+          "isSample": true
+        },
+        {
+          "id": "E274-nvda-Friedberg-2",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T00:00:00.000Z",
+          "company": "Nvidia",
+          "ticker": "NVDA",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "bull",
+          "conviction": "medium",
+          "summary": "[Sample] Illustrative view on compute scaling.",
+          "quote": "",
+          "quoteStartMs": null,
+          "topics": [
+            "compute",
+            "scaling"
+          ],
+          "isSample": true
+        }
+      ],
+      "synthesis": "[SAMPLE] Illustrative synthesis only. The real pipeline writes a sourced, cross-host summary here derived from the actual episode discussion.",
+      "netStance": "bull",
+      "firstMentioned": "2026-05-22T00:00:00.000Z",
+      "lastMentioned": "2026-05-22T00:00:00.000Z",
+      "mentionCount": 3,
+      "market": {
+        "ticker": "NVDA",
+        "asOf": "2026-06-09",
+        "anchorDate": "2026-05-22",
+        "basePrice": 215.33,
+        "latestPrice": 203.28,
+        "returns": {
+          "1m": null,
+          "3m": null,
+          "6m": null,
+          "1y": null,
+          "since": -0.05596061858542707
+        },
+        "history": [
+          [
+            "2026-05-22",
+            215.33
+          ],
+          [
+            "2026-05-26",
+            214.86
+          ],
+          [
+            "2026-05-27",
+            212.6
+          ],
+          [
+            "2026-05-28",
+            214.25
+          ],
+          [
+            "2026-05-29",
+            211.14
+          ],
+          [
+            "2026-06-01",
+            224.36
+          ],
+          [
+            "2026-06-02",
+            222.82
+          ],
+          [
+            "2026-06-03",
+            214.75
+          ],
+          [
+            "2026-06-04",
+            218.66
+          ],
+          [
+            "2026-06-05",
+            205.1
+          ],
+          [
+            "2026-06-08",
+            208.64
+          ],
+          [
+            "2026-06-09",
+            203.28
+          ]
+        ],
+        "source": "yahoo"
+      },
+      "isSample": true
+    },
+    {
+      "slug": "tsla",
+      "company": "Tesla",
+      "ticker": "TSLA",
+      "isPublic": true,
+      "theses": [
+        {
+          "id": "E274-tsla-Chamath-0",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T00:00:00.000Z",
+          "company": "Tesla",
+          "ticker": "TSLA",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "medium",
+          "summary": "[Sample] Illustrative bull case on autonomy optionality.",
+          "quote": "",
+          "quoteStartMs": null,
+          "topics": [
+            "autonomy"
+          ],
+          "isSample": true
+        },
+        {
+          "id": "E274-tsla-Sacks-1",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T00:00:00.000Z",
+          "company": "Tesla",
+          "ticker": "TSLA",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "bear",
+          "conviction": "low",
+          "summary": "[Sample] Illustrative skeptical note on multiple.",
+          "quote": "",
+          "quoteStartMs": null,
+          "topics": [
+            "valuation"
+          ],
+          "isSample": true
+        }
+      ],
+      "synthesis": "[SAMPLE] Illustrative synthesis only — replace via the pipeline.",
+      "netStance": "mixed",
+      "firstMentioned": "2026-05-22T00:00:00.000Z",
+      "lastMentioned": "2026-05-22T00:00:00.000Z",
+      "mentionCount": 2,
+      "market": {
+        "ticker": "TSLA",
+        "asOf": "2026-06-09",
+        "anchorDate": "2026-05-22",
+        "basePrice": 426.01,
+        "latestPrice": 392.62,
+        "returns": {
+          "1m": null,
+          "3m": null,
+          "6m": null,
+          "1y": null,
+          "since": -0.07837844182061451
+        },
+        "history": [
+          [
+            "2026-05-22",
+            426.01
+          ],
+          [
+            "2026-05-26",
+            433.59
+          ],
+          [
+            "2026-05-27",
+            440.36
+          ],
+          [
+            "2026-05-28",
+            442.1
+          ],
+          [
+            "2026-05-29",
+            435.79
+          ],
+          [
+            "2026-06-01",
+            415.88
+          ],
+          [
+            "2026-06-02",
+            423.74
+          ],
+          [
+            "2026-06-03",
+            423.7
+          ],
+          [
+            "2026-06-04",
+            418.45
+          ],
+          [
+            "2026-06-05",
+            391
+          ],
+          [
+            "2026-06-08",
+            408.95
+          ],
+          [
+            "2026-06-09",
+            392.62
+          ]
+        ],
+        "source": "yahoo"
+      },
+      "isSample": true
+    },
+    {
+      "slug": "amd",
+      "company": "AMD",
+      "ticker": "AMD",
+      "isPublic": true,
+      "theses": [
+        {
+          "id": "E274-amd-Jason-0",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T00:00:00.000Z",
+          "company": "AMD",
+          "ticker": "AMD",
+          "isPublic": true,
+          "host": "Jason",
+          "stance": "bull",
+          "conviction": "medium",
+          "summary": "[Sample] Illustrative bull case on the #2 accelerator.",
+          "quote": "",
+          "quoteStartMs": null,
+          "topics": [
+            "AI capex",
+            "competition"
+          ],
+          "isSample": true
+        }
+      ],
+      "synthesis": "[SAMPLE] Illustrative synthesis only — replace via the pipeline.",
+      "netStance": "bull",
+      "firstMentioned": "2026-05-22T00:00:00.000Z",
+      "lastMentioned": "2026-05-22T00:00:00.000Z",
+      "mentionCount": 1,
+      "market": {
+        "ticker": "AMD",
+        "asOf": "2026-06-09",
+        "anchorDate": "2026-05-22",
+        "basePrice": 467.51,
+        "latestPrice": 460.4,
+        "returns": {
+          "1m": null,
+          "3m": null,
+          "6m": null,
+          "1y": null,
+          "since": -0.015208230839982063
+        },
+        "history": [
+          [
+            "2026-05-22",
+            467.51
+          ],
+          [
+            "2026-05-26",
+            503.89
+          ],
+          [
+            "2026-05-27",
+            495.54
+          ],
+          [
+            "2026-05-28",
+            518.09
+          ],
+          [
+            "2026-05-29",
+            516.1
+          ],
+          [
+            "2026-06-01",
+            510.13
+          ],
+          [
+            "2026-06-02",
+            521.54
+          ],
+          [
+            "2026-06-03",
+            542.52
+          ],
+          [
+            "2026-06-04",
+            523.2
+          ],
+          [
+            "2026-06-05",
+            466.38
+          ],
+          [
+            "2026-06-08",
+            490.33
+          ],
+          [
+            "2026-06-09",
+            460.4
+          ]
+        ],
+        "source": "yahoo"
+      },
+      "isSample": true
+    },
+    {
+      "slug": "spacex",
+      "company": "SpaceX",
+      "ticker": null,
+      "isPublic": false,
+      "theses": [
+        {
+          "id": "E274-spacex-Chamath-0",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T00:00:00.000Z",
+          "company": "SpaceX",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "summary": "[Sample] Illustrative view on Starlink cash flow and the $2T case.",
+          "quote": "",
+          "quoteStartMs": null,
+          "topics": [
+            "Starlink",
+            "valuation"
+          ],
+          "isSample": true
+        },
+        {
+          "id": "E274-spacex-Jason-1",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T00:00:00.000Z",
+          "company": "SpaceX",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Jason",
+          "stance": "bull",
+          "conviction": "high",
+          "summary": "[Sample] Illustrative view on launch dominance.",
+          "quote": "",
+          "quoteStartMs": null,
+          "topics": [
+            "launch"
+          ],
+          "isSample": true
+        },
+        {
+          "id": "E274-spacex-Friedberg-2",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T00:00:00.000Z",
+          "company": "SpaceX",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Friedberg",
+          "stance": "bull",
+          "conviction": "medium",
+          "summary": "[Sample] Illustrative view on Starship economics.",
+          "quote": "",
+          "quoteStartMs": null,
+          "topics": [
+            "Starship"
+          ],
+          "isSample": true
+        }
+      ],
+      "synthesis": "[SAMPLE] Illustrative synthesis only. Private company — performance tracked via reported valuation marks once available.",
+      "netStance": "bull",
+      "firstMentioned": "2026-05-22T00:00:00.000Z",
+      "lastMentioned": "2026-05-22T00:00:00.000Z",
+      "mentionCount": 3,
+      "market": null,
+      "isSample": true
+    },
+    {
+      "slug": "openai",
+      "company": "OpenAI",
+      "ticker": null,
+      "isPublic": false,
+      "theses": [
+        {
+          "id": "E274-openai-Sacks-0",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T00:00:00.000Z",
+          "company": "OpenAI",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Sacks",
+          "stance": "mixed",
+          "conviction": "medium",
+          "summary": "[Sample] Illustrative take on the cost structure and competitive moat.",
+          "quote": "",
+          "quoteStartMs": null,
+          "topics": [
+            "moat",
+            "spend"
+          ],
+          "isSample": true
+        },
+        {
+          "id": "E274-openai-Friedberg-1",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T00:00:00.000Z",
+          "company": "OpenAI",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Friedberg",
+          "stance": "bull",
+          "conviction": "medium",
+          "summary": "[Sample] Illustrative view on product velocity.",
+          "quote": "",
+          "quoteStartMs": null,
+          "topics": [
+            "product"
+          ],
+          "isSample": true
+        }
+      ],
+      "synthesis": "[SAMPLE] Illustrative synthesis only. Private company.",
+      "netStance": "mixed",
+      "firstMentioned": "2026-05-22T00:00:00.000Z",
+      "lastMentioned": "2026-05-22T00:00:00.000Z",
+      "mentionCount": 2,
+      "market": null,
+      "isSample": true
+    }
+  ],
+  "episodesProcessed": 1
+}

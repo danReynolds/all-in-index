@@ -1,0 +1,114 @@
+[
+  {
+    "id": "E211-tiktok-bytedance-Chamath-0",
+    "episodeId": "E211",
+    "episodeNumber": 211,
+    "episodeDate": "2025-01-18T01:21:00.000Z",
+    "company": "TikTok / ByteDance",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "mixed",
+    "conviction": "high",
+    "summary": "Chamath believes TikTok is a genuine national security threat that should be banned, but sees the asset as technically extraordinary and thinks whoever acquires it at a forced-sale price will get an incredible deal cheaply; he favors X absorbing TikTok's creator graph onto a safer substrate.",
+    "quote": "whoever gets their hands on it gets their hands on an incredible asset. That they will be able to buy extremely cheaply because there is no way that there is a fair market value here deal for that asset because whoever is the buyer is in the total catbird seat.",
+    "quoteStartMs": 4332739,
+    "topics": [
+      "national security",
+      "forced divestiture",
+      "valuation",
+      "M&A"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E211-baba-Friedberg-1",
+    "episodeId": "E211",
+    "episodeNumber": 211,
+    "episodeDate": "2025-01-18T01:21:00.000Z",
+    "company": "Alibaba",
+    "ticker": "BABA",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Friedberg is bullish on Chinese tech stocks including Alibaba, anticipating a grand US-China deal in the first six months of the Trump administration that would ease tariffs and unlock economic value as China negotiates from a position of economic weakness.",
+    "quote": "I think they want to get a deal done and keep TikTok active in the U.S... this kind of also leads to what I think will be the grand deal with China, which I think will happen in the first 6 months of the Trump administration.",
+    "quoteStartMs": 4657185,
+    "topics": [
+      "US-China trade",
+      "geopolitics",
+      "valuation",
+      "macro"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E211-baba-Guest-2",
+    "episodeId": "E211",
+    "episodeNumber": 211,
+    "episodeDate": "2025-01-18T01:21:00.000Z",
+    "company": "Alibaba",
+    "ticker": "BABA",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Mark Pincus has been actively buying Alibaba and other Chinese names, betting on a US-China rapprochement under Trump.",
+    "quote": "I've been loading up on Alibaba, a couple Chinese names. Yeah.",
+    "quoteStartMs": 4748000,
+    "topics": [
+      "US-China trade",
+      "valuation",
+      "macro"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E211-googl-Jason-3",
+    "episodeId": "E211",
+    "episodeNumber": 211,
+    "episodeDate": "2025-01-18T01:21:00.000Z",
+    "company": "Google (Alphabet)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Jason highlights Google's Deep Research (Gemini) as a transformative AI product that replicates expensive consulting-firm reports in minutes, signaling strong competitive positioning for Alphabet in AI-enabled knowledge work.",
+    "quote": "this product is nuts. And they designed it to basically be one of these like million-dollar or $5 million reports you pay for from these consulting firms... it does a better job. It's more accurate. It's done in 5 to 10 minutes.",
+    "quoteStartMs": 5418558,
+    "topics": [
+      "AI product",
+      "competitive moat",
+      "growth"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E211-x-formerly-twitter-Chamath-4",
+    "episodeId": "E211",
+    "episodeNumber": 211,
+    "episodeDate": "2025-01-18T01:21:00.000Z",
+    "company": "X (formerly Twitter)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath argues X is the ideal acquirer of TikTok's creator graph and video content, seeing a combination of TikTok's content with X's safer American-controlled infrastructure as a significant strategic and value-creating outcome for X.",
+    "quote": "I was super excited when I saw that there was the potential that X would take over TikTok... if you can take the video content of TikTok and the graph of creators, but have a different app and a different substrate be the delivery mechanism where you know that it's much safer... that to me would be the compromise.",
+    "quoteStartMs": 4577000,
+    "topics": [
+      "M&A",
+      "competitive position",
+      "social media"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

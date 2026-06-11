@@ -1,0 +1,92 @@
+[
+  {
+    "id": "E230-anthropic-Chamath-0",
+    "episodeId": "E230",
+    "episodeNumber": 230,
+    "episodeDate": "2025-05-31T20:00:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Chamath argues Anthropic strategically times AI safety warnings to coincide with fundraising rounds, serving a smart business agenda, while also acknowledging Claude is a genuinely great product — making it a savvy but self-interested actor rather than a purely altruistic one.",
+    "quote": "it seems that these safety warnings tend to be pretty coincidental with key fundraising moments in Anthropic's journey... I think that there is a very smart business strategy here",
+    "quoteStartMs": 578198,
+    "topics": [
+      "AI safety narrative",
+      "fundraising strategy",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E230-x-Chamath-1",
+    "episodeId": "E230",
+    "episodeNumber": 230,
+    "episodeDate": "2025-05-31T20:00:00.000Z",
+    "company": "US Steel",
+    "ticker": "X",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath is bullish on the Nippon-US Steel deal structure as a model for strategic government partnership — with a 'golden vote' — arguing it can revive a stranded asset and create long-term value, similar to national champion frameworks in Brazil, the UK, and China.",
+    "quote": "I think this is a really important example of things that we need to copy... this strategy has worked for many other countries really well",
+    "quoteStartMs": 4735359,
+    "topics": [
+      "M&A",
+      "government partnership",
+      "national champions",
+      "strategic industry"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E230-x-Sacks-2",
+    "episodeId": "E230",
+    "episodeNumber": 230,
+    "episodeDate": "2025-05-31T20:00:00.000Z",
+    "company": "US Steel",
+    "ticker": "X",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Sacks supports government-backed protection of US Steel and strategic industries like steel and rare earths, arguing the 'free market' was distorted by Chinese WTO subsidies and dumping, making government intervention necessary for national security.",
+    "quote": "steel production is definitely strategic. Steel, aluminum, and I'd say the rare earths, we have to have that capacity. We cannot be completely dependent on China for our supply chain.",
+    "quoteStartMs": 4902629,
+    "topics": [
+      "national security",
+      "reshoring",
+      "trade policy",
+      "strategic industry"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E230-msft-Sacks-3",
+    "episodeId": "E230",
+    "episodeNumber": 230,
+    "episodeDate": "2025-05-31T20:00:00.000Z",
+    "company": "Microsoft",
+    "ticker": "MSFT",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "low",
+    "summary": "Sacks pushes back on attributing Microsoft's 6,000-person layoff to AI, arguing it is confirmation bias and not evidence of AI-driven job elimination at the managerial level.",
+    "quote": "That's like total confirmation bias. It's like now every time there's a layoff announcement, people try to tie it to AI to feed this doomer story. I don't think that's an AI story.",
+    "quoteStartMs": 2453000,
+    "topics": [
+      "AI disruption",
+      "layoffs",
+      "labor market"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

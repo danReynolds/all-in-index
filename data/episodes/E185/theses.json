@@ -1,0 +1,161 @@
+[
+  {
+    "id": "E185-openai-Chamath-0",
+    "episodeId": "E185",
+    "episodeNumber": 185,
+    "episodeDate": "2024-06-29T04:05:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath argues OpenAI should IPO as fast as possible to monetize its current lead, since early AI leaders may not be the ultimate winners — but strategically, OpenAI is brilliantly building a government/institutional ally base that will protect and entrench it long-term.",
+    "quote": "I think they should do it as quickly as possible. We are in the first inning of what should probably be an enormous tectonic shift in technology. And I think if anything, whoever wins in the first inning usually isn't the one that's winning by the 9th inning.",
+    "quoteStartMs": 2623000,
+    "topics": [
+      "IPO",
+      "AI race",
+      "valuation",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E185-openai-Sacks-1",
+    "episodeId": "E185",
+    "episodeNumber": 185,
+    "episodeDate": "2024-06-29T04:05:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Sacks argues OpenAI should clean up its Byzantine nonprofit/for-profit structure, IPO, and give the public a chance to participate in the AI wave, analogous to early dot-com companies like Amazon and Google.",
+    "quote": "They should IPO so that the public actually has the ability to invest in this AI wave and ride this wave as, you know, the same way they did with the whole dot-com boom.",
+    "quoteStartMs": 2778036,
+    "topics": [
+      "IPO",
+      "corporate structure",
+      "AI",
+      "public markets"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E185-openai-Friedberg-2",
+    "episodeId": "E185",
+    "episodeNumber": 185,
+    "episodeDate": "2024-06-29T04:05:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "low",
+    "summary": "Friedberg is skeptical that an OpenAI IPO at ~$120B on $3B revenue leaves much upside for public investors, suggesting the big wave may already be priced in.",
+    "quote": "A company doing $3 billion in revenue getting an IPO done at $120 billion market cap, maybe the public already missed the big wave.",
+    "quoteStartMs": 2834838,
+    "topics": [
+      "valuation",
+      "IPO",
+      "AI"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E185-safe-superintelligence-inc-Sacks-3",
+    "episodeId": "E185",
+    "episodeNumber": 185,
+    "episodeDate": "2024-06-29T04:05:00.000Z",
+    "company": "Safe Superintelligence Inc.",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Sacks is bearish on SSI because its safety-first mandate acts as a 'brake pedal' that will slow it down in an AI race where speed is the primary competitive advantage, making it unlikely to win.",
+    "quote": "Safety concerns are a brake pedal. They don't help you move faster, they make you move slower... I think that he's going to be hamstrung by his own concerns about safety.",
+    "quoteStartMs": 3379988,
+    "topics": [
+      "AI race",
+      "competitive position",
+      "startup strategy"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E185-anthropic-Chamath-4",
+    "episodeId": "E185",
+    "episodeNumber": 185,
+    "episodeDate": "2024-06-29T04:05:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Chamath argues that AI foundational model startups like Anthropic face an existential capital problem as model costs balloon toward $100B, leaving only Google, Microsoft, Meta, Amazon, and OpenAI able to compete — starving smaller players of the capital needed to survive.",
+    "quote": "Dario Amodei, the CEO of Anthropic, who said the cost of a good functional model today is in the billions, but by 2027 it could easily approach $100 billion. The problem that that represents for Ilya's company... there just isn't $100 billion for him to have.",
+    "quoteStartMs": 3601525,
+    "topics": [
+      "AI capex",
+      "competitive moat",
+      "funding",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E185-msft-Sacks-5",
+    "episodeId": "E185",
+    "episodeNumber": 185,
+    "episodeDate": "2024-06-29T04:05:00.000Z",
+    "company": "Microsoft",
+    "ticker": "MSFT",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Sacks argues Microsoft's systematic bundling of Teams with Office is illegal anti-competitive dumping that will entrench its monopoly in enterprise software and ultimately harm consumers through higher bundle prices once competitors are eliminated.",
+    "quote": "Once they've pulled the rug out from under their competition, and that competitor is no longer viable, now they can raise the price of the bundle. It's kind of like dumping in a way.",
+    "quoteStartMs": 4062026,
+    "topics": [
+      "antitrust",
+      "bundling",
+      "enterprise software",
+      "regulation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E185-msft-Chamath-6",
+    "episodeId": "E185",
+    "episodeNumber": 185,
+    "episodeDate": "2024-06-29T04:05:00.000Z",
+    "company": "Microsoft",
+    "ticker": "MSFT",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Chamath argues Microsoft has a 40-year playbook of using bundle monopoly power to kill competitors, and US regulators need to revive the old consent decree to stop it, as the EU has now done with Teams.",
+    "quote": "Microsoft has been bundling products to kill competitors for 40 years... I think that they've gone back to their old playbook. It's a playbook that you have to remember the executives that run Microsoft have been there for 30 and 40 years. They know this play.",
+    "quoteStartMs": 4092000,
+    "topics": [
+      "antitrust",
+      "bundling",
+      "regulation",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

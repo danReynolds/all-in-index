@@ -1,0 +1,157 @@
+[
+  {
+    "id": "E220-googl-Chamath-0",
+    "episodeId": "E220",
+    "episodeNumber": 220,
+    "episodeDate": "2025-03-22T02:17:00.000Z",
+    "company": "Google (Alphabet)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath argues the Wiz acquisition is strategically brilliant because it gives Google tentacles into AWS and Azure workloads via a multi-cloud security tool, with the long-term plan to pull those workloads back into GCP — a Trojan horse strategy that justifies the premium price given Wiz's explosive growth trajectory.",
+    "quote": "I think the strategic rationale is quite clever, which is you start to gain customer traction and workloads in all of these other environments. And I suspect that TK is smart enough to try to pull these workloads back into GCP.",
+    "quoteStartMs": 3224147,
+    "topics": [
+      "M&A",
+      "cloud competition",
+      "strategy",
+      "growth"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E220-googl-Friedberg-1",
+    "episodeId": "E220",
+    "episodeNumber": 220,
+    "episodeDate": "2025-03-22T02:17:00.000Z",
+    "company": "Google (Alphabet)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "medium",
+    "summary": "Friedberg lays out the financial challenge of the Wiz deal — Google needs ~$10B/year of incremental profit to justify its 30% ROIC hurdle on a $32B investment — calling the math 'tricky' but acknowledging the cross-sell/beachhead logic could work if Wiz's install base is large enough.",
+    "quote": "Google's ROIC is about 30%... they've got to make an incremental $10 billion a year profit. So you kind of got to do the math... There's a lot to be kind of built here to make this make financial sense.",
+    "quoteStartMs": 3095000,
+    "topics": [
+      "M&A",
+      "valuation",
+      "cloud competition",
+      "ROIC"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E220-spacex-Chamath-2",
+    "episodeId": "E220",
+    "episodeNumber": 220,
+    "episodeDate": "2025-03-22T02:17:00.000Z",
+    "company": "SpaceX",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Chamath argues SpaceX is the undisputed, cheapest, most reliable launch provider with no credible economic alternative for years, making any conflict-of-interest hand-wringing irrelevant — it is simply the only solution.",
+    "quote": "SpaceX is the best. There's nobody even close. The next closest alternative is years and years away... they are the only solution and they're safe and they're reliable.",
+    "quoteStartMs": 4675701,
+    "topics": [
+      "space",
+      "competitive moat",
+      "cost advantage"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E220-spacex-Friedberg-3",
+    "episodeId": "E220",
+    "episodeNumber": 220,
+    "episodeDate": "2025-03-22T02:17:00.000Z",
+    "company": "SpaceX",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Friedberg highlights SpaceX's Crew Dragon program record of 16 successful crewed flights vs. Boeing Starliner's failure, positioning SpaceX as the dominant platform in an intensifying US-China space race.",
+    "quote": "The Starliner program is gone now. It's basically done. And the Crew Dragon program has now done 16 crewed flights to space... Another successful mission for SpaceX.",
+    "quoteStartMs": 4438350,
+    "topics": [
+      "space",
+      "competitive moat",
+      "US-China competition"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E220-ba-Guest-4",
+    "episodeId": "E220",
+    "episodeNumber": 220,
+    "episodeDate": "2025-03-22T02:17:00.000Z",
+    "company": "Boeing",
+    "ticker": "BA",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Cyan Bannister characterizes Boeing as a clear loser in the commercial spaceflight market, having badly fumbled the Starliner program and ceding ground irreversibly to SpaceX.",
+    "quote": "Boeing is the big loser here. You've really got to— you know, it's interesting to me how bad they just fumbled this.",
+    "quoteStartMs": 4519000,
+    "topics": [
+      "space",
+      "competitive loss",
+      "execution"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E220-tsla-Chamath-5",
+    "episodeId": "E220",
+    "episodeNumber": 220,
+    "episodeDate": "2025-03-22T02:17:00.000Z",
+    "company": "Tesla",
+    "ticker": "TSLA",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "low",
+    "summary": "Chamath's only investment-relevant comment on Tesla is that politicians should not be cheering for any American company to fail, implying no specific directional view on the stock itself.",
+    "quote": "Tesla employs 125,000+ employees. There is no reason a politician should be wishing any American company to fail, period.",
+    "quoteStartMs": 2465924,
+    "topics": [
+      "political risk",
+      "sentiment"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E220-pltr-Chamath-6",
+    "episodeId": "E220",
+    "episodeNumber": 220,
+    "episodeDate": "2025-03-22T02:17:00.000Z",
+    "company": "Palantir",
+    "ticker": "PLTR",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "low",
+    "summary": "Chamath floats Palantir as a candidate to deliver free government software (e.g. for the IRS) and build goodwill with the administration, suggesting this dynamic could be a positive catalyst for government-aligned tech companies.",
+    "quote": "Could you imagine if somebody volunteered, let's say Palantir, and said, hey, we can build the following software for the IRS so that we can just completely automate tax returns. And it's okay for Palantir, there's still a $200 billion company.",
+    "quoteStartMs": 2176988,
+    "topics": [
+      "government contracts",
+      "AI",
+      "growth catalyst"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

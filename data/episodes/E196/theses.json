@@ -1,0 +1,135 @@
+[
+  {
+    "id": "E196-crm-Chamath-0",
+    "episodeId": "E196",
+    "episodeNumber": 196,
+    "episodeDate": "2024-09-20T19:58:00.000Z",
+    "company": "Salesforce",
+    "ticker": "CRM",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Chamath argues that AI agents capable of reverse-engineering legacy software workflows (as Klarna demonstrated) will commoditize and eventually displace systems-of-record incumbents like Salesforce, making their high-cost moat structurally vulnerable.",
+    "quote": "we cannot touch customer service, we cannot touch it because it's going to get commoditized and run over by these foundational models within a year... I think that these kinds of things will not be possible in the future.",
+    "quoteStartMs": 1629725,
+    "topics": [
+      "AI disruption",
+      "enterprise software",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E196-wday-Chamath-1",
+    "episodeId": "E196",
+    "episodeNumber": 196,
+    "episodeDate": "2024-09-20T19:58:00.000Z",
+    "company": "Workday",
+    "ticker": "WDAY",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Chamath argues that AI agents observing software inputs and outputs can reverse-engineer and replace expensive systems-of-record like Workday, as demonstrated by Klarna, threatening their business model.",
+    "quote": "over time what the agents start to do is by observing the inputs and the outputs, they start to guess on what the intervening code is... you develop a digital twin and then you run that against that counterfactual against Workday or Salesforce. And then at some point you're like, it's the same.",
+    "quoteStartMs": 1707262,
+    "topics": [
+      "AI disruption",
+      "enterprise software",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E196-crm-Sacks-2",
+    "episodeId": "E196",
+    "episodeNumber": 196,
+    "episodeDate": "2024-09-20T19:58:00.000Z",
+    "company": "Salesforce",
+    "ticker": "CRM",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "low",
+    "summary": "Sacks is skeptical of Klarna's claim to have fully deprecated Salesforce via AI-built replacements, questioning why the replacement code wasn't open-sourced and why the market hasn't already been flooded with startups doing the same, but concedes it may be viable for narrow use cases.",
+    "quote": "I have to say I'm a little bit skeptical of that story... if it's so easy to do, why hasn't the market already been flooded with new startups that are effectively able to reverse engineer... if you're only using a few use cases of these big complicated software packages, then yeah, it's probably easier than ever to deprecate them.",
+    "quoteStartMs": 1837021,
+    "topics": [
+      "AI disruption",
+      "enterprise software",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E196-openai-Sacks-3",
+    "episodeId": "E196",
+    "episodeNumber": 196,
+    "episodeDate": "2024-09-20T19:58:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Sacks is bullish on OpenAI's role in disrupting call centers, citing its new audio API and PhD-level reasoning models as reaching sufficient accuracy to replace Tier 1 customer support at scale within 2-3 years.",
+    "quote": "LLMs plus voice, because OpenAI just released their audio API... the level of accuracy now, especially with the new PhD-level reasoning models, is good enough. We don't need to wait for some perfect LLM model. And I think this is why this is going to be a big disruption.",
+    "quoteStartMs": 1071378,
+    "topics": [
+      "AI disruption",
+      "voice AI",
+      "call centers",
+      "product"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E196-orcl-Sacks-4",
+    "episodeId": "E196",
+    "episodeNumber": 196,
+    "episodeDate": "2024-09-20T19:58:00.000Z",
+    "company": "Oracle",
+    "ticker": "ORCL",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bear",
+    "conviction": "low",
+    "summary": "Sacks cites Oracle's $600M government contract for a visually primitive web portal as emblematic of the kind of egregious, overpriced legacy enterprise deals that AI will make impossible to justify going forward.",
+    "quote": "this is egregious government waste... that site looks like it's pathetic... this looks like it could have been done with a SharePoint site and you pay some consultant to stand it up and for 1% of the cost.",
+    "quoteStartMs": 1948000,
+    "topics": [
+      "government contracts",
+      "AI disruption",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E196-spacex-Sacks-5",
+    "episodeId": "E196",
+    "episodeNumber": 196,
+    "episodeDate": "2024-09-20T19:58:00.000Z",
+    "company": "SpaceX",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Sacks argues that the Biden-Harris administration's politically motivated revocation of Starlink's rural broadband contract—despite Starlink being the superior and most cost-effective solution—represents unfair retaliation against the best-in-class provider, implying Starlink's competitive position is stronger than government treatment suggests.",
+    "quote": "Brendan Carr pointed this out. He said that in 2023, the FCC canceled or revoked an $885 million contract with the company by claiming Starlink is not capable of providing high-speed internet. Then a year later— of course, that was a lie.",
+    "quoteStartMs": 2188000,
+    "topics": [
+      "regulatory retaliation",
+      "competitive moat",
+      "government contracts"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

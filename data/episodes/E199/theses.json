@@ -1,0 +1,115 @@
+[
+  {
+    "id": "E199-googl-Friedberg-0",
+    "episodeId": "E199",
+    "episodeNumber": 199,
+    "episodeDate": "2024-10-11T23:11:00.000Z",
+    "company": "Google (Alphabet)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Friedberg argues that breaking up Google would destroy real societal benefits from its R&D investments (DeepMind, Waymo), and that antitrust remedies should target specific monopolistic behaviors rather than size, but acknowledges the DOJ action is underway.",
+    "quote": "I don't think that these big companies are bad just because they're big. I think we should take apart the monopolistic antitrust actions and behaviors that they take, and then identify ways to remedy those behaviors versus just saying anyone or anything that's big should be taken apart.",
+    "quoteStartMs": 2533111,
+    "topics": [
+      "antitrust",
+      "breakup risk",
+      "R&D moat",
+      "regulation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E199-googl-Chamath-1",
+    "episodeId": "E199",
+    "episodeNumber": 199,
+    "episodeDate": "2024-10-11T23:11:00.000Z",
+    "company": "Google (Alphabet)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Chamath believes a forced structural breakup of Google is likely because the technology innovation cycle has elongated, preventing creative destruction, making Google an obvious political target, and he advises Google to aggressively build AI consumer apps now to shore up its user base before the DOJ acts.",
+    "quote": "I think the problem though is that the technology innovation cycle has gotten too elongated. So you're not seeing creative destruction be the natural force that keeps all of these companies in their own swim lanes. And so they are allowed to become too amorphous and too profitable.",
+    "quoteStartMs": 2618965,
+    "topics": [
+      "antitrust",
+      "breakup risk",
+      "AI competition",
+      "regulation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E199-googl-Sacks-2",
+    "episodeId": "E199",
+    "episodeNumber": 199,
+    "episodeDate": "2024-10-11T23:11:00.000Z",
+    "company": "Google (Alphabet)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Sacks thinks breaking Google into roughly three separate companies would actually be good for shareholders, but notes the irony that the DOJ is acting precisely when Google faces its most existential competitive threat from OpenAI.",
+    "quote": "I actually think that would be good. At the end of the day, it might even be good for shareholders. This thing should be probably 3 separate companies like we've talked about in a previous show. But it is true that Google is facing the most existential threat to its search monopoly...in the form of OpenAI.",
+    "quoteStartMs": 2710110,
+    "topics": [
+      "antitrust",
+      "breakup risk",
+      "AI competition",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E199-meta-Chamath-3",
+    "episodeId": "E199",
+    "episodeNumber": 199,
+    "episodeDate": "2024-10-11T23:11:00.000Z",
+    "company": "Meta Platforms",
+    "ticker": "META",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "low",
+    "summary": "Chamath warns that the DOJ, having targeted Google, will likely next pursue Meta with a breakup attempt, and advises both companies to aggressively build AI consumer products now to accumulate users before regulatory action.",
+    "quote": "I think that they, if given their druthers, they being the powers that be at Washington, will probably want to take a run at both of these companies. They'll start with the one that they think they can disassemble the quickest, and then they'll go to Meta afterwards.",
+    "quoteStartMs": 2790033,
+    "topics": [
+      "antitrust",
+      "breakup risk",
+      "regulation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E199-crm-Sacks-4",
+    "episodeId": "E199",
+    "episodeNumber": 199,
+    "episodeDate": "2024-10-11T23:11:00.000Z",
+    "company": "Salesforce",
+    "ticker": "CRM",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bear",
+    "conviction": "low",
+    "summary": "Sacks implies Salesforce is competitively vulnerable, noting Benioff is eager to come on the podcast to argue AI won't disrupt SaaS — a defensive posture that suggests the threat is real.",
+    "quote": "He's chomping at the bit to come back on the pod and explain why AI is not going to disrupt SaaS.",
+    "quoteStartMs": 2168000,
+    "topics": [
+      "AI disruption",
+      "SaaS",
+      "competitive threat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

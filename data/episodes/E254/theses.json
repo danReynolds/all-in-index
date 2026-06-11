@@ -1,0 +1,114 @@
+[
+  {
+    "id": "E254-nflx-Sacks-0",
+    "episodeId": "E254",
+    "episodeNumber": 254,
+    "episodeDate": "2025-12-13T02:31:00.000Z",
+    "company": "Netflix",
+    "ticker": "NFLX",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "medium",
+    "summary": "Sacks argues that a Netflix-Warner Bros. merger raises serious antitrust concerns because Netflix is already the dominant streamer by market cap and subscriber count, making the deal more likely to face regulatory scrutiny than a Paramount-Warner deal, though he acknowledges Netflix's $400B market cap makes it the more credible buyer.",
+    "quote": "Netflix really is the 800-pound gorilla in Hollywood right now. It's the number one streamer by far. It's got the biggest market cap, and they're the party who the rest of Hollywood is freaked out about right now.",
+    "quoteStartMs": 645742,
+    "topics": [
+      "M&A",
+      "antitrust",
+      "streaming",
+      "competitive position"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E254-wbd-Sacks-1",
+    "episodeId": "E254",
+    "episodeNumber": 254,
+    "episodeDate": "2025-12-13T02:31:00.000Z",
+    "company": "Warner Bros. Discovery",
+    "ticker": "WBD",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "medium",
+    "summary": "Sacks believes WBD shareholders are better served by Paramount's $108B all-in offer versus Netflix's lower bid for only select assets, since no shareholder wants to be left holding the 'shit co' cable assets, making the Paramount offer structurally superior for equity holders.",
+    "quote": "If you're a shareholder in Warner's, you probably want to sell the whole thing. You don't want to just be stuck with the bad assets. So I'm a little surprised actually that the Warner's board went with Netflix.",
+    "quoteStartMs": 753790,
+    "topics": [
+      "M&A",
+      "valuation",
+      "media consolidation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E254-wbd-Chamath-2",
+    "episodeId": "E254",
+    "episodeNumber": 254,
+    "episodeDate": "2025-12-13T02:31:00.000Z",
+    "company": "Warner Bros. Discovery",
+    "ticker": "WBD",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Chamath argues that WBD and similar legacy media assets are declining investments because the future belongs to user-generated content on YouTube and short-form video, meaning historic IP will erode in value faster as younger generations lose interest in franchises like Marvel and Star Wars.",
+    "quote": "The future is unscripted, uncontrolled, user-generated content... None of that landscape will change based on this deal. If anything, if those trends accelerate, the value of historic IP is going to erode even faster.",
+    "quoteStartMs": 579567,
+    "topics": [
+      "media consolidation",
+      "IP value",
+      "UGC disruption",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E254-nyt-Chamath-3",
+    "episodeId": "E254",
+    "episodeNumber": 254,
+    "episodeDate": "2025-12-13T02:31:00.000Z",
+    "company": "New York Times",
+    "ticker": "NYT",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "low",
+    "summary": "Chamath speculates the New York Times will face a catastrophic libel suit within five years that could force it into a nonprofit restructuring, though he frames this as a hoped-for outcome rather than a confident investment call.",
+    "quote": "I think they will in the next 5 years do something so egregious and over the line, akin to some sort of libel... I hope when that settlement happens, the person says, I do not want to get paid the $4 billion. I want this to be turned in kind into a nonprofit.",
+    "quoteStartMs": 1473304,
+    "topics": [
+      "legal risk",
+      "media",
+      "business model"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E254-nyt-Jason-4",
+    "episodeId": "E254",
+    "episodeNumber": 254,
+    "episodeDate": "2025-12-13T02:31:00.000Z",
+    "company": "New York Times",
+    "ticker": "NYT",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Jason pushes back on bearish views of legacy media, highlighting that the New York Times has successfully transitioned to subscriptions with 12 million paid subscribers, making it objectively the most financially successful news organization in America.",
+    "quote": "They are crushing it, by the way. When they move to subscriptions, they have 12 million paid subscribers now. They are objectively crushing it and figured it out better than any other news organization.",
+    "quoteStartMs": 1518000,
+    "topics": [
+      "subscriptions",
+      "business model",
+      "media"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

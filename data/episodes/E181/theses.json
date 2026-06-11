@@ -1,0 +1,138 @@
+[
+  {
+    "id": "E181-crm-Sacks-0",
+    "episodeId": "E181",
+    "episodeNumber": 181,
+    "episodeDate": "2024-05-31T21:55:00.000Z",
+    "company": "Salesforce",
+    "ticker": "CRM",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "low",
+    "summary": "Sacks sees Salesforce's 20% drop as likely a buying opportunity, arguing the revenue miss was trivially small in percentage terms, that Benioff is a capable founder-CEO who has consistently adapted to major tech trends, and that the company will find a way to leverage AI.",
+    "quote": "my sense is it's probably a buying opportunity. I mean, I think Salesforce is still a great company. Marc Benioff's a great CEO... my guess is he's going to figure out how to take advantage of this AI trend for the company.",
+    "quoteStartMs": 4316354,
+    "topics": [
+      "valuation",
+      "SaaS",
+      "AI",
+      "founder-led"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E181-crm-Chamath-1",
+    "episodeId": "E181",
+    "episodeNumber": 181,
+    "episodeDate": "2024-05-31T21:55:00.000Z",
+    "company": "Salesforce",
+    "ticker": "CRM",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Chamath argues Salesforce is structurally on the wrong side of a generative-AI disruption cycle, where 80% of its features can be replicated at a 90% discount, forcing large enterprise SaaS companies into painful business-model transitions and eventual market-share loss to cheaper, smaller competitors.",
+    "quote": "is Salesforce gonna get 80/90'd? Yeah, because you can deliver 80% of the features at a 90% discount pretty easily today... these large, lumpy, monolithic software companies that need big $50, $100 million customers, they're not gonna find them soon.",
+    "quoteStartMs": 4175329,
+    "topics": [
+      "SaaS disruption",
+      "AI",
+      "valuation",
+      "competitive threat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E181-crm-Friedberg-2",
+    "episodeId": "E181",
+    "episodeNumber": 181,
+    "episodeDate": "2024-05-31T21:55:00.000Z",
+    "company": "Salesforce",
+    "ticker": "CRM",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Friedberg highlights twin structural threats to Salesforce — macroeconomic enterprise-spending slowdown and AI-driven commoditization of SaaS pricing — but counters that Benioff as a founder-CEO is a durable advantage that should not be discounted.",
+    "quote": "it really begs the question on, you know, is there a macroeconomic force... Or number 2, is there a shifting underway in the SaaS business model... I wouldn't count out Benioff just because of some of the stuff that we talked about. Founders can and will maneuver their way to success.",
+    "quoteStartMs": 3999631,
+    "topics": [
+      "SaaS",
+      "AI commoditization",
+      "founder-led",
+      "macro"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E181-nvda-Friedberg-3",
+    "episodeId": "E181",
+    "episodeNumber": 181,
+    "episodeDate": "2024-05-31T21:55:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Friedberg warns that NVIDIA's market cap is at risk because the massive AI capex spend by its customers is not yet translating into incremental revenue, and when that gap becomes undeniable the market will reprice NVIDIA downward.",
+    "quote": "while this is incredible for NVIDIA, the chicken is coming home to roost because if you do not start seeing revenue flow to the bottom line of these companies that are spending $26 billion a quarter, The market cap of NVIDIA is not what the market cap of NVIDIA should be.",
+    "quoteStartMs": 5910705,
+    "topics": [
+      "AI capex",
+      "valuation",
+      "revenue gap"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E181-dell-Friedberg-4",
+    "episodeId": "E181",
+    "episodeNumber": 181,
+    "episodeDate": "2024-05-31T21:55:00.000Z",
+    "company": "Dell Technologies",
+    "ticker": "DELL",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Friedberg views Dell's after-hours drop as overdone, arguing that as a picks-and-shovels data-center provider it is structurally well-positioned to benefit from the AI infrastructure build-out despite near-term margin pressure from higher AI-related COGS.",
+    "quote": "Dell is a unique example in the sense that I actually think it's a beneficiary of spend. And I think that it will build data centers and it will actually do well in the move to AI because it's a very smartly positioned pick and shovels provider.",
+    "quoteStartMs": 5933929,
+    "topics": [
+      "AI infrastructure",
+      "data centers",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E181-btc-usd-Chamath-5",
+    "episodeId": "E181",
+    "episodeNumber": 181,
+    "episodeDate": "2024-05-31T21:55:00.000Z",
+    "company": "Bitcoin",
+    "ticker": "BTC-USD",
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Chamath presents a historical halving-cycle analysis showing 8–45x price appreciation in the 18 months after prior halvings, argues the addition of spot ETFs accelerates mainstream adoption, and sees Bitcoin eventually replacing gold and serving as a hard-asset currency for countries seeking a store of value amid dollar debasement.",
+    "quote": "18 months after the first halving, the Bitcoin price returned 45x. After the second halving, it returned almost 28x. And after this third halving, it returned almost an 8x... there are a lot of countries... that will become dual currency... they will look at Bitcoin and they will say both of these two things are needed.",
+    "quoteStartMs": 3356204,
+    "topics": [
+      "halving cycle",
+      "ETF adoption",
+      "dollar debasement",
+      "store of value"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

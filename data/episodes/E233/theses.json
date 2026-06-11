@@ -1,0 +1,137 @@
+[
+  {
+    "id": "E233-uber-Friedberg-0",
+    "episodeId": "E233",
+    "episodeNumber": 233,
+    "episodeDate": "2025-06-28T04:51:00.000Z",
+    "company": "Uber",
+    "ticker": "UBER",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "low",
+    "summary": "Friedberg briefly notes Uber hitting a new all-time high, implying strong momentum and suggesting he no longer needs to work.",
+    "quote": "Uber hit another record today. So Uber passed 88... I don't need to be here anymore. My God.",
+    "quoteStartMs": 221000,
+    "topics": [
+      "all-time high",
+      "stock momentum"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E233-anthropic-Sacks-1",
+    "episodeId": "E233",
+    "episodeNumber": 233,
+    "episodeDate": "2025-06-28T04:51:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Sacks views the Anthropic copyright ruling favorably for the AI industry—validating the fair use of pre-training—but notes Anthropic faces legitimate piracy liability for unlicensed books, which creates some legal overhang.",
+    "quote": "This judge said that that is not a violation of copyright. I completely agree with that... Anthropic is allegedly in some hot water. And then I think there is some case that's gonna move forward about that.",
+    "quoteStartMs": 5812633,
+    "topics": [
+      "AI copyright",
+      "fair use",
+      "legal risk",
+      "regulation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E233-openai-Jason-2",
+    "episodeId": "E233",
+    "episodeNumber": 233,
+    "episodeDate": "2025-06-28T04:51:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Jason",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Jason argues OpenAI is the primary target for content-licensing litigation given its $10B revenue, but sees a path to competitive advantage by partnering with major publishers and sharing revenue with content creators.",
+    "quote": "ChatGPT is making $10 billion a year according to reports. They should give 30% of their revenue... to the top 1,000 newspapers, publications, podcasts, books, et cetera.",
+    "quoteStartMs": 6142279,
+    "topics": [
+      "AI copyright",
+      "content licensing",
+      "competitive moat",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E233-s-p-500-us-equities-broad-market-Chamath-4",
+    "episodeId": "E233",
+    "episodeNumber": 233,
+    "episodeDate": "2025-06-28T04:51:00.000Z",
+    "company": "S&P 500 / US Equities (broad market)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Chamath argues the free-money trade is to be levered long: velocity of money is rising, trillions in money-market dry powder will rotate into equities once Powell cuts rates, and could push the S&P to 7,000 quickly.",
+    "quote": "I think the free money trade here is to be levered long... if Powell starts an aggressive cutting program, either because he has to or because he's trying to keep his job, man, you could see the S&P at 7,000 very quickly.",
+    "quoteStartMs": 4891000,
+    "topics": [
+      "macro",
+      "rate cuts",
+      "equity markets",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E233-s-p-500-us-equities-broad-market-Sacks-5",
+    "episodeId": "E233",
+    "episodeNumber": 233,
+    "episodeDate": "2025-06-28T04:51:00.000Z",
+    "company": "S&P 500 / US Equities (broad market)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Sacks argues that buying any market dip triggered by doom-and-gloom media coverage of Trump policies has been a consistently profitable trade and will continue to be.",
+    "quote": "Anytime that the media tries to sow doom or spread panic about the Trump administration's policies, that's a good time to buy... that has proven to be an excellent time to buy the dip.",
+    "quoteStartMs": 5158373,
+    "topics": [
+      "macro",
+      "equity markets",
+      "trading strategy"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E233-s-p-500-us-equities-broad-market-Friedberg-6",
+    "episodeId": "E233",
+    "episodeNumber": 233,
+    "episodeDate": "2025-06-28T04:51:00.000Z",
+    "company": "S&P 500 / US Equities (broad market)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "medium",
+    "summary": "Friedberg cautions that rising equity prices may reflect monetary inflation and multiple expansion rather than genuine earnings improvement, noting negative Q1 GDP, persistent inflation, and the S&P 493's struggles vs. Mag 7.",
+    "quote": "I'm not sure that equity market prices going up is necessarily the best indicator... the S&P 493 are really struggling relative to the Mag 7. And there's a really kind of questionable outlook ahead for the vast majority of equity cap out there.",
+    "quoteStartMs": 4791000,
+    "topics": [
+      "macro",
+      "valuation",
+      "earnings",
+      "inflation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

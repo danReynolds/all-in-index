@@ -1,0 +1,64 @@
+name: Update All-In Index
+
+# Runs on a schedule (and on demand). Each run checks the RSS feed for new
+# episodes, processes any that are new, rebuilds the index, and commits the
+# result — which triggers an automatic Vercel deploy. No local runs needed.
+
+on:
+  schedule:
+    # Every 6 hours. All-In drops roughly weekly, so this catches new episodes
+    # within hours while keeping market data fresh.
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Max new episodes to process this run"
+        default: "2"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-index
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Verify code
+        run: |
+          npm run lint
+          npm test
+
+      - name: Process new episodes + rebuild index
+        env:
+          ASSEMBLYAI_API_KEY: ${{ secrets.ASSEMBLYAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run pipeline sync -- --limit "${{ github.event.inputs.limit || '2' }}"
+
+      - name: Validate generated site
+        run: |
+          npm run quality
+          npm run build
+
+      - name: Commit updated data
+        run: |
+          git config user.name "all-in-index-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "chore: update index ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          fi

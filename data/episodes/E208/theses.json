@@ -1,0 +1,138 @@
+[
+  {
+    "id": "E208-openai-Chamath-0",
+    "episodeId": "E208",
+    "episodeNumber": 208,
+    "episodeDate": "2024-12-20T22:00:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Chamath argues OpenAI's market share is eroding rapidly as competitors like Google, Meta, and xAI gain momentum, and the AI market is commoditizing, raising questions about where OpenAI's durable value lies.",
+    "quote": "it's all getting commoditized quite quickly. And so I'm just scratching my head, where is the market value here?",
+    "quoteStartMs": 3822650,
+    "topics": [
+      "AI competition",
+      "market share",
+      "commoditization",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E208-openai-Jason-1",
+    "episodeId": "E208",
+    "episodeNumber": 208,
+    "episodeDate": "2024-12-20T22:00:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Jason",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Jason believes OpenAI has peaked and will fall to a number 3, 4, or 5 position within three years as Gemini, Meta, and xAI surpass it.",
+    "quote": "I think we've hit peak OpenAI in the market. I think they're gonna be the number 3 or 4 player. I think Gemini, Meta, and xAI are going to lead them if we're sitting here in 3 years.",
+    "quoteStartMs": 5655000,
+    "topics": [
+      "AI competition",
+      "market share",
+      "competitive position"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E208-googl-Chamath-2",
+    "episodeId": "E208",
+    "episodeNumber": 208,
+    "episodeDate": "2024-12-20T22:00:00.000Z",
+    "company": "Google",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Chamath argues Google's data advantage (especially YouTube video data), infrastructure, and renewed aggressive posture make it a long-term AI winner, with its compounding advantages only continuing to grow.",
+    "quote": "They were late and the compounding effects are playing out and it's only gonna continue to compound. And I will say the data repository at Google...the infrastructure, the team, all, everything down to components is advantaged.",
+    "quoteStartMs": 5315000,
+    "topics": [
+      "AI",
+      "competitive moat",
+      "data advantage",
+      "Google Gemini"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E208-googl-Guest-3",
+    "episodeId": "E208",
+    "episodeNumber": 208,
+    "episodeDate": "2024-12-20T22:00:00.000Z",
+    "company": "Google",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Aaron Levie believes Google has woken up and is firing on all cylinders in AI, citing rapid model releases, browser AI (Project Mariner), and unique YouTube/screen-sharing data advantages as indicators of strong competitive momentum.",
+    "quote": "You can tell that Google's woken up and they are just on full assault. So I mean, just in 10 days, the quantum, the AI, open source Gemini updates, it's like every morning you're waking up to a Sundar tweet that is some new breakthrough.",
+    "quoteStartMs": 5567510,
+    "topics": [
+      "AI",
+      "competitive position",
+      "product momentum",
+      "Google Gemini"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E208-box-Guest-4",
+    "episodeId": "E208",
+    "episodeNumber": 208,
+    "episodeDate": "2024-12-20T22:00:00.000Z",
+    "company": "Box",
+    "ticker": "BOX",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Aaron Levie highlights that Box has benefited from the collapse in underlying storage costs while maintaining 82% gross margins, with all value captured in the software layer — demonstrating a resilient, high-margin business model.",
+    "quote": "We give our customers unlimited storage. We have 82% gross margin. The price of the underlying storage has gone down by hundreds of times since we started the company. And all our value is in the software layer on top of the storage.",
+    "quoteStartMs": 3917000,
+    "topics": [
+      "margins",
+      "business model",
+      "cloud storage",
+      "AI"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E208-mstr-Jason-5",
+    "episodeId": "E208",
+    "episodeNumber": 208,
+    "episodeDate": "2024-12-20T22:00:00.000Z",
+    "company": "MicroStrategy",
+    "ticker": "MSTR",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "mixed",
+    "conviction": "low",
+    "summary": "Jason mentions loading up on MSTR while simultaneously shorting Bitcoin, suggesting a hedged or arbitrage-oriented trade rather than a directional conviction on the company as a long-term investment.",
+    "quote": "My last day trade is I'm loading up on MSTR and Bitcoin. I'm shorting Bitcoin and I'm buying MSTR. I don't know what that—",
+    "quoteStartMs": 5213000,
+    "topics": [
+      "Bitcoin treasury",
+      "trade",
+      "NASDAQ 100"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  }
+]

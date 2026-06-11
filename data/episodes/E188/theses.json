@@ -1,0 +1,135 @@
+[
+  {
+    "id": "E188-stripe-Chamath-0",
+    "episodeId": "E188",
+    "episodeNumber": 188,
+    "episodeDate": "2024-07-19T19:09:00.000Z",
+    "company": "Stripe",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "low",
+    "summary": "Chamath sees Sequoia's $70B valuation mark-up on Stripe as a positive sign for the company, though he raises governance concerns about the cross-fund secondary transaction structure.",
+    "quote": "it's interesting to see that they mark the valuation up to $70 billion. So that's, I think, a good sign for Stripe.",
+    "quoteStartMs": 3730900,
+    "topics": [
+      "valuation",
+      "liquidity",
+      "private markets"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E188-wiz-Chamath-1",
+    "episodeId": "E188",
+    "episodeNumber": 188,
+    "episodeDate": "2024-07-19T19:09:00.000Z",
+    "company": "Wiz",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Chamath is bullish on Wiz's market position, arguing that cloud security is a critical and massive market because cloud vendors cannot grow without securing customer workloads, justifying Google's premium acquisition price.",
+    "quote": "in the absence of cloud security, these cloud vendors are going to be constrained in how fast they can grow. So what an incredible market. What an incredible, incredible market.",
+    "quoteStartMs": 4134600,
+    "topics": [
+      "cloud security",
+      "M&A",
+      "growth"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E188-googl-Chamath-2",
+    "episodeId": "E188",
+    "episodeNumber": 188,
+    "episodeDate": "2024-07-19T19:09:00.000Z",
+    "company": "Google",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath views Google's acquisition of Wiz as strategically necessary and justified, since securing cloud infrastructure is existential for its cloud business growth.",
+    "quote": "You saw it on this AT&T hack of Snowflake. Cloud security is a really big deal. The more cloud services you have, the more difficult it is to lock these things down.",
+    "quoteStartMs": 4088000,
+    "topics": [
+      "cloud security",
+      "M&A",
+      "strategy"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E188-sequoia-capital-Chamath-3",
+    "episodeId": "E188",
+    "episodeNumber": 188,
+    "episodeDate": "2024-07-19T19:09:00.000Z",
+    "company": "Sequoia Capital",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Chamath is skeptical of Sequoia's cross-fund Stripe secondary, calling inter-fund liquidity transactions 'verboten' from a governance standpoint and potentially self-serving for GPs, though acknowledging the valuation mark-up is a positive signal.",
+    "quote": "I don't like these kinds of like things where one fund is basically scratching the back of another fund. It's— it always tends to be the case that this stuff on the surface looks a little smelly and can be a little unseemly.",
+    "quoteStartMs": 3814644,
+    "topics": [
+      "venture capital",
+      "governance",
+      "liquidity",
+      "private markets"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E188-sequoia-capital-Sacks-4",
+    "episodeId": "E188",
+    "episodeNumber": 188,
+    "episodeDate": "2024-07-19T19:09:00.000Z",
+    "company": "Sequoia Capital",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Sacks views Sequoia's secondary solution for legacy fund LPs as an elegant and practical way to provide liquidity on long-held private positions like Stripe without forcing investors to exit.",
+    "quote": "if you have a security that's not public yet, but is semi-liquid because it's a very late-stage private company, then what you can do is spin those shares into an SPV... nobody is forced to give up their ownership position, but if they want to get liquidity... It's a really elegant solution.",
+    "quoteStartMs": 3925224,
+    "topics": [
+      "venture capital",
+      "liquidity",
+      "private markets"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E188-googl-Sacks-5",
+    "episodeId": "E188",
+    "episodeNumber": 188,
+    "episodeDate": "2024-07-19T19:09:00.000Z",
+    "company": "Google",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "mixed",
+    "conviction": "low",
+    "summary": "Sacks sees Google and other big tech companies as monopolies that need close regulatory oversight, suggesting their market power is used inappropriately, while acknowledging deals like Wiz could be beneficial R&D acquisitions that regulators should allow.",
+    "quote": "the top handful of tech companies, the Microsofts, the Googles, Amazon, these are big tech monopolies. There's just no way around that fact. And they do need to be closely watched and supervised and regulated with respect to their market power.",
+    "quoteStartMs": 4213631,
+    "topics": [
+      "regulation",
+      "antitrust",
+      "market power"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

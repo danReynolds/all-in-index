@@ -1,0 +1,140 @@
+[
+  {
+    "id": "E249-tsla-Guest-0",
+    "episodeId": "E249",
+    "episodeNumber": 249,
+    "episodeDate": "2025-10-31T20:11:00.000Z",
+    "company": "Tesla",
+    "ticker": "TSLA",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Elon Musk argues Tesla's fleet of 100M vehicles could collectively offer 100 gigawatts of inference compute in downtime, and that all current Tesla cars are already capable of unsupervised full autonomy, with CyberCab production starting Q2 next year scaling to millions of units annually — positioning Tesla as far more than a car company.",
+    "quote": "If ultimately there's a Tesla fleet that is 100 million vehicles, which I think we probably will get to at some point... they have, you know, mostly state-of-the-art, uh, inference computers in them... you'd have 100 gigawatts of inference compute.",
+    "quoteStartMs": 3404000,
+    "topics": [
+      "robotaxi",
+      "AI compute",
+      "autonomous driving",
+      "fleet scale"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E249-tsla-Guest-1",
+    "episodeId": "E249",
+    "episodeNumber": 249,
+    "episodeDate": "2025-10-31T20:11:00.000Z",
+    "company": "Tesla",
+    "ticker": "TSLA",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "mixed",
+    "conviction": "high",
+    "summary": "Musk warns he will not build Tesla's robot army if he can be easily removed by activist investors via ISS/Glass Lewis, implying his continued leadership is a prerequisite for Tesla's long-term value creation in robotics and autonomy.",
+    "quote": "Let's just say I'm not going to build a robot army if I can be easily kicked out by activist investors.",
+    "quoteStartMs": 2820000,
+    "topics": [
+      "corporate governance",
+      "CEO risk",
+      "Optimus",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E249-tsla-Jason-2",
+    "episodeId": "E249",
+    "episodeNumber": 249,
+    "episodeDate": "2025-10-31T20:11:00.000Z",
+    "company": "Tesla",
+    "ticker": "TSLA",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Jason argues Tesla is an extraordinarily complex, multi-division business — spanning batteries, trucks, self-driving, and more — built over decades, making Musk essentially irreplaceable and the company's prospects deeply tied to his continued leadership.",
+    "quote": "Who is capable of running the 4 or 5 major product lines at Tesla? I mean, this is the madness of it. It's a very complex business... It's not a very simple thing to run. I don't think there's an Elon equivalent out there.",
+    "quoteStartMs": 2829000,
+    "topics": [
+      "management",
+      "competitive moat",
+      "valuation",
+      "CEO risk"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E249-openai-Guest-3",
+    "episodeId": "E249",
+    "episodeNumber": 249,
+    "episodeDate": "2025-10-31T20:11:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Musk argues OpenAI has completely betrayed its founding mission as an open-source nonprofit, is now pursuing maximum profit with source code locked tighter than Fort Knox, and that this trajectory will be tested in a jury trial over its charter violations.",
+    "quote": "It needs to change its name to Close to a Maximum Profit AI... OpenAI source code is locked up tighter than Fort Knox. And they are going for maximum profit, like maximum.",
+    "quoteStartMs": 3283087,
+    "topics": [
+      "governance",
+      "mission drift",
+      "litigation",
+      "competitive positioning"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E249-x-twitter-Guest-4",
+    "episodeId": "E249",
+    "episodeNumber": 249,
+    "episodeDate": "2025-10-31T20:11:00.000Z",
+    "company": "X (Twitter)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Musk describes a major product roadmap for X — including Grok reading 100M posts/day to personalize feeds, semantic search, and Grokipedia — positioning X as the best source of truth on the planet and a platform with compounding AI-driven value from the xAI integration.",
+    "quote": "Grok is going to... read through 100 million things and show you the things that it thinks out of 100 million posts per day, what are the most interesting posts to you... we want X to be the best source of truth on the planet by far.",
+    "quoteStartMs": 557000,
+    "topics": [
+      "AI integration",
+      "product roadmap",
+      "competitive moat",
+      "platform value"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E249-xai-Guest-5",
+    "episodeId": "E249",
+    "episodeNumber": 249,
+    "episodeDate": "2025-10-31T20:11:00.000Z",
+    "company": "xAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Musk highlights Grok 2.5's open-source model as among the best in the world and positions xAI's truth-seeking Grok as the engine behind both X's personalization and Grokipedia, with a commitment to continued open-sourcing of models unlike OpenAI.",
+    "quote": "The Grok 2.5 open source model is actually very good... we'll continue to open source our models... do you know anyone who's running OpenAI's open source models? Exactly.",
+    "quoteStartMs": 3044000,
+    "topics": [
+      "open source",
+      "competitive positioning",
+      "AI models",
+      "product"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

@@ -1,0 +1,183 @@
+[
+  {
+    "id": "E246-nvda-Guest-0",
+    "episodeId": "E246",
+    "episodeNumber": 246,
+    "episodeDate": "2025-10-10T19:21:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Brad Gerstner argues NVIDIA has captured nearly 100% of incremental AI data center revenue and its performance-per-watt advantage is so dominant that competitors priced at zero still can't match it economically, making it the structural winner of the AI buildout.",
+    "quote": "price the competitor chips at zero and it still more effective and economic decision to choose Nvidia. And I think that's what it comes down to. They have to be at perf per watt because power is the constrained resource",
+    "quoteStartMs": 3881427,
+    "topics": [
+      "AI capex",
+      "competitive moat",
+      "data center",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E246-nvda-Guest-1",
+    "episodeId": "E246",
+    "episodeNumber": 246,
+    "episodeDate": "2025-10-10T19:21:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Brad Gerstner notes NVIDIA trades at a lower P/E multiple than when it was at $200/share despite 10x revenue growth, and there are no 'dark GPUs' — all compute is being consumed — dismissing bubble comparisons to dark fiber.",
+    "quote": "Nvidia trades at a lower price-to-earnings multiple than it did when it was $200 a share... There is not a dark GPU in the world today. There's not going to be a dark GPU in the world next week.",
+    "quoteStartMs": 3439587,
+    "topics": [
+      "valuation",
+      "AI capex",
+      "demand",
+      "bubble risk"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E246-amd-Guest-2",
+    "episodeId": "E246",
+    "episodeNumber": 246,
+    "episodeDate": "2025-10-10T19:21:00.000Z",
+    "company": "AMD",
+    "ticker": "AMD",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Brad Gerstner frames the OpenAI-AMD deal as a high-risk, high-reward 'bet the farm' moment for Lisa Su — if the MI450 chip proves competitive against NVIDIA's Vera Rubin it could unlock $150B+ in incremental revenue, but the outcome is far from certain.",
+    "quote": "If it works, she's going to get $150 billion of incremental revenue just from OpenAI... But it's far from a done deal, far from a conclusion whether the 450 is going to work. Can it compete against Vera Rubin?",
+    "quoteStartMs": 2855838,
+    "topics": [
+      "AI chips",
+      "competitive position",
+      "growth trajectory",
+      "deal"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E246-hood-Sacks-3",
+    "episodeId": "E246",
+    "episodeNumber": 246,
+    "episodeDate": "2025-10-10T19:21:00.000Z",
+    "company": "Robinhood",
+    "ticker": "HOOD",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Sacks attributes Robinhood's massive stock appreciation — from roughly $2 to a ~$130B market cap — directly to the crypto-friendly policies of the Trump administration, implying the policy tailwind has been the key value driver.",
+    "quote": "what's the reason why your Robinhood stock is through the roof? Because of the crypto policies of the Trump administration. That's why it's gone from, what is it, like $3 to $130 billion?",
+    "quoteStartMs": 46000,
+    "topics": [
+      "crypto regulation",
+      "policy tailwind",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E246-polymarket-Chamath-4",
+    "episodeId": "E246",
+    "episodeNumber": 246,
+    "episodeDate": "2025-10-10T19:21:00.000Z",
+    "company": "Polymarket",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Chamath argues Polymarket represents a broader trend of financializing everything into liquid token-based markets, which could disrupt traditional prediction/betting incumbents like FanDuel and DraftKings as well as legacy financial infrastructure.",
+    "quote": "Everything is becoming a market... What is it going to mean to the betting sites like FanDuel and DraftKings where now a bunch of these trades can happen here as well? So I think what Shane is leading the charge on is democratizing this and financializing all this infrastructure",
+    "quoteStartMs": 4912864,
+    "topics": [
+      "prediction markets",
+      "tokenization",
+      "disruption",
+      "crypto"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E246-openai-Sacks-5",
+    "episodeId": "E246",
+    "episodeNumber": 246,
+    "episodeDate": "2025-10-10T19:21:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Sacks argues OpenAI's rapid revenue ramp (from ~$5B to $25B to a projected $100B run rate) demonstrates real economic substance behind its GPU purchases and financing arrangements, validating the investment thesis.",
+    "quote": "OpenAI's revenue ramp rate is, it's something like $5 billion to $25 billion to $100 billion... There's no dark GPUs in the world today. The tokens are being consumed.",
+    "quoteStartMs": 4218465,
+    "topics": [
+      "revenue growth",
+      "AI demand",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E246-openai-Guest-6",
+    "episodeId": "E246",
+    "episodeNumber": 246,
+    "episodeDate": "2025-10-10T19:21:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Brad Gerstner sees OpenAI's revenue trajectory (exiting 2025 at $20B+ run rate, potentially $50B next year and $100B after) as proof of genuine demand, and views its strategic moves — securing HBM supply and chip alternatives — as positioning it as a key node controlling AI supply chain allocation.",
+    "quote": "they'll exit this year at over $20 billion run rate. I think there are a lot of people who think they could hit $50 billion next year and $100 billion after that.",
+    "quoteStartMs": 4235843,
+    "topics": [
+      "revenue growth",
+      "AI supply chain",
+      "competitive position"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E246-000660.ks-Chamath-7",
+    "episodeId": "E246",
+    "episodeNumber": 246,
+    "episodeDate": "2025-10-10T19:21:00.000Z",
+    "company": "SK Hynix",
+    "ticker": "000660.KS",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath argues that HBM memory is the critical constrained input for next-gen AI chips, making SK Hynix (and Samsung) powerful leverage points in the AI supply chain — analogous to controlling the money supply — with growing pricing power as AMD and others compete for allocation.",
+    "quote": "the people that then control that supply, SK Hynix and Samsung, will have leverage... Sam has allocation and now Sam can allocate allocation, and then as a result get a tax.",
+    "quoteStartMs": 3133882,
+    "topics": [
+      "AI supply chain",
+      "HBM memory",
+      "competitive moat",
+      "pricing power"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

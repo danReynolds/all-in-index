@@ -1,0 +1,162 @@
+[
+  {
+    "id": "E225-googl-Chamath-0",
+    "episodeId": "E225",
+    "episodeNumber": 225,
+    "episodeDate": "2025-04-26T06:00:00.000Z",
+    "company": "Alphabet (Google)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Chamath argues Alphabet is undervalued at 18x FCF with a ~4% yield from buybacks/dividends, strong resilience across YouTube, Cloud, and subscriptions even under a worst-case search-loss scenario, and meaningful upside if Gemini reinvents search.",
+    "quote": "Trading at 18 times free cash flow, which is where this thing's at right now, plus the 4% yield on dividends and buybacks. Plus the kind of seemingly pretty significant gap between the downside and the upside here. It's just such a powerful business.",
+    "quoteStartMs": 3131045,
+    "topics": [
+      "valuation",
+      "AI competition",
+      "search resilience",
+      "buybacks"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E225-googl-Sacks-1",
+    "episodeId": "E225",
+    "episodeNumber": 225,
+    "episodeDate": "2025-04-26T06:00:00.000Z",
+    "company": "Alphabet (Google)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Sacks acknowledges Alphabet's strong financials and CapEx commitment but argues Gemini's low usage relative to ChatGPT represents a real innovator's dilemma — the longer Google waits to make Gemini front-and-center, the worse the competitive position becomes.",
+    "quote": "The longer they wait to make Gemini front and center, the worse this usage problem gets. Users are learning a new habit... they're learning to go to ChatGPT to get their questions answered.",
+    "quoteStartMs": 3522839,
+    "topics": [
+      "AI competition",
+      "innovator's dilemma",
+      "product strategy",
+      "CapEx"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E225-googl-Friedberg-2",
+    "episodeId": "E225",
+    "episodeNumber": 225,
+    "episodeDate": "2025-04-26T06:00:00.000Z",
+    "company": "Alphabet (Google)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Friedberg is impressed by Google's fundamentals and views Gemini as a meaningfully better model, but warns that failing to aggressively surface Gemini to its 270M paid subscribers is a strategic mistake that risks ceding the AI habit to OpenAI, and flags potential cloud KYC compliance risk to GCP revenue.",
+    "quote": "If you have 270 million paid subs, come on guys, stuff Gemini right in front of these guys... you're going to look back in 4 years and regret hemming and hawing today.",
+    "quoteStartMs": 3209708,
+    "topics": [
+      "AI competition",
+      "product strategy",
+      "cloud revenue risk",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E225-waymo-Chamath-3",
+    "episodeId": "E225",
+    "episodeNumber": 225,
+    "episodeDate": "2025-04-26T06:00:00.000Z",
+    "company": "Waymo",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath sees Waymo as significant hidden value within Alphabet, noting rapid growth to 250,000 rides/week across only a few cities, and believes the market is assigning it zero value.",
+    "quote": "Waymo, 250,000 rides a week now growing like crazy. And they're only like 4 cities... I think the market's giving them zero for that right now. Zero.",
+    "quoteStartMs": 3164000,
+    "topics": [
+      "autonomous vehicles",
+      "hidden value",
+      "growth"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E225-tsla-Friedberg-4",
+    "episodeId": "E225",
+    "episodeNumber": 225,
+    "episodeDate": "2025-04-26T06:00:00.000Z",
+    "company": "Tesla",
+    "ticker": "TSLA",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Friedberg is bullish on Tesla's FSD technology trajectory, arguing recent improvements have made it nearly flawless and that full robotaxi capability is credible in the near term.",
+    "quote": "The quality of FSD is just so good... There was like a rev of it probably in like the last month or two that I think took it from like a 98 to like 99.5 or something. It's just like, there's just very few disengagements.",
+    "quoteStartMs": 4551490,
+    "topics": [
+      "FSD",
+      "autonomous vehicles",
+      "product quality",
+      "robotaxi"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E225-aapl-Chamath-5",
+    "episodeId": "E225",
+    "episodeNumber": 225,
+    "episodeDate": "2025-04-26T06:00:00.000Z",
+    "company": "Apple",
+    "ticker": "AAPL",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "low",
+    "summary": "Chamath suggests Apple's India manufacturing shift is more credible than skeptics think because Foxconn has already been ramping capacity there, implying the 18-month timeline is achievable and the supply chain transition is strategically well-planned rather than reactive.",
+    "quote": "I don't think the Apple deal is from a standstill. My understanding is Foxconn and others have been working with Apple to actually stand up manufacturing capacity in India for some time now.",
+    "quoteStartMs": 1854000,
+    "topics": [
+      "supply chain",
+      "manufacturing diversification",
+      "tariffs",
+      "India"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E225-nvda-Friedberg-6",
+    "episodeId": "E225",
+    "episodeNumber": 225,
+    "episodeDate": "2025-04-26T06:00:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "low",
+    "summary": "Friedberg relays NVIDIA's explanation that its reported ~47% revenue from China/Singapore/Taiwan reflects invoicing addresses rather than actual chip destinations, suggesting the China revenue exposure is overstated — a clarification relevant to regulatory and export-control risk assessment.",
+    "quote": "It turns out that that's actually not where the silicon gets shipped... all of these products are almost always shipped elsewhere, including US, Mexico, Taiwan, et cetera.",
+    "quoteStartMs": 3320158,
+    "topics": [
+      "China exposure",
+      "export controls",
+      "revenue reporting",
+      "regulatory risk"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

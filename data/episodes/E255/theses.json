@@ -1,0 +1,116 @@
+[
+  {
+    "id": "E255-nvda-Friedberg-0",
+    "episodeId": "E255",
+    "episodeNumber": 255,
+    "episodeDate": "2025-12-19T23:20:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Friedberg argues NVIDIA is the sole clear winner of the current AI investment wave, having created $3 trillion in market cap, while all other AI value creation remains unproven.",
+    "quote": "with the exception of NVIDIA, which has really got this $3 trillion market cap creation that's happened in the last couple years. Peter Thiel said this best. He's like, look at all the money that's going into AI. There's really only one company that's making any money, and that's NVIDIA.",
+    "quoteStartMs": 457421,
+    "topics": [
+      "AI capex",
+      "valuation",
+      "market dominance"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E255-asml-Sacks-1",
+    "episodeId": "E255",
+    "episodeNumber": 255,
+    "episodeDate": "2025-12-19T23:20:00.000Z",
+    "company": "ASML",
+    "ticker": "ASML",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Sacks views ASML's EUV monopoly as the West's single biggest structural advantage in the AI chip race, but sees China's reverse-engineering efforts as a credible threat that could erode this moat over time.",
+    "quote": "EUV lithography, these machines that are made by ASML, is probably our single biggest advantage in the AI race... if they figured out how to reverse EUV, that would be, I'd say, a blow because it is a real advantage for us.",
+    "quoteStartMs": 3992670,
+    "topics": [
+      "semiconductors",
+      "competitive moat",
+      "China",
+      "export controls"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E255-asml-Friedberg-2",
+    "episodeId": "E255",
+    "episodeNumber": 255,
+    "episodeDate": "2025-12-19T23:20:00.000Z",
+    "company": "ASML",
+    "ticker": "ASML",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Friedberg believes China's state-funded AI-driven lithography research at Tsinghua and elsewhere is not merely catching up to ASML but potentially leapfrogging it, threatening ASML's monopoly position.",
+    "quote": "China is not just in a catch-up race. They're in a primacy race. And they are trying to develop primacy in lithography technology, which will give them primacy in manufacturing, which will give them primacy in AI.",
+    "quoteStartMs": 4325886,
+    "topics": [
+      "semiconductors",
+      "competitive moat",
+      "China",
+      "technology risk"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E255-huawei-Friedberg-3",
+    "episodeId": "E255",
+    "episodeNumber": 255,
+    "episodeDate": "2025-12-19T23:20:00.000Z",
+    "company": "Huawei",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Friedberg predicts Huawei will be the top challenger to NVIDIA in 2026, asserting it already has undisclosed lithography technology that will be deployed in new fabs across mainland China.",
+    "quote": "My early prediction for 2026 is Huawei, where I think that there is lithography technology that exists in China that is not publicly discussed, that is going to be deployed in Huawei and all these fabs that they're building in mainland China.",
+    "quoteStartMs": 3748000,
+    "topics": [
+      "semiconductors",
+      "AI chips",
+      "China",
+      "NVIDIA competition"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E255-huawei-Sacks-4",
+    "episodeId": "E255",
+    "episodeNumber": 255,
+    "episodeDate": "2025-12-19T23:20:00.000Z",
+    "company": "Huawei",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Sacks acknowledges Huawei's Ascend chips and Cloud Matrix 384 networking are serviceable workarounds to US export controls — not as good as NVIDIA but competitive enough to matter — while noting they consume significantly more power.",
+    "quote": "the Huawei chips, the Ascend chips are, they're not as good as our chips, but they're serviceable. And they've been able to use their prowess and networking to string more of them together... that will perform comparable to an NVIDIA rack, but using a lot more power.",
+    "quoteStartMs": 4085177,
+    "topics": [
+      "AI chips",
+      "China",
+      "NVIDIA competition",
+      "semiconductors"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

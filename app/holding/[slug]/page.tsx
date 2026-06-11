@@ -1,0 +1,382 @@
+import Link from "next/link";
+import type { CSSProperties } from "react";
+import { notFound } from "next/navigation";
+import { getHolding, allSlugs } from "@/lib/data";
+import { pct, returnColor, fmtDate, fmtMoney, callVerdict } from "@/lib/format";
+import { currentCall, followStats, scoredTakes, displayStance } from "@/lib/calls";
+import { StanceBadge, ConvictionDots, SampleBanner } from "@/app/components/badges";
+import { Explainer } from "@/app/components/Explainer";
+import { Sparkline } from "@/app/components/Sparkline";
+import { HostAvatar, HostStack } from "@/app/components/host";
+import { CompanyLogo } from "@/app/components/CompanyLogo";
+import { Timeline } from "@/app/components/Timeline";
+import { PriceChart } from "@/app/components/PriceChart";
+import { Reveal } from "@/app/components/Reveal";
+import { BackLink } from "@/app/components/BackLink";
+import type { Host, Thesis } from "@/lib/types";
+
+const d = (ms: number) => ({ "--d": `${ms}ms` }) as CSSProperties;
+
+export function generateStaticParams() {
+  return allSlugs().map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const { holding: h } = getHolding(slug);
+  if (!h) return { title: "Not found" };
+  const since = h.market?.returns.since;
+  const ds = displayStance(h.theses);
+  const facts: string[] = [];
+  if (ds !== "none") facts.push(`currently ${ds}`);
+  if (since != null)
+    facts.push(`stock ${(since >= 0 ? "+" : "") + (since * 100).toFixed(1)}% since their first call`);
+  const factLine = facts.length
+    ? ` ${facts.join("; ").replace(/^./, (c) => c.toUpperCase())}.`
+    : "";
+  return {
+    title: `${h.company}${h.ticker ? ` (${h.ticker})` : ""} — what the besties said`,
+    description: `${h.description ?? `${h.mentionCount} takes from the All-In hosts.`}${factLine} Every quote sourced and timestamped.`,
+  };
+}
+
+const HOST_ORDER: Host[] = ["Chamath", "Jason", "Sacks", "Friedberg", "Guest", "Unknown"];
+
+function groupByHost(theses: Thesis[]): Array<{ host: Host; takes: Thesis[]; flips: number }> {
+  const map = new Map<Host, Thesis[]>();
+  for (const t of theses) {
+    (map.get(t.host) ?? map.set(t.host, []).get(t.host)!).push(t);
+  }
+  return HOST_ORDER.filter((h) => map.has(h)).map((host) => {
+    const takes = map.get(host)!.slice().sort((a, b) => a.episodeDate.localeCompare(b.episodeDate));
+    let flips = 0;
+    for (let i = 1; i < takes.length; i++) {
+      const prev = takes[i - 1].stance;
+      const cur = takes[i].stance;
+      if ((prev === "bull" && cur === "bear") || (prev === "bear" && cur === "bull")) flips++;
+    }
+    return { host, takes, flips };
+  });
+}
+
+export default async function HoldingPage({ params }: PageProps<"/holding/[slug]">) {
+  const { slug } = await params;
+  const { holding: h, isSample, episodeLinks, episodes } = getHolding(slug);
+  if (!h) notFound();
+
+  const hostGroups = groupByHost(h.theses);
+  const totalFlips = hostGroups.reduce((n, g) => n + g.flips, 0);
+  const marketAsOfMs = h.market ? Date.parse(`${h.market.asOf}T00:00:00Z`) : null;
+  const yahooSymbol = h.market?.sourceSymbol ?? h.ticker;
+
+  return (
+    <div className="space-y-8">
+      <BackLink href="/">All holdings</BackLink>
+
+      <header className="rise space-y-3">
+        <div className="flex flex-wrap items-center gap-3">
+          <CompanyLogo name={h.company} domain={h.domain} size="lg" />
+          <h1 className="font-display text-3xl font-bold tracking-tight">{h.company}</h1>
+          {h.ticker ? (
+            <span className="rounded bg-neutral-100 px-2 py-1 font-mono text-sm text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300">
+              {h.ticker}
+            </span>
+          ) : (
+            <span className="rounded border border-neutral-200 px-2 py-1 text-sm text-neutral-400 dark:border-neutral-700">
+              private
+            </span>
+          )}
+          {(() => {
+            const ds = displayStance(h.theses);
+            return ds !== "none" ? <StanceBadge stance={ds} /> : null;
+          })()}
+        </div>
+        {h.description && (
+          <p className="max-w-2xl text-sm text-neutral-400">
+            {h.description}
+            <span className="ml-2 inline-flex gap-3 whitespace-nowrap">
+              {yahooSymbol && (
+                <a
+                  href={`https://finance.yahoo.com/quote/${yahooSymbol}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-emerald-600 hover:underline dark:text-emerald-400"
+                >
+                  Yahoo Finance ↗
+                </a>
+              )}
+              {h.domain && (
+                <a
+                  href={`https://${h.domain}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-emerald-600 hover:underline dark:text-emerald-400"
+                >
+                  {h.domain} ↗
+                </a>
+              )}
+            </span>
+          </p>
+        )}
+        <p className="text-sm text-neutral-500">
+          {h.mentionCount} {h.mentionCount === 1 ? "take" : "takes"} · first discussed{" "}
+          {fmtDate(h.firstMentioned)}
+          {h.lastMentioned !== h.firstMentioned && <> · last {fmtDate(h.lastMentioned)}</>}
+          {totalFlips > 0 && (
+            <>
+              {" "}
+              ·{" "}
+              <span className="font-medium text-amber-600 dark:text-amber-400">
+                {totalFlips} stance {totalFlips === 1 ? "reversal" : "reversals"}
+              </span>
+            </>
+          )}
+        </p>
+      </header>
+
+      {isSample && <SampleBanner />}
+
+      {/* Full-width stat band: performance for public, conviction for private */}
+      {h.market ? (
+        <section className="rise flex flex-wrap items-center gap-x-10 gap-y-4 rounded-2xl border border-neutral-200 bg-white px-6 py-5 dark:border-neutral-800 dark:bg-neutral-900" style={d(120)}>
+          <div>
+            <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
+              Stock since first call
+            </div>
+            <div className={`font-display text-5xl font-bold tabular-nums ${returnColor(h.market.returns.since)}`}>
+              {pct(h.market.returns.since)}
+            </div>
+            <div className="mt-0.5 text-xs text-neutral-400">
+              {fmtMoney(h.market.basePrice, h.market)} → {fmtMoney(h.market.latestPrice, h.market)}
+            </div>
+          </div>
+          <div className="hidden h-12 w-px bg-neutral-200 sm:block dark:bg-neutral-800" />
+          {(() => {
+            const cc = currentCall(h);
+            if (!cc) return null;
+            const v = callVerdict(cc.stance, cc.ret);
+            return (
+              <div>
+                <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
+                  Current call
+                </div>
+                <div className="mt-1.5 flex items-center gap-2">
+                  <StanceBadge stance={cc.stance} />
+                  {cc.ret != null && (
+                    <span className={`font-mono text-sm tabular-nums ${returnColor(cc.ret)}`}>
+                      {pct(cc.ret)}
+                    </span>
+                  )}
+                </div>
+                <div className="mt-1 text-xs text-neutral-400">
+                  since {fmtDate(cc.sinceDate)}
+                  {v && v.right != null && (
+                    <span className={`ml-1.5 font-semibold ${v.right ? "text-emerald-400" : "text-rose-400"}`}>
+                      {v.right ? "✓ right so far" : "✗ wrong so far"}
+                    </span>
+                  )}
+                  {(() => {
+                    const scored = scoredTakes(h.theses);
+                    if (!scored.length) return null;
+                    if (marketAsOfMs == null) return null;
+                    const age = Math.round((marketAsOfMs - Date.parse(scored[scored.length - 1].episodeDate)) / 86400000);
+                    return age > 90 ? (
+                      <span
+                        className="ml-1.5 text-amber-600 dark:text-amber-400"
+                        title="No scored take on this name since — the stance behind this call may be stale."
+                      >
+                        · stance {age}d old
+                      </span>
+                    ) : null;
+                  })()}
+                </div>
+              </div>
+            );
+          })()}
+          {(() => {
+            const fs = followStats(h);
+            if (!fs || !fs.evolved) return null;
+            return (
+              <div title="Long during their bullish stretches, short during bearish, flat when the table was split.">
+                <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
+                  Following their calls
+                </div>
+                <div className={`font-mono text-lg font-medium tabular-nums ${returnColor(fs.followReturn)}`}>
+                  {pct(fs.followReturn)}
+                </div>
+                <div className="mt-0.5 text-xs text-neutral-400">
+                  vs {pct(fs.buyHold)} buy &amp; hold · {fs.flips} {fs.flips === 1 ? "reversal" : "reversals"}
+                </div>
+              </div>
+            );
+          })()}
+          <div className="ml-auto flex flex-col items-end gap-1">
+            <Sparkline points={h.market.history.map(([, c]) => c)} width={170} height={48} />
+            <span className="text-[11px] text-neutral-400">
+              anchored {fmtDate(h.market.anchorDate)} · as of {fmtDate(h.market.asOf)}
+            </span>
+          </div>
+        </section>
+      ) : (
+        <section className="rise flex flex-wrap items-center gap-x-10 gap-y-4 rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-6 py-5 dark:border-neutral-700 dark:bg-neutral-900/50" style={d(120)}>
+          <div>
+            <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">Net conviction</div>
+            <div className="mt-1">
+              {(() => {
+                const ds = displayStance(h.theses);
+                return ds !== "none" ? (
+                  <StanceBadge stance={ds} />
+                ) : (
+                  <span className="text-sm text-neutral-500" title="No take on this name clears the scoring bar (medium+ conviction, verified speaker).">
+                    —
+                  </span>
+                );
+              })()}
+            </div>
+          </div>
+          <div className="hidden h-12 w-px bg-neutral-200 sm:block dark:bg-neutral-800" />
+          <div>
+            <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">Who&apos;s weighed in</div>
+            <div className="mt-1.5"><HostStack hosts={h.theses.map((t) => t.host)} size="sm" /></div>
+          </div>
+          <div>
+            <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">Takes</div>
+            <div className="text-lg font-semibold tabular-nums">{h.mentionCount}</div>
+          </div>
+          <div>
+            <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">First discussed</div>
+            <div className="text-lg font-semibold">{fmtDate(h.firstMentioned)}</div>
+          </div>
+          <p className="ml-auto max-w-[260px] text-right text-xs text-neutral-400">
+            {h.ticker
+              ? "No live market data available for this ticker — likely delisted, renamed, or unsupported by the current price source. We still track what they said."
+              : "Private company — no public price to score. We track what they said; valuation-mark tracking is on the roadmap."}
+          </p>
+        </section>
+      )}
+
+      <div className="space-y-6">
+        <div className="space-y-6">
+          {/* The tape vs the takes */}
+          {h.market && h.market.history.length > 1 && (
+            <section className="rise rounded-xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900" style={d(220)}>
+              <h2 className="mb-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-500">
+                The tape vs. the takes
+              </h2>
+              <p className="mb-3 text-xs text-neutral-400">
+                Every call, plotted at the price the day they made it.
+              </p>
+              <PriceChart history={h.market.history} theses={h.theses} ticker={h.ticker!} market={h.market} episodeLinks={episodeLinks} episodes={episodes} />
+            </section>
+          )}
+
+          {/* Where they stand now */}
+          <Reveal stagger>
+          <section className="space-y-3">
+            <h2 className="stagger-item text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-500">
+              Where they stand now
+            </h2>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {hostGroups.map(({ host, takes }, i) => {
+                const latest = takes[takes.length - 1];
+                return (
+                  <a
+                    key={host}
+                    href={`#takes-${host.toLowerCase()}`}
+                    style={d(60 + i * 70)}
+                    className="group stagger-item card-lift rounded-xl border border-neutral-200 bg-white p-4 hover:border-neutral-500 dark:border-neutral-800 dark:bg-neutral-900 dark:hover:border-neutral-600"
+                  >
+                    <div className="flex items-center justify-between gap-2">
+                      <div className="flex items-center gap-2">
+                        <HostAvatar host={host} size="md" />
+                        <span className="font-semibold">{host === "Guest" ? "Guests" : host}</span>
+                      </div>
+                      <StanceBadge stance={latest.stance} />
+                    </div>
+                    <p className="mt-2 line-clamp-3 text-sm text-neutral-700 dark:text-neutral-300">
+                      {latest.summary}
+                    </p>
+                    <div className="mt-2 flex items-center justify-between text-xs text-neutral-400">
+                      <span className="flex items-center gap-2">
+                        <ConvictionDots conviction={latest.conviction} />
+                        {latest.episodeNumber ? `E${latest.episodeNumber}` : latest.episodeId} ·{" "}
+                        {fmtDate(latest.episodeDate)}
+                      </span>
+                      <span className="font-medium transition-colors group-hover:text-emerald-400">
+                        {takes.length === 1 ? "1 take" : `${takes.length} takes`} ↓
+                      </span>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </section>
+          </Reveal>
+
+          {/* Synthesis */}
+          <Reveal>
+          <section className="rounded-xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
+            <h2 className="mb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-500">
+              The discussion
+            </h2>
+            <p className="leading-relaxed text-neutral-800 dark:text-neutral-200">{h.synthesis}</p>
+          </section>
+          </Reveal>
+
+          {/* How they got there */}
+          <Reveal>
+          <section className="space-y-4">
+            <h2 className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-500">
+              How they got there
+            </h2>
+            {hostGroups.map(({ host, takes, flips }) => (
+              <article
+                key={host}
+                id={`takes-${host.toLowerCase()}`}
+                className="scroll-mt-28 rounded-xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900"
+              >
+                <div className="mb-3 flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    {host !== "Guest" && host !== "Unknown" ? (
+                      <Link
+                        href={`/host/${host.toLowerCase()}`}
+                        className="flex items-center gap-2 hover:underline"
+                        title={`${host}'s full track record`}
+                      >
+                        <HostAvatar host={host} size="md" />
+                        <span className="font-semibold">{host}</span>
+                      </Link>
+                    ) : (
+                      <span className="flex items-center gap-2">
+                        <HostAvatar host={host} size="md" />
+                        <span className="font-semibold">{host === "Guest" ? "Guests" : host}</span>
+                      </span>
+                    )}
+                    <span className="text-xs text-neutral-400">
+                      {takes.length} {takes.length === 1 ? "take" : "takes"} since{" "}
+                      {fmtDate(takes[0].episodeDate)}
+                    </span>
+                  </div>
+                  {flips > 0 && (
+                    <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-500/15 dark:text-amber-300">
+                      {flips === 1 ? "flipped once" : `flipped ${flips}×`}
+                    </span>
+                  )}
+                </div>
+                <Timeline theses={takes} episodeLinks={episodeLinks} episodes={episodes} />
+              </article>
+            ))}
+            <Explainer summary="About these quotes">
+              Quotes are machine-transcribed from the episode audio — use the Listen links to
+              verify any take against the source, or the ⚑ link to report a problem. Takes marked
+              unverified, low-conviction, or commentary-only never move stances, the index, or the
+              funds.
+            </Explainer>
+          </section>
+          </Reveal>
+        </div>
+
+      </div>
+    </div>
+  );
+}

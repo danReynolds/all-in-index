@@ -1,0 +1,113 @@
+[
+  {
+    "id": "E221-nvda-Guest-0",
+    "episodeId": "E221",
+    "episodeNumber": 221,
+    "episodeDate": "2025-03-29T01:40:00.000Z",
+    "company": "Nvidia",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Gavin Baker argues Nvidia's rising accounts receivable is explained by the complexity of the Hopper-to-Blackwell product transition, not a structural problem, and that Nvidia's strategy of seeding NeoCloud buyers diversified its customer base away from the three hyperscaler oligopoly, strengthening its competitive position.",
+    "quote": "Blackwell is going to be a very successful product cycle... if you're Meta and you don't spend and Google spends, and their AI is a lot better than yours, you're worried you may not catch up.",
+    "quoteStartMs": 698425,
+    "topics": [
+      "product cycle",
+      "competitive moat",
+      "accounts receivable",
+      "AI capex"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E221-nvda-Chamath-1",
+    "episodeId": "E221",
+    "episodeNumber": 221,
+    "episodeDate": "2025-03-29T01:40:00.000Z",
+    "company": "Nvidia",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath frames Nvidia's investments in NeoCloud buyers as analogous to Intel's 'Intel Inside' strategy — a deliberate move to diversify the buyer base and reduce hyperscaler pricing power, which is structurally positive for Nvidia's long-term business.",
+    "quote": "A lot of this quote unquote round tripping from your perspective is diversifying the ownership pool of Nvidia is what you're saying.",
+    "quoteStartMs": 509733,
+    "topics": [
+      "competitive moat",
+      "customer concentration",
+      "ecosystem strategy"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E221-coreweave-Guest-2",
+    "episodeId": "E221",
+    "episodeNumber": 221,
+    "episodeDate": "2025-03-29T01:40:00.000Z",
+    "company": "CoreWeave",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Gavin Baker argues that running large GPU training clusters is operationally harder than the market appreciates, CoreWeave does it as well as anyone, and the Wall Street consensus that it is a commodity business with no moat may be wrong — the NPV of contracts and asset value offer an offsetting bull case.",
+    "quote": "I think what may be underappreciated about CoreWeave is it's actually really hard to run these big training clusters... it may not be the commodity that everyone thinks it is.",
+    "quoteStartMs": 821326,
+    "topics": [
+      "IPO",
+      "competitive moat",
+      "GPU infrastructure",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E221-coreweave-Chamath-3",
+    "episodeId": "E221",
+    "episodeNumber": 221,
+    "episodeDate": "2025-03-29T01:40:00.000Z",
+    "company": "CoreWeave",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath seconds the bull case on CoreWeave, calling it a great business that deserves to be successful.",
+    "quote": "I think it's a good company. I would second that. I mean, I think it's a great business and I think they deserve to be successful.",
+    "quoteStartMs": 914000,
+    "topics": [
+      "IPO",
+      "GPU infrastructure"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E221-anthropic-Guest-4",
+    "episodeId": "E221",
+    "episodeNumber": 221,
+    "episodeDate": "2025-03-29T01:40:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Gavin Baker highlights Anthropic's Model Context Protocol as a likely industry standard that dramatically lowers integration friction for agents, positioning Anthropic as a key enabler of the agentic AI wave and strengthening its platform competitive position.",
+    "quote": "Anthropic developed something called the Model Contact Protocol that OpenAI just adopted. I think it will become a standard and it makes it really easy for an LLM, like Stripe can just integrate with MCP.",
+    "quoteStartMs": 1222170,
+    "topics": [
+      "AI agents",
+      "platform standard",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

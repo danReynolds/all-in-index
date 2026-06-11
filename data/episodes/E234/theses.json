@@ -1,0 +1,93 @@
+[
+  {
+    "id": "E234-figma-Chamath-0",
+    "episodeId": "E234",
+    "episodeNumber": 234,
+    "episodeDate": "2025-07-04T14:07:00.000Z",
+    "company": "Figma",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Chamath sees Figma as a phenomenal business on current metrics but is cautious about years 3-5 given the unknown of how much foundational AI models will absorb into what they do, suggesting a long Figma / short Adobe spread as the safer trade.",
+    "quote": "On the surface, in the absence of these AI businesses, I would say, man, what a gangbusters business growing by 40-something percent a year at this scale... The question that I think the institutional investor will have is, what am I buying?",
+    "quoteStartMs": 4382688,
+    "topics": [
+      "IPO",
+      "AI disruption",
+      "valuation",
+      "SaaS"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E234-figma-Friedberg-1",
+    "episodeId": "E234",
+    "episodeNumber": 234,
+    "episodeDate": "2025-07-04T14:07:00.000Z",
+    "company": "Figma",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Friedberg is bullish on Figma's proven land-and-expand model, citing 40%+ revenue growth, 43% operating cash flow margin, and 130% net revenue retention, while acknowledging the longer-term risk of AI obsolescence.",
+    "quote": "They ran a 43% operating cash flow margin in Q1. So in Q1 of this year, Figma generated $95 million of free cash flow. They've got net revenue retention of like 130%. So this land and expand is proven out and there's real durability.",
+    "quoteStartMs": 4548796,
+    "topics": [
+      "IPO",
+      "SaaS",
+      "revenue quality",
+      "AI disruption"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E234-adbe-Chamath-2",
+    "episodeId": "E234",
+    "episodeNumber": 234,
+    "episodeDate": "2025-07-04T14:07:00.000Z",
+    "company": "Adobe",
+    "ticker": "ADBE",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Chamath argues Adobe will face a faster and steeper valuation re-rating than Figma in an AI-disrupted world, making it the better short leg in a Figma long / Adobe short spread trade.",
+    "quote": "The person who's going to take a retrade on valuation faster than Figma will be Adobe. And so you'll be hedged and you'll probably make money that way.",
+    "quoteStartMs": 4611438,
+    "topics": [
+      "valuation",
+      "AI disruption",
+      "relative value",
+      "short"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E234-meta-Chamath-3",
+    "episodeId": "E234",
+    "episodeNumber": 234,
+    "episodeDate": "2025-07-04T14:07:00.000Z",
+    "company": "Meta",
+    "ticker": "META",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "low",
+    "summary": "Chamath notes Meta's massive AI talent compensation packages as evidence the company perceives an existential risk from foundational models potentially absorbing social and work experiences, framing it as a signal of industry-wide uncertainty rather than a directional investment call.",
+    "quote": "Meta giving individual human beings $300 to $500 million packages like they're NBA first team all-stars... I understand why Facebook is now spending as if there's an existential risk.",
+    "quoteStartMs": 4313502,
+    "topics": [
+      "AI capex",
+      "talent war",
+      "competitive threat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

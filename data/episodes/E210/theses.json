@@ -1,0 +1,71 @@
+[
+  {
+    "id": "E210-meta-Chamath-0",
+    "episodeId": "E210",
+    "episodeNumber": 210,
+    "episodeDate": "2025-01-11T01:41:00.000Z",
+    "company": "Meta",
+    "ticker": "META",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath argues Meta's pivot to free speech and ending fact-checking is the value-maximizing decision for shareholders, as Zuckerberg is adeptly aligning with the new political winds under Trump, just as he aligned with the prior administration's preferences.",
+    "quote": "I think if you're a Meta shareholder, I think you're happy to see it.",
+    "quoteStartMs": 4071000,
+    "topics": [
+      "free speech",
+      "content moderation",
+      "political risk",
+      "shareholder value"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E210-nvda-Guest-1",
+    "episodeId": "E210",
+    "episodeNumber": 210,
+    "episodeDate": "2025-01-11T01:41:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Sian Bowers-Franklin is bullish on NVIDIA, arguing that AI demand is still in its early stages with no signs of slowing, and NVIDIA's expansion into robotics and edge computing positions it to grow into its valuation.",
+    "quote": "I'm very bullish on NVIDIA. It is interesting. It's an interesting thing to go consumer. And, you know, the thing that really hit me was the fact that...we haven't even barely touched what AI is going to do and change.",
+    "quoteStartMs": 4930379,
+    "topics": [
+      "AI capex",
+      "robotics",
+      "edge computing",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E210-tsla-Guest-2",
+    "episodeId": "E210",
+    "episodeNumber": 210,
+    "episodeDate": "2025-01-11T01:41:00.000Z",
+    "company": "Tesla",
+    "ticker": "TSLA",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Sian Bowers-Franklin is bullish on Tesla's long-term value, arguing its unique Full Self-Drive data advantage makes it a dominant player in the robotaxi market, and suggests Tesla should acquire Uber to accelerate that opportunity.",
+    "quote": "There's one single car company out there that has the kind of data that Full Self-Drive has and Tesla has. Um, so if they enter the robo-taxi market, I actually think they should buy Uber.",
+    "quoteStartMs": 4950599,
+    "topics": [
+      "robotaxi",
+      "autonomy",
+      "M&A",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

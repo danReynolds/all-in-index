@@ -1,0 +1,116 @@
+[
+  {
+    "id": "E251-pltr-Chamath-0",
+    "episodeId": "E251",
+    "episodeNumber": 251,
+    "episodeDate": "2025-11-14T21:03:00.000Z",
+    "company": "Palantir Technologies",
+    "ticker": "PLTR",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Chamath argues Palantir's premium valuation is justified because it is uniquely differentiated with no viable competitor to churn to, making its cash flows more durable than peers trading at lower multiples, and believes shorts will lose money.",
+    "quote": "Palantir is both unique and well-run, and there's no clear alternative, so there's no place to churn to. And so I think the reason why it has a premium valuation is because the duration and the durability of these cash flows are much longer than what you would typically see in any of these other companies.",
+    "quoteStartMs": 969123,
+    "topics": [
+      "valuation",
+      "competitive moat",
+      "short squeeze",
+      "SaaS"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E251-pltr-Friedberg-1",
+    "episodeId": "E251",
+    "episodeNumber": 251,
+    "episodeDate": "2025-11-14T21:03:00.000Z",
+    "company": "Palantir Technologies",
+    "ticker": "PLTR",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "low",
+    "summary": "Friedberg is agnostic on Palantir's valuation, noting that price-to-sales ratios are backward-looking and that the market is pricing in future earnings potential, but declines to offer a directional view without deeper analysis.",
+    "quote": "I've not studied the business well. I don't have a strong point of view or opinion on the value of the business. Relative to its future earnings potential. That's how I would look at it.",
+    "quoteStartMs": 847685,
+    "topics": [
+      "valuation",
+      "earnings potential",
+      "price-to-sales"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E251-meta-Friedberg-2",
+    "episodeId": "E251",
+    "episodeNumber": 251,
+    "episodeDate": "2025-11-14T21:03:00.000Z",
+    "company": "Meta Platforms",
+    "ticker": "META",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Friedberg argues that Meta's extension of depreciation schedules for data center hardware is justified by real-world evidence of 7-8 year old TPUs/GPUs running at 100% utilization, meaning reported earnings are not inflated and Burry's short thesis is wrong.",
+    "quote": "Everyone says the same thing, that these 7- and 8-year-old TPUs and GPUs that are sitting in the data centers are still being used, and they're being used at 100% utilization. So that actually justifies and validates the depreciation schedule being much longer versus shorter. And I actually think Michael Burry's got this wrong.",
+    "quoteStartMs": 500432,
+    "topics": [
+      "AI capex",
+      "depreciation",
+      "earnings quality",
+      "hyperscalers"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E251-meta-Chamath-3",
+    "episodeId": "E251",
+    "episodeNumber": 251,
+    "episodeDate": "2025-11-14T21:03:00.000Z",
+    "company": "Meta Platforms",
+    "ticker": "META",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath dismisses Burry's 'cooking the books' accusation against hyperscalers like Meta, arguing their business models are too strong to need accounting manipulation and that ongoing kernel/chip improvements genuinely extend hardware utilization.",
+    "quote": "The business models of these companies are just far too good for them to get to the point of having exhausted every other operational tactic that then they have to cook the books. These are not the 7 companies that are going to cook the books.",
+    "quoteStartMs": 541000,
+    "topics": [
+      "AI capex",
+      "earnings quality",
+      "depreciation",
+      "hyperscalers"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E251-orcl-Friedberg-4",
+    "episodeId": "E251",
+    "episodeNumber": 251,
+    "episodeDate": "2025-11-14T21:03:00.000Z",
+    "company": "Oracle",
+    "ticker": "ORCL",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Friedberg's defence of extended depreciation schedules for hyperscalers (including Oracle) applies equally here: real-world utilisation data justifies longer asset lives, and he believes Burry's short thesis on inflated earnings is mistaken.",
+    "quote": "I actually think Michael Burry's got this wrong.",
+    "quoteStartMs": 514376,
+    "topics": [
+      "AI capex",
+      "depreciation",
+      "earnings quality",
+      "hyperscalers"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

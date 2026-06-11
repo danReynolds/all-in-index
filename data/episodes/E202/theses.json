@@ -1,0 +1,94 @@
+[
+  {
+    "id": "E202-googl-Chamath-0",
+    "episodeId": "E202",
+    "episodeNumber": 202,
+    "episodeDate": "2024-11-01T21:10:00.000Z",
+    "company": "Alphabet (Google)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath argues Google is one of seven American quasi-monopolies that, if allowed to flourish, will drive strong economic value, and that a break-up would actually unlock even greater value for shareholders as the sum-of-parts valuation exceeds the current conglomerate discount.",
+    "quote": "There are 7 quasi-monopolies in the world. They're all American, and if we allow them to flourish, we'll be good... if you own stock in any of these companies, the some of the parts analysis would tell you that the breakup value is greater than the way that these companies get discounted.",
+    "quoteStartMs": 1820000,
+    "topics": [
+      "valuation",
+      "sum-of-parts",
+      "antitrust",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E202-googl-Friedberg-1",
+    "episodeId": "E202",
+    "episodeNumber": 202,
+    "episodeDate": "2024-11-01T21:10:00.000Z",
+    "company": "Alphabet (Google)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Friedberg argues that Google's conglomerate structure enabled massive long-term capital investment in YouTube and Google Cloud that standalone companies could not have funded, justifying the integrated business model as a driver of durable value creation.",
+    "quote": "Both YouTube and GCP required many, many, many, many billions of dollars of investment over many years... If those were standalone businesses and they didn't have the profits being derived from search and ads over many years, they would not have been able to build those incredible businesses.",
+    "quoteStartMs": 1914794,
+    "topics": [
+      "capital allocation",
+      "competitive moat",
+      "cloud",
+      "antitrust"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E202-googl-Sacks-2",
+    "episodeId": "E202",
+    "episodeNumber": 202,
+    "episodeDate": "2024-11-01T21:10:00.000Z",
+    "company": "Alphabet (Google)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Sacks argues Google's search algorithm is demonstrably and deliberately biased against Trump, surfacing obscure negative articles as top results — a credibility and regulatory risk that undermines the core value of its search product.",
+    "quote": "There's no question that just as a factual matter, this episode was suppressed in YouTube search... it's pretty obvious to me that they're using other factors in deciding what to surface here. And somehow the results end up being almost universally negative towards Trump.",
+    "quoteStartMs": 3412149,
+    "topics": [
+      "search bias",
+      "regulation",
+      "trust",
+      "brand risk"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E202-bac-Chamath-3",
+    "episodeId": "E202",
+    "episodeNumber": 202,
+    "episodeDate": "2024-11-01T21:10:00.000Z",
+    "company": "Bank of America",
+    "ticker": "BAC",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Chamath argues Bank of America failed to heed Buffett's public warning to mark underwater bond holdings to market and sell them, leading Buffett to dump his entire position — signaling a serious unrealized-loss crisis on BofA's balance sheet.",
+    "quote": "Buffett warned BofA publicly, although a bit obliquely last year... I don't think BofA acted quickly enough. And so what did Buffett do? He just basically started dumping and he's almost completely out of BofA, if not completely out altogether.",
+    "quoteStartMs": 1080000,
+    "topics": [
+      "unrealized losses",
+      "interest rates",
+      "credit risk",
+      "balance sheet"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

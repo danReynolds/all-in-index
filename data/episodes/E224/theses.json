@@ -1,0 +1,48 @@
+[
+  {
+    "id": "E224-nvda-Chamath-0",
+    "episodeId": "E224",
+    "episodeNumber": 224,
+    "episodeDate": "2025-04-19T00:14:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Chamath argues NVIDIA has been systematically circumventing US export controls by designing chips just below restriction thresholds and selling them to front companies that route them to China, making NVIDIA complicit in undermining US national security interests rather than acting in America's best interest.",
+    "quote": "I think the real problem that we have is that NVIDIA is not doing what is in the best interest of the United States... About 47% of all of NVIDIA's revenue goes to China and Chinese-related countries.",
+    "quoteStartMs": 908782,
+    "topics": [
+      "export controls",
+      "China",
+      "geopolitics",
+      "revenue concentration"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E224-nvda-Sacks-1",
+    "episodeId": "E224",
+    "episodeNumber": 224,
+    "episodeDate": "2025-04-19T00:14:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "medium",
+    "summary": "Sacks acknowledges that both legal and illegal attempts to circumvent US export controls have occurred and that the H20 chip's memory bandwidth arguably makes it too capable to sell to China, while arguing the government needs stronger enforcement and clearer boundary lines — stopping short of a directional investment call.",
+    "quote": "I think it is a fact that there have been both legal and illegal attempts to evade the US export controls. That is true... the memory bandwidth on the H20, it actually has 20% more memory bandwidth than the H100. So I think there's a view that this chip is just frankly too good.",
+    "quoteStartMs": 1113830,
+    "topics": [
+      "export controls",
+      "China",
+      "regulation",
+      "AI chips"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

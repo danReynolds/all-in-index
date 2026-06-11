@@ -1,0 +1,181 @@
+"use client";
+
+import Link from "next/link";
+import { useMemo, useState } from "react";
+import { fmtDate, mmss } from "@/lib/format";
+import { StanceBadge, ConvictionDots } from "@/app/components/badges";
+import { ListenButton } from "@/app/components/player";
+import type { EpisodeMeta, Stance, Thesis } from "@/lib/types";
+
+const STANCE_HEX: Record<Stance, string> = {
+  bull: "#10b981",
+  bear: "#f43f5e",
+  mixed: "#f59e0b",
+  neutral: "#8d9a92",
+};
+
+/**
+ * A host's take history as a time-proportional track: nodes sit where the
+ * takes actually happened, so streaks and reversals read at a glance.
+ * Conviction = emphasis (high gets a halo, low is dimmed). Click for the quote.
+ */
+export function Timeline({
+  theses,
+  episodeLinks = {},
+  episodes = {},
+}: {
+  theses: Thesis[];
+  episodeLinks?: Record<string, string | null>;
+  episodes?: Record<string, EpisodeMeta>;
+}) {
+  const sorted = useMemo(
+    () => theses.slice().sort((a, b) => a.episodeDate.localeCompare(b.episodeDate)),
+    [theses],
+  );
+  const [sel, setSel] = useState(sorted.length - 1);
+  const t = sorted[sel];
+
+  // Time-proportional x positions (2%..98%), with a minimum gap so same-week
+  // takes don't fully overlap.
+  const { xs, years } = useMemo(() => {
+    const t0 = Date.parse(sorted[0].episodeDate);
+    const t1 = Date.parse(sorted[sorted.length - 1].episodeDate);
+    const span = Math.max(t1 - t0, 1);
+    const xs = sorted.map((th) => 2 + 96 * ((Date.parse(th.episodeDate) - t0) / span));
+    for (let i = 1; i < xs.length; i++) {
+      if (xs[i] - xs[i - 1] < 1.4) xs[i] = xs[i - 1] + 1.4;
+    }
+    const years: Array<{ x: number; label: string }> = [];
+    if (span > 120 * 86400_000) {
+      const y0 = new Date(t0).getUTCFullYear();
+      const y1 = new Date(t1).getUTCFullYear();
+      for (let y = y0 + 1; y <= y1; y++) {
+        const ts = Date.UTC(y, 0, 1);
+        if (ts > t0 && ts < t1) {
+          years.push({ x: 2 + 96 * ((ts - t0) / span), label: "’" + String(y).slice(2) });
+        }
+      }
+    }
+    return { xs, years };
+  }, [sorted]);
+
+  const single = sorted.length === 1;
+
+  return (
+    <div>
+      {/* The track */}
+      <div className="relative h-12">
+        <div className="absolute left-0 right-0 top-4 h-px bg-neutral-800" />
+        {years.map((y) => (
+          <div key={y.label}>
+            <div
+              className="absolute top-4 h-2.5 w-px -translate-x-1/2 bg-neutral-700"
+              style={{ left: `${y.x}%` }}
+            />
+            <span
+              className="absolute top-8 -translate-x-1/2 font-mono text-[10px] text-neutral-600"
+              style={{ left: `${y.x}%` }}
+            >
+              {y.label}
+            </span>
+          </div>
+        ))}
+        {sorted.map((th, i) => {
+          const c = STANCE_HEX[th.stance];
+          const selected = i === sel;
+          const dim = th.conviction === "low";
+          return (
+            <button
+              key={th.id}
+              type="button"
+              onClick={() => setSel(i)}
+              title={`${fmtDate(th.episodeDate)} — ${th.stance}${dim ? " (low conviction)" : ""}`}
+              aria-label={`${fmtDate(th.episodeDate)} ${th.stance}`}
+              className="absolute top-4 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full transition-transform duration-150 hover:scale-[1.6]"
+              style={{
+                left: `${single ? 50 : Math.min(xs[i], 98)}%`,
+                background: c,
+                opacity: dim && !selected ? 0.45 : 1,
+                boxShadow: selected
+                  ? `0 0 0 2.5px var(--background), 0 0 0 4.5px ${c}`
+                  : th.conviction === "high"
+                    ? `0 0 0 3.5px ${c}2e`
+                    : "none",
+                zIndex: selected ? 2 : 1,
+              }}
+            />
+          );
+        })}
+      </div>
+
+      {/* The receipt */}
+      {t && (
+        <div className="rounded-xl bg-neutral-800/40 p-4 ring-1 ring-white/5">
+          <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1.5 text-xs text-neutral-500">
+            <StanceBadge stance={t.stance} />
+            <ConvictionDots conviction={t.conviction} />
+            <Link
+              href={`/episode/${t.episodeId}`}
+              className="font-mono text-[11px] hover:text-neutral-200 hover:underline"
+              title="All takes from this episode"
+            >
+              {t.episodeNumber ? `E${t.episodeNumber}` : t.episodeId}
+            </Link>
+            <span>{fmtDate(t.episodeDate)}</span>
+            {t.positional && (
+              <span
+                className="rounded-full bg-emerald-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-300 ring-1 ring-inset ring-emerald-500/25"
+                title="A clear in/out call — this take trades in the money simulations. Everything else is view/commentary."
+              >
+                📌 position call
+              </span>
+            )}
+            {t.attributionConfidence === "low" && (
+              <span
+                className="rounded bg-white/5 px-1.5 py-0.5 text-[10px] font-medium text-neutral-400 ring-1 ring-inset ring-white/10"
+                title="Speaker attribution unverified — this take is shown but doesn't score."
+              >
+                unverified · not scored
+              </span>
+            )}
+            {(episodes[t.episodeId]?.audioUrl || episodeLinks[t.episodeId]) && (
+              <span className="ml-auto">
+                <ListenButton
+                  meta={episodes[t.episodeId]}
+                  episodeId={t.episodeId}
+                  startMs={t.quoteStartMs}
+                  caption={`${t.host} on ${t.company}`}
+                  fallbackLink={episodeLinks[t.episodeId]}
+                />
+              </span>
+            )}
+            <a
+              href={`mailto:me@danreynolds.ca?subject=${encodeURIComponent(`All-Index take report: ${t.id}`)}&body=${encodeURIComponent(`Take ${t.id} (${t.host} on ${t.company}, ${t.episodeId}) looks wrong because: `)}`}
+              className={`${episodes[t.episodeId]?.audioUrl || episodeLinks[t.episodeId] ? "" : "ml-auto "}text-neutral-600 hover:text-neutral-300`}
+              title="Report a problem with this take (misattributed, misquoted, mis-stanced)"
+            >
+              ⚑
+            </a>
+          </div>
+          <p className="mt-2.5 text-sm leading-relaxed text-neutral-200">{t.summary}</p>
+          {t.quote && (
+            <blockquote className="relative mt-3 pl-6 text-[13px] italic leading-relaxed text-neutral-400">
+              <span
+                aria-hidden
+                className="absolute -top-1 left-0 font-display text-3xl leading-none text-emerald-500/35"
+              >
+                “
+              </span>
+              {t.quote}”
+              {t.quoteStartMs != null && (
+                <span className="ml-2 font-mono text-[11px] not-italic text-neutral-600">
+                  {mmss(t.quoteStartMs)}
+                </span>
+              )}
+            </blockquote>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}

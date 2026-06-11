@@ -1,0 +1,94 @@
+[
+  {
+    "id": "E201-sbux-Chamath-0",
+    "episodeId": "E201",
+    "episodeNumber": 201,
+    "episodeDate": "2024-10-25T22:51:00.000Z",
+    "company": "Starbucks",
+    "ticker": "SBUX",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Chamath argues Starbucks faces an existential structural headwind from GLP-1 adoption reducing demand for its high-sugar products, believes the company should be worth far less than its current market cap, and sees the only viable path as stripping cash while shrinking to a smaller footprint.",
+    "quote": "This business is in trouble... I think that they're fighting into a headwind... Starbucks should be probably a $20 billion asset.",
+    "quoteStartMs": 5102000,
+    "topics": [
+      "GLP-1 impact",
+      "valuation",
+      "consumer brands",
+      "growth ceiling"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E201-sbux-Friedberg-1",
+    "episodeId": "E201",
+    "episodeNumber": 201,
+    "episodeDate": "2024-10-25T22:51:00.000Z",
+    "company": "Starbucks",
+    "ticker": "SBUX",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Friedberg argues Starbucks has hit a revenue maximization ceiling across all three growth levers — customers, frequency, and price — making meaningful same-store sales growth structurally impossible, with the only path to profit improvement being cost reduction rather than top-line growth.",
+    "quote": "I would argue that Starbucks is a victim of the same maximization effect, that at some point you get all the customers... and then you reach this kind of maximum point on the business.",
+    "quoteStartMs": 5316665,
+    "topics": [
+      "growth ceiling",
+      "valuation",
+      "consumer brands",
+      "maturity"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E201-aapl-Friedberg-2",
+    "episodeId": "E201",
+    "episodeNumber": 201,
+    "episodeDate": "2024-10-25T22:51:00.000Z",
+    "company": "Apple",
+    "ticker": "AAPL",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "medium",
+    "summary": "Friedberg sees Apple facing the same revenue maximization problem as Starbucks — brand, coverage, and price all near their limits — but acknowledges it can sustain profit growth through buybacks and cost efficiency for longer than Starbucks given less competitive pressure.",
+    "quote": "Apple has faced a similar dilemma in the last couple of years, which is how do we get more customers? It's the most recognized brand on earth... multiples compress.",
+    "quoteStartMs": 5295053,
+    "topics": [
+      "growth ceiling",
+      "valuation",
+      "maturity",
+      "capital allocation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E201-aapl-Chamath-3",
+    "episodeId": "E201",
+    "episodeNumber": 201,
+    "episodeDate": "2024-10-25T22:51:00.000Z",
+    "company": "Apple",
+    "ticker": "AAPL",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Chamath argues Apple can sustain its cash-generation and buyback model for another decade without the GLP-1 competitive threat Starbucks faces, but flags deteriorating software quality (iOS 18, Photos app) as a sign of complacency that could eventually erode the premium the brand commands.",
+    "quote": "Apple can still be at the point... let me just maximize free cash flow generation... allocate that back to shareholders via buybacks... there could be another decade or so where Apple can continue to run this play.",
+    "quoteStartMs": 5414319,
+    "topics": [
+      "capital allocation",
+      "product quality",
+      "competitive moat",
+      "maturity"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "E186-rick-Chamath-0",
+    "episodeId": "E186",
+    "episodeNumber": 186,
+    "episodeDate": "2024-07-04T17:31:00.000Z",
+    "company": "Rick's Cabaret (RCI Hospitality Holdings)",
+    "ticker": "RICK",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "low",
+    "summary": "Chamath flags that Rick's Cabaret stock dropped ~25-30% recently and historically precedes recessions, suggesting the business is under pressure that may signal broader economic deterioration.",
+    "quote": "The Rick's Cabaret recession index is back on... the stock just puked up like 25 or 30% in the last week.",
+    "quoteStartMs": 3710156,
+    "topics": [
+      "recession indicator",
+      "consumer spending",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

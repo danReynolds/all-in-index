@@ -1,0 +1,48 @@
+[
+  {
+    "id": "E244-nvda-Friedberg-0",
+    "episodeId": "E244",
+    "episodeNumber": 244,
+    "episodeDate": "2025-09-27T00:44:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "low",
+    "summary": "Friedberg highlights a new GPU architecture paper showing 70,000x energy reduction vs. H100, suggesting AI inference could shift to edge devices and dramatically reduce data center and energy demand — potentially threatening NVIDIA's current dominance in AI infrastructure.",
+    "quote": "if this thing's even close to being correct, then you could run the most kind of sophisticated LLMs in a robot. Without it needing to be run out of a data center going forward.",
+    "quoteStartMs": 4084000,
+    "topics": [
+      "AI infrastructure",
+      "energy efficiency",
+      "edge computing",
+      "competitive threat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E244-nvda-Sacks-1",
+    "episodeId": "E244",
+    "episodeNumber": 244,
+    "episodeDate": "2025-09-27T00:44:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Sacks is skeptical that the efficiency paper translates to reduced demand, arguing AI energy and data center needs will keep growing — especially with the coming robot revolution — and prefers product launches over academic papers as signals.",
+    "quote": "I think we're going to need a lot more power, a lot more electricity. I think that's pretty well known. We haven't even gotten to the robot revolution yet. That's coming in the next 5 years. That's going to be energy intensive.",
+    "quoteStartMs": 4071667,
+    "topics": [
+      "AI capex",
+      "data center demand",
+      "energy",
+      "robotics"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

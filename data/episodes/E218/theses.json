@@ -1,0 +1,180 @@
+[
+  {
+    "id": "E218-coreweave-Chamath-0",
+    "episodeId": "E218",
+    "episodeNumber": 218,
+    "episodeDate": "2025-03-08T00:58:00.000Z",
+    "company": "CoreWeave",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Chamath is impressed by CoreWeave's technical differentiation (bare-metal, no hypervisors) and revenue growth, but flags that the investment thesis hinges entirely on whether the assumed useful life of their Nvidia GPUs proves correct — if the useful life is shorter than modeled, the business is deeply underwater.",
+    "quote": "The bet is they've built an amount of headway... But the other side of it is, is the useful life right? Is the technology curve right?... if we thought the useful life was 10 years, but it turned out to be 5, this business is deeply underwater.",
+    "quoteStartMs": 3406550,
+    "topics": [
+      "GPU lifecycle",
+      "valuation",
+      "debt",
+      "cloud infrastructure"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E218-coreweave-Friedberg-1",
+    "episodeId": "E218",
+    "episodeNumber": 218,
+    "episodeDate": "2025-03-08T00:58:00.000Z",
+    "company": "CoreWeave",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Friedberg is cautious on CoreWeave, drawing an analogy to 'speed doubler' companies that were transitory arbitrage plays before broadband arrived — he worries that hyperscalers spending $80B+ in CapEx will eventually make CoreWeave's offering redundant.",
+    "quote": "I worry a little bit about a business like this where there's 4 or 5 companies that are each doing $80 billion of CapEx this year to create infrastructure that effectively starts to replace what these guys are effectively offering out as a service.",
+    "quoteStartMs": 3629461,
+    "topics": [
+      "competition",
+      "cloud infrastructure",
+      "CapEx",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E218-anthropic-Chamath-2",
+    "episodeId": "E218",
+    "episodeNumber": 218,
+    "episodeDate": "2025-03-08T00:58:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Chamath argues Anthropic's Claude 3.7 is the best model on the market for code generation and is his team's go-to for automated coding, positioning Anthropic as the dominant AI coding platform.",
+    "quote": "I think Anthropic just continues to do an incredible job. I think Claude 3.7, it just kicks ass... We use it for a lot of automated code generation... its models on code generation I think are just exceptional. They are the best in market.",
+    "quoteStartMs": 5118215,
+    "topics": [
+      "AI models",
+      "competitive position",
+      "code generation"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E218-openai-Chamath-3",
+    "episodeId": "E218",
+    "episodeNumber": 218,
+    "episodeDate": "2025-03-08T00:58:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "low",
+    "summary": "Chamath notes GPT-4.5 was poorly received and got no buzz, suggesting OpenAI is losing ground competitively as rivals like Claude and Grok pull ahead, and flags that benchmarks are being overfitted by model makers including OpenAI.",
+    "quote": "OpenAI dropped GPT-4.5, and I think it was not really that well received... Nobody's talking about that.",
+    "quoteStartMs": 412090,
+    "topics": [
+      "AI models",
+      "competitive position",
+      "product"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E218-meta-Chamath-4",
+    "episodeId": "E218",
+    "episodeNumber": 218,
+    "episodeDate": "2025-03-08T00:58:00.000Z",
+    "company": "Meta",
+    "ticker": "META",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "low",
+    "summary": "Chamath notes Meta is about to launch a standalone AI app to compete with ChatGPT and Grok, and that Meta's unmatched distribution will get it to a billion users regardless of when it launches — a durable distribution moat.",
+    "quote": "Facebook is about to launch a competitor to ChatGPT and Grok... the thing that they are so good at is whenever they launch an app, it doesn't matter when they launch it, they'll just get it to a billion people.",
+    "quoteStartMs": 5395000,
+    "topics": [
+      "AI distribution",
+      "competitive moat",
+      "product launch"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E218-googl-Chamath-5",
+    "episodeId": "E218",
+    "episodeNumber": 218,
+    "episodeDate": "2025-03-08T00:58:00.000Z",
+    "company": "Alphabet",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "low",
+    "summary": "Chamath highlights Google's move to integrate AI directly into its core search front door as a key distribution advantage, implying Google Search can defend its position in the AI transition.",
+    "quote": "Google just said that they're going to drop an AI button right into the front door core search page... Google Front Door, like google.com.",
+    "quoteStartMs": 5365478,
+    "topics": [
+      "AI integration",
+      "search",
+      "distribution"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E218-now-Jason-6",
+    "episodeId": "E218",
+    "episodeNumber": 218,
+    "episodeDate": "2025-03-08T00:58:00.000Z",
+    "company": "ServiceNow",
+    "ticker": "NOW",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "bear",
+    "conviction": "low",
+    "summary": "Jason argues that Doge's revelation of massively wasteful government ServiceNow licenses (with near-zero utilization) raises questions about where government software revenue really comes from and signals potential scrutiny of government IT contracts.",
+    "quote": "I want an investigation into procurement. Who sold this? Who bought it? This could be a crime... If ServiceNow ever wants to work with the government again... I want them to pay us back for the unused licenses, and I want a full audit for those last 10 years.",
+    "quoteStartMs": 1614749,
+    "topics": [
+      "government contracts",
+      "procurement waste",
+      "regulation risk"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E218-cognition-ai-Guest-7",
+    "episodeId": "E218",
+    "episodeNumber": 218,
+    "episodeDate": "2025-03-08T00:58:00.000Z",
+    "company": "Cognition AI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Joe Lonsdale, an investor in Cognition (maker of Devin), says its AI coding agent is 'crushing it' and improving 10-15% monthly, expressing high conviction in its trajectory.",
+    "quote": "I'm in Cognition. I think a lot of my companies using Devin. It's actually just crushing it. This stuff's getting 10, 15% better every month.",
+    "quoteStartMs": 5487611,
+    "topics": [
+      "AI agents",
+      "code generation",
+      "growth"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

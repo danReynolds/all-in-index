@@ -1,0 +1,117 @@
+[
+  {
+    "id": "E256-groq-Chamath-0",
+    "episodeId": "E256",
+    "episodeNumber": 256,
+    "episodeDate": "2025-12-31T21:56:00.000Z",
+    "company": "Groq",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Chamath argues Groq's unique SRAM-heavy, decode-optimized chip architecture positions it as a foundational infrastructure layer for AI inference that complements NVIDIA's prefill dominance, and the NVIDIA licensing deal validates a decade-long non-consensus bet that could make AI dramatically cheaper and more accessible.",
+    "quote": "I think what will happen here is if successful, we will be a foundational layer that NVIDIA can used to, again, make AI much more accessible, much cheaper, much more beneficial to everybody.",
+    "quoteStartMs": 5966269,
+    "topics": [
+      "AI chips",
+      "inference",
+      "licensing deal",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E256-nvda-Chamath-1",
+    "episodeId": "E256",
+    "episodeNumber": 256,
+    "episodeDate": "2025-12-31T21:56:00.000Z",
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Chamath is bullish on NVIDIA, citing Jensen Huang's unparalleled industry insight and decisive action in partnering with Groq, which Chamath believes will further extend NVIDIA's dominance in the AI infrastructure stack by pairing its prefill GPU strength with best-in-class decode performance.",
+    "quote": "He is operating at a level of insight about what's happening in this industry that I've really never seen with other folks in other industries other than Elon in his industries. It's a level of mastery and a level of skill that is really impressive.",
+    "quoteStartMs": 5936752,
+    "topics": [
+      "AI chips",
+      "competitive moat",
+      "partnerships",
+      "inference"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E256-california-muni-bonds-Chamath-2",
+    "episodeId": "E256",
+    "episodeNumber": 256,
+    "episodeDate": "2025-12-31T21:56:00.000Z",
+    "company": "California (muni bonds)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Chamath warns that California's combination of massive fraud, rising deficits, looming pension obligations, and potential billionaire tax will cause the bond market to reprice state debt risk dramatically, leading to failed bond auctions and a fiscal death spiral that politicians cannot escape.",
+    "quote": "Wait until the bond market sniffs out how fake and propped up the California economy and balance sheet and pension system is. And he said, you're gonna see these bonds run because those folks don't care about anything other than the ones and zeros of their own financial survival.",
+    "quoteStartMs": 3424027,
+    "topics": [
+      "muni bonds",
+      "fiscal risk",
+      "fraud",
+      "California"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E256-california-muni-bonds-Friedberg-3",
+    "episodeId": "E256",
+    "episodeNumber": 256,
+    "episodeDate": "2025-12-31T21:56:00.000Z",
+    "company": "California (muni bonds)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Friedberg argues California's half-trillion in bonds outstanding, an $18B deficit heading toward $30B, and hundreds of billions in unfunded pension obligations make the state's fiscal position structurally unsound and reliant on a bond market that may not absorb further issuance.",
+    "quote": "California has half a trillion dollars of bonds outstanding, and the state of California is looking at an $18 billion deficit. They're going to continue to issue bonds over the next year. That number is going to climb to $30 billion.",
+    "quoteStartMs": 3726000,
+    "topics": [
+      "muni bonds",
+      "fiscal risk",
+      "pension obligations",
+      "California"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E256-california-muni-bonds-Sacks-4",
+    "episodeId": "E256",
+    "episodeNumber": 256,
+    "episodeDate": "2025-12-31T21:56:00.000Z",
+    "company": "California (muni bonds)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Sacks argues California, Illinois, and New York are all in fiscal death spirals driven by structural government waste and patronage, and without federal bailout or bankruptcy mechanisms, these states face collapse, making their debt increasingly risky.",
+    "quote": "California, Illinois, New York, these states are all in a death spiral. They're all in the process of collapsing. And they will try to get bailed out by the feds. That's their only potential savior because they're not allowed to declare bankruptcy.",
+    "quoteStartMs": 3809353,
+    "topics": [
+      "fiscal risk",
+      "muni bonds",
+      "state spending",
+      "bankruptcy"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  }
+]

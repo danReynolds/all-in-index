@@ -1,0 +1,115 @@
+import { currentStanceForHosts } from "../lib/calls";
+import { MAX_PUBLISHED_QUOTE_CHARS } from "../lib/quotes";
+import { store } from "./store";
+import type { Host, IndexFund, IndexSnapshot } from "../lib/types";
+
+const BESTIES: Host[] = ["Chamath", "Jason", "Sacks", "Friedberg"];
+const GUESTS: Host[] = ["Guest"];
+const KNOWN_DELISTED_TICKERS = new Set(["X"]);
+
+export interface QualityResult {
+  errors: string[];
+  warnings: string[];
+}
+
+function validateFund(
+  snapshot: IndexSnapshot,
+  fund: IndexFund | null | undefined,
+  label: string,
+  hosts: Host[],
+  errors: string[],
+) {
+  if (!fund) return;
+  const bySlug = new Map(snapshot.holdings.map((h) => [h.slug, h]));
+  for (const c of fund.constituents) {
+    const holding = bySlug.get(c.slug);
+    if (!holding) {
+      errors.push(`${label}: constituent ${c.slug} is not present in holdings`);
+      continue;
+    }
+    const stance = currentStanceForHosts(holding.theses, hosts);
+    if (stance !== "bull") {
+      errors.push(`${label}: ${holding.company} (${c.ticker}) is ${stance}, not current bull`);
+    }
+  }
+}
+
+function validateDuplicateQuotes(snapshot: IndexSnapshot, errors: string[]) {
+  const byQuote = new Map<string, Set<string>>();
+  for (const h of snapshot.holdings) {
+    for (const t of h.theses) {
+      if (!t.quote) continue;
+      const key = t.quote.slice(0, 60).toLowerCase();
+      const companies = byQuote.get(key) ?? new Set<string>();
+      companies.add(h.company);
+      byQuote.set(key, companies);
+    }
+  }
+  for (const [quote, companies] of byQuote) {
+    if (companies.size > 1) {
+      errors.push(`quote reused across companies (${[...companies].join(", ")}): ${quote}`);
+    }
+  }
+}
+
+function validateQuoteLengths(snapshot: IndexSnapshot, errors: string[]) {
+  for (const h of snapshot.holdings) {
+    for (const t of h.theses) {
+      if (t.quote.length > MAX_PUBLISHED_QUOTE_CHARS) {
+        errors.push(`${t.id} quote is ${t.quote.length} chars, above ${MAX_PUBLISHED_QUOTE_CHARS}`);
+      }
+    }
+  }
+}
+
+function validateMarketCoverage(snapshot: IndexSnapshot, errors: string[], warnings: string[]) {
+  for (const h of snapshot.holdings) {
+    if (!h.ticker || h.market) continue;
+    if (KNOWN_DELISTED_TICKERS.has(h.ticker)) {
+      warnings.push(`${h.company} (${h.ticker}) has no live market data because the ticker is delisted`);
+    } else {
+      errors.push(`${h.company} (${h.ticker}) is public but has no market data`);
+    }
+  }
+}
+
+function validateLowAttribution(snapshot: IndexSnapshot, warnings: string[]) {
+  const low = snapshot.holdings.reduce(
+    (n, h) => n + h.theses.filter((t) => t.attributionConfidence === "low").length,
+    0,
+  );
+  if (low > 0) warnings.push(`${low} takes have low attribution confidence and should remain unscored`);
+}
+
+export function validateIndexSnapshot(snapshot: IndexSnapshot): QualityResult {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+  validateFund(snapshot, snapshot.indexFund, "Besties Index", BESTIES, errors);
+  validateFund(snapshot, snapshot.guestiesFund, "Guesties Index", GUESTS, errors);
+  validateDuplicateQuotes(snapshot, errors);
+  validateQuoteLengths(snapshot, errors);
+  validateMarketCoverage(snapshot, errors, warnings);
+  validateLowAttribution(snapshot, warnings);
+  return { errors, warnings };
+}
+
+export async function runQualityCheck(): Promise<void> {
+  const snapshot = store.loadIndex();
+  if (!snapshot) throw new Error("No data/holdings.json found. Run build-index first.");
+  const result = validateIndexSnapshot(snapshot);
+  for (const warning of result.warnings) console.warn(`warning: ${warning}`);
+  if (result.errors.length > 0) {
+    for (const error of result.errors) console.error(`error: ${error}`);
+    throw new Error(`quality check failed with ${result.errors.length} error(s)`);
+  }
+  console.log(
+    `quality ok: ${snapshot.holdings.length} holdings, ${snapshot.indexFund?.constituents.length ?? 0} Besties constituents`,
+  );
+}
+
+if (process.argv[1]?.endsWith("pipeline/quality.ts")) {
+  runQualityCheck().catch((err) => {
+    console.error("\n✖", err.message ?? err);
+    process.exit(1);
+  });
+}

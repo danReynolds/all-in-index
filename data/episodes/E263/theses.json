@@ -1,0 +1,117 @@
+[
+  {
+    "id": "E263-anthropic-Friedberg-0",
+    "episodeId": "E263",
+    "episodeNumber": 263,
+    "episodeDate": "2026-03-06T09:23:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Friedberg argues Anthropic is worth significantly more than its $350B mark due to explosive ARR growth and dominant product-market fit with Claude/Cowork, making it the higher-multiple bet vs. Google, though the Pentagon dispute is a risk.",
+    "quote": "Anthropic is worth a lot more than $350. That's for sure. They just added $6 billion in the last month. And I will tell you anecdotally, everyone I talk to is on Cowork. Everyone has like gone deep on this.",
+    "quoteStartMs": 3850000,
+    "topics": [
+      "valuation",
+      "AI growth",
+      "product-market fit",
+      "revenue ramp"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E263-anthropic-Chamath-1",
+    "episodeId": "E263",
+    "episodeNumber": 263,
+    "episodeDate": "2026-03-06T09:23:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Chamath warns that Anthropic's refusal to offer reliable, politically neutral terms of service creates existential business risk—alienating government and enterprise customers who cannot tolerate unpredictable model access, and potentially pissing off every political constituency.",
+    "quote": "I think they accidentally may have pissed off every constituent. The longer-term fallout amongst them and progressives will come home to roost because as the progressives want more control and these guys push back on them, they're just going to fall into the same situation.",
+    "quoteStartMs": 3692364,
+    "topics": [
+      "enterprise risk",
+      "government contracts",
+      "reliability",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E263-googl-Friedberg-2",
+    "episodeId": "E263",
+    "episodeNumber": 263,
+    "episodeDate": "2026-03-06T09:23:00.000Z",
+    "company": "Google",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Friedberg names Google as the best net market-value creation bet in AI, citing its own cloud infrastructure (eliminating margin passed to third-party clouds) and its ability to rapidly integrate AI into G Suite/Workspace to sweep the market from Anthropic.",
+    "quote": "I think Google is the bet. I think Google is the market value creator bet... I think it's only gonna take 90 days for Google to flip on a virtual version of Cowork. And once Google has this integrated with G Suite, I think Google sweeps the market.",
+    "quoteStartMs": 3824913,
+    "topics": [
+      "AI competition",
+      "cloud advantage",
+      "valuation",
+      "product integration"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E263-anduril-Guest-3",
+    "episodeId": "E263",
+    "episodeNumber": 263,
+    "episodeDate": "2026-03-06T09:23:00.000Z",
+    "company": "Anduril",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Emil Michael highlights Anduril as a leading beneficiary of the shift from legacy defense primes to low-cost attritable drone/autonomous systems, and says he wants them to win big contracts quickly to drive the defense-tech flywheel.",
+    "quote": "That's why companies like Anduril are companies like Anduril is because they're making unmanned systems... I need some of these companies win big contracts quick, like whether, you know, Androl, sure... so that more money flows in, more entrepreneurs do it.",
+    "quoteStartMs": 1139255,
+    "topics": [
+      "defense tech",
+      "autonomous systems",
+      "government contracts",
+      "industry shift"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E263-pltr-Guest-4",
+    "episodeId": "E263",
+    "episodeNumber": 263,
+    "episodeDate": "2026-03-06T09:23:00.000Z",
+    "company": "Palantir",
+    "ticker": "PLTR",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "neutral",
+    "conviction": "low",
+    "summary": "Emil Michael describes Palantir as a deeply embedded, trusted DoD prime contractor and distribution channel for AI models, but notes they want to consolidate to a 'new prime' position that he intends to disrupt by fostering competition.",
+    "quote": "Anduril and Palantir want that, and I joke with them all the time about it, but I definitely want at least a second layer that's innovative and trying to disrupt the first layer all the time.",
+    "quoteStartMs": 4523000,
+    "topics": [
+      "defense tech",
+      "government contracts",
+      "competition",
+      "new primes"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

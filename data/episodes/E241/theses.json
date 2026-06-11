@@ -1,0 +1,71 @@
+[
+  {
+    "id": "E241-intc-Chamath-0",
+    "episodeId": "E241",
+    "episodeNumber": 241,
+    "episodeDate": "2025-08-29T23:10:00.000Z",
+    "company": "Intel",
+    "ticker": "INTC",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath argues the US government taking a 10% equity stake in Intel—rather than giving free grants—is a smart model that gives taxpayers upside while strategically supporting domestic chip manufacturing to compete with China.",
+    "quote": "I think that this approach is the much better approach, which is to say we can do exactly what China did with a couple of tweaks... own something on the balance sheet of the United States, not have a golden vote, have complete transparency, allow the capital markets to finance these businesses.",
+    "quoteStartMs": 2450205,
+    "topics": [
+      "government investment",
+      "semiconductor policy",
+      "national security",
+      "CHIPS Act"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E241-intc-Sacks-1",
+    "episodeId": "E241",
+    "episodeNumber": 241,
+    "episodeDate": "2025-08-29T23:10:00.000Z",
+    "company": "Intel",
+    "ticker": "INTC",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Sacks supports the government taking equity in Intel rather than giving outright grants, arguing it's a better deal for taxpayers, creates the right incentives, and addresses the national security imperative of onshoring chip manufacturing.",
+    "quote": "If you are going to hand out billions of dollars to these companies, you're better off at least getting something for it, having the taxpayers have some upside in it, allowing the government to recoup, and creating the right incentive for these companies so they're not constantly seeking bailouts.",
+    "quoteStartMs": 2607004,
+    "topics": [
+      "government investment",
+      "semiconductor policy",
+      "national security",
+      "CHIPS Act"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E241-openai-Friedberg-2",
+    "episodeId": "E241",
+    "episodeNumber": 241,
+    "episodeDate": "2025-08-29T23:10:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Friedberg highlights OpenAI's GPT-4B Micro model achieving a 50x improvement in cellular rejuvenation protein efficiency as evidence that fine-tuned smaller LLMs will be extraordinary at specific scientific applications, opening vast new therapeutic and biological discovery use cases.",
+    "quote": "It's incredible what these LLMs can do... we're going to have these fine-tuned smaller models for specific applications rather than have one massive AI model that does everything for everyone in every context. People are going to take these base models, tune them, and they're going to be far less compute intensive and be extraordinary at specific applications.",
+    "quoteStartMs": 4659236,
+    "topics": [
+      "AI biology",
+      "drug discovery",
+      "fine-tuned models",
+      "longevity"
+    ],
+    "attributionConfidence": "medium",
+    "positional": false
+  }
+]

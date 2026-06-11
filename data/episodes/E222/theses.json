@@ -1,0 +1,92 @@
+[
+  {
+    "id": "E222-nmax-Guest-0",
+    "episodeId": "E222",
+    "episodeNumber": 222,
+    "episodeDate": "2025-04-05T19:03:00.000Z",
+    "company": "Newsmax",
+    "ticker": "NMAX",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Shapiro argues Newsmax's IPO pop was a GameStop-style retail-driven meme trade with absurd PE ratios that will revert, estimating the stock ultimately settles at a $2–4 billion market cap well below its peak.",
+    "quote": "I think the PE ratios on the Newsmax trade are, are, you know, ridiculous in the sense that it's going to revert back to something closer to normalcy... it's more like GameStop than anything else.",
+    "quoteStartMs": 6704312,
+    "topics": [
+      "valuation",
+      "IPO",
+      "media",
+      "meme stock"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E222-circle-Sacks-1",
+    "episodeId": "E222",
+    "episodeNumber": 222,
+    "episodeDate": "2025-04-05T19:03:00.000Z",
+    "company": "Circle",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Sacks views Circle's USDC stablecoin as a well-structured vehicle that could serve as a permanent bid for US Treasuries, making it strategically important and potentially very valuable if stablecoin legislation passes permissively.",
+    "quote": "What Circle does is I think quite structured and, you know, well— the legislation needs to be incredibly permissive because to your guys' point, we would want the bid to US treasuries to exist and to be as ferocious as possible.",
+    "quoteStartMs": 5015000,
+    "topics": [
+      "stablecoins",
+      "regulation",
+      "US dollar",
+      "crypto"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E222-asml-Sacks-2",
+    "episodeId": "E222",
+    "episodeNumber": 222,
+    "episodeDate": "2025-04-05T19:03:00.000Z",
+    "company": "ASML",
+    "ticker": "ASML",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "low",
+    "summary": "Sacks flags ASML as a critical national-security chokepoint in the semiconductor supply chain, noting that publicly profiling its key operators is a security risk — implying the company's strategic monopoly is both a strength and a vulnerability.",
+    "quote": "One of the biggest national security threats that we created out of nowhere was when the Wall Street Journal was allowed to do a detailed article on ASML... there's a person, literally one person, that can operate these machines.",
+    "quoteStartMs": 4789000,
+    "topics": [
+      "semiconductors",
+      "national security",
+      "supply chain"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E222-daily-wire-Guest-3",
+    "episodeId": "E222",
+    "episodeNumber": 222,
+    "episodeDate": "2025-04-05T19:03:00.000Z",
+    "company": "Daily Wire",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Shapiro reveals Daily Wire generated $220 million in revenue last year and is considering raising capital, framing it as a financially healthy media business despite restructuring headlines.",
+    "quote": "Last year was $220 million. Oh my God, what's going on?... it has crossed our minds. Yes, for sure.",
+    "quoteStartMs": 6665000,
+    "topics": [
+      "media",
+      "revenue",
+      "capital raise"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  }
+]

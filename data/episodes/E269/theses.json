@@ -1,0 +1,201 @@
+[
+  {
+    "id": "E269-anthropic-Sacks-0",
+    "episodeId": "E269",
+    "episodeNumber": 269,
+    "episodeDate": "2026-04-17T20:35:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Sacks argues Anthropic's ~10x annual revenue growth rate (vs OpenAI's 3-4x), driven by enterprise/coding focus and metered token billing, makes it the likely winner of the frontier AI race, though physical compute limits could cap its trajectory.",
+    "quote": "The OpenAI growth rate's been around 3 to 4x a year. The Anthropic growth rate has been around 10x a year. So they went from, let's call it, $1 to $10 billion of ARR last year, and by the end of Q1 this year, they were already at $30 billion.",
+    "quoteStartMs": 1377345,
+    "topics": [
+      "AI growth",
+      "enterprise",
+      "valuation",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E269-anthropic-Friedberg-1",
+    "episodeId": "E269",
+    "episodeNumber": 269,
+    "episodeDate": "2026-04-17T20:35:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Friedberg is bullish on Anthropic based on its unprecedented release cadence and flywheel, noting his organization has shifted to ~90% Anthropic usage in just six months, signaling dominant momentum in the AI platform race.",
+    "quote": "I've noticed is just the pace of innovation at Anthropic is, from my experience, unprecedented... I think we're probably 90% Anthropic in just the last 6 months at my, my organization. There's something very powerful about the flywheel they have going on.",
+    "quoteStartMs": 1117860,
+    "topics": [
+      "AI platform",
+      "product momentum",
+      "enterprise"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E269-anthropic-Chamath-2",
+    "episodeId": "E269",
+    "episodeNumber": 269,
+    "episodeDate": "2026-04-17T20:35:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Chamath sees Anthropic's Codex as strong for complex coding tasks and its enterprise revenue growth as real, but warns that lacking owned compute infrastructure is a critical strategic vulnerability that could cap growth — the same doomerist positioning that salted the earth on data centers now threatens Anthropic's own scaling.",
+    "quote": "If you're a frontier lab, you don't want to have to go through Amazon and GCP and Azure and Tin Cup for access and capacity... It is a 5-alarm fire for them. They more than anybody else needs to get their hands on compute.",
+    "quoteStartMs": 1704913,
+    "topics": [
+      "compute infrastructure",
+      "competitive risk",
+      "AI scaling"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E269-openai-Sacks-3",
+    "episodeId": "E269",
+    "episodeNumber": 269,
+    "episodeDate": "2026-04-17T20:35:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "mixed",
+    "conviction": "medium",
+    "summary": "Sacks believes OpenAI has been legitimately unfocused (consumer priority, random acquisitions) and risks falling permanently behind Anthropic given its slower growth rate, but argues pivoting hard to enterprise/coding is the correct path to remain competitive.",
+    "quote": "If it's taking Anthropic, let's say, 1 year to 10x and it's taking OpenAI 2 years to achieve a 10x, then it's obvious which one's gonna win... over the next 1 or 2 years could be insurmountable.",
+    "quoteStartMs": 1422454,
+    "topics": [
+      "AI competition",
+      "valuation",
+      "enterprise strategy"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E269-openai-Chamath-4",
+    "episodeId": "E269",
+    "episodeNumber": 269,
+    "episodeDate": "2026-04-17T20:35:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath argues OpenAI can justify an enormous long-term valuation by separating its consumer ChatGPT business from an enterprise/Codex business, potentially painting a path to $7-9 trillion market cap, but only if it executes the split cleanly.",
+    "quote": "If we allocate our resources and just double down and crush consumer, that's probably $3 or $4 trillion of enterprise value... double down on Codex... we can probably capture $2 or $3 trillion there. And now all of a sudden you can paint a picture for a $7, $8, $9 trillion market cap.",
+    "quoteStartMs": 876629,
+    "topics": [
+      "valuation",
+      "AI strategy",
+      "enterprise vs consumer"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E269-openai-Guest-5",
+    "episodeId": "E269",
+    "episodeNumber": 269,
+    "episodeDate": "2026-04-17T20:35:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bear",
+    "conviction": "medium",
+    "summary": "Travis Kalanick warns that if Anthropic is growing materially faster than OpenAI at similar scale, the network effects around compute, tokens, and reinforcement learning will compound Anthropic's lead in a winner-take-most dynamic, leaving OpenAI in a structurally weakening position.",
+    "quote": "If Anthropic is growing faster than OpenAI by a significant clip, the investors right now are going to play it forward... if they are half the growth rate, a third the growth rate, a fifth the growth rate, I would be— I'd be worried.",
+    "quoteStartMs": 969127,
+    "topics": [
+      "AI competition",
+      "network effects",
+      "growth"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E269-be-Chamath-6",
+    "episodeId": "E269",
+    "episodeNumber": 269,
+    "episodeDate": "2026-04-17T20:35:00.000Z",
+    "company": "Bloom Energy",
+    "ticker": "BE",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "summary": "Chamath highlights Bloom Energy as a direct beneficiary of the data center compute crunch, as its on-site nat gas power solution with fast permitting makes it uniquely positioned to serve AI infrastructure demand.",
+    "quote": "If you look at companies like Bloom Energy, It has gone absolutely straight up vertical nuclear. And the reason is because Bloom has a solution that allows you to use nat gas, that allows you to do something onsite, and critically allows you to get your clean air permits very quickly.",
+    "quoteStartMs": 2403583,
+    "topics": [
+      "data center power",
+      "AI infrastructure",
+      "energy"
+    ],
+    "attributionConfidence": "high",
+    "positional": false
+  },
+  {
+    "id": "E269-spacex-Chamath-7",
+    "episodeId": "E269",
+    "episodeNumber": 269,
+    "episodeDate": "2026-04-17T20:35:00.000Z",
+    "company": "SpaceX",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "summary": "Chamath says it is crucial that the SpaceX IPO get done as soon as possible, implying he holds a position he wants to realize and views the current elevated market as the right window to exit.",
+    "quote": "I think it is crucial that this SpaceX IPO get done ASAP. And then I think it's even more crucial that one of Anthropic and OpenAI front run the other one and get out first.",
+    "quoteStartMs": 4640000,
+    "topics": [
+      "IPO",
+      "valuation",
+      "exit"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  },
+  {
+    "id": "E269-bird-Sacks-8",
+    "episodeId": "E269",
+    "episodeNumber": 269,
+    "episodeDate": "2026-04-17T20:35:00.000Z",
+    "company": "Allbirds",
+    "ticker": "BIRD",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bear",
+    "conviction": "high",
+    "summary": "Sacks uses Allbirds' pivot to AI (and resulting 450% stock pop) as a classic late-cycle bubble signal, comparing it to dot-com era name changes — calling the valuation a collective delusion driven by ZIRP-era failure to scrutinize gross margins on physical-world businesses.",
+    "quote": "This reminds me of the late '90s where all you had to do was change your name to whatever.com. And you get a huge pop in your valuation.",
+    "quoteStartMs": 2088000,
+    "topics": [
+      "bubble",
+      "valuation",
+      "AI pivot"
+    ],
+    "attributionConfidence": "high",
+    "positional": true
+  }
+]
