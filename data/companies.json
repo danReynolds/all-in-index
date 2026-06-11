@@ -694,5 +694,25 @@
   "safe-superintelligence": {
     "description": "AI research company focused on developing safe superintelligent systems, founded by Ilya Sutskever.",
     "domain": "ssi.inc"
+  },
+  "openai-chatgpt": {
+    "description": "Develops AI research and products including the ChatGPT conversational AI assistant and GPT model APIs.",
+    "domain": "openai.com"
+  },
+  "glue": {
+    "description": "Provides an AI-powered team messaging and collaboration platform for workplace communication.",
+    "domain": "glue.ai"
+  },
+  "ohalo-genetics": {
+    "description": "Agricultural biotech company using advanced plant breeding techniques to improve crop yield and traits.",
+    "domain": "ohalogenetics.com"
+  },
+  "athena-athenawow": {
+    "description": "Offers executive assistant and delegation services pairing clients with trained remote assistants.",
+    "domain": "athenago.com"
+  },
+  "duol": {
+    "description": "Operates a free language-learning platform offering gamified lessons across dozens of languages.",
+    "domain": "duolingo.com"
   }
 }
