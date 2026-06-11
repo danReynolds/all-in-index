@@ -115,6 +115,13 @@ export interface SyncOpts {
   roundtableOnly?: boolean;
   /** How many episodes to transcribe/extract concurrently. */
   concurrency?: number;
+  /**
+   * Also process feed episodes OLDER than the newest one already processed.
+   * Off by default: the libsyn feed carries the back catalog, so without this
+   * guard every scheduled run would quietly backfill two old episodes.
+   * Pass --include-older for a deliberate backfill.
+   */
+  includeOlder?: boolean;
 }
 
 /**
@@ -131,9 +138,27 @@ export async function sync(opts: SyncOpts = {}): Promise<void> {
   const eps = await fetchFeed();
   const pool = roundtableOnly ? eps.filter((e) => e.kind === "roundtable") : eps;
   const processed = new Set(store.listEpisodeIds());
-  const todo = pool.filter((e) => !processed.has(e.id)).slice(0, limit);
+
+  // Forward-only by default: only episodes newer than the newest processed.
+  let dateFloor = "";
+  if (!opts.includeOlder) {
+    for (const id of processed) {
+      const ep = store.loadEpisode(id);
+      if (ep && ep.date > dateFloor) dateFloor = ep.date;
+    }
+  }
+
+  const skippedOlder = pool.filter((e) => !processed.has(e.id) && e.date <= dateFloor).length;
+  const todo = pool
+    .filter((e) => !processed.has(e.id) && e.date > dateFloor)
+    .slice(0, limit);
 
   if (todo.length === 0) {
+    if (skippedOlder > 0) {
+      console.log(
+        `${skippedOlder} older unprocessed episode(s) in the feed — skipped (forward-only; use --include-older to backfill).`,
+      );
+    }
     console.log("Index is up to date — no new episodes. Rebuilding to refresh market data…");
     await buildIndex();
     return;

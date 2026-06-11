@@ -153,7 +153,8 @@ async function main() {
       const concIdx = rest.indexOf("--concurrency");
       const concurrency = concIdx >= 0 ? parseInt(rest[concIdx + 1], 10) : undefined;
       const roundtableOnly = !rest.includes("--include-interviews");
-      return sync({ limit, roundtableOnly, concurrency });
+      const includeOlder = rest.includes("--include-older");
+      return sync({ limit, roundtableOnly, concurrency, includeOlder });
     }
     default:
       console.log(
