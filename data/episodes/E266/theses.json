@@ -100,7 +100,7 @@
     "isPublic": true,
     "host": "Sacks",
     "stance": "bull",
-    "conviction": "medium",
+    "conviction": "low",
     "summary": "Sacks turned bullish on Google, citing Gemini's success and Google's unique structural advantage for personal agents — it already holds users' calendars, docs, and email — making it the best-positioned incumbent for the agentic AI transition.",
     "quote": "Google is in an outstanding position to do the whole Open Claw thing because they already have access to your calendar, your documents, your email. So the agent doesn't really have to earn your trust because you already trust Google with all of your stuff.",
     "quoteStartMs": 1531977,
@@ -111,7 +111,7 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": false
   },
   {
     "id": "E266-googl-Chamath-5",

@@ -57,6 +57,8 @@ Rules:
   If the economic direction is not explicitly claimed, use "neutral".
 - conviction: how strongly the host commits (hedged aside = low; emphatic, repeated, "this is the trade" = high).
 - positional: true ONLY if the take clearly communicates an in/out ownership stance — "I'd own it here", "I bought more", "this is the trade", "I'd take profits", "wouldn't touch it", "this is a short". Criticism of a company someone might still hold is NOT an exit; praise without ownership intent is NOT a buy. Lean false when unsure.
+  Do NOT mark positional: "Google is in an outstanding position to do [X] because they already have access to your calendar, documents, email" — being well-positioned is an observation about the company, not a statement of the speaker's ownership. Positional requires the SPEAKER's own in/out, in their words.
+  Note: an advantage scoped to ONE product category of a diversified company ("outstanding position to do the agent thing") is not, by itself, a company-level bull claim — without a stated company-level consequence, keep stance neutral or mark the hedge with low conviction.
 - ticker: the correct US-listed symbol ONLY if you are confident and the company is publicly traded. For private companies (e.g. SpaceX, OpenAI, Anthropic, Stripe) set ticker=null and isPublic=false.
 - quote: a SHORT verbatim excerpt (≤ 240 characters) from that host that best supports the thesis. Copy it exactly from the transcript. Set quoteStartSec to the integer second shown in that line's "[<sec>s <Speaker>]" prefix.
 - summary: one clear sentence capturing the host's view and reasoning.
