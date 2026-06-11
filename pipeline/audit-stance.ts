@@ -15,11 +15,14 @@ A take's stance must be an ECONOMIC claim about the company:
 - mixed = the speaker explicitly argues both sides
 
 The recorded stance is WRONG when it encodes APPROVAL or DISAPPROVAL of conduct
-instead of economic direction. The canonical error: "They're pursuing regulatory
-capture to lock in monopolistic control" recorded as bear — that is moral
-disapproval; as an economic claim, a locked-in monopoly strengthens the company.
-Correct label there: neutral (or bull if the speaker frames the lock-in as
-succeeding and durable).
+instead of an EXPLICITLY CLAIMED economic direction. Direction is never
+inferred: describing a strategy as effective ("they can raise prices once
+rivals die"), disapproving of conduct that happens to be economically good
+("regulatory capture to lock in a monopoly"), morally-framed risk with no
+stated economic tie, and approving a policy as good for outsiders are ALL
+neutral. The canonical error: "They're pursuing regulatory capture to lock in
+monopolistic control" recorded as bear — moral disapproval, no claimed
+direction. Correct label: neutral.
 
 KEEP the recorded stance (verdict "keep") unless the summary+quote CLEARLY fail
 the economic-direction test. Lean keep — do not re-litigate plausible labels.

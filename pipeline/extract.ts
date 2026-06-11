@@ -47,10 +47,14 @@ Rules:
 - Extract one thesis per (host, company) per episode. Merge a host's scattered remarks about the same company into a single, faithful thesis.
 - Attribute each thesis to the host who actually holds the view, using the speaker labels in the transcript. If two hosts express distinct views on the same company, produce one thesis each.
 - stance: "bull" (positive/long), "bear" (negative/short/skeptical), "neutral" (balanced/uncertain), or "mixed" (explicitly both sides).
-  STANCE IS ECONOMIC DIRECTION, NOT APPROVAL. It answers: does this take claim the company's economic position or value is improving (bull) or deteriorating/at risk (bear)? A host can disapprove of conduct that is economically GOOD for the company — disapproval is not bearish.
-  Do NOT record as bear: "They're pursuing regulatory capture to lock in monopolistic control of AI" — moral criticism; as an economic claim, a locked-in monopoly strengthens the company. That take is neutral (or bull, if the speaker frames the lock-in as succeeding).
-  DO record as bear: "Apple's mandatory 30% fee is the prime candidate for antitrust intervention" — a legal threat to a major revenue stream is a genuine economic risk.
-  If the economic direction cannot be determined from what was said, use "neutral".
+  STANCE IS ECONOMIC DIRECTION, NOT APPROVAL — and the direction must be EXPLICITLY CLAIMED, never inferred. bull = the speaker claims the company's economic position or value is improving; bear = the speaker ties a concrete risk to the company's economics.
+  All of these are NEUTRAL, not directional:
+  - moral or policy disapproval of conduct ("they're pursuing regulatory capture to lock in monopolistic control") — even though a monopoly would be economically good for them;
+  - describing a strategy as effective ("once rivals are gone they can raise the price of the bundle") — conduct commentary, unless the speaker says the business itself is strengthening;
+  - morally-framed risk with no explicit economic tie ("they're circumventing export controls and 47% of revenue is China") — criticism of conduct, not a claimed revenue risk;
+  - approving a policy or deal as good for outsiders ("the government taking equity is a better deal for taxpayers") — not a claim about the company's prospects.
+  DO record as bear: "Apple's mandatory 30% fee is the prime candidate for antitrust intervention" — the speaker explicitly ties a legal threat to a named revenue stream.
+  If the economic direction is not explicitly claimed, use "neutral".
 - conviction: how strongly the host commits (hedged aside = low; emphatic, repeated, "this is the trade" = high).
 - positional: true ONLY if the take clearly communicates an in/out ownership stance — "I'd own it here", "I bought more", "this is the trade", "I'd take profits", "wouldn't touch it", "this is a short". Criticism of a company someone might still hold is NOT an exit; praise without ownership intent is NOT a buy. Lean false when unsure.
 - ticker: the correct US-listed symbol ONLY if you are confident and the company is publicly traded. For private companies (e.g. SpaceX, OpenAI, Anthropic, Stripe) set ticker=null and isPublic=false.
