@@ -42,7 +42,7 @@
       "sports betting"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": false
   },
   {
     "id": "E248-flut-Chamath-2",
@@ -64,7 +64,7 @@
       "sports betting"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": false
   },
   {
     "id": "E248-amzn-Friedberg-3",
@@ -225,7 +225,7 @@
       "Optimus"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": false
   },
   {
     "id": "E248-orcl-Jason-10",

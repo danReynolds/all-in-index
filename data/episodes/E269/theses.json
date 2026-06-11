@@ -174,7 +174,7 @@
       "exit"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": false
   },
   {
     "id": "E269-bird-Sacks-8",
@@ -196,6 +196,6 @@
       "AI pivot"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": false
   }
 ]
