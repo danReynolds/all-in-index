@@ -3,7 +3,7 @@ import { allSlugs, allEpisodeIds } from "@/lib/data";
 import { REGULAR_HOSTS } from "@/lib/types";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://allindex.fyi";
   const statics = ["", "/the-index", "/signals", "/awards", "/episodes"].map((p) => ({
     url: `${base}${p}`,
     changeFrequency: "daily" as const,

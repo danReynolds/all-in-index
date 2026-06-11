@@ -21,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://allindex.fyi"),
   title: { default: "The All-Index", template: "%s · The All-Index" },
   description:
     "Every call on the All-In podcast — extracted, attributed, and scored against the market. Per-host track records, the Besties Index, and the Bear Book.",
