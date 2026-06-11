@@ -14,6 +14,13 @@ export function scoredTakes(
   theses: Thesis[],
   hosts: readonly Host[] = BESTIES,
 ): Thesis[] {
+  // Same-date tie-break: a host's directional take outranks their neutral
+  // commentary from the same episode (it sorts later, so "latest per host"
+  // logic lands on it), and higher conviction outranks lower. Without this,
+  // file order decided e.g. which of Sacks's two same-day Anthropic takes
+  // counted as his stance.
+  const dirRank = (t: Thesis) => (t.stance === "neutral" ? 0 : t.stance === "mixed" ? 1 : 2);
+  const convRank = { low: 0, medium: 1, high: 2 } as const;
   return theses
     .filter(
       (t) =>
@@ -21,7 +28,12 @@ export function scoredTakes(
         t.conviction !== "low" &&
         t.attributionConfidence !== "low",
     )
-    .sort((a, b) => a.episodeDate.localeCompare(b.episodeDate));
+    .sort(
+      (a, b) =>
+        a.episodeDate.localeCompare(b.episodeDate) ||
+        dirRank(a) - dirRank(b) ||
+        convRank[a.conviction] - convRank[b.conviction],
+    );
 }
 
 function balance(latest: Map<Host, Stance>): number {

@@ -146,6 +146,10 @@ async function main() {
       const { purgeCommentary } = await import("./purge");
       return purgeCommentary();
     }
+    case "audit-stance": {
+      const { auditStance } = await import("./audit-stance");
+      return auditStance();
+    }
     case "sync": {
       const { sync } = await import("./sync");
       const limitIdx = rest.indexOf("--limit");

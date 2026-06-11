@@ -47,6 +47,10 @@ Rules:
 - Extract one thesis per (host, company) per episode. Merge a host's scattered remarks about the same company into a single, faithful thesis.
 - Attribute each thesis to the host who actually holds the view, using the speaker labels in the transcript. If two hosts express distinct views on the same company, produce one thesis each.
 - stance: "bull" (positive/long), "bear" (negative/short/skeptical), "neutral" (balanced/uncertain), or "mixed" (explicitly both sides).
+  STANCE IS ECONOMIC DIRECTION, NOT APPROVAL. It answers: does this take claim the company's economic position or value is improving (bull) or deteriorating/at risk (bear)? A host can disapprove of conduct that is economically GOOD for the company — disapproval is not bearish.
+  Do NOT record as bear: "They're pursuing regulatory capture to lock in monopolistic control of AI" — moral criticism; as an economic claim, a locked-in monopoly strengthens the company. That take is neutral (or bull, if the speaker frames the lock-in as succeeding).
+  DO record as bear: "Apple's mandatory 30% fee is the prime candidate for antitrust intervention" — a legal threat to a major revenue stream is a genuine economic risk.
+  If the economic direction cannot be determined from what was said, use "neutral".
 - conviction: how strongly the host commits (hedged aside = low; emphatic, repeated, "this is the trade" = high).
 - positional: true ONLY if the take clearly communicates an in/out ownership stance — "I'd own it here", "I bought more", "this is the trade", "I'd take profits", "wouldn't touch it", "this is a short". Criticism of a company someone might still hold is NOT an exit; praise without ownership intent is NOT a buy. Lean false when unsure.
 - ticker: the correct US-listed symbol ONLY if you are confident and the company is publicly traded. For private companies (e.g. SpaceX, OpenAI, Anthropic, Stripe) set ticker=null and isPublic=false.

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T16:18:58.292Z",
+  "generatedAt": "2026-06-11T18:38:21.070Z",
   "holdings": [
     {
       "slug": "aapl",
@@ -1006,7 +1006,7 @@
           "ticker": null,
           "isPublic": false,
           "host": "Chamath",
-          "stance": "bear",
+          "stance": "bull",
           "conviction": "high",
           "summary": "Chamath argues Anthropic's safety narrative and lobbying are a calculated game-theory strategy to dominate the regulatory environment, absorb capital, and create oversight bodies less capable than itself — enabling it to exploit competitors and lock in disproportionate market power.",
           "quote": "if you want to be unexploitable, I think the best thing that you could do if you're trying to build a super god is have 3 or 4 entities in a room, close the door behind you, and then dominate those other 3 or 4 entities, and then you set",
@@ -1050,7 +1050,7 @@
           "ticker": null,
           "isPublic": false,
           "host": "Sacks",
-          "stance": "bear",
+          "stance": "bull",
           "conviction": "high",
           "summary": "Sacks argues Anthropic is pursuing regulatory capture to lock in monopolistic control of AI, by branding itself as the 'safe' AI company and characterizing competitors as reckless, which would concentrate power dangerously and harm the competitive market that currently benefits consumers.",
           "quote": "if you brand yourself as the safe AI company and then try to characterize everybody else as a reckless player, and reckless AI needs to be stopped, you can see how this would basically further your monopolistic control over this industry.",
@@ -1434,7 +1434,7 @@
           "ticker": null,
           "isPublic": false,
           "host": "Sacks",
-          "stance": "mixed",
+          "stance": "bull",
           "conviction": "medium",
           "summary": "Sacks is bullish on Anthropic's products and business execution — praising their coding-to-enterprise pipeline and agent expansion — but holds a philosophical objection to their regulatory capture strategy, which he believes creates artificial moats that harm new entrants.",
           "quote": "I think they made this bet on coding as their way to get to recursive self-improvement. As it turns out, it was a very good business move as well, because code is the gateway into enterprise and enterprise IT budgets.",
@@ -1966,7 +1966,7 @@
           "ticker": "MSFT",
           "isPublic": true,
           "host": "Chamath",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "medium",
           "summary": "Chamath views Microsoft's pledge to pay fair electricity rates and cover infrastructure costs for data centers as a smart first step that removes political friction and gives hyperscalers a social license to operate, supporting continued AI buildout.",
           "quote": "I really like it. It's a very good first order set of things to do, which is to step into a local area and take all of these energy issues off the table, at least to the extent that you're contributing to it.",
@@ -2170,7 +2170,7 @@
           "ticker": "MSFT",
           "isPublic": true,
           "host": "Chamath",
-          "stance": "bear",
+          "stance": "bull",
           "conviction": "high",
           "summary": "Chamath argues Microsoft has a 40-year playbook of using bundle monopoly power to kill competitors, and US regulators need to revive the old consent decree to stop it, as the EU has now done with Teams.",
           "quote": "Microsoft has been bundling products to kill competitors for 40 years... I think that they've gone back to their old playbook. It's a playbook that you have to remember the executives that run Microsoft have been there for 30 and 40 years.",
@@ -2193,7 +2193,7 @@
           "ticker": "MSFT",
           "isPublic": true,
           "host": "Sacks",
-          "stance": "bear",
+          "stance": "bull",
           "conviction": "high",
           "summary": "Sacks argues Microsoft's systematic bundling of Teams with Office is illegal anti-competitive dumping that will entrench its monopoly in enterprise software and ultimately harm consumers through higher bundle prices once competitors are eliminated.",
           "quote": "Once they've pulled the rug out from under their competition, and that competitor is no longer viable, now they can raise the price of the bundle. It's kind of like dumping in a way.",
@@ -2209,7 +2209,7 @@
         }
       ],
       "synthesis": "The All-In hosts hold a broadly mixed but cautiously skeptical long-term view of Microsoft, with Chamath and Friedberg collectively raising the most concerns across multiple time periods. Chamath and Sacks share high-conviction bearish views on Microsoft's competitive practices, arguing its decades-old bundling playbook illegally crushes competitors and warrants regulatory intervention — a view reinforced by Chamath's later caution that massive AI CapEx commitments and leveraged energy contracts may pressure equity valuations over time, and his most recent note that enterprise customers are already pulling back AI cloud budgets. Friedberg adds near-term skepticism about cloud growth weakness and a longer-run structural bear case that Microsoft's core enterprise customer base will be disrupted by AI-native alternatives, though he also sees Azure as a tactical beneficiary of AWS's outages. The bullish counterarguments come primarily from guests: Reid Hoffman praises CEO Satya Nadella's capital discipline, Philippe Lafont cites explosive AI token growth as proof of real demand, and Gavin Baker notes measurable Copilot uptake despite product limitations — while Chamath himself takes a medium-conviction bull stance on near-term bundling growth, creating an internal tension in his own views across different time horizons.",
-      "netStance": "mixed",
+      "netStance": "bull",
       "firstMentioned": "2024-06-29T04:05:00.000Z",
       "lastMentioned": "2026-05-29T22:23:00.000Z",
       "mentionCount": 13,
@@ -2587,7 +2587,7 @@
           "ticker": "META",
           "isPublic": true,
           "host": "Jason",
-          "stance": "mixed",
+          "stance": "bull",
           "conviction": "medium",
           "summary": "Jason observes Meta has shed headcount from its 86,000-employee peak to 75,000 while growing profits, using this as evidence that AI is enabling tech companies to structurally reduce labor costs—positive for margins but raising displacement concerns.",
           "quote": "Meta peaked at 86,000 employees, now at 75,000. Uber at 33,000, now at 31,000.",
@@ -2897,7 +2897,7 @@
         }
       ],
       "synthesis": "The hosts hold a net bullish view on Meta, with Sacks and Gavin Baker (guest) consistently pointing to strong execution — cost discipline, AI-driven revenue upside, and open-source leadership via Llama — as core reasons for optimism, while Friedberg and Chamath (in his later entries) defend the company's accounting integrity and argue its massive cash reserves and compute infrastructure give it a structural advantage in AI. Chamath is notably inconsistent across time, shifting from early bearish caution (flagging AI hype exhaustion and regulatory breakup risk from the DOJ) to broadly bullish by 2025–2026, praising Meta's distribution moat, political realignment under Zuckerberg, and capital deployment capacity. The main areas of disagreement concern AI competitiveness: Keith Rabois (guest) and Sacks (in late entries) argue Meta has missed the boat on frontier AI — with Llama 4 disappointing and open-source commitment wavering — while Chamath and Gavin Baker counter that Meta's scale and ROI on AI investment remain compelling, though Chamath does acknowledge a key gap in hardware/compute integration versus rivals like OpenAI, Google, and DeepSeek. Regulatory risk and the legacy of overcounting headcount round out the cautionary notes, with Sacks warning of political backlash over past censorship and Chamath framing recent layoffs as an operational correction rather than AI-driven efficiency gains.",
-      "netStance": "mixed",
+      "netStance": "bull",
       "firstMentioned": "2024-08-02T18:13:00.000Z",
       "lastMentioned": "2026-05-29T22:23:00.000Z",
       "mentionCount": 19,
@@ -4122,7 +4122,7 @@
           "ticker": "NVDA",
           "isPublic": true,
           "host": "Chamath",
-          "stance": "bear",
+          "stance": "neutral",
           "conviction": "high",
           "summary": "Chamath argues NVIDIA has been systematically circumventing US export controls by designing chips just below restriction thresholds and selling them to front companies that route them to China, making NVIDIA complicit in undermining US national security interests rather than acting in America's best interest.",
           "quote": "I think the real problem that we have is that NVIDIA is not doing what is in the best interest of the United States... About 47% of all of NVIDIA's revenue goes to China and Chinese-related countries.",
@@ -6249,7 +6249,7 @@
           "ticker": "GOOGL",
           "isPublic": true,
           "host": "Jason",
-          "stance": "mixed",
+          "stance": "bull",
           "conviction": "medium",
           "summary": "Jason notes that Alphabet's headcount has declined from its 2022 peak despite record earnings and profits, citing this as evidence that AI-driven efficiency is leading to structural headcount reduction rather than job growth, which he views as a concerning trend for employment even if financially positive for the company.",
           "quote": "If you look at Alphabet, you know, they had peak Googlers in 2022, 190,000, and they've had massive earnings and profits increase and have 187,000 people now. In other words, less.",
@@ -7003,7 +7003,7 @@
           "ticker": "GOOGL",
           "isPublic": true,
           "host": "Sacks",
-          "stance": "bear",
+          "stance": "neutral",
           "conviction": "medium",
           "summary": "Sacks argues Google's search algorithm is demonstrably and deliberately biased against Trump, surfacing obscure negative articles as top results — a credibility and regulatory risk that undermines the core value of its search product.",
           "quote": "There's no question that just as a factual matter, this episode was suppressed in YouTube search... it's pretty obvious to me that they're using other factors in deciding what to surface here. And somehow the results end up being almost",
@@ -7118,7 +7118,7 @@
           "ticker": "GOOGL",
           "isPublic": true,
           "host": "Friedberg",
-          "stance": "mixed",
+          "stance": "neutral",
           "conviction": "medium",
           "summary": "Friedberg argues that breaking up Google would destroy real societal benefits from its R&D investments (DeepMind, Waymo), and that antitrust remedies should target specific monopolistic behaviors rather than size, but acknowledges the DOJ action is underway.",
           "quote": "I don't think that these big companies are bad just because they're big. I think we should take apart the monopolistic antitrust actions and behaviors that they take, and then identify ways to remedy those behaviors versus just saying",
@@ -11976,7 +11976,7 @@
           "ticker": "AMZN",
           "isPublic": true,
           "host": "Jason",
-          "stance": "mixed",
+          "stance": "bull",
           "conviction": "medium",
           "summary": "Jason points to Amazon's headcount declining from a peak of 1.6 million to 1.55 million as further evidence that even large labor-intensive companies are using AI and automation to shrink workforces while growing profits, signaling a structural employment shift.",
           "quote": "And Amazon, where you would think you'd have a lot of growth here, uh, they're at— they peaked at 1.6 million and now they're down at 1.55 million. So these companies are not hiring.",
@@ -18678,7 +18678,7 @@
           "ticker": "INTC",
           "isPublic": true,
           "host": "Sacks",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "medium",
           "summary": "Sacks supports the government taking equity in Intel rather than giving outright grants, arguing it's a better deal for taxpayers, creates the right incentives, and addresses the national security imperative of onshoring chip manufacturing.",
           "quote": "If you are going to hand out billions of dollars to these companies, you're better off at least getting something for it, having the taxpayers have some upside in it, allowing the government to recoup, and creating the right incentive for",
@@ -18701,7 +18701,7 @@
           "ticker": "INTC",
           "isPublic": true,
           "host": "Chamath",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "medium",
           "summary": "Chamath argues the US government taking a 10% equity stake in Intel—rather than giving free grants—is a smart model that gives taxpayers upside while strategically supporting domestic chip manufacturing to compete with China.",
           "quote": "I think that this approach is the much better approach, which is to say we can do exactly what China did with a couple of tweaks... own something on the balance sheet of the United States, not have a golden vote, have complete",
@@ -18761,7 +18761,7 @@
         }
       ],
       "synthesis": "The hosts are divided on Intel, with views shifting notably over time. Friedberg (2024) and guest Thomas Lafont (2025) are bearish, with Friedberg citing Intel's manufacturing struggles as potentially fatal even with government support, and Lafont attributing the company's decline to a wholesale failure of corporate governance at both the board and CEO level. By contrast, Chamath and Sacks (both August 2025) have turned cautiously bullish—not on Intel's fundamentals per se, but on the U.S. government's decision to take a 10% equity stake rather than issuing free grants; both argue this model gives taxpayers upside, creates better incentives, and serves the national security goal of onshoring chip manufacturing to compete with China. The result is a split where the bears focus on Intel's internal dysfunction and execution failures, while the bulls frame their optimism around the structure of government intervention rather than Intel's own merits.",
-      "netStance": "bull",
+      "netStance": "bear",
       "firstMentioned": "2024-08-23T22:14:00.000Z",
       "lastMentioned": "2025-08-29T23:10:00.000Z",
       "mentionCount": 4,
@@ -20325,7 +20325,7 @@
           "ticker": null,
           "isPublic": false,
           "host": "Chamath",
-          "stance": "bear",
+          "stance": "neutral",
           "conviction": "high",
           "summary": "Chamath argues the Fed is playing politics rather than following the data, and that a 100bp rate cut is mathematically justified by low inflation and would unlock ~$600B in combined savings and growth benefits for the US economy.",
           "quote": "If Jerome Powell stays politicized, his incentive will be to keep interest rates where they are... if we cut by 100 basis points, that's another $300 billion.",
@@ -20341,7 +20341,7 @@
         }
       ],
       "synthesis": "The sole host view provided comes from Chamath, who holds a high-conviction bearish stance on the Fed's current policy direction as of June 2025. He argues that the Fed is acting politically rather than being data-driven, contending that low inflation mathematically justifies a 100 basis point rate cut that would unlock roughly $600 billion in savings and economic growth for the US. Chamath singles out Jerome Powell as the source of this politicization, suggesting Powell's personal incentives are keeping rates artificially elevated. No other hosts' views were provided, so no cross-host agreement or disagreement can be assessed.",
-      "netStance": "bear",
+      "netStance": "neutral",
       "firstMentioned": "2025-06-13T19:55:00.000Z",
       "lastMentioned": "2025-06-13T19:55:00.000Z",
       "mentionCount": 1,
@@ -23366,7 +23366,7 @@
           "ticker": "SPY",
           "isPublic": true,
           "host": "Chamath",
-          "stance": "mixed",
+          "stance": "neutral",
           "conviction": "medium",
           "summary": "Chamath warns that cap-weighted S&P index funds are no longer truly diversified — they are effectively a bet on the Mag 7 — making the conventional advice to 'just buy the S&P' misleading for retail investors seeking diversification.",
           "quote": "The problem with these indices right now is those are not really well-balanced indices... when you're buying the S&P 500, you're not doing that anymore. You're buying the S&P 7, and then the rest in the 493 is, you know, 60%.",
@@ -23381,7 +23381,7 @@
         }
       ],
       "synthesis": "The hosts' collective view on S&P 500 index ETFs is represented solely by Chamath, who holds a mixed stance at medium conviction. He argues that cap-weighted S&P 500 index funds have become misleadingly concentrated, with the Magnificent 7 effectively dominating the index and leaving the remaining 493 stocks accounting for only roughly 60% of the weight combined. For retail investors who buy the S&P 500 expecting broad diversification, Chamath contends they are instead making a de facto concentrated bet on a handful of mega-cap tech names. No other hosts provided theses on this topic, so no cross-host agreement or disagreement can be assessed.",
-      "netStance": "mixed",
+      "netStance": "neutral",
       "firstMentioned": "2025-03-01T02:06:00.000Z",
       "lastMentioned": "2025-03-01T02:06:00.000Z",
       "mentionCount": 1,
@@ -30103,7 +30103,7 @@
           "ticker": null,
           "isPublic": false,
           "host": "Chamath",
-          "stance": "mixed",
+          "stance": "neutral",
           "conviction": "medium",
           "summary": "Chamath is skeptical of Sequoia's cross-fund Stripe secondary, calling inter-fund liquidity transactions 'verboten' from a governance standpoint and potentially self-serving for GPs, though acknowledging the valuation mark-up is a positive signal.",
           "quote": "I don't like these kinds of like things where one fund is basically scratching the back of another fund. It's— it always tends to be the case that this stuff on the surface looks a little smelly and can be a little unseemly.",
@@ -30741,7 +30741,7 @@
           "ticker": null,
           "isPublic": false,
           "host": "Chamath",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "high",
           "summary": "Chamath strongly supports the Texas Stock Exchange as a competitor to NYSE and NASDAQ, arguing that the duopoly has become regressive with listing requirements and that more competition will create more rational behavior benefiting companies seeking capital.",
           "quote": "I think that the duopoly hasn't created enough competition. So the NASDAQ and New York Stock Exchange haven't innovated... I think if you have a third player, there's a chance that more competition will create more rational behavior.",
@@ -30757,7 +30757,7 @@
         }
       ],
       "synthesis": "The only host on record here, Chamath, is bullish with high conviction on the Texas Stock Exchange, viewing it as a welcome disruptor to what he characterizes as a stagnant NYSE/NASDAQ duopoly. His core argument is that the two incumbents have failed to innovate and have grown regressive in their listing requirements, to the detriment of companies seeking capital. He believes the entry of a third player will introduce competitive pressure that produces more rational behavior across the exchange landscape. No other hosts' views are available to compare or contrast against Chamath's position.",
-      "netStance": "bull",
+      "netStance": "neutral",
       "firstMentioned": "2024-06-07T19:02:00.000Z",
       "lastMentioned": "2024-06-07T19:02:00.000Z",
       "mentionCount": 1,
@@ -31593,12 +31593,12 @@
     "inceptionDate": "2024-05-31",
     "benchmarkSymbol": "SPY",
     "contributionPerCall": 1000,
-    "totalInvested": 28000,
-    "portfolioValue": 44489,
-    "benchmarkValue": 32984,
-    "portfolioReturn": 0.5888928571428571,
-    "benchmarkReturn": 0.17799999999999994,
-    "outperformance": 0.41089285714285717,
+    "totalInvested": 29000,
+    "portfolioValue": 42500,
+    "benchmarkValue": 34670,
+    "portfolioReturn": 0.4655172413793103,
+    "benchmarkReturn": 0.19551724137931026,
+    "outperformance": 0.27,
     "constituents": [
       {
         "slug": "000660.ks",
@@ -31608,28 +31608,11 @@
         "currency": "KRW",
         "entryDate": "2025-10-10",
         "entryPrice": 428000,
-        "latestPrice": 2048000,
-        "sinceReturn": 3.7850467289719623,
-        "benchmarkReturn": 0.11768399130195095,
-        "alpha": 3.667362737670011,
+        "latestPrice": 2101000,
+        "sinceReturn": 3.908878504672897,
+        "benchmarkReturn": 0.12483538023337726,
+        "alpha": 3.7840431244395196,
         "hosts": [
-          "Chamath"
-        ]
-      },
-      {
-        "slug": "intc",
-        "company": "Intel",
-        "ticker": "INTC",
-        "sourceSymbol": "INTC",
-        "currency": "USD",
-        "entryDate": "2025-08-29",
-        "entryPrice": 24.35,
-        "latestPrice": 113.2,
-        "sinceReturn": 3.648870636550308,
-        "benchmarkReturn": 0.13149368266025907,
-        "alpha": 3.5173769538900492,
-        "hosts": [
-          "Sacks",
           "Chamath"
         ]
       },
@@ -31641,29 +31624,13 @@
         "currency": "USD",
         "entryDate": "2024-09-27",
         "entryPrice": 36.84,
-        "latestPrice": 130.29,
-        "sinceReturn": 2.536780673181324,
-        "benchmarkReturn": 0.27717990445692675,
-        "alpha": 2.259600768724397,
+        "latestPrice": 130.66,
+        "sinceReturn": 2.5465526601520083,
+        "benchmarkReturn": 0.28535181199363024,
+        "alpha": 2.261200848158378,
         "hosts": [
           "Sacks",
           "Chamath"
-        ]
-      },
-      {
-        "slug": "dell",
-        "company": "Dell Technologies",
-        "ticker": "DELL",
-        "sourceSymbol": "DELL",
-        "currency": "USD",
-        "entryDate": "2024-05-31",
-        "entryPrice": 139.56,
-        "latestPrice": 380.34,
-        "sinceReturn": 1.725280166236744,
-        "benchmarkReturn": 0.38398088628477156,
-        "alpha": 1.3412992799519725,
-        "hosts": [
-          "Friedberg"
         ]
       },
       {
@@ -31674,13 +31641,29 @@
         "currency": "USD",
         "entryDate": "2024-11-18",
         "entryPrice": 35,
-        "latestPrice": 89.79,
-        "sinceReturn": 1.5654285714285714,
-        "benchmarkReturn": 0.24095893904616172,
-        "alpha": 1.3244696323824097,
+        "latestPrice": 91.82,
+        "sinceReturn": 1.6234600000000001,
+        "benchmarkReturn": 0.24889909036810343,
+        "alpha": 1.3745609096318967,
         "hosts": [
           "Jason",
           "Sacks"
+        ]
+      },
+      {
+        "slug": "dell",
+        "company": "Dell Technologies",
+        "ticker": "DELL",
+        "sourceSymbol": "DELL",
+        "currency": "USD",
+        "entryDate": "2024-05-31",
+        "entryPrice": 139.56,
+        "latestPrice": 386.15,
+        "sinceReturn": 1.7669102894812263,
+        "benchmarkReturn": 0.392836149193166,
+        "alpha": 1.3740741402880603,
+        "hosts": [
+          "Friedberg"
         ]
       },
       {
@@ -31691,10 +31674,10 @@
         "currency": "USD",
         "entryDate": "2024-06-14",
         "entryPrice": 178.01,
-        "latestPrice": 387.19,
-        "sinceReturn": 1.175102522330206,
-        "benchmarkReturn": 0.3446884557279193,
-        "alpha": 0.8304140666022868,
+        "latestPrice": 392.31,
+        "sinceReturn": 1.203865513173417,
+        "benchmarkReturn": 0.3532923099598364,
+        "alpha": 0.8505732032135807,
         "hosts": [
           "Friedberg",
           "Sacks",
@@ -31710,10 +31693,10 @@
         "currency": "USD",
         "entryDate": "2025-02-07",
         "entryPrice": 185.34,
-        "latestPrice": 349.87,
-        "sinceReturn": 0.8877198661918635,
-        "benchmarkReturn": 0.2148908900244686,
-        "alpha": 0.6728289761673949,
+        "latestPrice": 353.38,
+        "sinceReturn": 0.9066310564368187,
+        "benchmarkReturn": 0.22266424754897884,
+        "alpha": 0.6839668088878399,
         "hosts": [
           "Friedberg",
           "Sacks",
@@ -31729,10 +31712,10 @@
         "currency": "USD",
         "entryDate": "2025-01-27",
         "entryPrice": 202.13,
-        "latestPrice": 379.42,
-        "sinceReturn": 0.8771087913718896,
-        "benchmarkReturn": 0.217728615045798,
-        "alpha": 0.6593801763260916,
+        "latestPrice": 383.51,
+        "sinceReturn": 0.8973680304754366,
+        "benchmarkReturn": 0.2255201294692759,
+        "alpha": 0.6718479010061607,
         "hosts": [
           "Chamath"
         ]
@@ -31745,10 +31728,10 @@
         "currency": "USD",
         "entryDate": "2024-08-16",
         "entryPrice": 73.45,
-        "latestPrice": 121.15,
-        "sinceReturn": 0.6494213750850919,
-        "benchmarkReturn": 0.3167180819397091,
-        "alpha": 0.33270329314538283,
+        "latestPrice": 120.77,
+        "sinceReturn": 0.6442477876106194,
+        "benchmarkReturn": 0.32514297053995067,
+        "alpha": 0.31910481707066873,
         "hosts": [
           "Friedberg"
         ]
@@ -31761,12 +31744,30 @@
         "currency": "USD",
         "entryDate": "2024-09-06",
         "entryPrice": 167.91,
-        "latestPrice": 272.83,
-        "sinceReturn": 0.6248585551783694,
-        "benchmarkReturn": 0.3507106373528759,
-        "alpha": 0.2741479178254935,
+        "latestPrice": 277.77,
+        "sinceReturn": 0.6543088559347268,
+        "benchmarkReturn": 0.3593530239099858,
+        "alpha": 0.29495583202474096,
         "hosts": [
           "Chamath"
+        ]
+      },
+      {
+        "slug": "nvda",
+        "company": "NVIDIA",
+        "ticker": "NVDA",
+        "sourceSymbol": "NVDA",
+        "currency": "USD",
+        "entryDate": "2025-06-23",
+        "entryPrice": 144.17,
+        "latestPrice": 202.31,
+        "sinceReturn": 0.40327391274190205,
+        "benchmarkReturn": 0.2239273514954594,
+        "alpha": 0.17934656124644266,
+        "hosts": [
+          "Chamath",
+          "Friedberg",
+          "Sacks"
         ]
       },
       {
@@ -31777,10 +31778,10 @@
         "currency": "USD",
         "entryDate": "2026-04-17",
         "entryPrice": 207.86,
-        "latestPrice": 244.45,
-        "sinceReturn": 0.17603194457808136,
-        "benchmarkReturn": 0.027783254006252367,
-        "alpha": 0.148248690571829,
+        "latestPrice": 246.53,
+        "sinceReturn": 0.18601462522851908,
+        "benchmarkReturn": 0.03435942208578591,
+        "alpha": 0.15165520314273317,
         "hosts": [
           "Chamath"
         ]
@@ -31793,10 +31794,10 @@
         "currency": "USD",
         "entryDate": "2025-02-07",
         "entryPrice": 878.31,
-        "latestPrice": 1164.45,
-        "sinceReturn": 0.32579043845567046,
-        "benchmarkReturn": 0.2148908900244686,
-        "alpha": 0.11089954843120187,
+        "latestPrice": 1164.09,
+        "sinceReturn": 0.3253748676435426,
+        "benchmarkReturn": 0.22266424754897884,
+        "alpha": 0.10271062009456378,
         "hosts": [
           "Friedberg"
         ]
@@ -31809,10 +31810,10 @@
         "currency": "USD",
         "entryDate": "2025-01-21",
         "entryPrice": 85.38,
-        "latestPrice": 110.47,
-        "sinceReturn": 0.2939212930428672,
-        "benchmarkReturn": 0.21029765359422936,
-        "alpha": 0.08362363944863782,
+        "latestPrice": 111.5,
+        "sinceReturn": 0.3059850081986415,
+        "benchmarkReturn": 0.21804162175607322,
+        "alpha": 0.08794338644256827,
         "hosts": [
           "Friedberg"
         ]
@@ -31825,14 +31826,30 @@
         "currency": "USD",
         "entryDate": "2026-04-24",
         "entryPrice": 271.06,
-        "latestPrice": 293.57,
-        "sinceReturn": 0.08303549029735113,
-        "benchmarkReturn": 0.022312799394907046,
-        "alpha": 0.06072269090244409,
+        "latestPrice": 295.42,
+        "sinceReturn": 0.08988600309894501,
+        "benchmarkReturn": 0.02885396531921436,
+        "alpha": 0.06103203777973065,
         "hosts": [
           "Sacks",
           "Jason",
           "Friedberg"
+        ]
+      },
+      {
+        "slug": "amzn",
+        "company": "Amazon",
+        "ticker": "AMZN",
+        "sourceSymbol": "AMZN",
+        "currency": "USD",
+        "entryDate": "2025-10-17",
+        "entryPrice": 213.04,
+        "latestPrice": 239.14,
+        "sinceReturn": 0.12251220428088616,
+        "benchmarkReturn": 0.10558557473772923,
+        "alpha": 0.016926629543156935,
+        "hosts": [
+          "Jason"
         ]
       },
       {
@@ -31843,30 +31860,12 @@
         "currency": "USD",
         "entryDate": "2025-12-15",
         "entryPrice": 67.53,
-        "latestPrice": 73.39,
-        "sinceReturn": 0.0868502887605509,
-        "benchmarkReturn": 0.07218721078841828,
-        "alpha": 0.014663077972132621,
+        "latestPrice": 73.73,
+        "sinceReturn": 0.09181104694209985,
+        "benchmarkReturn": 0.07904749313237258,
+        "alpha": 0.012763553809727268,
         "hosts": [
           "Jason"
-        ]
-      },
-      {
-        "slug": "nvda",
-        "company": "NVIDIA",
-        "ticker": "NVDA",
-        "sourceSymbol": "NVDA",
-        "currency": "USD",
-        "entryDate": "2025-11-24",
-        "entryPrice": 182.55,
-        "latestPrice": 201.79,
-        "sinceReturn": 0.10539578197754018,
-        "benchmarkReturn": 0.09142703333183788,
-        "alpha": 0.0139687486457023,
-        "hosts": [
-          "Friedberg",
-          "Sacks",
-          "Chamath"
         ]
       },
       {
@@ -31877,10 +31876,10 @@
         "currency": "USD",
         "entryDate": "2026-01-12",
         "entryPrice": 151.16,
-        "latestPrice": 149.45,
-        "sinceReturn": -0.01131251653876697,
-        "benchmarkReturn": 0.04993095114793733,
-        "alpha": -0.0612434676867043,
+        "latestPrice": 152.36,
+        "sinceReturn": 0.00793860809738045,
+        "benchmarkReturn": 0.05664882904655033,
+        "alpha": -0.04871022094916988,
         "hosts": [
           "Sacks"
         ]
@@ -31893,29 +31892,13 @@
         "currency": "USD",
         "entryDate": "2025-10-03",
         "entryPrice": 200.69,
-        "latestPrice": 203.19,
-        "sinceReturn": 0.012481937316258795,
-        "benchmarkReturn": 0.0906441924059711,
-        "alpha": -0.07816225508971231,
+        "latestPrice": 203.09,
+        "sinceReturn": 0.011983656385470054,
+        "benchmarkReturn": 0.09762256989584728,
+        "alpha": -0.08563891351037722,
         "hosts": [
           "Friedberg",
           "Chamath"
-        ]
-      },
-      {
-        "slug": "amzn",
-        "company": "Amazon",
-        "ticker": "AMZN",
-        "sourceSymbol": "AMZN",
-        "currency": "USD",
-        "entryDate": "2026-01-12",
-        "entryPrice": 246.47,
-        "latestPrice": 237.76,
-        "sinceReturn": -0.035318700044630225,
-        "benchmarkReturn": 0.04993095114793733,
-        "alpha": -0.08524965119256755,
-        "hosts": [
-          "Jason"
         ]
       },
       {
@@ -31926,10 +31909,10 @@
         "currency": "USD",
         "entryDate": "2026-04-24",
         "entryPrice": 178.16,
-        "latestPrice": 165.48,
-        "sinceReturn": -0.07117198024247873,
-        "benchmarkReturn": 0.022312799394907046,
-        "alpha": -0.09348477963738577,
+        "latestPrice": 166.93,
+        "sinceReturn": -0.06306129321957787,
+        "benchmarkReturn": 0.02885396531921436,
+        "alpha": -0.09191525853879223,
         "hosts": [
           "Chamath",
           "Sacks"
@@ -31943,12 +31926,29 @@
         "currency": "USD",
         "entryDate": "2026-02-13",
         "entryPrice": 379.08,
-        "latestPrice": 356.79,
-        "sinceReturn": -0.05880025324469762,
-        "benchmarkReturn": 0.07058305830583067,
-        "alpha": -0.1293833115505283,
+        "latestPrice": 361.6,
+        "sinceReturn": -0.046111638704231184,
+        "benchmarkReturn": 0.07743307664099741,
+        "alpha": -0.1235447153452286,
         "hosts": [
           "Chamath"
+        ]
+      },
+      {
+        "slug": "meta",
+        "company": "Meta",
+        "ticker": "META",
+        "sourceSymbol": "META",
+        "currency": "USD",
+        "entryDate": "2025-11-14",
+        "entryPrice": 609.46,
+        "latestPrice": 566.6,
+        "sinceReturn": -0.07032454960128642,
+        "benchmarkReturn": 0.09317934903933445,
+        "alpha": -0.16350389864062087,
+        "hosts": [
+          "Jason",
+          "Friedberg"
         ]
       },
       {
@@ -31959,10 +31959,10 @@
         "currency": "USD",
         "entryDate": "2025-11-14",
         "entryPrice": 222.85,
-        "latestPrice": 179.3,
-        "sinceReturn": -0.19542293022212243,
-        "benchmarkReturn": 0.0862292203056867,
-        "alpha": -0.2816521505278091,
+        "latestPrice": 180.59,
+        "sinceReturn": -0.1896338344177697,
+        "benchmarkReturn": 0.09317934903933445,
+        "alpha": -0.28281318345710416,
         "hosts": [
           "Friedberg"
         ]
@@ -31975,10 +31975,10 @@
         "currency": "USD",
         "entryDate": "2026-03-27",
         "entryPrice": 296.91,
-        "latestPrice": 244.02,
-        "sinceReturn": -0.17813478831969287,
-        "benchmarkReturn": 0.15105111261808246,
-        "alpha": -0.32918590093777533,
+        "latestPrice": 241.81,
+        "sinceReturn": -0.18557812131622387,
+        "benchmarkReturn": 0.15841599772902892,
+        "alpha": -0.3439941190452528,
         "hosts": [
           "Friedberg"
         ]
@@ -31991,10 +31991,10 @@
         "currency": "USD",
         "entryDate": "2025-10-03",
         "entryPrice": 37.89,
-        "latestPrice": 26.72,
-        "sinceReturn": -0.2948007389812616,
-        "benchmarkReturn": 0.0906441924059711,
-        "alpha": -0.3854449313872327,
+        "latestPrice": 26.76,
+        "sinceReturn": -0.29374505146476637,
+        "benchmarkReturn": 0.09762256989584728,
+        "alpha": -0.39136762136061365,
         "hosts": [
           "Chamath"
         ]
@@ -32007,10 +32007,10 @@
         "currency": "USD",
         "entryDate": "2025-10-17",
         "entryPrice": 80.79,
-        "latestPrice": 55.3,
-        "sinceReturn": -0.31544745636836247,
-        "benchmarkReturn": 0.09855657068890267,
-        "alpha": -0.41400402705726513,
+        "latestPrice": 56.22,
+        "sinceReturn": -0.3041230350290878,
+        "benchmarkReturn": 0.10558557473772923,
+        "alpha": -0.409708609766817,
         "hosts": [
           "Chamath"
         ]
@@ -32023,12 +32023,29 @@
         "currency": "USD",
         "entryDate": "2025-06-05",
         "entryPrice": 83.23,
-        "latestPrice": 82.5,
-        "sinceReturn": -0.00883095037846926,
-        "benchmarkReturn": 0.4470637217970579,
-        "alpha": -0.45589467217552715,
+        "latestPrice": 82.62,
+        "sinceReturn": -0.007329088069205847,
+        "benchmarkReturn": 0.4563226139022165,
+        "alpha": -0.46365170197142236,
         "hosts": [
           "Sacks"
+        ]
+      },
+      {
+        "slug": "msft",
+        "company": "Microsoft",
+        "ticker": "MSFT",
+        "sourceSymbol": "MSFT",
+        "currency": "USD",
+        "entryDate": "2024-07-01",
+        "entryPrice": 456.73,
+        "latestPrice": 387.76,
+        "sinceReturn": -0.15100825432969156,
+        "benchmarkReturn": 0.34693952396669947,
+        "alpha": -0.49794777829639103,
+        "hosts": [
+          "Sacks",
+          "Friedberg"
         ]
       },
       {
@@ -32041,8 +32058,8 @@
         "entryPrice": 1258.2,
         "latestPrice": 785.2,
         "sinceReturn": -0.37593387378795107,
-        "benchmarkReturn": 0.3507106373528759,
-        "alpha": -0.726644511140827,
+        "benchmarkReturn": 0.3593530239099858,
+        "alpha": -0.7352868976979369,
         "hosts": [
           "Chamath"
         ]
@@ -32055,10 +32072,10 @@
         "currency": "USD",
         "entryDate": "2024-11-18",
         "entryPrice": 325.41,
-        "latestPrice": 154.57,
-        "sinceReturn": -0.5249992317384223,
-        "benchmarkReturn": 0.24095893904616172,
-        "alpha": -0.7659581707845841,
+        "latestPrice": 159.28,
+        "sinceReturn": -0.510509818382963,
+        "benchmarkReturn": 0.24889909036810343,
+        "alpha": -0.7594089087510665,
         "hosts": [
           "Friedberg"
         ]
@@ -32091,499 +32108,509 @@
       },
       {
         "date": "2024-07-08",
-        "portfolio": 2467,
-        "benchmark": 2076,
-        "invested": 2000
+        "portfolio": 3488,
+        "benchmark": 3094,
+        "invested": 3000
       },
       {
         "date": "2024-07-16",
-        "portfolio": 2403,
-        "benchmark": 2112,
-        "invested": 2000
+        "portfolio": 3388,
+        "benchmark": 3148,
+        "invested": 3000
       },
       {
         "date": "2024-07-24",
-        "portfolio": 2045,
-        "benchmark": 2023,
-        "invested": 2000
+        "portfolio": 2984,
+        "benchmark": 3016,
+        "invested": 3000
       },
       {
         "date": "2024-08-01",
-        "portfolio": 1995,
-        "benchmark": 2030,
-        "invested": 2000
+        "portfolio": 2908,
+        "benchmark": 3026,
+        "invested": 3000
       },
       {
         "date": "2024-08-09",
-        "portfolio": 1787,
-        "benchmark": 1993,
-        "invested": 2000
+        "portfolio": 2676,
+        "benchmark": 2970,
+        "invested": 3000
       },
       {
         "date": "2024-08-19",
-        "portfolio": 3056,
-        "benchmark": 3102,
-        "invested": 3000
+        "portfolio": 3979,
+        "benchmark": 4128,
+        "invested": 4000
       },
       {
         "date": "2024-08-27",
-        "portfolio": 3013,
-        "benchmark": 3113,
-        "invested": 3000
+        "portfolio": 3919,
+        "benchmark": 4142,
+        "invested": 4000
       },
       {
         "date": "2024-09-05",
-        "portfolio": 3109,
-        "benchmark": 3046,
-        "invested": 3000
+        "portfolio": 4003,
+        "benchmark": 4054,
+        "invested": 4000
       },
       {
         "date": "2024-09-13",
-        "portfolio": 5286,
-        "benchmark": 5195,
-        "invested": 5000
+        "portfolio": 6229,
+        "benchmark": 6226,
+        "invested": 6000
       },
       {
         "date": "2024-09-23",
-        "portfolio": 5467,
-        "benchmark": 5266,
-        "invested": 5000
+        "portfolio": 6416,
+        "benchmark": 6311,
+        "invested": 6000
       },
       {
         "date": "2024-10-01",
-        "portfolio": 6420,
-        "benchmark": 6251,
-        "invested": 6000
+        "portfolio": 7341,
+        "benchmark": 7294,
+        "invested": 7000
       },
       {
         "date": "2024-10-09",
-        "portfolio": 6687,
-        "benchmark": 6345,
-        "invested": 6000
+        "portfolio": 7601,
+        "benchmark": 7403,
+        "invested": 7000
       },
       {
         "date": "2024-10-17",
-        "portfolio": 6634,
-        "benchmark": 6402,
-        "invested": 6000
+        "portfolio": 7547,
+        "benchmark": 7470,
+        "invested": 7000
       },
       {
         "date": "2024-10-25",
-        "portfolio": 6949,
-        "benchmark": 6366,
-        "invested": 6000
+        "portfolio": 7887,
+        "benchmark": 7428,
+        "invested": 7000
       },
       {
         "date": "2024-11-04",
-        "portfolio": 6726,
-        "benchmark": 6264,
-        "invested": 6000
+        "portfolio": 7620,
+        "benchmark": 7309,
+        "invested": 7000
       },
       {
         "date": "2024-11-12",
-        "portfolio": 7799,
-        "benchmark": 6562,
-        "invested": 6000
+        "portfolio": 8725,
+        "benchmark": 7657,
+        "invested": 7000
       },
       {
         "date": "2024-11-20",
-        "portfolio": 9903,
-        "benchmark": 8500,
-        "invested": 8000
+        "portfolio": 10813,
+        "benchmark": 9583,
+        "invested": 9000
       },
       {
         "date": "2024-11-29",
-        "portfolio": 10167,
-        "benchmark": 8673,
-        "invested": 8000
+        "portfolio": 11094,
+        "benchmark": 9778,
+        "invested": 9000
       },
       {
         "date": "2024-12-09",
-        "portfolio": 10759,
-        "benchmark": 8704,
-        "invested": 8000
+        "portfolio": 11736,
+        "benchmark": 9813,
+        "invested": 9000
       },
       {
         "date": "2024-12-17",
-        "portfolio": 11402,
-        "benchmark": 8698,
-        "invested": 8000
+        "portfolio": 12397,
+        "benchmark": 9806,
+        "invested": 9000
       },
       {
         "date": "2024-12-26",
-        "portfolio": 11159,
-        "benchmark": 8656,
-        "invested": 8000
-      },
-      {
-        "date": "2025-01-06",
-        "portfolio": 10857,
-        "benchmark": 8570,
-        "invested": 8000
-      },
-      {
-        "date": "2025-01-15",
-        "portfolio": 10630,
-        "benchmark": 8533,
-        "invested": 8000
-      },
-      {
-        "date": "2025-01-24",
-        "portfolio": 12280,
+        "portfolio": 12119,
         "benchmark": 9759,
         "invested": 9000
       },
       {
-        "date": "2025-02-03",
-        "portfolio": 13412,
-        "benchmark": 10593,
+        "date": "2025-01-06",
+        "portfolio": 11794,
+        "benchmark": 9661,
+        "invested": 9000
+      },
+      {
+        "date": "2025-01-15",
+        "portfolio": 11564,
+        "benchmark": 9620,
+        "invested": 9000
+      },
+      {
+        "date": "2025-01-24",
+        "portfolio": 13252,
+        "benchmark": 10874,
         "invested": 10000
       },
       {
+        "date": "2025-02-03",
+        "portfolio": 14312,
+        "benchmark": 11689,
+        "invested": 11000
+      },
+      {
         "date": "2025-02-11",
-        "portfolio": 16306,
-        "benchmark": 12742,
-        "invested": 12000
+        "portfolio": 17206,
+        "benchmark": 13852,
+        "invested": 13000
       },
       {
         "date": "2025-02-20",
-        "portfolio": 16771,
-        "benchmark": 12848,
-        "invested": 12000
+        "portfolio": 17682,
+        "benchmark": 13968,
+        "invested": 13000
       },
       {
         "date": "2025-02-28",
-        "portfolio": 15147,
-        "benchmark": 12507,
-        "invested": 12000
+        "portfolio": 16017,
+        "benchmark": 13597,
+        "invested": 13000
       },
       {
         "date": "2025-03-10",
-        "portfolio": 13299,
-        "benchmark": 11800,
-        "invested": 12000
+        "portfolio": 14132,
+        "benchmark": 12828,
+        "invested": 13000
       },
       {
         "date": "2025-03-18",
-        "portfolio": 13813,
-        "benchmark": 11809,
-        "invested": 12000
+        "portfolio": 14653,
+        "benchmark": 12838,
+        "invested": 13000
       },
       {
         "date": "2025-03-26",
-        "portfolio": 14297,
-        "benchmark": 11969,
-        "invested": 12000
+        "portfolio": 15151,
+        "benchmark": 13011,
+        "invested": 13000
       },
       {
         "date": "2025-04-03",
-        "portfolio": 13140,
-        "benchmark": 11297,
-        "invested": 12000
+        "portfolio": 13957,
+        "benchmark": 12282,
+        "invested": 13000
       },
       {
         "date": "2025-04-11",
-        "portfolio": 13363,
-        "benchmark": 11239,
-        "invested": 12000
+        "portfolio": 14213,
+        "benchmark": 12218,
+        "invested": 13000
       },
       {
         "date": "2025-04-22",
-        "portfolio": 13623,
-        "benchmark": 11099,
-        "invested": 12000
+        "portfolio": 14426,
+        "benchmark": 12065,
+        "invested": 13000
       },
       {
         "date": "2025-04-30",
-        "portfolio": 15280,
-        "benchmark": 11673,
-        "invested": 12000
+        "portfolio": 16145,
+        "benchmark": 12690,
+        "invested": 13000
       },
       {
         "date": "2025-05-08",
-        "portfolio": 15583,
-        "benchmark": 11894,
-        "invested": 12000
+        "portfolio": 16543,
+        "benchmark": 12931,
+        "invested": 13000
       },
       {
         "date": "2025-05-16",
-        "portfolio": 17007,
-        "benchmark": 12508,
-        "invested": 12000
+        "portfolio": 18002,
+        "benchmark": 13597,
+        "invested": 13000
       },
       {
         "date": "2025-05-27",
-        "portfolio": 16967,
-        "benchmark": 12444,
-        "invested": 12000
+        "portfolio": 17976,
+        "benchmark": 13528,
+        "invested": 13000
       },
       {
         "date": "2025-06-04",
-        "portfolio": 17369,
-        "benchmark": 12544,
-        "invested": 12000
+        "portfolio": 18384,
+        "benchmark": 13637,
+        "invested": 13000
       },
       {
         "date": "2025-06-12",
-        "portfolio": 18730,
-        "benchmark": 13906,
-        "invested": 13000
+        "portfolio": 19779,
+        "benchmark": 15013,
+        "invested": 14000
       },
       {
         "date": "2025-06-23",
-        "portfolio": 21012,
-        "benchmark": 13823,
-        "invested": 13000
+        "portfolio": 23076,
+        "benchmark": 15924,
+        "invested": 15000
       },
       {
         "date": "2025-07-01",
-        "portfolio": 20299,
-        "benchmark": 14226,
-        "invested": 13000
+        "portfolio": 22440,
+        "benchmark": 16388,
+        "invested": 15000
       },
       {
         "date": "2025-07-10",
-        "portfolio": 21085,
-        "benchmark": 14414,
-        "invested": 13000
+        "portfolio": 23321,
+        "benchmark": 16605,
+        "invested": 15000
       },
       {
         "date": "2025-07-18",
-        "portfolio": 22458,
-        "benchmark": 14455,
-        "invested": 13000
+        "portfolio": 24770,
+        "benchmark": 16651,
+        "invested": 15000
       },
       {
         "date": "2025-07-28",
-        "portfolio": 22169,
-        "benchmark": 14670,
-        "invested": 13000
+        "portfolio": 24517,
+        "benchmark": 16900,
+        "invested": 15000
       },
       {
         "date": "2025-08-05",
-        "portfolio": 21407,
-        "benchmark": 14464,
-        "invested": 13000
+        "portfolio": 23799,
+        "benchmark": 16662,
+        "invested": 15000
       },
       {
         "date": "2025-08-13",
-        "portfolio": 22306,
-        "benchmark": 14853,
-        "invested": 13000
+        "portfolio": 24705,
+        "benchmark": 17111,
+        "invested": 15000
       },
       {
         "date": "2025-08-21",
-        "portfolio": 20772,
-        "benchmark": 14638,
-        "invested": 13000
+        "portfolio": 23089,
+        "benchmark": 16863,
+        "invested": 15000
       },
       {
         "date": "2025-08-29",
-        "portfolio": 22129,
-        "benchmark": 15857,
-        "invested": 14000
+        "portfolio": 23446,
+        "benchmark": 17115,
+        "invested": 15000
       },
       {
         "date": "2025-09-09",
-        "portfolio": 23232,
-        "benchmark": 15987,
-        "invested": 14000
+        "portfolio": 24504,
+        "benchmark": 17255,
+        "invested": 15000
       },
       {
         "date": "2025-09-17",
-        "portfolio": 24462,
-        "benchmark": 16205,
-        "invested": 14000
+        "portfolio": 25737,
+        "benchmark": 17490,
+        "invested": 15000
       },
       {
         "date": "2025-09-25",
-        "portfolio": 25080,
-        "benchmark": 16177,
-        "invested": 14000
+        "portfolio": 26026,
+        "benchmark": 17460,
+        "invested": 15000
       },
       {
         "date": "2025-10-03",
-        "portfolio": 28729,
-        "benchmark": 18451,
-        "invested": 16000
-      },
-      {
-        "date": "2025-10-13",
-        "portfolio": 29407,
-        "benchmark": 19296,
+        "portfolio": 29651,
+        "benchmark": 19756,
         "invested": 17000
       },
       {
-        "date": "2025-10-21",
-        "portfolio": 30219,
-        "benchmark": 20547,
+        "date": "2025-10-13",
+        "portfolio": 30310,
+        "benchmark": 20589,
         "invested": 18000
+      },
+      {
+        "date": "2025-10-21",
+        "portfolio": 32086,
+        "benchmark": 22866,
+        "invested": 20000
       },
       {
         "date": "2025-10-29",
-        "portfolio": 32050,
-        "benchmark": 21040,
-        "invested": 18000
+        "portfolio": 34056,
+        "benchmark": 23414,
+        "invested": 20000
       },
       {
         "date": "2025-11-06",
-        "portfolio": 29733,
-        "benchmark": 20517,
-        "invested": 18000
+        "portfolio": 31737,
+        "benchmark": 22833,
+        "invested": 20000
       },
       {
         "date": "2025-11-14",
-        "portfolio": 29665,
-        "benchmark": 21566,
-        "invested": 19000
+        "portfolio": 32744,
+        "benchmark": 24888,
+        "invested": 22000
       },
       {
         "date": "2025-11-24",
-        "portfolio": 30270,
-        "benchmark": 22464,
-        "invested": 20000
+        "portfolio": 32172,
+        "benchmark": 24769,
+        "invested": 22000
       },
       {
         "date": "2025-12-03",
-        "portfolio": 32303,
-        "benchmark": 22973,
-        "invested": 20000
+        "portfolio": 33954,
+        "benchmark": 25331,
+        "invested": 22000
       },
       {
         "date": "2025-12-11",
-        "portfolio": 32341,
-        "benchmark": 23150,
-        "invested": 20000
+        "portfolio": 34192,
+        "benchmark": 25526,
+        "invested": 22000
       },
       {
         "date": "2025-12-19",
-        "portfolio": 32794,
-        "benchmark": 23862,
-        "invested": 21000
+        "portfolio": 34758,
+        "benchmark": 26208,
+        "invested": 23000
       },
       {
         "date": "2025-12-30",
-        "portfolio": 32293,
-        "benchmark": 24087,
-        "invested": 21000
+        "portfolio": 34286,
+        "benchmark": 26456,
+        "invested": 23000
       },
       {
         "date": "2026-01-08",
-        "portfolio": 32745,
-        "benchmark": 24175,
-        "invested": 21000
+        "portfolio": 34589,
+        "benchmark": 26552,
+        "invested": 23000
       },
       {
         "date": "2026-01-16",
-        "portfolio": 34803,
-        "benchmark": 26240,
-        "invested": 23000
+        "portfolio": 35323,
+        "benchmark": 27630,
+        "invested": 24000
       },
       {
         "date": "2026-01-27",
-        "portfolio": 34140,
-        "benchmark": 26385,
-        "invested": 23000
+        "portfolio": 34923,
+        "benchmark": 27783,
+        "invested": 24000
       },
       {
         "date": "2026-02-04",
-        "portfolio": 31533,
-        "benchmark": 26032,
-        "invested": 23000
+        "portfolio": 31944,
+        "benchmark": 27411,
+        "invested": 24000
       },
       {
         "date": "2026-02-12",
-        "portfolio": 30497,
-        "benchmark": 25846,
-        "invested": 23000
+        "portfolio": 30934,
+        "benchmark": 27215,
+        "invested": 24000
       },
       {
         "date": "2026-02-23",
-        "portfolio": 31226,
-        "benchmark": 26889,
-        "invested": 24000
+        "portfolio": 31732,
+        "benchmark": 28260,
+        "invested": 25000
       },
       {
         "date": "2026-03-03",
-        "portfolio": 32315,
-        "benchmark": 26808,
-        "invested": 24000
+        "portfolio": 32900,
+        "benchmark": 28175,
+        "invested": 25000
       },
       {
         "date": "2026-03-11",
-        "portfolio": 33210,
-        "benchmark": 26650,
-        "invested": 24000
+        "portfolio": 33607,
+        "benchmark": 28009,
+        "invested": 25000
       },
       {
         "date": "2026-03-19",
-        "portfolio": 32676,
-        "benchmark": 25999,
-        "invested": 24000
+        "portfolio": 33020,
+        "benchmark": 27325,
+        "invested": 25000
       },
       {
         "date": "2026-03-27",
-        "portfolio": 31591,
-        "benchmark": 25986,
-        "invested": 25000
-      },
-      {
-        "date": "2026-04-07",
-        "portfolio": 33002,
-        "benchmark": 27016,
-        "invested": 25000
-      },
-      {
-        "date": "2026-04-15",
-        "portfolio": 36042,
-        "benchmark": 28685,
-        "invested": 25000
-      },
-      {
-        "date": "2026-04-23",
-        "portfolio": 37751,
-        "benchmark": 30031,
+        "portfolio": 31834,
+        "benchmark": 27260,
         "invested": 26000
       },
       {
+        "date": "2026-04-07",
+        "portfolio": 32983,
+        "benchmark": 28340,
+        "invested": 26000
+      },
+      {
+        "date": "2026-04-15",
+        "portfolio": 35826,
+        "benchmark": 30091,
+        "invested": 26000
+      },
+      {
+        "date": "2026-04-23",
+        "portfolio": 37454,
+        "benchmark": 31454,
+        "invested": 27000
+      },
+      {
         "date": "2026-05-01",
-        "portfolio": 41949,
-        "benchmark": 32567,
-        "invested": 28000
+        "portfolio": 40224,
+        "benchmark": 34015,
+        "invested": 29000
       },
       {
         "date": "2026-05-11",
-        "portfolio": 45933,
-        "benchmark": 33410,
-        "invested": 28000
+        "portfolio": 42994,
+        "benchmark": 34895,
+        "invested": 29000
       },
       {
         "date": "2026-05-19",
-        "portfolio": 43809,
-        "benchmark": 33158,
-        "invested": 28000
+        "portfolio": 41649,
+        "benchmark": 34632,
+        "invested": 29000
       },
       {
         "date": "2026-05-28",
-        "portfolio": 47313,
-        "benchmark": 34101,
-        "invested": 28000
+        "portfolio": 44812,
+        "benchmark": 35617,
+        "invested": 29000
       },
       {
         "date": "2026-06-05",
-        "portfolio": 44800,
-        "benchmark": 33331,
-        "invested": 28000
+        "portfolio": 43068,
+        "benchmark": 34813,
+        "invested": 29000
       },
       {
         "date": "2026-06-11",
-        "portfolio": 44489,
-        "benchmark": 32984,
-        "invested": 28000
+        "portfolio": 42500,
+        "benchmark": 34670,
+        "invested": 29000
       }
     ],
     "excludedPrivateCount": 29,
     "excludedPrivate": [
+      {
+        "slug": "anthropic",
+        "company": "Anthropic",
+        "hosts": [
+          "Chamath",
+          "Sacks",
+          "Jason",
+          "Friedberg"
+        ]
+      },
       {
         "slug": "spacex",
         "company": "SpaceX",
@@ -32770,13 +32797,6 @@
         ]
       },
       {
-        "slug": "texas-stock-exchange-txse",
-        "company": "Texas Stock Exchange (TXSE)",
-        "hosts": [
-          "Chamath"
-        ]
-      },
-      {
         "slug": "bitcoin",
         "company": "Bitcoin",
         "hosts": [
@@ -32800,7 +32820,7 @@
     ],
     "altBenchmark": {
       "symbol": "QQQ",
-      "ret": 0.283466580782717
+      "ret": 0.3049286335763177
     }
   },
   "guestiesFund": {
@@ -32809,11 +32829,11 @@
     "benchmarkSymbol": "SPY",
     "contributionPerCall": 1000,
     "totalInvested": 16000,
-    "portfolioValue": 18238,
-    "benchmarkValue": 18337,
-    "portfolioReturn": 0.13987499999999997,
-    "benchmarkReturn": 0.14606249999999998,
-    "outperformance": -0.0061875000000000124,
+    "portfolioValue": 18421,
+    "benchmarkValue": 18454,
+    "portfolioReturn": 0.15131249999999996,
+    "benchmarkReturn": 0.15337500000000004,
+    "outperformance": -0.002062500000000078,
     "constituents": [
       {
         "slug": "crwv",
@@ -32823,10 +32843,10 @@
         "currency": "USD",
         "entryDate": "2025-03-31",
         "entryPrice": 37.08,
-        "latestPrice": 93.27,
-        "sinceReturn": 1.5153721682847898,
-        "benchmarkReturn": 0.3047605427340496,
-        "alpha": 1.2106116255507402,
+        "latestPrice": 93.86,
+        "sinceReturn": 1.5312837108953614,
+        "benchmarkReturn": 0.31310892221884545,
+        "alpha": 1.218174788676516,
         "hosts": [
           "Guest"
         ]
@@ -32839,10 +32859,10 @@
         "currency": "USD",
         "entryDate": "2025-01-27",
         "entryPrice": 202.13,
-        "latestPrice": 379.42,
-        "sinceReturn": 0.8771087913718896,
-        "benchmarkReturn": 0.217728615045798,
-        "alpha": 0.6593801763260916,
+        "latestPrice": 383.51,
+        "sinceReturn": 0.8973680304754366,
+        "benchmarkReturn": 0.2255201294692759,
+        "alpha": 0.6718479010061607,
         "hosts": [
           "Guest"
         ]
@@ -32855,10 +32875,10 @@
         "currency": "USD",
         "entryDate": "2026-02-09",
         "entryPrice": 175.95,
-        "latestPrice": 239.16,
-        "sinceReturn": 0.3592497868712703,
-        "benchmarkReturn": 0.05176165429786006,
-        "alpha": 0.30748813257341023,
+        "latestPrice": 241.15,
+        "sinceReturn": 0.3705598181301508,
+        "benchmarkReturn": 0.058491245766985944,
+        "alpha": 0.3120685723631649,
         "hosts": [
           "Guest"
         ]
@@ -32871,26 +32891,10 @@
         "currency": "USD",
         "entryDate": "2026-05-08",
         "entryPrice": 746.81,
-        "latestPrice": 928.37,
-        "sinceReturn": 0.2431140450717051,
-        "benchmarkReturn": -0.010506765000949048,
-        "alpha": 0.25362081007265413,
-        "hosts": [
-          "Guest"
-        ]
-      },
-      {
-        "slug": "nvda",
-        "company": "NVIDIA",
-        "ticker": "NVDA",
-        "sourceSymbol": "NVDA",
-        "currency": "USD",
-        "entryDate": "2024-12-09",
-        "entryPrice": 138.81,
-        "latestPrice": 201.79,
-        "sinceReturn": 0.4537137093869317,
-        "benchmarkReturn": 0.20703512601706708,
-        "alpha": 0.2466785833698646,
+        "latestPrice": 955.74,
+        "sinceReturn": 0.279756564588048,
+        "benchmarkReturn": -0.004175591768119102,
+        "alpha": 0.2839321563561671,
         "hosts": [
           "Guest"
         ]
@@ -32903,10 +32907,26 @@
         "currency": "KRW",
         "entryDate": "2026-05-08",
         "entryPrice": 1686000,
-        "latestPrice": 2048000,
-        "sinceReturn": 0.21470937129300127,
-        "benchmarkReturn": -0.010506765000949048,
-        "alpha": 0.22521613629395032,
+        "latestPrice": 2101000,
+        "sinceReturn": 0.24614472123368913,
+        "benchmarkReturn": -0.004175591768119102,
+        "alpha": 0.25032031300180824,
+        "hosts": [
+          "Guest"
+        ]
+      },
+      {
+        "slug": "nvda",
+        "company": "NVIDIA",
+        "ticker": "NVDA",
+        "sourceSymbol": "NVDA",
+        "currency": "USD",
+        "entryDate": "2024-12-09",
+        "entryPrice": 138.81,
+        "latestPrice": 202.31,
+        "sinceReturn": 0.4574598371875225,
+        "benchmarkReturn": 0.214758219223391,
+        "alpha": 0.24270161796413148,
         "hosts": [
           "Guest"
         ]
@@ -32919,10 +32939,10 @@
         "currency": "USD",
         "entryDate": "2025-01-21",
         "entryPrice": 85.38,
-        "latestPrice": 110.47,
-        "sinceReturn": 0.2939212930428672,
-        "benchmarkReturn": 0.21029765359422936,
-        "alpha": 0.08362363944863782,
+        "latestPrice": 111.5,
+        "sinceReturn": 0.3059850081986415,
+        "benchmarkReturn": 0.21804162175607322,
+        "alpha": 0.08794338644256827,
         "hosts": [
           "Guest"
         ]
@@ -32935,10 +32955,10 @@
         "currency": "USD",
         "entryDate": "2026-05-15",
         "entryPrice": 173.51,
-        "latestPrice": 165.48,
-        "sinceReturn": -0.04627975332833845,
-        "benchmarkReturn": -0.012581679451276417,
-        "alpha": -0.03369807387706203,
+        "latestPrice": 166.93,
+        "sinceReturn": -0.0379517030718689,
+        "benchmarkReturn": -0.006263782350474201,
+        "alpha": -0.0316879207213947,
         "hosts": [
           "Guest"
         ]
@@ -32951,10 +32971,10 @@
         "currency": "USD",
         "entryDate": "2026-05-08",
         "entryPrice": 400.8,
-        "latestPrice": 349.87,
-        "sinceReturn": -0.12707085828343312,
-        "benchmarkReturn": -0.010506765000949048,
-        "alpha": -0.11656409328248407,
+        "latestPrice": 353.38,
+        "sinceReturn": -0.11832584830339321,
+        "benchmarkReturn": -0.004175591768119102,
+        "alpha": -0.11415025653527411,
         "hosts": [
           "Guest"
         ]
@@ -32967,10 +32987,10 @@
         "currency": "USD",
         "entryDate": "2025-10-31",
         "entryPrice": 456.56,
-        "latestPrice": 387.19,
-        "sinceReturn": -0.15194059926406167,
-        "benchmarkReturn": 0.07009647245110417,
-        "alpha": -0.22203707171516585,
+        "latestPrice": 392.31,
+        "sinceReturn": -0.14072608200455583,
+        "benchmarkReturn": 0.07694337741547663,
+        "alpha": -0.21766945942003246,
         "hosts": [
           "Guest"
         ]
@@ -32983,10 +33003,10 @@
         "currency": "USD",
         "entryDate": "2024-12-13",
         "entryPrice": 114.63,
-        "latestPrice": 106.86,
-        "sinceReturn": -0.06778330280031397,
-        "benchmarkReturn": 0.20797404875788206,
-        "alpha": -0.27575735155819603,
+        "latestPrice": 108.45,
+        "sinceReturn": -0.05391258832766288,
+        "benchmarkReturn": 0.21570314956720327,
+        "alpha": -0.26961573789486615,
         "hosts": [
           "Guest"
         ]
@@ -32999,10 +33019,10 @@
         "currency": "USD",
         "entryDate": "2025-01-27",
         "entryPrice": 275,
-        "latestPrice": 245.72,
-        "sinceReturn": -0.10649090909090908,
-        "benchmarkReturn": 0.217728615045798,
-        "alpha": -0.32421952413670707,
+        "latestPrice": 246.1,
+        "sinceReturn": -0.10509090909090912,
+        "benchmarkReturn": 0.2255201294692759,
+        "alpha": -0.33061103856018503,
         "hosts": [
           "Guest"
         ]
@@ -33015,10 +33035,10 @@
         "currency": "USD",
         "entryDate": "2024-08-30",
         "entryPrice": 417.14,
-        "latestPrice": 388.38,
-        "sinceReturn": -0.06894567771012128,
-        "benchmarkReturn": 0.2948304002270794,
-        "alpha": -0.3637760779372007,
+        "latestPrice": 387.76,
+        "sinceReturn": -0.07043198926020044,
+        "benchmarkReturn": 0.3031152426908885,
+        "alpha": -0.37354723195108896,
         "hosts": [
           "Guest"
         ]
@@ -33031,10 +33051,10 @@
         "currency": "USD",
         "entryDate": "2025-08-11",
         "entryPrice": 765.87,
-        "latestPrice": 564.17,
-        "sinceReturn": -0.2633606225599645,
-        "benchmarkReturn": 0.14773870927160648,
-        "alpha": -0.411099331831571,
+        "latestPrice": 566.6,
+        "sinceReturn": -0.26018776032485924,
+        "benchmarkReturn": 0.15508240030192488,
+        "alpha": -0.4152701606267841,
         "hosts": [
           "Guest"
         ]
@@ -33047,10 +33067,10 @@
         "currency": "USD",
         "entryDate": "2024-12-20",
         "entryPrice": 32.03,
-        "latestPrice": 25.61,
-        "sinceReturn": -0.20043709022791134,
-        "benchmarkReturn": 0.23466125348896227,
-        "alpha": -0.4350983437168736,
+        "latestPrice": 25.8,
+        "sinceReturn": -0.19466125507336873,
+        "benchmarkReturn": 0.2425611097014293,
+        "alpha": -0.43722236477479803,
         "hosts": [
           "Guest"
         ]
@@ -33063,10 +33083,10 @@
         "currency": "USD",
         "entryDate": "2025-06-23",
         "entryPrice": 263.45,
-        "latestPrice": 82.5,
-        "sinceReturn": -0.6868665780983109,
-        "benchmarkReturn": 0.21614596350912274,
-        "alpha": -0.9030125416074336,
+        "latestPrice": 82.62,
+        "sinceReturn": -0.6863921047637123,
+        "benchmarkReturn": 0.2239273514954594,
+        "alpha": -0.9103194562591717,
         "hosts": [
           "Guest"
         ]
@@ -33609,8 +33629,8 @@
       },
       {
         "date": "2026-06-11",
-        "portfolio": 18238,
-        "benchmark": 18337,
+        "portfolio": 18421,
+        "benchmark": 18454,
         "invested": 16000
       }
     ],
@@ -33710,52 +33730,52 @@
     ],
     "altBenchmark": {
       "symbol": "QQQ",
-      "ret": 0.24220440024668077
+      "ret": 0.2527542813940351
     }
   },
   "leaderboard": [
     {
       "host": "Sacks",
       "positions": 3,
-      "portfolioReturn": 1.2583333333333333,
-      "benchmarkReturn": 0.29200000000000004,
-      "alpha": 0.9663333333333333,
+      "portfolioReturn": 1.2690000000000001,
+      "benchmarkReturn": 0.30033333333333334,
+      "alpha": 0.9686666666666668,
       "topCall": {
         "ticker": "PLTR",
-        "alpha": 3.4530467582138384
+        "alpha": 3.4577876402721275
       }
     },
     {
       "host": "Friedberg",
       "positions": 2,
-      "portfolioReturn": 0.47,
-      "benchmarkReturn": 0.1835,
-      "alpha": 0.2865,
+      "portfolioReturn": 0.4770000000000001,
+      "benchmarkReturn": 0.19100000000000006,
+      "alpha": 0.28600000000000003,
       "topCall": {
         "ticker": "GOOGL",
-        "alpha": 0.9017060866853428
+        "alpha": 0.9151185355788907
       }
     },
     {
       "host": "Chamath",
       "positions": 4,
-      "portfolioReturn": 0.3567499999999999,
-      "benchmarkReturn": 0.22599999999999998,
-      "alpha": 0.13074999999999992,
+      "portfolioReturn": 0.3672500000000001,
+      "benchmarkReturn": 0.23399999999999999,
+      "alpha": 0.1332500000000001,
       "topCall": {
         "ticker": "GOOGL",
-        "alpha": 0.6085253937814514
+        "alpha": 0.6196032574897548
       }
     },
     {
       "host": "Jason",
       "positions": 4,
-      "portfolioReturn": -0.07074999999999998,
-      "benchmarkReturn": 0.14625,
+      "portfolioReturn": -0.0635,
+      "benchmarkReturn": 0.15349999999999997,
       "alpha": -0.21699999999999997,
       "topCall": {
         "ticker": "GOOGL",
-        "alpha": 0.006670425251687595
+        "alpha": 0.01070171590663982
       }
     }
   ],
@@ -33766,11 +33786,11 @@
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
       "totalInvested": 4000,
-      "portfolioValue": 5427,
-      "benchmarkValue": 4904,
-      "portfolioReturn": 0.3567499999999999,
-      "benchmarkReturn": 0.22599999999999998,
-      "outperformance": 0.13074999999999992,
+      "portfolioValue": 5469,
+      "benchmarkValue": 4936,
+      "portfolioReturn": 0.3672500000000001,
+      "benchmarkReturn": 0.23399999999999999,
+      "outperformance": 0.1332500000000001,
       "constituents": [
         {
           "slug": "googl",
@@ -33780,10 +33800,10 @@
           "currency": "USD",
           "entryDate": "2024-05-17",
           "entryPrice": 176.06,
-          "latestPrice": 349.87,
-          "sinceReturn": 0.987220265818471,
-          "benchmarkReturn": 0.37869487203701957,
-          "alpha": 0.6085253937814514,
+          "latestPrice": 353.36,
+          "sinceReturn": 1.007043053504487,
+          "benchmarkReturn": 0.3874397960147322,
+          "alpha": 0.6196032574897548,
           "hosts": [
             "Chamath"
           ]
@@ -33796,10 +33816,10 @@
           "currency": "USD",
           "entryDate": "2025-02-21",
           "entryPrice": 134.43,
-          "latestPrice": 201.79,
-          "sinceReturn": 0.5010786282823774,
-          "benchmarkReturn": 0.2167050038337166,
-          "alpha": 0.28437362444866077,
+          "latestPrice": 202.31,
+          "sinceReturn": 0.5049468124674552,
+          "benchmarkReturn": 0.22442244224422447,
+          "alpha": 0.28052437022323073,
           "hosts": [
             "Chamath"
           ]
@@ -33812,10 +33832,10 @@
           "currency": "USD",
           "entryDate": "2025-06-13",
           "entryPrice": 325.31,
-          "latestPrice": 387.19,
-          "sinceReturn": 0.19021856075743138,
-          "benchmarkReturn": 0.22269681742043557,
-          "alpha": -0.03247825666300419,
+          "latestPrice": 392.31,
+          "sinceReturn": 0.20595770188435636,
+          "benchmarkReturn": 0.23045226130653274,
+          "alpha": -0.024494559422176376,
           "hosts": [
             "Chamath"
           ]
@@ -33828,10 +33848,10 @@
           "currency": "USD",
           "entryDate": "2025-11-14",
           "entryPrice": 174.01,
-          "latestPrice": 130.29,
-          "sinceReturn": -0.25122119418424227,
-          "benchmarkReturn": 0.08634828032681985,
-          "alpha": -0.3375694745110621,
+          "latestPrice": 130.66,
+          "sinceReturn": -0.24915234756623184,
+          "benchmarkReturn": 0.09323887904990125,
+          "alpha": -0.3423912266161331,
           "hosts": [
             "Chamath"
           ]
@@ -34362,8 +34382,8 @@
         },
         {
           "date": "2026-06-11",
-          "portfolio": 5427,
-          "benchmark": 4904,
+          "portfolio": 5469,
+          "benchmark": 4936,
           "invested": 4000
         }
       ],
@@ -34412,10 +34432,10 @@
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
       "totalInvested": 4000,
-      "portfolioValue": 3717,
-      "benchmarkValue": 4585,
-      "portfolioReturn": -0.07074999999999998,
-      "benchmarkReturn": 0.14625,
+      "portfolioValue": 3746,
+      "benchmarkValue": 4614,
+      "portfolioReturn": -0.0635,
+      "benchmarkReturn": 0.15349999999999997,
       "outperformance": -0.21699999999999997,
       "constituents": [
         {
@@ -34426,10 +34446,10 @@
           "currency": "USD",
           "entryDate": "2025-11-24",
           "entryPrice": 318.58,
-          "latestPrice": 349.87,
-          "sinceReturn": 0.09821708832946197,
-          "benchmarkReturn": 0.09154666307777437,
-          "alpha": 0.006670425251687595,
+          "latestPrice": 353.36,
+          "sinceReturn": 0.10917195053047912,
+          "benchmarkReturn": 0.0984702346238393,
+          "alpha": 0.01070171590663982,
           "hosts": [
             "Jason"
           ]
@@ -34442,10 +34462,10 @@
           "currency": "USD",
           "entryDate": "2026-05-15",
           "entryPrice": 300.23,
-          "latestPrice": 293.57,
-          "sinceReturn": -0.022190986910035626,
-          "benchmarkReturn": -0.012473449950620163,
-          "alpha": -0.009717536959415463,
+          "latestPrice": 295.42,
+          "sinceReturn": -0.016006062019118694,
+          "benchmarkReturn": -0.006209667600145963,
+          "alpha": -0.009796394418972731,
           "hosts": [
             "Jason"
           ]
@@ -34458,10 +34478,10 @@
           "currency": "USD",
           "entryDate": "2025-01-27",
           "entryPrice": 97.19,
-          "latestPrice": 80.87,
-          "sinceReturn": -0.16790994865674091,
-          "benchmarkReturn": 0.21786208852628608,
-          "alpha": -0.385772037183027,
+          "latestPrice": 81.14,
+          "sinceReturn": -0.16508041033450283,
+          "benchmarkReturn": 0.22558686620951995,
+          "alpha": -0.3906672765440228,
           "hosts": [
             "Jason"
           ]
@@ -34474,10 +34494,10 @@
           "currency": "USD",
           "entryDate": "2025-05-02",
           "entryPrice": 84.28,
-          "latestPrice": 68.2,
-          "sinceReturn": -0.19079259610821075,
-          "benchmarkReturn": 0.2879349283647401,
-          "alpha": -0.47872752447295086,
+          "latestPrice": 68.93,
+          "sinceReturn": -0.18213099193165627,
+          "benchmarkReturn": 0.29610417107770504,
+          "alpha": -0.4782351630093613,
           "hosts": [
             "Jason"
           ]
@@ -35008,8 +35028,8 @@
         },
         {
           "date": "2026-06-11",
-          "portfolio": 3717,
-          "benchmark": 4585,
+          "portfolio": 3746,
+          "benchmark": 4614,
           "invested": 4000
         }
       ],
@@ -35044,11 +35064,11 @@
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
       "totalInvested": 3000,
-      "portfolioValue": 6775,
-      "benchmarkValue": 3876,
-      "portfolioReturn": 1.2583333333333333,
-      "benchmarkReturn": 0.29200000000000004,
-      "outperformance": 0.9663333333333333,
+      "portfolioValue": 6807,
+      "benchmarkValue": 3901,
+      "portfolioReturn": 1.2690000000000001,
+      "benchmarkReturn": 0.30033333333333334,
+      "outperformance": 0.9686666666666668,
       "constituents": [
         {
           "slug": "pltr",
@@ -35058,10 +35078,10 @@
           "currency": "USD",
           "entryDate": "2024-07-26",
           "entryPrice": 27.18,
-          "latestPrice": 130.29,
-          "sinceReturn": 3.7937821927888145,
-          "benchmarkReturn": 0.340735434574976,
-          "alpha": 3.4530467582138384,
+          "latestPrice": 130.66,
+          "sinceReturn": 3.8070272259013977,
+          "benchmarkReturn": 0.3492395856292705,
+          "alpha": 3.4577876402721275,
           "hosts": [
             "Sacks"
           ]
@@ -35074,10 +35094,10 @@
           "currency": "USD",
           "entryDate": "2026-03-27",
           "entryPrice": 274.34,
-          "latestPrice": 349.87,
-          "sinceReturn": 0.27531530217977696,
-          "benchmarkReturn": 0.1511772776735163,
-          "alpha": 0.12413802450626066,
+          "latestPrice": 353.36,
+          "sinceReturn": 0.28803674272800195,
+          "benchmarkReturn": 0.15847908025674595,
+          "alpha": 0.129557662471256,
           "hosts": [
             "Sacks"
           ]
@@ -35090,10 +35110,10 @@
           "currency": "USD",
           "entryDate": "2024-05-31",
           "entryPrice": 234.44,
-          "latestPrice": 165.48,
-          "sinceReturn": -0.2941477563555708,
-          "benchmarkReturn": 0.384132582437378,
-          "alpha": -0.6782803387929488,
+          "latestPrice": 166.93,
+          "sinceReturn": -0.28798413240061416,
+          "benchmarkReturn": 0.39291199726946924,
+          "alpha": -0.6808961296700834,
           "hosts": [
             "Sacks"
           ]
@@ -35612,8 +35632,8 @@
         },
         {
           "date": "2026-06-11",
-          "portfolio": 6775,
-          "benchmark": 3876,
+          "portfolio": 6807,
+          "benchmark": 3901,
           "invested": 3000
         }
       ],
@@ -35641,11 +35661,11 @@
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
       "totalInvested": 2000,
-      "portfolioValue": 2940,
-      "benchmarkValue": 2367,
-      "portfolioReturn": 0.47,
-      "benchmarkReturn": 0.1835,
-      "outperformance": 0.2865,
+      "portfolioValue": 2954,
+      "benchmarkValue": 2382,
+      "portfolioReturn": 0.4770000000000001,
+      "benchmarkReturn": 0.19100000000000006,
+      "outperformance": 0.28600000000000003,
       "constituents": [
         {
           "slug": "googl",
@@ -35655,10 +35675,10 @@
           "currency": "USD",
           "entryDate": "2025-06-23",
           "entryPrice": 165.19,
-          "latestPrice": 349.87,
-          "sinceReturn": 1.117985350202797,
-          "benchmarkReturn": 0.2162792635174542,
-          "alpha": 0.9017060866853428,
+          "latestPrice": 353.36,
+          "sinceReturn": 1.1391125370785158,
+          "benchmarkReturn": 0.22399400149962512,
+          "alpha": 0.9151185355788907,
           "hosts": [
             "Friedberg"
           ]
@@ -35671,10 +35691,10 @@
           "currency": "USD",
           "entryDate": "2026-03-27",
           "entryPrice": 296.91,
-          "latestPrice": 244.02,
-          "sinceReturn": -0.17813478831969287,
-          "benchmarkReturn": 0.1511772776735163,
-          "alpha": -0.32931206599320917,
+          "latestPrice": 241.81,
+          "sinceReturn": -0.18557812131622387,
+          "benchmarkReturn": 0.15847908025674595,
+          "alpha": -0.3440572015729698,
           "hosts": [
             "Friedberg"
           ]
@@ -36175,8 +36195,8 @@
         },
         {
           "date": "2026-06-11",
-          "portfolio": 2940,
-          "benchmark": 2367,
+          "portfolio": 2954,
+          "benchmark": 2382,
           "invested": 2000
         }
       ],
@@ -36882,13 +36902,25 @@
   },
   "bearBook": [
     {
+      "slug": "intc",
+      "company": "Intel",
+      "ticker": "INTC",
+      "entryDate": "2024-08-23",
+      "basePrice": 20.54,
+      "latestPrice": 114.35,
+      "sinceReturn": 4.567185978578384,
+      "hosts": [
+        "Friedberg"
+      ]
+    },
+    {
       "slug": "asml",
       "company": "ASML",
       "ticker": "ASML",
       "entryDate": "2025-12-19",
       "basePrice": 1056.02,
-      "latestPrice": 1825.38,
-      "sinceReturn": 0.7285468078256094,
+      "latestPrice": 1857.66,
+      "sinceReturn": 0.7591191454707298,
       "hosts": [
         "Friedberg"
       ]
@@ -36899,8 +36931,8 @@
       "ticker": "CVS",
       "entryDate": "2025-05-19",
       "basePrice": 62.78,
-      "latestPrice": 99.38,
-      "sinceReturn": 0.5829085696081555,
+      "latestPrice": 99.58,
+      "sinceReturn": 0.5861739407454603,
       "hosts": [
         "Friedberg"
       ]
@@ -36911,8 +36943,8 @@
       "ticker": "EXPE",
       "entryDate": "2024-10-18",
       "basePrice": 159.61,
-      "latestPrice": 218.25,
-      "sinceReturn": 0.36739552659607777,
+      "latestPrice": 220.81,
+      "sinceReturn": 0.3834659482488565,
       "hosts": [
         "Chamath"
       ]
@@ -36923,8 +36955,8 @@
       "ticker": "BAC",
       "entryDate": "2024-11-01",
       "basePrice": 41.76,
-      "latestPrice": 54.68,
-      "sinceReturn": 0.3093869731800767,
+      "latestPrice": 55.12,
+      "sinceReturn": 0.3199113984674331,
       "hosts": [
         "Chamath"
       ]
@@ -36935,8 +36967,8 @@
       "ticker": "UNH",
       "entryDate": "2025-05-19",
       "basePrice": 315.89,
-      "latestPrice": 408.18,
-      "sinceReturn": 0.29215866282566716,
+      "latestPrice": 406.32,
+      "sinceReturn": 0.2862863655069803,
       "hosts": [
         "Friedberg"
       ]
@@ -36947,8 +36979,8 @@
       "ticker": "BA",
       "entryDate": "2024-08-16",
       "basePrice": 179.99,
-      "latestPrice": 215.61,
-      "sinceReturn": 0.1978998833268515,
+      "latestPrice": 219.32,
+      "sinceReturn": 0.21851213956330895,
       "hosts": [
         "Chamath",
         "Friedberg"
@@ -36960,8 +36992,8 @@
       "ticker": "LMT",
       "entryDate": "2025-01-06",
       "basePrice": 466,
-      "latestPrice": 543.74,
-      "sinceReturn": 0.166824034334764,
+      "latestPrice": 547.86,
+      "sinceReturn": 0.17566523605150208,
       "hosts": [
         "Friedberg"
       ]
@@ -36972,8 +37004,8 @@
       "ticker": "SNOW",
       "entryDate": "2025-06-23",
       "basePrice": 213.71,
-      "latestPrice": 239.16,
-      "sinceReturn": 0.11908661269945253,
+      "latestPrice": 241.15,
+      "sinceReturn": 0.12839829675728787,
       "hosts": [
         "Chamath"
       ]
@@ -36984,8 +37016,8 @@
       "ticker": "ABNB",
       "entryDate": "2024-08-09",
       "basePrice": 115.08,
-      "latestPrice": 128.57,
-      "sinceReturn": 0.11726624956551945,
+      "latestPrice": 129.44,
+      "sinceReturn": 0.12473931178310749,
       "hosts": [
         "Sacks",
         "Chamath"
@@ -36997,8 +37029,8 @@
       "ticker": "AXP",
       "entryDate": "2025-06-13",
       "basePrice": 287.79,
-      "latestPrice": 313.19,
-      "sinceReturn": 0.08827617359880469,
+      "latestPrice": 317.44,
+      "sinceReturn": 0.10300913860801275,
       "hosts": [
         "Chamath"
       ]
@@ -37009,8 +37041,8 @@
       "ticker": "CACC",
       "entryDate": "2025-05-09",
       "basePrice": 491.78,
-      "latestPrice": 530.3,
-      "sinceReturn": 0.07832770751148876,
+      "latestPrice": 540.8,
+      "sinceReturn": 0.09968888527390285,
       "hosts": [
         "Chamath"
       ]
@@ -37021,12 +37053,12 @@
       "ticker": "SBUX",
       "entryDate": "2024-08-16",
       "basePrice": 94.81,
-      "latestPrice": 101.37,
-      "sinceReturn": 0.06919101360615976,
+      "latestPrice": 101.77,
+      "sinceReturn": 0.07340997785043757,
       "hosts": [
+        "Friedberg",
         "Sacks",
-        "Chamath",
-        "Friedberg"
+        "Chamath"
       ]
     },
     {
@@ -37035,8 +37067,8 @@
       "ticker": "CRWV",
       "entryDate": "2026-02-13",
       "basePrice": 96.04,
-      "latestPrice": 93.27,
-      "sinceReturn": -0.02884214910453986,
+      "latestPrice": 93.86,
+      "sinceReturn": -0.02269887546855487,
       "hosts": [
         "Friedberg"
       ]
@@ -37047,8 +37079,8 @@
       "ticker": "CI",
       "entryDate": "2025-05-19",
       "basePrice": 321.96,
-      "latestPrice": 294.66,
-      "sinceReturn": -0.08479314200521793,
+      "latestPrice": 294.75,
+      "sinceReturn": -0.08451671015032913,
       "hosts": [
         "Friedberg"
       ]
@@ -37059,8 +37091,20 @@
       "ticker": "NFLX",
       "entryDate": "2026-01-12",
       "basePrice": 89.41,
-      "latestPrice": 80.87,
-      "sinceReturn": -0.09551504306006031,
+      "latestPrice": 81.14,
+      "sinceReturn": -0.09243932446035119,
+      "hosts": [
+        "Sacks"
+      ]
+    },
+    {
+      "slug": "sq",
+      "company": "Block",
+      "ticker": "SQ",
+      "entryDate": "2026-05-29",
+      "basePrice": 75.72,
+      "latestPrice": 68.69,
+      "sinceReturn": -0.09284204965662968,
       "hosts": [
         "Sacks"
       ]
@@ -37071,22 +37115,10 @@
       "ticker": "WBD",
       "entryDate": "2025-12-15",
       "basePrice": 29.71,
-      "latestPrice": 26.6,
-      "sinceReturn": -0.10467855940760684,
+      "latestPrice": 26.79,
+      "sinceReturn": -0.09845169976438917,
       "hosts": [
         "Chamath"
-      ]
-    },
-    {
-      "slug": "sq",
-      "company": "Block",
-      "ticker": "SQ",
-      "entryDate": "2026-05-29",
-      "basePrice": 75.72,
-      "latestPrice": 67.22,
-      "sinceReturn": -0.11225567881669307,
-      "hosts": [
-        "Sacks"
       ]
     },
     {
@@ -37095,8 +37127,8 @@
       "ticker": "CEG",
       "entryDate": "2025-05-27",
       "basePrice": 309.06,
-      "latestPrice": 245.72,
-      "sinceReturn": -0.20496020190254316,
+      "latestPrice": 246.1,
+      "sinceReturn": -0.20371448909596845,
       "hosts": [
         "Chamath"
       ]
@@ -37107,8 +37139,8 @@
       "ticker": "GME",
       "entryDate": "2024-06-07",
       "basePrice": 28.22,
-      "latestPrice": 22.1,
-      "sinceReturn": -0.2168639262934089,
+      "latestPrice": 22.07,
+      "sinceReturn": -0.21793054571226078,
       "hosts": [
         "Friedberg"
       ]
@@ -37119,8 +37151,8 @@
       "ticker": "NOW",
       "entryDate": "2026-01-12",
       "basePrice": 142.64,
-      "latestPrice": 103.86,
-      "sinceReturn": -0.27187324733595053,
+      "latestPrice": 104.09,
+      "sinceReturn": -0.2702460740325293,
       "hosts": [
         "Sacks"
       ]
@@ -37131,8 +37163,8 @@
       "ticker": "ADBE",
       "entryDate": "2025-07-07",
       "basePrice": 376.93,
-      "latestPrice": 222.77,
-      "sinceReturn": -0.4089884063353938,
+      "latestPrice": 223.75,
+      "sinceReturn": -0.4063751890271403,
       "hosts": [
         "Chamath"
       ]
@@ -37143,8 +37175,8 @@
       "ticker": "WDAY",
       "entryDate": "2024-09-20",
       "basePrice": 248.29,
-      "latestPrice": 133.18,
-      "sinceReturn": -0.4636110999234765,
+      "latestPrice": 132.64,
+      "sinceReturn": -0.4657859760763624,
       "hosts": [
         "Chamath"
       ]
@@ -37155,8 +37187,8 @@
       "ticker": "BIRD",
       "entryDate": "2026-04-17",
       "basePrice": 10.8,
-      "latestPrice": 3.71,
-      "sinceReturn": -0.6560185185185186,
+      "latestPrice": 3.79,
+      "sinceReturn": -0.6486111111111111,
       "hosts": [
         "Sacks"
       ]

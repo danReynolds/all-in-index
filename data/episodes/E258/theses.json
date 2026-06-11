@@ -31,7 +31,7 @@
     "ticker": "MSFT",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "summary": "Chamath views Microsoft's pledge to pay fair electricity rates and cover infrastructure costs for data centers as a smart first step that removes political friction and gives hyperscalers a social license to operate, supporting continued AI buildout.",
     "quote": "I really like it. It's a very good first order set of things to do, which is to step into a local area and take all of these energy issues off the table, at least to the extent that you're contributing to it.",

@@ -54,7 +54,7 @@
     "ticker": "GOOGL",
     "isPublic": true,
     "host": "Sacks",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
     "summary": "Sacks argues Google's search algorithm is demonstrably and deliberately biased against Trump, surfacing obscure negative articles as top results — a credibility and regulatory risk that undermines the core value of its search product.",
     "quote": "There's no question that just as a factual matter, this episode was suppressed in YouTube search... it's pretty obvious to me that they're using other factors in deciding what to surface here. And somehow the results end up being almost universally negative towards Trump.",
