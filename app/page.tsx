@@ -96,7 +96,7 @@ function Hero({ fund }: { fund: IndexFund }) {
             </p>
             <div className="rise mt-5 flex flex-wrap gap-2" style={d(360)}>
               <Link
-                href="/index"
+                href="/the-index"
                 className="rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-emerald-400 hover:shadow-[0_0_24px_-6px_rgba(16,185,129,0.7)]"
               >
                 Explore the index <span className="arrow-nudge">→</span>
@@ -119,7 +119,7 @@ function Hero({ fund }: { fund: IndexFund }) {
               <IndexChart series={fund.series} benchmarkSymbol={fund.benchmarkSymbol} />
             </div>
             <div className="mt-2 flex items-center justify-between text-xs text-neutral-500">
-              <Link href="/index#methodology" className="hover:text-neutral-300 hover:underline">
+              <Link href="/the-index#methodology" className="hover:text-neutral-300 hover:underline">
                 How the index works <span className="arrow-nudge">→</span>
               </Link>
               <span>Not financial advice.</span>
@@ -146,7 +146,7 @@ function GuestiesTeaser({ guesties, bestiesReturn }: { guesties: IndexFund; best
   const beat = bestiesReturn != null && bestiesReturn > guesties.portfolioReturn;
   return (
     <Link
-      href="/index#guesties"
+      href="/the-index#guesties"
       className="flex items-center justify-between gap-3 rounded-2xl border border-violet-200 bg-violet-50/60 px-5 py-3 text-sm transition-colors hover:border-violet-300 dark:border-violet-900/60 dark:bg-violet-950/25"
     >
       <span className="text-neutral-700 dark:text-neutral-200">

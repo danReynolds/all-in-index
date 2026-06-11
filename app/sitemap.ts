@@ -4,7 +4,7 @@ import { REGULAR_HOSTS } from "@/lib/types";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-  const statics = ["", "/index", "/signals", "/awards", "/episodes"].map((p) => ({
+  const statics = ["", "/the-index", "/signals", "/awards", "/episodes"].map((p) => ({
     url: `${base}${p}`,
     changeFrequency: "daily" as const,
     priority: p === "" ? 1 : 0.8,
