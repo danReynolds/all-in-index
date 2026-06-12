@@ -90,6 +90,7 @@ export function currentStanceFromTheses(theses: Thesis[]): Stance {
 const SCOREABLE_CALL_TYPES = new Set<CallType>([
   "explicit_long",
   "explicit_short",
+  "explicit_exit",
   "selection",
   "pair_trade",
   "basket",
@@ -103,6 +104,7 @@ export function tradeDirectionForTake(t: Thesis): TradeDirection | null {
   if (!isPortfolioScored(t)) return null;
   if (t.tradeDirection === "long" || t.tradeDirection === "short") return t.tradeDirection;
   if (t.callType === "explicit_short") return "short";
+  if (t.callType === "explicit_exit") return null;
   if (t.callType === "explicit_long" || t.callType === "selection" || t.callType === "basket") {
     return t.stance === "bull" ? "long" : null;
   }
@@ -142,6 +144,8 @@ export interface ExposureWindow {
   direction: TradeDirection;
   /** The position call that opened the window. */
   startTake?: Thesis;
+  /** Same-direction scored calls made while this exposure was already open. */
+  reinforceTakes?: Thesis[];
   /** The position call that closed it. */
   endTake?: Thesis;
 }
@@ -179,6 +183,8 @@ export function hostExposureWindows(theses: Thesis[], host: Host): ExposureWindo
       open.endTake = t;
       windows.push(open);
       open = { start: d, end: null, direction, startTake: t };
+    } else {
+      (open.reinforceTakes ??= []).push(t);
     }
   }
   if (open) windows.push(open);

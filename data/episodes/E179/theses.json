@@ -56,7 +56,7 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "high",
-    "positional": true,
+    "positional": false,
     "summary": "Sacks, as co-founder, argues Glue is an AI-native Slack killer built for the enterprise chat era, with thread-based UX and deep RAG integration that gets better as underlying models improve.",
     "quote": "You could think of us as for sure a Slack killer or Slack competitor. It's just that Slack wasn't built for the AI era. Glue is AI native... as the models get better and better, Glue just gets better and better.",
     "quoteStartMs": 1836056,
@@ -89,7 +89,10 @@
       "investment",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Jason said Glue feels like a 100-bagger and \"I'm in\""
   },
   {
     "id": "E179-perplexity-Sacks-4",
@@ -194,7 +197,7 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "high",
-    "positional": true,
+    "positional": false,
     "summary": "Friedberg, as founder, presents Ohalo's boosted breeding technology as a breakthrough that can increase crop yields 50–100%+, create new seed industries (e.g., potato seed), and build durable moats through trade secrets and compounding genetic advantages.",
     "quote": "The yield on some of these plants goes up by 50 to 100% or more... our business model is really predicated on how do we build advantages and moats and then keep extending them.",
     "quoteStartMs": 2607620,

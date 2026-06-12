@@ -99,7 +99,7 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "high",
-    "positional": true,
+    "positional": false,
     "summary": "Chamath boasts that his copper prediction is paying off, noting copper is up 26% in a month, and frames it as a personal call he made that is now coming true.",
     "quote": "Between this and my copper prediction, I'm about to retire. You know copper's up 26% in a month? Oof. Oofa. What is that as an annualized IRR?",
     "quoteStartMs": 3362028,

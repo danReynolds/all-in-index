@@ -126,3 +126,23 @@ test("host exposure windows score explicit shorts but not legacy bearish exits",
     ],
   );
 });
+
+test("host exposure windows retain same-direction reaffirming calls without double-counting", () => {
+  const first = thesis("Jason", "bull", "2025-01-01T00:00:00.000Z", {
+    positional: true,
+    callType: "selection",
+    tradeDirection: "long",
+  });
+  const reaffirm = thesis("Jason", "bull", "2025-02-01T00:00:00.000Z", {
+    positional: true,
+    callType: "pair_trade",
+    tradeDirection: "long",
+  });
+
+  const windows = hostExposureWindows([first, reaffirm], "Jason");
+
+  assert.equal(windows.length, 1);
+  assert.equal(windows[0].start, "2025-01-01");
+  assert.equal(windows[0].direction, "long");
+  assert.deepEqual(windows[0].reinforceTakes?.map((t) => t.id), [reaffirm.id]);
+});

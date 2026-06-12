@@ -39,7 +39,7 @@ export interface TradeEvent {
   date: string;
   ticker: string;
   slug: string;
-  kind: "in" | "out";
+  kind: "in" | "out" | "reaffirm";
   direction?: TradeDirection;
   /** The position call behind this trade — shown when the marker is clicked. */
   take?: Thesis | null;
@@ -164,8 +164,13 @@ export function IndexChart({
         const direction = m.direction ?? "long";
         const isShort = direction === "short";
         const c = m.kind === "out" ? "#94a3b8" : isShort ? "#f43f5e" : "#10b981";
-        const marker = m.kind === "out" ? "×" : isShort ? "▼" : "▲";
-        const action = m.kind === "out" ? `closed ${direction}` : `opened ${direction}`;
+        const marker = m.kind === "out" ? "×" : m.kind === "reaffirm" ? "+" : isShort ? "▼" : "▲";
+        const action =
+          m.kind === "out"
+            ? `closed ${direction}`
+            : m.kind === "reaffirm"
+              ? `reaffirmed ${direction}`
+              : `opened ${direction}`;
         const isSel = sel === idx;
         const labelY = m.cy - 12 - m.slot * 11;
         return (
@@ -233,7 +238,11 @@ export function IndexChart({
               ? selected.direction === "short"
                 ? "▼ opened short"
                 : "▲ opened long"
-              : "× closed"}
+              : selected.kind === "reaffirm"
+                ? selected.direction === "short"
+                  ? "+ reaffirmed short"
+                  : "+ reaffirmed long"
+                : "× closed"}
           </span>
           {selected.take && <StanceBadge stance={selected.take.stance} />}
           {selected.take && (

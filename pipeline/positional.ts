@@ -5,7 +5,7 @@ import { store } from "./store";
 import { HOLDINGS_FILE } from "./config";
 import type { IndexSnapshot, Thesis } from "../lib/types";
 
-const CALL_TYPE_VALUES = ["view", "explicit_long", "explicit_short", "selection", "pair_trade", "basket"] as const;
+const CALL_TYPE_VALUES = ["view", "explicit_long", "explicit_short", "explicit_exit", "selection", "pair_trade", "basket"] as const;
 const TRADE_DIRECTION_VALUES = ["long", "short"] as const;
 
 const SYSTEM = `You classify podcast investment takes as PORTFOLIO-SCORED CALLS or commentary.
@@ -23,8 +23,8 @@ positional = false for views WITHOUT ownership intent, however strong or detaile
 - sentiment alone ("I'm bullish", "I wouldn't sleep on it", "exceptional business") unless the segment is explicitly asking for ranked picks or investment selections
 
 For every take, also classify:
-- callType: "view" for non-positional commentary; "explicit_long" for direct buy/own/long calls; "explicit_short" for direct short calls; "selection" for ranked investment picks; "pair_trade" for each leg of a paired long/short trade; "basket" for named basket legs.
-- tradeDirection: "long" only when the row opens a long exposure; "short" only when the speaker explicitly says short or names the short leg of a pair. Bearish exits such as "take profits" or "wouldn't touch it" can be positional but must have tradeDirection=null.
+- callType: "view" for non-positional commentary; "explicit_long" for direct buy/own/long calls; "explicit_short" for direct short calls; "explicit_exit" for clear close/avoid language that exits without opening a short; "selection" for ranked investment picks; "pair_trade" for each leg of a paired long/short trade; "basket" for named basket legs.
+- tradeDirection: "long" only when the row opens a long exposure; "short" only when the speaker explicitly says short or names the short leg of a pair. Bearish exits such as "take profits" or "wouldn't touch it" can be positional with callType="explicit_exit" but must have tradeDirection=null.
 - pairTradeId: shared id for rows that are legs of the same pair trade, else null.
 - scoreReason: short phrase explaining why it clears or does not clear the scoring bar.
 

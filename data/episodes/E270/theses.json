@@ -134,7 +134,10 @@
       "AI transition"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Sacks said Salesforce stock might be a bargain at current multiples"
   },
   {
     "id": "E270-crm-Chamath-6",

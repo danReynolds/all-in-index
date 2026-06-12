@@ -87,7 +87,10 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Chamath called levered-long US equities the free-money trade"
   },
   {
     "id": "E233-s-p-500-us-equities-broad-market-Sacks-5",
@@ -109,7 +112,10 @@
       "trading strategy"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Sacks said Trump-policy panic dips are good times to buy"
   },
   {
     "id": "E233-s-p-500-us-equities-broad-market-Friedberg-6",

@@ -133,7 +133,10 @@
       "new Mag 7"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "basket",
+    "tradeDirection": "long",
+    "scoreReason": "Chamath said SpaceX belongs in the forward-looking basket to own"
   },
   {
     "id": "E227-stripe-Chamath-6",
@@ -155,7 +158,10 @@
       "new Mag 7"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "basket",
+    "tradeDirection": "long",
+    "scoreReason": "Chamath said Stripe belongs in the forward-looking basket to own"
   },
   {
     "id": "E227-coatue-interval-fund-Guest-7",

@@ -136,7 +136,10 @@
       "GDP growth",
       "geopolitics"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Friedberg reiterated his prediction to buy uranium stocks"
   },
   {
     "id": "E200-cper-Friedberg-a1",

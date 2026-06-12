@@ -239,7 +239,8 @@ export async function buildWindowFund(
       const callTypes = [
         ...new Set(
           c.windows
-            .map((w) => w.startTake?.callType)
+            .flatMap((w) => [w.startTake, ...(w.reinforceTakes ?? [])])
+            .map((t) => t?.callType)
             .filter((callType): callType is CallType => callType != null),
         ),
       ];

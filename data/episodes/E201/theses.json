@@ -113,7 +113,10 @@
       "China selling treasuries",
       "flight to safety"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "basket",
+    "tradeDirection": "long",
+    "scoreReason": "Friedberg said he is long gold as part of a commodity/inflation basket"
   },
   {
     "id": "E201-gld-Chamath-a1",
@@ -181,6 +184,9 @@
       "inflation hedge",
       "portfolio positioning"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "basket",
+    "tradeDirection": "long",
+    "scoreReason": "Friedberg said he is long commodities as part of an inflation basket"
   }
 ]

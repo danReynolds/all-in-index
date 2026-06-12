@@ -67,7 +67,10 @@
       "competition"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Chamath disclosed he is an investor in OpenAI as part of the AI supercycle"
   },
   {
     "id": "E250-anthropic-Chamath-3",
@@ -89,7 +92,10 @@
       "competition"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Chamath disclosed he is an investor in Anthropic as part of the AI supercycle"
   },
   {
     "id": "E250-aapl-Guest-4",
@@ -135,6 +141,9 @@
       "positioning"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Brad Gerstner said his firm still believes the AI compute trade has room to run"
   }
 ]

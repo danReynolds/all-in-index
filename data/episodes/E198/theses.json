@@ -86,7 +86,10 @@
       "venture"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Mark Cuban disclosed investing in Groq alongside Chamath"
   },
   {
     "id": "E198-uso-Guest-a0",

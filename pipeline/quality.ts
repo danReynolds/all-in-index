@@ -6,6 +6,7 @@ import type { Host, IndexFund, IndexSnapshot } from "../lib/types";
 const BESTIES: Host[] = ["Chamath", "Jason", "Sacks", "Friedberg"];
 const GUESTS: Host[] = ["Guest"];
 const KNOWN_DELISTED_TICKERS = new Set(["X"]);
+const DIRECTIONAL_CALL_TYPES = new Set(["explicit_long", "explicit_short", "selection", "pair_trade", "basket"]);
 
 export interface QualityResult {
   errors: string[];
@@ -93,11 +94,39 @@ function validateHostFundTaxonomy(snapshot: IndexSnapshot, errors: string[]) {
   }
 }
 
+function validateScoredTakeTaxonomy(snapshot: IndexSnapshot, errors: string[]) {
+  for (const h of snapshot.holdings) {
+    for (const t of h.theses) {
+      if (!t.positional) continue;
+      if (!t.callType) {
+        errors.push(`${t.id} is positional but missing callType`);
+        continue;
+      }
+      if (DIRECTIONAL_CALL_TYPES.has(t.callType) && !t.tradeDirection) {
+        errors.push(`${t.id} is ${t.callType} but missing tradeDirection`);
+      }
+      if (t.callType === "explicit_long" && t.tradeDirection !== "long") {
+        errors.push(`${t.id} explicit_long must use tradeDirection=long`);
+      }
+      if (t.callType === "explicit_short" && t.tradeDirection !== "short") {
+        errors.push(`${t.id} explicit_short must use tradeDirection=short`);
+      }
+      if (t.callType === "explicit_exit" && t.tradeDirection != null) {
+        errors.push(`${t.id} explicit_exit must not open a tradeDirection`);
+      }
+      if (t.callType === "pair_trade" && !t.pairTradeId) {
+        errors.push(`${t.id} pair_trade is missing pairTradeId`);
+      }
+    }
+  }
+}
+
 export function validateIndexSnapshot(snapshot: IndexSnapshot): QualityResult {
   const errors: string[] = [];
   const warnings: string[] = [];
   validateFund(snapshot, snapshot.indexFund, "Besties Index", BESTIES, errors);
   validateFund(snapshot, snapshot.guestiesFund, "Guesties Index", GUESTS, errors);
+  validateScoredTakeTaxonomy(snapshot, errors);
   validateHostFundTaxonomy(snapshot, errors);
   validateDuplicateQuotes(snapshot, errors);
   validateQuoteLengths(snapshot, errors);

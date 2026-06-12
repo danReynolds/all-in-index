@@ -66,7 +66,7 @@
       "M&A"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": false
   },
   {
     "id": "E257-now-Sacks-3",
@@ -181,7 +181,10 @@
       "consumer fintech"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Jason picked Robinhood/prediction-market wagering as his best-performing asset theme"
   },
   {
     "id": "E257-coin-Jason-8",
@@ -195,7 +198,7 @@
     "stance": "bull",
     "conviction": "low",
     "summary": "Jason briefly groups Coinbase alongside Robinhood as a beneficiary of the expanding wagering/prediction-market trend he expects to be the best-performing asset space in 2026.",
-    "quote": "my pick for best performing asset will be the Robinhood PolyMarket Prize Picks. Gambling, wagering space because people will be able to have a little cash around to make some bets. So you can buy Coinbase in there too, I guess.",
+    "quote": "So you can buy Coinbase in there too, I guess.",
     "quoteStartMs": 4002600,
     "topics": [
       "prediction markets",
@@ -241,9 +244,6 @@
     "stance": "bull",
     "conviction": "high",
     "positional": true,
-    "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Friedberg picked copper as the best-performing asset for 2026",
     "summary": "Friedberg picks copper as the best-performing asset, citing a massive structural supply-demand deficit (~70% short by 2040), its ubiquity in data centers, chips, and weapons systems, and its role as a critical national security material in a less multilateral world.",
     "quote": "The asset that is set up to go absolutely parabolic is copper... we are on a path by 2040 where we will be short about 70% of the global supply at current course and speed.",
     "quoteStartMs": 2097528,
@@ -254,7 +254,10 @@
       "data centers",
       "2026 predictions"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Friedberg picked copper as the best-performing asset for 2026"
   },
   {
     "id": "E257-uso-Friedberg-a1",
@@ -267,7 +270,7 @@
     "host": "Friedberg",
     "stance": "bear",
     "conviction": "high",
-    "positional": false,
+    "positional": true,
     "summary": "Friedberg names hydrocarbons/oil as a worst-performing asset for 2026, arguing electrification and energy storage trends are unstoppable and will shrink oil's addressable market, with price more likely to see $45/barrel than $65.",
     "quote": "I think a very poor performing asset will be hydrocarbons. I just think that the trend in oil is inexorable and it's down... does it see $65 or $45? I think it's more likely to see $45 than $65.",
     "quoteStartMs": 4268135,
@@ -278,7 +281,10 @@
       "2026 predictions",
       "worst performing asset"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "selection",
+    "tradeDirection": "short",
+    "scoreReason": "Friedberg named hydrocarbons/oil as a poor-performing asset for 2026"
   },
   {
     "id": "E257-gld-Jason-a2",

@@ -251,7 +251,10 @@
     ],
     "attributionConfidence": "high",
     "positional": true,
-    "guestName": "Brad Gerstner"
+    "guestName": "Brad Gerstner",
+    "callType": "basket",
+    "tradeDirection": "long",
+    "scoreReason": "Brad Gerstner said memory stocks including SK Hynix are 25% of his portfolio"
   },
   {
     "id": "E272-mu-Guest-11",
@@ -274,7 +277,10 @@
     ],
     "attributionConfidence": "high",
     "positional": true,
-    "guestName": "Brad Gerstner"
+    "guestName": "Brad Gerstner",
+    "callType": "basket",
+    "tradeDirection": "long",
+    "scoreReason": "Brad Gerstner said memory stocks including Micron are 25% of his portfolio"
   },
   {
     "id": "E272-googl-Guest-12",

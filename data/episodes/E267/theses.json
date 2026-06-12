@@ -157,7 +157,10 @@
       "small bet"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Jason disclosed a small personal bet on TAO"
   },
   {
     "id": "E267-vast-space-Jason-7",

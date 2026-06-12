@@ -42,7 +42,10 @@
       "GPU infrastructure"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Gavin Baker disclosed his firm is a shareholder of xAI"
   },
   {
     "id": "E238-meta-Guest-2",

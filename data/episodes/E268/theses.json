@@ -89,7 +89,10 @@
       "secondary market"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Brad Gerstner said he is a buyer of OpenAI shares today"
   },
   {
     "id": "E268-pltr-Sacks-4",

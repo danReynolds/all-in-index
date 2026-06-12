@@ -69,7 +69,10 @@
     ],
     "attributionConfidence": "high",
     "positional": true,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Gavin Baker picked high-bandwidth memory makers including SK Hynix"
   },
   {
     "id": "E209-mu-Guest-3",
@@ -93,7 +96,10 @@
     ],
     "attributionConfidence": "high",
     "positional": true,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Gavin Baker picked Micron as a high-bandwidth memory winner"
   },
   {
     "id": "E209-enterprise-application-software-saas-Guest-4",
@@ -464,7 +470,10 @@
       "trade"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Friedberg picked Chinese tech ETFs as a best-performing asset for 2025"
   },
   {
     "id": "E209-zipline-Guest-20",
@@ -547,7 +556,7 @@
     "host": "Friedberg",
     "stance": "neutral",
     "conviction": "low",
-    "positional": true,
+    "positional": false,
     "summary": "Friedberg recaps his 2024 uranium ETF pick (URA), which was down 1%, and notes the ETF had poor components — implying it wasn't the right vehicle, but offers no forward price/investment direction for uranium.",
     "quote": "Freeberg, you went with your uranium ETF, not Uranus, uranium ETF, and URA was down 1% in 2024... I looked at the components of that ETF last week... It has absolute junk in it. Like, it was not the right way to trade uranium.",
     "quoteStartMs": 4400922,

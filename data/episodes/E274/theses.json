@@ -44,7 +44,10 @@
       "Starlink"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Chamath said he is buying SpaceX as critical internet infrastructure"
   },
   {
     "id": "E274-spacex-Guest-2",

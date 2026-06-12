@@ -90,6 +90,7 @@ export type CallType =
   | "view"
   | "explicit_long"
   | "explicit_short"
+  | "explicit_exit"
   | "selection"
   | "pair_trade"
   | "basket";

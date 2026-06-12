@@ -134,7 +134,10 @@
       "gold bugs"
     ],
     "attributionConfidence": "high",
-    "guestName": "Tucker Carlson"
+    "guestName": "Tucker Carlson",
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Tucker disclosed he has long been a personal buyer of physical gold"
   },
   {
     "id": "E254-gld-Chamath-a1",

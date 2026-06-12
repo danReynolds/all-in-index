@@ -114,6 +114,9 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
       if (!holding) continue;
       for (const w of hostExposureWindows(holding.theses, host)) {
         tradeEvents.push({ date: w.start, ticker: c.ticker, slug: c.slug, kind: "in", direction: w.direction, take: w.startTake ?? null });
+        for (const t of w.reinforceTakes ?? []) {
+          tradeEvents.push({ date: t.episodeDate.slice(0, 10), ticker: c.ticker, slug: c.slug, kind: "reaffirm", direction: w.direction, take: t });
+        }
         if (w.end) tradeEvents.push({ date: w.end, ticker: c.ticker, slug: c.slug, kind: "out", direction: w.direction, take: w.endTake ?? null });
       }
     }
@@ -127,6 +130,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
   const scoreableTakes = takes.filter((t) => isPortfolioScored(t) && t.attributionConfidence !== "low");
   const tradableScoreableTakes = scoreableTakes.filter(isTradableCompanyTake);
   const excludedScoreableTakes = scoreableTakes.length - tradableScoreableTakes.length;
+  const reaffirmedScoreableTakes = Math.max(0, tradableScoreableTakes.length - (fund?.constituents.length ?? 0));
   const commentaryTakes = takes.length - scoreableTakes.length;
   const signature = takes
     .filter((t) => t.quote && t.stance !== "neutral")
@@ -188,7 +192,11 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
           <div className="mb-4 grid grid-cols-2 gap-x-6 gap-y-3 border-y border-neutral-100 py-3 dark:border-neutral-800 md:grid-cols-4">
             <MethodStat label="Catalog theses" value={takes.length} note="All extracted company views." />
             <MethodStat label="Scoreable receipts" value={scoreableTakes.length} note="Clear in/out, ranked, or pair calls." />
-            <MethodStat label="Public exposures" value={fund.constituents.length} note="Tradable names in this scorecard." />
+            <MethodStat
+              label="Public exposures"
+              value={fund.constituents.length}
+              note={reaffirmedScoreableTakes > 0 ? `${reaffirmedScoreableTakes} reaffirm existing exposure.` : "Tradable names in this scorecard."}
+            />
             <MethodStat label="Not traded" value={excludedScoreableTakes + commentaryTakes} note={`${excludedScoreableTakes} non-tradable, ${commentaryTakes} commentary.`} />
           </div>
           <IndexChart
