@@ -1,5 +1,4 @@
 import { fetchDailyHistory } from "./market";
-import { isMacroAsset } from "../lib/assets";
 import {
   currentStanceForHosts,
   stancePath,
@@ -7,6 +6,7 @@ import {
   hostExposureWindows,
   type ExposureWindow,
 } from "../lib/calls";
+import { isTradableCompanyExposure } from "../lib/tradability";
 import type {
   BearCall,
   CallType,
@@ -20,17 +20,10 @@ import type {
 
 const BENCHMARK = "SPY";
 const CONTRIBUTION = 1000; // notional $ invested per call
+type TradableHolding = Holding & { ticker: string };
 
 export const BESTIES = new Set<Host>(["Chamath", "Jason", "Sacks", "Friedberg"]);
 export const GUESTS = new Set<Host>(["Guest"]);
-
-/** Crypto / non-equity tickers that must never enter the stock index. */
-function isCrypto(ticker: string): boolean {
-  return /-USD$/i.test(ticker) || ["BTC", "ETH", "SOL", "DOGE", "XRP", "ADA", "BNB"].includes(ticker.toUpperCase());
-}
-
-/** Benchmark/index ETFs aren't company calls — excluded from all funds. */
-const EXCLUDED_ETFS = new Set(["SPY", "QQQ", "VOO", "VTI", "DIA", "IWM"]);
 
 /**
  * A take scores only when it's a real call (medium+ conviction) AND we're
@@ -109,21 +102,15 @@ export async function buildBearBook(
   holdings: Holding[],
   hostSet: Set<Host> = BESTIES,
 ): Promise<BearCall[]> {
-  const bearish = holdings.filter(
-    (h) =>
-      h.ticker &&
-      h.isPublic &&
-      !isCrypto(h.ticker) &&
-      !EXCLUDED_ETFS.has(h.ticker.toUpperCase()) &&
-      !isMacroAsset(h.ticker) &&
-      currentStanceForHosts(h.theses, hostList(hostSet)) === "bear",
-  );
+  const bearish = holdings
+    .filter(isTradableCompanyExposure)
+    .filter((h) => currentStanceForHosts(h.theses, hostList(hostSet)) === "bear");
   const out: BearCall[] = [];
   for (const h of bearish) {
     const path = stancePath(h.theses, hostList(hostSet));
     if (path.length === 0 || path[path.length - 1].dir !== -1) continue;
     const entryWanted = path[path.length - 1].date;
-    const hist = await fetchDailyHistory(h.ticker!, entryWanted);
+    const hist = await fetchDailyHistory(h.ticker, entryWanted);
     if (!hist) continue;
     const series = new Series(hist);
     const entry = series.onOrAfter(entryWanted);
@@ -137,7 +124,7 @@ export async function buildBearBook(
     out.push({
       slug: h.slug,
       company: h.company,
-      ticker: h.ticker!,
+      ticker: h.ticker,
       entryDate: entry.date,
       basePrice: Number(entry.close.toFixed(2)),
       latestPrice: Number(series.last.toFixed(2)),
@@ -160,9 +147,8 @@ export async function buildWindowFund(
   nowIso: string,
   host: Host,
 ): Promise<IndexFund | null> {
-  const candidates: Array<{ h: Holding; windows: ExposureWindow[] }> = [];
-  for (const h of holdings) {
-    if (!h.ticker || !h.isPublic || isCrypto(h.ticker) || EXCLUDED_ETFS.has(h.ticker.toUpperCase()) || isMacroAsset(h.ticker)) continue;
+  const candidates: Array<{ h: TradableHolding; windows: ExposureWindow[] }> = [];
+  for (const h of holdings.filter(isTradableCompanyExposure)) {
     const windows = hostExposureWindows(h.theses, host);
     if (windows.length) candidates.push({ h, windows });
   }
@@ -177,10 +163,10 @@ export async function buildWindowFund(
   if (!spyHist) return null;
   const spy = new Series(spyHist);
 
-  type C = { h: Holding; series: Series; windows: ExposureWindow[]; firstStart: string };
+  type C = { h: TradableHolding; series: Series; windows: ExposureWindow[]; firstStart: string };
   const cons: C[] = [];
   for (const c of candidates) {
-    const hist = await fetchDailyHistory(c.h.ticker!, c.windows[0].start);
+    const hist = await fetchDailyHistory(c.h.ticker, c.windows[0].start);
     if (!hist) continue;
     cons.push({ h: c.h, series: new Series(hist), windows: c.windows, firstStart: c.windows[0].start });
   }
@@ -247,8 +233,8 @@ export async function buildWindowFund(
       return {
         slug: c.h.slug,
         company: c.h.company,
-        ticker: c.h.ticker!,
-        sourceSymbol: c.h.market?.sourceSymbol ?? c.h.ticker!,
+        ticker: c.h.ticker,
+        sourceSymbol: c.h.market?.sourceSymbol ?? c.h.ticker,
         currency: c.h.market?.currency ?? null,
         direction,
         callTypes,
@@ -318,15 +304,9 @@ export async function buildIndexFund(
   nowIso: string,
   hostSet: Set<Host> = BESTIES,
 ): Promise<IndexFund | null> {
-  const bullish = holdings.filter(
-    (h) =>
-      h.ticker &&
-      h.isPublic &&
-      !isCrypto(h.ticker) &&
-      !EXCLUDED_ETFS.has(h.ticker.toUpperCase()) &&
-      !isMacroAsset(h.ticker) &&
-      isCurrentNetBull(h.theses, hostSet),
-  );
+  const bullish = holdings
+    .filter(isTradableCompanyExposure)
+    .filter((h) => isCurrentNetBull(h.theses, hostSet));
   const excludedPrivateHoldings = holdings.filter(
     (h) => !h.ticker && isCurrentNetBull(h.theses, hostSet),
   );
@@ -352,7 +332,7 @@ export async function buildIndexFund(
 
   // Build a constituent (price series + entry) for each bullish holding.
   type C = {
-    h: Holding;
+    h: TradableHolding;
     series: Series;
     entryDate: string;
     entryPrice: number;
@@ -362,7 +342,7 @@ export async function buildIndexFund(
   };
   const constituents: C[] = [];
   for (const h of bullish) {
-    const hist = await fetchDailyHistory(h.ticker!, inception);
+    const hist = await fetchDailyHistory(h.ticker, inception);
     if (!hist) continue;
     const series = new Series(hist);
     const wanted = currentBullEntryDate(h, hostSet);
@@ -447,8 +427,8 @@ export async function buildIndexFund(
       return {
         slug: c.h.slug,
         company: c.h.company,
-        ticker: c.h.ticker!,
-        sourceSymbol: c.h.market?.sourceSymbol ?? c.h.ticker!,
+        ticker: c.h.ticker,
+        sourceSymbol: c.h.market?.sourceSymbol ?? c.h.ticker,
         currency: c.h.market?.currency ?? null,
         direction,
         callTypes,

@@ -139,7 +139,8 @@
     "attributionConfidence": "high",
     "callType": "explicit_long",
     "tradeDirection": "long",
-    "scoreReason": "Friedberg reiterated his prediction to buy uranium stocks"
+    "scoreReason": "Friedberg reiterated his prediction to buy uranium stocks",
+    "scoreExclusionReason": "macro_asset"
   },
   {
     "id": "E200-cper-Friedberg-a1",

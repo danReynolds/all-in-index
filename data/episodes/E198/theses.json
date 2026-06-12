@@ -89,7 +89,8 @@
     "positional": true,
     "callType": "explicit_long",
     "tradeDirection": "long",
-    "scoreReason": "Mark Cuban disclosed investing in Groq alongside Chamath"
+    "scoreReason": "Mark Cuban disclosed investing in Groq alongside Chamath",
+    "scoreExclusionReason": "private"
   },
   {
     "id": "E198-uso-Guest-a0",

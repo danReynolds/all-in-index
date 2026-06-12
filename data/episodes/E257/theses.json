@@ -266,7 +266,8 @@
     "attributionConfidence": "high",
     "callType": "selection",
     "tradeDirection": "long",
-    "scoreReason": "Friedberg picked copper as the best-performing asset for 2026"
+    "scoreReason": "Friedberg picked copper as the best-performing asset for 2026",
+    "scoreExclusionReason": "macro_asset"
   },
   {
     "id": "E257-uso-Friedberg-a1",
@@ -293,7 +294,8 @@
     "attributionConfidence": "high",
     "callType": "selection",
     "tradeDirection": "short",
-    "scoreReason": "Friedberg named hydrocarbons/oil as a poor-performing asset for 2026"
+    "scoreReason": "Friedberg named hydrocarbons/oil as a poor-performing asset for 2026",
+    "scoreExclusionReason": "macro_asset"
   },
   {
     "id": "E257-gld-Jason-a2",

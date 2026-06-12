@@ -116,7 +116,8 @@
     "attributionConfidence": "high",
     "callType": "basket",
     "tradeDirection": "long",
-    "scoreReason": "Friedberg said he is long gold as part of a commodity/inflation basket"
+    "scoreReason": "Friedberg said he is long gold as part of a commodity/inflation basket",
+    "scoreExclusionReason": "macro_asset"
   },
   {
     "id": "E201-gld-Chamath-a1",
@@ -187,6 +188,7 @@
     "attributionConfidence": "high",
     "callType": "basket",
     "tradeDirection": "long",
-    "scoreReason": "Friedberg said he is long commodities as part of an inflation basket"
+    "scoreReason": "Friedberg said he is long commodities as part of an inflation basket",
+    "scoreExclusionReason": "macro_asset"
   }
 ]

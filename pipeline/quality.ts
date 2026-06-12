@@ -1,5 +1,6 @@
 import { currentStanceForHosts, isPortfolioScored } from "../lib/calls";
 import { MAX_PUBLISHED_QUOTE_CHARS } from "../lib/quotes";
+import { isTradableCompanyExposure } from "../lib/tradability";
 import { store } from "./store";
 import type { Host, IndexFund, IndexSnapshot } from "../lib/types";
 
@@ -121,6 +122,13 @@ function validateScoredTakeTaxonomy(snapshot: IndexSnapshot, errors: string[]) {
       }
       if (t.scoreCondition && t.scoreExclusionReason !== "conditional") {
         errors.push(`${t.id} has scoreCondition but is not marked scoreExclusionReason=conditional`);
+      }
+      if (!isPortfolioScored(t)) continue;
+      if (!t.scoreReason) {
+        errors.push(`${t.id} is portfolio-scored but missing scoreReason`);
+      }
+      if (!isTradableCompanyExposure(t) && !t.scoreCondition && !t.scoreExclusionReason) {
+        errors.push(`${t.id} is portfolio-scored but non-tradable without scoreExclusionReason`);
       }
       if (!t.positional) continue;
       if (!t.callType) {

@@ -3,7 +3,8 @@ import test from "node:test";
 import { currentStanceForHosts, hostExposureWindows, tradeDirectionForTake } from "../lib/calls";
 import { MAX_PUBLISHED_QUOTE_CHARS, trimPublishedQuote } from "../lib/quotes";
 import { auditTranscriptCandidates } from "../pipeline/take-candidate-audit";
-import type { Transcript } from "../lib/types";
+import { validateIndexSnapshot } from "../pipeline/quality";
+import type { IndexSnapshot, Transcript } from "../lib/types";
 import {
   BESTIES,
   currentBullEntryDate,
@@ -147,6 +148,38 @@ test("host exposure windows retain same-direction reaffirming calls without doub
   assert.equal(windows[0].start, "2025-01-01");
   assert.equal(windows[0].direction, "long");
   assert.deepEqual(windows[0].reinforceTakes?.map((t) => t.id), [reaffirm.id]);
+});
+
+test("portfolio-scored non-tradable receipts need explicit exclusion reasons", () => {
+  const privateTake = thesis("Chamath", "bull", "2025-01-01T00:00:00.000Z", {
+    id: "private-call",
+    company: "PrivateCo",
+    ticker: null,
+    isPublic: false,
+    positional: true,
+    callType: "explicit_long",
+    tradeDirection: "long",
+    scoreReason: "Chamath disclosed a private-company long",
+  });
+  const privateHolding = {
+    ...holding([privateTake]),
+    slug: "privateco",
+    company: "PrivateCo",
+    ticker: null,
+    isPublic: false,
+  };
+  const snapshot: IndexSnapshot = {
+    generatedAt: "2026-06-12T00:00:00.000Z",
+    holdings: [privateHolding],
+    episodesProcessed: 1,
+  };
+
+  assert.deepEqual(validateIndexSnapshot(snapshot).errors, [
+    "private-call is portfolio-scored but non-tradable without scoreExclusionReason",
+  ]);
+
+  privateTake.scoreExclusionReason = "private";
+  assert.deepEqual(validateIndexSnapshot(snapshot).errors, []);
 });
 
 test("prediction-round transcript picks are covered by audited receipts", () => {

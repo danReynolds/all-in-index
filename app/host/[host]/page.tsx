@@ -12,6 +12,7 @@ import { ListenButton } from "@/app/components/player";
 import { BackLink } from "@/app/components/BackLink";
 import { hostExposureWindows, isPortfolioScored, tradeDirectionForTake } from "@/lib/calls";
 import { isMacroAsset } from "@/lib/assets";
+import { EXCLUDED_ETFS, isCryptoTicker, isTradableCompanyExposure } from "@/lib/tradability";
 import { HOST_UI, RANK_MEDAL } from "@/lib/hosts";
 import { HOST_PROFILES, REGULAR_HOSTS } from "@/lib/types";
 import type { Host, IndexDirection, Thesis } from "@/lib/types";
@@ -65,24 +66,8 @@ function MethodStat({ label, value, note }: { label: string; value: string | num
   );
 }
 
-const EXCLUDED_ETFS = new Set(["SPY", "QQQ", "VOO", "VTI", "DIA", "IWM"]);
-
-function isCryptoTicker(ticker: string | null): boolean {
-  return !!ticker && (/-USD$/i.test(ticker) || ["BTC", "ETH", "SOL", "DOGE", "XRP", "ADA", "BNB"].includes(ticker.toUpperCase()));
-}
-
 function isCryptoReceipt(t: Thesis): boolean {
   return isCryptoTicker(t.ticker) || (!t.ticker && t.topics.some((topic) => topic.toLowerCase().includes("crypto")));
-}
-
-function isTradableCompanyTake(t: Thesis): boolean {
-  return (
-    !!t.ticker &&
-    t.isPublic &&
-    !isCryptoTicker(t.ticker) &&
-    !EXCLUDED_ETFS.has(t.ticker.toUpperCase()) &&
-    !isMacroAsset(t.ticker)
-  );
 }
 
 function isBroadMarketTake(t: Thesis): boolean {
@@ -123,7 +108,7 @@ function auditStatus(t: Thesis): { label: string; detail: string; tone: string }
     };
   }
   if (isPortfolioScored(t)) {
-    if (!isTradableCompanyTake(t)) {
+    if (!isTradableCompanyExposure(t)) {
       return {
         label: "Not traded",
         detail: notTradedReason(t),
@@ -224,7 +209,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
     for (const t of h.theses) if (t.host === host) takes.push({ ...t, slug: h.slug });
   }
   const scoreableTakes = takes.filter((t) => isPortfolioScored(t) && t.attributionConfidence !== "low");
-  const tradableScoreableTakes = scoreableTakes.filter(isTradableCompanyTake);
+  const tradableScoreableTakes = scoreableTakes.filter(isTradableCompanyExposure);
   const excludedScoreableTakes = scoreableTakes.length - tradableScoreableTakes.length;
   const reaffirmedScoreableTakes = Math.max(0, tradableScoreableTakes.length - (fund?.constituents.length ?? 0));
   const commentaryTakes = takes.length - scoreableTakes.length;
@@ -234,7 +219,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
         t.attributionConfidence !== "low" &&
         (Boolean(t.scoreCondition) ||
           Boolean(t.scoreExclusionReason) ||
-          (isPortfolioScored(t) && !isTradableCompanyTake(t))),
+          (isPortfolioScored(t) && !isTradableCompanyExposure(t))),
     )
     .sort((a, b) => b.episodeDate.localeCompare(a.episodeDate));
   const auditLedger = takes.slice().sort((a, b) => b.episodeDate.localeCompare(a.episodeDate));

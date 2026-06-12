@@ -137,7 +137,8 @@
     "guestName": "Tucker Carlson",
     "callType": "explicit_long",
     "tradeDirection": "long",
-    "scoreReason": "Tucker disclosed he has long been a personal buyer of physical gold"
+    "scoreReason": "Tucker disclosed he has long been a personal buyer of physical gold",
+    "scoreExclusionReason": "macro_asset"
   },
   {
     "id": "E254-gld-Chamath-a1",

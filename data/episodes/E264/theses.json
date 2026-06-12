@@ -48,7 +48,8 @@
     "guestName": "Ro Khanna",
     "callType": "explicit_long",
     "tradeDirection": "long",
-    "scoreReason": "Brad Gerstner said he bought a lot more OpenAI shares"
+    "scoreReason": "Brad Gerstner said he bought a lot more OpenAI shares",
+    "scoreExclusionReason": "private"
   },
   {
     "id": "E264-anthropic-Chamath-2",

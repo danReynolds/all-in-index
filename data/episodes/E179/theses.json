@@ -92,7 +92,8 @@
     "attributionConfidence": "high",
     "callType": "explicit_long",
     "tradeDirection": "long",
-    "scoreReason": "Jason said Glue feels like a 100-bagger and \"I'm in\""
+    "scoreReason": "Jason said Glue feels like a 100-bagger and \"I'm in\"",
+    "scoreExclusionReason": "private"
   },
   {
     "id": "E179-perplexity-Sacks-4",

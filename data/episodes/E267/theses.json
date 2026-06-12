@@ -160,7 +160,8 @@
     "positional": true,
     "callType": "explicit_long",
     "tradeDirection": "long",
-    "scoreReason": "Jason disclosed a small personal bet on TAO"
+    "scoreReason": "Jason disclosed a small personal bet on TAO",
+    "scoreExclusionReason": "crypto"
   },
   {
     "id": "E267-vast-space-Jason-7",

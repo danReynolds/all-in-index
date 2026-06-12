@@ -72,7 +72,8 @@
     "guestName": "Gavin Baker",
     "callType": "selection",
     "tradeDirection": "long",
-    "scoreReason": "Gavin Baker picked high-bandwidth memory makers including SK Hynix"
+    "scoreReason": "Gavin Baker picked high-bandwidth memory makers including SK Hynix",
+    "scoreExclusionReason": "unpriced"
   },
   {
     "id": "E209-mu-Guest-3",
@@ -503,7 +504,8 @@
     "positional": true,
     "callType": "selection",
     "tradeDirection": "long",
-    "scoreReason": "Friedberg picked Chinese tech ETFs as a best-performing asset for 2025"
+    "scoreReason": "Friedberg picked Chinese tech ETFs as a best-performing asset for 2025",
+    "scoreExclusionReason": "benchmark_or_etf"
   },
   {
     "id": "E209-zipline-Guest-20",

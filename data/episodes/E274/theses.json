@@ -47,7 +47,8 @@
     "positional": true,
     "callType": "explicit_long",
     "tradeDirection": "long",
-    "scoreReason": "Chamath said he is buying SpaceX as critical internet infrastructure"
+    "scoreReason": "Chamath said he is buying SpaceX as critical internet infrastructure",
+    "scoreExclusionReason": "private"
   },
   {
     "id": "E274-spacex-Guest-2",

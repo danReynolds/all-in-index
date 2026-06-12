@@ -45,7 +45,8 @@
     "positional": true,
     "callType": "explicit_long",
     "tradeDirection": "long",
-    "scoreReason": "Gavin Baker disclosed his firm is a shareholder of xAI"
+    "scoreReason": "Gavin Baker disclosed his firm is a shareholder of xAI",
+    "scoreExclusionReason": "private"
   },
   {
     "id": "E238-meta-Guest-2",
