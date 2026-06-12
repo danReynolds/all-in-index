@@ -97,7 +97,7 @@ function notTradedReason(t: Thesis): string {
   if (t.scoreExclusionReason === "conditional") return "Conditional call, not active exposure.";
   if (isCryptoReceipt(t) || t.scoreExclusionReason === "crypto") return "Crypto excluded from public-equity scorecard.";
   if ((t.ticker && EXCLUDED_ETFS.has(t.ticker.toUpperCase())) || t.scoreExclusionReason === "benchmark_or_etf") {
-    return "Benchmark/ETF excluded from company scorecard.";
+    return "Benchmark, ETF, or basket excluded from company scorecard.";
   }
   if (isMacroAsset(t.ticker) || isBroadMarketTake(t) || t.scoreExclusionReason === "macro_asset") {
     return "Broad-market or macro exposure, not a single-company scorecard call.";

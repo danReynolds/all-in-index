@@ -47,9 +47,9 @@ RSS feed ──▶ AssemblyAI ──▶ Claude ──▶ Claude ──▶ Yahoo 
   ranked investment selections, explicit shorts, or named pair/basket legs. They
   drive the per-host funds and chart markers.
 - **Audited but not traded** receipts include conditional calls, day-trade
-  asides, private companies, broad-market or macro exposures, benchmark ETFs,
-  crypto tokens, and unpriced names. Host pages show these with exclusion
-  reasons instead of silently dropping them.
+  asides, private companies, broad-market or macro exposures, benchmark
+  ETFs/baskets, crypto tokens, and unpriced names. Host pages show these with
+  exclusion reasons instead of silently dropping them.
 - **Commentary/low-confidence rows** stay visible where useful, but do not move
   simulated performance.
 

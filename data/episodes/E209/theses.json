@@ -282,10 +282,15 @@
       "AI",
       "earnings growth",
       "valuation",
-      "big tech"
+      "big tech",
+      "best performing asset"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true,
+    "callType": "basket",
+    "tradeDirection": "long",
+    "scoreReason": "Jason picked the Mag 7 as the best-performing asset of 2025",
+    "scoreExclusionReason": "benchmark_or_etf"
   },
   {
     "id": "E209-googl-Jason-12",

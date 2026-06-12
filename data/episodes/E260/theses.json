@@ -177,7 +177,10 @@
       "top pick"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Jason called Amazon his number one company-of-the-future pick"
   },
   {
     "id": "E260-gld-Sacks-a0",

@@ -1,4 +1,4 @@
-import { currentStanceForHosts } from "../lib/calls";
+import { currentStanceForHosts, isPortfolioScored } from "../lib/calls";
 import { MAX_PUBLISHED_QUOTE_CHARS } from "../lib/quotes";
 import { store } from "./store";
 import type { Host, IndexFund, IndexSnapshot } from "../lib/types";
@@ -97,6 +97,25 @@ function validateHostFundTaxonomy(snapshot: IndexSnapshot, errors: string[]) {
 function validateScoredTakeTaxonomy(snapshot: IndexSnapshot, errors: string[]) {
   for (const h of snapshot.holdings) {
     for (const t of h.theses) {
+      const topicSet = new Set(t.topics.map((topic) => topic.toLowerCase()));
+      const isPublicTopPick =
+        t.attributionConfidence !== "low" &&
+        t.isPublic &&
+        t.ticker &&
+        t.host !== "Guest" &&
+        t.host !== "Unknown" &&
+        topicSet.has("top pick");
+      if (isPublicTopPick && !isPortfolioScored(t)) {
+        errors.push(`${t.id} is a public top-pick receipt but is not portfolio-scored`);
+      }
+      const isBestieBestPerformingAsset =
+        t.attributionConfidence !== "low" &&
+        t.host !== "Guest" &&
+        t.host !== "Unknown" &&
+        topicSet.has("best performing asset");
+      if (isBestieBestPerformingAsset && !isPortfolioScored(t)) {
+        errors.push(`${t.id} is a best-performing-asset pick but is not portfolio-scored`);
+      }
       if (t.scoreCondition && t.positional) {
         errors.push(`${t.id} has scoreCondition but is still positional`);
       }
