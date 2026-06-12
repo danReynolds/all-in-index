@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T00:59:13.059Z",
+  "generatedAt": "2026-06-12T07:43:38.369Z",
   "holdings": [
     {
       "slug": "aapl",
@@ -11023,13 +11023,13 @@
         "asOf": "2026-06-12",
         "anchorDate": "2025-10-10",
         "basePrice": 428000,
-        "latestPrice": 2285000,
+        "latestPrice": 2150000,
         "returns": {
           "1m": 0.4158878504672897,
           "3m": 0.75,
           "6m": 1.3995327102803738,
           "1y": null,
-          "since": 4.338785046728972
+          "since": 4.0233644859813085
         },
         "history": [
           [
@@ -11254,7 +11254,7 @@
           ],
           [
             "2026-06-12",
-            2285000
+            2150000
           ]
         ],
         "source": "yahoo"
@@ -15347,13 +15347,13 @@
         "asOf": "2026-06-12",
         "anchorDate": "2026-01-10",
         "basePrice": 151.16,
-        "latestPrice": 148.62,
+        "latestPrice": 153.35,
         "returns": {
           "1m": 0.017200317544323857,
           "3m": -0.11127282349827992,
           "6m": null,
           "1y": null,
-          "since": -0.01680338713945483
+          "since": 0.014487959777718959
         },
         "history": [
           [
@@ -15565,8 +15565,8 @@
             153.07
           ],
           [
-            "2026-06-10",
-            148.62
+            "2026-06-11",
+            153.35
           ]
         ],
         "source": "yahoo"
@@ -28198,13 +28198,13 @@
         "asOf": "2026-06-12",
         "anchorDate": "2024-09-06",
         "basePrice": 1258.2,
-        "latestPrice": 803.1,
+        "latestPrice": 814.1,
         "returns": {
           "1m": 0.07693530440311552,
           "3m": 0.18677475759020823,
           "6m": 0.3214115402956603,
           "1y": 0.10522969321252572,
-          "since": -0.3617072007629948
+          "since": -0.352964552535368
         },
         "history": [
           [
@@ -28432,8 +28432,8 @@
             890
           ],
           [
-            "2026-06-10",
-            803.1
+            "2026-06-12",
+            814.1
           ]
         ],
         "source": "yahoo"
@@ -31840,11 +31840,11 @@
     "benchmarkSymbol": "SPY",
     "contributionPerCall": 1000,
     "totalInvested": 30000,
-    "portfolioValue": 42787,
+    "portfolioValue": 42804,
     "benchmarkValue": 35748,
-    "portfolioReturn": 0.42623333333333324,
+    "portfolioReturn": 0.42680000000000007,
     "benchmarkReturn": 0.1916,
-    "outperformance": 0.23463333333333325,
+    "outperformance": 0.23520000000000008,
     "constituents": [
       {
         "slug": "000660.ks",
@@ -31854,10 +31854,10 @@
         "currency": "KRW",
         "entryDate": "2025-10-10",
         "entryPrice": 428000,
-        "latestPrice": 2285000,
-        "sinceReturn": 4.338785046728972,
+        "latestPrice": 2150000,
+        "sinceReturn": 4.0233644859813085,
         "benchmarkReturn": 0.12976631649872905,
-        "alpha": 4.209018730230243,
+        "alpha": 3.8935981694825794,
         "hosts": [
           "Chamath"
         ]
@@ -32122,10 +32122,10 @@
         "currency": "USD",
         "entryDate": "2026-01-12",
         "entryPrice": 151.16,
-        "latestPrice": 148.62,
-        "sinceReturn": -0.01680338713945484,
+        "latestPrice": 153.35,
+        "sinceReturn": 0.014487959777718995,
         "benchmarkReturn": 0.06128085620576562,
-        "alpha": -0.07808424334522046,
+        "alpha": -0.046792896428046626,
         "hosts": [
           "Sacks"
         ]
@@ -32301,10 +32301,10 @@
         "currency": "EUR",
         "entryDate": "2024-09-06",
         "entryPrice": 1258.2,
-        "latestPrice": 803.1,
-        "sinceReturn": -0.3617072007629948,
+        "latestPrice": 814,
+        "sinceReturn": -0.3530440311556191,
         "benchmarkReturn": 0.36531201421274706,
-        "alpha": -0.7270192149757418,
+        "alpha": -0.7183560453683662,
         "hosts": [
           "Chamath"
         ]
@@ -32856,7 +32856,7 @@
       },
       {
         "date": "2026-06-11",
-        "portfolio": 42787,
+        "portfolio": 42804,
         "benchmark": 35748,
         "invested": 30000
       }
@@ -33122,22 +33122,6 @@
         ]
       },
       {
-        "slug": "000660.ks",
-        "company": "SK Hynix",
-        "ticker": "000660.KS",
-        "sourceSymbol": "000660.KS",
-        "currency": "KRW",
-        "entryDate": "2026-05-08",
-        "entryPrice": 1686000,
-        "latestPrice": 2285000,
-        "sinceReturn": 0.3552787663107948,
-        "benchmarkReturn": 0.00018979962582355014,
-        "alpha": 0.35508896668497125,
-        "hosts": [
-          "Guest"
-        ]
-      },
-      {
         "slug": "mu",
         "company": "Micron Technology",
         "ticker": "MU",
@@ -33165,6 +33149,22 @@
         "sinceReturn": 0.36624040920716117,
         "benchmarkReturn": 0.06313134952085875,
         "alpha": 0.3031090596863024,
+        "hosts": [
+          "Guest"
+        ]
+      },
+      {
+        "slug": "000660.ks",
+        "company": "SK Hynix",
+        "ticker": "000660.KS",
+        "sourceSymbol": "000660.KS",
+        "currency": "KRW",
+        "entryDate": "2026-05-08",
+        "entryPrice": 1686000,
+        "latestPrice": 2150000,
+        "sinceReturn": 0.2752075919335706,
+        "benchmarkReturn": 0.00018979962582355014,
+        "alpha": 0.27501779230774703,
         "hosts": [
           "Guest"
         ]
