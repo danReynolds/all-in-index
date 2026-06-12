@@ -81,11 +81,24 @@ function validateLowAttribution(snapshot: IndexSnapshot, warnings: string[]) {
   if (low > 0) warnings.push(`${low} takes have low attribution confidence and should remain unscored`);
 }
 
+function validateHostFundTaxonomy(snapshot: IndexSnapshot, errors: string[]) {
+  for (const [host, fund] of Object.entries(snapshot.hostFunds ?? {})) {
+    if (!fund) continue;
+    for (const c of fund.constituents) {
+      if (!c.direction) errors.push(`${host} host fund: ${c.ticker} is missing exposure direction`);
+      if (!c.callTypes || c.callTypes.length === 0) {
+        errors.push(`${host} host fund: ${c.ticker} is missing scored-call taxonomy`);
+      }
+    }
+  }
+}
+
 export function validateIndexSnapshot(snapshot: IndexSnapshot): QualityResult {
   const errors: string[] = [];
   const warnings: string[] = [];
   validateFund(snapshot, snapshot.indexFund, "Besties Index", BESTIES, errors);
   validateFund(snapshot, snapshot.guestiesFund, "Guesties Index", GUESTS, errors);
+  validateHostFundTaxonomy(snapshot, errors);
   validateDuplicateQuotes(snapshot, errors);
   validateQuoteLengths(snapshot, errors);
   validateMarketCoverage(snapshot, errors, warnings);

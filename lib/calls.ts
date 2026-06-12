@@ -5,7 +5,7 @@
 // must respect those windows: the current call is judged from when it was
 // adopted, and the full history is judged by the "follow their calls" return.
 
-import type { Holding, Host, Stance, Thesis } from "./types";
+import type { CallType, Holding, Host, Stance, Thesis, TradeDirection } from "./types";
 
 const BESTIES: readonly Host[] = ["Chamath", "Jason", "Sacks", "Friedberg"];
 
@@ -87,6 +87,34 @@ export function currentStanceFromTheses(theses: Thesis[]): Stance {
   return currentStanceForHosts(theses, ["Guest"]);
 }
 
+const SCOREABLE_CALL_TYPES = new Set<CallType>([
+  "explicit_long",
+  "explicit_short",
+  "selection",
+  "pair_trade",
+  "basket",
+]);
+
+export function isPortfolioScored(t: Thesis): boolean {
+  return t.positional === true || (t.callType != null && SCOREABLE_CALL_TYPES.has(t.callType));
+}
+
+export function tradeDirectionForTake(t: Thesis): TradeDirection | null {
+  if (!isPortfolioScored(t)) return null;
+  if (t.tradeDirection === "long" || t.tradeDirection === "short") return t.tradeDirection;
+  if (t.callType === "explicit_short") return "short";
+  if (t.callType === "explicit_long" || t.callType === "selection" || t.callType === "basket") {
+    return t.stance === "bull" ? "long" : null;
+  }
+  if (t.callType === "pair_trade") {
+    if (t.stance === "bull") return "long";
+    if (t.stance === "bear") return "short";
+  }
+  // Legacy positional data only opens longs on bull calls. Bearish positional
+  // rows are exits unless the row explicitly says it is a short.
+  return t.stance === "bull" ? "long" : null;
+}
+
 /**
  * Portfolio-scored calls (View ≠ Trade). Note: deliberately NOT gated on
  * conviction — "I have shares, I think it's a good investment" said calmly is
@@ -101,44 +129,68 @@ export function positionTakes(
     .filter(
       (t) =>
         hosts.includes(t.host) &&
-        t.positional === true &&
+        isPortfolioScored(t) &&
         t.attributionConfidence !== "low",
     )
     .sort((a, b) => a.episodeDate.localeCompare(b.episodeDate));
 }
 
-export interface BullWindow {
+export interface ExposureWindow {
   start: string;
   /** null = still open (held to today). */
   end: string | null;
+  direction: TradeDirection;
   /** The position call that opened the window. */
   startTake?: Thesis;
   /** The position call that closed it. */
   endTake?: Thesis;
 }
 
+export interface BullWindow extends ExposureWindow {
+  direction: "long";
+}
+
 /**
- * One host's long windows on a name, built ONLY from their portfolio-scored
- * calls: enter on a scored bull, exit on their next scored non-bull, re-enter
- * on a later scored bull. Commentary never trades.
+ * One host's exposure windows on a name, built ONLY from portfolio-scored
+ * calls. Explicit longs/ranked picks open longs; explicit shorts/pair short
+ * legs open shorts; exits and opposite-direction calls close the old window.
+ * Commentary never trades.
  */
-export function hostBullWindows(theses: Thesis[], host: Host): BullWindow[] {
+export function hostExposureWindows(theses: Thesis[], host: Host): ExposureWindow[] {
   const takes = positionTakes(theses, [host]);
-  const windows: BullWindow[] = [];
-  let open: BullWindow | null = null;
+  const windows: ExposureWindow[] = [];
+  let open: ExposureWindow | null = null;
   for (const t of takes) {
     const d = t.episodeDate.slice(0, 10);
-    if (t.stance === "bull" && !open) {
-      open = { start: d, end: null, startTake: t };
-    } else if (t.stance !== "bull" && open) {
+    const direction = tradeDirectionForTake(t);
+    if (!direction) {
+      if (open) {
+        open.end = d;
+        open.endTake = t;
+        windows.push(open);
+        open = null;
+      }
+      continue;
+    }
+    if (!open) {
+      open = { start: d, end: null, direction, startTake: t };
+    } else if (open.direction !== direction) {
       open.end = d;
       open.endTake = t;
       windows.push(open);
-      open = null;
+      open = { start: d, end: null, direction, startTake: t };
     }
   }
   if (open) windows.push(open);
   return windows;
+}
+
+/**
+ * Compatibility helper for long-only surfaces: enter on scored long, exit on
+ * next scored non-long. New scoring code should use hostExposureWindows.
+ */
+export function hostBullWindows(theses: Thesis[], host: Host): BullWindow[] {
+  return hostExposureWindows(theses, host).filter((w): w is BullWindow => w.direction === "long");
 }
 
 export interface StanceSegment {

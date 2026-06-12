@@ -157,7 +157,11 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "pair_trade",
+    "tradeDirection": "long",
+    "pairTradeId": "E252-google-anthropic-openai-Jason",
+    "scoreReason": "Long public leg of Jason's Google/Groq/Anthropic over OpenAI pair trade"
   },
   {
     "id": "E252-googl-Chamath-7",
@@ -203,7 +207,11 @@
       "enterprise trust"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "pair_trade",
+    "tradeDirection": "short",
+    "pairTradeId": "E252-google-anthropic-openai-Jason",
+    "scoreReason": "Short private leg of Jason's pair trade against OpenAI"
   },
   {
     "id": "E252-anthropic-Jason-9",
@@ -225,7 +233,11 @@
       "competitive positioning"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true,
+    "callType": "pair_trade",
+    "tradeDirection": "long",
+    "pairTradeId": "E252-google-anthropic-openai-Jason",
+    "scoreReason": "Long private leg of Jason's Google/Groq/Anthropic over OpenAI pair trade"
   },
   {
     "id": "E252-anthropic-Chamath-10",

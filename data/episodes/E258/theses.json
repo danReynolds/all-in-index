@@ -66,6 +66,9 @@
       "short thesis"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_short",
+    "tradeDirection": "short",
+    "scoreReason": "Chamath called US electric utilities the single biggest dollar short"
   }
 ]

@@ -87,7 +87,10 @@
       "defense tech"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Sacks disclosed owning Palantir shares and called it a good investment"
   },
   {
     "id": "E189-foxa-Sacks-5",

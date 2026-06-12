@@ -20,7 +20,10 @@
       "founder-led"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Sacks called Salesforce's selloff probably a buying opportunity"
   },
   {
     "id": "E181-crm-Chamath-1",

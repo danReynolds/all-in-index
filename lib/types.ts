@@ -86,6 +86,15 @@ export interface Transcript {
 
 export type Stance = "bull" | "bear" | "neutral" | "mixed";
 export type Conviction = "low" | "medium" | "high";
+export type CallType =
+  | "view"
+  | "explicit_long"
+  | "explicit_short"
+  | "selection"
+  | "pair_trade"
+  | "basket";
+export type TradeDirection = "long" | "short";
+export type IndexDirection = TradeDirection | "mixed";
 
 /** A single host's view on a single company, extracted from one episode. */
 export interface Thesis {
@@ -121,6 +130,20 @@ export interface Thesis {
    * pair/basket leg. General commentary still displays but does not trade.
    */
   positional?: boolean;
+  /**
+   * More explicit scorer taxonomy. Missing means legacy data; `positional`
+   * remains the backwards-compatible scoring gate.
+   */
+  callType?: CallType;
+  /**
+   * Direction to trade when this is a scored exposure. This is deliberately
+   * explicit for shorts so a bearish exit is not misread as a short.
+   */
+  tradeDirection?: TradeDirection | null;
+  /** Shared id for linked spread legs such as "long Figma / short Adobe". */
+  pairTradeId?: string | null;
+  /** Short human-readable note explaining why this take clears the scoring bar. */
+  scoreReason?: string | null;
   /** Identified name when host === "Guest" (e.g. "Brad Gerstner"). */
   guestName?: string;
   /** True for hand-authored placeholder data shown before the real pipeline runs. */
@@ -177,22 +200,26 @@ export interface Holding {
   isSample?: boolean;
 }
 
-/** One position in the constructed long index. */
+/** One position/exposure in a constructed index. */
 export interface IndexConstituent {
   slug: string;
   company: string;
   ticker: string;
   sourceSymbol?: string | null;
   currency?: string | null;
-  /** Date the (first bullish) call was made — the entry. */
+  /** Long, short, or mixed when a host flipped direction across windows. */
+  direction?: IndexDirection;
+  /** Taxonomy of the scored calls behind this exposure. */
+  callTypes?: CallType[];
+  /** Date the first scored exposure was opened. */
   entryDate: string;
   entryPrice: number;
   latestPrice: number;
-  /** Return of the position from entry to latest. */
+  /** Return of the exposure from entry/latest windows to latest. */
   sinceReturn: number;
   /** Benchmark (S&P) return over the same window. */
   benchmarkReturn: number;
-  /** sinceReturn − benchmarkReturn. */
+  /** sinceReturn minus same-direction benchmarkReturn. */
   alpha: number;
   hosts: Host[];
 }
@@ -208,9 +235,9 @@ export interface IndexFundPoint {
 }
 
 /**
- * The constructed "Besties Index": equal-weight, long every net-bullish public
- * call, entered at the episode-date close and held to today, benchmarked
- * against the S&P with identical cashflows.
+ * A constructed equal-weight fund. The headline index is long every
+ * net-bullish public call; host funds follow each host's scored exposure
+ * windows, including explicit shorts and pair legs.
  */
 export interface IndexFund {
   asOf: string;
@@ -234,7 +261,7 @@ export interface IndexFund {
   altBenchmark?: { symbol: string; ret: number } | null;
 }
 
-/** One host's scorecard: how their own bullish public calls have performed. */
+/** One host's scorecard: how their own scored public calls have performed. */
 export interface LeaderboardEntry {
   host: Host;
   positions: number;

@@ -5,6 +5,8 @@ import { REGULAR_HOSTS } from "../lib/types";
 import type { Episode, Thesis, Transcript, Host } from "../lib/types";
 
 const HOST_VALUES = [...REGULAR_HOSTS, "Guest", "Unknown"] as const;
+const CALL_TYPE_VALUES = ["view", "explicit_long", "explicit_short", "selection", "pair_trade", "basket"] as const;
+const TRADE_DIRECTION_VALUES = ["long", "short"] as const;
 
 const ThesisItemSchema = z.object({
   company: z.string(),
@@ -14,6 +16,10 @@ const ThesisItemSchema = z.object({
   stance: z.enum(["bull", "bear", "neutral", "mixed"]),
   conviction: z.enum(["low", "medium", "high"]),
   positional: z.boolean(),
+  callType: z.enum(CALL_TYPE_VALUES).optional(),
+  tradeDirection: z.enum(TRADE_DIRECTION_VALUES).nullable().optional(),
+  pairTradeId: z.string().nullable().optional(),
+  scoreReason: z.string().nullable().optional(),
   summary: z.string(),
   quote: z.string(),
   quoteStartSec: z.number().nullable(),
@@ -59,6 +65,10 @@ Rules:
 - positional: true ONLY if the take clearly communicates a portfolio-scoreable call: explicit in/out ownership stance ("I'd own it here", "I bought more", "this is the trade", "I'd take profits", "wouldn't touch it", "this is a short"), explicit selection/ranking in an investment frame ("my pick is X", "my #1 is X", "if I could only bet on two: X and Y", "best place to invest", "new Mag 7 basket"), or a named pair/basket leg ("long X / short Y", "own X over Y"). Criticism of a company someone might still hold is NOT an exit; praise without ownership intent is NOT a buy. Lean false when unsure.
   Do NOT mark positional: "Google is in an outstanding position to do [X] because they already have access to your calendar, documents, email" — being well-positioned is an observation about the company, not a statement of the speaker's ownership. Positional requires the SPEAKER's own in/out, in their words.
   The line: TRANSACTION or SELECTION language is positional — "I'm in", "I have shares", "I just bought", "my pick is", "my number 1 is", "I would be long X", "this is the trade", "probably a buying opportunity", "the short here is X", "best place to invest". SENTIMENT language alone is NOT — "I'm bullish", "I wouldn't sleep on this company", "exceptional business", "those companies are toast", "you could buy X too, I guess". But when a ranked-pick prompt asks "which two would you bet on?" or "who are your top picks?", the answer's ranked companies ARE selection calls.
+  If positional=true, set callType: "explicit_long" for direct buy/own/long calls, "explicit_short" for direct short calls, "selection" for ranked picks or investment selections, "pair_trade" for each leg of a paired long/short trade, and "basket" for named basket legs. Use "view" or omit callType for non-positional commentary.
+  Set tradeDirection ONLY when the row opens an exposure: "long" for buy/own/selected long legs, "short" only when the speaker explicitly says short or names the short leg of a pair. A bearish exit ("take profits", "wouldn't touch it") can be positional but should have tradeDirection=null.
+  If two rows are legs of the same pair trade, give both the same pairTradeId (for example "E234-figma-adobe-Chamath"). For non-pairs, pairTradeId=null or omit it.
+  scoreReason should briefly name the evidence that made the row scoreable ("ranked #1 AI pick", "explicit long", "short leg of spread").
   Note: an advantage scoped to ONE product category of a diversified company ("outstanding position to do the agent thing") is not, by itself, a company-level bull claim — without a stated company-level consequence, keep stance neutral or mark the hedge with low conviction.
 - ticker: the correct US-listed symbol ONLY if you are confident and the company is publicly traded. For private companies (e.g. SpaceX, OpenAI, Anthropic, Stripe) set ticker=null and isPublic=false.
 - quote: a SHORT verbatim excerpt (≤ 240 characters) from that host that best supports the thesis. Copy it exactly from the transcript. Set quoteStartSec to the integer second shown in that line's "[<sec>s <Speaker>]" prefix.
@@ -86,6 +96,10 @@ const INPUT_SCHEMA = {
           stance: { type: "string", enum: ["bull", "bear", "neutral", "mixed"] },
           conviction: { type: "string", enum: ["low", "medium", "high"] },
           positional: { type: "boolean", description: "Clear in/out ownership signal, not commentary" },
+          callType: { type: "string", enum: [...CALL_TYPE_VALUES] },
+          tradeDirection: { type: ["string", "null"], enum: [...TRADE_DIRECTION_VALUES, null] },
+          pairTradeId: { type: ["string", "null"] },
+          scoreReason: { type: ["string", "null"] },
           summary: { type: "string" },
           quote: { type: "string", description: "Verbatim excerpt ≤240 chars" },
           quoteStartSec: { type: ["number", "null"] },
@@ -165,6 +179,10 @@ export async function extractTheses(
     stance: item.stance,
     conviction: item.conviction,
     positional: item.positional,
+    callType: item.callType,
+    tradeDirection: item.tradeDirection,
+    pairTradeId: item.pairTradeId,
+    scoreReason: item.scoreReason,
     summary: item.summary,
     quote: trimPublishedQuote(item.quote),
     quoteStartMs: item.quoteStartSec != null ? item.quoteStartSec * 1000 : null,

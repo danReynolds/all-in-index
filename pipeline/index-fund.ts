@@ -4,12 +4,14 @@ import {
   currentStanceForHosts,
   stancePath,
   scoredTakes,
-  hostBullWindows,
-  type BullWindow,
+  hostExposureWindows,
+  type ExposureWindow,
 } from "../lib/calls";
 import type {
   BearCall,
+  CallType,
   Holding,
+  IndexDirection,
   IndexFund,
   IndexConstituent,
   IndexFundPoint,
@@ -148,24 +150,24 @@ export async function buildBearBook(
 
 /**
  * Window-based single-host fund (drives the leaderboard + host pages):
- * $1,000 per name, IN the market only during the host's portfolio-scored bull
- * windows (clear buys, ranked selections, explicit investment picks; exits on
- * a clear out/non-bull, re-entries compound); the benchmark holds SPY over the
- * identical windows, isolating selection.
+ * $1,000 per name, IN the market only during the host's portfolio-scored
+ * exposure windows (clear buys, ranked selections, explicit shorts, pair legs;
+ * exits and re-entries compound); the benchmark trades SPY in the same
+ * direction over the identical windows, isolating selection.
  */
 export async function buildWindowFund(
   holdings: Holding[],
   nowIso: string,
   host: Host,
 ): Promise<IndexFund | null> {
-  const candidates: Array<{ h: Holding; windows: BullWindow[] }> = [];
+  const candidates: Array<{ h: Holding; windows: ExposureWindow[] }> = [];
   for (const h of holdings) {
     if (!h.ticker || !h.isPublic || isCrypto(h.ticker) || EXCLUDED_ETFS.has(h.ticker.toUpperCase()) || isMacroAsset(h.ticker)) continue;
-    const windows = hostBullWindows(h.theses, host);
+    const windows = hostExposureWindows(h.theses, host);
     if (windows.length) candidates.push({ h, windows });
   }
   const excludedPrivate = holdings
-    .filter((h) => !h.ticker && hostBullWindows(h.theses, host).length > 0)
+    .filter((h) => !h.ticker && hostExposureWindows(h.theses, host).length > 0)
     .sort((a, b) => b.mentionCount - a.mentionCount)
     .map((h) => ({ slug: h.slug, company: h.company, hosts: [host] }));
 
@@ -175,7 +177,7 @@ export async function buildWindowFund(
   if (!spyHist) return null;
   const spy = new Series(spyHist);
 
-  type C = { h: Holding; series: Series; windows: BullWindow[]; firstStart: string };
+  type C = { h: Holding; series: Series; windows: ExposureWindow[]; firstStart: string };
   const cons: C[] = [];
   for (const c of candidates) {
     const hist = await fetchDailyHistory(c.h.ticker!, c.windows[0].start);
@@ -185,18 +187,22 @@ export async function buildWindowFund(
   if (cons.length === 0) return null;
 
   // Compounded value factor of `s` traded over `windows`, evaluated at `at`.
-  const factorAt = (s: Series, windows: BullWindow[], at: string): number => {
+  const factorAt = (s: Series, windows: ExposureWindow[], at: string): number => {
     let f = 1;
     for (const w of windows) {
       if (w.start > at) break;
       const p0 = s.onOrAfter(w.start)?.close;
       if (p0 == null) continue;
+      const factor = (p1: number) => {
+        const stockReturn = p1 / p0 - 1;
+        return 1 + (w.direction === "long" ? stockReturn : -stockReturn);
+      };
       if (w.end != null && w.end <= at) {
         const p1 = s.onOrAfter(w.end)?.close ?? s.asOf(at);
-        if (p1 != null) f *= p1 / p0;
+        if (p1 != null) f *= factor(p1);
       } else {
         const p1 = s.asOf(at);
-        if (p1 != null && p1 > 0) f *= p1 / p0;
+        if (p1 != null && p1 > 0) f *= factor(p1);
       }
     }
     return f;
@@ -228,12 +234,23 @@ export async function buildWindowFund(
       const ret = factorAt(c.series, c.windows, lastDate) - 1;
       const bench = factorAt(spy, c.windows, lastDate) - 1;
       const entry = c.series.onOrAfter(c.firstStart);
+      const directions = new Set(c.windows.map((w) => w.direction));
+      const direction: IndexDirection = directions.size === 1 ? [...directions][0] : "mixed";
+      const callTypes = [
+        ...new Set(
+          c.windows
+            .map((w) => w.startTake?.callType)
+            .filter((callType): callType is CallType => callType != null),
+        ),
+      ];
       return {
         slug: c.h.slug,
         company: c.h.company,
         ticker: c.h.ticker!,
         sourceSymbol: c.h.market?.sourceSymbol ?? c.h.ticker!,
         currency: c.h.market?.currency ?? null,
+        direction,
+        callTypes,
         entryDate: entry?.date ?? c.firstStart,
         entryPrice: Number((entry?.close ?? 0).toFixed(2)),
         latestPrice: Number(c.series.last.toFixed(2)),
@@ -417,12 +434,23 @@ export async function buildIndexFund(
       const sinceReturn = latest / c.entryPrice - 1;
       const benchReturn = spy.last / c.spyEntry - 1;
       const hosts = currentBullHosts(c.h, hostSet);
+      const direction: IndexDirection = "long";
+      const callTypes = [
+        ...new Set(
+          c.h.theses
+            .filter((t) => hosts.includes(t.host) && t.stance === "bull")
+            .map((t) => t.callType)
+            .filter((callType): callType is CallType => callType != null),
+        ),
+      ];
       return {
         slug: c.h.slug,
         company: c.h.company,
         ticker: c.h.ticker!,
         sourceSymbol: c.h.market?.sourceSymbol ?? c.h.ticker!,
         currency: c.h.market?.currency ?? null,
+        direction,
+        callTypes,
         entryDate: c.entryDate,
         entryPrice: Number(c.entryPrice.toFixed(2)),
         latestPrice: Number(latest.toFixed(2)),

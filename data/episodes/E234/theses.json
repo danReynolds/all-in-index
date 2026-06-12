@@ -20,7 +20,11 @@
       "SaaS"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "pair_trade",
+    "tradeDirection": "long",
+    "pairTradeId": "E234-figma-adobe-Chamath",
+    "scoreReason": "Long leg of Chamath's Figma over Adobe spread"
   },
   {
     "id": "E234-figma-Friedberg-1",
@@ -66,7 +70,11 @@
       "short"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "pair_trade",
+    "tradeDirection": "short",
+    "pairTradeId": "E234-figma-adobe-Chamath",
+    "scoreReason": "Short leg of Chamath's Figma over Adobe spread"
   },
   {
     "id": "E234-meta-Chamath-3",

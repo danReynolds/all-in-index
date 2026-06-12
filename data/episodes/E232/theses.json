@@ -66,7 +66,10 @@
       "search monetization"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Chamath ranked Google as his #2 AI winner"
   },
   {
     "id": "E232-googl-Friedberg-3",
@@ -89,7 +92,10 @@
       "diversification"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Friedberg picked Google as his #1 AI investment"
   },
   {
     "id": "E232-googl-Jason-4",
@@ -112,7 +118,10 @@
       "AI"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Jason named Google among his top two AI picks"
   },
   {
     "id": "E232-tsla-Chamath-5",
@@ -135,7 +144,10 @@
       "physical AI"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Chamath ranked Tesla as his #1 AI winner"
   },
   {
     "id": "E232-tsla-Friedberg-6",
@@ -158,7 +170,10 @@
       "call option"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Friedberg called Tesla the best place to invest for humanoid robotics"
   },
   {
     "id": "E232-tsla-Guest-7",
@@ -180,7 +195,10 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Thomas LaFont picked Tesla as his #2 AI winner"
   },
   {
     "id": "E232-nvda-Guest-8",
@@ -202,7 +220,10 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Thomas LaFont ranked NVIDIA as his #1 AI winner"
   },
   {
     "id": "E232-nvda-Friedberg-9",

@@ -10,10 +10,11 @@ import { Explainer } from "@/app/components/Explainer";
 import { Reveal } from "@/app/components/Reveal";
 import { ListenButton } from "@/app/components/player";
 import { BackLink } from "@/app/components/BackLink";
-import { hostBullWindows } from "@/lib/calls";
+import { hostExposureWindows, isPortfolioScored } from "@/lib/calls";
+import { isMacroAsset } from "@/lib/assets";
 import { HOST_UI, RANK_MEDAL } from "@/lib/hosts";
 import { HOST_PROFILES, REGULAR_HOSTS } from "@/lib/types";
-import type { Host, Thesis } from "@/lib/types";
+import type { Host, IndexDirection, Thesis } from "@/lib/types";
 
 export function generateStaticParams() {
   return REGULAR_HOSTS.map((h) => ({ host: h.toLowerCase() }));
@@ -36,6 +37,43 @@ export async function generateMetadata({ params }: { params: Promise<{ host: str
 function resolveHost(param: string): Host | null {
   const hit = REGULAR_HOSTS.find((h) => h.toLowerCase() === param.toLowerCase());
   return hit ?? null;
+}
+
+function ExposureBadge({ direction }: { direction: IndexDirection }) {
+  const tone =
+    direction === "short"
+      ? "border-rose-500/30 bg-rose-500/10 text-rose-700 dark:text-rose-300"
+      : direction === "mixed"
+        ? "border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-300"
+        : "border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300";
+  const label = direction === "mixed" ? "Long/short" : direction[0].toUpperCase() + direction.slice(1);
+  return <span className={`rounded border px-1.5 py-0.5 text-[11px] font-medium ${tone}`}>{label}</span>;
+}
+
+function MethodStat({ label, value, note }: { label: string; value: string | number; note: string }) {
+  return (
+    <div>
+      <div className="font-mono text-lg font-semibold tabular-nums text-neutral-900 dark:text-neutral-100">{value}</div>
+      <div className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">{label}</div>
+      <div className="mt-0.5 text-xs text-neutral-500">{note}</div>
+    </div>
+  );
+}
+
+const EXCLUDED_ETFS = new Set(["SPY", "QQQ", "VOO", "VTI", "DIA", "IWM"]);
+
+function isCryptoTicker(ticker: string | null): boolean {
+  return !!ticker && (/-USD$/i.test(ticker) || ["BTC", "ETH", "SOL", "DOGE", "XRP", "ADA", "BNB"].includes(ticker.toUpperCase()));
+}
+
+function isTradableCompanyTake(t: Thesis): boolean {
+  return (
+    !!t.ticker &&
+    t.isPublic &&
+    !isCryptoTicker(t.ticker) &&
+    !EXCLUDED_ETFS.has(t.ticker.toUpperCase()) &&
+    !isMacroAsset(t.ticker)
+  );
 }
 
 export default async function HostPage({ params }: PageProps<"/host/[host]">) {
@@ -74,9 +112,9 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
     for (const c of fund.constituents) {
       const holding = snapshot.holdings.find((x) => x.slug === c.slug);
       if (!holding) continue;
-      for (const w of hostBullWindows(holding.theses, host)) {
-        tradeEvents.push({ date: w.start, ticker: c.ticker, slug: c.slug, kind: "in", take: w.startTake ?? null });
-        if (w.end) tradeEvents.push({ date: w.end, ticker: c.ticker, slug: c.slug, kind: "out", take: w.endTake ?? null });
+      for (const w of hostExposureWindows(holding.theses, host)) {
+        tradeEvents.push({ date: w.start, ticker: c.ticker, slug: c.slug, kind: "in", direction: w.direction, take: w.startTake ?? null });
+        if (w.end) tradeEvents.push({ date: w.end, ticker: c.ticker, slug: c.slug, kind: "out", direction: w.direction, take: w.endTake ?? null });
       }
     }
   }
@@ -86,6 +124,10 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
   for (const h of snapshot.holdings) {
     for (const t of h.theses) if (t.host === host) takes.push({ ...t, slug: h.slug });
   }
+  const scoreableTakes = takes.filter((t) => isPortfolioScored(t) && t.attributionConfidence !== "low");
+  const tradableScoreableTakes = scoreableTakes.filter(isTradableCompanyTake);
+  const excludedScoreableTakes = scoreableTakes.length - tradableScoreableTakes.length;
+  const commentaryTakes = takes.length - scoreableTakes.length;
   const signature = takes
     .filter((t) => t.quote && t.stance !== "neutral")
     .sort(
@@ -125,7 +167,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
                 {pct(entry.portfolioReturn)}
               </div>
               <div className="text-xs text-neutral-500">
-                vs S&P {pct(entry.benchmarkReturn)} · {entry.positions} public calls
+                vs S&P {pct(entry.benchmarkReturn)} · {entry.positions} scored public calls
               </div>
             </div>
           )}
@@ -140,8 +182,14 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
           </h2>
           <div className="mb-4">
             <Explainer summary="How this portfolio is scored">
-              {`$1,000 per name, in the market only while their scored calls said in — clear buys, ranked picks, explicit investment selections, and pair legs count; exits and re-entries included — vs the S&P held over the identical windows. Commentary and criticism never trade. Click any ▲/▼ marker for the call behind it.`}
+              {`$1,000 per name, in the market only while their scored calls carry exposure — clear buys, ranked picks, explicit investment selections, explicit shorts, and pair legs count; exits and re-entries included — vs the S&P traded in the same direction over identical windows. Commentary and criticism never trade. Click any marker for the call behind it.`}
             </Explainer>
+          </div>
+          <div className="mb-4 grid grid-cols-2 gap-x-6 gap-y-3 border-y border-neutral-100 py-3 dark:border-neutral-800 md:grid-cols-4">
+            <MethodStat label="Catalog theses" value={takes.length} note="All extracted company views." />
+            <MethodStat label="Scoreable receipts" value={scoreableTakes.length} note="Clear in/out, ranked, or pair calls." />
+            <MethodStat label="Public exposures" value={fund.constituents.length} note="Tradable names in this scorecard." />
+            <MethodStat label="Not traded" value={excludedScoreableTakes + commentaryTakes} note={`${excludedScoreableTakes} non-tradable, ${commentaryTakes} commentary.`} />
           </div>
           <IndexChart
             series={fund.series}
@@ -159,6 +207,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
               <thead className="border-b border-neutral-200 text-left text-xs uppercase tracking-wide text-neutral-500 dark:border-neutral-800">
                 <tr>
                   <th className="py-2 pr-4 font-medium">Call</th>
+                  <th className="hidden py-2 pr-4 font-medium md:table-cell">Exposure</th>
                   <th className="hidden py-2 pr-4 font-medium sm:table-cell">Entry</th>
                   <th className="py-2 pr-4 text-right font-medium">Return</th>
                   <th className="py-2 text-right font-medium">Alpha</th>
@@ -171,7 +220,13 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
                       <Link href={`/holding/${c.slug}`} className="font-medium group-hover:underline">
                         {c.company}
                       </Link>{" "}
-                      <span className="font-mono text-xs text-neutral-400">{c.ticker}</span>
+                      <span className="font-mono text-xs text-neutral-400">{c.ticker}</span>{" "}
+                      <span className="md:hidden">
+                        <ExposureBadge direction={c.direction ?? "long"} />
+                      </span>
+                    </td>
+                    <td className="hidden py-2.5 pr-4 md:table-cell">
+                      <ExposureBadge direction={c.direction ?? "long"} />
                     </td>
                     <td className="hidden py-2.5 pr-4 text-neutral-500 sm:table-cell">
                       {fmtDate(c.entryDate)}

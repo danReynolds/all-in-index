@@ -249,6 +249,9 @@
       "durability"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Friedberg disclosed that he just bought Cheniere Energy"
   }
 ]

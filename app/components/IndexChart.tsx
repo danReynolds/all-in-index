@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, type CSSProperties } from "react";
-import type { EpisodeMeta, IndexFundPoint, Thesis } from "@/lib/types";
+import type { EpisodeMeta, IndexFundPoint, Thesis, TradeDirection } from "@/lib/types";
 import { fmtDate } from "@/lib/format";
 import { StanceBadge } from "@/app/components/badges";
 import { ListenButton } from "@/app/components/player";
@@ -40,6 +40,7 @@ export interface TradeEvent {
   ticker: string;
   slug: string;
   kind: "in" | "out";
+  direction?: TradeDirection;
   /** The position call behind this trade — shown when the marker is clicked. */
   take?: Thesis | null;
 }
@@ -160,7 +161,11 @@ export function IndexChart({
 
       {/* trade markers (entries/exits) on the portfolio line — click for the take */}
       {markers.map((m, idx) => {
-        const c = m.kind === "in" ? "#10b981" : "#f43f5e";
+        const direction = m.direction ?? "long";
+        const isShort = direction === "short";
+        const c = m.kind === "out" ? "#94a3b8" : isShort ? "#f43f5e" : "#10b981";
+        const marker = m.kind === "out" ? "×" : isShort ? "▼" : "▲";
+        const action = m.kind === "out" ? `closed ${direction}` : `opened ${direction}`;
         const isSel = sel === idx;
         const labelY = m.cy - 12 - m.slot * 11;
         return (
@@ -180,9 +185,9 @@ export function IndexChart({
               strokeWidth="1.5"
             />
             <text x={m.cx} y={labelY} textAnchor="middle" fontSize="9" fontWeight="700" fill={c}>
-              {m.ticker} {m.kind === "in" ? "▲" : "▼"}
+              {m.ticker} {marker}
             </text>
-            <title>{`${m.ticker} — ${m.kind === "in" ? "entered" : "exited"} ${fmtDate(m.date)} · click for the take`}</title>
+            <title>{`${m.ticker} — ${action} ${fmtDate(m.date)} · click for the take`}</title>
           </g>
         );
       })}
@@ -215,8 +220,20 @@ export function IndexChart({
           <Link href={`/holding/${selected.slug}`} className="font-semibold text-neutral-100 hover:underline">
             {selected.ticker}
           </Link>
-          <span className={`font-semibold ${selected.kind === "in" ? "text-emerald-400" : "text-rose-400"}`}>
-            {selected.kind === "in" ? "▲ entered" : "▼ exited"}
+          <span
+            className={`font-semibold ${
+              selected.kind === "out"
+                ? "text-neutral-400"
+                : selected.direction === "short"
+                  ? "text-rose-400"
+                  : "text-emerald-400"
+            }`}
+          >
+            {selected.kind === "in"
+              ? selected.direction === "short"
+                ? "▼ opened short"
+                : "▲ opened long"
+              : "× closed"}
           </span>
           {selected.take && <StanceBadge stance={selected.take.stance} />}
           {selected.take && (
@@ -269,15 +286,15 @@ export function IndexChart({
           const pp = (v: number) => (v >= 0 ? "+" : "") + (v * 100).toFixed(1) + "pp";
           return (
             <div className="mt-3 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-white/5 pt-3">
-              <ReceiptStat label="This position" value={fmtPct(stats.ret)} tone={stats.ret} />
-              <ReceiptStat label="S&P, same windows" value={fmtPct(stats.bench)} />
+              <ReceiptStat label="This exposure" value={fmtPct(stats.ret)} tone={stats.ret} />
+              <ReceiptStat label="S&P same exposure" value={fmtPct(stats.bench)} />
               <ReceiptStat label="Alpha" value={pp(stats.alpha)} tone={stats.alpha} />
               {portfolioReturn != null && (
                 <ReceiptStat
                   label={`Of the ${fmtPct(portfolioReturn)} total`}
                   value={pp(stats.contribPp)}
                   tone={stats.contribPp}
-                  title="Equal weight: every name gets $1,000, so this name's return ÷ number of positions is exactly its share of the portfolio's return."
+                  title="Equal weight: every name gets $1,000, so this name's return ÷ number of exposures is exactly its share of the portfolio's return."
                 />
               )}
             </div>

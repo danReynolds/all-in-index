@@ -20,7 +20,7 @@ import type {
   Thesis,
 } from "../lib/types";
 
-/** Score each host by how their OWN bullish public calls have performed. */
+/** Score each host by how their OWN portfolio-scored public calls performed. */
 async function buildLeaderboard(
   holdings: Holding[],
   nowIso: string,
@@ -28,7 +28,7 @@ async function buildLeaderboard(
   const entries: LeaderboardEntry[] = [];
   const hostFunds: Partial<Record<Host, IndexFund | null>> = {};
   for (const host of REGULAR_HOSTS) {
-    // Window-based: in the market only while the host's portfolio-scored calls say in.
+    // Window-based: in the market only while the host's portfolio-scored calls carry exposure.
     const fund = await buildWindowFund(holdings, nowIso, host);
     hostFunds[host] = fund;
     const top = fund?.constituents[0] ?? null;

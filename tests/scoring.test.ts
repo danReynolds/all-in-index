@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { currentStanceForHosts } from "../lib/calls";
+import { currentStanceForHosts, hostExposureWindows, tradeDirectionForTake } from "../lib/calls";
 import { MAX_PUBLISHED_QUOTE_CHARS, trimPublishedQuote } from "../lib/quotes";
 import {
   BESTIES,
@@ -12,7 +12,12 @@ import type { Holding, Host, Stance, Thesis } from "../lib/types";
 
 const hosts: Host[] = ["Chamath", "Jason", "Sacks", "Friedberg"];
 
-function thesis(host: Host, stance: Stance, episodeDate: string): Thesis {
+function thesis(
+  host: Host,
+  stance: Stance,
+  episodeDate: string,
+  overrides: Partial<Thesis> = {},
+): Thesis {
   return {
     id: `${host}-${stance}-${episodeDate}`,
     episodeId: `E-${episodeDate}`,
@@ -30,6 +35,7 @@ function thesis(host: Host, stance: Stance, episodeDate: string): Thesis {
     quoteStartMs: null,
     topics: [],
     attributionConfidence: "high",
+    ...overrides,
   };
 }
 
@@ -79,4 +85,44 @@ test("published quotes are trimmed to a verbatim prefix", () => {
   assert.equal(quote.startsWith(trimmed), true);
   assert.equal(trimmed.length <= MAX_PUBLISHED_QUOTE_CHARS, true);
   assert.equal(trimmed.endsWith(" "), false);
+});
+
+test("host exposure windows score explicit shorts but not legacy bearish exits", () => {
+  const long = thesis("Chamath", "bull", "2025-01-01T00:00:00.000Z", {
+    positional: true,
+    callType: "explicit_long",
+    tradeDirection: "long",
+  });
+  const legacyExit = thesis("Chamath", "bear", "2025-02-01T00:00:00.000Z", {
+    positional: true,
+  });
+  const explicitShort = thesis("Chamath", "bear", "2025-03-01T00:00:00.000Z", {
+    positional: true,
+    callType: "explicit_short",
+    tradeDirection: "short",
+  });
+
+  assert.equal(tradeDirectionForTake(legacyExit), null);
+  assert.equal(tradeDirectionForTake(explicitShort), "short");
+
+  assert.deepEqual(
+    hostExposureWindows([long, legacyExit], "Chamath").map((w) => ({
+      start: w.start,
+      end: w.end,
+      direction: w.direction,
+    })),
+    [{ start: "2025-01-01", end: "2025-02-01", direction: "long" }],
+  );
+
+  assert.deepEqual(
+    hostExposureWindows([long, explicitShort], "Chamath").map((w) => ({
+      start: w.start,
+      end: w.end,
+      direction: w.direction,
+    })),
+    [
+      { start: "2025-01-01", end: "2025-03-01", direction: "long" },
+      { start: "2025-03-01", end: null, direction: "short" },
+    ],
+  );
 });

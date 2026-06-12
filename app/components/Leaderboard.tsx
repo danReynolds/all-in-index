@@ -15,7 +15,7 @@ export function Leaderboard({ entries }: { entries: LeaderboardEntry[] }) {
       <section className="space-y-3">
       <div className="stagger-item flex items-baseline justify-between">
         <h2 className="font-display text-xl font-bold tracking-tight">Bestie Leaderboard</h2>
-        <span className="text-xs text-neutral-500">each host&apos;s own bullish public calls</span>
+        <span className="text-xs text-neutral-500">each host&apos;s own scored public calls</span>
       </div>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {ranked.map((e, i) => {

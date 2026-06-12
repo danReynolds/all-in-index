@@ -5,6 +5,9 @@ import { store } from "./store";
 import { HOLDINGS_FILE } from "./config";
 import type { IndexSnapshot, Thesis } from "../lib/types";
 
+const CALL_TYPE_VALUES = ["view", "explicit_long", "explicit_short", "selection", "pair_trade", "basket"] as const;
+const TRADE_DIRECTION_VALUES = ["long", "short"] as const;
+
 const SYSTEM = `You classify podcast investment takes as PORTFOLIO-SCORED CALLS or commentary.
 
 positional = true ONLY when the statement clearly communicates a portfolio-scoreable call — an expressed or unmistakably implied portfolio action, ownership stance, ranked investment selection, or pair/basket leg:
@@ -19,10 +22,25 @@ positional = false for views WITHOUT ownership intent, however strong or detaile
 - valuation musings, competitive analysis, growth observations without an in/out signal
 - sentiment alone ("I'm bullish", "I wouldn't sleep on it", "exceptional business") unless the segment is explicitly asking for ranked picks or investment selections
 
+For every take, also classify:
+- callType: "view" for non-positional commentary; "explicit_long" for direct buy/own/long calls; "explicit_short" for direct short calls; "selection" for ranked investment picks; "pair_trade" for each leg of a paired long/short trade; "basket" for named basket legs.
+- tradeDirection: "long" only when the row opens a long exposure; "short" only when the speaker explicitly says short or names the short leg of a pair. Bearish exits such as "take profits" or "wouldn't touch it" can be positional but must have tradeDirection=null.
+- pairTradeId: shared id for rows that are legs of the same pair trade, else null.
+- scoreReason: short phrase explaining why it clears or does not clear the scoring bar.
+
 Lean false when unsure — only clear in/out signals count. Judge each take independently.`;
 
 const Schema = z.object({
-  takes: z.array(z.object({ id: z.string(), positional: z.boolean() })),
+  takes: z.array(
+    z.object({
+      id: z.string(),
+      positional: z.boolean(),
+      callType: z.enum(CALL_TYPE_VALUES),
+      tradeDirection: z.enum(TRADE_DIRECTION_VALUES).nullable(),
+      pairTradeId: z.string().nullable(),
+      scoreReason: z.string().nullable(),
+    }),
+  ),
 });
 
 const INPUT_SCHEMA = {
@@ -35,8 +53,12 @@ const INPUT_SCHEMA = {
         properties: {
           id: { type: "string" },
           positional: { type: "boolean" },
+          callType: { type: "string", enum: [...CALL_TYPE_VALUES] },
+          tradeDirection: { type: ["string", "null"], enum: [...TRADE_DIRECTION_VALUES, null] },
+          pairTradeId: { type: ["string", "null"] },
+          scoreReason: { type: ["string", "null"] },
         },
-        required: ["id", "positional"],
+        required: ["id", "positional", "callType", "tradeDirection", "pairTradeId", "scoreReason"],
       },
     },
   },
@@ -59,7 +81,7 @@ export async function amendPositional(): Promise<void> {
   console.log(`${all.length} theses total; judging ${pending.length} without a positional flag…`);
   if (pending.length === 0) return;
 
-  const verdicts = new Map<string, boolean>();
+  const verdicts = new Map<string, z.infer<typeof Schema>["takes"][number]>();
   for (let i = 0; i < pending.length; i += 60) {
     const chunk = pending.slice(i, i + 60);
     const lines = chunk
@@ -77,7 +99,7 @@ export async function amendPositional(): Promise<void> {
       validate: Schema,
       maxTokens: 8192,
     });
-    for (const v of result.takes) verdicts.set(v.id, v.positional);
+    for (const v of result.takes) verdicts.set(v.id, v);
     console.log(`  judged ${Math.min(i + 60, pending.length)}/${pending.length}`);
   }
 
@@ -86,8 +108,13 @@ export async function amendPositional(): Promise<void> {
     const theses = store.loadTheses(id);
     let touched = false;
     for (const t of theses) {
-      if (verdicts.has(t.id)) {
-        t.positional = verdicts.get(t.id);
+      const v = verdicts.get(t.id);
+      if (v) {
+        t.positional = v.positional;
+        t.callType = v.callType;
+        t.tradeDirection = v.tradeDirection;
+        t.pairTradeId = v.pairTradeId;
+        t.scoreReason = v.scoreReason;
         touched = true;
       }
     }
@@ -99,12 +126,19 @@ export async function amendPositional(): Promise<void> {
     const snapshot: IndexSnapshot = JSON.parse(fs.readFileSync(HOLDINGS_FILE, "utf8"));
     for (const h of snapshot.holdings) {
       for (const t of h.theses) {
-        if (verdicts.has(t.id)) t.positional = verdicts.get(t.id);
+        const v = verdicts.get(t.id);
+        if (v) {
+          t.positional = v.positional;
+          t.callType = v.callType;
+          t.tradeDirection = v.tradeDirection;
+          t.pairTradeId = v.pairTradeId;
+          t.scoreReason = v.scoreReason;
+        }
       }
     }
     fs.writeFileSync(HOLDINGS_FILE, JSON.stringify(snapshot, null, 2) + "\n");
   }
 
-  const yes = [...verdicts.values()].filter(Boolean).length;
+  const yes = [...verdicts.values()].filter((v) => v.positional).length;
   console.log(`✓ amended: ${yes} positional / ${verdicts.size - yes} commentary — run build-fund next.`);
 }

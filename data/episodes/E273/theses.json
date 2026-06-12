@@ -136,7 +136,10 @@
       "competitive positioning"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Jason called Apple his choice for the next year"
   },
   {
     "id": "E273-aapl-Chamath-6",

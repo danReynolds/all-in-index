@@ -223,7 +223,10 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "callType": "explicit_long",
+    "tradeDirection": "long",
+    "scoreReason": "Jason disclosed he is a Netflix shareholder"
   },
   {
     "id": "E212-nflx-Chamath-10",
