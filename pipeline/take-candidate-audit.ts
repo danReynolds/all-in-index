@@ -67,6 +67,16 @@ const BEST_ASSET_TRANSITION = /best\s+performing\s+asset[.?!]?\s*$/i;
 const OWN_BEST_ASSET_PICK = /\b(?:my\s+pick\s+for\s+best\s+performing\s+asset|i\s+think\s+[^.?!]{0,80}\s+(?:is|will\s+be|is\s+going\s+to\s+be)\s+[^.?!]{0,80}best\s+performing\s+asset|best\s+performing\s+asset\s+will\s+be)\b/i;
 const BEST_ASSET_RECAP_PROMPT = /\blast\s+year'?s\s+prediction\b.*\bwhat\s+do\s+you\s+got\s+for\s+this\s+year'?s\s+best\s+performing\s+asset\b/i;
 const COMMON_TICKER_WORDS = new Set(["ALL", "ARE", "AT", "BE", "BY", "FOR", "HAS", "IT", "NOW", "ON", "SO", "X", "AI"]);
+const INVESTMENT_EXPLICIT_KINDS = new Set([
+  "business_winner",
+  "business_loser",
+  "best_asset",
+  "best_invest",
+  "explicit_long_short",
+  "pair_trade",
+  "prediction_pick",
+  "short_sp",
+]);
 
 function normalize(s: string): string {
   return s
@@ -149,7 +159,7 @@ function candidateKinds(text: string): string[] {
   const kinds = HIGH_SIGNAL_PATTERNS.filter(([, pattern]) => pattern.test(text)).map(([kind]) => kind);
   if (kinds.length === 0) return [];
   if (NON_INVESTMENT_GAME.test(text)) return [];
-  if (NON_INVESTMENT_CONTEXT.test(text)) return [];
+  if (NON_INVESTMENT_CONTEXT.test(text) && !kinds.some((kind) => INVESTMENT_EXPLICIT_KINDS.has(kind))) return [];
   if (READBACK_OF_OTHER_HOST.test(text)) return [];
   if (MODERATOR_HANDOFF.test(text)) return [];
   if (kinds.length === 1 && kinds[0] === "best_asset" && BEST_ASSET_TRANSITION.test(text) && !OWN_BEST_ASSET_PICK.test(text)) return [];

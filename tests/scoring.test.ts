@@ -239,3 +239,29 @@ test("prediction-round transcript picks are covered by audited receipts", () => 
     true,
   );
 });
+
+test("explicit pair-trade language is not suppressed by startup context", () => {
+  const transcript: Transcript = {
+    episodeId: "E252",
+    provider: "assemblyai",
+    speakerMap: {
+      A: "Jason",
+    },
+    utterances: [
+      {
+        cluster: "A",
+        speaker: "Jason",
+        text: "I think the short in all of this, if you were going to put on the pair trade, is short OpenAI, which I think is overvalued and is going to go down. And I think I would be long Google, Groq, and Anthropic. I don't think the startup community is trusting OpenAI with their data.",
+        startMs: 2284750,
+        endMs: 2374750,
+      },
+    ],
+    meta: {},
+  };
+
+  const candidates = auditTranscriptCandidates("E252", transcript);
+  assert.equal(candidates.length, 1);
+  assert.equal(candidates[0].coverage, "portfolio");
+  assert.equal(candidates[0].matches.some((m) => m.id === "E252-googl-Jason-6"), true);
+  assert.equal(candidates[0].matches.some((m) => m.id === "E252-openai-Jason-8"), true);
+});
