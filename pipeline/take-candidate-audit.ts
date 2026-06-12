@@ -29,6 +29,14 @@ export interface TakeCandidate {
   matches: TakeCandidateMatch[];
 }
 
+export interface TakeCandidateAuditReport {
+  thesisEpisodeCount: number;
+  scannedEpisodeIds: string[];
+  missingTranscriptEpisodeIds: string[];
+  candidates: TakeCandidate[];
+  needsReview: TakeCandidate[];
+}
+
 const BESTIE_SET = new Set<Host>(REGULAR_HOSTS);
 const MATCH_WINDOW_MS = 180_000;
 
@@ -243,12 +251,43 @@ export function auditEpisodeCandidates(episodeId: string): TakeCandidate[] {
 }
 
 export function auditAllCandidates(): TakeCandidate[] {
-  return store.listEpisodeIds().flatMap((episodeId) => auditEpisodeCandidates(episodeId));
+  return buildTakeCandidateAuditReport().candidates;
+}
+
+export function buildTakeCandidateAuditReport(): TakeCandidateAuditReport {
+  const episodeIds = store.listEpisodeIds().filter((episodeId) => store.loadTheses(episodeId).length > 0).sort();
+  const scannedEpisodeIds: string[] = [];
+  const missingTranscriptEpisodeIds: string[] = [];
+  const candidates: TakeCandidate[] = [];
+  for (const episodeId of episodeIds) {
+    const transcript = store.loadTranscript(episodeId);
+    if (!transcript) {
+      missingTranscriptEpisodeIds.push(episodeId);
+      continue;
+    }
+    scannedEpisodeIds.push(episodeId);
+    candidates.push(...auditTranscriptCandidates(episodeId, transcript));
+  }
+  const needsReview = candidates.filter((c) => c.coverage === "missing" || c.coverage === "view");
+  return {
+    thesisEpisodeCount: episodeIds.length,
+    scannedEpisodeIds,
+    missingTranscriptEpisodeIds,
+    candidates,
+    needsReview,
+  };
 }
 
 export function runTakeCandidateAudit(): void {
-  const candidates = auditAllCandidates();
-  const needsReview = candidates.filter((c) => c.coverage === "missing" || c.coverage === "view");
+  const showAll = process.argv.includes("--all");
+  const report = buildTakeCandidateAuditReport();
+  const { candidates, needsReview } = report;
+  console.log(`Scanned ${report.scannedEpisodeIds.length}/${report.thesisEpisodeCount} episodes with thesis files and cached transcripts.`);
+  if (report.missingTranscriptEpisodeIds.length > 0) {
+    console.log(
+      `warning: skipped ${report.missingTranscriptEpisodeIds.length} episode(s) without cached transcript.json: ${report.missingTranscriptEpisodeIds.join(", ")}`,
+    );
+  }
   console.log(`${candidates.length} high-signal transcript candidates`);
   for (const host of REGULAR_HOSTS) {
     const hostRows = candidates.filter((c) => c.speaker === host);
@@ -256,13 +295,21 @@ export function runTakeCandidateAudit(): void {
     console.log(`${host}: ${hostRows.length} candidates, ${hostReview.length} need review`);
   }
 
+  if (showAll) {
+    printCandidates("\nAll candidates:", candidates);
+  }
+
   if (needsReview.length === 0) {
-    console.log("\nNo uncovered high-signal candidates.");
+    console.log("\nNo uncovered high-signal candidates in scanned transcripts.");
     return;
   }
 
-  console.log("\nNeeds review:");
-  for (const c of needsReview.slice(0, 80)) {
+  printCandidates("\nNeeds review:", needsReview);
+}
+
+function printCandidates(label: string, candidates: TakeCandidate[]): void {
+  console.log(label);
+  for (const c of candidates.slice(0, 120)) {
     const at = `${c.episodeId} ${Math.round(c.startMs / 1000)}s ${c.speaker}`;
     const entities = c.entities.length ? c.entities.join(", ") : "no entity match";
     const matches = c.matches.length
@@ -273,6 +320,7 @@ export function runTakeCandidateAudit(): void {
     console.log(`  matches: ${matches}`);
     console.log(`  ${c.text.slice(0, 280)}`);
   }
+  if (candidates.length > 120) console.log(`\n... ${candidates.length - 120} more candidate(s) omitted.`);
 }
 
 if (process.argv[1]?.endsWith("pipeline/take-candidate-audit.ts")) {

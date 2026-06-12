@@ -188,7 +188,7 @@ async function main() {
           "  run [--latest|--number N|--id E274]   process one episode end-to-end\n" +
           "  sync [--limit N] [--include-interviews]  process new episodes + rebuild index\n" +
           "  build-index                           re-aggregate processed episodes\n" +
-          "  audit-candidates                      find high-signal transcript picks needing review\n" +
+          "  audit-candidates [--all]              find high-signal transcript picks needing review\n" +
           "  quality                               validate generated data invariants",
       );
   }

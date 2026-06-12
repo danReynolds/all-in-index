@@ -172,7 +172,7 @@ export async function runQualityCheck(): Promise<void> {
   const snapshot = store.loadIndex();
   if (!snapshot) throw new Error("No data/holdings.json found. Run build-index first.");
   const result = validateIndexSnapshot(snapshot);
-  for (const warning of result.warnings) console.warn(`warning: ${warning}`);
+  for (const warning of result.warnings) console.log(`warning: ${warning}`);
   if (result.errors.length > 0) {
     for (const error of result.errors) console.error(`error: ${error}`);
     throw new Error(`quality check failed with ${result.errors.length} error(s)`);
