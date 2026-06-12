@@ -11,8 +11,8 @@
     "stance": "bull",
     "conviction": "low",
     "summary": "Sacks sees Salesforce's 20% drop as likely a buying opportunity, arguing the revenue miss was trivially small in percentage terms, that Benioff is a capable founder-CEO who has consistently adapted to major tech trends, and that the company will find a way to leverage AI.",
-    "quote": "my sense is it's probably a buying opportunity. I mean, I think Salesforce is still a great company. Marc Benioff's a great CEO... my guess is he's going to figure out how to take advantage of this AI trend for the company.",
-    "quoteStartMs": 4316354,
+    "quote": "my view is that I don't have a strong view about the stock, but my sense is it's probably a buying opportunity. I mean, I think Salesforce is still a great company. Marc Benioff's a great CEO.",
+    "quoteStartMs": 4311754,
     "topics": [
       "valuation",
       "SaaS",
@@ -87,7 +87,7 @@
       "valuation",
       "revenue gap"
     ],
-    "attributionConfidence": "high",
+    "attributionConfidence": "low",
     "positional": false
   },
   {
@@ -109,7 +109,7 @@
       "data centers",
       "valuation"
     ],
-    "attributionConfidence": "high",
+    "attributionConfidence": "low",
     "positional": false
   },
   {
@@ -124,7 +124,7 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Chamath presents a historical halving-cycle analysis showing 8–45x price appreciation in the 18 months after prior halvings, argues the addition of spot ETFs accelerates mainstream adoption, and sees Bitcoin eventually replacing gold and serving as a hard-asset currency for countries seeking a store of value amid dollar debasement.",
-    "quote": "18 months after the first halving, the Bitcoin price returned 45x. After the second halving, it returned almost 28x. And after this third halving, it returned almost an 8x... there are a lot of countries... that will become dual currency... they will look at Bitcoin and they will say both of these two things are needed.",
+    "quote": "18 months after the first halving, the Bitcoin price returned 45x. After the second halving, it returned almost 28x. And after this third halving, it returned almost an 8x",
     "quoteStartMs": 3356204,
     "topics": [
       "halving cycle",
@@ -134,5 +134,28 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E181-gld-Chamath-a0",
+    "episodeId": "E181",
+    "episodeNumber": 181,
+    "episodeDate": "2024-05-31T21:55:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Chamath argues Bitcoin will 'completely replace gold' as a hard asset store of value, especially as more countries adopt dual-currency systems and dollar debasement concerns grow — implying gold loses its dominant role.",
+    "quote": "if this thing starts to get to these levels of appreciation, it is going to completely replace gold and start to become something that has transactional utility for hard assets",
+    "quoteStartMs": 3486242,
+    "topics": [
+      "Bitcoin vs Gold",
+      "store of value",
+      "dollar debasement",
+      "dual currency"
+    ],
+    "attributionConfidence": "high"
   }
 ]

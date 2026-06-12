@@ -59,7 +59,15 @@ function Pills<T extends string>({
 }
 
 /** The homepage public-companies table, with client-side sort and filters. */
-export function HoldingsTable({ holdings }: { holdings: Holding[] }) {
+export function HoldingsTable({
+  holdings,
+  title = "Tracked calls · public companies",
+  subtitle = "scored vs the market",
+}: {
+  holdings: Holding[];
+  title?: string;
+  subtitle?: string;
+}) {
   const [sort, setSort] = useState<SortKey>("latest");
   const [stance, setStance] = useState<Stance | "all">("all");
   const [host, setHost] = useState<Host | null>(null);
@@ -87,11 +95,11 @@ export function HoldingsTable({ holdings }: { holdings: Holding[] }) {
   return (
     <section className="space-y-3">
       <div className="flex items-baseline justify-between">
-        <h2 className="font-display text-xl font-bold tracking-tight">Tracked calls · public companies</h2>
+        <h2 className="font-display text-xl font-bold tracking-tight">{title}</h2>
         <span className="text-xs text-neutral-500">
           {shown.length === holdings.length
-            ? `${holdings.length} companies, scored vs the market`
-            : `${shown.length} of ${holdings.length} companies`}
+            ? `${holdings.length} tracked, ${subtitle}`
+            : `${shown.length} of ${holdings.length}`}
         </span>
       </div>
 

@@ -11,8 +11,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Chamath argues Google is one of seven American quasi-monopolies that, if allowed to flourish, will drive strong economic value, and that a break-up would actually unlock even greater value for shareholders as the sum-of-parts valuation exceeds the current conglomerate discount.",
-    "quote": "There are 7 quasi-monopolies in the world. They're all American, and if we allow them to flourish, we'll be good... if you own stock in any of these companies, the some of the parts analysis would tell you that the breakup value is greater than the way that these companies get discounted.",
-    "quoteStartMs": 1820000,
+    "quote": "There are 7 quasi-monopolies in the world. They're all American, and if we allow them to flourish, we'll be good. If we hamper them a little bit and allow other companies to pick up the white space, we'll be great.",
+    "quoteStartMs": 1820400,
     "topics": [
       "valuation",
       "sum-of-parts",
@@ -90,5 +90,29 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E202-gld-Friedberg-a0",
+    "episodeId": "E202",
+    "episodeNumber": 202,
+    "episodeDate": "2024-11-01T21:10:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Friedberg suggests that amid US dollar hegemony challenges and BRICS alternatives emerging, people may be parking assets in gold (and Bitcoin) as a transitional store of value.",
+    "quote": "maybe everyone's kind of putting their assets away in, in gold and, and others and Bitcoin and other stuff while they're waiting for the transition to find another place to buy. We'll see.",
+    "quoteStartMs": 1416452,
+    "topics": [
+      "US dollar hegemony",
+      "BRICS",
+      "debt spiral",
+      "store of value",
+      "macro"
+    ],
+    "attributionConfidence": "high"
   }
 ]

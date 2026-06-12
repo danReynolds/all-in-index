@@ -20,7 +20,8 @@
       "competition"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E250-anthropic-Guest-1",
@@ -42,7 +43,8 @@
       "AI competition"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E250-openai-Chamath-2",
@@ -79,8 +81,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Chamath is bullish on Anthropic as part of his broad AI supercycle bet, noting its enterprise-focused model and strong API revenue growth are off the charts, while also flagging that long-range revenue forecasts for any AI company carry high uncertainty.",
-    "quote": "Anthropic's numbers, despite Cursor doing some of their own thing, Anthropic's numbers are off the charts. I think that this market is as big or bigger than current estimates are out there.",
-    "quoteStartMs": 2020441,
+    "quote": "I'm an investor in OpenAI and Anthropic and Google and, and Microsoft and Nvidia, etc. … Anthropic's numbers, despite Cursor doing some of their own thing, Anthropic's numbers are off the charts. I think that this market is as big or bigger",
+    "quoteStartMs": 1969669,
     "topics": [
       "AI supercycle",
       "enterprise revenue",
@@ -109,7 +111,8 @@
       "Mag Seven"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E250-nvda-Guest-5",

@@ -103,8 +103,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Chamath argues Meta is under significant pressure to release the next LLaMA iteration surpassing Gemini and R1, and that Meta must embrace DeepSeek's innovations like PTX to build a developer platform, positioning it as the key Western counterweight to Chinese AI.",
-    "quote": "all the pressure right now I think is on Meta because I think Meta has to show up with the next iteration of LLaMA that beats and exceeds Gemini, that exceeds R1. And I think that that is going to be crucial for us to have a counterweight to whatever China's going to put out.",
-    "quoteStartMs": 2447000,
+    "quote": "Meta has to embrace and extend everything that these guys have shown. Meaning Meta's buying tens of thousands of NVIDIA GPUs. Great. But what did this show? This shows that actually CUDA, high-level languages in general, I think we've all k",
+    "quoteStartMs": 2475829,
     "topics": [
       "AI competition",
       "open source",
@@ -158,7 +158,8 @@
       "manufacturing"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Travis Kalanick"
   },
   {
     "id": "E213-waymo-Guest-7",
@@ -181,6 +182,7 @@
       "competition"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Travis Kalanick"
   }
 ]

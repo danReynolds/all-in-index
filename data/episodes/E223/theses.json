@@ -1,1 +1,49 @@
-[]
+[
+  {
+    "id": "E223-ung-Guest-a0",
+    "episodeId": "E223",
+    "episodeNumber": 223,
+    "episodeDate": "2025-04-11T21:47:00.000Z",
+    "company": "Natural Gas",
+    "ticker": "UNG",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Larry Summers argues that halting LNG-related projects was a clear policy mistake, implying support for expanding natural gas as part of a broader energy security agenda.",
+    "quote": "I thought the stopping a variety of things involving liquid natural gas were a clear mistake.",
+    "quoteStartMs": 2505211,
+    "topics": [
+      "energy security",
+      "LNG policy",
+      "Biden administration",
+      "deregulation"
+    ],
+    "attributionConfidence": "high",
+    "guestName": "Larry Summers"
+  },
+  {
+    "id": "E223-lit-Chamath-a1",
+    "episodeId": "E223",
+    "episodeNumber": 223,
+    "episodeDate": "2025-04-11T21:47:00.000Z",
+    "company": "Lithium",
+    "ticker": "LIT",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Chamath references the lithium market as a strategic target in a broader resource competition with China, framing it as part of a sequenced approach to securing critical commodities, though no explicit price direction is stated.",
+    "quote": "you can't necessarily surgically go and attack the lithium market first, then the rare earth market second, because it all goes back to the same balance sheet. It's the same actor over and over.",
+    "quoteStartMs": 3133132,
+    "topics": [
+      "critical minerals",
+      "China competition",
+      "trade strategy",
+      "reshoring"
+    ],
+    "attributionConfidence": "high"
+  }
+]

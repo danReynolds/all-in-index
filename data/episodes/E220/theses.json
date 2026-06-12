@@ -153,5 +153,26 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E220-gld-Jason-a0",
+    "episodeId": "E220",
+    "episodeNumber": 220,
+    "episodeDate": "2025-03-22T02:17:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "neutral",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Jason uses 'gold' purely as a metaphor for alpha in non-consensus bets — no price or investment direction on the commodity itself.",
+    "quote": "that's where the gold is, is that non-consensus bet. When you and I did Uber, it was a room of 21 people.",
+    "quoteStartMs": 1858820,
+    "topics": [
+      "venture capital",
+      "non-consensus investing"
+    ],
+    "attributionConfidence": "high"
   }
 ]

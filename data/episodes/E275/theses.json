@@ -42,7 +42,8 @@
       "AI safety narrative"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Tim Ferriss"
   },
   {
     "id": "E275-anthropic-Chamath-2",
@@ -218,5 +219,27 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E275-cper-Chamath-a0",
+    "episodeId": "E275",
+    "episodeNumber": 275,
+    "episodeDate": "2026-05-29T22:23:00.000Z",
+    "company": "Copper",
+    "ticker": "CPER",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Chamath mentions copper incidentally as one line item in a list of infrastructure costs (CapEx, OpEx, power, cabling, copper) when discussing AI training efficiency and hardware build-outs. No price or investment direction is expressed.",
+    "quote": "When you think about then the CapEx build-out, the OpEx, the power, the cabling, the copper, all of it",
+    "quoteStartMs": 3190318,
+    "topics": [
+      "AI infrastructure",
+      "compute efficiency",
+      "hardware costs"
+    ],
+    "attributionConfidence": "high"
   }
 ]

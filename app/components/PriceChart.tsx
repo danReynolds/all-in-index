@@ -276,7 +276,7 @@ export function PriceChart({
       {selected && (
         <div className="pop-in mt-3 rounded-xl bg-neutral-800/40 p-4 text-sm ring-1 ring-white/5">
           <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1.5 text-xs text-neutral-500">
-            <span className="font-semibold text-neutral-100">{selected.host}</span>
+            <span className="font-semibold text-neutral-100">{selected.guestName ?? selected.host}</span>
             <StanceBadge stance={selected.stance} />
             <Link
               href={`/episode/${selected.episodeId}`}

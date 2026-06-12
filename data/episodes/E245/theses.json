@@ -123,8 +123,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Chamath relays Unity CEO Matt Bromberg's view that AI-generated world engines cannot yet match Unity's quality and scale for serious games, implying Unity's rendering engine remains essential infrastructure for the gaming industry.",
-    "quote": "He said it's just really, really hard to get these things to actually be legitimate engines at the scale of what Unity offers for the quality of game that needs to be made for it to work.",
-    "quoteStartMs": 2007000,
+    "quote": "The thing to remember is that video games is the anchor pillar of usage across the entire internet... it's about 3 billion DAO play games... EA is sort of this 800-pound gorilla.",
+    "quoteStartMs": 211787,
     "topics": [
       "gaming infrastructure",
       "AI disruption risk",
@@ -132,5 +132,28 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E245-ung-Sacks-a0",
+    "episodeId": "E245",
+    "episodeNumber": 245,
+    "episodeDate": "2025-10-03T16:39:00.000Z",
+    "company": "Natural Gas",
+    "ticker": "UNG",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Sacks argues that natural gas is the near-term (next 5 years) answer to AI-driven power demand, before nuclear comes online, though he notes turbine backlogs as a constraint.",
+    "quote": "Within the next 5 years, it's probably gas, natural gas. But the issue there is there's a huge backlog for gas turbines... So the question is, what do you do in the next few years?",
+    "quoteStartMs": 3309378,
+    "topics": [
+      "AI power demand",
+      "energy infrastructure",
+      "data centers",
+      "grid capacity"
+    ],
+    "attributionConfidence": "high"
   }
 ]

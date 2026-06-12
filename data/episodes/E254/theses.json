@@ -101,8 +101,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Jason pushes back on bearish views of legacy media, highlighting that the New York Times has successfully transitioned to subscriptions with 12 million paid subscribers, making it objectively the most financially successful news organization in America.",
-    "quote": "They are crushing it, by the way. When they move to subscriptions, they have 12 million paid subscribers now. They are objectively crushing it and figured it out better than any other news organization.",
-    "quoteStartMs": 1518000,
+    "quote": "They're also crushing it, by the way. When they move to subscriptions, they have 12 million paid subscribers now. They are objectively crushing it and figured it out better than any other news organization.",
+    "quoteStartMs": 1525449,
     "topics": [
       "subscriptions",
       "business model",
@@ -110,5 +110,75 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E254-gld-Guest-a0",
+    "episodeId": "E254",
+    "episodeNumber": 254,
+    "episodeDate": "2025-12-13T02:31:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "positional": true,
+    "summary": "Tucker (Guest) describes himself as a long-standing personal buyer of physical gold (1-oz coins, buries them in his yard), says it 'turned out to be a pretty good route' despite being mocked, and is now launching a business selling gold at near-wholesale prices. He frames gold as a core portfolio hedge alongside ammo and freeze-dried food.",
+    "quote": "I am personally a 1-ounce coin buyer of longstanding. Turned out to be a pretty good route, I would say... I do bury it in my yard because that's the kind of man I am. Primitive. But it has turned out to be a good thing.",
+    "quoteStartMs": 5602000,
+    "topics": [
+      "physical gold",
+      "gold as hedge",
+      "gold retail/wholesale",
+      "portfolio diversification",
+      "gold bugs"
+    ],
+    "attributionConfidence": "high",
+    "guestName": "Tucker Carlson"
+  },
+  {
+    "id": "E254-gld-Chamath-a1",
+    "episodeId": "E254",
+    "episodeNumber": 254,
+    "episodeDate": "2025-12-13T02:31:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Chamath endorses gold ownership as a practical hedge and part of a broader set of tools to hedge the status quo, alongside cryptocurrencies.",
+    "quote": "I do think that having this as a practical hedge, there's like a whole set of elements that we all have to be educated on to hedge the status quo. And there are lots of reasons to own cryptocurrencies, gold.",
+    "quoteStartMs": 5682077,
+    "topics": [
+      "gold as hedge",
+      "portfolio diversification",
+      "crypto vs gold"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E254-slv-Guest-a2",
+    "episodeId": "E254",
+    "episodeNumber": 254,
+    "episodeDate": "2025-12-13T02:31:00.000Z",
+    "company": "Silver",
+    "ticker": "SLV",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Tucker's new venture sells silver alongside gold (any kind of precious metal), implying a broadly positive view on physical silver as a store of value, though no explicit price directional claim is made beyond grouping it with gold.",
+    "quote": "Well, you can buy any kind of precious metal.",
+    "quoteStartMs": 5602000,
+    "topics": [
+      "physical silver",
+      "precious metals",
+      "store of value"
+    ],
+    "attributionConfidence": "high",
+    "guestName": "Tucker Carlson"
   }
 ]

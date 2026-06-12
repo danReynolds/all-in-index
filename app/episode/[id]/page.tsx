@@ -174,7 +174,9 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
                         <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1.5 text-xs text-neutral-500">
                           <span className="flex items-center gap-1.5">
                             <HostAvatar host={t.host} size="sm" />
-                            <span className="font-semibold text-neutral-100">{t.host}</span>
+                            <span className="font-semibold text-neutral-100">
+                              {t.host === "Guest" ? (t.guestName ?? "Guest") : t.host}
+                            </span>
                           </span>
                           <StanceBadge stance={t.stance} />
                           <ConvictionDots conviction={t.conviction} />

@@ -79,8 +79,8 @@
     "stance": "mixed",
     "conviction": "medium",
     "summary": "Friedberg sees a financial rationale for Uber acquiring Expedia at ~4x pro forma EBITDA after cost synergies and cross-selling, but acknowledges significant long-term AI disruption risk to Expedia's core business model.",
-    "quote": "if you can bump the EBITDA up to $6 billion a year... you're kind of paying about $22 billion enterprise value... that's a pretty low multiple. I mean, you could kind of see yourself rationalizing this just from a financial basis that you're paying 4 times EBITDA",
-    "quoteStartMs": 2029615,
+    "quote": "So $22 billion of enterprise value, and if you can bump the EBITDA up to $6 billion a year, that's a pretty low multiple. I mean, you could kind of see yourself rationalizing this just from a financial basis that you're paying 4 times EBITD",
+    "quoteStartMs": 2027467,
     "topics": [
       "M&A",
       "valuation",
@@ -112,5 +112,52 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E200-ura-Friedberg-a0",
+    "episodeId": "E200",
+    "episodeNumber": 200,
+    "episodeDate": "2024-10-18T22:49:00.000Z",
+    "company": "Uranium",
+    "ticker": "URA",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "high",
+    "positional": true,
+    "summary": "Friedberg reiterates his earlier prediction to buy uranium stocks, arguing nuclear is a necessity to meet growing energy demand (amplified by AI buildout), and that there is simply no way to close the energy gap without nuclear/uranium — making it a structural long-term bull case.",
+    "quote": "it was also my prediction for the year was to by the uranium stocks predicated on what I think is a really important point...there is no way to meet the energy demand without nuclear...We are going to need to use uranium to make electricity to meet the demand",
+    "quoteStartMs": 2943984,
+    "topics": [
+      "nuclear energy",
+      "SMRs",
+      "energy demand",
+      "AI buildout",
+      "GDP growth",
+      "geopolitics"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E200-cper-Friedberg-a1",
+    "episodeId": "E200",
+    "episodeNumber": 200,
+    "episodeDate": "2024-10-18T22:49:00.000Z",
+    "company": "Copper",
+    "ticker": "CPER",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Friedberg makes offhand references to copper wire as the required medium for transmitting power and internet signals, but frames it as a potential inefficiency to be disrupted rather than a directional price call.",
+    "quote": "we could look back one day and be like, why did we run all this copper wire everywhere? We don't need it.",
+    "quoteStartMs": 1328000,
+    "topics": [
+      "infrastructure",
+      "energy transmission",
+      "technology disruption"
+    ],
+    "attributionConfidence": "high"
   }
 ]

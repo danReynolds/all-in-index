@@ -77,8 +77,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Sacks is bullish on OpenAI's role in disrupting call centers, citing its new audio API and PhD-level reasoning models as reaching sufficient accuracy to replace Tier 1 customer support at scale within 2-3 years.",
-    "quote": "LLMs plus voice, because OpenAI just released their audio API... the level of accuracy now, especially with the new PhD-level reasoning models, is good enough. We don't need to wait for some perfect LLM model. And I think this is why this is going to be a big disruption.",
-    "quoteStartMs": 1071378,
+    "quote": "I think it's now becoming really clear that call centers are going to be the first really big disruption caused by AI.",
+    "quoteStartMs": 1058169,
     "topics": [
       "AI disruption",
       "voice AI",
@@ -131,5 +131,27 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E196-gld-Chamath-a0",
+    "episodeId": "E196",
+    "episodeNumber": 196,
+    "episodeDate": "2024-09-20T19:58:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Chamath uses 'gold standard' only as a metaphor for zero-error AI software performance in regulated industries — no price or investment directional claim on gold as a commodity.",
+    "quote": "I think well-crafted AI software is as good as deterministic software... that's the gold standard because in those sectors, those companies have zero tolerance.",
+    "quoteStartMs": 1391354,
+    "topics": [
+      "AI software",
+      "regulated industries",
+      "error rates"
+    ],
+    "attributionConfidence": "high"
   }
 ]

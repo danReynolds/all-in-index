@@ -154,5 +154,28 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E238-cper-Guest-a0",
+    "episodeId": "E238",
+    "episodeNumber": 238,
+    "episodeDate": "2025-08-09T15:40:00.000Z",
+    "company": "Copper",
+    "ticker": "CPER",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "neutral",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Guest mentions 'steel and copper tariffs' only as an example of industrial policy temptations in a broader discussion about corporatism vs. capitalism — no directional price or investment view expressed.",
+    "quote": "The temptation is to extend that across the rest of the economy to industrial policy, to steel and copper tariffs, to everything else.",
+    "quoteStartMs": 2588828,
+    "topics": [
+      "tariffs",
+      "industrial policy",
+      "corporatism"
+    ],
+    "attributionConfidence": "high",
+    "guestName": "Jeremy Boreing"
   }
 ]

@@ -20,7 +20,8 @@
       "fleet scale"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Elon Musk"
   },
   {
     "id": "E249-tsla-Guest-1",
@@ -43,7 +44,8 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Elon Musk"
   },
   {
     "id": "E249-tsla-Jason-2",
@@ -89,7 +91,8 @@
       "competitive positioning"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Elon Musk"
   },
   {
     "id": "E249-x-twitter-Guest-4",
@@ -112,7 +115,8 @@
       "platform value"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Elon Musk"
   },
   {
     "id": "E249-xai-Guest-5",
@@ -135,6 +139,31 @@
       "product"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Elon Musk"
+  },
+  {
+    "id": "E249-lit-Guest-a0",
+    "episodeId": "E249",
+    "episodeNumber": 249,
+    "episodeDate": "2025-10-31T20:11:00.000Z",
+    "company": "Lithium",
+    "ticker": "LIT",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Elon Musk argues lithium (along with iron, phosphorus, and carbon) is very common on Earth and there is no shortage of raw materials needed to power the planet with solar and batteries, implying no supply-side constraint on lithium demand.",
+    "quote": "lithium is also very common. So the, there's actually, you can do the math... that shows that you can completely power Earth with solar panels and batteries. Um, and, uh, there's no shortage of anything.",
+    "quoteStartMs": 5456154,
+    "topics": [
+      "supply abundance",
+      "battery materials",
+      "energy transition",
+      "iron phosphate lithium-ion"
+    ],
+    "attributionConfidence": "high",
+    "guestName": "Elon Musk"
   }
 ]

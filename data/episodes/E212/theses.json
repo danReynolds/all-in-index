@@ -147,7 +147,7 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Chamath flags Broadcom as a massively underappreciated trillion-dollar company built through disciplined M&A roll-ups, noting it receives almost none of the attention given to Nvidia or Meta despite comparable scale.",
-    "quote": "It is the only trillion-dollar company that nobody talks about. Everybody knows Nvidia, everybody knows Amazon, Meta, but Broadcom is a $1, $2 trillion business. And it started basically through a whole series of roll-ups.",
+    "quote": "it is the only trillion-dollar company that nobody talks about. Everybody knows Nvidia, everybody knows Amazon, Meta, but Broadcom is a $1. $1, $2 trillion business. And it started basically through a whole series of roll-ups.",
     "quoteStartMs": 6316879,
     "topics": [
       "valuation",
@@ -246,5 +246,52 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E212-ura-Guest-a0",
+    "episodeId": "E212",
+    "episodeNumber": 212,
+    "episodeDate": "2025-01-25T02:52:00.000Z",
+    "company": "Uranium",
+    "ticker": "URA",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "positional": false,
+    "summary": "Thomas (guest) argues uranium/nuclear energy demand will continue growing as the AI arms race drives power needs, nuclear capacity must expand to catch up with China, and major tech companies and the government are already contracting directly with nuclear providers.",
+    "quote": "Why we buy uranium? I think you can speak to that better... we expect, and we think just the trend generally towards nuclear energy is going to continue... I think it's pretty clear what the answer is. I think China is leading the way in that measure, and I think we need to follow.",
+    "quoteStartMs": 5310000,
+    "topics": [
+      "nuclear energy",
+      "AI power demand",
+      "China competition",
+      "energy policy"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E212-ura-Friedberg-a1",
+    "episodeId": "E212",
+    "episodeNumber": 212,
+    "episodeDate": "2025-01-25T02:52:00.000Z",
+    "company": "Uranium",
+    "ticker": "URA",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "high",
+    "positional": false,
+    "summary": "Friedberg argues nuclear is essential to AI competitiveness and the US must urgently scale up uranium/nuclear production using new Gen 4 technologies; failure to do so will put the US at a severe energy cost and AI disadvantage vs. China.",
+    "quote": "We only have a couple of months to get the engine stood up that will allow us to make the material, that will allow us to make the production technology needed to actually deploy these stations to try and have a shot at catching up. And if we don't, we're going to be hugely disadvantaged on an energy cost basis.",
+    "quoteStartMs": 5491991,
+    "topics": [
+      "nuclear energy",
+      "Gen 4 reactors",
+      "AI power demand",
+      "China competition",
+      "energy policy"
+    ],
+    "attributionConfidence": "high"
   }
 ]

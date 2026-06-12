@@ -103,7 +103,7 @@
     "stance": "bear",
     "conviction": "high",
     "summary": "Sacks argues California, Illinois, and New York are all in fiscal death spirals driven by structural government waste and patronage, and without federal bailout or bankruptcy mechanisms, these states face collapse, making their debt increasingly risky.",
-    "quote": "California, Illinois, New York, these states are all in a death spiral. They're all in the process of collapsing. And they will try to get bailed out by the feds. That's their only potential savior because they're not allowed to declare bankruptcy.",
+    "quote": "California, Illinois, New York, these states are all in a death spiral. They're all in the process of collapsing. And they will try to get bailed out by the feds. That's their only potential savior because they're not allowed to declare ban",
     "quoteStartMs": 3809353,
     "topics": [
       "fiscal risk",
@@ -113,5 +113,27 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E256-slv-Friedberg-a0",
+    "episodeId": "E256",
+    "episodeNumber": 256,
+    "episodeDate": "2025-12-31T21:56:00.000Z",
+    "company": "Silver",
+    "ticker": "SLV",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Friedberg uses 'pocketing the silverware' as a metaphor for fraud during government spending bubble — purely incidental, no price or investment direction on silver.",
+    "quote": "this is like everyone pocketing the silverware as the Titanic is sinking",
+    "quoteStartMs": 3072000,
+    "topics": [
+      "government spending",
+      "fraud",
+      "DOGE"
+    ],
+    "attributionConfidence": "high"
   }
 ]

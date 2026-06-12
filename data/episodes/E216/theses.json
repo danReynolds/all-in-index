@@ -20,7 +20,8 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Patrick Collison"
   },
   {
     "id": "E216-nvda-Chamath-1",
@@ -65,7 +66,8 @@
       "IPO risk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Patrick Collison"
   },
   {
     "id": "E216-pypl-Guest-3",
@@ -87,6 +89,30 @@
       "IPO risk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Patrick Collison"
+  },
+  {
+    "id": "E216-gld-Guest-a0",
+    "episodeId": "E216",
+    "episodeNumber": 216,
+    "episodeDate": "2025-02-21T23:41:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Guest (Stripe) describes Bitcoin as a good store of value and 'a gold substitute', implying Bitcoin/gold serve a similar value-preservation role, but does not make an explicit directional price call on gold itself.",
+    "quote": "it's good as a store of value, as kind of a gold substitute, but transactions are slow, transactions are expensive.",
+    "quoteStartMs": 430147,
+    "topics": [
+      "store of value",
+      "Bitcoin vs gold",
+      "stablecoins"
+    ],
+    "attributionConfidence": "high",
+    "guestName": "Patrick Collison"
   }
 ]

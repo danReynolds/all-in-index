@@ -57,8 +57,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Friedberg highlights GCP's rapid growth to $10.3B quarterly revenue and $1.2B operating profit, projecting it could generate $20-30B in annual free cash flow at mature margins, making cloud and AI the key value drivers for Alphabet going forward.",
-    "quote": "if you kind of think about what cloud margin should be over time and kind of call it 20 to 30% margin, this cloud business could be generating $20 to $30 billion a year of free cash flow.",
-    "quoteStartMs": 614933,
+    "quote": "GCP in the last quarter did $10.3 billion in revenue, which is up from $8 billion in revenue the year before... they're running at a $1.2 billion operating profit out of GCP... this cloud business could be generating $20 to $30 billion a ye",
+    "quoteStartMs": 599646,
     "topics": [
       "cloud",
       "AI",
@@ -111,5 +111,30 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E189-ura-Friedberg-a0",
+    "episodeId": "E189",
+    "episodeNumber": 189,
+    "episodeDate": "2024-07-26T22:55:00.000Z",
+    "company": "Uranium",
+    "ticker": "URA",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Friedberg explains that China's new Gen 4 pebble bed reactor successfully passed safety tests using uranium fuel pebbles, highlighting the technology's extraordinary safety profile, lower cost, efficiency, and China's rapid expansion — framing uranium-based Gen 4 nuclear as a compelling and validated energy technology.",
+    "quote": "These Gen 4 reactors are smaller, they're more modular, they're much, much safer, they're more efficient, they have much less waste... China opened up commercial operations at this reactor in December of 2023. So it's running, it's producing power, it's on the grid. And they're expanding like crazy.",
+    "quoteStartMs": 5656721,
+    "topics": [
+      "nuclear energy",
+      "Gen 4 reactors",
+      "pebble bed reactor",
+      "China",
+      "energy competitiveness",
+      "safety"
+    ],
+    "attributionConfidence": "high"
   }
 ]

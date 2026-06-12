@@ -125,8 +125,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Chamath argues Meta's massive compute infrastructure gives it a structural advantage in AI, enabling highly performant models, and that Meta — alongside Google — will strategically push AI to be a capital-intensive compute problem where they can dominate due to their fortress balance sheets.",
-    "quote": "If you're not OpenAI and Anthropic, they'll want to make this a capital problem because then they can win it... Meta's models today, the one thing that people say is it's incredibly performant... which speaks to Meta's huge advantage.",
-    "quoteStartMs": 3204152,
+    "quote": "Meta's models today, what people's general reviews are, it's okay, but the one thing that people say is it's incredibly performant. The model quality is okay, but the performance is great, which speaks to Meta's huge advantage. They have a ",
+    "quoteStartMs": 3189371,
     "topics": [
       "AI compute",
       "competitive moat",

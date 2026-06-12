@@ -121,6 +121,8 @@ export interface Thesis {
    * views still drive badges, the bear book, and discussion.
    */
   positional?: boolean;
+  /** Identified name when host === "Guest" (e.g. "Brad Gerstner"). */
+  guestName?: string;
   /** True for hand-authored placeholder data shown before the real pipeline runs. */
   isSample?: boolean;
 }

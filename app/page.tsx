@@ -11,6 +11,7 @@ import { HostStack } from "@/app/components/host";
 import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { Logo } from "@/app/components/Logo";
 import { Reveal } from "@/app/components/Reveal";
+import { isMacroAsset } from "@/lib/assets";
 import type { Holding, IndexFund } from "@/lib/types";
 
 const d = (ms: number) => ({ "--d": `${ms}ms` }) as CSSProperties;
@@ -21,7 +22,8 @@ export default function Home() {
   const fund = snapshot.indexFund ?? null;
   const guesties = snapshot.guestiesFund ?? null;
   const leaderboard = snapshot.leaderboard ?? [];
-  const publicHoldings = holdings.filter((h) => h.ticker);
+  const publicHoldings = holdings.filter((h) => h.ticker && !isMacroAsset(h.ticker));
+  const macroHoldings = holdings.filter((h) => isMacroAsset(h.ticker));
   const privateHoldings = holdings.filter((h) => !h.ticker);
   const totalTheses = holdings.reduce((n, h) => n + h.mentionCount, 0);
 
@@ -42,6 +44,16 @@ export default function Home() {
       <Reveal>
         <HoldingsTable holdings={publicHoldings} />
       </Reveal>
+
+      {macroHoldings.length > 0 && (
+        <Reveal>
+          <HoldingsTable
+            holdings={macroHoldings}
+            title="Commodity & macro calls"
+            subtitle="priced via ETF proxies · never part of the index or funds"
+          />
+        </Reveal>
+      )}
 
       <PrivateSection holdings={privateHoldings} />
 

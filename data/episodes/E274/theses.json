@@ -20,7 +20,8 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E274-spacex-Chamath-1",
@@ -34,7 +35,7 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Chamath argues SpaceX is underwritable at a $2T valuation based on Starlink's scalable internet infrastructure, rapidly growing AI/compute revenue (now $15B/year from Anthropic alone), and Elon's unique ability to compound capital moats into technology and execution moats — with a Tesla merger making it even cheaper over time.",
-    "quote": "I'm buying probably the most important internet infrastructure project that's happened since the internet itself... terrestrial data centers alone are $100 or $200 billion of revenue by 2030, 2032. Just— and that means just building it. So already you're buying it at 20 times revenue just for that business.",
+    "quote": "I'm buying probably the most important internet infrastructure project that's happened since the internet itself... terrestrial data centers alone are $100 or $200 billion of revenue by 2030, 2032. Just— and that means just building it. So ",
     "quoteStartMs": 3623217,
     "topics": [
       "valuation",
@@ -66,7 +67,8 @@
       "orbital compute"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E274-spacex-Friedberg-3",
@@ -80,8 +82,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Friedberg is bullish on the strategic value of SpaceX's space-based communication and compute infrastructure as a censorship-resistant, government-independent backbone for civilization — providing a unique long-term moat beyond financial metrics.",
-    "quote": "if you have a communication network that isn't restricted and controlled by a government on Earth, it's almost like a backup... I think having like a space-based communication network, space-based data centers, and space-based communication back down to Earth wireless, I think is generally a good thing.",
-    "quoteStartMs": 3412831,
+    "quote": "I don't own any SpaceX shares, and I'm not trying to sell the book of SpaceX, but I think that there's like an important aspect of, can you create a system that's not under the control of governments as a way to ensure humanity's progress",
+    "quoteStartMs": 3425340,
     "topics": [
       "strategic moat",
       "orbital compute",
@@ -111,7 +113,8 @@
       "earnings"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E274-nvda-Chamath-5",
@@ -156,7 +159,8 @@
       "AI infrastructure"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E274-xai-Guest-7",
@@ -179,6 +183,56 @@
       "coding AI"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
+  },
+  {
+    "id": "E274-ung-Guest-a0",
+    "episodeId": "E274",
+    "episodeNumber": 274,
+    "episodeDate": "2026-05-22T22:46:00.000Z",
+    "company": "Natural Gas",
+    "ticker": "UNG",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Guest argues that US natural gas (NG1) is down this year while LNG prices for the rest of the world are up 100-200%, giving America a relative cost advantage in electricity/manufacturing inputs. Strait of Hormuz closure is relatively good for America's natural gas competitiveness.",
+    "quote": "what we make electricity with in America overwhelmingly is natural gas. And you can look it up, NG1. It is down this year. The input cost for electricity in the rest of the world... LNG is a very important one, and it's up 100%, 200%.",
+    "quoteStartMs": 5446934,
+    "topics": [
+      "Strait of Hormuz",
+      "energy costs",
+      "manufacturing competitiveness",
+      "LNG",
+      "Trump policy"
+    ],
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
+  },
+  {
+    "id": "E274-uso-Guest-a1",
+    "episodeId": "E274",
+    "episodeNumber": 274,
+    "episodeDate": "2026-05-22T22:46:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "mixed",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Guest notes the Strait of Hormuz closure is bad for global oil supply/consumers (especially Europe, Asia, Japan, China) but relatively good for America, implying a divergent impact on oil prices globally vs. domestically.",
+    "quote": "the Strait of Hormuz is absolutely bad for everyone, but relatively good for America and relatively good for Trump's policy goals... Every day the Strait of Hormuz is closed is relatively good for America. It's terrible for Europe. It is terrible for Asia.",
+    "quoteStartMs": 5467678,
+    "topics": [
+      "Strait of Hormuz",
+      "geopolitics",
+      "oil supply",
+      "energy security"
+    ],
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   }
 ]

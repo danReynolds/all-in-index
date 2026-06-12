@@ -80,8 +80,8 @@
     "stance": "mixed",
     "conviction": "medium",
     "summary": "Chamath argues Apple can sustain its cash-generation and buyback model for another decade without the GLP-1 competitive threat Starbucks faces, but flags deteriorating software quality (iOS 18, Photos app) as a sign of complacency that could eventually erode the premium the brand commands.",
-    "quote": "Apple can still be at the point... let me just maximize free cash flow generation... allocate that back to shareholders via buybacks... there could be another decade or so where Apple can continue to run this play.",
-    "quoteStartMs": 5414319,
+    "quote": "Apple has not had the competitive pressure that Starbucks has... Apple can still be at the point that you described earlier, which is let me just maximize free cash flow generation, which is what they do. And then let me allocate that back ",
+    "quoteStartMs": 5398929,
     "topics": [
       "capital allocation",
       "product quality",
@@ -90,5 +90,97 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E201-gld-Friedberg-a0",
+    "episodeId": "E201",
+    "episodeNumber": 201,
+    "episodeDate": "2024-10-25T22:51:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "high",
+    "positional": true,
+    "summary": "Friedberg states he is long gold as part of an inflation hedge basket, citing global leverage, debt monetization risk, China selling treasuries and buying gold, and a global flight to safety.",
+    "quote": "I'm long gold. I'm long Bitcoin. I think commodities are so ridiculously under-owned. So I'm long commodities... it's going to be gold, it's going to be Bitcoin.",
+    "quoteStartMs": 856000,
+    "topics": [
+      "inflation hedge",
+      "global debt",
+      "dollar debasement",
+      "China selling treasuries",
+      "flight to safety"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E201-gld-Chamath-a1",
+    "episodeId": "E201",
+    "episodeNumber": 201,
+    "episodeDate": "2024-10-25T22:51:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "mixed",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Chamath expects gold to go up more in the short-to-medium term as a Trump win drives inflation concerns, but views gold as the 'last vestiges' of a rational hedge being replaced by Bitcoin long-term.",
+    "quote": "Gold's going to go up more, probably... I think you're seeing the last vestiges of people using gold as a rational economic insurance policy, but I think the future is specifically Bitcoin on that dimension.",
+    "quoteStartMs": 789319,
+    "topics": [
+      "Trump trade",
+      "inflation hedge",
+      "gold vs Bitcoin",
+      "macro repositioning"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E201-gld-Sacks-a2",
+    "episodeId": "E201",
+    "episodeNumber": 201,
+    "episodeDate": "2024-10-25T22:51:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Sacks implicitly supports the gold bull case by endorsing Paul Tudor Jones's 'all roads lead to inflation' thesis, under which gold is a beneficiary, though he makes no explicit directional claim of his own.",
+    "quote": "the key line that Paul Tudor Jones said was all roads lead to inflation... the market is afraid that inflation is not whipped and is going to resurface.",
+    "quoteStartMs": 882000,
+    "topics": [
+      "inflation",
+      "Fed policy",
+      "Paul Tudor Jones",
+      "macro"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E201-uso-Friedberg-a3",
+    "episodeId": "E201",
+    "episodeNumber": 201,
+    "episodeDate": "2024-10-25T22:51:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": true,
+    "summary": "Friedberg says commodities are 'ridiculously under-owned' and states he is long commodities as an inflation hedge, which encompasses oil as part of that broad basket.",
+    "quote": "I think commodities are so ridiculously under-owned. So I'm long commodities... I probably have some basket of gold, Bitcoin, commodities, and NASDAQ.",
+    "quoteStartMs": 856000,
+    "topics": [
+      "commodities under-owned",
+      "inflation hedge",
+      "portfolio positioning"
+    ],
+    "attributionConfidence": "high"
   }
 ]

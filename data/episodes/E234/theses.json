@@ -11,8 +11,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Chamath sees Figma as a phenomenal business on current metrics but is cautious about years 3-5 given the unknown of how much foundational AI models will absorb into what they do, suggesting a long Figma / short Adobe spread as the safer trade.",
-    "quote": "if I could get like $50 or $100 million of Figma, I would probably be long it and I would short an equivalent Quantum of Adobe, and I would just book the spread. And I think you make a ton of money that way.",
-    "quoteStartMs": 4589321,
+    "quote": "if I could get like $50 or $100 million of Figma, I would probably be long it",
+    "quoteStartMs": 4594446,
     "topics": [
       "IPO",
       "AI disruption",
@@ -57,8 +57,8 @@
     "stance": "bear",
     "conviction": "medium",
     "summary": "Chamath argues Adobe will face a faster and steeper valuation re-rating than Figma in an AI-disrupted world, making it the better short leg in a Figma long / Adobe short spread trade.",
-    "quote": "The person who's going to take a retrade on valuation faster than Figma will be Adobe. And so you'll be hedged and you'll probably make money that way.",
-    "quoteStartMs": 4611438,
+    "quote": "I would short an equivalent Quantum of Adobe, and I would just book the spread. And I think you make a ton of money that way.",
+    "quoteStartMs": 4599301,
     "topics": [
       "valuation",
       "AI disruption",
@@ -89,5 +89,28 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E234-gld-Chamath-a0",
+    "episodeId": "E234",
+    "episodeNumber": 234,
+    "episodeDate": "2025-07-04T14:07:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Chamath argues that dollar devaluation is a long-running structural decay, but hard assets (including gold) denominated in dollars will see their values rise enough to more than offset that drag, keeping a sustained bid under dollar-denominated hard assets.",
+    "quote": "can the drag be overcome by the increase in asset values of the hard assets that are dollar-denominated? And the answer is Yes, and meaningfully so.",
+    "quoteStartMs": 3022231,
+    "topics": [
+      "dollar devaluation",
+      "hard assets",
+      "store of value",
+      "macro"
+    ],
+    "attributionConfidence": "high"
   }
 ]

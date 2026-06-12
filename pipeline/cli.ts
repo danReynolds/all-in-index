@@ -150,6 +150,22 @@ async function main() {
       const { auditStance } = await import("./audit-stance");
       return auditStance();
     }
+    case "upgrade-quotes": {
+      const { upgradeQuotes } = await import("./upgrade-quotes");
+      return upgradeQuotes();
+    }
+    case "extract-assets": {
+      const { extractAssets } = await import("./extract-assets");
+      return extractAssets();
+    }
+    case "name-guests": {
+      const { nameGuests } = await import("./name-guests");
+      return nameGuests();
+    }
+    case "extract-predictions": {
+      const { extractPredictions } = await import("./extract-predictions");
+      return extractPredictions();
+    }
     case "sync": {
       const { sync } = await import("./sync");
       const limitIdx = rest.indexOf("--limit");

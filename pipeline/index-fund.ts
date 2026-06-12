@@ -1,4 +1,5 @@
 import { fetchDailyHistory } from "./market";
+import { isMacroAsset } from "../lib/assets";
 import {
   currentStanceForHosts,
   stancePath,
@@ -112,6 +113,7 @@ export async function buildBearBook(
       h.isPublic &&
       !isCrypto(h.ticker) &&
       !EXCLUDED_ETFS.has(h.ticker.toUpperCase()) &&
+      !isMacroAsset(h.ticker) &&
       currentStanceForHosts(h.theses, hostList(hostSet)) === "bear",
   );
   const out: BearCall[] = [];
@@ -157,7 +159,7 @@ export async function buildWindowFund(
 ): Promise<IndexFund | null> {
   const candidates: Array<{ h: Holding; windows: BullWindow[] }> = [];
   for (const h of holdings) {
-    if (!h.ticker || !h.isPublic || isCrypto(h.ticker) || EXCLUDED_ETFS.has(h.ticker.toUpperCase())) continue;
+    if (!h.ticker || !h.isPublic || isCrypto(h.ticker) || EXCLUDED_ETFS.has(h.ticker.toUpperCase()) || isMacroAsset(h.ticker)) continue;
     const windows = hostBullWindows(h.theses, host);
     if (windows.length) candidates.push({ h, windows });
   }
@@ -303,6 +305,7 @@ export async function buildIndexFund(
       h.isPublic &&
       !isCrypto(h.ticker) &&
       !EXCLUDED_ETFS.has(h.ticker.toUpperCase()) &&
+      !isMacroAsset(h.ticker) &&
       isCurrentNetBull(h.theses, hostSet),
   );
   const excludedPrivateHoldings = holdings.filter(

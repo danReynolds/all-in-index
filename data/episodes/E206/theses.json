@@ -43,7 +43,8 @@
       "retail investors"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Joe Lonsdale"
   },
   {
     "id": "E206-xai-Guest-2",
@@ -66,7 +67,8 @@
       "xAI"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E206-openai-Guest-3",
@@ -112,7 +114,8 @@
       "Blackwell"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E206-meta-Guest-5",
@@ -134,7 +137,8 @@
       "competitive position"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E206-googl-Guest-6",
@@ -156,7 +160,8 @@
       "competitive position"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E206-coin-Guest-7",
@@ -179,7 +184,8 @@
       "deregulation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Joe Lonsdale"
   },
   {
     "id": "E206-addepar-Guest-8",
@@ -200,6 +206,29 @@
       "AUM milestone"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
+  },
+  {
+    "id": "E206-gld-Friedberg-a0",
+    "episodeId": "E206",
+    "episodeNumber": 206,
+    "episodeDate": "2024-12-07T00:55:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Friedberg suggests Bitcoin will displace gold as a store of value, implying a bearish outlook on gold's role and price trajectory relative to crypto.",
+    "quote": "It should be kind of store of value and alternative. It's just going to take over gold.",
+    "quoteStartMs": 1781000,
+    "topics": [
+      "store of value",
+      "Bitcoin vs Gold",
+      "crypto"
+    ],
+    "attributionConfidence": "high"
   }
 ]

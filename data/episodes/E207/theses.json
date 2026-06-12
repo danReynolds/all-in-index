@@ -43,7 +43,8 @@
       "product quality"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Keith Rabois"
   },
   {
     "id": "E207-aapl-Chamath-2",
@@ -88,7 +89,8 @@
       "private vs public"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Keith Rabois"
   },
   {
     "id": "E207-mstr-Friedberg-4",
@@ -133,6 +135,30 @@
       "antitrust"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Keith Rabois"
+  },
+  {
+    "id": "E207-lit-Chamath-a0",
+    "episodeId": "E207",
+    "episodeNumber": 207,
+    "episodeDate": "2024-12-13T16:58:00.000Z",
+    "company": "Lithium",
+    "ticker": "LIT",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Chamath highlights the US has one of the largest lithium deposits in the world and frames the lithium supply chain as a key strategic opportunity, implying upside if domestic production is unlocked.",
+    "quote": "We have one of the largest lithium deposits in the world. The lithium supply chain is another really good one that's emblematic of all of this.",
+    "quoteStartMs": 4824000,
+    "topics": [
+      "domestic mining",
+      "supply chain",
+      "US competitiveness",
+      "regulations"
+    ],
+    "attributionConfidence": "high"
   }
 ]

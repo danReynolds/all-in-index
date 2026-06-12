@@ -11,8 +11,8 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Chamath argues MP Materials and similar US rare-earth producers are strategically essential and that government-backed take-or-pay agreements and strategic reserves are the necessary structure to protect them from Chinese price dumping, making the investment viable.",
-    "quote": "MP has a deal with General Motors, one of my businesses that makes LFP cathode, same deal with GM. You do what's called a take or pay, which means that General Motors steps up and says, great, I will buy X amount of volume from you at Y price.",
-    "quoteStartMs": 1689632,
+    "quote": "So I'm, I'm a big fan of this general market structure. It's the only way that you cannot be theoretical and actually respond to the conditions on the ground.",
+    "quoteStartMs": 1823258,
     "topics": [
       "rare earths",
       "supply chain",
@@ -136,5 +136,51 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E247-lit-Chamath-a0",
+    "episodeId": "E247",
+    "episodeNumber": 247,
+    "episodeDate": "2025-10-17T23:45:00.000Z",
+    "company": "Lithium",
+    "ticker": "LIT",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "positional": false,
+    "summary": "Chamath argues the US must build strategic reserves of critical inputs including lithium, acting as a methodical buyer of record to counteract Chinese price manipulation and mercantilism.",
+    "quote": "Tesla all of a sudden can't go into the spot market. They should be able to come to the strategic reserve and be able to buy lithium... I think that mechanism is the only way we can compete effectively on a day-to-day basis with the Chinese.",
+    "quoteStartMs": 1966469,
+    "topics": [
+      "strategic reserve",
+      "China mercantilism",
+      "price manipulation",
+      "supply chain security"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E247-cper-Chamath-a1",
+    "episodeId": "E247",
+    "episodeNumber": 247,
+    "episodeDate": "2025-10-17T23:45:00.000Z",
+    "company": "Copper",
+    "ticker": "CPER",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Chamath lists copper among the critical commodities (alongside dysprosium and NDPR) that the US strategic reserve should absorb to buffer against Chinese price shocks.",
+    "quote": "The US balance sheet is the only one that can create a strategic reserve around these inputs... We can nominate now things that are critical, dysprosium, copper, NDPR, all of these things that can now absorb the price shocks that China may otherwise be able to affect.",
+    "quoteStartMs": 1788614,
+    "topics": [
+      "strategic reserve",
+      "China mercantilism",
+      "price manipulation",
+      "supply chain security"
+    ],
+    "attributionConfidence": "high"
   }
 ]

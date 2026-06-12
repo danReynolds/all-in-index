@@ -79,8 +79,8 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Chamath is bullish on Google because its enormous balance sheet cash is best deployed subsidizing Gemini at scale—a strategy he views as a near-certain value creator, citing the stock nearly doubling on Gemini momentum—and distribution still strongly favors the company.",
-    "quote": "If you want to make Gemini even more incredible, just pour another billion users into it. And if that costs you $50 billion, it's okay because you'll make a trillion in market cap. It's like a no-brainer.",
-    "quoteStartMs": 1059000,
+    "quote": "just look at the last 3 weeks of Google's stock performance. It basically doubled once we thought that Gemini was incredible. And so if you want to make Gemini even more incredible, just pour another billion users into it. And if that costs",
+    "quoteStartMs": 1051932,
     "topics": [
       "competitive position",
       "AI strategy",
@@ -190,8 +190,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Chamath argues NVIDIA is one of a handful of companies whose enormous cash hoards are best deployed aggressively subsidizing AI products or strategic investments, making it a structural beneficiary regardless of which model provider wins.",
-    "quote": "If you look at the companies that have a need to spend money right now, it's Google, it's Microsoft, it's Meta, it's Nvidia... All of those companies have so much cash.",
-    "quoteStartMs": 994217,
+    "quote": "at the silicon layer where largely that die has been cast. I think that it's going to grow, so we can talk about how there'll be more competition, but it's roughly NVIDIA plus AMD plus Google plus a bunch of inference silicon.",
+    "quoteStartMs": 120467,
     "topics": [
       "AI capex",
       "capital allocation",
@@ -212,8 +212,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Chamath groups Meta among the big-cash companies best positioned to deploy capital to subsidize AI products at scale, giving them a structural advantage to compete with and potentially undercut OpenAI's consumer revenue.",
-    "quote": "The reason why they will do it is because they have such an inordinate amount of cash and that cash is valueless on the balance sheet... So you might as well just rip it in.",
-    "quoteStartMs": 981000,
+    "quote": "distribution still matters a ton. Which favors Google. It favors Meta, although Meta's quite behind, and now it will still favor OpenAI because they have 800 million monthly actives.",
+    "quoteStartMs": 179588,
     "topics": [
       "AI strategy",
       "capital allocation",

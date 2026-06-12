@@ -33,8 +33,8 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Sacks argues that AI agents—exemplified by OpenAI's planned $2K–$20K/month agentic offerings—represent a massive leap forward in AI capability driven by exponential improvements in algorithms, chips, and data center scale, making the overall AI investment thesis far from its peak.",
-    "quote": "I don't see the disillusionment. I don't know where this is coming from. I don't even think we're at the peak yet.",
-    "quoteStartMs": 4648000,
+    "quote": "I don't think the impact has come anywhere close to peaking yet. And in fact, I would say the rate of progress is exponential right now on at least 3 key dimensions.",
+    "quoteStartMs": 4709106,
     "topics": [
       "AI agents",
       "AI capex",
@@ -132,7 +132,8 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Ryan Petersen"
   },
   {
     "id": "E226-amzn-Guest-7",
@@ -155,6 +156,7 @@
       "marketplace"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Ryan Petersen"
   }
 ]

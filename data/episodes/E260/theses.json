@@ -178,5 +178,74 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E260-gld-Sacks-a0",
+    "episodeId": "E260",
+    "episodeNumber": 260,
+    "episodeDate": "2026-02-07T04:35:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bear",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Sacks notes that gold and silver prices came down following the Warsh Fed pick, framing this as a reassuring signal for markets worried about currency debasement — implying the pick is bearish for gold.",
+    "quote": "You saw that in financial markets on the heels of this, the price of gold and silver came down. It was reassuring to those who are worried about currency debasement, basically.",
+    "quoteStartMs": 3214464,
+    "topics": [
+      "Fed pick",
+      "Kevin Warsh",
+      "currency debasement",
+      "interest rates"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E260-slv-Sacks-a1",
+    "episodeId": "E260",
+    "episodeNumber": 260,
+    "episodeDate": "2026-02-07T04:35:00.000Z",
+    "company": "Silver",
+    "ticker": "SLV",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bear",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Sacks notes that silver (alongside gold) prices came down following the Warsh Fed pick, framing it as a reassuring market reaction against currency debasement fears.",
+    "quote": "You saw that in financial markets on the heels of this, the price of gold and silver came down. It was reassuring to those who are worried about currency debasement, basically.",
+    "quoteStartMs": 3214464,
+    "topics": [
+      "Fed pick",
+      "Kevin Warsh",
+      "currency debasement",
+      "interest rates"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E260-gld-Friedberg-a2",
+    "episodeId": "E260",
+    "episodeNumber": 260,
+    "episodeDate": "2026-02-07T04:35:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Friedberg half-jokingly says that as 'emperor' he would return to the gold standard to stop money printing, implying a directional preference for gold as a monetary anchor.",
+    "quote": "My day as emperor would probably resolve us back to being on the gold standard so we wouldn't be printing money.",
+    "quoteStartMs": 3325000,
+    "topics": [
+      "gold standard",
+      "Fed independence",
+      "monetary policy",
+      "money printing"
+    ],
+    "attributionConfidence": "high"
   }
 ]

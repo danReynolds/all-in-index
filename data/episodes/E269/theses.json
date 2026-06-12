@@ -11,8 +11,8 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Sacks argues Anthropic's ~10x annual revenue growth rate (vs OpenAI's 3-4x), driven by enterprise/coding focus and metered token billing, makes it the likely winner of the frontier AI race, though physical compute limits could cap its trajectory.",
-    "quote": "The OpenAI growth rate's been around 3 to 4x a year. The Anthropic growth rate has been around 10x a year. So they went from, let's call it, $1 to $10 billion of ARR last year, and by the end of Q1 this year, they were already at $30 billion.",
-    "quoteStartMs": 1377345,
+    "quote": "It's because Anthropic was very focused on enterprise, specifically coding... if it's taking Anthropic, let's say, 1 year to 10x and it's taking OpenAI 2 years to achieve a 10x, then it's obvious which one's gonna win.",
+    "quoteStartMs": 1433488,
     "topics": [
       "AI growth",
       "enterprise",
@@ -78,8 +78,8 @@
     "stance": "mixed",
     "conviction": "medium",
     "summary": "Sacks believes OpenAI has been legitimately unfocused (consumer priority, random acquisitions) and risks falling permanently behind Anthropic given its slower growth rate, but argues pivoting hard to enterprise/coding is the correct path to remain competitive.",
-    "quote": "If it's taking Anthropic, let's say, 1 year to 10x and it's taking OpenAI 2 years to achieve a 10x, then it's obvious which one's gonna win... over the next 1 or 2 years could be insurmountable.",
-    "quoteStartMs": 1422454,
+    "quote": "where I would agree with the criticism of OpenAI is maybe they should have been more focused, but they need to be more focused specifically to pursue coding and enterprise. And if they don't catch up soon, to Travis's point, then you could ",
+    "quoteStartMs": 1479895,
     "topics": [
       "AI competition",
       "valuation",
@@ -130,7 +130,8 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Travis Kalanick"
   },
   {
     "id": "E269-be-Chamath-6",
@@ -166,8 +167,8 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Chamath says it is crucial that the SpaceX IPO get done as soon as possible, implying he holds a position he wants to realize and views the current elevated market as the right window to exit.",
-    "quote": "I think it is crucial that this SpaceX IPO get done ASAP. And then I think it's even more crucial that one of Anthropic and OpenAI front run the other one and get out first.",
-    "quoteStartMs": 4640000,
+    "quote": "For me personally, I'm generally more risk-off right now, and more importantly, I'm waiting for these IPOs so that I can, to be very honest with you, delever and get some chips off the table. I think that it is crucial that this SpaceX IPO ",
+    "quoteStartMs": 4628873,
     "topics": [
       "IPO",
       "valuation",

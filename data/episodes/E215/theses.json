@@ -20,7 +20,8 @@
       "OpenAI structure"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Naval Ravikant"
   },
   {
     "id": "E215-openai-Jason-1",
@@ -34,8 +35,8 @@
     "stance": "bear",
     "conviction": "medium",
     "summary": "Jason predicts OpenAI could lose the New York Times copyright lawsuit badly, potentially facing injunctions and being forced into a Spotify-like licensing model that pays a large share of revenue to content holders.",
-    "quote": "I think this is a non-zero chance, like it might be 5 or 10%, that OpenAI is going to lose the New York Times lawsuit and they're going to lose it hard and there could be injunctions.",
-    "quoteStartMs": 5113000,
+    "quote": "I that there is a non-zero chance, like it might be 5 or 10%, that OpenAI is going to lose the New York Times lawsuit and they're going to lose it hard and there could be injunctions.",
+    "quoteStartMs": 5103606,
     "topics": [
       "copyright",
       "legal risk",
@@ -66,5 +67,51 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E215-uso-Guest-a0",
+    "episodeId": "E215",
+    "episodeNumber": 215,
+    "episodeDate": "2025-02-15T01:48:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Guest (Naval) expresses confidence that the US has abundant oil and natural gas resources via fracking that should enable full energy independence.",
+    "quote": "because of between all the oil resources and the natural gas and fracking combined with all the work we've done in nuclear fission and small reactors, we should absolutely be energy independent.",
+    "quoteStartMs": 4824000,
+    "topics": [
+      "energy independence",
+      "fracking",
+      "US resources"
+    ],
+    "attributionConfidence": "high",
+    "guestName": "Naval Ravikant"
+  },
+  {
+    "id": "E215-ung-Guest-a1",
+    "episodeId": "E215",
+    "episodeNumber": 215,
+    "episodeDate": "2025-02-15T01:48:00.000Z",
+    "company": "Natural Gas",
+    "ticker": "UNG",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Guest (Naval) cites natural gas and fracking alongside oil as key US resources that should deliver full energy independence.",
+    "quote": "because of between all the oil resources and the natural gas and fracking combined with all the work we've done in nuclear fission and small reactors, we should absolutely be energy independent.",
+    "quoteStartMs": 4824000,
+    "topics": [
+      "energy independence",
+      "fracking",
+      "US resources"
+    ],
+    "attributionConfidence": "high",
+    "guestName": "Naval Ravikant"
   }
 ]

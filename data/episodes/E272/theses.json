@@ -66,7 +66,8 @@
       "growth trajectory"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-spacex-Chamath-3",
@@ -112,7 +113,8 @@
       "AI revenue"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-spacex-Sacks-5",
@@ -126,8 +128,8 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Sacks argues the Anthropic compute deal fixes xAI's biggest financial problem — massive CapEx with no offsetting revenue — allowing Elon to compete at the AI frontier without the balance sheet pressure of unpaid infrastructure commitments.",
-    "quote": "This deal fixes that problem. Elon's now able to have a frontier model company, but he's able to now not have these massive unpaid-for CapEx commitments, right? Because he's able to kind of lease that capacity.",
-    "quoteStartMs": 795602,
+    "quote": "SpaceX has a profitable, I think very profitable space and telecommunication Starlink business, the satellite business, but the xAI business had huge losses... So this deal fixes that problem. Elon's now able to have a frontier model compan",
+    "quoteStartMs": 757507,
     "topics": [
       "AI capex",
       "balance sheet",
@@ -149,8 +151,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Sacks notes OpenAI's growth rate is reaccelerating with GPT-5.5/Codex and believes it will take meaningful share in coding — the dominant AI revenue category — though Anthropic currently leads the race.",
-    "quote": "Their rate of growth appears to be accelerating now. Because of, uh, 5.5. So look, there's reason to believe that OpenAI can take some share here.",
-    "quoteStartMs": 1180805,
+    "quote": "It does look like OpenAI has already made the pivot. We hear very good things about Codex now based on GPT-5.5. 5.5 is based on a new base model called Spud. I think they're very optimistic about continuing improvements. Their rate of growt",
+    "quoteStartMs": 1168488,
     "topics": [
       "AI revenue",
       "competition",
@@ -224,7 +226,8 @@
       "earnings"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-000660.ks-Guest-10",
@@ -247,7 +250,8 @@
       "compute"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-mu-Guest-11",
@@ -269,7 +273,8 @@
       "AI capex"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-googl-Guest-12",
@@ -292,7 +297,8 @@
       "growth trajectory"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-tsla-Jason-13",

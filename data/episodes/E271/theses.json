@@ -79,7 +79,7 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Chamath views Anthropic as a multi-trillion-dollar company whose near-term misses are purely supply-constrained, and believes it should strike a compute deal with Elon/Grok immediately to unlock its demand potential.",
-    "quote": "I think Anthropic is a multi-trillion-dollar company... he and Dario should do a deal tomorrow.",
+    "quote": "I think Anthropic is a multi-trillion-dollar company. I think the thing that's happening right now is a complete misunderstanding of what's actually happening inside of the world of AI.",
     "quoteStartMs": 515128,
     "topics": [
       "valuation",
@@ -170,8 +170,8 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Friedberg is bullish on Lilly's retatrutide pipeline as a transformative premium product — with Phase 3 data showing superior fat loss, muscle preservation, and systemic health benefits — that positions Lilly to command high pricing as the clear upgrade from tirzepatide.",
-    "quote": "If I'm Lilly and I'm sitting there and I'm looking at this data coming out, I'm like, my God, people will pay for this. And that starts to become sort of like the upgrade to the BMW, or the Model S Plaid, if you will.",
-    "quoteStartMs": 3841000,
+    "quote": "The average user in this phase 3 trial saw their weight decline from 214 pounds. They lost 37 pounds. That's compared to 6 pounds on placebo. In 40 weeks.",
+    "quoteStartMs": 3615695,
     "topics": [
       "drug pipeline",
       "pricing power",
@@ -239,8 +239,8 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Sacks argues that the hyperscalers' blowout cloud earnings and accelerating CapEx validate the bull thesis for AI broadly, with voracious enterprise demand for compute ensuring no 'dark GPU' scenario analogous to the dot-com dark fiber bust.",
-    "quote": "The bull thesis for AI just got validated in a single afternoon... There's no dark GPUs today... what's driving the CapEx now is the voracious demand for compute, for tokens, and the demand is now pulling forward this additional investment in infrastructure.",
-    "quoteStartMs": 2840178,
+    "quote": "There's no dark GPUs today, as Brad Gerstner likes to say. So what's driving the CapEx now is the voracious demand for compute, for tokens, and the demand is now pulling forward this additional investment in infrastructure. So I think what'",
+    "quoteStartMs": 2824892,
     "topics": [
       "AI infrastructure",
       "cloud demand",

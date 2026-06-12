@@ -79,8 +79,8 @@
     "stance": "bear",
     "conviction": "high",
     "summary": "Chamath argues the Google antitrust ruling is the most important tech event since the Microsoft DOJ case and expects a meaningful consent decree that will significantly constrain Google for years—far broader than the narrow TAC/search issue—creating openings for AI-powered search competitors.",
-    "quote": "I think that this Google thing is the most important thing that's happened in tech since the Microsoft DOJ decision in 2000... if Google gets away with just having to do something around TAC and search, yeah, they have dodged an enormous bullet.",
-    "quoteStartMs": 3506000,
+    "quote": "I think that this Google thing is the most important thing that's happened in tech since the Microsoft DOJ decision in 2000... if Google gets away with just having to do something around TAC and search, yeah, they have dodged an enormous bu",
+    "quoteStartMs": 3506470,
     "topics": [
       "antitrust",
       "regulation",
@@ -156,5 +156,26 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E191-gld-Unknown-a0",
+    "episodeId": "E191",
+    "episodeNumber": 191,
+    "episodeDate": "2024-08-09T20:20:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Unknown",
+    "stance": "neutral",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Gold and silver are mentioned only as joke metaphors for Olympic medals awarded to Chamath and Sacks — no price or investment direction expressed.",
+    "quote": "he won silver for the least Olympic body. Well done, Saks.",
+    "quoteStartMs": 156056,
+    "topics": [
+      "humor",
+      "incidental mention"
+    ],
+    "attributionConfidence": "low"
   }
 ]

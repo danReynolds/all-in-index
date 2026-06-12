@@ -90,5 +90,27 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E180-gld-Jason-a0",
+    "episodeId": "E180",
+    "episodeNumber": 180,
+    "episodeDate": "2024-05-24T20:15:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "neutral",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Jason uses 'gold mine' purely as a metaphor to describe Nvidia's unexpected windfall from AI — no directional price or investment view on gold itself.",
+    "quote": "This is if somebody literally was mining coal and then found a diamond, a gold mine underneath it. It's bonkers what's happened here.",
+    "quoteStartMs": 1566323,
+    "topics": [
+      "metaphor",
+      "Nvidia",
+      "AI revenue"
+    ],
+    "attributionConfidence": "high"
   }
 ]

@@ -1,1 +1,27 @@
-[]
+[
+  {
+    "id": "E184-uso-Guest-a0",
+    "episodeId": "E184",
+    "episodeNumber": 184,
+    "episodeDate": "2024-06-20T20:23:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "positional": false,
+    "summary": "Trump argues that if Democrats win, oil production would be shut down and prices would skyrocket; he frames high oil production as essential to keeping prices down, and warns oil would 'go through the roof' under a Democratic administration. He also notes high oil prices (near $100/barrel) helped fund Russia's war in Ukraine.",
+    "quote": "If this election were won by them, I can tell you right now, you would be— we would see oil go through the roof because they would really close it up... when it hit almost $100 a barrel, he said— he's one of the few to make money during a war because the oil has gone— and it stayed very high. It's extremely high right now and it's going up.",
+    "quoteStartMs": 787480,
+    "topics": [
+      "oil prices",
+      "energy policy",
+      "inflation",
+      "Ukraine war funding",
+      "domestic production"
+    ],
+    "attributionConfidence": "high",
+    "guestName": "Donald Trump"
+  }
+]

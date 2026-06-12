@@ -67,5 +67,29 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E231-uso-Chamath-a0",
+    "episodeId": "E231",
+    "episodeNumber": 231,
+    "episodeDate": "2025-06-13T19:55:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Chamath warns that a war with Iran could cause oil to double, reaching $100–$112/barrel, which would devastate the global economy and inflation — implying a strong upside price risk to oil in a conflict scenario.",
+    "quote": "you could see oil double, double. What happens to the economy of the world, of world GDP, of everything, of inflation if you have oil at $100 a barrel, $112 a barrel? It's not good.",
+    "quoteStartMs": 5723144,
+    "topics": [
+      "Iran conflict",
+      "geopolitical risk",
+      "energy prices",
+      "inflation",
+      "Middle East escalation"
+    ],
+    "attributionConfidence": "high"
   }
 ]

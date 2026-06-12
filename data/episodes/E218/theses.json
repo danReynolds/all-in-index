@@ -175,6 +175,30 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Joe Lonsdale"
+  },
+  {
+    "id": "E218-gld-Sacks-a0",
+    "episodeId": "E218",
+    "episodeNumber": 218,
+    "episodeDate": "2025-03-08T00:58:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Sacks frames Bitcoin as 'digital gold' and advocates for a strategic reserve modeled on Fort Knox, with a long-term never-sell preservation goal — implicitly validating gold's store-of-value analogy as the benchmark for Bitcoin's reserve status.",
+    "quote": "The reserve is just Bitcoin. The goal is long-term preservation. Think of it as like a digital Fort Knox for digital gold. We want to put the digital gold in there. We want to keep it secure. We never want to sell it.",
+    "quoteStartMs": 6154000,
+    "topics": [
+      "Bitcoin reserve",
+      "digital gold",
+      "strategic reserve",
+      "store of value"
+    ],
+    "attributionConfidence": "high"
   }
 ]

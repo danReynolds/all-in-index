@@ -57,7 +57,7 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Friedberg names Google as the best net market-value creation bet in AI, citing its own cloud infrastructure (eliminating margin passed to third-party clouds) and its ability to rapidly integrate AI into G Suite/Workspace to sweep the market from Anthropic.",
-    "quote": "I think Google is the bet. I think Google is the market value creator bet... I think it's only gonna take 90 days for Google to flip on a virtual version of Cowork. And once Google has this integrated with G Suite, I think Google sweeps the market.",
+    "quote": "I think Google is the bet. I think Google is the market value creator bet, but I think Anthropic is the multiple bet.",
     "quoteStartMs": 3824913,
     "topics": [
       "AI competition",
@@ -89,7 +89,8 @@
       "industry shift"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Emil Michael"
   },
   {
     "id": "E263-pltr-Guest-4",
@@ -112,6 +113,80 @@
       "new primes"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Emil Michael"
+  },
+  {
+    "id": "E263-uso-Jason-a0",
+    "episodeId": "E263",
+    "episodeNumber": 263,
+    "episodeDate": "2026-03-06T09:23:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Jason frames the closure of the Strait of Hormuz as a major supply shock, noting 3.3 million barrels of daily production would be lost and that the economic effects over the next 4 weeks could be 'intense and acute', implying strong upward price pressure on oil.",
+    "quote": "Unless the strait opens, 3.3 million barrels of daily production would be lost early next week... Freeberg, your thoughts on the economic second-order effects that we're starting to experience here and over the next 4 weeks could be, um, you know, intense and acute.",
+    "quoteStartMs": 2268291,
+    "topics": [
+      "Strait of Hormuz",
+      "supply disruption",
+      "Iran conflict",
+      "energy prices",
+      "inflation"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E263-uso-Friedberg-a1",
+    "episodeId": "E263",
+    "episodeNumber": 263,
+    "episodeDate": "2026-03-06T09:23:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Friedberg explains that Strait of Hormuz disruption and collapse of war-risk insurance creates a massive risk to energy prices globally, driving inflation and threatening US economic security — implying bullish near-term oil price pressure from the supply shock.",
+    "quote": "that's obviously a massive risk to energy prices globally, which drives inflation and puts US economic security at risk.",
+    "quoteStartMs": 2393482,
+    "topics": [
+      "Strait of Hormuz",
+      "maritime insurance",
+      "energy prices",
+      "supply disruption",
+      "inflation"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E263-lit-Guest-a2",
+    "episodeId": "E263",
+    "episodeNumber": 263,
+    "episodeDate": "2026-03-06T09:23:00.000Z",
+    "company": "Lithium",
+    "ticker": "LIT",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Emil Michael (Guest) highlights that lithium supply is entirely outsourced to China and frames domestic sourcing of critical minerals including lithium as an urgent national security priority, implying strong demand and strategic value for the commodity.",
+    "quote": "batteries are totally outsourced both technologically and from lithium to China... I think we'll get critical minerals done before the rest of the term where we have access to what we need to from us or allied countries.",
+    "quoteStartMs": 4350254,
+    "topics": [
+      "critical minerals",
+      "supply chain",
+      "China dependency",
+      "defense industrial base",
+      "domestic production"
+    ],
+    "attributionConfidence": "high",
+    "guestName": "Emil Michael"
   }
 ]

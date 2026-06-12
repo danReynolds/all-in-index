@@ -125,8 +125,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Sacks argues OpenAI's rapid revenue ramp (from ~$5B to $25B to a projected $100B run rate) demonstrates real economic substance behind its GPU purchases and financing arrangements, validating the investment thesis.",
-    "quote": "OpenAI's revenue ramp rate is, it's something like $5 billion to $25 billion to $100 billion... There's no dark GPUs in the world today. The tokens are being consumed.",
-    "quoteStartMs": 4218465,
+    "quote": "I mean, Brad will have the exact numbers, but I think OpenAI's revenue ramp rate is, it's something like $5 billion to $25 billion to $100 billion. Brad, can you tell us the years on that?",
+    "quoteStartMs": 4214846,
     "topics": [
       "revenue growth",
       "AI demand",
@@ -179,5 +179,122 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E246-gld-Jason-a0",
+    "episodeId": "E246",
+    "episodeNumber": 246,
+    "episodeDate": "2025-10-10T19:21:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Jason highlights gold breaking $4,000 for the first time, up over 50% for the year, outpacing Bitcoin and major indices, framing it as a notable rally and asking guests to explain the drivers.",
+    "quote": "Gold rally is off the charts. Shout out to our friend Vinnie Langham, who told us about this for the last year or two. Geez, it just broke $4,000 for the first time ever this week, up over 50% for the year. Gold's outpacing Bitcoin, which is up 30% itself",
+    "quoteStartMs": 4504370,
+    "topics": [
+      "gold rally",
+      "price milestone",
+      "USD weakness",
+      "safe haven"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E246-slv-Jason-a1",
+    "episodeId": "E246",
+    "episodeNumber": 246,
+    "episodeDate": "2025-10-10T19:21:00.000Z",
+    "company": "Silver",
+    "ticker": "SLV",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "bull",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Jason notes silver is surging even more than gold, citing industrial utilization as a possible additional driver.",
+    "quote": "Silver is surging even more than gold. There might be some utilization reasons for that. Silver gets used in a, a lot of different components, whereas gold very rarely does.",
+    "quoteStartMs": 4528198,
+    "topics": [
+      "silver rally",
+      "industrial demand",
+      "relative performance vs gold"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E246-gld-Chamath-a2",
+    "episodeId": "E246",
+    "episodeNumber": 246,
+    "episodeDate": "2025-10-10T19:21:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Chamath explains gold's rally as driven by net new buyers — particularly Tether Gold stablecoin issuance, central bank rebalancing, and macro funds losing confidence in central bank policy and rotating away from bonds and currencies into gold.",
+    "quote": "Why is gold up? Gold is up because there are many more net new buyers... Tether has been issuing a stablecoin called Tether Gold... central banks are rebalancing... macro funds have essentially decided that central banks aren't to be trusted... so they're long gold.",
+    "quoteStartMs": 4569425,
+    "topics": [
+      "gold rally",
+      "Tether Gold",
+      "central bank demand",
+      "macro funds",
+      "loss of confidence in central banks"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E246-gld-Guest-a3",
+    "episodeId": "E246",
+    "episodeNumber": 246,
+    "episodeDate": "2025-10-10T19:21:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Brad (guest) agrees with Chamath that new demand — via crypto-wrapped gold products like Tether and BTC-style gold exposure — plus concern about global government balance sheets are driving gold higher, calling it a combination of speculation and store-of-value demand. Congratulates those up 50%.",
+    "quote": "You got a total change in the new demand picture for gold... You're now going to allow people to have exposure to the actual underlying gold by buying a crypto asset... hats off to the people who are up 50% this year on gold.",
+    "quoteStartMs": 4654393,
+    "topics": [
+      "gold rally",
+      "new demand",
+      "Tether Gold",
+      "store of value",
+      "US debt"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E246-gld-Sacks-a4",
+    "episodeId": "E246",
+    "episodeNumber": 246,
+    "episodeDate": "2025-10-10T19:21:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Sacks points to China's central bank adding gold reserves for 11 consecutive months and BRICS countries diversifying away from USD/Treasuries toward gold — including potential gold-backed settlement certificates — as structural long-term tailwinds for gold demand.",
+    "quote": "China's central bank has been increasing its gold reserves for 11 consecutive months... China's gold reserves totaled 74 million ounces valued at $283 billion... a lot of countries looked at that and go... they're diversifying away... the BRICS talk about... some sort of gold-backed certificates.",
+    "quoteStartMs": 4714637,
+    "topics": [
+      "gold rally",
+      "China central bank buying",
+      "BRICS de-dollarization",
+      "geopolitics",
+      "USD alternatives"
+    ],
+    "attributionConfidence": "high"
   }
 ]

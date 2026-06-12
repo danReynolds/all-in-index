@@ -32,7 +32,7 @@
     "stance": "mixed",
     "conviction": "medium",
     "summary": "Sacks views the Anthropic copyright ruling favorably for the AI industry—validating the fair use of pre-training—but notes Anthropic faces legitimate piracy liability for unlicensed books, which creates some legal overhang.",
-    "quote": "This judge said that that is not a violation of copyright. I completely agree with that... Anthropic is allegedly in some hot water. And then I think there is some case that's gonna move forward about that.",
+    "quote": "This judge said that that is not a violation of copyright. I completely agree with that. One other point, one other distinction this judge made that I think is very important is the difference between pirating and copyright.",
     "quoteStartMs": 5812633,
     "topics": [
       "AI copyright",
@@ -55,7 +55,7 @@
     "stance": "mixed",
     "conviction": "medium",
     "summary": "Jason argues OpenAI is the primary target for content-licensing litigation given its $10B revenue, but sees a path to competitive advantage by partnering with major publishers and sharing revenue with content creators.",
-    "quote": "ChatGPT is making $10 billion a year according to reports. They should give 30% of their revenue... to the top 1,000 newspapers, publications, podcasts, books, et cetera.",
+    "quote": "ChatGPT is making $10 billion a year according to reports. They should give 30% of their revenue, a small amount, the minority of their revenue, to the top 1,000 newspapers, publications, podcasts, books, et cetera.",
     "quoteStartMs": 6142279,
     "topics": [
       "AI copyright",
@@ -133,5 +133,28 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E233-uso-Chamath-a0",
+    "episodeId": "E233",
+    "episodeNumber": 233,
+    "episodeDate": "2025-06-28T04:51:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Chamath had warned that if the Iran conflict went poorly, oil could hit $100/barrel. It spiked toward $74 from $60 but came back down as markets digested the situation.",
+    "quote": "if this goes poorly, we could be looking at $100 a barrel oil... while it did spike a little bit up to $74, almost hit your $100, Chamath, racing up from the $60 mark, you know, we come back down now.",
+    "quoteStartMs": 1799914,
+    "topics": [
+      "Iran conflict",
+      "Middle East geopolitics",
+      "energy independence",
+      "oil price spike"
+    ],
+    "attributionConfidence": "high"
   }
 ]

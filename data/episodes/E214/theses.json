@@ -66,7 +66,8 @@
       "chips"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Antonio Gracias"
   },
   {
     "id": "E214-xai-Guest-3",
@@ -88,7 +89,8 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Antonio Gracias"
   },
   {
     "id": "E214-lly-Friedberg-4",
@@ -112,5 +114,53 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E214-uso-Chamath-a0",
+    "episodeId": "E214",
+    "episodeNumber": 214,
+    "episodeDate": "2025-02-07T22:20:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Chamath highlights the US Sovereign Wealth Fund thesis anchored in domestic energy abundance — specifically citing oil, nat gas, and coal reserves 3x those of Saudi Arabia — framing a pro-energy industrial policy as generating enormous federal revenue, with 3 million barrels of domestic oil production as a policy target.",
+    "quote": "if you look at the total energy reserves in the United States, they're 3 times greater than the total energy reserves of Saudi Arabia... oil, nat gas, plus coal, If we actually go towards an industrial policy that's pro-energy where the incremental cost of energy is effectively zero... it is by definition going to generate an enormous amount of revenue",
+    "quoteStartMs": 3454771,
+    "topics": [
+      "US energy policy",
+      "Sovereign Wealth Fund",
+      "domestic production",
+      "333 Plan",
+      "Scott Bessant"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E214-ung-Chamath-a1",
+    "episodeId": "E214",
+    "episodeNumber": 214,
+    "episodeDate": "2025-02-07T22:20:00.000Z",
+    "company": "Natural Gas",
+    "ticker": "UNG",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "As part of the same 333 Plan / Sovereign Wealth Fund discussion, Chamath explicitly includes natural gas alongside oil and coal as part of US energy reserves that are 3x Saudi Arabia's, supporting a pro-energy industrial policy thesis.",
+    "quote": "if you look at the total energy reserves in the United States, they're 3 times greater than the total energy reserves of Saudi Arabia. 3 times across all forms. So not just oil. If you oil, nat gas, plus coal",
+    "quoteStartMs": 3454771,
+    "topics": [
+      "US energy policy",
+      "Sovereign Wealth Fund",
+      "domestic production",
+      "333 Plan",
+      "Scott Bessant"
+    ],
+    "attributionConfidence": "high"
   }
 ]

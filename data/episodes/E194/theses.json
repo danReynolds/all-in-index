@@ -20,7 +20,8 @@
       "semiconductors"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Reid Hoffman"
   },
   {
     "id": "E194-msft-Guest-1",
@@ -42,7 +43,8 @@
       "cloud"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Reid Hoffman"
   },
   {
     "id": "E194-openai-Guest-2",
@@ -64,7 +66,8 @@
       "scale thesis"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Reid Hoffman"
   },
   {
     "id": "E194-aapl-Guest-3",
@@ -132,6 +135,7 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Robert F. Kennedy Jr."
   }
 ]

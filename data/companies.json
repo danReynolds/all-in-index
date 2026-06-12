@@ -718,5 +718,33 @@
   "fig": {
     "description": "Figma provides a cloud-based collaborative interface design and prototyping platform for teams.",
     "domain": "figma.com"
+  },
+  "uso": {
+    "description": "Exchange-traded fund tracking near-month crude oil futures contracts for commodity exposure.",
+    "domain": "uscfinvestments.com"
+  },
+  "ung": {
+    "description": "Exchange-traded fund tracking near-month natural gas futures contracts for commodity exposure.",
+    "domain": "uscfinvestments.com"
+  },
+  "gld": {
+    "description": "Exchange-traded fund backed by physical gold bullion, tracking the spot price of gold.",
+    "domain": "spdrgoldshares.com"
+  },
+  "lit": {
+    "description": "Exchange-traded fund providing exposure to global lithium mining and battery technology companies.",
+    "domain": "globalxetfs.com"
+  },
+  "cper": {
+    "description": "Exchange-traded fund tracking copper futures prices via the SummerHaven Copper Index Total Return.",
+    "domain": "unitedstatescopperfund.com"
+  },
+  "slv": {
+    "description": "Exchange-traded fund backed by physical silver bullion, tracking the spot price of silver.",
+    "domain": "ishares.com"
+  },
+  "ura": {
+    "description": "Exchange-traded fund providing exposure to global uranium mining and nuclear energy companies.",
+    "domain": "globalxetfs.com"
   }
 }

@@ -11,8 +11,8 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Chamath is highly bullish on Tether, citing its 500M users, 30M quarterly user growth, 95%+ profit margins, and dominant position in dollar-pegged stablecoins serving financial inclusion globally, calling it one of the most impressive businesses he has ever seen.",
-    "quote": "I've never seen a business like that. Not going to tell you what the details are, but I've never seen a business like that.",
-    "quoteStartMs": 1325000,
+    "quote": "It is, it is an incredible— and here's why that business is incredible. This is what I love about Tether, the stablecoin. Yes. There are 500 million people using US dollar-backed stablecoins from Tether all around the world",
+    "quoteStartMs": 898170,
     "topics": [
       "stablecoins",
       "fintech",
@@ -217,8 +217,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Jason is bullish on Anthropic as an enterprise AI winner because it maintains a neutral stance of not competing with customers at the application layer, driving trust and adoption from developers who distrust OpenAI.",
-    "quote": "They're going to go with a model like Anthropic, which is taking a more neutral, we're not going to go to the application level.",
-    "quoteStartMs": 2356976,
+    "quote": "I think I would be long Google, Groq, and Anthropic. I think that they're going to have many challenges. Also, I don't think the startup community— I'll just add this as my final thought on it— the startup community is not trusting OpenAI w",
+    "quoteStartMs": 2330455,
     "topics": [
       "AI",
       "enterprise",
@@ -249,5 +249,27 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E252-gld-Chamath-a0",
+    "episodeId": "E252",
+    "episodeNumber": 252,
+    "episodeDate": "2025-11-22T00:40:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Chamath mentions gold casually as one of the things he enjoys, and separately notes Tether reinvests into gold among other assets. The only personal directional hint is his offhand remark about 'make a few investments on gold', suggesting mild bullish interest but with very low conviction.",
+    "quote": "I just wanna go to my office, build some stuff, make a few investments on gold.",
+    "quoteStartMs": 769072,
+    "topics": [
+      "portfolio",
+      "personal investing",
+      "Tether holdings"
+    ],
+    "attributionConfidence": "high"
   }
 ]

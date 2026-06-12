@@ -79,8 +79,8 @@
     "stance": "bear",
     "conviction": "medium",
     "summary": "Friedberg flags OptumRx as part of a PBM oligopoly generating excess profits through markups and obfuscation, and argues the vertical integration of PBMs with payers is a structural distortion that faces serious reform risk.",
-    "quote": "They're allowed to be owned by the payer, which is crazy... there's a lot of obfuscation of the true cost of the drugs. There's a lot of markups, a lot of spread taking. And so if you took the PBMs out of the market, that would solve one of the problems.",
-    "quoteStartMs": 5742002,
+    "quote": "There's 3 major PBMs: CVS Caremark, Express Scripts, and OptumRx. These 3 companies make on average approximately $3 in operating profit per prescription claim processed. They make money in markups. The FTC has been investigating them and h",
+    "quoteStartMs": 5692930,
     "topics": [
       "PBMs",
       "regulation",
@@ -89,5 +89,50 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E228-ung-Friedberg-a0",
+    "episodeId": "E228",
+    "episodeNumber": 228,
+    "episodeDate": "2025-05-17T04:04:00.000Z",
+    "company": "Natural Gas",
+    "ticker": "UNG",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Friedberg argues the US should continue and expand LNG exports as the largest methane exporter, framing natural gas as a cleaner energy source than oil or coal and a key asset to monetize for revenue generation.",
+    "quote": "the U.S. is now the largest exporter of methane... So U.S. companies are selling liquid methane that we're pulling out of the ground to those countries... the United States should be, as we are today, an LNG or liquefied natural gas or liquid methane exporter.",
+    "quoteStartMs": 4026000,
+    "topics": [
+      "LNG exports",
+      "US energy production",
+      "balance sheet monetization",
+      "clean energy"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E228-lit-Chamath-a1",
+    "episodeId": "E228",
+    "episodeNumber": 228,
+    "episodeDate": "2025-05-17T04:04:00.000Z",
+    "company": "Lithium",
+    "ticker": "LIT",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Chamath briefly references lithium as one of the critical minerals under US land that private companies would buy and use to manufacture critical requirements, framing it as a monetizable national asset.",
+    "quote": "Yeah, zinc. So who's gonna buy lithium?... The private companies that, that would then use those resources to manufacture critical requirements for the United States and other countries who want to buy.",
+    "quoteStartMs": 4007000,
+    "topics": [
+      "critical minerals",
+      "US asset monetization",
+      "natural resources"
+    ],
+    "attributionConfidence": "high"
   }
 ]

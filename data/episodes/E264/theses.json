@@ -20,7 +20,8 @@
       "IPO"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Ro Khanna"
   },
   {
     "id": "E264-openai-Guest-1",
@@ -43,7 +44,8 @@
       "compute capex"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "guestName": "Ro Khanna"
   },
   {
     "id": "E264-anthropic-Chamath-2",
@@ -109,7 +111,8 @@
       "defense"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Ro Khanna"
   },
   {
     "id": "E264-snow-Guest-5",
@@ -130,6 +133,104 @@
       "competitive benchmarking"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Ro Khanna"
+  },
+  {
+    "id": "E264-uso-Jason-a0",
+    "episodeId": "E264",
+    "episodeNumber": 264,
+    "episodeDate": "2026-03-13T17:53:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "mixed",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Jason frames the oil price volatility as significant and historically notable, presenting the spike to $119 and current $99 level as a serious but uncertain shock, with the outcome depending on war duration and strait closure.",
+    "quote": "Brent crude oil...it spiked to $84 on Friday....$119 on Monday...dropped back down to $84, jumped back up to $100...Brent crude currently at $99...this is not new, but it is significant.",
+    "quoteStartMs": 229000,
+    "topics": [
+      "Strait of Hormuz",
+      "Iran war",
+      "oil shock",
+      "inflation",
+      "supply disruption"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E264-uso-Chamath-a1",
+    "episodeId": "E264",
+    "episodeNumber": 264,
+    "episodeDate": "2026-03-13T17:53:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Chamath argues the oil price spike is likely short-lived: the market's reflexive drop from $120 to $90 on Trump's 'war over soon' comment signals confidence in a short conflict, and coordinated IEA releases of ~400M+ barrels will dampen any sustained price spike.",
+    "quote": "The market literally took oil from $120 a barrel to $90 a barrel. Almost in a nanosecond...Chris released 172 million barrels...coordinated release of about 400 million barrels of petroleum. That's going to dampen the effect of any price spike.",
+    "quoteStartMs": 513572,
+    "topics": [
+      "Iran war",
+      "oil price spike",
+      "IEA strategic reserve release",
+      "Strait of Hormuz",
+      "Trump doctrine"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E264-uso-Sacks-a2",
+    "episodeId": "E264",
+    "episodeNumber": 264,
+    "episodeDate": "2026-03-13T17:53:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "mixed",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Sacks warns of severe tail-risk scenarios where escalation could destroy Gulf oil and gas infrastructure via Iranian tit-for-tat retaliation, making the strait reopening moot — but frames this as a downside risk of escalation rather than a base case.",
+    "quote": "If the Iranians get hit, if their oil and gas infrastructure gets hit, they've already said they're going to engage in tit-for-tat retaliation against the Gulf states...it won't really matter if the straits get reopened because you won't be able to restart oil and gas production in the Middle East.",
+    "quoteStartMs": 685340,
+    "topics": [
+      "Iran war",
+      "Gulf oil infrastructure",
+      "Strait of Hormuz",
+      "escalation risk",
+      "oil supply"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E264-uso-Guest-a3",
+    "episodeId": "E264",
+    "episodeNumber": 264,
+    "episodeDate": "2026-03-13T17:53:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bear",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "The guest (Brad) argues the oil supply shock is manageable for the US (20M bbl/day produced = consumed) and that China, India, and Gulf neighbors have far greater incentive to resolve the strait closure, implying downward pressure on the supply disruption's duration.",
+    "quote": "The United States produces 20 million barrels of oil a day and we consume 20 million barrels a day. This is a modest problem for the United States. This is a massive problem for China. This is a massive problem for Asia.",
+    "quoteStartMs": 1255496,
+    "topics": [
+      "Strait of Hormuz",
+      "Iran war",
+      "oil supply",
+      "geopolitics",
+      "China"
+    ],
+    "attributionConfidence": "high",
+    "guestName": "Ro Khanna"
   }
 ]

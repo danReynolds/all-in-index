@@ -87,5 +87,97 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E259-cper-Chamath-a0",
+    "episodeId": "E259",
+    "episodeNumber": 259,
+    "episodeDate": "2026-01-30T23:25:00.000Z",
+    "company": "Copper",
+    "ticker": "CPER",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "positional": true,
+    "summary": "Chamath boasts that his copper prediction is paying off, noting copper is up 26% in a month, and frames it as a personal call he made that is now coming true.",
+    "quote": "Between this and my copper prediction, I'm about to retire. You know copper's up 26% in a month? Oof. Oofa. What is that as an annualized IRR?",
+    "quoteStartMs": 3362028,
+    "topics": [
+      "price momentum",
+      "prediction",
+      "returns"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E259-gld-Friedberg-a1",
+    "episodeId": "E259",
+    "episodeNumber": 259,
+    "episodeDate": "2026-01-30T23:25:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "high",
+    "positional": false,
+    "summary": "Friedberg argues that gold has eclipsed US Treasuries as the largest share of central bank holdings, that the stock market is down when measured in gold terms, and frames gold as the key beneficiary of dollar devaluation and de-dollarization.",
+    "quote": "We now see gold eclipsing US Treasury... gold is a larger share of the holdings... if you look at the stock market relative to gold, it's actually down.",
+    "quoteStartMs": 4404293,
+    "topics": [
+      "de-dollarization",
+      "central banks",
+      "dollar devaluation",
+      "money supply",
+      "gold standard"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E259-gld-Jason-a2",
+    "episodeId": "E259",
+    "episodeNumber": 259,
+    "episodeDate": "2026-01-30T23:25:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Jason notes that gold and silver have ripped as the dollar has dropped to a 4-year low, and that money has poured into gold and silver, which have way outperformed the S&P.",
+    "quote": "The dollar has dropped as gold and silver and copper have ripped... money has poured into gold and silver, which have way outperformed the S&P.",
+    "quoteStartMs": 4198228,
+    "topics": [
+      "dollar weakness",
+      "money printing",
+      "outperformance",
+      "inflation"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E259-slv-Jason-a3",
+    "episodeId": "E259",
+    "episodeNumber": 259,
+    "episodeDate": "2026-01-30T23:25:00.000Z",
+    "company": "Silver",
+    "ticker": "SLV",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Jason notes that silver has ripped alongside gold and copper as the dollar dropped, and that money has poured into silver, outperforming the S&P.",
+    "quote": "The dollar has dropped as gold and silver and copper have ripped... money has poured into gold and silver, which have way outperformed the S&P.",
+    "quoteStartMs": 4198228,
+    "topics": [
+      "dollar weakness",
+      "money printing",
+      "outperformance",
+      "inflation"
+    ],
+    "attributionConfidence": "high"
   }
 ]

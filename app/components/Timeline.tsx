@@ -112,6 +112,7 @@ export function Timeline({
       {t && (
         <div className="rounded-xl bg-neutral-800/40 p-4 ring-1 ring-white/5">
           <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1.5 text-xs text-neutral-500">
+            {t.guestName && <span className="font-semibold text-neutral-100">{t.guestName}</span>}
             <StanceBadge stance={t.stance} />
             <ConvictionDots conviction={t.conviction} />
             <Link

@@ -112,5 +112,27 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E255-uso-Sacks-a0",
+    "episodeId": "E255",
+    "episodeNumber": 255,
+    "episodeDate": "2025-12-19T23:20:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Sacks cites gas prices at their lowest in 5 years, below $3 nationally, as evidence of strong economic progress under the current administration.",
+    "quote": "you've got the lowest gas prices in 5 years, below $3 nationally.",
+    "quoteStartMs": 2068000,
+    "topics": [
+      "inflation",
+      "energy prices",
+      "economic outlook"
+    ],
+    "attributionConfidence": "high"
   }
 ]

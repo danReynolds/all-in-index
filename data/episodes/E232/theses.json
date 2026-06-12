@@ -34,8 +34,8 @@
     "stance": "mixed",
     "conviction": "medium",
     "summary": "Chamath sees Meta's Scale AI and talent acquisitions as strategically necessary to close the gap on training secrets, app secrets, and infrastructure — but argues Meta still lacks the critical hardware/compute integration that separates winners like OpenAI, Google, and Deepseek.",
-    "quote": "I think the thing that's missing is the infrastructure and compute set of secrets. I think it's insufficient to buy stuff off the shelf from NVIDIA and expect these models to fundamentally compete.",
-    "quoteStartMs": 1258477,
+    "quote": "So I think the first thing that Mark has to do, if I were him, is start to chip away at all of the sets of secrets... I think the thing that's missing is the infrastructure and compute set of secrets. I think it's insufficient to buy stuff ",
+    "quoteStartMs": 1210472,
     "topics": [
       "AI strategy",
       "competitive moat",
@@ -57,8 +57,8 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Chamath ranks Google as his #2 AI winner, citing best-in-class Gemini models, tight TPU integration, quantum computing, a multi-billion-user distribution funnel, and the ability to pivot search monetization from price-per-click to price-per-token.",
-    "quote": "Google's Gemini models are exceptional, absolutely just bar none exceptional... they have the TPU and the next generation TPU I think is exceptional. They're baking quantum and then they have an entire funnel of billions of people",
-    "quoteStartMs": 1200330,
+    "quote": "I would tell you as a user, Gemini models are exceptional, absolutely just bar none exceptional... Google's Gemini models are extremely tightly coupled to TPU., and it enables and unlocks an entire stack of secrets and capability that then ",
+    "quoteStartMs": 1515511,
     "topics": [
       "AI models",
       "competitive moat",
@@ -126,8 +126,8 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Chamath ranks Tesla #1 in the AI race, arguing it has the most vertically integrated stack — best vision models, xAI's LLMs on Dojo, and physical AI deployment across cars, robotaxis, and Optimus — and calls it 'misunderstood' by the market.",
-    "quote": "I would not be sleeping on this business. I think that it is yet again back into the land of being misunderstood... Tesla has the best vision models. Now with xAI, they'll have one of the best LLMs and reasoning models",
-    "quoteStartMs": 1537144,
+    "quote": "I told you that I spent time last week at Tesla. I would not be sleeping on this business. I think that it is yet again back into the land of being misunderstood... Tesla one, Google two. And the reason is because they are the closest to ha",
+    "quoteStartMs": 1533426,
     "topics": [
       "AI vertical integration",
       "robotics",
@@ -398,7 +398,7 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Chamath argues Microsoft will grow its employee base because AI-generated code quality remains poor for complex enterprise environments today, and Microsoft will benefit by bundling point-feature competitors into its platform as the S&P 493 shrinks.",
-    "quote": "I suspect that Microsoft's business on the margin grows... it'll be cheaper for Microsoft to bundle together a bunch of other products that are point features today, and so they'll have more people.",
+    "quote": "I suspect that Microsoft's business on the margin grows. Back to Dave's point, some of the 493 shrink and go away. It'll be cheaper for Microsoft to bundle together a bunch of other products that are point features today, and so they'll hav",
     "quoteStartMs": 5617868,
     "topics": [
       "enterprise software",

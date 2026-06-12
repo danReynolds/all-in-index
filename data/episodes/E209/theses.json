@@ -20,7 +20,8 @@
       "robotics"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E209-nvda-Guest-1",
@@ -43,7 +44,8 @@
       "supply constraints"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E209-sk-hynix-Guest-2",
@@ -66,7 +68,8 @@
       "supply constraints"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E209-mu-Guest-3",
@@ -89,7 +92,8 @@
       "supply constraints"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E209-enterprise-application-software-saas-Guest-4",
@@ -112,7 +116,8 @@
       "competition"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E209-enterprise-application-software-saas-Chamath-5",
@@ -181,7 +186,8 @@
       "defense"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E209-ba-Friedberg-8",
@@ -411,7 +417,8 @@
       "disruption"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E209-intc-Guest-18",
@@ -433,7 +440,8 @@
       "restructuring"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E209-chinese-tech-stocks-Friedberg-19",
@@ -479,7 +487,8 @@
       "logistics"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E209-aapl-Jason-21",
@@ -493,8 +502,8 @@
     "stance": "bear",
     "conviction": "medium",
     "summary": "Jason argues Apple Intelligence is a failure—worse even than Copilot—and the company is losing its AI edge to Google's Gemini, making it a loser in the AI transition.",
-    "quote": "Apple Intelligence is even worse than Copilot, which is saying something.",
-    "quoteStartMs": 3498000,
+    "quote": "I picked Apple would become the player in AI, and they did launch Apple Intelligence, but it sucks. I mean, it sucks. It's terrible.",
+    "quoteStartMs": 3460536,
     "topics": [
       "AI",
       "product",
@@ -526,5 +535,28 @@
     ],
     "attributionConfidence": "low",
     "positional": false
+  },
+  {
+    "id": "E209-ura-Friedberg-a0",
+    "episodeId": "E209",
+    "episodeNumber": 209,
+    "episodeDate": "2025-01-04T00:23:00.000Z",
+    "company": "Uranium",
+    "ticker": "URA",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "low",
+    "positional": true,
+    "summary": "Friedberg recaps his 2024 uranium ETF pick (URA), which was down 1%, and notes the ETF had poor components — implying it wasn't the right vehicle, but offers no forward price/investment direction for uranium.",
+    "quote": "Freeberg, you went with your uranium ETF, not Uranus, uranium ETF, and URA was down 1% in 2024... I looked at the components of that ETF last week... It has absolute junk in it. Like, it was not the right way to trade uranium.",
+    "quoteStartMs": 4400922,
+    "topics": [
+      "2024 recap",
+      "uranium ETF",
+      "URA",
+      "best performing asset"
+    ],
+    "attributionConfidence": "high"
   }
 ]

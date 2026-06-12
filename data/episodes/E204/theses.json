@@ -180,5 +180,27 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E204-gld-Chamath-a0",
+    "episodeId": "E204",
+    "episodeNumber": 204,
+    "episodeDate": "2024-11-16T16:55:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Chamath describes Bitcoin as a 'very good gold proxy' but ultimately a dollar-denominated asset until Bitcoin achieves its purist vision, implicitly framing gold as the benchmark store-of-value reference point — no directional price call on gold itself.",
+    "quote": "I think you have to view it as like a, a very good gold proxy, but it's a largely dollar-denominated asset.",
+    "quoteStartMs": 956144,
+    "topics": [
+      "store of value",
+      "Bitcoin vs gold",
+      "dollar denomination"
+    ],
+    "attributionConfidence": "high"
   }
 ]

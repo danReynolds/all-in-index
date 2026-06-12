@@ -67,5 +67,46 @@
     ],
     "attributionConfidence": "medium",
     "positional": false
+  },
+  {
+    "id": "E241-lit-Chamath-a0",
+    "episodeId": "E241",
+    "episodeNumber": 241,
+    "episodeDate": "2025-08-29T23:10:00.000Z",
+    "company": "Lithium",
+    "ticker": "LIT",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Chamath references rare earths/critical materials in the context of Chinese state-backed market manipulation (price shaping, dumping) to crowd out competitors and lock capital markets, using it as an illustrative example of strategic resource competition — no explicit price or investment directional claim on the commodity itself.",
+    "quote": "I can talk to you about rare earths as one very specific example through my involvement with MP and, and now with Intelis. The Chinese have an extremely sophisticated market-driven approach to how they help when they are on the cap table. They'll price shape, they'll price dump, they will change the spot markets",
+    "quoteStartMs": 2366777,
+    "topics": [
+      "rare earths",
+      "Chinese subsidies",
+      "strategic competition",
+      "US industrial policy"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E241-gld-Unknown-a0",
+    "episodeId": "E241",
+    "episodeNumber": 241,
+    "episodeDate": "2025-08-29T23:10:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Unknown",
+    "stance": "neutral",
+    "conviction": "low",
+    "positional": false,
+    "summary": "No commodity takes found in this excerpt.",
+    "quote": "",
+    "quoteStartMs": null,
+    "topics": [],
+    "attributionConfidence": "low"
   }
 ]

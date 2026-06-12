@@ -34,7 +34,7 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Friedberg is bullish on Chinese tech stocks including Alibaba, anticipating a grand US-China deal in the first six months of the Trump administration that would ease tariffs and unlock economic value as China negotiates from a position of economic weakness.",
-    "quote": "I think they want to get a deal done and keep TikTok active in the U.S... this kind of also leads to what I think will be the grand deal with China, which I think will happen in the first 6 months of the Trump administration.",
+    "quote": "I think they want to get a deal done and keep TikTok active in the U.S. Seems like both the Dems and the Republicans are pushing for it, so This kind of also leads to what I think will be the grand deal with China, which I think will happen",
     "quoteStartMs": 4657185,
     "topics": [
       "US-China trade",
@@ -65,7 +65,8 @@
       "macro"
     ],
     "attributionConfidence": "high",
-    "positional": true
+    "positional": true,
+    "guestName": "Marc Andreessen"
   },
   {
     "id": "E211-googl-Jason-3",
@@ -79,7 +80,7 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Jason highlights Google's Deep Research (Gemini) as a transformative AI product that replicates expensive consulting-firm reports in minutes, signaling strong competitive positioning for Alphabet in AI-enabled knowledge work.",
-    "quote": "this product is nuts. And they designed it to basically be one of these like million-dollar or $5 million reports you pay for from these consulting firms... it does a better job. It's more accurate. It's done in 5 to 10 minutes.",
+    "quote": "this product is nuts. And they designed it to basically be one of these like million-dollar or $5 million reports you pay for from these consulting firms. That MBA is right. And it does a better job. It's more accurate. It's done in 5 to 10",
     "quoteStartMs": 5418558,
     "topics": [
       "AI product",

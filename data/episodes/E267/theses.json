@@ -126,7 +126,7 @@
     "stance": "bear",
     "conviction": "medium",
     "summary": "Friedberg warns that pent-up selling pressure, dwindling Middle East capital flows due to the Iran conflict, and limited retail buying power could create a liquidity crunch that weighs heavily on OpenAI's post-IPO valuation.",
-    "quote": "There's only so much capital in the world... a large chunk of it has historically in the last couple of years come from Middle East sovereigns and family offices. And I think that those are likely going to tighten up in the near term.",
+    "quote": "there's only so much capital to absorb those shares on the buy side... there is so much pent-up selling demand. There is so much value that's been created. There's going to be so much selling pressure. And then there's going to be very litt",
     "quoteStartMs": 1616313,
     "topics": [
       "IPO",
@@ -149,8 +149,8 @@
     "stance": "bull",
     "conviction": "low",
     "summary": "Jason discloses a small personal bet on TAO, citing the fascination with its decentralized subnet architecture as the reason for the position.",
-    "quote": "I did place a bet on DAO. A couple of weeks ago I went public with, 'Hey, yeah, I've got a small bet here because I think these subnets are fascinating.' I might be $500,000 or $600,000 in.",
-    "quoteStartMs": 4680159,
+    "quote": "Well, I mean, the reason is because I did place a bet on DAO. A couple of weeks ago I went public with, \"Hey, yeah, I've got a small bet here because I think these subnets are fascinating.\" You're TAO maxing.\nI mean, it's like I might be $5",
+    "quoteStartMs": 4678310,
     "topics": [
       "crypto",
       "decentralized AI",
@@ -180,5 +180,51 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E267-gld-Friedberg-a0",
+    "episodeId": "E267",
+    "episodeNumber": 267,
+    "episodeDate": "2026-04-03T21:08:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "low",
+    "positional": false,
+    "summary": "Friedberg mentions gold as one of the abundant materials on the moon that could be mined and shipped back to Earth at very low cost, implying a future supply increase from extraterrestrial sources. This is incidental to a broader moon industrialization thesis rather than a direct price call.",
+    "quote": "there's aluminum, there's silicon, there's palladium, there's platinum, there's gold, there's everything you possibly need.",
+    "quoteStartMs": 1027716,
+    "topics": [
+      "moon mining",
+      "space industrialization",
+      "precious metals supply"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E267-ung-Friedberg-a1",
+    "episodeId": "E267",
+    "episodeNumber": 267,
+    "episodeDate": "2026-04-03T21:08:00.000Z",
+    "company": "Natural Gas",
+    "ticker": "UNG",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "summary": "Friedberg explains that natural gas is the critical input for nitrogen fertilizer production, and with the Strait of Hormuz disrupted and Qatar's main facility damaged, natural gas-linked fertilizer supply is severely constrained, implying upward price pressure on natural gas and fertilizer derived from it.",
+    "quote": "That nitrogen is primarily made where natural gas is produced and processed. And the reason is that they use the natural gas as an input to the production process... about 35% of the world's nitrogen fertilizer goes through the Strait of Hormuz",
+    "quoteStartMs": 2571997,
+    "topics": [
+      "fertilizer crisis",
+      "Strait of Hormuz",
+      "supply disruption",
+      "Middle East conflict",
+      "food security"
+    ],
+    "attributionConfidence": "high"
   }
 ]
