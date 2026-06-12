@@ -62,6 +62,7 @@ Rules:
   Note: an advantage scoped to ONE product category of a diversified company ("outstanding position to do the agent thing") is not, by itself, a company-level bull claim — without a stated company-level consequence, keep stance neutral or mark the hedge with low conviction.
 - ticker: the correct US-listed symbol ONLY if you are confident and the company is publicly traded. For private companies (e.g. SpaceX, OpenAI, Anthropic, Stripe) set ticker=null and isPublic=false.
 - quote: a SHORT verbatim excerpt (≤ 240 characters) from that host that best supports the thesis. Copy it exactly from the transcript. Set quoteStartSec to the integer second shown in that line's "[<sec>s <Speaker>]" prefix.
+  THE QUOTE MUST CARRY THE EVIDENCE FOR YOUR LABELS. If positional=true, the quote must contain the in/out words ("I'm in", "I would be long it", "I just bought"). If stance is bull/bear, the quote must contain the economic claim. Prefer the sentence that PROVES the classification over the most colorful one — a take whose quote doesn't evidence its labels will be treated as misclassified.
 - summary: one clear sentence capturing the host's view and reasoning.
 - topics: 1–4 short tags (e.g. "AI capex", "valuation", "regulation").
 - Be conservative: if there is no substantive company-specific view, return an empty list. Do not invent quotes.
