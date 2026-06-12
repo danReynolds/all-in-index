@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { currentStanceForHosts, hostExposureWindows, tradeDirectionForTake } from "../lib/calls";
 import { MAX_PUBLISHED_QUOTE_CHARS, trimPublishedQuote } from "../lib/quotes";
+import { auditTranscriptCandidates } from "../pipeline/take-candidate-audit";
+import type { Transcript } from "../lib/types";
 import {
   BESTIES,
   currentBullEntryDate,
@@ -145,4 +147,62 @@ test("host exposure windows retain same-direction reaffirming calls without doub
   assert.equal(windows[0].start, "2025-01-01");
   assert.equal(windows[0].direction, "long");
   assert.deepEqual(windows[0].reinforceTakes?.map((t) => t.id), [reaffirm.id]);
+});
+
+test("prediction-round transcript picks are covered by audited receipts", () => {
+  const transcript: Transcript = {
+    episodeId: "E257",
+    provider: "assemblyai",
+    speakerMap: {
+      A: "Jason",
+      B: "Sacks",
+      C: "Friedberg",
+    },
+    utterances: [
+      {
+        cluster: "A",
+        speaker: "Jason",
+        text: "My prediction for 2026 is that Amazon is gonna have a massive year.",
+        startMs: 2182916,
+        endMs: 2185916,
+      },
+      {
+        cluster: "B",
+        speaker: "Sacks",
+        text: "My number 1 is Huawei. Huawei's effort to partner with SMIC is firing on all cylinders.",
+        startMs: 1984000,
+        endMs: 1987000,
+      },
+      {
+        cluster: "C",
+        speaker: "Friedberg",
+        text: "I will pick the software industrial complex because AI will shrink that market aggressively.",
+        startMs: 2583000,
+        endMs: 2586000,
+      },
+    ],
+    meta: {},
+  };
+  const candidates = auditTranscriptCandidates("E257", transcript);
+
+  const amazon = candidates.find(
+    (c) => c.speaker === "Jason" && c.text.includes("Amazon is gonna have a massive year"),
+  );
+  assert.equal(amazon?.coverage, "portfolio");
+  assert.equal(amazon?.matches.some((m) => m.id === "E257-amzn-Jason-0"), true);
+
+  const huawei = candidates.find(
+    (c) => c.speaker === "Sacks" && c.text.includes("My number 1 is Huawei"),
+  );
+  assert.equal(huawei?.coverage, "excluded");
+  assert.equal(huawei?.matches.some((m) => m.id === "E257-huawei-Sacks-a6"), true);
+
+  const software = candidates.find(
+    (c) => c.speaker === "Friedberg" && c.text.includes("software industrial complex"),
+  );
+  assert.equal(software?.coverage, "excluded");
+  assert.equal(
+    software?.matches.some((m) => m.id === "E257-enterprise-application-software-saas-Friedberg-a8"),
+    true,
+  );
 });

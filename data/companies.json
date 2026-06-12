@@ -746,5 +746,21 @@
   "ura": {
     "description": "Exchange-traded fund providing exposure to global uranium mining and nuclear energy companies.",
     "domain": "globalxetfs.com"
+  },
+  "ipo-market": {
+    "description": "Macro/public-markets category covering the pace and performance of new IPO issuance, not a single operating company.",
+    "domain": null
+  },
+  "capital-equipment": {
+    "description": "Industrial asset category for machinery and equipment that can benefit from capex demand and tax treatment.",
+    "domain": null
+  },
+  "credit-default-swaps": {
+    "description": "Credit derivative instrument used to hedge or speculate on default risk, treated here as a macro asset idea.",
+    "domain": null
+  },
+  "rtx": {
+    "description": "RTX develops and manufactures aerospace and defense systems, including jet engines, missiles, and radar technologies.",
+    "domain": "rtx.com"
   }
 }

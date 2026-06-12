@@ -118,6 +118,7 @@ data/
 | `npm run pipeline run [--latest \| --number N \| --id E274]` | ✓ | full slice for one episode |
 | `npm run pipeline sync [--limit N]` | ✓ | process new episodes + rebuild index |
 | `npm run pipeline build-index` | ✓ | re-aggregate processed episodes |
+| `npm run pipeline audit-candidates` | – | scan cached private transcripts for high-signal picks/trades that need receipt review |
 | `npm run quality` | – | validate generated-data invariants |
 | `npm test` | – | run scoring-unit tests |
 | `npm run dev` / `build` / `start` | – | the Next.js site |

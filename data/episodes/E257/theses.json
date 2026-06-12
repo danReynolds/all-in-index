@@ -20,7 +20,10 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Jason picked Amazon as his 2026 biggest-business-winner bet"
   },
   {
     "id": "E257-polymarket-Sacks-1",
@@ -43,7 +46,11 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Sacks named Polymarket as his second 2026 biggest-business-winner pick",
+    "scoreExclusionReason": "private"
   },
   {
     "id": "E257-nflx-Sacks-2",
@@ -378,6 +385,118 @@
       "crypto",
       "contrarian",
       "2026 predictions"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E257-huawei-Sacks-a6",
+    "episodeId": "E257",
+    "episodeNumber": 257,
+    "episodeDate": "2026-01-10T04:28:00.000Z",
+    "company": "Huawei",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "high",
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Sacks named Huawei his #1 2026 biggest-business-winner pick",
+    "scoreCondition": null,
+    "scoreExclusionReason": "private",
+    "summary": "Sacks picks Huawei as his #1 biggest business winner for 2026, arguing its partnership with SMIC is pushing deeper into the AI chip stack and will outperform Western expectations.",
+    "quote": "My number 1 is Huawei... Huawei's effort to partner with SMIC to go deeper in the chip stack... they're just firing on all cylinders.",
+    "quoteStartMs": 1984000,
+    "topics": [
+      "2026 predictions",
+      "biggest business winner",
+      "AI chips",
+      "China"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E257-ipo-market-Chamath-a7",
+    "episodeId": "E257",
+    "episodeNumber": 257,
+    "episodeDate": "2026-01-10T04:28:00.000Z",
+    "company": "IPO Market",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": true,
+    "callType": "basket",
+    "tradeDirection": "long",
+    "scoreReason": "Chamath picked IPOs and new public listings as his 2026 business-winner theme",
+    "scoreCondition": null,
+    "scoreExclusionReason": "macro_asset",
+    "summary": "Chamath predicts 2026 will be a strong year for IPOs, with many successful listings and potentially trillions of dollars of new public-company market cap created as part of a broader Trump-boom reversal.",
+    "quote": "I think 2026 is going to be a big year for IPOs... a bunch of successful ones, and I think we could see trillions of dollars of new market cap created of public companies.",
+    "quoteStartMs": 2143000,
+    "topics": [
+      "2026 predictions",
+      "biggest business winner",
+      "IPO market",
+      "public markets"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E257-enterprise-application-software-saas-Friedberg-a8",
+    "episodeId": "E257",
+    "episodeNumber": 257,
+    "episodeDate": "2026-01-10T04:28:00.000Z",
+    "company": "Enterprise Application Software (SaaS)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "high",
+    "positional": true,
+    "callType": "basket",
+    "tradeDirection": "short",
+    "scoreReason": "Friedberg picked the software industrial complex as his 2026 biggest-business-loser basket",
+    "scoreCondition": null,
+    "scoreExclusionReason": "benchmark_or_etf",
+    "summary": "Friedberg picks the software industrial complex as his 2026 biggest business loser, arguing AI agents will aggressively shrink the maintenance and migration revenue pools that drive legacy SaaS economics.",
+    "quote": "I will pick the software industrial complex... I think you're going to see that total economic opportunity shrink and contract aggressively.",
+    "quoteStartMs": 2583000,
+    "topics": [
+      "2026 predictions",
+      "biggest business loser",
+      "SaaS",
+      "AI disruption"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E257-capital-equipment-Chamath-a9",
+    "episodeId": "E257",
+    "episodeNumber": 257,
+    "episodeDate": "2026-01-10T04:28:00.000Z",
+    "company": "Capital Equipment",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": true,
+    "callType": "basket",
+    "tradeDirection": "long",
+    "scoreReason": "Chamath highlighted accelerated-depreciation capital equipment as an overlooked best-asset category",
+    "scoreCondition": null,
+    "scoreExclusionReason": "macro_asset",
+    "summary": "Chamath highlights capital equipment qualifying for 100% accelerated depreciation as an overlooked best-performing-asset category, arguing the tax treatment is making those markets very hot.",
+    "quote": "one category we didn't talk about... assets that qualify for accelerated depreciation, capital equipment... that is making those markets super hot right now.",
+    "quoteStartMs": 4452000,
+    "topics": [
+      "2026 predictions",
+      "best performing asset",
+      "capital equipment",
+      "tax policy"
     ],
     "attributionConfidence": "high"
   }

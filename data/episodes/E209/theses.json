@@ -146,7 +146,11 @@
       "competition"
     ],
     "attributionConfidence": "low",
-    "positional": false
+    "positional": true,
+    "callType": "basket",
+    "tradeDirection": "short",
+    "scoreReason": "Chamath picked legacy enterprise SaaS as a 2025 worst-performing-asset basket",
+    "scoreExclusionReason": "benchmark_or_etf"
   },
   {
     "id": "E209-enterprise-application-software-saas-Friedberg-6",
@@ -169,7 +173,11 @@
       "competition"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true,
+    "callType": "basket",
+    "tradeDirection": "short",
+    "scoreReason": "Friedberg picked legacy enterprise SaaS as a 2025 worst-performing-asset basket",
+    "scoreExclusionReason": "benchmark_or_etf"
   },
   {
     "id": "E209-government-service-providers-Guest-7",
@@ -216,7 +224,10 @@
       "competition"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true,
+    "callType": "basket",
+    "tradeDirection": "short",
+    "scoreReason": "Friedberg picked legacy defense and aerospace providers as his 2025 biggest-business-loser basket"
   },
   {
     "id": "E209-lmt-Friedberg-9",
@@ -239,7 +250,10 @@
       "competition"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true,
+    "callType": "basket",
+    "tradeDirection": "short",
+    "scoreReason": "Friedberg picked legacy defense and aerospace providers as his 2025 biggest-business-loser basket"
   },
   {
     "id": "E209-magnificent-7-Chamath-10",
@@ -262,7 +276,11 @@
       "macro"
     ],
     "attributionConfidence": "low",
-    "positional": false
+    "positional": true,
+    "callType": "basket",
+    "tradeDirection": "short",
+    "scoreReason": "Chamath picked Mag 7 concentration as his 2025 biggest-business-loser basket",
+    "scoreExclusionReason": "benchmark_or_etf"
   },
   {
     "id": "E209-magnificent-7-Jason-11",
@@ -313,7 +331,10 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Jason picked Google as one of his 2025 biggest-business-winner selections"
   },
   {
     "id": "E209-tsla-Chamath-13",
@@ -359,7 +380,11 @@
       "nonprofit conversion"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "short",
+    "scoreReason": "Jason picked OpenAI as his 2025 biggest-business-loser selection",
+    "scoreExclusionReason": "private"
   },
   {
     "id": "E209-waymo-Friedberg-15",
@@ -548,7 +573,11 @@
       "payments"
     ],
     "attributionConfidence": "low",
-    "positional": false
+    "positional": true,
+    "callType": "basket",
+    "tradeDirection": "long",
+    "scoreReason": "Chamath picked dollar-denominated stablecoins as his 2025 biggest-business-winner theme",
+    "scoreExclusionReason": "crypto"
   },
   {
     "id": "E209-ura-Friedberg-a0",
@@ -570,6 +599,90 @@
       "uranium ETF",
       "URA",
       "best performing asset"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E209-tsla-Jason-a1",
+    "episodeId": "E209",
+    "episodeNumber": 209,
+    "episodeDate": "2025-01-04T00:23:00.000Z",
+    "company": "Tesla",
+    "ticker": "TSLA",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "bull",
+    "conviction": "high",
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Jason picked Tesla as one of his 2025 biggest-business-winner selections",
+    "scoreCondition": null,
+    "scoreExclusionReason": null,
+    "summary": "Jason picks Tesla as one of his 2025 biggest business winners, tying the call to Elon/xAI/Colossus execution and the broader AI-and-robotics cycle.",
+    "quote": "My biggest business winner prediction for 2025 is Tesla and Google. I think this is going to be the year of AI and robotics.",
+    "quoteStartMs": 1742000,
+    "topics": [
+      "2025 predictions",
+      "biggest business winner",
+      "AI",
+      "robotics"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E209-rtx-Friedberg-a2",
+    "episodeId": "E209",
+    "episodeNumber": 209,
+    "episodeDate": "2025-01-04T00:23:00.000Z",
+    "company": "RTX",
+    "ticker": "RTX",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "medium",
+    "positional": true,
+    "callType": "basket",
+    "tradeDirection": "short",
+    "scoreReason": "Friedberg included Raytheon/RTX in his legacy defense loser basket",
+    "scoreCondition": null,
+    "scoreExclusionReason": null,
+    "summary": "Friedberg includes Raytheon/RTX in his legacy defense and aerospace loser basket for 2025, arguing old cost-plus defense providers will lose budget share to tech-oriented, ROI-driven entrants.",
+    "quote": "Raytheon, Defense 1.0, driven by kind of China dominance, driven by US defense budgets that I think are going to need to shift towards a more kind of tech-oriented and ROI-driven rationalization.",
+    "quoteStartMs": 2487000,
+    "topics": [
+      "2025 predictions",
+      "biggest business loser",
+      "defense",
+      "government contracting"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E209-cds-Chamath-a3",
+    "episodeId": "E209",
+    "episodeNumber": 209,
+    "episodeDate": "2025-01-04T00:23:00.000Z",
+    "company": "Credit Default Swaps",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": true,
+    "callType": "selection",
+    "tradeDirection": "long",
+    "scoreReason": "Chamath picked long CDS protection as his asymmetric 2025 best-performing-asset trade",
+    "scoreCondition": null,
+    "scoreExclusionReason": "macro_asset",
+    "summary": "Chamath picks long credit default swap protection as his asymmetric best-performing-asset idea for 2025, framing it as low-probability insurance that could pay off massively if volatility or defaults spike.",
+    "quote": "I would be long CDS... if it hits, it will be the best performing asset of 2025.",
+    "quoteStartMs": 4506000,
+    "topics": [
+      "2025 predictions",
+      "best performing asset",
+      "credit",
+      "macro hedge"
     ],
     "attributionConfidence": "high"
   }

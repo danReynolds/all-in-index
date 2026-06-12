@@ -475,5 +475,33 @@
     ],
     "attributionConfidence": "high",
     "positional": false
+  },
+  {
+    "id": "E232-s-p-500-us-equities-broad-market-Friedberg-a0",
+    "episodeId": "E232",
+    "episodeNumber": 232,
+    "episodeDate": "2025-06-14T01:45:00.000Z",
+    "company": "S&P 500 / US Equities (broad market)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "medium",
+    "positional": true,
+    "callType": "explicit_short",
+    "tradeDirection": "short",
+    "scoreReason": "Friedberg argued this was a rare moment to short the S&P and pick winners",
+    "scoreCondition": null,
+    "scoreExclusionReason": "benchmark_or_etf",
+    "summary": "Friedberg argues the AI transition creates a rare stock-picking moment where investors could short the S&P 500 and pick a few emerging category winners rather than owning the broad index.",
+    "quote": "you could go short the S&P... it is an opportunity to short the S&P and pick a couple winners.",
+    "quoteStartMs": 4781000,
+    "topics": [
+      "S&P 500",
+      "AI disruption",
+      "stock picking",
+      "broad market"
+    ],
+    "attributionConfidence": "high"
   }
 ]
