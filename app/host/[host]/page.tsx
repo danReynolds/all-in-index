@@ -10,7 +10,7 @@ import { Explainer } from "@/app/components/Explainer";
 import { Reveal } from "@/app/components/Reveal";
 import { ListenButton } from "@/app/components/player";
 import { BackLink } from "@/app/components/BackLink";
-import { hostExposureWindows, isPortfolioScored } from "@/lib/calls";
+import { hostExposureWindows, isPortfolioScored, tradeDirectionForTake } from "@/lib/calls";
 import { isMacroAsset } from "@/lib/assets";
 import { HOST_UI, RANK_MEDAL } from "@/lib/hosts";
 import { HOST_PROFILES, REGULAR_HOSTS } from "@/lib/types";
@@ -48,6 +48,11 @@ function ExposureBadge({ direction }: { direction: IndexDirection }) {
         : "border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300";
   const label = direction === "mixed" ? "Long/short" : direction[0].toUpperCase() + direction.slice(1);
   return <span className={`rounded border px-1.5 py-0.5 text-[11px] font-medium ${tone}`}>{label}</span>;
+}
+
+function AuditStatusBadge({ t }: { t: Thesis }) {
+  const status = auditStatus(t);
+  return <span className={`rounded border px-1.5 py-0.5 text-[11px] font-medium ${status.tone}`}>{status.label}</span>;
 }
 
 function MethodStat({ label, value, note }: { label: string; value: string | number; note: string }) {
@@ -106,6 +111,65 @@ function receiptLabel(t: Thesis): string {
   if (t.scoreReason) return t.scoreReason;
   if (t.callType) return t.callType.replace(/_/g, " ");
   return "Audited receipt";
+}
+
+function auditStatus(t: Thesis): { label: string; detail: string; tone: string } {
+  const neutral = "border-neutral-500/30 bg-neutral-500/10 text-neutral-500 dark:text-neutral-300";
+  if (t.attributionConfidence === "low") {
+    return {
+      label: "Low attribution",
+      detail: "Kept in the catalog, but excluded from scoring because speaker attribution is weak.",
+      tone: "border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-300",
+    };
+  }
+  if (isPortfolioScored(t)) {
+    if (!isTradableCompanyTake(t)) {
+      return {
+        label: "Not traded",
+        detail: notTradedReason(t),
+        tone: "border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-300",
+      };
+    }
+    const direction = tradeDirectionForTake(t);
+    if (direction === "short") {
+      return {
+        label: "Portfolio short",
+        detail: "Opens or reinforces a simulated short exposure in this host's fund.",
+        tone: "border-rose-500/30 bg-rose-500/10 text-rose-700 dark:text-rose-300",
+      };
+    }
+    if (direction === "long") {
+      return {
+        label: "Portfolio long",
+        detail: "Opens or reinforces a simulated long exposure in this host's fund.",
+        tone: "border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300",
+      };
+    }
+    return {
+      label: "Exit / close",
+      detail: "Closes a prior simulated exposure without opening a new one.",
+      tone: "border-neutral-500/30 bg-neutral-500/10 text-neutral-500 dark:text-neutral-300",
+    };
+  }
+  if (t.scoreCondition || t.scoreExclusionReason) {
+    return {
+      label: "Not traded",
+      detail: notTradedReason(t),
+      tone: "border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-300",
+    };
+  }
+  if (t.conviction !== "low") {
+    return {
+      label: "Scored view",
+      detail: "Counts toward the holding's current stance, but does not open a simulated host-fund exposure.",
+      tone: "border-sky-500/30 bg-sky-500/10 text-sky-700 dark:text-sky-300",
+    };
+  }
+  return {
+    label: "Commentary",
+    detail: "Shown for context; low-conviction commentary does not move a stance or simulated position.",
+    tone: neutral,
+  };
 }
 
 export default async function HostPage({ params }: PageProps<"/host/[host]">) {
@@ -173,6 +237,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
           (isPortfolioScored(t) && !isTradableCompanyTake(t))),
     )
     .sort((a, b) => b.episodeDate.localeCompare(a.episodeDate));
+  const auditLedger = takes.slice().sort((a, b) => b.episodeDate.localeCompare(a.episodeDate));
   const signature = takes
     .filter((t) => t.quote && t.stance !== "neutral")
     .sort(
@@ -414,6 +479,81 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
         </section>
         </Reveal>
       )}
+
+      <Reveal>
+      <section className="space-y-3">
+        <div className="flex flex-wrap items-baseline justify-between gap-2">
+          <h2 className="font-display text-xl font-bold tracking-tight">Audited takes</h2>
+          <span className="text-xs text-neutral-500">
+            {auditLedger.length} extracted receipts · every row keeps its scoring label
+          </span>
+        </div>
+        <div className="overflow-x-auto rounded-2xl border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900">
+          <table className="w-full text-sm">
+            <thead className="border-b border-neutral-200 text-left text-[11px] uppercase tracking-[0.16em] text-neutral-500 dark:border-neutral-800">
+              <tr>
+                <th className="px-4 py-3 font-medium">Take</th>
+                <th className="hidden px-4 py-3 font-medium md:table-cell">Classification</th>
+                <th className="px-4 py-3 font-medium">Stance</th>
+                <th className="px-4 py-3 text-right font-medium">Episode</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
+              {auditLedger.map((t) => {
+                const status = auditStatus(t);
+                return (
+                  <tr key={t.id} className="align-top">
+                    <td className="px-4 py-3">
+                      <Link href={`/holding/${t.slug}`} className="font-medium hover:underline">
+                        {t.company}
+                      </Link>{" "}
+                      {t.ticker && <span className="font-mono text-xs text-neutral-400">{t.ticker}</span>}
+                      <div className="mt-1 text-xs leading-relaxed text-neutral-500">{t.summary}</div>
+                      {t.quote && (
+                        <blockquote className="mt-1 line-clamp-2 text-xs italic leading-relaxed text-neutral-500 dark:text-neutral-400">
+                          “{t.quote}”
+                        </blockquote>
+                      )}
+                      <div className="mt-2 md:hidden">
+                        <AuditStatusBadge t={t} />
+                        <div className="mt-1 text-xs leading-relaxed text-neutral-500">{status.detail}</div>
+                      </div>
+                    </td>
+                    <td className="hidden px-4 py-3 md:table-cell">
+                      <AuditStatusBadge t={t} />
+                      <div className="mt-1 max-w-xs text-xs leading-relaxed text-neutral-500">{status.detail}</div>
+                    </td>
+                    <td className="px-4 py-3">
+                      <div className="flex flex-col items-start gap-1.5">
+                        <StanceBadge stance={t.stance} />
+                        <span className="text-[11px] uppercase tracking-wide text-neutral-500">{t.conviction} conviction</span>
+                      </div>
+                    </td>
+                    <td className="px-4 py-3 text-right text-xs text-neutral-500">
+                      <Link href={`/episode/${t.episodeId}`} className="font-mono hover:text-neutral-200 hover:underline">
+                        {t.episodeNumber ? `E${t.episodeNumber}` : t.episodeId}
+                      </Link>
+                      <div>{fmtDate(t.episodeDate)}</div>
+                      {(episodes[t.episodeId]?.audioUrl || episodeLinks[t.episodeId]) && (
+                        <span className="mt-1 block">
+                          <ListenButton
+                            meta={episodes[t.episodeId]}
+                            episodeId={t.episodeId}
+                            startMs={t.quoteStartMs}
+                            caption={`${host} on ${t.company}`}
+                            fallbackLink={episodeLinks[t.episodeId]}
+                          />
+                        </span>
+                      )}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </section>
+      </Reveal>
 
       {/* The rest of the table */}
       <section className="flex flex-wrap items-center gap-2 text-sm text-neutral-500">

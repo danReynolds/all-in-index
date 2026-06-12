@@ -45,8 +45,9 @@ export default function IndexPage() {
       <header className="rise space-y-2">
         <h1 className="font-display text-3xl font-bold tracking-tight">The Besties Index</h1>
         <p className="max-w-2xl text-neutral-600 dark:text-neutral-400">
-          A rules-based, equal-weight long basket of every currently net-bullish <em>public</em>
-          {" company call the hosts have made — bought when the current bullish stance was adopted, held to today, and benchmarked against the S&P with identical cashflows."}
+          A rules-based, equal-weight long basket of public companies where the hosts&apos;
+          current scored view is net-bullish — bought when that bullish stance was adopted,
+          held to today, and benchmarked against the S&amp;P with identical cashflows.
         </p>
       </header>
 
@@ -319,11 +320,12 @@ export default function IndexPage() {
       <section id="methodology" className="scroll-mt-28 rounded-xl border border-neutral-200 bg-neutral-50 p-5 text-sm leading-relaxed text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900/50 dark:text-neutral-400">
         <h2 className="mb-2 font-semibold text-neutral-700 dark:text-neutral-200">Methodology</h2>
         <ul className="list-disc space-y-1 pl-5">
-          <li>One position per company whose <strong>current</strong> scored stance is net-bullish across the selected hosts; bearish/mixed/neutral names are excluded.</li>
-          <li>Only takes with <strong>medium or high conviction</strong> score — hedged asides are shown on holding pages but never move a stance, an entry, or a flip.</li>
+          <li>One index position per public company whose <strong>current scored view</strong> is net-bullish across the selected hosts; bearish/mixed/neutral names are excluded.</li>
+          <li><strong>Scored views</strong> are medium- or high-conviction, attributed theses. They can move a holding&apos;s stance and the Besties Index, even when the host was analyzing the company rather than saying &quot;buy this stock.&quot;</li>
+          <li><strong>Portfolio-scored calls</strong> are a narrower subset: clear in/out language, ranked investment selections, explicit shorts, or named pair/basket legs. Host funds use only these exposure windows.</li>
+          <li>Host pages expose an <strong>Audited takes</strong> ledger so you can see each receipt&apos;s classification: portfolio long/short, scored view, not traded, commentary, or low attribution.</li>
           <li>A holding&apos;s stance is its <strong>current</strong> view — the balance of each host&apos;s latest scored take — and is judged only over the window since that view was adopted. Evolved names additionally show a <strong>follow-their-calls</strong> return (long in bullish stretches, short in bearish, flat when split).</li>
-          <li><strong>Views ≠ positions.</strong> Takes marked 📌 are portfolio-scored calls: clear in/out language, ranked investment selections, explicit shorts, or named pair/basket legs. Criticism and commentary are surfaced and judged as views but never open or close a simulated position.</li>
-          <li>Benchmark ETFs (SPY, QQQ, …) and crypto tokens are not company calls and are excluded.</li>
+          <li>Benchmark ETFs (SPY, QQQ, …), broad-market/macro calls, private companies, and crypto tokens are tracked when useful but excluded from the public-company index.</li>
           <li>Two benchmarks, both with identical cashflows: the S&amp;P (SPY) and the tougher tech-heavy QQQ — published so you don&apos;t have to ask.</li>
           <li>Follow-their-calls, duels, and episode scorecards use sampled (~weekly) price history — directionally solid, not penny-accurate. The index and host funds use full daily closes.</li>
           <li><strong>Equal weight</strong>: {dollars(fund.contributionPerCall)} notionally invested in each at the close when its current bullish stance was adopted, held to today.</li>

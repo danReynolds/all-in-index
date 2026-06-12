@@ -33,9 +33,25 @@ RSS feed ──▶ AssemblyAI ──▶ Claude ──▶ Claude ──▶ Yahoo 
    the episode date over 1m / 3m / 6m / 1y / since. *(no key)*
 6. **`pipeline/build-index.ts`** — aggregates theses into company holdings,
    attaches market data, and synthesizes the cross-host view → `data/holdings.json`.
-   The headline index includes only names whose **current scored stance** is
-   net-bullish, entering when that current bullish stance was adopted.
+   The headline index includes public companies whose **current scored view** is
+   net-bullish, entering when that bullish stance was adopted. Host funds are
+   stricter: they trade only portfolio-scored exposure windows such as explicit
+   longs/shorts, ranked investment selections, and pair/basket legs.
 7. **`app/`** — Next.js site renders the index and per-holding detail pages.
+
+### Scoring threshold
+
+- **Scored views** are attributed medium/high-conviction theses. They can move a
+  holding's current bull/bear/mixed stance and the headline Besties Index.
+- **Portfolio-scored calls** are a narrower subset: explicit in/out language,
+  ranked investment selections, explicit shorts, or named pair/basket legs. They
+  drive the per-host funds and chart markers.
+- **Audited but not traded** receipts include conditional calls, day-trade
+  asides, private companies, broad-market or macro exposures, benchmark ETFs,
+  crypto tokens, and unpriced names. Host pages show these with exclusion
+  reasons instead of silently dropping them.
+- **Commentary/low-confidence rows** stay visible where useful, but do not move
+  simulated performance.
 
 ## Quick start
 
