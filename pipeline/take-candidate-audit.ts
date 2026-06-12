@@ -33,6 +33,13 @@ export interface TakeCandidateAuditReport {
   thesisEpisodeCount: number;
   scannedEpisodeIds: string[];
   missingTranscriptEpisodeIds: string[];
+  skippedPortfolioReceipts: Array<{
+    episodeId: string;
+    id: string;
+    host: Host;
+    company: string;
+    coverage: Exclude<Coverage, "missing">;
+  }>;
   candidates: TakeCandidate[];
   needsReview: TakeCandidate[];
 }
@@ -268,11 +275,24 @@ export function buildTakeCandidateAuditReport(): TakeCandidateAuditReport {
   const episodeIds = store.listEpisodeIds().filter((episodeId) => store.loadTheses(episodeId).length > 0).sort();
   const scannedEpisodeIds: string[] = [];
   const missingTranscriptEpisodeIds: string[] = [];
+  const skippedPortfolioReceipts: TakeCandidateAuditReport["skippedPortfolioReceipts"] = [];
   const candidates: TakeCandidate[] = [];
   for (const episodeId of episodeIds) {
+    const theses = store.loadTheses(episodeId);
     const transcript = store.loadTranscript(episodeId);
     if (!transcript) {
       missingTranscriptEpisodeIds.push(episodeId);
+      skippedPortfolioReceipts.push(
+        ...theses
+          .filter((t) => t.attributionConfidence !== "low" && isPortfolioScored(t))
+          .map((t) => ({
+            episodeId,
+            id: t.id,
+            host: t.host,
+            company: t.company,
+            coverage: thesisCoverage(t),
+          })),
+      );
       continue;
     }
     scannedEpisodeIds.push(episodeId);
@@ -283,6 +303,7 @@ export function buildTakeCandidateAuditReport(): TakeCandidateAuditReport {
     thesisEpisodeCount: episodeIds.length,
     scannedEpisodeIds,
     missingTranscriptEpisodeIds,
+    skippedPortfolioReceipts,
     candidates,
     needsReview,
   };
@@ -298,6 +319,14 @@ export function runTakeCandidateAudit(): void {
       `warning: skipped ${report.missingTranscriptEpisodeIds.length} episode(s) without cached transcript.json: ${report.missingTranscriptEpisodeIds.join(", ")}`,
     );
   }
+  if (report.skippedPortfolioReceipts.length > 0) {
+    console.log(
+      `warning: skipped transcripts contain ${report.skippedPortfolioReceipts.length} existing portfolio-scored receipt(s): ${report.skippedPortfolioReceipts
+        .slice(0, 12)
+        .map((t) => `${t.id}=${t.coverage}`)
+        .join("; ")}`,
+    );
+  }
   console.log(`${candidates.length} high-signal transcript candidates`);
   for (const host of REGULAR_HOSTS) {
     const hostRows = candidates.filter((c) => c.speaker === host);
@@ -310,7 +339,10 @@ export function runTakeCandidateAudit(): void {
   }
 
   if (needsReview.length === 0) {
-    console.log("\nNo uncovered high-signal candidates in scanned transcripts.");
+    const skippedNote = report.skippedPortfolioReceipts.length > 0
+      ? ` ${report.skippedPortfolioReceipts.length} existing portfolio-scored receipt(s) remain transcript-skipped.`
+      : "";
+    console.log(`\nNo uncovered high-signal candidates in scanned transcripts.${skippedNote}`);
     return;
   }
 
