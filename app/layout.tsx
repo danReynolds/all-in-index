@@ -53,7 +53,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               <span className="inline-flex transition-transform duration-500 ease-out group-hover:rotate-[360deg]">
                 <Logo size={26} />
               </span>
-              <span className="font-display text-[17px] font-bold tracking-tight">
+              <span className="hidden font-display text-[17px] font-bold tracking-tight sm:inline">
                 The All-Index
               </span>
             </Link>

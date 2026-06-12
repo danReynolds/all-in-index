@@ -66,6 +66,10 @@ function isCryptoTicker(ticker: string | null): boolean {
   return !!ticker && (/-USD$/i.test(ticker) || ["BTC", "ETH", "SOL", "DOGE", "XRP", "ADA", "BNB"].includes(ticker.toUpperCase()));
 }
 
+function isCryptoReceipt(t: Thesis): boolean {
+  return isCryptoTicker(t.ticker) || (!t.ticker && t.topics.some((topic) => topic.toLowerCase().includes("crypto")));
+}
+
 function isTradableCompanyTake(t: Thesis): boolean {
   return (
     !!t.ticker &&
@@ -74,6 +78,34 @@ function isTradableCompanyTake(t: Thesis): boolean {
     !EXCLUDED_ETFS.has(t.ticker.toUpperCase()) &&
     !isMacroAsset(t.ticker)
   );
+}
+
+function isBroadMarketTake(t: Thesis): boolean {
+  const name = t.company.toLowerCase();
+  return name.includes("s&p 500") || name.includes("broad market") || name.includes("us equities") || name.includes("index");
+}
+
+function notTradedReason(t: Thesis): string {
+  if (t.scoreCondition) return `Conditional: ${t.scoreCondition}`;
+  if (t.scoreExclusionReason === "day_trade_aside") return "Day-trade aside, not a durable scorecard call.";
+  if (t.scoreExclusionReason === "not_investment_call") return "Audited but not an investment call.";
+  if (t.scoreExclusionReason === "conditional") return "Conditional call, not active exposure.";
+  if (isCryptoReceipt(t) || t.scoreExclusionReason === "crypto") return "Crypto excluded from public-equity scorecard.";
+  if ((t.ticker && EXCLUDED_ETFS.has(t.ticker.toUpperCase())) || t.scoreExclusionReason === "benchmark_or_etf") {
+    return "Benchmark/ETF excluded from company scorecard.";
+  }
+  if (isMacroAsset(t.ticker) || isBroadMarketTake(t) || t.scoreExclusionReason === "macro_asset") {
+    return "Broad-market or macro exposure, not a single-company scorecard call.";
+  }
+  if (!t.ticker || !t.isPublic || t.scoreExclusionReason === "private") return "Private or unpriced company.";
+  if (t.scoreExclusionReason === "unpriced") return "No reliable market price.";
+  return "Not traded in the public scorecard.";
+}
+
+function receiptLabel(t: Thesis): string {
+  if (t.scoreReason) return t.scoreReason;
+  if (t.callType) return t.callType.replace(/_/g, " ");
+  return "Audited receipt";
 }
 
 export default async function HostPage({ params }: PageProps<"/host/[host]">) {
@@ -132,6 +164,15 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
   const excludedScoreableTakes = scoreableTakes.length - tradableScoreableTakes.length;
   const reaffirmedScoreableTakes = Math.max(0, tradableScoreableTakes.length - (fund?.constituents.length ?? 0));
   const commentaryTakes = takes.length - scoreableTakes.length;
+  const auditedNotTraded = takes
+    .filter(
+      (t) =>
+        t.attributionConfidence !== "low" &&
+        (Boolean(t.scoreCondition) ||
+          Boolean(t.scoreExclusionReason) ||
+          (isPortfolioScored(t) && !isTradableCompanyTake(t))),
+    )
+    .sort((a, b) => b.episodeDate.localeCompare(a.episodeDate));
   const signature = takes
     .filter((t) => t.quote && t.stance !== "neutral")
     .sort(
@@ -148,17 +189,17 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
       {/* Hero */}
       <header className="rise relative overflow-hidden rounded-3xl border border-neutral-200 bg-white p-6 dark:border-neutral-800 dark:bg-neutral-900 sm:p-8">
         <div
-          className="orb-breathe pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full opacity-20 blur-3xl"
+          className="orb-breathe pointer-events-none absolute -top-16 right-0 h-56 w-56 rounded-full opacity-20 blur-3xl sm:-right-16"
           style={{ background: ui.hex }}
         />
         <div className="relative flex flex-wrap items-center gap-5">
           <span
-            className="flex h-16 w-16 items-center justify-center rounded-2xl text-2xl font-black text-white"
+            className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl text-2xl font-black text-white"
             style={{ background: ui.hex }}
           >
             {ui.initials}
           </span>
-          <div className="min-w-0">
+          <div className="min-w-0 flex-1">
             <div className="flex items-center gap-2">
               <h1 className="font-display text-3xl font-bold tracking-tight">{profile?.fullName ?? host}</h1>
               {rank >= 0 && <span className="text-2xl">{RANK_MEDAL[rank] ?? ""}</span>}
@@ -166,7 +207,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
             <p className="text-sm text-neutral-500">{profile?.blurb}</p>
           </div>
           {entry && entry.positions > 0 && (
-            <div className="ml-auto text-right">
+            <div className="w-full text-left sm:ml-auto sm:w-auto sm:text-right">
               <div className={`text-4xl font-black tabular-nums ${returnColor(entry.portfolioReturn)}`}>
                 {pct(entry.portfolioReturn)}
               </div>
@@ -251,6 +292,68 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
               </tbody>
             </table>
           </div>
+
+          {auditedNotTraded.length > 0 && (
+            <div className="mt-6 border-t border-neutral-100 pt-4 dark:border-neutral-800">
+              <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+                  Not-traded receipts
+                </h3>
+                <span className="text-xs text-neutral-500">
+                  Conditional, private, macro, or otherwise excluded from the public scorecard
+                </span>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead className="border-b border-neutral-200 text-left text-xs uppercase tracking-wide text-neutral-500 dark:border-neutral-800">
+                    <tr>
+                      <th className="py-2 pr-4 font-medium">Receipt</th>
+                      <th className="hidden py-2 pr-4 font-medium lg:table-cell">Why not traded</th>
+                      <th className="py-2 text-right font-medium">Episode</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
+                    {auditedNotTraded.map((t) => (
+                      <tr key={t.id} className="align-top">
+                        <td className="py-3 pr-4">
+                          <Link href={`/holding/${t.slug}`} className="font-medium hover:underline">
+                            {t.company}
+                          </Link>{" "}
+                          {t.ticker && <span className="font-mono text-xs text-neutral-400">{t.ticker}</span>}
+                          <div className="mt-1 text-xs text-neutral-500">{receiptLabel(t)}</div>
+                          {t.quote && (
+                            <blockquote className="mt-1 line-clamp-2 text-xs italic leading-relaxed text-neutral-500 dark:text-neutral-400">
+                              “{t.quote}”
+                            </blockquote>
+                          )}
+                          <div className="mt-1 text-xs text-neutral-500 lg:hidden">{notTradedReason(t)}</div>
+                        </td>
+                        <td className="hidden py-3 pr-4 text-xs leading-relaxed text-neutral-500 lg:table-cell">
+                          {notTradedReason(t)}
+                        </td>
+                        <td className="py-3 text-right text-xs text-neutral-500">
+                          <Link href={`/episode/${t.episodeId}`} className="font-mono hover:text-neutral-200 hover:underline">
+                            {t.episodeNumber ? `E${t.episodeNumber}` : t.episodeId}
+                          </Link>
+                          {(episodes[t.episodeId]?.audioUrl || episodeLinks[t.episodeId]) && (
+                            <span className="mt-1 block">
+                              <ListenButton
+                                meta={episodes[t.episodeId]}
+                                episodeId={t.episodeId}
+                                startMs={t.quoteStartMs}
+                                caption={`${host} on ${t.company}`}
+                                fallbackLink={episodeLinks[t.episodeId]}
+                              />
+                            </span>
+                          )}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
         </section>
       )}
 

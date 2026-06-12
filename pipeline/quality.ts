@@ -97,6 +97,12 @@ function validateHostFundTaxonomy(snapshot: IndexSnapshot, errors: string[]) {
 function validateScoredTakeTaxonomy(snapshot: IndexSnapshot, errors: string[]) {
   for (const h of snapshot.holdings) {
     for (const t of h.theses) {
+      if (t.scoreCondition && t.positional) {
+        errors.push(`${t.id} has scoreCondition but is still positional`);
+      }
+      if (t.scoreCondition && t.scoreExclusionReason !== "conditional") {
+        errors.push(`${t.id} has scoreCondition but is not marked scoreExclusionReason=conditional`);
+      }
       if (!t.positional) continue;
       if (!t.callType) {
         errors.push(`${t.id} is positional but missing callType`);

@@ -96,6 +96,15 @@ export type CallType =
   | "basket";
 export type TradeDirection = "long" | "short";
 export type IndexDirection = TradeDirection | "mixed";
+export type ScoreExclusionReason =
+  | "conditional"
+  | "private"
+  | "macro_asset"
+  | "crypto"
+  | "benchmark_or_etf"
+  | "unpriced"
+  | "not_investment_call"
+  | "day_trade_aside";
 
 /** A single host's view on a single company, extracted from one episode. */
 export interface Thesis {
@@ -145,6 +154,10 @@ export interface Thesis {
   pairTradeId?: string | null;
   /** Short human-readable note explaining why this take clears the scoring bar. */
   scoreReason?: string | null;
+  /** Condition that must resolve before a take should be scored. */
+  scoreCondition?: string | null;
+  /** Why a noteworthy receipt is audited but not traded in the public scorecard. */
+  scoreExclusionReason?: ScoreExclusionReason | null;
   /** Identified name when host === "Guest" (e.g. "Brad Gerstner"). */
   guestName?: string;
   /** True for hand-authored placeholder data shown before the real pipeline runs. */

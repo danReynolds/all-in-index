@@ -66,7 +66,9 @@
       "M&A"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "scoreCondition": "Only applies if Netflix does not close the Warner Bros. Discovery deal.",
+    "scoreExclusionReason": "conditional"
   },
   {
     "id": "E257-now-Sacks-3",

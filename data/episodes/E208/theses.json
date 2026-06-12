@@ -135,6 +135,7 @@
       "NASDAQ 100"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "scoreExclusionReason": "day_trade_aside"
   }
 ]

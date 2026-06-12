@@ -7,6 +7,7 @@ import type { IndexSnapshot, Thesis } from "../lib/types";
 
 const CALL_TYPE_VALUES = ["view", "explicit_long", "explicit_short", "explicit_exit", "selection", "pair_trade", "basket"] as const;
 const TRADE_DIRECTION_VALUES = ["long", "short"] as const;
+const SCORE_EXCLUSION_VALUES = ["conditional", "private", "macro_asset", "crypto", "benchmark_or_etf", "unpriced", "not_investment_call", "day_trade_aside"] as const;
 
 const SYSTEM = `You classify podcast investment takes as PORTFOLIO-SCORED CALLS or commentary.
 
@@ -27,6 +28,8 @@ For every take, also classify:
 - tradeDirection: "long" only when the row opens a long exposure; "short" only when the speaker explicitly says short or names the short leg of a pair. Bearish exits such as "take profits" or "wouldn't touch it" can be positional with callType="explicit_exit" but must have tradeDirection=null.
 - pairTradeId: shared id for rows that are legs of the same pair trade, else null.
 - scoreReason: short phrase explaining why it clears or does not clear the scoring bar.
+- scoreCondition: for conditional picks that should not trade until a condition resolves.
+- scoreExclusionReason: why a noteworthy receipt is audited but not scored (conditional, day_trade_aside, not_investment_call, etc.).
 
 Lean false when unsure — only clear in/out signals count. Judge each take independently.`;
 
@@ -39,6 +42,8 @@ const Schema = z.object({
       tradeDirection: z.enum(TRADE_DIRECTION_VALUES).nullable(),
       pairTradeId: z.string().nullable(),
       scoreReason: z.string().nullable(),
+      scoreCondition: z.string().nullable(),
+      scoreExclusionReason: z.enum(SCORE_EXCLUSION_VALUES).nullable(),
     }),
   ),
 });
@@ -57,8 +62,10 @@ const INPUT_SCHEMA = {
           tradeDirection: { type: ["string", "null"], enum: [...TRADE_DIRECTION_VALUES, null] },
           pairTradeId: { type: ["string", "null"] },
           scoreReason: { type: ["string", "null"] },
+          scoreCondition: { type: ["string", "null"] },
+          scoreExclusionReason: { type: ["string", "null"], enum: [...SCORE_EXCLUSION_VALUES, null] },
         },
-        required: ["id", "positional", "callType", "tradeDirection", "pairTradeId", "scoreReason"],
+        required: ["id", "positional", "callType", "tradeDirection", "pairTradeId", "scoreReason", "scoreCondition", "scoreExclusionReason"],
       },
     },
   },
@@ -115,6 +122,8 @@ export async function amendPositional(): Promise<void> {
         t.tradeDirection = v.tradeDirection;
         t.pairTradeId = v.pairTradeId;
         t.scoreReason = v.scoreReason;
+        t.scoreCondition = v.scoreCondition;
+        t.scoreExclusionReason = v.scoreExclusionReason;
         touched = true;
       }
     }
@@ -133,6 +142,8 @@ export async function amendPositional(): Promise<void> {
           t.tradeDirection = v.tradeDirection;
           t.pairTradeId = v.pairTradeId;
           t.scoreReason = v.scoreReason;
+          t.scoreCondition = v.scoreCondition;
+          t.scoreExclusionReason = v.scoreExclusionReason;
         }
       }
     }

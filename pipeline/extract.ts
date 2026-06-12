@@ -7,6 +7,7 @@ import type { Episode, Thesis, Transcript, Host } from "../lib/types";
 const HOST_VALUES = [...REGULAR_HOSTS, "Guest", "Unknown"] as const;
 const CALL_TYPE_VALUES = ["view", "explicit_long", "explicit_short", "explicit_exit", "selection", "pair_trade", "basket"] as const;
 const TRADE_DIRECTION_VALUES = ["long", "short"] as const;
+const SCORE_EXCLUSION_VALUES = ["conditional", "private", "macro_asset", "crypto", "benchmark_or_etf", "unpriced", "not_investment_call", "day_trade_aside"] as const;
 
 const ThesisItemSchema = z.object({
   company: z.string(),
@@ -20,6 +21,8 @@ const ThesisItemSchema = z.object({
   tradeDirection: z.enum(TRADE_DIRECTION_VALUES).nullable().optional(),
   pairTradeId: z.string().nullable().optional(),
   scoreReason: z.string().nullable().optional(),
+  scoreCondition: z.string().nullable().optional(),
+  scoreExclusionReason: z.enum(SCORE_EXCLUSION_VALUES).nullable().optional(),
   summary: z.string(),
   quote: z.string(),
   quoteStartSec: z.number().nullable(),
@@ -69,6 +72,7 @@ Rules:
   Set tradeDirection ONLY when the row opens an exposure: "long" for buy/own/selected long legs, "short" only when the speaker explicitly says short or names the short leg of a pair. A bearish exit ("take profits", "wouldn't touch it") can be positional with callType="explicit_exit" but should have tradeDirection=null.
   If two rows are legs of the same pair trade, give both the same pairTradeId (for example "E234-figma-adobe-Chamath"). For non-pairs, pairTradeId=null or omit it.
   scoreReason should briefly name the evidence that made the row scoreable ("ranked #1 AI pick", "explicit long", "short leg of spread").
+  If an otherwise pick-like statement is conditional ("X if they don't close the deal") or too tactical to model ("last day trade"), keep positional=false and set scoreCondition or scoreExclusionReason so the receipt can be audited without entering the scorecard.
   Note: an advantage scoped to ONE product category of a diversified company ("outstanding position to do the agent thing") is not, by itself, a company-level bull claim — without a stated company-level consequence, keep stance neutral or mark the hedge with low conviction.
 - ticker: the correct US-listed symbol ONLY if you are confident and the company is publicly traded. For private companies (e.g. SpaceX, OpenAI, Anthropic, Stripe) set ticker=null and isPublic=false.
 - quote: a SHORT verbatim excerpt (≤ 240 characters) from that host that best supports the thesis. Copy it exactly from the transcript. Set quoteStartSec to the integer second shown in that line's "[<sec>s <Speaker>]" prefix.
@@ -100,6 +104,8 @@ const INPUT_SCHEMA = {
           tradeDirection: { type: ["string", "null"], enum: [...TRADE_DIRECTION_VALUES, null] },
           pairTradeId: { type: ["string", "null"] },
           scoreReason: { type: ["string", "null"] },
+          scoreCondition: { type: ["string", "null"] },
+          scoreExclusionReason: { type: ["string", "null"], enum: [...SCORE_EXCLUSION_VALUES, null] },
           summary: { type: "string" },
           quote: { type: "string", description: "Verbatim excerpt ≤240 chars" },
           quoteStartSec: { type: ["number", "null"] },
@@ -183,6 +189,8 @@ export async function extractTheses(
     tradeDirection: item.tradeDirection,
     pairTradeId: item.pairTradeId,
     scoreReason: item.scoreReason,
+    scoreCondition: item.scoreCondition,
+    scoreExclusionReason: item.scoreExclusionReason,
     summary: item.summary,
     quote: trimPublishedQuote(item.quote),
     quoteStartMs: item.quoteStartSec != null ? item.quoteStartSec * 1000 : null,
