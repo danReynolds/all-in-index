@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ host: str
   return {
     title: `${HOST_PROFILES[host as keyof typeof HOST_PROFILES]?.fullName ?? host} — track record`,
     description: e?.positions
-      ? `${(e.portfolioReturn >= 0 ? "+" : "") + (e.portfolioReturn * 100).toFixed(1)}% on ${e.positions} position calls vs the S&P's ${(e.benchmarkReturn * 100).toFixed(1)}% over the same windows. Every call sourced from the All-In podcast.`
+      ? `${(e.portfolioReturn >= 0 ? "+" : "") + (e.portfolioReturn * 100).toFixed(1)}% on ${e.positions} scored calls vs the S&P's ${(e.benchmarkReturn * 100).toFixed(1)}% over the same windows. Every call sourced from the All-In podcast.`
       : `Every call ${host} has made on the All-In podcast, sourced and scored.`,
   };
 }
@@ -68,7 +68,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
     }
   }
 
-  // Entry/exit events for the fund chart, from their position-call windows.
+  // Entry/exit events for the fund chart, from their portfolio-scored windows.
   const tradeEvents: TradeEvent[] = [];
   if (fund) {
     for (const c of fund.constituents) {
@@ -140,7 +140,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
           </h2>
           <div className="mb-4">
             <Explainer summary="How this portfolio is scored">
-              {`$1,000 per name, in the market only while their position calls said in — entered on a clear buy, exited on a clear out, re-entries included — vs the S&P held over the identical windows. Commentary and criticism never trade. Click any ▲/▼ marker for the call behind it.`}
+              {`$1,000 per name, in the market only while their scored calls said in — clear buys, ranked picks, explicit investment selections, and pair legs count; exits and re-entries included — vs the S&P held over the identical windows. Commentary and criticism never trade. Click any ▲/▼ marker for the call behind it.`}
             </Explainer>
           </div>
           <IndexChart

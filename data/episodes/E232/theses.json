@@ -57,8 +57,8 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Chamath ranks Google as his #2 AI winner, citing best-in-class Gemini models, tight TPU integration, quantum computing, a multi-billion-user distribution funnel, and the ability to pivot search monetization from price-per-click to price-per-token.",
-    "quote": "I would tell you as a user, Gemini models are exceptional, absolutely just bar none exceptional... Google's Gemini models are extremely tightly coupled to TPU., and it enables and unlocks an entire stack of secrets and capability that then ",
-    "quoteStartMs": 1515511,
+    "quote": "Tesla's one and Google's two... number two, for many of the same reasons, I think Google... They have the TPU... an entire funnel of billions of people... So Tesla one, Google two.",
+    "quoteStartMs": 1847000,
     "topics": [
       "AI models",
       "competitive moat",
@@ -66,7 +66,7 @@
       "search monetization"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true
   },
   {
     "id": "E232-googl-Friedberg-3",
@@ -80,8 +80,8 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Friedberg picks Google as his #1 AI investment, citing a diversified portfolio of high-beta bets (Waymo, quantum, biologics/Isomorphic) where any single hit offsets core search risk, plus Sundar's thoughtful evolution of search architecture.",
-    "quote": "I think that there is a diversification of high beta bets inside of Google, of any one of which could have, call it a trillion-dollar market cap outcome, ranging from Waymo to quantum computing to the biologics work",
-    "quoteStartMs": 2301512,
+    "quote": "what's the portfolio solution? I think that's Google. I think that there is a diversification of high beta bets inside of Google, of any one of which could have, call it a trillion-dollar market cap outcome",
+    "quoteStartMs": 2258000,
     "topics": [
       "AI portfolio",
       "valuation",
@@ -89,7 +89,7 @@
       "diversification"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true
   },
   {
     "id": "E232-googl-Jason-4",
@@ -103,8 +103,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Jason argues Google's ad network will grow in velocity as its unrivaled data advantage (Gmail, Chrome, YouTube, Android, search) enables far more effective advertising even if search share declines.",
-    "quote": "even if they lose search share, their ad network is going to continue to grow. And I think it will increase in velocity.",
-    "quoteStartMs": 2106070,
+    "quote": "I'm going to go with you, Chamath... my 1 and 2 are either Google, uh, or Elon... even if they lose search share, their ad network is going to continue to grow.",
+    "quoteStartMs": 1972000,
     "topics": [
       "advertising",
       "data moat",
@@ -112,7 +112,7 @@
       "AI"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true
   },
   {
     "id": "E232-tsla-Chamath-5",
@@ -126,8 +126,8 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Chamath ranks Tesla #1 in the AI race, arguing it has the most vertically integrated stack — best vision models, xAI's LLMs on Dojo, and physical AI deployment across cars, robotaxis, and Optimus — and calls it 'misunderstood' by the market.",
-    "quote": "I told you that I spent time last week at Tesla. I would not be sleeping on this business. I think that it is yet again back into the land of being misunderstood... Tesla one, Google two. And the reason is because they are the closest to ha",
-    "quoteStartMs": 1533426,
+    "quote": "Tesla's one and Google's two. And the reason is because they are the closest to having that vertically integrated stack... Tesla has the best vision models... all of the physical AI",
+    "quoteStartMs": 1847000,
     "topics": [
       "AI vertical integration",
       "robotics",
@@ -135,7 +135,7 @@
       "physical AI"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true
   },
   {
     "id": "E232-tsla-Friedberg-6",
@@ -149,8 +149,8 @@
     "stance": "bull",
     "conviction": "medium",
     "summary": "Friedberg calls Tesla the best place to invest for exposure to the humanoid robotics opportunity, describing it as a low-probability, high-upside call option embedded in the business, though notes valuation already prices in a premium.",
-    "quote": "I think this humanoid robot opportunity is absolutely mind-blowingly ginormous. And I don't think that there's a better company on earth positioned to execute against this humanoid robotics opportunity than Tesla.",
-    "quoteStartMs": 2142197,
+    "quote": "Tesla probably has the— it is the best place to invest if you want to have a shot at a massive new industry... I don't think that there's a better company on earth positioned",
+    "quoteStartMs": 2124000,
     "topics": [
       "robotics",
       "physical AI",
@@ -158,7 +158,7 @@
       "call option"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true
   },
   {
     "id": "E232-tsla-Guest-7",
@@ -180,7 +180,7 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true
   },
   {
     "id": "E232-nvda-Guest-8",
@@ -194,15 +194,15 @@
     "stance": "bull",
     "conviction": "high",
     "summary": "Thomas LaFont ranks NVIDIA #1, arguing all roads still lead to the GPU for AI model training and that additional architectures will grow the market rather than displace NVIDIA.",
-    "quote": "I don't see the GPU kind of getting displaced. I see additional architectures kind of coming on board, right? And growing the market. But, um, at the end of the day, all roads still lead to the GPU for all of these models.",
-    "quoteStartMs": 1803372,
+    "quote": "number 1, I, I still think NVIDIA... I don't see the GPU kind of getting displaced... at the end of the day, all roads still lead to the GPU for all of these models.",
+    "quoteStartMs": 1799000,
     "topics": [
       "GPU dominance",
       "AI infrastructure",
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": true
   },
   {
     "id": "E232-nvda-Friedberg-9",

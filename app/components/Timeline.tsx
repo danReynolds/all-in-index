@@ -126,9 +126,9 @@ export function Timeline({
             {t.positional && (
               <span
                 className="rounded-full bg-emerald-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-300 ring-1 ring-inset ring-emerald-500/25"
-                title="A clear in/out call — this take trades in the money simulations. Everything else is view/commentary."
+                title="A clear in/out call, ranked pick, or investment selection — this take trades in the money simulations. Everything else is view/commentary."
               >
-                📌 position call
+                📌 scored call
               </span>
             )}
             {t.attributionConfidence === "low" && (

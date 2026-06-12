@@ -183,9 +183,9 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
                           {t.positional && (
                             <span
                               className="rounded-full bg-emerald-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-300 ring-1 ring-inset ring-emerald-500/25"
-                              title="A clear in/out call — trades in the money simulations."
+                              title="A clear in/out call, ranked pick, or investment selection — trades in the money simulations."
                             >
-                              📌 position call
+                              📌 scored call
                             </span>
                           )}
                           {v && v.right != null && (

@@ -97,14 +97,14 @@ export default async function Image({ params }: { params: Promise<{ host: string
             </div>
             <div style={{ fontSize: 28, color: "#b6c0b9" }}>
               {entry
-                ? `vs S&P ${pct(entry.benchmarkReturn)} · ${entry.positions} position calls, scored over their own windows`
-                : "no position calls yet"}
+                ? `vs S&P ${pct(entry.benchmarkReturn)} · ${entry.positions} scored calls, over their own windows`
+                : "no scored calls yet"}
             </div>
           </div>
         </div>
 
         <div style={{ fontSize: 24, color: "#68766e" }}>
-          In the market only when they clearly said in · every call sourced · not financial advice
+          In the market on clear buys, ranked picks, and selections · every call sourced · not financial advice
         </div>
       </div>
     ),

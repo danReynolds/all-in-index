@@ -88,10 +88,10 @@ export function currentStanceFromTheses(theses: Thesis[]): Stance {
 }
 
 /**
- * Explicit position calls (View ≠ Position). Note: deliberately NOT gated on
+ * Portfolio-scored calls (View ≠ Trade). Note: deliberately NOT gated on
  * conviction — "I have shares, I think it's a good investment" said calmly is
- * the clearest possible "I'm in"; ownership signals don't need rhetorical
- * emphasis. Attribution must still be clean.
+ * the clearest possible "I'm in"; selection/ranking language in an investment
+ * frame is also scoreable. Attribution must still be clean.
  */
 export function positionTakes(
   theses: Thesis[],
@@ -118,9 +118,9 @@ export interface BullWindow {
 }
 
 /**
- * One host's long windows on a name, built ONLY from their position calls:
- * enter on a positional bull, exit on their next positional non-bull,
- * re-enter on a later positional bull. Commentary never trades.
+ * One host's long windows on a name, built ONLY from their portfolio-scored
+ * calls: enter on a scored bull, exit on their next scored non-bull, re-enter
+ * on a later scored bull. Commentary never trades.
  */
 export function hostBullWindows(theses: Thesis[], host: Host): BullWindow[] {
   const takes = positionTakes(theses, [host]);

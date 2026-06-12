@@ -10,7 +10,8 @@ const BESTIES = new Set(["Chamath", "Jason", "Sacks", "Friedberg"]);
 
 const SYSTEM = `You audit whether a take's QUOTE evidences its LABELS. The quote is the
 load-bearing receipt: a positional take's quote must contain the speaker's own
-in/out words ("I'm in", "I have shares", "I would be long it", "my pick is");
+in/out or selection words ("I'm in", "I have shares", "I would be long it",
+"my pick is", "number 1", "best place to invest");
 a bull/bear take's quote must contain the economic claim itself.
 
 You are given the take's labels, its current quote, and the speaker's

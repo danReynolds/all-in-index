@@ -115,10 +115,10 @@ export interface Thesis {
    */
   attributionConfidence?: "low" | "medium" | "high";
   /**
-   * True when the take clearly communicates an in/out position ("I'd own it
-   * here", "take profits", "this is a short") rather than commentary or
-   * analysis. Money simulations (host funds) only trade on positional takes;
-   * views still drive badges, the bear book, and discussion.
+   * True when the take is portfolio-scoreable: explicit in/out language
+   * ("I'd own it here", "take profits", "this is a short"), a ranked/selected
+   * investment pick ("my #1", "my pick", "best place to invest"), or a named
+   * pair/basket leg. General commentary still displays but does not trade.
    */
   positional?: boolean;
   /** Identified name when host === "Guest" (e.g. "Brad Gerstner"). */

@@ -28,7 +28,7 @@ async function buildLeaderboard(
   const entries: LeaderboardEntry[] = [];
   const hostFunds: Partial<Record<Host, IndexFund | null>> = {};
   for (const host of REGULAR_HOSTS) {
-    // Window-based: in the market only while the host's POSITION CALLS say in.
+    // Window-based: in the market only while the host's portfolio-scored calls say in.
     const fund = await buildWindowFund(holdings, nowIso, host);
     hostFunds[host] = fund;
     const top = fund?.constituents[0] ?? null;

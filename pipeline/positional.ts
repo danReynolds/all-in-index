@@ -5,16 +5,19 @@ import { store } from "./store";
 import { HOLDINGS_FILE } from "./config";
 import type { IndexSnapshot, Thesis } from "../lib/types";
 
-const SYSTEM = `You classify podcast investment takes as POSITION CALLS or commentary.
+const SYSTEM = `You classify podcast investment takes as PORTFOLIO-SCORED CALLS or commentary.
 
-positional = true ONLY when the statement clearly communicates whether the speaker would be IN or OUT of the stock right now — an expressed or unmistakably implied portfolio action or ownership stance:
+positional = true ONLY when the statement clearly communicates a portfolio-scoreable call — an expressed or unmistakably implied portfolio action, ownership stance, ranked investment selection, or pair/basket leg:
 - in: "I'd own it here", "I bought more", "this is the trade", "I'm long", "I'd be buying this dip"
 - out: "I'd take profits", "I wouldn't touch it", "this is a short", "I'm out", "stay away"
+- selection: "my pick is X", "my #1 is X", "if I could only bet on two: X and Y", "best place to invest", "new Mag 7 basket"
+- pair/basket: "long X / short Y", "own X over Y", "X belongs in the basket"
 
 positional = false for views WITHOUT ownership intent, however strong or detailed:
 - praise of products, execution, or leadership ("Jensen is a genius", "best positioned in AI")
 - criticism of strategy, innovation, or culture ("they've stopped innovating") — criticizing a company you might still hold is commentary, not an exit
 - valuation musings, competitive analysis, growth observations without an in/out signal
+- sentiment alone ("I'm bullish", "I wouldn't sleep on it", "exceptional business") unless the segment is explicitly asking for ranked picks or investment selections
 
 Lean false when unsure — only clear in/out signals count. Judge each take independently.`;
 

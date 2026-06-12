@@ -148,9 +148,10 @@ export async function buildBearBook(
 
 /**
  * Window-based single-host fund (drives the leaderboard + host pages):
- * $1,000 per name, IN the market only during the host's position-call bull
- * windows (enter on a clear buy, exit on a clear out, re-entries compound);
- * the benchmark holds SPY over the identical windows, isolating selection.
+ * $1,000 per name, IN the market only during the host's portfolio-scored bull
+ * windows (clear buys, ranked selections, explicit investment picks; exits on
+ * a clear out/non-bull, re-entries compound); the benchmark holds SPY over the
+ * identical windows, isolating selection.
  */
 export async function buildWindowFund(
   holdings: Holding[],
