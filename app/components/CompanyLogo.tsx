@@ -1,12 +1,16 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { macroColor } from "@/lib/assets";
 
 const SIZES = { sm: 20, md: 28, lg: 44 } as const;
 
-// Deterministic tint for the monogram fallback.
+// Deterministic tint for the monogram fallback — unless it's a commodity, which
+// gets a semantic color (gold goldenrod, copper amber, oil charcoal, …).
 const PALETTE = ["#10b981", "#0ea5e9", "#8b5cf6", "#f59e0b", "#14b8a6", "#f43f5e"];
 function tint(name: string): string {
+  const semantic = macroColor(name);
+  if (semantic) return semantic;
   let h = 0;
   for (const c of name) h = (h * 31 + c.charCodeAt(0)) >>> 0;
   return PALETTE[h % PALETTE.length];

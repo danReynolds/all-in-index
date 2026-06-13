@@ -9,17 +9,25 @@ export interface AssetDef {
   proxy: string;
   /** Transcript keywords that open an extraction window. */
   keywords: string[];
+  /** Semantic monogram color (white text reads on all of these). */
+  color: string;
 }
 
 export const ASSETS: AssetDef[] = [
-  { name: "Copper", proxy: "CPER", keywords: ["copper"] },
-  { name: "Oil", proxy: "USO", keywords: ["oil price", "price of oil", "crude", "brent", "wti", "barrel"] },
-  { name: "Gold", proxy: "GLD", keywords: ["gold"] },
-  { name: "Silver", proxy: "SLV", keywords: ["silver"] },
-  { name: "Natural Gas", proxy: "UNG", keywords: ["natural gas"] },
-  { name: "Uranium", proxy: "URA", keywords: ["uranium"] },
-  { name: "Lithium", proxy: "LIT", keywords: ["lithium"] },
+  { name: "Copper", proxy: "CPER", keywords: ["copper"], color: "#b45309" },
+  { name: "Oil", proxy: "USO", keywords: ["oil price", "price of oil", "crude", "brent", "wti", "barrel"], color: "#3f3f46" },
+  { name: "Gold", proxy: "GLD", keywords: ["gold"], color: "#b8860b" },
+  { name: "Silver", proxy: "SLV", keywords: ["silver"], color: "#737d8c" },
+  { name: "Natural Gas", proxy: "UNG", keywords: ["natural gas"], color: "#2563eb" },
+  { name: "Uranium", proxy: "URA", keywords: ["uranium"], color: "#65a30d" },
+  { name: "Lithium", proxy: "LIT", keywords: ["lithium"], color: "#7c3aed" },
 ];
+
+/** Semantic monogram color for a commodity by display name (null if not one). */
+const ASSET_COLOR = new Map(ASSETS.map((a) => [a.name.toLowerCase(), a.color]));
+export function macroColor(name: string): string | null {
+  return ASSET_COLOR.get(name.toLowerCase()) ?? null;
+}
 
 /** Tickers that price macro/commodity holdings — never company calls. */
 export const MACRO_PROXIES = new Set([
