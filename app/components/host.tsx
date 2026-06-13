@@ -5,6 +5,7 @@ import { HOST_UI, hostImageUrl } from "@/lib/hosts";
 import type { Host } from "@/lib/types";
 
 const SIZES = {
+  xs: "h-4 w-4 text-[8px]",
   sm: "h-5 w-5 text-[10px]",
   md: "h-7 w-7 text-xs",
   lg: "h-9 w-9 text-sm",

@@ -5,40 +5,17 @@ import { useState, type CSSProperties } from "react";
 import type { EpisodeMeta, IndexFundPoint, Thesis, TradeDirection } from "@/lib/types";
 import { fmtDate } from "@/lib/format";
 import { StanceBadge } from "@/app/components/badges";
+import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { ListenButton } from "@/app/components/player";
 
 const fadeAt = (s: number) => ({ "--d": `${s}s` }) as CSSProperties;
-
-function ReceiptStat({
-  label,
-  value,
-  tone,
-  title,
-}: {
-  label: string;
-  value: string;
-  /** Signed number to color the value by; omit for neutral. */
-  tone?: number;
-  title?: string;
-}) {
-  return (
-    <div title={title}>
-      <div className="text-[10px] font-medium uppercase tracking-[0.14em] text-neutral-500">{label}</div>
-      <div
-        className={`font-mono text-sm font-semibold tabular-nums ${
-          tone == null ? "text-neutral-200" : tone >= 0 ? "text-emerald-400" : "text-rose-400"
-        }`}
-      >
-        {value}
-      </div>
-    </div>
-  );
-}
 
 export interface TradeEvent {
   date: string;
   ticker: string;
   slug: string;
+  company: string;
+  domain?: string | null;
   kind: "in" | "out" | "reaffirm";
   direction?: TradeDirection;
   /** The position call behind this trade — shown when the marker is clicked. */
@@ -72,6 +49,39 @@ export interface PositionStat {
   contribPp: number;
 }
 
+interface PlottedTradeEvent extends TradeEvent {
+  id: string;
+  cx: number;
+  cy: number;
+  seriesIndex: number;
+}
+
+interface MarkerGroup {
+  id: string;
+  cx: number;
+  cy: number;
+  labelY: number;
+  markers: PlottedTradeEvent[];
+}
+
+function eventColor(e: Pick<TradeEvent, "kind" | "direction">): string {
+  if (e.kind === "out") return "#71717a";
+  if (e.kind === "reaffirm") return "#a3a3a3";
+  return "#d4d4d8";
+}
+
+function eventAction(e: Pick<TradeEvent, "kind" | "direction">): string {
+  if (e.kind === "out") return "closed call";
+  if (e.kind === "reaffirm") return "added to call";
+  return "opened call";
+}
+
+function eventGlyph(e: Pick<TradeEvent, "kind" | "direction">): string {
+  if (e.kind === "out") return "×";
+  if (e.kind === "reaffirm") return "+";
+  return e.direction === "short" ? "▼" : "▲";
+}
+
 /** Two-line cumulative-return chart: the index vs its benchmark, both from 0%. */
 export function IndexChart({
   series,
@@ -83,7 +93,7 @@ export function IndexChart({
   positionStats = {},
   portfolioReturn,
 }: Props) {
-  const [sel, setSel] = useState<number | null>(null);
+  const [sel, setSel] = useState<string | null>(null);
   const W = 800;
   const H = 300;
   const padL = 44;
@@ -116,7 +126,8 @@ export function IndexChart({
   const fmtPct = (v: number) => (v >= 0 ? "+" : "") + (v * 100).toFixed(1) + "%";
 
   // Place trade markers on the portfolio line at the nearest series point,
-  // staggering labels that land on the same spot.
+  // then merge dense neighborhoods into clickable chips. The chip carries the
+  // labels/logos; the SVG only keeps low-noise stems and direction dots.
   const nearestIdx = (date: string) => {
     let best = 0;
     for (let i = 0; i < series.length; i++) {
@@ -125,21 +136,47 @@ export function IndexChart({
     }
     return best;
   };
-  const labelSlots = new Map<number, number>();
-  const markers = events
+  const plotted = events
     .slice()
     .sort((a, b) => a.date.localeCompare(b.date))
-    .map((e) => {
+    .map((e, idx): PlottedTradeEvent => {
       const i = nearestIdx(e.date);
-      const slot = labelSlots.get(i) ?? 0;
-      labelSlots.set(i, slot + 1);
-      return { ...e, cx: x(i), cy: y(pf[i]), slot };
+      return { ...e, id: `${e.slug}-${e.date}-${e.kind}-${idx}`, cx: x(i), cy: y(pf[i]), seriesIndex: i };
     });
 
-  const selected = sel != null ? markers[sel] : null;
+  const markerGroups = (() => {
+    const grouped: PlottedTradeEvent[][] = [];
+    for (const marker of plotted) {
+      const prev = grouped[grouped.length - 1];
+      const anchor = prev?.[prev.length - 1];
+      if (anchor && Math.abs(marker.cx - anchor.cx) < 42 && Math.abs(marker.cy - anchor.cy) < 64) {
+        prev.push(marker);
+      } else {
+        grouped.push([marker]);
+      }
+    }
+    return grouped.map((markers, idx): MarkerGroup => {
+      const cx = markers.reduce((sum, m) => sum + m.cx, 0) / markers.length;
+      const cy = markers.reduce((sum, m) => sum + m.cy, 0) / markers.length;
+      return {
+        id: `group-${idx}-${markers.map((m) => m.id).join("-")}`,
+        cx: Math.max(padL + 12, Math.min(W - padR - 12, cx)),
+        cy,
+        labelY: Math.max(padT + 16, cy - 38),
+        markers,
+      };
+    });
+  })();
+
+  const selected = sel ? plotted.find((m) => m.id === sel) ?? null : null;
+  const selectedGroup = selected
+    ? markerGroups.find((g) => g.markers.some((m) => m.id === selected.id)) ?? null
+    : null;
+  const selectedStats = selected ? positionStats[selected.slug] : null;
 
   return (
     <div>
+    <div className="relative">
     <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label="Index vs benchmark cumulative return">
       <defs>
         <linearGradient id="pfFill" x1="0" y1="0" x2="0" y2="1">
@@ -159,40 +196,34 @@ export function IndexChart({
       <path d={areaPath} fill="url(#pfFill)" stroke="none" className="chart-fade" style={fadeAt(0.9)} />
       <path d={pfPath} fill="none" stroke="#10b981" strokeWidth="2.25" strokeLinejoin="round" pathLength={1} className="chart-draw" />
 
-      {/* trade markers (entries/exits) on the portfolio line — click for the take */}
-      {markers.map((m, idx) => {
-        const direction = m.direction ?? "long";
-        const isShort = direction === "short";
-        const c = m.kind === "out" ? "#94a3b8" : isShort ? "#f43f5e" : "#10b981";
-        const marker = m.kind === "out" ? "×" : m.kind === "reaffirm" ? "+" : isShort ? "▼" : "▲";
-        const action =
-          m.kind === "out"
-            ? `closed ${direction}`
-            : m.kind === "reaffirm"
-              ? `reaffirmed ${direction}`
-              : `opened ${direction}`;
-        const isSel = sel === idx;
-        const labelY = m.cy - 12 - m.slot * 11;
+      {/* grouped trade anchors on the portfolio line */}
+      {markerGroups.map((g) => {
+        const isSel = selectedGroup?.id === g.id;
+        const dotGap = 7;
+        const startX = g.cx - ((g.markers.length - 1) * dotGap) / 2;
         return (
           <g
-            key={`${m.ticker}-${m.date}-${idx}`}
-            className="marker-pop cursor-pointer"
-            style={{ "--d": `${Math.min(1000 + idx * 80, 1900)}ms` } as CSSProperties}
-            onClick={() => setSel(isSel ? null : idx)}
+            key={g.id}
+            className="marker-pop"
+            style={{ "--d": `${Math.min(1000 + g.markers[0].seriesIndex * 28, 1900)}ms` } as CSSProperties}
           >
-            <line x1={m.cx} y1={labelY + 3} x2={m.cx} y2={m.cy - 4} stroke={c} strokeWidth="1" strokeOpacity="0.35" />
-            <circle
-              cx={m.cx}
-              cy={m.cy}
-              r={isSel ? 6 : 4}
-              fill={c}
-              stroke={isSel ? "#fff" : "rgba(7,11,9,0.7)"}
-              strokeWidth="1.5"
-            />
-            <text x={m.cx} y={labelY} textAnchor="middle" fontSize="9" fontWeight="700" fill={c}>
-              {m.ticker} {marker}
-            </text>
-            <title>{`${m.ticker} — ${action} ${fmtDate(m.date)} · click for the take`}</title>
+            <line x1={g.cx} y1={g.labelY + 15} x2={g.cx} y2={g.cy - 5} stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" />
+            {g.markers.map((m, markerIdx) => (
+              <circle
+                key={m.id}
+                cx={startX + markerIdx * dotGap}
+                cy={g.cy}
+                r={isSel ? 4.2 : 3.3}
+                fill={eventColor(m)}
+                stroke={isSel ? "#fff" : "rgba(7,11,9,0.75)"}
+                strokeWidth="1.4"
+              />
+            ))}
+            <title>
+              {g.markers.length === 1
+                ? `${g.markers[0].ticker} — ${eventAction(g.markers[0])} ${fmtDate(g.markers[0].date)}`
+                : `${g.markers.length} calls near ${fmtDate(g.markers[0].date)}`}
+            </title>
           </g>
         );
       })}
@@ -217,34 +248,113 @@ export function IndexChart({
         <text x="142" y="4" className="fill-neutral-500" fontSize="11">S&amp;P ({benchmarkSymbol})</text>
       </g>
     </svg>
+    <div className="pointer-events-none absolute inset-0">
+      {markerGroups.map((g, idx) => {
+        const selectedInGroup = selectedGroup?.id === g.id;
+        const first = g.markers[0];
+        return (
+          <button
+            key={g.id}
+            type="button"
+            onClick={() => setSel(selectedInGroup ? null : first.id)}
+            className={`marker-pop pointer-events-auto absolute inline-flex min-h-7 -translate-x-1/2 -translate-y-1/2 items-center gap-1.5 rounded-full border bg-neutral-950/90 px-1.5 py-1 text-[10px] font-semibold text-neutral-100 shadow-lg shadow-black/30 backdrop-blur transition hover:border-white/30 ${
+              selectedInGroup ? "border-white/40 ring-2 ring-white/20" : "border-white/10"
+            }`}
+            style={{
+              left: `${(g.cx / W) * 100}%`,
+              top: `${(g.labelY / H) * 100}%`,
+              "--d": `${Math.min(950 + idx * 70, 1800)}ms`,
+            } as CSSProperties}
+            aria-label={
+              g.markers.length === 1
+                ? `${first.company} ${eventAction(first)} on ${fmtDate(first.date)}`
+                : `${g.markers.length} calls near ${fmtDate(first.date)}`
+            }
+            title={
+              g.markers.length === 1
+                ? `${first.ticker} — ${eventAction(first)} ${fmtDate(first.date)}`
+                : `${g.markers.length} calls near ${fmtDate(first.date)}`
+            }
+          >
+            {g.markers.length === 1 ? (
+              <>
+                <span className="relative inline-flex">
+                  <CompanyLogo
+                    name={first.company}
+                    domain={first.domain}
+                    size="sm"
+                    className="h-[18px] w-[18px] rounded-full ring-1 ring-neutral-950"
+                  />
+                </span>
+                <span className="font-mono">{first.ticker}</span>
+                <span className="font-mono text-neutral-400">{eventGlyph(first)}</span>
+              </>
+            ) : (
+              <>
+                <span className="inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-white/10 px-1.5 font-mono text-[10px]">
+                  {g.markers.length}
+                </span>
+                <span className="text-[9px] uppercase tracking-[0.12em] text-neutral-300">calls</span>
+                <span className="ml-0.5 flex items-center gap-0.5">
+                  {g.markers.slice(0, 6).map((m) => (
+                    <span
+                      key={m.id}
+                      aria-hidden
+                      className="h-1.5 w-1.5 rounded-full ring-1 ring-neutral-950"
+                      style={{ background: eventColor(m) }}
+                    />
+                  ))}
+                </span>
+              </>
+            )}
+          </button>
+        );
+      })}
+    </div>
+    </div>
 
     {/* The receipt behind the selected trade — pops in once, content swaps in place after. */}
     {selected && (
       <div className="pop-in mt-3 rounded-xl bg-neutral-800/40 p-4 text-sm ring-1 ring-white/5">
+        {selectedGroup && selectedGroup.markers.length > 1 && (
+          <div className="mb-3 flex flex-wrap items-center gap-1.5 border-b border-white/5 pb-3">
+            <span className="mr-1 text-[11px] uppercase tracking-[0.14em] text-neutral-500">
+              {selectedGroup.markers.length} calls
+            </span>
+            {selectedGroup.markers.map((m) => (
+              <button
+                key={m.id}
+                type="button"
+                onClick={() => setSel(m.id)}
+                className={`inline-flex items-center gap-1.5 rounded-full border px-2 py-1 text-xs transition ${
+                  selected.id === m.id
+                    ? "border-white/35 bg-white/10 text-neutral-100"
+                    : "border-white/10 text-neutral-400 hover:border-white/25 hover:text-neutral-100"
+                }`}
+              >
+                <span className="relative inline-flex">
+                  <CompanyLogo name={m.company} domain={m.domain} size="sm" className="h-[18px] w-[18px] rounded-full" />
+                </span>
+                <span className="font-mono">{m.ticker}</span>
+                <span className="font-mono text-neutral-400">{eventGlyph(m)}</span>
+              </button>
+            ))}
+          </div>
+        )}
+
         <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1.5 text-xs text-neutral-500">
+          <CompanyLogo name={selected.company} domain={selected.domain} size="md" className="rounded-lg" />
           <Link href={`/holding/${selected.slug}`} className="font-semibold text-neutral-100 hover:underline">
-            {selected.ticker}
+            {selected.company}
           </Link>
-          <span
-            className={`font-semibold ${
-              selected.kind === "out"
-                ? "text-neutral-400"
-                : selected.direction === "short"
-                  ? "text-rose-400"
-                  : "text-emerald-400"
-            }`}
-          >
-            {selected.kind === "in"
-              ? selected.direction === "short"
-                ? "▼ opened short"
-                : "▲ opened long"
-              : selected.kind === "reaffirm"
-                ? selected.direction === "short"
-                  ? "+ reaffirmed short"
-                  : "+ reaffirmed long"
-                : "× closed"}
-          </span>
-          {selected.take && <StanceBadge stance={selected.take.stance} />}
+          <span className="font-mono text-[11px] text-neutral-500">{selected.ticker}</span>
+          {selected.take && (
+            <StanceBadge
+              stance={selected.take.stance}
+              tone={selectedStats ? "outcome" : "neutral"}
+              outcome={selectedStats?.ret}
+            />
+          )}
           {selected.take && (
             <Link
               href={`/episode/${selected.take.episodeId}`}
@@ -274,7 +384,7 @@ export function IndexChart({
             <p className="mt-2.5 leading-relaxed text-neutral-200">{selected.take.summary}</p>
             {selected.take.quote && (
               <blockquote className="relative mt-3 pl-6 text-[13px] italic leading-relaxed text-neutral-400">
-                <span aria-hidden className="absolute -top-1 left-0 font-display text-3xl leading-none text-emerald-500/35">
+                <span aria-hidden className="absolute -top-1 left-0 font-display text-3xl leading-none text-neutral-500/35">
                   “
                 </span>
                 {selected.take.quote}”
@@ -290,22 +400,54 @@ export function IndexChart({
         {/* What the call DID: this name's windowed performance and its exact
             share of the headline number (equal weight ⇒ return ÷ N). */}
         {(() => {
-          const stats = positionStats[selected.slug];
+          const stats = selectedStats;
           if (!stats) return null;
           const pp = (v: number) => (v >= 0 ? "+" : "") + (v * 100).toFixed(1) + "pp";
+          const tile = (
+            label: string,
+            value: string,
+            tone: number | null,
+            detail?: string,
+          ) => (
+            <div className="rounded-md bg-white/[0.03] px-3 py-2 ring-1 ring-white/5">
+              <div className="text-[10px] font-medium uppercase tracking-[0.14em] text-neutral-500">{label}</div>
+              <div
+                className={`mt-1 font-mono text-lg font-semibold tabular-nums ${
+                  tone == null ? "text-neutral-200" : tone >= 0 ? "text-emerald-400" : "text-rose-400"
+                }`}
+              >
+                {value}
+              </div>
+              {detail && <div className="mt-0.5 text-[11px] leading-snug text-neutral-500">{detail}</div>}
+            </div>
+          );
           return (
-            <div className="mt-3 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-white/5 pt-3">
-              <ReceiptStat label="This exposure" value={fmtPct(stats.ret)} tone={stats.ret} />
-              <ReceiptStat label="S&P same exposure" value={fmtPct(stats.bench)} />
-              <ReceiptStat label="Alpha" value={pp(stats.alpha)} tone={stats.alpha} />
-              {portfolioReturn != null && (
-                <ReceiptStat
-                  label={`Of the ${fmtPct(portfolioReturn)} total`}
-                  value={pp(stats.contribPp)}
-                  tone={stats.contribPp}
-                  title="Equal weight: every name gets $1,000, so this name's return ÷ number of exposures is exactly its share of the portfolio's return."
-                />
-              )}
+            <div className="mt-4 rounded-lg bg-neutral-950/35 p-3 ring-1 ring-white/5">
+              <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+                <div className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
+                  Selected company performance
+                </div>
+                <Link href={`/holding/${selected.slug}`} className="text-xs text-neutral-400 hover:text-neutral-100 hover:underline">
+                  Open holding
+                </Link>
+              </div>
+              <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+                {tile(
+                  `${selected.ticker} call return`,
+                  fmtPct(stats.ret),
+                  stats.ret,
+                  "since this call",
+                )}
+                {tile("S&P match", fmtPct(stats.bench), stats.bench, "same dates")}
+                {tile("Alpha", pp(stats.alpha), stats.alpha, "vs matched S&P")}
+                {portfolioReturn != null &&
+                  tile(
+                    "Contribution",
+                    pp(stats.contribPp),
+                    stats.contribPp,
+                    `of ${fmtPct(portfolioReturn)} total`,
+                  )}
+              </div>
             </div>
           );
         })()}

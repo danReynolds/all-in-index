@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { z } from "zod";
 import { callTool } from "./llm";
+import { isMacroAsset } from "../lib/assets";
 import type { Holding } from "../lib/types";
 
 const CACHE_FILE = path.join(process.cwd(), "data", "companies.json");
@@ -104,6 +105,9 @@ export async function ensureCompanyMeta(holdings: Holding[]): Promise<void> {
   for (const h of holdings) {
     const meta = cache[h.slug];
     h.description = meta?.description ?? null;
-    h.domain = meta?.domain ?? null;
+    // Commodities price via an ETF proxy; the sponsor's domain/favicon is
+    // confusing under a name like "Gold", so drop it — CompanyLogo falls back
+    // to a clean tinted monogram and the holding page hides the sponsor link.
+    h.domain = isMacroAsset(h.ticker) ? null : (meta?.domain ?? null);
   }
 }

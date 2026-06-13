@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { fmtDate, mmss } from "@/lib/format";
+import { isPortfolioScored } from "@/lib/calls";
 import { StanceBadge, ConvictionDots } from "@/app/components/badges";
 import { ListenButton } from "@/app/components/player";
 import type { EpisodeMeta, Stance, Thesis } from "@/lib/types";
@@ -13,6 +14,16 @@ const STANCE_HEX: Record<Stance, string> = {
   mixed: "#f59e0b",
   neutral: "#8d9a92",
 };
+
+type TimelineMode = "signal" | "all";
+
+function isDefaultTimelineTake(t: Thesis): boolean {
+  return t.attributionConfidence !== "low" && (isPortfolioScored(t) || t.conviction === "high");
+}
+
+function mentionCount(n: number): string {
+  return `${n} ${n === 1 ? "mention" : "mentions"}`;
+}
 
 /**
  * A host's take history as a time-proportional track: nodes sit where the
@@ -28,16 +39,24 @@ export function Timeline({
   episodeLinks?: Record<string, string | null>;
   episodes?: Record<string, EpisodeMeta>;
 }) {
-  const sorted = useMemo(
+  const allSorted = useMemo(
     () => theses.slice().sort((a, b) => a.episodeDate.localeCompare(b.episodeDate)),
     [theses],
   );
-  const [sel, setSel] = useState(sorted.length - 1);
-  const t = sorted[sel];
+  const defaultSorted = useMemo(() => allSorted.filter(isDefaultTimelineTake), [allSorted]);
+  const [mode, setMode] = useState<TimelineMode>("signal");
+  const sorted = mode === "signal" && defaultSorted.length > 0 ? defaultSorted : allSorted;
+  const [sel, setSel] = useState(Math.max(0, sorted.length - 1));
+  const selectedIndex = Math.min(sel, Math.max(0, sorted.length - 1));
+  const t = sorted[selectedIndex];
+  const hasFilter = defaultSorted.length > 0 && defaultSorted.length < allSorted.length;
+  const hiddenCount = allSorted.length - defaultSorted.length;
+  const allMentionsLabel = hiddenCount > 0 ? `All mentions +${hiddenCount}` : "All mentions";
 
   // Time-proportional x positions (2%..98%), with a minimum gap so same-week
   // takes don't fully overlap.
   const { xs, years } = useMemo(() => {
+    if (sorted.length === 0) return { xs: [], years: [] };
     const t0 = Date.parse(sorted[0].episodeDate);
     const t1 = Date.parse(sorted[sorted.length - 1].episodeDate);
     const span = Math.max(t1 - t0, 1);
@@ -63,6 +82,35 @@ export function Timeline({
 
   return (
     <div>
+      {hasFilter && (
+        <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+          <div className="inline-flex rounded-full border border-neutral-200 bg-neutral-100 p-0.5 dark:border-neutral-800 dark:bg-neutral-950/70">
+            {([
+              ["signal", "Key calls"],
+              ["all", allMentionsLabel],
+            ] as const).map(([value, label]) => (
+              <button
+                key={value}
+                type="button"
+                onClick={() => {
+                  const nextSorted = value === "signal" && defaultSorted.length > 0 ? defaultSorted : allSorted;
+                  setMode(value);
+                  setSel(Math.max(0, nextSorted.length - 1));
+                }}
+                className={`rounded-full px-3 py-1 text-xs font-medium transition ${
+                  mode === value
+                    ? "bg-neutral-900 text-white shadow-sm dark:bg-neutral-100 dark:text-neutral-950"
+                    : "text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+          {mode === "signal" && <span className="text-xs text-neutral-500">{mentionCount(allSorted.length)} total</span>}
+        </div>
+      )}
+
       {/* The track */}
       <div className="relative h-12">
         <div className="absolute left-0 right-0 top-4 h-px bg-neutral-800" />
@@ -82,7 +130,7 @@ export function Timeline({
         ))}
         {sorted.map((th, i) => {
           const c = STANCE_HEX[th.stance];
-          const selected = i === sel;
+          const selected = i === selectedIndex;
           const dim = th.conviction === "low";
           return (
             <button
@@ -118,7 +166,7 @@ export function Timeline({
             <Link
               href={`/episode/${t.episodeId}`}
               className="font-mono text-[11px] hover:text-neutral-200 hover:underline"
-              title="All takes from this episode"
+              title="All calls from this episode"
             >
               {t.episodeNumber ? `E${t.episodeNumber}` : t.episodeId}
             </Link>

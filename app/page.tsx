@@ -42,15 +42,16 @@ export default function Home() {
       {leaderboard.length > 0 && <Leaderboard entries={leaderboard} />}
 
       <Reveal>
-        <HoldingsTable holdings={publicHoldings} />
+        <HoldingsTable holdings={publicHoldings} title="Public companies" />
       </Reveal>
 
       {macroHoldings.length > 0 && (
         <Reveal>
           <HoldingsTable
             holdings={macroHoldings}
-            title="Commodity & macro calls"
+            title="Commodities & macro"
             subtitle="priced via ETF proxies · never part of the index or funds"
+            entityLabel="Asset"
           />
         </Reveal>
       )}
@@ -118,7 +119,7 @@ function Hero({ fund }: { fund: IndexFund }) {
                   href={`/holding/${fund.constituents[0].slug}`}
                   className="rounded-full border border-neutral-700 px-4 py-2 text-sm text-neutral-300 transition-colors hover:border-neutral-500 hover:text-white"
                 >
-                  Best call: {fund.constituents[0].ticker}{" "}
+                  Best call: {fund.constituents[0].company}{" "}
                   <span className="text-emerald-400">{pct(fund.constituents[0].sinceReturn)}</span>{" "}
                   <span className="arrow-nudge">→</span>
                 </Link>
@@ -180,7 +181,7 @@ function PrivateSection({ holdings }: { holdings: Holding[] }) {
     <Reveal stagger>
       <section className="space-y-3">
       <div className="stagger-item flex items-baseline justify-between">
-        <h2 className="font-display text-xl font-bold tracking-tight">Conviction · private companies</h2>
+        <h2 className="font-display text-xl font-bold tracking-tight">Private companies</h2>
         <span className="text-xs text-neutral-500">no public price — tracked by what they said</span>
       </div>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

@@ -18,7 +18,7 @@ export default function EpisodesPage() {
           Episodes
         </p>
         <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
-          The tape, week by week
+          Episodes, week by week
         </h1>
         <p className="max-w-2xl text-neutral-600 dark:text-neutral-400">
           {episodes.length} processed episodes · {withTakes} with scored calls. Click any episode

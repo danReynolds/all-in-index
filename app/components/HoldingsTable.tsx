@@ -63,10 +63,12 @@ export function HoldingsTable({
   holdings,
   title = "Tracked calls · public companies",
   subtitle = "scored vs the market",
+  entityLabel = "Company",
 }: {
   holdings: Holding[];
   title?: string;
   subtitle?: string;
+  entityLabel?: string;
 }) {
   const [sort, setSort] = useState<SortKey>("latest");
   const [stance, setStance] = useState<Stance | "all">("all");
@@ -135,7 +137,7 @@ export function HoldingsTable({
         <table className="w-full text-sm">
           <thead className="border-b border-neutral-200 text-left text-[11px] uppercase tracking-[0.16em] text-neutral-500 dark:border-neutral-800">
             <tr>
-              <th className="px-4 py-3 font-medium">Company</th>
+              <th className="px-4 py-3 font-medium">{entityLabel}</th>
               <th className="px-4 py-3 font-medium">Stance</th>
               <th className="hidden px-4 py-3 font-medium sm:table-cell">Who</th>
               <th className="hidden px-4 py-3 font-medium md:table-cell">{dateLabel}</th>

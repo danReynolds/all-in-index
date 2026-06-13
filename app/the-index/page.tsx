@@ -323,7 +323,7 @@ export default function IndexPage() {
           <li>One index position per public company whose <strong>current scored view</strong> is net-bullish across the selected hosts; bearish/mixed/neutral names are excluded.</li>
           <li><strong>Scored views</strong> are medium- or high-conviction, attributed theses. They can move a holding&apos;s stance and the Besties Index, even when the host was analyzing the company rather than saying &quot;buy this stock.&quot;</li>
           <li><strong>Portfolio-scored calls</strong> are a narrower subset: clear in/out language, ranked investment selections, explicit shorts, or named pair/basket legs. Host funds use only these exposure windows.</li>
-          <li>Host pages expose an <strong>Audited takes</strong> ledger so you can see each receipt&apos;s classification: portfolio long/short, scored view, not traded, commentary, or low attribution.</li>
+          <li>Host pages show the <strong>calls behind the score</strong>; holding pages keep the <strong>full company history</strong>, including extra commentary mentions.</li>
           <li>A holding&apos;s stance is its <strong>current</strong> view — the balance of each host&apos;s latest scored take — and is judged only over the window since that view was adopted. Evolved names additionally show a <strong>follow-their-calls</strong> return (long in bullish stretches, short in bearish, flat when split).</li>
           <li>Benchmark ETFs (SPY, QQQ, …), broad-market/macro calls, private companies, and crypto tokens are tracked when useful but excluded from the public-company index.</li>
           <li>Two benchmarks, both with identical cashflows: the S&amp;P (SPY) and the tougher tech-heavy QQQ — published so you don&apos;t have to ask.</li>

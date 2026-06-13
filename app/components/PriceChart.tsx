@@ -2,20 +2,21 @@
 
 import Link from "next/link";
 import { useState, type CSSProperties } from "react";
-import { fmtDate, fmtMoney, mmss } from "@/lib/format";
+import { fmtDate, fmtMoney, mmss, pct } from "@/lib/format";
 import { StanceBadge } from "@/app/components/badges";
 import { HostAvatar } from "@/app/components/host";
 import { ListenButton } from "@/app/components/player";
 import { HOST_UI } from "@/lib/hosts";
 import type { EpisodeMeta, Host, Thesis, Stance, MarketData } from "@/lib/types";
 
-const STANCE_HEX: Record<Stance, string> = {
-  bull: "#10b981",
-  bear: "#f43f5e",
-  mixed: "#f59e0b",
-  neutral: "#9ca3af",
+const STANCE_LABELS: Record<Stance, string> = {
+  bull: "Bullish",
+  bear: "Bearish",
+  mixed: "Mixed",
+  neutral: "Neutral",
 };
 
+const fadeAt = (s: number) => ({ "--d": `${s}s` }) as CSSProperties;
 
 /** First take per host + every take where that host's stance changed. */
 function stanceChangesOnly(theses: Thesis[]): Thesis[] {
@@ -62,17 +63,65 @@ function Seg<T extends string>({
   );
 }
 
-interface Marker {
+interface PlottedMarker {
+  id: string;
   thesis: Thesis;
   x: number;
-  y: number;
-  /** y of the price line at the call date (for the stem). */
   lineY: number;
+  labelY: number;
+  price: number;
+  returnSince: number;
+  outcome: number | null;
+  seriesIndex: number;
+}
+
+interface MarkerGroup {
+  id: string;
+  x: number;
+  lineY: number;
+  labelY: number;
+  markers: PlottedMarker[];
+}
+
+function returnTextClass(ret: number | null | undefined): string {
+  if (ret == null) return "text-neutral-300";
+  return ret >= 0 ? "text-emerald-400" : "text-rose-400";
+}
+
+function returnChipClass(ret: number | null | undefined, selected = false): string {
+  if (ret == null) {
+    return selected
+      ? "border-white/35 bg-white/10 text-neutral-100 ring-2 ring-white/20"
+      : "border-white/10 bg-neutral-950/90 text-neutral-100";
+  }
+  if (ret >= 0) {
+    return selected
+      ? "border-emerald-300/60 bg-emerald-500/15 text-emerald-100 ring-2 ring-emerald-300/25"
+      : "border-emerald-400/35 bg-emerald-500/10 text-emerald-300";
+  }
+  return selected
+    ? "border-rose-300/60 bg-rose-500/15 text-rose-100 ring-2 ring-rose-300/25"
+    : "border-rose-400/35 bg-rose-500/10 text-rose-300";
+}
+
+function returnRingClass(ret: number | null | undefined): string {
+  if (ret == null) return "ring-white/20";
+  return ret >= 0 ? "ring-emerald-400/45" : "ring-rose-400/45";
+}
+
+function callOutcome(stance: Stance, stockReturn: number): number | null {
+  if (stance === "bull") return stockReturn;
+  if (stance === "bear") return -stockReturn;
+  return null;
+}
+
+function speakerName(t: Thesis): string {
+  return t.guestName ?? (t.host === "Guest" ? "Guest" : t.host);
 }
 
 /**
- * The stock's price with every call plotted at the moment it was made —
- * marker color = stance, letter = host. Click a marker to read the quote.
+ * The stock's price with each call plotted at the moment it was made —
+ * chip = speaker + performance. Click a chip to see the quote and move since the call.
  */
 export function PriceChart({
   history,
@@ -91,12 +140,12 @@ export function PriceChart({
 }) {
   const [sel, setSel] = useState<string | null>(null);
   const [mode, setMode] = useState<"flips" | "all">("all");
-  const [active, setActive] = useState<Host[]>(["Chamath", "Jason", "Sacks", "Friedberg"]);
+  const [active, setActive] = useState<Host[]>(["Chamath", "Jason", "Sacks", "Friedberg", "Guest", "Unknown"]);
   const [activeStances, setActiveStances] = useState<Stance[]>(["bull", "bear", "mixed", "neutral"]);
   if (history.length < 2) return null;
 
   // Only offer chips for speakers who actually have takes on this name.
-  const presentHosts = (["Chamath", "Jason", "Sacks", "Friedberg", "Guest"] as Host[]).filter(
+  const presentHosts = (["Chamath", "Jason", "Sacks", "Friedberg", "Guest", "Unknown"] as Host[]).filter(
     (h) => theses.some((t) => t.host === h),
   );
   const toggleHost = (h: Host) =>
@@ -105,7 +154,7 @@ export function PriceChart({
     setActiveStances((a) => (a.includes(s) ? a.filter((x) => x !== s) : [...a, s]));
 
   const scoped = theses.filter((t) => active.includes(t.host));
-  // Stance filter applies AFTER the flips reduction, so "Stance changes" + bear
+  // Stance filter applies AFTER the stance-change reduction, so "Stance changes" + bear
   // shows the moments hosts turned bearish, not flips within bear-only takes.
   const modeScoped = mode === "flips" ? stanceChangesOnly(scoped) : scoped;
   const shown = modeScoped.filter((t) => activeStances.includes(t.stance));
@@ -124,6 +173,11 @@ export function PriceChart({
   const minP = Math.min(...closes);
   const maxP = Math.max(...closes);
   const spanP = maxP - minP || 1;
+  const latestDate = history[history.length - 1][0];
+  const latestClose = closes[closes.length - 1];
+  const firstClose = closes[0];
+  const totalReturn = firstClose > 0 ? latestClose / firstClose - 1 : 0;
+  const lineColor = totalReturn >= 0 ? "#10b981" : "#f43f5e";
 
   const x = (t: number) => padL + ((t - minT) / (maxT - minT || 1)) * (W - padL - padR);
   const y = (p: number) => padT + (1 - (p - minP) / spanP) * (H - padT - padB);
@@ -146,23 +200,59 @@ export function PriceChart({
     .map((t, i) => `${i === 0 ? "M" : "L"}${x(t).toFixed(1)},${y(closes[i]).toFixed(1)}`)
     .join(" ");
 
-  // Place a marker per shown thesis; stack markers that land close together.
+  // Place a marker per shown thesis, then merge dense neighborhoods into one chip.
   const sorted = shown
     .slice()
     .sort((a, b) => a.episodeDate.localeCompare(b.episodeDate));
-  const markers: Marker[] = [];
-  let lastX = -Infinity;
-  let stack = 0;
-  for (const th of sorted) {
+  const markers: PlottedMarker[] = sorted.map((th, idx) => {
     const t = Math.min(Math.max(Date.parse(th.episodeDate), minT), maxT);
     const mx = x(t);
+    const price = closeAt(t);
     const lineY = y(closeAt(t));
-    stack = mx - lastX < 18 ? stack + 1 : 0;
-    lastX = mx;
-    markers.push({ thesis: th, x: mx, y: Math.max(13, lineY - 20 - stack * 18), lineY });
-  }
+    const labelY = lineY - 34 < padT + 12 ? Math.min(H - padB - 18, lineY + 34) : lineY - 34;
+    const returnSince = price > 0 ? latestClose / price - 1 : 0;
+    return {
+      id: `${th.id}-${idx}`,
+      thesis: th,
+      x: mx,
+      lineY,
+      labelY,
+      price,
+      returnSince,
+      outcome: callOutcome(th.stance, returnSince),
+      seriesIndex: times.findIndex((value) => value >= t),
+    };
+  });
 
-  const selected = markers.find((m) => m.thesis.id === sel)?.thesis ?? null;
+  const markerGroups = (() => {
+    const grouped: PlottedMarker[][] = [];
+    for (const marker of markers) {
+      const prev = grouped[grouped.length - 1];
+      const anchor = prev?.[prev.length - 1];
+      if (anchor && Math.abs(marker.x - anchor.x) < 44 && Math.abs(marker.lineY - anchor.lineY) < 70) {
+        prev.push(marker);
+      } else {
+        grouped.push([marker]);
+      }
+    }
+    return grouped.map((group, idx): MarkerGroup => {
+      const xAvg = group.reduce((sum, m) => sum + m.x, 0) / group.length;
+      const yAvg = group.reduce((sum, m) => sum + m.lineY, 0) / group.length;
+      const labelY = yAvg - 36 < padT + 12 ? Math.min(H - padB - 18, yAvg + 36) : yAvg - 36;
+      return {
+        id: `holding-group-${idx}-${group.map((m) => m.id).join("-")}`,
+        x: Math.max(padL + 18, Math.min(W - padR - 18, xAvg)),
+        lineY: yAvg,
+        labelY,
+        markers: group,
+      };
+    });
+  })();
+
+  const selected = sel ? markers.find((m) => m.id === sel) ?? null : null;
+  const selectedGroup = selected
+    ? markerGroups.find((g) => g.markers.some((m) => m.id === selected.id)) ?? null
+    : null;
 
   return (
     <div>
@@ -175,7 +265,7 @@ export function PriceChart({
                 key={h}
                 type="button"
                 onClick={() => toggleHost(h)}
-                title={`${on ? "Hide" : "Show"} ${h}'s takes`}
+                title={`${on ? "Hide" : "Show"} ${h}'s calls`}
                 aria-pressed={on}
                 className={`rounded-full transition-all duration-150 hover:scale-110 active:scale-90 ${
                   on ? "" : "opacity-30 grayscale hover:opacity-60"
@@ -191,56 +281,136 @@ export function PriceChart({
           value={mode}
           onChange={setMode}
           options={[
-            ["all", "Every take"],
+            ["all", "All calls"],
             ["flips", "Stance changes"],
           ]}
         />
       </div>
-      <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label={`${ticker} price with the hosts' calls marked`}>
-        <defs>
-          <linearGradient id="pcFill" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#737373" stopOpacity="0.14" />
-            <stop offset="100%" stopColor="#737373" stopOpacity="0" />
-          </linearGradient>
-        </defs>
+      <div className="relative">
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label={`${ticker} price with the hosts' calls marked`}>
+          <defs>
+            <linearGradient id="pcFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor={lineColor} stopOpacity="0.16" />
+              <stop offset="100%" stopColor={lineColor} stopOpacity="0" />
+            </linearGradient>
+          </defs>
 
-        <text x={padL - 6} y={y(maxP) + 4} textAnchor="end" fontSize="11" className="fill-neutral-400">
-          {fmtMoney(maxP, market ?? ticker)}
-        </text>
-        <text x={padL - 6} y={y(minP) + 4} textAnchor="end" fontSize="11" className="fill-neutral-400">
-          {fmtMoney(minP, market ?? ticker)}
-        </text>
+          <line
+            x1={padL}
+            y1={y(firstClose)}
+            x2={W - padR}
+            y2={y(firstClose)}
+            stroke="currentColor"
+            strokeOpacity="0.14"
+            strokeDasharray="4 4"
+          />
+          <text x={padL - 6} y={y(firstClose) + 4} textAnchor="end" fontSize="11" className="fill-neutral-500">
+            0%
+          </text>
+          <text x={padL - 6} y={y(maxP) + 4} textAnchor="end" fontSize="11" className="fill-neutral-400">
+            {fmtMoney(maxP, market ?? ticker)}
+          </text>
+          <text x={padL - 6} y={y(minP) + 4} textAnchor="end" fontSize="11" className="fill-neutral-400">
+            {fmtMoney(minP, market ?? ticker)}
+          </text>
 
-        <path d={`${path} L${x(maxT).toFixed(1)},${H - padB} L${x(minT).toFixed(1)},${H - padB} Z`} fill="url(#pcFill)" className="chart-fade" style={{ "--d": "0.7s" } as CSSProperties} />
-        <path d={path} fill="none" stroke="#a3a3a3" strokeWidth="1.75" strokeLinejoin="round" pathLength={1} className="chart-draw" />
+          <path d={`${path} L${x(maxT).toFixed(1)},${H - padB} L${x(minT).toFixed(1)},${H - padB} Z`} fill="url(#pcFill)" className="chart-fade" style={fadeAt(0.65)} />
+          <path d={path} fill="none" stroke={lineColor} strokeWidth="2.2" strokeLinejoin="round" pathLength={1} className="chart-draw" />
 
-        {markers.map((m, i) => {
-          const ui = HOST_UI[m.thesis.host];
-          const c = STANCE_HEX[m.thesis.stance];
-          const isSel = m.thesis.id === sel;
-          return (
-            <g
-              key={m.thesis.id}
-              className="marker-pop cursor-pointer"
-              style={{ "--d": `${Math.min(550 + i * 55, 1600)}ms` } as CSSProperties}
-              onClick={() => setSel(isSel ? null : m.thesis.id)}
-            >
-              <line x1={m.x} y1={m.y + 8} x2={m.x} y2={m.lineY} stroke={c} strokeWidth="1" strokeOpacity="0.32" />
-              <circle cx={m.x} cy={m.lineY} r="2" fill={c} />
-              <circle cx={m.x} cy={m.y} r={isSel ? 9 : 7.5} fill={c} stroke={isSel ? "#fff" : "rgba(7,11,9,0.65)"} strokeWidth={isSel ? 2 : 1.5} />
-              <text x={m.x} y={m.y + 3} textAnchor="middle" fontSize="8.5" fontWeight="700" fill="#fff">
-                {ui.initials}
-              </text>
-              <title>{`${m.thesis.host} — ${m.thesis.stance} — ${fmtDate(m.thesis.episodeDate)}`}</title>
-            </g>
-          );
-        })}
+          {markerGroups.map((g) => {
+            const isSel = selectedGroup?.id === g.id;
+            const dotGap = 7;
+            const startX = g.x - ((g.markers.length - 1) * dotGap) / 2;
+            const stemStart = g.labelY < g.lineY ? g.labelY + 15 : g.labelY - 15;
+            return (
+              <g key={g.id}>
+                <line x1={g.x} y1={stemStart} x2={g.x} y2={g.lineY} stroke="currentColor" strokeWidth="1" strokeOpacity="0.22" />
+                {g.markers.map((m, markerIdx) => (
+                  <circle
+                    key={m.id}
+                    cx={startX + markerIdx * dotGap}
+                    cy={g.lineY}
+                    r={isSel ? 4.2 : 3.2}
+                    fill={isSel ? "#f4f4f5" : "#a1a1aa"}
+                    stroke={isSel ? "#fff" : "rgba(7,11,9,0.78)"}
+                    strokeWidth="1.4"
+                  />
+                ))}
+                <title>
+                  {g.markers.length === 1
+                    ? `${speakerName(g.markers[0].thesis)} on ${ticker} · ${pct(g.markers[0].returnSince)} since ${fmtDate(g.markers[0].thesis.episodeDate)}`
+                    : `${g.markers.length} calls near ${fmtDate(g.markers[0].thesis.episodeDate)}`}
+                </title>
+              </g>
+            );
+          })}
 
-        <text x={padL} y={H - 8} fontSize="11" className="fill-neutral-400">{fmtDate(history[0][0])}</text>
-        <text x={W - padR} y={H - 8} textAnchor="end" fontSize="11" className="fill-neutral-400">
-          {fmtDate(history[history.length - 1][0])}
-        </text>
-      </svg>
+          <text x={W - padR + 5} y={y(latestClose) + 4} fontSize="12" fontWeight="700" className={totalReturn >= 0 ? "chart-fade fill-emerald-400" : "chart-fade fill-rose-400"} style={fadeAt(1.2)}>
+            {pct(totalReturn)}
+          </text>
+          <text x={padL} y={H - 8} fontSize="11" className="fill-neutral-400">{fmtDate(history[0][0])}</text>
+          <text x={W - padR} y={H - 8} textAnchor="end" fontSize="11" className="fill-neutral-400">
+            {fmtDate(latestDate)}
+          </text>
+        </svg>
+        <div className="pointer-events-none absolute inset-0">
+          {markerGroups.map((g) => {
+            const selectedInGroup = selectedGroup?.id === g.id;
+            const first = g.markers[0];
+            return (
+              <button
+                key={g.id}
+                type="button"
+                onClick={() => setSel(selectedInGroup ? null : first.id)}
+                className={`pointer-events-auto absolute inline-flex min-h-8 -translate-x-1/2 -translate-y-1/2 items-center gap-1.5 rounded-full border px-1.5 py-1 text-[10px] font-semibold shadow-lg shadow-black/30 backdrop-blur transition hover:border-white/30 ${
+                  g.markers.length === 1
+                    ? returnChipClass(first.returnSince, selectedInGroup)
+                    : selectedInGroup
+                      ? "border-white/35 bg-neutral-950/95 text-neutral-100 ring-2 ring-white/20"
+                      : "border-white/10 bg-neutral-950/90 text-neutral-100"
+                }`}
+                style={{
+                  left: `${(g.x / W) * 100}%`,
+                  top: `${(g.labelY / H) * 100}%`,
+                } as CSSProperties}
+                aria-label={
+                  g.markers.length === 1
+                    ? `${speakerName(first.thesis)} on ${ticker}, ${pct(first.returnSince)} since the call`
+                    : `${g.markers.length} calls near ${fmtDate(first.thesis.episodeDate)}`
+                }
+                title={
+                  g.markers.length === 1
+                    ? `${speakerName(first.thesis)} · ${pct(first.returnSince)} since the call`
+                    : `${g.markers.length} calls near ${fmtDate(first.thesis.episodeDate)}`
+                }
+              >
+                {g.markers.length === 1 ? (
+                  <>
+                    <HostAvatar host={first.thesis.host} size="sm" />
+                    <span className="font-mono text-[11px]">
+                      {pct(first.returnSince)}
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    <span className="inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-white/10 px-1.5 font-mono text-[10px]">
+                      {g.markers.length}
+                    </span>
+                    <span className="text-[9px] uppercase tracking-[0.12em] text-neutral-300">calls</span>
+                    <span className="ml-0.5 flex items-center -space-x-1">
+                      {g.markers.slice(0, 4).map((m) => (
+                        <span key={m.id} className={`rounded-full ring-1 ${returnRingClass(m.returnSince)}`}>
+                          <HostAvatar host={m.thesis.host} size="xs" />
+                        </span>
+                      ))}
+                    </span>
+                  </>
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
 
       <div className="mt-1 flex flex-wrap items-center gap-3 text-[11px] text-neutral-400">
         {(["bull", "bear", "mixed", "neutral"] as Stance[]).map((s) => {
@@ -251,13 +421,14 @@ export function PriceChart({
               type="button"
               onClick={() => toggleStance(s)}
               aria-pressed={on}
-              title={on ? `Hide ${s} takes` : `Show ${s} takes`}
-              className={`flex items-center gap-1 transition-opacity hover:text-neutral-200 ${
-                on ? "" : "opacity-30 line-through hover:opacity-60"
+              title={on ? `Hide ${STANCE_LABELS[s]} calls` : `Show ${STANCE_LABELS[s]} calls`}
+              className={`rounded-full border px-2 py-0.5 transition hover:border-white/25 hover:text-neutral-200 ${
+                on
+                  ? "border-white/10 bg-white/[0.03] text-neutral-300"
+                  : "border-transparent text-neutral-600 line-through hover:text-neutral-400"
               }`}
             >
-              <span className="h-2 w-2 rounded-full" style={{ background: STANCE_HEX[s] }} />
-              {s}
+              {STANCE_LABELS[s]}
             </button>
           );
         })}
@@ -265,52 +436,105 @@ export function PriceChart({
           {active.length === 0
             ? "no hosts selected — tap an avatar above"
             : activeStances.length === 0
-              ? "no stances selected — tap a dot at left"
-              : shown.length === 0
-                ? "no takes match these filters"
-                : `${shown.length < scoped.length ? `showing ${shown.length} of ${scoped.length} takes · ` : ""}letter = host · click for the quote`}
+              ? "no stances selected"
+            : shown.length === 0
+                ? "no calls match these filters"
+                : `${shown.length < scoped.length ? `showing ${shown.length} of ${scoped.length} calls · ` : ""}click a chip for the quote + move since call`}
         </span>
       </div>
 
       {/* No key: the card pops in once, then content swaps in place as other markers are clicked. */}
       {selected && (
         <div className="pop-in mt-3 rounded-xl bg-neutral-800/40 p-4 text-sm ring-1 ring-white/5">
+          {selectedGroup && selectedGroup.markers.length > 1 && (
+            <div className="mb-3 flex flex-wrap items-center gap-1.5 border-b border-white/5 pb-3">
+              <span className="mr-1 text-[11px] uppercase tracking-[0.14em] text-neutral-500">
+                {selectedGroup.markers.length} calls
+              </span>
+              {selectedGroup.markers.map((m) => (
+                <button
+                  key={m.id}
+                  type="button"
+                  onClick={() => setSel(m.id)}
+                  className={`inline-flex items-center gap-1.5 rounded-full border px-2 py-1 text-xs transition hover:border-white/25 ${
+                    returnChipClass(m.returnSince, selected.id === m.id)
+                  }`}
+                >
+                  <HostAvatar host={m.thesis.host} size="xs" />
+                  <span>{speakerName(m.thesis)}</span>
+                  <span className={`font-mono ${returnTextClass(m.returnSince)}`}>{pct(m.returnSince)}</span>
+                </button>
+              ))}
+            </div>
+          )}
           <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1.5 text-xs text-neutral-500">
-            <span className="font-semibold text-neutral-100">{selected.guestName ?? selected.host}</span>
-            <StanceBadge stance={selected.stance} />
+            <HostAvatar host={selected.thesis.host} size="sm" />
+            <span className="font-semibold text-neutral-100">{speakerName(selected.thesis)}</span>
+            <StanceBadge
+              stance={selected.thesis.stance}
+              tone={selected.outcome != null ? "outcome" : "stance"}
+              outcome={selected.outcome}
+            />
             <Link
-              href={`/episode/${selected.episodeId}`}
+              href={`/episode/${selected.thesis.episodeId}`}
               className="font-mono text-[11px] hover:text-neutral-200 hover:underline"
-              title="All takes from this episode"
+              title="All calls from this episode"
             >
-              {selected.episodeNumber ? `E${selected.episodeNumber}` : selected.episodeId}
+              {selected.thesis.episodeNumber ? `E${selected.thesis.episodeNumber}` : selected.thesis.episodeId}
             </Link>
-            <span>{fmtDate(selected.episodeDate)}</span>
-            {(episodes[selected.episodeId]?.audioUrl || episodeLinks[selected.episodeId]) && (
+            <span>{fmtDate(selected.thesis.episodeDate)}</span>
+            {(episodes[selected.thesis.episodeId]?.audioUrl || episodeLinks[selected.thesis.episodeId]) && (
               <span className="ml-auto">
                 <ListenButton
-                  meta={episodes[selected.episodeId]}
-                  episodeId={selected.episodeId}
-                  startMs={selected.quoteStartMs}
-                  caption={`${selected.host} on ${selected.company}`}
-                  fallbackLink={episodeLinks[selected.episodeId]}
+                  meta={episodes[selected.thesis.episodeId]}
+                  episodeId={selected.thesis.episodeId}
+                  startMs={selected.thesis.quoteStartMs}
+                  caption={`${selected.thesis.host} on ${selected.thesis.company}`}
+                  fallbackLink={episodeLinks[selected.thesis.episodeId]}
                 />
               </span>
             )}
           </div>
-          <p className="mt-2.5 leading-relaxed text-neutral-200">{selected.summary}</p>
-          {selected.quote && (
+          <div className="mt-3 grid gap-2 sm:grid-cols-3">
+            <div className="rounded-lg bg-neutral-950/35 px-3 py-2 ring-1 ring-white/5">
+              <div className="text-[10px] font-medium uppercase tracking-[0.14em] text-neutral-500">
+                {ticker} since this call
+              </div>
+              <div className={`mt-1 font-mono text-2xl font-semibold tabular-nums ${returnTextClass(selected.returnSince)}`}>
+                {pct(selected.returnSince)}
+              </div>
+              <div className="mt-0.5 text-[11px] text-neutral-500">
+                {fmtMoney(selected.price, market ?? ticker)} → {fmtMoney(latestClose, market ?? ticker)}
+              </div>
+            </div>
+            <div className="rounded-lg bg-neutral-950/35 px-3 py-2 ring-1 ring-white/5">
+              <div className="text-[10px] font-medium uppercase tracking-[0.14em] text-neutral-500">Call price</div>
+              <div className="mt-1 font-mono text-lg font-semibold text-neutral-200">{fmtMoney(selected.price, market ?? ticker)}</div>
+              <div className="mt-0.5 text-[11px] text-neutral-500">
+                {fmtDate(selected.thesis.episodeDate)}
+              </div>
+            </div>
+            <div className="rounded-lg bg-neutral-950/35 px-3 py-2 ring-1 ring-white/5">
+              <div className="text-[10px] font-medium uppercase tracking-[0.14em] text-neutral-500">Latest close</div>
+              <div className="mt-1 font-mono text-lg font-semibold text-neutral-200">{fmtMoney(latestClose, market ?? ticker)}</div>
+              <div className="mt-0.5 text-[11px] text-neutral-500">
+                {fmtDate(latestDate)}
+              </div>
+            </div>
+          </div>
+          <p className="mt-3 leading-relaxed text-neutral-200">{selected.thesis.summary}</p>
+          {selected.thesis.quote && (
             <blockquote className="relative mt-3 pl-6 text-[13px] italic leading-relaxed text-neutral-400">
               <span
                 aria-hidden
-                className="absolute -top-1 left-0 font-display text-3xl leading-none text-emerald-500/35"
+                className="absolute -top-1 left-0 font-display text-3xl leading-none text-neutral-500/35"
               >
                 “
               </span>
-              {selected.quote}”
-              {selected.quoteStartMs != null && (
+              {selected.thesis.quote}”
+              {selected.thesis.quoteStartMs != null && (
                 <span className="ml-2 font-mono text-[11px] not-italic text-neutral-600">
-                  {mmss(selected.quoteStartMs)}
+                  {mmss(selected.thesis.quoteStartMs)}
                 </span>
               )}
             </blockquote>

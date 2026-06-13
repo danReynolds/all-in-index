@@ -6,7 +6,7 @@ export interface TickerItem {
   ret: number;
 }
 
-/** Scrolling tape of the index's positions — pure CSS, pauses on hover. */
+/** Scrolling ticker of the index's positions — pure CSS, pauses on hover. */
 export function Ticker({ items }: { items: TickerItem[] }) {
   if (items.length === 0) return null;
   // Duplicate the list so the -50% translate loops seamlessly.

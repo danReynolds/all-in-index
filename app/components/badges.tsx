@@ -1,13 +1,39 @@
 import { STANCE_META } from "@/lib/format";
 import type { Stance, Conviction } from "@/lib/types";
 
-export function StanceBadge({ stance, className = "" }: { stance: Stance; className?: string }) {
+export function StanceBadge({
+  stance,
+  className = "",
+  tone = "stance",
+  outcome,
+}: {
+  stance: Stance;
+  className?: string;
+  tone?: "stance" | "neutral" | "outcome";
+  outcome?: number | null;
+}) {
   const m = STANCE_META[stance];
+  const badge =
+    tone === "outcome" && outcome != null
+      ? outcome >= 0
+        ? "bg-emerald-500/10 text-emerald-300 ring-1 ring-inset ring-emerald-500/25"
+        : "bg-rose-500/10 text-rose-300 ring-1 ring-inset ring-rose-500/25"
+      : tone === "neutral"
+      ? "bg-white/5 text-neutral-300 ring-1 ring-inset ring-white/10"
+      : m.badge;
+  const dot =
+    tone === "outcome" && outcome != null
+      ? outcome >= 0
+        ? "bg-emerald-500"
+        : "bg-rose-500"
+      : tone === "neutral"
+        ? "bg-neutral-400"
+        : m.dot;
   return (
     <span
-      className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium ${m.badge} ${className}`}
+      className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium ${badge} ${className}`}
     >
-      <span className={`h-1.5 w-1.5 rounded-full ${m.dot}`} />
+      <span className={`h-1.5 w-1.5 rounded-full ${dot}`} />
       {m.label}
     </span>
   );

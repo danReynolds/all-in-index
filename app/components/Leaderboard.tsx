@@ -57,7 +57,7 @@ export function Leaderboard({ entries }: { entries: LeaderboardEntry[] }) {
                 </span>
               </div>
               <div className="mt-3 flex items-center justify-between border-t border-neutral-100 pt-2 text-xs text-neutral-500 dark:border-neutral-800">
-                <span>{e.positions} calls</span>
+                <span>{e.positions} {e.positions === 1 ? "position" : "positions"}</span>
                 {e.topCall && (
                   <span>
                     top: <span className="font-mono text-neutral-700 dark:text-neutral-300">{e.topCall.ticker}</span>{" "}

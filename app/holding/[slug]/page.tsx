@@ -2,8 +2,9 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import { getHolding, allSlugs } from "@/lib/data";
-import { pct, returnColor, fmtDate, fmtMoney, callVerdict } from "@/lib/format";
-import { currentCall, followStats, scoredTakes, displayStance } from "@/lib/calls";
+import { pct, returnColor, fmtDate, fmtMoney } from "@/lib/format";
+import { currentCall, followStats, scoredTakes, displayStance, isPortfolioScored } from "@/lib/calls";
+import { isMacroAsset } from "@/lib/assets";
 import { StanceBadge, ConvictionDots, SampleBanner } from "@/app/components/badges";
 import { Explainer } from "@/app/components/Explainer";
 import { Sparkline } from "@/app/components/Sparkline";
@@ -30,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const facts: string[] = [];
   if (ds !== "none") facts.push(`currently ${ds}`);
   if (since != null)
-    facts.push(`stock ${(since >= 0 ? "+" : "") + (since * 100).toFixed(1)}% since their first call`);
+    facts.push(`price ${(since >= 0 ? "+" : "") + (since * 100).toFixed(1)}% since their first call`);
   const factLine = facts.length
     ? ` ${facts.join("; ").replace(/^./, (c) => c.toUpperCase())}.`
     : "";
@@ -41,6 +42,23 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 const HOST_ORDER: Host[] = ["Chamath", "Jason", "Sacks", "Friedberg", "Guest", "Unknown"];
+
+function isDefaultHoldingTake(t: Thesis): boolean {
+  return t.attributionConfidence !== "low" && (isPortfolioScored(t) || t.conviction === "high");
+}
+
+function defaultHoldingTakes(takes: Thesis[]): Thesis[] {
+  const filtered = takes.filter(isDefaultHoldingTake);
+  return filtered.length > 0 ? filtered : takes;
+}
+
+function callCount(n: number): string {
+  return `${n} key ${n === 1 ? "call" : "calls"}`;
+}
+
+function mentionCount(n: number): string {
+  return `${n} ${n === 1 ? "mention" : "mentions"}`;
+}
 
 function groupByHost(theses: Thesis[]): Array<{ host: Host; takes: Thesis[]; flips: number }> {
   const map = new Map<Host, Thesis[]>();
@@ -68,6 +86,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
   const totalFlips = hostGroups.reduce((n, g) => n + g.flips, 0);
   const marketAsOfMs = h.market ? Date.parse(`${h.market.asOf}T00:00:00Z`) : null;
   const yahooSymbol = h.market?.sourceSymbol ?? h.ticker;
+  const macro = isMacroAsset(h.ticker);
 
   return (
     <div className="space-y-8">
@@ -118,6 +137,13 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
             </span>
           </p>
         )}
+        {macro && (
+          <p className="text-xs text-neutral-500">
+            A commodity, not a company — priced via the{" "}
+            <span className="font-mono text-neutral-400">{h.ticker}</span> ETF as a clean proxy.
+            Excluded from the index and host funds.
+          </p>
+        )}
         <p className="text-sm text-neutral-500">
           {h.mentionCount} {h.mentionCount === 1 ? "take" : "takes"} · first discussed{" "}
           {fmtDate(h.firstMentioned)}
@@ -141,7 +167,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
         <section className="rise flex flex-wrap items-center gap-x-10 gap-y-4 rounded-2xl border border-neutral-200 bg-white px-6 py-5 dark:border-neutral-800 dark:bg-neutral-900" style={d(120)}>
           <div>
             <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
-              Stock since first call
+              Price since first call
             </div>
             <div className={`font-display text-5xl font-bold tabular-nums ${returnColor(h.market.returns.since)}`}>
               {pct(h.market.returns.since)}
@@ -154,14 +180,23 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
           {(() => {
             const cc = currentCall(h);
             if (!cc) return null;
-            const v = callVerdict(cc.stance, cc.ret);
+            const callOutcome =
+              cc.ret != null && cc.stance === "bear"
+                ? -cc.ret
+                : cc.ret != null && cc.stance === "bull"
+                  ? cc.ret
+                  : null;
             return (
               <div>
                 <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
                   Current call
                 </div>
                 <div className="mt-1.5 flex items-center gap-2">
-                  <StanceBadge stance={cc.stance} />
+                  <StanceBadge
+                    stance={cc.stance}
+                    tone={callOutcome != null ? "outcome" : "stance"}
+                    outcome={callOutcome}
+                  />
                   {cc.ret != null && (
                     <span className={`font-mono text-sm tabular-nums ${returnColor(cc.ret)}`}>
                       {pct(cc.ret)}
@@ -170,11 +205,6 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
                 </div>
                 <div className="mt-1 text-xs text-neutral-400">
                   since {fmtDate(cc.sinceDate)}
-                  {v && v.right != null && (
-                    <span className={`ml-1.5 font-semibold ${v.right ? "text-emerald-400" : "text-rose-400"}`}>
-                      {v.right ? "✓ right so far" : "✗ wrong so far"}
-                    </span>
-                  )}
                   {(() => {
                     const scored = scoredTakes(h.theses);
                     if (!scored.length) return null;
@@ -257,15 +287,22 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
 
       <div className="space-y-6">
         <div className="space-y-6">
-          {/* The tape vs the takes */}
+          {/* How the calls played out */}
           {h.market && h.market.history.length > 1 && (
             <section className="rise rounded-xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900" style={d(220)}>
-              <h2 className="mb-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-500">
-                The tape vs. the takes
-              </h2>
-              <p className="mb-3 text-xs text-neutral-400">
-                Every call, plotted at the price the day they made it.
-              </p>
+              <div className="mb-3 flex flex-wrap items-end justify-between gap-2">
+                <div>
+                  <h2 className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-500">
+                    How the calls played out
+                  </h2>
+                  <p className="mt-1 text-xs text-neutral-400">
+                    Click a call to see the price move since it aired.
+                  </p>
+                </div>
+                <span className="text-[11px] text-neutral-500">
+                  prices through {fmtDate(h.market.asOf)}
+                </span>
+              </div>
               <PriceChart history={h.market.history} theses={h.theses} ticker={h.ticker!} market={h.market} episodeLinks={episodeLinks} episodes={episodes} />
             </section>
           )}
@@ -278,7 +315,9 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
             </h2>
             <div className="grid gap-3 sm:grid-cols-2">
               {hostGroups.map(({ host, takes }, i) => {
-                const latest = takes[takes.length - 1];
+                const defaultTakes = defaultHoldingTakes(takes);
+                const latest = defaultTakes[defaultTakes.length - 1];
+                const hiddenCount = takes.length - defaultTakes.length;
                 return (
                   <a
                     key={host}
@@ -303,7 +342,11 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
                         {fmtDate(latest.episodeDate)}
                       </span>
                       <span className="font-medium transition-colors group-hover:text-emerald-400">
-                        {takes.length === 1 ? "1 take" : `${takes.length} takes`} ↓
+                        {hiddenCount > 0
+                          ? `${callCount(defaultTakes.length)} · ${mentionCount(takes.length)}`
+                          : takes.length === 1
+                            ? "1 call"
+                            : `${takes.length} calls`} ↓
                       </span>
                     </div>
                   </a>
@@ -353,8 +396,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
                       </span>
                     )}
                     <span className="text-xs text-neutral-400">
-                      {takes.length} {takes.length === 1 ? "take" : "takes"} since{" "}
-                      {fmtDate(takes[0].episodeDate)}
+                      {mentionCount(takes.length)} since {fmtDate(takes[0].episodeDate)}
                     </span>
                   </div>
                   {flips > 0 && (

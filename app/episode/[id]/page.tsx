@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const takes = ep.groups.reduce((n, g) => n + g.takes.length, 0);
   return {
     title: `${ep.meta.number ? `E${ep.meta.number}` : "Special"} — ${ep.meta.title}`,
-    description: `${takes} scored takes across ${ep.groups.length} companies from this episode, each judged by the stock's move since it aired.`,
+    description: `${takes} scored takes across ${ep.groups.length} companies from this episode, each judged by the price move since it aired.`,
   };
 }
 
@@ -125,7 +125,7 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
               </div>
             </div>
             <p className="ml-auto max-w-[260px] text-right text-xs text-neutral-400">
-              Directional takes judged by each stock&apos;s move since this episode aired.
+              Directional takes judged by each name&apos;s price move since this episode aired.
             </p>
           </>
         )}
