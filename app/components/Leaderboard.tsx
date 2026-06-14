@@ -40,7 +40,7 @@ export function Leaderboard({ entries }: { entries: LeaderboardEntry[] }) {
                 {i + 1}
               </span>
               <div className="flex items-center justify-between">
-                <span className="text-2xl">{RANK_MEDAL[i] ?? `#${i + 1}`}</span>
+                <span className="text-2xl">{RANK_MEDAL[i] ?? ""}</span>
                 <span className="inline-block transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3">
                   <HostAvatar host={e.host} size="lg" />
                 </span>

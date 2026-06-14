@@ -77,4 +77,5 @@ export const HOST_UI: Record<Host, HostUI> = {
   },
 };
 
-export const RANK_MEDAL = ["🥇", "🥈", "🥉", "4️⃣"];
+// Only the podium gets a medal; everyone else gets nothing (no rank-shaming).
+export const RANK_MEDAL = ["🥇", "🥈", "🥉"];

@@ -10,8 +10,7 @@ import { Explainer } from "@/app/components/Explainer";
 import { Reveal } from "@/app/components/Reveal";
 import { ListenButton } from "@/app/components/player";
 import { BackLink } from "@/app/components/BackLink";
-import { hostExposureWindows, isPortfolioScored } from "@/lib/calls";
-import { isTradableCompanyExposure } from "@/lib/tradability";
+import { hostExposureWindows } from "@/lib/calls";
 import { HOST_UI, RANK_MEDAL } from "@/lib/hosts";
 import { HOST_PROFILES, REGULAR_HOSTS } from "@/lib/types";
 import type { Host, Thesis } from "@/lib/types";
@@ -37,16 +36,6 @@ export async function generateMetadata({ params }: { params: Promise<{ host: str
 function resolveHost(param: string): Host | null {
   const hit = REGULAR_HOSTS.find((h) => h.toLowerCase() === param.toLowerCase());
   return hit ?? null;
-}
-
-function MethodStat({ label, value, note }: { label: string; value: string | number; note: string }) {
-  return (
-    <div>
-      <div className="font-mono text-lg font-semibold tabular-nums text-neutral-900 dark:text-neutral-100">{value}</div>
-      <div className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">{label}</div>
-      <div className="mt-0.5 text-xs text-neutral-500">{note}</div>
-    </div>
-  );
 }
 
 type HostTake = Thesis & { slug: string };
@@ -131,11 +120,6 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
   for (const h of snapshot.holdings) {
     for (const t of h.theses) if (t.host === host) takes.push({ ...t, slug: h.slug });
   }
-  const scoreableTakes = takes.filter((t) => isPortfolioScored(t) && t.attributionConfidence !== "low");
-  const tradableScoreableTakes = scoreableTakes.filter(isTradableCompanyExposure);
-  const excludedScoreableTakes = scoreableTakes.length - tradableScoreableTakes.length;
-  const reaffirmedScoreableTakes = Math.max(0, tradableScoreableTakes.length - (fund?.constituents.length ?? 0));
-  const commentaryTakes = takes.length - scoreableTakes.length;
   const signature = takes
     .filter((t) => t.quote && t.stance !== "neutral")
     .sort(
@@ -156,16 +140,11 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
           style={{ background: ui.hex }}
         />
         <div className="relative flex flex-wrap items-center gap-5">
-          <span
-            className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl text-2xl font-black text-white"
-            style={{ background: ui.hex }}
-          >
-            {ui.initials}
-          </span>
+          <HostAvatar host={host} size="xl" square />
           <div className="min-w-0 flex-1">
             <div className="flex items-center gap-2">
               <h1 className="font-display text-3xl font-bold tracking-tight">{profile?.fullName ?? host}</h1>
-              {rank >= 0 && <span className="text-2xl">{RANK_MEDAL[rank] ?? ""}</span>}
+              {rank >= 0 && RANK_MEDAL[rank] && <span className="text-2xl">{RANK_MEDAL[rank]}</span>}
             </div>
             <p className="text-sm text-neutral-500">{profile?.blurb}</p>
           </div>
@@ -175,7 +154,8 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
                 {pct(entry.portfolioReturn)}
               </div>
               <div className="text-xs text-neutral-500">
-                vs S&P {pct(entry.benchmarkReturn)} · {entry.positions} scored public calls
+                vs S&P {pct(entry.benchmarkReturn)} · {entry.positions} public{" "}
+                {entry.positions === 1 ? "position" : "positions"}
               </div>
             </div>
           )}
@@ -193,16 +173,12 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
               {`$1,000 per name, in the market only while their scored calls carry exposure — clear buys, ranked picks, explicit investment selections, explicit shorts, and pair legs count; exits and re-entries included — vs the S&P traded in the same direction over identical windows. Commentary and criticism never trade. Click any marker for the call behind it.`}
             </Explainer>
           </div>
-          <div className="mb-4 grid grid-cols-2 gap-x-6 gap-y-3 border-y border-neutral-100 py-3 dark:border-neutral-800 md:grid-cols-4">
-            <MethodStat label="Catalog theses" value={takes.length} note="All extracted company views." />
-            <MethodStat label="Scored calls" value={scoreableTakes.length} note="Clear in/out, ranked, or pair calls." />
-            <MethodStat
-              label="Public names"
-              value={fund.constituents.length}
-              note={reaffirmedScoreableTakes > 0 ? `${reaffirmedScoreableTakes} add to an existing call.` : "Tradable names in this scorecard."}
-            />
-            <MethodStat label="Not traded" value={excludedScoreableTakes + commentaryTakes} note={`${excludedScoreableTakes} non-tradable, ${commentaryTakes} commentary.`} />
-          </div>
+          <p className="mb-4 text-sm text-neutral-400">
+            <strong className="text-neutral-200">{fund.constituents.length}</strong> tradable{" "}
+            {fund.constituents.length === 1 ? "position" : "positions"} here, scored from {host}&apos;s{" "}
+            <strong className="text-neutral-200">{takes.length}</strong> takes in the catalog — the rest
+            are commentary or names with no public market.
+          </p>
           <IndexChart
             series={fund.series}
             benchmarkSymbol={fund.benchmarkSymbol}

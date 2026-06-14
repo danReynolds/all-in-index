@@ -9,13 +9,24 @@ const SIZES = {
   sm: "h-5 w-5 text-[10px]",
   md: "h-7 w-7 text-xs",
   lg: "h-9 w-9 text-sm",
+  xl: "h-16 w-16 text-2xl",
 };
 
-export function HostAvatar({ host, size = "md" }: { host: Host; size?: keyof typeof SIZES }) {
+export function HostAvatar({
+  host,
+  size = "md",
+  square = false,
+}: {
+  host: Host;
+  size?: keyof typeof SIZES;
+  /** Rounded square (for hero tiles) instead of a circle. */
+  square?: boolean;
+}) {
   const ui = HOST_UI[host];
   const img = hostImageUrl(host);
   const [failed, setFailed] = useState(false);
   const ref = useRef<HTMLImageElement>(null);
+  const shape = square ? "rounded-2xl" : "rounded-full";
 
   // Catch images that died before hydration (onError won't re-fire).
   useEffect(() => {
@@ -33,14 +44,14 @@ export function HostAvatar({ host, size = "md" }: { host: Host; size?: keyof typ
         title={ui.name}
         loading="lazy"
         onError={() => setFailed(true)}
-        className={`inline-block shrink-0 rounded-full object-cover ring-1 ring-white/20 ${SIZES[size].split(" ").slice(0, 2).join(" ")}`}
+        className={`inline-block shrink-0 ${shape} object-cover ring-1 ring-white/20 ${SIZES[size].split(" ").slice(0, 2).join(" ")}`}
       />
     );
   }
   return (
     <span
       title={ui.name}
-      className={`inline-flex shrink-0 items-center justify-center rounded-full font-bold ${ui.solid} ${SIZES[size]}`}
+      className={`inline-flex shrink-0 items-center justify-center ${shape} font-bold ${ui.solid} ${SIZES[size]}`}
     >
       {ui.initials}
     </span>
