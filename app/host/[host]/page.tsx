@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getIndex } from "@/lib/data";
 import { pct, returnColor, fmtDate } from "@/lib/format";
 import { HostAvatar } from "@/app/components/host";
+import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { StanceBadge } from "@/app/components/badges";
 import { IndexChart, type TradeEvent, type PositionStat } from "@/app/components/IndexChart";
 import { Explainer } from "@/app/components/Explainer";
@@ -117,7 +118,9 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
 
   // Their takes across the catalog (for signature quotes + flip stories).
   const takes: HostTake[] = [];
+  const domainOf = new Map<string, string | null>();
   for (const h of snapshot.holdings) {
+    domainOf.set(h.slug, h.domain ?? null);
     for (const t of h.theses) if (t.host === host) takes.push({ ...t, slug: h.slug });
   }
   const signature = takes
@@ -128,6 +131,31 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
         b.episodeDate.localeCompare(a.episodeDate),
     )
     .slice(0, 3);
+
+  // The full archive: every company this host has weighed in on, deduped to
+  // their latest view per name. Makes "M takes" a real, browsable thing —
+  // including the views that don't clear the scoring bar.
+  const weighedIn = [...takes.reduce((m, t) => {
+    const g = m.get(t.slug);
+    if (g) {
+      g.count++;
+      if (t.episodeDate > g.latest.episodeDate) g.latest = t;
+    } else {
+      m.set(t.slug, { latest: t, count: 1 });
+    }
+    return m;
+  }, new Map<string, { latest: HostTake; count: number }>()).values()]
+    .map((g) => ({
+      slug: g.latest.slug,
+      company: g.latest.company,
+      ticker: g.latest.ticker,
+      domain: domainOf.get(g.latest.slug) ?? null,
+      stance: g.latest.stance,
+      count: g.count,
+      lastDate: g.latest.episodeDate,
+      sinceReturn: snapshot.holdings.find((h) => h.slug === g.latest.slug)?.market?.returns.since ?? null,
+    }))
+    .sort((a, b) => b.lastDate.localeCompare(a.lastDate));
 
   return (
     <div className="space-y-10">
@@ -175,9 +203,8 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
           </div>
           <p className="mb-4 text-sm text-neutral-400">
             <strong className="text-neutral-200">{fund.constituents.length}</strong> tradable{" "}
-            {fund.constituents.length === 1 ? "position" : "positions"} here, scored from {host}&apos;s{" "}
-            <strong className="text-neutral-200">{takes.length}</strong> takes in the catalog — the rest
-            are commentary or names with no public market.
+            {fund.constituents.length === 1 ? "position" : "positions"} — $1,000 in each, scored against
+            the S&amp;P over the windows below.
           </p>
           <IndexChart
             series={fund.series}
@@ -204,10 +231,11 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
                 {fund.constituents.map((c) => (
                   <tr key={c.slug} className="group">
                     <td className="py-2.5 pr-4">
-                      <Link href={`/holding/${c.slug}`} className="font-medium group-hover:underline">
+                      <Link href={`/holding/${c.slug}`} className="flex items-center gap-2 font-medium group-hover:underline">
+                        <CompanyLogo name={c.company} domain={domainOf.get(c.slug)} size="sm" />
                         {c.company}
-                      </Link>{" "}
-                      <span className="font-mono text-xs text-neutral-400">{c.ticker}</span>
+                        <span className="font-mono text-xs text-neutral-400">{c.ticker}</span>
+                      </Link>
                     </td>
                     <td className="hidden py-2.5 pr-4 text-neutral-500 sm:table-cell">
                       {fmtDate(c.entryDate)}
@@ -281,6 +309,58 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
             ))}
           </div>
         </section>
+        </Reveal>
+      )}
+
+      {/* Every company they've weighed in on — the full record, scored or not */}
+      {weighedIn.length > 0 && (
+        <Reveal>
+          <section className="space-y-3">
+            <div className="flex items-baseline justify-between">
+              <h2 className="font-display text-xl font-bold tracking-tight">
+                Every company {host} has weighed in on
+              </h2>
+              <span className="text-xs text-neutral-500">
+                {`${weighedIn.length} names · ${takes.length} takes, including views that don't score`}
+              </span>
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900">
+              <table className="w-full text-sm">
+                <thead className="border-b border-neutral-200 text-left text-[11px] uppercase tracking-[0.16em] text-neutral-500 dark:border-neutral-800">
+                  <tr>
+                    <th className="px-4 py-3 font-medium">Company</th>
+                    <th className="px-4 py-3 font-medium">Latest view</th>
+                    <th className="hidden px-4 py-3 font-medium sm:table-cell">Last said</th>
+                    <th className="px-4 py-3 text-right font-medium">Takes</th>
+                    <th className="hidden px-4 py-3 text-right font-medium md:table-cell">Since</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
+                  {weighedIn.map((c) => (
+                    <tr key={c.slug} className="group transition-colors hover:bg-white/[0.025]">
+                      <td className="px-4 py-3">
+                        <Link href={`/holding/${c.slug}`} className="flex items-center gap-2.5 font-medium">
+                          <CompanyLogo name={c.company} domain={c.domain} size="sm" />
+                          <span className="group-hover:underline">{c.company}</span>
+                          {c.ticker && (
+                            <span className="rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-xs text-neutral-500 dark:bg-neutral-800">
+                              {c.ticker}
+                            </span>
+                          )}
+                        </Link>
+                      </td>
+                      <td className="px-4 py-3"><StanceBadge stance={c.stance} /></td>
+                      <td className="hidden px-4 py-3 text-neutral-500 sm:table-cell">{fmtDate(c.lastDate)}</td>
+                      <td className="px-4 py-3 text-right font-mono tabular-nums text-neutral-400">{c.count}</td>
+                      <td className={`hidden px-4 py-3 text-right font-mono tabular-nums md:table-cell ${returnColor(c.sinceReturn)}`}>
+                        {c.sinceReturn != null ? pct(c.sinceReturn) : "—"}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
         </Reveal>
       )}
 

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getIndex } from "@/lib/data";
 import { pct, returnColor, fmtDate } from "@/lib/format";
 import { HostStack, HostAvatar } from "@/app/components/host";
+import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { HOST_UI } from "@/lib/hosts";
 import {
   consensusBulls,
@@ -81,13 +82,14 @@ export default function SignalsPage() {
                 className="flex items-center justify-between gap-3 rounded-xl border border-neutral-100 px-3 py-2.5 transition-colors hover:border-neutral-300 dark:border-neutral-800 dark:hover:border-neutral-600"
               >
                 <span className="flex min-w-0 items-center gap-2">
-                  <HostStack hosts={c.hosts} size="sm" />
+                  <CompanyLogo name={c.company} domain={c.domain} size="sm" />
                   <span className="truncate font-medium">{c.company}</span>
                   {c.ticker && (
                     <span className="rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-[11px] text-neutral-500 dark:bg-neutral-800">
                       {c.ticker}
                     </span>
                   )}
+                  <HostStack hosts={c.hosts} size="sm" />
                 </span>
                 <span className={`font-mono text-sm tabular-nums ${returnColor(c.sinceReturn)}`}>
                   {c.sinceReturn != null ? pct(c.sinceReturn) : "private"}

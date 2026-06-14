@@ -228,29 +228,6 @@
     "positional": false
   },
   {
-    "id": "E271-sacks-Sacks-10",
-    "episodeId": "E271",
-    "episodeNumber": 271,
-    "episodeDate": "2026-05-01T21:37:00.000Z",
-    "company": "Sacks",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Sacks",
-    "stance": "bull",
-    "conviction": "high",
-    "summary": "Sacks argues that the hyperscalers' blowout cloud earnings and accelerating CapEx validate the bull thesis for AI broadly, with voracious enterprise demand for compute ensuring no 'dark GPU' scenario analogous to the dot-com dark fiber bust.",
-    "quote": "There's no dark GPUs today, as Brad Gerstner likes to say. So what's driving the CapEx now is the voracious demand for compute, for tokens, and the demand is now pulling forward this additional investment in infrastructure. So I think what'",
-    "quoteStartMs": 2824892,
-    "topics": [
-      "AI infrastructure",
-      "cloud demand",
-      "CapEx cycle",
-      "bull thesis"
-    ],
-    "attributionConfidence": "high",
-    "positional": false
-  },
-  {
     "id": "E271-bayn-Friedberg-11",
     "episodeId": "E271",
     "episodeNumber": 271,

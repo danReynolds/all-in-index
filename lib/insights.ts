@@ -39,6 +39,7 @@ export interface ConsensusItem {
   slug: string;
   company: string;
   ticker: string | null;
+  domain: string | null;
   hosts: Host[];
   sinceReturn: number | null;
 }
@@ -57,6 +58,7 @@ export function consensusBulls(s: IndexSnapshot): ConsensusItem[] {
         slug: h.slug,
         company: h.company,
         ticker: h.ticker,
+        domain: h.domain ?? null,
         hosts: bulls,
         sinceReturn: h.market?.returns.since ?? null,
       });

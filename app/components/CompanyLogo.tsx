@@ -17,8 +17,10 @@ function tint(name: string): string {
 }
 
 /**
- * Company logo with a graceful chain: Clearbit (by domain) → Google favicon →
+ * Company logo with a graceful chain: DuckDuckGo icons → Google favicon →
  * tinted monogram. Domain-less holdings go straight to the monogram.
+ * (Clearbit's free logo API was sunset after the HubSpot acquisition and now
+ * errors, so it's out of the chain — it was the white-box culprit.)
  */
 export function CompanyLogo({
   name,
@@ -34,8 +36,8 @@ export function CompanyLogo({
   const px = SIZES[size];
   const sources = domain
     ? [
-        `https://logo.clearbit.com/${domain}`,
-        `https://www.google.com/s2/favicons?domain=${domain}&sz=${px * 2}`,
+        `https://icons.duckduckgo.com/ip3/${domain}.ico`,
+        `https://www.google.com/s2/favicons?domain=${domain}&sz=128`,
       ]
     : [];
   const [idx, setIdx] = useState(0);
