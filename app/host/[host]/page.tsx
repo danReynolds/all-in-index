@@ -11,7 +11,8 @@ import { Explainer } from "@/app/components/Explainer";
 import { Reveal } from "@/app/components/Reveal";
 import { ListenButton } from "@/app/components/player";
 import { BackLink } from "@/app/components/BackLink";
-import { hostExposureWindows } from "@/lib/calls";
+import { hostExposureWindows, currentStanceForHosts } from "@/lib/calls";
+import { HostCompanies, type HostCompanyRow } from "@/app/components/HostCompanies";
 import { HOST_UI, RANK_MEDAL } from "@/lib/hosts";
 import { HOST_PROFILES, REGULAR_HOSTS } from "@/lib/types";
 import type { Host, Thesis } from "@/lib/types";
@@ -132,10 +133,11 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
     )
     .slice(0, 3);
 
-  // The full archive: every company this host has weighed in on, deduped to
-  // their latest view per name. Makes "M takes" a real, browsable thing —
-  // including the views that don't clear the scoring bar.
-  const weighedIn = [...takes.reduce((m, t) => {
+  // Every company this host has discussed, deduped per name. The badge is
+  // their SCORED stance (currentStanceForHosts) — a firm bull/bear call —
+  // so it never contradicts the portfolio; names they only mentioned in
+  // passing resolve to neutral ("commentary").
+  const grouped = takes.reduce((m, t) => {
     const g = m.get(t.slug);
     if (g) {
       g.count++;
@@ -144,17 +146,21 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
       m.set(t.slug, { latest: t, count: 1 });
     }
     return m;
-  }, new Map<string, { latest: HostTake; count: number }>()).values()]
-    .map((g) => ({
-      slug: g.latest.slug,
-      company: g.latest.company,
-      ticker: g.latest.ticker,
-      domain: domainOf.get(g.latest.slug) ?? null,
-      stance: g.latest.stance,
-      count: g.count,
-      lastDate: g.latest.episodeDate,
-      sinceReturn: snapshot.holdings.find((h) => h.slug === g.latest.slug)?.market?.returns.since ?? null,
-    }))
+  }, new Map<string, { latest: HostTake; count: number }>());
+  const weighedIn: HostCompanyRow[] = [...grouped.values()]
+    .map((g) => {
+      const holding = snapshot.holdings.find((h) => h.slug === g.latest.slug);
+      return {
+        slug: g.latest.slug,
+        company: g.latest.company,
+        ticker: g.latest.ticker,
+        domain: domainOf.get(g.latest.slug) ?? null,
+        stance: holding ? currentStanceForHosts(holding.theses, [host]) : "neutral",
+        count: g.count,
+        lastDate: g.latest.episodeDate,
+        sinceReturn: holding?.market?.returns.since ?? null,
+      };
+    })
     .sort((a, b) => b.lastDate.localeCompare(a.lastDate));
 
   return (
@@ -312,55 +318,10 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
         </Reveal>
       )}
 
-      {/* Every company they've weighed in on — the full record, scored or not */}
+      {/* Every company they've discussed — scored stance per name, filterable */}
       {weighedIn.length > 0 && (
         <Reveal>
-          <section className="space-y-3">
-            <div className="flex items-baseline justify-between">
-              <h2 className="font-display text-xl font-bold tracking-tight">
-                Every company {host} has weighed in on
-              </h2>
-              <span className="text-xs text-neutral-500">
-                {`${weighedIn.length} names · ${takes.length} takes, including views that don't score`}
-              </span>
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900">
-              <table className="w-full text-sm">
-                <thead className="border-b border-neutral-200 text-left text-[11px] uppercase tracking-[0.16em] text-neutral-500 dark:border-neutral-800">
-                  <tr>
-                    <th className="px-4 py-3 font-medium">Company</th>
-                    <th className="px-4 py-3 font-medium">Latest view</th>
-                    <th className="hidden px-4 py-3 font-medium sm:table-cell">Last said</th>
-                    <th className="px-4 py-3 text-right font-medium">Takes</th>
-                    <th className="hidden px-4 py-3 text-right font-medium md:table-cell">Since</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
-                  {weighedIn.map((c) => (
-                    <tr key={c.slug} className="group transition-colors hover:bg-white/[0.025]">
-                      <td className="px-4 py-3">
-                        <Link href={`/holding/${c.slug}`} className="flex items-center gap-2.5 font-medium">
-                          <CompanyLogo name={c.company} domain={c.domain} size="sm" />
-                          <span className="group-hover:underline">{c.company}</span>
-                          {c.ticker && (
-                            <span className="rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-xs text-neutral-500 dark:bg-neutral-800">
-                              {c.ticker}
-                            </span>
-                          )}
-                        </Link>
-                      </td>
-                      <td className="px-4 py-3"><StanceBadge stance={c.stance} /></td>
-                      <td className="hidden px-4 py-3 text-neutral-500 sm:table-cell">{fmtDate(c.lastDate)}</td>
-                      <td className="px-4 py-3 text-right font-mono tabular-nums text-neutral-400">{c.count}</td>
-                      <td className={`hidden px-4 py-3 text-right font-mono tabular-nums md:table-cell ${returnColor(c.sinceReturn)}`}>
-                        {c.sinceReturn != null ? pct(c.sinceReturn) : "—"}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
+          <HostCompanies host={host} rows={weighedIn} />
         </Reveal>
       )}
 
