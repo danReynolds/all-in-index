@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T12:44:21.970Z",
+  "generatedAt": "2026-06-14T18:34:16.644Z",
   "holdings": [
     {
       "slug": "openai",
@@ -36627,7 +36627,7 @@
         "invested": 28000
       }
     ],
-    "excludedPrivateCount": 30,
+    "excludedPrivateCount": 29,
     "excludedPrivate": [
       {
         "slug": "spacex",
@@ -36742,13 +36742,6 @@
         "company": "Glue",
         "hosts": [
           "Jason",
-          "Sacks"
-        ]
-      },
-      {
-        "slug": "sacks",
-        "company": "Sacks",
-        "hosts": [
           "Sacks"
         ]
       },
