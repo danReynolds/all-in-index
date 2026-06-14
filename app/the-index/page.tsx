@@ -1,7 +1,8 @@
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { getIndex } from "@/lib/data";
-import { pct, returnColor, fmtDate, fmtMoney } from "@/lib/format";
+import { pct, returnColor, fmtDate, fmtMoney, callVerdict } from "@/lib/format";
+import { VerdictTag } from "@/app/components/badges";
 import { IndexChart } from "@/app/components/IndexChart";
 import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { HostStack } from "@/app/components/host";
@@ -261,8 +262,6 @@ export default function IndexPage() {
                   {bearBook.map((b) => {
                     const short = Math.max(-b.sinceReturn, -1);
                     const wiped = -b.sinceReturn < -1;
-                    const wrongCall = b.sinceReturn > 0.02;
-                    const rightCall = b.sinceReturn < -0.02;
                     const ageDays = Math.round((asOfMs - Date.parse(b.entryDate)) / 86400000);
                     return (
                       <LinkRow key={b.slug} href={`/holding/${b.slug}`} className="group transition-colors hover:bg-white/[0.025]">
@@ -292,14 +291,8 @@ export default function IndexPage() {
                           {pct(short)}
                           {wiped && <span className="text-neutral-500">*</span>}
                         </td>
-                        <td className="px-4 py-3 text-right text-xs font-semibold">
-                          {wrongCall ? (
-                            <span className="text-rose-500 dark:text-rose-400">✗ wrong</span>
-                          ) : rightCall ? (
-                            <span className="text-emerald-600 dark:text-emerald-400">✓ right</span>
-                          ) : (
-                            <span className="text-neutral-400">· early</span>
-                          )}
+                        <td className="px-4 py-3 text-right">
+                          <VerdictTag verdict={callVerdict("bear", b.sinceReturn)} />
                         </td>
                       </LinkRow>
                     );

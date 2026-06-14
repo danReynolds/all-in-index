@@ -1,5 +1,29 @@
-import { STANCE_META } from "@/lib/format";
+import { STANCE_META, type CallVerdict } from "@/lib/format";
 import type { Stance, Conviction } from "@/lib/types";
+
+/**
+ * Whether a call is working — its own clearly-labelled signal. "On track" /
+ * "Off track" rather than a final "right/wrong" because these calls are still
+ * live. Renders "Too early" inside the ±2% dead zone and "—" when there's no
+ * directional call to grade.
+ */
+export function VerdictTag({ verdict, className = "" }: { verdict: CallVerdict | null; className?: string }) {
+  if (!verdict) return <span className={`text-neutral-500 ${className}`}>—</span>;
+  if (verdict.right == null)
+    return (
+      <span title={verdict.label} className={`text-xs text-neutral-500 ${className}`}>
+        Too early
+      </span>
+    );
+  return (
+    <span
+      title={verdict.label}
+      className={`text-xs font-medium ${verdict.right ? "text-emerald-400" : "text-rose-400"} ${className}`}
+    >
+      {verdict.right ? "On track" : "Off track"}
+    </span>
+  );
+}
 
 export function StanceBadge({
   stance,

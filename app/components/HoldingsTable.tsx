@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { pct, returnColor, fmtDate, callVerdict } from "@/lib/format";
 import { currentCall, displayStance } from "@/lib/calls";
-import { StanceBadge } from "@/app/components/badges";
+import { StanceBadge, VerdictTag } from "@/app/components/badges";
 import { Sparkline } from "@/app/components/Sparkline";
 import { HostAvatar } from "@/app/components/host";
 import { CompanyLogo } from "@/app/components/CompanyLogo";
@@ -140,6 +140,7 @@ export function HoldingsTable({
             <tr>
               <th className="px-4 py-3 font-medium">{entityLabel}</th>
               <th className="px-4 py-3 font-medium">Stance</th>
+              <th className="hidden px-4 py-3 font-medium sm:table-cell">Verdict</th>
               <th className="hidden px-4 py-3 font-medium sm:table-cell">Who</th>
               <th className="hidden px-4 py-3 font-medium md:table-cell">{dateLabel}</th>
               <th className="px-4 py-3 text-right font-medium">Since</th>
@@ -159,33 +160,23 @@ export function HoldingsTable({
                 <td className="px-4 py-3">
                   {(() => {
                     const ds = displayStance(h.theses);
-                    if (ds === "none")
-                      return (
-                        <span
-                          className="text-neutral-500"
-                          title="No take on this name clears the scoring bar (medium+ conviction, verified speaker) — views shown on the holding page, nothing scored."
-                        >
-                          —
-                        </span>
-                      );
-                    // The verdict judges the STANCE (right/wrong so far), so it
-                    // lives with the stance — not glued to the stock return,
-                    // where a right-stock/wrong-call combo looked contradictory.
-                    const cc = currentCall(h);
-                    const v = cc ? callVerdict(cc.stance, cc.ret) : null;
-                    return (
-                      <span className="inline-flex items-center gap-1.5">
-                        <StanceBadge stance={ds} />
-                        {v && v.right != null && (
-                          <span
-                            title={`${v.label} (judged since the current stance was adopted, ${fmtDate(cc!.sinceDate)})`}
-                            className={`text-[11px] ${v.right ? "text-emerald-400" : "text-rose-400"}`}
-                          >
-                            {v.right ? "✓" : "✗"}
-                          </span>
-                        )}
+                    return ds === "none" ? (
+                      <span
+                        className="text-neutral-500"
+                        title="No take on this name clears the scoring bar (medium+ conviction, verified speaker) — views shown on the holding page, nothing scored."
+                      >
+                        —
                       </span>
+                    ) : (
+                      <StanceBadge stance={ds} />
                     );
+                  })()}
+                </td>
+                <td className="hidden px-4 py-3 sm:table-cell">
+                  {(() => {
+                    if (displayStance(h.theses) === "none") return <span className="text-neutral-500">—</span>;
+                    const cc = currentCall(h);
+                    return <VerdictTag verdict={cc ? callVerdict(cc.stance, cc.ret) : null} />;
                   })()}
                 </td>
                 <td className="hidden px-4 py-3 sm:table-cell">
@@ -229,7 +220,7 @@ export function HoldingsTable({
             ))}
             {shown.length === 0 && (
               <tr>
-                <td colSpan={6} className="px-4 py-8 text-center text-sm text-neutral-500">
+                <td colSpan={7} className="px-4 py-8 text-center text-sm text-neutral-500">
                   No companies match — try a different stance or host.
                 </td>
               </tr>
