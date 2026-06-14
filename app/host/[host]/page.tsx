@@ -137,6 +137,10 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
   // their SCORED stance (currentStanceForHosts) — a firm bull/bear call —
   // so it never contradicts the portfolio; names they only mentioned in
   // passing resolve to neutral ("commentary").
+  // Names that actually reach the chart above (his scored position calls). Only
+  // these earn a bull/bear badge — everything else is commentary, so the table
+  // can never claim more conviction than the portfolio shows.
+  const chartedSlugs = new Set(fund?.constituents.map((c) => c.slug) ?? []);
   const grouped = takes.reduce((m, t) => {
     const g = m.get(t.slug);
     if (g) {
@@ -156,6 +160,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
         ticker: g.latest.ticker,
         domain: domainOf.get(g.latest.slug) ?? null,
         stance: holding ? currentStanceForHosts(holding.theses, [host]) : "neutral",
+        charted: chartedSlugs.has(g.latest.slug),
         count: g.count,
         lastDate: g.latest.episodeDate,
         sinceReturn: holding?.market?.returns.since ?? null,
