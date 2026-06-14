@@ -1,40 +1,23 @@
 import { STANCE_META, type CallVerdict } from "@/lib/format";
 import type { Stance, Conviction } from "@/lib/types";
 
-/**
- * Whether a call is working — its own clearly-labelled signal. "On track" /
- * "Off track" rather than a final "right/wrong" because these calls are still
- * live. Renders "Too early" inside the ±2% dead zone and "—" when there's no
- * directional call to grade.
- */
-export function VerdictTag({ verdict, className = "" }: { verdict: CallVerdict | null; className?: string }) {
-  if (!verdict) return <span className={`text-neutral-500 ${className}`}>—</span>;
-  if (verdict.right == null)
-    return (
-      <span title={verdict.label} className={`text-xs text-neutral-500 ${className}`}>
-        Too early
-      </span>
-    );
-  return (
-    <span
-      title={verdict.label}
-      className={`text-xs font-medium ${verdict.right ? "text-emerald-400" : "text-rose-400"} ${className}`}
-    >
-      {verdict.right ? "On track" : "Off track"}
-    </span>
-  );
-}
-
 export function StanceBadge({
   stance,
   className = "",
   tone = "stance",
   outcome,
+  verdict,
 }: {
   stance: Stance;
   className?: string;
   tone?: "stance" | "neutral" | "outcome";
   outcome?: number | null;
+  /**
+   * When set to a decided call, the leading dot is swapped for a trailing ✓/✗
+   * in the badge's own text color — the glyph carries right/wrong without a
+   * second color fighting the stance.
+   */
+  verdict?: CallVerdict | null;
 }) {
   const m = STANCE_META[stance];
   const badge =
@@ -53,12 +36,17 @@ export function StanceBadge({
       : tone === "neutral"
         ? "bg-neutral-400"
         : m.dot;
+  const showVerdict = verdict != null && verdict.right != null;
   return (
     <span
+      title={showVerdict ? verdict!.label : undefined}
       className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium ${badge} ${className}`}
     >
-      <span className={`h-1.5 w-1.5 rounded-full ${dot}`} />
+      {!showVerdict && <span className={`h-1.5 w-1.5 rounded-full ${dot}`} />}
       {m.label}
+      {showVerdict && (
+        <span className="font-semibold opacity-90">{verdict!.right ? "✓" : "✗"}</span>
+      )}
     </span>
   );
 }
