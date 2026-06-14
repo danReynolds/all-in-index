@@ -14,6 +14,7 @@ import { Timeline } from "@/app/components/Timeline";
 import { PriceChart } from "@/app/components/PriceChart";
 import { Reveal } from "@/app/components/Reveal";
 import { BackLink } from "@/app/components/BackLink";
+import { HashScroll } from "@/app/components/HashScroll";
 import type { Host, Thesis } from "@/lib/types";
 
 const d = (ms: number) => ({ "--d": `${ms}ms` }) as CSSProperties;
@@ -90,6 +91,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
 
   return (
     <div className="space-y-8">
+      <HashScroll />
       <BackLink href="/">All holdings</BackLink>
 
       <header className="rise space-y-3">

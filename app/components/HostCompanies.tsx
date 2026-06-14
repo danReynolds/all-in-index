@@ -98,7 +98,10 @@ export function HostCompanies({ host, rows }: { host: string; rows: HostCompanyR
             {shown.map((c) => (
               <tr key={c.slug} className="group transition-colors hover:bg-white/[0.025]">
                 <td className="px-4 py-3">
-                  <Link href={`/holding/${c.slug}`} className="flex items-center gap-2.5 font-medium">
+                  <Link
+                    href={`/holding/${c.slug}#takes-${host.toLowerCase()}`}
+                    className="flex items-center gap-2.5 font-medium"
+                  >
                     <CompanyLogo name={c.company} domain={c.domain} size="sm" />
                     <span className="group-hover:underline">{c.company}</span>
                     {c.ticker && (

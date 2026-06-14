@@ -242,7 +242,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
                 {fund.constituents.map((c) => (
                   <tr key={c.slug} className="group">
                     <td className="py-2.5 pr-4">
-                      <Link href={`/holding/${c.slug}`} className="flex items-center gap-2 font-medium group-hover:underline">
+                      <Link href={`/holding/${c.slug}#takes-${host.toLowerCase()}`} className="flex items-center gap-2 font-medium group-hover:underline">
                         <CompanyLogo name={c.company} domain={domainOf.get(c.slug)} size="sm" />
                         {c.company}
                         <span className="font-mono text-xs text-neutral-400">{c.ticker}</span>
@@ -281,9 +281,9 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
                 className="group stagger-item card-lift relative rounded-2xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900"
               >
                 <div className="flex items-center justify-between gap-2">
-                  {/* Stretched link: the whole card clicks through to the holding. */}
+                  {/* Stretched link: the whole card clicks through to this host's take. */}
                   <Link
-                    href={`/holding/${t.slug}`}
+                    href={`/holding/${t.slug}#takes-${host.toLowerCase()}`}
                     className="font-semibold after:absolute after:inset-0 after:content-[''] group-hover:underline"
                   >
                     {t.company} <span className="arrow-nudge inline-block">→</span>
