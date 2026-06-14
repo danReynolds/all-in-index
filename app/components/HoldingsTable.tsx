@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { pct, returnColor, fmtDate, callVerdict } from "@/lib/format";
-import { currentCall, displayStance } from "@/lib/calls";
+import { pct, returnColor, fmtDate } from "@/lib/format";
+import { displayStance } from "@/lib/calls";
 import { StanceBadge } from "@/app/components/badges";
 import { Sparkline } from "@/app/components/Sparkline";
 import { HostAvatar } from "@/app/components/host";
@@ -159,17 +159,16 @@ export function HoldingsTable({
                 <td className="px-4 py-3">
                   {(() => {
                     const ds = displayStance(h.theses);
-                    if (ds === "none")
-                      return (
-                        <span
-                          className="text-neutral-500"
-                          title="No take on this name clears the scoring bar (medium+ conviction, verified speaker) — views shown on the holding page, nothing scored."
-                        >
-                          —
-                        </span>
-                      );
-                    const cc = currentCall(h);
-                    return <StanceBadge stance={ds} verdict={cc ? callVerdict(cc.stance, cc.ret) : null} />;
+                    return ds === "none" ? (
+                      <span
+                        className="text-neutral-500"
+                        title="No take on this name clears the scoring bar (medium+ conviction, verified speaker) — views shown on the holding page, nothing scored."
+                      >
+                        —
+                      </span>
+                    ) : (
+                      <StanceBadge stance={ds} />
+                    );
                   })()}
                 </td>
                 <td className="hidden px-4 py-3 sm:table-cell">
