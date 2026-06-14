@@ -20,7 +20,8 @@
       "profit pool"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E260-crm-Sacks-1",
@@ -87,7 +88,8 @@
       "growth acceleration"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E260-snow-Guest-4",
@@ -109,7 +111,8 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E260-spacex-xai-Guest-5",
@@ -132,7 +135,8 @@
       "space"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E260-spacex-xai-Jason-6",

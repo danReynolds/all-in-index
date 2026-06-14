@@ -146,6 +146,7 @@
     "positional": true,
     "callType": "explicit_long",
     "tradeDirection": "long",
-    "scoreReason": "Brad Gerstner said his firm still believes the AI compute trade has room to run"
+    "scoreReason": "Brad Gerstner said his firm still believes the AI compute trade has room to run",
+    "guestName": "Brad Gerstner"
   }
 ]

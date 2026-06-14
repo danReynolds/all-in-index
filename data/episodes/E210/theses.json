@@ -43,7 +43,8 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Cyan Bowers-Franklin"
   },
   {
     "id": "E210-tsla-Guest-2",
@@ -66,6 +67,7 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Cyan Bowers-Franklin"
   }
 ]

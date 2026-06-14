@@ -20,7 +20,8 @@
       "debt"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E206-mstr-Guest-1",
@@ -91,7 +92,8 @@
       "competitive position"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E206-nvda-Guest-4",
@@ -207,7 +209,7 @@
     ],
     "attributionConfidence": "high",
     "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Joe Lonsdale"
   },
   {
     "id": "E206-gld-Friedberg-a0",

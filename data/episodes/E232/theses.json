@@ -20,7 +20,8 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E232-meta-Chamath-1",
@@ -198,7 +199,8 @@
     "positional": true,
     "callType": "selection",
     "tradeDirection": "long",
-    "scoreReason": "Thomas LaFont picked Tesla as his #2 AI winner"
+    "scoreReason": "Thomas LaFont picked Tesla as his #2 AI winner",
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E232-nvda-Guest-8",
@@ -223,7 +225,8 @@
     "positional": true,
     "callType": "selection",
     "tradeDirection": "long",
-    "scoreReason": "Thomas LaFont ranked NVIDIA as his #1 AI winner"
+    "scoreReason": "Thomas LaFont ranked NVIDIA as his #1 AI winner",
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E232-nvda-Friedberg-9",
@@ -336,7 +339,8 @@
       "growth investing"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E232-crcl-Guest-14",
@@ -359,7 +363,8 @@
       "growth investing"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E232-anthropic-Guest-15",
@@ -382,7 +387,8 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E232-msft-Friedberg-16",

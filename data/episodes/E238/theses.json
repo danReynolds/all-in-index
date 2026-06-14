@@ -20,7 +20,8 @@
       "product"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E238-xai-Guest-1",
@@ -46,7 +47,8 @@
     "callType": "explicit_long",
     "tradeDirection": "long",
     "scoreReason": "Gavin Baker disclosed his firm is a shareholder of xAI",
-    "scoreExclusionReason": "private"
+    "scoreExclusionReason": "private",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E238-meta-Guest-2",
@@ -68,7 +70,8 @@
       "advertising"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E238-msft-Guest-3",
@@ -90,7 +93,8 @@
       "Copilot"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E238-aapl-Guest-4",
@@ -113,7 +117,8 @@
       "product"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E238-aapl-Friedberg-6",
@@ -157,7 +162,8 @@
       "data centers"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E238-cper-Guest-a0",
@@ -180,6 +186,6 @@
       "corporatism"
     ],
     "attributionConfidence": "high",
-    "guestName": "Jeremy Boreing"
+    "guestName": "Ben Shapiro"
   }
 ]

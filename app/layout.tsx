@@ -5,6 +5,7 @@ import { Logo } from "@/app/components/Logo";
 import { NavLinks } from "@/app/components/NavLinks";
 import { Ticker } from "@/app/components/Ticker";
 import { PlayerProvider } from "@/app/components/player";
+import { Analytics } from "@vercel/analytics/next";
 import { getIndex } from "@/lib/data";
 import "./globals.css";
 
@@ -89,6 +90,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           </div>
         </footer>
         </PlayerProvider>
+        <Analytics />
       </body>
     </html>
   );

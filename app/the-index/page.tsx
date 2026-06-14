@@ -20,6 +20,9 @@ export default function IndexPage() {
   const fund = snapshot.indexFund ?? null;
   const guesties = snapshot.guestiesFund ?? null;
   const bearBook = snapshot.bearBook ?? [];
+  // Named-guest scorecards — only those with a real track record (2+ scored calls);
+  // a single call is luck, not a record.
+  const guestLeaders = (snapshot.guestLeaderboard ?? []).filter((g) => g.calls >= 2);
 
   if (!fund) {
     return (
@@ -204,6 +207,60 @@ export default function IndexPage() {
               </Link>
             ))}
           </div>
+
+          {guestLeaders.length > 0 && (
+            <div className="space-y-3 pt-2">
+              <div>
+                <h3 className="font-display text-base font-bold tracking-tight">Guest leaderboard</h3>
+                <p className="mt-0.5 max-w-2xl text-sm text-neutral-600 dark:text-neutral-400">
+                  Named guests with 2+ scored public calls, ranked by how those calls have
+                  played out. Each call is scored as if you&apos;d <em>followed it</em> — long a
+                  bull, an inverse-sized stake on a bear (capped at −100%) — versus simply buying
+                  the S&amp;P over the same window.
+                </p>
+              </div>
+              <div className="overflow-x-auto rounded-xl border border-violet-200 bg-white dark:border-violet-900/50 dark:bg-neutral-900">
+                <table className="w-full text-sm">
+                  <thead className="border-b border-neutral-200 text-left text-[11px] uppercase tracking-[0.16em] text-neutral-500 dark:border-neutral-800">
+                    <tr>
+                      <th className="px-4 py-3 font-medium">Guest</th>
+                      <th className="px-4 py-3 text-right font-medium">Calls</th>
+                      <th className="px-4 py-3 text-right font-medium">Follow return</th>
+                      <th className="hidden px-4 py-3 text-right font-medium sm:table-cell">vs S&amp;P</th>
+                      <th className="hidden px-4 py-3 text-right font-medium md:table-cell">Best call</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
+                    {guestLeaders.map((g, i) => (
+                      <tr key={g.guest} className="transition-colors hover:bg-violet-50/40 dark:hover:bg-violet-950/20">
+                        <td className="px-4 py-3">
+                          <span className="mr-2 inline-block w-4 text-right font-mono text-xs text-neutral-400">{i + 1}</span>
+                          <span className="font-medium">{g.guest}</span>
+                        </td>
+                        <td className="px-4 py-3 text-right tabular-nums text-neutral-500">{g.calls}</td>
+                        <td className={`px-4 py-3 text-right font-mono tabular-nums ${returnColor(g.followReturn)}`}>
+                          {pct(g.followReturn)}
+                        </td>
+                        <td className="hidden px-4 py-3 text-right font-mono tabular-nums sm:table-cell">
+                          <span className={returnColor(g.alpha)}>{g.alpha >= 0 ? "+" : ""}{(g.alpha * 100).toFixed(1)}pp</span>
+                        </td>
+                        <td className="hidden px-4 py-3 text-right md:table-cell">
+                          {g.best ? (
+                            <Link href={`/holding/${g.best.slug}`} className="font-mono text-xs hover:underline">
+                              <span className="text-neutral-600 dark:text-neutral-300">{g.best.ticker}</span>{" "}
+                              <span className={returnColor(g.best.ret)}>{g.best.ret >= 0 ? "+" : ""}{(g.best.ret * 100).toFixed(0)}%</span>
+                            </Link>
+                          ) : (
+                            <span className="text-neutral-400">—</span>
+                          )}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
         </section>
         </Reveal>
       )}

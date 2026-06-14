@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T18:34:16.644Z",
+  "generatedAt": "2026-06-14T23:39:26.628Z",
   "holdings": [
     {
       "slug": "openai",
@@ -193,7 +193,8 @@
           "callType": "explicit_long",
           "tradeDirection": "long",
           "scoreReason": "Brad Gerstner said he is a buyer of OpenAI shares today",
-          "scoreExclusionReason": "private"
+          "scoreExclusionReason": "private",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E267-openai-Friedberg-5",
@@ -331,7 +332,7 @@
           ],
           "attributionConfidence": "high",
           "positional": true,
-          "guestName": "Ro Khanna",
+          "guestName": "Brad Gerstner",
           "callType": "explicit_long",
           "tradeDirection": "long",
           "scoreReason": "Brad Gerstner said he bought a lot more OpenAI shares",
@@ -550,7 +551,8 @@
             "competitive position"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E246-openai-Sacks-5",
@@ -686,7 +688,8 @@
             "product"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E235-openai-Guest-3",
@@ -709,7 +712,8 @@
             "competitive moat"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Keith Rabois"
         },
         {
           "id": "E233-openai-Jason-2",
@@ -1050,7 +1054,8 @@
             "competitive moat"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E209-openai-Jason-14",
@@ -1145,7 +1150,8 @@
             "competitive position"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E198-openai-Guest-1",
@@ -1167,7 +1173,8 @@
             "governance"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Mark Cuban"
         },
         {
           "id": "E198-openai-Sacks-0",
@@ -1666,7 +1673,7 @@
           ],
           "attributionConfidence": "high",
           "positional": false,
-          "guestName": "Tim Ferriss"
+          "guestName": "Bill Gurley"
         },
         {
           "id": "E275-anthropic-Sacks-0",
@@ -1986,7 +1993,8 @@
             "AI coding"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E268-anthropic-Chamath-0",
@@ -2123,7 +2131,7 @@
           ],
           "attributionConfidence": "high",
           "positional": false,
-          "guestName": "Ro Khanna"
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E263-anthropic-Chamath-1",
@@ -2425,7 +2433,8 @@
             "competitive moat"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E230-anthropic-Chamath-0",
@@ -2492,7 +2501,7 @@
           ],
           "attributionConfidence": "high",
           "positional": false,
-          "guestName": "Brad Gerstner"
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E218-anthropic-Chamath-2",
@@ -2759,7 +2768,8 @@
             "advertising"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E235-meta-Guest-11",
@@ -2782,7 +2792,8 @@
             "management"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Keith Rabois"
         },
         {
           "id": "E232-meta-Chamath-1",
@@ -2828,7 +2839,8 @@
             "competitive moat"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E218-meta-Chamath-4",
@@ -3489,7 +3501,8 @@
             "product"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E236-aapl-Guest-2",
@@ -3513,7 +3526,7 @@
           ],
           "attributionConfidence": "high",
           "positional": false,
-          "guestName": "Gavin Newsom"
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E235-aapl-Guest-7",
@@ -3536,7 +3549,8 @@
             "hardware device"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Travis Kalanick"
         },
         {
           "id": "E235-aapl-Guest-6",
@@ -3559,7 +3573,8 @@
             "product"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Keith Rabois"
         },
         {
           "id": "E232-aapl-Friedberg-11",
@@ -4398,7 +4413,8 @@
             "Copilot"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E232-msft-Chamath-17",
@@ -4466,7 +4482,8 @@
             "earnings"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Philippe Laffont"
         },
         {
           "id": "E213-msft-Friedberg-5",
@@ -4861,7 +4878,7 @@
           ],
           "attributionConfidence": "high",
           "positional": false,
-          "guestName": "Patrick Collison"
+          "guestName": "John Collison"
         }
       ],
       "synthesis": "The two hosts who have commented on Block hold bearish views, though for different reasons. A guest (John Collison) highlighted the severe post-peak valuation declines of fintech peers like Square and PayPal as a cautionary tale about the downside risks of public-market fintech valuations for employees and shareholders. Sacks, separately, is skeptical of Block's more recent claim that AI drove a ~50% headcount reduction, arguing the cut was long overdue due to gross COVID-era overstaffing relative to peers — and that framing it as an AI efficiency gain amounts to \"AI washing.\" Neither host offers a bullish counterpoint, leaving the overall collective stance clearly negative on Block, albeit focused on distinct concerns: structural valuation risk versus management credibility.",
@@ -5519,7 +5536,8 @@
           "positional": true,
           "callType": "explicit_long",
           "tradeDirection": "long",
-          "scoreReason": "Brad Gerstner said his firm still believes the AI compute trade has room to run"
+          "scoreReason": "Brad Gerstner said his firm still believes the AI compute trade has room to run",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E246-nvda-Guest-1",
@@ -5542,7 +5560,8 @@
             "bubble risk"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E246-nvda-Guest-0",
@@ -5565,7 +5584,8 @@
             "valuation"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E244-nvda-Sacks-1",
@@ -5633,7 +5653,8 @@
             "data centers"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E236-nvda-Guest-0",
@@ -5657,7 +5678,7 @@
           ],
           "attributionConfidence": "high",
           "positional": false,
-          "guestName": "Gavin Newsom"
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E232-nvda-Friedberg-9",
@@ -5705,7 +5726,8 @@
           "positional": true,
           "callType": "selection",
           "tradeDirection": "long",
-          "scoreReason": "Thomas LaFont ranked NVIDIA as his #1 AI winner"
+          "scoreReason": "Thomas LaFont ranked NVIDIA as his #1 AI winner",
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E229-nvda-Sacks-7",
@@ -5843,7 +5865,7 @@
           ],
           "attributionConfidence": "high",
           "positional": false,
-          "guestName": "Brad Gerstner"
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E216-nvda-Chamath-1",
@@ -5912,7 +5934,8 @@
             "valuation"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Cyan Bowers-Franklin"
         },
         {
           "id": "E209-nvda-Guest-1",
@@ -6481,7 +6504,7 @@
             "China"
           ],
           "attributionConfidence": "high",
-          "guestName": "Ro Khanna"
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E264-uso-Sacks-a2",
@@ -6776,7 +6799,8 @@
             "Saudi Arabia",
             "Russia"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Mark Cuban"
         },
         {
           "id": "E184-uso-Guest-a0",
@@ -7565,7 +7589,8 @@
             "headcount reduction"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E253-xai-Sacks-7",
@@ -7661,7 +7686,8 @@
           "callType": "explicit_long",
           "tradeDirection": "long",
           "scoreReason": "Gavin Baker disclosed his firm is a shareholder of xAI",
-          "scoreExclusionReason": "private"
+          "scoreExclusionReason": "private",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E236-xai-Guest-1",
@@ -7685,7 +7711,7 @@
           ],
           "attributionConfidence": "high",
           "positional": false,
-          "guestName": "Gavin Newsom"
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E214-xai-Guest-3",
@@ -7776,7 +7802,8 @@
             "business model"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Mark Cuban"
         }
       ],
       "synthesis": "The dominant view across hosts and guests is strongly bullish on xAI, with multiple high-conviction contributors — including Gavin Baker (a disclosed shareholder), Antonio Gracias, David Sacks, and Elon Musk himself — pointing to xAI's successive compute advantages (Colossus 1 and 2, the largest Blackwell cluster), a consistent pattern of frontier model leapfrogging from Grok 3 through Grok 4.3, and unique data assets via X's real-time post feed as the core reasons to believe xAI will lead in frontier AI. Several guests also highlight strategic upside from a potential Apple distribution partnership and, in Chamath's case, from X acquiring TikTok's creator graph, while Gerstner frames X itself as a benchmark for AI-era enterprise efficiency. The lone bearish voice is Mark Cuban (October 2024), who focuses not on the AI business but on X's structurally damaged advertising model — arguing that the platform's free-speech policies and toxic content have made it untenable for brands — a concern that the bullish guests do not directly address, suggesting the bull/bear divide largely reflects different lenses: AI infrastructure potential versus near-term ad revenue viability.",
@@ -7861,7 +7888,8 @@
             "growth investing"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E221-coreweave-Chamath-3",
@@ -7906,7 +7934,7 @@
           ],
           "attributionConfidence": "high",
           "positional": false,
-          "guestName": "Brad Gerstner"
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E218-coreweave-Friedberg-1",
@@ -8290,7 +8318,7 @@
             "China competition"
           ],
           "attributionConfidence": "high",
-          "guestName": "Gavin Newsom"
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E236-ung-Sacks-a0",
@@ -9122,7 +9150,8 @@
             "competitive threat"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Keith Rabois"
         },
         {
           "id": "E232-googl-Jason-4",
@@ -9336,7 +9365,8 @@
             "valuation"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Philippe Laffont"
         },
         {
           "id": "E227-googl-Chamath-1",
@@ -10650,7 +10680,8 @@
             "profit pool"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E217-crm-Chamath-2",
@@ -11483,7 +11514,8 @@
           "positional": true,
           "callType": "selection",
           "tradeDirection": "long",
-          "scoreReason": "Thomas LaFont picked Tesla as his #2 AI winner"
+          "scoreReason": "Thomas LaFont picked Tesla as his #2 AI winner",
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E232-tsla-Friedberg-6",
@@ -11628,7 +11660,8 @@
             "competitive moat"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Cyan Bowers-Franklin"
         },
         {
           "id": "E209-tsla-Jason-a1",
@@ -13441,7 +13474,7 @@
           ],
           "attributionConfidence": "high",
           "positional": false,
-          "guestName": "Ryan Petersen"
+          "guestName": "Ryan Peterson"
         }
       ],
       "synthesis": "The hosts hold a broadly mixed but cautiously optimistic view of Amazon, with the strongest enthusiasm coming from Jason, who is highly bullish on the company's automation and AI-driven future — naming it his top pick for \"company of the future\" and predicting it could become the first business where robots drive more of the bottom line than humans. Chamath is more ambivalent: he sees Amazon's retail and logistics scale as a powerful enabler of physical AI demand, but raises strategic concerns about AWS's competitive position in AI (arguing Amazon must either differentiate its silicon from NVIDIA's or acquire Anthropic outright), and separately warns that massive AI CapEx is transforming hyperscalers like Amazon into \"big bulky industrial businesses\" whose long-term valuation case is unclear. Friedberg adds a pointed cautionary note on AWS specifically, arguing that its slower 17% growth versus Azure's 26% and Google Cloud's 32%, compounded by a high-profile outage, signals ongoing cloud market share loss and will accelerate enterprise multi-cloud adoption at AWS's expense. A guest bear (Ryan Peterson) raises a structural concern at the retail level, arguing Amazon's platform gives an unfair advantage to unregistered Chinese sellers, representing a long-term vulnerability to the core marketplace business.",
@@ -14219,7 +14252,7 @@
           ],
           "attributionConfidence": "high",
           "positional": false,
-          "guestName": "Ro Khanna"
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E251-pltr-Chamath-0",
@@ -14822,7 +14855,8 @@
             "store of value",
             "US debt"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E246-gld-Chamath-a2",
@@ -14960,8 +14994,7 @@
             "Bitcoin vs gold",
             "stablecoins"
           ],
-          "attributionConfidence": "high",
-          "guestName": "Patrick Collison"
+          "attributionConfidence": "high"
         },
         {
           "id": "E206-gld-Friedberg-a0",
@@ -15495,7 +15528,8 @@
             "growth"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E232-snow-Chamath-19",
@@ -16941,7 +16975,8 @@
             "growth acceleration"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Brad Gerstner"
         }
       ],
       "synthesis": "The sole thesis provided comes from guest Brad Gerstner, who holds a bullish, high-conviction view on Databricks as of February 2026. He argues the company is a direct beneficiary of AI adoption, pointing to three consecutive quarters of re-accelerating revenue growth exceeding 60% at scale, fueled by AI workloads that depend on data transformation. No other hosts offered a view on Databricks in the supplied material, so no agreement or disagreement can be noted beyond Gerstner's position.",
@@ -17003,7 +17038,8 @@
             "space"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Brad Gerstner"
         }
       ],
       "synthesis": "Both Jason and guest Brad Gerstner are strongly bullish on a potential SpaceX–xAI combination, sharing the view that merging the AI and space verticals under Elon Musk creates an unparalleled investment opportunity. Gerstner emphasizes the structural advantages of space-based data centers and the significant pent-up demand from retail and institutional investors for an eventual IPO, while Jason focuses on Musk's unmatched execution track record as the primary reason the vision will be realized. The two are in full agreement — no dissent is present — with both characterizing the combined entity as historically transformative. Neither host raises material risks or counterarguments in the supplied material.",
@@ -19529,7 +19565,8 @@
           "callType": "explicit_long",
           "tradeDirection": "long",
           "scoreReason": "Mark Cuban disclosed investing in Groq alongside Chamath",
-          "scoreExclusionReason": "private"
+          "scoreExclusionReason": "private",
+          "guestName": "Mark Cuban"
         }
       ],
       "synthesis": "The hosts are collectively bullish on Groq, with Chamath holding high conviction across multiple time points and Mark Cuban expressing lower-conviction support as a co-investor. Cuban frames Groq as an attractive \"picks and shovels\" AI infrastructure play, while Chamath anchors his thesis on three distinct competitive advantages: a $1.7B AI inference deal in Saudi Arabia, a unique U.S. export license that he claims no other inference company holds, and Groq's proprietary SRAM-heavy, decode-optimized chip architecture, which he argues complements rather than competes with NVIDIA's prefill-focused chips. Chamath's conviction has deepened over time, culminating in the view that a licensing deal with NVIDIA validates a decade-long contrarian bet and positions Groq as a foundational infrastructure layer that could make AI significantly cheaper and more accessible. There is no disagreement among the hosts; Cuban defers explicitly to Chamath for the deeper investment rationale.",
@@ -21594,7 +21631,8 @@
             "deal"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Brad Gerstner"
         }
       ],
       "synthesis": "The only view on record comes from guest Brad Gerstner, who takes a mixed, medium-conviction stance on AMD. He frames the reported OpenAI-AMD deal as a pivotal but unresolved moment for CEO Lisa Su: if the MI450 chip can genuinely compete with NVIDIA's Vera Rubin, the upside could reach $150B+ in incremental revenue from OpenAI alone. However, Gerstner stresses that neither the chip's competitiveness nor the deal's outcome is settled, calling it a high-risk, high-reward situation. No other hosts weighed in, so no cross-host agreement or disagreement can be assessed.",
@@ -22570,7 +22608,8 @@
             "competitive position"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E193-intc-Friedberg-1",
@@ -22904,7 +22943,8 @@
             "distribution"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Keith Rabois"
         },
         {
           "id": "E179-perplexity-Sacks-4",
@@ -22965,7 +23005,8 @@
             "valuation risk"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Keith Rabois"
         },
         {
           "id": "E235-scale-ai-Chamath-1",
@@ -24170,7 +24211,8 @@
             "growth investing"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E222-circle-Sacks-1",
@@ -24847,7 +24889,8 @@
             "growth"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Thomas Laffont"
         }
       ],
       "synthesis": "The hosts are split on Constellation Energy, with diverging views driven by different time horizons and policy concerns. Guest Thomas Lafont (January 2025) is a high-conviction bull, pointing to Constellation's direct power-purchase agreements with hyperscalers and the US government as evidence that nuclear energy is a durable, multi-decade beneficiary of AI infrastructure demand. Chamath (May 2025) does not address Constellation directly but strikes a bearish tone on the broader energy sector, warning that the removal of clean energy tax incentives in the Big Beautiful Bill will drive private capital out of energy infrastructure, creating power shortages that are both inflationary and damaging to AI buildout — a macro headwind that would pressure energy providers reliant on those financing structures. The two perspectives are not directly reconciled: Lafont's bull case rests on nuclear's strategic positioning, while Chamath's concern centers on policy-driven financing disruption that could undercut the very capital formation needed to build out that capacity.",
@@ -25552,7 +25595,8 @@
             "fees"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Philippe Laffont"
         }
       ],
       "synthesis": "Philippe Lafont, appearing as a guest, is the sole host with a stated view on the Coatue Interval Fund, and he is highly bullish on its structure. His core thesis is that the hybrid public-private interval fund model is superior to traditional venture or hedge fund structures because it combines lower fees (1.25% management / 12.5% incentive), near-permanent capital, and the flexibility to allocate across public equities, private companies, and cash. Lafont frames it as a democratized, \"Berkshire-like\" compounding vehicle that gives retail investors access to tech investing opportunities previously reserved for institutions. No other hosts provided views to compare or contrast against his position.",
@@ -26169,7 +26213,7 @@
           ],
           "attributionConfidence": "high",
           "positional": false,
-          "guestName": "Ryan Petersen"
+          "guestName": "Ryan Peterson"
         }
       ],
       "synthesis": "The only view represented comes from guest Ryan Petersen (Flexport's CEO), who is bullish at medium conviction on Flexport's AI-driven direction. His central thesis is that deploying AI voice agents across Flexport's 400,000-truck-driver network dramatically lowers the marginal cost of outreach, unlocking load-matching activity that was previously uneconomical to pursue with human labor—framing this as net-new revenue rather than simple automation of existing work. Because only one perspective is provided, there is no inter-host agreement or disagreement to note; the other All-In hosts did not supply theses on Flexport in this dataset.",
@@ -26256,7 +26300,8 @@
             "China competition",
             "energy policy"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E200-ura-Friedberg-a0",
@@ -26945,7 +26990,8 @@
             "execution"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Cyan Banister"
         },
         {
           "id": "E209-ba-Friedberg-8",
@@ -27712,7 +27758,7 @@
           ],
           "attributionConfidence": "high",
           "positional": false,
-          "guestName": "Patrick Collison"
+          "guestName": "John Collison"
         }
       ],
       "synthesis": "The only view provided comes from guest John Collison, who takes a bearish stance on PayPal with low conviction, citing the stock's roughly 80% decline from its 2021 peak as evidence of significant shareholder value destruction. He uses PayPal primarily as a cautionary example of the dangers of public-market pricing for fintech companies, particularly for employees who joined near the peak. No other hosts weighed in, so there is no agreement or disagreement to note across the group. The reference is framed as a data point about market timing risk rather than a fundamental analysis of PayPal's business.",
@@ -27993,7 +28039,8 @@
             "compounding"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E212-avgo-Chamath-6",
@@ -28348,7 +28395,7 @@
           ],
           "attributionConfidence": "high",
           "positional": true,
-          "guestName": "Marc Andreessen",
+          "guestName": "Mark Pincus",
           "callType": "explicit_long",
           "tradeDirection": "long",
           "scoreReason": "Mark Pincus said he had been loading up on Alibaba"
@@ -29672,7 +29719,8 @@
             "debt"
           ],
           "attributionConfidence": "high",
-          "positional": false
+          "positional": false,
+          "guestName": "Gavin Baker"
         }
       ],
       "synthesis": "The overall sentiment toward MicroStrategy across the provided theses leans cautious to bearish, with the two guest contributors — Gavin Baker and Joe Lonsdale — both expressing medium-conviction concern about the company's leveraged Bitcoin strategy. Baker's critique centers on a structural mismatch: MicroStrategy's core business generates only ~$400M in revenue, which he argues is too small to reliably service its debt if Bitcoin's credibility as collateral falters. Lonsdale echoes this unease, warning that the leverage structure is unusually risky and that retail investors are not adequately scrutinizing what they are buying into. Jason offers a more ambiguous, low-conviction stance — rather than a directional bet on the company, he describes a hedged trade of buying MSTR while shorting Bitcoin, signaling tactical opportunism rather than fundamental enthusiasm or outright opposition.",
@@ -30225,7 +30273,7 @@
           ],
           "attributionConfidence": "high",
           "positional": false,
-          "guestName": "Gavin Baker"
+          "guestName": "Joe Lonsdale"
         }
       ],
       "synthesis": "The only view provided comes from guest Joe Lonsdale, who holds a mildly bullish but low-conviction stance on Addepar. He points to the platform crossing $7 trillion in assets under management as a sign of genuine business momentum, describing it as a \"good real company.\" No other hosts weighed in, so there is no agreement or disagreement to note across the panel.",
@@ -32194,7 +32242,7 @@
           ],
           "attributionConfidence": "high",
           "positional": false,
-          "guestName": "Robert F. Kennedy Jr."
+          "guestName": "Robert F. Kennedy Jr"
         }
       ],
       "synthesis": "The sole perspective provided comes from a guest host taking a bearish stance on Novo Nordisk with low conviction. The guest, channeling RFK Jr.'s argument, contends that Novo Nordisk's valuation is almost entirely dependent on projected U.S. Ozempic sales driven by lobbying efforts to secure Medicare coverage — rather than on clinically superior outcomes. As evidence of this, the guest notes the irony that Ozempic's home country does not recommend the drug for diabetes, suggesting the business model relies on regulatory capture in the U.S. market. No other hosts weighed in, so no consensus or disagreement can be assessed from the available material.",
@@ -41528,6 +41576,255 @@
       "hosts": [
         "Sacks"
       ]
+    }
+  ],
+  "guestLeaderboard": [
+    {
+      "guest": "Thomas Laffont",
+      "calls": 9,
+      "followReturn": -0.01700092352257649,
+      "benchmarkReturn": 0.23665586459161558,
+      "alpha": -0.25365678811419207,
+      "best": {
+        "company": "Broadcom",
+        "ticker": "AVGO",
+        "slug": "avgo",
+        "ret": 0.8902191658833425
+      }
+    },
+    {
+      "guest": "Brad Gerstner",
+      "calls": 8,
+      "followReturn": 0.06098302367770195,
+      "benchmarkReturn": 0.047302916643860576,
+      "alpha": 0.013680107033841371,
+      "best": {
+        "company": "Snowflake",
+        "ticker": "SNOW",
+        "slug": "snow",
+        "ret": 0.2749479680140212
+      }
+    },
+    {
+      "guest": "Gavin Baker",
+      "calls": 8,
+      "followReturn": 0.10062687820168971,
+      "benchmarkReturn": 0.1245946261231665,
+      "alpha": -0.023967747921476795,
+      "best": {
+        "company": "Google",
+        "ticker": "GOOGL",
+        "slug": "googl",
+        "ret": 0.9091295116772824
+      }
+    },
+    {
+      "guest": "Keith Rabois",
+      "calls": 4,
+      "followReturn": -0.26876341866437736,
+      "benchmarkReturn": 0.19597475317362745,
+      "alpha": -0.4647381718380048,
+      "best": {
+        "company": "Meta",
+        "ticker": "META",
+        "slug": "meta",
+        "ret": 0.2047631737660771
+      }
+    },
+    {
+      "guest": "Aaron Levie",
+      "calls": 2,
+      "followReturn": 0.3544478277475088,
+      "benchmarkReturn": 0.24728850325379592,
+      "alpha": 0.1071593244937129,
+      "best": {
+        "company": "Google",
+        "ticker": "GOOGL",
+        "slug": "googl",
+        "ret": 0.8987488782135882
+      }
+    },
+    {
+      "guest": "Elon Musk",
+      "calls": 2,
+      "followReturn": 0.157143746112546,
+      "benchmarkReturn": 0.08547721485644044,
+      "alpha": 0.07166653125610556,
+      "best": {
+        "company": "Lithium",
+        "ticker": "LIT",
+        "slug": "lit",
+        "ret": 0.3680451752200631
+      }
+    },
+    {
+      "guest": "Cyan Bowers-Franklin",
+      "calls": 2,
+      "followReturn": 0.24887561708180606,
+      "benchmarkReturn": 0.2758217375599856,
+      "alpha": -0.02694612047817957,
+      "best": {
+        "company": "NVIDIA",
+        "ticker": "NVDA",
+        "slug": "nvda",
+        "ret": 0.49001524943722297
+      }
+    },
+    {
+      "guest": "Antonio Gracias",
+      "calls": 1,
+      "followReturn": 0.9589346985458307,
+      "benchmarkReturn": 0.22633710837397691,
+      "alpha": 0.7325975901718538,
+      "best": {
+        "company": "Google",
+        "ticker": "GOOGL",
+        "slug": "googl",
+        "ret": 0.9589346985458307
+      }
+    },
+    {
+      "guest": "Joe Lonsdale",
+      "calls": 1,
+      "followReturn": 0.6606722505063776,
+      "benchmarkReturn": 0.22668188132565992,
+      "alpha": 0.43399036918071765,
+      "best": {
+        "company": "MicroStrategy",
+        "ticker": "MSTR",
+        "slug": "mstr",
+        "ret": 0.6606722505063776
+      }
+    },
+    {
+      "guest": "Donald Trump",
+      "calls": 1,
+      "followReturn": 0.5433739387227761,
+      "benchmarkReturn": 0.3622339350976107,
+      "alpha": 0.18114000362516536,
+      "best": {
+        "company": "Oil",
+        "ticker": "USO",
+        "slug": "uso",
+        "ret": 0.5433739387227761
+      }
+    },
+    {
+      "guest": "Mark Pincus",
+      "calls": 1,
+      "followReturn": 0.3213867416256735,
+      "benchmarkReturn": 0.22999751264405943,
+      "alpha": 0.09138922898161406,
+      "best": {
+        "company": "Alibaba",
+        "ticker": "BABA",
+        "slug": "baba",
+        "ret": 0.3213867416256735
+      }
+    },
+    {
+      "guest": "Emil Michael",
+      "calls": 1,
+      "followReturn": 0.1285107548979314,
+      "benchmarkReturn": 0.0935910478128179,
+      "alpha": 0.034919707085113494,
+      "best": {
+        "company": "Lithium",
+        "ticker": "LIT",
+        "slug": "lit",
+        "ret": 0.1285107548979314
+      }
+    },
+    {
+      "guest": "Marc Benioff",
+      "calls": 1,
+      "followReturn": -0.07874715388460052,
+      "benchmarkReturn": 0.004196845596696752,
+      "alpha": -0.08294399948129727,
+      "best": {
+        "company": "Salesforce",
+        "ticker": "CRM",
+        "slug": "crm",
+        "ret": -0.07874715388460052
+      }
+    },
+    {
+      "guest": "Tucker Carlson",
+      "calls": 1,
+      "followReturn": -0.023617671575437482,
+      "benchmarkReturn": 0.0896390639460578,
+      "alpha": -0.11325673552149529,
+      "best": {
+        "company": "Gold",
+        "ticker": "GLD",
+        "slug": "gld",
+        "ret": -0.023617671575437482
+      }
+    },
+    {
+      "guest": "Travis Kalanick",
+      "calls": 1,
+      "followReturn": 0.12391460649300368,
+      "benchmarkReturn": 0.2408618699499807,
+      "alpha": -0.11694726345697704,
+      "best": {
+        "company": "Tesla",
+        "ticker": "TSLA",
+        "slug": "tsla",
+        "ret": 0.12391460649300368
+      }
+    },
+    {
+      "guest": "Reid Hoffman",
+      "calls": 1,
+      "followReturn": -0.044411836634874025,
+      "benchmarkReturn": 0.34355528184321105,
+      "alpha": -0.38796711847808507,
+      "best": {
+        "company": "Microsoft",
+        "ticker": "MSFT",
+        "slug": "msft",
+        "ret": -0.044411836634874025
+      }
+    },
+    {
+      "guest": "Philippe Laffont",
+      "calls": 1,
+      "followReturn": -0.13025864755375505,
+      "benchmarkReturn": 0.272320279936191,
+      "alpha": -0.40257892748994606,
+      "best": {
+        "company": "Microsoft",
+        "ticker": "MSFT",
+        "slug": "msft",
+        "ret": -0.13025864755375505
+      }
+    },
+    {
+      "guest": "Cyan Banister",
+      "calls": 1,
+      "followReturn": -0.22299145776338558,
+      "benchmarkReturn": 0.2920673076923077,
+      "alpha": -0.5150587654556933,
+      "best": {
+        "company": "Boeing",
+        "ticker": "BA",
+        "slug": "ba",
+        "ret": -0.22299145776338558
+      }
+    },
+    {
+      "guest": "Larry Summers",
+      "calls": 1,
+      "followReturn": -0.2915106117353309,
+      "benchmarkReturn": 0.3758532423208192,
+      "alpha": -0.6673638540561501,
+      "best": {
+        "company": "Natural Gas",
+        "ticker": "UNG",
+        "slug": "ung",
+        "ret": -0.2915106117353309
+      }
     }
   ]
 }

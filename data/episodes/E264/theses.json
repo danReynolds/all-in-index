@@ -21,7 +21,7 @@
     ],
     "attributionConfidence": "high",
     "positional": false,
-    "guestName": "Ro Khanna"
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E264-openai-Guest-1",
@@ -45,7 +45,7 @@
     ],
     "attributionConfidence": "high",
     "positional": true,
-    "guestName": "Ro Khanna",
+    "guestName": "Brad Gerstner",
     "callType": "explicit_long",
     "tradeDirection": "long",
     "scoreReason": "Brad Gerstner said he bought a lot more OpenAI shares",
@@ -116,7 +116,7 @@
     ],
     "attributionConfidence": "high",
     "positional": false,
-    "guestName": "Ro Khanna"
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E264-snow-Guest-5",
@@ -138,7 +138,7 @@
     ],
     "attributionConfidence": "high",
     "positional": false,
-    "guestName": "Ro Khanna"
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E264-uso-Jason-a0",
@@ -235,6 +235,6 @@
       "China"
     ],
     "attributionConfidence": "high",
-    "guestName": "Ro Khanna"
+    "guestName": "Brad Gerstner"
   }
 ]

@@ -67,7 +67,7 @@
     ],
     "attributionConfidence": "high",
     "positional": false,
-    "guestName": "Patrick Collison"
+    "guestName": "John Collison"
   },
   {
     "id": "E216-pypl-Guest-3",
@@ -90,7 +90,7 @@
     ],
     "attributionConfidence": "high",
     "positional": false,
-    "guestName": "Patrick Collison"
+    "guestName": "John Collison"
   },
   {
     "id": "E216-gld-Guest-a0",
@@ -112,7 +112,6 @@
       "Bitcoin vs gold",
       "stablecoins"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Patrick Collison"
+    "attributionConfidence": "high"
   }
 ]

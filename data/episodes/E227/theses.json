@@ -66,7 +66,8 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Philippe Laffont"
   },
   {
     "id": "E227-googl-Jason-3",
@@ -186,7 +187,8 @@
       "fees"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Philippe Laffont"
   },
   {
     "id": "E227-msft-Guest-8",
@@ -208,7 +210,8 @@
       "earnings"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Philippe Laffont"
   },
   {
     "id": "E227-v-Guest-9",
@@ -230,7 +233,8 @@
       "macro"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Philippe Laffont"
   },
   {
     "id": "E227-ma-Guest-10",
@@ -252,7 +256,8 @@
       "macro"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Philippe Laffont"
   },
   {
     "id": "E227-cof-Chamath-11",

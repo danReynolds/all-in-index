@@ -42,7 +42,8 @@
       "governance"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Mark Cuban"
   },
   {
     "id": "E198-x-twitter-Guest-2",
@@ -64,7 +65,8 @@
       "business model"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Mark Cuban"
   },
   {
     "id": "E198-groq-Guest-4",
@@ -90,7 +92,8 @@
     "callType": "explicit_long",
     "tradeDirection": "long",
     "scoreReason": "Mark Cuban disclosed investing in Groq alongside Chamath",
-    "scoreExclusionReason": "private"
+    "scoreExclusionReason": "private",
+    "guestName": "Mark Cuban"
   },
   {
     "id": "E198-uso-Guest-a0",
@@ -116,7 +119,8 @@
       "Saudi Arabia",
       "Russia"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Mark Cuban"
   },
   {
     "id": "E198-uso-Friedberg-a1",

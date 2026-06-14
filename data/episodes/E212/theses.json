@@ -20,7 +20,8 @@
       "regulation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E212-meta-Guest-1",
@@ -42,7 +43,8 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E212-openai-Guest-2",
@@ -65,7 +67,8 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E212-openai-Chamath-3",
@@ -133,7 +136,8 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E212-avgo-Chamath-6",
@@ -179,7 +183,8 @@
       "compounding"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E212-intc-Guest-8",
@@ -201,7 +206,8 @@
       "competitive position"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E212-nflx-Jason-9",
@@ -271,7 +277,8 @@
       "China competition",
       "energy policy"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E212-ura-Friedberg-a1",

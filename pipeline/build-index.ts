@@ -3,7 +3,7 @@ import path from "node:path";
 import { z } from "zod";
 import { callTool } from "./llm";
 import { buildMarketData } from "./market";
-import { buildIndexFund, buildWindowFund, buildBearBook, BESTIES, GUESTS } from "./index-fund";
+import { buildIndexFund, buildWindowFund, buildBearBook, buildGuestLeaderboard, BESTIES, GUESTS } from "./index-fund";
 import { canonicalize } from "./entities";
 import { ensureCompanyMeta } from "./descriptions";
 import { currentStanceFromTheses } from "../lib/calls";
@@ -243,6 +243,8 @@ export async function buildIndex(): Promise<IndexSnapshot> {
   const { entries: leaderboard, hostFunds } = await buildLeaderboard(holdings, nowIso);
   console.log("Building the Bear Book…");
   const bearBook = await buildBearBook(holdings);
+  console.log("Building the Guesties leaderboard…");
+  const guestLeaderboard = await buildGuestLeaderboard(holdings);
   const episodes = buildEpisodeMap(episodeIds);
 
   const snapshot: IndexSnapshot = {
@@ -252,6 +254,7 @@ export async function buildIndex(): Promise<IndexSnapshot> {
     indexFund,
     guestiesFund,
     leaderboard,
+    guestLeaderboard,
     hostFunds,
     episodes,
     bearBook,
@@ -313,6 +316,7 @@ export async function buildFundOnly(): Promise<void> {
   snapshot.hostFunds = lb.hostFunds;
   snapshot.episodes = buildEpisodeMap(store.listEpisodeIds());
   snapshot.bearBook = await buildBearBook(snapshot.holdings);
+  snapshot.guestLeaderboard = await buildGuestLeaderboard(snapshot.holdings);
   snapshot.generatedAt = nowIso;
   store.saveIndex(snapshot);
   logFund("Besties", snapshot.indexFund);

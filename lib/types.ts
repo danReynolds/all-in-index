@@ -286,6 +286,23 @@ export interface LeaderboardEntry {
   topCall: { ticker: string; alpha: number } | null;
 }
 
+/**
+ * A named guest's scorecard: their scored directional public calls, scored as
+ * "if you'd followed each call" (long a bull, short a bear) from the call date.
+ * The Guesties are a fun side index, so this is view-based, not position-based.
+ */
+export interface GuestLeaderboardEntry {
+  guest: string;
+  calls: number;
+  /** Mean direction-adjusted return across their calls. */
+  followReturn: number;
+  /** Mean SPY return over the same windows. */
+  benchmarkReturn: number;
+  alpha: number;
+  /** Their single best call by follow-return. */
+  best: { company: string; ticker: string; slug: string; ret: number } | null;
+}
+
 /** One name the besties turned net-bearish on, scored as a short from the call date. */
 export interface BearCall {
   slug: string;
@@ -312,6 +329,8 @@ export interface IndexSnapshot {
   guestiesFund?: IndexFund | null;
   /** Per-host scorecards, ranked by their calls' performance. */
   leaderboard?: LeaderboardEntry[];
+  /** Named guests ranked by how their calls panned out (the Guesties side game). */
+  guestLeaderboard?: GuestLeaderboardEntry[];
   /** Each regular host's own fund (drives /host pages). */
   hostFunds?: Partial<Record<Host, IndexFund | null>>;
   /** Episode metadata for receipts links: id -> {title, link, date, number, audioUrl}. */

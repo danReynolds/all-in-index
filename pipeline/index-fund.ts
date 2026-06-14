@@ -10,12 +10,14 @@ import { isTradableCompanyExposure } from "../lib/tradability";
 import type {
   BearCall,
   CallType,
+  GuestLeaderboardEntry,
   Holding,
   IndexDirection,
   IndexFund,
   IndexConstituent,
   IndexFundPoint,
   Host,
+  Thesis,
 } from "../lib/types";
 
 const BENCHMARK = "SPY";
@@ -133,6 +135,72 @@ export async function buildBearBook(
     });
   }
   return out.sort((a, b) => b.sinceReturn - a.sinceReturn);
+}
+
+/**
+ * Named-guest scorecards (the Guesties side game). For each guest, take their
+ * scored directional public calls (deduped to the latest per company) and score
+ * each "if you'd followed it" — long a bull, short a bear — from the call date
+ * to today, vs SPY over the same window. View-based, not position-based: guests
+ * rarely state in/out, and the Guesties are explicitly the fun index.
+ */
+export async function buildGuestLeaderboard(holdings: Holding[]): Promise<GuestLeaderboardEntry[]> {
+  // guest -> slug -> latest scored directional take on that public name
+  const byGuest = new Map<string, Map<string, { take: Thesis; h: Holding }>>();
+  for (const h of holdings) {
+    if (!h.ticker || !h.isPublic || !h.market || h.market.history.length < 2) continue;
+    for (const t of h.theses) {
+      if (
+        t.host !== "Guest" ||
+        !t.guestName ||
+        t.conviction === "low" ||
+        t.attributionConfidence === "low" ||
+        (t.stance !== "bull" && t.stance !== "bear")
+      )
+        continue;
+      const m = byGuest.get(t.guestName) ?? new Map();
+      const prev = m.get(h.slug);
+      if (!prev || t.episodeDate > prev.take.episodeDate) m.set(h.slug, { take: t, h });
+      byGuest.set(t.guestName, m);
+    }
+  }
+
+  const spyHistAll = await fetchDailyHistory(BENCHMARK, "2019-01-01");
+  const spy = spyHistAll ? new Series(spyHistAll) : null;
+
+  const out: GuestLeaderboardEntry[] = [];
+  for (const [guest, calls] of byGuest) {
+    const rows: Array<{ company: string; ticker: string; slug: string; ret: number; bench: number }> = [];
+    for (const { take, h } of calls.values()) {
+      const series = new Series(h.market!.history);
+      const entry = series.onOrAfter(take.episodeDate);
+      if (!entry) continue;
+      const stockRet = series.last / entry.close - 1;
+      // Direction-adjusted: long a bull, "short" a bear. A short's loss is
+      // floored at −100% — as if the view were expressed with a capped position
+      // (a put / inverse stake) rather than an unbounded margin short, so one
+      // blown bear call can't drag the mean past total loss of the stake.
+      const ret = Math.max(take.stance === "bull" ? stockRet : -stockRet, -1);
+      const spyEntry = spy?.onOrAfter(take.episodeDate);
+      const bench = spy && spyEntry ? spy.last / spyEntry.close - 1 : 0;
+      rows.push({ company: h.company, ticker: h.ticker!, slug: h.slug, ret, bench });
+    }
+    if (!rows.length) continue;
+    const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / xs.length;
+    const followReturn = mean(rows.map((r) => r.ret));
+    const benchmarkReturn = mean(rows.map((r) => r.bench));
+    const best = rows.slice().sort((a, b) => b.ret - a.ret)[0];
+    out.push({
+      guest,
+      calls: rows.length,
+      followReturn,
+      benchmarkReturn,
+      alpha: followReturn - benchmarkReturn,
+      best: { company: best.company, ticker: best.ticker, slug: best.slug, ret: best.ret },
+    });
+  }
+  // Most calls first (more signal), then by alpha.
+  return out.sort((a, b) => b.calls - a.calls || b.alpha - a.alpha);
 }
 
 /**

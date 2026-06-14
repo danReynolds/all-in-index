@@ -43,7 +43,8 @@
       "AI coding"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E268-anthropic-Sacks-2",
@@ -93,7 +94,8 @@
     "callType": "explicit_long",
     "tradeDirection": "long",
     "scoreReason": "Brad Gerstner said he is a buyer of OpenAI shares today",
-    "scoreExclusionReason": "private"
+    "scoreExclusionReason": "private",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E268-pltr-Sacks-4",
@@ -160,6 +162,7 @@
       "headcount reduction"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   }
 ]

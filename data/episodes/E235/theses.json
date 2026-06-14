@@ -64,7 +64,8 @@
       "valuation risk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Keith Rabois"
   },
   {
     "id": "E235-openai-Guest-3",
@@ -87,7 +88,8 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Keith Rabois"
   },
   {
     "id": "E235-perplexity-Guest-4",
@@ -110,7 +112,8 @@
       "distribution"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Keith Rabois"
   },
   {
     "id": "E235-perplexity-Chamath-5",
@@ -156,7 +159,8 @@
       "product"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Keith Rabois"
   },
   {
     "id": "E235-aapl-Guest-7",
@@ -179,7 +183,8 @@
       "hardware device"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Travis Kalanick"
   },
   {
     "id": "E235-tsla-Chamath-8",
@@ -247,7 +252,8 @@
       "competitive threat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Keith Rabois"
   },
   {
     "id": "E235-meta-Guest-11",
@@ -270,6 +276,7 @@
       "management"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Keith Rabois"
   }
 ]

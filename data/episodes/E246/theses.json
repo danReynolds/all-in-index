@@ -20,7 +20,8 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E246-nvda-Guest-1",
@@ -43,7 +44,8 @@
       "bubble risk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E246-amd-Guest-2",
@@ -66,7 +68,8 @@
       "deal"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E246-hood-Sacks-3",
@@ -155,7 +158,8 @@
       "competitive position"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "positional": false,
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E246-000660.ks-Chamath-7",
@@ -271,7 +275,8 @@
       "store of value",
       "US debt"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E246-gld-Sacks-a4",
