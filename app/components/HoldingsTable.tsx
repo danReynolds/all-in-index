@@ -159,15 +159,32 @@ export function HoldingsTable({
                 <td className="px-4 py-3">
                   {(() => {
                     const ds = displayStance(h.theses);
-                    return ds === "none" ? (
-                      <span
-                        className="text-neutral-500"
-                        title="No take on this name clears the scoring bar (medium+ conviction, verified speaker) — views shown on the holding page, nothing scored."
-                      >
-                        —
+                    if (ds === "none")
+                      return (
+                        <span
+                          className="text-neutral-500"
+                          title="No take on this name clears the scoring bar (medium+ conviction, verified speaker) — views shown on the holding page, nothing scored."
+                        >
+                          —
+                        </span>
+                      );
+                    // The verdict judges the STANCE (right/wrong so far), so it
+                    // lives with the stance — not glued to the stock return,
+                    // where a right-stock/wrong-call combo looked contradictory.
+                    const cc = currentCall(h);
+                    const v = cc ? callVerdict(cc.stance, cc.ret) : null;
+                    return (
+                      <span className="inline-flex items-center gap-1.5">
+                        <StanceBadge stance={ds} />
+                        {v && v.right != null && (
+                          <span
+                            title={`${v.label} (judged since the current stance was adopted, ${fmtDate(cc!.sinceDate)})`}
+                            className={`text-[11px] ${v.right ? "text-emerald-400" : "text-rose-400"}`}
+                          >
+                            {v.right ? "✓" : "✗"}
+                          </span>
+                        )}
                       </span>
-                    ) : (
-                      <StanceBadge stance={ds} />
                     );
                   })()}
                 </td>
@@ -196,22 +213,7 @@ export function HoldingsTable({
                 </td>
                 <td className={`px-4 py-3 text-right font-mono tabular-nums ${returnColor(h.market?.returns.since)}`}>
                   {h.market ? (
-                    <>
-                      {pct(h.market.returns.since)}
-                      {(() => {
-                        const cc = currentCall(h);
-                        const v = cc ? callVerdict(cc.stance, cc.ret) : null;
-                        if (!v || v.right == null) return null;
-                        return (
-                          <span
-                            title={`${v.label} (judged since the current stance was adopted, ${fmtDate(cc!.sinceDate)})`}
-                            className={`ml-1.5 font-sans text-[11px] ${v.right ? "text-emerald-400" : "text-rose-400"}`}
-                          >
-                            {v.right ? "✓" : "✗"}
-                          </span>
-                        );
-                      })()}
-                    </>
+                    pct(h.market.returns.since)
                   ) : (
                     <span className="text-neutral-400">—</span>
                   )}
