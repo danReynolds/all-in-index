@@ -8,6 +8,7 @@ import { StanceBadge } from "@/app/components/badges";
 import { Sparkline } from "@/app/components/Sparkline";
 import { HostAvatar } from "@/app/components/host";
 import { CompanyLogo } from "@/app/components/CompanyLogo";
+import { LinkRow } from "@/app/components/LinkRow";
 import { REGULAR_HOSTS } from "@/lib/types";
 import { HOST_UI } from "@/lib/hosts";
 import type { Holding, Host, Stance } from "@/lib/types";
@@ -147,7 +148,7 @@ export function HoldingsTable({
           </thead>
           <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
             {shown.map((h) => (
-              <tr key={h.slug} className="group transition-colors hover:bg-white/[0.025]">
+              <LinkRow key={h.slug} href={`/holding/${h.slug}`} className="group transition-colors hover:bg-white/[0.025]">
                 <td className="px-4 py-3">
                   <Link href={`/holding/${h.slug}`} className="flex items-center gap-2.5 font-medium">
                     <CompanyLogo name={h.company} domain={h.domain} size="sm" />
@@ -222,7 +223,7 @@ export function HoldingsTable({
                     <span className="text-xs text-neutral-400">—</span>
                   )}
                 </td>
-              </tr>
+              </LinkRow>
             ))}
             {shown.length === 0 && (
               <tr>

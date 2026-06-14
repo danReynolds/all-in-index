@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getEpisodes } from "@/lib/data";
 import { fmtDate } from "@/lib/format";
+import { LinkRow } from "@/app/components/LinkRow";
 
 export const metadata = {
   title: "Episodes — The All-Index",
@@ -38,7 +39,7 @@ export default function EpisodesPage() {
           </thead>
           <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
             {episodes.map((e) => (
-              <tr key={e.id} className="group transition-colors hover:bg-white/[0.025]">
+              <LinkRow key={e.id} href={`/episode/${e.id}`} className="group transition-colors hover:bg-white/[0.025]">
                 <td className="px-4 py-3">
                   <Link href={`/episode/${e.id}`} className="flex min-w-0 items-baseline gap-2.5">
                     <span className="shrink-0 rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-xs text-neutral-500 dark:bg-neutral-800">
@@ -56,7 +57,7 @@ export default function EpisodesPage() {
                 <td className="hidden px-4 py-3 text-right font-mono tabular-nums text-neutral-500 md:table-cell">
                   {e.companyCount > 0 ? e.companyCount : "—"}
                 </td>
-              </tr>
+              </LinkRow>
             ))}
           </tbody>
         </table>

@@ -13,6 +13,7 @@ import { ListenButton } from "@/app/components/player";
 import { BackLink } from "@/app/components/BackLink";
 import { hostExposureWindows, currentStanceForHosts } from "@/lib/calls";
 import { HostCompanies, type HostCompanyRow } from "@/app/components/HostCompanies";
+import { LinkRow } from "@/app/components/LinkRow";
 import { HOST_UI, RANK_MEDAL } from "@/lib/hosts";
 import { HOST_PROFILES, REGULAR_HOSTS } from "@/lib/types";
 import type { Host, Thesis } from "@/lib/types";
@@ -240,7 +241,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
               </thead>
               <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
                 {fund.constituents.map((c) => (
-                  <tr key={c.slug} className="group">
+                  <LinkRow key={c.slug} href={`/holding/${c.slug}#takes-${host.toLowerCase()}`} className="group transition-colors hover:bg-white/[0.025]">
                     <td className="py-2.5 pr-4">
                       <Link href={`/holding/${c.slug}#takes-${host.toLowerCase()}`} className="flex items-center gap-2 font-medium group-hover:underline">
                         <CompanyLogo name={c.company} domain={domainOf.get(c.slug)} size="sm" />
@@ -258,7 +259,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
                       {c.alpha >= 0 ? "+" : ""}
                       {(c.alpha * 100).toFixed(1)}pp
                     </td>
-                  </tr>
+                  </LinkRow>
                 ))}
               </tbody>
             </table>

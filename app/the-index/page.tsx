@@ -7,6 +7,7 @@ import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { HostStack } from "@/app/components/host";
 import { Reveal } from "@/app/components/Reveal";
 import { BackLink } from "@/app/components/BackLink";
+import { LinkRow } from "@/app/components/LinkRow";
 
 const d = (ms: number) => ({ "--d": `${ms}ms` }) as CSSProperties;
 
@@ -109,7 +110,7 @@ export default function IndexPage() {
             </thead>
             <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
               {fund.constituents.map((c, i) => (
-                <tr key={c.slug} className="group transition-colors hover:bg-white/[0.025]">
+                <LinkRow key={c.slug} href={`/holding/${c.slug}`} className="group transition-colors hover:bg-white/[0.025]">
                   <td className="px-4 py-3 text-neutral-400 tabular-nums">{i + 1}</td>
                   <td className="px-4 py-3">
                     <Link href={`/holding/${c.slug}`} className="flex items-center gap-2.5 font-medium">
@@ -127,7 +128,7 @@ export default function IndexPage() {
                   <td className={`px-4 py-3 text-right font-mono font-semibold tabular-nums ${returnColor(c.alpha)}`}>
                     {c.alpha >= 0 ? "+" : ""}{(c.alpha * 100).toFixed(1)}pp
                   </td>
-                </tr>
+                </LinkRow>
               ))}
             </tbody>
           </table>
@@ -264,7 +265,7 @@ export default function IndexPage() {
                     const rightCall = b.sinceReturn < -0.02;
                     const ageDays = Math.round((asOfMs - Date.parse(b.entryDate)) / 86400000);
                     return (
-                      <tr key={b.slug} className="group transition-colors hover:bg-white/[0.025]">
+                      <LinkRow key={b.slug} href={`/holding/${b.slug}`} className="group transition-colors hover:bg-white/[0.025]">
                         <td className="px-4 py-3">
                           <Link href={`/holding/${b.slug}`} className="flex items-center gap-2.5 font-medium">
                             <CompanyLogo name={b.company} domain={domainOf.get(b.slug)} size="sm" />
@@ -300,7 +301,7 @@ export default function IndexPage() {
                             <span className="text-neutral-400">· early</span>
                           )}
                         </td>
-                      </tr>
+                      </LinkRow>
                     );
                   })}
                 </tbody>

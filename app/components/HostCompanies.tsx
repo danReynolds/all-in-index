@@ -5,6 +5,7 @@ import { useState } from "react";
 import { pct, returnColor, fmtDate } from "@/lib/format";
 import { StanceBadge } from "@/app/components/badges";
 import { CompanyLogo } from "@/app/components/CompanyLogo";
+import { LinkRow } from "@/app/components/LinkRow";
 import type { Stance } from "@/lib/types";
 
 export interface HostCompanyRow {
@@ -96,7 +97,7 @@ export function HostCompanies({ host, rows }: { host: string; rows: HostCompanyR
           </thead>
           <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
             {shown.map((c) => (
-              <tr key={c.slug} className="group transition-colors hover:bg-white/[0.025]">
+              <LinkRow key={c.slug} href={`/holding/${c.slug}#takes-${host.toLowerCase()}`} className="group transition-colors hover:bg-white/[0.025]">
                 <td className="px-4 py-3">
                   <Link
                     href={`/holding/${c.slug}#takes-${host.toLowerCase()}`}
@@ -123,7 +124,7 @@ export function HostCompanies({ host, rows }: { host: string; rows: HostCompanyR
                 <td className={`hidden px-4 py-3 text-right font-mono tabular-nums md:table-cell ${returnColor(c.sinceReturn)}`}>
                   {c.sinceReturn != null ? pct(c.sinceReturn) : "—"}
                 </td>
-              </tr>
+              </LinkRow>
             ))}
             {shown.length === 0 && (
               <tr>
