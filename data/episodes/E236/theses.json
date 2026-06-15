@@ -151,7 +151,7 @@
     "ticker": "UNG",
     "isPublic": true,
     "host": "Guest",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "positional": false,
     "summary": "Guest (Gavin) argues that natural gas is one of several critical energy sources needed to close the domestic electrical generation gap vs. China and power AI infrastructure build-out.",
@@ -164,6 +164,7 @@
       "China competition"
     ],
     "attributionConfidence": "high",
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "scoreReason": "“We need it all” (gas, nuclear, solar) — frames natural gas as important among many energy sources, not a directional price call."
   }
 ]

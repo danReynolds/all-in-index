@@ -194,7 +194,7 @@
     "ticker": "GLD",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "low",
     "positional": false,
     "summary": "Friedberg mentions gold as one of the abundant materials on the moon that could be mined and shipped back to Earth at very low cost, implying a future supply increase from extraterrestrial sources. This is incidental to a broader moon industrialization thesis rather than a direct price call.",
@@ -205,7 +205,8 @@
       "space industrialization",
       "precious metals supply"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Incidental mention of gold among abundant moon materials — moon-industrialization commentary, not a directional price call."
   },
   {
     "id": "E267-ung-Friedberg-a1",

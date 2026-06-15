@@ -169,7 +169,7 @@
     "ticker": "CPER",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "positional": false,
     "summary": "Chamath lists copper among the critical commodities (alongside dysprosium and NDPR) that the US strategic reserve should absorb to buffer against Chinese price shocks.",
@@ -181,6 +181,7 @@
       "price manipulation",
       "supply chain security"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Lists copper among critical inputs for a US strategic reserve to buffer price shocks — policy/stability framing, not a directional price call."
   }
 ]

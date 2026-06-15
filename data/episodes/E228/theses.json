@@ -122,7 +122,7 @@
     "ticker": "LIT",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "low",
     "positional": false,
     "summary": "Chamath briefly references lithium as one of the critical minerals under US land that private companies would buy and use to manufacture critical requirements, framing it as a monetizable national asset.",
@@ -133,6 +133,7 @@
       "US asset monetization",
       "natural resources"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Discusses who would buy US lithium to monetize national resources — supply/monetization mechanics, not a directional price call."
   }
 ]

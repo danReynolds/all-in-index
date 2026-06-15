@@ -147,7 +147,7 @@
     "ticker": "LIT",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "positional": false,
     "summary": "Chamath highlights the US has one of the largest lithium deposits in the world and frames the lithium supply chain as a key strategic opportunity, implying upside if domestic production is unlocked.",
@@ -159,6 +159,7 @@
       "US competitiveness",
       "regulations"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Frames US lithium deposits and the supply chain as a strategic opportunity — supply/theme framing, not a directional commodity-price call."
   }
 ]
