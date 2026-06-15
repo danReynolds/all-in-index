@@ -95,6 +95,46 @@ export function consensusVsSolo(s: IndexSnapshot) {
   };
 }
 
+/** One scored index call with its alpha and who made it. */
+export interface AlphaCall {
+  slug: string;
+  company: string;
+  ticker: string;
+  domain: string | null;
+  alpha: number;
+  hosts: Host[];
+}
+
+export interface ConsensusSplitDetail {
+  consensus: { n: number; meanAlpha: number | null; calls: AlphaCall[] };
+  solo: { n: number; meanAlpha: number | null; calls: AlphaCall[] };
+}
+
+/** Same split as `consensusVsSolo`, but each side carries the actual calls
+ *  behind the number (best-alpha first) so the stat cards can drill in. */
+export function consensusVsSoloDetail(s: IndexSnapshot): ConsensusSplitDetail {
+  const consensus: AlphaCall[] = [];
+  const solo: AlphaCall[] = [];
+  for (const c of s.indexFund?.constituents ?? []) {
+    const h = s.holdings.find((x) => x.slug === c.slug);
+    const call: AlphaCall = {
+      slug: c.slug,
+      company: c.company,
+      ticker: c.ticker,
+      domain: h?.domain ?? null,
+      alpha: c.alpha,
+      hosts: c.hosts,
+    };
+    (c.hosts.length >= 2 ? consensus : solo).push(call);
+  }
+  const side = (calls: AlphaCall[]) => ({
+    n: calls.length,
+    meanAlpha: calls.length ? calls.reduce((x, y) => x + y.alpha, 0) / calls.length : null,
+    calls: calls.sort((a, b) => b.alpha - a.alpha),
+  });
+  return { consensus: side(consensus), solo: side(solo) };
+}
+
 /* ------------------------------- Conviction ------------------------------ */
 
 export interface ConvictionBucket {

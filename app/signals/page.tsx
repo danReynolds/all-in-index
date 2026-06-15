@@ -6,9 +6,10 @@ import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { Explainer } from "@/app/components/Explainer";
 import { FlipTracker } from "@/app/components/signals/FlipTracker";
 import { ConvictionSignal } from "@/app/components/signals/ConvictionSignal";
+import { ConsensusCards } from "@/app/components/signals/ConsensusCards";
 import {
   consensusBulls,
-  consensusVsSolo,
+  consensusVsSoloDetail,
   convictionBucketDetails,
   flipDetailsByHost,
   mostFlipped,
@@ -26,11 +27,19 @@ const pp = (x: number | null) =>
 export default function SignalsPage() {
   const { snapshot } = getIndex();
   const consensus = consensusBulls(snapshot);
-  const cvs = consensusVsSolo(snapshot);
+  const cvs = consensusVsSoloDetail(snapshot);
   const conviction = convictionBucketDetails(snapshot);
   const flipDetails = flipDetailsByHost(snapshot);
   const flipped = mostFlipped(snapshot);
   const duels = activeDuels(snapshot);
+
+  // At-a-glance header badges, so each section telegraphs its takeaway.
+  const edge =
+    cvs.consensus.meanAlpha != null && cvs.solo.meanAlpha != null
+      ? cvs.consensus.meanAlpha - cvs.solo.meanAlpha
+      : null;
+  const highBucket = conviction.find((b) => b.label === "high");
+  const totalFlips = flipDetails.reduce((n, f) => n + f.flips, 0);
 
   return (
     <div className="space-y-12">
@@ -53,27 +62,14 @@ export default function SignalsPage() {
           emoji="🤝"
           title="The Consensus Meter"
           sub="When two or more besties agree, history says pay attention."
+          badge={edge != null ? `${pp(edge)} edge` : undefined}
           detail="Consensus = two or more besties holding the same current scored stance (medium+ conviction); a solo call is one only a single bestie made. Alpha is a call's return above the S&P over the same window; returns in the list below are since the table's first call on the name."
         />
-        <div className="grid gap-3 sm:grid-cols-2">
-          <StatCard
-            label="When 2+ besties agreed"
-            value={pp(cvs.consensus.meanAlpha)}
-            sub={`mean alpha vs S&P · ${cvs.consensus.n} calls`}
-            good
-          />
-          <StatCard
-            label="When just one called it"
-            value={pp(cvs.solo.meanAlpha)}
-            sub={`mean alpha vs S&P · ${cvs.solo.n} calls`}
-          />
-        </div>
+        <ConsensusCards split={cvs} />
         <p className="text-sm text-neutral-500">
           Agreement has been worth{" "}
           <strong className="text-neutral-700 dark:text-neutral-200">
-            {cvs.consensus.meanAlpha != null && cvs.solo.meanAlpha != null
-              ? `${pp(cvs.consensus.meanAlpha - cvs.solo.meanAlpha)} more alpha`
-              : "more"}
+            {edge != null ? `${pp(edge)} more alpha` : "more"}
           </strong>{" "}
           than going it alone.
         </p>
@@ -116,6 +112,7 @@ export default function SignalsPage() {
           emoji="🎯"
           title="The Conviction Signal"
           sub="How hard they commit predicts how the call pays off."
+          badge={highBucket?.meanAlpha != null ? `high: ${pp(highBucket.meanAlpha)}` : undefined}
           detail="Mean alpha of the index's calls, grouped by the strongest conviction a bestie put behind the bull case — high (stated plainly), medium (qualified), or low (a hedged aside, never scored). Bars share one scale. Hedged calls have historically been the ones to fade."
         />
         <ConvictionSignal buckets={conviction} />
@@ -127,6 +124,7 @@ export default function SignalsPage() {
           emoji="🔄"
           title="The Flip Tracker"
           sub="Who's changed their mind — tap a host to replay every reversal."
+          badge={totalFlips > 0 ? `${totalFlips} reversals` : undefined}
           detail="A flip is a full bull↔bear reversal by the same host on the same company, counting only medium-or-higher-conviction takes; mixed and neutral moments in between don't count. Click a name to replay the whole journey on its price chart."
         />
         <div className="grid items-start gap-3 lg:grid-cols-2">
@@ -160,6 +158,7 @@ export default function SignalsPage() {
           emoji="⚔️"
           title="Open Duels"
           sub="Names the table is split on — and who's winning so far."
+          badge={duels.length > 0 ? `${duels.length} live` : undefined}
           detail="A duel is a name where some besties' current scored stance is bullish and others' is bearish. The lead goes to whoever the stock has favored since the split crystallized — up for the bulls, down for the bears, with a ±2% dead zone counted as a push."
         />
         {duels.length === 0 ? (
@@ -214,42 +213,33 @@ function SectionHead({
   title,
   sub,
   detail,
+  badge,
 }: {
   emoji: string;
   title: string;
   sub: string;
   detail?: React.ReactNode;
+  badge?: string;
 }) {
   return (
     <div>
-      <h2 className="font-display text-xl font-bold tracking-tight">
-        <span className="mr-2">{emoji}</span>
-        {title}
-      </h2>
+      <div className="flex items-baseline justify-between gap-3">
+        <h2 className="font-display text-xl font-bold tracking-tight">
+          <span className="mr-2">{emoji}</span>
+          {title}
+        </h2>
+        {badge && (
+          <span className="shrink-0 rounded-full border border-neutral-200 px-2.5 py-0.5 font-mono text-xs tabular-nums text-neutral-500 dark:border-neutral-700 dark:text-neutral-400">
+            {badge}
+          </span>
+        )}
+      </div>
       <p className="mt-0.5 text-sm text-neutral-500">{sub}</p>
       {detail && (
         <div className="mt-1.5">
           <Explainer summary="Learn more">{detail}</Explainer>
         </div>
       )}
-    </div>
-  );
-}
-
-function StatCard({ label, value, sub, good }: { label: string; value: string; sub: string; good?: boolean }) {
-  return (
-    <div
-      className={`rounded-2xl border bg-white p-5 dark:bg-neutral-900 ${
-        good
-          ? "border-emerald-200 dark:border-emerald-900/60"
-          : "border-neutral-200 dark:border-neutral-800"
-      }`}
-    >
-      <div className="text-sm text-neutral-500">{label}</div>
-      <div className={`mt-1 text-3xl font-bold tabular-nums ${good ? "text-emerald-600 dark:text-emerald-400" : ""}`}>
-        {value}
-      </div>
-      <div className="mt-1 text-xs text-neutral-400">{sub}</div>
     </div>
   );
 }
