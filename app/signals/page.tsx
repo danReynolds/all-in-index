@@ -45,33 +45,6 @@ export default function SignalsPage() {
           Patterns mined from every scored call in the catalog — what has historically mattered, and
           where the besties stand right now. Tap any chart to see the calls behind it.
         </p>
-        <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-900/50">
-          <Explainer summary="The five words to know">
-            <dl className="grid gap-x-6 gap-y-2 sm:grid-cols-2">
-              <Term term="Alpha">
-                Return <em>above the S&amp;P 500</em> over the exact same window. +10pp means the call beat the
-                market by 10 percentage points.
-              </Term>
-              <Term term="Conviction">
-                How hard a bestie committed — <strong>high</strong> (&ldquo;this is a great buy&rdquo;),{" "}
-                <strong>medium</strong> (a clear but qualified view), or <strong>low</strong> (a hedged aside, never
-                scored).
-              </Term>
-              <Term term="Consensus">
-                Two or more besties holding the same current scored stance on a name — versus a solo call only one of
-                them made.
-              </Term>
-              <Term term="Flip">
-                A full reversal — bull → bear or back — by the same host on the same company, counting only
-                medium-or-higher-conviction takes.
-              </Term>
-              <Term term="Since return">
-                The stock&apos;s move from the table&apos;s first call on it to today. It measures the stock, not
-                whether the call was right.
-              </Term>
-            </dl>
-          </Explainer>
-        </div>
       </header>
 
       {/* Consensus */}
@@ -80,6 +53,7 @@ export default function SignalsPage() {
           emoji="🤝"
           title="The Consensus Meter"
           sub="When two or more besties agree, history says pay attention."
+          detail="Consensus = two or more besties holding the same current scored stance (medium+ conviction); a solo call is one only a single bestie made. Alpha is a call's return above the S&P over the same window; returns in the list below are since the table's first call on the name."
         />
         <div className="grid gap-3 sm:grid-cols-2">
           <StatCard
@@ -108,8 +82,7 @@ export default function SignalsPage() {
             Where the table agrees today
           </h3>
           <p className="mb-3 text-xs text-neutral-400">
-            {consensus.length}{" "}names where two or more besties are currently bullish (medium+ conviction). Return
-            is since the table&apos;s first call.
+            {consensus.length}{" "}names two or more besties are bullish on right now.
           </p>
           <div className="grid gap-2 sm:grid-cols-2">
             {consensus.slice(0, 10).map((c) => (
@@ -142,7 +115,8 @@ export default function SignalsPage() {
         <SectionHead
           emoji="🎯"
           title="The Conviction Signal"
-          sub="Group every index call by how hard a bestie committed — then see how each group paid off."
+          sub="How hard they commit predicts how the call pays off."
+          detail="Mean alpha of the index's calls, grouped by the strongest conviction a bestie put behind the bull case — high (stated plainly), medium (qualified), or low (a hedged aside, never scored). Bars share one scale. Hedged calls have historically been the ones to fade."
         />
         <ConvictionSignal buckets={conviction} />
       </section>
@@ -152,14 +126,16 @@ export default function SignalsPage() {
         <SectionHead
           emoji="🔄"
           title="The Flip Tracker"
-          sub="Full bull↔bear reversals, by host and by name. Tap a host to replay their flips."
+          sub="Who's changed their mind — tap a host to replay every reversal."
+          detail="A flip is a full bull↔bear reversal by the same host on the same company, counting only medium-or-higher-conviction takes; mixed and neutral moments in between don't count. Click a name to replay the whole journey on its price chart."
         />
         <div className="grid items-start gap-3 lg:grid-cols-2">
           <FlipTracker byHost={flipDetails} />
           <div className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
-            <h3 className="mb-3 text-sm font-semibold text-neutral-700 dark:text-neutral-200">
+            <h3 className="mb-1 text-sm font-semibold text-neutral-700 dark:text-neutral-200">
               Most flip-flopped names
             </h3>
+            <p className="mb-3 text-xs text-neutral-400">The table&apos;s biggest mind-changers.</p>
             <div className="flex flex-wrap gap-2">
               {flipped.map((c) => (
                 <Link
@@ -174,11 +150,6 @@ export default function SignalsPage() {
                 </Link>
               ))}
             </div>
-            <p className="mt-4 text-xs text-neutral-400">
-              A flip is a full reversal — bull to bear or back — by the same host on the same
-              company, counting only medium-or-higher-conviction takes. Click a name to replay the
-              whole journey on its price chart.
-            </p>
           </div>
         </div>
       </section>
@@ -188,7 +159,8 @@ export default function SignalsPage() {
         <SectionHead
           emoji="⚔️"
           title="Open Duels"
-          sub="Names where the table is actively split — and who's winning so far."
+          sub="Names the table is split on — and who's winning so far."
+          detail="A duel is a name where some besties' current scored stance is bullish and others' is bearish. The lead goes to whoever the stock has favored since the split crystallized — up for the bulls, down for the bears, with a ±2% dead zone counted as a push."
         />
         {duels.length === 0 ? (
           <p className="text-sm text-neutral-500">No live disagreements on priced names right now.</p>
@@ -230,10 +202,6 @@ export default function SignalsPage() {
                 </Link>
               ))}
             </div>
-            <p className="text-xs text-neutral-400">
-              &ldquo;Leads&rdquo; is decided by the stock&apos;s move since the disagreement crystallized — up favors
-              the bulls, down the bears, with a ±2% dead zone counted as a push.
-            </p>
           </>
         )}
       </section>
@@ -241,16 +209,17 @@ export default function SignalsPage() {
   );
 }
 
-function Term({ term, children }: { term: string; children: React.ReactNode }) {
-  return (
-    <div>
-      <dt className="font-semibold text-neutral-200">{term}</dt>
-      <dd>{children}</dd>
-    </div>
-  );
-}
-
-function SectionHead({ emoji, title, sub }: { emoji: string; title: string; sub: string }) {
+function SectionHead({
+  emoji,
+  title,
+  sub,
+  detail,
+}: {
+  emoji: string;
+  title: string;
+  sub: string;
+  detail?: React.ReactNode;
+}) {
   return (
     <div>
       <h2 className="font-display text-xl font-bold tracking-tight">
@@ -258,6 +227,11 @@ function SectionHead({ emoji, title, sub }: { emoji: string; title: string; sub:
         {title}
       </h2>
       <p className="mt-0.5 text-sm text-neutral-500">{sub}</p>
+      {detail && (
+        <div className="mt-1.5">
+          <Explainer summary="Learn more">{detail}</Explainer>
+        </div>
+      )}
     </div>
   );
 }

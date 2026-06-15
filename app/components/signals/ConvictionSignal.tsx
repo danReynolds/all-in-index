@@ -38,10 +38,7 @@ export function ConvictionSignal({ buckets }: { buckets: ConvictionBucketDetail[
                   canOpen ? "hover:bg-neutral-50 dark:hover:bg-neutral-800/60" : "cursor-default"
                 } ${isOpen ? "bg-neutral-50 dark:bg-neutral-800/60" : ""}`}
               >
-                <span className="w-24 shrink-0">
-                  <span className="text-sm font-medium capitalize">{b.label}</span>
-                  <span className="ml-1 text-xs text-neutral-400">conviction</span>
-                </span>
+                <span className="w-16 shrink-0 text-sm font-medium capitalize">{b.label}</span>
                 <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-neutral-100 dark:bg-neutral-800">
                   <div
                     className={`h-full rounded-full transition-all ${positive ? "bg-emerald-500" : "bg-rose-500"}`}
@@ -98,11 +95,6 @@ export function ConvictionSignal({ buckets }: { buckets: ConvictionBucketDetail[
           );
         })}
       </div>
-      <p className="mt-4 text-xs text-neutral-400">
-        Mean <strong className="text-neutral-300">alpha</strong> (return above the S&amp;P over the same window) of the
-        index&apos;s calls, grouped by the strongest conviction any bestie put behind the bull case. Bars share one
-        scale — tap a row to see the names. Hedged calls have historically been the ones to fade.
-      </p>
     </div>
   );
 }
