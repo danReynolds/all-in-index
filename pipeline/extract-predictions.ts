@@ -74,6 +74,22 @@ export interface ScoredPrediction {
   quoteStartMs: number | null;
   /** Stock/proxy return from the episode date to asOf (tickered picks only). */
   sinceReturn: number | null;
+  /** Sparse [isoDate, close] price path since the episode, for the pick's chart. */
+  history?: Array<[string, number]>;
+}
+
+/** Price the named ticker from the episode date to now: return + sparse history. */
+async function scoreTicker(
+  ticker: string,
+  epDate: string,
+  nowIso: string,
+): Promise<{ sinceReturn: number | null; history: Array<[string, number]> }> {
+  try {
+    const md = await buildMarketData(ticker.toUpperCase(), epDate, nowIso);
+    return { sinceReturn: md.returns.since, history: md.history ?? [] };
+  } catch {
+    return { sinceReturn: null, history: [] };
+  }
 }
 
 export interface PredictionsFile {
@@ -116,15 +132,7 @@ export async function extractPredictions(): Promise<void> {
     const nowIso = new Date().toISOString();
     const scored: ScoredPrediction[] = [];
     for (const p of result.predictions) {
-      let sinceReturn: number | null = null;
-      if (p.ticker) {
-        try {
-          const md = await buildMarketData(p.ticker.toUpperCase(), ep.date, nowIso);
-          sinceReturn = md.returns.since;
-        } catch {
-          sinceReturn = null;
-        }
-      }
+      const m = p.ticker ? await scoreTicker(p.ticker, ep.date, nowIso) : { sinceReturn: null, history: [] };
       scored.push({
         host: p.host,
         guestName: p.guestName,
@@ -134,7 +142,8 @@ export async function extractPredictions(): Promise<void> {
         direction: p.direction,
         quote: p.quote,
         quoteStartMs: p.quoteStartSec != null ? p.quoteStartSec * 1000 : null,
-        sinceReturn,
+        sinceReturn: m.sinceReturn,
+        history: m.history.length ? m.history : undefined,
       });
     }
 
@@ -152,4 +161,29 @@ export async function extractPredictions(): Promise<void> {
   out.episodes.sort((a, b) => b.year - a.year);
   fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 2) + "\n");
   console.log(`\n✓ wrote ${OUT_FILE}`);
+}
+
+/**
+ * Re-price the existing predictions (sinceReturn + sparse history per tickered
+ * pick) WITHOUT re-running the LLM extraction — cheap, deterministic, safe to
+ * re-run on a schedule as prices move.
+ */
+export async function rescorePredictions(): Promise<void> {
+  if (!fs.existsSync(OUT_FILE)) throw new Error("No predictions.json — run extract-predictions first.");
+  const data: PredictionsFile = JSON.parse(fs.readFileSync(OUT_FILE, "utf8"));
+  const nowIso = new Date().toISOString();
+  let priced = 0;
+  for (const ep of data.episodes) {
+    for (const p of ep.predictions) {
+      if (!p.ticker) continue;
+      const m = await scoreTicker(p.ticker, ep.date, nowIso);
+      p.sinceReturn = m.sinceReturn;
+      p.history = m.history.length ? m.history : undefined;
+      priced++;
+    }
+    console.log(`  ${ep.id} (${ep.year}): repriced ${ep.predictions.filter((p) => p.ticker).length} tickered picks`);
+  }
+  data.generatedAt = nowIso;
+  fs.writeFileSync(OUT_FILE, JSON.stringify(data, null, 2) + "\n");
+  console.log(`\n✓ repriced ${priced} picks → ${OUT_FILE}`);
 }

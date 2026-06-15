@@ -174,6 +174,10 @@ async function main() {
       const { extractPredictions } = await import("./extract-predictions");
       return extractPredictions();
     }
+    case "rescore-predictions": {
+      const { rescorePredictions } = await import("./extract-predictions");
+      return rescorePredictions();
+    }
     case "sync": {
       const { sync } = await import("./sync");
       const limitIdx = rest.indexOf("--limit");

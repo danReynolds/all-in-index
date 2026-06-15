@@ -51,7 +51,9 @@ export default function PredictionsPage() {
         domain: p.ticker ? (tickerDomain.get(p.ticker.toUpperCase()) ?? null) : null,
         direction: p.direction,
         sinceReturn: p.sinceReturn,
+        quote: p.quote,
         quoteStartMs: p.quoteStartMs,
+        history: p.history ?? null,
       });
       const financial = ep.predictions.filter(
         (p) => !!p.ticker || (!!p.direction && FIN_CAT.test(p.category)),
@@ -86,7 +88,12 @@ export default function PredictionsPage() {
         </p>
       </header>
 
-      <PredictionsBoard years={years} episodes={episodes} guestLinks={guestLinks} />
+      <PredictionsBoard
+        years={years}
+        episodes={episodes}
+        guestLinks={guestLinks}
+        nowYear={new Date(data.generatedAt).getUTCFullYear()}
+      />
 
       <p className="text-xs text-neutral-400">
         Tickered picks are scored from the episode-day close via the named ticker or ETF proxy;
