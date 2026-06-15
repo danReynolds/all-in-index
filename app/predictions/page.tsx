@@ -1,19 +1,15 @@
 import fs from "node:fs";
 import path from "node:path";
-import Link from "next/link";
 import { getIndex, guestLinkMap } from "@/lib/data";
-import { pct, returnColor, fmtDate, callVerdict } from "@/lib/format";
-import { HostAvatar } from "@/app/components/host";
-import { GuestName } from "@/app/components/GuestName";
-import { ListenButton } from "@/app/components/player";
-import { Reveal } from "@/app/components/Reveal";
+import { fmtDate } from "@/lib/format";
 import { BackLink } from "@/app/components/BackLink";
+import { PredictionsBoard, type PredYear, type FinPick } from "@/app/components/PredictionsBoard";
 import type { Host } from "@/lib/types";
-import type { PredictionsFile, ScoredPrediction } from "@/pipeline/extract-predictions";
+import type { PredictionsFile } from "@/pipeline/extract-predictions";
 
 export const metadata = {
   title: "Predictions Scorecard — The All-Index",
-  description: "The annual predictions episodes, extracted and scored against the market.",
+  description: "The besties' year-ahead asset picks, scored against the market.",
 };
 
 function loadPredictions(): PredictionsFile | null {
@@ -22,15 +18,17 @@ function loadPredictions(): PredictionsFile | null {
   return JSON.parse(fs.readFileSync(f, "utf8"));
 }
 
-function speakerLabel(p: ScoredPrediction): string {
-  return p.host === "Guest" ? (p.guestName ?? "Guest") : p.host;
-}
+// Financial categories whose directional picks we treat as asset calls even
+// without a clean ticker. Everything else (political, media, deals) is dropped.
+const FIN_CAT = /performing asset|business winner|business loser/i;
 
 export default function PredictionsPage() {
   const data = loadPredictions();
   const { snapshot } = getIndex();
   const episodes = snapshot.episodes ?? {};
   const guestLinks = guestLinkMap();
+  const tickerDomain = new Map<string, string | null>();
+  for (const h of snapshot.holdings) if (h.ticker) tickerDomain.set(h.ticker.toUpperCase(), h.domain ?? null);
 
   if (!data || data.episodes.length === 0) {
     return (
@@ -41,116 +39,59 @@ export default function PredictionsPage() {
     );
   }
 
+  const years: PredYear[] = data.episodes
+    .map((ep) => {
+      const toPick = (p: PredictionsFile["episodes"][number]["predictions"][number]): FinPick => ({
+        speaker: p.host === "Guest" ? (p.guestName ?? "Guest") : p.host,
+        host: p.host as Host,
+        guestSlug: p.host === "Guest" && p.guestName ? (guestLinks[p.guestName] ?? null) : null,
+        category: p.category,
+        pick: p.pick,
+        ticker: p.ticker,
+        domain: p.ticker ? (tickerDomain.get(p.ticker.toUpperCase()) ?? null) : null,
+        direction: p.direction,
+        sinceReturn: p.sinceReturn,
+        quoteStartMs: p.quoteStartMs,
+      });
+      const financial = ep.predictions.filter(
+        (p) => !!p.ticker || (!!p.direction && FIN_CAT.test(p.category)),
+      );
+      const isScored = (p: { ticker: string | null; direction: string | null; sinceReturn: number | null }) =>
+        !!p.ticker && !!p.direction && p.sinceReturn != null;
+      const scored = financial
+        .filter(isScored)
+        .map(toPick)
+        .sort((a, b) => {
+          const adj = (x: FinPick) => (x.direction === "down" ? -(x.sinceReturn ?? 0) : x.sinceReturn ?? 0);
+          return adj(b) - adj(a);
+        });
+      const other = financial.filter((p) => !isScored(p)).map(toPick);
+      return { year: ep.year, episodeId: ep.id, date: ep.date, scored, other };
+    })
+    .filter((y) => y.scored.length > 0 || y.other.length > 0)
+    .sort((a, b) => b.year - a.year);
+
   return (
-    <div className="space-y-10">
+    <div className="space-y-8">
       <BackLink href="/">Home</BackLink>
 
       <header className="rise space-y-2">
         <p className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-emerald-600 dark:text-emerald-400">
           The annual picks game
         </p>
-        <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
-          Predictions Scorecard
-        </h1>
+        <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">Predictions Scorecard</h1>
         <p className="max-w-2xl text-neutral-600 dark:text-neutral-400">
-          Every formal prediction from the year-ahead episodes — asset picks scored against the
-          market from the day they were made. Not financial advice; receipts included.
+          Each January the besties make year-ahead bets. Here are the ones we can grade — asset and
+          market picks, scored against the market from the day they aired.
         </p>
       </header>
 
-      {data.episodes.map((ep) => {
-        const bySpeaker = new Map<string, ScoredPrediction[]>();
-        for (const p of ep.predictions) {
-          const k = speakerLabel(p);
-          (bySpeaker.get(k) ?? bySpeaker.set(k, []).get(k)!).push(p);
-        }
-        return (
-          <Reveal key={ep.id}>
-            <section className="space-y-4">
-              <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <h2 className="font-display text-2xl font-bold tracking-tight">{ep.year} predictions</h2>
-                <span className="text-xs text-neutral-500">
-                  <Link href={`/episode/${ep.id}`} className="font-mono hover:underline">
-                    {ep.id}
-                  </Link>{" "}
-                  · {fmtDate(ep.date)}
-                </span>
-              </div>
-              <div className="grid gap-3 md:grid-cols-2">
-                {[...bySpeaker.entries()].map(([speaker, picks]) => {
-                  const hostKey = picks[0].host as Host;
-                  return (
-                    <div
-                      key={speaker}
-                      className="rounded-2xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900"
-                    >
-                      <div className="mb-3 flex items-center gap-2">
-                        <HostAvatar host={hostKey} size="md" />
-                        {hostKey === "Guest" && guestLinks[speaker] ? (
-                          <GuestName
-                            name={speaker}
-                            slug={guestLinks[speaker]}
-                            className="font-display font-semibold"
-                          />
-                        ) : (
-                          <span className="font-display font-semibold">{speaker}</span>
-                        )}
-                      </div>
-                      <ul className="space-y-2.5">
-                        {picks.map((p, i) => {
-                          const v =
-                            p.direction && p.sinceReturn != null
-                              ? callVerdict(p.direction === "up" ? "bull" : "bear", p.sinceReturn)
-                              : null;
-                          return (
-                            <li key={i} className="text-sm">
-                              <div className="text-[10px] font-medium uppercase tracking-[0.14em] text-neutral-500">
-                                {p.category}
-                              </div>
-                              <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
-                                <span className="font-medium text-neutral-100">{p.pick}</span>
-                                {p.ticker && (
-                                  <span className="rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-[11px] text-neutral-500 dark:bg-neutral-800">
-                                    {p.ticker}
-                                  </span>
-                                )}
-                                {p.sinceReturn != null && (
-                                  <span className={`font-mono text-xs tabular-nums ${returnColor(p.direction === "down" ? -p.sinceReturn : p.sinceReturn)}`}>
-                                    {pct(p.sinceReturn)}
-                                  </span>
-                                )}
-                                {v && v.right != null && (
-                                  <span className={`text-[11px] font-semibold ${v.right ? "text-emerald-400" : "text-rose-400"}`}>
-                                    {v.right ? "✓ right" : "✗ wrong"}
-                                  </span>
-                                )}
-                                {episodes[ep.id]?.audioUrl && p.quoteStartMs != null && (
-                                  <span className="text-xs">
-                                    <ListenButton
-                                      meta={episodes[ep.id]}
-                                      episodeId={ep.id}
-                                      startMs={p.quoteStartMs}
-                                      caption={`${speaker} — ${p.category}`}
-                                    />
-                                  </span>
-                                )}
-                              </div>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </div>
-                  );
-                })}
-              </div>
-            </section>
-          </Reveal>
-        );
-      })}
+      <PredictionsBoard years={years} episodes={episodes} guestLinks={guestLinks} />
 
       <p className="text-xs text-neutral-400">
         Tickered picks are scored from the episode-day close via the named ticker or ETF proxy;
-        directional verdicts use a ±2% dead zone. As of {fmtDate(data.generatedAt)}.
+        directional verdicts use a ±2% dead zone. Political, media, and deal predictions are left
+        off — this is a markets scorecard. As of {fmtDate(data.generatedAt)}.
       </p>
     </div>
   );

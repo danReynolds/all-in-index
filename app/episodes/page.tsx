@@ -29,8 +29,8 @@ function Discussed({ companies }: { companies: EpisodeSummary["companies"] }) {
   );
 }
 
-/** Thin bull/bear/neutral mix bar — the episode's mood at a glance. */
-function Mood({ stance, total }: { stance: EpisodeSummary["stance"]; total: number }) {
+/** Thin bull/bear/neutral mix bar — the episode's stance split at a glance. */
+function StanceBar({ stance, total }: { stance: EpisodeSummary["stance"]; total: number }) {
   if (total === 0) return <span className="text-neutral-600">—</span>;
   return (
     <span className="flex h-1.5 w-24 overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-800">
@@ -71,7 +71,7 @@ export default function EpisodesPage() {
             <tr>
               <th className="px-4 py-3 font-medium">Episode</th>
               <th className="hidden w-[176px] px-4 py-3 font-medium sm:table-cell">Discussed</th>
-              <th className="hidden w-[116px] px-4 py-3 font-medium lg:table-cell">Mood</th>
+              <th className="hidden w-[116px] px-4 py-3 font-medium lg:table-cell">Stance</th>
               <th className="hidden w-[132px] px-4 py-3 font-medium sm:table-cell">Aired</th>
               <th className="w-[76px] px-4 py-3 text-right font-medium">Takes</th>
             </tr>
@@ -91,7 +91,7 @@ export default function EpisodesPage() {
                   <Discussed companies={e.companies} />
                 </td>
                 <td className="hidden px-4 py-3 lg:table-cell">
-                  <Mood stance={e.stance} total={e.takeCount} />
+                  <StanceBar stance={e.stance} total={e.takeCount} />
                 </td>
                 <td className="hidden whitespace-nowrap px-4 py-3 text-neutral-500 sm:table-cell">
                   {fmtDate(e.date)}
