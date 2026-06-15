@@ -174,7 +174,8 @@ export function PriceChart({
   const W = 840;
   const H = 300;
   const padL = 46;
-  const padR = 16;
+  // Room for the end-of-line total-return label (e.g. "+85.8%") so it can't clip.
+  const padR = 60;
   const padT = 40;
   const padB = 26;
 
@@ -299,7 +300,7 @@ export function PriceChart({
         />
       </div>
       <div className="relative">
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label={`${ticker} price with the hosts' calls marked`}>
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full overflow-visible" role="img" aria-label={`${ticker} price with the hosts' calls marked`}>
           <defs>
             <linearGradient id="pcFill" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stopColor={lineColor} stopOpacity="0.16" />
