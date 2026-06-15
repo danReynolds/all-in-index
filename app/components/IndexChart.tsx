@@ -97,7 +97,8 @@ export function IndexChart({
   const W = 800;
   const H = 300;
   const padL = 44;
-  const padR = 56;
+  // Wide enough for the end-of-line value labels (e.g. "+176.7%") not to clip.
+  const padR = 64;
   const padT = 16;
   const padB = 28;
 
@@ -177,7 +178,7 @@ export function IndexChart({
   return (
     <div>
     <div className="relative">
-    <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label="Index vs benchmark cumulative return">
+    <svg viewBox={`0 0 ${W} ${H}`} className="w-full overflow-visible" role="img" aria-label="Index vs benchmark cumulative return">
       <defs>
         <linearGradient id="pfFill" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor="#10b981" stopOpacity="0.18" />

@@ -1,14 +1,15 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getEpisode, allEpisodeIds, guestLinkMap } from "@/lib/data";
-import { pct, returnColor, fmtDate, callVerdict } from "@/lib/format";
+import { pct, returnColor, fmtDate, callVerdict, STANCE_META } from "@/lib/format";
 import { StanceBadge, ConvictionDots } from "@/app/components/badges";
-import { HostAvatar } from "@/app/components/host";
+import { HostAvatar, HostStack } from "@/app/components/host";
 import { GuestName } from "@/app/components/GuestName";
 import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { ListenButton } from "@/app/components/player";
 import { BackLink } from "@/app/components/BackLink";
-import type { Holding, Thesis } from "@/lib/types";
+import { REGULAR_HOSTS } from "@/lib/types";
+import type { Holding, Stance, Thesis } from "@/lib/types";
 
 export function generateStaticParams() {
   return allEpisodeIds().map((id) => ({ id }));
@@ -42,6 +43,7 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
   const guestLinks = guestLinkMap();
 
   const takeCount = ep.groups.reduce((n, g) => n + g.takes.length, 0);
+  const allTakes = ep.groups.flatMap((g) => g.takes);
 
   // Scorecard: judge every directional take against the stock since air date.
   let right = 0;
@@ -54,6 +56,16 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
       else if (v?.right === false) wrong++;
     }
   }
+  const priced = right + wrong > 0;
+
+  // Episode "mood": the mix of stances taken, and who showed up.
+  const STANCE_ORDER: Stance[] = ["bull", "bear", "mixed", "neutral"];
+  const stanceCount: Record<Stance, number> = { bull: 0, bear: 0, neutral: 0, mixed: 0 };
+  for (const t of allTakes) stanceCount[t.stance]++;
+  const bestiesIn = REGULAR_HOSTS.filter((h) => allTakes.some((t) => t.host === h));
+  const guestsIn = [
+    ...new Set(allTakes.filter((t) => t.host === "Guest" && t.guestName).map((t) => t.guestName as string)),
+  ];
 
   return (
     <div className="space-y-8">
@@ -97,41 +109,92 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
         </h1>
       </header>
 
-      {/* Scorecard band */}
-      <section className="flex flex-wrap items-center gap-x-10 gap-y-4 rounded-2xl border border-neutral-200 bg-white px-6 py-5 dark:border-neutral-800 dark:bg-neutral-900">
-        <div>
-          <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">Takes</div>
-          <div className="font-display text-3xl font-bold tabular-nums">{takeCount}</div>
-        </div>
-        <div>
-          <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">Companies</div>
-          <div className="font-display text-3xl font-bold tabular-nums">{ep.groups.length}</div>
-        </div>
-        {right + wrong > 0 && (
-          <>
-            <div className="hidden h-12 w-px bg-neutral-200 sm:block dark:bg-neutral-800" />
-            <div>
-              <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
-                Right so far
-              </div>
-              <div className="font-display text-3xl font-bold tabular-nums text-emerald-600 dark:text-emerald-400">
-                {right}
-              </div>
+      {/* Episode summary */}
+      {allTakes.length > 0 && (
+        <section className="space-y-5 rounded-2xl border border-neutral-200 bg-white p-6 dark:border-neutral-800 dark:bg-neutral-900">
+          {/* Headline figures + who showed up */}
+          <div className="flex flex-wrap items-start justify-between gap-x-8 gap-y-5">
+            <div className="flex flex-wrap items-start gap-x-8 gap-y-4">
+              <Stat label="Takes" value={takeCount} />
+              <Stat label="Companies" value={ep.groups.length} />
+              {priced && (
+                <>
+                  <div className="hidden h-12 w-px self-center bg-neutral-200 sm:block dark:bg-neutral-800" />
+                  <Stat label="Right so far" value={right} tone="good" />
+                  <Stat label="Wrong so far" value={wrong} tone="bad" />
+                </>
+              )}
             </div>
-            <div>
-              <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
-                Wrong so far
+            {(bestiesIn.length > 0 || guestsIn.length > 0) && (
+              <div className="sm:text-right">
+                <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
+                  Who weighed in
+                </div>
+                <div className="mt-2 flex items-center gap-2.5 sm:justify-end">
+                  {bestiesIn.length > 0 && <HostStack hosts={bestiesIn} size="md" />}
+                  {guestsIn.length > 0 && (
+                    <span className="text-sm text-neutral-400">
+                      {bestiesIn.length > 0 ? "+ " : ""}
+                      {guestsIn.map((g, i) => (
+                        <span key={g}>
+                          {i > 0 && ", "}
+                          <GuestName name={g} slug={guestLinks[g]} className="text-neutral-300" />
+                        </span>
+                      ))}
+                    </span>
+                  )}
+                </div>
               </div>
-              <div className="font-display text-3xl font-bold tabular-nums text-rose-500 dark:text-rose-400">
-                {wrong}
-              </div>
+            )}
+          </div>
+
+          {/* Stance mix — the episode's mood at a glance */}
+          <div>
+            <div className="flex h-2.5 w-full overflow-hidden rounded-full bg-neutral-100 dark:bg-neutral-800">
+              {STANCE_ORDER.filter((s) => stanceCount[s] > 0).map((s) => (
+                <div
+                  key={s}
+                  className={STANCE_META[s].dot}
+                  style={{ width: `${(stanceCount[s] / allTakes.length) * 100}%` }}
+                  title={`${stanceCount[s]} ${STANCE_META[s].label.toLowerCase()}`}
+                />
+              ))}
             </div>
-            <p className="ml-auto max-w-[260px] text-right text-xs text-neutral-400">
+            <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-neutral-400">
+              {STANCE_ORDER.filter((s) => stanceCount[s] > 0).map((s) => (
+                <span key={s} className="flex items-center gap-1.5">
+                  <span className={`h-2 w-2 rounded-full ${STANCE_META[s].dot}`} />
+                  <span className="tabular-nums text-neutral-300">{stanceCount[s]}</span>{" "}
+                  {STANCE_META[s].label.toLowerCase()}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Companies discussed */}
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="mr-1 text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
+              Discussed
+            </span>
+            {ep.groups.map(({ holding: h }) => (
+              <Link
+                key={h.slug}
+                href={`/holding/${h.slug}`}
+                className="flex items-center gap-1.5 rounded-full border border-neutral-200 py-1 pl-1 pr-2.5 text-sm transition-colors hover:border-neutral-400 dark:border-neutral-700 dark:hover:border-neutral-500"
+              >
+                <CompanyLogo name={h.company} domain={h.domain} size="sm" />
+                {h.company}
+              </Link>
+            ))}
+          </div>
+
+          {priced && (
+            <p className="text-xs text-neutral-400">
               Directional takes judged by each name&apos;s price move since this episode aired.
             </p>
-          </>
-        )}
-      </section>
+          )}
+        </section>
+      )}
 
       {/* Takes, grouped by company */}
       {ep.groups.length === 0 ? (
@@ -242,6 +305,25 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
           })}
         </section>
       )}
+    </div>
+  );
+}
+
+function Stat({ label, value, tone }: { label: string; value: number; tone?: "good" | "bad" }) {
+  return (
+    <div>
+      <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">{label}</div>
+      <div
+        className={`font-display text-3xl font-bold tabular-nums ${
+          tone === "good"
+            ? "text-emerald-600 dark:text-emerald-400"
+            : tone === "bad"
+              ? "text-rose-500 dark:text-rose-400"
+              : ""
+        }`}
+      >
+        {value}
+      </div>
     </div>
   );
 }
