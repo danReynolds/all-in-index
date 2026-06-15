@@ -2,6 +2,7 @@ import type {
   Holding,
   Host,
   IndexSnapshot,
+  Stance,
   Thesis,
 } from "./types";
 
@@ -23,14 +24,26 @@ function takesByHost(h: Holding, hosts: Host[] = BESTIE_LIST): Map<Host, Thesis[
   return map;
 }
 
-function hardFlips(takes: Thesis[]): number {
-  let f = 0;
-  for (let i = 1; i < takes.length; i++) {
-    const a = takes[i - 1].stance;
-    const b = takes[i].stance;
-    if ((a === "bull" && b === "bear") || (a === "bear" && b === "bull")) f++;
+/**
+ * The host's directional journey on a name: bull/bear stances only, with
+ * consecutive repeats collapsed. Mixed/neutral takes are waypoints, not
+ * commitments, so they're dropped — a bull → neutral → bear sequence is one
+ * genuine reversal. Each point carries the date that direction was (re)adopted.
+ */
+function directionalPath(takes: Thesis[]): StancePathPoint[] {
+  const path: StancePathPoint[] = [];
+  for (const t of takes) {
+    if (t.stance !== "bull" && t.stance !== "bear") continue;
+    if (!path.length || path[path.length - 1].stance !== t.stance) {
+      path.push({ stance: t.stance, date: t.episodeDate });
+    }
   }
-  return f;
+  return path;
+}
+
+/** A flip is a direction reversal in the collapsed bull/bear journey. */
+function hardFlips(takes: Thesis[]): number {
+  return Math.max(0, directionalPath(takes).length - 1);
 }
 
 /* ------------------------------- Consensus ------------------------------- */
@@ -113,6 +126,54 @@ export function convictionBuckets(s: IndexSnapshot): ConvictionBucket[] {
   }));
 }
 
+export interface ConvictionMember {
+  slug: string;
+  company: string;
+  ticker: string;
+  domain: string | null;
+  alpha: number;
+  hosts: Host[];
+}
+
+export interface ConvictionBucketDetail extends ConvictionBucket {
+  members: ConvictionMember[];
+}
+
+/**
+ * Same buckets as `convictionBuckets`, but each carries the actual index calls
+ * behind it (sorted best-alpha first) so the UI can drill into "which names?".
+ */
+export function convictionBucketDetails(s: IndexSnapshot): ConvictionBucketDetail[] {
+  const members: Record<string, ConvictionMember[]> = { high: [], medium: [], low: [] };
+  for (const c of s.indexFund?.constituents ?? []) {
+    const h = s.holdings.find((x) => x.slug === c.slug);
+    if (!h) continue;
+    const bull = h.theses.filter((t) => t.stance === "bull" && BESTIE_LIST.includes(t.host));
+    const conv = bull.some((t) => t.conviction === "high")
+      ? "high"
+      : bull.some((t) => t.conviction === "medium")
+        ? "medium"
+        : "low";
+    members[conv].push({
+      slug: c.slug,
+      company: c.company,
+      ticker: c.ticker,
+      domain: h.domain ?? null,
+      alpha: c.alpha,
+      hosts: c.hosts,
+    });
+  }
+  return (["high", "medium", "low"] as const).map((label) => {
+    const m = members[label].sort((a, b) => b.alpha - a.alpha);
+    return {
+      label,
+      n: m.length,
+      meanAlpha: m.length ? m.reduce((x, y) => x + y.alpha, 0) / m.length : null,
+      members: m,
+    };
+  });
+}
+
 /* --------------------------------- Flips --------------------------------- */
 
 export function flipsByHost(s: IndexSnapshot): Array<{ host: Host; flips: number }> {
@@ -138,6 +199,66 @@ export function mostFlipped(
     if (flips > 0) rows.push({ slug: h.slug, company: h.company, flips });
   }
   return rows.sort((a, b) => b.flips - a.flips).slice(0, limit);
+}
+
+export interface StancePathPoint {
+  stance: Stance;
+  /** ISO date the host adopted this stance on the name. */
+  date: string;
+}
+
+export interface FlipName {
+  slug: string;
+  company: string;
+  ticker: string | null;
+  domain: string | null;
+  /** Full bull↔bear reversals by this host on this name. */
+  flips: number;
+  /** Collapsed stance journey (consecutive same-stance takes merged). */
+  path: StancePathPoint[];
+  sinceReturn: number | null;
+}
+
+export interface HostFlipDetail {
+  host: Host;
+  /** Total reversals across every name. */
+  flips: number;
+  /** Every name this host actually reversed on, most-flipped first. */
+  names: FlipName[];
+}
+
+/**
+ * Per-host flip detail: every name a host reversed on, with the stance journey
+ * behind it. Powers the Flip Tracker drill-down. Totals match `flipsByHost`.
+ */
+export function flipDetailsByHost(s: IndexSnapshot): HostFlipDetail[] {
+  const byHost = new Map<Host, FlipName[]>(BESTIE_LIST.map((h) => [h, []]));
+  for (const h of s.holdings) {
+    for (const [host, takes] of takesByHost(h)) {
+      const flips = hardFlips(takes);
+      if (flips < 1) continue;
+      byHost.get(host)?.push({
+        slug: h.slug,
+        company: h.company,
+        ticker: h.ticker,
+        domain: h.domain ?? null,
+        flips,
+        path: directionalPath(takes),
+        sinceReturn: h.market?.returns.since ?? null,
+      });
+    }
+  }
+  return [...byHost.entries()]
+    .map(([host, names]) => ({
+      host,
+      flips: names.reduce((n, x) => n + x.flips, 0),
+      names: names.sort(
+        (a, b) =>
+          b.flips - a.flips ||
+          (b.path[b.path.length - 1]?.date ?? "").localeCompare(a.path[a.path.length - 1]?.date ?? ""),
+      ),
+    }))
+    .sort((a, b) => b.flips - a.flips);
 }
 
 /* --------------------------------- Duels --------------------------------- */

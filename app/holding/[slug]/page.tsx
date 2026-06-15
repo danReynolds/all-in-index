@@ -68,12 +68,15 @@ function groupByHost(theses: Thesis[]): Array<{ host: Host; takes: Thesis[]; fli
   }
   return HOST_ORDER.filter((h) => map.has(h)).map((host) => {
     const takes = map.get(host)!.slice().sort((a, b) => a.episodeDate.localeCompare(b.episodeDate));
-    let flips = 0;
-    for (let i = 1; i < takes.length; i++) {
-      const prev = takes[i - 1].stance;
-      const cur = takes[i].stance;
-      if ((prev === "bull" && cur === "bear") || (prev === "bear" && cur === "bull")) flips++;
-    }
+    // A flip = a direction reversal in the collapsed bull/bear journey of the
+    // host's scored (medium+ conviction) takes — same definition as the Signals
+    // Flip Tracker and the "Following their calls" stat, so counts agree sitewide.
+    const dirs = takes
+      .filter((t) => t.conviction !== "low" && t.attributionConfidence !== "low")
+      .map((t) => t.stance)
+      .filter((s) => s === "bull" || s === "bear");
+    const collapsed = dirs.filter((s, i) => i === 0 || s !== dirs[i - 1]);
+    const flips = Math.max(0, collapsed.length - 1);
     return { host, takes, flips };
   });
 }
