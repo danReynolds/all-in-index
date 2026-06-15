@@ -116,6 +116,15 @@ function callOutcome(stance: Stance, stockReturn: number): number | null {
   return null;
 }
 
+// A since-return only reads as a green/red VERDICT when there was a directional
+// call. Neutral/mixed takes aren't calls, so their move is gray context — never
+// painted red/green (a red chip on a neutral take looks like a bad call).
+function verdictRet(stance: Stance, ret: number | null | undefined): number | null {
+  if (ret == null) return null;
+  return stance === "bull" || stance === "bear" ? ret : null;
+}
+const isDirectional = (stance: Stance) => stance === "bull" || stance === "bear";
+
 function speakerName(t: Thesis): string {
   return t.guestName ?? (t.host === "Guest" ? "Guest" : t.host);
 }
@@ -367,7 +376,7 @@ export function PriceChart({
                 onClick={() => setSel(selectedInGroup ? null : first.id)}
                 className={`pointer-events-auto absolute inline-flex min-h-8 -translate-x-1/2 -translate-y-1/2 items-center gap-1.5 rounded-full border px-1.5 py-1 text-[10px] font-semibold shadow-lg shadow-black/30 backdrop-blur transition hover:border-white/30 ${
                   g.markers.length === 1
-                    ? returnChipClass(first.returnSince, selectedInGroup)
+                    ? returnChipClass(verdictRet(first.thesis.stance, first.returnSince), selectedInGroup)
                     : selectedInGroup
                       ? "border-white/35 bg-neutral-950/95 text-neutral-100 ring-2 ring-white/20"
                       : "border-white/10 bg-neutral-950/90 text-neutral-100"
@@ -390,9 +399,13 @@ export function PriceChart({
                 {g.markers.length === 1 ? (
                   <>
                     <HostAvatar host={first.thesis.host} size="sm" />
-                    <span className="font-mono text-[11px]">
-                      {pct(first.returnSince)}
-                    </span>
+                    {isDirectional(first.thesis.stance) ? (
+                      <span className="font-mono text-[11px]">{pct(first.returnSince)}</span>
+                    ) : (
+                      <span className="text-[10px] font-medium capitalize text-neutral-400">
+                        {first.thesis.stance}
+                      </span>
+                    )}
                   </>
                 ) : (
                   <>
@@ -402,7 +415,7 @@ export function PriceChart({
                     <span className="text-[9px] uppercase tracking-[0.12em] text-neutral-300">calls</span>
                     <span className="ml-0.5 flex items-center -space-x-1">
                       {g.markers.slice(0, 4).map((m) => (
-                        <span key={m.id} className={`rounded-full ring-1 ${returnRingClass(m.returnSince)}`}>
+                        <span key={m.id} className={`rounded-full ring-1 ${returnRingClass(verdictRet(m.thesis.stance, m.returnSince))}`}>
                           <HostAvatar host={m.thesis.host} size="xs" />
                         </span>
                       ))}
@@ -460,12 +473,12 @@ export function PriceChart({
                   type="button"
                   onClick={() => setSel(m.id)}
                   className={`inline-flex items-center gap-1.5 rounded-full border px-2 py-1 text-xs transition hover:border-white/25 ${
-                    returnChipClass(m.returnSince, selected.id === m.id)
+                    returnChipClass(verdictRet(m.thesis.stance, m.returnSince), selected.id === m.id)
                   }`}
                 >
                   <HostAvatar host={m.thesis.host} size="xs" />
                   <span>{speakerName(m.thesis)}</span>
-                  <span className={`font-mono ${returnTextClass(m.returnSince)}`}>{pct(m.returnSince)}</span>
+                  <span className={`font-mono ${returnTextClass(verdictRet(m.thesis.stance, m.returnSince))}`}>{pct(m.returnSince)}</span>
                 </button>
               ))}
             </div>
@@ -509,9 +522,9 @@ export function PriceChart({
           <div className="mt-3 grid gap-2 sm:grid-cols-3">
             <div className="rounded-lg bg-neutral-950/35 px-3 py-2 ring-1 ring-white/5">
               <div className="text-[10px] font-medium uppercase tracking-[0.14em] text-neutral-500">
-                {ticker} since this call
+                {ticker} since this {isDirectional(selected.thesis.stance) ? "call" : "mention"}
               </div>
-              <div className={`mt-1 font-mono text-2xl font-semibold tabular-nums ${returnTextClass(selected.returnSince)}`}>
+              <div className={`mt-1 font-mono text-2xl font-semibold tabular-nums ${returnTextClass(verdictRet(selected.thesis.stance, selected.returnSince))}`}>
                 {pct(selected.returnSince)}
               </div>
               <div className="mt-0.5 text-[11px] text-neutral-500">
