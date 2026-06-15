@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getEpisode, allEpisodeIds } from "@/lib/data";
+import { getEpisode, allEpisodeIds, guestLinkMap } from "@/lib/data";
 import { pct, returnColor, fmtDate, callVerdict } from "@/lib/format";
 import { StanceBadge, ConvictionDots } from "@/app/components/badges";
 import { HostAvatar } from "@/app/components/host";
+import { GuestName } from "@/app/components/GuestName";
 import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { ListenButton } from "@/app/components/player";
 import { BackLink } from "@/app/components/BackLink";
@@ -38,6 +39,7 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
   const { id } = await params;
   const ep = getEpisode(id);
   if (!ep) notFound();
+  const guestLinks = guestLinkMap();
 
   const takeCount = ep.groups.reduce((n, g) => n + g.takes.length, 0);
 
@@ -174,9 +176,17 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
                         <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1.5 text-xs text-neutral-500">
                           <span className="flex items-center gap-1.5">
                             <HostAvatar host={t.host} size="sm" />
-                            <span className="font-semibold text-neutral-100">
-                              {t.host === "Guest" ? (t.guestName ?? "Guest") : t.host}
-                            </span>
+                            {t.host === "Guest" && t.guestName ? (
+                              <GuestName
+                                name={t.guestName}
+                                slug={guestLinks[t.guestName]}
+                                className="font-semibold text-neutral-100"
+                              />
+                            ) : (
+                              <span className="font-semibold text-neutral-100">
+                                {t.host === "Guest" ? "Guest" : t.host}
+                              </span>
+                            )}
                           </span>
                           <StanceBadge stance={t.stance} />
                           <ConvictionDots conviction={t.conviction} />

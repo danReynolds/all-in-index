@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
-import { getHolding, allSlugs } from "@/lib/data";
+import { getHolding, allSlugs, guestLinkMap } from "@/lib/data";
 import { pct, returnColor, fmtDate, fmtMoney } from "@/lib/format";
 import { currentCall, followStats, scoredTakes, displayStance, isPortfolioScored } from "@/lib/calls";
 import { isMacroAsset } from "@/lib/assets";
@@ -82,6 +82,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
   const { slug } = await params;
   const { holding: h, isSample, episodeLinks, episodes } = getHolding(slug);
   if (!h) notFound();
+  const guestLinks = guestLinkMap();
 
   const hostGroups = groupByHost(h.theses);
   const totalFlips = hostGroups.reduce((n, g) => n + g.flips, 0);
@@ -305,7 +306,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
                   prices through {fmtDate(h.market.asOf)}
                 </span>
               </div>
-              <PriceChart history={h.market.history} theses={h.theses} ticker={h.ticker!} market={h.market} episodeLinks={episodeLinks} episodes={episodes} />
+              <PriceChart history={h.market.history} theses={h.theses} ticker={h.ticker!} market={h.market} episodeLinks={episodeLinks} episodes={episodes} guestLinks={guestLinks} />
             </section>
           )}
 
@@ -407,7 +408,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
                     </span>
                   )}
                 </div>
-                <Timeline theses={takes} episodeLinks={episodeLinks} episodes={episodes} />
+                <Timeline theses={takes} episodeLinks={episodeLinks} episodes={episodes} guestLinks={guestLinks} />
               </article>
             ))}
             <Explainer summary="About these quotes">

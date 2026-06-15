@@ -48,6 +48,19 @@ export function getHolding(slug: string): {
   };
 }
 
+/**
+ * Map of guest name → profile slug, for every guest that actually has a
+ * `/guest/[slug]` page (i.e. appears in the leaderboard with ≥1 scored call).
+ * Used to link guest names in receipts ONLY when the page exists, so we never
+ * render a link to a page that 404s.
+ */
+export function guestLinkMap(): Record<string, string> {
+  const { snapshot } = getIndex();
+  const out: Record<string, string> = {};
+  for (const g of snapshot.guestLeaderboard ?? []) out[g.guest] = g.slug;
+  return out;
+}
+
 export function allSlugs(): string[] {
   return getIndex().snapshot.holdings.map((h) => h.slug);
 }

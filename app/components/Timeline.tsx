@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import { fmtDate, mmss } from "@/lib/format";
 import { isPortfolioScored } from "@/lib/calls";
 import { StanceBadge, ConvictionDots } from "@/app/components/badges";
+import { GuestName } from "@/app/components/GuestName";
 import { ListenButton } from "@/app/components/player";
 import type { EpisodeMeta, Stance, Thesis } from "@/lib/types";
 
@@ -34,10 +35,12 @@ export function Timeline({
   theses,
   episodeLinks = {},
   episodes = {},
+  guestLinks = {},
 }: {
   theses: Thesis[];
   episodeLinks?: Record<string, string | null>;
   episodes?: Record<string, EpisodeMeta>;
+  guestLinks?: Record<string, string>;
 }) {
   const allSorted = useMemo(
     () => theses.slice().sort((a, b) => a.episodeDate.localeCompare(b.episodeDate)),
@@ -160,7 +163,13 @@ export function Timeline({
       {t && (
         <div className="rounded-xl bg-neutral-800/40 p-4 ring-1 ring-white/5">
           <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1.5 text-xs text-neutral-500">
-            {t.guestName && <span className="font-semibold text-neutral-100">{t.guestName}</span>}
+            {t.guestName && (
+              <GuestName
+                name={t.guestName}
+                slug={guestLinks[t.guestName]}
+                className="font-semibold text-neutral-100"
+              />
+            )}
             <StanceBadge stance={t.stance} />
             <ConvictionDots conviction={t.conviction} />
             <Link

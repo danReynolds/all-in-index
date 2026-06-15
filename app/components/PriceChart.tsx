@@ -5,6 +5,7 @@ import { useState, type CSSProperties } from "react";
 import { fmtDate, fmtMoney, mmss, pct } from "@/lib/format";
 import { StanceBadge } from "@/app/components/badges";
 import { HostAvatar } from "@/app/components/host";
+import { GuestName } from "@/app/components/GuestName";
 import { ListenButton } from "@/app/components/player";
 import { HOST_UI } from "@/lib/hosts";
 import type { EpisodeMeta, Host, Thesis, Stance, MarketData } from "@/lib/types";
@@ -130,6 +131,7 @@ export function PriceChart({
   market,
   episodeLinks = {},
   episodes = {},
+  guestLinks = {},
 }: {
   history: Array<[string, number]>;
   theses: Thesis[];
@@ -137,6 +139,7 @@ export function PriceChart({
   market?: MarketData | null;
   episodeLinks?: Record<string, string | null>;
   episodes?: Record<string, EpisodeMeta>;
+  guestLinks?: Record<string, string>;
 }) {
   const [sel, setSel] = useState<string | null>(null);
   const [mode, setMode] = useState<"flips" | "all">("all");
@@ -469,7 +472,15 @@ export function PriceChart({
           )}
           <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1.5 text-xs text-neutral-500">
             <HostAvatar host={selected.thesis.host} size="sm" />
-            <span className="font-semibold text-neutral-100">{speakerName(selected.thesis)}</span>
+            {selected.thesis.guestName ? (
+              <GuestName
+                name={selected.thesis.guestName}
+                slug={guestLinks[selected.thesis.guestName]}
+                className="font-semibold text-neutral-100"
+              />
+            ) : (
+              <span className="font-semibold text-neutral-100">{speakerName(selected.thesis)}</span>
+            )}
             <StanceBadge
               stance={selected.thesis.stance}
               tone={selected.outcome != null ? "outcome" : "stance"}

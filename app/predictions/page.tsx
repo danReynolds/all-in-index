@@ -1,9 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import Link from "next/link";
-import { getIndex } from "@/lib/data";
+import { getIndex, guestLinkMap } from "@/lib/data";
 import { pct, returnColor, fmtDate, callVerdict } from "@/lib/format";
 import { HostAvatar } from "@/app/components/host";
+import { GuestName } from "@/app/components/GuestName";
 import { ListenButton } from "@/app/components/player";
 import { Reveal } from "@/app/components/Reveal";
 import { BackLink } from "@/app/components/BackLink";
@@ -29,6 +30,7 @@ export default function PredictionsPage() {
   const data = loadPredictions();
   const { snapshot } = getIndex();
   const episodes = snapshot.episodes ?? {};
+  const guestLinks = guestLinkMap();
 
   if (!data || data.episodes.length === 0) {
     return (
@@ -84,7 +86,15 @@ export default function PredictionsPage() {
                     >
                       <div className="mb-3 flex items-center gap-2">
                         <HostAvatar host={hostKey} size="md" />
-                        <span className="font-display font-semibold">{speaker}</span>
+                        {hostKey === "Guest" && guestLinks[speaker] ? (
+                          <GuestName
+                            name={speaker}
+                            slug={guestLinks[speaker]}
+                            className="font-display font-semibold"
+                          />
+                        ) : (
+                          <span className="font-display font-semibold">{speaker}</span>
+                        )}
                       </div>
                       <ul className="space-y-2.5">
                         {picks.map((p, i) => {
