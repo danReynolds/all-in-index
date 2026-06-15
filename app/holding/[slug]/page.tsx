@@ -3,7 +3,7 @@ import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import { getHolding, allSlugs, guestLinkMap } from "@/lib/data";
 import { pct, returnColor, fmtDate, fmtMoney } from "@/lib/format";
-import { currentCall, followStats, scoredTakes, displayStance, isPortfolioScored } from "@/lib/calls";
+import { currentCall, followStats, scoredTakes, displayStance } from "@/lib/calls";
 import { isMacroAsset } from "@/lib/assets";
 import { StanceBadge, ConvictionDots, SampleBanner } from "@/app/components/badges";
 import { Explainer } from "@/app/components/Explainer";
@@ -44,8 +44,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 const HOST_ORDER: Host[] = ["Chamath", "Jason", "Sacks", "Friedberg", "Guest", "Unknown"];
 
+// Canonical SCORED take: medium+ conviction, verified speaker. The same set the
+// stance/index/flip count use, so "Where they stand now" and the timeline's
+// default view stay consistent with the flip badge above them.
 function isDefaultHoldingTake(t: Thesis): boolean {
-  return t.attributionConfidence !== "low" && (isPortfolioScored(t) || t.conviction === "high");
+  return t.attributionConfidence !== "low" && t.conviction !== "low";
 }
 
 function defaultHoldingTakes(takes: Thesis[]): Thesis[] {
@@ -406,7 +409,10 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
                     </span>
                   </div>
                   {flips > 0 && (
-                    <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-500/15 dark:text-amber-300">
+                    <span
+                      className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-500/15 dark:text-amber-300"
+                      title={`${flips} bull↔bear ${flips === 1 ? "reversal" : "reversals"} across ${host}'s scored calls (mixed/neutral takes in between aren't counted).`}
+                    >
                       {flips === 1 ? "flipped once" : `flipped ${flips}×`}
                     </span>
                   )}

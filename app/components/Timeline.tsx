@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { fmtDate, mmss } from "@/lib/format";
-import { isPortfolioScored } from "@/lib/calls";
 import { StanceBadge, ConvictionDots } from "@/app/components/badges";
 import { GuestName } from "@/app/components/GuestName";
 import { ListenButton } from "@/app/components/player";
@@ -18,8 +17,11 @@ const STANCE_HEX: Record<Stance, string> = {
 
 type TimelineMode = "signal" | "all";
 
+// "Key calls" = the site's canonical SCORED takes (medium+ conviction, verified
+// speaker). Same set the stance, index, and flip count are built from — so the
+// flips a host's badge claims are actually visible in this default view.
 function isDefaultTimelineTake(t: Thesis): boolean {
-  return t.attributionConfidence !== "low" && (isPortfolioScored(t) || t.conviction === "high");
+  return t.attributionConfidence !== "low" && t.conviction !== "low";
 }
 
 function mentionCount(n: number): string {
