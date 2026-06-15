@@ -79,32 +79,31 @@ export function FlipTracker({ byHost }: { byHost: HostFlipDetail[] }) {
                     <Link
                       key={n.slug}
                       href={`/holding/${n.slug}#takes-${f.host.toLowerCase()}`}
-                      className="block rounded-lg border border-neutral-100 px-3 py-2.5 transition-colors hover:border-neutral-300 dark:border-neutral-800 dark:hover:border-neutral-600"
+                      className="flex flex-wrap items-center gap-x-4 gap-y-2 rounded-lg border border-neutral-100 px-3 py-2.5 transition-colors hover:border-neutral-300 dark:border-neutral-800 dark:hover:border-neutral-600"
                     >
-                      <div className="flex items-center justify-between gap-2">
-                        <span className="flex min-w-0 items-center gap-2">
-                          <CompanyLogo name={n.company} domain={n.domain} size="sm" />
-                          <span className="truncate text-sm font-medium">{n.company}</span>
-                          {n.ticker && (
-                            <span className="rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-[10px] text-neutral-500 dark:bg-neutral-800">
-                              {n.ticker}
-                            </span>
-                          )}
-                        </span>
-                        <span className="flex shrink-0 items-center gap-2">
-                          <span className="rounded-full bg-amber-500/10 px-2 py-0.5 text-[11px] font-medium text-amber-600 ring-1 ring-inset ring-amber-500/25 dark:text-amber-400">
-                            {n.flips}× flip{n.flips === 1 ? "" : "s"}
+                      <span className="flex w-full items-center gap-2 sm:w-48 sm:shrink-0">
+                        <CompanyLogo name={n.company} domain={n.domain} size="sm" />
+                        <span className="truncate text-sm font-medium">{n.company}</span>
+                        {n.ticker && (
+                          <span className="rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-[10px] text-neutral-500 dark:bg-neutral-800">
+                            {n.ticker}
                           </span>
-                          {n.sinceReturn != null && (
-                            <span className={`font-mono text-xs tabular-nums ${returnColor(n.sinceReturn)}`}>
-                              {pct(n.sinceReturn)}
-                            </span>
-                          )}
-                        </span>
-                      </div>
-                      <div className="mt-2">
+                        )}
+                      </span>
+                      {/* The journey gets the open middle space — no more wrapping in a half-column. */}
+                      <span className="min-w-0 flex-1">
                         <StancePath path={n.path} />
-                      </div>
+                      </span>
+                      <span className="flex shrink-0 items-center gap-2">
+                        <span className="rounded-full bg-amber-500/10 px-2 py-0.5 text-[11px] font-medium text-amber-600 ring-1 ring-inset ring-amber-500/25 dark:text-amber-400">
+                          {n.flips}× flip{n.flips === 1 ? "" : "s"}
+                        </span>
+                        {n.sinceReturn != null && (
+                          <span className={`font-mono text-xs tabular-nums ${returnColor(n.sinceReturn)}`}>
+                            {pct(n.sinceReturn)}
+                          </span>
+                        )}
+                      </span>
                     </Link>
                   ))}
                   <Link

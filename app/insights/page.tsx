@@ -127,28 +127,22 @@ export default function SignalsPage() {
           badge={totalFlips > 0 ? `${totalFlips} reversals` : undefined}
           detail="A flip is a full bull↔bear reversal by the same host on the same company, counting only medium-or-higher-conviction takes; mixed and neutral moments in between don't count. Click a name to replay the whole journey on its price chart."
         />
-        <div className="grid items-start gap-3 lg:grid-cols-2">
-          <FlipTracker byHost={flipDetails} />
-          <div className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
-            <h3 className="mb-1 text-sm font-semibold text-neutral-700 dark:text-neutral-200">
-              Most flip-flopped names
-            </h3>
-            <p className="mb-3 text-xs text-neutral-400">Where the besties keep changing their mind.</p>
-            <div className="flex flex-wrap gap-2">
-              {flipped.map((c) => (
-                <Link
-                  key={c.slug}
-                  href={`/holding/${c.slug}`}
-                  className="rounded-full border border-neutral-200 px-3 py-1.5 text-sm transition-colors hover:border-neutral-400 dark:border-neutral-700"
-                >
-                  {c.company}
-                  <span className="ml-1.5 text-xs font-medium text-amber-600 dark:text-amber-400">
-                    {c.flips}×
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
+        <FlipTracker byHost={flipDetails} />
+        {/* Hottest names overall — a compact "by name" companion to the by-host view above. */}
+        <div className="flex flex-wrap items-center gap-2 rounded-2xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900">
+          <span className="mr-1 text-[11px] font-medium uppercase tracking-[0.16em] text-neutral-500">
+            Most flip-flopped names
+          </span>
+          {flipped.map((c) => (
+            <Link
+              key={c.slug}
+              href={`/holding/${c.slug}`}
+              className="rounded-full border border-neutral-200 px-3 py-1.5 text-sm transition-colors hover:border-neutral-400 dark:border-neutral-700"
+            >
+              {c.company}
+              <span className="ml-1.5 text-xs font-medium text-amber-600 dark:text-amber-400">{c.flips}×</span>
+            </Link>
+          ))}
         </div>
       </section>
 
