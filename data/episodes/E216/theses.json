@@ -101,7 +101,7 @@
     "ticker": "GLD",
     "isPublic": true,
     "host": "Guest",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "low",
     "positional": false,
     "summary": "Guest (Stripe) describes Bitcoin as a good store of value and 'a gold substitute', implying Bitcoin/gold serve a similar value-preservation role, but does not make an explicit directional price call on gold itself.",
@@ -112,6 +112,7 @@
       "Bitcoin vs gold",
       "stablecoins"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Guest describes Bitcoin as 'a gold substitute' and good store of value — this is a comparative description of Bitcoin's function, not an explicit directional price call on gold."
   }
 ]

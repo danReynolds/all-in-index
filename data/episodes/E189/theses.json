@@ -124,7 +124,7 @@
     "ticker": "URA",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "positional": false,
     "summary": "Friedberg explains that China's new Gen 4 pebble bed reactor successfully passed safety tests using uranium fuel pebbles, highlighting the technology's extraordinary safety profile, lower cost, efficiency, and China's rapid expansion — framing uranium-based Gen 4 nuclear as a compelling and validated energy technology.",
@@ -138,6 +138,7 @@
       "energy competitiveness",
       "safety"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Friedberg describes China's Gen 4 pebble bed reactor technology's safety and efficiency profile. This is technology/demand description and factual commentary, not an explicit price direction claim for uranium."
   }
 ]

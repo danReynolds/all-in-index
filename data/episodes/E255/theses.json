@@ -122,7 +122,7 @@
     "ticker": "USO",
     "isPublic": true,
     "host": "Sacks",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "positional": false,
     "summary": "Sacks cites gas prices at their lowest in 5 years, below $3 nationally, as evidence of strong economic progress under the current administration.",
@@ -133,6 +133,7 @@
       "energy prices",
       "economic outlook"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Sacks is citing current low gas prices as evidence of economic progress — a descriptive/political observation, not a directional forecast or investment claim on oil prices."
   }
 ]

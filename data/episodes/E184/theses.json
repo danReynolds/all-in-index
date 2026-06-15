@@ -8,7 +8,7 @@
     "ticker": "USO",
     "isPublic": true,
     "host": "Guest",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "high",
     "positional": false,
     "summary": "Trump argues that if Democrats win, oil production would be shut down and prices would skyrocket; he frames high oil production as essential to keeping prices down, and warns oil would 'go through the roof' under a Democratic administration. He also notes high oil prices (near $100/barrel) helped fund Russia's war in Ukraine.",
@@ -22,6 +22,7 @@
       "domestic production"
     ],
     "attributionConfidence": "high",
-    "guestName": "Donald Trump"
+    "guestName": "Donald Trump",
+    "scoreReason": "Trump's claim that oil would 'go through the roof' under Democrats is political/policy rhetoric, not a genuine investment or market directional take. The framing is entirely about policy consequences, not a market call."
   }
 ]

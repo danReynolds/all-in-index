@@ -151,7 +151,7 @@
     "ticker": "LIT",
     "isPublic": true,
     "host": "Guest",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "positional": false,
     "summary": "Elon Musk argues lithium (along with iron, phosphorus, and carbon) is very common on Earth and there is no shortage of raw materials needed to power the planet with solar and batteries, implying no supply-side constraint on lithium demand.",
@@ -164,6 +164,7 @@
       "iron phosphate lithium-ion"
     ],
     "attributionConfidence": "high",
-    "guestName": "Elon Musk"
+    "guestName": "Elon Musk",
+    "scoreReason": "Musk explicitly states lithium is 'very common' and there is 'no shortage' — this is an abundance/supply fact, not a bull price claim. If anything it implies no supply-driven price pressure."
   }
 ]

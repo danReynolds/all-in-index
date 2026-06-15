@@ -187,7 +187,7 @@
     "ticker": "GLD",
     "isPublic": true,
     "host": "Sacks",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "positional": false,
     "summary": "Sacks frames Bitcoin as 'digital gold' and advocates for a strategic reserve modeled on Fort Knox, with a long-term never-sell preservation goal — implicitly validating gold's store-of-value analogy as the benchmark for Bitcoin's reserve status.",
@@ -199,6 +199,7 @@
       "strategic reserve",
       "store of value"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Sacks is using gold (Fort Knox) as an analogy to explain Bitcoin's strategic reserve concept. No explicit directional price call on gold itself is made."
   }
 ]

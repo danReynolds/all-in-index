@@ -150,6 +150,10 @@ async function main() {
       const { auditStance } = await import("./audit-stance");
       return auditStance();
     }
+    case "audit-commodity-stance": {
+      const { auditCommodityStance } = await import("./audit-commodity-stance");
+      return auditCommodityStance();
+    }
     case "audit-candidates": {
       const { runTakeCandidateAudit } = await import("./take-candidate-audit");
       return runTakeCandidateAudit();

@@ -176,7 +176,7 @@
     "ticker": "LIT",
     "isPublic": true,
     "host": "Guest",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "positional": false,
     "summary": "Emil Michael (Guest) highlights that lithium supply is entirely outsourced to China and frames domestic sourcing of critical minerals including lithium as an urgent national security priority, implying strong demand and strategic value for the commodity.",
@@ -190,6 +190,7 @@
       "domestic production"
     ],
     "attributionConfidence": "high",
-    "guestName": "Emil Michael"
+    "guestName": "Emil Michael",
+    "scoreReason": "This is a national security / strategic sourcing framing — outsourcing concern and domestic sourcing priority. No explicit price direction stated for lithium."
   }
 ]

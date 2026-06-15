@@ -149,7 +149,7 @@
     "ticker": "USO",
     "isPublic": true,
     "host": "Jason",
-    "stance": "mixed",
+    "stance": "neutral",
     "conviction": "medium",
     "positional": false,
     "summary": "Jason frames the oil price volatility as significant and historically notable, presenting the spike to $119 and current $99 level as a serious but uncertain shock, with the outcome depending on war duration and strait closure.",
@@ -162,7 +162,8 @@
       "inflation",
       "supply disruption"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Jason is describing price volatility and historical data points without making a directional call. The framing is 'significant but uncertain' with no stated view on where oil goes from here."
   },
   {
     "id": "E264-uso-Chamath-a1",
@@ -221,7 +222,7 @@
     "ticker": "USO",
     "isPublic": true,
     "host": "Guest",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
     "positional": false,
     "summary": "The guest (Brad) argues the oil supply shock is manageable for the US (20M bbl/day produced = consumed) and that China, India, and Gulf neighbors have far greater incentive to resolve the strait closure, implying downward pressure on the supply disruption's duration.",
@@ -235,6 +236,7 @@
       "China"
     ],
     "attributionConfidence": "high",
-    "guestName": "Brad Gerstner"
+    "guestName": "Brad Gerstner",
+    "scoreReason": "Guest argues the supply disruption is a 'modest problem' for the US vs. a massive one for China/Asia, and that others have more incentive to resolve it. This is geopolitical/strategic framing about relative impact, not an explicit directional price call on oil."
   }
 ]

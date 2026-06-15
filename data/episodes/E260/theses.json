@@ -241,7 +241,7 @@
     "ticker": "GLD",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "low",
     "positional": false,
     "summary": "Friedberg half-jokingly says that as 'emperor' he would return to the gold standard to stop money printing, implying a directional preference for gold as a monetary anchor.",
@@ -253,6 +253,7 @@
       "monetary policy",
       "money printing"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Friedberg's half-joking remark about returning to the gold standard as 'emperor' is a monetary policy preference, not an explicit directional price call on gold."
   }
 ]

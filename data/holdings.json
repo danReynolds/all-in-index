@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T16:48:14.199Z",
+  "generatedAt": "2026-06-15T16:58:30.205Z",
   "holdings": [
     {
       "slug": "openai",
@@ -6498,7 +6498,7 @@
           "ticker": "USO",
           "isPublic": true,
           "host": "Guest",
-          "stance": "bear",
+          "stance": "neutral",
           "conviction": "medium",
           "positional": false,
           "summary": "The guest (Brad) argues the oil supply shock is manageable for the US (20M bbl/day produced = consumed) and that China, India, and Gulf neighbors have far greater incentive to resolve the strait closure, implying downward pressure on the supply disruption's duration.",
@@ -6512,7 +6512,8 @@
             "China"
           ],
           "attributionConfidence": "high",
-          "guestName": "Brad Gerstner"
+          "guestName": "Brad Gerstner",
+          "scoreReason": "Guest argues the supply disruption is a 'modest problem' for the US vs. a massive one for China/Asia, and that others have more incentive to resolve it. This is geopolitical/strategic framing about relative impact, not an explicit directional price call on oil."
         },
         {
           "id": "E264-uso-Sacks-a2",
@@ -6571,7 +6572,7 @@
           "ticker": "USO",
           "isPublic": true,
           "host": "Jason",
-          "stance": "mixed",
+          "stance": "neutral",
           "conviction": "medium",
           "positional": false,
           "summary": "Jason frames the oil price volatility as significant and historically notable, presenting the spike to $119 and current $99 level as a serious but uncertain shock, with the outcome depending on war duration and strait closure.",
@@ -6584,7 +6585,8 @@
             "inflation",
             "supply disruption"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "Jason is describing price volatility and historical data points without making a directional call. The framing is 'significant but uncertain' with no stated view on where oil goes from here."
         },
         {
           "id": "E263-uso-Friedberg-a1",
@@ -6671,7 +6673,7 @@
           "ticker": "USO",
           "isPublic": true,
           "host": "Sacks",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "medium",
           "positional": false,
           "summary": "Sacks cites gas prices at their lowest in 5 years, below $3 nationally, as evidence of strong economic progress under the current administration.",
@@ -6682,7 +6684,8 @@
             "energy prices",
             "economic outlook"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "Sacks is citing current low gas prices as evidence of economic progress — a descriptive/political observation, not a directional forecast or investment claim on oil prices."
         },
         {
           "id": "E233-uso-Chamath-a0",
@@ -6740,7 +6743,7 @@
           "ticker": "USO",
           "isPublic": true,
           "host": "Chamath",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "medium",
           "positional": false,
           "summary": "Chamath explains that Houthi disruption of Red Sea/Suez Canal shipping caused input prices to skyrocket (30-400% shipping cost increases), raising recession and inflation risk. He frames the US strikes as restoring shipping volumes and containing that inflation/productivity risk — implying commodity/input price pressures are now easing.",
@@ -6755,7 +6758,8 @@
             "recession risk",
             "tariffs"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "Chamath is describing shipping cost inflation from Houthi disruptions and framing US strikes as containing that pressure. No explicit directional oil price call is made — this is policy/geopolitical commentary on shipping costs."
         },
         {
           "id": "E201-uso-Friedberg-a3",
@@ -6819,7 +6823,7 @@
           "ticker": "USO",
           "isPublic": true,
           "host": "Guest",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "high",
           "positional": false,
           "summary": "Trump argues that if Democrats win, oil production would be shut down and prices would skyrocket; he frames high oil production as essential to keeping prices down, and warns oil would 'go through the roof' under a Democratic administration. He also notes high oil prices (near $100/barrel) helped fund Russia's war in Ukraine.",
@@ -6833,7 +6837,8 @@
             "domestic production"
           ],
           "attributionConfidence": "high",
-          "guestName": "Donald Trump"
+          "guestName": "Donald Trump",
+          "scoreReason": "Trump's claim that oil would 'go through the roof' under Democrats is political/policy rhetoric, not a genuine investment or market directional take. The framing is entirely about policy consequences, not a market call."
         }
       ],
       "synthesis": "The hosts and guests hold a broadly cautious, geopolitically driven view on oil, with near-term price direction dominated by supply-shock risks rather than fundamentals. The Strait of Hormuz closure in early 2026 generated the most debate: Jason and Friedberg flagged it as a severe upside price shock (Brent spiking to $119), while Chamath and guest Brad argued the spike would be short-lived given coordinated IEA strategic reserve releases (~400M barrels) and strong incentives from China and Asia to resolve the disruption quickly; Sacks carved out a tail-risk scenario where Iranian retaliation against Gulf infrastructure could make the strait's reopening irrelevant. On the longer-term structural view, Friedberg stands alone as a high-conviction bear, arguing electrification and energy storage trends make $45/barrel more likely than $65 by 2026, while Friedberg's earlier commodity-basket positioning and Chamath's repeated warnings about Iran-driven price doubling reflect a more tactically bullish posture on supply disruptions. Political framing also divided guests, with Trump-aligned commentary warning Democratic policy would send prices \"through the roof,\" while Mark Cuban attributed the 2022 inflation spike partly to Trump's 2020 OPEC+ production-cut deal — illustrating that both hosts and guests see oil prices as deeply intertwined with policy and geopolitical decisions rather than market forces alone.",
@@ -8290,7 +8295,7 @@
           "ticker": "UNG",
           "isPublic": true,
           "host": "Sacks",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "medium",
           "positional": false,
           "summary": "Sacks argues that natural gas is the near-term (next 5 years) answer to AI-driven power demand, before nuclear comes online, though he notes turbine backlogs as a constraint.",
@@ -8302,7 +8307,8 @@
             "data centers",
             "grid capacity"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "Sacks frames natural gas as the near-term answer to AI power demand — this is a strategic/importance framing about energy sources, not an explicit directional price call on natural gas."
         },
         {
           "id": "E236-ung-Guest-a1",
@@ -8338,7 +8344,7 @@
           "ticker": "UNG",
           "isPublic": true,
           "host": "Sacks",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "medium",
           "positional": false,
           "summary": "Sacks highlights Pennsylvania's vast natural gas resources and fracking capacity as central to powering AI data centers, framing energy expansion (including natural gas) as the foundation for AI and economic dominance under Trump's energy policies.",
@@ -8351,7 +8357,8 @@
             "Pennsylvania",
             "domestic production"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "Sacks highlights Pennsylvania's natural gas resources and fracking capacity as powering AI data centers — strategic/importance framing, no explicit price direction stated."
         },
         {
           "id": "E228-ung-Friedberg-a0",
@@ -8362,7 +8369,7 @@
           "ticker": "UNG",
           "isPublic": true,
           "host": "Friedberg",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "medium",
           "positional": false,
           "summary": "Friedberg argues the US should continue and expand LNG exports as the largest methane exporter, framing natural gas as a cleaner energy source than oil or coal and a key asset to monetize for revenue generation.",
@@ -8374,7 +8381,8 @@
             "balance sheet monetization",
             "clean energy"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "Friedberg argues the US should expand LNG exports — this is policy/strategic commentary on energy trade, not an explicit directional price call on natural gas."
         },
         {
           "id": "E223-ung-Guest-a0",
@@ -8385,7 +8393,7 @@
           "ticker": "UNG",
           "isPublic": true,
           "host": "Guest",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "medium",
           "positional": false,
           "summary": "Larry Summers argues that halting LNG-related projects was a clear policy mistake, implying support for expanding natural gas as part of a broader energy security agenda.",
@@ -8398,7 +8406,8 @@
             "deregulation"
           ],
           "attributionConfidence": "high",
-          "guestName": "Larry Summers"
+          "guestName": "Larry Summers",
+          "scoreReason": "Summers says halting LNG projects was a 'clear mistake' — this is policy commentary supporting LNG expansion, not an explicit directional price claim on natural gas."
         }
       ],
       "synthesis": "All hosts and guests represented hold a uniformly bullish stance on natural gas, with no dissent across the recorded views. The shared thesis rests on several reinforcing pillars: natural gas is seen as the most practical near-term fuel for AI data center power demand (Sacks, Guest/Gavin), a strategic export asset that strengthens US energy security and generates revenue through LNG (Friedberg, Guest/Summers), and a source of meaningful competitive advantage given that US domestic gas prices have fallen while global LNG prices have surged 100–200% (Guest, 2026). Friedberg adds a further dimension, noting that disruptions to Strait of Hormuz gas flows tighten global nitrogen fertilizer supply, putting upward pressure on natural gas values internationally while leaving the US relatively insulated. The only nuance raised is Sacks' acknowledgment that gas turbine backlogs may constrain how quickly natural gas capacity can be deployed to meet AI-driven power needs in the near term.",
@@ -14704,7 +14713,7 @@
           "ticker": "GLD",
           "isPublic": true,
           "host": "Friedberg",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "low",
           "positional": false,
           "summary": "Friedberg half-jokingly says that as 'emperor' he would return to the gold standard to stop money printing, implying a directional preference for gold as a monetary anchor.",
@@ -14716,7 +14725,8 @@
             "monetary policy",
             "money printing"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "Friedberg's half-joking remark about returning to the gold standard as 'emperor' is a monetary policy preference, not an explicit directional price call on gold."
         },
         {
           "id": "E259-gld-Friedberg-a1",
@@ -14826,7 +14836,7 @@
           "ticker": "GLD",
           "isPublic": true,
           "host": "Chamath",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "low",
           "positional": false,
           "summary": "Chamath mentions gold casually as one of the things he enjoys, and separately notes Tether reinvests into gold among other assets. The only personal directional hint is his offhand remark about 'make a few investments on gold', suggesting mild bullish interest but with very low conviction.",
@@ -14837,7 +14847,8 @@
             "personal investing",
             "Tether holdings"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "Chamath's offhand remark about making 'a few investments on gold' is a passing mention without a directional conviction or explicit price call, and Tether's reinvestment in gold is a factual description."
         },
         {
           "id": "E246-gld-Sacks-a4",
@@ -14921,7 +14932,7 @@
           "ticker": "GLD",
           "isPublic": true,
           "host": "Jason",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "medium",
           "positional": false,
           "summary": "Jason highlights gold breaking $4,000 for the first time, up over 50% for the year, outpacing Bitcoin and major indices, framing it as a notable rally and asking guests to explain the drivers.",
@@ -14933,7 +14944,8 @@
             "USD weakness",
             "safe haven"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "Jason is reporting gold's rally and asking guests to explain it — a descriptive/journalistic framing with no personal directional price call."
         },
         {
           "id": "E234-gld-Chamath-a0",
@@ -14990,7 +15002,7 @@
           "ticker": "GLD",
           "isPublic": true,
           "host": "Sacks",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "medium",
           "positional": false,
           "summary": "Sacks frames Bitcoin as 'digital gold' and advocates for a strategic reserve modeled on Fort Knox, with a long-term never-sell preservation goal — implicitly validating gold's store-of-value analogy as the benchmark for Bitcoin's reserve status.",
@@ -15002,7 +15014,8 @@
             "strategic reserve",
             "store of value"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "Sacks is using gold (Fort Knox) as an analogy to explain Bitcoin's strategic reserve concept. No explicit directional price call on gold itself is made."
         },
         {
           "id": "E216-gld-Guest-a0",
@@ -15013,7 +15026,7 @@
           "ticker": "GLD",
           "isPublic": true,
           "host": "Guest",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "low",
           "positional": false,
           "summary": "Guest (Stripe) describes Bitcoin as a good store of value and 'a gold substitute', implying Bitcoin/gold serve a similar value-preservation role, but does not make an explicit directional price call on gold itself.",
@@ -15024,7 +15037,8 @@
             "Bitcoin vs gold",
             "stablecoins"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "Guest describes Bitcoin as 'a gold substitute' and good store of value — this is a comparative description of Bitcoin's function, not an explicit directional price call on gold."
         },
         {
           "id": "E206-gld-Friedberg-a0",
@@ -15057,7 +15071,7 @@
           "ticker": "GLD",
           "isPublic": true,
           "host": "Friedberg",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "low",
           "positional": false,
           "summary": "Friedberg suggests that amid US dollar hegemony challenges and BRICS alternatives emerging, people may be parking assets in gold (and Bitcoin) as a transitional store of value.",
@@ -15070,7 +15084,8 @@
             "store of value",
             "macro"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "Friedberg speculatively muses that people 'maybe' are parking assets in gold during a transition — a highly hedged, uncertain observation, not an explicit directional price call."
         },
         {
           "id": "E201-gld-Sacks-a2",
@@ -15081,7 +15096,7 @@
           "ticker": "GLD",
           "isPublic": true,
           "host": "Sacks",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "low",
           "positional": false,
           "summary": "Sacks implicitly supports the gold bull case by endorsing Paul Tudor Jones's 'all roads lead to inflation' thesis, under which gold is a beneficiary, though he makes no explicit directional claim of his own.",
@@ -15093,7 +15108,8 @@
             "Paul Tudor Jones",
             "macro"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "Sacks endorses PTJ's 'all roads lead to inflation' thesis but makes no explicit personal directional claim on gold. The inflation framing is too indirect to constitute a genuine gold bull take."
         },
         {
           "id": "E201-gld-Chamath-a1",
@@ -16111,7 +16127,7 @@
           "ticker": "LIT",
           "isPublic": true,
           "host": "Guest",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "medium",
           "positional": false,
           "summary": "Emil Michael (Guest) highlights that lithium supply is entirely outsourced to China and frames domestic sourcing of critical minerals including lithium as an urgent national security priority, implying strong demand and strategic value for the commodity.",
@@ -16125,7 +16141,8 @@
             "domestic production"
           ],
           "attributionConfidence": "high",
-          "guestName": "Emil Michael"
+          "guestName": "Emil Michael",
+          "scoreReason": "This is a national security / strategic sourcing framing — outsourcing concern and domestic sourcing priority. No explicit price direction stated for lithium."
         },
         {
           "id": "E249-lit-Guest-a0",
@@ -16136,7 +16153,7 @@
           "ticker": "LIT",
           "isPublic": true,
           "host": "Guest",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "medium",
           "positional": false,
           "summary": "Elon Musk argues lithium (along with iron, phosphorus, and carbon) is very common on Earth and there is no shortage of raw materials needed to power the planet with solar and batteries, implying no supply-side constraint on lithium demand.",
@@ -16149,7 +16166,8 @@
             "iron phosphate lithium-ion"
           ],
           "attributionConfidence": "high",
-          "guestName": "Elon Musk"
+          "guestName": "Elon Musk",
+          "scoreReason": "Musk explicitly states lithium is 'very common' and there is 'no shortage' — this is an abundance/supply fact, not a bull price claim. If anything it implies no supply-driven price pressure."
         },
         {
           "id": "E247-lit-Chamath-a0",
@@ -16160,7 +16178,7 @@
           "ticker": "LIT",
           "isPublic": true,
           "host": "Chamath",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "high",
           "positional": false,
           "summary": "Chamath argues the US must build strategic reserves of critical inputs including lithium, acting as a methodical buyer of record to counteract Chinese price manipulation and mercantilism.",
@@ -16172,7 +16190,8 @@
             "price manipulation",
             "supply chain security"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "This is a policy/strategic reserve proposal to counteract Chinese price manipulation. No explicit personal price direction or claim that lithium prices will rise."
         },
         {
           "id": "E228-lit-Chamath-a1",
@@ -16206,7 +16225,7 @@
           "ticker": "LIT",
           "isPublic": true,
           "host": "Chamath",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "low",
           "positional": false,
           "summary": "Chamath references the lithium market as a strategic target in a broader resource competition with China, framing it as part of a sequenced approach to securing critical commodities, though no explicit price direction is stated.",
@@ -16218,7 +16237,8 @@
             "trade strategy",
             "reshoring"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "Purely geopolitical/strategic framing about resource competition with China. The summary itself notes no explicit price direction is stated."
         },
         {
           "id": "E207-lit-Chamath-a0",
@@ -16246,7 +16266,7 @@
         }
       ],
       "synthesis": "All hosts and guests who addressed lithium are bullish, with the dominant thesis centering on domestic U.S. lithium as a critical strategic asset in the broader competition with China. Chamath is the most consistent voice, evolving from highlighting the scale of U.S. deposits (medium conviction, late 2024) to advocating for a formal U.S. strategic reserve that would act as a buyer of record to counteract Chinese price manipulation (high conviction, late 2025). Guest Emil Michael reinforces the national security framing, stressing that lithium supply is currently fully outsourced to China and urging urgent domestic sourcing, while Elon Musk takes a more abundance-oriented view, arguing lithium is geologically common and that raw material supply is not a structural constraint. The hosts broadly agree on lithium's strategic importance, but differ in emphasis: Chamath and Michael focus on geopolitical risk and supply-chain sovereignty, whereas Musk downplays scarcity concerns altogether.",
-      "netStance": "bull",
+      "netStance": "neutral",
       "firstMentioned": "2024-12-13T16:58:00.000Z",
       "lastMentioned": "2026-03-06T09:23:00.000Z",
       "mentionCount": 6,
@@ -19971,7 +19991,7 @@
           "ticker": "SLV",
           "isPublic": true,
           "host": "Guest",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "low",
           "positional": false,
           "summary": "Tucker's new venture sells silver alongside gold (any kind of precious metal), implying a broadly positive view on physical silver as a store of value, though no explicit price directional claim is made beyond grouping it with gold.",
@@ -19983,7 +20003,8 @@
             "store of value"
           ],
           "attributionConfidence": "high",
-          "guestName": "Tucker Carlson"
+          "guestName": "Tucker Carlson",
+          "scoreReason": "A passing mention that Tucker's venture sells 'any kind of precious metal' including silver. No explicit price directional claim made about silver."
         },
         {
           "id": "E246-slv-Jason-a1",
@@ -26261,7 +26282,7 @@
           "ticker": "URA",
           "isPublic": true,
           "host": "Friedberg",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "high",
           "positional": false,
           "summary": "Friedberg argues nuclear is essential to AI competitiveness and the US must urgently scale up uranium/nuclear production using new Gen 4 technologies; failure to do so will put the US at a severe energy cost and AI disadvantage vs. China.",
@@ -26274,7 +26295,8 @@
             "China competition",
             "energy policy"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "This is a policy/national security urgency framing — the US must scale up nuclear production to compete with China on AI. No explicit price direction stated for uranium; it's strategic importance commentary."
         },
         {
           "id": "E212-ura-Guest-a0",
@@ -26338,7 +26360,7 @@
           "ticker": "URA",
           "isPublic": true,
           "host": "Friedberg",
-          "stance": "bull",
+          "stance": "neutral",
           "conviction": "medium",
           "positional": false,
           "summary": "Friedberg explains that China's new Gen 4 pebble bed reactor successfully passed safety tests using uranium fuel pebbles, highlighting the technology's extraordinary safety profile, lower cost, efficiency, and China's rapid expansion — framing uranium-based Gen 4 nuclear as a compelling and validated energy technology.",
@@ -26352,11 +26374,12 @@
             "energy competitiveness",
             "safety"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "scoreReason": "Friedberg describes China's Gen 4 pebble bed reactor technology's safety and efficiency profile. This is technology/demand description and factual commentary, not an explicit price direction claim for uranium."
         }
       ],
       "synthesis": "The dominant view among the hosts and guests is strongly bullish on uranium, driven primarily by Friedberg and a guest (Thomas), who consistently argue that nuclear energy — powered by uranium — is a structural necessity to meet surging power demand from AI and data center buildout, and that the US must urgently scale up Gen 4 uranium-based nuclear capacity or risk falling behind China. Friedberg has held this conviction across multiple appearances (July 2024 through January 2025), pointing to China's commercially operational Gen 4 pebble bed reactor as proof of the technology's viability, safety, and cost advantages, while Thomas adds that major tech companies and governments are already contracting directly with nuclear providers. The one dissenting voice is Chamath (April 2025, medium conviction), who does not dispute the nuclear thesis broadly but argues that thorium is a superior fuel to uranium — citing thorium's near-100% fuel usability versus less than 1% for mined uranium after costly enrichment — implying uranium may eventually be displaced as the preferred nuclear fuel. Overall, the panel leans bullish on uranium as a near-to-medium-term energy play, with Chamath's thorium argument introducing the only meaningful skepticism about uranium's long-term dominance.",
-      "netStance": "mixed",
+      "netStance": "bear",
       "firstMentioned": "2024-07-26T22:55:00.000Z",
       "lastMentioned": "2025-04-26T06:00:00.000Z",
       "mentionCount": 5,
@@ -35583,11 +35606,11 @@
     "benchmarkSymbol": "SPY",
     "contributionPerCall": 1000,
     "totalInvested": 28000,
-    "portfolioValue": 40078,
-    "benchmarkValue": 34055,
-    "portfolioReturn": 0.4313571428571428,
-    "benchmarkReturn": 0.21625000000000005,
-    "outperformance": 0.21510714285714272,
+    "portfolioValue": 40072,
+    "benchmarkValue": 34066,
+    "portfolioReturn": 0.43114285714285705,
+    "benchmarkReturn": 0.21664285714285714,
+    "outperformance": 0.2144999999999999,
     "constituents": [
       {
         "slug": "000660.ks",
@@ -35601,8 +35624,8 @@
         "entryPrice": 428000,
         "latestPrice": 2150000,
         "sinceReturn": 4.0233644859813085,
-        "benchmarkReturn": 0.15710085449143985,
-        "alpha": 3.8662636314898684,
+        "benchmarkReturn": 0.15746837769134192,
+        "alpha": 3.8658961082899665,
         "hosts": [
           "Chamath"
         ]
@@ -35619,10 +35642,10 @@
         ],
         "entryDate": "2024-09-27",
         "entryPrice": 36.84,
-        "latestPrice": 134.2,
-        "sinceReturn": 2.6426710097719868,
-        "benchmarkReturn": 0.3222216389311774,
-        "alpha": 2.3204493708408096,
+        "latestPrice": 133.89,
+        "sinceReturn": 2.634364820846905,
+        "benchmarkReturn": 0.32264160848338497,
+        "alpha": 2.31172321236352,
         "hosts": [
           "Sacks",
           "Chamath"
@@ -35640,10 +35663,10 @@
         ],
         "entryDate": "2024-11-18",
         "entryPrice": 35,
-        "latestPrice": 99.26,
-        "sinceReturn": 1.8360942857142857,
-        "benchmarkReturn": 0.28472328487630705,
-        "alpha": 1.5513710008379786,
+        "latestPrice": 99.27,
+        "sinceReturn": 1.8361428571428573,
+        "benchmarkReturn": 0.2851313440448866,
+        "alpha": 1.5510115130979707,
         "hosts": [
           "Jason",
           "Sacks"
@@ -35661,10 +35684,10 @@
         ],
         "entryDate": "2024-06-14",
         "entryPrice": 178.01,
-        "latestPrice": 408.81,
-        "sinceReturn": 1.2965282849278132,
-        "benchmarkReturn": 0.3921109841924906,
-        "alpha": 0.9044173007353227,
+        "latestPrice": 408.6,
+        "sinceReturn": 1.2953766642323465,
+        "benchmarkReturn": 0.3925531522900625,
+        "alpha": 0.902823511942284,
         "hosts": [
           "Friedberg",
           "Sacks",
@@ -35685,10 +35708,10 @@
         ],
         "entryDate": "2025-02-07",
         "entryPrice": 185.34,
-        "latestPrice": 371.06,
-        "sinceReturn": 1.0020233085140822,
-        "benchmarkReturn": 0.257735905587829,
-        "alpha": 0.7442874029262532,
+        "latestPrice": 371.08,
+        "sinceReturn": 1.002158195748354,
+        "benchmarkReturn": 0.25813539291242904,
+        "alpha": 0.744022802835925,
         "hosts": [
           "Friedberg",
           "Sacks",
@@ -35706,10 +35729,10 @@
         "callTypes": [],
         "entryDate": "2025-01-27",
         "entryPrice": 202.13,
-        "latestPrice": 391.97,
-        "sinceReturn": 0.9391906198980853,
-        "benchmarkReturn": 0.2606737073927625,
-        "alpha": 0.6785169125053228,
+        "latestPrice": 392.88,
+        "sinceReturn": 0.9436748627121161,
+        "benchmarkReturn": 0.2610741278342259,
+        "alpha": 0.6826007348778902,
         "hosts": [
           "Chamath"
         ]
@@ -35724,10 +35747,10 @@
         "callTypes": [],
         "entryDate": "2024-09-06",
         "entryPrice": 167.91,
-        "latestPrice": 284.03,
-        "sinceReturn": 0.6915615508308022,
-        "benchmarkReturn": 0.3983455474128359,
-        "alpha": 0.2932160034179663,
+        "latestPrice": 283.53,
+        "sinceReturn": 0.6885831695551188,
+        "benchmarkReturn": 0.3987896957583834,
+        "alpha": 0.28979347379673537,
         "hosts": [
           "Chamath"
         ]
@@ -35742,10 +35765,10 @@
         "callTypes": [],
         "entryDate": "2024-08-16",
         "entryPrice": 73.45,
-        "latestPrice": 121.07,
-        "sinceReturn": 0.6483321987746764,
-        "benchmarkReturn": 0.3631541916977865,
-        "alpha": 0.2851780070768899,
+        "latestPrice": 121.31,
+        "sinceReturn": 0.6515983662355342,
+        "benchmarkReturn": 0.3635871624181417,
+        "alpha": 0.28801120381739254,
         "hosts": [
           "Friedberg"
         ]
@@ -35760,10 +35783,10 @@
         "callTypes": [],
         "entryDate": "2026-04-17",
         "entryPrice": 207.86,
-        "latestPrice": 274.16,
-        "sinceReturn": 0.3189815260271336,
-        "benchmarkReturn": 0.06402962796068379,
-        "alpha": 0.2549518980664498,
+        "latestPrice": 273.9,
+        "sinceReturn": 0.3177138458577886,
+        "benchmarkReturn": 0.06436758948939647,
+        "alpha": 0.25334625636839214,
         "hosts": [
           "Chamath"
         ]
@@ -35778,10 +35801,10 @@
         "callTypes": [],
         "entryDate": "2025-06-23",
         "entryPrice": 144.17,
-        "latestPrice": 211.98,
-        "sinceReturn": 0.47034750641603673,
-        "benchmarkReturn": 0.25903524118970256,
-        "alpha": 0.21131226522633417,
+        "latestPrice": 212.28,
+        "sinceReturn": 0.472429076784352,
+        "benchmarkReturn": 0.25943514121469646,
+        "alpha": 0.2129939355696555,
         "hosts": [
           "Chamath",
           "Friedberg",
@@ -35798,10 +35821,10 @@
         "callTypes": [],
         "entryDate": "2025-01-21",
         "entryPrice": 85.38,
-        "latestPrice": 113,
-        "sinceReturn": 0.32349496369173125,
-        "benchmarkReturn": 0.2529806815355278,
-        "alpha": 0.07051428215620348,
+        "latestPrice": 113.21,
+        "sinceReturn": 0.3259428437573204,
+        "benchmarkReturn": 0.2533786584860296,
+        "alpha": 0.07256418527129083,
         "hosts": [
           "Friedberg"
         ]
@@ -35818,10 +35841,10 @@
         ],
         "entryDate": "2026-04-24",
         "entryPrice": 271.06,
-        "latestPrice": 296.72,
-        "sinceReturn": 0.09466538773703248,
-        "benchmarkReturn": 0.058366249264643955,
-        "alpha": 0.036299138472388526,
+        "latestPrice": 296.92,
+        "sinceReturn": 0.09540323175680676,
+        "benchmarkReturn": 0.05870241196739223,
+        "alpha": 0.03670081978941453,
         "hosts": [
           "Sacks",
           "Jason",
@@ -35838,10 +35861,10 @@
         "callTypes": [],
         "entryDate": "2025-02-07",
         "entryPrice": 878.31,
-        "latestPrice": 1128.52,
-        "sinceReturn": 0.2848766380890575,
-        "benchmarkReturn": 0.257735905587829,
-        "alpha": 0.027140732501228504,
+        "latestPrice": 1130.44,
+        "sinceReturn": 0.28706254056085,
+        "benchmarkReturn": 0.25813539291242904,
+        "alpha": 0.02892714764842097,
         "hosts": [
           "Friedberg"
         ]
@@ -35858,10 +35881,10 @@
         ],
         "entryDate": "2025-10-17",
         "entryPrice": 213.04,
-        "latestPrice": 245.95,
-        "sinceReturn": 0.15447803229440482,
-        "benchmarkReturn": 0.13729887566038035,
-        "alpha": 0.017179156634024473,
+        "latestPrice": 246.04,
+        "sinceReturn": 0.15490048817123547,
+        "benchmarkReturn": 0.13766010927316796,
+        "alpha": 0.01724037889806751,
         "hosts": [
           "Jason"
         ]
@@ -35876,10 +35899,10 @@
         "callTypes": [],
         "entryDate": "2025-12-15",
         "entryPrice": 67.53,
-        "latestPrice": 73.81,
-        "sinceReturn": 0.09299570561232051,
-        "benchmarkReturn": 0.1099995592966374,
-        "alpha": -0.017003853684316894,
+        "latestPrice": 73.84,
+        "sinceReturn": 0.09343995261365312,
+        "benchmarkReturn": 0.11035212198669075,
+        "alpha": -0.016912169373037633,
         "hosts": [
           "Jason"
         ]
@@ -35894,10 +35917,10 @@
         "callTypes": [],
         "entryDate": "2026-01-12",
         "entryPrice": 151.16,
-        "latestPrice": 156.91,
-        "sinceReturn": 0.038039163799947096,
-        "benchmarkReturn": 0.08695839806663219,
-        "alpha": -0.0489192342666851,
+        "latestPrice": 156.7,
+        "sinceReturn": 0.03664990738290541,
+        "benchmarkReturn": 0.08730364232694643,
+        "alpha": -0.05065373494404102,
         "hosts": [
           "Sacks"
         ]
@@ -35912,10 +35935,10 @@
         "callTypes": [],
         "entryDate": "2025-10-03",
         "entryPrice": 200.69,
-        "latestPrice": 203.17,
-        "sinceReturn": 0.012357367083561721,
-        "benchmarkReturn": 0.12910745505895016,
-        "alpha": -0.11675008797538844,
+        "latestPrice": 203.16,
+        "sinceReturn": 0.012307538990482758,
+        "benchmarkReturn": 0.1294660868785582,
+        "alpha": -0.11715854788807545,
         "hosts": [
           "Friedberg",
           "Chamath"
@@ -35933,10 +35956,10 @@
         ],
         "entryDate": "2026-04-24",
         "entryPrice": 178.16,
-        "latestPrice": 166.72,
-        "sinceReturn": -0.06424000898069149,
-        "benchmarkReturn": 0.058366249264643955,
-        "alpha": -0.12260625824533544,
+        "latestPrice": 166.28,
+        "sinceReturn": -0.06670969914683422,
+        "benchmarkReturn": 0.05870241196739223,
+        "alpha": -0.12541211111422645,
         "hosts": [
           "Chamath",
           "Sacks"
@@ -35952,10 +35975,10 @@
         "callTypes": [],
         "entryDate": "2026-02-13",
         "entryPrice": 379.08,
-        "latestPrice": 370.79,
-        "sinceReturn": -0.02188192465970229,
-        "benchmarkReturn": 0.10833883388338839,
-        "alpha": -0.13022075854309068,
+        "latestPrice": 371.83,
+        "sinceReturn": -0.01912525060673209,
+        "benchmarkReturn": 0.10869086908690861,
+        "alpha": -0.1278161196936407,
         "hosts": [
           "Chamath"
         ]
@@ -35970,10 +35993,10 @@
         "callTypes": [],
         "entryDate": "2025-11-14",
         "entryPrice": 222.85,
-        "latestPrice": 193.57,
-        "sinceReturn": -0.131388826564954,
-        "benchmarkReturn": 0.12453678210527896,
-        "alpha": -0.25592560867023295,
+        "latestPrice": 193.46,
+        "sinceReturn": -0.1319048687457931,
+        "benchmarkReturn": 0.12489396216867843,
+        "alpha": -0.25679883091447153,
         "hosts": [
           "Friedberg"
         ]
@@ -35988,10 +36011,10 @@
         "callTypes": [],
         "entryDate": "2025-10-24",
         "entryPrice": 523.61,
-        "latestPrice": 400.15,
-        "sinceReturn": -0.23577662764271123,
-        "benchmarkReturn": 0.115703211517165,
-        "alpha": -0.35147983915987624,
+        "latestPrice": 399.25,
+        "sinceReturn": -0.2375050132732377,
+        "benchmarkReturn": 0.11605758582502768,
+        "alpha": -0.3535625990982654,
         "hosts": [
           "Friedberg"
         ]
@@ -36006,10 +36029,10 @@
         "callTypes": [],
         "entryDate": "2025-10-03",
         "entryPrice": 37.89,
-        "latestPrice": 28.07,
-        "sinceReturn": -0.25903932435998944,
-        "benchmarkReturn": 0.12910745505895016,
-        "alpha": -0.3881467794189396,
+        "latestPrice": 28,
+        "sinceReturn": -0.26115069939297963,
+        "benchmarkReturn": 0.1294660868785582,
+        "alpha": -0.39061678627153784,
         "hosts": [
           "Chamath"
         ]
@@ -36026,10 +36049,10 @@
         ],
         "entryDate": "2026-03-27",
         "entryPrice": 296.91,
-        "latestPrice": 234.32,
-        "sinceReturn": -0.21078778080899951,
-        "benchmarkReturn": 0.19164471920389836,
-        "alpha": -0.4024325000128979,
+        "latestPrice": 234.76,
+        "sinceReturn": -0.20932269037755558,
+        "benchmarkReturn": 0.19202321437019987,
+        "alpha": -0.40134590474775544,
         "hosts": [
           "Friedberg"
         ]
@@ -36044,10 +36067,10 @@
         "callTypes": [],
         "entryDate": "2025-10-17",
         "entryPrice": 80.79,
-        "latestPrice": 59.2,
-        "sinceReturn": -0.26723604406485957,
-        "benchmarkReturn": 0.13729887566038035,
-        "alpha": -0.4045349197252399,
+        "latestPrice": 58.99,
+        "sinceReturn": -0.26977348681767555,
+        "benchmarkReturn": 0.13766010927316796,
+        "alpha": -0.4074335960908435,
         "hosts": [
           "Chamath"
         ]
@@ -36062,10 +36085,10 @@
         "callTypes": [],
         "entryDate": "2025-06-05",
         "entryPrice": 83.23,
-        "latestPrice": 85.14,
-        "sinceReturn": 0.022936441187071832,
-        "benchmarkReturn": 0.498096673143265,
-        "alpha": -0.47516023195619317,
+        "latestPrice": 85.01,
+        "sinceReturn": 0.021386519283911998,
+        "benchmarkReturn": 0.49857250485744875,
+        "alpha": -0.47718598557353675,
         "hosts": [
           "Sacks"
         ]
@@ -36082,8 +36105,8 @@
         "entryPrice": 1258.2,
         "latestPrice": 858.9,
         "sinceReturn": -0.3173581306628518,
-        "benchmarkReturn": 0.3983455474128359,
-        "alpha": -0.7157036780756877,
+        "benchmarkReturn": 0.3987896957583834,
+        "alpha": -0.7161478264212352,
         "hosts": [
           "Chamath"
         ]
@@ -36098,10 +36121,10 @@
         "callTypes": [],
         "entryDate": "2024-11-18",
         "entryPrice": 325.41,
-        "latestPrice": 172.42,
-        "sinceReturn": -0.47014535509050126,
-        "benchmarkReturn": 0.28472328487630705,
-        "alpha": -0.7548686399668083,
+        "latestPrice": 172.22,
+        "sinceReturn": -0.4707599643526629,
+        "benchmarkReturn": 0.2851313440448866,
+        "alpha": -0.7558913083975495,
         "hosts": [
           "Friedberg"
         ]
@@ -36118,10 +36141,10 @@
         ],
         "entryDate": "2025-07-31",
         "entryPrice": 115.5,
-        "latestPrice": 18.85,
-        "sinceReturn": -0.8367896103896104,
-        "benchmarkReturn": 0.2173906038538378,
-        "alpha": -1.0541802142434482,
+        "latestPrice": 18.84,
+        "sinceReturn": -0.8369264069264069,
+        "benchmarkReturn": 0.2177772765354129,
+        "alpha": -1.0547036834618198,
         "hosts": [
           "Friedberg",
           "Chamath"
@@ -36635,8 +36658,8 @@
       },
       {
         "date": "2026-06-15",
-        "portfolio": 40078,
-        "benchmark": 34055,
+        "portfolio": 40072,
+        "benchmark": 34066,
         "invested": 28000
       }
     ],
@@ -36859,7 +36882,7 @@
     ],
     "altBenchmark": {
       "symbol": "QQQ",
-      "ret": 0.34721341850220466
+      "ret": 0.3479746173609384
     }
   },
   "guestiesFund": {
@@ -36868,10 +36891,10 @@
     "benchmarkSymbol": "SPY",
     "contributionPerCall": 1000,
     "totalInvested": 16000,
-    "portfolioValue": 19362,
-    "benchmarkValue": 18983,
-    "portfolioReturn": 0.2101249999999999,
-    "benchmarkReturn": 0.18643750000000003,
+    "portfolioValue": 19368,
+    "benchmarkValue": 18989,
+    "portfolioReturn": 0.2104999999999999,
+    "benchmarkReturn": 0.18681250000000005,
     "outperformance": 0.02368749999999986,
     "constituents": [
       {
@@ -36884,10 +36907,10 @@
         "callTypes": [],
         "entryDate": "2025-03-31",
         "entryPrice": 37.08,
-        "latestPrice": 107.76,
-        "sinceReturn": 1.9061488673139162,
-        "benchmarkReturn": 0.3507749512862226,
-        "alpha": 1.5553739160276936,
+        "latestPrice": 108.1,
+        "sinceReturn": 1.9152642934196331,
+        "benchmarkReturn": 0.3512039900606019,
+        "alpha": 1.5640603033590312,
         "hosts": [
           "Guest"
         ]
@@ -36902,10 +36925,10 @@
         "callTypes": [],
         "entryDate": "2025-01-27",
         "entryPrice": 202.13,
-        "latestPrice": 391.97,
-        "sinceReturn": 0.9391906198980853,
-        "benchmarkReturn": 0.2606737073927625,
-        "alpha": 0.6785169125053228,
+        "latestPrice": 392.88,
+        "sinceReturn": 0.9436748627121161,
+        "benchmarkReturn": 0.2610741278342259,
+        "alpha": 0.6826007348778902,
         "hosts": [
           "Guest"
         ]
@@ -36922,28 +36945,10 @@
         ],
         "entryDate": "2026-05-08",
         "entryPrice": 746.81,
-        "latestPrice": 1074.28,
-        "sinceReturn": 0.43849171810768484,
-        "benchmarkReturn": 0.024389251918331967,
-        "alpha": 0.41410246618935287,
-        "hosts": [
-          "Guest"
-        ]
-      },
-      {
-        "slug": "snow",
-        "company": "Snowflake",
-        "ticker": "SNOW",
-        "sourceSymbol": "SNOW",
-        "currency": "USD",
-        "direction": "long",
-        "callTypes": [],
-        "entryDate": "2026-02-09",
-        "entryPrice": 175.95,
-        "latestPrice": 241.51,
-        "sinceReturn": 0.3726064222790566,
-        "benchmarkReturn": 0.08885366380863169,
-        "alpha": 0.2837527584704249,
+        "latestPrice": 1075.07,
+        "sinceReturn": 0.43954941685301496,
+        "benchmarkReturn": 0.02471462270545821,
+        "alpha": 0.41483479414755675,
         "hosts": [
           "Guest"
         ]
@@ -36961,10 +36966,28 @@
         ],
         "entryDate": "2024-12-09",
         "entryPrice": 138.81,
-        "latestPrice": 211.98,
-        "sinceReturn": 0.5271234060946617,
-        "benchmarkReturn": 0.24960309585235185,
-        "alpha": 0.27752031024230983,
+        "latestPrice": 212.28,
+        "sinceReturn": 0.529285354081118,
+        "benchmarkReturn": 0.2500000000000002,
+        "alpha": 0.27928535408111776,
+        "hosts": [
+          "Guest"
+        ]
+      },
+      {
+        "slug": "snow",
+        "company": "Snowflake",
+        "ticker": "SNOW",
+        "sourceSymbol": "SNOW",
+        "currency": "USD",
+        "direction": "long",
+        "callTypes": [],
+        "entryDate": "2026-02-09",
+        "entryPrice": 175.95,
+        "latestPrice": 240.68,
+        "sinceReturn": 0.3678886047172494,
+        "benchmarkReturn": 0.08919951005115645,
+        "alpha": 0.27868909466609293,
         "hosts": [
           "Guest"
         ]
@@ -36983,8 +37006,8 @@
         "entryPrice": 1686000,
         "latestPrice": 2150000,
         "sinceReturn": 0.2752075919335706,
-        "benchmarkReturn": 0.024389251918331967,
-        "alpha": 0.2508183400152386,
+        "benchmarkReturn": 0.02471462270545821,
+        "alpha": 0.25049296922811237,
         "hosts": [
           "Guest"
         ]
@@ -37001,10 +37024,10 @@
         ],
         "entryDate": "2025-01-21",
         "entryPrice": 85.38,
-        "latestPrice": 113,
-        "sinceReturn": 0.32349496369173125,
-        "benchmarkReturn": 0.2529806815355278,
-        "alpha": 0.07051428215620348,
+        "latestPrice": 113.21,
+        "sinceReturn": 0.3259428437573204,
+        "benchmarkReturn": 0.2533786584860296,
+        "alpha": 0.07256418527129083,
         "hosts": [
           "Guest"
         ]
@@ -37019,10 +37042,10 @@
         "callTypes": [],
         "entryDate": "2026-05-15",
         "entryPrice": 173.51,
-        "latestPrice": 166.72,
-        "sinceReturn": -0.039162007953432054,
-        "benchmarkReturn": 0.022241162384837088,
-        "alpha": -0.06140317033826914,
+        "latestPrice": 166.28,
+        "sinceReturn": -0.041697884848135525,
+        "benchmarkReturn": 0.022565850886805627,
+        "alpha": -0.06426373573494115,
         "hosts": [
           "Guest"
         ]
@@ -37037,10 +37060,10 @@
         "callTypes": [],
         "entryDate": "2026-05-08",
         "entryPrice": 400.8,
-        "latestPrice": 371.06,
-        "sinceReturn": -0.07421407185628748,
-        "benchmarkReturn": 0.024389251918331967,
-        "alpha": -0.09860332377461944,
+        "latestPrice": 371.08,
+        "sinceReturn": -0.07415169660678644,
+        "benchmarkReturn": 0.02471462270545821,
+        "alpha": -0.09886631931224465,
         "hosts": [
           "Guest"
         ]
@@ -37057,10 +37080,10 @@
         ],
         "entryDate": "2025-10-31",
         "entryPrice": 456.56,
-        "latestPrice": 408.81,
-        "sinceReturn": -0.10459742421587526,
-        "benchmarkReturn": 0.10783508782218587,
-        "alpha": -0.21243251203806113,
+        "latestPrice": 408.6,
+        "sinceReturn": -0.1050464342036096,
+        "benchmarkReturn": 0.10818696302378106,
+        "alpha": -0.21323339722739065,
         "hosts": [
           "Guest"
         ]
@@ -37075,10 +37098,10 @@
         "callTypes": [],
         "entryDate": "2024-12-13",
         "entryPrice": 114.63,
-        "latestPrice": 113.25,
-        "sinceReturn": -0.012038733315885897,
-        "benchmarkReturn": 0.2505751311630062,
-        "alpha": -0.2626138644788921,
+        "latestPrice": 112.89,
+        "sinceReturn": -0.015179272441769087,
+        "benchmarkReturn": 0.2509723440525644,
+        "alpha": -0.2661516164943335,
         "hosts": [
           "Guest"
         ]
@@ -37093,10 +37116,10 @@
         "callTypes": [],
         "entryDate": "2025-01-27",
         "entryPrice": 275,
-        "latestPrice": 262.28,
-        "sinceReturn": -0.04625418181818175,
-        "benchmarkReturn": 0.2606737073927625,
-        "alpha": -0.30692788921094427,
+        "latestPrice": 262.88,
+        "sinceReturn": -0.04407272727272726,
+        "benchmarkReturn": 0.2610741278342259,
+        "alpha": -0.30514685510695316,
         "hosts": [
           "Guest"
         ]
@@ -37111,10 +37134,10 @@
         "callTypes": [],
         "entryDate": "2024-08-30",
         "entryPrice": 417.14,
-        "latestPrice": 400.15,
-        "sinceReturn": -0.04071774464208666,
-        "benchmarkReturn": 0.3404946068691457,
-        "alpha": -0.38121235151123234,
+        "latestPrice": 399.25,
+        "sinceReturn": -0.04288728004986331,
+        "benchmarkReturn": 0.34092038035764993,
+        "alpha": -0.38380766040751324,
         "hosts": [
           "Guest"
         ]
@@ -37129,10 +37152,10 @@
         "callTypes": [],
         "entryDate": "2025-08-11",
         "entryPrice": 765.87,
-        "latestPrice": 596.08,
-        "sinceReturn": -0.22169558802407718,
-        "benchmarkReturn": 0.1882154988048812,
-        "alpha": -0.4099110868289584,
+        "latestPrice": 596.63,
+        "sinceReturn": -0.2209839790042697,
+        "benchmarkReturn": 0.18859290476789536,
+        "alpha": -0.40957688377216506,
         "hosts": [
           "Guest"
         ]
@@ -37147,10 +37170,10 @@
         "callTypes": [],
         "entryDate": "2024-12-20",
         "entryPrice": 32.03,
-        "latestPrice": 25.47,
-        "sinceReturn": -0.20480799250702475,
-        "benchmarkReturn": 0.2782035016493276,
-        "alpha": -0.48301149415635236,
+        "latestPrice": 25.37,
+        "sinceReturn": -0.20793006556353422,
+        "benchmarkReturn": 0.27860948997716317,
+        "alpha": -0.4865395555406974,
         "hosts": [
           "Guest"
         ]
@@ -37165,10 +37188,10 @@
         "callTypes": [],
         "entryDate": "2025-06-23",
         "entryPrice": 263.45,
-        "latestPrice": 85.14,
-        "sinceReturn": -0.6768305181248814,
-        "benchmarkReturn": 0.25903524118970256,
-        "alpha": -0.9358657593145839,
+        "latestPrice": 85.01,
+        "sinceReturn": -0.6773201746061871,
+        "benchmarkReturn": 0.25943514121469646,
+        "alpha": -0.9367553158208836,
         "hosts": [
           "Guest"
         ]
@@ -37717,8 +37740,8 @@
       },
       {
         "date": "2026-06-15",
-        "portfolio": 19362,
-        "benchmark": 18983,
+        "portfolio": 19368,
+        "benchmark": 18989,
         "invested": 16000
       }
     ],
@@ -37818,52 +37841,52 @@
     ],
     "altBenchmark": {
       "symbol": "QQQ",
-      "ret": 0.3113962720840304
+      "ret": 0.31213723363618584
     }
   },
   "leaderboard": [
     {
       "host": "Sacks",
       "positions": 2,
-      "portfolioReturn": 1.8239999999999998,
-      "benchmarkReturn": 0.4105000000000001,
-      "alpha": 1.4134999999999998,
+      "portfolioReturn": 1.8175,
+      "benchmarkReturn": 0.41100000000000003,
+      "alpha": 1.4064999999999999,
       "topCall": {
         "ticker": "PLTR",
-        "alpha": 3.5495138816919116
+        "alpha": 3.5375943736586253
       }
     },
     {
       "host": "Chamath",
       "positions": 4,
       "portfolioReturn": 0.2577499999999999,
-      "benchmarkReturn": 0.12949999999999995,
-      "alpha": 0.12824999999999998,
+      "benchmarkReturn": 0.12975000000000003,
+      "alpha": 0.1279999999999999,
       "topCall": {
         "ticker": "GOOGL",
-        "alpha": 0.9871963708933535
+        "alpha": 0.9869478117485577
       }
     },
     {
       "host": "Jason",
       "positions": 6,
-      "portfolioReturn": 0.09099999999999997,
-      "benchmarkReturn": 0.16583333333333328,
-      "alpha": -0.07483333333333331,
+      "portfolioReturn": 0.09149999999999991,
+      "benchmarkReturn": 0.16616666666666657,
+      "alpha": -0.07466666666666666,
       "topCall": {
         "ticker": "GOOGL",
-        "alpha": 0.6156068017074035
+        "alpha": 0.6153306716179152
       }
     },
     {
       "host": "Friedberg",
       "positions": 6,
-      "portfolioReturn": 0.01766666666666672,
+      "portfolioReturn": 0.016666666666666607,
       "benchmarkReturn": -0.01633333333333331,
-      "alpha": 0.03400000000000003,
+      "alpha": 0.03299999999999992,
       "topCall": {
         "ticker": "GOOGL",
-        "alpha": 0.987263020897519
+        "alpha": 0.9868145117402267
       }
     }
   ],
@@ -37873,8 +37896,8 @@
       "slug": "thomas-laffont",
       "calls": 9,
       "followReturn": 0.018053461856954334,
-      "benchmarkReturn": 0.2596967598375288,
-      "alpha": -0.2416432979805745,
+      "benchmarkReturn": 0.26033030109609956,
+      "alpha": -0.24227683923914523,
       "best": {
         "company": "Broadcom",
         "ticker": "AVGO",
@@ -37889,8 +37912,8 @@
           "stance": "bull",
           "date": "2025-06-21T02:53:00.000Z",
           "ret": -0.18315911250671402,
-          "benchmarkReturn": 0.25896859118553706,
-          "alpha": -0.4421277036922511
+          "benchmarkReturn": 0.25960176622511044,
+          "alpha": -0.44276087873182446
         },
         {
           "company": "NVIDIA",
@@ -37899,8 +37922,8 @@
           "stance": "bull",
           "date": "2025-06-21T02:53:00.000Z",
           "ret": 0.3566197913291427,
-          "benchmarkReturn": 0.25896859118553706,
-          "alpha": 0.09765120014360562
+          "benchmarkReturn": 0.25960176622511044,
+          "alpha": 0.09701802510403224
         },
         {
           "company": "CoreWeave",
@@ -37909,8 +37932,8 @@
           "stance": "bull",
           "date": "2025-06-21T02:53:00.000Z",
           "ret": -0.33605015673981187,
-          "benchmarkReturn": 0.25896859118553706,
-          "alpha": -0.5950187479253489
+          "benchmarkReturn": 0.25960176622511044,
+          "alpha": -0.5956519229649223
         },
         {
           "company": "Tesla",
@@ -37919,8 +37942,8 @@
           "stance": "bull",
           "date": "2025-06-21T02:53:00.000Z",
           "ret": 0.30487882147948686,
-          "benchmarkReturn": 0.25896859118553706,
-          "alpha": 0.045910230293949805
+          "benchmarkReturn": 0.25960176622511044,
+          "alpha": 0.04527705525437642
         },
         {
           "company": "Circle",
@@ -37929,8 +37952,8 @@
           "stance": "bull",
           "date": "2025-06-21T02:53:00.000Z",
           "ret": -0.5302333314858948,
-          "benchmarkReturn": 0.25896859118553706,
-          "alpha": -0.7892019226714319
+          "benchmarkReturn": 0.25960176622511044,
+          "alpha": -0.7898350977110052
         },
         {
           "company": "Intel",
@@ -37939,8 +37962,8 @@
           "stance": "bear",
           "date": "2025-01-25T02:52:00.000Z",
           "ret": -1,
-          "benchmarkReturn": 0.2606069706525185,
-          "alpha": -1.2606069706525185
+          "benchmarkReturn": 0.2612409696848359,
+          "alpha": -1.261240969684836
         },
         {
           "company": "Constellation Energy",
@@ -37949,8 +37972,8 @@
           "stance": "bull",
           "date": "2025-01-25T02:52:00.000Z",
           "ret": -0.0519272727272726,
-          "benchmarkReturn": 0.2606069706525185,
-          "alpha": -0.3125342433797911
+          "benchmarkReturn": 0.2612409696848359,
+          "alpha": -0.3131682424121085
         },
         {
           "company": "Uranium",
@@ -37959,8 +37982,8 @@
           "stance": "bull",
           "date": "2025-01-25T02:52:00.000Z",
           "ret": 0.6661479944674966,
-          "benchmarkReturn": 0.2606069706525185,
-          "alpha": 0.40554102381497814
+          "benchmarkReturn": 0.2612409696848359,
+          "alpha": 0.4049070247826607
         },
         {
           "company": "Broadcom",
@@ -37969,104 +37992,8 @@
           "stance": "bull",
           "date": "2025-01-25T02:52:00.000Z",
           "ret": 0.9362044228961561,
-          "benchmarkReturn": 0.2606069706525185,
-          "alpha": 0.6755974522436377
-        }
-      ]
-    },
-    {
-      "guest": "Brad Gerstner",
-      "slug": "brad-gerstner",
-      "calls": 8,
-      "followReturn": 0.10033582535072234,
-      "benchmarkReturn": 0.06681586077330878,
-      "alpha": 0.03351996457741356,
-      "best": {
-        "company": "Micron Technology",
-        "ticker": "MU",
-        "slug": "mu",
-        "ret": 0.33153533753284803
-      },
-      "picks": [
-        {
-          "company": "NVIDIA",
-          "ticker": "NVDA",
-          "slug": "nvda",
-          "stance": "bull",
-          "date": "2026-05-08T22:16:00.000Z",
-          "ret": -0.05838431090320251,
-          "benchmarkReturn": 0.022007304206682177,
-          "alpha": -0.08039161510988468
-        },
-        {
-          "company": "Google",
-          "ticker": "GOOGL",
-          "slug": "googl",
-          "stance": "bull",
-          "date": "2026-05-08T22:16:00.000Z",
-          "ret": -0.07031604415545134,
-          "benchmarkReturn": 0.022007304206682177,
-          "alpha": -0.09232334836213352
-        },
-        {
-          "company": "SK Hynix",
-          "ticker": "000660.KS",
-          "slug": "000660.ks",
-          "stance": "bull",
-          "date": "2026-05-08T22:16:00.000Z",
-          "ret": 0.1578947368421053,
-          "benchmarkReturn": 0.022007304206682177,
-          "alpha": 0.13588743263542313
-        },
-        {
-          "company": "Micron Technology",
-          "ticker": "MU",
-          "slug": "mu",
-          "stance": "bull",
-          "date": "2026-05-08T22:16:00.000Z",
-          "ret": 0.33153533753284803,
-          "benchmarkReturn": 0.022007304206682177,
-          "alpha": 0.30952803332616585
-        },
-        {
-          "company": "Oil",
-          "ticker": "USO",
-          "slug": "uso",
-          "stance": "bear",
-          "date": "2026-03-13T17:53:00.000Z",
-          "ret": -0.05432577828732699,
-          "benchmarkReturn": 0.12935144911289487,
-          "alpha": -0.18367722740022185
-        },
-        {
-          "company": "Salesforce",
-          "ticker": "CRM",
-          "slug": "crm",
-          "stance": "bear",
-          "date": "2026-02-07T04:35:00.000Z",
-          "ret": 0.13258929031593059,
-          "benchmarkReturn": 0.08879602276821097,
-          "alpha": 0.043793267547719616
-        },
-        {
-          "company": "Snowflake",
-          "ticker": "SNOW",
-          "slug": "snow",
-          "stance": "bull",
-          "date": "2026-02-07T04:35:00.000Z",
-          "ret": 0.3054003724394785,
-          "benchmarkReturn": 0.08879602276821097,
-          "alpha": 0.21660434967126752
-        },
-        {
-          "company": "Gold",
-          "ticker": "GLD",
-          "slug": "gld",
-          "stance": "bull",
-          "date": "2025-10-10T19:21:00.000Z",
-          "ret": 0.058292999021397174,
-          "benchmarkReturn": 0.13955417471042475,
-          "alpha": -0.08126117568902758
+          "benchmarkReturn": 0.2612409696848359,
+          "alpha": 0.6749634532113202
         }
       ]
     },
@@ -38075,8 +38002,8 @@
       "slug": "gavin-baker",
       "calls": 8,
       "followReturn": 0.11435226543409265,
-      "benchmarkReturn": 0.145547639581909,
-      "alpha": -0.031195374147816354,
+      "benchmarkReturn": 0.146123771645174,
+      "alpha": -0.031771506211081366,
       "best": {
         "company": "Google",
         "ticker": "GOOGL",
@@ -38091,8 +38018,8 @@
           "stance": "bull",
           "date": "2026-05-22T22:46:00.000Z",
           "ret": -0.06694597967552152,
-          "benchmarkReturn": 0.006634780639230398,
-          "alpha": -0.07358076031475191
+          "benchmarkReturn": 0.007141049041420766,
+          "alpha": -0.07408702871694228
         },
         {
           "company": "CoreWeave",
@@ -38101,8 +38028,8 @@
           "stance": "bull",
           "date": "2026-05-22T22:46:00.000Z",
           "ret": -0.15157827271270619,
-          "benchmarkReturn": 0.006634780639230398,
-          "alpha": -0.15821305335193658
+          "benchmarkReturn": 0.007141049041420766,
+          "alpha": -0.15871932175412695
         },
         {
           "company": "Natural Gas",
@@ -38111,8 +38038,8 @@
           "stance": "bull",
           "date": "2026-05-22T22:46:00.000Z",
           "ret": 0.03573785517873507,
-          "benchmarkReturn": 0.006634780639230398,
-          "alpha": 0.02910307453950467
+          "benchmarkReturn": 0.007141049041420766,
+          "alpha": 0.0285968061373143
         },
         {
           "company": "Meta",
@@ -38121,8 +38048,8 @@
           "stance": "bull",
           "date": "2025-08-09T15:40:00.000Z",
           "ret": -0.24924050632911388,
-          "benchmarkReturn": 0.18815259781104565,
-          "alpha": -0.4373931041401595
+          "benchmarkReturn": 0.18875015725248478,
+          "alpha": -0.43799066358159866
         },
         {
           "company": "Apple",
@@ -38131,8 +38058,8 @@
           "stance": "bear",
           "date": "2025-08-09T15:40:00.000Z",
           "ret": -0.2729186356216169,
-          "benchmarkReturn": 0.18815259781104565,
-          "alpha": -0.46107123343266254
+          "benchmarkReturn": 0.18875015725248478,
+          "alpha": -0.4616687928741017
         },
         {
           "company": "Tesla",
@@ -38141,8 +38068,8 @@
           "stance": "bull",
           "date": "2025-01-04T00:23:00.000Z",
           "ret": 0.021261560586149475,
-          "benchmarkReturn": 0.2690976887933352,
-          "alpha": -0.2478361282071857
+          "benchmarkReturn": 0.2697359580757861,
+          "alpha": -0.24847439748963662
         },
         {
           "company": "Google",
@@ -38151,8 +38078,8 @@
           "stance": "bull",
           "date": "2024-12-07T00:55:00.000Z",
           "ret": 0.9579617834394905,
-          "benchmarkReturn": 0.24953694516107716,
-          "alpha": 0.7084248382784133
+          "benchmarkReturn": 0.25016537672818706,
+          "alpha": 0.7077964067113034
         },
         {
           "company": "MicroStrategy",
@@ -38161,8 +38088,94 @@
           "stance": "bear",
           "date": "2024-12-07T00:55:00.000Z",
           "ret": 0.6405403186073246,
-          "benchmarkReturn": 0.24953694516107716,
-          "alpha": 0.39100337344624747
+          "benchmarkReturn": 0.25016537672818706,
+          "alpha": 0.39037494187913757
+        }
+      ]
+    },
+    {
+      "guest": "Brad Gerstner",
+      "slug": "brad-gerstner",
+      "calls": 7,
+      "followReturn": 0.12243034015615796,
+      "benchmarkReturn": 0.05841424764572624,
+      "alpha": 0.06401609251043172,
+      "best": {
+        "company": "Micron Technology",
+        "ticker": "MU",
+        "slug": "mu",
+        "ret": 0.33153533753284803
+      },
+      "picks": [
+        {
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "slug": "nvda",
+          "stance": "bull",
+          "date": "2026-05-08T22:16:00.000Z",
+          "ret": -0.05838431090320251,
+          "benchmarkReturn": 0.022521303936156034,
+          "alpha": -0.08090561483935854
+        },
+        {
+          "company": "Google",
+          "ticker": "GOOGL",
+          "slug": "googl",
+          "stance": "bull",
+          "date": "2026-05-08T22:16:00.000Z",
+          "ret": -0.07031604415545134,
+          "benchmarkReturn": 0.022521303936156034,
+          "alpha": -0.09283734809160737
+        },
+        {
+          "company": "SK Hynix",
+          "ticker": "000660.KS",
+          "slug": "000660.ks",
+          "stance": "bull",
+          "date": "2026-05-08T22:16:00.000Z",
+          "ret": 0.1578947368421053,
+          "benchmarkReturn": 0.022521303936156034,
+          "alpha": 0.13537343290594928
+        },
+        {
+          "company": "Micron Technology",
+          "ticker": "MU",
+          "slug": "mu",
+          "stance": "bull",
+          "date": "2026-05-08T22:16:00.000Z",
+          "ret": 0.33153533753284803,
+          "benchmarkReturn": 0.022521303936156034,
+          "alpha": 0.309014033596692
+        },
+        {
+          "company": "Salesforce",
+          "ticker": "CRM",
+          "slug": "crm",
+          "stance": "bear",
+          "date": "2026-02-07T04:35:00.000Z",
+          "ret": 0.13258929031593059,
+          "benchmarkReturn": 0.08934361265220847,
+          "alpha": 0.043245677663722115
+        },
+        {
+          "company": "Snowflake",
+          "ticker": "SNOW",
+          "slug": "snow",
+          "stance": "bull",
+          "date": "2026-02-07T04:35:00.000Z",
+          "ret": 0.3054003724394785,
+          "benchmarkReturn": 0.08934361265220847,
+          "alpha": 0.21605675978727001
+        },
+        {
+          "company": "Gold",
+          "ticker": "GLD",
+          "slug": "gld",
+          "stance": "bull",
+          "date": "2025-10-10T19:21:00.000Z",
+          "ret": 0.058292999021397174,
+          "benchmarkReturn": 0.1401272924710426,
+          "alpha": -0.08183429344964543
         }
       ]
     },
@@ -38171,8 +38184,8 @@
       "slug": "keith-rabois",
       "calls": 4,
       "followReturn": -0.2872894101041457,
-      "benchmarkReturn": 0.21825769363720632,
-      "alpha": -0.505547103741352,
+      "benchmarkReturn": 0.21887039388150153,
+      "alpha": -0.5061598039856472,
       "best": {
         "company": "Meta",
         "ticker": "META",
@@ -38187,8 +38200,8 @@
           "stance": "bear",
           "date": "2025-07-11T21:28:00.000Z",
           "ret": 0.16812769120720372,
-          "benchmarkReturn": 0.2092796210047856,
-          "alpha": -0.041151929797581865
+          "benchmarkReturn": 0.2098878058929916,
+          "alpha": -0.041760114685787886
         },
         {
           "company": "Apple",
@@ -38197,8 +38210,8 @@
           "stance": "bear",
           "date": "2025-07-11T21:28:00.000Z",
           "ret": -0.39453125,
-          "benchmarkReturn": 0.2092796210047856,
-          "alpha": -0.6038108710047856
+          "benchmarkReturn": 0.2098878058929916,
+          "alpha": -0.6044190558929916
         },
         {
           "company": "Google",
@@ -38207,8 +38220,8 @@
           "stance": "bear",
           "date": "2025-07-11T21:28:00.000Z",
           "ret": -0.9404523934771174,
-          "benchmarkReturn": 0.2092796210047856,
-          "alpha": -1.149732014481903
+          "benchmarkReturn": 0.2098878058929916,
+          "alpha": -1.150340199370109
         },
         {
           "company": "Shopify",
@@ -38217,8 +38230,8 @@
           "stance": "bull",
           "date": "2024-12-13T16:58:00.000Z",
           "ret": 0.017698311853330706,
-          "benchmarkReturn": 0.2451919115344685,
-          "alpha": -0.2274935996811378
+          "benchmarkReturn": 0.24581815784703132,
+          "alpha": -0.2281198459937006
         }
       ]
     },
@@ -38227,8 +38240,8 @@
       "slug": "aaron-levie",
       "calls": 2,
       "followReturn": 0.38112431204202735,
-      "benchmarkReturn": 0.2705275017235871,
-      "alpha": 0.11059681031844026,
+      "benchmarkReturn": 0.2711664901040878,
+      "alpha": 0.10995782193793957,
       "best": {
         "company": "Google",
         "ticker": "GOOGL",
@@ -38243,8 +38256,8 @@
           "stance": "bull",
           "date": "2024-12-20T22:00:00.000Z",
           "ret": 0.9473156311038378,
-          "benchmarkReturn": 0.2705275017235871,
-          "alpha": 0.6767881293802507
+          "benchmarkReturn": 0.2711664901040878,
+          "alpha": 0.67614914099975
         },
         {
           "company": "Box",
@@ -38253,44 +38266,8 @@
           "stance": "bull",
           "date": "2024-12-20T22:00:00.000Z",
           "ret": -0.18506700701978307,
-          "benchmarkReturn": 0.2705275017235871,
-          "alpha": -0.45559450874337015
-        }
-      ]
-    },
-    {
-      "guest": "Elon Musk",
-      "slug": "elon-musk",
-      "calls": 2,
-      "followReturn": 0.17869066902613684,
-      "benchmarkReturn": 0.10570140779114356,
-      "alpha": 0.07298926123499327,
-      "best": {
-        "company": "Lithium",
-        "ticker": "LIT",
-        "slug": "lit",
-        "ret": 0.39843879754193656
-      },
-      "picks": [
-        {
-          "company": "Tesla",
-          "ticker": "TSLA",
-          "slug": "tsla",
-          "stance": "bull",
-          "date": "2025-10-31T20:11:00.000Z",
-          "ret": -0.041057459489662884,
-          "benchmarkReturn": 0.10570140779114356,
-          "alpha": -0.14675886728080645
-        },
-        {
-          "company": "Lithium",
-          "ticker": "LIT",
-          "slug": "lit",
-          "stance": "bull",
-          "date": "2025-10-31T20:11:00.000Z",
-          "ret": 0.39843879754193656,
-          "benchmarkReturn": 0.10570140779114356,
-          "alpha": 0.292737389750793
+          "benchmarkReturn": 0.2711664901040878,
+          "alpha": -0.45623349712387085
         }
       ]
     },
@@ -38299,8 +38276,8 @@
       "slug": "cyan-bowers-franklin",
       "calls": 2,
       "followReturn": 0.2707063013155132,
-      "benchmarkReturn": 0.2995923562496776,
-      "alpha": -0.028886054934164407,
+      "benchmarkReturn": 0.30024596226285283,
+      "alpha": -0.02953966094733962,
       "best": {
         "company": "NVIDIA",
         "ticker": "NVDA",
@@ -38315,8 +38292,8 @@
           "stance": "bull",
           "date": "2025-01-11T01:41:00.000Z",
           "ret": 0.5201510420448769,
-          "benchmarkReturn": 0.2995923562496776,
-          "alpha": 0.22055868579519933
+          "benchmarkReturn": 0.30024596226285283,
+          "alpha": 0.21990507978202412
         },
         {
           "company": "Tesla",
@@ -38325,8 +38302,8 @@
           "stance": "bull",
           "date": "2025-01-11T01:41:00.000Z",
           "ret": 0.021261560586149475,
-          "benchmarkReturn": 0.2995923562496776,
-          "alpha": -0.27833079566352814
+          "benchmarkReturn": 0.30024596226285283,
+          "alpha": -0.27898440167670335
         }
       ]
     },
@@ -38335,8 +38312,8 @@
       "slug": "antonio-gracias",
       "calls": 1,
       "followReturn": 1.0090409019116606,
-      "benchmarkReturn": 0.24918574853269404,
-      "alpha": 0.7598551533789666,
+      "benchmarkReturn": 0.24981400347193516,
+      "alpha": 0.7592268984397255,
       "best": {
         "company": "Google",
         "ticker": "GOOGL",
@@ -38351,8 +38328,8 @@
           "stance": "bull",
           "date": "2025-02-07T22:20:00.000Z",
           "ret": 1.0090409019116606,
-          "benchmarkReturn": 0.24918574853269404,
-          "alpha": 0.7598551533789666
+          "benchmarkReturn": 0.24981400347193516,
+          "alpha": 0.7592268984397255
         }
       ]
     },
@@ -38361,8 +38338,8 @@
       "slug": "joe-lonsdale",
       "calls": 1,
       "followReturn": 0.6405403186073246,
-      "benchmarkReturn": 0.24953694516107716,
-      "alpha": 0.39100337344624747,
+      "benchmarkReturn": 0.25016537672818706,
+      "alpha": 0.39037494187913757,
       "best": {
         "company": "MicroStrategy",
         "ticker": "MSTR",
@@ -38377,34 +38354,8 @@
           "stance": "bear",
           "date": "2024-12-07T00:55:00.000Z",
           "ret": 0.6405403186073246,
-          "benchmarkReturn": 0.24953694516107716,
-          "alpha": 0.39100337344624747
-        }
-      ]
-    },
-    {
-      "guest": "Donald Trump",
-      "slug": "donald-trump",
-      "calls": 1,
-      "followReturn": 0.47102251753414537,
-      "benchmarkReturn": 0.38761455253347066,
-      "alpha": 0.08340796500067471,
-      "best": {
-        "company": "Oil",
-        "ticker": "USO",
-        "slug": "uso",
-        "ret": 0.47102251753414537
-      },
-      "picks": [
-        {
-          "company": "Oil",
-          "ticker": "USO",
-          "slug": "uso",
-          "stance": "bull",
-          "date": "2024-06-20T20:23:00.000Z",
-          "ret": 0.47102251753414537,
-          "benchmarkReturn": 0.38761455253347066,
-          "alpha": 0.08340796500067471
+          "benchmarkReturn": 0.25016537672818706,
+          "alpha": 0.39037494187913757
         }
       ]
     },
@@ -38413,8 +38364,8 @@
       "slug": "mark-pincus",
       "calls": 1,
       "followReturn": 0.326774420238932,
-      "benchmarkReturn": 0.25291435204377755,
-      "alpha": 0.07386006819515445,
+      "benchmarkReturn": 0.25354448221540515,
+      "alpha": 0.07322993802352684,
       "best": {
         "company": "Alibaba",
         "ticker": "BABA",
@@ -38429,34 +38380,8 @@
           "stance": "bull",
           "date": "2025-01-18T01:21:00.000Z",
           "ret": 0.326774420238932,
-          "benchmarkReturn": 0.25291435204377755,
-          "alpha": 0.07386006819515445
-        }
-      ]
-    },
-    {
-      "guest": "Emil Michael",
-      "slug": "emil-michael",
-      "calls": 1,
-      "followReturn": 0.15358268255925478,
-      "benchmarkReturn": 0.11396641455467593,
-      "alpha": 0.03961626800457885,
-      "best": {
-        "company": "Lithium",
-        "ticker": "LIT",
-        "slug": "lit",
-        "ret": 0.15358268255925478
-      },
-      "picks": [
-        {
-          "company": "Lithium",
-          "ticker": "LIT",
-          "slug": "lit",
-          "stance": "bull",
-          "date": "2026-03-06T09:23:00.000Z",
-          "ret": 0.15358268255925478,
-          "benchmarkReturn": 0.11396641455467593,
-          "alpha": 0.03961626800457885
+          "benchmarkReturn": 0.25354448221540515,
+          "alpha": 0.07322993802352684
         }
       ]
     },
@@ -38465,8 +38390,8 @@
       "slug": "marc-benioff",
       "calls": 1,
       "followReturn": -0.06534292219692339,
-      "benchmarkReturn": 0.02290665403100256,
-      "alpha": -0.08824957622792595,
+      "benchmarkReturn": 0.023421106071888076,
+      "alpha": -0.08876402826881147,
       "best": {
         "company": "Salesforce",
         "ticker": "CRM",
@@ -38481,8 +38406,8 @@
           "stance": "bull",
           "date": "2026-05-15T21:21:00.000Z",
           "ret": -0.06534292219692339,
-          "benchmarkReturn": 0.02290665403100256,
-          "alpha": -0.08824957622792595
+          "benchmarkReturn": 0.023421106071888076,
+          "alpha": -0.08876402826881147
         }
       ]
     },
@@ -38491,8 +38416,8 @@
       "slug": "tucker-carlson",
       "calls": 1,
       "followReturn": 0.010710045719770633,
-      "benchmarkReturn": 0.10994079884829522,
-      "alpha": -0.09923075312852458,
+      "benchmarkReturn": 0.11049902310754645,
+      "alpha": -0.09978897738777581,
       "best": {
         "company": "Gold",
         "ticker": "GLD",
@@ -38507,8 +38432,8 @@
           "stance": "bull",
           "date": "2025-12-13T02:31:00.000Z",
           "ret": 0.010710045719770633,
-          "benchmarkReturn": 0.10994079884829522,
-          "alpha": -0.09923075312852458
+          "benchmarkReturn": 0.11049902310754645,
+          "alpha": -0.09978897738777581
         }
       ]
     },
@@ -38517,8 +38442,8 @@
       "slug": "travis-kalanick",
       "calls": 1,
       "followReturn": 0.1389995022399204,
-      "benchmarkReturn": 0.2639811298660022,
-      "alpha": -0.12498162762608178,
+      "benchmarkReturn": 0.26461682586948165,
+      "alpha": -0.12561732362956124,
       "best": {
         "company": "Tesla",
         "ticker": "TSLA",
@@ -38533,8 +38458,34 @@
           "stance": "bull",
           "date": "2025-01-31T21:52:00.000Z",
           "ret": 0.1389995022399204,
-          "benchmarkReturn": 0.2639811298660022,
-          "alpha": -0.12498162762608178
+          "benchmarkReturn": 0.26461682586948165,
+          "alpha": -0.12561732362956124
+        }
+      ]
+    },
+    {
+      "guest": "Elon Musk",
+      "slug": "elon-musk",
+      "calls": 1,
+      "followReturn": -0.041057459489662884,
+      "benchmarkReturn": 0.10625749992682998,
+      "alpha": -0.14731495941649286,
+      "best": {
+        "company": "Tesla",
+        "ticker": "TSLA",
+        "slug": "tsla",
+        "ret": -0.041057459489662884
+      },
+      "picks": [
+        {
+          "company": "Tesla",
+          "ticker": "TSLA",
+          "slug": "tsla",
+          "stance": "bull",
+          "date": "2025-10-31T20:11:00.000Z",
+          "ret": -0.041057459489662884,
+          "benchmarkReturn": 0.10625749992682998,
+          "alpha": -0.14731495941649286
         }
       ]
     },
@@ -38543,8 +38494,8 @@
       "slug": "reid-hoffman",
       "calls": 1,
       "followReturn": -0.025019809244314017,
-      "benchmarkReturn": 0.3685878858136502,
-      "alpha": -0.3936076950579642,
+      "benchmarkReturn": 0.3692761918562526,
+      "alpha": -0.3942960011005666,
       "best": {
         "company": "Microsoft",
         "ticker": "MSFT",
@@ -38559,8 +38510,8 @@
           "stance": "bull",
           "date": "2024-08-30T15:04:00.000Z",
           "ret": -0.025019809244314017,
-          "benchmarkReturn": 0.3685878858136502,
-          "alpha": -0.3936076950579642
+          "benchmarkReturn": 0.3692761918562526,
+          "alpha": -0.3942960011005666
         }
       ]
     },
@@ -38569,8 +38520,8 @@
       "slug": "philippe-laffont",
       "calls": 1,
       "followReturn": -0.11260873436317498,
-      "benchmarkReturn": 0.2960256608175098,
-      "alpha": -0.4086343951806848,
+      "benchmarkReturn": 0.29667747302698166,
+      "alpha": -0.40928620739015664,
       "best": {
         "company": "Microsoft",
         "ticker": "MSFT",
@@ -38585,8 +38536,8 @@
           "stance": "bull",
           "date": "2025-05-09T20:26:00.000Z",
           "ret": -0.11260873436317498,
-          "benchmarkReturn": 0.2960256608175098,
-          "alpha": -0.4086343951806848
+          "benchmarkReturn": 0.29667747302698166,
+          "alpha": -0.40928620739015664
         }
       ]
     },
@@ -38595,8 +38546,8 @@
       "slug": "cyan-banister",
       "calls": 1,
       "followReturn": -0.27369214449221135,
-      "benchmarkReturn": 0.3161406075808251,
-      "alpha": -0.5898327520730364,
+      "benchmarkReturn": 0.31680253623188404,
+      "alpha": -0.5904946807240954,
       "best": {
         "company": "Boeing",
         "ticker": "BA",
@@ -38611,34 +38562,8 @@
           "stance": "bear",
           "date": "2025-03-22T02:17:00.000Z",
           "ret": -0.27369214449221135,
-          "benchmarkReturn": 0.3161406075808251,
-          "alpha": -0.5898327520730364
-        }
-      ]
-    },
-    {
-      "guest": "Larry Summers",
-      "slug": "larry-summers",
-      "calls": 1,
-      "followReturn": -0.2946379525593009,
-      "benchmarkReturn": 0.4014876094376021,
-      "alpha": -0.696125561996903,
-      "best": {
-        "company": "Natural Gas",
-        "ticker": "UNG",
-        "slug": "ung",
-        "ret": -0.2946379525593009
-      },
-      "picks": [
-        {
-          "company": "Natural Gas",
-          "ticker": "UNG",
-          "slug": "ung",
-          "stance": "bull",
-          "date": "2025-04-11T21:47:00.000Z",
-          "ret": -0.2946379525593009,
-          "benchmarkReturn": 0.4014876094376021,
-          "alpha": -0.696125561996903
+          "benchmarkReturn": 0.31680253623188404,
+          "alpha": -0.5904946807240954
         }
       ]
     }
@@ -38651,10 +38576,10 @@
       "contributionPerCall": 1000,
       "totalInvested": 4000,
       "portfolioValue": 5031,
-      "benchmarkValue": 4518,
+      "benchmarkValue": 4519,
       "portfolioReturn": 0.2577499999999999,
-      "benchmarkReturn": 0.12949999999999995,
-      "outperformance": 0.12824999999999998,
+      "benchmarkReturn": 0.12975000000000003,
+      "outperformance": 0.1279999999999999,
       "constituents": [
         {
           "slug": "googl",
@@ -38668,10 +38593,10 @@
           ],
           "entryDate": "2025-06-23",
           "entryPrice": 165.19,
-          "latestPrice": 371.06,
-          "sinceReturn": 1.246231612083056,
-          "benchmarkReturn": 0.25903524118970256,
-          "alpha": 0.9871963708933535,
+          "latestPrice": 371.08,
+          "sinceReturn": 1.2463829529632542,
+          "benchmarkReturn": 0.25943514121469646,
+          "alpha": 0.9869478117485577,
           "hosts": [
             "Chamath"
           ]
@@ -38688,10 +38613,10 @@
           ],
           "entryDate": "2025-07-07",
           "entryPrice": 376.93,
-          "latestPrice": 207.72,
-          "sinceReturn": 0.4489051017430292,
-          "benchmarkReturn": -0.2173906038538378,
-          "alpha": 0.666295705596867,
+          "latestPrice": 207.53,
+          "sinceReturn": 0.4494070517072135,
+          "benchmarkReturn": -0.2177772765354129,
+          "alpha": 0.6671843282426264,
           "hosts": [
             "Chamath"
           ]
@@ -38708,10 +38633,10 @@
           ],
           "entryDate": "2025-06-23",
           "entryPrice": 348.68,
-          "latestPrice": 408.81,
-          "sinceReturn": 0.17243604451072625,
-          "benchmarkReturn": 0.25903524118970256,
-          "alpha": -0.08659919667897631,
+          "latestPrice": 408.6,
+          "sinceReturn": 0.1718481128828726,
+          "benchmarkReturn": 0.25943514121469646,
+          "alpha": -0.08758702833182386,
           "hosts": [
             "Chamath"
           ]
@@ -38728,10 +38653,10 @@
           ],
           "entryDate": "2025-07-31",
           "entryPrice": 115.5,
-          "latestPrice": 18.85,
-          "sinceReturn": -0.8367896103896104,
-          "benchmarkReturn": 0.2173906038538378,
-          "alpha": -1.0541802142434482,
+          "latestPrice": 18.84,
+          "sinceReturn": -0.8369264069264069,
+          "benchmarkReturn": 0.2177772765354129,
+          "alpha": -1.0547036834618198,
           "hosts": [
             "Chamath"
           ]
@@ -39233,7 +39158,7 @@
         {
           "date": "2026-06-15",
           "portfolio": 5031,
-          "benchmark": 4518,
+          "benchmark": 4519,
           "invested": 4000
         }
       ],
@@ -39331,11 +39256,11 @@
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
       "totalInvested": 6000,
-      "portfolioValue": 6546,
-      "benchmarkValue": 6995,
-      "portfolioReturn": 0.09099999999999997,
-      "benchmarkReturn": 0.16583333333333328,
-      "outperformance": -0.07483333333333331,
+      "portfolioValue": 6549,
+      "benchmarkValue": 6997,
+      "portfolioReturn": 0.09149999999999991,
+      "benchmarkReturn": 0.16616666666666657,
+      "outperformance": -0.07466666666666666,
       "constituents": [
         {
           "slug": "googl",
@@ -39350,10 +39275,10 @@
           ],
           "entryDate": "2025-01-06",
           "entryPrice": 196.87,
-          "latestPrice": 371.06,
-          "sinceReturn": 0.8847716767409965,
-          "benchmarkReturn": 0.2691648750335931,
-          "alpha": 0.6156068017074035,
+          "latestPrice": 371.08,
+          "sinceReturn": 0.8848986640930563,
+          "benchmarkReturn": 0.26956799247514107,
+          "alpha": 0.6153306716179152,
           "hosts": [
             "Jason"
           ]
@@ -39370,10 +39295,10 @@
           ],
           "entryDate": "2026-05-15",
           "entryPrice": 300.23,
-          "latestPrice": 296.72,
-          "sinceReturn": -0.011691036871731675,
-          "benchmarkReturn": 0.022241162384837088,
-          "alpha": -0.03393219925656876,
+          "latestPrice": 296.92,
+          "sinceReturn": -0.011024880924624503,
+          "benchmarkReturn": 0.022565850886805627,
+          "alpha": -0.03359073181143013,
           "hosts": [
             "Jason"
           ]
@@ -39390,10 +39315,10 @@
           ],
           "entryDate": "2026-01-12",
           "entryPrice": 246.47,
-          "latestPrice": 245.95,
-          "sinceReturn": -0.002109790238162934,
-          "benchmarkReturn": 0.08695839806663219,
-          "alpha": -0.08906818830479513,
+          "latestPrice": 246.04,
+          "sinceReturn": -0.0017446342354039412,
+          "benchmarkReturn": 0.08730364232694643,
+          "alpha": -0.08904827656235037,
           "hosts": [
             "Jason"
           ]
@@ -39410,10 +39335,10 @@
           ],
           "entryDate": "2026-01-12",
           "entryPrice": 117.52,
-          "latestPrice": 99.26,
-          "sinceReturn": -0.15534972770592237,
-          "benchmarkReturn": 0.08695839806663219,
-          "alpha": -0.24230812577255456,
+          "latestPrice": 99.27,
+          "sinceReturn": -0.1553352620830497,
+          "benchmarkReturn": 0.08730364232694643,
+          "alpha": -0.24263890440999614,
           "hosts": [
             "Jason"
           ]
@@ -39430,10 +39355,10 @@
           ],
           "entryDate": "2025-01-06",
           "entryPrice": 411.05,
-          "latestPrice": 408.81,
-          "sinceReturn": -0.005461622673640698,
-          "benchmarkReturn": 0.2691648750335931,
-          "alpha": -0.2746264977072338,
+          "latestPrice": 408.6,
+          "sinceReturn": -0.005960345456757055,
+          "benchmarkReturn": 0.26956799247514107,
+          "alpha": -0.2755283379318981,
           "hosts": [
             "Jason"
           ]
@@ -39450,10 +39375,10 @@
           ],
           "entryDate": "2025-01-27",
           "entryPrice": 97.19,
-          "latestPrice": 81.25,
-          "sinceReturn": -0.16400004115692102,
-          "benchmarkReturn": 0.2606737073927625,
-          "alpha": -0.42467374854968354,
+          "latestPrice": 81.42,
+          "sinceReturn": -0.1623023181635781,
+          "benchmarkReturn": 0.2610741278342259,
+          "alpha": -0.423376445997804,
           "hosts": [
             "Jason"
           ]
@@ -39894,8 +39819,8 @@
         },
         {
           "date": "2026-06-15",
-          "portfolio": 6546,
-          "benchmark": 6995,
+          "portfolio": 6549,
+          "benchmark": 6997,
           "invested": 6000
         }
       ],
@@ -39944,11 +39869,11 @@
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
       "totalInvested": 2000,
-      "portfolioValue": 5648,
-      "benchmarkValue": 2821,
-      "portfolioReturn": 1.8239999999999998,
-      "benchmarkReturn": 0.4105000000000001,
-      "outperformance": 1.4134999999999998,
+      "portfolioValue": 5635,
+      "benchmarkValue": 2822,
+      "portfolioReturn": 1.8175,
+      "benchmarkReturn": 0.41100000000000003,
+      "outperformance": 1.4064999999999999,
       "constituents": [
         {
           "slug": "pltr",
@@ -39962,10 +39887,10 @@
           ],
           "entryDate": "2024-07-26",
           "entryPrice": 27.18,
-          "latestPrice": 134.2,
-          "sinceReturn": 3.937306843267108,
-          "benchmarkReturn": 0.3877929615751965,
-          "alpha": 3.5495138816919116,
+          "latestPrice": 133.89,
+          "sinceReturn": 3.9260485651214125,
+          "benchmarkReturn": 0.38845419146278726,
+          "alpha": 3.5375943736586253,
           "hosts": [
             "Sacks"
           ]
@@ -39982,10 +39907,10 @@
           ],
           "entryDate": "2024-05-31",
           "entryPrice": 234.44,
-          "latestPrice": 166.71,
-          "sinceReturn": -0.28890121139737246,
-          "benchmarkReturn": 0.43271327530955506,
-          "alpha": -0.7216144867069275,
+          "latestPrice": 166.29,
+          "sinceReturn": -0.29067991810271276,
+          "benchmarkReturn": 0.43339590799628325,
+          "alpha": -0.724075826098996,
           "hosts": [
             "Sacks"
           ]
@@ -40504,8 +40429,8 @@
         },
         {
           "date": "2026-06-15",
-          "portfolio": 5648,
-          "benchmark": 2821,
+          "portfolio": 5635,
+          "benchmark": 2822,
           "invested": 2000
         }
       ],
@@ -40540,11 +40465,11 @@
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
       "totalInvested": 6000,
-      "portfolioValue": 6106,
+      "portfolioValue": 6100,
       "benchmarkValue": 5902,
-      "portfolioReturn": 0.01766666666666672,
+      "portfolioReturn": 0.016666666666666607,
       "benchmarkReturn": -0.01633333333333331,
-      "outperformance": 0.03400000000000003,
+      "outperformance": 0.03299999999999992,
       "constituents": [
         {
           "slug": "googl",
@@ -40558,10 +40483,10 @@
           ],
           "entryDate": "2025-06-23",
           "entryPrice": 165.19,
-          "latestPrice": 371.06,
-          "sinceReturn": 1.246231612083056,
-          "benchmarkReturn": 0.25896859118553706,
-          "alpha": 0.987263020897519,
+          "latestPrice": 371.08,
+          "sinceReturn": 1.2463829529632542,
+          "benchmarkReturn": 0.25956844122302747,
+          "alpha": 0.9868145117402267,
           "hosts": [
             "Friedberg"
           ]
@@ -40578,10 +40503,10 @@
           ],
           "entryDate": "2025-01-06",
           "entryPrice": 466,
-          "latestPrice": 532.7,
-          "sinceReturn": -0.1431330472103005,
-          "benchmarkReturn": -0.2690976887933352,
-          "alpha": 0.12596464158303466,
+          "latestPrice": 533.19,
+          "sinceReturn": -0.14418454935622327,
+          "benchmarkReturn": -0.2697023649556569,
+          "alpha": 0.12551781559943365,
           "hosts": [
             "Friedberg"
           ]
@@ -40598,10 +40523,10 @@
           ],
           "entryDate": "2025-01-06",
           "entryPrice": 170.78,
-          "latestPrice": 228.33,
-          "sinceReturn": -0.3369832533083499,
-          "benchmarkReturn": -0.2690976887933352,
-          "alpha": -0.0678855645150147,
+          "latestPrice": 229.28,
+          "sinceReturn": -0.3425752430026936,
+          "benchmarkReturn": -0.2697023649556569,
+          "alpha": -0.07287287804703668,
           "hosts": [
             "Friedberg"
           ]
@@ -40618,10 +40543,10 @@
           ],
           "entryDate": "2025-06-23",
           "entryPrice": 348.68,
-          "latestPrice": 408.81,
-          "sinceReturn": 0.17243604451072625,
-          "benchmarkReturn": 0.25896859118553706,
-          "alpha": -0.0865325466748108,
+          "latestPrice": 408.6,
+          "sinceReturn": 0.1718481128828726,
+          "benchmarkReturn": 0.25956844122302747,
+          "alpha": -0.08772032834015486,
           "hosts": [
             "Friedberg"
           ]
@@ -40638,10 +40563,10 @@
           ],
           "entryDate": "2025-01-06",
           "entryPrice": 114.1,
-          "latestPrice": 184.99,
-          "sinceReturn": -0.6212971078001754,
-          "benchmarkReturn": -0.2690976887933352,
-          "alpha": -0.35219941900684026,
+          "latestPrice": 185.13,
+          "sinceReturn": -0.6225074496056091,
+          "benchmarkReturn": -0.2697023649556569,
+          "alpha": -0.3528050846499522,
           "hosts": [
             "Friedberg"
           ]
@@ -40658,10 +40583,10 @@
           ],
           "entryDate": "2026-03-27",
           "entryPrice": 296.91,
-          "latestPrice": 234.32,
-          "sinceReturn": -0.21078778080899951,
-          "benchmarkReturn": 0.19158163667618155,
-          "alpha": -0.40236941748518107,
+          "latestPrice": 234.76,
+          "sinceReturn": -0.20932269037755558,
+          "benchmarkReturn": 0.19214937942563348,
+          "alpha": -0.40147206980318906,
           "hosts": [
             "Friedberg"
           ]
@@ -41102,7 +41027,7 @@
         },
         {
           "date": "2026-06-15",
-          "portfolio": 6106,
+          "portfolio": 6100,
           "benchmark": 5902,
           "invested": 6000
         }
@@ -41828,8 +41753,8 @@
       "ticker": "INTC",
       "entryDate": "2024-08-23",
       "basePrice": 20.54,
-      "latestPrice": 128.38,
-      "sinceReturn": 5.25,
+      "latestPrice": 127.69,
+      "sinceReturn": 5.216650438169426,
       "hosts": [
         "Friedberg"
       ]
@@ -41840,8 +41765,8 @@
       "ticker": "ASML",
       "entryDate": "2025-12-19",
       "basePrice": 1056.02,
-      "latestPrice": 1898.41,
-      "sinceReturn": 0.7977026003295393,
+      "latestPrice": 1905.04,
+      "sinceReturn": 0.8039762504498023,
       "hosts": [
         "Friedberg"
       ]
@@ -41852,8 +41777,8 @@
       "ticker": "RTX",
       "entryDate": "2025-01-06",
       "basePrice": 114.1,
-      "latestPrice": 184.99,
-      "sinceReturn": 0.6212971078001754,
+      "latestPrice": 185.13,
+      "sinceReturn": 0.6225074496056091,
       "hosts": [
         "Friedberg"
       ]
@@ -41864,8 +41789,8 @@
       "ticker": "CVS",
       "entryDate": "2025-05-19",
       "basePrice": 62.78,
-      "latestPrice": 101.27,
-      "sinceReturn": 0.6130933418286078,
+      "latestPrice": 101.3,
+      "sinceReturn": 0.613571201019433,
       "hosts": [
         "Friedberg"
       ]
@@ -41876,8 +41801,8 @@
       "ticker": "EXPE",
       "entryDate": "2024-10-18",
       "basePrice": 159.61,
-      "latestPrice": 236.42,
-      "sinceReturn": 0.4812355115594258,
+      "latestPrice": 236.32,
+      "sinceReturn": 0.48064031075747105,
       "hosts": [
         "Chamath"
       ]
@@ -41888,8 +41813,8 @@
       "ticker": "BAC",
       "entryDate": "2024-11-01",
       "basePrice": 41.76,
-      "latestPrice": 56.19,
-      "sinceReturn": 0.3455100574712644,
+      "latestPrice": 56.16,
+      "sinceReturn": 0.3448275862068966,
       "hosts": [
         "Chamath"
       ]
@@ -41900,8 +41825,8 @@
       "ticker": "BA",
       "entryDate": "2024-08-16",
       "basePrice": 179.99,
-      "latestPrice": 228.33,
-      "sinceReturn": 0.26857047613756313,
+      "latestPrice": 229.28,
+      "sinceReturn": 0.2738763264625812,
       "hosts": [
         "Chamath",
         "Friedberg"
@@ -41913,8 +41838,8 @@
       "ticker": "ABNB",
       "entryDate": "2024-08-09",
       "basePrice": 115.08,
-      "latestPrice": 138.69,
-      "sinceReturn": 0.20516162669447335,
+      "latestPrice": 138.31,
+      "sinceReturn": 0.2018595759471673,
       "hosts": [
         "Sacks",
         "Chamath"
@@ -41926,8 +41851,8 @@
       "ticker": "AXP",
       "entryDate": "2025-06-13",
       "basePrice": 287.79,
-      "latestPrice": 336.79,
-      "sinceReturn": 0.17026303902150874,
+      "latestPrice": 337.39,
+      "sinceReturn": 0.1723478925605475,
       "hosts": [
         "Chamath"
       ]
@@ -41938,8 +41863,8 @@
       "ticker": "CACC",
       "entryDate": "2025-05-09",
       "basePrice": 491.78,
-      "latestPrice": 572.99,
-      "sinceReturn": 0.1651348163813089,
+      "latestPrice": 573.74,
+      "sinceReturn": 0.16665988856805902,
       "hosts": [
         "Chamath"
       ]
@@ -41950,8 +41875,8 @@
       "ticker": "LMT",
       "entryDate": "2025-01-06",
       "basePrice": 466,
-      "latestPrice": 532.7,
-      "sinceReturn": 0.1431330472103005,
+      "latestPrice": 533.19,
+      "sinceReturn": 0.14418454935622327,
       "hosts": [
         "Friedberg"
       ]
@@ -41962,8 +41887,8 @@
       "ticker": "SNOW",
       "entryDate": "2025-06-23",
       "basePrice": 213.71,
-      "latestPrice": 241.51,
-      "sinceReturn": 0.1300832904403162,
+      "latestPrice": 240.68,
+      "sinceReturn": 0.1261990547938796,
       "hosts": [
         "Chamath"
       ]
@@ -41974,8 +41899,8 @@
       "ticker": "CRWV",
       "entryDate": "2026-02-13",
       "basePrice": 96.04,
-      "latestPrice": 107.76,
-      "sinceReturn": 0.12203248646397324,
+      "latestPrice": 108.1,
+      "sinceReturn": 0.12555185339441888,
       "hosts": [
         "Friedberg"
       ]
@@ -41986,8 +41911,8 @@
       "ticker": "SBUX",
       "entryDate": "2024-08-16",
       "basePrice": 94.81,
-      "latestPrice": 101.92,
-      "sinceReturn": 0.07493935238898852,
+      "latestPrice": 101.89,
+      "sinceReturn": 0.0746756671237212,
       "hosts": [
         "Friedberg",
         "Sacks",
@@ -42000,8 +41925,8 @@
       "ticker": "SQ",
       "entryDate": "2026-05-29",
       "basePrice": 75.72,
-      "latestPrice": 74.15,
-      "sinceReturn": -0.020734284204965592,
+      "latestPrice": 74.23,
+      "sinceReturn": -0.01964474379292125,
       "hosts": [
         "Sacks"
       ]
@@ -42024,8 +41949,8 @@
       "ticker": "NFLX",
       "entryDate": "2026-01-12",
       "basePrice": 89.41,
-      "latestPrice": 81.25,
-      "sinceReturn": -0.09126495917682587,
+      "latestPrice": 81.42,
+      "sinceReturn": -0.08941952801700026,
       "hosts": [
         "Sacks"
       ]
@@ -42036,8 +41961,8 @@
       "ticker": "CEG",
       "entryDate": "2025-05-27",
       "basePrice": 309.06,
-      "latestPrice": 262.28,
-      "sinceReturn": -0.1513618714812658,
+      "latestPrice": 262.88,
+      "sinceReturn": -0.14942082443538474,
       "hosts": [
         "Chamath"
       ]
@@ -42048,8 +41973,8 @@
       "ticker": "GME",
       "entryDate": "2024-06-07",
       "basePrice": 28.22,
-      "latestPrice": 21.86,
-      "sinceReturn": -0.22537207654145996,
+      "latestPrice": 21.84,
+      "sinceReturn": -0.2262579730687455,
       "hosts": [
         "Friedberg"
       ]
@@ -42060,8 +41985,8 @@
       "ticker": "NOW",
       "entryDate": "2026-01-12",
       "basePrice": 142.64,
-      "latestPrice": 105.74,
-      "sinceReturn": -0.2586932136848009,
+      "latestPrice": 105.27,
+      "sinceReturn": -0.2619882220975883,
       "hosts": [
         "Sacks"
       ]
@@ -42072,8 +41997,8 @@
       "ticker": "ADBE",
       "entryDate": "2025-07-07",
       "basePrice": 376.93,
-      "latestPrice": 207.72,
-      "sinceReturn": -0.4489051017430292,
+      "latestPrice": 207.53,
+      "sinceReturn": -0.4494070517072135,
       "hosts": [
         "Chamath"
       ]
@@ -42084,8 +42009,8 @@
       "ticker": "WDAY",
       "entryDate": "2024-09-20",
       "basePrice": 248.29,
-      "latestPrice": 132.02,
-      "sinceReturn": -0.46828305610374954,
+      "latestPrice": 131.13,
+      "sinceReturn": -0.47186757420757985,
       "hosts": [
         "Chamath"
       ]
@@ -42096,8 +42021,8 @@
       "ticker": "BIRD",
       "entryDate": "2026-04-17",
       "basePrice": 10.8,
-      "latestPrice": 3.95,
-      "sinceReturn": -0.6342592592592593,
+      "latestPrice": 3.92,
+      "sinceReturn": -0.6370370370370371,
       "hosts": [
         "Sacks"
       ]

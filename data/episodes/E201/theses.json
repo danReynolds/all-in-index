@@ -151,7 +151,7 @@
     "ticker": "GLD",
     "isPublic": true,
     "host": "Sacks",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "low",
     "positional": false,
     "summary": "Sacks implicitly supports the gold bull case by endorsing Paul Tudor Jones's 'all roads lead to inflation' thesis, under which gold is a beneficiary, though he makes no explicit directional claim of his own.",
@@ -163,7 +163,8 @@
       "Paul Tudor Jones",
       "macro"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Sacks endorses PTJ's 'all roads lead to inflation' thesis but makes no explicit personal directional claim on gold. The inflation framing is too indirect to constitute a genuine gold bull take."
   },
   {
     "id": "E201-uso-Friedberg-a3",

@@ -122,7 +122,7 @@
     "ticker": "USO",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "positional": false,
     "summary": "Chamath explains that Houthi disruption of Red Sea/Suez Canal shipping caused input prices to skyrocket (30-400% shipping cost increases), raising recession and inflation risk. He frames the US strikes as restoring shipping volumes and containing that inflation/productivity risk — implying commodity/input price pressures are now easing.",
@@ -137,6 +137,7 @@
       "recession risk",
       "tariffs"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Chamath is describing shipping cost inflation from Houthi disruptions and framing US strikes as containing that pressure. No explicit directional oil price call is made — this is policy/geopolitical commentary on shipping costs."
   }
 ]

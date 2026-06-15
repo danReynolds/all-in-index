@@ -99,7 +99,7 @@
     "ticker": "UNG",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "positional": false,
     "summary": "Friedberg argues the US should continue and expand LNG exports as the largest methane exporter, framing natural gas as a cleaner energy source than oil or coal and a key asset to monetize for revenue generation.",
@@ -111,7 +111,8 @@
       "balance sheet monetization",
       "clean energy"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Friedberg argues the US should expand LNG exports — this is policy/strategic commentary on energy trade, not an explicit directional price call on natural gas."
   },
   {
     "id": "E228-lit-Chamath-a1",

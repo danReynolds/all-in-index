@@ -273,7 +273,7 @@
     "ticker": "GLD",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "low",
     "positional": false,
     "summary": "Chamath mentions gold casually as one of the things he enjoys, and separately notes Tether reinvests into gold among other assets. The only personal directional hint is his offhand remark about 'make a few investments on gold', suggesting mild bullish interest but with very low conviction.",
@@ -284,6 +284,7 @@
       "personal investing",
       "Tether holdings"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Chamath's offhand remark about making 'a few investments on gold' is a passing mention without a directional conviction or explicit price call, and Tether's reinvestment in gold is a factual description."
   }
 ]

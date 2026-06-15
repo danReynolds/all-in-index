@@ -289,7 +289,7 @@
     "ticker": "URA",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "high",
     "positional": false,
     "summary": "Friedberg argues nuclear is essential to AI competitiveness and the US must urgently scale up uranium/nuclear production using new Gen 4 technologies; failure to do so will put the US at a severe energy cost and AI disadvantage vs. China.",
@@ -302,6 +302,7 @@
       "China competition",
       "energy policy"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "This is a policy/national security urgency framing — the US must scale up nuclear production to compete with China on AI. No explicit price direction stated for uranium; it's strategic importance commentary."
   }
 ]

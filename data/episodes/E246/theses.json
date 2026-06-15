@@ -193,7 +193,7 @@
     "ticker": "GLD",
     "isPublic": true,
     "host": "Jason",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "positional": false,
     "summary": "Jason highlights gold breaking $4,000 for the first time, up over 50% for the year, outpacing Bitcoin and major indices, framing it as a notable rally and asking guests to explain the drivers.",
@@ -205,7 +205,8 @@
       "USD weakness",
       "safe haven"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Jason is reporting gold's rally and asking guests to explain it — a descriptive/journalistic framing with no personal directional price call."
   },
   {
     "id": "E246-slv-Jason-a1",

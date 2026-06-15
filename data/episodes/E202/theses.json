@@ -100,7 +100,7 @@
     "ticker": "GLD",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "low",
     "positional": false,
     "summary": "Friedberg suggests that amid US dollar hegemony challenges and BRICS alternatives emerging, people may be parking assets in gold (and Bitcoin) as a transitional store of value.",
@@ -113,6 +113,7 @@
       "store of value",
       "macro"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Friedberg speculatively muses that people 'maybe' are parking assets in gold during a transition — a highly hedged, uncertain observation, not an explicit directional price call."
   }
 ]

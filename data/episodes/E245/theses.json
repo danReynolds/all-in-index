@@ -142,7 +142,7 @@
     "ticker": "UNG",
     "isPublic": true,
     "host": "Sacks",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "positional": false,
     "summary": "Sacks argues that natural gas is the near-term (next 5 years) answer to AI-driven power demand, before nuclear comes online, though he notes turbine backlogs as a constraint.",
@@ -154,6 +154,7 @@
       "data centers",
       "grid capacity"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Sacks frames natural gas as the near-term answer to AI power demand — this is a strategic/importance framing about energy sources, not an explicit directional price call on natural gas."
   }
 ]

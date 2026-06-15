@@ -146,7 +146,7 @@
     "ticker": "LIT",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "high",
     "positional": false,
     "summary": "Chamath argues the US must build strategic reserves of critical inputs including lithium, acting as a methodical buyer of record to counteract Chinese price manipulation and mercantilism.",
@@ -158,7 +158,8 @@
       "price manipulation",
       "supply chain security"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "This is a policy/strategic reserve proposal to counteract Chinese price manipulation. No explicit personal price direction or claim that lithium prices will rise."
   },
   {
     "id": "E247-cper-Chamath-a1",

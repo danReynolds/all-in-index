@@ -127,7 +127,7 @@
     "ticker": "UNG",
     "isPublic": true,
     "host": "Sacks",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "positional": false,
     "summary": "Sacks highlights Pennsylvania's vast natural gas resources and fracking capacity as central to powering AI data centers, framing energy expansion (including natural gas) as the foundation for AI and economic dominance under Trump's energy policies.",
@@ -140,7 +140,8 @@
       "Pennsylvania",
       "domestic production"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "scoreReason": "Sacks highlights Pennsylvania's natural gas resources and fracking capacity as powering AI data centers — strategic/importance framing, no explicit price direction stated."
   },
   {
     "id": "E236-ung-Guest-a1",

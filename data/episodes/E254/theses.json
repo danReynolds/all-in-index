@@ -171,7 +171,7 @@
     "ticker": "SLV",
     "isPublic": true,
     "host": "Guest",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "low",
     "positional": false,
     "summary": "Tucker's new venture sells silver alongside gold (any kind of precious metal), implying a broadly positive view on physical silver as a store of value, though no explicit price directional claim is made beyond grouping it with gold.",
@@ -183,6 +183,7 @@
       "store of value"
     ],
     "attributionConfidence": "high",
-    "guestName": "Tucker Carlson"
+    "guestName": "Tucker Carlson",
+    "scoreReason": "A passing mention that Tucker's venture sells 'any kind of precious metal' including silver. No explicit price directional claim made about silver."
   }
 ]
