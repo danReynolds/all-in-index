@@ -278,7 +278,7 @@ export default function IndexPage() {
             <div>
               <h2 className="font-display text-xl font-bold tracking-tight">The Bear Book 🐻</h2>
               <p className="mt-1 max-w-2xl text-sm text-neutral-600 dark:text-neutral-400">
-                Every public name the table is currently net-bearish on, scored as if you&apos;d
+                Every public name the besties are currently net-bearish on, scored as if you&apos;d
                 shorted when that bear stance was adopted. Sorted by how wrong it has gone.
               </p>
             </div>

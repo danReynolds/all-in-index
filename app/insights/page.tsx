@@ -17,8 +17,8 @@ import {
 } from "@/lib/insights";
 
 export const metadata = {
-  title: "Signals — The All-Index",
-  description: "What the table is telling you right now: consensus, conviction, flips, and live disagreements.",
+  title: "Insights — The All-Index",
+  description: "What the besties' calls reveal: consensus, conviction, flips, and live disagreements across every scored call.",
 };
 
 const pp = (x: number | null) =>
@@ -45,14 +45,14 @@ export default function SignalsPage() {
     <div className="space-y-12">
       <header className="space-y-3">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-600 dark:text-emerald-400">
-          Signals
+          Insights
         </p>
         <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
-          What the table is telling you
+          What the besties&apos; calls reveal
         </h1>
         <p className="max-w-2xl text-neutral-600 dark:text-neutral-400">
           Patterns mined from every scored call in the catalog — what has historically mattered, and
-          where the besties stand right now. Tap any chart to see the calls behind it.
+          where the besties stand right now. Tap any stat to see the calls behind it.
         </p>
       </header>
 
@@ -63,7 +63,7 @@ export default function SignalsPage() {
           title="The Consensus Meter"
           sub="When two or more besties agree, history says pay attention."
           badge={edge != null ? `${pp(edge)} edge` : undefined}
-          detail="Consensus = two or more besties holding the same current scored stance (medium+ conviction); a solo call is one only a single bestie made. Alpha is a call's return above the S&P over the same window; returns in the list below are since the table's first call on the name."
+          detail="Consensus = two or more besties holding the same current scored stance (medium+ conviction); a solo call is one only a single bestie made. Alpha is a call's return above the S&P over the same window; returns in the list below are since the besties' first call on the name."
         />
         <ConsensusCards split={cvs} />
         <p className="text-sm text-neutral-500">
@@ -75,7 +75,7 @@ export default function SignalsPage() {
         </p>
         <div className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
           <h3 className="mb-1 text-sm font-semibold text-neutral-700 dark:text-neutral-200">
-            Where the table agrees today
+            Where the besties agree today
           </h3>
           <p className="mb-3 text-xs text-neutral-400">
             {consensus.length}{" "}names two or more besties are bullish on right now.
@@ -133,7 +133,7 @@ export default function SignalsPage() {
             <h3 className="mb-1 text-sm font-semibold text-neutral-700 dark:text-neutral-200">
               Most flip-flopped names
             </h3>
-            <p className="mb-3 text-xs text-neutral-400">The table&apos;s biggest mind-changers.</p>
+            <p className="mb-3 text-xs text-neutral-400">Where the besties keep changing their mind.</p>
             <div className="flex flex-wrap gap-2">
               {flipped.map((c) => (
                 <Link
@@ -157,7 +157,7 @@ export default function SignalsPage() {
         <SectionHead
           emoji="⚔️"
           title="Open Duels"
-          sub="Names the table is split on — and who's winning so far."
+          sub="Names the besties are split on — and who's winning so far."
           badge={duels.length > 0 ? `${duels.length} live` : undefined}
           detail="A duel is a name where some besties' current scored stance is bullish and others' is bearish. The lead goes to whoever the stock has favored since the split crystallized — up for the bulls, down for the bears, with a ±2% dead zone counted as a push."
         />

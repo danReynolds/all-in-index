@@ -69,7 +69,7 @@ function groupByHost(theses: Thesis[]): Array<{ host: Host; takes: Thesis[]; fli
   return HOST_ORDER.filter((h) => map.has(h)).map((host) => {
     const takes = map.get(host)!.slice().sort((a, b) => a.episodeDate.localeCompare(b.episodeDate));
     // A flip = a direction reversal in the collapsed bull/bear journey of the
-    // host's scored (medium+ conviction) takes — same definition as the Signals
+    // host's scored (medium+ conviction) takes — same definition as the Insights
     // Flip Tracker and the "Following their calls" stat, so counts agree sitewide.
     const dirs = takes
       .filter((t) => t.conviction !== "low" && t.attributionConfidence !== "low")
@@ -233,7 +233,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
             const fs = followStats(h);
             if (!fs || !fs.evolved) return null;
             return (
-              <div title="Long during their bullish stretches, short during bearish, flat when the table was split.">
+              <div title="Long during their bullish stretches, short during bearish, flat when the besties were split.">
                 <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
                   Following their calls
                 </div>

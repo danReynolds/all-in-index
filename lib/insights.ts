@@ -57,7 +57,7 @@ export interface ConsensusItem {
   sinceReturn: number | null;
 }
 
-/** Holdings where ≥2 besties' LATEST stance is bull — "the table agrees". */
+/** Holdings where ≥2 besties' LATEST stance is bull — "the besties agree". */
 export function consensusBulls(s: IndexSnapshot): ConsensusItem[] {
   const out: ConsensusItem[] = [];
   for (const h of s.holdings) {
@@ -386,7 +386,7 @@ export function computeAwards(s: IndexSnapshot): Award[] {
       recipient: lb[0].host,
       host: lb[0].host,
       stat: `${pctf(lb[0].portfolioReturn)} vs S&P ${pctf(lb[0].benchmarkReturn)}`,
-      detail: `Best returns at the table across ${lb[0].positions} public calls.`,
+      detail: `Best returns of any bestie across ${lb[0].positions} public calls.`,
       href: `/host/${lb[0].host.toLowerCase()}`,
     });
   }
@@ -455,7 +455,7 @@ export function computeAwards(s: IndexSnapshot): Award[] {
       title: "Most Debated",
       recipient: mostDiscussed.company,
       stat: `${mostDiscussed.mentionCount} takes and counting`,
-      detail: "The name the table can't stop arguing about.",
+      detail: "The name the besties can't stop arguing about.",
       href: `/holding/${mostDiscussed.slug}`,
     });
   }
@@ -496,10 +496,10 @@ export function computeAwards(s: IndexSnapshot): Award[] {
       key: "together",
       emoji: "🤝",
       title: "Better Together",
-      recipient: "The table itself",
+      recipient: "The besties, together",
       stat: `consensus calls ${ppf(cvs.consensus.meanAlpha)} vs solo ${ppf(cvs.solo.meanAlpha)}`,
       detail: "When two or more besties agree, the hit is historically far bigger.",
-      href: "/signals",
+      href: "/insights",
     });
   }
 

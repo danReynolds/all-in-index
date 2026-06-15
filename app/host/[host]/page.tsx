@@ -331,9 +331,9 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
         </Reveal>
       )}
 
-      {/* The rest of the table */}
+      {/* The other besties */}
       <section className="flex flex-wrap items-center gap-2 text-sm text-neutral-500">
-        <span>The rest of the table:</span>
+        <span>The other besties:</span>
         {REGULAR_HOSTS.filter((h) => h !== host).map((h) => (
           <Link
             key={h}

@@ -4,7 +4,7 @@ import { REGULAR_HOSTS } from "@/lib/types";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://allindex.fyi";
-  const statics = ["", "/the-index", "/predictions", "/signals", "/awards", "/episodes"].map((p) => ({
+  const statics = ["", "/the-index", "/predictions", "/insights", "/awards", "/episodes"].map((p) => ({
     url: `${base}${p}`,
     changeFrequency: "daily" as const,
     priority: p === "" ? 1 : 0.8,
