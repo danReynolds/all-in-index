@@ -73,27 +73,52 @@ export interface EpisodeSummary {
   number: number | null;
   takeCount: number;
   companyCount: number;
+  /** Companies discussed, most-discussed first (for logo clusters). */
+  companies: Array<{ slug: string; company: string; domain: string | null }>;
+  /** Stance mix across the episode's takes (the "mood"). */
+  stance: { bull: number; bear: number; neutral: number; mixed: number };
 }
 
-/** All processed episodes, newest first, with take counts. */
+interface EpisodeAgg {
+  takes: number;
+  stance: { bull: number; bear: number; neutral: number; mixed: number };
+  comps: Map<string, { company: string; domain: string | null; n: number }>;
+}
+
+/** All processed episodes, newest first, with take counts, companies + mood. */
 export function getEpisodes(): EpisodeSummary[] {
   const { snapshot } = getIndex();
-  const counts = new Map<string, { takes: number; companies: Set<string> }>();
+  const counts = new Map<string, EpisodeAgg>();
   for (const h of snapshot.holdings) {
     for (const t of h.theses) {
-      const c = counts.get(t.episodeId) ?? { takes: 0, companies: new Set<string>() };
+      const c =
+        counts.get(t.episodeId) ??
+        ({ takes: 0, stance: { bull: 0, bear: 0, neutral: 0, mixed: 0 }, comps: new Map() } as EpisodeAgg);
       c.takes++;
-      c.companies.add(h.slug);
+      c.stance[t.stance]++;
+      const comp = c.comps.get(h.slug) ?? { company: h.company, domain: h.domain ?? null, n: 0 };
+      comp.n++;
+      c.comps.set(h.slug, comp);
       counts.set(t.episodeId, c);
     }
   }
   return Object.entries(snapshot.episodes ?? {})
-    .map(([id, m]) => ({
-      id,
-      ...m,
-      takeCount: counts.get(id)?.takes ?? 0,
-      companyCount: counts.get(id)?.companies.size ?? 0,
-    }))
+    .map(([id, m]) => {
+      const c = counts.get(id);
+      const companies = c
+        ? [...c.comps.entries()]
+            .sort((a, b) => b[1].n - a[1].n)
+            .map(([slug, v]) => ({ slug, company: v.company, domain: v.domain }))
+        : [];
+      return {
+        id,
+        ...m,
+        takeCount: c?.takes ?? 0,
+        companyCount: companies.length,
+        companies,
+        stance: c?.stance ?? { bull: 0, bear: 0, neutral: 0, mixed: 0 },
+      };
+    })
     .sort((a, b) => b.date.localeCompare(a.date));
 }
 
