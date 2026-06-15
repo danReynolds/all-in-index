@@ -7,9 +7,11 @@ import {
   type ExposureWindow,
 } from "../lib/calls";
 import { isTradableCompanyExposure } from "../lib/tradability";
+import { guestSlug } from "../lib/format";
 import type {
   BearCall,
   CallType,
+  GuestCall,
   GuestLeaderboardEntry,
   Holding,
   IndexDirection,
@@ -170,7 +172,7 @@ export async function buildGuestLeaderboard(holdings: Holding[]): Promise<GuestL
 
   const out: GuestLeaderboardEntry[] = [];
   for (const [guest, calls] of byGuest) {
-    const rows: Array<{ company: string; ticker: string; slug: string; ret: number; bench: number }> = [];
+    const rows: GuestCall[] = [];
     for (const { take, h } of calls.values()) {
       const series = new Series(h.market!.history);
       const entry = series.onOrAfter(take.episodeDate);
@@ -183,20 +185,31 @@ export async function buildGuestLeaderboard(holdings: Holding[]): Promise<GuestL
       const ret = Math.max(take.stance === "bull" ? stockRet : -stockRet, -1);
       const spyEntry = spy?.onOrAfter(take.episodeDate);
       const bench = spy && spyEntry ? spy.last / spyEntry.close - 1 : 0;
-      rows.push({ company: h.company, ticker: h.ticker!, slug: h.slug, ret, bench });
+      rows.push({
+        company: h.company,
+        ticker: h.ticker!,
+        slug: h.slug,
+        stance: take.stance as "bull" | "bear",
+        date: take.episodeDate,
+        ret,
+        benchmarkReturn: bench,
+        alpha: ret - bench,
+      });
     }
     if (!rows.length) continue;
     const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / xs.length;
     const followReturn = mean(rows.map((r) => r.ret));
-    const benchmarkReturn = mean(rows.map((r) => r.bench));
+    const benchmarkReturn = mean(rows.map((r) => r.benchmarkReturn));
     const best = rows.slice().sort((a, b) => b.ret - a.ret)[0];
     out.push({
       guest,
+      slug: guestSlug(guest),
       calls: rows.length,
       followReturn,
       benchmarkReturn,
       alpha: followReturn - benchmarkReturn,
       best: { company: best.company, ticker: best.ticker, slug: best.slug, ret: best.ret },
+      picks: rows.slice().sort((a, b) => b.date.localeCompare(a.date)),
     });
   }
   // Most calls first (more signal), then by alpha.

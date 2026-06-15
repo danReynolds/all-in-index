@@ -286,6 +286,22 @@ export interface LeaderboardEntry {
   topCall: { ticker: string; alpha: number } | null;
 }
 
+/** One scored guest call, scored as if followed from the call date. */
+export interface GuestCall {
+  company: string;
+  ticker: string;
+  slug: string;
+  stance: "bull" | "bear";
+  /** Date the call was made (episode date). */
+  date: string;
+  /** Direction-adjusted return (long a bull, short a bear), floored at −100%. */
+  ret: number;
+  /** SPY buy-and-hold return over the same window. */
+  benchmarkReturn: number;
+  /** ret − benchmarkReturn. */
+  alpha: number;
+}
+
 /**
  * A named guest's scorecard: their scored directional public calls, scored as
  * "if you'd followed each call" (long a bull, short a bear) from the call date.
@@ -293,6 +309,8 @@ export interface LeaderboardEntry {
  */
 export interface GuestLeaderboardEntry {
   guest: string;
+  /** URL slug for the guest's page (slugified name). */
+  slug: string;
   calls: number;
   /** Mean direction-adjusted return across their calls. */
   followReturn: number;
@@ -301,6 +319,8 @@ export interface GuestLeaderboardEntry {
   alpha: number;
   /** Their single best call by follow-return. */
   best: { company: string; ticker: string; slug: string; ret: number } | null;
+  /** Every scored call behind the aggregate, newest first. */
+  picks: GuestCall[];
 }
 
 /** One name the besties turned net-bearish on, scored as a short from the call date. */

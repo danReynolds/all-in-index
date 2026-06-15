@@ -6,6 +6,14 @@ export function pct(x: number | null | undefined): string {
   return (x >= 0 ? "+" : "") + s + "%";
 }
 
+/** URL slug for a guest's profile page (lowercase, alphanumerics → hyphens). */
+export function guestSlug(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 /** Tailwind text-color class for a return value. */
 export function returnColor(x: number | null | undefined): string {
   if (x == null) return "text-neutral-400";

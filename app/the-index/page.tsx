@@ -232,10 +232,10 @@ export default function IndexPage() {
                   </thead>
                   <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
                     {guestLeaders.map((g, i) => (
-                      <tr key={g.guest} className="transition-colors hover:bg-violet-50/40 dark:hover:bg-violet-950/20">
+                      <LinkRow key={g.guest} href={`/guest/${g.slug}`} className="group transition-colors hover:bg-violet-50/40 dark:hover:bg-violet-950/20">
                         <td className="px-4 py-3">
                           <span className="mr-2 inline-block w-4 text-right font-mono text-xs text-neutral-400">{i + 1}</span>
-                          <span className="font-medium">{g.guest}</span>
+                          <Link href={`/guest/${g.slug}`} className="relative z-10 font-medium group-hover:underline">{g.guest}</Link>
                         </td>
                         <td className="px-4 py-3 text-right tabular-nums text-neutral-500">{g.calls}</td>
                         <td className={`px-4 py-3 text-right font-mono tabular-nums ${returnColor(g.followReturn)}`}>
@@ -246,7 +246,7 @@ export default function IndexPage() {
                         </td>
                         <td className="hidden px-4 py-3 text-right md:table-cell">
                           {g.best ? (
-                            <Link href={`/holding/${g.best.slug}`} className="font-mono text-xs hover:underline">
+                            <Link href={`/holding/${g.best.slug}`} className="relative z-10 font-mono text-xs hover:underline">
                               <span className="text-neutral-600 dark:text-neutral-300">{g.best.ticker}</span>{" "}
                               <span className={returnColor(g.best.ret)}>{g.best.ret >= 0 ? "+" : ""}{(g.best.ret * 100).toFixed(0)}%</span>
                             </Link>
@@ -254,7 +254,7 @@ export default function IndexPage() {
                             <span className="text-neutral-400">—</span>
                           )}
                         </td>
-                      </tr>
+                      </LinkRow>
                     ))}
                   </tbody>
                 </table>
