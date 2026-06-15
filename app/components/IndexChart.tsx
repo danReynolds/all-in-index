@@ -156,7 +156,7 @@ export function IndexChart({
         grouped.push([marker]);
       }
     }
-    return grouped.map((markers, idx): MarkerGroup => {
+    const groups = grouped.map((markers, idx): MarkerGroup => {
       const cx = markers.reduce((sum, m) => sum + m.cx, 0) / markers.length;
       const cy = markers.reduce((sum, m) => sum + m.cy, 0) / markers.length;
       return {
@@ -167,6 +167,19 @@ export function IndexChart({
         markers,
       };
     });
+    // De-collide label chips: when two chips sit within ~a chip-width of each
+    // other horizontally, stack the later one into the next vertical lane so
+    // labels never overlap (groups are already in left-to-right order).
+    const CHIP_W = 84;
+    const LANE_H = 32;
+    const laneLastCx: number[] = [];
+    for (const g of groups) {
+      let lane = 0;
+      while (lane < laneLastCx.length && g.cx - laneLastCx[lane] < CHIP_W) lane++;
+      laneLastCx[lane] = g.cx;
+      g.labelY = Math.max(padT + 14, g.labelY - lane * LANE_H);
+    }
+    return groups;
   })();
 
   const selected = sel ? plotted.find((m) => m.id === sel) ?? null : null;

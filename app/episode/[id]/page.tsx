@@ -57,6 +57,16 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
     }
   }
   const priced = right + wrong > 0;
+  // When nothing is scored yet, say why: a public directional call that just
+  // hasn't moved enough ("too early"), or calls only on private names.
+  const hasDirectional = allTakes.some((t) => t.stance === "bull" || t.stance === "bear");
+  const scorableSoon = ep.groups.some(
+    (g) =>
+      !!g.holding.ticker &&
+      !!g.holding.market &&
+      g.holding.market.history.length >= 2 &&
+      g.takes.some((t) => t.stance === "bull" || t.stance === "bear"),
+  );
 
   // Episode "mood": the mix of stances taken, and who showed up.
   const STANCE_ORDER: Stance[] = ["bull", "bear", "mixed", "neutral"];
@@ -123,6 +133,18 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
                   <Stat label="Right so far" value={right} tone="good" />
                   <Stat label="Wrong so far" value={wrong} tone="bad" />
                 </>
+              )}
+              {!priced && hasDirectional && (
+                <span
+                  className="self-center rounded-full border border-neutral-200 px-3 py-1 text-xs text-neutral-400 dark:border-neutral-700"
+                  title={
+                    scorableSoon
+                      ? "Verdicts appear once each name's price has moved enough since this episode aired."
+                      : "These calls are on private companies, so there's no market price to score them against."
+                  }
+                >
+                  {scorableSoon ? "Too early to score" : "Private calls · not scored"}
+                </span>
               )}
             </div>
             {(bestiesIn.length > 0 || guestsIn.length > 0) && (
