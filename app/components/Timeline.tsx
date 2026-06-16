@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { fmtDate, mmss } from "@/lib/format";
+import { isPortfolioScored } from "@/lib/calls";
 import { StanceBadge, ConvictionDots } from "@/app/components/badges";
 import { GuestName } from "@/app/components/GuestName";
 import { ListenButton } from "@/app/components/player";
@@ -182,7 +183,7 @@ export function Timeline({
               {t.episodeNumber ? `E${t.episodeNumber}` : t.episodeId}
             </Link>
             <span>{fmtDate(t.episodeDate)}</span>
-            {t.positional && (
+            {isPortfolioScored(t) && (
               <span
                 className="rounded-full bg-emerald-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-300 ring-1 ring-inset ring-emerald-500/25"
                 title="A clear in/out call, ranked pick, or investment selection — this take trades in the money simulations. Everything else is view/commentary."

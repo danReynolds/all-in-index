@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getEpisode, allEpisodeIds, guestLinkMap } from "@/lib/data";
+import { isPortfolioScored } from "@/lib/calls";
 import {
   pct,
   returnColor,
@@ -81,7 +82,7 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
         since: ctx.ret,
         elapsedDays: ctx.elapsedDays,
         noiseFloor: ctx.noise,
-        positional: t.positional,
+        scored: isPortfolioScored(t),
       });
       if (v?.tone === "with") withCall++;
       else if (v?.tone === "against") against++;
@@ -303,7 +304,7 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
                       since: ret,
                       elapsedDays: ctx.elapsedDays,
                       noiseFloor: ctx.noise,
-                      positional: t.positional,
+                      scored: isPortfolioScored(t),
                     });
                     return (
                       <div key={t.id} className="rounded-lg bg-neutral-800/40 p-3.5 ring-1 ring-white/5">
@@ -324,7 +325,7 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
                           </span>
                           <StanceBadge stance={t.stance} />
                           <ConvictionDots conviction={t.conviction} />
-                          {t.positional && (
+                          {isPortfolioScored(t) && (
                             <span
                               className="rounded-full bg-emerald-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-300 ring-1 ring-inset ring-emerald-500/25"
                               title="A clear in/out call, ranked pick, or investment selection — trades in the money simulations."
