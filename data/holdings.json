@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T19:17:09.298Z",
+  "generatedAt": "2026-06-16T20:54:01.115Z",
   "holdings": [
     {
       "slug": "openai",
@@ -176,7 +176,8 @@
             "growth rate",
             "capital efficiency"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Travis Kalanick"
         },
         {
           "id": "E269-openai-Chamath-4",
@@ -250,7 +251,8 @@
             "model competition",
             "enterprise adoption"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E267-openai-Friedberg-6",
@@ -374,7 +376,8 @@
             "AI capex",
             "valuation"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E259-openai-Jason-3",
@@ -544,7 +547,8 @@
             "AI capex",
             "valuation"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E249-openai-Guest-3",
@@ -569,7 +573,8 @@
             "open source",
             "governance"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Elon Musk"
         },
         {
           "id": "E242-openai-Sacks-2",
@@ -716,7 +721,8 @@
             "talent loss",
             "benchmarks"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E235-openai-Guest-4",
@@ -766,7 +772,8 @@
             "consumer device",
             "AI"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Travis Kalanick"
         },
         {
           "id": "E233-openai-Jason-2",
@@ -934,7 +941,8 @@
             "nonprofit conversion",
             "OpenAI structure"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Naval Ravikant"
         },
         {
           "id": "E213-openai-Sacks-3",
@@ -1034,7 +1042,8 @@
             "product growth",
             "competitive moat"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E209-openai-Friedberg-8",
@@ -1156,7 +1165,8 @@
             "talent",
             "compute scale"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E199-openai-Sacks-5",
@@ -1228,7 +1238,8 @@
             "AI",
             "governance"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Mark Cuban"
         },
         {
           "id": "E198-openai-Sacks-0",
@@ -1659,7 +1670,8 @@
             "earnings",
             "Mag Seven dispersion"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E245-meta-Sacks-4",
@@ -1709,7 +1721,8 @@
             "revenue growth",
             "ROI"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E235-meta-Guest-10",
@@ -1782,7 +1795,8 @@
             "talent acquisition",
             "competitive moat"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E218-meta-Chamath-7",
@@ -1879,7 +1893,8 @@
             "open source",
             "pricing power"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Aaron Levie"
         },
         {
           "id": "E197-meta-Sacks-3",
@@ -1919,13 +1934,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-09-27",
         "basePrice": 567.36,
-        "latestPrice": 598.235,
+        "latestPrice": 600.21,
         "returns": {
           "1m": 0.019035532994923776,
           "3m": 0.05719472645234054,
           "6m": 0.06207698815566841,
           "1y": 0.31027918781725883,
-          "since": 0.05441871122391427
+          "since": 0.05789974619289344
         },
         "history": [
           [
@@ -2146,7 +2161,7 @@
           ],
           [
             "2026-06-16",
-            598.235
+            600.21
           ]
         ],
         "source": "yahoo"
@@ -2304,7 +2319,8 @@
             "AI safety narrative",
             "competitive positioning"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Bill Gurley"
         },
         {
           "id": "E275-anthropic-Sacks-0",
@@ -2353,7 +2369,8 @@
             "AI infrastructure",
             "competitive moat"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E273-anthropic-Guest-5",
@@ -2377,7 +2394,8 @@
             "AI competitive positioning",
             "product strategy"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Marc Benioff"
         },
         {
           "id": "E273-anthropic-Guest-4",
@@ -2401,7 +2419,8 @@
             "enterprise AI",
             "competitive positioning"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Marc Benioff"
         },
         {
           "id": "E272-anthropic-Guest-2",
@@ -2425,7 +2444,8 @@
             "compute constraints",
             "growth trajectory"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E272-anthropic-Sacks-1",
@@ -2672,7 +2692,8 @@
             "enterprise adoption",
             "coding dominance"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E267-anthropic-Chamath-5",
@@ -2795,7 +2816,8 @@
             "valuation",
             "TAM"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E263-anthropic-Chamath-2",
@@ -2964,7 +2986,8 @@
             "capital efficiency",
             "AI competition"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E233-anthropic-Sacks-1",
@@ -3293,7 +3316,8 @@
             "product",
             "competitive position"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Ben Shapiro"
         },
         {
           "id": "E238-aapl-Guest-5",
@@ -3318,7 +3342,8 @@
             "buybacks",
             "competitive position"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E236-aapl-Guest-1",
@@ -3343,7 +3368,8 @@
             "antitrust",
             "valuation"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E235-aapl-Guest-6",
@@ -3416,7 +3442,8 @@
             "competitive position",
             "M&A"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E232-aapl-Chamath-2",
@@ -3464,7 +3491,8 @@
             "competitive position",
             "product"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E209-aapl-Jason-27",
@@ -3537,7 +3565,8 @@
             "product quality",
             "competitive moat"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Keith Rabois"
         },
         {
           "id": "E201-aapl-Friedberg-6",
@@ -3612,7 +3641,8 @@
             "regulation",
             "competitive tactics"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Reid Hoffman"
         },
         {
           "id": "E191-aapl-Chamath-1",
@@ -3849,13 +3879,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-05-10",
         "basePrice": 183.05,
-        "latestPrice": 298.7007,
+        "latestPrice": 299.24,
         "returns": {
           "1m": 0.055012291723572755,
           "3m": 0.18836383501775464,
           "6m": 0.22496585632340876,
           "1y": 0.1515432941819174,
-          "since": 0.631798415733406
+          "since": 0.6347446052990986
         },
         "history": [
           [
@@ -4096,7 +4126,7 @@
           ],
           [
             "2026-06-16",
-            298.7007
+            299.24
           ]
         ],
         "source": "yahoo"
@@ -4147,13 +4177,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2026-05-29",
         "basePrice": 75.72,
-        "latestPrice": 75.01,
+        "latestPrice": 74.68,
         "returns": {
           "1m": null,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": -0.009376650818806046
+          "since": -0.013734812466983519
         },
         "history": [
           [
@@ -4206,7 +4236,7 @@
           ],
           [
             "2026-06-16",
-            75.01
+            74.68
           ]
         ],
         "source": "yahoo"
@@ -4267,7 +4297,8 @@
             "earnings",
             "AI infrastructure"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E273-nvda-Chamath-11",
@@ -4316,7 +4347,8 @@
             "AI capex",
             "compute"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E256-nvda-Chamath-1",
@@ -4462,7 +4494,8 @@
             "competitive moat",
             "demand outlook"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E244-nvda-Sacks-1",
@@ -4537,7 +4570,8 @@
             "competitive moat",
             "H20"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E232-nvda-Friedberg-12",
@@ -4584,7 +4618,8 @@
             "GPU dominance",
             "AI infrastructure"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E229-nvda-Sacks-7",
@@ -4658,7 +4693,8 @@
             "customer concentration",
             "ecosystem strategy"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E221-nvda-Guest-0",
@@ -4683,7 +4719,8 @@
             "AI capex",
             "GPU demand"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E216-nvda-Chamath-1",
@@ -4758,7 +4795,8 @@
             "robotics",
             "consumer expansion"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Cyan Bowers-Franklin"
         },
         {
           "id": "E209-nvda-Guest-4",
@@ -4782,7 +4820,8 @@
             "inference compute",
             "chip demand"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E206-nvda-Guest-4",
@@ -4806,7 +4845,8 @@
             "GPU demand",
             "Blackwell"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E194-nvda-Guest-0",
@@ -4831,7 +4871,8 @@
             "valuation",
             "chips"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Reid Hoffman"
         },
         {
           "id": "E190-nvda-Chamath-0",
@@ -5018,13 +5059,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-05-24",
         "basePrice": 106.469,
-        "latestPrice": 208.2,
+        "latestPrice": 207.41,
         "returns": {
           "1m": 0.10933699010979728,
           "3m": 0.18776357437376137,
           "6m": 0.2775549690520247,
           "1y": 0.27267091829546636,
-          "since": 0.9554987836835135
+          "since": 0.9480787834956654
         },
         "history": [
           [
@@ -5261,7 +5302,7 @@
           ],
           [
             "2026-06-16",
-            208.2
+            207.41
           ]
         ],
         "source": "yahoo"
@@ -5297,7 +5338,8 @@
             "competitive position",
             "agentic AI"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E269-xai-Chamath-9",
@@ -5346,7 +5388,8 @@
             "operational efficiency",
             "headcount"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E253-xai-Sacks-7",
@@ -5395,7 +5438,8 @@
             "compute",
             "shareholder"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E218-xai-grok-Chamath-3",
@@ -5443,7 +5487,8 @@
             "debt",
             "operating efficiency"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Antonio Gracias"
         },
         {
           "id": "E214-xai-Guest-3",
@@ -5468,7 +5513,8 @@
             "competitive moat",
             "data centers"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Antonio Gracias"
         },
         {
           "id": "E211-x-formerly-twitter-Chamath-1",
@@ -5516,7 +5562,8 @@
             "scaling laws",
             "competitive position"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E198-x-Guest-6",
@@ -5540,7 +5587,8 @@
             "content moderation",
             "business model"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Mark Cuban"
         }
       ],
       "synthesis": "The dominant view across hosts and guests is bullish on xAI's infrastructure and model trajectory, with recurring emphasis on the Colossus supercomputer cluster — first 100,000 coherent GPUs, now expanded to the largest Blackwell cluster — as a structural compute advantage that guest bulls Gavin Baker and Antonio Gracias argue positions Grok models (3, 4, 4.3, and prospectively 5) at or near the frontier, while Sacks adds that X's data integration gives xAI a unique current-events edge over rivals. On the X/Twitter platform itself, Gracias and Gerstner point to the operational turnaround — roughly 70–80% headcount reduction, debt servicing, and strong bond pricing — as a landmark business success, and Chamath sees meaningful strategic upside in potential TikTok asset acquisition and xAI's emerging hyperscaler role renting surplus compute to customers like Cursor. The lone dissenting voice is guest Mark Cuban (October 2024), who argued the platform faces a structural advertising problem due to its permissive content environment making it toxic for brand advertisers — a concern not directly addressed or refuted by the bullish guests, who focused primarily on the AI and infrastructure story rather than ad revenue. Chamath occupies a notably neutral-to-constructive middle ground, citing Grok 3's elegant X integration as his personal reason for switching consumer AI usage, without making strong directional claims on valuation or competitive outcome.",
@@ -5581,7 +5629,8 @@
             "orbital compute",
             "revenue growth"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E274-spacex-Chamath-1",
@@ -5656,7 +5705,8 @@
             "valuation",
             "AI infrastructure"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E272-spacex-Chamath-3",
@@ -5942,7 +5992,8 @@
             "unit economics",
             "AI infrastructure"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E261-coreweave-Chamath-1",
@@ -6015,7 +6066,8 @@
             "valuation",
             "GPU infrastructure"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E218-coreweave-Friedberg-1",
@@ -6080,13 +6132,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-03-08",
         "basePrice": 40,
-        "latestPrice": 116.32,
+        "latestPrice": 117.03,
         "returns": {
           "1m": 0.09024999999999998,
           "3m": 3.0524999999999998,
           "6m": 1.3387499999999999,
           "1y": 0.86025,
-          "since": 1.908
+          "since": 1.92575
         },
         "history": [
           [
@@ -6295,7 +6347,7 @@
           ],
           [
             "2026-06-16",
-            116.32
+            117.03
           ]
         ],
         "source": "yahoo"
@@ -6331,7 +6383,8 @@
             "US manufacturing",
             "geopolitics"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E267-ung-Friedberg-a1",
@@ -6402,7 +6455,8 @@
             "domestic energy production",
             "natural gas"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E236-ung-Sacks-a0",
@@ -6472,7 +6526,8 @@
             "Biden policy",
             "trade policy"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Larry Summers"
         }
       ],
       "synthesis": "All hosts and guests represented hold a uniformly bullish stance on natural gas, with no dissent across the recorded views. The shared thesis rests on several reinforcing pillars: natural gas is seen as the most practical near-term fuel for AI data center power demand (Sacks, Guest/Gavin), a strategic export asset that strengthens US energy security and generates revenue through LNG (Friedberg, Guest/Summers), and a source of meaningful competitive advantage given that US domestic gas prices have fallen while global LNG prices have surged 100–200% (Guest, 2026). Friedberg adds a further dimension, noting that disruptions to Strait of Hormuz gas flows tighten global nitrogen fertilizer supply, putting upward pressure on natural gas values internationally while leaving the US relatively insulated. The only nuance raised is Sacks' acknowledgment that gas turbine backlogs may constrain how quickly natural gas capacity can be deployed to meet AI-driven power needs in the near term.",
@@ -6487,13 +6542,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-04-11",
         "basePrice": 18.63,
-        "latestPrice": 11.79,
+        "latestPrice": 11.76,
         "returns": {
           "1m": -0.015029522275898958,
           "3m": -0.19914117015566288,
           "6m": -0.3462157809983897,
           "1y": -0.42673107890499196,
-          "since": -0.3671497584541063
+          "since": -0.3687600644122383
         },
         "history": [
           [
@@ -6734,7 +6789,7 @@
           ],
           [
             "2026-06-16",
-            11.79
+            11.76
           ]
         ],
         "source": "yahoo"
@@ -6771,7 +6826,8 @@
             "coding AI",
             "data moat"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E270-cursor-Jason-3",
@@ -6861,7 +6917,8 @@
             "valuation",
             "AI revenue"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E271-googl-Friedberg-6",
@@ -7009,7 +7066,8 @@
             "AI competition",
             "margins"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Emil Michael"
         },
         {
           "id": "E263-googl-Friedberg-3",
@@ -7228,7 +7286,8 @@
             "AI revenue",
             "competitive position"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E248-googl-Chamath-8",
@@ -7570,7 +7629,8 @@
             "valuation",
             "growth"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Philippe Laffont"
         },
         {
           "id": "E227-googl-Jason-2",
@@ -7792,7 +7852,8 @@
             "competitive moat",
             "chips"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Antonio Gracias"
         },
         {
           "id": "E214-googl-Friedberg-1",
@@ -7866,7 +7927,8 @@
             "revenue growth",
             "competitive position"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E209-googl-Jason-1",
@@ -7915,7 +7977,8 @@
             "product velocity",
             "data advantage"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Aaron Levie"
         },
         {
           "id": "E208-googl-Jason-4",
@@ -8451,13 +8514,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-05-10",
         "basePrice": 168.65,
-        "latestPrice": 372.67,
+        "latestPrice": 373.25,
         "returns": {
           "1m": 0.03771123628817068,
           "3m": -0.03771123628817085,
           "6m": 0.06937444411503106,
           "1y": -0.06042099021642453,
-          "since": 1.2097242810554403
+          "since": 1.213163356062852
         },
         "history": [
           [
@@ -8698,7 +8761,7 @@
           ],
           [
             "2026-06-16",
-            372.67
+            373.25
           ]
         ],
         "source": "yahoo"
@@ -8760,7 +8823,8 @@
             "AI efficiency",
             "valuation"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Marc Benioff"
         },
         {
           "id": "E270-crm-Chamath-6",
@@ -8909,7 +8973,8 @@
             "SaaS",
             "multiple compression"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E217-crm-Chamath-2",
@@ -9072,13 +9137,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-05-31",
         "basePrice": 234.44,
-        "latestPrice": 161.2502,
+        "latestPrice": 161.71,
         "returns": {
           "1m": 0.09285958027640327,
           "3m": 0.05809588807370758,
           "6m": 0.41191776147415116,
           "1y": 0.11593584712506401,
-          "since": -0.3121898993345845
+          "since": -0.31022862992663364
         },
         "history": [
           [
@@ -9311,7 +9376,7 @@
           ],
           [
             "2026-06-16",
-            161.2502
+            161.71
           ]
         ],
         "source": "yahoo"
@@ -9347,7 +9412,8 @@
             "payments",
             "trade deal upside"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Marc Benioff"
         }
       ],
       "synthesis": "The only view on Visa comes from guest Marc Benioff, who holds a low-conviction bullish stance based on a single geopolitical catalyst: a potential opening of the Chinese market to Western payment networks. Benioff notes that China's commerce is currently dominated by Alibaba-linked super-apps, leaving Visa and Mastercard largely locked out, and interprets Visa's CEO being included in the Trump-Xi trade delegation as a signal that this could change. No other hosts weighed in, so there is no agreement or disagreement to note. The thesis is speculative and contingent entirely on a favorable policy outcome from U.S.-China negotiations.",
@@ -9362,13 +9428,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2026-05-15",
         "basePrice": 325.75,
-        "latestPrice": 332.36,
+        "latestPrice": 333.12,
         "returns": {
-          "1m": 0.02029163468917886,
+          "1m": -0.005924788948580221,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": 0.02029163468917886
+          "since": 0.022624712202609375
         },
         "history": [
           [
@@ -9452,8 +9518,12 @@
             322.39
           ],
           [
+            "2026-06-15",
+            323.82
+          ],
+          [
             "2026-06-16",
-            332.36
+            333.12
           ]
         ],
         "source": "yahoo"
@@ -9613,7 +9683,8 @@
             "CEO risk",
             "Tesla board vote"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Elon Musk"
         },
         {
           "id": "E249-tsla-Guest-0",
@@ -9638,7 +9709,8 @@
             "AI compute",
             "product roadmap"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Elon Musk"
         },
         {
           "id": "E248-tsla-Chamath-10",
@@ -9712,7 +9784,8 @@
             "Optimus",
             "physical AI"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E232-tsla-Friedberg-9",
@@ -9833,7 +9906,8 @@
             "AI",
             "manufacturing advantage"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Travis Kalanick"
         },
         {
           "id": "E210-tsla-Chamath-3",
@@ -9882,7 +9956,8 @@
             "competitive moat",
             "M&A"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Cyan Bowers-Franklin"
         },
         {
           "id": "E209-tsla-Guest-2",
@@ -9907,7 +9982,8 @@
             "robotics",
             "adoption"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E209-tsla-Jason-0",
@@ -10020,13 +10096,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-06-14",
         "basePrice": 178.01,
-        "latestPrice": 404.495,
+        "latestPrice": 404.66,
         "returns": {
           "1m": 0.4192461097691141,
           "3m": 0.2739733722824561,
           "6m": 1.6010898264142464,
           "1y": 0.8489410707263637,
-          "since": 1.2723161620133703
+          "since": 1.2732430762316727
         },
         "history": [
           [
@@ -10255,7 +10331,7 @@
           ],
           [
             "2026-06-16",
-            404.495
+            404.66
           ]
         ],
         "source": "yahoo"
@@ -10348,13 +10424,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2026-05-01",
         "basePrice": 963.33,
-        "latestPrice": 1121.66,
+        "latestPrice": 1122.5,
         "returns": {
           "1m": 0.12339489063976,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": 0.16435697009332215
+          "since": 0.16522894542887687
         },
         "history": [
           [
@@ -10483,7 +10559,7 @@
           ],
           [
             "2026-06-16",
-            1121.66
+            1122.5
           ]
         ],
         "source": "yahoo"
@@ -10559,13 +10635,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-09-20",
         "basePrice": 248.29,
-        "latestPrice": 126.325,
+        "latestPrice": 126.77,
         "returns": {
           "1m": -0.01828506987796525,
           "3m": 0.0996818236739298,
           "6m": 0.008780055580168379,
           "1y": -0.02267509766804944,
-          "since": -0.49121994441983163
+          "since": -0.48942768536791653
         },
         "history": [
           [
@@ -10790,7 +10866,7 @@
           ],
           [
             "2026-06-16",
-            126.325
+            126.77
           ]
         ],
         "source": "yahoo"
@@ -10842,13 +10918,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2026-04-17",
         "basePrice": 207.86,
-        "latestPrice": 282.585,
+        "latestPrice": 280.88,
         "returns": {
           "1m": 0.2446358125661501,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": 0.35949677667660906
+          "since": 0.35129414028673134
         },
         "history": [
           [
@@ -11017,7 +11093,7 @@
           ],
           [
             "2026-06-16",
-            282.585
+            280.88
           ]
         ],
         "source": "yahoo"
@@ -11069,13 +11145,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2026-04-17",
         "basePrice": 10.8,
-        "latestPrice": 3.97,
+        "latestPrice": 3.94,
         "returns": {
           "1m": -0.6277777777777779,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": -0.6324074074074074
+          "since": -0.6351851851851853
         },
         "history": [
           [
@@ -11244,7 +11320,7 @@
           ],
           [
             "2026-06-16",
-            3.97
+            3.94
           ]
         ],
         "source": "yahoo"
@@ -11345,7 +11421,8 @@
             "revenue growth",
             "data infrastructure"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E232-snow-Chamath-19",
@@ -11384,13 +11461,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-06-21",
         "basePrice": 213.71,
-        "latestPrice": 238.86,
+        "latestPrice": 238.32,
         "returns": {
           "1m": 0.009077722146834484,
           "3m": 0.07407234102288139,
           "6m": 0.061438397828833445,
           "1y": null,
-          "since": 0.11768284123344722
+          "since": 0.11515605259463751
         },
         "history": [
           [
@@ -11595,7 +11672,7 @@
           ],
           [
             "2026-06-16",
-            238.86
+            238.32
           ]
         ],
         "source": "yahoo"
@@ -11647,13 +11724,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2026-03-27",
         "basePrice": 296.91,
-        "latestPrice": 231.335,
+        "latestPrice": 230.86,
         "returns": {
           "1m": -0.1263345795022062,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": -0.2208581725101883
+          "since": -0.2224579839008454
         },
         "history": [
           [
@@ -11878,7 +11955,7 @@
           ],
           [
             "2026-06-16",
-            231.335
+            230.86
           ]
         ],
         "source": "yahoo"
@@ -11962,7 +12039,8 @@
             "Trump doctrine",
             "geopolitical risk"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E264-uso-Jason-a0",
@@ -12103,7 +12181,8 @@
             "energy supply disruption",
             "Middle East escalation"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Tucker Carlson"
         },
         {
           "id": "E231-uso-Chamath-a0",
@@ -12150,7 +12229,8 @@
             "Trump energy policy",
             "Saudi Arabia-Russia price war"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Mark Cuban"
         },
         {
           "id": "E184-uso-Guest-a0",
@@ -12174,7 +12254,8 @@
             "Ukraine war funding",
             "strategic reserves"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Donald Trump"
         }
       ],
       "synthesis": "The hosts and guests collectively treat oil as a highly geopolitically sensitive commodity rather than a straightforward investment, with views shifting dramatically based on conflict risk and supply dynamics. The dominant near-term theme — particularly across Jason, Friedberg, Sacks, Chamath, and guest Brad in early 2026 — is the Strait of Hormuz closure and Iran conflict, which sent Brent crude spiking from the $60s to as high as $119 before partially retreating; Sacks warns the worst-case scenario (Iranian retaliation against Gulf infrastructure) could devastate regional production even if the Strait reopens, while Chamath and Brad are more sanguine that the conflict will be short-lived and strategic reserve releases will cap price spikes. On the longer-term structural outlook, Friedberg stands alone as a high-conviction bear, arguing electrification and energy storage trends will push oil inexorably toward $45/barrel by 2026, a view sharply at odds with the geopolitical upside risks flagged by others. On the political attribution of past oil-driven inflation, Trump (as a guest) blames Biden-era restrictions, while Mark Cuban counters that Trump's own 2020 OPEC+ deal — cutting production by 10% over two years — was the primary driver of the 2022 inflation peak, reflecting direct disagreement on causality.",
@@ -12189,13 +12270,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-06-20",
         "basePrice": 79.41,
-        "latestPrice": 115.3091,
+        "latestPrice": 115.47,
         "returns": {
           "1m": -0.022541241657221912,
           "3m": -0.08172774209797248,
           "6m": -0.07946102505981617,
           "1y": 0.04671955673089042,
-          "since": 0.45207278680266977
+          "since": 0.4540989799773329
         },
         "history": [
           [
@@ -12424,7 +12505,7 @@
           ],
           [
             "2026-06-16",
-            115.3091
+            115.47
           ]
         ],
         "source": "yahoo"
@@ -12460,7 +12541,8 @@
             "defense industrial base",
             "batteries"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Emil Michael"
         },
         {
           "id": "E247-lit-Chamath-a0",
@@ -12521,13 +12603,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-12-13",
         "basePrice": 43.76,
-        "latestPrice": 83.7991,
+        "latestPrice": 83.6,
         "returns": {
           "1m": -0.07381170018281528,
           "3m": -0.08935100548446062,
           "6m": -0.15607861060329065,
           "1y": 0.4536106032906765,
-          "since": 0.9149702925045704
+          "since": 0.9104204753199269
         },
         "history": [
           [
@@ -12748,7 +12830,7 @@
           ],
           [
             "2026-06-16",
-            83.7991
+            83.6
           ]
         ],
         "source": "yahoo"
@@ -12784,7 +12866,8 @@
             "unmanned systems",
             "government contracts"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Emil Michael"
         }
       ],
       "synthesis": "Based solely on Emil Michael's comments, the guest view on Anduril is cautiously positive: he positions the company as a frontrunner in defense tech, specifically for its focus on unmanned systems, which he sees as central to the future of warfare. He argues that Pentagon contracts flowing to companies like Anduril are critical to sustaining a broader flywheel of defense-tech investment and entrepreneurship. Only one host perspective was provided, so no agreement or disagreement among hosts can be assessed. His conviction is medium, suggesting he sees the thesis as directionally strong but not without uncertainty.",
@@ -12917,7 +13000,8 @@
             "retail gold market",
             "gold scams"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Tucker Carlson"
         },
         {
           "id": "E246-gld-Sacks-a4",
@@ -12967,7 +13051,8 @@
             "geopolitical risk",
             "US debt"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E246-gld-Chamath-a2",
@@ -13147,13 +13232,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-05-31",
         "basePrice": 215.3,
-        "latestPrice": 398.11,
+        "latestPrice": 397.63,
         "returns": {
           "1m": 0.0012540640966092976,
           "3m": 0.0696237807710171,
           "6m": 0.13070134695773333,
           "1y": 0.4476079888527636,
-          "since": 0.8490942870413376
+          "since": 0.8468648397584764
         },
         "history": [
           [
@@ -13386,7 +13471,7 @@
           ],
           [
             "2026-06-16",
-            398.11
+            397.63
           ]
         ],
         "source": "yahoo"
@@ -13437,13 +13522,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2026-02-13",
         "basePrice": 379.08,
-        "latestPrice": 367.47,
+        "latestPrice": 366.13,
         "returns": {
           "1m": -0.12456473567584671,
           "3m": -0.12132003798670468,
           "6m": null,
           "1y": null,
-          "since": -0.030626780626780516
+          "since": -0.034161654532024875
         },
         "history": [
           [
@@ -13616,7 +13701,7 @@
           ],
           [
             "2026-06-16",
-            367.47
+            366.13
           ]
         ],
         "source": "yahoo"
@@ -13774,7 +13859,8 @@
             "tariffs",
             "regulatory risk"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Ryan Peterson"
         }
       ],
       "synthesis": "The hosts hold a broadly constructive but divided view on Amazon, with the most enthusiasm centered on its automation and AI-driven efficiency story. Jason is the clearest bull, arguing at high conviction that robotics (Zoox, warehouse cobots) and AI agents will make Amazon the defining company of the future by dramatically expanding earnings power with far fewer workers — a thesis Sacks partially echoes, framing the automation trend as a structural improvement in operating leverage rather than a job-loss story. Chamath is more nuanced, seeing Amazon's retail arm as a key enabler of physical AI demand while identifying AWS's breadth-over-depth strategy as a bottleneck that requires a decisive move — either proprietary hardware or acquiring Anthropic — to stay competitive in next-gen AI. Friedberg is the clearest bear on AWS specifically, pointing to its slower growth relative to Azure and Google Cloud (17% vs. 26% and 32%) and warning that a major outage will accelerate enterprise diversification away from the platform. A guest raises a separate structural concern about marketplace fairness, arguing Amazon has systematically advantaged unregistered Chinese sellers in ways that undermine its domestic competitiveness.",
@@ -13789,13 +13875,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-05-02",
         "basePrice": 189.98,
-        "latestPrice": 245.92,
+        "latestPrice": 246,
         "returns": {
           "1m": 0.08774607853458267,
           "3m": 0.11406463838298778,
           "6m": 0.3369828402989789,
           "1y": 0.4319928413517214,
-          "since": 0.2944520475839562
+          "since": 0.29487314454153074
         },
         "history": [
           [
@@ -14028,7 +14114,7 @@
           ],
           [
             "2026-06-16",
-            245.92
+            246
           ]
         ],
         "source": "yahoo"
@@ -14064,7 +14150,8 @@
             "revenue growth",
             "data infrastructure"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         }
       ],
       "synthesis": "The only view represented comes from guest Brad Gerstner, who is bullish with high conviction on Databricks as of February 2026. He argues the company is a direct AI beneficiary because AI tooling depends on its data transformation platform, pointing to three consecutive quarters of reaccelerating revenue growth at over 60% as evidence. No other hosts provided theses on Databricks, so there is neither agreement nor disagreement to note among the regular All-In panelists.",
@@ -14130,7 +14217,8 @@
             "space",
             "valuation"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         }
       ],
       "synthesis": "Both Brad Gerstner (guest) and Jason are strongly bullish on the proposed SpaceX-xAI combination, with no notable disagreement between them. Gerstner frames the thesis around the convergence of what he sees as the two largest TAMs — AI and space — citing Starlink's rapid growth and the structural cost advantage of space-based data centers for compute. Jason echoes the conviction, anchoring his view specifically on Musk's track record of execution, arguing that a successful IPO of the combined entity would be a transformative market event. Both hosts treat the space-based data center concept as a key differentiator, and both anticipate strong investor demand upon a public offering.",
@@ -14207,13 +14295,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2026-01-10",
         "basePrice": 36.88,
-        "latestPrice": 39.585,
+        "latestPrice": 39.55,
         "returns": {
           "1m": -0.01491323210412159,
           "3m": -0.027386117136659574,
           "6m": null,
           "1y": null,
-          "since": 0.07334598698481556
+          "since": 0.0723969631236441
         },
         "history": [
           [
@@ -14434,7 +14522,7 @@
           ],
           [
             "2026-06-16",
-            39.585
+            39.55
           ]
         ],
         "source": "yahoo"
@@ -14568,7 +14656,8 @@
             "cloud compute",
             "earnings"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Philippe Laffont"
         },
         {
           "id": "E213-msft-Jason-5",
@@ -14617,7 +14706,8 @@
             "cloud",
             "competitive position"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Reid Hoffman"
         },
         {
           "id": "E185-msft-Sacks-5",
@@ -14657,13 +14747,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-06-29",
         "basePrice": 456.73,
-        "latestPrice": 392.4686,
+        "latestPrice": 393.83,
         "returns": {
           "1m": -0.06568432115254089,
           "3m": -0.05786788693538854,
           "6m": -0.06984432815886855,
           "1y": 0.08906793948284546,
-          "since": -0.1406988811770631
+          "since": -0.1377181266831608
         },
         "history": [
           [
@@ -14888,7 +14978,7 @@
           ],
           [
             "2026-06-16",
-            392.4686
+            393.83
           ]
         ],
         "source": "yahoo"
@@ -15183,13 +15273,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-01-25",
         "basePrice": 97.189,
-        "latestPrice": 78.385,
+        "latestPrice": 78.72,
         "returns": {
           "1m": 0.005504738190536078,
           "3m": 0.13338958112543614,
           "6m": 0.2146333432795894,
           "1y": -0.11821296648797694,
-          "since": -0.19347868585951075
+          "since": -0.19003179372151166
         },
         "history": [
           [
@@ -15426,7 +15516,7 @@
           ],
           [
             "2026-06-16",
-            78.385
+            78.72
           ]
         ],
         "source": "yahoo"
@@ -15584,13 +15674,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2026-01-10",
         "basePrice": 117.52,
-        "latestPrice": 95.735,
+        "latestPrice": 96.71,
         "returns": {
           "1m": -0.2716133424098026,
           "3m": -0.4112491490810075,
           "6m": null,
           "1y": null,
-          "since": -0.1853727025187202
+          "since": -0.17707624234172908
         },
         "history": [
           [
@@ -15811,7 +15901,7 @@
           ],
           [
             "2026-06-16",
-            95.735
+            96.71
           ]
         ],
         "source": "yahoo"
@@ -15921,7 +16011,8 @@
             "infrastructure",
             "investment"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Mark Cuban"
         }
       ],
       "synthesis": "The hosts are broadly bullish on Groq as a picks-and-shovels AI infrastructure play, with Chamath — a co-founder and investor — being the most vocal and highest-conviction advocate across multiple data points. Chamath cites Groq's SRAM-heavy, decode-optimized chip architecture as uniquely suited for AI inference in a way NVIDIA GPUs cannot replicate, and points to a $1.7B inference deal with Saudi Arabia, a rare US export license, and a licensing arrangement with NVIDIA as evidence that Groq is becoming a foundational infrastructure layer. He also notes real-world commercial validation, with his firm 8090 redirecting significant workloads to Groq due to its superior performance and lower cost relative to AWS Bedrock, OpenAI, and Anthropic. Mark Cuban offered a more neutral, medium-conviction endorsement, framing his co-investment with Chamath simply as a picks-and-shovels AI infrastructure bet without elaborating on Groq's specific technical or commercial merits.",
@@ -15977,13 +16068,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-12-19",
         "basePrice": 1056.02,
-        "latestPrice": 1816.71,
+        "latestPrice": 1803.89,
         "returns": {
           "1m": 0.2557242287077896,
           "3m": 0.29390541845798385,
           "6m": null,
           "1y": null,
-          "since": 0.7203367360466658
+          "since": 0.7081968144542719
         },
         "history": [
           [
@@ -16152,7 +16243,7 @@
           ],
           [
             "2026-06-16",
-            1816.71
+            1803.89
           ]
         ],
         "source": "yahoo"
@@ -16227,13 +16318,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-06-28",
         "basePrice": 55.98,
-        "latestPrice": 73.675,
+        "latestPrice": 73.83,
         "returns": {
           "1m": -0.07038227938549478,
           "3m": 0.024651661307609908,
           "6m": 0.24205073240443023,
           "1y": null,
-          "since": 0.3160950339406931
+          "since": 0.3188638799571276
         },
         "history": [
           [
@@ -16434,7 +16525,7 @@
           ],
           [
             "2026-06-16",
-            73.675
+            73.83
           ]
         ],
         "source": "yahoo"
@@ -16510,13 +16601,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-12-13",
         "basePrice": 29.71,
-        "latestPrice": 26.56,
+        "latestPrice": 26.6,
         "returns": {
           "1m": -0.028609895658027646,
           "3m": -0.0865028609895658,
           "6m": -0.09693705822955243,
           "1y": null,
-          "since": -0.10602490743857294
+          "since": -0.10467855940760684
         },
         "history": [
           [
@@ -16689,7 +16780,7 @@
           ],
           [
             "2026-06-16",
-            26.56
+            26.6
           ]
         ],
         "source": "yahoo"
@@ -16904,13 +16995,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-07-26",
         "basePrice": 27.18,
-        "latestPrice": 131.94,
+        "latestPrice": 133.25,
         "returns": {
           "1m": 0.13502575423105231,
           "3m": 0.6545253863134658,
           "6m": 1.7755702722590139,
           "1y": 4.8086828550404705,
-          "since": 3.854304635761589
+          "since": 3.902501839587932
         },
         "history": [
           [
@@ -17155,7 +17246,7 @@
           ],
           [
             "2026-06-16",
-            131.94
+            133.25
           ]
         ],
         "source": "yahoo"
@@ -17192,7 +17283,8 @@
             "competitive moat",
             "Grokipedia"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Elon Musk"
         }
       ],
       "synthesis": "The sole view represented comes from Elon Musk himself (appearing as a guest), who is highly bullish on the X/xAI combination. His core thesis is that integrating Grok deeply into X — processing 100 million posts per day to enable semantic search and power products like Grokipedia — creates a fundamentally superior AI-driven information platform that can displace incumbents such as Google Search and Wikipedia. No other hosts offered a thesis on this company, so there is no agreement or disagreement to note among the All-In panel. The conviction is entirely Musk's own, framed around real-time data advantages and product quality rather than financial metrics.",
@@ -17257,7 +17349,8 @@
             "technology readiness",
             "scale"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Travis Kalanick"
         },
         {
           "id": "E209-waymo-Friedberg-22",
@@ -17322,7 +17415,8 @@
             "competitive position",
             "revenue growth"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
         }
       ],
       "synthesis": "The sole perspective provided comes from a guest host, who holds a neutral, medium-conviction view on AMD centered on its OpenAI deal. The guest frames CEO Lisa Su's commitment to develop the MI450 chip for OpenAI as a binary, high-stakes wager: success could unlock roughly $150 billion in incremental revenue and restore AMD's relevance in AI hardware, while failure would leave the company largely shut out of the AI wave. No other hosts weighed in, so there is no agreement or disagreement to note. The overall stance is cautiously uncertain — acknowledging meaningful upside potential while emphasizing that the outcome is far from guaranteed.",
@@ -17337,13 +17431,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-10-10",
         "basePrice": 214.9,
-        "latestPrice": 512.54,
+        "latestPrice": 507.29,
         "returns": {
           "1m": 0.13531875290832937,
           "3m": -0.03355048859934857,
           "6m": 0.14025127966496037,
           "1y": null,
-          "since": 1.3850162866449511
+          "since": 1.360586319218241
         },
         "history": [
           [
@@ -17576,7 +17670,7 @@
           ],
           [
             "2026-06-16",
-            512.54
+            507.29
           ]
         ],
         "source": "yahoo"
@@ -17653,13 +17747,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-10-03",
         "basePrice": 200.69,
-        "latestPrice": 203.01,
+        "latestPrice": 203.02,
         "returns": {
           "1m": -0.0039862474463102865,
           "3m": 0.01828691015994826,
           "6m": 0.017290348298370617,
           "1y": null,
-          "since": 0.011560117594299632
+          "since": 0.011609945687378607
         },
         "history": [
           [
@@ -17896,7 +17990,7 @@
           ],
           [
             "2026-06-16",
-            203.01
+            203.02
           ]
         ],
         "source": "yahoo"
@@ -18029,13 +18123,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-10-03",
         "basePrice": 37.89,
-        "latestPrice": 28.36,
+        "latestPrice": 28.06,
         "returns": {
           "1m": -0.008973343890208587,
           "3m": 0.21166534705727094,
           "6m": -0.4196357878068092,
           "1y": null,
-          "since": -0.25151755080496174
+          "since": -0.25943520717867513
         },
         "history": [
           [
@@ -18276,7 +18370,7 @@
           ],
           [
             "2026-06-16",
-            28.36
+            28.06
           ]
         ],
         "source": "yahoo"
@@ -18362,7 +18456,8 @@
             "corporate governance",
             "competitive position"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E193-intc-Friedberg-0",
@@ -18401,13 +18496,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-08-23",
         "basePrice": 20.54,
-        "latestPrice": 118.27,
+        "latestPrice": 117.05,
         "returns": {
           "1m": 0.09834469328140212,
           "3m": 0.21080817916260963,
           "6m": 0.18159688412852973,
           "1y": 0.19522882181110038,
-          "since": 4.758033106134372
+          "since": 4.698636806231742
         },
         "history": [
           [
@@ -18640,7 +18735,7 @@
           ],
           [
             "2026-06-16",
-            118.27
+            117.05
           ]
         ],
         "source": "yahoo"
@@ -18677,7 +18772,8 @@
             "distribution",
             "partnerships"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         },
         {
           "id": "E235-xai-grok-Chamath-0",
@@ -19047,13 +19143,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-07-04",
         "basePrice": 376.93,
-        "latestPrice": 206.855,
+        "latestPrice": 207.32,
         "returns": {
           "1m": -0.10102671583583155,
           "3m": -0.07107420475950448,
           "6m": -0.12036717692940335,
           "1y": null,
-          "since": -0.451211100204282
+          "since": -0.4499774493937867
         },
         "history": [
           [
@@ -19298,7 +19394,7 @@
           ],
           [
             "2026-06-16",
-            206.855
+            207.32
           ]
         ],
         "source": "yahoo"
@@ -19422,13 +19518,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-10-18",
         "basePrice": 79.16,
-        "latestPrice": 73.33,
+        "latestPrice": 73.25,
         "returns": {
           "1m": -0.12417887822132388,
           "3m": -0.1442647801920162,
           "6m": -0.07882769075290545,
           "1y": 0.183678625568469,
-          "since": -0.07364830722587164
+          "since": -0.07465891864578066
         },
         "history": [
           [
@@ -19673,7 +19769,7 @@
           ],
           [
             "2026-06-16",
-            73.33
+            73.25
           ]
         ],
         "source": "yahoo"
@@ -19920,13 +20016,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-05-17",
         "basePrice": 62.78,
-        "latestPrice": 100.105,
+        "latestPrice": 100.72,
         "returns": {
           "1m": 0.06865243708187324,
           "3m": 0.11771264733991718,
           "6m": 0.24896463841987887,
           "1y": 0.5289901242433895,
-          "since": 0.5945364765848997
+          "since": 0.6043325899968143
         },
         "history": [
           [
@@ -20147,7 +20243,7 @@
           ],
           [
             "2026-06-16",
-            100.105
+            100.72
           ]
         ],
         "source": "yahoo"
@@ -20199,13 +20295,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-05-17",
         "basePrice": 315.89,
-        "latestPrice": 407.84,
+        "latestPrice": 407.65,
         "returns": {
           "1m": -0.02222292570198481,
           "3m": -0.023425876096109334,
           "6m": 0.014657000854727898,
           "1y": 0.23818417803665837,
-          "since": 0.2910823387888189
+          "since": 0.2904808635917566
         },
         "history": [
           [
@@ -20426,7 +20522,7 @@
           ],
           [
             "2026-06-16",
-            407.84
+            407.65
           ]
         ],
         "source": "yahoo"
@@ -20463,7 +20559,8 @@
             "regulation",
             "MFN"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Ben Shapiro"
         },
         {
           "id": "E228-pharma-industry-broad-Chamath-4",
@@ -20601,7 +20698,8 @@
             "public markets",
             "strategy"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Keith Rabois"
         }
       ],
       "synthesis": "The hosts collectively view Stripe as an exceptionally high-quality company with strong long-term prospects, though opinions diverge on its private status. Chamath is the most vocal, expressing deep regret at missing early investment opportunities, bullishness on Stripe's underappreciated ecosystem of ancillary products (such as a $500M ARR billing product), and including it in his \"new Mag 7\" basket of must-own companies for the next decade — arguing investors shouldn't overlook it simply because it's private. Guest Keith Rabois shares appreciation for Stripe's value but takes a more pointed stance on its corporate strategy, arguing the company is making a mistake by staying private and forgoing access to public currency for strategic M&A. Both hosts converge on the view that Stripe is a premier asset, but diverge on whether its private status is a strategic misstep (Rabois) or a manageable inconvenience for investors (Chamath).",
@@ -20656,13 +20754,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-05-09",
         "basePrice": 491.78,
-        "latestPrice": 576.48,
+        "latestPrice": 574.1,
         "returns": {
           "1m": 0.030359103664240123,
           "3m": -0.056651348163813,
           "6m": -0.11952499084956683,
           "1y": 0.06092155028671365,
-          "since": 0.17223148562365295
+          "since": 0.16739192321769908
         },
         "history": [
           [
@@ -20891,7 +20989,7 @@
           ],
           [
             "2026-06-16",
-            576.48
+            574.1
           ]
         ],
         "source": "yahoo"
@@ -20951,7 +21049,8 @@
             "business model",
             "competitive moat"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Aaron Levie"
         }
       ],
       "synthesis": "Box's sole representative in these theses is its own CEO, Aaron Levie, who appears twice with views ranging from moderately bullish to neutral-but-optimistic. In December 2024, Levie emphasized Box's business durability — noting it weathered the post-COVID SaaS correction and achieved 82% gross margins despite offering unlimited storage on commoditized infrastructure, demonstrating that its value lies in software rather than storage. By May 2025, his framing shifted toward opportunity, arguing that AI agents represent a meaningful TAM expansion for Box and peers, as the industry moves from seat-based pricing toward capturing a share of labor spend on outcomes previously out of reach. No other hosts offered a competing or corroborating view, so the overall picture is one of measured confidence in Box's resilience and cautious optimism about its AI-driven growth potential, drawn entirely from the company's own leadership.",
@@ -20966,13 +21065,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-12-20",
         "basePrice": 32.03,
-        "latestPrice": 25.645,
+        "latestPrice": 25.65,
         "returns": {
           "1m": -0.005307524196066241,
           "3m": -0.05650952232282242,
           "6m": 0.07118326568841714,
           "1y": -0.059007180768029986,
-          "since": -0.19934436465813304
+          "since": -0.1991882610053076
         },
         "history": [
           [
@@ -21189,7 +21288,7 @@
           ],
           [
             "2026-06-16",
-            25.645
+            25.65
           ]
         ],
         "source": "yahoo"
@@ -21272,7 +21371,8 @@
             "US vs China",
             "uranium supply"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Thomas Laffont"
         },
         {
           "id": "E200-ura-Friedberg-a0",
@@ -21312,13 +21412,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-10-18",
         "basePrice": 33.46,
-        "latestPrice": 47.98,
+        "latestPrice": 47.87,
         "returns": {
           "1m": -0.04692169754931262,
           "3m": -0.12791392707710703,
           "6m": -0.3290496114763898,
           "1y": 0.5965331739390317,
-          "since": 0.4339509862522414
+          "since": 0.4306634787806335
         },
         "history": [
           [
@@ -21558,8 +21658,12 @@
             50.28
           ],
           [
+            "2026-06-15",
+            48.06
+          ],
+          [
             "2026-06-16",
-            47.98
+            47.87
           ]
         ],
         "source": "yahoo"
@@ -21610,13 +21714,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-04-05",
         "basePrice": 47.12,
-        "latestPrice": 7.55,
+        "latestPrice": 7.5,
         "returns": {
           "1m": -0.5108234295415959,
           "3m": -0.692062818336163,
           "6m": -0.7232597623089984,
           "1y": -0.8834889643463497,
-          "since": -0.8397707979626486
+          "since": -0.8408319185059423
         },
         "history": [
           [
@@ -21861,7 +21965,7 @@
           ],
           [
             "2026-06-16",
-            7.55
+            7.5
           ]
         ],
         "source": "yahoo"
@@ -22115,13 +22219,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-08-16",
         "basePrice": 179.99,
-        "latestPrice": 227.33,
+        "latestPrice": 227.49,
         "returns": {
           "1m": -0.1357853214067448,
           "3m": -0.2006778154341908,
           "6m": 0.027668203789099337,
           "1y": 0.29123840213345176,
-          "since": 0.2630146119228846
+          "since": 0.26390355019723316
         },
         "history": [
           [
@@ -22358,7 +22462,7 @@
           ],
           [
             "2026-06-16",
-            227.33
+            227.49
           ]
         ],
         "source": "yahoo"
@@ -22549,7 +22653,8 @@
             "geopolitics",
             "valuation"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Mark Pincus"
         },
         {
           "id": "E209-baba-Friedberg-24",
@@ -22589,13 +22694,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-01-04",
         "basePrice": 85.52,
-        "latestPrice": 110.04,
+        "latestPrice": 110.97,
         "returns": {
           "1m": 0.1967960710944808,
           "3m": 0.36272217025257264,
           "6m": 0.24263330215154352,
           "1y": 0.8271749298409729,
-          "since": 0.28671655753040237
+          "since": 0.2975912067352667
         },
         "history": [
           [
@@ -22808,7 +22913,7 @@
           ],
           [
             "2026-06-16",
-            110.04
+            110.97
           ]
         ],
         "source": "yahoo"
@@ -22925,7 +23030,8 @@
             "social media",
             "regulation"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Thomas Laffont"
         }
       ],
       "synthesis": "The sole perspective offered comes from guest Thomas Lafont, an existing ByteDance investor, who holds a bullish but medium-conviction view on TikTok's US asset. He estimates the US franchise is worth roughly $100 billion, grounding the figure in the observation that TikTok's time-spent metrics are roughly on par with Meta despite having only about half the daily active users. Lafont acknowledges that regulatory uncertainty and deal complexity make precise valuation difficult, tempering his confidence. No other hosts weighed in, so there is no agreement or disagreement to note among the regular panelists.",
@@ -23007,7 +23113,8 @@
             "power demand",
             "data centers"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Thomas Laffont"
         }
       ],
       "synthesis": "Thomas Lafont is the sole host offering a view on Constellation Energy, expressing a medium-conviction bullish stance. He points to the company's direct behind-the-meter power agreements with Amazon and Microsoft, as well as a contract with the Biden administration, as evidence that nuclear energy is gaining broad, bipartisan recognition as the preferred power source for AI data centers. No other hosts provided theses on the company, so there is neither agreement nor disagreement to note among the group.",
@@ -23022,13 +23129,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-01-25",
         "basePrice": 275,
-        "latestPrice": 268.41,
+        "latestPrice": 268,
         "returns": {
           "1m": -0.03887272727272727,
           "3m": -0.1891272727272727,
           "6m": 0.19036363636363646,
           "1y": 0.03734545454545448,
-          "since": -0.023963636363636274
+          "since": -0.025454545454545455
         },
         "history": [
           [
@@ -23265,7 +23372,7 @@
           ],
           [
             "2026-06-16",
-            268.41
+            268
           ]
         ],
         "source": "yahoo"
@@ -23519,7 +23626,8 @@
             "AI agents",
             "competitive position"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         }
       ],
       "synthesis": "All three contributors are high-conviction bears on enterprise SaaS heading into 2025, with no disagreement on direction. Guest Gavin Baker argues that AI agents will erode the need for traditional enterprise applications, and that incumbents are structurally disadvantaged because they lack proprietary models and compute, leaving the agent layer to the major cloud providers. Chamath frames the threat as a pricing disruption, predicting that AI-native competitors will undercut bloated legacy vendors dramatically while delivering comparable functionality. Friedberg reinforces that view from a revenue-model angle, emphasizing that per-seat pricing compression and the rise of in-house AI tooling will squeeze vertical SaaS players in particular — a thesis he held in the prior year and is doubling down on. Collectively, the hosts see AI as a fundamental structural threat to the enterprise SaaS business model, not merely a cyclical headwind.",
@@ -23559,7 +23667,8 @@
             "DOGE",
             "defense contractors"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         }
       ],
       "synthesis": "Guest Gavin Baker holds a high-conviction bearish view on companies that derive more than 35% of their revenue from U.S. government contracts, naming them among the biggest likely business losers of 2025. His core rationale is that DOGE's intensified scrutiny of government spending will directly pressure these contractors' top lines. No other hosts weighed in, so the view reflects Baker's individual thesis rather than a broader panel consensus.",
@@ -23600,7 +23709,8 @@
             "China",
             "consolidation"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         }
       ],
       "synthesis": "The hosts present a uniformly bearish view on traditional auto OEMs, with Gavin Baker explicitly aligning with Chamath at high conviction. The core thesis is that legacy automakers face a structural squeeze from two sides: Tesla competing in Western markets and Chinese OEMs producing more competitive products globally. Both Baker and Chamath see the loss of the Chinese market as particularly damaging, with Baker noting that traditional OEMs \"don't make competitive products anymore\" there, and both suggest meaningful recovery is unlikely without major government intervention.",
@@ -23696,13 +23806,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-01-04",
         "basePrice": 179.49,
-        "latestPrice": 177.08,
+        "latestPrice": 175.39,
         "returns": {
           "1m": 0.1995654354003008,
           "3m": -0.5157947517967575,
           "6m": -0.14552342748899663,
           "1y": 0.3596857763663714,
-          "since": -0.013426931862499283
+          "since": -0.022842498189314293
         },
         "history": [
           [
@@ -23915,7 +24025,7 @@
           ],
           [
             "2026-06-16",
-            177.08
+            175.39
           ]
         ],
         "source": "yahoo"
@@ -23967,13 +24077,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2025-01-04",
         "basePrice": 175.02,
-        "latestPrice": 171.08,
+        "latestPrice": 170.03,
         "returns": {
           "1m": 0.11170151982630547,
           "3m": -0.06776368415038289,
           "6m": 0.4106387841389554,
           "1y": 0.29539481202148316,
-          "since": -0.022511712947091745
+          "since": -0.028511027311164488
         },
         "history": [
           [
@@ -24186,7 +24296,7 @@
           ],
           [
             "2026-06-16",
-            171.08
+            170.03
           ]
         ],
         "source": "yahoo"
@@ -24223,7 +24333,8 @@
             "debt sustainability",
             "valuation"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
         }
       ],
       "synthesis": "The sole view provided comes from guest Gavin Baker, who holds a bearish, medium-conviction stance on MicroStrategy as of December 2024. His core concern is that the company's debt-fueled Bitcoin accumulation strategy is built on a fragile foundation: the underlying software business generates only ~$400M in annual revenue, which Baker argues is insufficient to service the growing interest expense if debt markets lose confidence in Bitcoin as collateral. He warns the strategy will eventually reach a scale where it becomes untenable, with no structural backstop beyond Bitcoin's continued acceptance as collateral by fixed-income investors. No other hosts provided theses, so no points of agreement or disagreement can be drawn from the supplied material.",
@@ -24238,13 +24349,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-12-07",
         "basePrice": 365.34,
-        "latestPrice": 123.7648,
+        "latestPrice": 122.81,
         "returns": {
           "1m": -0.06544588602397758,
           "3m": -0.21393770186675418,
           "6m": 0.07330158208791819,
           "1y": -0.4972080801445229,
-          "since": -0.6612339190890677
+          "since": -0.6638473750479006
         },
         "history": [
           [
@@ -24469,7 +24580,7 @@
           ],
           [
             "2026-06-16",
-            123.7648
+            122.81
           ]
         ],
         "source": "yahoo"
@@ -24561,13 +24672,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-11-01",
         "basePrice": 41.76,
-        "latestPrice": 56.69,
+        "latestPrice": 56.84,
         "returns": {
           "1m": 0.12643678160919544,
           "3m": 0.1065613026819924,
           "6m": -0.03807471264367807,
           "1y": 0.2825670498084292,
-          "since": 0.3575191570881226
+          "since": 0.36111111111111127
         },
         "history": [
           [
@@ -24804,7 +24915,7 @@
           ],
           [
             "2026-06-16",
-            56.69
+            56.84
           ]
         ],
         "source": "yahoo"
@@ -24956,13 +25067,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-08-16",
         "basePrice": 94.81,
-        "latestPrice": 101.13,
+        "latestPrice": 101.68,
         "returns": {
           "1m": 0.01582111591604261,
           "3m": 0.0589600253137855,
           "6m": 0.19217382132686422,
           "1y": -0.023942622086277777,
-          "since": 0.0666596350595928
+          "since": 0.0724607108954752
         },
         "history": [
           [
@@ -25199,7 +25310,7 @@
           ],
           [
             "2026-06-16",
-            101.13
+            101.68
           ]
         ],
         "source": "yahoo"
@@ -25342,13 +25453,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-10-18",
         "basePrice": 159.61,
-        "latestPrice": 244.895,
+        "latestPrice": 243.56,
         "returns": {
           "1m": 0.13025499655410055,
           "3m": 0.1365202681536244,
           "6m": -0.08107261449783863,
           "1y": 0.3673955265960778,
-          "since": 0.5343336883653905
+          "since": 0.5259695507800262
         },
         "history": [
           [
@@ -25593,7 +25704,7 @@
           ],
           [
             "2026-06-16",
-            244.895
+            243.56
           ]
         ],
         "source": "yahoo"
@@ -25629,7 +25740,8 @@
             "real estate",
             "NBA"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Mark Cuban"
         }
       ],
       "synthesis": "Mark Cuban holds a bullish view on the Dallas Mavericks at medium conviction, arguing that NBA team valuations have not yet peaked. His core thesis rests on a speculative but high-upside catalyst: the potential development of a large-scale casino complex around American Airlines Center, which he believes could push the franchise's value to $20 billion. This rationale directly informed his decision to retain a 27.7% stake rather than selling outright. With only one host offering a view, there is no disagreement or corroboration from the other All-In hosts on this topic.",
@@ -25669,7 +25781,8 @@
             "pharmacy",
             "growth trajectory"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "high",
+          "guestName": "Mark Cuban"
         }
       ],
       "synthesis": "The sole host perspective on Cost Plus Drugs comes from guest Mark Cuban, who holds a bullish, high-conviction view as of October 2024. He argues the company is on a steep, accelerating growth trajectory by directly disrupting pharmacy benefit managers through radical price transparency. Cuban acknowledges the business is currently unprofitable but attributes this to capital investment in a robotics-driven manufacturing facility, expressing confidence that profitability will follow. No other hosts weighed in, so there is no disagreement or consensus to note beyond Cuban's own framing.",
@@ -25812,13 +25925,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-08-09",
         "basePrice": 115.08,
-        "latestPrice": 141.135,
+        "latestPrice": 141.2,
         "returns": {
           "1m": 0.011122697254084126,
           "3m": 0.19395203336809183,
           "6m": 0.1751824817518249,
           "1y": 0.027980535279805343,
-          "since": 0.22640771637121995
+          "since": 0.2269725408411539
         },
         "history": [
           [
@@ -26055,7 +26168,7 @@
           ],
           [
             "2026-06-16",
-            141.135
+            141.2
           ]
         ],
         "source": "yahoo"
@@ -26105,13 +26218,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-09-06",
         "basePrice": 167.91,
-        "latestPrice": 279.365,
+        "latestPrice": 279.9,
         "returns": {
           "1m": 0.0063129057233041646,
           "3m": 0.2086832231552617,
           "6m": 0.06801262581144671,
           "1y": 0.17551069025072955,
-          "since": 0.6637782145196832
+          "since": 0.6669644452385205
         },
         "history": [
           [
@@ -26340,7 +26453,7 @@
           ],
           [
             "2026-06-16",
-            279.365
+            279.9
           ]
         ],
         "source": "yahoo"
@@ -26392,13 +26505,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-08-16",
         "basePrice": 73.45,
-        "latestPrice": 120.825,
+        "latestPrice": 121.03,
         "returns": {
           "1m": 0.0968005445881552,
           "3m": 0.14472430224642607,
           "6m": 0.41293396868618104,
           "1y": 0.371000680735194,
-          "since": 0.64499659632403
+          "since": 0.647787610619469
         },
         "history": [
           [
@@ -26635,7 +26748,7 @@
           ],
           [
             "2026-06-16",
-            120.825
+            121.03
           ]
         ],
         "source": "yahoo"
@@ -26686,13 +26799,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-08-16",
         "basePrice": 52.47,
-        "latestPrice": 32.865,
+        "latestPrice": 32.61,
         "returns": {
           "1m": 0.09891366495140076,
           "3m": 0.12083095101963033,
           "6m": 0.03849818944158573,
           "1y": -0.17324185248713544,
-          "since": -0.37364208118925096
+          "since": -0.37850200114351057
         },
         "history": [
           [
@@ -26929,7 +27042,7 @@
           ],
           [
             "2026-06-16",
-            32.865
+            32.61
           ]
         ],
         "source": "yahoo"
@@ -27021,13 +27134,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-07-26",
         "basePrice": 256.16,
-        "latestPrice": 681.705,
+        "latestPrice": 679.49,
         "returns": {
           "1m": 0.0379059962523422,
           "3m": 0.17629606495940023,
           "6m": 0.45904903185509044,
           "1y": 0.8433010618363521,
-          "since": 1.6612468769519049
+          "since": 1.6525999375390379
         },
         "history": [
           [
@@ -27272,7 +27385,7 @@
           ],
           [
             "2026-06-16",
-            681.705
+            679.49
           ]
         ],
         "source": "yahoo"
@@ -27323,13 +27436,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-07-26",
         "basePrice": 37.51,
-        "latestPrice": 52.75,
+        "latestPrice": 52.34,
         "returns": {
           "1m": 0.09517462010130633,
           "3m": 0.11996800853105839,
           "6m": 0.33697680618501735,
           "1y": 0.5035990402559318,
-          "since": 0.4062916555585178
+          "since": 0.3953612370034659
         },
         "history": [
           [
@@ -27574,7 +27687,7 @@
           ],
           [
             "2026-06-16",
-            52.75
+            52.34
           ]
         ],
         "source": "yahoo"
@@ -27665,13 +27778,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-07-04",
         "basePrice": 39.71,
-        "latestPrice": 27.49,
+        "latestPrice": 27.42,
         "returns": {
           "1m": 0.09821203727020898,
           "3m": 0.055653487786451794,
           "6m": 0.45152354570637115,
           "1y": 0.0007554772097708672,
-          "since": -0.30773105011332164
+          "since": -0.3094938302694535
         },
         "history": [
           [
@@ -27896,7 +28009,7 @@
           ],
           [
             "2026-06-16",
-            27.49
+            27.42
           ]
         ],
         "source": "yahoo"
@@ -28013,13 +28126,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-06-07",
         "basePrice": 28.22,
-        "latestPrice": 21.25,
+        "latestPrice": 21.46,
         "returns": {
           "1m": -0.13359319631467043,
           "3m": -0.14068036853295532,
           "6m": -0.010276399716513082,
           "1y": 0.07512402551382003,
-          "since": -0.24698795180722888
+          "since": -0.2395464209780297
         },
         "history": [
           [
@@ -28252,7 +28365,7 @@
           ],
           [
             "2026-06-16",
-            21.25
+            21.46
           ]
         ],
         "source": "yahoo"
@@ -28303,13 +28416,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-05-31",
         "basePrice": 139.56,
-        "latestPrice": 406.14,
+        "latestPrice": 404.08,
         "returns": {
           "1m": 0.023359128690169036,
           "3m": -0.2062912009171683,
           "6m": -0.09830897105187732,
           "1y": -0.22556606477500718,
-          "since": 1.910146173688736
+          "since": 1.8953854972771567
         },
         "history": [
           [
@@ -28542,7 +28655,7 @@
           ],
           [
             "2026-06-16",
-            406.14
+            404.08
           ]
         ],
         "source": "yahoo"
@@ -28593,13 +28706,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-05-24",
         "basePrice": 258.11,
-        "latestPrice": 286.99,
+        "latestPrice": 287.93,
         "returns": {
           "1m": 0.008794699934136537,
           "3m": 0.11843787532447403,
           "6m": 0.14753399713300525,
           "1y": 0.2202161868970593,
-          "since": 0.1118902793382666
+          "since": 0.11553213746077251
         },
         "history": [
           [
@@ -28836,7 +28949,7 @@
           ],
           [
             "2026-06-16",
-            286.99
+            287.93
           ]
         ],
         "source": "yahoo"
@@ -29019,13 +29132,13 @@
         "asOf": "2026-06-16",
         "anchorDate": "2024-05-17",
         "basePrice": 179.14,
-        "latestPrice": 127.64,
+        "latestPrice": 128.07,
         "returns": {
           "1m": 0.18270626325778733,
           "3m": 0.15652562241822052,
           "6m": 0.7132968627888804,
           "1y": 1.9040415317628674,
-          "since": -0.2874846488779725
+          "since": -0.28508429161549625
         },
         "history": [
           [
@@ -29262,7 +29375,7 @@
           ],
           [
             "2026-06-16",
-            127.64
+            128.07
           ]
         ],
         "source": "yahoo"
@@ -29384,11 +29497,11 @@
     "benchmarkSymbol": "SPY",
     "contributionPerCall": 1000,
     "totalInvested": 15000,
-    "portfolioValue": 18006,
-    "benchmarkValue": 17477,
-    "portfolioReturn": 0.2003999999999999,
-    "benchmarkReturn": 0.16513333333333335,
-    "outperformance": 0.03526666666666656,
+    "portfolioValue": 18028,
+    "benchmarkValue": 17479,
+    "portfolioReturn": 0.20186666666666664,
+    "benchmarkReturn": 0.16526666666666667,
+    "outperformance": 0.036599999999999966,
     "constituents": [
       {
         "slug": "tsla",
@@ -29402,10 +29515,10 @@
         ],
         "entryDate": "2024-06-14",
         "entryPrice": 178.01,
-        "latestPrice": 404.5,
-        "sinceReturn": 1.2723161620133703,
-        "benchmarkReturn": 0.3821990493385903,
-        "alpha": 0.89011711267478,
+        "latestPrice": 404.66,
+        "sinceReturn": 1.2732430762316724,
+        "benchmarkReturn": 0.382383286045912,
+        "alpha": 0.8908597901857604,
         "hosts": [
           "Sacks",
           "Jason",
@@ -29426,10 +29539,10 @@
         ],
         "entryDate": "2024-11-01",
         "entryPrice": 171.29,
-        "latestPrice": 372.67,
-        "sinceReturn": 1.1756669974896377,
-        "benchmarkReturn": 0.31379588119921564,
-        "alpha": 0.861871116290422,
+        "latestPrice": 373.25,
+        "sinceReturn": 1.1790530678965498,
+        "benchmarkReturn": 0.31397100028019076,
+        "alpha": 0.8650820676163591,
         "hosts": [
           "Friedberg",
           "Sacks",
@@ -29449,10 +29562,10 @@
         ],
         "entryDate": "2026-04-17",
         "entryPrice": 207.86,
-        "latestPrice": 282.58,
-        "sinceReturn": 0.35949677667660906,
-        "benchmarkReturn": 0.0564536570253753,
-        "alpha": 0.30304311965123376,
+        "latestPrice": 280.88,
+        "sinceReturn": 0.35129414028673134,
+        "benchmarkReturn": 0.05659447432900566,
+        "alpha": 0.2946996659577257,
         "hosts": [
           "Chamath"
         ]
@@ -29469,10 +29582,10 @@
         ],
         "entryDate": "2024-09-06",
         "entryPrice": 167.91,
-        "latestPrice": 279.31,
-        "sinceReturn": 0.6634506580906439,
-        "benchmarkReturn": 0.38838922200014814,
-        "alpha": 0.2750614360904957,
+        "latestPrice": 279.9,
+        "sinceReturn": 0.6669644452385206,
+        "benchmarkReturn": 0.38857428381079284,
+        "alpha": 0.27839016142772777,
         "hosts": [
           "Chamath"
         ]
@@ -29489,10 +29602,10 @@
         ],
         "entryDate": "2026-05-01",
         "entryPrice": 963.33,
-        "latestPrice": 1121.66,
-        "sinceReturn": 0.16435697009332206,
-        "benchmarkReturn": 0.04104627766599611,
-        "alpha": 0.12331069242732595,
+        "latestPrice": 1122.5,
+        "sinceReturn": 0.1652289454288769,
+        "benchmarkReturn": 0.04118504128217593,
+        "alpha": 0.12404390414670097,
         "hosts": [
           "Friedberg"
         ]
@@ -29509,10 +29622,10 @@
         ],
         "entryDate": "2025-01-06",
         "entryPrice": 85.52,
-        "latestPrice": 110.04,
-        "sinceReturn": 0.2867165575304025,
-        "benchmarkReturn": 0.2601283257188929,
-        "alpha": 0.0265882318115096,
+        "latestPrice": 110.97,
+        "sinceReturn": 0.2975912067352666,
+        "benchmarkReturn": 0.2602962913195379,
+        "alpha": 0.03729491541572871,
         "hosts": [
           "Friedberg"
         ]
@@ -29529,10 +29642,10 @@
         ],
         "entryDate": "2025-12-15",
         "entryPrice": 67.53,
-        "latestPrice": 73.67,
-        "sinceReturn": 0.0909965941063231,
-        "benchmarkReturn": 0.10209627899460871,
-        "alpha": -0.01109968488828561,
+        "latestPrice": 73.83,
+        "sinceReturn": 0.09329187027987551,
+        "benchmarkReturn": 0.1022431801154644,
+        "alpha": -0.008951309835588894,
         "hosts": [
           "Jason"
         ]
@@ -29550,10 +29663,10 @@
         ],
         "entryDate": "2026-05-15",
         "entryPrice": 300.23,
-        "latestPrice": 298.7,
-        "sinceReturn": -0.005093761449555423,
-        "benchmarkReturn": 0.014962728465711672,
-        "alpha": -0.020056489915267095,
+        "latestPrice": 299.24,
+        "sinceReturn": -0.0032974719381807516,
+        "benchmarkReturn": 0.015098015341531879,
+        "alpha": -0.01839548727971263,
         "hosts": [
           "Sacks",
           "Jason"
@@ -29571,10 +29684,10 @@
         ],
         "entryDate": "2026-05-15",
         "entryPrice": 225.32,
-        "latestPrice": 208.2,
-        "sinceReturn": -0.07598082726788569,
-        "benchmarkReturn": 0.014962728465711672,
-        "alpha": -0.09094355573359736,
+        "latestPrice": 207.41,
+        "sinceReturn": -0.07948695189064436,
+        "benchmarkReturn": 0.015098015341531879,
+        "alpha": -0.09458496723217624,
         "hosts": [
           "Chamath"
         ]
@@ -29591,10 +29704,10 @@
         ],
         "entryDate": "2025-10-03",
         "entryPrice": 200.69,
-        "latestPrice": 203.01,
-        "sinceReturn": 0.011560117594299646,
-        "benchmarkReturn": 0.12106812510273302,
-        "alpha": -0.10950800750843337,
+        "latestPrice": 203.02,
+        "sinceReturn": 0.011609945687378609,
+        "benchmarkReturn": 0.12121755502756981,
+        "alpha": -0.1096076093401912,
         "hosts": [
           "Friedberg",
           "Chamath"
@@ -29612,33 +29725,13 @@
         ],
         "entryDate": "2026-04-24",
         "entryPrice": 178.16,
-        "latestPrice": 161.25,
-        "sinceReturn": -0.0949135608441849,
-        "benchmarkReturn": 0.05083060201137335,
-        "alpha": -0.14574416285555825,
+        "latestPrice": 161.71,
+        "sinceReturn": -0.09233273462056568,
+        "benchmarkReturn": 0.05097066980418519,
+        "alpha": -0.14330340442475087,
         "hosts": [
           "Chamath",
           "Sacks"
-        ]
-      },
-      {
-        "slug": "msft",
-        "company": "Microsoft",
-        "ticker": "MSFT",
-        "sourceSymbol": "MSFT",
-        "currency": "USD",
-        "direction": "long",
-        "callTypes": [
-          "view"
-        ],
-        "entryDate": "2025-10-24",
-        "entryPrice": 523.61,
-        "latestPrice": 392.48,
-        "sinceReturn": -0.2504440327724833,
-        "benchmarkReturn": 0.10775932078257666,
-        "alpha": -0.35820335355505994,
-        "hosts": [
-          "Chamath"
         ]
       },
       {
@@ -29653,10 +29746,30 @@
         ],
         "entryDate": "2025-11-14",
         "entryPrice": 174.01,
-        "latestPrice": 131.93,
-        "sinceReturn": -0.241825182460778,
-        "benchmarkReturn": 0.1165299956840744,
-        "alpha": -0.3583551781448524,
+        "latestPrice": 133.25,
+        "sinceReturn": -0.23423941152807304,
+        "benchmarkReturn": 0.11667882071049074,
+        "alpha": -0.3509182322385638,
+        "hosts": [
+          "Chamath"
+        ]
+      },
+      {
+        "slug": "msft",
+        "company": "Microsoft",
+        "ticker": "MSFT",
+        "sourceSymbol": "MSFT",
+        "currency": "USD",
+        "direction": "long",
+        "callTypes": [
+          "view"
+        ],
+        "entryDate": "2025-10-24",
+        "entryPrice": 523.61,
+        "latestPrice": 393.83,
+        "sinceReturn": -0.24785622887263425,
+        "benchmarkReturn": 0.10790697674418603,
+        "alpha": -0.3557632056168203,
         "hosts": [
           "Chamath"
         ]
@@ -29673,10 +29786,10 @@
         ],
         "entryDate": "2026-03-27",
         "entryPrice": 296.91,
-        "latestPrice": 231.34,
-        "sinceReturn": -0.22085817251018836,
-        "benchmarkReturn": 0.1831601192259773,
-        "alpha": -0.40401829173616566,
+        "latestPrice": 230.86,
+        "sinceReturn": -0.22245798390084537,
+        "benchmarkReturn": 0.18331782554526965,
+        "alpha": -0.405775809446115,
         "hosts": [
           "Friedberg"
         ]
@@ -29693,10 +29806,10 @@
         ],
         "entryDate": "2025-05-02",
         "entryPrice": 84.28,
-        "latestPrice": 73.33,
-        "sinceReturn": -0.12992406264831513,
-        "benchmarkReturn": 0.32371727009668994,
-        "alpha": -0.45364133274500507,
+        "latestPrice": 73.25,
+        "sinceReturn": -0.1308732795443759,
+        "benchmarkReturn": 0.32389371162396796,
+        "alpha": -0.45476699116834385,
         "hosts": [
           "Jason"
         ]
@@ -30209,8 +30322,8 @@
       },
       {
         "date": "2026-06-16",
-        "portfolio": 18006,
-        "benchmark": 17477,
+        "portfolio": 18028,
+        "benchmark": 17479,
         "invested": 15000
       }
     ],
@@ -30405,7 +30518,7 @@
     ],
     "altBenchmark": {
       "symbol": "QQQ",
-      "ret": 0.2670835185439695
+      "ret": 0.2654535444706445
     }
   },
   "guestiesFund": {
@@ -30414,11 +30527,11 @@
     "benchmarkSymbol": "SPY",
     "contributionPerCall": 1000,
     "totalInvested": 9000,
-    "portfolioValue": 11793,
-    "benchmarkValue": 10870,
-    "portfolioReturn": 0.31033333333333335,
-    "benchmarkReturn": 0.20777777777777784,
-    "outperformance": 0.10255555555555551,
+    "portfolioValue": 11825,
+    "benchmarkValue": 10871,
+    "portfolioReturn": 0.3138888888888889,
+    "benchmarkReturn": 0.2078888888888888,
+    "outperformance": 0.1060000000000001,
     "constituents": [
       {
         "slug": "crwv",
@@ -30432,10 +30545,10 @@
         ],
         "entryDate": "2025-03-31",
         "entryPrice": 37.08,
-        "latestPrice": 116.34,
-        "sinceReturn": 2.137540453074434,
-        "benchmarkReturn": 0.3411573320938881,
-        "alpha": 1.7963831209805459,
+        "latestPrice": 117.03,
+        "sinceReturn": 2.156148867313916,
+        "benchmarkReturn": 0.3413360982498794,
+        "alpha": 1.8148127690640368,
         "hosts": [
           "Guest"
         ]
@@ -30453,10 +30566,10 @@
         ],
         "entryDate": "2025-01-13",
         "entryPrice": 133.23,
-        "latestPrice": 208.2,
-        "sinceReturn": 0.5627111011033552,
-        "benchmarkReturn": 0.29040747174874015,
-        "alpha": 0.27230362935461505,
+        "latestPrice": 207.41,
+        "sinceReturn": 0.5567815056668919,
+        "benchmarkReturn": 0.29057947333115464,
+        "alpha": 0.26620203233573725,
         "hosts": [
           "Guest"
         ]
@@ -30473,10 +30586,10 @@
         ],
         "entryDate": "2025-11-07",
         "entryPrice": 278.83,
-        "latestPrice": 372.67,
-        "sinceReturn": 0.33654915181293266,
-        "benchmarkReturn": 0.118127487070957,
-        "alpha": 0.21842166474197566,
+        "latestPrice": 373.25,
+        "sinceReturn": 0.3386292723164652,
+        "benchmarkReturn": 0.11827652503092545,
+        "alpha": 0.22035274728553977,
         "hosts": [
           "Guest"
         ]
@@ -30493,10 +30606,10 @@
         ],
         "entryDate": "2025-01-21",
         "entryPrice": 85.38,
-        "latestPrice": 110.04,
-        "sinceReturn": 0.2888264230498947,
-        "benchmarkReturn": 0.2440593648951166,
-        "alpha": 0.044767058154778105,
+        "latestPrice": 110.97,
+        "sinceReturn": 0.2997189037245258,
+        "benchmarkReturn": 0.24422518862449238,
+        "alpha": 0.055493715100033425,
         "hosts": [
           "Guest"
         ]
@@ -30513,10 +30626,10 @@
         ],
         "entryDate": "2026-05-15",
         "entryPrice": 173.51,
-        "latestPrice": 161.25,
-        "sinceReturn": -0.07065759898564916,
-        "benchmarkReturn": 0.014962728465711672,
-        "alpha": -0.08562032745136083,
+        "latestPrice": 161.71,
+        "sinceReturn": -0.06800760763068403,
+        "benchmarkReturn": 0.015098015341531879,
+        "alpha": -0.08310562297221591,
         "hosts": [
           "Guest"
         ]
@@ -30534,10 +30647,10 @@
         ],
         "entryDate": "2025-10-31",
         "entryPrice": 456.56,
-        "latestPrice": 404.5,
-        "sinceReturn": -0.11403758542141229,
-        "benchmarkReturn": 0.09994721871976076,
-        "alpha": -0.21398480414117305,
+        "latestPrice": 404.66,
+        "sinceReturn": -0.11367618713860161,
+        "benchmarkReturn": 0.10009383338709221,
+        "alpha": -0.21377002052569383,
         "hosts": [
           "Guest"
         ]
@@ -30554,10 +30667,10 @@
         ],
         "entryDate": "2025-01-27",
         "entryPrice": 275,
-        "latestPrice": 268.4,
-        "sinceReturn": -0.024000000000000132,
-        "benchmarkReturn": 0.25169761582995487,
-        "alpha": -0.275697615829955,
+        "latestPrice": 268,
+        "sinceReturn": -0.025454545454545507,
+        "benchmarkReturn": 0.25186445768056465,
+        "alpha": -0.27731900313511015,
         "hosts": [
           "Guest"
         ]
@@ -30574,10 +30687,10 @@
         ],
         "entryDate": "2025-08-11",
         "entryPrice": 765.87,
-        "latestPrice": 598.24,
-        "sinceReturn": -0.21888179456043455,
-        "benchmarkReturn": 0.17975531513397924,
-        "alpha": -0.3986371096944138,
+        "latestPrice": 600.21,
+        "sinceReturn": -0.2163030279290219,
+        "benchmarkReturn": 0.17991256761856844,
+        "alpha": -0.39621559554759034,
         "hosts": [
           "Guest"
         ]
@@ -30594,10 +30707,10 @@
         ],
         "entryDate": "2025-05-09",
         "entryPrice": 438.73,
-        "latestPrice": 392.48,
-        "sinceReturn": -0.10542930731885214,
-        "benchmarkReturn": 0.3293936279547789,
-        "alpha": -0.43482293527363103,
+        "latestPrice": 393.83,
+        "sinceReturn": -0.10234084744603755,
+        "benchmarkReturn": 0.3295708260977426,
+        "alpha": -0.43191167354378013,
         "hosts": [
           "Guest"
         ]
@@ -31146,8 +31259,8 @@
       },
       {
         "date": "2026-06-16",
-        "portfolio": 11793,
-        "benchmark": 10870,
+        "portfolio": 11825,
+        "benchmark": 10871,
         "invested": 9000
       }
     ],
@@ -31233,56 +31346,551 @@
     ],
     "altBenchmark": {
       "symbol": "QQQ",
-      "ret": 0.3313566056804089
+      "ret": 0.32964395081760856
     }
   },
   "leaderboard": [
     {
       "host": "Sacks",
       "positions": 1,
-      "portfolioReturn": 3.854,
+      "portfolioReturn": 3.9029999999999996,
       "benchmarkReturn": 0.3779999999999999,
-      "alpha": 3.476,
+      "alpha": 3.5249999999999995,
       "topCall": {
         "ticker": "PLTR",
-        "alpha": 3.4759519999325317
+        "alpha": 3.524333446376559
       }
     },
     {
       "host": "Chamath",
       "positions": 3,
-      "portfolioReturn": 0.6223333333333334,
-      "benchmarkReturn": 0.09699999999999998,
-      "alpha": 0.5253333333333334,
+      "portfolioReturn": 0.6233333333333333,
+      "benchmarkReturn": 0.09733333333333327,
+      "alpha": 0.526,
       "topCall": {
         "ticker": "GOOGL",
-        "alpha": 1.0059374173144568
+        "alpha": 1.0092819007246494
       }
     },
     {
       "host": "Friedberg",
       "positions": 2,
-      "portfolioReturn": 0.5175000000000001,
-      "benchmarkReturn": 0.21649999999999991,
-      "alpha": 0.30100000000000016,
+      "portfolioReturn": 0.5185,
+      "benchmarkReturn": 0.21700000000000008,
+      "alpha": 0.3014999999999999,
       "topCall": {
         "ticker": "GOOGL",
-        "alpha": 1.0059374173144568
+        "alpha": 1.0092819007246494
       }
     },
     {
       "host": "Jason",
       "positions": 4,
-      "portfolioReturn": -0.007750000000000035,
+      "portfolioReturn": -0.006000000000000005,
       "benchmarkReturn": 0.11699999999999999,
-      "alpha": -0.12475000000000003,
+      "alpha": -0.123,
       "topCall": {
         "ticker": "GOOGL",
-        "alpha": 0.04791186579814366
+        "alpha": 0.04958290743423022
       }
     }
   ],
-  "guestLeaderboard": [],
+  "guestLeaderboard": [
+    {
+      "guest": "Gavin Baker",
+      "slug": "gavin-baker",
+      "calls": 6,
+      "followReturn": 0.0045713207154689335,
+      "benchmarkReturn": 0.1433833071368206,
+      "alpha": -0.13881198642135167,
+      "best": {
+        "company": "MicroStrategy",
+        "ticker": "MSTR",
+        "slug": "mstr",
+        "ret": 0.6638473750479006
+      },
+      "picks": [
+        {
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "slug": "nvda",
+          "stance": "bull",
+          "date": "2026-05-22T22:46:00.000Z",
+          "ret": -0.07554822606525236,
+          "benchmarkReturn": -0.00034639416991966154,
+          "alpha": -0.0752018318953327
+        },
+        {
+          "company": "CoreWeave",
+          "ticker": "CRWV",
+          "slug": "crwv",
+          "stance": "bull",
+          "date": "2026-05-22T22:46:00.000Z",
+          "ret": -0.062409870213106844,
+          "benchmarkReturn": -0.00034639416991966154,
+          "alpha": -0.06206347604318718
+        },
+        {
+          "company": "Meta",
+          "ticker": "META",
+          "slug": "meta",
+          "stance": "bull",
+          "date": "2025-08-09T15:40:00.000Z",
+          "ret": -0.2163030279290219,
+          "benchmarkReturn": 0.17991256761856844,
+          "alpha": -0.39621559554759034
+        },
+        {
+          "company": "Apple",
+          "ticker": "AAPL",
+          "slug": "aapl",
+          "stance": "bear",
+          "date": "2025-08-09T15:40:00.000Z",
+          "ret": -0.28550562763123977,
+          "benchmarkReturn": 0.17991256761856844,
+          "alpha": -0.4654181952498082
+        },
+        {
+          "company": "Tesla",
+          "ticker": "TSLA",
+          "slug": "tsla",
+          "stance": "bull",
+          "date": "2025-01-04T00:23:00.000Z",
+          "ret": 0.0033473010835338712,
+          "benchmarkReturn": 0.2602962913195379,
+          "alpha": -0.25694899023600404
+        },
+        {
+          "company": "MicroStrategy",
+          "ticker": "MSTR",
+          "slug": "mstr",
+          "stance": "bear",
+          "date": "2024-12-07T00:55:00.000Z",
+          "ret": 0.6638473750479006,
+          "benchmarkReturn": 0.24087120460408817,
+          "alpha": 0.4229761704438124
+        }
+      ]
+    },
+    {
+      "guest": "Thomas Laffont",
+      "slug": "thomas-laffont",
+      "calls": 5,
+      "followReturn": -0.1104823415863166,
+      "benchmarkReturn": 0.25088824745613,
+      "alpha": -0.36137058904244657,
+      "best": {
+        "company": "NVIDIA",
+        "ticker": "NVDA",
+        "slug": "nvda",
+        "ret": 0.3441125008100576
+      },
+      "picks": [
+        {
+          "company": "Meta",
+          "ticker": "META",
+          "slug": "meta",
+          "stance": "bull",
+          "date": "2025-06-21T02:53:00.000Z",
+          "ret": -0.15305920866963918,
+          "benchmarkReturn": 0.2502374406398402,
+          "alpha": -0.4032966493094794
+        },
+        {
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "slug": "nvda",
+          "stance": "bull",
+          "date": "2025-06-21T02:53:00.000Z",
+          "ret": 0.3441125008100576,
+          "benchmarkReturn": 0.2502374406398402,
+          "alpha": 0.0938750601702174
+        },
+        {
+          "company": "Tesla",
+          "ticker": "TSLA",
+          "slug": "tsla",
+          "stance": "bull",
+          "date": "2025-06-21T02:53:00.000Z",
+          "ret": 0.28198954538254406,
+          "benchmarkReturn": 0.2502374406398402,
+          "alpha": 0.031752104742703846
+        },
+        {
+          "company": "Intel",
+          "ticker": "INTC",
+          "slug": "intc",
+          "stance": "bear",
+          "date": "2025-01-25T02:52:00.000Z",
+          "ret": -1,
+          "benchmarkReturn": 0.25186445768056465,
+          "alpha": -1.2518644576805646
+        },
+        {
+          "company": "Constellation Energy",
+          "ticker": "CEG",
+          "slug": "ceg",
+          "stance": "bull",
+          "date": "2025-01-25T02:52:00.000Z",
+          "ret": -0.025454545454545507,
+          "benchmarkReturn": 0.25186445768056465,
+          "alpha": -0.27731900313511015
+        }
+      ]
+    },
+    {
+      "guest": "Brad Gerstner",
+      "slug": "brad-gerstner",
+      "calls": 3,
+      "followReturn": 0.013401434727743725,
+      "benchmarkReturn": 0.03702802779997053,
+      "alpha": -0.02362659307222681,
+      "best": {
+        "company": "Salesforce",
+        "ticker": "CRM",
+        "slug": "crm",
+        "ret": 0.1665721795598618
+      },
+      "picks": [
+        {
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "slug": "nvda",
+          "stance": "bull",
+          "date": "2026-05-08T22:16:00.000Z",
+          "ret": -0.06706549118387906,
+          "benchmarkReturn": 0.01491951846341144,
+          "alpha": -0.0819850096472905
+        },
+        {
+          "company": "Google",
+          "ticker": "GOOGL",
+          "slug": "googl",
+          "stance": "bull",
+          "date": "2026-05-08T22:16:00.000Z",
+          "ret": -0.05930238419275158,
+          "benchmarkReturn": 0.01491951846341144,
+          "alpha": -0.07422190265616302
+        },
+        {
+          "company": "Salesforce",
+          "ticker": "CRM",
+          "slug": "crm",
+          "stance": "bear",
+          "date": "2026-02-07T04:35:00.000Z",
+          "ret": 0.1665721795598618,
+          "benchmarkReturn": 0.08124504647308872,
+          "alpha": 0.08532713308677309
+        }
+      ]
+    },
+    {
+      "guest": "Aaron Levie",
+      "slug": "aaron-levie",
+      "calls": 2,
+      "followReturn": 0.3944138616096838,
+      "benchmarkReturn": 0.2617161882661554,
+      "alpha": 0.1326976733435284,
+      "best": {
+        "company": "Google",
+        "ticker": "GOOGL",
+        "slug": "googl",
+        "ret": 0.9703848387267064
+      },
+      "picks": [
+        {
+          "company": "Google",
+          "ticker": "GOOGL",
+          "slug": "googl",
+          "stance": "bull",
+          "date": "2024-12-20T22:00:00.000Z",
+          "ret": 0.9703848387267064,
+          "benchmarkReturn": 0.2617161882661554,
+          "alpha": 0.708668650460551
+        },
+        {
+          "company": "Box",
+          "ticker": "BOX",
+          "slug": "box",
+          "stance": "bull",
+          "date": "2024-12-20T22:00:00.000Z",
+          "ret": -0.18155711550733888,
+          "benchmarkReturn": 0.2617161882661554,
+          "alpha": -0.4432733037734943
+        }
+      ]
+    },
+    {
+      "guest": "Cyan Bowers-Franklin",
+      "slug": "cyan-bowers-franklin",
+      "calls": 2,
+      "followReturn": 0.2547416920783292,
+      "benchmarkReturn": 0.29057947333115464,
+      "alpha": -0.03583778125282544,
+      "best": {
+        "company": "NVIDIA",
+        "ticker": "NVDA",
+        "slug": "nvda",
+        "ret": 0.5061360830731245
+      },
+      "picks": [
+        {
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "slug": "nvda",
+          "stance": "bull",
+          "date": "2025-01-11T01:41:00.000Z",
+          "ret": 0.5061360830731245,
+          "benchmarkReturn": 0.29057947333115464,
+          "alpha": 0.21555660974196988
+        },
+        {
+          "company": "Tesla",
+          "ticker": "TSLA",
+          "slug": "tsla",
+          "stance": "bull",
+          "date": "2025-01-11T01:41:00.000Z",
+          "ret": 0.0033473010835338712,
+          "benchmarkReturn": 0.29057947333115464,
+          "alpha": -0.28723217224762077
+        }
+      ]
+    },
+    {
+      "guest": "Antonio Gracias",
+      "slug": "antonio-gracias",
+      "calls": 1,
+      "followReturn": 1.0328413485104297,
+      "benchmarkReturn": 0.24052244358105312,
+      "alpha": 0.7923189049293766,
+      "best": {
+        "company": "Google",
+        "ticker": "GOOGL",
+        "slug": "googl",
+        "ret": 1.0328413485104297
+      },
+      "picks": [
+        {
+          "company": "Google",
+          "ticker": "GOOGL",
+          "slug": "googl",
+          "stance": "bull",
+          "date": "2025-02-07T22:20:00.000Z",
+          "ret": 1.0328413485104297,
+          "benchmarkReturn": 0.24052244358105312,
+          "alpha": 0.7923189049293766
+        }
+      ]
+    },
+    {
+      "guest": "Reid Hoffman",
+      "slug": "reid-hoffman",
+      "calls": 1,
+      "followReturn": 0.948060486522025,
+      "benchmarkReturn": 0.3590965077524997,
+      "alpha": 0.5889639787695253,
+      "best": {
+        "company": "NVIDIA",
+        "ticker": "NVDA",
+        "slug": "nvda",
+        "ret": 0.948060486522025
+      },
+      "picks": [
+        {
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "slug": "nvda",
+          "stance": "bull",
+          "date": "2024-08-30T15:04:00.000Z",
+          "ret": 0.948060486522025,
+          "benchmarkReturn": 0.3590965077524997,
+          "alpha": 0.5889639787695253
+        }
+      ]
+    },
+    {
+      "guest": "Donald Trump",
+      "slug": "donald-trump",
+      "calls": 1,
+      "followReturn": 0.42081949058693247,
+      "benchmarkReturn": 0.3779912214651706,
+      "alpha": 0.04282826912176185,
+      "best": {
+        "company": "Oil",
+        "ticker": "USO",
+        "slug": "uso",
+        "ret": 0.42081949058693247
+      },
+      "picks": [
+        {
+          "company": "Oil",
+          "ticker": "USO",
+          "slug": "uso",
+          "stance": "bull",
+          "date": "2024-06-20T20:23:00.000Z",
+          "ret": 0.42081949058693247,
+          "benchmarkReturn": 0.3779912214651706,
+          "alpha": 0.04282826912176185
+        }
+      ]
+    },
+    {
+      "guest": "Mark Pincus",
+      "slug": "mark-pincus",
+      "calls": 1,
+      "followReturn": 0.15557638238050608,
+      "benchmarkReturn": 0.24422518862449238,
+      "alpha": -0.0886488062439863,
+      "best": {
+        "company": "Alibaba",
+        "ticker": "BABA",
+        "slug": "baba",
+        "ret": 0.15557638238050608
+      },
+      "picks": [
+        {
+          "company": "Alibaba",
+          "ticker": "BABA",
+          "slug": "baba",
+          "stance": "bull",
+          "date": "2025-01-18T01:21:00.000Z",
+          "ret": 0.15557638238050608,
+          "benchmarkReturn": 0.24422518862449238,
+          "alpha": -0.0886488062439863
+        }
+      ]
+    },
+    {
+      "guest": "Tucker Carlson",
+      "slug": "tucker-carlson",
+      "calls": 1,
+      "followReturn": 0.004395160271792653,
+      "benchmarkReturn": 0.1022431801154644,
+      "alpha": -0.09784801984367175,
+      "best": {
+        "company": "Gold",
+        "ticker": "GLD",
+        "slug": "gld",
+        "ret": 0.004395160271792653
+      },
+      "picks": [
+        {
+          "company": "Gold",
+          "ticker": "GLD",
+          "slug": "gld",
+          "stance": "bull",
+          "date": "2025-12-13T02:31:00.000Z",
+          "ret": 0.004395160271792653,
+          "benchmarkReturn": 0.1022431801154644,
+          "alpha": -0.09784801984367175
+        }
+      ]
+    },
+    {
+      "guest": "Marc Benioff",
+      "slug": "marc-benioff",
+      "calls": 1,
+      "followReturn": -0.10196034875326254,
+      "benchmarkReturn": 0.01581263115142506,
+      "alpha": -0.1177729799046876,
+      "best": {
+        "company": "Salesforce",
+        "ticker": "CRM",
+        "slug": "crm",
+        "ret": -0.10196034875326254
+      },
+      "picks": [
+        {
+          "company": "Salesforce",
+          "ticker": "CRM",
+          "slug": "crm",
+          "stance": "bull",
+          "date": "2026-05-15T21:21:00.000Z",
+          "ret": -0.10196034875326254,
+          "benchmarkReturn": 0.01581263115142506,
+          "alpha": -0.1177729799046876
+        }
+      ]
+    },
+    {
+      "guest": "Travis Kalanick",
+      "slug": "travis-kalanick",
+      "calls": 1,
+      "followReturn": 0.11901996570986118,
+      "benchmarkReturn": 0.25521521655486223,
+      "alpha": -0.13619525084500106,
+      "best": {
+        "company": "Tesla",
+        "ticker": "TSLA",
+        "slug": "tsla",
+        "ret": 0.11901996570986118
+      },
+      "picks": [
+        {
+          "company": "Tesla",
+          "ticker": "TSLA",
+          "slug": "tsla",
+          "stance": "bull",
+          "date": "2025-01-31T21:52:00.000Z",
+          "ret": 0.11901996570986118,
+          "benchmarkReturn": 0.25521521655486223,
+          "alpha": -0.13619525084500106
+        }
+      ]
+    },
+    {
+      "guest": "Elon Musk",
+      "slug": "elon-musk",
+      "calls": 1,
+      "followReturn": -0.057878562115850185,
+      "benchmarkReturn": 0.09803318992009835,
+      "alpha": -0.15591175203594854,
+      "best": {
+        "company": "Tesla",
+        "ticker": "TSLA",
+        "slug": "tsla",
+        "ret": -0.057878562115850185
+      },
+      "picks": [
+        {
+          "company": "Tesla",
+          "ticker": "TSLA",
+          "slug": "tsla",
+          "stance": "bull",
+          "date": "2025-10-31T20:11:00.000Z",
+          "ret": -0.057878562115850185,
+          "benchmarkReturn": 0.09803318992009835,
+          "alpha": -0.15591175203594854
+        }
+      ]
+    },
+    {
+      "guest": "Philippe Laffont",
+      "slug": "philippe-laffont",
+      "calls": 1,
+      "followReturn": -0.12338067043582779,
+      "benchmarkReturn": 0.28703751350795037,
+      "alpha": -0.41041818394377816,
+      "best": {
+        "company": "Microsoft",
+        "ticker": "MSFT",
+        "slug": "msft",
+        "ret": -0.12338067043582779
+      },
+      "picks": [
+        {
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "slug": "msft",
+          "stance": "bull",
+          "date": "2025-05-09T20:26:00.000Z",
+          "ret": -0.12338067043582779,
+          "benchmarkReturn": 0.28703751350795037,
+          "alpha": -0.41041818394377816
+        }
+      ]
+    }
+  ],
   "hostFunds": {
     "Chamath": {
       "asOf": "2026-06-16",
@@ -31290,11 +31898,11 @@
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
       "totalInvested": 3000,
-      "portfolioValue": 4867,
-      "benchmarkValue": 3291,
-      "portfolioReturn": 0.6223333333333334,
-      "benchmarkReturn": 0.09699999999999998,
-      "outperformance": 0.5253333333333334,
+      "portfolioValue": 4870,
+      "benchmarkValue": 3292,
+      "portfolioReturn": 0.6233333333333333,
+      "benchmarkReturn": 0.09733333333333327,
+      "outperformance": 0.526,
       "constituents": [
         {
           "slug": "googl",
@@ -31308,10 +31916,10 @@
           ],
           "entryDate": "2025-06-23",
           "entryPrice": 165.19,
-          "latestPrice": 372.67,
-          "sinceReturn": 1.2560082329438829,
-          "benchmarkReturn": 0.250070815629426,
-          "alpha": 1.0059374173144568,
+          "latestPrice": 373.25,
+          "sinceReturn": 1.2595193413644896,
+          "benchmarkReturn": 0.2502374406398402,
+          "alpha": 1.0092819007246494,
           "hosts": [
             "Chamath"
           ]
@@ -31328,10 +31936,10 @@
           ],
           "entryDate": "2025-07-07",
           "entryPrice": 376.93,
-          "latestPrice": 206.85,
-          "sinceReturn": 0.451211100204282,
-          "benchmarkReturn": -0.20872269124186382,
-          "alpha": 0.6599337914461458,
+          "latestPrice": 207.32,
+          "sinceReturn": 0.4499774493937867,
+          "benchmarkReturn": -0.20888380485918678,
+          "alpha": 0.6588612542529735,
           "hosts": [
             "Chamath"
           ]
@@ -31348,10 +31956,10 @@
           ],
           "entryDate": "2025-06-23",
           "entryPrice": 348.68,
-          "latestPrice": 404.5,
-          "sinceReturn": 0.16007514052999894,
-          "benchmarkReturn": 0.250070815629426,
-          "alpha": -0.08999567509942707,
+          "latestPrice": 404.66,
+          "sinceReturn": 0.16054835379144206,
+          "benchmarkReturn": 0.2502374406398402,
+          "alpha": -0.08968908684839816,
           "hosts": [
             "Chamath"
           ]
@@ -31858,8 +32466,8 @@
         },
         {
           "date": "2026-06-16",
-          "portfolio": 4867,
-          "benchmark": 3291,
+          "portfolio": 4870,
+          "benchmark": 3292,
           "invested": 3000
         }
       ],
@@ -31915,11 +32523,11 @@
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
       "totalInvested": 4000,
-      "portfolioValue": 3969,
+      "portfolioValue": 3976,
       "benchmarkValue": 4468,
-      "portfolioReturn": -0.007750000000000035,
+      "portfolioReturn": -0.006000000000000005,
       "benchmarkReturn": 0.11699999999999999,
-      "outperformance": -0.12475000000000003,
+      "outperformance": -0.123,
       "constituents": [
         {
           "slug": "googl",
@@ -31933,10 +32541,10 @@
           ],
           "entryDate": "2025-11-24",
           "entryPrice": 318.58,
-          "latestPrice": 372.67,
-          "sinceReturn": 0.16978466947077675,
-          "benchmarkReturn": 0.12187280367263309,
-          "alpha": 0.04791186579814366,
+          "latestPrice": 373.25,
+          "sinceReturn": 0.1716052482892838,
+          "benchmarkReturn": 0.12202234085505359,
+          "alpha": 0.04958290743423022,
           "hosts": [
             "Jason"
           ]
@@ -31953,10 +32561,10 @@
           ],
           "entryDate": "2026-05-15",
           "entryPrice": 300.23,
-          "latestPrice": 298.7,
-          "sinceReturn": -0.005093761449555423,
-          "benchmarkReturn": 0.014962728465711672,
-          "alpha": -0.020056489915267095,
+          "latestPrice": 299.24,
+          "sinceReturn": -0.0032974719381807516,
+          "benchmarkReturn": 0.015098015341531879,
+          "alpha": -0.01839548727971263,
           "hosts": [
             "Jason"
           ]
@@ -31974,10 +32582,10 @@
           ],
           "entryDate": "2026-01-12",
           "entryPrice": 246.47,
-          "latestPrice": 245.92,
-          "sinceReturn": -0.002231508905749191,
-          "benchmarkReturn": 0.07921917256458944,
-          "alpha": -0.08145068147033863,
+          "latestPrice": 246,
+          "sinceReturn": -0.0019069257921856542,
+          "benchmarkReturn": 0.07936302433972053,
+          "alpha": -0.08126995013190619,
           "hosts": [
             "Jason"
           ]
@@ -31994,10 +32602,10 @@
           ],
           "entryDate": "2025-01-27",
           "entryPrice": 97.19,
-          "latestPrice": 78.39,
-          "sinceReturn": -0.19347868585951078,
-          "benchmarkReturn": 0.25169761582995487,
-          "alpha": -0.44517630168946565,
+          "latestPrice": 78.72,
+          "sinceReturn": -0.1900317937215117,
+          "benchmarkReturn": 0.25186445768056465,
+          "alpha": -0.44189625140207633,
           "hosts": [
             "Jason"
           ]
@@ -32528,7 +33136,7 @@
         },
         {
           "date": "2026-06-16",
-          "portfolio": 3969,
+          "portfolio": 3976,
           "benchmark": 4468,
           "invested": 4000
         }
@@ -32578,11 +33186,11 @@
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
       "totalInvested": 1000,
-      "portfolioValue": 4854,
+      "portfolioValue": 4903,
       "benchmarkValue": 1378,
-      "portfolioReturn": 3.854,
+      "portfolioReturn": 3.9029999999999996,
       "benchmarkReturn": 0.3779999999999999,
-      "outperformance": 3.476,
+      "outperformance": 3.5249999999999995,
       "constituents": [
         {
           "slug": "pltr",
@@ -32596,10 +33204,10 @@
           ],
           "entryDate": "2024-07-26",
           "entryPrice": 27.18,
-          "latestPrice": 131.93,
-          "sinceReturn": 3.853936718175129,
-          "benchmarkReturn": 0.3779847182425977,
-          "alpha": 3.4759519999325317,
+          "latestPrice": 133.25,
+          "sinceReturn": 3.9025018395879325,
+          "benchmarkReturn": 0.3781683932113731,
+          "alpha": 3.524333446376559,
           "hosts": [
             "Sacks"
           ]
@@ -33082,7 +33690,7 @@
         },
         {
           "date": "2026-06-16",
-          "portfolio": 4854,
+          "portfolio": 4903,
           "benchmark": 1378,
           "invested": 1000
         }
@@ -33118,11 +33726,11 @@
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
       "totalInvested": 2000,
-      "portfolioValue": 3035,
-      "benchmarkValue": 2433,
-      "portfolioReturn": 0.5175000000000001,
-      "benchmarkReturn": 0.21649999999999991,
-      "outperformance": 0.30100000000000016,
+      "portfolioValue": 3037,
+      "benchmarkValue": 2434,
+      "portfolioReturn": 0.5185,
+      "benchmarkReturn": 0.21700000000000008,
+      "outperformance": 0.3014999999999999,
       "constituents": [
         {
           "slug": "googl",
@@ -33136,10 +33744,10 @@
           ],
           "entryDate": "2025-06-23",
           "entryPrice": 165.19,
-          "latestPrice": 372.67,
-          "sinceReturn": 1.2560082329438829,
-          "benchmarkReturn": 0.250070815629426,
-          "alpha": 1.0059374173144568,
+          "latestPrice": 373.25,
+          "sinceReturn": 1.2595193413644896,
+          "benchmarkReturn": 0.2502374406398402,
+          "alpha": 1.0092819007246494,
           "hosts": [
             "Friedberg"
           ]
@@ -33156,10 +33764,10 @@
           ],
           "entryDate": "2026-03-27",
           "entryPrice": 296.91,
-          "latestPrice": 231.34,
-          "sinceReturn": -0.22085817251018836,
-          "benchmarkReturn": 0.1831601192259773,
-          "alpha": -0.40401829173616566,
+          "latestPrice": 230.86,
+          "sinceReturn": -0.22245798390084537,
+          "benchmarkReturn": 0.18331782554526965,
+          "alpha": -0.405775809446115,
           "hosts": [
             "Friedberg"
           ]
@@ -33666,8 +34274,8 @@
         },
         {
           "date": "2026-06-16",
-          "portfolio": 3035,
-          "benchmark": 2433,
+          "portfolio": 3037,
+          "benchmark": 2434,
           "invested": 2000
         }
       ],
@@ -34392,8 +35000,8 @@
       "ticker": "CRWV",
       "entryDate": "2025-03-31",
       "basePrice": 37.08,
-      "latestPrice": 116.34,
-      "sinceReturn": 2.137540453074434,
+      "latestPrice": 117.03,
+      "sinceReturn": 2.156148867313916,
       "hosts": [
         "Friedberg"
       ]
@@ -34404,8 +35012,8 @@
       "ticker": "EXPE",
       "entryDate": "2024-10-18",
       "basePrice": 159.61,
-      "latestPrice": 244.9,
-      "sinceReturn": 0.5343336883653906,
+      "latestPrice": 243.56,
+      "sinceReturn": 0.5259695507800262,
       "hosts": [
         "Chamath"
       ]
@@ -34416,8 +35024,8 @@
       "ticker": "FOXA",
       "entryDate": "2024-07-26",
       "basePrice": 37.51,
-      "latestPrice": 52.75,
-      "sinceReturn": 0.4062916555585179,
+      "latestPrice": 52.34,
+      "sinceReturn": 0.3953612370034658,
       "hosts": [
         "Sacks"
       ]
@@ -34428,8 +35036,8 @@
       "ticker": "BA",
       "entryDate": "2025-03-24",
       "basePrice": 180.9,
-      "latestPrice": 227.33,
-      "sinceReturn": 0.25666113875069096,
+      "latestPrice": 227.49,
+      "sinceReturn": 0.25754560530679926,
       "hosts": [
         "Friedberg"
       ]
@@ -34440,8 +35048,8 @@
       "ticker": "ABNB",
       "entryDate": "2024-08-09",
       "basePrice": 115.08,
-      "latestPrice": 141.13,
-      "sinceReturn": 0.22640771637121992,
+      "latestPrice": 141.2,
+      "sinceReturn": 0.2269725408411538,
       "hosts": [
         "Sacks",
         "Chamath"
@@ -34453,8 +35061,8 @@
       "ticker": "SBUX",
       "entryDate": "2024-08-16",
       "basePrice": 94.81,
-      "latestPrice": 101.13,
-      "sinceReturn": 0.06665963505959271,
+      "latestPrice": 101.68,
+      "sinceReturn": 0.07246071089547512,
       "hosts": [
         "Friedberg",
         "Sacks",
@@ -34467,8 +35075,8 @@
       "ticker": "WDAY",
       "entryDate": "2026-04-24",
       "basePrice": 119.76,
-      "latestPrice": 126.33,
-      "sinceReturn": 0.0548179692718771,
+      "latestPrice": 126.77,
+      "sinceReturn": 0.058533734134936566,
       "hosts": [
         "Chamath"
       ]
@@ -34479,8 +35087,8 @@
       "ticker": "META",
       "entryDate": "2026-06-15",
       "basePrice": 593.48,
-      "latestPrice": 598.24,
-      "sinceReturn": 0.00801206443351088,
+      "latestPrice": 600.21,
+      "sinceReturn": 0.011339893509469512,
       "hosts": [
         "Chamath"
       ]
@@ -34491,8 +35099,8 @@
       "ticker": "WBD",
       "entryDate": "2025-12-15",
       "basePrice": 29.71,
-      "latestPrice": 26.56,
-      "sinceReturn": -0.10602490743857296,
+      "latestPrice": 26.6,
+      "sinceReturn": -0.10467855940760684,
       "hosts": [
         "Chamath"
       ]
@@ -34503,8 +35111,8 @@
       "ticker": "NFLX",
       "entryDate": "2026-01-12",
       "basePrice": 89.41,
-      "latestPrice": 78.39,
-      "sinceReturn": -0.12330835477015989,
+      "latestPrice": 78.72,
+      "sinceReturn": -0.11956157029415049,
       "hosts": [
         "Sacks"
       ]
@@ -34515,8 +35123,8 @@
       "ticker": "GME",
       "entryDate": "2024-06-07",
       "basePrice": 28.22,
-      "latestPrice": 21.25,
-      "sinceReturn": -0.24698795180722888,
+      "latestPrice": 21.46,
+      "sinceReturn": -0.2395464209780297,
       "hosts": [
         "Friedberg"
       ]
@@ -34527,8 +35135,8 @@
       "ticker": "ADBE",
       "entryDate": "2025-07-07",
       "basePrice": 376.93,
-      "latestPrice": 206.85,
-      "sinceReturn": -0.451211100204282,
+      "latestPrice": 207.32,
+      "sinceReturn": -0.4499774493937867,
       "hosts": [
         "Chamath"
       ]

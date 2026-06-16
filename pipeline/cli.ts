@@ -102,6 +102,35 @@ async function main() {
       }
       return;
     }
+    case "rebuild-all": {
+      // The full, correct re-extraction sequence as one command. reextract only
+      // re-runs the COMPANY extractor; commodity takes (extract-assets) and guest
+      // names (name-guests) live in separate passes that reextract overwrites, so
+      // running build-index straight after reextract silently drops them (empty
+      // Guesties leaderboard, missing commodity holdings). This chains all four
+      // and refuses to build on a partial re-extraction.
+      const { reextractAll } = await import("./sync");
+      const { extractAssets } = await import("./extract-assets");
+      const { nameGuests } = await import("./name-guests");
+      const { buildIndex } = await import("./build-index");
+      const fs = await import("node:fs");
+      const failed = await reextractAll(5);
+      fs.writeFileSync("data/.reextract-pending.json", JSON.stringify(failed, null, 2) + "\n");
+      if (failed.length) {
+        console.log(
+          `\n✗ ${failed.length} episode(s) failed re-extraction — fix the cause, run \`reextract --pending\`, then \`rebuild-all\` again. Skipping downstream passes so the index isn't built on incomplete data.`,
+        );
+        return;
+      }
+      console.log("\n→ extract-assets (commodity takes)…");
+      await extractAssets();
+      console.log("\n→ name-guests (guest attribution)…");
+      await nameGuests();
+      console.log("\n→ build-index…");
+      await buildIndex();
+      console.log("\n✓ full rebuild complete.");
+      return;
+    }
     case "rename": {
       const { renameAll } = await import("./sync");
       return renameAll();
@@ -184,6 +213,7 @@ async function main() {
           "  run [--latest|--number N|--id E274]   process one episode end-to-end\n" +
           "  sync [--limit N] [--include-interviews]  process new episodes + rebuild index\n" +
           "  build-index                           re-aggregate processed episodes\n" +
+          "  rebuild-all                           reextract → extract-assets → name-guests → build-index\n" +
           "  audit-candidates [--all]              find high-signal transcript picks needing review\n" +
           "  quality                               validate generated data invariants",
       );

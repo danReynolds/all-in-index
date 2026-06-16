@@ -44,7 +44,8 @@
       "competitive position",
       "revenue growth"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E246-nvda-Guest-2",
@@ -69,7 +70,8 @@
       "competitive moat",
       "demand outlook"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E246-nvda-Sacks-3",
@@ -213,7 +215,8 @@
       "geopolitical risk",
       "US debt"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E246-gld-Sacks-a4",

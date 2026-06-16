@@ -22,7 +22,8 @@
       "distribution",
       "partnerships"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E236-aapl-Guest-1",
@@ -47,7 +48,8 @@
       "antitrust",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E236-nvda-Guest-3",
@@ -72,7 +74,8 @@
       "competitive moat",
       "H20"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E236-tether-Jason-5",
@@ -144,6 +147,7 @@
       "domestic energy production",
       "natural gas"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   }
 ]

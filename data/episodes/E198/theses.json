@@ -46,7 +46,8 @@
       "AI",
       "governance"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Mark Cuban"
   },
   {
     "id": "E198-openai-Jason-2",
@@ -94,7 +95,8 @@
       "real estate",
       "NBA"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Mark Cuban"
   },
   {
     "id": "E198-cost-plus-drugs-Guest-4",
@@ -118,7 +120,8 @@
       "pharmacy",
       "growth trajectory"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Mark Cuban"
   },
   {
     "id": "E198-groq-Guest-5",
@@ -142,7 +145,8 @@
       "infrastructure",
       "investment"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Mark Cuban"
   },
   {
     "id": "E198-x-Guest-6",
@@ -166,7 +170,8 @@
       "content moderation",
       "business model"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Mark Cuban"
   },
   {
     "id": "E198-tsla-Guest-7",
@@ -190,7 +195,8 @@
       "autonomous driving",
       "product"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Mark Cuban"
   },
   {
     "id": "E198-uso-Guest-a0",
@@ -213,6 +219,7 @@
       "Trump energy policy",
       "Saudi Arabia-Russia price war"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Mark Cuban"
   }
 ]

@@ -22,7 +22,8 @@
       "enterprise adoption",
       "coding dominance"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E268-anthropic-Chamath-1",
@@ -96,7 +97,8 @@
       "model competition",
       "enterprise adoption"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E268-meta-Chamath-4",
@@ -144,6 +146,7 @@
       "operational efficiency",
       "headcount"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   }
 ]

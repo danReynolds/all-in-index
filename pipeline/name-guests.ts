@@ -94,7 +94,10 @@ const NAME_CANON: Record<string, string> = {
  *  can only be resolved to a bare first name. */
 function canonicalName(raw: string | null, episodeFullNames: Set<string>): string | null {
   if (!raw) return null;
-  const name = raw.trim().replace(/[.,]$/, "");
+  // The model/summary sometimes prefixes the literal label "Guest" onto a real
+  // name ("Guest Sian Bowers-Franklin"); strip it so the name canonicalizes
+  // (and so the alias roster / NAME_CANON map can match the bare name).
+  const name = raw.trim().replace(/[.,]$/, "").replace(/^(?:the\s+)?guests?\s+(?=\S)/i, "").trim();
   if (!name) return null;
   if (NAME_CANON[name.toLowerCase()]) return NAME_CANON[name.toLowerCase()];
   const tokens = name.split(/\s+/);
@@ -115,8 +118,11 @@ function canonicalName(raw: string | null, episodeFullNames: Set<string>): strin
     return full; // roster entries are unambiguous public figures
   }
   // First-name-only: try to match a full name present in the episode evidence.
+  // Run the match back through NAME_CANON so a transcription slip that leaked
+  // into the evidence ("Thomas Lafont") collapses to the canonical spelling
+  // rather than spawning a phantom variant of a known guest.
   const match = [...episodeFullNames].find((f) => f.toLowerCase().split(/\s+/)[0] === lower);
-  if (match) return match;
+  if (match) return NAME_CANON[match.toLowerCase()] ?? match;
   return null; // a bare first name we can't resolve — better to leave anonymous
 }
 

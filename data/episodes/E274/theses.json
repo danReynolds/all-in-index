@@ -22,7 +22,8 @@
       "AI infrastructure",
       "competitive moat"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E274-spacex-Chamath-1",
@@ -72,7 +73,8 @@
       "orbital compute",
       "revenue growth"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E274-cursor-Guest-3",
@@ -97,7 +99,8 @@
       "coding AI",
       "data moat"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E274-nvda-Guest-4",
@@ -122,7 +125,8 @@
       "earnings",
       "AI infrastructure"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E274-nvda-Chamath-5",
@@ -170,7 +174,8 @@
       "unit economics",
       "AI infrastructure"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E274-xai-Guest-7",
@@ -194,7 +199,8 @@
       "competitive position",
       "agentic AI"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E274-ung-Guest-a0",
@@ -218,7 +224,8 @@
       "US manufacturing",
       "geopolitics"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E274-uso-Guest-a1",
@@ -241,6 +248,7 @@
       "geopolitics",
       "energy security"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   }
 ]

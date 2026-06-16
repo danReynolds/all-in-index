@@ -117,7 +117,8 @@
       "AI competition",
       "margins"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Emil Michael"
   },
   {
     "id": "E263-anduril-Guest-5",
@@ -141,7 +142,8 @@
       "unmanned systems",
       "government contracts"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Emil Michael"
   },
   {
     "id": "E263-openai-Guest-7",
@@ -165,7 +167,8 @@
       "government contracts",
       "product roadmap"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Emil Michael"
   },
   {
     "id": "E263-uso-Jason-a0",
@@ -237,6 +240,7 @@
       "defense industrial base",
       "batteries"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Emil Michael"
   }
 ]

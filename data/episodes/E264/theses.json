@@ -22,7 +22,8 @@
       "valuation",
       "TAM"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E264-openai-Guest-1",
@@ -47,7 +48,8 @@
       "AI capex",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E264-anthropic-Chamath-2",
@@ -119,7 +121,8 @@
       "Trump doctrine",
       "geopolitical risk"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E264-uso-Chamath-a2",

@@ -22,7 +22,8 @@
       "AI compute",
       "product roadmap"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Elon Musk"
   },
   {
     "id": "E249-tsla-Guest-1",
@@ -47,7 +48,8 @@
       "CEO risk",
       "Tesla board vote"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Elon Musk"
   },
   {
     "id": "E249-tsla-Jason-2",
@@ -96,7 +98,8 @@
       "open source",
       "governance"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Elon Musk"
   },
   {
     "id": "E249-xai-x-twitter-Guest-4",
@@ -121,6 +124,7 @@
       "competitive moat",
       "Grokipedia"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Elon Musk"
   }
 ]
