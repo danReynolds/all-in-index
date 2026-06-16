@@ -1,27 +1,6 @@
 [
   {
-    "id": "E193-uber-Sacks-0",
-    "episodeId": "E193",
-    "episodeNumber": 193,
-    "episodeDate": "2024-08-23T22:14:00.000Z",
-    "company": "Uber",
-    "ticker": "UBER",
-    "isPublic": true,
-    "host": "Sacks",
-    "stance": "bull",
-    "conviction": "low",
-    "summary": "Sacks notes Uber's stock has rallied significantly (referencing $80/share price), implying a positive directional view on the stock's performance.",
-    "quote": "Uber rallied to— what's the, what's the price now? $80. For $60, you're gonna get a much different answer.",
-    "quoteStartMs": 5159000,
-    "topics": [
-      "valuation",
-      "stock performance"
-    ],
-    "attributionConfidence": "high",
-    "positional": false
-  },
-  {
-    "id": "E193-intc-Friedberg-1",
+    "id": "E193-intc-Friedberg-0",
     "episodeId": "E193",
     "episodeNumber": 193,
     "episodeDate": "2024-08-23T22:14:00.000Z",
@@ -30,16 +9,49 @@
     "isPublic": true,
     "host": "Friedberg",
     "stance": "bear",
-    "conviction": "medium",
-    "summary": "Friedberg flags Intel as 'imploding' and unable to manufacture, casting doubt on whether CHIPS Act investment in Intel can succeed even with government incentives.",
+    "conviction": "low",
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreReason": null,
+    "scoreCondition": null,
+    "scoreExclusionReason": "not_investment_call",
+    "summary": "Friedberg notes Intel is 'imploding' and unable to manufacture, casting doubt on the CHIPS Act's ability to close the gap with Taiwanese chip fabs.",
     "quote": "Meanwhile, Intel is imploding, you know, they can't manufacture.",
     "quoteStartMs": 5095000,
     "topics": [
       "manufacturing",
-      "CHIPS Act",
-      "competitive position"
+      "semiconductors",
+      "CHIPS Act"
     ],
-    "attributionConfidence": "high",
-    "positional": false
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E193-uber-Sacks-1",
+    "episodeId": "E193",
+    "episodeNumber": 193,
+    "episodeDate": "2024-08-23T22:14:00.000Z",
+    "company": "Uber",
+    "ticker": "UBER",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "low",
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreReason": null,
+    "scoreCondition": null,
+    "scoreExclusionReason": "not_investment_call",
+    "summary": "Sacks notes Uber has rallied to $80, implying a positive trajectory for the stock.",
+    "quote": "Uber rallied to— what's the, what's the price now? $80.",
+    "quoteStartMs": 5159000,
+    "topics": [
+      "valuation",
+      "stock price"
+    ],
+    "attributionConfidence": "high"
   }
 ]

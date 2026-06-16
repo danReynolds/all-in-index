@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import { getHolding, allSlugs, guestLinkMap } from "@/lib/data";
-import { pct, returnColor, fmtDate, fmtMoney } from "@/lib/format";
+import { pct, returnColor, fmtDate, fmtDuration, fmtMoney } from "@/lib/format";
 import { currentCall, followStats, scoredTakes, displayStance } from "@/lib/calls";
 import { isMacroAsset } from "@/lib/assets";
 import { StanceBadge, ConvictionDots, SampleBanner } from "@/app/components/badges";
@@ -252,7 +252,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
           <div className="ml-auto flex flex-col items-end gap-1">
             <Sparkline points={h.market.history.map(([, c]) => c)} width={170} height={48} />
             <span className="text-[11px] text-neutral-400">
-              anchored {fmtDate(h.market.anchorDate)} · as of {fmtDate(h.market.asOf)}
+              since {fmtDate(h.market.anchorDate)} · {fmtDuration(h.market.anchorDate, h.market.asOf)}
             </span>
           </div>
         </section>

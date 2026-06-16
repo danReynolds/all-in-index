@@ -10,17 +10,23 @@
     "host": "Chamath",
     "stance": "bear",
     "conviction": "medium",
-    "summary": "Chamath argues NVIDIA and other AI-related stocks are at the tail end of the hype cycle, with investors selling every spike to book profits, and that a CapEx reset is coming because AI's deflationary nature means the expected ROI on massive infrastructure spend will not materialize for the large incumbents.",
-    "quote": "I think that people know that we are at the tail end of the hype cycle in AI, and every chance, every time these things spike, people take an opportunity to just massively sell. I mean, NVIDIA's turned over 308 million shares today.",
-    "quoteStartMs": 2533753,
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreReason": null,
+    "scoreCondition": null,
+    "scoreExclusionReason": null,
+    "summary": "Chamath argues NVIDIA and other AI stocks are at the tail end of the hype cycle, with investors selling every spike to book profits, and that there will need to be a reset in AI capex as the ROI hasn't materialized.",
+    "quote": "people know that we are at the tail end of the hype cycle in AI, and every chance, every time these things spike, people take an opportunity to just massively sell. I mean, NVIDIA's turned over 308 million shares today.",
+    "quoteStartMs": 2534939,
     "topics": [
       "AI capex",
       "valuation",
       "hype cycle",
       "sell-off"
     ],
-    "attributionConfidence": "high",
-    "positional": false
+    "attributionConfidence": "high"
   },
   {
     "id": "E190-meta-Chamath-1",
@@ -31,19 +37,24 @@
     "ticker": "META",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "low",
-    "summary": "Chamath notes Meta rallied on AI demand commentary but immediately gave back all gains, reflecting a broader pattern of investors using any spike as an opportunity to exit AI-exposed names near the top of the hype cycle.",
-    "quote": "Meta rallied. They've basically given up all of their gains. It's gone kind of straight down today.",
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreReason": null,
+    "scoreCondition": null,
+    "scoreExclusionReason": null,
+    "summary": "Chamath notes Meta rallied on AI demand comments but has given back all its gains as investors use spikes to sell and book profits amid uncertainty about AI ROI.",
+    "quote": "Meta rallied. They've basically given up all of their gains. It's gone kind of straight down today. But the point isn't that these companies are going to zero... it's just the point is that right now people are optimizing. They're selling",
     "quoteStartMs": 2559000,
     "topics": [
       "AI capex",
-      "hype cycle",
       "valuation",
       "sell-off"
     ],
-    "attributionConfidence": "high",
-    "positional": false
+    "attributionConfidence": "high"
   },
   {
     "id": "E190-pershing-square-capital-management-Chamath-2",
@@ -56,39 +67,22 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath argues the Pershing Square IPO failed not because of Ackman's character or Twitter activity, but because hedge fund / GP businesses structurally lack the durable, predictable revenue streams that public investors need to underwrite long-term equity value, making it nearly impossible to take such entities public.",
-    "quote": "In finance, these entities that try to sell a piece of the quote-unquote general partner as a company, I just think that it's, um, frankly, that it doesn't work. And this is just, you know, an example, yet another example that there's not a lot of equity value in these businesses.",
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreReason": null,
+    "scoreCondition": null,
+    "scoreExclusionReason": "private",
+    "summary": "Chamath explains that Ackman's failed IPO attempt reflects the fundamental difficulty of monetizing hedge fund management companies as public equities, since their core business of making bets is short-term and unpredictable, though he praises Ackman personally as a resilient and exceptional risk manager.",
+    "quote": "in finance, these entities that try to sell a piece of the quote-unquote general partner as a company, I just think that it's, um, frankly, that it doesn't work. And this is just, you know, an example, yet another example that there's not",
     "quoteStartMs": 4344200,
     "topics": [
       "IPO",
-      "hedge funds",
-      "business model",
-      "valuation"
+      "hedge fund",
+      "equity value",
+      "business model"
     ],
-    "attributionConfidence": "high",
-    "positional": false
-  },
-  {
-    "id": "E190-bx-Chamath-3",
-    "episodeId": "E190",
-    "episodeNumber": 190,
-    "episodeDate": "2024-08-02T18:13:00.000Z",
-    "company": "Blackstone",
-    "ticker": "BX",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "bull",
-    "conviction": "low",
-    "summary": "Chamath cites Blackstone (alongside KKR and Apollo) as one of the rare examples where an alternative asset manager successfully created durable public equity value by scaling AUM toward a trillion dollars and converting fee revenue into a predictable, investable business — a model Ackman failed to replicate.",
-    "quote": "Companies like Blackstone, companies like KKR, companies like Apollo, what have they proven? They've proven that they can raise enormous amounts of money... and they tell investors, well, look, don't worry about the returns anymore. Worry about the 2% because that's like our revenue... And people have bought that story.",
-    "quoteStartMs": 4099357,
-    "topics": [
-      "alternative assets",
-      "business model",
-      "AUM growth",
-      "public markets"
-    ],
-    "attributionConfidence": "high",
-    "positional": false
+    "attributionConfidence": "high"
   }
 ]

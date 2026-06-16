@@ -4,46 +4,52 @@
     "episodeId": "E182",
     "episodeNumber": 182,
     "episodeDate": "2024-06-07T19:02:00.000Z",
-    "company": "NVIDIA",
+    "company": "Nvidia",
     "ticker": "NVDA",
     "isPublic": true,
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath believes the DOJ antitrust investigation into NVIDIA is premature given the nascent AI market, but flags that the real scrutiny should come from the SEC on whether AI-related revenues are real, implying uncertainty about the investment case.",
-    "quote": "I don't see what they're exactly investigating in an extremely immature market where we haven't yet seen one cycle of boom and bust so that we know what we're actually dealing with. So it's way too premature.",
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreExclusionReason": "not_investment_call",
+    "summary": "Chamath argues the DOJ antitrust investigation into Nvidia is premature given the AI market is only 18 months old with minimal revenue, though he supports SEC scrutiny of whether reported AI revenues are real.",
+    "quote": "I don't see what they're exactly investigating in an extremely immature market where we haven't yet seen one cycle of boom and bust... it is also true that that's probably generated less than $10 billion in revenue. So it's way too",
     "quoteStartMs": 1222656,
     "topics": [
       "regulation",
       "antitrust",
-      "AI market",
-      "valuation"
+      "AI market"
     ],
-    "attributionConfidence": "high",
-    "positional": false
+    "attributionConfidence": "high"
   },
   {
     "id": "E182-nvda-Sacks-1",
     "episodeId": "E182",
     "episodeNumber": 182,
     "episodeDate": "2024-06-07T19:02:00.000Z",
-    "company": "NVIDIA",
+    "company": "Nvidia",
     "ticker": "NVDA",
     "isPublic": true,
     "host": "Sacks",
     "stance": "neutral",
-    "conviction": "low",
-    "summary": "Sacks thinks NVIDIA has a market lead but it is far too early to call it a monopolist, and government investigations are premature given the AI market is only 18 months to 2 years old.",
+    "conviction": "medium",
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreExclusionReason": "not_investment_call",
+    "summary": "Sacks argues Nvidia has a market lead but the AI market is too young to call it a monopolist, and antitrust investigation is premature.",
     "quote": "It's true that OpenAI and NVIDIA have leads in their respective markets, but that's all it is at this point. It's way too early in the development of these markets to say that these are clearly monopolists.",
     "quoteStartMs": 1470909,
     "topics": [
       "regulation",
       "antitrust",
-      "AI market",
-      "competitive position"
+      "AI market"
     ],
-    "attributionConfidence": "high",
-    "positional": false
+    "attributionConfidence": "high"
   },
   {
     "id": "E182-gme-Friedberg-2",
@@ -56,17 +62,21 @@
     "host": "Friedberg",
     "stance": "bear",
     "conviction": "high",
-    "summary": "Friedberg presents a clear bear case: GameStop trades at ~192x EBITDA with revenue declining 12% annually, making it fundamentally uninvestable as a business regardless of meme-driven momentum.",
-    "quote": "This stock is currently trading at about 192 times EBITDA. A business that is profitable... will typically trade for 7 to 12 times EBITDA. And this stock is trading at 192 times EBITDA and the revenue is declining 12% a year.",
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreReason": null,
+    "scoreExclusionReason": null,
+    "summary": "Friedberg argues GameStop is wildly overvalued at ~192x EBITDA with revenues declining 12% year-over-year, making it a pure speculative gamble with no investment merit.",
+    "quote": "This stock is currently trading at about 192 times EBITDA. A business that is profitable...will typically trade for 7 to 12 times EBITDA. And this stock is trading at 192 times EBITDA and the revenue is declining 12% a year.",
     "quoteStartMs": 2411160,
     "topics": [
       "valuation",
-      "meme stock",
-      "fundamentals",
-      "revenue decline"
+      "meme stocks",
+      "fundamentals"
     ],
-    "attributionConfidence": "high",
-    "positional": false
+    "attributionConfidence": "high"
   },
   {
     "id": "E182-aapl-Chamath-3",
@@ -79,20 +89,49 @@
     "host": "Chamath",
     "stance": "bear",
     "conviction": "medium",
-    "summary": "Chamath is skeptical that the Apple-OpenAI integration will reinvigorate iPhone upgrade cycles, arguing consumers haven't yet discovered the right AI form factor and that a $1,500 iPhone is not the answer.",
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreExclusionReason": null,
+    "summary": "Chamath is skeptical the OpenAI/Apple deal will reinvigorate iPhone upgrade cycles, arguing no one has found the right AI consumer form factor yet and the $1,500 iPhone is unlikely to be the answer.",
     "quote": "The idea that Apple with this $1,000 device is all of a sudden going to figure out that this is why you're gonna upgrade, I think is pretty speculative. And I think they're going to be disappointed.",
     "quoteStartMs": 4023052,
     "topics": [
       "AI integration",
       "iPhone upgrade cycle",
-      "product strategy",
-      "valuation"
+      "product strategy"
     ],
-    "attributionConfidence": "high",
-    "positional": false
+    "attributionConfidence": "high"
   },
   {
-    "id": "E182-aapl-Sacks-4",
+    "id": "E182-aapl-Jason-4",
+    "episodeId": "E182",
+    "episodeNumber": 182,
+    "episodeDate": "2024-06-07T19:02:00.000Z",
+    "company": "Apple",
+    "ticker": "AAPL",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "bull",
+    "conviction": "medium",
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreExclusionReason": null,
+    "summary": "Jason argues the Apple-OpenAI deal could reinvigorate the iPhone franchise by giving users a powerful personal LLM built on their own device data, creating a compelling reason to upgrade.",
+    "quote": "If you had a language model on your phone and Siri was like this Super Siri that actually got stuff done, I would upgrade my phone immediately. And right now I skip 2 or 3 generations.",
+    "quoteStartMs": 3919295,
+    "topics": [
+      "AI integration",
+      "iPhone upgrade cycle",
+      "OpenAI partnership"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E182-aapl-Sacks-5",
     "episodeId": "E182",
     "episodeNumber": 182,
     "episodeDate": "2024-06-07T19:02:00.000Z",
@@ -102,19 +141,23 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Sacks is bullish on the Apple-OpenAI deal, arguing that embedding a top-tier LLM into Siri and giving it access to app APIs could make Siri a genuinely powerful agent, significantly increasing the utility of the iPhone.",
-    "quote": "If you give it the power of the best OpenAI model and then the speed of running it natively on the iPhone... And then you give it access to the internal APIs you're using to control apps. That could be really powerful because now Siri could be an agent.",
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreExclusionReason": null,
+    "summary": "Sacks argues that integrating OpenAI's best model into Siri could make it a powerful agent capable of controlling apps, which would be a meaningful upgrade to Apple's ecosystem.",
+    "quote": "If you give it the power of the best OpenAI model and then the speed of running it natively on the iPhone...And then you give it access to the internal APIs you're using to control apps. That could be really powerful because now Siri could",
     "quoteStartMs": 3867000,
     "topics": [
       "AI integration",
-      "product strategy",
-      "competitive moat"
+      "Siri",
+      "product strategy"
     ],
-    "attributionConfidence": "high",
-    "positional": false
+    "attributionConfidence": "high"
   },
   {
-    "id": "E182-texas-stock-exchange-txse-Chamath-5",
+    "id": "E182-texas-stock-exchange-txse-Chamath-6",
     "episodeId": "E182",
     "episodeNumber": 182,
     "episodeDate": "2024-06-07T19:02:00.000Z",
@@ -122,18 +165,47 @@
     "ticker": null,
     "isPublic": false,
     "host": "Chamath",
-    "stance": "neutral",
+    "stance": "bull",
     "conviction": "high",
-    "summary": "Chamath strongly supports the Texas Stock Exchange as a competitor to NYSE and NASDAQ, arguing that the duopoly has become regressive with listing requirements and that more competition will create more rational behavior benefiting companies seeking capital.",
-    "quote": "I think that the duopoly hasn't created enough competition. So the NASDAQ and New York Stock Exchange haven't innovated... I think if you have a third player, there's a chance that more competition will create more rational behavior.",
-    "quoteStartMs": 3610896,
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreExclusionReason": null,
+    "summary": "Chamath strongly supports the Texas Stock Exchange as a necessary competitor to the NASDAQ/NYSE duopoly, arguing more competition will reduce listing requirements driven by non-economic factors and improve capital allocation.",
+    "quote": "I think the duopoly hasn't created enough competition...they've probably been a little regressive in terms of filing requirements, listing requirements, in terms of board composition...if you have a third player, there's a chance that more",
+    "quoteStartMs": 3596000,
     "topics": [
       "competition",
-      "exchange listing",
-      "regulation",
-      "capital markets"
+      "capital markets",
+      "exchange regulation"
     ],
-    "attributionConfidence": "high",
-    "positional": false
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E182-texas-stock-exchange-txse-Friedberg-7",
+    "episodeId": "E182",
+    "episodeNumber": 182,
+    "episodeDate": "2024-06-07T19:02:00.000Z",
+    "company": "Texas Stock Exchange (TXSE)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "low",
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreExclusionReason": null,
+    "summary": "Friedberg sees the Texas Stock Exchange as a welcome competitive entrant against exchanges that have imposed non-securities-law social rules on listed companies, though he notes prior challenger exchange attempts have failed.",
+    "quote": "There's certainly like an interest and a pushing for a competitive marketplace for exchanges...more competition is always better.",
+    "quoteStartMs": 3692806,
+    "topics": [
+      "competition",
+      "capital markets",
+      "exchange regulation"
+    ],
+    "attributionConfidence": "high"
   }
 ]

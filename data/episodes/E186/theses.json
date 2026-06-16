@@ -10,15 +10,45 @@
     "host": "Chamath",
     "stance": "bear",
     "conviction": "low",
-    "summary": "Chamath flags that Rick's Cabaret stock dropped ~25-30% recently and historically precedes recessions, suggesting the business is under pressure that may signal broader economic deterioration.",
-    "quote": "The Rick's Cabaret recession index is back on... the stock just puked up like 25 or 30% in the last week.",
-    "quoteStartMs": 3710156,
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreExclusionReason": "not_investment_call",
+    "summary": "Chamath notes that Rick's Cabaret stock has dropped 25-30% recently, citing it as a recession predictor that has presaged the last two recessions, implying the move signals deteriorating economic conditions ahead.",
+    "quote": "the Rick's Cabaret stock price is that it has presaged the last two recessions. So whenever the stock dives, people, people have said it actually predicts an upcoming recession, and the stock just you know, puked up like 25 or 30% in the",
+    "quoteStartMs": 3724149,
     "topics": [
       "recession indicator",
       "consumer spending",
-      "valuation"
+      "macro"
     ],
-    "attributionConfidence": "high",
-    "positional": false
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E186-rick-Friedberg-1",
+    "episodeId": "E186",
+    "episodeNumber": 186,
+    "episodeDate": "2024-07-04T17:31:00.000Z",
+    "company": "RCI Hospitality Holdings",
+    "ticker": "RICK",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "low",
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreExclusionReason": "not_investment_call",
+    "summary": "Friedberg argues Rick's Cabaret revenue decline is structural — OnlyFans has pulled talent away from physical venues, reducing product quality and revenue independent of macroeconomic conditions, making it an unreliable recession indicator.",
+    "quote": "the strip club industry has been decimated by OnlyFans. As a result, Rick's Cabaret is more likely down because of OnlyFans and the lack of, hmm, shall we say, employee base available to work in these establishments because they make more",
+    "quoteStartMs": 3780907,
+    "topics": [
+      "competition",
+      "OnlyFans",
+      "structural decline"
+    ],
+    "attributionConfidence": "high"
   }
 ]

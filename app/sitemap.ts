@@ -1,6 +1,18 @@
+import fs from "node:fs";
+import path from "node:path";
 import type { MetadataRoute } from "next";
 import { allSlugs, allEpisodeIds } from "@/lib/data";
 import { REGULAR_HOSTS } from "@/lib/types";
+
+function usedProxyTickers(): string[] {
+  const f = path.join(process.cwd(), "data", "predictions.json");
+  if (!fs.existsSync(f)) return [];
+  const data = JSON.parse(fs.readFileSync(f, "utf8"));
+  const set = new Set<string>();
+  for (const ep of data.episodes ?? [])
+    for (const p of ep.predictions) if (p.proxyTicker) set.add(String(p.proxyTicker).toLowerCase());
+  return [...set];
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://allindex.fyi";
@@ -24,5 +36,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
     priority: 0.5,
   }));
-  return [...statics, ...hosts, ...holdings, ...episodes];
+  const proxies = usedProxyTickers().map((t) => ({
+    url: `${base}/proxy/${t}`,
+    changeFrequency: "weekly" as const,
+    priority: 0.4,
+  }));
+  return [...statics, ...hosts, ...holdings, ...episodes, ...proxies];
 }

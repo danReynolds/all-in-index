@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { callTool } from "./llm";
+import { verifyTheses } from "./verify";
 import { trimPublishedQuote } from "../lib/quotes";
 import { REGULAR_HOSTS } from "../lib/types";
 import type { Episode, Thesis, Transcript, Host } from "../lib/types";
@@ -51,6 +52,10 @@ This is the critical filter — read it carefully:
 - PRODUCT PRAISE, SHOUT-OUTS, AND PERKS are not theses. Loving a product, thanking a company for a gift or perk, plugging a sponsor, or sharing a consumer experience says nothing about the stock.
   Do NOT emit: "Chamath thanked Robinhood for sending him their gold card" — gratitude for swag, not an investment view. Do not launder it into "implicitly endorsing" anything.
   DO emit (bull): "Jason argues Robinhood's product velocity is winning the consumer brokerage market" — product observation deployed in service of a competitive claim about the business.
+- SECTOR/THEME HALO is not a company thesis. A directional view of an industry, trend, or theme ("AI is a force multiplier for cybersecurity", "chip demand is exploding", "ad budgets are shifting to streaming") does NOT make every company named as a member of that sector a bull or bear. Companies named only as EXAMPLES of a category are enumerated mentions, not per-company theses.
+  Do NOT emit: "Sacks: get these AI tools in the hands of our cybersecurity industry, not just the public companies like Palo Alto Networks and CrowdStrike" — both companies are named as examples of an industry; neither gets its own claim. Emit NOTHING for either, however bullish the surrounding theme sounds.
+  Do NOT emit: "you have Nvidia, you have AMD, you have the whole chip complex riding this wave" — enumerated members of a theme, not per-company theses.
+  A company named inside a sector/theme statement earns a thesis ONLY when the host gives THAT specific company its own explicit, company-level economic claim ("...and Palo Alto specifically is taking share because its platform bundle is winning").
 
 Rules:
 - Extract one thesis per (host, company) per episode. Merge a host's scattered remarks about the same company into a single, faithful thesis.
@@ -197,12 +202,17 @@ export async function extractTheses(
     topics: item.topics,
   }));
 
+  // Enforce the "quote must carry the evidence" contract: an adversarial pass
+  // drops passing mentions/enumerations and neutralizes inferred-direction
+  // stances. Survivors are what we store.
+  const verified = await verifyTheses(ep, theses);
+
   const byCompany = new Map<string, number>();
-  for (const th of theses) byCompany.set(th.company, (byCompany.get(th.company) ?? 0) + 1);
+  for (const th of verified) byCompany.set(th.company, (byCompany.get(th.company) ?? 0) + 1);
   const summary = [...byCompany.entries()]
     .map(([c, n]) => `${c}(${n})`)
     .join(", ");
-  console.log(`  ✓ extracted ${theses.length} theses across ${byCompany.size} companies: ${summary}`);
+  console.log(`  ✓ extracted ${verified.length} theses across ${byCompany.size} companies: ${summary}`);
 
-  return theses;
+  return verified;
 }

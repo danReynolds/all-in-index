@@ -82,6 +82,29 @@ export function fmtDate(iso: string): string {
   });
 }
 
+/**
+ * Compact elapsed span between two ISO dates, e.g. "2yr 1mo", "8mo", "3yr".
+ * Used to show how long a return has been playing out, so a "+59%" reads
+ * differently over six months than over two years.
+ */
+export function fmtDuration(fromIso: string, toIso: string): string {
+  if (!fromIso || !toIso) return "";
+  const from = new Date(fromIso);
+  const to = new Date(toIso);
+  let months =
+    (to.getUTCFullYear() - from.getUTCFullYear()) * 12 +
+    (to.getUTCMonth() - from.getUTCMonth());
+  if (to.getUTCDate() < from.getUTCDate()) months -= 1;
+  if (months < 1) {
+    const days = Math.max(0, Math.round((to.getTime() - from.getTime()) / 86400000));
+    return days < 7 ? `${days}d` : `${Math.round(days / 7)}w`;
+  }
+  const years = Math.floor(months / 12);
+  const rem = months % 12;
+  if (years < 1) return `${months}mo`;
+  return rem ? `${years}yr ${rem}mo` : `${years}yr`;
+}
+
 // Provider currency → display symbol.
 const CURRENCY_SYMBOLS: Record<string, string> = {
   USD: "$",

@@ -5,6 +5,7 @@ import { callTool } from "./llm";
 import { store } from "./store";
 import { buildMarketData } from "./market";
 import { REGULAR_HOSTS } from "../lib/types";
+import { findProxyForPick } from "../lib/proxies";
 
 const HOST_VALUES = [...REGULAR_HOSTS, "Guest"] as const;
 const OUT_FILE = path.join(process.cwd(), "data", "predictions.json");
@@ -97,23 +98,9 @@ async function scoreTicker(
 }
 
 // The financial categories we surface; only these get ETF proxies (the rest are
-// political/media/deal/trend picks we don't score).
+// political/media/deal/trend picks we don't score). The sector→ETF proxy map
+// itself lives in lib/proxies.ts (shared with the /proxy detail pages).
 const FIN_CAT = /performing asset|business winner|business loser/i;
-
-// Curated sector/theme → representative ETF proxies. A pick with no single
-// ticker but a clear, well-known sector lens is tracked via the proxy; fuzzy or
-// private picks (Polymarket, "California real estate", "young workers") match
-// nothing and stay untracked. The UI labels every proxy transparently.
-const SECTOR_PROXIES: Array<{ test: RegExp; ticker: string; note: string }> = [
-  { test: /mag(nificent)?[\s-]*(7|seven)/i, ticker: "MAGS", note: "Magnificent Seven ETF" },
-  { test: /chinese tech|china (internet|tech)/i, ticker: "KWEB", note: "China internet ETF" },
-  { test: /software industrial complex|enterprise (application )?software|legacy (enterprise )?saas|vertical saas/i, ticker: "IGV", note: "software sector ETF" },
-  { test: /robotic|autonomous hardware/i, ticker: "BOTZ", note: "robotics & AI ETF" },
-  { test: /defense (and|&) aerospace|aerospace (and|&) defense|legacy defense/i, ticker: "ITA", note: "aerospace & defense ETF" },
-  { test: /critical (metals|minerals|elements)|rare[\s-]?earth|strategic metals/i, ticker: "REMX", note: "rare-earth & strategic-metals ETF" },
-  { test: /\bipo(s)?\b|new ipos/i, ticker: "IPO", note: "Renaissance IPO ETF" },
-  { test: /tech supercycle|technology supercycle|u\.?s\.? equities/i, ticker: "QQQ", note: "Nasdaq-100 ETF" },
-];
 
 function directionFromCategory(category: string): "up" | "down" | null {
   const c = category.toLowerCase();
@@ -132,7 +119,7 @@ function resolveProxy(p: { pick: string; ticker: string | null; category: string
 } {
   if (p.ticker) return { symbol: p.ticker.toUpperCase(), proxyTicker: null, proxyNote: null, direction: p.direction };
   if (!FIN_CAT.test(p.category)) return { symbol: null, proxyTicker: null, proxyNote: null, direction: p.direction };
-  const proxy = SECTOR_PROXIES.find((x) => x.test.test(p.pick));
+  const proxy = findProxyForPick(p.pick);
   if (!proxy) return { symbol: null, proxyTicker: null, proxyNote: null, direction: p.direction };
   // A "biggest business winner/loser" pick may carry no explicit direction — the
   // category states the bet, so infer it for the proxy verdict.

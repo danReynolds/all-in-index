@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { pct, returnColor, fmtDate, callVerdict } from "@/lib/format";
 import { HostAvatar } from "@/app/components/host";
 import { GuestName } from "@/app/components/GuestName";
@@ -151,18 +152,11 @@ function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?:
         <div className="mt-1.5 flex items-center gap-2">
           <CompanyLogo name={p.pick} domain={p.domain} size="md" className="rounded-lg" />
           <span className="min-w-0 font-display text-lg font-semibold leading-tight">{p.pick}</span>
-          {p.ticker ? (
+          {p.ticker && (
             <span className="shrink-0 self-start rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-[10px] text-neutral-500 dark:bg-neutral-800">
               {p.ticker}
             </span>
-          ) : p.proxyTicker ? (
-            <span
-              className="shrink-0 self-start rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-[10px] text-neutral-500 dark:bg-neutral-800"
-              title={p.proxyNote ?? undefined}
-            >
-              ≈ {p.proxyTicker}
-            </span>
-          ) : null}
+          )}
         </div>
       </div>
 
@@ -178,9 +172,19 @@ function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?:
             <span>now</span>
           </div>
           {p.proxyTicker && (
-            <div className="mt-1.5 text-center text-[10px] text-neutral-500">
-              Sector proxy · tracked via <span className="font-mono text-neutral-400">{p.proxyTicker}</span> ({p.proxyNote})
-            </div>
+            <Link
+              href={`/proxy/${p.proxyTicker.toLowerCase()}`}
+              className="group/px mt-2 flex items-center justify-between gap-2 rounded-lg border border-dashed border-neutral-200/70 px-3 py-1.5 text-[11px] text-neutral-500 transition hover:border-neutral-300/80 hover:text-neutral-300 dark:border-neutral-800 dark:hover:border-neutral-700 dark:hover:bg-neutral-800/30"
+            >
+              <span>
+                Sector proxy ·{" "}
+                <span className="font-mono text-neutral-400 transition group-hover/px:text-neutral-200">{p.proxyTicker}</span>{" "}
+                <span>({p.proxyNote})</span>
+              </span>
+              <span className="shrink-0 font-medium transition group-hover/px:translate-x-0.5 group-hover/px:text-neutral-300">
+                Why this? →
+              </span>
+            </Link>
           )}
         </div>
       ) : (

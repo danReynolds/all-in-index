@@ -10,17 +10,23 @@
     "host": "Chamath",
     "stance": "bear",
     "conviction": "medium",
-    "summary": "Chamath argues Airbnb is less a technology company and more a cyclical consumer-discretionary business that ebbs and flows with consumer spending power, meaning no amount of tech investment can shield it from recessionary pressure — a structural limitation the stock is now reflecting.",
-    "quote": "If you look at a company like Airbnb and if you look at the last 6 months in the stock, what is it telling you? It's telling you that the people that own it have realized that it's less of a technology business and it's more of a cyclical business that ebbs and flows with the ability to spend money on behalf of the consumer.",
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreReason": null,
+    "scoreCondition": null,
+    "scoreExclusionReason": null,
+    "summary": "Chamath argues that Airbnb's stock performance over the last six months reveals it is less a technology company and more a cyclical consumer-spending business, meaning no amount of product investment can insulate it from macroeconomic headwinds like recession.",
+    "quote": "If you look at a company like Airbnb and if you look at the last 6 months in the stock, what is it telling you? It's telling you that the people that own it have realized that it's less of a technology business and it's more of a cyclical",
     "quoteStartMs": 1600044,
     "topics": [
       "valuation",
+      "business model",
       "cyclicality",
-      "consumer spending",
-      "competitive moat"
+      "competitive position"
     ],
-    "attributionConfidence": "high",
-    "positional": false
+    "attributionConfidence": "high"
   },
   {
     "id": "E195-panw-Chamath-1",
@@ -31,39 +37,23 @@
     "ticker": "PANW",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath highlights Nikesh Arora's track record of creating $80 billion in value over 8 years at Palo Alto Networks as evidence that disciplined, first-principles leadership — not a founder label — drives exceptional, durable value creation.",
+    "positional": false,
+    "callType": "view",
+    "tradeDirection": null,
+    "pairTradeId": null,
+    "scoreReason": null,
+    "scoreCondition": null,
+    "scoreExclusionReason": null,
+    "summary": "Chamath cites Nikesh Arora's track record at Palo Alto Networks — creating $80 billion of value in 8 years — as evidence that exceptional non-founder leaders can build enormous durable value, implicitly endorsing Palo Alto as a standout value-creation story.",
     "quote": "If you look at what Nikesh Arora was able to do at Palo Alto Networks, it's incredible. I mean, in 8 years he's created $80 billion of value.",
     "quoteStartMs": 711311,
     "topics": [
       "management quality",
       "value creation",
-      "leadership"
+      "enterprise tech"
     ],
-    "attributionConfidence": "high",
-    "positional": false
-  },
-  {
-    "id": "E195-adyen-Chamath-2",
-    "episodeId": "E195",
-    "episodeNumber": 195,
-    "episodeDate": "2024-09-06T18:20:00.000Z",
-    "company": "Adyen",
-    "ticker": "ADYEN",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "bull",
-    "conviction": "medium",
-    "summary": "Chamath singles out Adyen as the first and only company to have implemented AI in production at scale, framing this as a meaningful and durable competitive differentiator worth understanding.",
-    "quote": "Adyen, I think, is the first and really only company that's implemented AI in production at scale. It'll be really interesting to understand where that's gone in the last year.",
-    "quoteStartMs": 218000,
-    "topics": [
-      "AI adoption",
-      "competitive moat",
-      "fintech"
-    ],
-    "attributionConfidence": "high",
-    "positional": false
+    "attributionConfidence": "high"
   }
 ]
