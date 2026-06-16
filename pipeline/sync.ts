@@ -92,6 +92,14 @@ export async function reextractAll(
       }
       try {
         const theses = snapQuoteTimestamps(stampAttribution(await extractTheses(ep, tr), tr), tr);
+        // Guard: a transient empty extraction must never WIPE an episode that
+        // previously had takes — treat it as a failure to retry, not a save.
+        const prior = store.loadTheses(id).length;
+        if (theses.length === 0 && prior > 0) {
+          console.error(`[${id}] FAILED: extraction returned 0 takes but episode had ${prior} — not overwriting.`);
+          failed.push(id);
+          continue;
+        }
         store.saveTheses(id, theses);
       } catch (e) {
         console.error(`[${id}] FAILED: ${e instanceof Error ? e.message : e}`);
