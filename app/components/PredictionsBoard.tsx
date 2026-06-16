@@ -52,7 +52,7 @@ function verdictLabel(right: boolean | null, inProgress: boolean): { text: strin
   return { text: inProgress ? "Too close" : "Flat", cls: "bg-white/5 text-neutral-400 ring-white/10" };
 }
 
-function PickChart({ history, bullish }: { history: Array<[string, number]>; bullish: boolean }) {
+function PickChart({ history, up }: { history: Array<[string, number]>; up: boolean }) {
   if (history.length < 2) return null;
   const closes = history.map((h) => h[1]);
   const W = 320;
@@ -65,8 +65,8 @@ function PickChart({ history, bullish }: { history: Array<[string, number]>; bul
   const y = (v: number) => pad + (H - 2 * pad) * (1 - (v - min) / span);
   const line = closes.map((v, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ");
   const area = `${line} L${x(closes.length - 1).toFixed(1)},${H - pad} L${x(0).toFixed(1)},${H - pad} Z`;
-  const stroke = bullish ? "#10b981" : "#f43f5e";
-  const gid = `pg-${closes.length}-${Math.round(closes[0])}-${bullish ? "b" : "x"}`;
+  const stroke = up ? "#10b981" : "#f43f5e";
+  const gid = `pg-${closes.length}-${Math.round(closes[0])}-${up ? "u" : "d"}`;
   const entryY = y(closes[0]);
   return (
     <svg viewBox={`0 0 ${W} ${H}`} className="h-16 w-full" role="img" aria-label="price since the call">
@@ -87,9 +87,11 @@ function ScoredCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?: Epi
   const right = verdictOf(p);
   const v = verdictLabel(right, inProgress);
   const accent = right === true ? "ring-emerald-500/25" : right === false ? "ring-rose-500/25" : "ring-white/10";
-  // Chart line is colored by the bet direction (bullish = green, bearish = red) to
-  // match the site's stance colors; the verdict pill carries on/off-track.
-  const bullish = p.direction !== "down";
+  // Chart line follows the actual price path (rose = green, fell = red) so its
+  // color matches the line's slope and the return number below it; the verdict
+  // pill alone carries on/off-track (a green line + "Off track" = right move,
+  // wrong bet).
+  const up = (p.sinceReturn ?? 0) >= 0;
   const fromDate = p.history?.[0]?.[0];
   return (
     <div className={`flex flex-col gap-3 rounded-2xl border border-neutral-200 bg-white p-5 ring-1 dark:border-neutral-800 dark:bg-neutral-900 ${accent}`}>
@@ -112,7 +114,7 @@ function ScoredCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?: Epi
       {/* the pick */}
       <div>
         <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
-          {p.category} · bet it would {p.direction === "down" ? "fall" : "rise"}
+          {p.category}
         </div>
         <div className="mt-1.5 flex items-center gap-2">
           <CompanyLogo name={p.pick} domain={p.domain} size="md" className="rounded-lg" />
@@ -128,7 +130,7 @@ function ScoredCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?: Epi
       {/* chart */}
       {p.history && p.history.length > 1 && (
         <div className="text-neutral-700 dark:text-neutral-600">
-          <PickChart history={p.history} bullish={bullish} />
+          <PickChart history={p.history} up={up} />
           <div className="mt-1 flex items-center justify-between text-[11px] text-neutral-500">
             <span>{fromDate ? fmtDate(fromDate) : "call"}</span>
             <span className={`font-mono text-sm font-semibold tabular-nums ${returnColor(p.sinceReturn)}`}>
