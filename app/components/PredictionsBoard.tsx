@@ -21,6 +21,9 @@ export interface FinPick {
   quote: string;
   quoteStartMs: number | null;
   history: Array<[string, number]> | null;
+  /** Set when a sector/theme pick is tracked via a representative ETF. */
+  proxyTicker: string | null;
+  proxyNote: string | null;
 }
 
 export interface PredYear {
@@ -43,9 +46,10 @@ const catRank = (c: string) => {
   return i === -1 ? CATEGORY_ORDER.length : i;
 };
 
-/** A pick is gradeable only if it maps to one ticker with a clear direction and price. */
+/** A pick is tracked if it maps to a ticker (its own or an ETF proxy) with a
+ *  clear direction and price. */
 function isGraded(p: FinPick): boolean {
-  return !!p.ticker && !!p.direction && p.sinceReturn != null;
+  return (!!p.ticker || !!p.proxyTicker) && !!p.direction && p.sinceReturn != null;
 }
 
 function verdictOf(p: FinPick): boolean | null {
@@ -147,11 +151,18 @@ function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?:
         <div className="mt-1.5 flex items-center gap-2">
           <CompanyLogo name={p.pick} domain={p.domain} size="md" className="rounded-lg" />
           <span className="min-w-0 font-display text-lg font-semibold leading-tight">{p.pick}</span>
-          {p.ticker && (
+          {p.ticker ? (
             <span className="shrink-0 self-start rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-[10px] text-neutral-500 dark:bg-neutral-800">
               {p.ticker}
             </span>
-          )}
+          ) : p.proxyTicker ? (
+            <span
+              className="shrink-0 self-start rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-[10px] text-neutral-500 dark:bg-neutral-800"
+              title={p.proxyNote ?? undefined}
+            >
+              ≈ {p.proxyTicker}
+            </span>
+          ) : null}
         </div>
       </div>
 
@@ -166,6 +177,11 @@ function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?:
             </span>
             <span>now</span>
           </div>
+          {p.proxyTicker && (
+            <div className="mt-1.5 text-center text-[10px] text-neutral-500">
+              Sector proxy · tracked via <span className="font-mono text-neutral-400">{p.proxyTicker}</span> ({p.proxyNote})
+            </div>
+          )}
         </div>
       ) : (
         <div className="flex h-[84px] flex-col items-center justify-center gap-1.5 rounded-xl border border-dashed border-neutral-200/80 px-4 text-center dark:border-neutral-800">
@@ -308,7 +324,7 @@ export function PredictionsBoard({
             of {gradedAll.length} tracked.{" "}
           </>
         )}
-        <span>Themes, baskets, and private companies are shown too, but can&rsquo;t be tracked against a single ticker.</span>
+        <span>Sector calls are tracked via a representative ETF; private companies and one-off baskets stay untracked.</span>
       </p>
 
       {/* One section per category — all four hosts' picks, graded where possible */}

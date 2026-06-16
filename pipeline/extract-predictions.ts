@@ -72,10 +72,14 @@ export interface ScoredPrediction {
   direction: "up" | "down" | null;
   quote: string;
   quoteStartMs: number | null;
-  /** Stock/proxy return from the episode date to asOf (tickered picks only). */
+  /** Stock/proxy return from the episode date to asOf (tracked picks only). */
   sinceReturn: number | null;
   /** Sparse [isoDate, close] price path since the episode, for the pick's chart. */
   history?: Array<[string, number]>;
+  /** When a sector/theme pick is tracked via a representative ETF, the proxy
+   *  symbol and a short label of what it represents (null for direct tickers). */
+  proxyTicker?: string | null;
+  proxyNote?: string | null;
 }
 
 /** Price the named ticker from the episode date to now: return + sparse history. */
@@ -90,6 +94,49 @@ async function scoreTicker(
   } catch {
     return { sinceReturn: null, history: [] };
   }
+}
+
+// The financial categories we surface; only these get ETF proxies (the rest are
+// political/media/deal/trend picks we don't score).
+const FIN_CAT = /performing asset|business winner|business loser/i;
+
+// Curated sector/theme → representative ETF proxies. A pick with no single
+// ticker but a clear, well-known sector lens is tracked via the proxy; fuzzy or
+// private picks (Polymarket, "California real estate", "young workers") match
+// nothing and stay untracked. The UI labels every proxy transparently.
+const SECTOR_PROXIES: Array<{ test: RegExp; ticker: string; note: string }> = [
+  { test: /mag(nificent)?[\s-]*(7|seven)/i, ticker: "MAGS", note: "Magnificent Seven ETF" },
+  { test: /chinese tech|china (internet|tech)/i, ticker: "KWEB", note: "China internet ETF" },
+  { test: /software industrial complex|enterprise (application )?software|legacy (enterprise )?saas|vertical saas/i, ticker: "IGV", note: "software sector ETF" },
+  { test: /robotic|autonomous hardware/i, ticker: "BOTZ", note: "robotics & AI ETF" },
+  { test: /defense (and|&) aerospace|aerospace (and|&) defense|legacy defense/i, ticker: "ITA", note: "aerospace & defense ETF" },
+  { test: /critical (metals|minerals|elements)|rare[\s-]?earth|strategic metals/i, ticker: "REMX", note: "rare-earth & strategic-metals ETF" },
+  { test: /\bipo(s)?\b|new ipos/i, ticker: "IPO", note: "Renaissance IPO ETF" },
+  { test: /tech supercycle|technology supercycle|u\.?s\.? equities/i, ticker: "QQQ", note: "Nasdaq-100 ETF" },
+];
+
+function directionFromCategory(category: string): "up" | "down" | null {
+  const c = category.toLowerCase();
+  if (/best performing|business winner/.test(c)) return "up";
+  if (/worst performing|business loser/.test(c)) return "down";
+  return null;
+}
+
+/** Resolve what symbol to price a pick on: its own ticker, or a sector ETF proxy.
+ *  Proxies apply only to financial-category picks with no direct ticker. */
+function resolveProxy(p: { pick: string; ticker: string | null; category: string; direction: "up" | "down" | null }): {
+  symbol: string | null;
+  proxyTicker: string | null;
+  proxyNote: string | null;
+  direction: "up" | "down" | null;
+} {
+  if (p.ticker) return { symbol: p.ticker.toUpperCase(), proxyTicker: null, proxyNote: null, direction: p.direction };
+  if (!FIN_CAT.test(p.category)) return { symbol: null, proxyTicker: null, proxyNote: null, direction: p.direction };
+  const proxy = SECTOR_PROXIES.find((x) => x.test.test(p.pick));
+  if (!proxy) return { symbol: null, proxyTicker: null, proxyNote: null, direction: p.direction };
+  // A "biggest business winner/loser" pick may carry no explicit direction — the
+  // category states the bet, so infer it for the proxy verdict.
+  return { symbol: proxy.ticker, proxyTicker: proxy.ticker, proxyNote: proxy.note, direction: p.direction ?? directionFromCategory(p.category) };
 }
 
 export interface PredictionsFile {
@@ -132,18 +179,21 @@ export async function extractPredictions(): Promise<void> {
     const nowIso = new Date().toISOString();
     const scored: ScoredPrediction[] = [];
     for (const p of result.predictions) {
-      const m = p.ticker ? await scoreTicker(p.ticker, ep.date, nowIso) : { sinceReturn: null, history: [] };
+      const r = resolveProxy(p);
+      const m = r.symbol ? await scoreTicker(r.symbol, ep.date, nowIso) : { sinceReturn: null, history: [] };
       scored.push({
         host: p.host,
         guestName: p.guestName,
         category: p.category,
         pick: p.pick,
         ticker: p.ticker?.toUpperCase() ?? null,
-        direction: p.direction,
+        direction: r.direction,
         quote: p.quote,
         quoteStartMs: p.quoteStartSec != null ? p.quoteStartSec * 1000 : null,
         sinceReturn: m.sinceReturn,
         history: m.history.length ? m.history : undefined,
+        proxyTicker: r.proxyTicker,
+        proxyNote: r.proxyNote,
       });
     }
 
@@ -174,14 +224,24 @@ export async function rescorePredictions(): Promise<void> {
   const nowIso = new Date().toISOString();
   let priced = 0;
   for (const ep of data.episodes) {
+    let n = 0;
     for (const p of ep.predictions) {
-      if (!p.ticker) continue;
-      const m = await scoreTicker(p.ticker, ep.date, nowIso);
+      const r = resolveProxy(p);
+      p.proxyTicker = r.proxyTicker;
+      p.proxyNote = r.proxyNote;
+      if (r.direction && !p.direction) p.direction = r.direction; // record inferred direction for proxy picks
+      if (!r.symbol) {
+        p.sinceReturn = null;
+        p.history = undefined;
+        continue;
+      }
+      const m = await scoreTicker(r.symbol, ep.date, nowIso);
       p.sinceReturn = m.sinceReturn;
       p.history = m.history.length ? m.history : undefined;
+      n++;
       priced++;
     }
-    console.log(`  ${ep.id} (${ep.year}): repriced ${ep.predictions.filter((p) => p.ticker).length} tickered picks`);
+    console.log(`  ${ep.id} (${ep.year}): repriced ${n} picks (direct + proxy)`);
   }
   data.generatedAt = nowIso;
   fs.writeFileSync(OUT_FILE, JSON.stringify(data, null, 2) + "\n");

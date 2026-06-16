@@ -54,6 +54,8 @@ export default function PredictionsPage() {
         quote: p.quote,
         quoteStartMs: p.quoteStartMs,
         history: p.history ?? null,
+        proxyTicker: p.proxyTicker ?? null,
+        proxyNote: p.proxyNote ?? null,
       });
       // Every host's pick in the financial categories — graded where it maps to a
       // single ticker, shown but ungraded otherwise. Political/media/deal/trend
@@ -87,8 +89,9 @@ export default function PredictionsPage() {
       />
 
       <p className="text-xs text-neutral-400">
-        Tickered picks are scored from the episode-day close via the named ticker or ETF proxy;
-        directional verdicts use a ±2% dead zone. Political, media, and deal predictions are left
+        Picks are scored from the episode-day close — via the named ticker, or a representative
+        sector ETF for theme calls (e.g. software → IGV, China tech → KWEB), labelled on each card.
+        Directional verdicts use a ±2% dead zone. Political, media, and deal predictions are left
         off — this is a markets scorecard. As of {fmtDate(data.generatedAt)}.
       </p>
     </div>
