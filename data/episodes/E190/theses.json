@@ -10,13 +10,7 @@
     "host": "Chamath",
     "stance": "bear",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Chamath argues NVIDIA and other AI stocks are at the tail end of the hype cycle, with investors selling every spike to book profits, and that there will need to be a reset in AI capex as the ROI hasn't materialized.",
     "quote": "people know that we are at the tail end of the hype cycle in AI, and every chance, every time these things spike, people take an opportunity to just massively sell. I mean, NVIDIA's turned over 308 million shares today.",
     "quoteStartMs": 2534939,
@@ -26,7 +20,9 @@
       "hype cycle",
       "sell-off"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E190-meta-Chamath-1",
@@ -39,13 +35,7 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Chamath notes Meta rallied on AI demand comments but has given back all its gains as investors use spikes to sell and book profits amid uncertainty about AI ROI.",
     "quote": "Meta rallied. They've basically given up all of their gains. It's gone kind of straight down today. But the point isn't that these companies are going to zero... it's just the point is that right now people are optimizing. They're selling",
     "quoteStartMs": 2559000,
@@ -54,7 +44,9 @@
       "valuation",
       "sell-off"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E190-pershing-square-capital-management-Chamath-2",
@@ -67,13 +59,7 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Chamath explains that Ackman's failed IPO attempt reflects the fundamental difficulty of monetizing hedge fund management companies as public equities, since their core business of making bets is short-term and unpredictable, though he praises Ackman personally as a resilient and exceptional risk manager.",
     "quote": "in finance, these entities that try to sell a piece of the quote-unquote general partner as a company, I just think that it's, um, frankly, that it doesn't work. And this is just, you know, an example, yet another example that there's not",
     "quoteStartMs": 4344200,
@@ -83,6 +69,8 @@
       "equity value",
       "business model"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

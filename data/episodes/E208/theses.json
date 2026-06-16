@@ -20,7 +20,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E208-openai-Jason-1",
@@ -42,7 +44,9 @@
       "competitive position"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E208-googl-Chamath-2",
@@ -65,7 +69,9 @@
       "Google Gemini"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E208-googl-Guest-3",
@@ -88,8 +94,10 @@
       "Google Gemini"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Aaron Levie"
+    "guestName": "Aaron Levie",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E208-box-Guest-4",
@@ -112,8 +120,10 @@
       "AI"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Aaron Levie"
+    "guestName": "Aaron Levie",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E208-mstr-Jason-5",
@@ -135,7 +145,8 @@
       "NASDAQ 100"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "scoreExclusionReason": "day_trade_aside"
+    "callType": "view",
+    "excludeReason": "day_trade_aside",
+    "scoreNote": null
   }
 ]

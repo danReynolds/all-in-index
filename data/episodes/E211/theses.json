@@ -20,7 +20,9 @@
       "M&A"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E211-baba-Friedberg-1",
@@ -43,7 +45,9 @@
       "macro"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E211-baba-Guest-2",
@@ -65,11 +69,10 @@
       "macro"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "guestName": "Mark Pincus",
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "scoreReason": "Mark Pincus said he had been loading up on Alibaba"
+    "excludeReason": null,
+    "scoreNote": "Mark Pincus said he had been loading up on Alibaba"
   },
   {
     "id": "E211-googl-Jason-3",
@@ -91,7 +94,9 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E211-x-formerly-twitter-Chamath-4",
@@ -113,6 +118,8 @@
       "social media"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

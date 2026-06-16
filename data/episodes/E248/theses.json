@@ -20,7 +20,9 @@
       "competitive disruption"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E248-dkng-Chamath-1",
@@ -42,7 +44,9 @@
       "sports betting"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E248-flut-Chamath-2",
@@ -64,7 +68,9 @@
       "sports betting"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E248-amzn-Friedberg-3",
@@ -87,7 +93,9 @@
       "operating leverage"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E248-amzn-Friedberg-4",
@@ -110,7 +118,9 @@
       "market share"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E248-msft-Friedberg-5",
@@ -133,7 +143,9 @@
       "market share"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E248-googl-Friedberg-6",
@@ -156,7 +168,9 @@
       "competitive position"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E248-googl-Chamath-7",
@@ -179,7 +193,9 @@
       "Waymo"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E248-waymo-Chamath-8",
@@ -202,7 +218,9 @@
       "liquidity"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E248-tsla-Chamath-9",
@@ -225,7 +243,9 @@
       "Optimus"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E248-orcl-Jason-10",
@@ -247,6 +267,8 @@
       "market share"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

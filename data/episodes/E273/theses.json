@@ -20,8 +20,10 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Marc Benioff"
+    "guestName": "Marc Benioff",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E273-crm-Chamath-1",
@@ -44,7 +46,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E273-anthropic-Guest-2",
@@ -66,8 +70,10 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Marc Benioff"
+    "guestName": "Marc Benioff",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E273-anthropic-Guest-3",
@@ -89,8 +95,10 @@
       "AI strategy"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Marc Benioff"
+    "guestName": "Marc Benioff",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E273-hubs-Guest-4",
@@ -112,8 +120,10 @@
       "AI disruption"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Marc Benioff"
+    "guestName": "Marc Benioff",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E273-aapl-Jason-5",
@@ -136,10 +146,9 @@
       "competitive positioning"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Jason called Apple his choice for the next year"
+    "excludeReason": null,
+    "scoreNote": "Jason called Apple his choice for the next year"
   },
   {
     "id": "E273-aapl-Chamath-6",
@@ -161,7 +170,9 @@
       "AI hardware"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E273-googl-Friedberg-7",
@@ -183,7 +194,9 @@
       "Google ecosystem"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E273-nvda-Chamath-8",
@@ -205,7 +218,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E273-andreessen-horowitz-Chamath-9",
@@ -227,6 +242,8 @@
       "business strategy"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

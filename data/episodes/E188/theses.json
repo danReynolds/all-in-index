@@ -10,13 +10,7 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "low",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Chamath views Sequoia marking Stripe at a $70 billion valuation as a positive sign for the company, though he is skeptical of the cross-fund mechanics of the liquidity transaction.",
     "quote": "it's interesting to see that they mark the valuation up to $70 billion. So that's, I think, a good sign for Stripe.",
     "quoteStartMs": 3731000,
@@ -25,7 +19,9 @@
       "private markets",
       "VC liquidity"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E188-sequoia-capital-stripe-secondary-transaction-Sacks-2",
@@ -38,13 +34,7 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "not_investment_call",
     "summary": "Sacks sees Sequoia's cross-fund Stripe secondary as an elegant, practical solution to the structural problem of VC funds outliving their 10-year life while holding illiquid late-stage private positions.",
     "quote": "if you have a security that's not public yet, but is semi-liquid because it's a very late-stage private company, then what you can do is spin those shares into an SPV...and you let new investors come in and buy those shares at some price,",
     "quoteStartMs": 3925224,
@@ -53,7 +43,9 @@
       "private markets",
       "fund structure"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": "not_investment_call",
+    "scoreNote": null
   },
   {
     "id": "E188-big-tech-microsoft-google-amazon-Sacks-4",
@@ -66,13 +58,7 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "not_investment_call",
     "summary": "Sacks argues that large tech monopolies like Microsoft, Google, and Amazon use market power inappropriately and warrant close regulatory scrutiny, and that censorship of political speech by these platforms is a legitimate antitrust concern.",
     "quote": "the top handful of tech companies, the Microsofts, the Googles, Amazon, these are big tech monopolies. There's just no way around that fact. And they do need to be closely watched and supervised and regulated with respect to their market",
     "quoteStartMs": 4213631,
@@ -81,6 +67,8 @@
       "antitrust",
       "censorship"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": "not_investment_call",
+    "scoreNote": null
   }
 ]

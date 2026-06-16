@@ -32,7 +32,7 @@ function thesis(
     host,
     stance,
     conviction: "medium",
-    positional: false,
+    callType: "view",
     summary: `${host} is ${stance}`,
     quote: `${host} said ${stance}`,
     quoteStartMs: null,
@@ -92,17 +92,13 @@ test("published quotes are trimmed to a verbatim prefix", () => {
 
 test("host exposure windows score explicit shorts but not legacy bearish exits", () => {
   const long = thesis("Chamath", "bull", "2025-01-01T00:00:00.000Z", {
-    positional: true,
     callType: "explicit_long",
-    tradeDirection: "long",
   });
   const legacyExit = thesis("Chamath", "bear", "2025-02-01T00:00:00.000Z", {
-    positional: true,
+    callType: "explicit_exit",
   });
   const explicitShort = thesis("Chamath", "bear", "2025-03-01T00:00:00.000Z", {
-    positional: true,
     callType: "explicit_short",
-    tradeDirection: "short",
   });
 
   assert.equal(tradeDirectionForTake(legacyExit), null);
@@ -132,14 +128,10 @@ test("host exposure windows score explicit shorts but not legacy bearish exits",
 
 test("host exposure windows retain same-direction reaffirming calls without double-counting", () => {
   const first = thesis("Jason", "bull", "2025-01-01T00:00:00.000Z", {
-    positional: true,
     callType: "selection",
-    tradeDirection: "long",
   });
   const reaffirm = thesis("Jason", "bull", "2025-02-01T00:00:00.000Z", {
-    positional: true,
     callType: "pair_trade",
-    tradeDirection: "long",
   });
 
   const windows = hostExposureWindows([first, reaffirm], "Jason");
@@ -150,16 +142,14 @@ test("host exposure windows retain same-direction reaffirming calls without doub
   assert.deepEqual(windows[0].reinforceTakes?.map((t) => t.id), [reaffirm.id]);
 });
 
-test("portfolio-scored non-tradable receipts need explicit exclusion reasons", () => {
+test("a private scored call is valid on its own — structural non-tradability is derived, not annotated", () => {
   const privateTake = thesis("Chamath", "bull", "2025-01-01T00:00:00.000Z", {
     id: "private-call",
     company: "PrivateCo",
     ticker: null,
     isPublic: false,
-    positional: true,
     callType: "explicit_long",
-    tradeDirection: "long",
-    scoreReason: "Chamath disclosed a private-company long",
+    scoreNote: "Chamath disclosed a private-company long",
   });
   const privateHolding = {
     ...holding([privateTake]),
@@ -174,11 +164,8 @@ test("portfolio-scored non-tradable receipts need explicit exclusion reasons", (
     episodesProcessed: 1,
   };
 
-  assert.deepEqual(validateIndexSnapshot(snapshot).errors, [
-    "private-call is portfolio-scored but non-tradable without scoreExclusionReason",
-  ]);
-
-  privateTake.scoreExclusionReason = "private";
+  // The ticker checks (isTradableCompanyExposure) keep this out of the fund; the
+  // take itself needs no per-row exclusion field, so validation is clean.
   assert.deepEqual(validateIndexSnapshot(snapshot).errors, []);
 });
 

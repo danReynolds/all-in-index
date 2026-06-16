@@ -20,8 +20,10 @@
       "competition"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Brad Gerstner"
+    "guestName": "Brad Gerstner",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E250-anthropic-Guest-1",
@@ -43,8 +45,10 @@
       "AI competition"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Brad Gerstner"
+    "guestName": "Brad Gerstner",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E250-openai-Chamath-2",
@@ -67,11 +71,9 @@
       "competition"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "scoreReason": "Chamath disclosed he is an investor in OpenAI as part of the AI supercycle",
-    "scoreExclusionReason": "private"
+    "excludeReason": null,
+    "scoreNote": "Chamath disclosed he is an investor in OpenAI as part of the AI supercycle"
   },
   {
     "id": "E250-anthropic-Chamath-3",
@@ -93,11 +95,9 @@
       "competition"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "scoreReason": "Chamath disclosed he is an investor in Anthropic as part of the AI supercycle",
-    "scoreExclusionReason": "private"
+    "excludeReason": null,
+    "scoreNote": "Chamath disclosed he is an investor in Anthropic as part of the AI supercycle"
   },
   {
     "id": "E250-aapl-Guest-4",
@@ -119,8 +119,10 @@
       "Mag Seven"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Brad Gerstner"
+    "guestName": "Brad Gerstner",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E250-nvda-Guest-5",
@@ -143,10 +145,9 @@
       "positioning"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "scoreReason": "Brad Gerstner said his firm still believes the AI compute trade has room to run",
-    "guestName": "Brad Gerstner"
+    "guestName": "Brad Gerstner",
+    "excludeReason": null,
+    "scoreNote": "Brad Gerstner said his firm still believes the AI compute trade has room to run"
   }
 ]

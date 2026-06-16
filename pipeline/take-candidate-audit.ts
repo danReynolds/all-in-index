@@ -1,4 +1,5 @@
 import { isPortfolioScored } from "../lib/calls";
+import { isTradableCompanyExposure } from "../lib/tradability";
 import { REGULAR_HOSTS } from "../lib/types";
 import { store } from "./store";
 import type { Host, Thesis, Transcript } from "../lib/types";
@@ -185,10 +186,10 @@ function sameEntity(t: Thesis, entity: EntityAlias): boolean {
 function thesisCoverage(t: Thesis): Exclude<Coverage, "missing"> {
   if (t.attributionConfidence === "low") return "low_attribution";
   if (isPortfolioScored(t)) {
-    if (t.scoreCondition || t.scoreExclusionReason || !t.ticker || !t.isPublic) return "excluded";
+    if (!isTradableCompanyExposure(t)) return "excluded";
     return "portfolio";
   }
-  if (t.scoreCondition || t.scoreExclusionReason) return "excluded";
+  if (t.excludeReason) return "excluded";
   return "view";
 }
 

@@ -20,7 +20,9 @@
       "strategic reserves"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E247-googl-Chamath-1",
@@ -43,7 +45,9 @@
       "energy costs"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E247-msft-Chamath-2",
@@ -66,7 +70,9 @@
       "regulatory risk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E247-googl-Jason-3",
@@ -89,7 +95,9 @@
       "employment"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E247-meta-Jason-4",
@@ -112,7 +120,9 @@
       "employment"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E247-amzn-Jason-5",
@@ -135,7 +145,9 @@
       "logistics"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E247-lit-Chamath-a0",
@@ -148,7 +160,6 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "high",
-    "positional": false,
     "summary": "Chamath argues the US must build strategic reserves of critical inputs including lithium, acting as a methodical buyer of record to counteract Chinese price manipulation and mercantilism.",
     "quote": "Tesla all of a sudden can't go into the spot market. They should be able to come to the strategic reserve and be able to buy lithium... I think that mechanism is the only way we can compete effectively on a day-to-day basis with the Chinese.",
     "quoteStartMs": 1966469,
@@ -159,7 +170,9 @@
       "supply chain security"
     ],
     "attributionConfidence": "high",
-    "scoreReason": "This is a policy/strategic reserve proposal to counteract Chinese price manipulation. No explicit personal price direction or claim that lithium prices will rise."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "This is a policy/strategic reserve proposal to counteract Chinese price manipulation. No explicit personal price direction or claim that lithium prices will rise."
   },
   {
     "id": "E247-cper-Chamath-a1",
@@ -172,7 +185,6 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "summary": "Chamath lists copper among the critical commodities (alongside dysprosium and NDPR) that the US strategic reserve should absorb to buffer against Chinese price shocks.",
     "quote": "The US balance sheet is the only one that can create a strategic reserve around these inputs... We can nominate now things that are critical, dysprosium, copper, NDPR, all of these things that can now absorb the price shocks that China may otherwise be able to affect.",
     "quoteStartMs": 1788614,
@@ -183,6 +195,8 @@
       "supply chain security"
     ],
     "attributionConfidence": "high",
-    "scoreReason": "Lists copper among critical inputs for a US strategic reserve to buffer price shocks — policy/stability framing, not a directional price call."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Lists copper among critical inputs for a US strategic reserve to buffer price shocks — policy/stability framing, not a directional price call."
   }
 ]

@@ -20,7 +20,9 @@
       "revenue concentration"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E224-nvda-Sacks-1",
@@ -43,6 +45,8 @@
       "AI chips"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

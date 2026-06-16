@@ -20,11 +20,9 @@
       "SaaS"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "pair_trade",
-    "tradeDirection": "long",
-    "pairTradeId": "E234-figma-adobe-Chamath",
-    "scoreReason": "Long leg of Chamath's Figma over Adobe spread"
+    "excludeReason": null,
+    "scoreNote": "Long leg of Chamath's Figma over Adobe spread"
   },
   {
     "id": "E234-figma-Friedberg-1",
@@ -47,7 +45,9 @@
       "AI disruption"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E234-adbe-Chamath-2",
@@ -70,11 +70,9 @@
       "short"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "pair_trade",
-    "tradeDirection": "short",
-    "pairTradeId": "E234-figma-adobe-Chamath",
-    "scoreReason": "Short leg of Chamath's Figma over Adobe spread"
+    "excludeReason": null,
+    "scoreNote": "Short leg of Chamath's Figma over Adobe spread"
   },
   {
     "id": "E234-meta-Chamath-3",
@@ -96,7 +94,9 @@
       "competitive threat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E234-gld-Chamath-a0",
@@ -109,7 +109,6 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "summary": "Chamath argues that dollar devaluation is a long-running structural decay, but hard assets (including gold) denominated in dollars will see their values rise enough to more than offset that drag, keeping a sustained bid under dollar-denominated hard assets.",
     "quote": "can the drag be overcome by the increase in asset values of the hard assets that are dollar-denominated? And the answer is Yes, and meaningfully so.",
     "quoteStartMs": 3022231,
@@ -119,6 +118,9 @@
       "store of value",
       "macro"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

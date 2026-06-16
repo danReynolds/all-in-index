@@ -20,10 +20,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Jason picked Amazon as his 2026 biggest-business-winner bet"
+    "excludeReason": null,
+    "scoreNote": "Jason picked Amazon as his 2026 biggest-business-winner bet"
   },
   {
     "id": "E257-polymarket-Sacks-1",
@@ -46,11 +45,9 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Sacks named Polymarket as his second 2026 biggest-business-winner pick",
-    "scoreExclusionReason": "private"
+    "excludeReason": null,
+    "scoreNote": "Sacks named Polymarket as his second 2026 biggest-business-winner pick"
   },
   {
     "id": "E257-nflx-Sacks-2",
@@ -73,9 +70,9 @@
       "M&A"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "scoreCondition": "Only applies if Netflix does not close the Warner Bros. Discovery deal.",
-    "scoreExclusionReason": "conditional"
+    "callType": "view",
+    "excludeReason": "conditional",
+    "scoreNote": "Only applies if Netflix does not close the Warner Bros. Discovery deal."
   },
   {
     "id": "E257-now-Sacks-3",
@@ -98,7 +95,9 @@
       "pricing model"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E257-tsla-Chamath-4",
@@ -121,7 +120,9 @@
       "Elon Musk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E257-spacex-Chamath-5",
@@ -144,7 +145,9 @@
       "Elon Musk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E257-anthropic-Jason-6",
@@ -167,7 +170,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E257-hood-Jason-7",
@@ -190,10 +195,9 @@
       "consumer fintech"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Jason picked Robinhood/prediction-market wagering as his best-performing asset theme"
+    "excludeReason": null,
+    "scoreNote": "Jason picked Robinhood/prediction-market wagering as his best-performing asset theme"
   },
   {
     "id": "E257-coin-Jason-8",
@@ -216,7 +220,9 @@
       "rate cuts"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E257-siegy-Sacks-9",
@@ -239,7 +245,9 @@
       "accelerated depreciation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E257-cper-Friedberg-a0",
@@ -252,7 +260,6 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "high",
-    "positional": true,
     "summary": "Friedberg picks copper as the best-performing asset, citing a massive structural supply-demand deficit (~70% short by 2040), its ubiquity in data centers, chips, and weapons systems, and its role as a critical national security material in a less multilateral world.",
     "quote": "The asset that is set up to go absolutely parabolic is copper... we are on a path by 2040 where we will be short about 70% of the global supply at current course and speed.",
     "quoteStartMs": 2097528,
@@ -265,9 +272,8 @@
     ],
     "attributionConfidence": "high",
     "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Friedberg picked copper as the best-performing asset for 2026",
-    "scoreExclusionReason": "macro_asset"
+    "excludeReason": null,
+    "scoreNote": "Friedberg picked copper as the best-performing asset for 2026"
   },
   {
     "id": "E257-uso-Friedberg-a1",
@@ -280,7 +286,6 @@
     "host": "Friedberg",
     "stance": "bear",
     "conviction": "high",
-    "positional": true,
     "summary": "Friedberg names hydrocarbons/oil as a worst-performing asset for 2026, arguing electrification and energy storage trends are unstoppable and will shrink oil's addressable market, with price more likely to see $45/barrel than $65.",
     "quote": "I think a very poor performing asset will be hydrocarbons. I just think that the trend in oil is inexorable and it's down... does it see $65 or $45? I think it's more likely to see $45 than $65.",
     "quoteStartMs": 4268135,
@@ -293,9 +298,8 @@
     ],
     "attributionConfidence": "high",
     "callType": "selection",
-    "tradeDirection": "short",
-    "scoreReason": "Friedberg named hydrocarbons/oil as a poor-performing asset for 2026",
-    "scoreExclusionReason": "macro_asset"
+    "excludeReason": null,
+    "scoreNote": "Friedberg named hydrocarbons/oil as a poor-performing asset for 2026"
   },
   {
     "id": "E257-gld-Jason-a2",
@@ -308,7 +312,6 @@
     "host": "Jason",
     "stance": "bull",
     "conviction": "low",
-    "positional": false,
     "summary": "Jason references gold as a beneficiary of the dollar debasement trade, noting people are moving to gold (and silver, copper) as the US dollar faces headwinds from rising debt.",
     "quote": "It's just going to be harder and harder for the dollar... which we see in people moving to gold and silver and perhaps copper.",
     "quoteStartMs": 4344425,
@@ -318,7 +321,10 @@
       "store of value",
       "2026 predictions"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E257-slv-Jason-a3",
@@ -331,7 +337,6 @@
     "host": "Jason",
     "stance": "bull",
     "conviction": "low",
-    "positional": false,
     "summary": "Jason briefly mentions silver alongside gold and copper as an asset people are rotating into as a hedge against dollar debasement driven by rising US debt.",
     "quote": "It's just going to be harder and harder for the dollar... which we see in people moving to gold and silver and perhaps copper.",
     "quoteStartMs": 4344425,
@@ -341,7 +346,10 @@
       "store of value",
       "2026 predictions"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E257-cper-Jason-a4",
@@ -354,7 +362,6 @@
     "host": "Jason",
     "stance": "bull",
     "conviction": "low",
-    "positional": false,
     "summary": "Jason incidentally groups copper with gold and silver as assets benefiting from dollar debasement and debt concerns, though his primary focus is the dollar itself.",
     "quote": "It's just going to be harder and harder for the dollar... which we see in people moving to gold and silver and perhaps copper.",
     "quoteStartMs": 4344425,
@@ -364,7 +371,10 @@
       "store of value",
       "2026 predictions"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E257-gld-Friedberg-a5",
@@ -377,7 +387,6 @@
     "host": "Friedberg",
     "stance": "bear",
     "conviction": "low",
-    "positional": false,
     "summary": "Friedberg offers a contrarian take that central banks will recognize limitations of gold (and Bitcoin) and seek a new cryptographic paradigm for their balance sheets, implying gold's role as a reserve asset is limited.",
     "quote": "I think the central banks will realize that there are limitations to gold and limitations to Bitcoin, and will as a result seek out a completely new cryptographic paradigm that they can control on their balance sheet.",
     "quoteStartMs": 3672876,
@@ -388,7 +397,10 @@
       "contrarian",
       "2026 predictions"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E257-huawei-Sacks-a6",
@@ -401,12 +413,7 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "high",
-    "positional": true,
     "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Sacks named Huawei his #1 2026 biggest-business-winner pick",
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Sacks picks Huawei as his #1 biggest business winner for 2026, arguing its partnership with SMIC is pushing deeper into the AI chip stack and will outperform Western expectations.",
     "quote": "My number 1 is Huawei... Huawei's effort to partner with SMIC to go deeper in the chip stack... they're just firing on all cylinders.",
     "quoteStartMs": 1984000,
@@ -416,7 +423,9 @@
       "AI chips",
       "China"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": "Sacks named Huawei his #1 2026 biggest-business-winner pick"
   },
   {
     "id": "E257-ipo-market-Chamath-a7",
@@ -429,12 +438,7 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "positional": true,
     "callType": "basket",
-    "tradeDirection": "long",
-    "scoreReason": "Chamath picked IPOs and new public listings as his 2026 business-winner theme",
-    "scoreCondition": null,
-    "scoreExclusionReason": "macro_asset",
     "summary": "Chamath predicts 2026 will be a strong year for IPOs, with many successful listings and potentially trillions of dollars of new public-company market cap created as part of a broader Trump-boom reversal.",
     "quote": "I think 2026 is going to be a big year for IPOs... a bunch of successful ones, and I think we could see trillions of dollars of new market cap created of public companies.",
     "quoteStartMs": 2143000,
@@ -444,7 +448,9 @@
       "IPO market",
       "public markets"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": "Chamath picked IPOs and new public listings as his 2026 business-winner theme"
   },
   {
     "id": "E257-enterprise-application-software-saas-Friedberg-a8",
@@ -457,12 +463,7 @@
     "host": "Friedberg",
     "stance": "bear",
     "conviction": "high",
-    "positional": true,
     "callType": "basket",
-    "tradeDirection": "short",
-    "scoreReason": "Friedberg picked the software industrial complex as his 2026 biggest-business-loser basket",
-    "scoreCondition": null,
-    "scoreExclusionReason": "benchmark_or_etf",
     "summary": "Friedberg picks the software industrial complex as his 2026 biggest business loser, arguing AI agents will aggressively shrink the maintenance and migration revenue pools that drive legacy SaaS economics.",
     "quote": "I will pick the software industrial complex... I think you're going to see that total economic opportunity shrink and contract aggressively.",
     "quoteStartMs": 2583000,
@@ -472,7 +473,9 @@
       "SaaS",
       "AI disruption"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": "Friedberg picked the software industrial complex as his 2026 biggest-business-loser basket"
   },
   {
     "id": "E257-capital-equipment-Chamath-a9",
@@ -485,12 +488,7 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "positional": true,
     "callType": "basket",
-    "tradeDirection": "long",
-    "scoreReason": "Chamath highlighted accelerated-depreciation capital equipment as an overlooked best-asset category",
-    "scoreCondition": null,
-    "scoreExclusionReason": "macro_asset",
     "summary": "Chamath highlights capital equipment qualifying for 100% accelerated depreciation as an overlooked best-performing-asset category, arguing the tax treatment is making those markets very hot.",
     "quote": "one category we didn't talk about... assets that qualify for accelerated depreciation, capital equipment... that is making those markets super hot right now.",
     "quoteStartMs": 4452000,
@@ -500,6 +498,8 @@
       "capital equipment",
       "tax policy"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": "Chamath highlighted accelerated-depreciation capital equipment as an overlooked best-asset category"
   }
 ]

@@ -20,7 +20,9 @@
       "competition"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E198-openai-Guest-1",
@@ -42,8 +44,10 @@
       "governance"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Mark Cuban"
+    "guestName": "Mark Cuban",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E198-x-twitter-Guest-2",
@@ -65,8 +69,10 @@
       "business model"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Mark Cuban"
+    "guestName": "Mark Cuban",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E198-groq-Guest-4",
@@ -88,12 +94,10 @@
       "venture"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "scoreReason": "Mark Cuban disclosed investing in Groq alongside Chamath",
-    "scoreExclusionReason": "private",
-    "guestName": "Mark Cuban"
+    "guestName": "Mark Cuban",
+    "excludeReason": null,
+    "scoreNote": "Mark Cuban disclosed investing in Groq alongside Chamath"
   },
   {
     "id": "E198-uso-Guest-a0",
@@ -106,7 +110,6 @@
     "host": "Guest",
     "stance": "mixed",
     "conviction": "medium",
-    "positional": false,
     "summary": "Mark Cuban argues that Trump's 2020 deal with Saudi Arabia and Russia to cut oil production by 10% drove up the price of oil and gas over two years, contributing directly to the 9.1% inflation peak in 2022. He also notes oil prices are a global phenomenon and domestic production cuts alone don't fully drive domestic gas prices.",
     "quote": "what he did, he said, okay, MBS owes me a favor over in Saudi Arabia... And so by reducing production over a plan of 2 years... that increased the price of gas, the price of oil, the price of energy. And that was bad for American consumers",
     "quoteStartMs": 1491695,
@@ -120,7 +123,10 @@
       "Russia"
     ],
     "attributionConfidence": "high",
-    "guestName": "Mark Cuban"
+    "guestName": "Mark Cuban",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E198-uso-Friedberg-a1",
@@ -133,7 +139,6 @@
     "host": "Friedberg",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "summary": "Friedberg pushes back on oil being the primary domestic inflation driver, noting that more than half of US crude oil production is exported, meaning production cuts would have primarily affected exporter profits rather than domestic energy costs.",
     "quote": "US crude oil production chart, and more than half of this oil is exported. So you can see the reduction in production, but the domestic oil production capacity remained high relative to our consumption... it really would've affected the profits of the exporting companies, not necessarily the cost of energy domestically.",
     "quoteStartMs": 2046783,
@@ -143,6 +148,9 @@
       "domestic energy costs",
       "inflation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

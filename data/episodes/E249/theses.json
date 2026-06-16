@@ -20,8 +20,10 @@
       "fleet scale"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Elon Musk"
+    "guestName": "Elon Musk",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E249-tsla-Guest-1",
@@ -44,8 +46,10 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Elon Musk"
+    "guestName": "Elon Musk",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E249-tsla-Jason-2",
@@ -68,7 +72,9 @@
       "CEO risk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E249-openai-Guest-3",
@@ -91,8 +97,10 @@
       "competitive positioning"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Elon Musk"
+    "guestName": "Elon Musk",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E249-x-twitter-Guest-4",
@@ -115,8 +123,10 @@
       "platform value"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Elon Musk"
+    "guestName": "Elon Musk",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E249-xai-Guest-5",
@@ -139,8 +149,10 @@
       "product"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Elon Musk"
+    "guestName": "Elon Musk",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E249-lit-Guest-a0",
@@ -153,7 +165,6 @@
     "host": "Guest",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "summary": "Elon Musk argues lithium (along with iron, phosphorus, and carbon) is very common on Earth and there is no shortage of raw materials needed to power the planet with solar and batteries, implying no supply-side constraint on lithium demand.",
     "quote": "lithium is also very common. So the, there's actually, you can do the math... that shows that you can completely power Earth with solar panels and batteries. Um, and, uh, there's no shortage of anything.",
     "quoteStartMs": 5456154,
@@ -165,6 +176,8 @@
     ],
     "attributionConfidence": "high",
     "guestName": "Elon Musk",
-    "scoreReason": "Musk explicitly states lithium is 'very common' and there is 'no shortage' — this is an abundance/supply fact, not a bull price claim. If anything it implies no supply-driven price pressure."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Musk explicitly states lithium is 'very common' and there is 'no shortage' — this is an abundance/supply fact, not a bull price claim. If anything it implies no supply-driven price pressure."
   }
 ]

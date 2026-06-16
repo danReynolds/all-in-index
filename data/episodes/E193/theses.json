@@ -10,13 +10,7 @@
     "host": "Friedberg",
     "stance": "bear",
     "conviction": "low",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "not_investment_call",
     "summary": "Friedberg notes Intel is 'imploding' and unable to manufacture, casting doubt on the CHIPS Act's ability to close the gap with Taiwanese chip fabs.",
     "quote": "Meanwhile, Intel is imploding, you know, they can't manufacture.",
     "quoteStartMs": 5095000,
@@ -25,7 +19,9 @@
       "semiconductors",
       "CHIPS Act"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": "not_investment_call",
+    "scoreNote": null
   },
   {
     "id": "E193-uber-Sacks-1",
@@ -38,13 +34,7 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "not_investment_call",
     "summary": "Sacks notes Uber has rallied to $80, implying a positive trajectory for the stock.",
     "quote": "Uber rallied to— what's the, what's the price now? $80.",
     "quoteStartMs": 5159000,
@@ -52,6 +42,8 @@
       "valuation",
       "stock price"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": "not_investment_call",
+    "scoreNote": null
   }
 ]

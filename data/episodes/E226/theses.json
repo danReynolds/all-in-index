@@ -19,7 +19,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E226-openai-Sacks-1",
@@ -41,7 +43,9 @@
       "growth trajectory"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E226-anthropic-Sacks-2",
@@ -63,7 +67,9 @@
       "model quality"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E226-box-Guest-4",
@@ -86,7 +92,9 @@
       "business model"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E226-nvda-Sacks-5",
@@ -109,7 +117,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E226-flexport-Guest-6",
@@ -132,8 +142,10 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Ryan Peterson"
+    "guestName": "Ryan Peterson",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E226-amzn-Guest-7",
@@ -156,7 +168,9 @@
       "marketplace"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Ryan Peterson"
+    "guestName": "Ryan Peterson",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

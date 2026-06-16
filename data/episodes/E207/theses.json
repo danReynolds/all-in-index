@@ -20,7 +20,9 @@
       "antitrust"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E207-aapl-Guest-1",
@@ -43,8 +45,10 @@
       "product quality"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Keith Rabois"
+    "guestName": "Keith Rabois",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E207-aapl-Chamath-2",
@@ -66,7 +70,9 @@
       "iOS"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E207-stripe-Guest-3",
@@ -89,8 +95,10 @@
       "private vs public"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Keith Rabois"
+    "guestName": "Keith Rabois",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E207-mstr-Friedberg-4",
@@ -113,7 +121,9 @@
       "crypto"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E207-shop-Guest-5",
@@ -135,8 +145,10 @@
       "antitrust"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Keith Rabois"
+    "guestName": "Keith Rabois",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E207-lit-Chamath-a0",
@@ -149,7 +161,6 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "summary": "Chamath highlights the US has one of the largest lithium deposits in the world and frames the lithium supply chain as a key strategic opportunity, implying upside if domestic production is unlocked.",
     "quote": "We have one of the largest lithium deposits in the world. The lithium supply chain is another really good one that's emblematic of all of this.",
     "quoteStartMs": 4824000,
@@ -160,6 +171,8 @@
       "regulations"
     ],
     "attributionConfidence": "high",
-    "scoreReason": "Frames US lithium deposits and the supply chain as a strategic opportunity — supply/theme framing, not a directional commodity-price call."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Frames US lithium deposits and the supply chain as a strategic opportunity — supply/theme framing, not a directional commodity-price call."
   }
 ]

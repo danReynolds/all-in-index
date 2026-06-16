@@ -1,10 +1,11 @@
 import { z } from "zod";
 import { callTool } from "./llm";
+import { verifyTheses } from "./verify";
 import { store } from "./store";
 import { snapQuoteTimestamps, stampAttribution } from "./run-episode";
 import { ASSETS } from "../lib/assets";
 import { REGULAR_HOSTS } from "../lib/types";
-import type { Host, Thesis, Transcript } from "../lib/types";
+import type { Episode, Host, Thesis, Transcript } from "../lib/types";
 
 const HOST_VALUES = [...REGULAR_HOSTS, "Guest", "Unknown"] as const;
 const ASSET_NAMES = ASSETS.map((a) => a.name);
@@ -25,9 +26,11 @@ The same standards as company takes apply:
   Policy commentary about a commodity (e.g. "we need more domestic uranium for
   national security") with no price/investment claim: emit nothing.
 - conviction: hedged aside = low; emphatic, repeated, "this is the trade" = high.
-- positional: true ONLY for the speaker's own transaction/selection language
-  ("I bought gold", "uranium is my pick", "I'd be long copper"). Sentiment
-  ("I like gold here") is not positional.
+- callType: "view" for commentary or sentiment ("I like gold here", "uranium is
+  interesting") — this is the default. Use "explicit_long" for the speaker's own
+  buy/long ("I bought gold", "I'd be long copper"), "explicit_short" for an
+  explicit short, and "selection" for a ranked pick ("uranium is my pick"). Only
+  the speaker's own transaction/selection language earns a non-"view" callType.
 - quote: SHORT verbatim excerpt (<= 240 chars) that CARRIES the evidence for the
   labels. Copy exactly. quoteStartSec from the "[<sec>s <Speaker>]" prefix.
 - One take per (host, asset) per episode; merge scattered remarks. Be
@@ -38,11 +41,7 @@ const Item = z.object({
   host: z.enum(HOST_VALUES),
   stance: z.enum(["bull", "bear", "neutral", "mixed"]),
   conviction: z.enum(["low", "medium", "high"]),
-  // Models occasionally emit "true"/"false" strings — accept both.
-  positional: z.union([
-    z.boolean(),
-    z.enum(["true", "false"]).transform((v) => v === "true"),
-  ]),
+  callType: z.enum(["view", "explicit_long", "explicit_short", "selection"]),
   summary: z.string(),
   quote: z.string(),
   quoteStartSec: z.number().nullable(),
@@ -62,13 +61,13 @@ const INPUT_SCHEMA = {
           host: { type: "string", enum: [...HOST_VALUES] },
           stance: { type: "string", enum: ["bull", "bear", "neutral", "mixed"] },
           conviction: { type: "string", enum: ["low", "medium", "high"] },
-          positional: { type: "boolean" },
+          callType: { type: "string", enum: ["view", "explicit_long", "explicit_short", "selection"] },
           summary: { type: "string" },
           quote: { type: "string" },
           quoteStartSec: { type: ["number", "null"] },
           topics: { type: "array", items: { type: "string" } },
         },
-        required: ["asset", "host", "stance", "conviction", "positional", "summary", "quote", "quoteStartSec", "topics"],
+        required: ["asset", "host", "stance", "conviction", "callType", "summary", "quote", "quoteStartSec", "topics"],
       },
     },
   },
@@ -129,13 +128,14 @@ export async function extractAssets(): Promise<void> {
     if (!result.takes.length) continue;
 
     const theses = store.loadTheses(epId);
-    let changed = false;
+    const newTakes: Thesis[] = [];
     result.takes.forEach((item, i) => {
       const proxy = proxyOf.get(item.asset);
       if (!proxy) return;
-      // One take per (host, asset, episode) — never duplicate.
+      // One take per (host, asset, episode) — never duplicate (vs stored or this batch).
       if (theses.some((t) => t.company === item.asset && t.host === item.host)) return;
-      const take: Thesis = {
+      if (newTakes.some((t) => t.company === item.asset && t.host === item.host)) return;
+      newTakes.push({
         id: `${epId}-${proxy.toLowerCase()}-${item.host}-a${i}`,
         episodeId: epId,
         episodeNumber: ep?.number ?? null,
@@ -146,18 +146,23 @@ export async function extractAssets(): Promise<void> {
         host: item.host as Host,
         stance: item.stance,
         conviction: item.conviction,
-        positional: item.positional,
+        callType: item.callType,
         summary: item.summary,
         quote: item.quote,
         quoteStartMs: item.quoteStartSec != null ? item.quoteStartSec * 1000 : null,
         topics: item.topics,
-      };
-      theses.push(take);
-      changed = true;
-      created++;
-      console.log(`  + ${epId} ${item.host} ${item.stance}/${item.conviction} on ${item.asset}${item.positional ? " 📌" : ""}`);
+      });
     });
-    if (changed) {
+    if (newTakes.length) {
+      // Route commodity takes through the SAME adversarial gate as company takes:
+      // drop passing mentions, neutralize non-directional views, repair weak quotes.
+      // (This is why a separate audit-commodity-stance pass is no longer needed.)
+      const verified = await verifyTheses({ id: epId, title: ep?.title ?? "" } as Episode, newTakes, tr);
+      for (const t of verified) {
+        theses.push(t);
+        created++;
+        console.log(`  + ${epId} ${t.host} ${t.stance}/${t.conviction} on ${t.company}${t.callType && t.callType !== "view" ? " 📌" : ""}`);
+      }
       snapQuoteTimestamps(theses, tr);
       stampAttribution(theses, tr);
       store.saveTheses(epId, theses);

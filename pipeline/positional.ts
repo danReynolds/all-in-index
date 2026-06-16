@@ -6,44 +6,32 @@ import { HOLDINGS_FILE } from "./config";
 import type { IndexSnapshot, Thesis } from "../lib/types";
 
 const CALL_TYPE_VALUES = ["view", "explicit_long", "explicit_short", "explicit_exit", "selection", "pair_trade", "basket"] as const;
-const TRADE_DIRECTION_VALUES = ["long", "short"] as const;
-const SCORE_EXCLUSION_VALUES = ["conditional", "private", "macro_asset", "crypto", "benchmark_or_etf", "unpriced", "not_investment_call", "day_trade_aside"] as const;
+const EXCLUDE_REASON_VALUES = ["conditional", "not_investment_call", "day_trade_aside"] as const;
 
-const SYSTEM = `You classify podcast investment takes as PORTFOLIO-SCORED CALLS or commentary.
+const SYSTEM = `You classify podcast investment takes by callType — the single field that decides whether a take is a PORTFOLIO-SCORED CALL or commentary.
 
-positional = true ONLY when the statement clearly communicates a portfolio-scoreable call — an expressed or unmistakably implied portfolio action, ownership stance, ranked investment selection, or pair/basket leg:
-- in: "I'd own it here", "I bought more", "this is the trade", "I'm long", "I'd be buying this dip"
-- out: "I'd take profits", "I wouldn't touch it", "this is a short", "I'm out", "stay away"
-- selection: "my pick is X", "my #1 is X", "if I could only bet on two: X and Y", "best place to invest", "new Mag 7 basket"
-- pair/basket: "long X / short Y", "own X over Y", "X belongs in the basket"
+callType:
+- "view" — commentary, analysis, or sentiment with NO portfolio action. This is the default. Strong opinions are still views: "I'm bullish", "exceptional business", "best positioned in AI", "they've stopped innovating", "those companies are toast". Criticizing a company you might still hold is commentary, not an exit.
+- "explicit_long" — the speaker's own buy/own/long ("I'd own it here", "I bought more", "I'm long", "this is the trade", "I'd be buying this dip").
+- "explicit_short" — an explicit short ("this is a short", "I'm short", "the short here is X").
+- "explicit_exit" — a clear close/avoid that exits without opening a short ("I'd take profits", "I'm out", "wouldn't touch it").
+- "selection" — a ranked investment pick ("my pick is X", "my #1 is X", "best place to invest"); the named companies in a "top picks / which would you bet on" answer are selections.
+- "pair_trade" — a leg of a paired long/short ("long X / short Y", "own X over Y").
+- "basket" — a named basket leg ("new Mag 7 basket").
 
-positional = false for views WITHOUT ownership intent, however strong or detailed:
-- praise of products, execution, or leadership ("Jensen is a genius", "best positioned in AI")
-- criticism of strategy, innovation, or culture ("they've stopped innovating") — criticizing a company you might still hold is commentary, not an exit
-- valuation musings, competitive analysis, growth observations without an in/out signal
-- sentiment alone ("I'm bullish", "I wouldn't sleep on it", "exceptional business") unless the segment is explicitly asking for ranked picks or investment selections
+Only the speaker's own transaction or selection language earns a non-"view" callType. Lean to "view" when unsure. Judge each take independently from its summary + quote.
 
-For every take, also classify:
-- callType: "view" for non-positional commentary; "explicit_long" for direct buy/own/long calls; "explicit_short" for direct short calls; "explicit_exit" for clear close/avoid language that exits without opening a short; "selection" for ranked investment picks; "pair_trade" for each leg of a paired long/short trade; "basket" for named basket legs.
-- tradeDirection: "long" only when the row opens a long exposure; "short" only when the speaker explicitly says short or names the short leg of a pair. Bearish exits such as "take profits" or "wouldn't touch it" can be positional with callType="explicit_exit" but must have tradeDirection=null.
-- pairTradeId: shared id for rows that are legs of the same pair trade, else null.
-- scoreReason: short phrase explaining why it clears or does not clear the scoring bar.
-- scoreCondition: for conditional picks that should not trade until a condition resolves.
-- scoreExclusionReason: why a noteworthy receipt is audited but not scored (conditional, day_trade_aside, not_investment_call, etc.).
-
-Lean false when unsure — only clear in/out signals count. Judge each take independently.`;
+Also set, when relevant:
+- excludeReason: leave null normally. Set "conditional" / "day_trade_aside" / "not_investment_call" ONLY when the take is call-shaped (non-"view") but should be recorded without scoring; keep the descriptive callType and explain in scoreNote.
+- scoreNote: optional one-line note — the evidence that made it a call, or the condition that gates it.`;
 
 const Schema = z.object({
   takes: z.array(
     z.object({
       id: z.string(),
-      positional: z.boolean(),
       callType: z.enum(CALL_TYPE_VALUES),
-      tradeDirection: z.enum(TRADE_DIRECTION_VALUES).nullable(),
-      pairTradeId: z.string().nullable(),
-      scoreReason: z.string().nullable(),
-      scoreCondition: z.string().nullable(),
-      scoreExclusionReason: z.enum(SCORE_EXCLUSION_VALUES).nullable(),
+      excludeReason: z.enum(EXCLUDE_REASON_VALUES).nullable(),
+      scoreNote: z.string().nullable(),
     }),
   ),
 });
@@ -57,15 +45,11 @@ const INPUT_SCHEMA = {
         type: "object",
         properties: {
           id: { type: "string" },
-          positional: { type: "boolean" },
           callType: { type: "string", enum: [...CALL_TYPE_VALUES] },
-          tradeDirection: { type: ["string", "null"], enum: [...TRADE_DIRECTION_VALUES, null] },
-          pairTradeId: { type: ["string", "null"] },
-          scoreReason: { type: ["string", "null"] },
-          scoreCondition: { type: ["string", "null"] },
-          scoreExclusionReason: { type: ["string", "null"], enum: [...SCORE_EXCLUSION_VALUES, null] },
+          excludeReason: { type: ["string", "null"], enum: [...EXCLUDE_REASON_VALUES, null] },
+          scoreNote: { type: ["string", "null"] },
         },
-        required: ["id", "positional", "callType", "tradeDirection", "pairTradeId", "scoreReason", "scoreCondition", "scoreExclusionReason"],
+        required: ["id", "callType", "excludeReason", "scoreNote"],
       },
     },
   },
@@ -84,8 +68,8 @@ export async function amendPositional(): Promise<void> {
   for (const id of episodeIds) {
     for (const t of store.loadTheses(id)) all.push({ episodeId: id, t });
   }
-  const pending = all.filter((x) => x.t.positional === undefined);
-  console.log(`${all.length} theses total; judging ${pending.length} without a positional flag…`);
+  const pending = all.filter((x) => x.t.callType == null);
+  console.log(`${all.length} theses total; judging ${pending.length} without a callType…`);
   if (pending.length === 0) return;
 
   const verdicts = new Map<string, z.infer<typeof Schema>["takes"][number]>();
@@ -100,8 +84,8 @@ export async function amendPositional(): Promise<void> {
     const result = await callTool({
       system: SYSTEM,
       user: `Classify each take:\n\n${lines}`,
-      toolName: "submit_positionality",
-      toolDescription: "Submit positional=true/false for every take id.",
+      toolName: "submit_call_types",
+      toolDescription: "Submit a callType (plus optional excludeReason/scoreNote) for every take id.",
       inputSchema: INPUT_SCHEMA,
       validate: Schema,
       maxTokens: 8192,
@@ -117,13 +101,9 @@ export async function amendPositional(): Promise<void> {
     for (const t of theses) {
       const v = verdicts.get(t.id);
       if (v) {
-        t.positional = v.positional;
         t.callType = v.callType;
-        t.tradeDirection = v.tradeDirection;
-        t.pairTradeId = v.pairTradeId;
-        t.scoreReason = v.scoreReason;
-        t.scoreCondition = v.scoreCondition;
-        t.scoreExclusionReason = v.scoreExclusionReason;
+        t.excludeReason = v.excludeReason;
+        t.scoreNote = v.scoreNote;
         touched = true;
       }
     }
@@ -137,19 +117,15 @@ export async function amendPositional(): Promise<void> {
       for (const t of h.theses) {
         const v = verdicts.get(t.id);
         if (v) {
-          t.positional = v.positional;
           t.callType = v.callType;
-          t.tradeDirection = v.tradeDirection;
-          t.pairTradeId = v.pairTradeId;
-          t.scoreReason = v.scoreReason;
-          t.scoreCondition = v.scoreCondition;
-          t.scoreExclusionReason = v.scoreExclusionReason;
+          t.excludeReason = v.excludeReason;
+          t.scoreNote = v.scoreNote;
         }
       }
     }
     fs.writeFileSync(HOLDINGS_FILE, JSON.stringify(snapshot, null, 2) + "\n");
   }
 
-  const yes = [...verdicts.values()].filter((v) => v.positional).length;
-  console.log(`✓ amended: ${yes} positional / ${verdicts.size - yes} commentary — run build-fund next.`);
+  const yes = [...verdicts.values()].filter((v) => v.callType !== "view").length;
+  console.log(`✓ amended: ${yes} scored calls / ${verdicts.size - yes} views — run build-fund next.`);
 }

@@ -10,13 +10,7 @@
     "host": "Chamath",
     "stance": "bear",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Chamath argues that Airbnb's stock performance over the last six months reveals it is less a technology company and more a cyclical consumer-spending business, meaning no amount of product investment can insulate it from macroeconomic headwinds like recession.",
     "quote": "If you look at a company like Airbnb and if you look at the last 6 months in the stock, what is it telling you? It's telling you that the people that own it have realized that it's less of a technology business and it's more of a cyclical",
     "quoteStartMs": 1600044,
@@ -26,7 +20,9 @@
       "cyclicality",
       "competitive position"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E195-panw-Chamath-1",
@@ -39,13 +35,7 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Chamath cites Nikesh Arora's track record at Palo Alto Networks — creating $80 billion of value in 8 years — as evidence that exceptional non-founder leaders can build enormous durable value, implicitly endorsing Palo Alto as a standout value-creation story.",
     "quote": "If you look at what Nikesh Arora was able to do at Palo Alto Networks, it's incredible. I mean, in 8 years he's created $80 billion of value.",
     "quoteStartMs": 711311,
@@ -54,6 +44,8 @@
       "value creation",
       "enterprise tech"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

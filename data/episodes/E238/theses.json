@@ -20,8 +20,10 @@
       "product"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E238-xai-Guest-1",
@@ -43,12 +45,10 @@
       "GPU infrastructure"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "scoreReason": "Gavin Baker disclosed his firm is a shareholder of xAI",
-    "scoreExclusionReason": "private",
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "excludeReason": null,
+    "scoreNote": "Gavin Baker disclosed his firm is a shareholder of xAI"
   },
   {
     "id": "E238-meta-Guest-2",
@@ -70,8 +70,10 @@
       "advertising"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E238-msft-Guest-3",
@@ -93,8 +95,10 @@
       "Copilot"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E238-aapl-Guest-4",
@@ -117,8 +121,10 @@
       "product"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E238-aapl-Friedberg-6",
@@ -140,7 +146,9 @@
       "innovation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E238-nvda-Guest-7",
@@ -162,8 +170,10 @@
       "data centers"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E238-cper-Guest-a0",
@@ -176,7 +186,6 @@
     "host": "Guest",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "summary": "Guest mentions 'steel and copper tariffs' only as an example of industrial policy temptations in a broader discussion about corporatism vs. capitalism — no directional price or investment view expressed.",
     "quote": "The temptation is to extend that across the rest of the economy to industrial policy, to steel and copper tariffs, to everything else.",
     "quoteStartMs": 2588828,
@@ -186,6 +195,9 @@
       "corporatism"
     ],
     "attributionConfidence": "high",
-    "guestName": "Ben Shapiro"
+    "guestName": "Ben Shapiro",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

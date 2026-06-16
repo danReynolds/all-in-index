@@ -20,8 +20,10 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Patrick Collison"
+    "guestName": "Patrick Collison",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E216-nvda-Chamath-1",
@@ -44,7 +46,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E216-sq-Guest-2",
@@ -66,8 +70,10 @@
       "IPO risk"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "John Collison"
+    "guestName": "John Collison",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E216-pypl-Guest-3",
@@ -89,8 +95,10 @@
       "IPO risk"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "John Collison"
+    "guestName": "John Collison",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E216-gld-Guest-a0",
@@ -103,7 +111,6 @@
     "host": "Guest",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "summary": "Guest (Stripe) describes Bitcoin as a good store of value and 'a gold substitute', implying Bitcoin/gold serve a similar value-preservation role, but does not make an explicit directional price call on gold itself.",
     "quote": "it's good as a store of value, as kind of a gold substitute, but transactions are slow, transactions are expensive.",
     "quoteStartMs": 430147,
@@ -113,6 +120,8 @@
       "stablecoins"
     ],
     "attributionConfidence": "high",
-    "scoreReason": "Guest describes Bitcoin as 'a gold substitute' and good store of value — this is a comparative description of Bitcoin's function, not an explicit directional price call on gold."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Guest describes Bitcoin as 'a gold substitute' and good store of value — this is a comparative description of Bitcoin's function, not an explicit directional price call on gold."
   }
 ]

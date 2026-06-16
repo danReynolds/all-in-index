@@ -1,13 +1,11 @@
 import { currentStanceForHosts, isPortfolioScored } from "../lib/calls";
 import { MAX_PUBLISHED_QUOTE_CHARS } from "../lib/quotes";
-import { isTradableCompanyExposure } from "../lib/tradability";
 import { store } from "./store";
 import type { Host, IndexFund, IndexSnapshot } from "../lib/types";
 
 const BESTIES: Host[] = ["Chamath", "Jason", "Sacks", "Friedberg"];
 const GUESTS: Host[] = ["Guest"];
 const KNOWN_DELISTED_TICKERS = new Set(["X"]);
-const DIRECTIONAL_CALL_TYPES = new Set(["explicit_long", "explicit_short", "selection", "pair_trade", "basket"]);
 
 export interface QualityResult {
   errors: string[];
@@ -117,39 +115,10 @@ function validateScoredTakeTaxonomy(snapshot: IndexSnapshot, errors: string[]) {
       if (isBestieBestPerformingAsset && !isPortfolioScored(t)) {
         errors.push(`${t.id} is a best-performing-asset pick but is not portfolio-scored`);
       }
-      if (t.scoreCondition && t.positional) {
-        errors.push(`${t.id} has scoreCondition but is still positional`);
-      }
-      if (t.scoreCondition && t.scoreExclusionReason !== "conditional") {
-        errors.push(`${t.id} has scoreCondition but is not marked scoreExclusionReason=conditional`);
-      }
-      if (!isPortfolioScored(t)) continue;
-      if (!t.scoreReason) {
-        errors.push(`${t.id} is portfolio-scored but missing scoreReason`);
-      }
-      if (!isTradableCompanyExposure(t) && !t.scoreCondition && !t.scoreExclusionReason) {
-        errors.push(`${t.id} is portfolio-scored but non-tradable without scoreExclusionReason`);
-      }
-      if (!t.positional) continue;
-      if (!t.callType) {
-        errors.push(`${t.id} is positional but missing callType`);
-        continue;
-      }
-      if (DIRECTIONAL_CALL_TYPES.has(t.callType) && !t.tradeDirection) {
-        errors.push(`${t.id} is ${t.callType} but missing tradeDirection`);
-      }
-      if (t.callType === "explicit_long" && t.tradeDirection !== "long") {
-        errors.push(`${t.id} explicit_long must use tradeDirection=long`);
-      }
-      if (t.callType === "explicit_short" && t.tradeDirection !== "short") {
-        errors.push(`${t.id} explicit_short must use tradeDirection=short`);
-      }
-      if (t.callType === "explicit_exit" && t.tradeDirection != null) {
-        errors.push(`${t.id} explicit_exit must not open a tradeDirection`);
-      }
-      if (t.callType === "pair_trade" && !t.pairTradeId) {
-        errors.push(`${t.id} pair_trade is missing pairTradeId`);
-      }
+      // No cross-field taxonomy invariants are needed anymore: callType is the
+      // single scoring gate, trade direction is derived from callType + stance,
+      // and structural tradability is computed from the ticker — there are no
+      // longer redundant fields to police against each other here.
     }
   }
 }

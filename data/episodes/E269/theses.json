@@ -20,7 +20,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E269-anthropic-Friedberg-1",
@@ -42,7 +44,9 @@
       "enterprise"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E269-anthropic-Chamath-2",
@@ -64,7 +68,9 @@
       "AI scaling"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E269-openai-Sacks-3",
@@ -86,7 +92,9 @@
       "enterprise strategy"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E269-openai-Chamath-4",
@@ -108,7 +116,9 @@
       "enterprise vs consumer"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E269-openai-Guest-5",
@@ -130,8 +140,10 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Travis Kalanick"
+    "guestName": "Travis Kalanick",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E269-be-Chamath-6",
@@ -153,7 +165,9 @@
       "energy"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E269-spacex-Chamath-7",
@@ -175,7 +189,9 @@
       "exit"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E269-bird-Sacks-8",
@@ -197,6 +213,8 @@
       "AI pivot"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

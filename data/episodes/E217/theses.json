@@ -20,7 +20,9 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E217-adyen-Chamath-1",
@@ -42,7 +44,9 @@
       "payments"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E217-crm-Chamath-2",
@@ -64,7 +68,9 @@
       "competitive threat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E217-figure-ai-Chamath-3",
@@ -86,7 +92,9 @@
       "product roadmap"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E217-spy-Chamath-4",
@@ -108,7 +116,9 @@
       "retail investing"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E217-mag-7-basket-Chamath-5",
@@ -130,7 +140,9 @@
       "macro"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E217-washington-post-Chamath-6",
@@ -152,6 +164,8 @@
       "readership"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

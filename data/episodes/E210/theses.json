@@ -20,7 +20,9 @@
       "shareholder value"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E210-nvda-Guest-1",
@@ -43,8 +45,10 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Cyan Bowers-Franklin"
+    "guestName": "Cyan Bowers-Franklin",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E210-tsla-Guest-2",
@@ -67,7 +71,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Cyan Bowers-Franklin"
+    "guestName": "Cyan Bowers-Franklin",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

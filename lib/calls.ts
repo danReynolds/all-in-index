@@ -96,25 +96,43 @@ const SCOREABLE_CALL_TYPES = new Set<CallType>([
   "basket",
 ]);
 
+/**
+ * A take is portfolio-scored when its callType is a real call shape (not a
+ * "view") and it carries no judgment exclusion. callType is the single gate —
+ * there is no separate `positional` flag. (Whether a scored call also enters
+ * the tradable fund is a further, structural check — see isTradableCompanyExposure.)
+ */
 export function isPortfolioScored(t: Thesis): boolean {
-  return t.positional === true || (t.callType != null && SCOREABLE_CALL_TYPES.has(t.callType));
+  return t.callType != null && SCOREABLE_CALL_TYPES.has(t.callType) && !t.excludeReason;
 }
 
+/**
+ * The direction to trade a scored call, derived from its shape + stance.
+ * A bearish *exit* opens nothing; a short is only ever an explicit_short or the
+ * short leg of a pair — that distinction lives in callType, so nothing needs to
+ * be stored alongside it.
+ */
 export function tradeDirectionForTake(t: Thesis): TradeDirection | null {
   if (!isPortfolioScored(t)) return null;
-  if (t.tradeDirection === "long" || t.tradeDirection === "short") return t.tradeDirection;
-  if (t.callType === "explicit_short") return "short";
-  if (t.callType === "explicit_exit") return null;
-  if (t.callType === "explicit_long" || t.callType === "selection" || t.callType === "basket") {
-    return t.stance === "bull" ? "long" : null;
+  switch (t.callType) {
+    // An explicit long/short *is* its direction — the speaker named the trade,
+    // so the stance label (which may be neutral on a disclosed holding) doesn't gate it.
+    case "explicit_long":
+      return "long";
+    case "explicit_short":
+      return "short";
+    // A bare exit closes a position without opening a new one.
+    case "explicit_exit":
+      return null;
+    // A pick follows the view: a bullish pick is a long, a bearish pick (a
+    // "loser basket" / "worst-performing asset") is a short.
+    case "selection":
+    case "basket":
+    case "pair_trade":
+      return t.stance === "bull" ? "long" : t.stance === "bear" ? "short" : null;
+    default:
+      return null;
   }
-  if (t.callType === "pair_trade") {
-    if (t.stance === "bull") return "long";
-    if (t.stance === "bear") return "short";
-  }
-  // Legacy positional data only opens longs on bull calls. Bearish positional
-  // rows are exits unless the row explicitly says it is a short.
-  return t.stance === "bull" ? "long" : null;
 }
 
 /**

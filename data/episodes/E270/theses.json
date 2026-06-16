@@ -20,7 +20,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E270-spacex-Chamath-1",
@@ -43,7 +45,9 @@
       "compute"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E270-spacex-Sacks-2",
@@ -65,7 +69,9 @@
       "competitive position"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E270-cursor-Jason-3",
@@ -88,7 +94,9 @@
       "M&A"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E270-crm-Friedberg-4",
@@ -111,7 +119,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E270-crm-Sacks-5",
@@ -134,10 +144,9 @@
       "AI transition"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "scoreReason": "Sacks said Salesforce stock might be a bargain at current multiples"
+    "excludeReason": null,
+    "scoreNote": "Sacks said Salesforce stock might be a bargain at current multiples"
   },
   {
     "id": "E270-crm-Chamath-6",
@@ -160,7 +169,9 @@
       "cash flow"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E270-aapl-Chamath-7",
@@ -183,7 +194,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E270-aapl-Sacks-8",
@@ -206,6 +219,8 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

@@ -20,8 +20,10 @@
       "debt"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E206-mstr-Guest-1",
@@ -44,8 +46,10 @@
       "retail investors"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Joe Lonsdale"
+    "guestName": "Joe Lonsdale",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E206-xai-Guest-2",
@@ -68,8 +72,10 @@
       "xAI"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E206-openai-Guest-3",
@@ -92,8 +98,10 @@
       "competitive position"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E206-nvda-Guest-4",
@@ -116,8 +124,10 @@
       "Blackwell"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E206-meta-Guest-5",
@@ -139,8 +149,10 @@
       "competitive position"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E206-googl-Guest-6",
@@ -162,8 +174,10 @@
       "competitive position"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E206-coin-Guest-7",
@@ -186,8 +200,10 @@
       "deregulation"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Joe Lonsdale"
+    "guestName": "Joe Lonsdale",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E206-addepar-Guest-8",
@@ -208,8 +224,10 @@
       "AUM milestone"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Joe Lonsdale"
+    "guestName": "Joe Lonsdale",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E206-gld-Friedberg-a0",
@@ -222,7 +240,6 @@
     "host": "Friedberg",
     "stance": "bear",
     "conviction": "medium",
-    "positional": false,
     "summary": "Friedberg suggests Bitcoin will displace gold as a store of value, implying a bearish outlook on gold's role and price trajectory relative to crypto.",
     "quote": "It should be kind of store of value and alternative. It's just going to take over gold.",
     "quoteStartMs": 1781000,
@@ -231,6 +248,9 @@
       "Bitcoin vs Gold",
       "crypto"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

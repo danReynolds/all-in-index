@@ -96,13 +96,13 @@ export type CallType =
   | "basket";
 export type TradeDirection = "long" | "short";
 export type IndexDirection = TradeDirection | "mixed";
-export type ScoreExclusionReason =
+/**
+ * Judgment-only reasons a call-shaped take is recorded but kept out of the
+ * scorecard. Structural exclusions (private / crypto / ETF / macro / unpriced)
+ * are NOT here — they're derived from the ticker by lib/tradability.ts.
+ */
+export type ExcludeReason =
   | "conditional"
-  | "private"
-  | "macro_asset"
-  | "crypto"
-  | "benchmark_or_etf"
-  | "unpriced"
   | "not_investment_call"
   | "day_trade_aside";
 
@@ -139,25 +139,23 @@ export interface Thesis {
    * investment pick ("my #1", "my pick", "best place to invest"), or a named
    * pair/basket leg. General commentary still displays but does not trade.
    */
-  positional?: boolean;
   /**
-   * More explicit scorer taxonomy. Missing means legacy data; `positional`
-   * remains the backwards-compatible scoring gate.
+   * What kind of statement this is — the single scoring gate. "view" is
+   * commentary and never scores; the other six are portfolio-scoreable call
+   * shapes. A take scores when `callType` is a non-view shape and carries no
+   * `excludeReason`; the trade direction is *derived* from callType + stance
+   * (see tradeDirectionForTake in lib/calls.ts), not stored. Optional only so
+   * legacy reads don't break — the extractor and the migration always set it.
    */
   callType?: CallType;
   /**
-   * Direction to trade when this is a scored exposure. This is deliberately
-   * explicit for shorts so a bearish exit is not misread as a short.
+   * Set only when a call-shaped take is deliberately recorded but kept out of
+   * the scorecard (conditional pick, day-trade aside, not an equity bet).
+   * Structural exclusions (private/crypto/ETF/macro) are derived, not stored.
    */
-  tradeDirection?: TradeDirection | null;
-  /** Shared id for linked spread legs such as "long Figma / short Adobe". */
-  pairTradeId?: string | null;
-  /** Short human-readable note explaining why this take clears the scoring bar. */
-  scoreReason?: string | null;
-  /** Condition that must resolve before a take should be scored. */
-  scoreCondition?: string | null;
-  /** Why a noteworthy receipt is audited but not traded in the public scorecard. */
-  scoreExclusionReason?: ScoreExclusionReason | null;
+  excludeReason?: ExcludeReason | null;
+  /** Optional one-line audit note: the evidence for the call, or its condition. */
+  scoreNote?: string | null;
   /** Identified name when host === "Guest" (e.g. "Brad Gerstner"). */
   guestName?: string;
   /** True for hand-authored placeholder data shown before the real pipeline runs. */

@@ -138,8 +138,8 @@ export function takeVerdict(opts: {
   elapsedDays: number | null | undefined;
   /** The stock's typical move between samples (see typicalMove). */
   noiseFloor: number | null | undefined;
-  /** True for an explicit dated trade; false/undefined for a long-arc view. */
-  positional?: boolean;
+  /** True for a portfolio-scored call (a dated trade); false/undefined for a long-arc view. */
+  scored?: boolean;
 }): TakeVerdict | null {
   const { stance, since } = opts;
   if (since == null || (stance !== "bull" && stance !== "bear")) return null;
@@ -147,7 +147,7 @@ export function takeVerdict(opts: {
   const floor = Math.max(MIN_MATERIAL_MOVE, opts.noiseFloor ?? 0);
   if (Math.abs(since) < floor) return { tone: "inline", firm: false, label: "barely moved since" };
   // Let the thesis breathe before grading it.
-  const horizon = opts.positional ? TRADE_HORIZON_DAYS : VIEW_HORIZON_DAYS;
+  const horizon = opts.scored ? TRADE_HORIZON_DAYS : VIEW_HORIZON_DAYS;
   if ((opts.elapsedDays ?? 0) < horizon) return { tone: "early", firm: false, label: "too early to call" };
   const working = stance === "bull" ? since > 0 : since < 0;
   return working

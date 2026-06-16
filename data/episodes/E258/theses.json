@@ -20,7 +20,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E258-msft-Chamath-1",
@@ -43,7 +45,9 @@
       "regulation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E258-utility-sector-us-electric-utilities-Chamath-2",
@@ -66,10 +70,8 @@
       "short thesis"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "explicit_short",
-    "tradeDirection": "short",
-    "scoreReason": "Chamath called US electric utilities the single biggest dollar short",
-    "scoreExclusionReason": "benchmark_or_etf"
+    "excludeReason": null,
+    "scoreNote": "Chamath called US electric utilities the single biggest dollar short"
   }
 ]
