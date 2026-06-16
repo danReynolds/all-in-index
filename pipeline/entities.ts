@@ -42,6 +42,8 @@ const YAHOO_SYMBOL_OVERRIDES = new Map<string, string>([
   ["SQ", "XYZ"],
   // The common Amsterdam listing is the one Yahoo exposes with full history.
   ["ADYEN", "ADYEN.AS"],
+  // Newsmax lists on the NYSE as NMAX; the model tends to guess NWSM.
+  ["NWSM", "NMAX"],
 ]);
 
 export interface Canonical {

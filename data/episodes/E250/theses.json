@@ -10,48 +10,21 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Brad Gerstner is bullish on OpenAI, citing a steep revenue growth trajectory toward a $20B forward run rate by year-end and expecting strong multi-year growth, while dismissing fears of insolvency as overblown and viewing the $1.4T capex commitment as a manageable long-term obligation.",
-    "quote": "We will end the year on a $20 billion forward run rate… We kind of know where the revenue's going from 1.2 to 1.6 over these next few months, which is a pretty staggering growth rate if they were at 13 and they're going to end at 20.",
-    "quoteStartMs": 933000,
+    "callType": "explicit_long",
+    "excludeReason": null,
+    "scoreNote": "Explicit statement of wanting to buy more shares; existing shareholder",
+    "summary": "Brad Gerstner is bullish on OpenAI, noting explosive revenue growth toward a $20B run rate and wanting to buy more shares, viewing the $1.4T capex commitment as manageable over time and the market correction as noise in a multi-year supercycle.",
+    "quote": "we still believe that owning all of compute like we have for 3 years, and this AI trade has room to run.",
+    "quoteStartMs": 2582118,
     "topics": [
       "revenue growth",
       "AI capex",
-      "valuation",
-      "competition"
+      "valuation"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Brad Gerstner",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E250-anthropic-Guest-1",
-    "episodeId": "E250",
-    "episodeNumber": 250,
-    "episodeDate": "2025-11-07T20:36:00.000Z",
-    "company": "Anthropic",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Guest",
-    "stance": "bull",
-    "conviction": "high",
-    "summary": "Brad Gerstner is particularly impressed by Anthropic's capital efficiency, noting its revenue chart suggests it reaches similar financial milestones to OpenAI while burning far less capital, making it the most interesting data point in the leaked revenue forecasts.",
-    "quote": "The most impressive revenue chart when you showed that leak from OpenAI was Anthropic… Anthropic is not really in a J-curve at all, and they get to very similar points of free cash flow, but will not have burned through near as much capital to get there.",
-    "quoteStartMs": 2069000,
-    "topics": [
-      "capital efficiency",
-      "revenue growth",
-      "AI competition"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Brad Gerstner",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E250-openai-Chamath-2",
+    "id": "E250-openai-Chamath-1",
     "episodeId": "E250",
     "episodeNumber": 250,
     "episodeDate": "2025-11-07T20:36:00.000Z",
@@ -61,19 +34,42 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Chamath is a bullish investor in OpenAI, arguing its $1.4T capex commitment is a misunderstood red herring, that deal flexibility exists to match expenses to revenue, and that the company is building the dominant consumer AI brand with exceptional retention cohorts.",
-    "quote": "I'm betting in the supercycle. This is the biggest supercycle of all of our lives. I'm an investor in OpenAI and Anthropic and Google and Microsoft and Nvidia… I love the fact that Sundar is coming off the mat swinging.",
+    "callType": "explicit_long",
+    "excludeReason": null,
+    "scoreNote": "Explicitly states he wants to buy more OpenAI shares; existing investor",
+    "summary": "Chamath is bullish on OpenAI as part of the AI supercycle, holding shares and wanting to buy more, arguing revenue will grow steeply toward $100B+ and the $1.4T capex commitment is manageable with built-in flexibility.",
+    "quote": "I'm betting in the supercycle. This is the biggest supercycle of all of our lives. I'm an investor in OpenAI and Anthropic and Google and, and Microsoft and Nvidia, etc.",
     "quoteStartMs": 1964000,
     "topics": [
       "AI supercycle",
-      "valuation",
       "revenue growth",
-      "competition"
+      "valuation"
     ],
-    "attributionConfidence": "high",
-    "callType": "explicit_long",
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E250-anthropic-Guest-2",
+    "episodeId": "E250",
+    "episodeNumber": 250,
+    "episodeDate": "2025-11-07T20:36:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "callType": "view",
     "excludeReason": null,
-    "scoreNote": "Chamath disclosed he is an investor in OpenAI as part of the AI supercycle"
+    "scoreNote": null,
+    "summary": "Brad Gerstner argues Anthropic's revenue trajectory is the most impressive of all frontier AI companies, with a faster path to free cash flow and far less capital burned to get there, making it a standout investment relative to peers.",
+    "quote": "The most impressive revenue chart when you showed that leak from OpenAI was Anthropic... what's really impressive is Anthropic is not really in a J-curve at all, and they get to very similar points of free cash flow, but will not have",
+    "quoteStartMs": 2069000,
+    "topics": [
+      "revenue growth",
+      "capital efficiency",
+      "AI competition"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E250-anthropic-Chamath-3",
@@ -86,21 +82,21 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Chamath is bullish on Anthropic as part of his broad AI supercycle bet, noting its enterprise-focused model and strong API revenue growth are off the charts, while also flagging that long-range revenue forecasts for any AI company carry high uncertainty.",
-    "quote": "I'm an investor in OpenAI and Anthropic and Google and, and Microsoft and Nvidia, etc. … Anthropic's numbers, despite Cursor doing some of their own thing, Anthropic's numbers are off the charts. I think that this market is as big or bigger",
-    "quoteStartMs": 1969669,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath is bullish on Anthropic as part of the AI supercycle, noting its numbers are 'off the charts' and it has differentiated itself by not competing with enterprise customers at the application layer, driving strong adoption.",
+    "quote": "Anthropic's numbers, despite Cursor doing some of their own thing, Anthropic's numbers are off the charts. I think that this market is as big or bigger than current estimates are out there.",
+    "quoteStartMs": 2020441,
     "topics": [
       "AI supercycle",
-      "enterprise revenue",
-      "competition"
+      "revenue growth",
+      "enterprise"
     ],
-    "attributionConfidence": "high",
-    "callType": "explicit_long",
-    "excludeReason": null,
-    "scoreNote": "Chamath disclosed he is an investor in Anthropic as part of the AI supercycle"
+    "attributionConfidence": "high"
   },
   {
-    "id": "E250-aapl-Guest-4",
+    "id": "E250-aapl-Guest-5",
     "episodeId": "E250",
     "episodeNumber": 250,
     "episodeDate": "2025-11-07T20:36:00.000Z",
@@ -108,46 +104,66 @@
     "ticker": "AAPL",
     "isPublic": true,
     "host": "Guest",
-    "stance": "mixed",
+    "stance": "neutral",
     "conviction": "low",
-    "summary": "Brad Gerstner notes Apple is in an interesting strategic position where it appears to be ceding its AI business to Google and paying billions for search/AI integration, framing this as a notable competitive dynamic affecting the Mag Seven dispersion story.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Brad Gerstner notes Apple is in an interesting strategic position where it appears to be ceding its AI business to Google by paying billions for search/AI integration, creating uncertainty about Apple's long-term AI competitive position.",
     "quote": "Apple is now in this really interesting place where it seems like they're gonna seed their AI business to Google and pay them billions of dollars a year, like they get paid billions of dollars a year for search from them.",
     "quoteStartMs": 454566,
     "topics": [
       "AI strategy",
-      "competitive position",
-      "Mag Seven"
+      "competition",
+      "Google partnership"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Brad Gerstner",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E250-nvda-Guest-5",
+    "id": "E250-googl-Guest-6",
     "episodeId": "E250",
     "episodeNumber": 250,
     "episodeDate": "2025-11-07T20:36:00.000Z",
-    "company": "Nvidia",
-    "ticker": "NVDA",
+    "company": "Google",
+    "ticker": "GOOGL",
     "isPublic": true,
     "host": "Guest",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Brad Gerstner frames Nvidia as a core holding in the AI compute trade, which he believes still has room to run despite a recent pullback, and characterizes the current sell-off as a temporary risk-off rebalancing rather than a structural reversal.",
-    "quote": "We still believe that owning all of compute like we have for 3 years, and this AI trade has room to run. But there, obviously, multiples have come up a lot. I talked about a 40% move from the bottom this year.",
-    "quoteStartMs": 2582118,
-    "topics": [
-      "AI capex",
-      "compute",
-      "valuation",
-      "positioning"
-    ],
-    "attributionConfidence": "high",
-    "callType": "explicit_long",
-    "guestName": "Brad Gerstner",
+    "callType": "view",
     "excludeReason": null,
-    "scoreNote": "Brad Gerstner said his firm still believes the AI compute trade has room to run"
+    "scoreNote": null,
+    "summary": "Brad Gerstner is bullish on Google, citing phenomenal earnings with blazing hot AI numbers, and noting Google is well-positioned to benefit from Apple ceding its AI strategy to Google.",
+    "quote": "Google's earnings were phenomenal. Their AI numbers were blazing hot.",
+    "quoteStartMs": 450039,
+    "topics": [
+      "earnings",
+      "AI revenue",
+      "competitive position"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E250-meta-Guest-7",
+    "episodeId": "E250",
+    "episodeNumber": 250,
+    "episodeDate": "2025-11-07T20:36:00.000Z",
+    "company": "Meta",
+    "ticker": "META",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bear",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Brad Gerstner flags Meta's most recent earnings as poor, describing them as 'terrible' relative to Google's strong quarter, suggesting a negative divergence in the Mag Seven.",
+    "quote": "Facebook's was terrible.",
+    "quoteStartMs": 453521,
+    "topics": [
+      "earnings",
+      "Mag Seven dispersion"
+    ],
+    "attributionConfidence": "high"
   }
 ]

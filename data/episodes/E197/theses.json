@@ -8,21 +8,21 @@
     "ticker": null,
     "isPublic": false,
     "host": "Friedberg",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Friedberg argues the bull case for OpenAI's $150B valuation rests on its current model and application leadership, and that deploying the new capital wisely to maintain that lead could make it a dominant global AI player in a multi-trillion dollar market.",
-    "quote": "The bull case would be that the moat in the business with respect to model performance and infrastructure gets extended with the large amount of capital that they're raising... if they can deploy infrastructure to maintain that lead... they could become a true kind of global player here.",
-    "quoteStartMs": 547000,
-    "topics": [
-      "AI",
-      "valuation",
-      "competitive moat",
-      "capital deployment"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Friedberg argues OpenAI's bull case rests on deploying its massive capital raise to extend its model performance lead across consumer and enterprise, with O1 representing a game-changing chain-of-thought paradigm that competitors will chase.",
+    "quote": "The bull case would be that the moat in the business with respect to model performance and infrastructure gets extended with the large amount of capital that they're raising... they can maintain both kind of model and application",
+    "quoteStartMs": 547000,
+    "topics": [
+      "AI moat",
+      "valuation",
+      "capital deployment",
+      "model performance"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E197-openai-Sacks-1",
@@ -35,19 +35,19 @@
     "host": "Sacks",
     "stance": "mixed",
     "conviction": "medium",
-    "summary": "Sacks sees OpenAI as a credible leader with the best models and developer ecosystem, but notes durability of its moat is the key question — if it can consolidate its lead it could be the next trillion-dollar tech company, but open-source and big-tech competition could erode its value.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks sees the $150B valuation as potentially warranted at 15x forward ARR if revenue is $5B+ and growing 100% YoY, with OpenAI clearly the leader, but flags durability of competitive advantage as the key question given open-source and big-tech competition.",
     "quote": "If it's more like $5 billion, then it's only 30 times. And if it's growing 100% year over year, it's only 15 times next year... I don't think 15 times Ford ARR is a high valuation for a company that has this kind of strategic opportunity.",
     "quoteStartMs": 686477,
     "topics": [
       "valuation",
       "competitive moat",
-      "AI",
+      "open source",
       "revenue growth"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E197-openai-Chamath-2",
@@ -60,19 +60,19 @@
     "host": "Chamath",
     "stance": "bear",
     "conviction": "medium",
-    "summary": "Chamath steelmans the bear case: open-source models commoditize AI value to zero, Meta and Google dominate front-door distribution, synthetic data becomes a cost race favoring big tech, and high-level executive churn suggests insiders don't believe in the trillion-dollar outcome.",
-    "quote": "How are people deciding to leave if they think it's gonna be a trillion-dollar company? And why, when things are just starting to cook, would you leave if you are technically enamored with what you're building?",
-    "quoteStartMs": 955991,
-    "topics": [
-      "AI",
-      "competitive moat",
-      "talent risk",
-      "open source"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath steelmans the bear case: open-source models erode economic value to zero, Meta and Google intercept users at their front-door apps, synthetic data is a cost race favoring big tech incumbents, and unusual high-level executive churn signals internal problems.",
+    "quote": "The value of those models, the economic value basically goes to zero and it's a consumer surplus for the people that use it... Meta becomes much more aggressive in inserting Meta AI into all of the critical apps that they control.",
+    "quoteStartMs": 816049,
+    "topics": [
+      "competitive threat",
+      "open source",
+      "executive turnover",
+      "distribution"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E197-meta-Sacks-3",
@@ -84,20 +84,20 @@
     "isPublic": true,
     "host": "Sacks",
     "stance": "bull",
-    "conviction": "high",
-    "summary": "Sacks argues Meta is executing extremely well across cost discipline, AI (leading open-source with Llama 3.2), and is now ahead on augmented reality, making it a strong investment.",
-    "quote": "It seems to me that Meta is executing extremely well. I mean, you had the very successful cost cutting, which Wall Street liked... they've caught up and now they're leading the open source movement... and now it seems to me that they're ahead on augmented reality.",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks argues Meta is executing extremely well — successful cost-cutting, leading the open-source AI movement with Llama 3.2, and now ahead on augmented reality with Orion glasses — making it a strong overall performer.",
+    "quote": "It seems to me that Meta is executing extremely well. I mean, you had the very successful cost cutting, which Wall Street liked... they've caught up and now they're leading the open source movement. Yeah, with Llama 3.2. And now it seems",
     "quoteStartMs": 3638000,
     "topics": [
       "AI",
-      "augmented reality",
-      "cost discipline",
+      "AR/VR",
+      "cost efficiency",
       "open source"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E197-pltr-Sacks-4",
@@ -108,10 +108,13 @@
     "ticker": "PLTR",
     "isPublic": true,
     "host": "Sacks",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Sacks highlights Palantir as the most highly valued public software company by ARR multiple because the market correctly perceives it as ideally positioned to master AI workflows on top of its existing enterprise data integration model.",
-    "quote": "The most highly valued public software company right now in terms of ARR multiple is Palantir. And I think that's largely because the market perceives Palantir as having a big AI opportunity... they're in an ideal position to master these new AI workflows.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks highlights Palantir as the highest-valued public software company by ARR multiple because the market sees its data integration approach as ideally positioned to unlock AI workflows inside large enterprises, giving it a structural AI opportunity.",
+    "quote": "The most highly valued public software company right now in terms of ARR multiple is Palantir. And I think that's largely because the market perceives Palantir as having a big AI opportunity... they're in an ideal position to master these",
     "quoteStartMs": 2187938,
     "topics": [
       "AI",
@@ -119,10 +122,7 @@
       "valuation",
       "data integration"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E197-crm-Chamath-5",
@@ -135,18 +135,42 @@
     "host": "Chamath",
     "stance": "bear",
     "conviction": "medium",
-    "summary": "Chamath argues that as AI agents commoditize knowledge work and reduce dependency on traditional systems of record, Salesforce-style enterprise software faces structural pricing deflation and loss of its grip on enterprise data — customers will resist paying the same renewal prices in 5–10 years.",
-    "quote": "Are you going to spend a billion dollars again 5 years from now? It just doesn't seem very likely... it will be an order of magnitude cheaper than the stuff that it replaces, which means that a company would almost have to purposely want to keep paying tens of millions of dollars when they don't have to.",
-    "quoteStartMs": 2265105,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath argues that AI agents will eliminate the need for traditional systems of record like Salesforce, as companies can pipe data directly to modern tools at a fraction of the cost, making it impossible to justify large Salesforce renewals within 5-10 years.",
+    "quote": "You don't need to spend tens or hundreds of millions of dollars to wrap your revenue in something that says it's a system of record. You don't need that actually... It'll be deflation. You will not be able to just justify it.",
+    "quoteStartMs": 1902940,
     "topics": [
       "AI disruption",
       "SaaS",
-      "enterprise software",
-      "valuation"
+      "systems of record",
+      "pricing pressure"
     ],
-    "attributionConfidence": "high",
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E197-aapl-Jason-6",
+    "episodeId": "E197",
+    "episodeNumber": 197,
+    "episodeDate": "2024-09-27T17:36:00.000Z",
+    "company": "Apple",
+    "ticker": "AAPL",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "neutral",
+    "conviction": "low",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Jason suggests Apple Intelligence / Siri becoming conversational via iOS 18 will allow Apple to intercept ChatGPT queries and reduce OpenAI's interface advantage, benefiting Apple's ecosystem.",
+    "quote": "It's pretty clear with this new one that you're going to be able to talk to Siri as an LLM like you do in ChatGPT mode, which I think means they will not make themselves dependent on ChatGPT and they will siphon off half the searches that",
+    "quoteStartMs": 3022519,
+    "topics": [
+      "AI",
+      "voice interface",
+      "competitive positioning"
+    ],
+    "attributionConfidence": "high"
   }
 ]

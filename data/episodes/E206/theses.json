@@ -10,20 +10,19 @@
     "host": "Guest",
     "stance": "bear",
     "conviction": "medium",
-    "summary": "Gavin Baker warns that MicroStrategy's leveraged Bitcoin strategy is unsustainable at scale because the underlying business generates only ~$400M revenue, insufficient to service debt if Bitcoin loses its luster as collateral.",
-    "quote": "his interest expense on his convertible notes is $75 million off the top of my head... the underlying business that pays the interest expense on the debt only does $400 million a year in revenue... unless debt investors have absolute confidence in Bitcoin as collateral... He will get to a point where it is too big for the size of his company.",
-    "quoteStartMs": 2492000,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Gavin Baker warns that MicroStrategy's debt-fueled Bitcoin buying strategy will become unsustainable as the underlying business generates only ~$400M in revenue, which cannot support the interest expense if Bitcoin loses its collateral credibility with fixed-income markets.",
+    "quote": "the underlying business that pays the interest expense on the debt only does $400 million a year in revenue... unless debt investors have absolute confidence in Bitcoin as collateral... it will get to a point where it is too big for the",
+    "quoteStartMs": 2537626,
     "topics": [
       "leverage",
       "Bitcoin",
-      "valuation",
-      "debt"
+      "debt sustainability",
+      "valuation"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E206-mstr-Guest-1",
@@ -34,22 +33,20 @@
     "ticker": "MSTR",
     "isPublic": true,
     "host": "Guest",
-    "stance": "bear",
-    "conviction": "medium",
-    "summary": "Joe Lonsdale expresses concern that MicroStrategy's unusual leverage structure poses real risks that retail investors are glossing over, calling it scary how blithely people are throwing money at it.",
-    "quote": "I think the risks around how he's accessing this is actually very unusual and does scare me a bit, and people need to do their research and they shouldn't just like throw money without studying it. It does scare me a little bit how blithely people are throwing money at this without knowing the kind of leverage he's taking.",
-    "quoteStartMs": 2607924,
+    "stance": "neutral",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Joe Lonsdale expresses concern that MicroStrategy's unusual leverage structure poses risks that most investors are ignoring, and warns people to do their research before throwing money at it.",
+    "quote": "the risks around how he's accessing this is actually very unusual and does scare me a bit, and people need to do their research and they shouldn't just like throw money without studying it. It does scare me a little bit how blithely people",
+    "quoteStartMs": 2608442,
     "topics": [
       "leverage",
       "Bitcoin",
-      "risk",
-      "retail investors"
+      "risk"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Joe Lonsdale",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E206-xai-Guest-2",
@@ -62,20 +59,18 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Gavin Baker argues that xAI's Colossus supercomputer — the first 100,000-GPU coherent cluster — is a landmark technical achievement that positions Grok 3 to surpass OpenAI as the state-of-the-art model if scaling laws hold.",
-    "quote": "Grok 3 is in trading now on this giant Colossus supercomputer, the biggest in the world, 100,000 GPUs... Grok 3 is a big card and will resolve this question of whether or not we're hitting a wall... if scaling laws hold, Grok 3 should be a significant advance in the state of the art.",
-    "quoteStartMs": 3270000,
-    "topics": [
-      "AI scaling",
-      "compute",
-      "competitive moat",
-      "xAI"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": "Gavin discloses his firm is an investor in xAI (FCI).",
+    "summary": "Gavin Baker argues that xAI's Colossus supercomputer — the first to make 100,000 GPUs coherent — is a landmark engineering achievement that, if scaling laws hold, should make Grok 3 the state-of-the-art model and put xAI ahead of OpenAI by early 2025.",
+    "quote": "Grok 3 should take the lead if scaling laws hold in January or February. I do think a lot of talent has left OpenAI.",
+    "quoteStartMs": 3662490,
+    "topics": [
+      "AI compute",
+      "scaling laws",
+      "competitive position"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E206-openai-Guest-3",
@@ -88,20 +83,18 @@
     "host": "Guest",
     "stance": "bear",
     "conviction": "medium",
-    "summary": "Gavin Baker argues OpenAI's competitive lead is at risk because its largest training cluster is still smaller than xAI's Colossus and significant talent has departed, suggesting Grok 3 could take the frontier lead.",
-    "quote": "the best information I have is the largest cluster Microsoft has after panicking is still smaller than xAI's cluster in Memphis... I do think a lot of talent has left OpenAI. I thought it was a really shocking statement from Mira Murati that she resigned during a fundraise.",
-    "quoteStartMs": 3643000,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Gavin Baker argues OpenAI's competitive position is deteriorating: it has lost significant talent (citing Mira Murati's resignation during a fundraise as a signal of internal disapproval), and its largest training cluster is still smaller than xAI's Colossus, meaning Grok 3 should surpass it if scaling laws hold.",
+    "quote": "I do think a lot of talent has left OpenAI. I thought it was a really shocking statement from Mira Murati that she resigned during a fundraise... the best information I have is the largest cluster Microsoft has after panicking is still",
+    "quoteStartMs": 3669196,
     "topics": [
       "AI competition",
       "talent",
-      "compute",
-      "competitive position"
+      "compute scale"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E206-nvda-Guest-4",
@@ -114,45 +107,42 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Gavin Baker argues that xAI's Colossus build effectively saved NVIDIA from a tough period when Blackwell was delayed, triggering a rush to buy H100s, and that upcoming Blackwell chips represent an entirely new architecture that extends NVIDIA's advantage.",
-    "quote": "you can argue that Elon doing that in a lot of ways kind of saved NVIDIA from a tough 6-month period when Blackwell was delayed, because everyone who was waiting for Blackwell... rushed out and bought a lot of hoppers to try and do it themselves... Blackwell's just around the corner and that's an entirely new architecture with an entirely new set of networking technologies.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Gavin Baker argues that xAI's Colossus build effectively saved NVIDIA during the Blackwell delay by creating a rush to buy H100 Hoppers, and that Blackwell's imminent release represents another major architectural leap that will further entrench NVIDIA's leadership.",
+    "quote": "you can argue that Elon doing that in a lot of ways kind of saved NVIDIA from a tough 6-month period when Blackwell was delayed... everyone who was waiting for Blackwell and thought it was impossible to make 100,000 hoppers coherent rushed",
     "quoteStartMs": 3233041,
     "topics": [
       "AI capex",
       "GPU demand",
-      "competitive moat",
       "Blackwell"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E206-meta-Guest-5",
     "episodeId": "E206",
     "episodeNumber": 206,
     "episodeDate": "2024-12-07T00:55:00.000Z",
-    "company": "Meta Platforms",
+    "company": "Meta",
     "ticker": "META",
     "isPublic": true,
     "host": "Guest",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Gavin Baker cites Meta as one of the clearest demonstrations of positive ROI on AI investment, with return on invested capital going vertical since they ramped GPU CapEx.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Gavin Baker highlights that Meta has demonstrated among the best ROI on AI investment, with return on invested capital going vertical since they ramped GPU capex, validating their AI spending strategy.",
     "quote": "Meta and Google have shown the best ROIs on AI.",
     "quoteStartMs": 3924000,
     "topics": [
       "AI ROI",
-      "CapEx",
-      "competitive position"
+      "capex",
+      "returns"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E206-googl-Guest-6",
@@ -165,19 +155,18 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Gavin Baker cites Alphabet alongside Meta as showing the best measurable ROI from AI investment, with return on invested capital rising as GPU CapEx ramped.",
-    "quote": "ROIC, ROI has gone vertical since they ramped their CapEx on GPUs... Meta and Google have shown the best ROIs on AI.",
-    "quoteStartMs": 3871091,
-    "topics": [
-      "AI ROI",
-      "CapEx",
-      "competitive position"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Gavin Baker highlights that Google has demonstrated among the best ROI on AI investment, with return on invested capital going vertical since they ramped GPU capex, validating their AI spending strategy.",
+    "quote": "Meta and Google have shown the best ROIs on AI. Yeah. ROIC, ROI has gone vertical since they ramped their CapEx on GPUs.",
+    "quoteStartMs": 3924000,
+    "topics": [
+      "AI ROI",
+      "capex",
+      "returns"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E206-coin-Guest-7",
@@ -188,46 +177,44 @@
     "ticker": "COIN",
     "isPublic": true,
     "host": "Guest",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "low",
-    "summary": "Joe Lonsdale implies a more favorable regulatory environment under Paul Atkins at the SEC will benefit Coinbase, contrasting the prior Gensler era's adversarial approach where good actors like Coinbase were given no path forward.",
-    "quote": "I think both Coinbase with Brian and the Winklevoss twins have put something out. They won't even hire anyone who worked with Gary on any of this stuff... Paul sees all that and there's no way he's going to allow that.",
-    "quoteStartMs": 1273341,
-    "topics": [
-      "regulation",
-      "SEC",
-      "crypto",
-      "deregulation"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Joe Lonsdale",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Joe Lonsdale argues that Coinbase and other good-faith crypto actors were unfairly persecuted under Gensler's SEC via deliberate rule ambiguity, and that the incoming Paul Atkins-led SEC will provide a fair path forward — a positive regulatory tailwind for Coinbase.",
+    "quote": "Coinbase with Brian... they were purposely not defining the rules in certain cases and then going after people after not having defined it... And Paul sees all that and there's no way he's going to allow that.",
+    "quoteStartMs": 1261000,
+    "topics": [
+      "regulation",
+      "crypto",
+      "SEC"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E206-addepar-Guest-8",
+    "id": "E206-anduril-industries-Guest-8",
     "episodeId": "E206",
     "episodeNumber": 206,
     "episodeDate": "2024-12-07T00:55:00.000Z",
-    "company": "Addepar",
+    "company": "Anduril Industries",
     "ticker": null,
     "isPublic": false,
     "host": "Guest",
     "stance": "bull",
-    "conviction": "low",
-    "summary": "Joe Lonsdale highlights Addepar crossing $7 trillion in assets on platform as evidence of strong business momentum.",
-    "quote": "Adipar just crossed $7 trillion, reported on it this month. It's a good real company too.",
-    "quoteStartMs": 217000,
-    "topics": [
-      "growth",
-      "AUM milestone"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Joe Lonsdale",
+    "conviction": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Joe Lonsdale, a defense-tech investor, identifies Anduril as one of a handful of future defense primes — among the 7–10 new primes he expects to emerge — and says investors with access to these companies will do very well.",
+    "quote": "there's going to be like 7 to 10 new primes. One of them's obviously Anduril... these 7 to 10 new primes are going to be huge and if you can get access to them, you're going to do really well.",
+    "quoteStartMs": 2791000,
+    "topics": [
+      "defense tech",
+      "venture",
+      "AI"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E206-gld-Friedberg-a0",
@@ -238,19 +225,17 @@
     "ticker": "GLD",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Friedberg suggests Bitcoin will displace gold as a store of value, implying a bearish outlook on gold's role and price trajectory relative to crypto.",
+    "callType": "view",
+    "summary": "Friedberg suggests Bitcoin will take over gold as a store of value, implying gold is being displaced.",
     "quote": "It should be kind of store of value and alternative. It's just going to take over gold.",
     "quoteStartMs": 1781000,
     "topics": [
       "store of value",
-      "Bitcoin vs Gold",
+      "Bitcoin vs gold",
       "crypto"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

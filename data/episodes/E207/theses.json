@@ -10,19 +10,18 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Chamath argues that Google's search cash flows have funded extraordinary long-term R&D (quantum computing via Willow, Waymo, DeepMind), demonstrating the compounding value of its core business in ways outsiders — including regulators — fail to appreciate.",
-    "quote": "Google had the money to fund him for the last 12 years... the business they built was able to fund this... it's really awesome.",
-    "quoteStartMs": 2110754,
-    "topics": [
-      "R&D moat",
-      "quantum computing",
-      "valuation",
-      "antitrust"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues that Google's search-funded moonshots — quantum computing (Willow) and Waymo — are paying off in ways that outside regulators and even observers struggle to comprehend, underscoring the durable value of the business.",
+    "quote": "Google had the money to fund him for the last 12 years. The greatest money printing machine of all time is paying dividends.",
+    "quoteStartMs": 2110754,
+    "topics": [
+      "quantum computing",
+      "moonshots",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E207-aapl-Guest-1",
@@ -35,20 +34,19 @@
     "host": "Guest",
     "stance": "mixed",
     "conviction": "high",
-    "summary": "Keith Rabois is long-term bullish on Apple's vertical integration moat (hardware + software + custom chips giving a 5–10 year competitive edge) but warns of a cultural decay function post-Jobs/Ive — Apple has lost its taste scaffolding and lacks the data-driven backstop other companies use, leaving it vulnerable on the AI/UX battleground of the next 5 years.",
-    "quote": "Apple has a lot of competitive advantages... but they're showing like the decay function... eventually somebody will figure out an angle to rip them out.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Keith Rabois is bullish on Apple's long-term vertical integration moat (chips, software, hardware together) but bearish on near-term execution, arguing that without Steve Jobs' taste or a data-driven scaffolding to replace it, Apple is decaying culturally and ceding AI ground to competitors.",
+    "quote": "Apple has a lot of competitive advantages... But you get very sloppy in other places... they're showing the decay function... somebody will figure out an angle to rip them out.",
     "quoteStartMs": 2877000,
     "topics": [
       "vertical integration",
-      "competitive moat",
       "AI",
-      "product quality"
+      "product quality",
+      "competitive moat"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Keith Rabois",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E207-aapl-Chamath-2",
@@ -59,20 +57,20 @@
     "ticker": "AAPL",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath argues Apple's iOS 18 quality failures — bricking, broken Photos app, degraded core phone functionality — reflect a structural engineering and product management problem that makes the iPhone 10–30% less usable, signaling deeper organizational issues.",
-    "quote": "It's literally not just photos. It's like the phone doesn't work. So there are just core structural issues with this operating system now that makes the iPhone maybe 10 to 30% less usable.",
-    "quoteStartMs": 3040542,
-    "topics": [
-      "product quality",
-      "execution risk",
-      "iOS"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues Apple's iOS 18 quality failures — bricked phones, broken Photos app, degraded core functionality — represent a structural decline in product quality that makes the iPhone materially less usable, signaling organizational rot.",
+    "quote": "It's literally not just photos. It's like the phone doesn't work. So there are just core structural issues with this operating system now that makes the iPhone maybe 10 to 30% less usable.",
+    "quoteStartMs": 3041000,
+    "topics": [
+      "product quality",
+      "iOS",
+      "execution risk"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E207-stripe-Guest-3",
@@ -83,25 +81,47 @@
     "ticker": null,
     "isPublic": false,
     "host": "Guest",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Keith Rabois believes Stripe should go public as early as possible to gain public currency for M&A and strategic optionality, arguing that staying private forces the company to expend energy constructing alternatives to public-market advantages rather than focusing on higher-value creation.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Keith Rabois believes Stripe should go public as early as possible to gain access to public currency for strategic M&A, and views the company's continued private status as a missed strategic opportunity.",
     "quote": "Stripe should go public, but they don't listen to me... I personally believe and subscribe to the view that companies should go public as early as possible.",
     "quoteStartMs": 3991000,
     "topics": [
       "IPO",
-      "optionality",
-      "M&A",
-      "private vs public"
+      "public markets",
+      "strategy"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Keith Rabois",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E207-mstr-Friedberg-4",
+    "id": "E207-stripe-Chamath-4",
+    "episodeId": "E207",
+    "episodeNumber": 207,
+    "episodeDate": "2024-12-13T16:58:00.000Z",
+    "company": "Stripe",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath suggests Stripe risks being disrupted by crypto stablecoins and is waiting too long to go public, implying a window is being missed.",
+    "quote": "They're waiting to get disrupted by crypto stablecoins. Get out there, boys. They bought that crypto stablecoin company for like a billion dollars. Defensive.",
+    "quoteStartMs": 4000000,
+    "topics": [
+      "crypto disruption",
+      "IPO",
+      "competitive risk"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E207-mstr-Friedberg-5",
     "episodeId": "E207",
     "episodeNumber": 207,
     "episodeDate": "2024-12-13T16:58:00.000Z",
@@ -111,44 +131,18 @@
     "host": "Friedberg",
     "stance": "neutral",
     "conviction": "low",
-    "summary": "Friedberg explains that MicroStrategy's convertible-note structure is effectively a synthetic call option on Bitcoin, with the premium functioning as the option price and the coupon as carry — a structure that hedge funds are actively trading, suggesting genuine financial logic behind the instrument.",
-    "quote": "It looks a lot like a synthetic call option on Bitcoin... there's a reason people are paying for it. They think that there's value there.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg explains MicroStrategy's convertible note structure as a synthetic call option on Bitcoin, noting hedge funds are actively trading it, but stops short of a directional investment view on the stock itself.",
+    "quote": "It looks a lot like a synthetic call option on Bitcoin... it's kind of like the hottest trade in hedge fund land right now is to buy up these convertible notes that he's issuing.",
     "quoteStartMs": 5092272,
     "topics": [
       "Bitcoin",
       "convertible notes",
-      "structured finance",
-      "crypto"
+      "financial structure"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E207-shop-Guest-5",
-    "episodeId": "E207",
-    "episodeNumber": 207,
-    "episodeDate": "2024-12-13T16:58:00.000Z",
-    "company": "Shopify",
-    "ticker": "SHOP",
-    "isPublic": true,
-    "host": "Guest",
-    "stance": "bull",
-    "conviction": "medium",
-    "summary": "Keith Rabois cites Shopify as proof of a fully competitive D2C commerce market, noting it rose from a low valuation to dominate direct-to-consumer commerce against Amazon — evidence that antitrust fears about Amazon's alleged monopoly were overblown.",
-    "quote": "Shopify is one of the biggest success stories of the last decade, right down the middle, competitive with Amazon... Nobody builds a D2C commerce brand except on Shopify.",
-    "quoteStartMs": 4381016,
-    "topics": [
-      "competitive positioning",
-      "D2C commerce",
-      "antitrust"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Keith Rabois",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E207-lit-Chamath-a0",
@@ -161,18 +155,16 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath highlights the US has one of the largest lithium deposits in the world and frames the lithium supply chain as a key strategic opportunity, implying upside if domestic production is unlocked.",
-    "quote": "We have one of the largest lithium deposits in the world. The lithium supply chain is another really good one that's emblematic of all of this.",
+    "callType": "view",
+    "summary": "Chamath highlights the US has one of the largest lithium deposits in the world and frames the lithium supply chain as a key strategic opportunity, implying bullish sentiment on domestic lithium development.",
+    "quote": "We have one of the largest lithium deposits in the world... The lithium supply chain is another really good one that's emblematic of all of this",
     "quoteStartMs": 4824000,
     "topics": [
-      "domestic mining",
       "supply chain",
-      "US competitiveness",
+      "domestic mining",
+      "geopolitics",
       "regulations"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": "Frames US lithium deposits and the supply chain as a strategic opportunity — supply/theme framing, not a directional commodity-price call."
+    "attributionConfidence": "high"
   }
 ]

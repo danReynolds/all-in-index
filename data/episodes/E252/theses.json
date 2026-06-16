@@ -10,19 +10,19 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Chamath is highly bullish on Tether, citing its 500M users, 30M quarterly user growth, 95%+ profit margins, and dominant position in dollar-pegged stablecoins serving financial inclusion globally, calling it one of the most impressive businesses he has ever seen.",
-    "quote": "It is, it is an incredible— and here's why that business is incredible. This is what I love about Tether, the stablecoin. Yes. There are 500 million people using US dollar-backed stablecoins from Tether all around the world",
-    "quoteStartMs": 898170,
-    "topics": [
-      "stablecoins",
-      "fintech",
-      "financial inclusion",
-      "margins"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues Tether is an extraordinary business with ~95%+ profit margins, 500 million users growing by 30 million per quarter, and massive financial inclusion tailwinds tied to US dollar hegemony, calling it unlike any business he has seen.",
+    "quote": "There are 500 million people using US dollar-backed stablecoins from Tether all around the world... his user base is growing by 30 million users a quarter... I've never seen a business like that.",
+    "quoteStartMs": 907605,
+    "topics": [
+      "stablecoin",
+      "growth",
+      "margins",
+      "financial inclusion"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E252-tether-Jason-1",
@@ -35,19 +35,19 @@
     "host": "Jason",
     "stance": "mixed",
     "conviction": "medium",
-    "summary": "Jason acknowledges Tether's impressive cleanup of prior compliance issues and growing legitimacy under new crypto regulation, but flags headwinds from falling interest rates and ongoing legal bans in key markets that the business must overcome.",
-    "quote": "The other challenge they're going to have is when interest rates go down, these businesses are going to have to figure that out as well.",
-    "quoteStartMs": 1298000,
-    "topics": [
-      "stablecoins",
-      "regulation",
-      "interest rates",
-      "risk"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Jason acknowledges Tether has done an impressive job cleaning up its compliance issues and is pursuing US legality, but flags headwinds from rising competition (Stripe, Visa, Circle) and the risk that falling interest rates will compress margins.",
+    "quote": "They've done an incredible job cleaning all that up... the other challenge they're going to have is when interest rates go down, these businesses are going to have to figure that out... Stripe, Visa, everybody's going to have their own",
+    "quoteStartMs": 1174345,
+    "topics": [
+      "stablecoin",
+      "competition",
+      "interest rates",
+      "regulation"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E252-tether-Friedberg-2",
@@ -58,20 +58,21 @@
     "ticker": null,
     "isPublic": false,
     "host": "Friedberg",
-    "stance": "mixed",
+    "stance": "bear",
     "conviction": "medium",
-    "summary": "Friedberg notes that Tether's extremely high margins will inevitably attract competition and compress over time, making the current economics unsustainable long-term.",
-    "quote": "The good news about that is— There's a financial theory, though, that high-margin businesses like that invite competition more... Unfortunately, margin like that's only got one direction to go.",
-    "quoteStartMs": 1369000,
-    "topics": [
-      "stablecoins",
-      "competition",
-      "margins"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Friedberg warns that Tether's high margins will attract intense competition, driving margins down over time, and flags interest rate declines as an additional headwind.",
+    "quote": "The good news about that is— There's a financial theory, though, that high-margin businesses like that invite competition more... margin like that's only got one direction to go.",
+    "quoteStartMs": 1369000,
+    "topics": [
+      "stablecoin",
+      "competition",
+      "margins",
+      "interest rates"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E252-nvda-Friedberg-3",
@@ -82,74 +83,49 @@
     "ticker": "NVDA",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "mixed",
+    "stance": "bear",
     "conviction": "medium",
-    "summary": "Friedberg sees Nvidia's dominance as potentially threatened long-term by the rise of purpose-built, specialized chips for different AI workloads and architectures, and specifically flags Huawei as a potential black-swan challenger by 2026-2027.",
-    "quote": "There's a risk to NVIDIA... the other black swan that I think is missing in the equation today, and my early prediction for 2026, is Huawei, where I think that there's lithography technology that exists in China that is not publicly discussed.",
-    "quoteStartMs": 2439924,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg argues that as AI chip investment ramps up, differentiated purpose-built chips for specific workloads will erode Nvidia's general-purpose GPU dominance, and flags Huawei as a potential black-swan competitor by 2026-2027.",
+    "quote": "There's going to be differentiated chips for different markets and different applications. 100%. And that's where there's a risk to NVIDIA... my early prediction for 2026, is Huawei, where I think that there's lithography technology that",
+    "quoteStartMs": 2434368,
     "topics": [
       "AI chips",
       "competition",
       "Huawei",
       "chip architecture"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E252-nvda-Chamath-4",
+    "id": "E252-googl-Chamath-4",
     "episodeId": "E252",
     "episodeNumber": 252,
     "episodeDate": "2025-11-22T00:40:00.000Z",
-    "company": "Nvidia",
-    "ticker": "NVDA",
+    "company": "Google",
+    "ticker": "GOOGL",
     "isPublic": true,
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Chamath argues Burry's bear thesis on Nvidia is wrong because it misunderstands how AI output tokens generate real revenue, validating chip useful-life depreciation schedules, and that Nvidia's customers are rationally managing token economics.",
-    "quote": "He doesn't appreciate is that obviously Google and Facebook and Microsoft and OpenAI, and X are not going to be in the business of generating negative revenue output tokens just for the sake of it.",
-    "quoteStartMs": 1797002,
-    "topics": [
-      "AI chips",
-      "depreciation",
-      "short thesis rebuttal",
-      "revenue"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E252-nvda-Friedberg-5",
-    "episodeId": "E252",
-    "episodeNumber": 252,
-    "episodeDate": "2025-11-22T00:40:00.000Z",
-    "company": "Nvidia",
-    "ticker": "NVDA",
-    "isPublic": true,
-    "host": "Friedberg",
-    "stance": "bull",
-    "conviction": "medium",
-    "summary": "Friedberg debunks Burry's short thesis, arguing Nvidia's customers are correctly applying GAAP depreciation because chips still generate revenue after 6 years, and all cash flows are fully visible in financial statements — there is no hidden accounting.",
-    "quote": "Burry is incorrect in thinking that they're hiding anything because it's all there. They're following GAAP standards. And then investors make a market and they all decide, what do I want to value this company on?",
-    "quoteStartMs": 2082340,
+    "scoreNote": null,
+    "summary": "Chamath is bullish on Google's AI progress, citing its doubling of chat market share (8% to 16%) and its TPU architecture enabling independence from Nvidia, while noting search cannibalization remains a risk management challenge.",
+    "quote": "I don't know if you saw the stats, but they went from like 8% share to like 16% share of the entire chat market as of like this last month. That's an incredible stat... Google has done an absolutely incredible job in defending search.",
+    "quoteStartMs": 2200291,
     "topics": [
-      "AI chips",
-      "accounting",
-      "short thesis rebuttal",
-      "valuation"
+      "AI",
+      "market share",
+      "search",
+      "TPU"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E252-googl-Jason-6",
+    "id": "E252-googl-Jason-5",
     "episodeId": "E252",
     "episodeNumber": 252,
     "episodeDate": "2025-11-22T00:40:00.000Z",
@@ -159,47 +135,22 @@
     "host": "Jason",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Jason is bullish on Google, arguing its search franchise will grow rather than shrink due to AI-driven improvements in ad targeting and search volume, and that its Gemini model is competitive, making it a long in the AI pair trade versus short OpenAI.",
+    "callType": "explicit_long",
+    "excludeReason": null,
+    "scoreNote": "Explicit 'I would be long' language for Google as part of a pair trade thesis against OpenAI.",
+    "summary": "Jason is explicitly long Google, arguing its search franchise will grow as AI improves ad targeting and query volume, and that it will benefit as OpenAI loses share to better-positioned rivals.",
     "quote": "I think the search franchise is going to grow and that Google is not going to lose to ChatGPT... I think I would be long Google, Groq, and Anthropic.",
     "quoteStartMs": 2302524,
     "topics": [
-      "AI",
       "search",
+      "AI",
       "advertising",
-      "competitive moat"
+      "competitive positioning"
     ],
-    "attributionConfidence": "high",
-    "callType": "pair_trade",
-    "excludeReason": null,
-    "scoreNote": "Long public leg of Jason's Google/Groq/Anthropic over OpenAI pair trade"
+    "attributionConfidence": "high"
   },
   {
-    "id": "E252-googl-Chamath-7",
-    "episodeId": "E252",
-    "episodeNumber": 252,
-    "episodeDate": "2025-11-22T00:40:00.000Z",
-    "company": "Google",
-    "ticker": "GOOGL",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "mixed",
-    "conviction": "medium",
-    "summary": "Chamath is impressed by Google's AI progress and search defense, but warns the harder strategic challenge ahead is self-cannibalization — transitioning search revenue to AI — which will be a difficult internal decision regardless of external competitive dynamics.",
-    "quote": "I think what this creates is the setup where now they can cannibalize themselves versus having their market cannibalized for them. That's still going to be a very tough decision for Google to make.",
-    "quoteStartMs": 2271598,
-    "topics": [
-      "AI",
-      "search",
-      "self-cannibalization",
-      "competitive moat"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E252-openai-Jason-8",
+    "id": "E252-openai-Jason-6",
     "episodeId": "E252",
     "episodeNumber": 252,
     "episodeDate": "2025-11-22T00:40:00.000Z",
@@ -209,22 +160,22 @@
     "host": "Jason",
     "stance": "bear",
     "conviction": "high",
-    "summary": "Jason is bearish on OpenAI, arguing it is overvalued, has lost its monopoly on the AI market, faces strong competition from Google, Anthropic, and Groq, and is losing enterprise trust because it competes directly with its own customers.",
+    "callType": "explicit_short",
+    "excludeReason": "not_investment_call",
+    "scoreNote": "Explicit 'short OpenAI' language; private company so not scoreable as equity but stated as a pair trade leg.",
+    "summary": "Jason argues OpenAI is overvalued and losing market share as Google, Anthropic, and Groq outperform it on benchmarks, and startups distrust it because it competes in their application categories.",
     "quote": "I think the short in all of this, if you were going to put on the pair trade, is short OpenAI, which I think is overvalued and is going to go down.",
     "quoteStartMs": 2321145,
     "topics": [
       "AI",
       "valuation",
       "competition",
-      "enterprise trust"
+      "market share"
     ],
-    "attributionConfidence": "high",
-    "callType": "pair_trade",
-    "excludeReason": null,
-    "scoreNote": "Short private leg of Jason's pair trade against OpenAI"
+    "attributionConfidence": "high"
   },
   {
-    "id": "E252-anthropic-Jason-9",
+    "id": "E252-anthropic-Jason-7",
     "episodeId": "E252",
     "episodeNumber": 252,
     "episodeDate": "2025-11-22T00:40:00.000Z",
@@ -234,66 +185,18 @@
     "host": "Jason",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Jason is bullish on Anthropic as an enterprise AI winner because it maintains a neutral stance of not competing with customers at the application layer, driving trust and adoption from developers who distrust OpenAI.",
-    "quote": "I think I would be long Google, Groq, and Anthropic. I think that they're going to have many challenges. Also, I don't think the startup community— I'll just add this as my final thought on it— the startup community is not trusting OpenAI w",
+    "callType": "explicit_long",
+    "excludeReason": null,
+    "scoreNote": "Explicit 'I would be long Anthropic' as part of named selections vs short OpenAI.",
+    "summary": "Jason is bullish on Anthropic, arguing its neutral stance of not competing at the application layer builds enterprise trust and wins developers away from OpenAI, making it a preferred AI model provider.",
+    "quote": "I think I would be long Google, Groq, and Anthropic. I think that they're going to have many challenges... startups... are going to go with a model like Anthropic, which is taking a more neutral, we're not going to go to the application",
     "quoteStartMs": 2330455,
     "topics": [
       "AI",
       "enterprise",
-      "competitive positioning"
+      "competitive positioning",
+      "trust"
     ],
-    "attributionConfidence": "high",
-    "callType": "pair_trade",
-    "excludeReason": null,
-    "scoreNote": "Long private leg of Jason's Google/Groq/Anthropic over OpenAI pair trade"
-  },
-  {
-    "id": "E252-anthropic-Chamath-10",
-    "episodeId": "E252",
-    "episodeNumber": 252,
-    "episodeDate": "2025-11-22T00:40:00.000Z",
-    "company": "Anthropic",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Chamath",
-    "stance": "bull",
-    "conviction": "medium",
-    "summary": "Chamath highlights Anthropic as the leader in enterprise AI model quality, positioning it to win enterprise-level coding and business workloads as the AI market fragments into specialized winners.",
-    "quote": "On the enterprise side, it's going to be model quality. Anthropic is excellent.",
-    "quoteStartMs": 2245935,
-    "topics": [
-      "AI",
-      "enterprise",
-      "model quality",
-      "competitive positioning"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E252-gld-Chamath-a0",
-    "episodeId": "E252",
-    "episodeNumber": 252,
-    "episodeDate": "2025-11-22T00:40:00.000Z",
-    "company": "Gold",
-    "ticker": "GLD",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "low",
-    "summary": "Chamath mentions gold casually as one of the things he enjoys, and separately notes Tether reinvests into gold among other assets. The only personal directional hint is his offhand remark about 'make a few investments on gold', suggesting mild bullish interest but with very low conviction.",
-    "quote": "I just wanna go to my office, build some stuff, make a few investments on gold.",
-    "quoteStartMs": 769072,
-    "topics": [
-      "portfolio",
-      "personal investing",
-      "Tether holdings"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": "Chamath's offhand remark about making 'a few investments on gold' is a passing mention without a directional conviction or explicit price call, and Tether's reinvestment in gold is a factual description."
+    "attributionConfidence": "high"
   }
 ]

@@ -11,39 +11,39 @@
     "stance": "bear",
     "conviction": "low",
     "callType": "view",
-    "summary": "Friedberg notes Intel is 'imploding' and unable to manufacture, casting doubt on the CHIPS Act's ability to close the gap with Taiwanese chip fabs.",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg notes Intel is imploding and unable to manufacture, casting doubt on the CHIPS Act's ability to revitalize domestic chip manufacturing.",
     "quote": "Meanwhile, Intel is imploding, you know, they can't manufacture.",
     "quoteStartMs": 5095000,
     "topics": [
       "manufacturing",
-      "semiconductors",
-      "CHIPS Act"
+      "CHIPS Act",
+      "semiconductor"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": "not_investment_call",
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E193-uber-Sacks-1",
+    "id": "E193-polymarket-Chamath-1",
     "episodeId": "E193",
     "episodeNumber": 193,
     "episodeDate": "2024-08-23T22:14:00.000Z",
-    "company": "Uber",
-    "ticker": "UBER",
-    "isPublic": true,
-    "host": "Sacks",
+    "company": "Polymarket",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
     "stance": "neutral",
-    "conviction": "low",
+    "conviction": "medium",
     "callType": "view",
-    "summary": "Sacks notes Uber has rallied to $80, implying a positive trajectory for the stock.",
-    "quote": "Uber rallied to— what's the, what's the price now? $80.",
-    "quoteStartMs": 5159000,
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath views prediction markets like Polymarket as good businesses but frames them primarily as entertainment and gambling rather than reliable directional indicators.",
+    "quote": "I mean, I think these are really good businesses, but they are some combination of entertainment and gambling. I don't think that these things are as useful directional indicators as they are just really interesting businesses that allow",
+    "quoteStartMs": 2489000,
     "topics": [
-      "valuation",
-      "stock price"
+      "prediction markets",
+      "business model"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": "not_investment_call",
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

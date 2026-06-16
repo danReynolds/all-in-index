@@ -10,18 +10,18 @@
     "host": "Jason",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Jason sees Google's AI Mode launch as a potential turning point for the stock, noting the 5% jump and continued gains, suggesting the market is rewarding Google for finally moving toward an AI-first search product.",
-    "quote": "the stock ripped 5% on the day, which might be a turning point for Google. And up again today. Search was the big announcement...They demoed something called AI Mode...it looks like a nice comprehensive search instead of 10 blue links and t",
-    "quoteStartMs": 2312707,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Jason sees Google's AI Mode search launch as a potential turning point for the stock, noting it ripped 5% on the day and continued higher, suggesting the market is rewarding the pivot.",
+    "quote": "the stock ripped 5% on the day, which might be a turning point for Google.",
+    "quoteStartMs": 2314000,
     "topics": [
       "AI search",
       "product pivot",
       "valuation"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E229-googl-Friedberg-1",
@@ -34,46 +34,22 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Friedberg argues Google's I/O announcements represent a genuine inflection point — replacing search with AI Mode, launching a $250/month subscription bundle, and reviving Google Labs — marking the week Google pivoted to an AI business model with a meaningful revenue mix shift away from ads.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg argues Google's I/O announcements — AI Mode expansion, a $250/month AI Ultra subscription bundle, and the relaunch of Google Labs — mark a genuine pivot to AI-first business models, potentially shifting revenue mix from ads to high-margin subscriptions and making this the week Google 'really pivoted into the AI business model.'",
     "quote": "I would say if anyone were to identify the week that Google really pivoted into the AI business model, it might be this week. They launched over 15 products at this thing.",
     "quoteStartMs": 2476005,
     "topics": [
       "AI search",
-      "subscription revenue",
-      "business model shift",
-      "product strategy"
+      "business model",
+      "subscriptions",
+      "product pivot"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E229-googl-Sacks-2",
-    "episodeId": "E229",
-    "episodeNumber": 229,
-    "episodeDate": "2025-05-24T06:43:00.000Z",
-    "company": "Alphabet (Google)",
-    "ticker": "GOOGL",
-    "isPublic": true,
-    "host": "Sacks",
-    "stance": "mixed",
-    "conviction": "medium",
-    "summary": "Sacks sees Google's AI Mode as an important but transitional step — it threads the needle between protecting legacy search revenue and building the AI product, calling it a good compromise while doubting it will be the final endpoint.",
-    "quote": "It ultimately feels a little bit like a transitional move. I doubt that this will be the endpoint, but given their need to protect their search business while also developing their AI business, this feels like a pretty good compromise.",
-    "quoteStartMs": 2597850,
-    "topics": [
-      "AI search",
-      "competitive moat",
-      "product strategy"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E229-googl-Chamath-3",
+    "id": "E229-googl-Chamath-2",
     "episodeId": "E229",
     "episodeNumber": 229,
     "episodeDate": "2025-05-24T06:43:00.000Z",
@@ -81,21 +57,45 @@
     "ticker": "GOOGL",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "mixed",
     "conviction": "medium",
-    "summary": "Chamath is bullish that Google will make AI Mode the default for a large swath of users within 18 months, but warns they must also stay ahead on new form factors or risk playing catch-up to OpenAI on the next platform.",
-    "quote": "I think what the market is betting is that it's going to happen in the next 18 months... when AI mode becomes the default for a large swath of existing Google users.",
-    "quoteStartMs": 2678126,
-    "topics": [
-      "AI search",
-      "competitive threat",
-      "product roadmap",
-      "valuation"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath views Google's AI Mode as an important but not final step — bullish that a full default switch to AI search is likely within a year, but warns Google risks falling behind if OpenAI's hardware device captures the next computing form factor while Google is still transitioning search.",
+    "quote": "I think this is the beginning of a process. I suspect it'll be done in less than a year. And for a large swath of users, they're going to put AI in the front door… what you don't want to have when you are going through an innovator's",
+    "quoteStartMs": 2707838,
+    "topics": [
+      "AI search",
+      "competitive risk",
+      "innovator's dilemma",
+      "product pivot"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E229-googl-Sacks-3",
+    "episodeId": "E229",
+    "episodeNumber": 229,
+    "episodeDate": "2025-05-24T06:43:00.000Z",
+    "company": "Alphabet (Google)",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks sees Google's AI search move as a reasonable transitional compromise that shows they are 'in the game,' but views it as a stepping stone rather than a definitive endpoint, crediting the market's positive reaction.",
+    "quote": "They've taken an important step in that direction. They've sort thread the needle here between keeping their old UI and product and then also incorporating the new sort of AI UI. So this is a compromise… this feels like a pretty good",
+    "quoteStartMs": 2582344,
+    "topics": [
+      "AI search",
+      "product pivot",
+      "competitive position"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E229-openai-Sacks-4",
@@ -108,19 +108,18 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Sacks frames the Jony Ive/IO acquisition as a high-conviction option bet: either it produces an iPhone-like breakthrough consumer device that doubles OpenAI's value, or it contributes nothing — making it a worthwhile asymmetric swing at the current scale.",
-    "quote": "I think it's going to be either zero or a doubling of the company's value, something like that. Either he develops an iPhone-like amazing hit product no one's seen before, some new consumer device that really could take the company to anoth",
-    "quoteStartMs": 3346804,
-    "topics": [
-      "hardware",
-      "consumer devices",
-      "M&A",
-      "optionality"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Sacks frames the Jony Ive/IO acquisition as a binary, high-upside option: either the device becomes an iPhone-like hit that doubles OpenAI's value, or it fails — making it a cheap 2% option against a massive prize.",
+    "quote": "I don't think it's going to be 1 or 2% better. I think it's going to be either zero or a doubling of the company's value… it's more of like a 2% option against a strike of doubling the value of the company.",
+    "quoteStartMs": 3344000,
+    "topics": [
+      "hardware",
+      "product strategy",
+      "valuation"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E229-openai-Chamath-5",
@@ -131,21 +130,20 @@
     "ticker": null,
     "isPublic": false,
     "host": "Chamath",
-    "stance": "bull",
-    "conviction": "medium",
-    "summary": "Chamath is genuinely excited about OpenAI's claimed next-gen device and views the IO acquisition as potentially creating a transformative new hardware platform, comparing his anticipation to the original iPhone moment, while noting the SoftBank round terms are surprisingly clean at a $300B valuation.",
-    "quote": "it's impressive what Sam Altman is doing right now. At OpenAI...I'm surprised that you guys are such haters on this. I'm excited to see what this thing is.",
-    "quoteStartMs": 2750095,
-    "topics": [
-      "hardware",
-      "consumer devices",
-      "M&A",
-      "valuation"
-    ],
-    "attributionConfidence": "high",
+    "stance": "neutral",
+    "conviction": "low",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath is intrigued by OpenAI's IO acquisition and the promised device, giving the company benefit of the doubt on its hardware ambitions, but notes that prior SoftBank round terms suggest negotiating leverage may be shifting away from OpenAI.",
+    "quote": "I want the device. They say they have a device. Okay, I'm giving them the benefit of the doubt. They've invented something that they say is world-changing.",
+    "quoteStartMs": 2911000,
+    "topics": [
+      "hardware",
+      "valuation",
+      "deal terms"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E229-openai-Friedberg-6",
@@ -156,20 +154,20 @@
     "ticker": null,
     "isPublic": false,
     "host": "Friedberg",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "low",
-    "summary": "Friedberg is skeptical of the IO acquisition, finding the promotional video substance-free and questioning whether Jony Ive's reputation justifies the deal, implying the acquisition may not add meaningful value to OpenAI.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg is skeptical of the IO acquisition's promotional video and Jony Ive's outsized reputation, implying the $6.5B price tag may not be justified by the substance of what was shown.",
     "quote": "I watched the 9-minute video. I wanted my 9 minutes back. Nothing happened.",
     "quoteStartMs": 2906862,
     "topics": [
-      "M&A",
       "hardware",
-      "valuation skepticism"
+      "valuation",
+      "acquisition"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E229-nvda-Sacks-7",
@@ -180,46 +178,21 @@
     "ticker": "NVDA",
     "isPublic": true,
     "host": "Sacks",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Sacks argues that the US-Middle East AI partnership framework — requiring American hyperscalers to own 80% of regional data center compute and matching US infrastructure investment — ensures NVIDIA and American chip companies become the global standard, benefiting their balance of trade and market share.",
-    "quote": "we want it to be NVIDIA and AMD and those types of companies that improves our balance of trade. It also ensures that these data centers across the world are going to be built on American technology. We want American technology to become th",
-    "quoteStartMs": 3824307,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks argues that the US-Middle East AI partnership framework — requiring data centers to run on American tech stacks — will entrench NVIDIA (and AMD) as the global standard, expanding their market and locking out Chinese rivals.",
+    "quote": "even with respect to the data centers they're going to build in the region, at least 80% of the chips have to be owned and operated by American cloud service providers… it's going to be on an American tech stack, right? We want it to be",
+    "quoteStartMs": 3743420,
     "topics": [
       "export controls",
-      "geopolitics",
-      "AI infrastructure",
-      "market share"
+      "AI diplomacy",
+      "market share",
+      "geopolitics"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E229-ceg-Chamath-8",
-    "episodeId": "E229",
-    "episodeNumber": 229,
-    "episodeDate": "2025-05-24T06:43:00.000Z",
-    "company": "Constellation Energy",
-    "ticker": "CEG",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "bear",
-    "conviction": "medium",
-    "summary": "Chamath warns that cutting clean energy tax incentives in the Big Beautiful Bill will cause private capital to flee energy infrastructure investment, creating power shortages that are inflationary and harmful to AI buildout — a structural negative for energy providers dependent on those financing mechanisms.",
-    "quote": "You're going to see energy prices spike. You're gutting the number of electrons that will be available for things like AI...what are they going to do? They're just going to stop doing it. So in the absence of electrons, what happens? Prices",
-    "quoteStartMs": 728459,
-    "topics": [
-      "energy policy",
-      "AI infrastructure",
-      "regulation",
-      "power shortage"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E229-gld-Chamath-a0",
@@ -232,43 +205,16 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Chamath argues that fiscal irresponsibility from the 'Big Beautiful Bill' and rising US debt will drive investors to sell US debt and rotate into gold (and Bitcoin) as a safe haven, noting gold has already started spiking.",
+    "callType": "view",
+    "summary": "Chamath argues that fiscal irresponsibility from the 'Big Beautiful Bill' will drive investors to sell US debt and rotate into gold (and Bitcoin) as a safe haven, pointing to gold already spiking in recent days as evidence.",
     "quote": "You'll delever from the United States, You'll sell US debt. You'll own things like gold and Bitcoin. If you're curious about what's happening to gold and Bitcoin, they started to spike in the last few days.",
     "quoteStartMs": 633046,
     "topics": [
       "US debt",
       "fiscal policy",
-      "safe haven",
-      "bond market"
+      "safe haven flows",
+      "interest rates"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E229-cper-Friedberg-a1",
-    "episodeId": "E229",
-    "episodeNumber": 229,
-    "episodeDate": "2025-05-24T06:43:00.000Z",
-    "company": "Copper",
-    "ticker": "CPER",
-    "isPublic": true,
-    "host": "Friedberg",
-    "stance": "neutral",
-    "conviction": "low",
-    "summary": "Friedberg mentions a copper mine permit that has been stuck for 30 years and is now being fast-tracked, noting the regulatory bottleneck — no explicit price or investment direction given.",
-    "quote": "he said that there's a permit for a copper mine that's been outstanding for 30 years. They've been trying to get through the permitting process 30 years to get this copper mines started to run, and now he and the team are trying to fast-track this thing.",
-    "quoteStartMs": 5042000,
-    "topics": [
-      "permitting",
-      "mining",
-      "domestic supply",
-      "deregulation"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

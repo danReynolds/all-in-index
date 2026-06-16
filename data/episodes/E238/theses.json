@@ -10,23 +10,47 @@
     "host": "Guest",
     "stance": "mixed",
     "conviction": "medium",
-    "summary": "Gavin Baker argues OpenAI is still a highly valuable company due to product excellence and distribution, but for the first time failed to release a model decisively better than competitors, suggesting talent loss may be weighing on model performance.",
-    "quote": "this is the first time that OpenAI has not been able to clearly beat a competitor on all metrics... the loss of talent may be beginning to weigh. But they are very good at product, just really, really good.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Gavin Baker notes that for the first time OpenAI failed to release a model decisively better than rivals on all benchmarks, suggesting potential talent loss is weighing on progress, though OpenAI remains highly valuable due to superior product and massive user distribution.",
+    "quote": "this is the first time that OpenAI has not been able to clearly beat a competitor on all metrics, you know, a month after a new frontier model was kind of released from one of their chief rivals.",
     "quoteStartMs": 645294,
     "topics": [
       "AI models",
-      "competition",
-      "talent",
-      "product"
+      "competitive position",
+      "talent loss",
+      "benchmarks"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E238-xai-Guest-1",
+    "id": "E238-openai-Friedberg-1",
+    "episodeId": "E238",
+    "episodeNumber": 238,
+    "episodeDate": "2025-08-09T15:40:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg argues GPT-5's key upgrade is its auto-routing UX that selects the right underlying model, which gives OpenAI a real product advantage as AI becomes more broadly adopted.",
+    "quote": "I think from a product experience point of view, this was actually a pretty big upgrade for ChatGPT, and it'll give them a real advantage as people start to access it.",
+    "quoteStartMs": 923491,
+    "topics": [
+      "AI models",
+      "product",
+      "UX",
+      "competitive position"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E238-xai-Guest-2",
     "episodeId": "E238",
     "episodeNumber": 238,
     "episodeDate": "2025-08-09T15:40:00.000Z",
@@ -36,22 +60,22 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Gavin Baker, a disclosed shareholder, is bullish on xAI given Grok 4's exceptional benchmark performance over GPT-5, the largest Blackwell cluster enabling Grok 5, and the view that xAI has taken the lead in frontier AI model quality.",
-    "quote": "I should note my firm is a shareholder of xAI... they have the largest Blackwell cluster, so I'm optimistic for GROK5. The progress for Grok 4 was exceptional.",
+    "callType": "explicit_long",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Gavin Baker, a disclosed shareholder of xAI, argues Grok 4 made exceptional benchmark progress and xAI's possession of the largest Blackwell cluster makes him optimistic for Grok 5's competitive position.",
+    "quote": "I should note my firm is a shareholder of xAI. So as much as I try to be objective, I am for sure biased... they have the largest Blackwell cluster, so I'm optimistic for GROK5.",
     "quoteStartMs": 771818,
     "topics": [
       "AI models",
-      "competitive moat",
-      "GPU infrastructure"
+      "competitive position",
+      "compute",
+      "shareholder"
     ],
-    "attributionConfidence": "high",
-    "callType": "explicit_long",
-    "guestName": "Gavin Baker",
-    "excludeReason": null,
-    "scoreNote": "Gavin Baker disclosed his firm is a shareholder of xAI"
+    "attributionConfidence": "high"
   },
   {
-    "id": "E238-meta-Guest-2",
+    "id": "E238-meta-Guest-3",
     "episodeId": "E238",
     "episodeNumber": 238,
     "episodeDate": "2025-08-09T15:40:00.000Z",
@@ -61,22 +85,22 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Gavin Baker points to Meta's recent quarter with revenue significantly ahead of expectations as evidence that AI investments are generating real economic returns through longer engagement and improved ad targeting ROAS.",
-    "quote": "Meta just reported a quarter with revenue significantly ahead, and I think a lot of that was due to AI, AI making people spend longer and AI improving the quality of their ad targeting systems such that advertisers get a better ROAS and spend more.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Gavin Baker cites Meta's significantly revenue-beat quarter as evidence that AI investments are generating real economic returns, driven by AI keeping users engaged longer and improving ad targeting ROAS.",
+    "quote": "Meta just reported a quarter with revenue significantly ahead, and I think a lot of that was due to AI, AI making people spend longer and AI improving the quality of their ad targeting systems such that advertisers get a better ROAS and",
     "quoteStartMs": 1212098,
     "topics": [
       "AI monetization",
+      "advertising",
       "revenue growth",
-      "advertising"
+      "ROI"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E238-msft-Guest-3",
+    "id": "E238-msft-Guest-4",
     "episodeId": "E238",
     "episodeNumber": 238,
     "episodeDate": "2025-08-09T15:40:00.000Z",
@@ -84,24 +108,23 @@
     "ticker": "MSFT",
     "isPublic": true,
     "host": "Guest",
-    "stance": "mixed",
+    "stance": "neutral",
     "conviction": "low",
-    "summary": "Gavin Baker notes that even Microsoft, despite Copilot not being the best product, is seeing measurable Copilot uptake, suggesting AI economic returns are beginning to materialize even for less competitive AI offerings.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Gavin Baker notes that even Microsoft, whose Copilot product he views as suboptimal, reported astonishing Copilot uptake stats, suggesting AI investments are generating real economic returns across the industry.",
     "quote": "even Microsoft. I mean, for me, Copilot is not the best product, but even Microsoft on their call talked, they shared some pretty astonishing stats about Copilot uptake.",
     "quoteStartMs": 1232631,
     "topics": [
       "AI monetization",
-      "enterprise adoption",
+      "enterprise software",
       "Copilot"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E238-aapl-Guest-4",
+    "id": "E238-aapl-Guest-5",
     "episodeId": "E238",
     "episodeNumber": 238,
     "episodeDate": "2025-08-09T15:40:00.000Z",
@@ -111,23 +134,46 @@
     "host": "Guest",
     "stance": "bear",
     "conviction": "high",
-    "summary": "Gavin Baker is bearish on Apple's competitive position, arguing the company has been shockingly inept at AI, has wasted hundreds of billions on buybacks that could have funded data centers and AI, and the products including Siri are getting worse rather than better.",
-    "quote": "I'm just shocked at their inaction and ineptitude in AI, how bad the products are from a user perspective. I mean, they're, they're terrible... maybe they should have spent $200 billion less and spent that on data centers and been like a real competitor in AI.",
-    "quoteStartMs": 5628340,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Gavin Baker argues Apple's massive buyback program came at the cost of AI investment, and their inaction and ineptitude in AI has left them with terrible AI products, losing talent, and not in the running competitively.",
+    "quote": "maybe they should have spent $200 billion less and spent that on data centers and been like a real competitor in AI. And I just continue to be baffled by Apple's... inaction and ineptitude in AI, how bad the products are from a user",
+    "quoteStartMs": 5594205,
     "topics": [
       "AI",
       "capital allocation",
       "buybacks",
-      "product"
+      "competitive position"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E238-aapl-Friedberg-6",
+    "id": "E238-aapl-Guest-6",
+    "episodeId": "E238",
+    "episodeNumber": 238,
+    "episodeDate": "2025-08-09T15:40:00.000Z",
+    "company": "Apple",
+    "ticker": "AAPL",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Ben Shapiro is skeptical of Apple's prospects given its failure to release exciting new products in years, with its main headlines being supply chain deal-making rather than innovation.",
+    "quote": "the last time I saw something that came out from Apple that was exciting, it's been many years since they brought out anything that excites me as a consumer... if that's the best you're gonna do, then I don't know, things don't look great",
+    "quoteStartMs": 5684554,
+    "topics": [
+      "innovation",
+      "product",
+      "competitive position"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E238-aapl-Friedberg-7",
     "episodeId": "E238",
     "episodeNumber": 238,
     "episodeDate": "2025-08-09T15:40:00.000Z",
@@ -135,69 +181,19 @@
     "ticker": "AAPL",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Friedberg pushes back against Apple bear theses, arguing the company has a uniquely durable system built unlike any other in corporate history and that predictions of Apple's demise have been wrong for 30 years.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg pushes back on Apple bear narratives, noting that every Apple product cycle has faced similar criticism and Apple has a system built unlike any other in corporate history that should not be counted out.",
     "quote": "Rumors of Apple's demise are 30 years old, okay? This is every year the same story. Lack of innovation, copycatting... I would not count Apple out. There's a system there that's built unlike any other in corporate history.",
     "quoteStartMs": 5770000,
     "topics": [
-      "competitive moat",
-      "platform",
-      "innovation"
+      "innovation",
+      "competitive position",
+      "track record"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E238-nvda-Guest-7",
-    "episodeId": "E238",
-    "episodeNumber": 238,
-    "episodeDate": "2025-08-09T15:40:00.000Z",
-    "company": "NVIDIA",
-    "ticker": "NVDA",
-    "isPublic": true,
-    "host": "Guest",
-    "stance": "bull",
-    "conviction": "medium",
-    "summary": "Gavin Baker implies continued strong demand for NVIDIA GPUs, noting that AI data centers are being used so intensively GPUs 'melt,' demand remains ahead of supply, and even black-market smuggling at a 50% premium underscores the scarcity and value.",
-    "quote": "one of the biggest problems with GPUs and AI data centers is the GPUs are used so intensively that they melt. So all of the dollars that are going into the ground are being used. We're not building ahead of demand. In fact, we're clearly still behind demand.",
-    "quoteStartMs": 1285227,
-    "topics": [
-      "AI capex",
-      "supply/demand",
-      "data centers"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E238-cper-Guest-a0",
-    "episodeId": "E238",
-    "episodeNumber": 238,
-    "episodeDate": "2025-08-09T15:40:00.000Z",
-    "company": "Copper",
-    "ticker": "CPER",
-    "isPublic": true,
-    "host": "Guest",
-    "stance": "neutral",
-    "conviction": "low",
-    "summary": "Guest mentions 'steel and copper tariffs' only as an example of industrial policy temptations in a broader discussion about corporatism vs. capitalism — no directional price or investment view expressed.",
-    "quote": "The temptation is to extend that across the rest of the economy to industrial policy, to steel and copper tariffs, to everything else.",
-    "quoteStartMs": 2588828,
-    "topics": [
-      "tariffs",
-      "industrial policy",
-      "corporatism"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Ben Shapiro",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

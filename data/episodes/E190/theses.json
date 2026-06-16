@@ -11,18 +11,18 @@
     "stance": "bear",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Chamath argues NVIDIA and other AI stocks are at the tail end of the hype cycle, with investors selling every spike to book profits, and that there will need to be a reset in AI capex as the ROI hasn't materialized.",
-    "quote": "people know that we are at the tail end of the hype cycle in AI, and every chance, every time these things spike, people take an opportunity to just massively sell. I mean, NVIDIA's turned over 308 million shares today.",
-    "quoteStartMs": 2534939,
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath argues NVIDIA and other AI stocks are at the tail end of the hype cycle, with every post-earnings spike being used by investors as a selling opportunity, evidenced by massive share turnover and prices moving straight down.",
+    "quote": "NVIDIA's turned over 308 million shares today... It's going straight down like a lead balloon.",
+    "quoteStartMs": 2547991,
     "topics": [
       "AI capex",
-      "valuation",
       "hype cycle",
+      "valuation",
       "sell-off"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E190-meta-Chamath-1",
@@ -36,17 +36,17 @@
     "stance": "neutral",
     "conviction": "low",
     "callType": "view",
-    "summary": "Chamath notes Meta rallied on AI demand comments but has given back all its gains as investors use spikes to sell and book profits amid uncertainty about AI ROI.",
-    "quote": "Meta rallied. They've basically given up all of their gains. It's gone kind of straight down today. But the point isn't that these companies are going to zero... it's just the point is that right now people are optimizing. They're selling",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath notes Meta rallied on AI demand commentary but then gave up all gains, consistent with his view that investors are selling into every spike as the AI hype cycle peaks.",
+    "quote": "Meta rallied. They've basically given up all of their gains. It's gone kind of straight down today.",
     "quoteStartMs": 2559000,
     "topics": [
       "AI capex",
-      "valuation",
+      "hype cycle",
       "sell-off"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E190-pershing-square-capital-management-Chamath-2",
@@ -60,17 +60,17 @@
     "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Chamath explains that Ackman's failed IPO attempt reflects the fundamental difficulty of monetizing hedge fund management companies as public equities, since their core business of making bets is short-term and unpredictable, though he praises Ackman personally as a resilient and exceptional risk manager.",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath explains that Ackman's IPO failed because it is structurally very hard to assign durable equity value to a hedge fund / GP entity — the business of making bets cannot be underwritten over 20-30 years the way a product company can — and that Ackman will need a much larger AUM base (approaching $1T) to make the 'company' thesis work.",
     "quote": "in finance, these entities that try to sell a piece of the quote-unquote general partner as a company, I just think that it's, um, frankly, that it doesn't work. And this is just, you know, an example, yet another example that there's not",
     "quoteStartMs": 4344200,
     "topics": [
       "IPO",
       "hedge fund",
-      "equity value",
-      "business model"
+      "valuation",
+      "capital markets"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

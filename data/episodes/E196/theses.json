@@ -8,20 +8,20 @@
     "ticker": "CRM",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath argues that AI agents capable of reverse-engineering legacy software workflows (as Klarna demonstrated) will commoditize and eventually displace systems-of-record incumbents like Salesforce, making their high-cost moat structurally vulnerable.",
-    "quote": "we cannot touch customer service, we cannot touch it because it's going to get commoditized and run over by these foundational models within a year... I think that these kinds of things will not be possible in the future.",
-    "quoteStartMs": 1629725,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath argues that AI agents can now reverse-engineer and replace systems of record like Salesforce, as demonstrated by Klarna deprecating it, making such legacy enterprise software vulnerable to disruption and cost elimination.",
+    "quote": "I was like, guys, we got to go after the hardest, most regulated places... you cannot, we cannot touch customer service... it's going to get commoditized and run over by these foundational models within a year",
+    "quoteStartMs": 1607922,
     "topics": [
       "AI disruption",
       "enterprise software",
-      "competitive moat"
+      "competitive threat"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E196-wday-Chamath-1",
@@ -32,20 +32,20 @@
     "ticker": "WDAY",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath argues that AI agents observing software inputs and outputs can reverse-engineer and replace expensive systems-of-record like Workday, as demonstrated by Klarna, threatening their business model.",
-    "quote": "over time what the agents start to do is by observing the inputs and the outputs, they start to guess on what the intervening code is... you develop a digital twin and then you run that against that counterfactual against Workday or Salesforce. And then at some point you're like, it's the same.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath argues that AI agents can observe inputs/outputs of systems like Workday and build digital twins to replace them, as Klarna demonstrated, threatening the long-held belief that systems of record are untouchable.",
+    "quote": "over time what the agents start to do is by observing the inputs and the outputs, they start to guess on what the intervening code is... you develop a digital twin and then you run that against that counterfactual against Workday or",
     "quoteStartMs": 1707262,
     "topics": [
       "AI disruption",
       "enterprise software",
-      "competitive moat"
+      "competitive threat"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E196-crm-Sacks-2",
@@ -58,114 +58,40 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "low",
-    "summary": "Sacks is skeptical of Klarna's claim to have fully deprecated Salesforce via AI-built replacements, questioning why the replacement code wasn't open-sourced and why the market hasn't already been flooded with startups doing the same, but concedes it may be viable for narrow use cases.",
-    "quote": "I have to say I'm a little bit skeptical of that story... if it's so easy to do, why hasn't the market already been flooded with new startups that are effectively able to reverse engineer... if you're only using a few use cases of these big complicated software packages, then yeah, it's probably easier than ever to deprecate them.",
-    "quoteStartMs": 1837021,
-    "topics": [
-      "AI disruption",
-      "enterprise software",
-      "valuation"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Sacks is skeptical of Klarna's claim to have fully replaced Salesforce via AI-generated code, questioning why such a solution hasn't been open-sourced or replicated by the broader market.",
+    "quote": "if it's so easy to do, why hasn't the market already been flooded with new startups that are effectively able to reverse engineer... I don't think you're right.",
+    "quoteStartMs": 1857000,
+    "topics": [
+      "AI disruption",
+      "enterprise software"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E196-openai-Sacks-3",
+    "id": "E196-starlink-spacex-Sacks-4",
     "episodeId": "E196",
     "episodeNumber": 196,
     "episodeDate": "2024-09-20T19:58:00.000Z",
-    "company": "OpenAI",
+    "company": "Starlink / SpaceX",
     "ticker": null,
     "isPublic": false,
     "host": "Sacks",
     "stance": "bull",
-    "conviction": "medium",
-    "summary": "Sacks is bullish on OpenAI's role in disrupting call centers, citing its new audio API and PhD-level reasoning models as reaching sufficient accuracy to replace Tier 1 customer support at scale within 2-3 years.",
-    "quote": "I think it's now becoming really clear that call centers are going to be the first really big disruption caused by AI.",
-    "quoteStartMs": 1058169,
-    "topics": [
-      "AI disruption",
-      "voice AI",
-      "call centers",
-      "product"
-    ],
-    "attributionConfidence": "high",
+    "conviction": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E196-orcl-Sacks-4",
-    "episodeId": "E196",
-    "episodeNumber": 196,
-    "episodeDate": "2024-09-20T19:58:00.000Z",
-    "company": "Oracle",
-    "ticker": "ORCL",
-    "isPublic": true,
-    "host": "Sacks",
-    "stance": "bear",
-    "conviction": "low",
-    "summary": "Sacks cites Oracle's $600M government contract for a visually primitive web portal as emblematic of the kind of egregious, overpriced legacy enterprise deals that AI will make impossible to justify going forward.",
-    "quote": "this is egregious government waste... that site looks like it's pathetic... this looks like it could have been done with a SharePoint site and you pay some consultant to stand it up and for 1% of the cost.",
-    "quoteStartMs": 1948000,
+    "scoreNote": null,
+    "summary": "Sacks argues Starlink has already solved rural internet and is the best solution available, but is being unfairly blocked by the Biden-Harris administration for political reasons rather than technical ones.",
+    "quote": "the Biden-Harris administration doesn't want to admit that Elon has the best solution for rural internet, just like they couldn't admit he made the best electric cars.",
+    "quoteStartMs": 2221377,
     "topics": [
-      "government contracts",
-      "AI disruption",
-      "valuation"
+      "rural broadband",
+      "government policy",
+      "competitive position"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E196-spacex-Sacks-5",
-    "episodeId": "E196",
-    "episodeNumber": 196,
-    "episodeDate": "2024-09-20T19:58:00.000Z",
-    "company": "SpaceX",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Sacks",
-    "stance": "bull",
-    "conviction": "medium",
-    "summary": "Sacks argues that the Biden-Harris administration's politically motivated revocation of Starlink's rural broadband contract—despite Starlink being the superior and most cost-effective solution—represents unfair retaliation against the best-in-class provider, implying Starlink's competitive position is stronger than government treatment suggests.",
-    "quote": "Brendan Carr pointed this out. He said that in 2023, the FCC canceled or revoked an $885 million contract with the company by claiming Starlink is not capable of providing high-speed internet. Then a year later— of course, that was a lie.",
-    "quoteStartMs": 2188000,
-    "topics": [
-      "regulatory retaliation",
-      "competitive moat",
-      "government contracts"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E196-gld-Chamath-a0",
-    "episodeId": "E196",
-    "episodeNumber": 196,
-    "episodeDate": "2024-09-20T19:58:00.000Z",
-    "company": "Gold",
-    "ticker": "GLD",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "low",
-    "summary": "Chamath uses 'gold standard' only as a metaphor for zero-error AI software performance in regulated industries — no price or investment directional claim on gold as a commodity.",
-    "quote": "I think well-crafted AI software is as good as deterministic software... that's the gold standard because in those sectors, those companies have zero tolerance.",
-    "quoteStartMs": 1391354,
-    "topics": [
-      "AI software",
-      "regulated industries",
-      "error rates"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

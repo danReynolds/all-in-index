@@ -10,19 +10,19 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Chamath argues Google's models are best-in-class and its ad business structurally benefits from AI optimization, making the $75B CapEx more a disclosure problem than a fundamental one — the investment is justified but needs better breakdown.",
-    "quote": "Google's models are probably the best of all the models across a broad base of capabilities... The other thing that Google has is a money machine that directly benefits from these AI-driven optimizations on ad targeting.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath argues Google has the best AI models across a broad base of capabilities, a money machine that directly benefits from AI-driven ad optimization, and that the $75B CapEx concern is primarily a disclosure issue rather than a fundamental problem.",
+    "quote": "Google's models are probably the best of all the models across a broad base of capabilities if you test for them... The other thing that Google has is a money machine that directly benefits from these AI-driven optimizations on ad",
     "quoteStartMs": 4239000,
     "topics": [
       "AI capex",
-      "ad business",
-      "valuation",
-      "competitive moat"
+      "ad monetization",
+      "model quality",
+      "valuation"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E214-googl-Friedberg-1",
@@ -35,19 +35,19 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Friedberg views Google's $75B CapEx as a strong positive signal, citing the company's historically superior infrastructure management and ROIC discipline, and argues the math easily supports the investment given Google's operating profit base.",
-    "quote": "I would view the $75 billion CapEx actually as a very positive signal for the company. I think that it means that they have a really strong line of sight on how they're going to have full utilization and great return on this.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg views Google's $75B CapEx as a positive signal, citing their historical track record as the most frugal and well-managed computing infrastructure investor, strong ROIC math, and the investment as proof of confidence that they can transition from search to chat.",
+    "quote": "I would view the $75 billion CapEx actually as a very positive signal for the company... If you use their historical ability to manage infrastructure and make predictions on investments as an indicator of the future, this is a strong and",
     "quoteStartMs": 4525978,
     "topics": [
       "AI capex",
       "infrastructure",
       "ROIC",
-      "valuation"
+      "search vs AI"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E214-googl-Guest-2",
@@ -60,20 +60,19 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Antonio Gracias argues Google will win the AI race because it has proprietary TPU chips, focuses on ROIC, and has a dominant monopoly cash engine to fund the buildout — making it one of the likely long-term AI infrastructure winners.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Antonio Gracias argues Google will win the AI race because of its proprietary TensorFlow chips, focus on return on invested capital, and a great monopoly to fund the buildout, though he frames ROIC transparency as the key investor concern.",
     "quote": "Google will also win because they have their TensorFlow chips. They make some of their own chips. They do focus on ROIC, and they have a great monopoly to kind of fund it all.",
     "quoteStartMs": 4428014,
     "topics": [
       "AI capex",
-      "competitive moat",
       "ROIC",
+      "competitive moat",
       "chips"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Antonio Gracias",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E214-xai-Guest-3",
@@ -86,95 +85,42 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Antonio Gracias argues xAI will achieve the highest return on invested capital in AI infrastructure due to its world-leading dense GPU cluster (Colossus), lowest-cost and fastest build, and superior training data.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Antonio Gracias argues xAI will have the highest return on capital due to its world's most dense coherent 100,000 GPU cluster — built fastest and most cheaply — combined with the best training data.",
     "quote": "XAI will have the highest return on capital, and I also think the best training data, and therefore will win.",
     "quoteStartMs": 4421977,
     "topics": [
       "AI infrastructure",
       "ROIC",
-      "competitive moat"
+      "competitive moat",
+      "data centers"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Antonio Gracias",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E214-lly-Friedberg-4",
+    "id": "E214-x-twitter-Guest-5",
     "episodeId": "E214",
     "episodeNumber": 214,
     "episodeDate": "2025-02-07T22:20:00.000Z",
-    "company": "Eli Lilly",
-    "ticker": "LLY",
-    "isPublic": true,
-    "host": "Friedberg",
+    "company": "X (Twitter)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
     "stance": "bull",
-    "conviction": "medium",
-    "summary": "Friedberg highlights large-scale VA data showing GLP-1 agonists dramatically reduce cardiac arrest, liver failure, schizophrenia and other serious conditions beyond weight loss — broadening the addressable market and strengthening Eli Lilly's long-term growth thesis.",
-    "quote": "On cardiac arrest, you see a 30% decrease in the probability of having cardiac arrest from the cohort that's on the GLP-1s... they have all these clinical trials going on right now for different indications for the GLP-1 receptor agonists.",
-    "quoteStartMs": 5149833,
-    "topics": [
-      "GLP-1",
-      "drug pipeline",
-      "addressable market",
-      "clinical data"
-    ],
-    "attributionConfidence": "high",
+    "conviction": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E214-uso-Chamath-a0",
-    "episodeId": "E214",
-    "episodeNumber": 214,
-    "episodeDate": "2025-02-07T22:20:00.000Z",
-    "company": "Oil",
-    "ticker": "USO",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "bull",
-    "conviction": "medium",
-    "summary": "Chamath highlights the US Sovereign Wealth Fund thesis anchored in domestic energy abundance — specifically citing oil, nat gas, and coal reserves 3x those of Saudi Arabia — framing a pro-energy industrial policy as generating enormous federal revenue, with 3 million barrels of domestic oil production as a policy target.",
-    "quote": "if you look at the total energy reserves in the United States, they're 3 times greater than the total energy reserves of Saudi Arabia... oil, nat gas, plus coal, If we actually go towards an industrial policy that's pro-energy where the incremental cost of energy is effectively zero... it is by definition going to generate an enormous amount of revenue",
-    "quoteStartMs": 3454771,
+    "scoreNote": null,
+    "summary": "Antonio Gracias characterizes the Twitter/X turnaround as the biggest in history: 80% headcount reduction, company now servicing its debt, and bank debt pricing at 97-98+ cents on the dollar — a rousing business success.",
+    "quote": "The company's now servicing its debt and they just priced yesterday, one of their bank deals at 97 cents... A giant business success, a rousing business success.",
+    "quoteStartMs": 391736,
     "topics": [
-      "US energy policy",
-      "Sovereign Wealth Fund",
-      "domestic production",
-      "333 Plan",
-      "Scott Bessant"
+      "turnaround",
+      "debt",
+      "operating efficiency"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E214-ung-Chamath-a1",
-    "episodeId": "E214",
-    "episodeNumber": 214,
-    "episodeDate": "2025-02-07T22:20:00.000Z",
-    "company": "Natural Gas",
-    "ticker": "UNG",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "bull",
-    "conviction": "medium",
-    "summary": "As part of the same 333 Plan / Sovereign Wealth Fund discussion, Chamath explicitly includes natural gas alongside oil and coal as part of US energy reserves that are 3x Saudi Arabia's, supporting a pro-energy industrial policy thesis.",
-    "quote": "if you look at the total energy reserves in the United States, they're 3 times greater than the total energy reserves of Saudi Arabia. 3 times across all forms. So not just oil. If you oil, nat gas, plus coal",
-    "quoteStartMs": 3454771,
-    "topics": [
-      "US energy policy",
-      "Sovereign Wealth Fund",
-      "domestic production",
-      "333 Plan",
-      "Scott Bessant"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

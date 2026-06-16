@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": "E184-uso-Guest-a0",
+    "episodeId": "E184",
+    "episodeNumber": 184,
+    "episodeDate": "2024-06-20T20:23:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "medium",
+    "callType": "view",
+    "summary": "Trump argues that if Democrats win, oil production would be shut down and prices would spike dramatically. He also claims Biden's energy policies caused inflation by restricting oil, and notes oil prices are currently going up. He frames domestic oil production as key to economic growth and deficit reduction.",
+    "quote": "If this election were won by them, I can tell you right now, you would be— we would see oil go through the roof because they would really close it up... Oil prices all over the country are going up, as you probably have noticed.",
+    "quoteStartMs": 787480,
+    "topics": [
+      "energy policy",
+      "inflation",
+      "domestic production",
+      "Ukraine war funding",
+      "strategic reserves"
+    ],
+    "attributionConfidence": "high"
+  }
+]

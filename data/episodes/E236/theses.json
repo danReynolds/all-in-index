@@ -1,6 +1,56 @@
 [
   {
-    "id": "E236-nvda-Guest-0",
+    "id": "E236-xai-grok-Guest-0",
+    "episodeId": "E236",
+    "episodeNumber": 236,
+    "episodeDate": "2025-07-19T02:21:00.000Z",
+    "company": "xAI / Grok",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Gavin Baker argues Grok 4 represents the biggest AI leapfrog in a long time, scoring roughly twice as well as Google/OpenAI/Anthropic on semi-private benchmarks, and that a natural distribution partnership with Apple would further entrench its competitive position.",
+    "quote": "This is the biggest leapfrog we've seen in quite some time... it did roughly twice as good as the state-of-the-art Google, OpenAI, and Anthropic models... xAI and Apple are natural partners.",
+    "quoteStartMs": 1218000,
+    "topics": [
+      "AI models",
+      "benchmarks",
+      "distribution",
+      "partnerships"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E236-aapl-Guest-1",
+    "episodeId": "E236",
+    "episodeNumber": 236,
+    "episodeDate": "2025-07-19T02:21:00.000Z",
+    "company": "Apple",
+    "ticker": "AAPL",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Gavin Baker argues Apple should partner with xAI (Grok) rather than acquire Perplexity or Mixtral, which would only be a bandaid; a Grok partnership would replicate the value of the Google search deal and help Apple in its DOJ antitrust case.",
+    "quote": "Apple's had an incredible partnership for many years now with Google that's generating tens of billions of dollars for both companies. And I think there is solid industrial logic for partnership... that partnership makes a lot of sense for",
+    "quoteStartMs": 2130066,
+    "topics": [
+      "AI partnerships",
+      "distribution",
+      "antitrust",
+      "valuation"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E236-nvda-Guest-3",
     "episodeId": "E236",
     "episodeNumber": 236,
     "episodeDate": "2025-07-19T02:21:00.000Z",
@@ -10,123 +60,44 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Gavin Baker argues that allowing H20 chip sales to China is the right call for America because the H20 keeps the US ahead of Huawei's alternatives while preventing China from developing a domestic NVIDIA competitor, thereby protecting NVIDIA's global dominance in AI accelerators.",
-    "quote": "it's a smart decision for America to sell this chip that gives America advantage in AI and keeps China from developing kind of their own domestic alternatives, which could eventually kind of challenge, you know, NVIDIA, AMD, you know, other kind of American AI accelerator champions globally.",
-    "quoteStartMs": 3722253,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Gavin Baker argues that allowing H20 exports to China is strategically correct and good for NVIDIA because it keeps China dependent on American chips while preventing Huawei from developing a domestic alternative that could eventually challenge NVIDIA's global dominance.",
+    "quote": "I think it's very smart decision for America to sell this chip that gives America advantage in AI and keeps China from developing their own domestic alternatives, which could eventually challenge NVIDIA, AMD, other American AI accelerator",
+    "quoteStartMs": 3663000,
     "topics": [
       "export controls",
+      "China",
       "competitive moat",
-      "AI hardware",
-      "China"
+      "H20"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E236-xai-Guest-1",
-    "episodeId": "E236",
-    "episodeNumber": 236,
-    "episodeDate": "2025-07-19T02:21:00.000Z",
-    "company": "xAI",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Guest",
-    "stance": "bull",
-    "conviction": "medium",
-    "summary": "Gavin Baker argues that Grok 4 represents the biggest AI benchmark leapfrog in years (roughly 2x on ARC-AGI-2 vs. peers) and that xAI and Apple are natural distribution partners, making a potential Apple-Grok deal compelling for both companies' competitive positions.",
-    "quote": "There's solid industrial logic for partnership. You could have Apple Groq, Safe Groq, whatever you want to call it... that partnership makes a lot of sense for both companies.",
-    "quoteStartMs": 2148000,
-    "topics": [
-      "AI benchmarks",
-      "distribution",
-      "partnerships",
-      "competitive position"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E236-aapl-Guest-2",
-    "episodeId": "E236",
-    "episodeNumber": 236,
-    "episodeDate": "2025-07-19T02:21:00.000Z",
-    "company": "Apple",
-    "ticker": "AAPL",
-    "isPublic": true,
-    "host": "Guest",
-    "stance": "bull",
-    "conviction": "medium",
-    "summary": "Gavin Baker argues Apple needs a credible AI partner and that an xAI partnership would be far more valuable than buying Perplexity or Mistral, which are 'just a bandaid,' potentially helping Apple's competitive position and its DOJ antitrust situation.",
-    "quote": "Apple's had an incredible partnership for many years now with Google that's generating tens of billions of dollars for both companies. And I think there is solid industrial logic for partnership... those companies don't get Apple what they need.",
-    "quoteStartMs": 2130066,
-    "topics": [
-      "AI strategy",
-      "distribution",
-      "antitrust",
-      "partnerships"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E236-googl-Guest-3",
-    "episodeId": "E236",
-    "episodeNumber": 236,
-    "episodeDate": "2025-07-19T02:21:00.000Z",
-    "company": "Google",
-    "ticker": "GOOGL",
-    "isPublic": true,
-    "host": "Guest",
-    "stance": "neutral",
-    "conviction": "low",
-    "summary": "Gavin Baker notes Google faces competitive risk from Grok 4 leapfrogging its models but could benefit from an Apple-xAI partnership that helps both Google and Apple with their DOJ antitrust issues, making the competitive landscape mixed for Google.",
-    "quote": "it also helps both Apple and Google with this DOJ trial. And so I think in this, you know, incredibly high elo chess match that is being played between the leading labs, that is— that partnership makes a lot of sense for both companies.",
-    "quoteStartMs": 2154202,
-    "topics": [
-      "AI competition",
-      "antitrust",
-      "distribution",
-      "partnerships"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E236-tether-Guest-4",
+    "id": "E236-tether-Jason-5",
     "episodeId": "E236",
     "episodeNumber": 236,
     "episodeDate": "2025-07-19T02:21:00.000Z",
     "company": "Tether",
     "ticker": null,
     "isPublic": false,
-    "host": "Guest",
-    "stance": "bull",
+    "host": "Jason",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Gavin Baker (via Bo Hines' framing) highlights that Tether will be the fourth largest purchaser of US Treasuries this year, and views its integration into the US regulatory framework under the GENIUS Act as a positive development for the broader stablecoin ecosystem.",
-    "quote": "this year they'll be the fourth largest purchaser of US Treasuries. And I think that's something that, you know, we should really contemplate... I'm excited to see what they do here in the US.",
-    "quoteStartMs": 3505862,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Jason expresses long-standing skepticism about Tether's past conduct and asset backing, arguing the company has a sordid past and needs to clean up its act to participate in the US market under the Genius Act framework.",
+    "quote": "They have a sordid past. That's my statement, not yours. But now they have to clean up whatever messy stuff they have in their past... if you choose to not go through those audits... you just don't get to participate.",
+    "quoteStartMs": 2977000,
     "topics": [
       "stablecoins",
       "regulation",
-      "US Treasuries",
+      "transparency",
       "crypto"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E236-ung-Sacks-a0",
@@ -139,20 +110,18 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "medium",
-    "summary": "Sacks highlights Pennsylvania's vast natural gas resources and fracking capacity as central to powering AI data centers, framing energy expansion (including natural gas) as the foundation for AI and economic dominance under Trump's energy policies.",
-    "quote": "Pennsylvania is, I think it's the number 2 energy-producing state in the US. It has tremendous amounts of natural gas. They feel like they can expand that... we know that these big AI data centers can be powered by either natural gas or nuclear.",
-    "quoteStartMs": 3197963,
+    "callType": "view",
+    "summary": "Sacks highlights Pennsylvania's abundant natural gas resources as a key energy source for powering AI data centers, framing natural gas expansion as central to both energy and AI dominance under Trump's policies.",
+    "quote": "we know that these big AI data centers can be powered by either natural gas or nuclear. And so Pennsylvania just makes a lot of sense as a place to build this AI infrastructure.",
+    "quoteStartMs": 3218942,
     "topics": [
       "AI infrastructure",
       "energy demand",
       "data centers",
       "Pennsylvania",
-      "domestic production"
+      "natural gas"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": "Sacks highlights Pennsylvania's natural gas resources and fracking capacity as powering AI data centers — strategic/importance framing, no explicit price direction stated."
+    "attributionConfidence": "high"
   },
   {
     "id": "E236-ung-Guest-a1",
@@ -165,19 +134,16 @@
     "host": "Guest",
     "stance": "neutral",
     "conviction": "medium",
-    "summary": "Guest (Gavin) argues that natural gas is one of several critical energy sources needed to close the domestic electrical generation gap vs. China and power AI infrastructure build-out.",
+    "callType": "view",
+    "summary": "Guest (Gavin) emphasizes natural gas as a critical and necessary part of domestic energy expansion to support AI infrastructure build-out and close the energy gap with China.",
     "quote": "natural gas is great, nuclear is great, solar is great, batteries are great. We need it all.",
     "quoteStartMs": 3376256,
     "topics": [
       "AI infrastructure",
       "energy demand",
-      "domestic production",
-      "China competition"
+      "domestic energy production",
+      "natural gas"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": "“We need it all” (gas, nuclear, solar) — frames natural gas as important among many energy sources, not a directional price call."
+    "attributionConfidence": "high"
   }
 ]

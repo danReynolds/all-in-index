@@ -10,19 +10,19 @@
     "host": "Chamath",
     "stance": "bear",
     "conviction": "medium",
-    "summary": "Chamath argues DeepSeek's use of PTX to bypass CUDA and its efficient training approaches signal an 'emperor has no clothes' moment for NVIDIA's moat, pointing toward a more heterogeneous chip environment that undermines NVIDIA's dominance.",
-    "quote": "apologies to the NVIDIA bulls, but it's going to create a more heterogeneous environment. And the reason is because there's too much money and risk on the line to go through a single point of failure. A chip, a high-level framework to get to that chip, that's nuts.",
-    "quoteStartMs": 2507430,
-    "topics": [
-      "AI infrastructure",
-      "competitive moat",
-      "CUDA",
-      "DeepSeek"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues that DeepSeek's use of PTX (bypassing CUDA) and its resource-constrained innovations signal that NVIDIA's CUDA moat is under threat, pushing the ecosystem toward a more heterogeneous chip environment that undermines NVIDIA's dominance.",
+    "quote": "apologies to the NVIDIA bulls, but it's going to create a more heterogeneous environment. And the reason is because there's too much money and risk on the line to go through a single point of failure. A chip, a high-level framework to get",
+    "quoteStartMs": 2507430,
+    "topics": [
+      "competitive moat",
+      "AI infrastructure",
+      "DeepSeek",
+      "chip ecosystem"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E213-openai-Chamath-1",
@@ -33,10 +33,13 @@
     "ticker": null,
     "isPublic": false,
     "host": "Chamath",
-    "stance": "mixed",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath sees OpenAI's potential $40B raise at $340B valuation as a bet that ChatGPT becomes the next consumer killer app with 1B+ MAUs, putting it on a direct collision course with Meta, but questions whether overcapitalization in an open-source world is a strategic liability.",
-    "quote": "if OpenAI raises $40 billion at $340 billion, that just hit the wire. The underwriting logic at $340 billion...it is the wrapper, meaning ChatGPT is the next killer app. It's getting to a billion-plus MAU, hundreds of millions of DAO.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath frames OpenAI's reported $40B raise at a $340B valuation as a bet that ChatGPT becomes the next billion-MAU consumer killer app, putting it on a collision course with Meta for consumer AI dominance.",
+    "quote": "if OpenAI raises $40 billion at $340 billion, that just hit the wire. The underwriting logic at $340 billion...It is the wrapper, meaning ChatGPT is the next killer app. It's getting to a billion-plus MAU, hundreds of millions of DAO.",
     "quoteStartMs": 1792631,
     "topics": [
       "valuation",
@@ -44,38 +47,10 @@
       "fundraising",
       "competition"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E213-openai-Sacks-2",
-    "episodeId": "E213",
-    "episodeNumber": 213,
-    "episodeDate": "2025-01-31T21:52:00.000Z",
-    "company": "OpenAI",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Sacks",
-    "stance": "mixed",
-    "conviction": "medium",
-    "summary": "Sacks argues it is premature to conclude frontier model companies like OpenAI have no competitive advantage, noting OpenAI is already on O3 with its frontier ahead of R1, and that companies will take countermeasures against distillation to protect their lead.",
-    "quote": "OpenAI is on O3 now. Its frontier is ahead of where R1 is...those frontier model companies now having seen what might've happened with distillation, have a pretty strong incentive to make sure that doesn't happen again.",
-    "quoteStartMs": 2857255,
-    "topics": [
-      "AI competition",
-      "frontier models",
-      "open source vs closed",
-      "moat"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E213-openai-Jason-3",
+    "id": "E213-openai-Jason-2",
     "episodeId": "E213",
     "episodeNumber": 213,
     "episodeDate": "2025-01-31T21:52:00.000Z",
@@ -85,19 +60,44 @@
     "host": "Jason",
     "stance": "bear",
     "conviction": "medium",
-    "summary": "Jason argues OpenAI's closed-source, data-stealing approach has backfired as DeepSeek open-sourced a comparable model, and that large language models are depreciating assets being commoditized, making OpenAI's core product structurally less defensible.",
-    "quote": "the fastest deprecating asset in the world was a large language model. He's been proven right. They're not worth anything. They're all going to be open source. They're all going to be commoditized, and that's for the best of humanity.",
-    "quoteStartMs": 2644694,
-    "topics": [
-      "commoditization",
-      "open source",
-      "competitive moat",
-      "valuation"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Jason argues that open-source models are commoditizing AI, LLMs are rapidly depreciating assets, and OpenAI's closed-source, high-spend approach leaves it vulnerable now that DeepSeek has open-sourced comparable technology.",
+    "quote": "I'm glad that this is all going open source. It should have been open source and it's better for humanity. And the fact that the Chinese did it to Sam Altman is comeuppance for him stealing everybody else's content.",
+    "quoteStartMs": 2403211,
+    "topics": [
+      "open source",
+      "commoditization",
+      "valuation",
+      "competitive threat"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E213-openai-Sacks-3",
+    "episodeId": "E213",
+    "episodeNumber": 213,
+    "episodeDate": "2025-01-31T21:52:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "mixed",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks acknowledges DeepSeek closed the gap on reasoning models and that distillation of OpenAI's output likely occurred, but argues OpenAI's frontier (O3) is still ahead of R1, and it's premature to conclude there's no return on being at the frontier.",
+    "quote": "OpenAI is on O3 now. Its frontier is ahead of where R1 is...I think it's a little premature to conclude that there's no reward for being at the frontier.",
+    "quoteStartMs": 2857255,
+    "topics": [
+      "competitive position",
+      "AI frontier",
+      "open source threat",
+      "DeepSeek"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E213-meta-Chamath-4",
@@ -108,46 +108,45 @@
     "ticker": "META",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath argues Meta is under significant pressure to release the next LLaMA iteration surpassing Gemini and R1, and that Meta must embrace DeepSeek's innovations like PTX to build a developer platform, positioning it as the key Western counterweight to Chinese AI.",
-    "quote": "Meta has to embrace and extend everything that these guys have shown. Meaning Meta's buying tens of thousands of NVIDIA GPUs. Great. But what did this show? This shows that actually CUDA, high-level languages in general, I think we've all k",
-    "quoteStartMs": 2475829,
-    "topics": [
-      "AI competition",
-      "open source",
-      "developer platform",
-      "China"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues Meta faces critical pressure to release the next LLaMA iteration that surpasses Gemini and R1, and must embrace DeepSeek-style innovations (e.g., PTX over CUDA) to serve as the Western open-source counterweight to China.",
+    "quote": "all the pressure right now I think is on Meta because I think Meta has to show up with the next iteration of LLaMA that beats and exceeds Gemini, that exceeds R1. And I think that that is going to be crucial for us to have a counterweight",
+    "quoteStartMs": 2447000,
+    "topics": [
+      "open source AI",
+      "competitive position",
+      "LLaMA",
+      "China competition"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E213-msft-Friedberg-5",
+    "id": "E213-msft-Jason-5",
     "episodeId": "E213",
     "episodeNumber": 213,
     "episodeDate": "2025-01-31T21:52:00.000Z",
     "company": "Microsoft",
     "ticker": "MSFT",
     "isPublic": true,
-    "host": "Friedberg",
+    "host": "Jason",
     "stance": "bear",
     "conviction": "low",
-    "summary": "Friedberg notes Microsoft showed weakness in cloud earnings and is down 6%, suggesting its investment thesis is under pressure as it simultaneously undermines partner OpenAI by hosting R1.",
-    "quote": "Microsoft showed weakness in their cloud. And then Microsoft's down 6% today. And, you know, I think it's a window for OpenAI to say, we're going to go up against Meta.",
-    "quoteStartMs": 1840000,
-    "topics": [
-      "cloud",
-      "earnings",
-      "OpenAI partnership",
-      "AI competition"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Jason notes Microsoft showed weakness in cloud and is actively hosting DeepSeek R1, undercutting its own OpenAI partnership, suggesting no loyalty and a weakening strategic position.",
+    "quote": "Microsoft is hosting their version of R1, which means they are actively subverting their partner OpenAI and pushing people to a cheaper model.",
+    "quoteStartMs": 1977000,
+    "topics": [
+      "cloud weakness",
+      "OpenAI partnership",
+      "competitive dynamics"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E213-tsla-Guest-6",
@@ -160,20 +159,19 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Travis Kalanick highlights that cheap AI is dramatically accelerating Tesla's FSD performance—a 10x improvement in miles per human intervention over three months—and that Tesla's manufacturing scale gives it a key structural advantage in the autonomous vehicle race.",
-    "quote": "I think in a 3-month period, he, they went up like 10x in terms of performance, meaning in number of miles per, per human intervention. Like they're seeing, you know, that's the thing that Elon's seeing right now because cheap AI, cheap, good AI makes cheap, good autonomy.",
-    "quoteStartMs": 5241429,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Travis Kalanick argues cheap AI is rapidly improving Tesla's FSD — citing a 10x performance improvement in miles per human intervention over 3 months — and that Tesla has a major manufacturing advantage in the autonomous vehicle race.",
+    "quote": "Tesla and FSD, their new models are like, I think in a 3-month period, he, they went up like 10x in terms of performance, meaning in number of miles per, per human intervention...cheap AI, cheap, good AI makes cheap, good autonomy.",
+    "quoteStartMs": 5238625,
     "topics": [
       "autonomous vehicles",
       "FSD",
       "AI",
-      "manufacturing"
+      "manufacturing advantage"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Travis Kalanick",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E213-waymo-Guest-7",
@@ -184,21 +182,19 @@
     "ticker": null,
     "isPublic": false,
     "host": "Guest",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Travis Kalanick views Waymo as having a proven, normalized technology that genuinely works today, while flagging that its long-term competitive position depends on solving manufacturing scale and the electric grid constraint.",
-    "quote": "You get in a Waymo today and it's like, you're not even thinking twice. You're just like, it's all good. You just get in, you get out...The technology works.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Travis Kalanick observes that Waymo's technology now works seamlessly and is becoming normalized, and frames the key question as whether Waymo has the right manufacturing partners to achieve scale in autonomous vehicles.",
+    "quote": "You get in a Waymo today and it's like, you're not even thinking twice. You're just like, it's all good. You just get in, you get out...the technology works.",
     "quoteStartMs": 5166768,
     "topics": [
       "autonomous vehicles",
-      "ridesharing",
-      "technology",
-      "competition"
+      "technology readiness",
+      "scale"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Travis Kalanick",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

@@ -51,7 +51,11 @@ A thesis's published quote must, on its own, prove its stance. So for every thes
 What counts as an explicit economic-direction claim:
 - bull = the host claims the name's value / competitive position / financial trajectory is improving, or that it is the/a winner. For a commodity: its price/value is heading up, or it's "the trade".
 - bear = the host ties a concrete risk to the name's economics (revenue, margins, share, valuation), or names it a loser. For a commodity: its price is heading down or under pressure.
-- Moral/conduct/political commentary, product praise, and "beneficiary/well-positioned" framing are NOT directional unless paired with an explicit economic claim.
+- Moral/conduct/political commentary, product praise, and "beneficiary/well-positioned" framing are NOT directional unless paired with an explicit economic claim. In particular, condemning a company's CONDUCT — anti-competitive behavior, regulatory capture, surveillance, censorship, being "untrustworthy", "dangerous", "too powerful", or causing "market centralization" / ecosystem harm — is NOT bear: that conduct is usually economically GOOD for the company.
+
+DECISIVE CHECK before you KEEP any bull or bear (do this for every directional take):
+1. Name the specific economic outcome the host claims — more/less revenue, customers, market share, margin, or valuation. If the only negativity is about conduct, ethics, danger to society, or being too dominant, and you cannot name a claimed worse *business* outcome, NEUTRALIZE.
+2. A company the host describes as WINNING — growing fast, gaining share, entrenching monopolistic control, pulling away from rivals — is bull or neutral, NEVER bear, even when the host frames that winning as dangerous, unfair, or untrustworthy. (Example: "Anthropic is pursuing regulatory capture to entrench monopolistic control and is pulling away from OpenAI" describes Anthropic winning + a conduct objection → NOT bear; neutralize. It only becomes bear if the host says the company will LOSE customers/revenue, e.g. "enterprises treat it as a non-starter and flee to open-source".)
 
 Rules:
 - Reserve fix_quote for a REAL claim that exists in the transcript; if no such sentence exists, neutralize (or drop). Never invent or paraphrase — newQuote must be an exact substring of the host's lines.
@@ -104,17 +108,26 @@ export async function verifyTheses(
       `[${i}] host=${t.host} company=${t.company} stance=${t.stance} conviction=${t.conviction}\n     quote: "${t.quote}"\n     summary: ${t.summary}`,
   );
 
-  const { verdicts } = await callTool({
-    system: SYSTEM,
-    user:
-      `Episode ${ep.id} — "${ep.title}".\n\nFULL TRANSCRIPT:\n\n${formatTranscript(transcript)}\n\n` +
-      `=== ${theses.length} EXTRACTED THESES TO AUDIT ===\n\n${lines.join("\n\n")}`,
-    toolName: "submit_verdicts",
-    toolDescription: "Submit one keep/fix_quote/neutralize/drop verdict per thesis index.",
-    inputSchema: INPUT_SCHEMA,
-    validate: VerdictSchema,
-    maxTokens: 4096,
-  });
+  // Verify is a best-effort backstop: if the audit call fails (a malformed
+  // verdict the validator rejects, or a transient API error), keep the takes
+  // unverified rather than crash the extraction that depends on it.
+  let verdicts: z.infer<typeof VerdictSchema>["verdicts"];
+  try {
+    ({ verdicts } = await callTool({
+      system: SYSTEM,
+      user:
+        `Episode ${ep.id} — "${ep.title}".\n\nFULL TRANSCRIPT:\n\n${formatTranscript(transcript)}\n\n` +
+        `=== ${theses.length} EXTRACTED THESES TO AUDIT ===\n\n${lines.join("\n\n")}`,
+      toolName: "submit_verdicts",
+      toolDescription: "Submit one keep/fix_quote/neutralize/drop verdict per thesis index.",
+      inputSchema: INPUT_SCHEMA,
+      validate: VerdictSchema,
+      maxTokens: 4096,
+    }));
+  } catch (e) {
+    console.warn(`  ⚠ verify skipped for ${ep.id} (${e instanceof Error ? e.message.slice(0, 80) : e}) — keeping ${theses.length} takes unverified`);
+    return theses;
+  }
 
   // Haystack for validating any proposed replacement quote is genuinely verbatim.
   const haystack = norm(transcript.utterances.map((u) => u.text).join(" "));

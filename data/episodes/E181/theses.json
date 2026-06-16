@@ -10,8 +10,10 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "low",
-    "callType": "explicit_long",
-    "summary": "Sacks sees Salesforce's 20% drop as likely overdone, calling it a probable buying opportunity while acknowledging soft guidance, because Benioff has consistently adapted to major tech cycles and will likely do the same with AI.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks thinks Salesforce is probably a buying opportunity after its 20% drop, citing Benioff's track record of adapting to new tech waves, though he lacks a strong conviction on the stock as an investment.",
     "quote": "my sense is it's probably a buying opportunity. I mean, I think Salesforce is still a great company. Marc Benioff's a great CEO. He's always positioned the company to chase after whatever the current thing is.",
     "quoteStartMs": 4316354,
     "topics": [
@@ -20,9 +22,7 @@
       "AI",
       "management"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": "explicit buying opportunity call"
+    "attributionConfidence": "high"
   },
   {
     "id": "E181-crm-Chamath-1",
@@ -36,18 +36,18 @@
     "stance": "bear",
     "conviction": "high",
     "callType": "view",
-    "summary": "Chamath argues Salesforce is on the wrong side of the tech lifecycle, as AI enables startups to deliver 80% of its features at a 90% discount, meaning large monolithic SaaS companies will lose customers to cheaper, more flexible alternatives over the next 5–10 years.",
-    "quote": "it is on the wrong side of the life cycle. And the odds are overwhelmingly such that a bunch of small companies will flood this opportunity and provide cheaper, smaller, more flexible capabilities.",
-    "quoteStartMs": 4241429,
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath argues Salesforce is on the wrong side of a generative-AI-driven disruption cycle where startups can deliver 80% of the features at a 90% discount, meaning large monolithic SaaS vendors will lose customers and face a painful business-model recycling over the next 5–10 years.",
+    "quote": "Is Salesforce gonna get 80/90'd? Yeah, because you can deliver 80% of the features at a 90% discount pretty easily today... it is on the wrong side of the life cycle. And the odds are overwhelmingly such that a bunch of small companies",
+    "quoteStartMs": 4175329,
     "topics": [
-      "SaaS",
-      "AI disruption",
-      "competitive moat",
+      "SaaS disruption",
+      "AI",
+      "competitive threat",
       "valuation"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E181-crm-Friedberg-2",
@@ -61,45 +61,70 @@
     "stance": "mixed",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Friedberg notes Salesforce's valuation has compressed to ~20x operating cash flow with sub-10% growth, raising the question of whether macro headwinds, SaaS commoditization via AI, or customer hesitancy on generative AI spending are driving the slowdown, but flags that Benioff's founder-CEO status is a meaningful offset.",
-    "quote": "it's trading at, you know, call it roughly 20 times their operating cash flow forecast with sub-10% revenue growth. And that's basically where treasuries trade... Founders, founders, founders can and will maneuver their way to success.",
-    "quoteStartMs": 3977057,
-    "topics": [
-      "valuation",
-      "SaaS",
-      "AI",
-      "founder premium"
-    ],
-    "attributionConfidence": "high",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Friedberg sees Salesforce facing a dual threat — macroeconomic enterprise slowdown and AI-driven commoditization of SaaS pricing — but tempers the bear case by noting Benioff's founder-CEO advantage historically outperforms hired management, making the outlook mixed.",
+    "quote": "it really begs the question on, you know, is there a macroeconomic force where the enterprise is spending less... Or number 2, is there a shifting underway in the SaaS business model... I wouldn't count out Benioff just because of some of",
+    "quoteStartMs": 3999631,
+    "topics": [
+      "SaaS",
+      "AI disruption",
+      "macroeconomic slowdown",
+      "management"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E181-nvda-Friedberg-3",
+    "id": "E181-btc-usd-Chamath-3",
     "episodeId": "E181",
     "episodeNumber": 181,
     "episodeDate": "2024-05-31T21:55:00.000Z",
-    "company": "NVIDIA",
+    "company": "Bitcoin",
+    "ticker": "BTC-USD",
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath presents historical post-halving price appreciation cycles and argues that Bitcoin ETF adoption, dollar debasement fears, and its emerging role as a dual-currency hard asset in developing nations support significant further price appreciation.",
+    "quote": "18 months after the first halving, the Bitcoin price returned 45x. After the second halving, it returned almost 28x... if you marry that with this worry that some folks have about dollar debasement, you start to see some really interesting",
+    "quoteStartMs": 3356204,
+    "topics": [
+      "Bitcoin halving",
+      "ETF adoption",
+      "dollar debasement",
+      "crypto"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E181-nvda-Friedberg-4",
+    "episodeId": "E181",
+    "episodeNumber": 181,
+    "episodeDate": "2024-05-31T21:55:00.000Z",
+    "company": "Nvidia",
     "ticker": "NVDA",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "neutral",
+    "stance": "bear",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Friedberg argues that the massive AI capex cycle ($750B+ in spending) has yet to produce incremental revenue at the enterprises spending it, meaning NVIDIA's market cap is at risk if this AI investment wave does not translate into measurable productivity or revenue gains.",
-    "quote": "you cannot spend this kind of money and show no incremental revenue potential. So while this is incredible for NVIDIA, the chicken is coming home to roost because if you do not start seeing revenue flow to the bottom line of these",
-    "quoteStartMs": 5905992,
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg warns that Nvidia's market cap is vulnerable because the massive AI capex it benefits from is not yet translating into incremental revenue at the companies spending it, and when that spending fails to show returns, Nvidia's valuation will not be justified.",
+    "quote": "this is incredible for NVIDIA, the chicken is coming home to roost because if you do not start seeing revenue flow to the bottom line of these companies that are spending $26 billion a quarter, The market cap of NVIDIA is not what the",
+    "quoteStartMs": 5911041,
     "topics": [
       "AI capex",
       "valuation",
-      "bubble risk"
+      "revenue risk"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "low"
   },
   {
-    "id": "E181-dell-Friedberg-4",
+    "id": "E181-dell-Friedberg-5",
     "episodeId": "E181",
     "episodeNumber": 181,
     "episodeDate": "2024-05-31T21:55:00.000Z",
@@ -108,44 +133,41 @@
     "isPublic": true,
     "host": "Friedberg",
     "stance": "bull",
-    "conviction": "medium",
+    "conviction": "low",
     "callType": "view",
-    "summary": "Friedberg believes Dell's post-earnings after-hours drop is an overreaction, arguing that as a pick-and-shovels data center provider Dell is well-positioned to benefit from the AI buildout despite near-term margin pressure from higher AI system COGS.",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg thinks Dell's after-hours drop overstates the risk: as a pick-and-shovels data center provider, Dell is a structural beneficiary of AI infrastructure buildout and should do well even as the broader tech market faces multiple compression.",
     "quote": "Dell is a unique example in the sense that I actually think it's a beneficiary of spend. And I think that it will build data centers and it will actually do well in the move to AI because it's a very smartly positioned pick and shovels",
     "quoteStartMs": 5933929,
     "topics": [
-      "AI capex",
+      "AI infrastructure",
       "data centers",
-      "pick-and-shovels",
-      "valuation"
+      "pick and shovels"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "low"
   },
   {
-    "id": "E181-bitcoin-Chamath-5",
+    "id": "E181-gld-Chamath-a0",
     "episodeId": "E181",
     "episodeNumber": 181,
     "episodeDate": "2024-05-31T21:55:00.000Z",
-    "company": "Bitcoin",
-    "ticker": null,
-    "isPublic": false,
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Chamath presents historical halving-cycle data showing 8–45x price appreciation in the 6–18 months following prior halvings, and argues that the new Bitcoin ETFs will accelerate adoption as a dual-currency store of value in an era of dollar debasement.",
-    "quote": "if you apply the averages... some really meaningful appreciation... there are a lot of countries that will become dual currency... when you need to buy a permanent asset that needs to have residual value, you'll use something like BTC. And",
-    "quoteStartMs": 3414000,
+    "summary": "Chamath suggests Bitcoin will 'completely replace gold' as a hard asset store of value, implying a bearish outlook on gold's long-term dominance as Bitcoin appreciates.",
+    "quote": "if this thing starts to get to these levels of appreciation, it is going to completely replace gold and start to become something that has transactional utility for hard assets.",
+    "quoteStartMs": 3486242,
     "topics": [
-      "Bitcoin",
-      "halving cycle",
-      "ETF",
-      "dollar debasement"
+      "Bitcoin vs Gold",
+      "dollar debasement",
+      "store of value",
+      "crypto cycle"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

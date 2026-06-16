@@ -770,5 +770,77 @@
   "big-tech-microsoft-google-amazon": {
     "description": "A grouped position representing exposure to Microsoft, Google, and Amazon, three major global technology conglomerates.",
     "domain": null
+  },
+  "chamath-on-hyperscalers-oracle-amazon-meta-microsoft-google": {
+    "description": "Thematic basket tracking Chamath Palihapitiya's views on major cloud and tech hyperscaler companies.",
+    "domain": null
+  },
+  "utilities-electric": {
+    "description": "Broad sector grouping of publicly traded electric utility companies supplying power to consumers and businesses.",
+    "domain": null
+  },
+  "public-saas-software-industrial-complex": {
+    "description": "Thematic basket of publicly traded SaaS and enterprise software companies across the broader industry.",
+    "domain": null
+  },
+  "xai-x-twitter": {
+    "description": "xAI is Elon Musk's AI research company; X (formerly Twitter) is a social media and messaging platform.",
+    "domain": "x.ai"
+  },
+  "private-equity-industry": {
+    "description": "Broad industry grouping of firms that acquire, manage, and exit private company investments using pooled capital.",
+    "domain": null
+  },
+  "s-p-500-us-equity-market": {
+    "description": "Benchmark index tracking 500 large-cap U.S. publicly traded companies across major economic sectors.",
+    "domain": null
+  },
+  "new-york-city-real-estate": {
+    "description": "Thematic category covering residential and commercial real estate assets located in New York City.",
+    "domain": null
+  },
+  "pharma-industry-broad": {
+    "description": "Broad sector grouping of pharmaceutical companies engaged in drug discovery, development, and commercialization.",
+    "domain": null
+  },
+  "nwsm": {
+    "description": "Newsmax is an American conservative news media company operating a cable TV channel and digital outlets.",
+    "domain": "newsmax.com"
+  },
+  "credit-default-swaps-corporate-debt-protection": {
+    "description": "Financial derivatives that allow investors to hedge or speculate on corporate bond default risk.",
+    "domain": null
+  },
+  "figure": {
+    "description": "Figure is a fintech company offering home equity loans and developing blockchain-based financial products.",
+    "domain": "figure.com"
+  },
+  "bytedance-tiktok": {
+    "description": "ByteDance is a Chinese technology company and parent of TikTok, a global short-form video platform.",
+    "domain": "bytedance.com"
+  },
+  "tiktok": {
+    "description": "TikTok is a short-form video sharing platform operated by ByteDance with a global user base.",
+    "domain": "tiktok.com"
+  },
+  "traditional-auto-oems-basket": {
+    "description": "Thematic basket of established legacy automakers designing and manufacturing internal combustion and hybrid vehicles.",
+    "domain": null
+  },
+  "chinese-tech-etfs-basket": {
+    "description": "Thematic basket of exchange-traded funds providing diversified exposure to Chinese technology sector companies.",
+    "domain": null
+  },
+  "anduril-industries": {
+    "description": "Anduril Industries is a defense technology company building autonomous systems and AI-powered military hardware.",
+    "domain": "anduril.com"
+  },
+  "cost-plus-drugs": {
+    "description": "Cost Plus Drugs is a pharmacy platform offering transparent, low-cost generic prescription medications directly to consumers.",
+    "domain": "costplusdrugs.com"
+  },
+  "starlink-spacex": {
+    "description": "SpaceX is a private aerospace company; Starlink is its satellite internet service providing global broadband coverage.",
+    "domain": "spacex.com"
   }
 }

@@ -10,20 +10,19 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Gavin Baker argues Anthropic's EBIT-positive status, explosive ARR growth, and now-demonstrated ROI on AI inference validate it as one of the most financially significant AI companies, with its proprietary coding data and Cursor integration creating durable competitive advantages.",
-    "quote": "they were EBIT positive per the Wall Street Journal in the most recent quarter— is a really important fact for kind of the whole AI narrative. Because now there's... you could talk about ROI, and we could go look at the ROIC of the hyperscalers. But if OpenAI and Anthropic are at, call it, $100 billion of ARR now, with 80%-ish gross margins on inference, like, the returns are there.",
-    "quoteStartMs": 280319,
-    "topics": [
-      "AI revenue",
-      "profitability",
-      "competitive moat",
-      "valuation"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Gavin Baker argues Anthropic's EBIT-positive status, explosive growth, and massive proprietary coding data (via Cursor) combined with access to Colossus compute makes it one of the fastest-growing companies in history, validating the broader AI ROI narrative.",
+    "quote": "they are now— they were EBIT positive per the Wall Street Journal in the most recent quarter— is a really important fact for kind of the whole AI narrative... they're growing really fast— if we add in Gemini, we add in Cursor, we add in",
+    "quoteStartMs": 279218,
+    "topics": [
+      "revenue growth",
+      "profitability",
+      "AI infrastructure",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E274-spacex-Chamath-1",
@@ -36,19 +35,19 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Chamath argues SpaceX is underwritable at a $2T valuation based on Starlink's scalable internet infrastructure, rapidly growing AI/compute revenue (now $15B/year from Anthropic alone), and Elon's unique ability to compound capital moats into technology and execution moats — with a Tesla merger making it even cheaper over time.",
-    "quote": "I'm buying probably the most important internet infrastructure project that's happened since the internet itself... terrestrial data centers alone are $100 or $200 billion of revenue by 2030, 2032. Just— and that means just building it. So ",
-    "quoteStartMs": 3623217,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath argues SpaceX can be underwritten at $2T given its Starlink revenue engine, dominant data center build capability (Colossus), and the emerging Elon Web Services business that could reach $40-45B revenue next year and double again, creating compounding capital, technology, and execution moats.",
+    "quote": "you're buying it at 20 times revenue. And you would say, well, why can you buy a company like this on revenue versus earnings and cash flow? And I think the reason is because what the revenue does is it gives him the operating leverage to",
+    "quoteStartMs": 3822965,
     "topics": [
       "valuation",
-      "data centers",
-      "AI capex",
-      "Starlink"
+      "revenue growth",
+      "AI infrastructure",
+      "competitive moat"
     ],
-    "attributionConfidence": "high",
-    "callType": "explicit_long",
-    "excludeReason": null,
-    "scoreNote": "Chamath said he is buying SpaceX as critical internet infrastructure"
+    "attributionConfidence": "high"
   },
   {
     "id": "E274-spacex-Guest-2",
@@ -61,94 +60,93 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Gavin Baker is bullish on SpaceX's AI/compute business, arguing their ability to build data centers faster and cheaper than anyone else, combined with the Anthropic $15B offtake deal and Cursor's Composer 2.5 breakthrough on Colossus, positions the company for dramatic revenue growth in its AI segment.",
-    "quote": "they build data centers dramatically faster than anyone else. At a lower cost. And now that you have a clear offtake partner, and I would expect partner to become partners, there is no reason they can't start stamping these data centers out really fast.",
-    "quoteStartMs": 2913072,
-    "topics": [
-      "data centers",
-      "AI capex",
-      "competitive moat",
-      "orbital compute"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Gavin Baker argues SpaceX's ability to build data centers faster and cheaper than anyone, combined with Anthropic as a clear offtake partner and orbital compute on the horizon, means its AI/compute business can grow dramatically faster than previously contemplated.",
+    "quote": "there's a stat in it that for, I think, the, their first data center was 122 days. The second one, it took them 91 days. The third one was, I think, 66 days. They build data centers dramatically faster than anyone else. At a lower cost.",
+    "quoteStartMs": 2899326,
+    "topics": [
+      "AI infrastructure",
+      "data centers",
+      "orbital compute",
+      "revenue growth"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E274-spacex-Friedberg-3",
+    "id": "E274-cursor-Guest-3",
     "episodeId": "E274",
     "episodeNumber": 274,
     "episodeDate": "2026-05-22T22:46:00.000Z",
-    "company": "SpaceX",
+    "company": "Cursor",
     "ticker": null,
     "isPublic": false,
-    "host": "Friedberg",
+    "host": "Guest",
     "stance": "bull",
-    "conviction": "medium",
-    "summary": "Friedberg is bullish on the strategic value of SpaceX's space-based communication and compute infrastructure as a censorship-resistant, government-independent backbone for civilization — providing a unique long-term moat beyond financial metrics.",
-    "quote": "I don't own any SpaceX shares, and I'm not trying to sell the book of SpaceX, but I think that there's like an important aspect of, can you create a system that's not under the control of governments as a way to ensure humanity's progress",
-    "quoteStartMs": 3425340,
-    "topics": [
-      "strategic moat",
-      "orbital compute",
-      "infrastructure"
-    ],
-    "attributionConfidence": "high",
+    "conviction": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Gavin Baker argues Cursor's proprietary coding token dataset combined with Colossus compute access has produced Pareto-dominant model improvements in just 3-4 weeks of RL, and the upcoming new base model trained with Cursor data could make xAI/Cursor the dominant coding AI platform.",
+    "quote": "Cursor allegedly has more tokens of coding data than exist on the public internet... this jump from Composer 2 to Composer 2.5 showed us is that when you do an appropriate amount of reinforcement learning using that data... this is 3 or 4",
+    "quoteStartMs": 3019319,
+    "topics": [
+      "AI models",
+      "competitive position",
+      "coding AI",
+      "data moat"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E274-nvda-Guest-4",
     "episodeId": "E274",
     "episodeNumber": 274,
     "episodeDate": "2026-05-22T22:46:00.000Z",
-    "company": "Nvidia",
+    "company": "NVIDIA",
     "ticker": "NVDA",
     "isPublic": true,
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Gavin Baker argues Nvidia is growing faster than hyperscaler CapEx and gaining share over ASICs despite the bear narrative; the stock trades at a low-to-mid-teens multiple of real earnings — comparable to Cisco in the tech bubble but far cheaper — and the $20B CPU business announcement signals a uniquely broad co-design position across every AI lab.",
-    "quote": "NVIDIA is probably at a low teens multiple of kind of low to mid-teens multiple of real earnings... NVIDIA's AI business is growing faster than Broadcom's and faster than a lot of other companies that are, you know, seen as part of this ASIC share gain story.",
-    "quoteStartMs": 5337365,
-    "topics": [
-      "valuation",
-      "AI capex",
-      "competitive moat",
-      "earnings"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Gavin Baker argues NVIDIA is growing faster than hyperscaler CapEx and faster than Broadcom's AI semiconductor revenue, trades at a low-teens earnings multiple unlike tech bubble Cisco, and its $20B CPU business validates its unique co-design position across all labs — making bear share-loss narratives incorrect.",
+    "quote": "I think NVIDIA is probably at a low teens multiple of kind of low to mid-teens multiple of real earnings... NVIDIA's AI business is growing faster than Broadcom's and faster than a lot of other companies that are, you know, seen as part of",
+    "quoteStartMs": 5336721,
+    "topics": [
+      "valuation",
+      "market share",
+      "earnings",
+      "AI infrastructure"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E274-nvda-Chamath-5",
     "episodeId": "E274",
     "episodeNumber": 274,
     "episodeDate": "2026-05-22T22:46:00.000Z",
-    "company": "Nvidia",
+    "company": "NVIDIA",
     "ticker": "NVDA",
     "isPublic": true,
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Chamath is bullish on Nvidia's durability, arguing the company is effectively building domain-specific architectures internally through co-design partnerships with every major lab, making the DSA disruption thesis obsolete and reinforcing Nvidia's central role in AI infrastructure.",
-    "quote": "the reality is that that DSA market evolution is actually happening inside of NVIDIA. That's what's so insane to me. That was my takeaway from the quarter as well, which is like, holy shit, these guys actually have domain-specific architectures because they're doing these design programs with every—",
-    "quoteStartMs": 4753945,
-    "topics": [
-      "competitive moat",
-      "AI chips",
-      "domain-specific architecture"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues that NVIDIA is effectively building domain-specific architectures through its co-design programs with every major lab, making the feared DSA market evolution happen inside NVIDIA rather than eroding its position.",
+    "quote": "that DSA market evolution is actually happening inside of NVIDIA. That's what's so insane to me. That was my takeaway from the quarter as well, which is like, holy shit, these guys actually have domain-specific architectures because",
+    "quoteStartMs": 4757000,
+    "topics": [
+      "competitive moat",
+      "chip architecture",
+      "AI infrastructure"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E274-crwv-Guest-6",
@@ -161,20 +159,18 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Gavin Baker argues Nvidia's earnings single-handedly validated CoreWeave and Neo-clouds by proving GPU useful lives extend well beyond 4-5 years, enabling long-duration asset-backed financing at low rates and making the business model far more profitable than bears projected.",
-    "quote": "when CoreWeave and all these NeoClouds came public... there was a big bear case that hey, these guys are amortizing their GPUs and CPUs over 4, 5, 6 years, and that's way too short of a lifespan... now that we've just aggregated inference... those older GPUs, they have a useful life for 10 or 15 years.",
-    "quoteStartMs": 4795000,
-    "topics": [
-      "GPU lifespan",
-      "financing",
-      "valuation",
-      "AI infrastructure"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Gavin Baker argues that NVIDIA's quarter validated the GPU useful-life thesis — enabling GPU financing at 6% with 10-15 year useful lives via aggregated inference architectures — which effectively saved NeoCloud economics including CoreWeave.",
+    "quote": "those older GPUs, they have a useful life for 10 or 15 years. And this means that you can finance GPUs. I think Corey's lowest financing, I can't forget if it's 6 or 7%. 6%. It's going to come down. Yeah. And if you can get an asset-backed",
+    "quoteStartMs": 4870407,
+    "topics": [
+      "GPU financing",
+      "unit economics",
+      "AI infrastructure"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E274-xai-Guest-7",
@@ -186,21 +182,19 @@
     "isPublic": false,
     "host": "Guest",
     "stance": "bull",
-    "conviction": "high",
-    "summary": "Gavin Baker is bullish on xAI, pointing to Grok 4.3 being on the Pareto frontier of frontier models, the Composer 2.5 breakthrough demonstrating the power of Cursor's proprietary coding data on Colossus compute, and the launch of Grok Build as a full agentic harness — together making xAI a legitimate top-4 AI competitor.",
-    "quote": "Cursor's Composer 2.5 model came out this week... this is Pareto dominant. This is just 3, 4 weeks of doing reinforcement learning on Colossus 2 with Cursor's data... Composer 2.5 is literally well outside the Pareto frontier. And that's after 3 weeks.",
-    "quoteStartMs": 3003933,
-    "topics": [
-      "AI model quality",
-      "competitive position",
-      "compute",
-      "coding AI"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
+    "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Gavin Baker argues xAI's Grok 4.3 is on the Pareto frontier of frontier models and the new Grok Build harness — which manages state, memory, and runtime — makes xAI significantly more competitive, while Cursor's data and Colossus compute provide a unique advantage for rapid model improvement.",
+    "quote": "the newest version of Groq 4.3 is on the Pareto frontier for all frontier models... Groq lacked a harness. So Claude had Claude Code, OpenAI had Codex, and now with Groq Build, there is a harness that is available to Groq... the harness is",
+    "quoteStartMs": 3187402,
+    "topics": [
+      "AI models",
+      "competitive position",
+      "agentic AI"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E274-ung-Guest-a0",
@@ -211,23 +205,20 @@
     "ticker": "UNG",
     "isPublic": true,
     "host": "Guest",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Guest argues that US natural gas (NG1) is down this year while LNG prices for the rest of the world are up 100-200%, giving America a relative cost advantage in electricity/manufacturing inputs. Strait of Hormuz closure is relatively good for America's natural gas competitiveness.",
+    "callType": "view",
+    "summary": "Guest argues US natural gas (NG1) is down this year while LNG prices are up 100-200% internationally, making America relatively advantaged — a bullish structural dynamic for US natural gas as the base input for domestic electricity and manufacturing.",
     "quote": "what we make electricity with in America overwhelmingly is natural gas. And you can look it up, NG1. It is down this year. The input cost for electricity in the rest of the world... LNG is a very important one, and it's up 100%, 200%.",
     "quoteStartMs": 5446934,
     "topics": [
-      "Strait of Hormuz",
-      "energy costs",
-      "manufacturing competitiveness",
+      "energy prices",
       "LNG",
-      "Trump policy"
+      "Strait of Hormuz",
+      "US manufacturing",
+      "geopolitics"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E274-uso-Guest-a1",
@@ -238,21 +229,18 @@
     "ticker": "USO",
     "isPublic": true,
     "host": "Guest",
-    "stance": "mixed",
+    "stance": "neutral",
     "conviction": "low",
-    "summary": "Guest notes the Strait of Hormuz closure is bad for global oil supply/consumers (especially Europe, Asia, Japan, China) but relatively good for America, implying a divergent impact on oil prices globally vs. domestically.",
+    "callType": "view",
+    "summary": "Guest notes Strait of Hormuz closure is bad for global oil broadly but relatively better for America versus Europe and Asia, who are more dependent on Middle Eastern oil flows. No explicit price direction call made.",
     "quote": "the Strait of Hormuz is absolutely bad for everyone, but relatively good for America and relatively good for Trump's policy goals... Every day the Strait of Hormuz is closed is relatively good for America. It's terrible for Europe. It is terrible for Asia.",
     "quoteStartMs": 5467678,
     "topics": [
       "Strait of Hormuz",
-      "geopolitics",
       "oil supply",
+      "geopolitics",
       "energy security"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

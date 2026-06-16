@@ -10,19 +10,18 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Chamath makes a bull case for OpenAI at a $500B valuation by projecting DAU growth to ~2B and applying a conservative fraction of Facebook's ARPU, arriving at a ~$1.5T terminal valuation.",
-    "quote": "if you take 400 or 500 million MAO DAO growing at... 50%... 500 goes to a billion, billion goes to 2 in 4 years. And at 2 billion DAO, they generate a 10th of Facebook's revenue... And you probably get to a trillion 5 valuation there.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath makes the bull case for OpenAI at a $500B valuation by projecting DAU growth to 2B and applying a fraction of Facebook/Google ARPU, arriving at a ~$1.5T terminal valuation.",
+    "quote": "if you take 400 or 500 million MAO DAO growing at... 50%... 500 goes to a billion, billion goes to 2 in 4 years. And at 2 billion DAO, they generate a 10th of Facebook's revenue... you probably get to a trillion 5 valuation there.",
     "quoteStartMs": 2099772,
     "topics": [
       "valuation",
       "user growth",
-      "consumer AI",
-      "revenue"
+      "consumer AI"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E240-openai-Sacks-1",
@@ -35,19 +34,18 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Sacks argues OpenAI can justify its valuation because it has real subscription revenue, a dominant consumer position, and is displacing search — the most lucrative franchise on the internet.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks argues OpenAI's dominant consumer position and real subscription revenue — plus its role as a search replacement — make a $500B valuation supportable on fundamentals.",
     "quote": "OpenAI has actual revenue... they have subscriptions and they appear to have the dominant position in the consumer space. And it is a replacement for a lot of people for search, which is the most lucrative franchise on the internet.",
     "quoteStartMs": 2135000,
     "topics": [
       "valuation",
       "consumer AI",
-      "search disruption",
-      "revenue"
+      "search disruption"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E240-meta-Sacks-2",
@@ -60,41 +58,17 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "low",
-    "summary": "Sacks views Meta's AI hiring freeze as a normal digestion period after a blitz of expensive acquihires, not a sign of a bust cycle, and sees the broader AI investment supercycle as still intact.",
-    "quote": "I think that what Meta is doing is probably digesting a little bit. They've now made a bunch of talent acquisitions... they're probably just consolidating a little bit.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks views Meta's AI hiring freeze as a normal consolidation after aggressive acquihires rather than a sign of a broader bust, and does not make a directional investment call.",
+    "quote": "I think that what Meta is doing is probably digesting a little bit. They've now made a bunch of talent acquisitions... and they're probably just consolidating a little bit.",
     "quoteStartMs": 1939174,
     "topics": [
-      "AI hiring",
-      "talent acquisitions",
-      "AI strategy"
+      "AI talent",
+      "hiring",
+      "strategy"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E240-anthropic-Sacks-3",
-    "episodeId": "E240",
-    "episodeNumber": 240,
-    "episodeDate": "2025-08-22T18:59:00.000Z",
-    "company": "Anthropic",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Sacks",
-    "stance": "bull",
-    "conviction": "low",
-    "summary": "Sacks points to Anthropic's coding specialization as evidence of a healthy competitive differentiation among models, suggesting it has carved out a durable niche.",
-    "quote": "Anthropic is really good at coding. The specialization really belies this idea of one model becoming all-knowing and all-powerful. We're seeing a proliferation now of specialization.",
-    "quoteStartMs": 1151000,
-    "topics": [
-      "AI specialization",
-      "competitive moat",
-      "coding"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

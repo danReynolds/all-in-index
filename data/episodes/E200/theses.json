@@ -10,19 +10,19 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Friedberg argues SpaceX's successful Starship booster catch is the critical milestone enabling a path to ~$10/kg launch costs, which would make Mars colonization economically feasible and cement SpaceX's dominance in the launch market.",
-    "quote": "the cost per kilogram comes down... the booster has estimated that Starship and the booster cost about $90 million today... if you can reuse that thing 10 times, that's a $3.5 million cost per launch, plus a million for fuel... That's how you start to get to $10 a kilogram",
-    "quoteStartMs": 1185000,
-    "topics": [
-      "cost reduction",
-      "reusability",
-      "space economics",
-      "competitive moat"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Friedberg argues SpaceX's successful Starship booster catch is the critical milestone enabling a path to ~$10/kg launch costs, which would make Mars colonization economically feasible and cement SpaceX's dominance of the launch market.",
+    "quote": "the booster, there's a group called Payload and they do estimates on this... $90 million today, and they think that they have a path to getting it down to $35 million. So if you can reuse that thing 10 times, that's a $3.5 million cost per",
+    "quoteStartMs": 1189470,
+    "topics": [
+      "launch cost",
+      "reusability",
+      "space economy",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E200-spacex-starlink-Friedberg-1",
@@ -35,18 +35,19 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Friedberg believes Starlink could grow from 4 million to 100+ million subscribers by displacing inferior ISPs and cell providers, potentially becoming one of the largest subscription businesses on earth.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg projects Starlink could grow from 4 million to 100 million or more subscribers, potentially becoming one of the largest subscription businesses on earth, driven by satellite-to-phone expansion.",
     "quote": "Starlink's running at 4 million subs right now. That's like $100 a month, 4 million subs... If we can get satellite to phone and you can get Starlink more broadly available, this could be a 100 million subscriber business.",
     "quoteStartMs": 1282620,
     "topics": [
-      "subscriber growth",
-      "TAM",
-      "competitive displacement"
+      "Starlink",
+      "subscribers",
+      "growth",
+      "ISP disruption"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E200-expe-Chamath-2",
@@ -59,19 +60,19 @@
     "host": "Chamath",
     "stance": "bear",
     "conviction": "high",
-    "summary": "Chamath argues Expedia is a fragile UI layer over commoditized data that is highly vulnerable to AI agents like Perplexity executing travel bookings directly, making it a terrible $30B capital allocation for Uber.",
-    "quote": "I cannot think of a more fragile business model than the UI layer on top of widely available data... in the example of flight bookings, you could go directly to United because Perplexity will just show you all of the flights... and then it'll go and execute that for you",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath argues Expedia is a fragile UI layer on top of licensed third-party data that AI agents will disintermediate, making a $30B acquisition price far too expensive for the risk.",
+    "quote": "I cannot think of a more fragile business model than the UI layer on top of widely available data... in a world that looks like that, where these companies have the money to pay for the data feeds, the existing v1.0 generation UIs, I",
     "quoteStartMs": 1777208,
     "topics": [
       "AI disruption",
       "valuation",
-      "competitive threat",
-      "M&A"
+      "M&A",
+      "competitive moat"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E200-expe-Friedberg-3",
@@ -84,44 +85,69 @@
     "host": "Friedberg",
     "stance": "mixed",
     "conviction": "medium",
-    "summary": "Friedberg sees a financial rationale for Uber acquiring Expedia at ~4x pro forma EBITDA after cost synergies and cross-selling, but acknowledges significant long-term AI disruption risk to Expedia's core business model.",
-    "quote": "So $22 billion of enterprise value, and if you can bump the EBITDA up to $6 billion a year, that's a pretty low multiple. I mean, you could kind of see yourself rationalizing this just from a financial basis that you're paying 4 times EBITD",
-    "quoteStartMs": 2027467,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg sees a financial case for Uber acquiring Expedia at ~4x pro forma EBITDA given Dara's operational knowledge and cross-sell potential, but acknowledges significant strategic risk from AI disintermediation.",
+    "quote": "if you can bump the EBITDA up to $6 billion a year, that's a pretty low multiple. I mean, you could kind of see yourself rationalizing this just from a financial basis that you're paying 4 times EBITDA to buy this thing.",
+    "quoteStartMs": 2029615,
     "topics": [
       "M&A",
       "valuation",
-      "synergies",
-      "AI disruption"
+      "EBITDA",
+      "AI risk"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E200-uber-Sacks-4",
+    "id": "E200-expe-Sacks-4",
+    "episodeId": "E200",
+    "episodeNumber": 200,
+    "episodeDate": "2024-10-18T22:49:00.000Z",
+    "company": "Expedia",
+    "ticker": "EXPE",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks is skeptical of the Uber/Expedia cross-sell thesis, arguing Uber users have no intent to book hotels via the Uber app, making the synergy rationale an MBA-style handwave that won't hold up in practice.",
+    "quote": "I don't think Uber customers want to be cross-sold on booking a hotel... I'm never going to think to go on my Uber app for that... The only time I open the Uber app is when I want to hail a taxi.",
+    "quoteStartMs": 2168000,
+    "topics": [
+      "M&A",
+      "cross-sell",
+      "product strategy",
+      "synergies"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E200-uber-Chamath-5",
     "episodeId": "E200",
     "episodeNumber": 200,
     "episodeDate": "2024-10-18T22:49:00.000Z",
     "company": "Uber",
     "ticker": "UBER",
     "isPublic": true,
-    "host": "Sacks",
-    "stance": "bear",
+    "host": "Chamath",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Sacks argues that acquiring Expedia would be value-destructive for Uber because Uber users want transactional efficiency, not cross-sold travel products, making the synergy thesis an MBA fantasy that doesn't reflect product reality.",
-    "quote": "I don't think Uber customers want to be cross-sold on booking a hotel... I'm never going to think to go on my Uber app for that... The more Uber tries to promote some unrelated product... it's clutter in the app.",
-    "quoteStartMs": 2168000,
-    "topics": [
-      "M&A",
-      "product strategy",
-      "cross-selling",
-      "capital allocation"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues Uber would be making a poor capital allocation decision by acquiring Expedia for $30B, when AI agents will soon render travel UI businesses worthless; he suggests buying Waymo would be a far better use of capital.",
+    "quote": "it would just be a very bad capital allocation decision... $30 billion is too big of a price to pay for that kind of risk. Why don't they just buy Waymo? Why don't they just go to Google and give them $30 billion of Uber stock and just",
+    "quoteStartMs": 1861835,
+    "topics": [
+      "M&A",
+      "capital allocation",
+      "AI disruption",
+      "strategy"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E200-ura-Friedberg-a0",
@@ -134,44 +160,18 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Friedberg reiterates his earlier prediction to buy uranium stocks, arguing nuclear is a necessity to meet growing energy demand (amplified by AI buildout), and that there is simply no way to close the energy gap without nuclear/uranium — making it a structural long-term bull case.",
-    "quote": "it was also my prediction for the year was to by the uranium stocks predicated on what I think is a really important point...there is no way to meet the energy demand without nuclear...We are going to need to use uranium to make electricity to meet the demand",
-    "quoteStartMs": 2943984,
+    "callType": "explicit_long",
+    "summary": "Friedberg reiterates his prediction to buy uranium stocks, arguing nuclear energy is a necessity to meet growing global energy demand — even pre-AI buildout — and that there is simply no way to meet energy demand without nuclear. He frames uranium as a structural long.",
+    "quote": "I did, I think, talk about this a year ago. It was also my prediction for the year was to by the uranium stocks predicated on what I think is a really important point... there is no way to meet the energy demand without nuclear.",
+    "quoteStartMs": 2938000,
     "topics": [
+      "uranium",
       "nuclear energy",
       "SMRs",
       "energy demand",
       "AI buildout",
-      "GDP growth",
-      "geopolitics"
+      "GDP growth"
     ],
-    "attributionConfidence": "high",
-    "callType": "explicit_long",
-    "excludeReason": null,
-    "scoreNote": "Friedberg reiterated his prediction to buy uranium stocks"
-  },
-  {
-    "id": "E200-cper-Friedberg-a1",
-    "episodeId": "E200",
-    "episodeNumber": 200,
-    "episodeDate": "2024-10-18T22:49:00.000Z",
-    "company": "Copper",
-    "ticker": "CPER",
-    "isPublic": true,
-    "host": "Friedberg",
-    "stance": "neutral",
-    "conviction": "low",
-    "summary": "Friedberg makes offhand references to copper wire as the required medium for transmitting power and internet signals, but frames it as a potential inefficiency to be disrupted rather than a directional price call.",
-    "quote": "we could look back one day and be like, why did we run all this copper wire everywhere? We don't need it.",
-    "quoteStartMs": 1328000,
-    "topics": [
-      "infrastructure",
-      "energy transmission",
-      "technology disruption"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

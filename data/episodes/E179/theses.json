@@ -11,17 +11,18 @@
     "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Chamath argues ChatGPT's consumer growth has plateaued and the broader AI market is still in a 'primordial ooze' phase where no company has yet built the durable 'Facebook of AI' — that defining app has yet to be created.",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath observes that ChatGPT's consumer growth has plateaued and argues the market is still in a 'primordial ooze' phase where basic capabilities are being standardized; the 'Facebook of AI' — the dominant consumer platform — has yet to be created, implying no current winner.",
     "quote": "I will maintain my perspective here, which is the 'Facebook of AI' has yet to be created.",
     "quoteStartMs": 1304347,
     "topics": [
       "consumer growth",
-      "competitive moat",
-      "AI platform"
+      "AI competition",
+      "platform",
+      "valuation"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E179-openai-chatgpt-Sacks-1",
@@ -35,17 +36,18 @@
     "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Sacks argues GPT-4o's omnichannel speed and conversational improvements will unlock a wave of new B2B applications, and that metering model usage with best-in-class dev tools represents a more attractive business model than B2C subscriptions.",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks argues GPT-4o's multimodal speed and capabilities will unlock a wave of new applications and that monetizing the API/developer ecosystem (B2B) is a more attractive business model than B2C subscriptions, pointing to a strong revenue path.",
     "quote": "If they're metering the usage of the models and providing the best dev tools, I think there is a business model there.",
     "quoteStartMs": 1554213,
     "topics": [
-      "B2B monetization",
-      "product innovation",
-      "AI platform"
+      "business model",
+      "B2B",
+      "AI capabilities",
+      "developer ecosystem"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E179-glue-Jason-2",
@@ -59,41 +61,43 @@
     "stance": "bull",
     "conviction": "high",
     "callType": "explicit_long",
-    "summary": "Jason declares Glue feels like a 100-bagger and announces he is moving his company to the platform, explicitly stating he is in as an investor.",
+    "excludeReason": null,
+    "scoreNote": "Explicit 'I'm in' commitment; calls it a 100-bagger",
+    "summary": "Jason declares he is moving his company to Glue, calls it a Slack killer, and says it feels like a 100-bagger, committing to invest.",
     "quote": "It feels like a 100-bagger to me. I'm in.",
     "quoteStartMs": 1800000,
     "topics": [
       "enterprise software",
       "AI-native",
-      "Slack competitor"
+      "Slack competitor",
+      "investment"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": "Explicit 'I'm in' investment declaration with '100-bagger' valuation framing"
+    "attributionConfidence": "high"
   },
   {
-    "id": "E179-slack-Sacks-3",
+    "id": "E179-glue-Chamath-3",
     "episodeId": "E179",
     "episodeNumber": 179,
     "episodeDate": "2024-05-17T20:23:00.000Z",
-    "company": "Slack",
+    "company": "Glue",
     "ticker": null,
     "isPublic": false,
-    "host": "Sacks",
-    "stance": "bear",
-    "conviction": "high",
-    "callType": "view",
-    "summary": "Sacks argues Slack was not built for the AI era, making it structurally obsolete compared to AI-native competitors like Glue.",
-    "quote": "Slack wasn't built for the AI era. Glue is AI native.",
-    "quoteStartMs": 1841164,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "callType": "explicit_long",
+    "excludeReason": null,
+    "scoreNote": "Explicit commitment to invest $1M at a 10-cap",
+    "summary": "Chamath praises Glue's no-channels design as solving a core Slack problem and announces he is investing at a $10M cap alongside Jason.",
+    "quote": "You had me at no channels.",
+    "quoteStartMs": 1849579,
     "topics": [
-      "competitive disruption",
+      "enterprise software",
       "AI-native",
-      "enterprise software"
+      "Slack competitor",
+      "investment"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": "not_investment_call",
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E179-duol-Jason-4",
@@ -104,46 +108,23 @@
     "ticker": "DUOL",
     "isPublic": true,
     "host": "Jason",
-    "stance": "neutral",
+    "stance": "bear",
     "conviction": "low",
     "callType": "view",
-    "summary": "Jason quips that Duolingo's stock took a hit when GPT-4o demonstrated real-time conversational translation, implying the model threatens Duolingo's core language-learning business.",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Jason quips that Duolingo stock took a hit when GPT-4o demonstrated real-time language translation, implying the model directly threatens Duolingo's core business.",
     "quote": "I think Duolingo stock took a hit during that.",
     "quoteStartMs": 900000,
     "topics": [
-      "competitive threat",
-      "AI disruption"
+      "AI competition",
+      "language learning",
+      "disruption"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": "not_investment_call",
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E179-perplexity-Sacks-5",
-    "episodeId": "E179",
-    "episodeNumber": 179,
-    "episodeDate": "2024-05-17T20:23:00.000Z",
-    "company": "Perplexity",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Sacks",
-    "stance": "bear",
-    "conviction": "high",
-    "callType": "view",
-    "summary": "Sacks argues Perplexity is likely 'screwed' now that Google has copied its core innovation of citation-backed AI search answers, leaving acquisition as their main path forward.",
-    "quote": "Sucks for Perplexity. I think they're kind of screwed now unless they get an acquisition deal.",
-    "quoteStartMs": 5566000,
-    "topics": [
-      "competitive threat",
-      "AI search",
-      "Google disruption"
-    ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E179-googl-Chamath-6",
+    "id": "E179-googl-Chamath-5",
     "episodeId": "E179",
     "episodeNumber": 179,
     "episodeDate": "2024-05-17T20:23:00.000Z",
@@ -154,21 +135,21 @@
     "stance": "bull",
     "conviction": "high",
     "callType": "view",
-    "summary": "Chamath reverses his prior bearish Google view, arguing that AI Overviews strengthens their core search and that hidden assets like Isomorphic Labs represent massive unrealized value optionality embedded in the stock.",
-    "quote": "The reports of their death were premature and exaggerated... if you fold that back into a Google, if you think about what they're doing now on the search side, these guys may be really kicking some ass here.",
-    "quoteStartMs": 5143994,
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath reverses his bearish Google view, arguing that Google's AI Overviews search product and hidden assets like Isomorphic Labs (a potential multi-hundred-billion-dollar company) mean the reports of Google's death were premature and the stock could be significantly undervalued.",
+    "quote": "I think Google thing is pretty special between last week's announcement of Isomorphic Labs, which let's be honest, that's just a multi-hundred billion dollar company... the reports of their death were premature and exaggerated.",
+    "quoteStartMs": 5079000,
     "topics": [
-      "valuation",
       "AI search",
       "hidden assets",
-      "re-underwriting"
+      "re-underwriting",
+      "valuation"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E179-googl-Friedberg-7",
+    "id": "E179-googl-Friedberg-6",
     "episodeId": "E179",
     "episodeNumber": 179,
     "episodeDate": "2024-05-17T20:23:00.000Z",
@@ -179,20 +160,21 @@
     "stance": "bull",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Friedberg argues Google's AI Overviews will keep users on-page longer, increasing both search volume and revenue-per-query, while hidden assets like Isomorphic Labs — which peers like Meta and Amazon lack — represent additional upside options the market is undervaluing.",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg argues Google's AI-powered search overviews will increase search volume, improve revenue per query by keeping users on-page, and that hidden assets like Isomorphic Labs and Waymo represent call options not reflected in precision-focused hedge fund analyses.",
     "quote": "Meta and Amazon do not have an isomorphics lab and Waymo sitting inside their business that suddenly pops to a couple hundred billion of market cap. And Google does have a few of those.",
     "quoteStartMs": 5378000,
     "topics": [
-      "AI search monetization",
+      "AI search",
       "hidden assets",
-      "competitive moat"
+      "revenue per query",
+      "valuation"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E179-googl-Sacks-8",
+    "id": "E179-googl-Sacks-7",
     "episodeId": "E179",
     "episodeNumber": 179,
     "episodeDate": "2024-05-17T20:23:00.000Z",
@@ -203,17 +185,43 @@
     "stance": "bull",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Sacks argues Google's monopoly is so durable it can absorb major AI missteps and ultimately copy innovators like Perplexity to dominate AI search, potentially growing into a $5 trillion company.",
-    "quote": "They can make 10 mistakes, but their monopoly is so strong that they can finally get it right by copying the innovator. And they're probably gonna become a $5 trillion company now.",
-    "quoteStartMs": 5674000,
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks argues Google's monopoly is so strong it can absorb multiple AI missteps and still win by copying innovators like Perplexity; the Gemini-powered OneBox will likely make Google Search more useful and could drive the company toward a $5 trillion market cap.",
+    "quote": "Their monopoly is so strong that they can finally get it right by copying the innovator. And they're probably gonna become a $5 trillion company now.",
+    "quoteStartMs": 5677630,
     "topics": [
-      "competitive moat",
       "AI search",
+      "monopoly",
+      "competitive position",
       "valuation"
     ],
-    "attributionConfidence": "high",
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E179-perplexity-Sacks-8",
+    "episodeId": "E179",
+    "episodeNumber": 179,
+    "episodeDate": "2024-05-17T20:23:00.000Z",
+    "company": "Perplexity",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bear",
+    "conviction": "medium",
+    "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Sacks argues that Google has copied Perplexity's core innovation of citation-based AI search results, effectively killing Perplexity's standalone value proposition and leaving it without a path forward unless acquired.",
+    "quote": "Sucks for Perplexity. I think they're kind of screwed now unless they get an acquisition deal.",
+    "quoteStartMs": 5566000,
+    "topics": [
+      "AI search",
+      "competitive threat",
+      "Google",
+      "M&A"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E179-ohalo-genetics-Friedberg-9",
@@ -224,24 +232,48 @@
     "ticker": null,
     "isPublic": false,
     "host": "Friedberg",
-    "stance": "neutral",
+    "stance": "bull",
     "conviction": "high",
-    "callType": "explicit_long",
-    "summary": "Friedberg, co-founder and investor, presents Ohalo's boosted breeding technology showing 50-100%+ crop yield gains and new seed market opportunities, arguing the company's trade secrets and compounding genetics moat make it a highly valuable deep-tech agricultural business.",
-    "quote": "We've invested a ton of money. This was stealth for 5 years. We put a ton of money into this business. So when you invest that, um, I mean north of 50.",
-    "quoteStartMs": 3074000,
-    "topics": [
-      "deep tech",
-      "agriculture",
-      "IP moat",
-      "yield improvement"
-    ],
-    "attributionConfidence": "high",
+    "callType": "view",
     "excludeReason": null,
-    "scoreNote": "Founder/investor with stated $50M+ capital invested; explicit ownership position"
+    "scoreNote": null,
+    "summary": "Friedberg reveals Ohalo's 'boosted breeding' technology achieves 50-100%+ crop yield gains by enabling plants to pass 100% of their genes to offspring, creating defensible moats through trade secrets and continuously improving variety genetics with massive addressable markets across global agriculture.",
+    "quote": "The yield on some of these plants goes up by 50 to 100% or more... we are seeing 50 to 100% jump in the size of these plants. It's pretty incredible.",
+    "quoteStartMs": 2607620,
+    "topics": [
+      "agtech",
+      "breakthrough technology",
+      "yield improvement",
+      "moat"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E179-athena-athenawow-Jason-10",
+    "id": "E179-ohalo-genetics-Chamath-10",
+    "episodeId": "E179",
+    "episodeNumber": 179,
+    "episodeDate": "2024-05-17T20:23:00.000Z",
+    "company": "Ohalo Genetics",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "callType": "explicit_long",
+    "excludeReason": null,
+    "scoreNote": "Explicit commitment to invest $1M at a 10-cap in Ohalo alongside Glue",
+    "summary": "Chamath is so impressed by Ohalo's boosted breeding breakthrough that he commits to invest $1M at a $10M cap alongside Jason.",
+    "quote": "Freeberg is solving the world's hunger problem",
+    "quoteStartMs": 3682000,
+    "topics": [
+      "agtech",
+      "seed investment",
+      "yield improvement"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E179-athena-athenawow-Jason-11",
     "episodeId": "E179",
     "episodeNumber": 179,
     "episodeDate": "2024-05-17T20:23:00.000Z",
@@ -252,16 +284,17 @@
     "stance": "bull",
     "conviction": "high",
     "callType": "explicit_long",
-    "summary": "Jason made his largest-ever investment in Athena, citing growth faster than Uber and Robinhood at comparable stages, driven by a capital-efficient virtual EA/operations model that is already saving his fund 75% on staffing costs.",
-    "quote": "It's the fastest growing company I've ever seen, and I'm including Uber in that... it has been growing at a rate that I'll just say is faster than Uber and Robinhood when we were investing in them.",
+    "excludeReason": null,
+    "scoreNote": "Jason states this is his largest-ever investment, a 7-figure bet",
+    "summary": "Jason discloses his largest-ever investment in Athena, a virtual EA/operations service growing faster than Uber and Robinhood at comparable stages, citing dramatic cost reduction and productivity gains for his own team.",
+    "quote": "It's the fastest growing company I've ever seen, and I'm including Uber in that... It has been growing at a rate that I'll just say is faster than Uber and Robinhood when we were investing in them.",
     "quoteStartMs": 4483000,
     "topics": [
-      "growth trajectory",
-      "unit economics",
-      "future of work"
+      "future of work",
+      "AI-enabled services",
+      "growth",
+      "seed investment"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": "Explicit largest-ever investment disclosure; bull conviction backed by growth comparison"
+    "attributionConfidence": "high"
   }
 ]

@@ -1,31 +1,6 @@
 [
   {
-    "id": "E268-anthropic-Chamath-0",
-    "episodeId": "E268",
-    "episodeNumber": 268,
-    "episodeDate": "2026-04-10T22:17:00.000Z",
-    "company": "Anthropic",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Chamath",
-    "stance": "bull",
-    "conviction": "high",
-    "summary": "Chamath is bullish on Anthropic's business execution and market position, calling them the clear leader in AI coding with ~50-60% market share, while noting the revenue ramp is impressive even if profitability metrics remain unclear.",
-    "quote": "Anthropic is shooting the lights out right now. This is like Steph Curry going bananas from everywhere on the court. These guys are hucking threes.",
-    "quoteStartMs": 1023394,
-    "topics": [
-      "market share",
-      "revenue growth",
-      "AI coding",
-      "competitive position"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E268-anthropic-Guest-1",
+    "id": "E268-anthropic-Guest-0",
     "episodeId": "E268",
     "episodeNumber": 268,
     "episodeDate": "2026-04-10T22:17:00.000Z",
@@ -35,20 +10,44 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Brian Gerstner is highly bullish on Anthropic, citing the fastest revenue ramp in tech history, explosive gross margin expansion, compute-constrained growth suggesting potential accidental profitability, and a projected $80-100B revenue run rate by year-end, with Altimeter holding billions in the company.",
+    "callType": "explicit_long",
+    "excludeReason": null,
+    "scoreNote": "Gerstner states he is a buyer of both Anthropic and OpenAI shares today; invested at $130-150B valuation, projects 5-7x",
+    "summary": "Brad Gerstner, an investor in Anthropic, argues the company has achieved the fastest revenue ramp in tech history, with margins expanding rapidly and massive compute constraints the only governor on growth, projecting $80-100B exit run rate by end of year, and considers Anthropic shares a buy.",
     "quote": "I would not be shocked if you see Anthropic exiting this year at $80 to $100 billion in revenue.",
     "quoteStartMs": 2897440,
     "topics": [
       "revenue growth",
-      "valuation",
-      "gross margins",
-      "AI coding"
+      "AI valuation",
+      "enterprise adoption",
+      "coding dominance"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Brad Gerstner",
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E268-anthropic-Chamath-1",
+    "episodeId": "E268",
+    "episodeNumber": 268,
+    "episodeDate": "2026-04-10T22:17:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath praises Anthropic's go-to-market execution and market leadership in coding, but cautions that the revenue figures conflate gross and net metrics, profitability is far off, and the overall AI-enabled coding market remains small relative to the total tech debt opportunity.",
+    "quote": "Anthropic is shooting the lights out right now. This is like Steph Curry going bananas from everywhere on the court. These guys are hucking threes.",
+    "quoteStartMs": 1023394,
+    "topics": [
+      "revenue growth",
+      "market share",
+      "profitability",
+      "AI coding"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E268-anthropic-Sacks-2",
@@ -61,19 +60,19 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Sacks is bullish on Anthropic, arguing their dominant 50%+ share of coding tokens could create a compounding data flywheel, and that their fastest-ever revenue ramp at scale validates the AI investment thesis broadly.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks argues Anthropic has dominant market share in coding tokens (50%+), is seeing the fastest revenue growth rate ever recorded at scale, and that a potential flywheel from data scale effects could consolidate their early lead, though they must avoid anti-competitive behavior.",
     "quote": "Anthropic's revenue run rate is, based on what I can tell and what's been publicly released, is the fastest growing revenue run rate at scale that I think we've ever seen.",
-    "quoteStartMs": 2453897,
+    "quoteStartMs": 2454000,
     "topics": [
       "revenue growth",
       "market share",
-      "data flywheel",
-      "AI coding"
+      "coding dominance",
+      "flywheel"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E268-openai-Guest-3",
@@ -86,47 +85,21 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Gerstner remains a buyer of OpenAI shares despite current negative vibes, citing the imminent SpUD model launch as an Anthropic-level competitor, Codex's rapid ramp, and the view that OpenAI is firmly on the AI revenue wave in the world's largest TAM.",
+    "callType": "explicit_long",
+    "excludeReason": null,
+    "scoreNote": "Explicit buy statement; Gerstner states 'billions in both companies'",
+    "summary": "Brad Gerstner says he is a buyer of OpenAI shares today despite current negative vibes, citing the imminent SpUD model release (reportedly on par with Mythos), Codex's fast ramp, and OpenAI's position on the AI wave into a near-infinite TAM.",
     "quote": "I'm a buyer of the shares today, notwithstanding all of the vibes that you describe. I think these companies are firmly on the wave.",
     "quoteStartMs": 3654234,
     "topics": [
-      "valuation",
+      "AI valuation",
       "model competition",
-      "revenue growth",
-      "secondary market"
+      "enterprise adoption"
     ],
-    "attributionConfidence": "high",
-    "callType": "explicit_long",
-    "guestName": "Brad Gerstner",
-    "excludeReason": null,
-    "scoreNote": "Brad Gerstner said he is a buyer of OpenAI shares today"
+    "attributionConfidence": "high"
   },
   {
-    "id": "E268-pltr-Sacks-4",
-    "episodeId": "E268",
-    "episodeNumber": 268,
-    "episodeDate": "2026-04-10T22:17:00.000Z",
-    "company": "Palantir",
-    "ticker": "PLTR",
-    "isPublic": true,
-    "host": "Sacks",
-    "stance": "bull",
-    "conviction": "low",
-    "summary": "Sacks cites Palantir as an example of an application-layer company already being turbocharged by AI model capabilities, suggesting it may be a winner in the question of where AI value is captured in the stack.",
-    "quote": "I guess you could say that Palantir is already one of them, right? It's an application company that's been turbocharged by these model capabilities.",
-    "quoteStartMs": 3959384,
-    "topics": [
-      "AI value capture",
-      "application layer",
-      "competitive position"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E268-meta-Chamath-5",
+    "id": "E268-meta-Chamath-4",
     "episodeId": "E268",
     "episodeNumber": 268,
     "episodeDate": "2026-04-10T22:17:00.000Z",
@@ -134,24 +107,23 @@
     "ticker": "META",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath argues Meta's massive compute infrastructure gives it a structural advantage in AI, enabling highly performant models, and that Meta — alongside Google — will strategically push AI to be a capital-intensive compute problem where they can dominate due to their fortress balance sheets.",
-    "quote": "Meta's models today, what people's general reviews are, it's okay, but the one thing that people say is it's incredibly performant. The model quality is okay, but the performance is great, which speaks to Meta's huge advantage. They have a ",
-    "quoteStartMs": 3189371,
-    "topics": [
-      "AI compute",
-      "competitive moat",
-      "capital advantage",
-      "infrastructure"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues Meta's massive compute infrastructure gives it a structural competitive advantage in AI, allowing it to win if the AI race becomes a capital/compute problem, which Meta can control given its fortress balance sheet.",
+    "quote": "If you're not OpenAI and Anthropic, they'll want to make this a capital problem because then they can win it... Meta's models today, the one thing that people say is it's incredibly performant... which speaks to Meta's huge advantage. They",
+    "quoteStartMs": 3204152,
+    "topics": [
+      "AI competition",
+      "compute advantage",
+      "capital strength"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E268-x-twitter-Guest-6",
+    "id": "E268-x-twitter-Guest-7",
     "episodeId": "E268",
     "episodeNumber": 268,
     "episodeDate": "2026-04-10T22:17:00.000Z",
@@ -159,20 +131,19 @@
     "ticker": null,
     "isPublic": false,
     "host": "Guest",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Gerstner argues X is a proof point that companies can do more with far fewer employees — 70% headcount reduction while the product is better than ever — making it a model for enterprise efficiency in the AI era.",
-    "quote": "X is better today than it's ever been. And remember, they have 70% fewer employees than they had the day Elon walked into the building.",
-    "quoteStartMs": 5066000,
-    "topics": [
-      "operational efficiency",
-      "AI-driven productivity",
-      "headcount reduction"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Brad Gerstner",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Brad Gerstner argues X is better than ever with 70% fewer employees, demonstrating that AI enables companies to do more with less — a proof point that peak employment has been reached at tech firms, making X a poster child for efficiency.",
+    "quote": "X is better today than it's ever been. And remember, they have 70% fewer employees than they had the day Elon walked into the building... every other company in Silicon Valley is looking at that.",
+    "quoteStartMs": 5066000,
+    "topics": [
+      "AI productivity",
+      "operational efficiency",
+      "headcount"
+    ],
+    "attributionConfidence": "high"
   }
 ]

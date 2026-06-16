@@ -10,42 +10,43 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Sacks argues Google is uniquely positioned to dominate the personal AI assistant market because it already holds users' email, calendar, and documents — exactly the data needed to make an integrated AI agent trustworthy and powerful.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks argues Google is well-positioned to win the personal AI assistant market because it already holds users' email, calendar, and documents — exactly the data needed to power a ClaudeBot-style agent — giving it a structural advantage over rivals.",
     "quote": "I think Google is in a tremendous position to offer a personal AI assistant that's connected with your email and calendar for those of us who are using G Suite and so on.",
     "quoteStartMs": 3179058,
     "topics": [
       "AI agents",
       "competitive moat",
-      "product strategy"
+      "product"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E259-anthropic-Chamath-2",
+    "id": "E259-tsla-Friedberg-1",
     "episodeId": "E259",
     "episodeNumber": 259,
     "episodeDate": "2026-01-30T23:25:00.000Z",
-    "company": "Anthropic",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Chamath",
-    "stance": "bear",
-    "conviction": "low",
-    "summary": "Chamath notes that ClaudeBot's viral moment exposed a key vulnerability for closed-source AI companies like Anthropic: developers are one terms-of-service update away from having their integrations broken, underscoring the fragility of building on proprietary models.",
-    "quote": "What ClaudeBot demonstrated this week is you're one terms of service update away from everything breaking, right? Because at one point Anthropic didn't like what was going on and they said, no, this is not allowed.",
-    "quoteStartMs": 3532683,
-    "topics": [
-      "open source vs closed source",
-      "platform risk",
-      "AI ecosystem"
-    ],
-    "attributionConfidence": "high",
+    "company": "Tesla",
+    "ticker": "TSLA",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Friedberg highlights Tesla's FSD product as so compelling that he and his family bought multiple Model Xs, and sees the pivot of Fremont production lines to Optimus as a transformational move toward a physical AI workforce, reinforcing his bullish view on Tesla's trajectory.",
+    "quote": "a year ago I'd never owned a Tesla, and I was so blown away with FSD that in the last week we bought two more Model Xs. So now everyone in my family, we're all on Tesla because the experience is so good. But they're shutting down the Model",
+    "quoteStartMs": 3316042,
+    "topics": [
+      "FSD",
+      "Optimus",
+      "product",
+      "AI"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E259-openai-Jason-3",
@@ -56,45 +57,20 @@
     "ticker": null,
     "isPublic": false,
     "host": "Jason",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Jason signals a shift away from OpenAI, canceling $25,000 in subscriptions in favor of open-source models run on local hardware, citing cost, data control, and the improving quality of open-source alternatives as reasons the economics no longer favor closed models.",
-    "quote": "What's going to happen is 90% or 95% of our jobs are going to go to this local hardware. We'll control it. We don't have to worry about our information going up to Sam Altman. I canceled— well, you know, I canceled all of my OpenAI accounts. $25,000 gone.",
-    "quoteStartMs": 3743039,
-    "topics": [
-      "open source",
-      "competitive threat",
-      "AI economics"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
+    "callType": "explicit_exit",
     "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E259-moonshot-ai-kimi-Chamath-4",
-    "episodeId": "E259",
-    "episodeNumber": 259,
-    "episodeDate": "2026-01-30T23:25:00.000Z",
-    "company": "Moonshot AI (Kimi)",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Chamath",
-    "stance": "bull",
-    "conviction": "high",
-    "summary": "Chamath argues that Kimi K2.5's trillion-parameter open-source mixture-of-experts model with Agent Swarm is a watershed moment for open-source AI, capable of democratizing high-end reasoning and cutting the cost of AI by 90%, representing a credible shot across the bow at closed-source incumbents.",
-    "quote": "I think there is the clear shot across the bow of closed source, and I think open source can win... because when KIMI 2.5 is accessible, it democratizes something, this trillion-parameter reasoning that right now you could not otherwise get.",
-    "quoteStartMs": 3632217,
+    "scoreNote": "Speaker states he exited/canceled paid accounts, explicitly triggered by open-source alternatives.",
+    "summary": "Jason says he canceled all of his OpenAI accounts, citing the rise of open-source alternatives like Kimi K2.5 that can run locally without sending data to OpenAI, signaling he sees diminishing value in OpenAI's paid offerings.",
+    "quote": "I canceled— well, you know, I canceled all of my OpenAI accounts. $25,000 gone.",
+    "quoteStartMs": 3754000,
     "topics": [
-      "open source AI",
-      "cost disruption",
-      "competitive dynamics",
-      "agentic AI"
+      "open source competition",
+      "AI costs",
+      "competitive threat"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E259-cper-Chamath-a0",
@@ -107,21 +83,42 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Chamath boasts that his copper prediction is paying off, noting copper is up 26% in a month, and frames it as a personal call he made that is now coming true.",
+    "callType": "view",
+    "summary": "Chamath highlights copper is up 26% in a month, citing it as one of his predictions coming true and joking he's about to retire off it.",
     "quote": "Between this and my copper prediction, I'm about to retire. You know copper's up 26% in a month? Oof. Oofa. What is that as an annualized IRR?",
     "quoteStartMs": 3362028,
     "topics": [
       "price momentum",
-      "prediction",
-      "returns"
+      "prediction validation",
+      "commodities rally"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E259-gld-Friedberg-a1",
+    "id": "E259-gld-Jason-a1",
+    "episodeId": "E259",
+    "episodeNumber": 259,
+    "episodeDate": "2026-01-30T23:25:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "summary": "Jason notes gold has ripped alongside a weakening dollar and has way outperformed the S&P, framing it as a beneficiary of dollar devaluation and money printing.",
+    "quote": "The dollar has dropped as gold and silver and copper have ripped... money has poured into gold and silver, which have way outperformed the S&P.",
+    "quoteStartMs": 4198228,
+    "topics": [
+      "dollar devaluation",
+      "money printing",
+      "safe haven",
+      "outperformance vs S&P"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E259-gld-Friedberg-a3",
     "episodeId": "E259",
     "episodeNumber": 259,
     "episodeDate": "2026-01-30T23:25:00.000Z",
@@ -131,48 +128,21 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Friedberg argues that gold has eclipsed US Treasuries as the largest share of central bank holdings, that the stock market is down when measured in gold terms, and frames gold as the key beneficiary of dollar devaluation and de-dollarization.",
-    "quote": "We now see gold eclipsing US Treasury... gold is a larger share of the holdings... if you look at the stock market relative to gold, it's actually down.",
+    "callType": "view",
+    "summary": "Friedberg argues that central banks are shifting from US Treasuries into gold, with gold now eclipsing Treasuries as the largest share of central bank holdings, and that the stock market is actually down when measured in gold terms — framing gold as the real store of value amid dollar devaluation.",
+    "quote": "We now see gold eclipsing US Treasury... gold is a larger share of the holdings. So now the gold is the largest share of the holdings of central banks... the stock markets in the United States over the past years is actually down... if you look at the stock market relative to gold, it's actually down.",
     "quoteStartMs": 4404293,
     "topics": [
+      "central bank demand",
       "de-dollarization",
-      "central banks",
+      "store of value",
       "dollar devaluation",
-      "money supply",
-      "gold standard"
+      "gold vs treasuries"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E259-gld-Jason-a2",
-    "episodeId": "E259",
-    "episodeNumber": 259,
-    "episodeDate": "2026-01-30T23:25:00.000Z",
-    "company": "Gold",
-    "ticker": "GLD",
-    "isPublic": true,
-    "host": "Jason",
-    "stance": "bull",
-    "conviction": "medium",
-    "summary": "Jason notes that gold and silver have ripped as the dollar has dropped to a 4-year low, and that money has poured into gold and silver, which have way outperformed the S&P.",
-    "quote": "The dollar has dropped as gold and silver and copper have ripped... money has poured into gold and silver, which have way outperformed the S&P.",
-    "quoteStartMs": 4198228,
-    "topics": [
-      "dollar weakness",
-      "money printing",
-      "outperformance",
-      "inflation"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E259-slv-Jason-a3",
+    "id": "E259-slv-Jason-a2",
     "episodeId": "E259",
     "episodeNumber": 259,
     "episodeDate": "2026-01-30T23:25:00.000Z",
@@ -180,20 +150,18 @@
     "ticker": "SLV",
     "isPublic": true,
     "host": "Jason",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Jason notes that silver has ripped alongside gold and copper as the dollar dropped, and that money has poured into silver, outperforming the S&P.",
+    "callType": "view",
+    "summary": "Jason notes silver has ripped alongside gold and the falling dollar and has way outperformed the S&P, framing it as a beneficiary of dollar devaluation.",
     "quote": "The dollar has dropped as gold and silver and copper have ripped... money has poured into gold and silver, which have way outperformed the S&P.",
     "quoteStartMs": 4198228,
     "topics": [
-      "dollar weakness",
+      "dollar devaluation",
       "money printing",
-      "outperformance",
-      "inflation"
+      "inflation hedge",
+      "silver outperformance"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]
