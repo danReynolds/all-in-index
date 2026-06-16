@@ -762,5 +762,13 @@
   "rtx": {
     "description": "RTX develops and manufactures aerospace and defense systems, including jet engines, missiles, and radar technologies.",
     "domain": "rtx.com"
+  },
+  "sequoia-capital-stripe-secondary-transaction": {
+    "description": "Sequoia Capital is a venture capital firm; this represents a secondary transaction in Stripe, the payments company.",
+    "domain": "sequoiacap.com"
+  },
+  "big-tech-microsoft-google-amazon": {
+    "description": "A grouped position representing exposure to Microsoft, Google, and Amazon, three major global technology conglomerates.",
+    "domain": null
   }
 }

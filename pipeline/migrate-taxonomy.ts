@@ -120,6 +120,10 @@ function migrateTake(t: LegacyThesis, mismatches: Mismatch[]): Thesis {
 
 function main() {
   const write = process.argv.includes("--write");
+  // --holdings-only re-applies the migration to holdings.json alone — used when
+  // resolving a merge against a freshly-rebuilt (old-shape) holdings.json while
+  // the per-episode files are already migrated.
+  const holdingsOnly = process.argv.includes("--holdings-only");
   const mismatches: Mismatch[] = [];
   let takes = 0;
   let scored = 0;
@@ -129,55 +133,64 @@ function main() {
   // Migrate each per-episode file (in memory first).
   const episodeIds = store.listEpisodeIds();
   const migratedByEpisode = new Map<string, Thesis[]>();
-  for (const id of episodeIds) {
-    const theses = store.loadTheses(id) as unknown as LegacyThesis[];
-    const migrated = theses.map((t) => {
-      const m = migrateTake(t, mismatches);
-      takes++;
-      if (isPortfolioScored(m)) scored++;
-      callTypeCounts[m.callType ?? "view"] = (callTypeCounts[m.callType ?? "view"] ?? 0) + 1;
-      if (m.excludeReason) excludeCounts[m.excludeReason] = (excludeCounts[m.excludeReason] ?? 0) + 1;
-      return m;
-    });
-    migratedByEpisode.set(id, migrated);
-  }
-
-  console.log(`Scanned ${takes} takes across ${episodeIds.length} episodes.`);
-  console.log(`  scored calls: ${scored}  (${takes - scored} views)`);
-  console.log(`  callType: ${JSON.stringify(callTypeCounts)}`);
-  console.log(`  excludeReason: ${Object.keys(excludeCounts).length ? JSON.stringify(excludeCounts) : "none"}`);
-
-  if (mismatches.length) {
-    console.error(`\n✖ ${mismatches.length} takes would change scoring behavior — NOT writing:`);
-    for (const m of mismatches.slice(0, 40)) {
-      console.error(`  ${m.id}  ${m.field}: ${JSON.stringify(m.old)} → ${JSON.stringify(m.next)}`);
+  if (!holdingsOnly) {
+    for (const id of episodeIds) {
+      const theses = store.loadTheses(id) as unknown as LegacyThesis[];
+      const migrated = theses.map((t) => {
+        const m = migrateTake(t, mismatches);
+        takes++;
+        if (isPortfolioScored(m)) scored++;
+        callTypeCounts[m.callType ?? "view"] = (callTypeCounts[m.callType ?? "view"] ?? 0) + 1;
+        if (m.excludeReason) excludeCounts[m.excludeReason] = (excludeCounts[m.excludeReason] ?? 0) + 1;
+        return m;
+      });
+      migratedByEpisode.set(id, migrated);
     }
-    process.exit(1);
-  }
-  console.log("\n✓ every take's isPortfolioScored + tradeDirection is unchanged.");
 
-  if (!write) {
-    console.log("\nDry run. Re-run with --write to apply.");
-    return;
-  }
+    console.log(`Scanned ${takes} takes across ${episodeIds.length} episodes.`);
+    console.log(`  scored calls: ${scored}  (${takes - scored} views)`);
+    console.log(`  callType: ${JSON.stringify(callTypeCounts)}`);
+    console.log(`  excludeReason: ${Object.keys(excludeCounts).length ? JSON.stringify(excludeCounts) : "none"}`);
 
-  for (const [id, migrated] of migratedByEpisode) store.saveTheses(id, migrated);
+    if (mismatches.length) {
+      console.error(`\n✖ ${mismatches.length} takes would change scoring behavior — NOT writing:`);
+      for (const m of mismatches.slice(0, 40)) {
+        console.error(`  ${m.id}  ${m.field}: ${JSON.stringify(m.old)} → ${JSON.stringify(m.next)}`);
+      }
+      process.exit(1);
+    }
+    console.log("\n✓ every take's isPortfolioScored + tradeDirection is unchanged.");
+
+    if (!write) {
+      console.log("\nDry run. Re-run with --write to apply.");
+      return;
+    }
+
+    for (const [id, migrated] of migratedByEpisode) store.saveTheses(id, migrated);
+  } else {
+    console.log("holdings-only mode: skipping per-episode files.");
+  }
 
   // Migrate the embedded copies in holdings.json the same way.
   if (fs.existsSync(HOLDINGS_FILE)) {
     const snapshot: IndexSnapshot = JSON.parse(fs.readFileSync(HOLDINGS_FILE, "utf8"));
     const sink: Mismatch[] = [];
+    let embedded = 0;
     for (const h of snapshot.holdings) {
-      h.theses = (h.theses as unknown as LegacyThesis[]).map((t) => migrateTake(t, sink));
+      h.theses = (h.theses as unknown as LegacyThesis[]).map((t) => {
+        embedded++;
+        return migrateTake(t, sink);
+      });
     }
     if (sink.length) {
       console.error(`✖ holdings.json had ${sink.length} mismatches — aborting before write.`);
       process.exit(1);
     }
-    fs.writeFileSync(HOLDINGS_FILE, JSON.stringify(snapshot, null, 2) + "\n");
+    console.log(`holdings.json: ${embedded} embedded takes migrated, 0 scoring mismatches.`);
+    if (write) fs.writeFileSync(HOLDINGS_FILE, JSON.stringify(snapshot, null, 2) + "\n");
   }
 
-  console.log("✓ wrote per-episode files + holdings.json.");
+  console.log(write ? "✓ wrote." : "✓ dry run — no files written.");
 }
 
 main();
