@@ -20,7 +20,9 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E220-googl-Friedberg-1",
@@ -43,7 +45,9 @@
       "ROIC"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E220-spacex-Chamath-2",
@@ -65,7 +69,9 @@
       "cost advantage"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E220-spacex-Friedberg-3",
@@ -87,7 +93,9 @@
       "US-China competition"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E220-ba-Guest-4",
@@ -109,8 +117,10 @@
       "execution"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Cyan Banister"
+    "guestName": "Cyan Banister",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E220-tsla-Chamath-5",
@@ -131,7 +141,9 @@
       "sentiment"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E220-pltr-Chamath-6",
@@ -153,7 +165,9 @@
       "growth catalyst"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E220-gld-Jason-a0",
@@ -166,7 +180,6 @@
     "host": "Jason",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "summary": "Jason uses 'gold' purely as a metaphor for alpha in non-consensus bets — no price or investment direction on the commodity itself.",
     "quote": "that's where the gold is, is that non-consensus bet. When you and I did Uber, it was a room of 21 people.",
     "quoteStartMs": 1858820,
@@ -174,6 +187,9 @@
       "venture capital",
       "non-consensus investing"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

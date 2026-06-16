@@ -20,7 +20,9 @@
       "capital deployment"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E197-openai-Sacks-1",
@@ -43,7 +45,9 @@
       "revenue growth"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E197-openai-Chamath-2",
@@ -66,7 +70,9 @@
       "open source"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E197-meta-Sacks-3",
@@ -89,7 +95,9 @@
       "open source"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E197-pltr-Sacks-4",
@@ -112,7 +120,9 @@
       "data integration"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E197-crm-Chamath-5",
@@ -135,6 +145,8 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

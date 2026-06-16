@@ -10,13 +10,7 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Chamath argues Anthropic's revenue growth is purely supply-constrained, not demand-limited, and that with the new compute from the xAI deal, its 5-year trajectory is extremely robust and likely to be even more parabolic.",
     "quote": "Anthropic and OpenAI's revenue performance has nothing to do with demand. Zero. It is entirely to do with the supply constraints that exist in data centers and specifically in power. If they had infinite power, I think that their revenues",
     "quoteStartMs": 369753,
@@ -25,7 +19,9 @@
       "revenue growth",
       "AI infrastructure"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E272-anthropic-Sacks-1",
@@ -38,13 +34,7 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Sacks argues Anthropic's unprecedented 10x annual growth rate — tripling ARR in Q1 and accelerating further in April — combined with new compute from the xAI deal makes it virtually certain to hit ~$100B ARR by year-end, and potentially the most valuable company in history if the trajectory holds for 18 more months.",
     "quote": "Exiting the year at, call it, roughly $100 billion of ARR. And now the only question is whether they hit a trillion in 2027... if they do that, I think they'll easily be the most valuable tech company in history.",
     "quoteStartMs": 917000,
@@ -53,7 +43,9 @@
       "valuation",
       "AI market dominance"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E272-anthropic-Guest-2",
@@ -66,13 +58,7 @@
     "host": "Guest",
     "stance": "neutral",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Brad Gerstner sees Anthropic on a clear exponential revenue trajectory that not many believed in 4 months ago, with the compute constraint now being resolved, though he tempers Sacks's trillion-dollar forecast by noting the compute math makes single-company dominance at that scale difficult.",
     "quote": "I totally agree with you— is on an exponential, um, that not many people believed in 4 months ago, right?",
     "quoteStartMs": 1063000,
@@ -81,7 +67,9 @@
       "compute",
       "AI competition"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E272-spacex-Chamath-3",
@@ -94,13 +82,7 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Chamath argues the xAI/Anthropic hyperscaler deal blunts the bear case on SpaceX's valuation by establishing a structural terrestrial compute business that subsidizes Grok training and reduces dependence on the orbital data center timeline, reinforcing the IPO valuation story.",
     "quote": "By actually landing a bunch of terrestrial capacity, I think you start to blunt that because you can now start to say that even if the orbital data centers get delayed... he now has a structural core business that will effectively",
     "quoteStartMs": 475218,
@@ -110,7 +92,9 @@
       "IPO",
       "AI infrastructure"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E272-spacex-Guest-4",
@@ -123,13 +107,7 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Brad Gerstner argues SpaceX's EWS hyperscaler business will generate $4–5B in incremental revenue this year on top of existing estimates, justifying a 40–50x revenue multiple at IPO, and that Elon's unique innovation pipeline makes SpaceX the only company that can command that multiple.",
     "quote": "This is going to generate in this year an incremental $4 to $5 billion of revenue... This is why the SpaceX IPO is gonna trade at 40 to 50 times revenue... there's only one person on the planet who has a future pipeline of innovation and",
     "quoteStartMs": 580716,
@@ -139,7 +117,9 @@
       "hyperscaler",
       "revenue"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E272-spacex-Sacks-5",
@@ -152,13 +132,7 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Sacks argues the Anthropic compute deal solves xAI's core financial problem — massive unrecouped CapEx while waiting for model revenue — by monetizing existing infrastructure, turning a balance-sheet liability into a hyperscaler revenue stream.",
     "quote": "Elon's now able to have a frontier model company, but he's able to now not have these massive unpaid-for CapEx commitments... because he's able to kind of lease that capacity. So I think it solves a major problem for them and their balance",
     "quoteStartMs": 800000,
@@ -168,7 +142,9 @@
       "capex",
       "revenue"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E272-aapl-Jason-6",
@@ -181,13 +157,7 @@
     "host": "Jason",
     "stance": "bear",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Jason argues Apple is being penalized in its valuation because Tim Cook's tenure has produced no major product innovation — pointing to Apple TV as the biggest swing — and the company shut down its most innovative efforts in AI and self-driving cars.",
     "quote": "If you look at their track record... they have not done anything innovative. And in fact, the things they were doing that were innovating in AI or self-driving cars, they shut down. They won't take any swings for the bat, so they are",
     "quoteStartMs": 1553000,
@@ -196,7 +166,9 @@
       "innovation",
       "competitive position"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E272-aapl-Chamath-7",
@@ -209,13 +181,7 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Chamath disagrees that Apple is penalized in valuation, arguing it trades at fairly rich multiples alongside Google, Meta, and Amazon — the real story is that Elon's companies get an additional premium for innovation, not that the others are discounted.",
     "quote": "There is no world in which Google and Meta and Apple and Amazon could be viewed as being penalized in valuation. There is very clearly a world where Elon gets a massive premium because he's innovating.",
     "quoteStartMs": 1585000,
@@ -223,7 +189,9 @@
       "valuation",
       "innovation premium"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E272-googl-Guest-8",
@@ -236,13 +204,7 @@
     "host": "Guest",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Brad Gerstner highlights Google Cloud's stunning 63% growth and notes that with Meta trading at 17x GAAP earnings and Google at 24x, these are not bubble valuations — the market is pricing in durable AI-driven expansion without excess.",
     "quote": "Google Cloud stunning everybody with 63% growth... Meta's trading at 17 times fully taxed GAAP earnings. NVIDIA at 19 times, Microsoft at 20 times, Google at 24 times... This is not the stuff that bubbles are made of.",
     "quoteStartMs": 3652202,
@@ -251,7 +213,9 @@
       "valuation",
       "AI revenue"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E272-nvda-Guest-9",
@@ -264,13 +228,7 @@
     "host": "Guest",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Brad Gerstner argues NVIDIA at 19x fully-taxed GAAP earnings is not bubble territory, positioning it as fairly valued given the ongoing AI infrastructure buildout.",
     "quote": "NVIDIA at 19 times, Microsoft at 20 times, Google at 24 times. And then the memory stocks that everybody's excited about, we have 25% of our portfolio in. SK Hynix, 5 times fully taxed GAAP earnings... This is not the stuff that bubbles",
     "quoteStartMs": 3734982,
@@ -279,7 +237,9 @@
       "AI capex",
       "semiconductors"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E272-mu-Guest-10",
@@ -292,13 +252,7 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "pairTradeId": null,
-    "scoreReason": "Explicit portfolio ownership — 'we have 25% of our portfolio in' memory stocks including Micron",
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Brad Gerstner is explicitly long memory stocks including Micron at 7x fully-taxed GAAP earnings, describing them as 25% of his portfolio and far from bubble territory given AI-driven demand.",
     "quote": "The memory stocks that everybody's excited about, we have 25% of our portfolio in. SK Hynix, 5 times fully taxed GAAP earnings. Samsung, 6 times. Micron, 7 times, right? This is not the stuff that bubbles are made of.",
     "quoteStartMs": 3740305,
@@ -308,7 +262,9 @@
       "memory semiconductors",
       "portfolio"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": "Explicit portfolio ownership — 'we have 25% of our portfolio in' memory stocks including Micron"
   },
   {
     "id": "E272-000660.ks-Guest-11",
@@ -321,13 +277,7 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "pairTradeId": null,
-    "scoreReason": "Explicit portfolio ownership — 'we have 25% of our portfolio in' memory stocks including SK Hynix",
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Brad Gerstner is explicitly long SK Hynix as part of a 25% portfolio allocation to memory stocks, citing 5x fully-taxed GAAP earnings as deeply cheap given AI-driven demand.",
     "quote": "The memory stocks that everybody's excited about, we have 25% of our portfolio in. SK Hynix, 5 times fully taxed GAAP earnings. Samsung, 6 times. Micron, 7 times, right? This is not the stuff that bubbles are made of.",
     "quoteStartMs": 3740305,
@@ -337,7 +287,9 @@
       "memory semiconductors",
       "portfolio"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": "Explicit portfolio ownership — 'we have 25% of our portfolio in' memory stocks including SK Hynix"
   },
   {
     "id": "E272-005930.ks-Guest-12",
@@ -350,13 +302,7 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "pairTradeId": null,
-    "scoreReason": "Explicit portfolio ownership — 'we have 25% of our portfolio in' memory stocks including Samsung",
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Brad Gerstner is explicitly long Samsung as part of a 25% portfolio allocation to memory stocks, citing 6x fully-taxed GAAP earnings as attractively valued in the AI compute buildout.",
     "quote": "The memory stocks that everybody's excited about, we have 25% of our portfolio in. SK Hynix, 5 times fully taxed GAAP earnings. Samsung, 6 times. Micron, 7 times, right? This is not the stuff that bubbles are made of.",
     "quoteStartMs": 3740305,
@@ -366,7 +312,9 @@
       "memory semiconductors",
       "portfolio"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": "Explicit portfolio ownership — 'we have 25% of our portfolio in' memory stocks including Samsung"
   },
   {
     "id": "E272-openai-Sacks-13",
@@ -379,13 +327,7 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Sacks notes OpenAI has made the pivot to coding with GPT-5.5/Codex and its rate of growth appears to be re-accelerating, meaning it can take back some share from Anthropic in the dominant coding-token market.",
     "quote": "It does look like OpenAI has already made the pivot. We hear very good things about Codex now based on GPT-5.5... Their rate of growth appears to be accelerating now. Because of, uh, 5.5.",
     "quoteStartMs": 1168488,
@@ -395,7 +337,9 @@
       "revenue growth",
       "AI coding"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E272-tsla-Jason-14",
@@ -408,13 +352,7 @@
     "host": "Jason",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Jason argues Tesla commands the same Elon innovation premium as SpaceX — investors value the future pipeline of innovation associated with Elon 2–4x what they would otherwise pay — and this premium is deserved.",
     "quote": "Tesla has that same Elon, uh, variable in it as well, which is people value his companies at, I would say, 2 times market, 3 times market, 4 times market because of the future pipeline.",
     "quoteStartMs": 1426737,
@@ -423,6 +361,8 @@
       "innovation premium",
       "Elon premium"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

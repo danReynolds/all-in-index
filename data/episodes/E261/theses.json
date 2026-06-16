@@ -20,7 +20,9 @@
       "pricing"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E261-race-Chamath-1",
@@ -43,7 +45,9 @@
       "EV"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E261-nvda-Chamath-5",
@@ -66,7 +70,9 @@
       "capex"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E261-gld-Chamath-a0",
@@ -79,7 +85,6 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "summary": "Chamath argues that as debt-to-GDP ratios rise globally and currencies erode, people need to own 'real durable assets.' He singles out gold as a likely outperformer because investors will fear the declining durability of dollar-denominated wealth.",
     "quote": "we probably see things like gold. Do much, much better over time because people will be afraid about the durability of their dollar-denominated resources.",
     "quoteStartMs": 2756695,
@@ -89,6 +94,9 @@
       "inflation hedge",
       "macro"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

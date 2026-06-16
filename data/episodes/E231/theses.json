@@ -20,7 +20,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E231-federal-reserve-Chamath-1",
@@ -43,7 +45,9 @@
       "macro"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E231-axp-Chamath-3",
@@ -66,7 +70,9 @@
       "customer retention"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E231-uso-Chamath-a0",
@@ -79,7 +85,6 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "summary": "Chamath warns that a war with Iran could cause oil to double, reaching $100–$112/barrel, which would devastate the global economy and inflation — implying a strong upside price risk to oil in a conflict scenario.",
     "quote": "you could see oil double, double. What happens to the economy of the world, of world GDP, of everything, of inflation if you have oil at $100 a barrel, $112 a barrel? It's not good.",
     "quoteStartMs": 5723144,
@@ -90,6 +95,9 @@
       "inflation",
       "Middle East escalation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

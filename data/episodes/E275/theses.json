@@ -20,7 +20,9 @@
       "monopoly risk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E275-anthropic-Guest-1",
@@ -42,8 +44,10 @@
       "AI safety narrative"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Bill Gurley"
+    "guestName": "Bill Gurley",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E275-anthropic-Chamath-2",
@@ -65,7 +69,9 @@
       "AI market structure"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E275-anthropic-Sacks-3",
@@ -87,7 +93,9 @@
       "competitive position"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E275-aapl-Jason-4",
@@ -109,7 +117,9 @@
       "competitive positioning"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E275-meta-Chamath-5",
@@ -131,7 +141,9 @@
       "operational efficiency"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E275-xyz-Sacks-6",
@@ -153,7 +165,9 @@
       "overhiring"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E275-msft-Chamath-7",
@@ -175,7 +189,9 @@
       "cloud revenue"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E275-net-Jason-8",
@@ -196,7 +212,9 @@
       "workforce reduction"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E275-wix-Chamath-9",
@@ -218,7 +236,9 @@
       "product obsolescence"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E275-cper-Chamath-a0",
@@ -231,7 +251,6 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "summary": "Chamath mentions copper incidentally as one line item in a list of infrastructure costs (CapEx, OpEx, power, cabling, copper) when discussing AI training efficiency and hardware build-outs. No price or investment direction is expressed.",
     "quote": "When you think about then the CapEx build-out, the OpEx, the power, the cabling, the copper, all of it",
     "quoteStartMs": 3190318,
@@ -240,6 +259,9 @@
       "compute efficiency",
       "hardware costs"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

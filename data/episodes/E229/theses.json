@@ -19,7 +19,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E229-googl-Friedberg-1",
@@ -42,7 +44,9 @@
       "product strategy"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E229-googl-Sacks-2",
@@ -64,7 +68,9 @@
       "product strategy"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E229-googl-Chamath-3",
@@ -87,7 +93,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E229-openai-Sacks-4",
@@ -110,7 +118,9 @@
       "optionality"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E229-openai-Chamath-5",
@@ -133,7 +143,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E229-openai-Friedberg-6",
@@ -155,7 +167,9 @@
       "valuation skepticism"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E229-nvda-Sacks-7",
@@ -178,7 +192,9 @@
       "market share"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E229-ceg-Chamath-8",
@@ -201,7 +217,9 @@
       "power shortage"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E229-gld-Chamath-a0",
@@ -214,7 +232,6 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "summary": "Chamath argues that fiscal irresponsibility from the 'Big Beautiful Bill' and rising US debt will drive investors to sell US debt and rotate into gold (and Bitcoin) as a safe haven, noting gold has already started spiking.",
     "quote": "You'll delever from the United States, You'll sell US debt. You'll own things like gold and Bitcoin. If you're curious about what's happening to gold and Bitcoin, they started to spike in the last few days.",
     "quoteStartMs": 633046,
@@ -224,7 +241,10 @@
       "safe haven",
       "bond market"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E229-cper-Friedberg-a1",
@@ -237,7 +257,6 @@
     "host": "Friedberg",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "summary": "Friedberg mentions a copper mine permit that has been stuck for 30 years and is now being fast-tracked, noting the regulatory bottleneck — no explicit price or investment direction given.",
     "quote": "he said that there's a permit for a copper mine that's been outstanding for 30 years. They've been trying to get through the permitting process 30 years to get this copper mines started to run, and now he and the team are trying to fast-track this thing.",
     "quoteStartMs": 5042000,
@@ -247,6 +266,9 @@
       "domestic supply",
       "deregulation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

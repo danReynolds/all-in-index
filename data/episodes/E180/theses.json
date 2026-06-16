@@ -10,13 +10,7 @@
     "host": "Chamath",
     "stance": "mixed",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Chamath sees NVIDIA's explosive growth as remarkable but argues the laws of capitalism will force competitors to attack its margins, value will migrate up the stack over time (as happened with Intel/Cisco), and NVIDIA will likely be forced to compete directly with hyperscalers to defend its market cap — creating a complicated but ultimately value-dilutive dynamic.",
     "quote": "At some point the laws of capitalism kick in. When you are over-earning so massively, the rational thing to do for other actors is to come and attack that margin... the spread trade will be that NVIDIA loses share even though revenues keep",
     "quoteStartMs": 1698248,
@@ -26,7 +20,9 @@
       "AI capex",
       "margin compression"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E180-nvda-Sacks-1",
@@ -39,13 +35,7 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Sacks argues NVIDIA has a much stronger moat than Cisco did because its GPUs are far more complex to manufacture and replicate, it stays ahead in R&D cycles, and competitors have not meaningfully closed the gap despite the Cisco-comparison narrative being around for six months.",
     "quote": "I think you can make the case that NVIDIA has a much better moat than Cisco. And just by the way, on this Cisco comparison, people were making this comparison 6 months ago. And what's happened since then? NVIDIA's had 2 blowout quarters",
     "quoteStartMs": 2022770,
@@ -54,7 +44,9 @@
       "AI capex",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E180-nvda-Friedberg-2",
@@ -67,13 +59,7 @@
     "host": "Friedberg",
     "stance": "bear",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Friedberg argues NVIDIA faces deep customer concentration risk — roughly one-third of quarterly revenue from four hyperscalers — and lacks Cisco's strategic flexibility (M&A, enterprise diversification), making it more structurally vulnerable going forward.",
     "quote": "About 40% of that was from the top 4 hyperscalers... a full one-third of NVIDIA's revenue in the quarter came from Google, Amazon, Microsoft, and Meta... they're going to have less maneuvering capability than Cisco had. And obviously",
     "quoteStartMs": 2144038,
@@ -82,7 +68,9 @@
       "competitive moat",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E180-openai-Chamath-3",
@@ -95,13 +83,7 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Chamath acknowledges OpenAI is technically ahead of everyone and commands crazy valuations, but argues its recurring drama and massive employee secondary sales before a fully functional business exists reveal a rational but ethically fraught organizational culture that creates structural tension.",
     "quote": "They're technically ahead of everybody else. A lot of people want to put in money at crazy prices. A bunch of that value is transferred immediately to the employees who circle the wagons and do what's necessary to keep the taps flowing.",
     "quoteStartMs": 450483,
@@ -110,7 +92,9 @@
       "valuation",
       "employee equity"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E180-mcd-Chamath-4",
@@ -123,13 +107,7 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "low",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Chamath observes that McDonald's stock is way up because it has aggressively raised prices — rewarding shareholders while squeezing customers — reflecting that the company has been motivated and rewarded for prioritizing shareholder returns.",
     "quote": "These guys have jacked up prices. If you look at what's happened to the stock, the stock is way up. They've been very motivated and rewarded as a company for just rewarding the shareholder and screwing over the customer.",
     "quoteStartMs": 3177980,
@@ -138,6 +116,8 @@
       "inflation",
       "consumer spending"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

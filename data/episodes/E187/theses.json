@@ -10,12 +10,7 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreExclusionReason": null,
     "summary": "Chamath argues NVIDIA's market cap is unsustainable because AI CapEx spending cannot be justified by the incremental revenue it is generating, and the ecosystem's lock-in to NVIDIA hardware is itself a structural problem driving diversification that will pressure the company.",
     "quote": "you can't spend this kind of money and show no incremental revenue potential. So while this is incredible for NVIDIA, the chicken is coming home to roost because if you do not start seeing revenue flow to the bottom line of these companies",
     "quoteStartMs": 1642461,
@@ -25,7 +20,9 @@
       "hardware lock-in",
       "bubble"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E187-nvda-Sacks-1",
@@ -38,12 +35,7 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreExclusionReason": null,
     "summary": "Sacks acknowledges NVIDIA GPUs are artificially expensive due to supply scarcity and expects prices to normalize as production increases, but frames this within a broader bull case that AI infrastructure investment, like broadband buildout before it, will ultimately prove worthwhile.",
     "quote": "I do think that over time the price of these chips just has to come down. It just doesn't make sense that they'd be so expensive. Just as production increases and they don't have this rate limit on the supply, then I think the price should",
     "quoteStartMs": 1347877,
@@ -52,7 +44,9 @@
       "GPU pricing",
       "supply/demand"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E187-openai-Sacks-2",
@@ -65,12 +59,7 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreExclusionReason": "private",
     "summary": "Sacks argues OpenAI is already a real, high-growth business — effectively a new kind of search engine at $3.4B in revenue doubling year-over-year — validating the AI investment thesis as a whole.",
     "quote": "OpenAI is effectively semantic search, right? It's a different kind of search engine where it understands the question you're asking and gives you an answer instead of blue links. And they're already at...we talked about this previously,",
     "quoteStartMs": 2071489,
@@ -79,7 +68,9 @@
       "growth",
       "search disruption"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E187-aapl-Sacks-3",
@@ -92,12 +83,7 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "pairTradeId": null,
-    "scoreReason": "explicit personal buy signal — 'I will definitely upgrade to the iPhone 16' tied to a forward revenue catalyst",
-    "scoreExclusionReason": null,
     "summary": "Sacks says iPhone 16 with LLM-powered Siri will trigger a massive upgrade cycle and he will personally upgrade, implying a bullish forward revenue catalyst for Apple.",
     "quote": "when Apple comes out with iPhone 16, you know, with LLM-powered Siri, assuming they do a decent job with that. I, it's gonna lead to a huge upgrade cycle. I mean, I'm still on an iPhone 13 because I haven't seen a reason to upgrade. I will",
     "quoteStartMs": 2124008,
@@ -106,7 +92,9 @@
       "upgrade cycle",
       "iPhone"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": "explicit personal buy signal — 'I will definitely upgrade to the iPhone 16' tied to a forward revenue catalyst"
   },
   {
     "id": "E187-andreessen-horowitz-Chamath-4",
@@ -119,12 +107,7 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreExclusionReason": "private",
     "summary": "Chamath argues the A16Z GPU cluster is a financially questionable move — the $100M+ cash outlay represents a large drag on enterprise value and the equity returns from startups would need to be enormous to justify it, especially if GPU prices depreciate.",
     "quote": "if that's $100 million of management fees, the reality is that that's actually $2 billion of value...So whatever equity you get from these startups will need to make about $2 billion plus a little bit to account for the time value of",
     "quoteStartMs": 2579784,
@@ -133,6 +116,8 @@
       "GPU investment",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

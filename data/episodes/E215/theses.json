@@ -20,8 +20,10 @@
       "OpenAI structure"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Naval Ravikant"
+    "guestName": "Naval Ravikant",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E215-openai-Jason-1",
@@ -44,7 +46,9 @@
       "content"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E215-rmni-Chamath-2",
@@ -66,7 +70,9 @@
       "AI training data"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E215-uso-Guest-a0",
@@ -79,7 +85,6 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "summary": "Guest (Naval) expresses confidence that the US has abundant oil and natural gas resources via fracking that should enable full energy independence.",
     "quote": "because of between all the oil resources and the natural gas and fracking combined with all the work we've done in nuclear fission and small reactors, we should absolutely be energy independent.",
     "quoteStartMs": 4824000,
@@ -89,7 +94,10 @@
       "US resources"
     ],
     "attributionConfidence": "high",
-    "guestName": "Naval Ravikant"
+    "guestName": "Naval Ravikant",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E215-ung-Guest-a1",
@@ -102,7 +110,6 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "summary": "Guest (Naval) cites natural gas and fracking alongside oil as key US resources that should deliver full energy independence.",
     "quote": "because of between all the oil resources and the natural gas and fracking combined with all the work we've done in nuclear fission and small reactors, we should absolutely be energy independent.",
     "quoteStartMs": 4824000,
@@ -112,6 +119,9 @@
       "US resources"
     ],
     "attributionConfidence": "high",
-    "guestName": "Naval Ravikant"
+    "guestName": "Naval Ravikant",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

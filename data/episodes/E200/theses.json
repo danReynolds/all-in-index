@@ -20,7 +20,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E200-spacex-starlink-Friedberg-1",
@@ -42,7 +44,9 @@
       "competitive displacement"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E200-expe-Chamath-2",
@@ -65,7 +69,9 @@
       "M&A"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E200-expe-Friedberg-3",
@@ -88,7 +94,9 @@
       "AI disruption"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E200-uber-Sacks-4",
@@ -111,7 +119,9 @@
       "capital allocation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E200-ura-Friedberg-a0",
@@ -124,7 +134,6 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "high",
-    "positional": true,
     "summary": "Friedberg reiterates his earlier prediction to buy uranium stocks, arguing nuclear is a necessity to meet growing energy demand (amplified by AI buildout), and that there is simply no way to close the energy gap without nuclear/uranium — making it a structural long-term bull case.",
     "quote": "it was also my prediction for the year was to by the uranium stocks predicated on what I think is a really important point...there is no way to meet the energy demand without nuclear...We are going to need to use uranium to make electricity to meet the demand",
     "quoteStartMs": 2943984,
@@ -138,9 +147,8 @@
     ],
     "attributionConfidence": "high",
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "scoreReason": "Friedberg reiterated his prediction to buy uranium stocks",
-    "scoreExclusionReason": "macro_asset"
+    "excludeReason": null,
+    "scoreNote": "Friedberg reiterated his prediction to buy uranium stocks"
   },
   {
     "id": "E200-cper-Friedberg-a1",
@@ -153,7 +161,6 @@
     "host": "Friedberg",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "summary": "Friedberg makes offhand references to copper wire as the required medium for transmitting power and internet signals, but frames it as a potential inefficiency to be disrupted rather than a directional price call.",
     "quote": "we could look back one day and be like, why did we run all this copper wire everywhere? We don't need it.",
     "quoteStartMs": 1328000,
@@ -162,6 +169,9 @@
       "energy transmission",
       "technology disruption"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

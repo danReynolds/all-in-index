@@ -20,7 +20,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E266-anthropic-Chamath-1",
@@ -42,7 +44,9 @@
       "product quality"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E266-openai-Chamath-2",
@@ -65,7 +69,9 @@
       "competitive positioning"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E266-openai-Sacks-3",
@@ -88,7 +94,9 @@
       "subscriptions"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E266-googl-Sacks-4",
@@ -111,7 +119,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E266-googl-Chamath-5",
@@ -134,7 +144,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E266-aapl-Sacks-6",
@@ -157,7 +169,9 @@
       "ecosystem"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E266-nvda-Chamath-7",
@@ -180,7 +194,9 @@
       "AI infrastructure"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E266-snow-Chamath-8",
@@ -203,7 +219,9 @@
       "market re-rating"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E266-meta-Chamath-9",
@@ -226,7 +244,9 @@
       "liability"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E266-lng-Friedberg-10",
@@ -249,9 +269,8 @@
       "durability"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "scoreReason": "Friedberg disclosed that he just bought Cheniere Energy"
+    "excludeReason": null,
+    "scoreNote": "Friedberg disclosed that he just bought Cheniere Energy"
   }
 ]

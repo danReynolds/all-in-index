@@ -10,13 +10,7 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Chamath believes OpenAI will be one of four dominant AI companies that matter, with durable economic value accruing to the scaffolding and infrastructure built around the models rather than the models themselves.",
     "quote": "I think that these guys are going to be one of the four major companies that matter in this whole space... the models will basically be all really good... Whoever builds all this other stuff is going to be in a position to build a really",
     "quoteStartMs": 3947000,
@@ -25,7 +19,9 @@
       "business model",
       "infrastructure"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E178-aapl-Chamath-1",
@@ -38,13 +34,7 @@
     "host": "Chamath",
     "stance": "bear",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Chamath argues Apple has too much cash and not enough ideas, lacks the M&A muscle to make transformative acquisitions, and missed multiple category-defining opportunities like the car, reflecting a structurally stagnant innovation pipeline.",
     "quote": "there are companies like... Apple hasn't bought anything more than $50 or $100 million... the idea that all of a sudden they come out of the blue and buy a $10, $20 billion company... is just totally doesn't stand logic... It's just not",
     "quoteStartMs": 4927000,
@@ -53,7 +43,9 @@
       "innovation",
       "capital allocation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E178-aapl-Sacks-2",
@@ -66,13 +58,7 @@
     "host": "Sacks",
     "stance": "bear",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Sacks argues Apple has run out of in-house innovation, with the thinner iPad being emblematic of a company that can no longer define new product categories, leaving it with limited growth options.",
     "quote": "if you're running out of in-house innovation and you can't do M&A, then your options are kind of limited. I do think that the fact that the big news out of Apple is the iPad's getting thinner does represent kind of the end of the road in",
     "quoteStartMs": 4999000,
@@ -81,7 +67,9 @@
       "product strategy",
       "growth"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E178-googl-Friedberg-3",
@@ -94,13 +82,7 @@
     "host": "Friedberg",
     "stance": "neutral",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Friedberg argues Google is hugely advantaged by AlphaFold 3 and its Isomorphic Labs subsidiary, which has kept the IP proprietary, positioning Google to capture enormous value from AI-driven drug discovery—a potential $100B+ business.",
     "quote": "Google is hugely advantaged and they just showed the world a little bit about some of these jewels that they have in the treasure chest... I've said this before, I think Google's got this like portfolio of like quiet, you know,",
     "quoteStartMs": 5674332,
@@ -110,6 +92,8 @@
       "competitive moat",
       "Isomorphic Labs"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

@@ -19,7 +19,9 @@
       "market dominance"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E255-asml-Sacks-1",
@@ -42,7 +44,9 @@
       "export controls"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E255-asml-Friedberg-2",
@@ -65,7 +69,9 @@
       "technology risk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E255-huawei-Friedberg-3",
@@ -88,7 +94,9 @@
       "NVIDIA competition"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E255-huawei-Sacks-4",
@@ -111,7 +119,9 @@
       "semiconductors"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E255-uso-Sacks-a0",
@@ -124,7 +134,6 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "summary": "Sacks cites gas prices at their lowest in 5 years, below $3 nationally, as evidence of strong economic progress under the current administration.",
     "quote": "you've got the lowest gas prices in 5 years, below $3 nationally.",
     "quoteStartMs": 2068000,
@@ -134,6 +143,8 @@
       "economic outlook"
     ],
     "attributionConfidence": "high",
-    "scoreReason": "Sacks is citing current low gas prices as evidence of economic progress — a descriptive/political observation, not a directional forecast or investment claim on oil prices."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Sacks is citing current low gas prices as evidence of economic progress — a descriptive/political observation, not a directional forecast or investment claim on oil prices."
   }
 ]

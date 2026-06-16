@@ -20,8 +20,10 @@
       "China"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E236-xai-Guest-1",
@@ -44,8 +46,10 @@
       "competitive position"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E236-aapl-Guest-2",
@@ -68,8 +72,10 @@
       "partnerships"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E236-googl-Guest-3",
@@ -92,8 +98,10 @@
       "partnerships"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E236-tether-Guest-4",
@@ -116,7 +124,9 @@
       "crypto"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E236-ung-Sacks-a0",
@@ -129,7 +139,6 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "summary": "Sacks highlights Pennsylvania's vast natural gas resources and fracking capacity as central to powering AI data centers, framing energy expansion (including natural gas) as the foundation for AI and economic dominance under Trump's energy policies.",
     "quote": "Pennsylvania is, I think it's the number 2 energy-producing state in the US. It has tremendous amounts of natural gas. They feel like they can expand that... we know that these big AI data centers can be powered by either natural gas or nuclear.",
     "quoteStartMs": 3197963,
@@ -141,7 +150,9 @@
       "domestic production"
     ],
     "attributionConfidence": "high",
-    "scoreReason": "Sacks highlights Pennsylvania's natural gas resources and fracking capacity as powering AI data centers — strategic/importance framing, no explicit price direction stated."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Sacks highlights Pennsylvania's natural gas resources and fracking capacity as powering AI data centers — strategic/importance framing, no explicit price direction stated."
   },
   {
     "id": "E236-ung-Guest-a1",
@@ -154,7 +165,6 @@
     "host": "Guest",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "summary": "Guest (Gavin) argues that natural gas is one of several critical energy sources needed to close the domestic electrical generation gap vs. China and power AI infrastructure build-out.",
     "quote": "natural gas is great, nuclear is great, solar is great, batteries are great. We need it all.",
     "quoteStartMs": 3376256,
@@ -166,6 +176,8 @@
     ],
     "attributionConfidence": "high",
     "guestName": "Gavin Baker",
-    "scoreReason": "“We need it all” (gas, nuclear, solar) — frames natural gas as important among many energy sources, not a directional price call."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "“We need it all” (gas, nuclear, solar) — frames natural gas as important among many energy sources, not a directional price call."
   }
 ]

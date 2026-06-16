@@ -7,8 +7,7 @@ import type { Episode, Thesis, Transcript, Host } from "../lib/types";
 
 const HOST_VALUES = [...REGULAR_HOSTS, "Guest", "Unknown"] as const;
 const CALL_TYPE_VALUES = ["view", "explicit_long", "explicit_short", "explicit_exit", "selection", "pair_trade", "basket"] as const;
-const TRADE_DIRECTION_VALUES = ["long", "short"] as const;
-const SCORE_EXCLUSION_VALUES = ["conditional", "private", "macro_asset", "crypto", "benchmark_or_etf", "unpriced", "not_investment_call", "day_trade_aside"] as const;
+const EXCLUDE_REASON_VALUES = ["conditional", "not_investment_call", "day_trade_aside"] as const;
 
 const ThesisItemSchema = z.object({
   company: z.string(),
@@ -17,13 +16,9 @@ const ThesisItemSchema = z.object({
   host: z.enum(HOST_VALUES),
   stance: z.enum(["bull", "bear", "neutral", "mixed"]),
   conviction: z.enum(["low", "medium", "high"]),
-  positional: z.boolean(),
-  callType: z.enum(CALL_TYPE_VALUES).optional(),
-  tradeDirection: z.enum(TRADE_DIRECTION_VALUES).nullable().optional(),
-  pairTradeId: z.string().nullable().optional(),
-  scoreReason: z.string().nullable().optional(),
-  scoreCondition: z.string().nullable().optional(),
-  scoreExclusionReason: z.enum(SCORE_EXCLUSION_VALUES).nullable().optional(),
+  callType: z.enum(CALL_TYPE_VALUES),
+  excludeReason: z.enum(EXCLUDE_REASON_VALUES).nullable().optional(),
+  scoreNote: z.string().nullable().optional(),
   summary: z.string(),
   quote: z.string(),
   quoteStartSec: z.number().nullable(),
@@ -70,18 +65,21 @@ Rules:
   DO record as bear: "Apple's mandatory 30% fee is the prime candidate for antitrust intervention" — the speaker explicitly ties a legal threat to a named revenue stream.
   If the economic direction is not explicitly claimed, use "neutral".
 - conviction: how strongly the host commits (hedged aside = low; emphatic, repeated, "this is the trade" = high).
-- positional: true ONLY if the take clearly communicates a portfolio-scoreable call: explicit in/out ownership stance ("I'd own it here", "I bought more", "this is the trade", "I'd take profits", "wouldn't touch it", "this is a short"), explicit selection/ranking in an investment frame ("my pick is X", "my #1 is X", "if I could only bet on two: X and Y", "best place to invest", "new Mag 7 basket"), or a named pair/basket leg ("long X / short Y", "own X over Y"). Criticism of a company someone might still hold is NOT an exit; praise without ownership intent is NOT a buy. Lean false when unsure.
-  Do NOT mark positional: "Google is in an outstanding position to do [X] because they already have access to your calendar, documents, email" — being well-positioned is an observation about the company, not a statement of the speaker's ownership. Positional requires the SPEAKER's own in/out, in their words.
-  The line: TRANSACTION or SELECTION language is positional — "I'm in", "I have shares", "I just bought", "my pick is", "my number 1 is", "I would be long X", "this is the trade", "probably a buying opportunity", "the short here is X", "best place to invest". SENTIMENT language alone is NOT — "I'm bullish", "I wouldn't sleep on this company", "exceptional business", "those companies are toast", "you could buy X too, I guess". But when a ranked-pick prompt asks "which two would you bet on?" or "who are your top picks?", the answer's ranked companies ARE selection calls.
-  If positional=true, set callType: "explicit_long" for direct buy/own/long calls, "explicit_short" for direct short calls, "explicit_exit" for clear close/avoid language that exits without opening a short, "selection" for ranked picks or investment selections, "pair_trade" for each leg of a paired long/short trade, and "basket" for named basket legs. Use "view" or omit callType for non-positional commentary.
-  Set tradeDirection ONLY when the row opens an exposure: "long" for buy/own/selected long legs, "short" only when the speaker explicitly says short or names the short leg of a pair. A bearish exit ("take profits", "wouldn't touch it") can be positional with callType="explicit_exit" but should have tradeDirection=null.
-  If two rows are legs of the same pair trade, give both the same pairTradeId (for example "E234-figma-adobe-Chamath"). For non-pairs, pairTradeId=null or omit it.
-  scoreReason should briefly name the evidence that made the row scoreable ("ranked #1 AI pick", "explicit long", "short leg of spread").
-  If an otherwise pick-like statement is conditional ("X if they don't close the deal") or too tactical to model ("last day trade"), keep positional=false and set scoreCondition or scoreExclusionReason so the receipt can be audited without entering the scorecard.
+- callType: classify what kind of statement this is. This single field decides whether the take is scored — there is no separate flag.
+  - "view" — commentary, analysis, or sentiment with NO portfolio action. This is the DEFAULT and most takes are views. A strong opinion is still a view: "I'm bullish", "exceptional business", "they're toast", "outstanding position to do X", "you could buy it too, I guess" are all views. Being well-positioned, cheap, or well-run is an observation about the company, not the speaker's own call.
+  - "explicit_long" — the speaker states their own buy/own/long: "I'm in", "I have shares", "I just bought", "I'd own it here", "I'd be long X", "this is the trade", "probably a buying opportunity".
+  - "explicit_short" — the speaker states a short: "this is a short", "I'm short", "the short here is X".
+  - "explicit_exit" — clear close/avoid that exits WITHOUT opening a short: "I'd take profits", "I'm out", "wouldn't touch it". (Criticizing a company someone might still hold is NOT an exit — that's a view.)
+  - "selection" — a ranked investment pick or selection: "my pick is X", "my #1 is X", "best place to invest". When a prompt asks "which would you bet on?" / "top picks?", the answer's named companies ARE selections.
+  - "pair_trade" — a leg of a paired long/short: "long X / short Y", "own X over Y".
+  - "basket" — a named basket leg: "new Mag 7 basket".
+  Only the SPEAKER's own transaction or selection language earns a non-"view" callType, in their words. Lean to "view" when unsure. Do not infer a position from enthusiasm.
+- excludeReason: leave null normally. Set it ONLY when the take is genuinely call-shaped (you gave it a non-"view" callType) but should be recorded WITHOUT scoring: "conditional" (the action waits on an unresolved event — "I'd buy if the deal breaks"), "day_trade_aside" (an explicitly tactical/day-trade remark), or "not_investment_call" (the pick isn't really an equity bet). Keep the callType that describes the shape and put the gating detail in scoreNote.
+- scoreNote: optional one-line audit note — the evidence that made it a call ("ranked #1 AI pick", "short leg of spread") or the condition that gates it. Omit for plain views.
   Note: an advantage scoped to ONE product category of a diversified company ("outstanding position to do the agent thing") is not, by itself, a company-level bull claim — without a stated company-level consequence, keep stance neutral or mark the hedge with low conviction.
 - ticker: the correct US-listed symbol ONLY if you are confident and the company is publicly traded. For private companies (e.g. SpaceX, OpenAI, Anthropic, Stripe) set ticker=null and isPublic=false.
 - quote: a SHORT verbatim excerpt (≤ 240 characters) from that host that best supports the thesis. Copy it exactly from the transcript. Set quoteStartSec to the integer second shown in that line's "[<sec>s <Speaker>]" prefix.
-  THE QUOTE MUST CARRY THE EVIDENCE FOR YOUR LABELS. If positional=true, the quote must contain the in/out or selection words ("I'm in", "I would be long it", "I just bought", "my pick", "number 1", "best place to invest", "long X / short Y"). If stance is bull/bear, the quote must contain the economic claim. Prefer the sentence that PROVES the classification over the most colorful one — a take whose quote doesn't evidence its labels will be treated as misclassified.
+  THE QUOTE MUST CARRY THE EVIDENCE FOR YOUR LABELS. For any non-"view" callType, the quote must contain the in/out or selection words ("I'm in", "I would be long it", "I just bought", "my pick", "number 1", "best place to invest", "long X / short Y"). If stance is bull/bear, the quote must contain the economic claim. Prefer the sentence that PROVES the classification over the most colorful one — a take whose quote doesn't evidence its labels will be treated as misclassified.
 - summary: one clear sentence capturing the host's view and reasoning.
 - topics: 1–4 short tags (e.g. "AI capex", "valuation", "regulation").
 - Be conservative: if there is no substantive company-specific view, return an empty list. Do not invent quotes.
@@ -104,13 +102,9 @@ const INPUT_SCHEMA = {
           host: { type: "string", enum: [...HOST_VALUES] },
           stance: { type: "string", enum: ["bull", "bear", "neutral", "mixed"] },
           conviction: { type: "string", enum: ["low", "medium", "high"] },
-          positional: { type: "boolean", description: "Clear in/out ownership signal, not commentary" },
-          callType: { type: "string", enum: [...CALL_TYPE_VALUES] },
-          tradeDirection: { type: ["string", "null"], enum: [...TRADE_DIRECTION_VALUES, null] },
-          pairTradeId: { type: ["string", "null"] },
-          scoreReason: { type: ["string", "null"] },
-          scoreCondition: { type: ["string", "null"] },
-          scoreExclusionReason: { type: ["string", "null"], enum: [...SCORE_EXCLUSION_VALUES, null] },
+          callType: { type: "string", enum: [...CALL_TYPE_VALUES], description: "view = commentary (not scored); the rest are scoreable call shapes" },
+          excludeReason: { type: ["string", "null"], enum: [...EXCLUDE_REASON_VALUES, null] },
+          scoreNote: { type: ["string", "null"] },
           summary: { type: "string" },
           quote: { type: "string", description: "Verbatim excerpt ≤240 chars" },
           quoteStartSec: { type: ["number", "null"] },
@@ -123,7 +117,7 @@ const INPUT_SCHEMA = {
           "host",
           "stance",
           "conviction",
-          "positional",
+          "callType",
           "summary",
           "quote",
           "quoteStartSec",
@@ -158,8 +152,12 @@ function slug(company: string, ticker: string | null): string {
     .replace(/^-+|-+$/g, "");
 }
 
-/** Extract per-host company theses from a named transcript. */
-export async function extractTheses(
+/**
+ * The raw extraction call — one LLM pass over the transcript, mapped to Thesis
+ * rows, BEFORE the adversarial verify pass. Exposed so callers (and evals) can
+ * run extraction and verification as separate, swappable stages.
+ */
+export async function extractRawTheses(
   ep: Episode,
   t: Transcript,
 ): Promise<Thesis[]> {
@@ -178,7 +176,7 @@ export async function extractTheses(
     maxTokens: 8192,
   });
 
-  const theses: Thesis[] = result.theses.map((item, i) => ({
+  return result.theses.map((item, i) => ({
     id: `${ep.id}-${slug(item.company, item.ticker)}-${item.host}-${i}`,
     episodeId: ep.id,
     episodeNumber: ep.number,
@@ -189,23 +187,26 @@ export async function extractTheses(
     host: item.host as Host,
     stance: item.stance,
     conviction: item.conviction,
-    positional: item.positional,
     callType: item.callType,
-    tradeDirection: item.tradeDirection,
-    pairTradeId: item.pairTradeId,
-    scoreReason: item.scoreReason,
-    scoreCondition: item.scoreCondition,
-    scoreExclusionReason: item.scoreExclusionReason,
+    excludeReason: item.excludeReason ?? null,
+    scoreNote: item.scoreNote ?? null,
     summary: item.summary,
     quote: trimPublishedQuote(item.quote),
     quoteStartMs: item.quoteStartSec != null ? item.quoteStartSec * 1000 : null,
     topics: item.topics,
   }));
+}
 
-  // Enforce the "quote must carry the evidence" contract: an adversarial pass
-  // drops passing mentions/enumerations and neutralizes inferred-direction
-  // stances. Survivors are what we store.
-  const verified = await verifyTheses(ep, theses);
+/** Extract per-host company theses from a named transcript, then verify them. */
+export async function extractTheses(
+  ep: Episode,
+  t: Transcript,
+): Promise<Thesis[]> {
+  const theses = await extractRawTheses(ep, t);
+
+  // Adversarial pass: drop passing mentions/enumerations, repair quotes that
+  // don't yet carry their claim, and neutralize genuinely inferred stances.
+  const verified = await verifyTheses(ep, theses, t);
 
   const byCompany = new Map<string, number>();
   for (const th of verified) byCompany.set(th.company, (byCompany.get(th.company) ?? 0) + 1);

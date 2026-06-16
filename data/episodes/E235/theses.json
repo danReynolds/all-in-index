@@ -20,7 +20,9 @@
       "synthetic data"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E235-scale-ai-Chamath-1",
@@ -42,7 +44,9 @@
       "human labeling obsolescence"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E235-scale-ai-Guest-2",
@@ -64,8 +68,10 @@
       "valuation risk"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Keith Rabois"
+    "guestName": "Keith Rabois",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E235-openai-Guest-3",
@@ -88,8 +94,10 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Keith Rabois"
+    "guestName": "Keith Rabois",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E235-perplexity-Guest-4",
@@ -112,8 +120,10 @@
       "distribution"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Keith Rabois"
+    "guestName": "Keith Rabois",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E235-perplexity-Chamath-5",
@@ -136,7 +146,9 @@
       "competitive positioning"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E235-aapl-Guest-6",
@@ -159,8 +171,10 @@
       "product"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Keith Rabois"
+    "guestName": "Keith Rabois",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E235-aapl-Guest-7",
@@ -183,8 +197,10 @@
       "hardware device"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Travis Kalanick"
+    "guestName": "Travis Kalanick",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E235-tsla-Chamath-8",
@@ -207,7 +223,9 @@
       "FSD"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E235-waymo-Chamath-9",
@@ -229,7 +247,9 @@
       "human labeling"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E235-googl-Guest-10",
@@ -252,8 +272,10 @@
       "competitive threat"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Keith Rabois"
+    "guestName": "Keith Rabois",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E235-meta-Guest-11",
@@ -276,7 +298,9 @@
       "management"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Keith Rabois"
+    "guestName": "Keith Rabois",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

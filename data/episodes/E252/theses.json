@@ -20,7 +20,9 @@
       "margins"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E252-tether-Jason-1",
@@ -43,7 +45,9 @@
       "risk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E252-tether-Friedberg-2",
@@ -65,7 +69,9 @@
       "margins"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E252-nvda-Friedberg-3",
@@ -88,7 +94,9 @@
       "chip architecture"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E252-nvda-Chamath-4",
@@ -111,7 +119,9 @@
       "revenue"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E252-nvda-Friedberg-5",
@@ -134,7 +144,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E252-googl-Jason-6",
@@ -157,11 +169,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "pair_trade",
-    "tradeDirection": "long",
-    "pairTradeId": "E252-google-anthropic-openai-Jason",
-    "scoreReason": "Long public leg of Jason's Google/Groq/Anthropic over OpenAI pair trade"
+    "excludeReason": null,
+    "scoreNote": "Long public leg of Jason's Google/Groq/Anthropic over OpenAI pair trade"
   },
   {
     "id": "E252-googl-Chamath-7",
@@ -184,7 +194,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E252-openai-Jason-8",
@@ -207,12 +219,9 @@
       "enterprise trust"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "pair_trade",
-    "tradeDirection": "short",
-    "pairTradeId": "E252-google-anthropic-openai-Jason",
-    "scoreReason": "Short private leg of Jason's pair trade against OpenAI",
-    "scoreExclusionReason": "private"
+    "excludeReason": null,
+    "scoreNote": "Short private leg of Jason's pair trade against OpenAI"
   },
   {
     "id": "E252-anthropic-Jason-9",
@@ -234,12 +243,9 @@
       "competitive positioning"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "pair_trade",
-    "tradeDirection": "long",
-    "pairTradeId": "E252-google-anthropic-openai-Jason",
-    "scoreReason": "Long private leg of Jason's Google/Groq/Anthropic over OpenAI pair trade",
-    "scoreExclusionReason": "private"
+    "excludeReason": null,
+    "scoreNote": "Long private leg of Jason's Google/Groq/Anthropic over OpenAI pair trade"
   },
   {
     "id": "E252-anthropic-Chamath-10",
@@ -262,7 +268,9 @@
       "competitive positioning"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E252-gld-Chamath-a0",
@@ -275,7 +283,6 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "summary": "Chamath mentions gold casually as one of the things he enjoys, and separately notes Tether reinvests into gold among other assets. The only personal directional hint is his offhand remark about 'make a few investments on gold', suggesting mild bullish interest but with very low conviction.",
     "quote": "I just wanna go to my office, build some stuff, make a few investments on gold.",
     "quoteStartMs": 769072,
@@ -285,6 +292,8 @@
       "Tether holdings"
     ],
     "attributionConfidence": "high",
-    "scoreReason": "Chamath's offhand remark about making 'a few investments on gold' is a passing mention without a directional conviction or explicit price call, and Tether's reinvestment in gold is a factual description."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Chamath's offhand remark about making 'a few investments on gold' is a passing mention without a directional conviction or explicit price call, and Tether's reinvestment in gold is a factual description."
   }
 ]

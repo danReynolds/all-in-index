@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import { z } from "zod";
 import { callTool } from "./llm";
+import { isPortfolioScored } from "../lib/calls";
 import { store } from "./store";
 import { snapQuoteTimestamps } from "./run-episode";
 import { HOLDINGS_FILE } from "./config";
@@ -107,7 +108,7 @@ export async function upgradeQuotes(): Promise<void> {
           t.conviction !== "low" &&
           t.attributionConfidence !== "low" &&
           t.stance !== "neutral") ||
-          t.positional),
+          isPortfolioScored(t)),
     );
     if (!cands.length) continue;
     candidates += cands.length;
@@ -115,7 +116,7 @@ export async function upgradeQuotes(): Promise<void> {
     const lines = cands
       .map(
         (t) =>
-          `id: ${t.id} | labels: stance=${t.stance}, positional=${t.positional} | ${t.host} on ${t.company}\n` +
+          `id: ${t.id} | labels: stance=${t.stance}, callType=${t.callType ?? "view"} | ${t.host} on ${t.company}\n` +
           `current quote: "${t.quote}"\n` +
           `transcript utterances by ${t.host}:\n${contextFor(t, tr)}`,
       )

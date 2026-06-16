@@ -10,13 +10,7 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Sacks argues that shareholders rightly reapproved Elon's pay package because he delivered on his promises, and the stock ripping on the news confirms that securing Elon's continued leadership is vital to Tesla's future innovation and value.",
     "quote": "I think he's absolutely vital to all the innovation that's going to come in the future from Tesla. And you see this, the stock is ripping on the news, is up about 3% today in a down market.",
     "quoteStartMs": 1617000,
@@ -26,7 +20,9 @@
       "Elon Musk",
       "Delaware incorporation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E183-tsla-Friedberg-1",
@@ -39,13 +35,7 @@
     "host": "Friedberg",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Friedberg argues the original pay package was legitimate, Elon should never have had the options voided, and that shareholders voting 73% in favor both times demonstrates the market correctly values Elon's presence at Tesla.",
     "quote": "He should get this stock. He never should have— or these options— he never should have had them taken away. And so I just hope this thing— yeah, it becomes a nothing burger.",
     "quoteStartMs": 1542837,
@@ -54,7 +44,9 @@
       "corporate governance",
       "Elon Musk"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E183-tsla-Chamath-2",
@@ -67,13 +59,7 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Chamath argues that opponents of Elon's pay package had their calculus wrong: by securing Elon's continued leadership, Tesla's stock rose ~10%, which exceeds the dilution from the pay package itself.",
     "quote": "The irony of the thing is that these folks thought that they were getting a 10% free roll when they voted no. And the reality is that by him getting the pay package, the certainty of him sticking around at the company cause the stock to go",
     "quoteStartMs": 2064000,
@@ -83,7 +69,9 @@
       "Elon Musk",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E183-aapl-Jason-3",
@@ -96,13 +84,7 @@
     "host": "Jason",
     "stance": "bull",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Jason argues Apple Intelligence — particularly AI-powered Siri with deep app integration — will win the AI consumer market and drive a new phone upgrade cycle, justifying the 10% stock pop.",
     "quote": "I think Apple is going to win the AI consumer... Stock is up 10%. Uh, they added about $300 billion in market cap.",
     "quoteStartMs": 2530000,
@@ -112,7 +94,9 @@
       "upgrade cycle",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E183-aapl-Sacks-4",
@@ -125,13 +109,7 @@
     "host": "Sacks",
     "stance": "mixed",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Sacks acknowledges Apple did exactly what was needed by reinventing Siri as an LLM agent, and the market liked it, but warns the OpenAI partnership introduces serious privacy risks and opens Pandora's box by letting a third party beneath the App Store layer for the first time.",
     "quote": "Apple did exactly what I said they should do last week... However, Apple took a shortcut to get here. They partnered with OpenAI... This is allowing someone, OpenAI, to get access to your data and to control your apps at the operating",
     "quoteStartMs": 2839936,
@@ -141,7 +119,9 @@
       "competitive moat",
       "product strategy"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E183-aapl-Chamath-5",
@@ -154,13 +134,7 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Chamath is underwhelmed by Apple's announcement — nothing is shipping yet, the ChatGPT economics show no revenue for either side, and the demo represents a step back from Apple's tradition of shipping finished products — calling it 'really not much of anything.'",
     "quote": "For a company this big, it's really not much of anything. You can't really touch it and feel it... the economics of the ChatGPT deal were leaked and there's no money on either side. So I don't know, it's a little bit of like, it's really",
     "quoteStartMs": 2607036,
@@ -169,7 +143,9 @@
       "product launch",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E183-openai-Sacks-6",
@@ -182,13 +158,7 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Sacks is impressed by OpenAI's product quality and revenue growth, but argues the real long-term value lies in the B2B API/developer business rather than the consumer subscription side, which is subject to high churn.",
     "quote": "I would separate the B2C business from the B2B business... I would place all the value on B2B. And the reason is because historically, the churn rates in B2C are too high... On the other hand, on the B2B side, a good B2B business has",
     "quoteStartMs": 3197416,
@@ -198,7 +168,9 @@
       "B2B vs B2C",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E183-openai-Chamath-7",
@@ -211,13 +183,7 @@
     "host": "Chamath",
     "stance": "bear",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Chamath argues OpenAI may be the AOL of AI — dominant now but ultimately displaced — as open-source models like Llama reach 85-90% quality at far lower cost, and enterprises will eventually build their own LLM-driven tools rather than pay for OpenAI's platform.",
     "quote": "Maybe OpenAI is AOL, right? Like, I think that there's going to be a Google that'll show up... or ultimately the cost comes down so much with the open source tools... the open source Llama instances are like, they get you 85 to 90% of what",
     "quoteStartMs": 3555000,
@@ -227,7 +193,9 @@
       "open source",
       "enterprise"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E183-openai-Friedberg-8",
@@ -240,13 +208,7 @@
     "host": "Friedberg",
     "stance": "mixed",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Friedberg acknowledges OpenAI's revenue growth is legendary, but argues most revenue is consumer-driven not enterprise, US traffic is down ~25% post-school year, enterprises are not yet running production AI workloads, and ARPU outside the US is far lower — all of which limits long-term terminal value.",
     "quote": "I think to the extent that the business has a large terminal value, it's going to be because of the enterprise cash flows. The thing to keep in mind is that I still haven't seen enterprises building production-level products using AI.",
     "quoteStartMs": 3317910,
@@ -256,6 +218,8 @@
       "enterprise",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

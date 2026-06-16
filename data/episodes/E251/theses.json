@@ -20,7 +20,9 @@
       "SaaS"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E251-pltr-Friedberg-1",
@@ -42,7 +44,9 @@
       "price-to-sales"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E251-meta-Friedberg-2",
@@ -65,7 +69,9 @@
       "hyperscalers"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E251-meta-Chamath-3",
@@ -88,7 +94,9 @@
       "hyperscalers"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E251-orcl-Friedberg-4",
@@ -111,6 +119,8 @@
       "hyperscalers"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

@@ -20,7 +20,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E245-ea-Friedberg-1",
@@ -43,7 +45,9 @@
       "long-term strategy"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E245-silver-lake-Chamath-2",
@@ -65,7 +69,9 @@
       "track record"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E245-meta-Sacks-3",
@@ -87,7 +93,9 @@
       "competitive position"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E245-anthropic-Chamath-4",
@@ -109,7 +117,9 @@
       "open source"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E245-u-Chamath-5",
@@ -131,7 +141,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E245-ung-Sacks-a0",
@@ -144,7 +156,6 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "summary": "Sacks argues that natural gas is the near-term (next 5 years) answer to AI-driven power demand, before nuclear comes online, though he notes turbine backlogs as a constraint.",
     "quote": "Within the next 5 years, it's probably gas, natural gas. But the issue there is there's a huge backlog for gas turbines... So the question is, what do you do in the next few years?",
     "quoteStartMs": 3309378,
@@ -155,6 +166,8 @@
       "grid capacity"
     ],
     "attributionConfidence": "high",
-    "scoreReason": "Sacks frames natural gas as the near-term answer to AI power demand — this is a strategic/importance framing about energy sources, not an explicit directional price call on natural gas."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Sacks frames natural gas as the near-term answer to AI power demand — this is a strategic/importance framing about energy sources, not an explicit directional price call on natural gas."
   }
 ]

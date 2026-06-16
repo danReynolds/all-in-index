@@ -20,7 +20,9 @@
       "buybacks"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E225-googl-Sacks-1",
@@ -43,7 +45,9 @@
       "CapEx"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E225-googl-Friedberg-2",
@@ -66,7 +70,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E225-waymo-Chamath-3",
@@ -88,7 +94,9 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E225-tsla-Friedberg-4",
@@ -111,7 +119,9 @@
       "robotaxi"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E225-aapl-Chamath-5",
@@ -134,7 +144,9 @@
       "India"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E225-nvda-Friedberg-6",
@@ -157,7 +169,9 @@
       "regulatory risk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E225-ura-Chamath-a0",
@@ -170,7 +184,6 @@
     "host": "Chamath",
     "stance": "bear",
     "conviction": "medium",
-    "positional": false,
     "summary": "Chamath argues thorium is superior to uranium as a fuel source: 100% of thorium can be used as fuel vs. less than 1% of mined uranium after expensive enrichment, making uranium's refining process costly and difficult by comparison. The implication is that thorium/molten-salt reactors displace uranium's dominant role in nuclear energy.",
     "quote": "In uranium, you have a very expensive, very difficult kind of refinement process where you end up, I think, getting less than 1% of that uranium that you pull out can actually be used as fissile... With thorium, 100% of it can be used as fuel.",
     "quoteStartMs": 5049811,
@@ -181,6 +194,9 @@
       "fuel enrichment",
       "energy transition"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

@@ -142,18 +142,6 @@ async function main() {
       const { amendPositional } = await import("./positional");
       return amendPositional();
     }
-    case "purge-commentary": {
-      const { purgeCommentary } = await import("./purge");
-      return purgeCommentary();
-    }
-    case "audit-stance": {
-      const { auditStance } = await import("./audit-stance");
-      return auditStance();
-    }
-    case "audit-commodity-stance": {
-      const { auditCommodityStance } = await import("./audit-commodity-stance");
-      return auditCommodityStance();
-    }
     case "audit-candidates": {
       const { runTakeCandidateAudit } = await import("./take-candidate-audit");
       return runTakeCandidateAudit();

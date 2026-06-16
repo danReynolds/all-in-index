@@ -20,7 +20,9 @@
       "cloud infrastructure"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E218-coreweave-Friedberg-1",
@@ -43,7 +45,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E218-anthropic-Chamath-2",
@@ -65,7 +69,9 @@
       "code generation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E218-openai-Chamath-3",
@@ -87,7 +93,9 @@
       "product"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E218-meta-Chamath-4",
@@ -109,7 +117,9 @@
       "product launch"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E218-googl-Chamath-5",
@@ -131,7 +141,9 @@
       "distribution"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E218-now-Jason-6",
@@ -153,7 +165,9 @@
       "regulation risk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E218-cognition-ai-Guest-7",
@@ -175,8 +189,10 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Joe Lonsdale"
+    "guestName": "Joe Lonsdale",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E218-gld-Sacks-a0",
@@ -189,7 +205,6 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "summary": "Sacks frames Bitcoin as 'digital gold' and advocates for a strategic reserve modeled on Fort Knox, with a long-term never-sell preservation goal — implicitly validating gold's store-of-value analogy as the benchmark for Bitcoin's reserve status.",
     "quote": "The reserve is just Bitcoin. The goal is long-term preservation. Think of it as like a digital Fort Knox for digital gold. We want to put the digital gold in there. We want to keep it secure. We never want to sell it.",
     "quoteStartMs": 6154000,
@@ -200,6 +215,8 @@
       "store of value"
     ],
     "attributionConfidence": "high",
-    "scoreReason": "Sacks is using gold (Fort Knox) as an analogy to explain Bitcoin's strategic reserve concept. No explicit directional price call on gold itself is made."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Sacks is using gold (Fort Knox) as an analogy to explain Bitcoin's strategic reserve concept. No explicit directional price call on gold itself is made."
   }
 ]

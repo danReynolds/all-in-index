@@ -20,7 +20,9 @@
       "enterprise growth"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E271-openai-Chamath-1",
@@ -43,7 +45,9 @@
       "growth trajectory"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E271-anthropic-Sacks-2",
@@ -65,7 +69,9 @@
       "product quality"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E271-anthropic-Chamath-3",
@@ -87,7 +93,9 @@
       "strategic partnerships"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E271-googl-Sacks-4",
@@ -110,7 +118,9 @@
       "search"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E271-googl-Jason-5",
@@ -133,7 +143,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E271-googl-Friedberg-6",
@@ -156,7 +168,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E271-lly-Friedberg-7",
@@ -179,7 +193,9 @@
       "growth trajectory"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E271-amzn-Chamath-8",
@@ -202,7 +218,9 @@
       "AI infrastructure"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E271-msft-Chamath-9",
@@ -225,7 +243,9 @@
       "AI infrastructure"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E271-bayn-Friedberg-11",
@@ -248,6 +268,8 @@
       "legal liability"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

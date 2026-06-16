@@ -20,7 +20,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E202-googl-Friedberg-1",
@@ -43,7 +45,9 @@
       "antitrust"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E202-googl-Sacks-2",
@@ -66,7 +70,9 @@
       "brand risk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E202-bac-Chamath-3",
@@ -89,7 +95,9 @@
       "balance sheet"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E202-gld-Friedberg-a0",
@@ -102,7 +110,6 @@
     "host": "Friedberg",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "summary": "Friedberg suggests that amid US dollar hegemony challenges and BRICS alternatives emerging, people may be parking assets in gold (and Bitcoin) as a transitional store of value.",
     "quote": "maybe everyone's kind of putting their assets away in, in gold and, and others and Bitcoin and other stuff while they're waiting for the transition to find another place to buy. We'll see.",
     "quoteStartMs": 1416452,
@@ -114,6 +121,8 @@
       "macro"
     ],
     "attributionConfidence": "high",
-    "scoreReason": "Friedberg speculatively muses that people 'maybe' are parking assets in gold during a transition — a highly hedged, uncertain observation, not an explicit directional price call."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Friedberg speculatively muses that people 'maybe' are parking assets in gold during a transition — a highly hedged, uncertain observation, not an explicit directional price call."
   }
 ]

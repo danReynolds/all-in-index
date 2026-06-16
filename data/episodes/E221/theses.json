@@ -20,8 +20,10 @@
       "AI capex"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E221-nvda-Chamath-1",
@@ -43,7 +45,9 @@
       "ecosystem strategy"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E221-coreweave-Guest-2",
@@ -66,8 +70,10 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E221-coreweave-Chamath-3",
@@ -88,7 +94,9 @@
       "GPU infrastructure"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E221-anthropic-Guest-4",
@@ -110,8 +118,10 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E221-uso-Chamath-a0",
@@ -124,7 +134,6 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "summary": "Chamath explains that Houthi disruption of Red Sea/Suez Canal shipping caused input prices to skyrocket (30-400% shipping cost increases), raising recession and inflation risk. He frames the US strikes as restoring shipping volumes and containing that inflation/productivity risk — implying commodity/input price pressures are now easing.",
     "quote": "prices start to skyrocket. So if you're trying to ship things, even going into the United States, prices start to rise 30, 40%. Going to Europe, prices are rising 300 and 400%... The price of shipping is now contained. The inflation risk is contained.",
     "quoteStartMs": 3338797,
@@ -138,6 +147,8 @@
       "tariffs"
     ],
     "attributionConfidence": "high",
-    "scoreReason": "Chamath is describing shipping cost inflation from Houthi disruptions and framing US strikes as containing that pressure. No explicit directional oil price call is made — this is policy/geopolitical commentary on shipping costs."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Chamath is describing shipping cost inflation from Houthi disruptions and framing US strikes as containing that pressure. No explicit directional oil price call is made — this is policy/geopolitical commentary on shipping costs."
   }
 ]

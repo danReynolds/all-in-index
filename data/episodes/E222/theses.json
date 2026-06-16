@@ -20,7 +20,9 @@
       "meme stock"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E222-circle-Sacks-1",
@@ -43,7 +45,9 @@
       "crypto"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E222-asml-Sacks-2",
@@ -65,7 +69,9 @@
       "supply chain"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E222-daily-wire-Guest-3",
@@ -87,6 +93,8 @@
       "capital raise"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

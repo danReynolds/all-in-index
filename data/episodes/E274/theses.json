@@ -20,8 +20,10 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E274-spacex-Chamath-1",
@@ -44,11 +46,9 @@
       "Starlink"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "scoreReason": "Chamath said he is buying SpaceX as critical internet infrastructure",
-    "scoreExclusionReason": "private"
+    "excludeReason": null,
+    "scoreNote": "Chamath said he is buying SpaceX as critical internet infrastructure"
   },
   {
     "id": "E274-spacex-Guest-2",
@@ -71,8 +71,10 @@
       "orbital compute"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E274-spacex-Friedberg-3",
@@ -94,7 +96,9 @@
       "infrastructure"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E274-nvda-Guest-4",
@@ -117,8 +121,10 @@
       "earnings"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E274-nvda-Chamath-5",
@@ -140,7 +146,9 @@
       "domain-specific architecture"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E274-crwv-Guest-6",
@@ -163,8 +171,10 @@
       "AI infrastructure"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E274-xai-Guest-7",
@@ -187,8 +197,10 @@
       "coding AI"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E274-ung-Guest-a0",
@@ -201,7 +213,6 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "summary": "Guest argues that US natural gas (NG1) is down this year while LNG prices for the rest of the world are up 100-200%, giving America a relative cost advantage in electricity/manufacturing inputs. Strait of Hormuz closure is relatively good for America's natural gas competitiveness.",
     "quote": "what we make electricity with in America overwhelmingly is natural gas. And you can look it up, NG1. It is down this year. The input cost for electricity in the rest of the world... LNG is a very important one, and it's up 100%, 200%.",
     "quoteStartMs": 5446934,
@@ -213,7 +224,10 @@
       "Trump policy"
     ],
     "attributionConfidence": "high",
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E274-uso-Guest-a1",
@@ -226,7 +240,6 @@
     "host": "Guest",
     "stance": "mixed",
     "conviction": "low",
-    "positional": false,
     "summary": "Guest notes the Strait of Hormuz closure is bad for global oil supply/consumers (especially Europe, Asia, Japan, China) but relatively good for America, implying a divergent impact on oil prices globally vs. domestically.",
     "quote": "the Strait of Hormuz is absolutely bad for everyone, but relatively good for America and relatively good for Trump's policy goals... Every day the Strait of Hormuz is closed is relatively good for America. It's terrible for Europe. It is terrible for Asia.",
     "quoteStartMs": 5467678,
@@ -237,6 +250,9 @@
       "energy security"
     ],
     "attributionConfidence": "high",
-    "guestName": "Gavin Baker"
+    "guestName": "Gavin Baker",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

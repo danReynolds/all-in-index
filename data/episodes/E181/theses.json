@@ -10,13 +10,7 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "low",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "pairTradeId": null,
-    "scoreReason": "explicit buying opportunity call",
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Sacks sees Salesforce's 20% drop as likely overdone, calling it a probable buying opportunity while acknowledging soft guidance, because Benioff has consistently adapted to major tech cycles and will likely do the same with AI.",
     "quote": "my sense is it's probably a buying opportunity. I mean, I think Salesforce is still a great company. Marc Benioff's a great CEO. He's always positioned the company to chase after whatever the current thing is.",
     "quoteStartMs": 4316354,
@@ -26,7 +20,9 @@
       "AI",
       "management"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": "explicit buying opportunity call"
   },
   {
     "id": "E181-crm-Chamath-1",
@@ -39,13 +35,7 @@
     "host": "Chamath",
     "stance": "bear",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Chamath argues Salesforce is on the wrong side of the tech lifecycle, as AI enables startups to deliver 80% of its features at a 90% discount, meaning large monolithic SaaS companies will lose customers to cheaper, more flexible alternatives over the next 5–10 years.",
     "quote": "it is on the wrong side of the life cycle. And the odds are overwhelmingly such that a bunch of small companies will flood this opportunity and provide cheaper, smaller, more flexible capabilities.",
     "quoteStartMs": 4241429,
@@ -55,7 +45,9 @@
       "competitive moat",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E181-crm-Friedberg-2",
@@ -68,13 +60,7 @@
     "host": "Friedberg",
     "stance": "mixed",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Friedberg notes Salesforce's valuation has compressed to ~20x operating cash flow with sub-10% growth, raising the question of whether macro headwinds, SaaS commoditization via AI, or customer hesitancy on generative AI spending are driving the slowdown, but flags that Benioff's founder-CEO status is a meaningful offset.",
     "quote": "it's trading at, you know, call it roughly 20 times their operating cash flow forecast with sub-10% revenue growth. And that's basically where treasuries trade... Founders, founders, founders can and will maneuver their way to success.",
     "quoteStartMs": 3977057,
@@ -84,7 +70,9 @@
       "AI",
       "founder premium"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E181-nvda-Friedberg-3",
@@ -97,13 +85,7 @@
     "host": "Friedberg",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Friedberg argues that the massive AI capex cycle ($750B+ in spending) has yet to produce incremental revenue at the enterprises spending it, meaning NVIDIA's market cap is at risk if this AI investment wave does not translate into measurable productivity or revenue gains.",
     "quote": "you cannot spend this kind of money and show no incremental revenue potential. So while this is incredible for NVIDIA, the chicken is coming home to roost because if you do not start seeing revenue flow to the bottom line of these",
     "quoteStartMs": 5905992,
@@ -112,7 +94,9 @@
       "valuation",
       "bubble risk"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E181-dell-Friedberg-4",
@@ -125,13 +109,7 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Friedberg believes Dell's post-earnings after-hours drop is an overreaction, arguing that as a pick-and-shovels data center provider Dell is well-positioned to benefit from the AI buildout despite near-term margin pressure from higher AI system COGS.",
     "quote": "Dell is a unique example in the sense that I actually think it's a beneficiary of spend. And I think that it will build data centers and it will actually do well in the move to AI because it's a very smartly positioned pick and shovels",
     "quoteStartMs": 5933929,
@@ -141,7 +119,9 @@
       "pick-and-shovels",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E181-bitcoin-Chamath-5",
@@ -154,13 +134,7 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "crypto",
     "summary": "Chamath presents historical halving-cycle data showing 8–45x price appreciation in the 6–18 months following prior halvings, and argues that the new Bitcoin ETFs will accelerate adoption as a dual-currency store of value in an era of dollar debasement.",
     "quote": "if you apply the averages... some really meaningful appreciation... there are a lot of countries that will become dual currency... when you need to buy a permanent asset that needs to have residual value, you'll use something like BTC. And",
     "quoteStartMs": 3414000,
@@ -170,6 +144,8 @@
       "ETF",
       "dollar debasement"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

@@ -18,7 +18,9 @@
       "stock momentum"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E233-anthropic-Sacks-1",
@@ -41,7 +43,9 @@
       "regulation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E233-openai-Jason-2",
@@ -64,7 +68,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E233-s-p-500-us-equities-broad-market-Chamath-4",
@@ -87,11 +93,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "scoreReason": "Chamath called levered-long US equities the free-money trade",
-    "scoreExclusionReason": "benchmark_or_etf"
+    "excludeReason": null,
+    "scoreNote": "Chamath called levered-long US equities the free-money trade"
   },
   {
     "id": "E233-s-p-500-us-equities-broad-market-Sacks-5",
@@ -113,11 +117,9 @@
       "trading strategy"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "scoreReason": "Sacks said Trump-policy panic dips are good times to buy",
-    "scoreExclusionReason": "benchmark_or_etf"
+    "excludeReason": null,
+    "scoreNote": "Sacks said Trump-policy panic dips are good times to buy"
   },
   {
     "id": "E233-s-p-500-us-equities-broad-market-Friedberg-6",
@@ -140,7 +142,9 @@
       "inflation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E233-uso-Chamath-a0",
@@ -153,7 +157,6 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "summary": "Chamath had warned that if the Iran conflict went poorly, oil could hit $100/barrel. It spiked toward $74 from $60 but came back down as markets digested the situation.",
     "quote": "if this goes poorly, we could be looking at $100 a barrel oil... while it did spike a little bit up to $74, almost hit your $100, Chamath, racing up from the $60 mark, you know, we come back down now.",
     "quoteStartMs": 1799914,
@@ -163,6 +166,9 @@
       "energy independence",
       "oil price spike"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

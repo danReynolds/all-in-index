@@ -19,7 +19,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E196-wday-Chamath-1",
@@ -41,7 +43,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E196-crm-Sacks-2",
@@ -63,7 +67,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E196-openai-Sacks-3",
@@ -86,7 +92,9 @@
       "product"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E196-orcl-Sacks-4",
@@ -108,7 +116,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E196-spacex-Sacks-5",
@@ -130,7 +140,9 @@
       "government contracts"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E196-gld-Chamath-a0",
@@ -143,7 +155,6 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "summary": "Chamath uses 'gold standard' only as a metaphor for zero-error AI software performance in regulated industries — no price or investment directional claim on gold as a commodity.",
     "quote": "I think well-crafted AI software is as good as deterministic software... that's the gold standard because in those sectors, those companies have zero tolerance.",
     "quoteStartMs": 1391354,
@@ -152,6 +163,9 @@
       "regulated industries",
       "error rates"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

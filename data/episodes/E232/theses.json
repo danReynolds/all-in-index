@@ -20,8 +20,10 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Thomas Laffont"
+    "guestName": "Thomas Laffont",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E232-meta-Chamath-1",
@@ -44,7 +46,9 @@
       "talent acquisition"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E232-googl-Chamath-2",
@@ -67,10 +71,9 @@
       "search monetization"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Chamath ranked Google as his #2 AI winner"
+    "excludeReason": null,
+    "scoreNote": "Chamath ranked Google as his #2 AI winner"
   },
   {
     "id": "E232-googl-Friedberg-3",
@@ -93,10 +96,9 @@
       "diversification"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Friedberg picked Google as his #1 AI investment"
+    "excludeReason": null,
+    "scoreNote": "Friedberg picked Google as his #1 AI investment"
   },
   {
     "id": "E232-googl-Jason-4",
@@ -119,10 +121,9 @@
       "AI"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Jason named Google among his top two AI picks"
+    "excludeReason": null,
+    "scoreNote": "Jason named Google among his top two AI picks"
   },
   {
     "id": "E232-tsla-Chamath-5",
@@ -145,10 +146,9 @@
       "physical AI"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Chamath ranked Tesla as his #1 AI winner"
+    "excludeReason": null,
+    "scoreNote": "Chamath ranked Tesla as his #1 AI winner"
   },
   {
     "id": "E232-tsla-Friedberg-6",
@@ -171,10 +171,9 @@
       "call option"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Friedberg called Tesla the best place to invest for humanoid robotics"
+    "excludeReason": null,
+    "scoreNote": "Friedberg called Tesla the best place to invest for humanoid robotics"
   },
   {
     "id": "E232-tsla-Guest-7",
@@ -196,11 +195,10 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Thomas LaFont picked Tesla as his #2 AI winner",
-    "guestName": "Thomas Laffont"
+    "guestName": "Thomas Laffont",
+    "excludeReason": null,
+    "scoreNote": "Thomas LaFont picked Tesla as his #2 AI winner"
   },
   {
     "id": "E232-nvda-Guest-8",
@@ -222,11 +220,10 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Thomas LaFont ranked NVIDIA as his #1 AI winner",
-    "guestName": "Thomas Laffont"
+    "guestName": "Thomas Laffont",
+    "excludeReason": null,
+    "scoreNote": "Thomas LaFont ranked NVIDIA as his #1 AI winner"
   },
   {
     "id": "E232-nvda-Friedberg-9",
@@ -249,7 +246,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E232-aapl-Chamath-10",
@@ -272,7 +271,9 @@
       "AI competitiveness"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E232-aapl-Friedberg-11",
@@ -294,7 +295,9 @@
       "product strategy"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E232-scale-ai-Chamath-12",
@@ -317,7 +320,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E232-crwv-Guest-13",
@@ -339,8 +344,10 @@
       "growth investing"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Thomas Laffont"
+    "guestName": "Thomas Laffont",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E232-crcl-Guest-14",
@@ -363,8 +370,10 @@
       "growth investing"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Thomas Laffont"
+    "guestName": "Thomas Laffont",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E232-anthropic-Guest-15",
@@ -387,8 +396,10 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Thomas Laffont"
+    "guestName": "Thomas Laffont",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E232-msft-Friedberg-16",
@@ -411,7 +422,9 @@
       "competitive threat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E232-msft-Chamath-17",
@@ -434,7 +447,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E232-amzn-Chamath-18",
@@ -457,7 +472,9 @@
       "M&A strategy"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E232-snow-Chamath-19",
@@ -480,7 +497,9 @@
       "business model"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E232-s-p-500-us-equities-broad-market-Friedberg-a0",
@@ -493,12 +512,7 @@
     "host": "Friedberg",
     "stance": "bear",
     "conviction": "medium",
-    "positional": true,
     "callType": "explicit_short",
-    "tradeDirection": "short",
-    "scoreReason": "Friedberg argued this was a rare moment to short the S&P and pick winners",
-    "scoreCondition": null,
-    "scoreExclusionReason": "benchmark_or_etf",
     "summary": "Friedberg argues the AI transition creates a rare stock-picking moment where investors could short the S&P 500 and pick a few emerging category winners rather than owning the broad index.",
     "quote": "you could go short the S&P... it is an opportunity to short the S&P and pick a couple winners.",
     "quoteStartMs": 4781000,
@@ -508,6 +522,8 @@
       "stock picking",
       "broad market"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": "Friedberg argued this was a rare moment to short the S&P and pick winners"
   }
 ]

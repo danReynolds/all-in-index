@@ -20,7 +20,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E191-aapl-Chamath-1",
@@ -43,7 +45,9 @@
       "regulation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E191-brk.b-Sacks-2",
@@ -65,7 +69,9 @@
       "recession risk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E191-googl-Chamath-3",
@@ -88,7 +94,9 @@
       "AI"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E191-googl-Sacks-4",
@@ -111,7 +119,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E191-abnb-Chamath-5",
@@ -133,7 +143,9 @@
       "demand"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E191-abnb-Sacks-6",
@@ -155,7 +167,9 @@
       "demand"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E191-gld-Unknown-a0",
@@ -168,7 +182,6 @@
     "host": "Unknown",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "summary": "Gold and silver are mentioned only as joke metaphors for Olympic medals awarded to Chamath and Sacks — no price or investment direction expressed.",
     "quote": "he won silver for the least Olympic body. Well done, Saks.",
     "quoteStartMs": 156056,
@@ -176,6 +189,9 @@
       "humor",
       "incidental mention"
     ],
-    "attributionConfidence": "low"
+    "attributionConfidence": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

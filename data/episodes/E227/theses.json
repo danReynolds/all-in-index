@@ -20,7 +20,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E227-googl-Chamath-1",
@@ -43,7 +45,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E227-googl-Guest-2",
@@ -66,8 +70,10 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Philippe Laffont"
+    "guestName": "Philippe Laffont",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E227-googl-Jason-3",
@@ -90,7 +96,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E227-openai-Chamath-4",
@@ -112,7 +120,9 @@
       "competitive position"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E227-spacex-Chamath-5",
@@ -134,11 +144,9 @@
       "new Mag 7"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "basket",
-    "tradeDirection": "long",
-    "scoreReason": "Chamath said SpaceX belongs in the forward-looking basket to own",
-    "scoreExclusionReason": "private"
+    "excludeReason": null,
+    "scoreNote": "Chamath said SpaceX belongs in the forward-looking basket to own"
   },
   {
     "id": "E227-stripe-Chamath-6",
@@ -160,11 +168,9 @@
       "new Mag 7"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "basket",
-    "tradeDirection": "long",
-    "scoreReason": "Chamath said Stripe belongs in the forward-looking basket to own",
-    "scoreExclusionReason": "private"
+    "excludeReason": null,
+    "scoreNote": "Chamath said Stripe belongs in the forward-looking basket to own"
   },
   {
     "id": "E227-coatue-interval-fund-Guest-7",
@@ -187,8 +193,10 @@
       "fees"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Philippe Laffont"
+    "guestName": "Philippe Laffont",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E227-msft-Guest-8",
@@ -210,8 +218,10 @@
       "earnings"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Philippe Laffont"
+    "guestName": "Philippe Laffont",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E227-v-Guest-9",
@@ -233,8 +243,10 @@
       "macro"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Philippe Laffont"
+    "guestName": "Philippe Laffont",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E227-ma-Guest-10",
@@ -256,8 +268,10 @@
       "macro"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Philippe Laffont"
+    "guestName": "Philippe Laffont",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E227-cof-Chamath-11",
@@ -279,7 +293,9 @@
       "macro risk"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E227-cacc-Chamath-12",
@@ -301,6 +317,8 @@
       "consumer credit"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

@@ -10,13 +10,7 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Chamath argues Wiz rejected Google's $23B offer because recent high-profile cloud security incidents (AT&T-Snowflake leak) are supercharging its sales momentum and revenue growth, making continued independent operation more valuable than the acquisition price.",
     "quote": "I suspect that if you had to guess why they said no, it's because they thought that they could grow revenue much faster because of recent events, as well as their own just natural momentum.",
     "quoteStartMs": 385721,
@@ -25,7 +19,9 @@
       "cloud security",
       "growth"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E189-wiz-Sacks-1",
@@ -38,13 +34,7 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Sacks argues the $23B Google offer may not be crazy given Wiz's ~100% growth rate and a path to $1B ARR, and that the founders are rationally pursuing a standalone company build-out given those prospects.",
     "quote": "They're projecting a billion in ARR next year up from, what is it, roughly 500. Like that offer may not be that crazy... I can see why these guys would just want to go for it if they think they're building a big standalone company.",
     "quoteStartMs": 543000,
@@ -54,7 +44,9 @@
       "valuation",
       "growth"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E189-wiz-Friedberg-2",
@@ -67,13 +59,7 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Friedberg argues that Wiz's growth trajectory could put it in range of a Palo Alto Networks-scale ~$100B market cap, making the Google offer potentially a sell-too-early mistake, while the downside of going public is limited.",
     "quote": "It's conceivable they could be in the range of a Palo Alto Networks $100 billion market cap in a couple of years... There's not a lot of downside from this offer and certainly seems to be quite a bit of upside.",
     "quoteStartMs": 716437,
@@ -83,7 +69,9 @@
       "valuation",
       "growth"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E189-googl-Friedberg-3",
@@ -96,13 +84,7 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Friedberg highlights GCP's rapid profitability improvement — $1.2B operating profit in the last quarter alone — and projects the cloud business could generate $20–30B in annual free cash flow, framing cloud and AI as the key growth drivers for Alphabet going forward.",
     "quote": "They're running at a $1.2 billion operating profit out of GCP. So if you kind of think about what cloud margin should be over time... this cloud business could be generating $20 to $30 billion a year of free cash flow.",
     "quoteStartMs": 610347,
@@ -112,7 +94,9 @@
       "valuation",
       "free cash flow"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E189-crwd-Sacks-4",
@@ -125,13 +109,7 @@
     "host": "Sacks",
     "stance": "bear",
     "conviction": "high",
-    "positional": true,
     "callType": "explicit_exit",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": "Explicit statement of having verified no exposure and stating 'I don't trust this company' — clear avoid/exit posture",
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Sacks expresses deep distrust of CrowdStrike and confirms he had his IT department verify the company's software is not running on any of his systems, effectively an explicit exit/avoid call.",
     "quote": "I had my IT department check and make sure that we didn't have it running anywhere. We don't. I'm just gonna be frank, I don't trust this company.",
     "quoteStartMs": 976000,
@@ -140,7 +118,9 @@
       "trust",
       "enterprise software"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": "Explicit statement of having verified no exposure and stating 'I don't trust this company' — clear avoid/exit posture"
   },
   {
     "id": "E189-pltr-Sacks-5",
@@ -153,13 +133,7 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "medium",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "pairTradeId": null,
-    "scoreReason": "Explicit ownership declaration paired with 'I think it's a good investment'",
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Sacks explicitly states he holds shares in Palantir and considers it a good investment.",
     "quote": "I have shares in the company. I think it's a good investment.",
     "quoteStartMs": 1031000,
@@ -168,7 +142,9 @@
       "AI",
       "ownership"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": "Explicit ownership declaration paired with 'I think it's a good investment'"
   },
   {
     "id": "E189-foxa-Sacks-6",
@@ -181,13 +157,7 @@
     "host": "Sacks",
     "stance": "bear",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Sacks argues Fox already faces a structural market position problem because its neoconservative editorial slant is increasingly misaligned with its populist-conservative audience, which is bad for business regardless of the succession outcome.",
     "quote": "Fox already has a problem where they are becoming misaligned with their audience. And regardless of what you think of the politics, this is bad for business.",
     "quoteStartMs": 2736589,
@@ -196,6 +166,8 @@
       "audience alignment",
       "competitive position"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

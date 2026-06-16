@@ -10,13 +10,7 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Chamath argues ChatGPT's consumer growth has plateaued and the broader AI market is still in a 'primordial ooze' phase where no company has yet built the durable 'Facebook of AI' — that defining app has yet to be created.",
     "quote": "I will maintain my perspective here, which is the 'Facebook of AI' has yet to be created.",
     "quoteStartMs": 1304347,
@@ -25,7 +19,9 @@
       "competitive moat",
       "AI platform"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E179-openai-chatgpt-Sacks-1",
@@ -38,13 +34,7 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Sacks argues GPT-4o's omnichannel speed and conversational improvements will unlock a wave of new B2B applications, and that metering model usage with best-in-class dev tools represents a more attractive business model than B2C subscriptions.",
     "quote": "If they're metering the usage of the models and providing the best dev tools, I think there is a business model there.",
     "quoteStartMs": 1554213,
@@ -53,7 +43,9 @@
       "product innovation",
       "AI platform"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E179-glue-Jason-2",
@@ -66,13 +58,7 @@
     "host": "Jason",
     "stance": "bull",
     "conviction": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "pairTradeId": null,
-    "scoreReason": "Explicit 'I'm in' investment declaration with '100-bagger' valuation framing",
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Jason declares Glue feels like a 100-bagger and announces he is moving his company to the platform, explicitly stating he is in as an investor.",
     "quote": "It feels like a 100-bagger to me. I'm in.",
     "quoteStartMs": 1800000,
@@ -81,7 +67,9 @@
       "AI-native",
       "Slack competitor"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": "Explicit 'I'm in' investment declaration with '100-bagger' valuation framing"
   },
   {
     "id": "E179-slack-Sacks-3",
@@ -94,13 +82,7 @@
     "host": "Sacks",
     "stance": "bear",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "not_investment_call",
     "summary": "Sacks argues Slack was not built for the AI era, making it structurally obsolete compared to AI-native competitors like Glue.",
     "quote": "Slack wasn't built for the AI era. Glue is AI native.",
     "quoteStartMs": 1841164,
@@ -109,7 +91,9 @@
       "AI-native",
       "enterprise software"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": "not_investment_call",
+    "scoreNote": null
   },
   {
     "id": "E179-duol-Jason-4",
@@ -122,13 +106,7 @@
     "host": "Jason",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "not_investment_call",
     "summary": "Jason quips that Duolingo's stock took a hit when GPT-4o demonstrated real-time conversational translation, implying the model threatens Duolingo's core language-learning business.",
     "quote": "I think Duolingo stock took a hit during that.",
     "quoteStartMs": 900000,
@@ -136,7 +114,9 @@
       "competitive threat",
       "AI disruption"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": "not_investment_call",
+    "scoreNote": null
   },
   {
     "id": "E179-perplexity-Sacks-5",
@@ -149,13 +129,7 @@
     "host": "Sacks",
     "stance": "bear",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Sacks argues Perplexity is likely 'screwed' now that Google has copied its core innovation of citation-backed AI search answers, leaving acquisition as their main path forward.",
     "quote": "Sucks for Perplexity. I think they're kind of screwed now unless they get an acquisition deal.",
     "quoteStartMs": 5566000,
@@ -164,7 +138,9 @@
       "AI search",
       "Google disruption"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E179-googl-Chamath-6",
@@ -177,13 +153,7 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "high",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Chamath reverses his prior bearish Google view, arguing that AI Overviews strengthens their core search and that hidden assets like Isomorphic Labs represent massive unrealized value optionality embedded in the stock.",
     "quote": "The reports of their death were premature and exaggerated... if you fold that back into a Google, if you think about what they're doing now on the search side, these guys may be really kicking some ass here.",
     "quoteStartMs": 5143994,
@@ -193,7 +163,9 @@
       "hidden assets",
       "re-underwriting"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E179-googl-Friedberg-7",
@@ -206,13 +178,7 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Friedberg argues Google's AI Overviews will keep users on-page longer, increasing both search volume and revenue-per-query, while hidden assets like Isomorphic Labs — which peers like Meta and Amazon lack — represent additional upside options the market is undervaluing.",
     "quote": "Meta and Amazon do not have an isomorphics lab and Waymo sitting inside their business that suddenly pops to a couple hundred billion of market cap. And Google does have a few of those.",
     "quoteStartMs": 5378000,
@@ -221,7 +187,9 @@
       "hidden assets",
       "competitive moat"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E179-googl-Sacks-8",
@@ -234,13 +202,7 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "callType": "view",
-    "tradeDirection": null,
-    "pairTradeId": null,
-    "scoreReason": null,
-    "scoreCondition": null,
-    "scoreExclusionReason": null,
     "summary": "Sacks argues Google's monopoly is so durable it can absorb major AI missteps and ultimately copy innovators like Perplexity to dominate AI search, potentially growing into a $5 trillion company.",
     "quote": "They can make 10 mistakes, but their monopoly is so strong that they can finally get it right by copying the innovator. And they're probably gonna become a $5 trillion company now.",
     "quoteStartMs": 5674000,
@@ -249,7 +211,9 @@
       "AI search",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E179-ohalo-genetics-Friedberg-9",
@@ -262,13 +226,7 @@
     "host": "Friedberg",
     "stance": "neutral",
     "conviction": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "pairTradeId": null,
-    "scoreReason": "Founder/investor with stated $50M+ capital invested; explicit ownership position",
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Friedberg, co-founder and investor, presents Ohalo's boosted breeding technology showing 50-100%+ crop yield gains and new seed market opportunities, arguing the company's trade secrets and compounding genetics moat make it a highly valuable deep-tech agricultural business.",
     "quote": "We've invested a ton of money. This was stealth for 5 years. We put a ton of money into this business. So when you invest that, um, I mean north of 50.",
     "quoteStartMs": 3074000,
@@ -278,7 +236,9 @@
       "IP moat",
       "yield improvement"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": "Founder/investor with stated $50M+ capital invested; explicit ownership position"
   },
   {
     "id": "E179-athena-athenawow-Jason-10",
@@ -291,13 +251,7 @@
     "host": "Jason",
     "stance": "bull",
     "conviction": "high",
-    "positional": true,
     "callType": "explicit_long",
-    "tradeDirection": "long",
-    "pairTradeId": null,
-    "scoreReason": "Explicit largest-ever investment disclosure; bull conviction backed by growth comparison",
-    "scoreCondition": null,
-    "scoreExclusionReason": "private",
     "summary": "Jason made his largest-ever investment in Athena, citing growth faster than Uber and Robinhood at comparable stages, driven by a capital-efficient virtual EA/operations model that is already saving his fund 75% on staffing costs.",
     "quote": "It's the fastest growing company I've ever seen, and I'm including Uber in that... it has been growing at a rate that I'll just say is faster than Uber and Robinhood when we were investing in them.",
     "quoteStartMs": 4483000,
@@ -306,6 +260,8 @@
       "unit economics",
       "future of work"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "excludeReason": null,
+    "scoreNote": "Explicit largest-ever investment disclosure; bull conviction backed by growth comparison"
   }
 ]

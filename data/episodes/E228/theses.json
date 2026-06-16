@@ -19,7 +19,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E228-cvs-Friedberg-1",
@@ -42,7 +44,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E228-ci-Friedberg-2",
@@ -65,7 +69,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E228-unh-Friedberg-3",
@@ -88,7 +94,9 @@
       "vertical integration"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E228-ung-Friedberg-a0",
@@ -101,7 +109,6 @@
     "host": "Friedberg",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "summary": "Friedberg argues the US should continue and expand LNG exports as the largest methane exporter, framing natural gas as a cleaner energy source than oil or coal and a key asset to monetize for revenue generation.",
     "quote": "the U.S. is now the largest exporter of methane... So U.S. companies are selling liquid methane that we're pulling out of the ground to those countries... the United States should be, as we are today, an LNG or liquefied natural gas or liquid methane exporter.",
     "quoteStartMs": 4026000,
@@ -112,7 +119,9 @@
       "clean energy"
     ],
     "attributionConfidence": "high",
-    "scoreReason": "Friedberg argues the US should expand LNG exports — this is policy/strategic commentary on energy trade, not an explicit directional price call on natural gas."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Friedberg argues the US should expand LNG exports — this is policy/strategic commentary on energy trade, not an explicit directional price call on natural gas."
   },
   {
     "id": "E228-lit-Chamath-a1",
@@ -125,7 +134,6 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "summary": "Chamath briefly references lithium as one of the critical minerals under US land that private companies would buy and use to manufacture critical requirements, framing it as a monetizable national asset.",
     "quote": "Yeah, zinc. So who's gonna buy lithium?... The private companies that, that would then use those resources to manufacture critical requirements for the United States and other countries who want to buy.",
     "quoteStartMs": 4007000,
@@ -135,6 +143,8 @@
       "natural resources"
     ],
     "attributionConfidence": "high",
-    "scoreReason": "Discusses who would buy US lithium to monetize national resources — supply/monetization mechanics, not a directional price call."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Discusses who would buy US lithium to monetize national resources — supply/monetization mechanics, not a directional price call."
   }
 ]

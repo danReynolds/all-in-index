@@ -20,7 +20,9 @@
       "revenue ramp"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E263-anthropic-Chamath-1",
@@ -43,7 +45,9 @@
       "competitive moat"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E263-googl-Friedberg-2",
@@ -66,10 +70,9 @@
       "product integration"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Friedberg called Google the AI market-value creation bet"
+    "excludeReason": null,
+    "scoreNote": "Friedberg called Google the AI market-value creation bet"
   },
   {
     "id": "E263-anduril-Guest-3",
@@ -92,8 +95,10 @@
       "industry shift"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Emil Michael"
+    "guestName": "Emil Michael",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E263-pltr-Guest-4",
@@ -116,8 +121,10 @@
       "new primes"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Emil Michael"
+    "guestName": "Emil Michael",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E263-uso-Jason-a0",
@@ -130,7 +137,6 @@
     "host": "Jason",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "summary": "Jason frames the closure of the Strait of Hormuz as a major supply shock, noting 3.3 million barrels of daily production would be lost and that the economic effects over the next 4 weeks could be 'intense and acute', implying strong upward price pressure on oil.",
     "quote": "Unless the strait opens, 3.3 million barrels of daily production would be lost early next week... Freeberg, your thoughts on the economic second-order effects that we're starting to experience here and over the next 4 weeks could be, um, you know, intense and acute.",
     "quoteStartMs": 2268291,
@@ -141,7 +147,10 @@
       "energy prices",
       "inflation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E263-uso-Friedberg-a1",
@@ -154,7 +163,6 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "medium",
-    "positional": false,
     "summary": "Friedberg explains that Strait of Hormuz disruption and collapse of war-risk insurance creates a massive risk to energy prices globally, driving inflation and threatening US economic security — implying bullish near-term oil price pressure from the supply shock.",
     "quote": "that's obviously a massive risk to energy prices globally, which drives inflation and puts US economic security at risk.",
     "quoteStartMs": 2393482,
@@ -165,7 +173,10 @@
       "supply disruption",
       "inflation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E263-lit-Guest-a2",
@@ -178,7 +189,6 @@
     "host": "Guest",
     "stance": "neutral",
     "conviction": "medium",
-    "positional": false,
     "summary": "Emil Michael (Guest) highlights that lithium supply is entirely outsourced to China and frames domestic sourcing of critical minerals including lithium as an urgent national security priority, implying strong demand and strategic value for the commodity.",
     "quote": "batteries are totally outsourced both technologically and from lithium to China... I think we'll get critical minerals done before the rest of the term where we have access to what we need to from us or allied countries.",
     "quoteStartMs": 4350254,
@@ -191,6 +201,8 @@
     ],
     "attributionConfidence": "high",
     "guestName": "Emil Michael",
-    "scoreReason": "This is a national security / strategic sourcing framing — outsourcing concern and domestic sourcing priority. No explicit price direction stated for lithium."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "This is a national security / strategic sourcing framing — outsourcing concern and domestic sourcing priority. No explicit price direction stated for lithium."
   }
 ]

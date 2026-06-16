@@ -20,7 +20,9 @@
       "CHIPS Act"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E241-intc-Sacks-1",
@@ -43,7 +45,9 @@
       "CHIPS Act"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E241-openai-Friedberg-2",
@@ -66,7 +70,9 @@
       "longevity"
     ],
     "attributionConfidence": "medium",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E241-lit-Chamath-a0",
@@ -79,7 +85,6 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "summary": "Chamath references rare earths/critical materials in the context of Chinese state-backed market manipulation (price shaping, dumping) to crowd out competitors and lock capital markets, using it as an illustrative example of strategic resource competition — no explicit price or investment directional claim on the commodity itself.",
     "quote": "I can talk to you about rare earths as one very specific example through my involvement with MP and, and now with Intelis. The Chinese have an extremely sophisticated market-driven approach to how they help when they are on the cap table. They'll price shape, they'll price dump, they will change the spot markets",
     "quoteStartMs": 2366777,
@@ -89,7 +94,10 @@
       "strategic competition",
       "US industrial policy"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E241-gld-Unknown-a0",
@@ -102,11 +110,13 @@
     "host": "Unknown",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "summary": "No commodity takes found in this excerpt.",
     "quote": "",
     "quoteStartMs": null,
     "topics": [],
-    "attributionConfidence": "low"
+    "attributionConfidence": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   }
 ]

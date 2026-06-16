@@ -20,8 +20,10 @@
       "profit pool"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Brad Gerstner"
+    "guestName": "Brad Gerstner",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E260-crm-Sacks-1",
@@ -44,7 +46,9 @@
       "valuation"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E260-tri-Jason-2",
@@ -66,7 +70,9 @@
       "SaaS"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E260-databricks-Guest-3",
@@ -88,8 +94,10 @@
       "growth acceleration"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Brad Gerstner"
+    "guestName": "Brad Gerstner",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E260-snow-Guest-4",
@@ -111,8 +119,10 @@
       "growth"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Brad Gerstner"
+    "guestName": "Brad Gerstner",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E260-spacex-xai-Guest-5",
@@ -135,8 +145,10 @@
       "space"
     ],
     "attributionConfidence": "high",
-    "positional": false,
-    "guestName": "Brad Gerstner"
+    "guestName": "Brad Gerstner",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E260-spacex-xai-Jason-6",
@@ -159,7 +171,9 @@
       "AI infrastructure"
     ],
     "attributionConfidence": "high",
-    "positional": false
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E260-amzn-Jason-7",
@@ -181,10 +195,9 @@
       "top pick"
     ],
     "attributionConfidence": "high",
-    "positional": true,
     "callType": "selection",
-    "tradeDirection": "long",
-    "scoreReason": "Jason called Amazon his number one company-of-the-future pick"
+    "excludeReason": null,
+    "scoreNote": "Jason called Amazon his number one company-of-the-future pick"
   },
   {
     "id": "E260-gld-Sacks-a0",
@@ -197,7 +210,6 @@
     "host": "Sacks",
     "stance": "bear",
     "conviction": "low",
-    "positional": false,
     "summary": "Sacks notes that gold and silver prices came down following the Warsh Fed pick, framing this as a reassuring signal for markets worried about currency debasement — implying the pick is bearish for gold.",
     "quote": "You saw that in financial markets on the heels of this, the price of gold and silver came down. It was reassuring to those who are worried about currency debasement, basically.",
     "quoteStartMs": 3214464,
@@ -207,7 +219,10 @@
       "currency debasement",
       "interest rates"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E260-slv-Sacks-a1",
@@ -220,7 +235,6 @@
     "host": "Sacks",
     "stance": "bear",
     "conviction": "low",
-    "positional": false,
     "summary": "Sacks notes that silver (alongside gold) prices came down following the Warsh Fed pick, framing it as a reassuring market reaction against currency debasement fears.",
     "quote": "You saw that in financial markets on the heels of this, the price of gold and silver came down. It was reassuring to those who are worried about currency debasement, basically.",
     "quoteStartMs": 3214464,
@@ -230,7 +244,10 @@
       "currency debasement",
       "interest rates"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null
   },
   {
     "id": "E260-gld-Friedberg-a2",
@@ -243,7 +260,6 @@
     "host": "Friedberg",
     "stance": "neutral",
     "conviction": "low",
-    "positional": false,
     "summary": "Friedberg half-jokingly says that as 'emperor' he would return to the gold standard to stop money printing, implying a directional preference for gold as a monetary anchor.",
     "quote": "My day as emperor would probably resolve us back to being on the gold standard so we wouldn't be printing money.",
     "quoteStartMs": 3325000,
@@ -254,6 +270,8 @@
       "money printing"
     ],
     "attributionConfidence": "high",
-    "scoreReason": "Friedberg's half-joking remark about returning to the gold standard as 'emperor' is a monetary policy preference, not an explicit directional price call on gold."
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Friedberg's half-joking remark about returning to the gold standard as 'emperor' is a monetary policy preference, not an explicit directional price call on gold."
   }
 ]
