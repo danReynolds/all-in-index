@@ -4,7 +4,8 @@
  * When a bestie's year-ahead pick names a SECTOR or THEME rather than a single
  * tradable company ("Mag Seven", "Chinese tech", "vertical SaaS"), we track it
  * against the closest liquid, widely-held ETF so it can be scored. The proxy is
- * an APPROXIMATION — see the /proxy/[ticker] page for the caveats.
+ * an APPROXIMATION — the "Why this proxy?" modal on the Predictions page spells
+ * out the caveats.
  *
  * Shared by the pipeline (matching pick text → ticker) and the app (display).
  */

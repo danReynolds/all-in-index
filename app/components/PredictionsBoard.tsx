@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
+import { useState, useEffect } from "react";
 import { pct, returnColor, fmtDate, callVerdict } from "@/lib/format";
 import { HostAvatar } from "@/app/components/host";
 import { GuestName } from "@/app/components/GuestName";
 import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { ListenButton } from "@/app/components/player";
+import { PROXY_BY_TICKER } from "@/lib/proxies";
 import type { EpisodeMeta, Host } from "@/lib/types";
 
 export interface FinPick {
@@ -105,7 +105,85 @@ function PickChart({ history, up }: { history: Array<[string, number]>; up: bool
   );
 }
 
+/** In-context explainer for why a sector/theme pick is tracked via an ETF. */
+function ProxyModal({ pick, onClose }: { pick: FinPick; onClose: () => void }) {
+  const ticker = pick.proxyTicker ?? "";
+  const info = PROXY_BY_TICKER[ticker];
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [onClose]);
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-end justify-center bg-black/70 p-4 backdrop-blur-sm sm:items-center"
+      role="dialog"
+      aria-modal="true"
+      onClick={onClose}
+    >
+      <div
+        className="w-full max-w-md rounded-2xl border border-neutral-200 bg-white p-6 shadow-2xl dark:border-neutral-800 dark:bg-neutral-900"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex items-start justify-between gap-3">
+          <p className="font-display text-[11px] font-semibold uppercase tracking-[0.18em] text-emerald-600 dark:text-emerald-400">
+            Why this proxy?
+          </p>
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Close"
+            className="-mr-1.5 -mt-1.5 rounded-md p-1.5 text-neutral-400 transition hover:bg-neutral-100 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+          >
+            ✕
+          </button>
+        </div>
+
+        <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
+          {pick.speaker} picked <strong className="text-neutral-900 dark:text-neutral-100">“{pick.pick}”</strong> — a
+          sector or theme, not a single stock. To put a number on it we track the closest liquid, widely-held ETF.
+        </p>
+
+        {info && (
+          <div className="mt-3 rounded-xl border border-neutral-200 bg-neutral-50 p-3 dark:border-neutral-800 dark:bg-neutral-950/40">
+            <div className="flex items-center gap-2">
+              <span className="rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-[10px] text-neutral-500 dark:bg-neutral-800">
+                {info.ticker}
+              </span>
+              <span className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">{info.name}</span>
+            </div>
+            <p className="mt-1.5 text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">{info.what}</p>
+          </div>
+        )}
+
+        <p className="mt-3 text-sm leading-relaxed text-neutral-500 dark:text-neutral-400">
+          It&rsquo;s the best stand-in we have — but only an approximation. The ETF holds names they never mentioned, and
+          the exact company or sub-segment they had in mind can move very differently. Read the verdict as a directional
+          gut-check on the call, not a precise scorecard.
+        </p>
+
+        <a
+          href={`https://finance.yahoo.com/quote/${ticker}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-flex items-center gap-1 text-sm text-emerald-600 hover:underline dark:text-emerald-400"
+        >
+          View {ticker} on Yahoo Finance ↗
+        </a>
+      </div>
+    </div>
+  );
+}
+
 function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?: EpisodeMeta | null; episodeId: string; inProgress: boolean }) {
+  const [showProxy, setShowProxy] = useState(false);
   const graded = isGraded(p);
   const right = verdictOf(p);
   const v = verdictLabel(right, inProgress);
@@ -172,19 +250,18 @@ function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?:
             <span>now</span>
           </div>
           {p.proxyTicker && (
-            <Link
-              href={`/proxy/${p.proxyTicker.toLowerCase()}`}
-              className="group/px mt-2 flex items-center justify-between gap-2 rounded-lg border border-dashed border-neutral-200/70 px-3 py-1.5 text-[11px] text-neutral-500 transition hover:border-neutral-300/80 hover:text-neutral-300 dark:border-neutral-800 dark:hover:border-neutral-700 dark:hover:bg-neutral-800/30"
+            <button
+              type="button"
+              onClick={() => setShowProxy(true)}
+              className="group/px mt-2 flex w-full items-center justify-between gap-2 rounded-lg border border-dashed border-neutral-200/70 px-3 py-1.5 text-[11px] text-neutral-500 transition hover:border-neutral-300/80 hover:text-neutral-300 dark:border-neutral-800 dark:hover:border-neutral-700 dark:hover:bg-neutral-800/30"
             >
               <span>
                 Sector proxy ·{" "}
                 <span className="font-mono text-neutral-400 transition group-hover/px:text-neutral-200">{p.proxyTicker}</span>{" "}
                 <span>({p.proxyNote})</span>
               </span>
-              <span className="shrink-0 font-medium transition group-hover/px:translate-x-0.5 group-hover/px:text-neutral-300">
-                Why this? →
-              </span>
-            </Link>
+              <span className="shrink-0 font-medium transition group-hover/px:text-neutral-300">Why this?</span>
+            </button>
           )}
         </div>
       ) : (
@@ -205,6 +282,8 @@ function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?:
           )}
         </blockquote>
       )}
+
+      {showProxy && p.proxyTicker && <ProxyModal pick={p} onClose={() => setShowProxy(false)} />}
     </div>
   );
 }

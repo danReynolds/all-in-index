@@ -72,6 +72,89 @@ export function callVerdict(
   };
 }
 
+/** Whole days between two ISO dates (>= 0). */
+export function daysBetween(fromIso: string, toIso: string): number {
+  if (!fromIso || !toIso) return 0;
+  const ms = new Date(toIso).getTime() - new Date(fromIso).getTime();
+  return Math.max(0, Math.round(ms / 86_400_000));
+}
+
+/**
+ * The stock's own "normal" move between sampled closes — a noise floor.
+ * A call shouldn't be judged right or wrong on a move smaller than this: for a
+ * name like NVDA that routinely swings ~4% between samples, a 2% wiggle means
+ * nothing. Uses the *median* absolute period return (robust to one-off gaps)
+ * over the most recent ~24 samples. Returns null when there's too little data.
+ */
+export function typicalMove(
+  history: Array<[string, number]> | null | undefined,
+): number | null {
+  if (!history || history.length < 4) return null;
+  const tail = history.slice(-24);
+  const moves: number[] = [];
+  for (let i = 1; i < tail.length; i++) {
+    const prev = tail[i - 1][1];
+    const cur = tail[i][1];
+    if (prev > 0) moves.push(Math.abs(cur / prev - 1));
+  }
+  if (!moves.length) return null;
+  moves.sort((a, b) => a - b);
+  const mid = Math.floor(moves.length / 2);
+  return moves.length % 2 ? moves[mid] : (moves[mid - 1] + moves[mid]) / 2;
+}
+
+/** How long a thesis gets to breathe before we'll call it right or wrong. */
+export const VIEW_HORIZON_DAYS = 90; // a long-arc "view" — give it a quarter
+export const TRADE_HORIZON_DAYS = 30; // an explicit dated trade — give it a month
+/** Smallest move that ever counts, even for a placid stock. */
+const MIN_MATERIAL_MOVE = 0.03;
+
+export type VerdictTone = "with" | "against" | "early" | "inline";
+
+export interface TakeVerdict {
+  /** with = thesis bearing out, against = running counter, early = too soon, inline = stock's barely moved. */
+  tone: VerdictTone;
+  /** True once there's been enough time *and* a material move to state plainly. */
+  firm: boolean;
+  /** Gracious, process-oriented phrasing for the UI. */
+  label: string;
+}
+
+/**
+ * Judge a host's take graciously and on the right horizon. A take only firms
+ * up to "tracking with / against the call" once two things are true: the stock
+ * has moved more than its own normal noise, *and* enough time has passed for
+ * the thesis to play out. A multi-year durability view is not "wrong" because
+ * the stock dipped for three weeks — that's "too early to call".
+ *
+ * The old binary callVerdict() (flat ±2%, no clock) still backs the
+ * year-bounded prediction-contest surfaces; this is for episode/holding takes.
+ */
+export function takeVerdict(opts: {
+  stance: Stance;
+  /** Stock return from the call to now — the stock's move, not the host's. */
+  since: number | null | undefined;
+  /** Days from the call date to the latest price. */
+  elapsedDays: number | null | undefined;
+  /** The stock's typical move between samples (see typicalMove). */
+  noiseFloor: number | null | undefined;
+  /** True for an explicit dated trade; false/undefined for a long-arc view. */
+  positional?: boolean;
+}): TakeVerdict | null {
+  const { stance, since } = opts;
+  if (since == null || (stance !== "bull" && stance !== "bear")) return null;
+  // Signal has to beat the stock's own noise (with a floor for placid names).
+  const floor = Math.max(MIN_MATERIAL_MOVE, opts.noiseFloor ?? 0);
+  if (Math.abs(since) < floor) return { tone: "inline", firm: false, label: "barely moved since" };
+  // Let the thesis breathe before grading it.
+  const horizon = opts.positional ? TRADE_HORIZON_DAYS : VIEW_HORIZON_DAYS;
+  if ((opts.elapsedDays ?? 0) < horizon) return { tone: "early", firm: false, label: "too early to call" };
+  const working = stance === "bull" ? since > 0 : since < 0;
+  return working
+    ? { tone: "with", firm: true, label: "tracking with the call" }
+    : { tone: "against", firm: true, label: "tracking against the call" };
+}
+
 export function fmtDate(iso: string): string {
   if (!iso) return "";
   return new Date(iso).toLocaleDateString("en-US", {
