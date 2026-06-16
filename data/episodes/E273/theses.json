@@ -10,20 +10,19 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Benioff argues the SaaS rerating is a cyclical market phenomenon, not a structural collapse — Salesforce's fundamentals (>$46B revenue, >$16B cash flow) are strong, and AI is enabling unprecedented efficiency and sales capacity he couldn't achieve before, justifying a massive $50B buyback.",
-    "quote": "We'll do over $46 billion this year, more than $16 billion in cash flow... The market's rerated. It happens every now and then. There are cycles... This is not my first SaaSpocalypse.",
-    "quoteStartMs": 2106977,
-    "topics": [
-      "SaaS rerating",
-      "AI efficiency",
-      "buyback",
-      "valuation"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Marc Benioff",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Benioff argues the SaaS re-rating is cyclical, not structural: Salesforce has strong fundamentals ($46B revenue, $16B+ cash flow), is executing a massive $50B buyback, and AI tooling is making its products more efficient and capable than ever — positioning it well for the next cycle.",
+    "quote": "we'll do over $46 billion this year, more than $16 billion in cash flow... we want to buy back as much as we can... Everything's going to be cheaper to make. It's more efficient. I can do things that I just could not do before.",
+    "quoteStartMs": 2106977,
+    "topics": [
+      "SaaS re-rating",
+      "buyback",
+      "AI efficiency",
+      "valuation"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E273-crm-Chamath-1",
@@ -36,22 +35,70 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Chamath argues that large, entrenched enterprise software platforms like Salesforce are well-positioned for a re-rating upward once AI hype fades, because their deep C-suite relationships, negative churn, and trusted data context make them the natural channel through which AI ROI must eventually be demonstrated.",
-    "quote": "Those guys I think are positioned to crush because eventually, Jason, the next trade that has to happen is when the public markets become a little bit less breathless about AI and they ask one simple question. Okay guys, you've spent $3 tri",
-    "quoteStartMs": 2257409,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath argues that high-end enterprise SaaS incumbents like Salesforce are well-positioned because AI is harder to deploy than expected, and the market will eventually rotate back to trusted platforms with strong C-suite relationships and proven net dollar retention.",
+    "quote": "The high end of the market where Marc operates, where the large monoliths operate is quite safe... who has the best relationships, meaning they're inside the CXOs and the C-suite... Those guys I think are positioned to crush.",
+    "quoteStartMs": 2169623,
     "topics": [
-      "SaaS rerating",
-      "AI ROI",
+      "SaaS re-rating",
+      "AI disruption",
       "enterprise software",
       "valuation"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E273-anthropic-Guest-2",
+    "id": "E273-crm-Friedberg-2",
+    "episodeId": "E273",
+    "episodeNumber": 273,
+    "episodeDate": "2026-05-15T21:21:00.000Z",
+    "company": "Salesforce",
+    "ticker": "CRM",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg notes Salesforce is a platform he is actively investing in at his company, and sees a favorable arbitrage in horizontal enterprise software platforms versus vertical point solutions in the current AI environment.",
+    "quote": "We're doing a big Salesforce implementation at Ohalo... we're doubling down our investment in horizontal tools... I think there's probably a good arbitrage there.",
+    "quoteStartMs": 2741000,
+    "topics": [
+      "enterprise software",
+      "AI platforms",
+      "horizontal vs vertical SaaS"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E273-hubs-Guest-3",
+    "episodeId": "E273",
+    "episodeNumber": 273,
+    "episodeDate": "2026-05-15T21:21:00.000Z",
+    "company": "HubSpot",
+    "ticker": "HUBS",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "neutral",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Benioff notes HubSpot is trading at just 2x sales despite having a great recent quarter, reflecting the broader SaaS re-rating driven by AI fear rather than business fundamentals — implying the valuation is disconnected from underlying performance.",
+    "quote": "HubSpot, they're trading at 2 times sales. I've never seen that before. They just had a great quarter... they're all trading at 2 times sales... there's like, you know, hypnosis around AI and we haven't seen it show up in the numbers yet.",
+    "quoteStartMs": 2000251,
+    "topics": [
+      "SaaS re-rating",
+      "valuation",
+      "AI disruption"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E273-anthropic-Guest-4",
     "episodeId": "E273",
     "episodeNumber": 273,
     "episodeDate": "2026-05-15T21:21:00.000Z",
@@ -61,22 +108,21 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Benioff describes Anthropic as a rocket ship that made the right strategic bet on coding agents, and validates the thesis by committing ~$300M in Anthropic token spend at Salesforce in 2026, calling its trajectory impossible to stop.",
-    "quote": "Have you seen Anthropic? I mean, it is a rocket ship. That will not stop... I am going to probably used $300 million of Anthropic this year at Salesforce coding. Everything's going to be cheaper to make.",
-    "quoteStartMs": 2384532,
-    "topics": [
-      "coding agents",
-      "AI infrastructure",
-      "competitive moat"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Marc Benioff",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Benioff calls Anthropic a rocket ship, citing its focus on coding agents as the winning strategy, its $300M annual spend by Salesforce alone, and its transformative impact on enterprise software development.",
+    "quote": "have you seen Anthropic? I mean, it is a rocket ship. That will not stop because you can use this product to do these incredible, amazing things... we are going to probably use $300 million of Anthropic this year at Salesforce coding.",
+    "quoteStartMs": 2384532,
+    "topics": [
+      "AI coding agents",
+      "enterprise AI",
+      "competitive positioning"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E273-anthropic-Guest-3",
+    "id": "E273-anthropic-Guest-5",
     "episodeId": "E273",
     "episodeNumber": 273,
     "episodeDate": "2026-05-15T21:21:00.000Z",
@@ -85,48 +131,22 @@
     "isPublic": false,
     "host": "Guest",
     "stance": "bull",
-    "conviction": "medium",
-    "summary": "Benioff argues Anthropic won the first round of the LLM wars by correctly focusing on coding agents when rivals chased sex bots, video, and ad networks — making it the breakout platform of the current AI cycle.",
-    "quote": "You've got Anthropic and they go, we don't know about those sex bots... but we're gonna do coding agents. And it turned out Anthropic was right. And all of a sudden the rocket ship took off.",
-    "quoteStartMs": 2984332,
+    "conviction": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Benioff argues Anthropic won the AI race by focusing on coding agents while competitors chased other use cases, and its Claude 4.6 model created a step-change in enterprise coding productivity that has made it the dominant platform.",
+    "quote": "Anthropic and they go, we don't know about those sex bots... we're gonna do coding agents. And it turned out Anthropic was right. And all of a sudden the rocket ship took off... when Anthropic 4.6 hit, Boom, everyone could code in their",
+    "quoteStartMs": 2984963,
     "topics": [
       "coding agents",
-      "competitive positioning",
-      "AI strategy"
+      "AI competitive positioning",
+      "product strategy"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Marc Benioff",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E273-hubs-Guest-4",
-    "episodeId": "E273",
-    "episodeNumber": 273,
-    "episodeDate": "2026-05-15T21:21:00.000Z",
-    "company": "HubSpot",
-    "ticker": "HUBS",
-    "isPublic": true,
-    "host": "Guest",
-    "stance": "mixed",
-    "conviction": "medium",
-    "summary": "Benioff notes HubSpot just had a great quarter yet trades at only 2x sales — a historically unprecedented low multiple that illustrates the market-wide SaaS rerating driven by AI fear rather than deteriorating fundamentals, implying potential undervaluation.",
-    "quote": "You mentioned HubSpot, they're trading at 2 times sales. I've never seen that before. They just had a great quarter. We saw a lot of great quarters... they all had great quarters and they're all trading at 2 times sales.",
-    "quoteStartMs": 1999665,
-    "topics": [
-      "SaaS rerating",
-      "valuation",
-      "AI disruption"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Marc Benioff",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E273-aapl-Jason-5",
+    "id": "E273-aapl-Jason-7",
     "episodeId": "E273",
     "episodeNumber": 273,
     "episodeDate": "2026-05-15T21:21:00.000Z",
@@ -136,22 +156,22 @@
     "host": "Jason",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Jason argues Apple has the clearest path to top-3 AI player status by acquiring an AI lab and leveraging its extraordinary hardware footprint to run local models — preserving user privacy and making Apple his top pick for the next year.",
-    "quote": "Apple has the clearest path to becoming, you know, a top 2 or 3 player in AI simply by buying something like Perplexity or Mistral... using their hardware footprint, which is extraordinary... I think Apple's my choice for the next year.",
+    "callType": "selection",
+    "excludeReason": null,
+    "scoreNote": "Ranked as explicit #1 pick for the next year.",
+    "summary": "Jason argues Apple has the clearest path to becoming a top AI player by leveraging its hardware footprint and running local models to maintain privacy, and explicitly names Apple as his top pick for the next year.",
+    "quote": "Apple has the clearest path to becoming, you know, a top 2 or 3 player in AI simply by buying something like Perplexity or Mistral... I think Apple's my choice for the next year.",
     "quoteStartMs": 3259000,
     "topics": [
       "AI strategy",
+      "local models",
       "hardware",
-      "M&A",
-      "competitive positioning"
+      "investment pick"
     ],
-    "attributionConfidence": "high",
-    "callType": "selection",
-    "excludeReason": null,
-    "scoreNote": "Jason called Apple his choice for the next year"
+    "attributionConfidence": "high"
   },
   {
-    "id": "E273-aapl-Chamath-6",
+    "id": "E273-aapl-Chamath-8",
     "episodeId": "E273",
     "episodeNumber": 273,
     "episodeDate": "2026-05-15T21:21:00.000Z",
@@ -161,21 +181,21 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "low",
-    "summary": "Chamath questions Apple's ability to pivot if the device form factor changes entirely, suggesting the company's 30-40 years of process optimization around current hardware could become a liability if a new paradigm emerges.",
-    "quote": "Apple is incredible, but that's the product of 40 years, 30 years of meticulous process optimization. What do you do if the form factor is totally different and the nature of the device is different? How do you pivot that organization?",
-    "quoteStartMs": 3401147,
-    "topics": [
-      "form factor disruption",
-      "competitive risk",
-      "AI hardware"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath is skeptical of Apple's local-model strategy, arguing that users need persistence across multiple devices and form factors, and questions whether Apple can pivot its decades-optimized organization if the hardware form factor changes entirely.",
+    "quote": "I'm not a huge believer in these local models... you want persistence. You have multiple devices, multiple persona... the idea that you don't have persistence that follows you around in 2026, I think, is a breaking feature.",
+    "quoteStartMs": 3325000,
+    "topics": [
+      "AI strategy",
+      "local models",
+      "form factor risk"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E273-googl-Friedberg-7",
+    "id": "E273-googl-Friedberg-9",
     "episodeId": "E273",
     "episodeNumber": 273,
     "episodeDate": "2026-05-15T21:21:00.000Z",
@@ -185,21 +205,46 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Friedberg argues Google has a real opportunity to own the personal AI assistant interface by integrating Gemini deeply across Gmail, Calendar, Google Drive, and Photos — and with G Suite in the enterprise — making Google Assistant a formidable competitor to Apple and OpenAI.",
-    "quote": "Google has a real chance to kind of own that assistant interface... I think Google Assistant is gonna end up being kind of a real kickass product once they get this flywheel going.",
-    "quoteStartMs": 3209808,
-    "topics": [
-      "AI assistant",
-      "competitive positioning",
-      "Google ecosystem"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Friedberg argues Google has a real opportunity to own the AI assistant interface by integrating Gemini deeply into its personal and enterprise data ecosystem (Gmail, Drive, Photos, G Suite), potentially making it a formidable competitor in the AI assistant market.",
+    "quote": "Google has a real opportunity to integrate a Gemini assistant into all of your personal information... your Google Drive, your Google Photos... Google has a real chance to kind of own that assistant interface... I think Google Assistant is",
+    "quoteStartMs": 3186579,
+    "topics": [
+      "AI assistant",
+      "Gemini",
+      "competitive positioning",
+      "enterprise software"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E273-nvda-Chamath-8",
+    "id": "E273-openai-Friedberg-10",
+    "episodeId": "E273",
+    "episodeNumber": 273,
+    "episodeDate": "2026-05-15T21:21:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg expresses skepticism about OpenAI's partnership track record, suggesting the strained Apple relationship is part of a pattern of failed long-term partnerships that undermines its ability to build durable distribution.",
+    "quote": "This— there doesn't seem to be a lot of long-term partnerships with OpenAI.",
+    "quoteStartMs": 3162000,
+    "topics": [
+      "partnerships",
+      "distribution",
+      "competitive position"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E273-nvda-Chamath-11",
     "episodeId": "E273",
     "episodeNumber": 273,
     "episodeDate": "2026-05-15T21:21:00.000Z",
@@ -209,41 +254,66 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Chamath argues chips should be sold to China because the priority is ensuring NVIDIA wins the global AI chip market rather than ceding ground to Huawei, which is closing the gap fast.",
-    "quote": "We want NVIDIA to win. We do not want to give enough oxygen for Huawei to then all of a sudden emerge and have a version of a chip that works... sell the chips, proliferate, let Jensen win. I'd rather he win than Huawei win.",
-    "quoteStartMs": 1529325,
-    "topics": [
-      "chips",
-      "China export policy",
-      "competitive moat"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues the US should sell chips to China specifically to ensure NVIDIA wins the AI chip market over Huawei, framing continued NVIDIA dominance as the preferred strategic and commercial outcome.",
+    "quote": "sell the chips. And the reason we should sell the chips is we want NVIDIA to win. We do not want to give enough oxygen for Huawei to then all of a sudden emerge and have a version of a chip that works. I'd rather he win than Huawei win.",
+    "quoteStartMs": 1525516,
+    "topics": [
+      "China trade",
+      "chip sales",
+      "competitive positioning",
+      "Huawei"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E273-andreessen-horowitz-Chamath-9",
+    "id": "E273-v-Guest-12",
     "episodeId": "E273",
     "episodeNumber": 273,
     "episodeDate": "2026-05-15T21:21:00.000Z",
-    "company": "Andreessen Horowitz",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Chamath",
+    "company": "Visa",
+    "ticker": "V",
+    "isPublic": true,
+    "host": "Guest",
     "stance": "bull",
-    "conviction": "medium",
-    "summary": "Chamath argues a16z's heavy political donations reflect a deliberate strategy to build the relationships needed to scale toward $1T AUM, positioning themselves as the next Blackstone — a sound business decision for a firm that must invest in geopolitically sensitive parts of the economy.",
-    "quote": "They're in the AUM business, right? They can't stop at $100 billion of AUM. They're marching towards a trillion. They're going to be the next Blackstone, which I think is an incredible feat, and they're building a juggernaut of a business.",
-    "quoteStartMs": 970676,
-    "topics": [
-      "AUM growth",
-      "political capital",
-      "business strategy"
-    ],
-    "attributionConfidence": "high",
+    "conviction": "low",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Benioff highlights that Visa's CEO is part of the Trump-Xi delegation because China's commerce is dominated by Alibaba super-apps and remains largely closed to Western payment networks — implying a potential China market opening would be a significant growth opportunity for Visa.",
+    "quote": "if you look at, you know, commerce in China, it is dominated by companies like Alibaba and, and these organizations who use these super apps It's not really all the way open for a Visa and a MasterCard. That would be incredible for those",
+    "quoteStartMs": 1174564,
+    "topics": [
+      "China market access",
+      "payments",
+      "trade deal upside"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E273-ma-Guest-13",
+    "episodeId": "E273",
+    "episodeNumber": 273,
+    "episodeDate": "2026-05-15T21:21:00.000Z",
+    "company": "Mastercard",
+    "ticker": "MA",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "neutral",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Benioff highlights that Mastercard's CEO joining the Trump-Xi trip signals a potential opening of China's closed payments market, which would be a major growth opportunity for the company.",
+    "quote": "the CEO of Visa and the CEO of MasterCard are on the trip... if you look at commerce in China, it is dominated by companies like Alibaba... It's not really all the way open for a Visa and a MasterCard. That would be incredible for those",
+    "quoteStartMs": 1168828,
+    "topics": [
+      "China market access",
+      "payments",
+      "trade deal upside"
+    ],
+    "attributionConfidence": "high"
   }
 ]

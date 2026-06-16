@@ -8,23 +8,47 @@
     "ticker": null,
     "isPublic": false,
     "host": "Chamath",
-    "stance": "mixed",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath argues Anthropic strategically times AI safety warnings to coincide with fundraising rounds, serving a smart business agenda, while also acknowledging Claude is a genuinely great product — making it a savvy but self-interested actor rather than a purely altruistic one.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath argues that Anthropic's safety warnings are strategically timed to coincide with fundraising rounds, and that the company is using AI doomerism as a smart business angle to secure its position as one of the foundational model winners, while also noting it builds genuinely great product.",
     "quote": "it seems that these safety warnings tend to be pretty coincidental with key fundraising moments in Anthropic's journey... I think that there is a very smart business strategy here",
     "quoteStartMs": 578198,
     "topics": [
       "AI safety narrative",
       "fundraising strategy",
-      "competitive moat"
+      "regulatory capture"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E230-x-Chamath-1",
+    "id": "E230-anthropic-Sacks-1",
+    "episodeId": "E230",
+    "episodeNumber": 230,
+    "episodeDate": "2025-05-31T20:00:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks identifies Anthropic as a node in a tightly connected network linking the EA movement, Biden administration staffers, and Open Philanthropy funding, framing the company's safety messaging as politically motivated global compute governance advocacy — but does not make a forward-looking economic judgment on the company itself.",
+    "quote": "there's 3 key nodes here. There's the effective altruist movement... There's the Biden administration and like the key staffers, and then you've got Anthropic, and it's a very tightly wound network.",
+    "quoteStartMs": 919123,
+    "topics": [
+      "regulatory capture",
+      "AI governance",
+      "political agenda"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E230-x-Chamath-2",
     "episodeId": "E230",
     "episodeNumber": 230,
     "episodeDate": "2025-05-31T20:00:00.000Z",
@@ -32,24 +56,24 @@
     "ticker": "X",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath is bullish on the Nippon-US Steel deal structure as a model for strategic government partnership — with a 'golden vote' — arguing it can revive a stranded asset and create long-term value, similar to national champion frameworks in Brazil, the UK, and China.",
-    "quote": "I think this is a really important example of things that we need to copy... this strategy has worked for many other countries really well",
-    "quoteStartMs": 4735359,
-    "topics": [
-      "M&A",
-      "government partnership",
-      "national champions",
-      "strategic industry"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath views the Nippon Steel–US Steel deal as a model for the US government taking strategic equity stakes (golden votes) in critical industries, arguing this structure — similar to Brazil, UK, and China — positions the company and the country on the 'forward foot' rather than rescuing a stranded asset.",
+    "quote": "This is a really important example of things that we need to copy... those deals are about companies that are thriving and on the forward foot.",
+    "quoteStartMs": 4736005,
+    "topics": [
+      "M&A",
+      "industrial policy",
+      "golden share",
+      "national security"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E230-x-Sacks-2",
+    "id": "E230-x-Sacks-3",
     "episodeId": "E230",
     "episodeNumber": 230,
     "episodeDate": "2025-05-31T20:00:00.000Z",
@@ -57,44 +81,19 @@
     "ticker": "X",
     "isPublic": true,
     "host": "Sacks",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Sacks supports government-backed protection of US Steel and strategic industries like steel and rare earths, arguing the 'free market' was distorted by Chinese WTO subsidies and dumping, making government intervention necessary for national security.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks argues steel production is strategically necessary for national security and supports government subsidies or protection to reshore it, endorsing the view that some industries must be protected even if it requires departing from free-market principles.",
     "quote": "steel production is definitely strategic. Steel, aluminum, and I'd say the rare earths, we have to have that capacity. We cannot be completely dependent on China for our supply chain.",
     "quoteStartMs": 4902629,
     "topics": [
+      "industrial policy",
       "national security",
-      "reshoring",
-      "trade policy",
-      "strategic industry"
+      "reshoring"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E230-msft-Sacks-3",
-    "episodeId": "E230",
-    "episodeNumber": 230,
-    "episodeDate": "2025-05-31T20:00:00.000Z",
-    "company": "Microsoft",
-    "ticker": "MSFT",
-    "isPublic": true,
-    "host": "Sacks",
-    "stance": "neutral",
-    "conviction": "low",
-    "summary": "Sacks pushes back on attributing Microsoft's 6,000-person layoff to AI, arguing it is confirmation bias and not evidence of AI-driven job elimination at the managerial level.",
-    "quote": "That's like total confirmation bias. It's like now every time there's a layoff announcement, people try to tie it to AI to feed this doomer story. I don't think that's an AI story.",
-    "quoteStartMs": 2453000,
-    "topics": [
-      "AI disruption",
-      "layoffs",
-      "labor market"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

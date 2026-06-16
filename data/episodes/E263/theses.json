@@ -9,23 +9,46 @@
     "isPublic": false,
     "host": "Friedberg",
     "stance": "bull",
-    "conviction": "high",
-    "summary": "Friedberg argues Anthropic is worth significantly more than its $350B mark due to explosive ARR growth and dominant product-market fit with Claude/Cowork, making it the higher-multiple bet vs. Google, though the Pentagon dispute is a risk.",
-    "quote": "Anthropic is worth a lot more than $350. That's for sure. They just added $6 billion in the last month. And I will tell you anecdotally, everyone I talk to is on Cowork. Everyone has like gone deep on this.",
-    "quoteStartMs": 3850000,
-    "topics": [
-      "valuation",
-      "AI growth",
-      "product-market fit",
-      "revenue ramp"
-    ],
-    "attributionConfidence": "high",
+    "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Friedberg argues Anthropic is worth significantly more than its $350B mark and could reach $1.5T, driven by explosive product-market fit with Claude/Cowork, though he notes Google poses a medium-term competitive threat.",
+    "quote": "I think Anthropic is a trillion five market cap at the end of the day, unless this blows them up.",
+    "quoteStartMs": 3833000,
+    "topics": [
+      "valuation",
+      "AI competition",
+      "growth"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E263-anthropic-Chamath-1",
+    "id": "E263-anthropic-Jason-1",
+    "episodeId": "E263",
+    "episodeNumber": 263,
+    "episodeDate": "2026-03-06T09:23:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Jason",
+    "stance": "bull",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Jason suggests Anthropic is undervalued relative to ChatGPT/OpenAI, while also warning that the Pentagon feud could be damaging to the business and that management needs to course-correct.",
+    "quote": "I, it's undervalued compared to ChatGPT.",
+    "quoteStartMs": 3853000,
+    "topics": [
+      "valuation",
+      "AI competition",
+      "government contracts"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E263-anthropic-Chamath-2",
     "episodeId": "E263",
     "episodeNumber": 263,
     "episodeDate": "2026-03-06T09:23:00.000Z",
@@ -33,24 +56,23 @@
     "ticker": null,
     "isPublic": false,
     "host": "Chamath",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath warns that Anthropic's refusal to offer reliable, politically neutral terms of service creates existential business risk—alienating government and enterprise customers who cannot tolerate unpredictable model access, and potentially pissing off every political constituency.",
-    "quote": "I think they accidentally may have pissed off every constituent. The longer-term fallout amongst them and progressives will come home to roost because as the progressives want more control and these guys push back on them, they're just going to fall into the same situation.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath argues that Anthropic's willingness to impose political/philosophical constraints on government customers — and its demonstrated unreliability as a partner — represents a major business risk that could alienate both Republican and progressive customers, making it untrustworthy as an enterprise vendor.",
+    "quote": "I think they accidentally may have pissed off every constituent. The longer-term fallout amongst them and progressives will come home to roost because as the progressives want more control and these guys push back on them, they're just",
     "quoteStartMs": 3692364,
     "topics": [
       "enterprise risk",
       "government contracts",
-      "reliability",
-      "competitive moat"
+      "competitive position"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E263-googl-Friedberg-2",
+    "id": "E263-googl-Friedberg-3",
     "episodeId": "E263",
     "episodeNumber": 263,
     "episodeDate": "2026-03-06T09:23:00.000Z",
@@ -59,23 +81,46 @@
     "isPublic": true,
     "host": "Friedberg",
     "stance": "bull",
-    "conviction": "high",
-    "summary": "Friedberg names Google as the best net market-value creation bet in AI, citing its own cloud infrastructure (eliminating margin passed to third-party clouds) and its ability to rapidly integrate AI into G Suite/Workspace to sweep the market from Anthropic.",
-    "quote": "I think Google is the bet. I think Google is the market value creator bet, but I think Anthropic is the multiple bet.",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg argues Google is the best net market value creation bet among AI platform companies, with a long-term structural advantage from owning its own cloud, and predicts it will sweep the market once it integrates a Cowork-like agent into G Suite.",
+    "quote": "I think Google is the bet. I think Google is the market value creator bet... Google sweeps the market with this same competitor. But right now Cowork is such an incredible product.",
     "quoteStartMs": 3824913,
     "topics": [
       "AI competition",
       "cloud advantage",
-      "valuation",
-      "product integration"
+      "valuation"
     ],
-    "attributionConfidence": "high",
-    "callType": "selection",
-    "excludeReason": null,
-    "scoreNote": "Friedberg called Google the AI market-value creation bet"
+    "attributionConfidence": "high"
   },
   {
-    "id": "E263-anduril-Guest-3",
+    "id": "E263-googl-Guest-4",
+    "episodeId": "E263",
+    "episodeNumber": 263,
+    "episodeDate": "2026-03-06T09:23:00.000Z",
+    "company": "Google",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Emil Michael notes Google has a long-term strategic economic advantage over Anthropic because it owns its own cloud infrastructure, removing the margin layer Anthropic must pass on, making it a more competitive enterprise AI vendor.",
+    "quote": "I do think Google has a long-term strategic advantage, not because of, not only because of their consumer thing, but because they have their own cloud. So between them, they don't have the margin on top of the cloud that Anthropic'll have",
+    "quoteStartMs": 3971830,
+    "topics": [
+      "cloud advantage",
+      "AI competition",
+      "margins"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E263-anduril-Guest-5",
     "episodeId": "E263",
     "episodeNumber": 263,
     "episodeDate": "2026-03-06T09:23:00.000Z",
@@ -83,48 +128,44 @@
     "ticker": null,
     "isPublic": false,
     "host": "Guest",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Emil Michael highlights Anduril as a leading beneficiary of the shift from legacy defense primes to low-cost attritable drone/autonomous systems, and says he wants them to win big contracts quickly to drive the defense-tech flywheel.",
-    "quote": "That's why companies like Anduril are companies like Anduril is because they're making unmanned systems... I need some of these companies win big contracts quick, like whether, you know, Androl, sure... so that more money flows in, more entrepreneurs do it.",
-    "quoteStartMs": 1139255,
-    "topics": [
-      "defense tech",
-      "autonomous systems",
-      "government contracts",
-      "industry shift"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Emil Michael",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Emil Michael highlights Anduril as a leading defense tech company making unmanned systems that represent the future of warfare, and says the Pentagon needs companies like Anduril to win big contracts quickly to drive the flywheel of defense tech investment.",
+    "quote": "That's why companies like Anduril are companies like Anduril is because they're making unmanned systems... whether, you know, Androl, sure... so that more money flows in, more entrepreneurs do it, and I could buy more.",
+    "quoteStartMs": 1141000,
+    "topics": [
+      "defense tech",
+      "unmanned systems",
+      "government contracts"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E263-pltr-Guest-4",
+    "id": "E263-openai-Guest-7",
     "episodeId": "E263",
     "episodeNumber": 263,
     "episodeDate": "2026-03-06T09:23:00.000Z",
-    "company": "Palantir",
-    "ticker": "PLTR",
-    "isPublic": true,
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
     "host": "Guest",
     "stance": "neutral",
     "conviction": "low",
-    "summary": "Emil Michael describes Palantir as a deeply embedded, trusted DoD prime contractor and distribution channel for AI models, but notes they want to consolidate to a 'new prime' position that he intends to disrupt by fostering competition.",
-    "quote": "Anduril and Palantir want that, and I joke with them all the time about it, but I definitely want at least a second layer that's innovative and trying to disrupt the first layer all the time.",
-    "quoteStartMs": 4523000,
-    "topics": [
-      "defense tech",
-      "government contracts",
-      "competition",
-      "new primes"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Emil Michael",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Emil Michael notes OpenAI's Sam Altman acted as a patriot and cooperative partner to the Pentagon, and that Codex will likely close the gap with Claude Code within 12 months, making OpenAI a viable primary AI vendor for the DoD.",
+    "quote": "Do I believe in 12 months Codex is not gonna be close? I think it will be.",
+    "quoteStartMs": 3311707,
+    "topics": [
+      "AI competition",
+      "government contracts",
+      "product roadmap"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E263-uso-Jason-a0",
@@ -135,22 +176,20 @@
     "ticker": "USO",
     "isPublic": true,
     "host": "Jason",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Jason frames the closure of the Strait of Hormuz as a major supply shock, noting 3.3 million barrels of daily production would be lost and that the economic effects over the next 4 weeks could be 'intense and acute', implying strong upward price pressure on oil.",
-    "quote": "Unless the strait opens, 3.3 million barrels of daily production would be lost early next week... Freeberg, your thoughts on the economic second-order effects that we're starting to experience here and over the next 4 weeks could be, um, you know, intense and acute.",
+    "callType": "view",
+    "summary": "Jason flags that the Strait of Hormuz closure risk threatens 3.3M barrels of daily production, implying significant upward price pressure on oil, and frames the economic second-order effects as potentially intense and acute over the next 4 weeks.",
+    "quote": "Unless the strait opens, 3.3 million barrels of daily production would be lost early next week... your thoughts on the economic second-order effects that we're starting to experience here and over the next 4 weeks could be, um, you know, intense and acute.",
     "quoteStartMs": 2268291,
     "topics": [
       "Strait of Hormuz",
-      "supply disruption",
       "Iran conflict",
+      "supply disruption",
       "energy prices",
-      "inflation"
+      "maritime insurance"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E263-uso-Friedberg-a1",
@@ -161,22 +200,20 @@
     "ticker": "USO",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Friedberg explains that Strait of Hormuz disruption and collapse of war-risk insurance creates a massive risk to energy prices globally, driving inflation and threatening US economic security — implying bullish near-term oil price pressure from the supply shock.",
+    "callType": "view",
+    "summary": "Friedberg explains that the IRGC's Strait of Hormuz closure caused insurance premiums to spike 5x and markets to shut down, flagging that this is a massive risk to global energy prices and US economic security, implying upward oil price pressure.",
     "quote": "that's obviously a massive risk to energy prices globally, which drives inflation and puts US economic security at risk.",
     "quoteStartMs": 2393482,
     "topics": [
       "Strait of Hormuz",
+      "Iran conflict",
       "maritime insurance",
       "energy prices",
-      "supply disruption",
       "inflation"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E263-lit-Guest-a2",
@@ -189,20 +226,17 @@
     "host": "Guest",
     "stance": "neutral",
     "conviction": "medium",
-    "summary": "Emil Michael (Guest) highlights that lithium supply is entirely outsourced to China and frames domestic sourcing of critical minerals including lithium as an urgent national security priority, implying strong demand and strategic value for the commodity.",
-    "quote": "batteries are totally outsourced both technologically and from lithium to China... I think we'll get critical minerals done before the rest of the term where we have access to what we need to from us or allied countries.",
+    "callType": "view",
+    "summary": "Emil Michael (Guest/Under Secretary) highlights lithium as a critical supply chain vulnerability — batteries are fully outsourced technologically and from a lithium supply perspective to China — framing domestic sourcing as an urgent national security priority, implying a bullish case for domestic/allied lithium supply.",
+    "quote": "Batteries are totally outsourced both technologically and from lithium to China. And there's like, you know, kind of call it 20 critical things... I think we'll get critical minerals done before the rest of the term where we have access to what we need to from us or allied countries.",
     "quoteStartMs": 4350254,
     "topics": [
       "critical minerals",
       "supply chain",
       "China dependency",
       "defense industrial base",
-      "domestic production"
+      "batteries"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Emil Michael",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": "This is a national security / strategic sourcing framing — outsourcing concern and domestic sourcing priority. No explicit price direction stated for lithium."
+    "attributionConfidence": "high"
   }
 ]

@@ -8,21 +8,21 @@
     "ticker": null,
     "isPublic": false,
     "host": "Sacks",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Sacks is skeptical of OpenAI's trajectory, citing its shift from nonprofit to aggressive for-profit behavior, co-founder departures, and demands that new investors not fund rival AI companies as red flags.",
-    "quote": "They originally started that enterprise with $50 million or so from Elon. It was a nonprofit. Then they became a for-profit. Now there's a report saying that they're telling investors in this round that they can't invest in any other AI com",
-    "quoteStartMs": 7164035,
-    "topics": [
-      "AI",
-      "valuation",
-      "governance",
-      "competition"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Sacks argues OpenAI has shifted from nonprofit philanthropy to aggressive for-profit behavior under false pretenses, including restricting investors from backing rivals, reversing Sam Altman's no-compensation pledge, and operating on dubious terms that will catch up with them.",
+    "quote": "They originally started that enterprise with $50 million or so from Elon. It was a nonprofit. Then they became a for-profit. Now there's a report saying that they're telling investors in this round that they can't invest in any other AI",
+    "quoteStartMs": 7164035,
+    "topics": [
+      "governance",
+      "fundraising",
+      "competition",
+      "AI"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E198-openai-Guest-1",
@@ -35,47 +35,93 @@
     "host": "Guest",
     "stance": "bear",
     "conviction": "medium",
-    "summary": "Mark Cuban argues OpenAI's restrictive investor terms reflect fear of competition, not strength, and that Google (Gemini), Meta (open source), and others are serious rivals that make OpenAI's dominance far from certain.",
-    "quote": "There is no, you know, there's nothing that says that OpenAI is going to win, nothing at all. And so I don't feel bad about what they're doing. And to me, it tells me they're more scared than anything by trying to restrict what people are doing.",
-    "quoteStartMs": 7286319,
-    "topics": [
-      "AI",
-      "competition",
-      "governance"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Mark Cuban",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Mark Cuban argues OpenAI's restrictive investor terms reflect fear rather than strength, and that competitors like Google Gemini and Meta's open-source models are closing the gap, making OpenAI's dominant position far from certain.",
+    "quote": "There is no, you know, there's nothing that says that OpenAI is going to win, nothing at all. And so I don't feel bad about what they're doing. And to me, it tells me they're more scared than anything by trying to restrict what people are",
+    "quoteStartMs": 7285000,
+    "topics": [
+      "competition",
+      "AI",
+      "governance"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E198-x-twitter-Guest-2",
+    "id": "E198-openai-Jason-2",
     "episodeId": "E198",
     "episodeNumber": 198,
     "episodeDate": "2024-10-03T20:19:00.000Z",
-    "company": "X (Twitter)",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Jason",
+    "stance": "bear",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Jason questions OpenAI's $157B valuation as unsustainably high given $5B annual losses, $3.5B revenue, and mass co-founder departures, suggesting the business fundamentals don't support the price.",
+    "quote": "They're losing $5 billion a year, they're making $3.5 billion, they put this thing at $150 billion, it's 40 times, 50 times revenue. To fill in that valuation on a price-to-sales basis, you know, it's kind of crazy.",
+    "quoteStartMs": 7344445,
+    "topics": [
+      "valuation",
+      "AI",
+      "competition"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E198-dallas-mavericks-Guest-3",
+    "episodeId": "E198",
+    "episodeNumber": 198,
+    "episodeDate": "2024-10-03T20:19:00.000Z",
+    "company": "Dallas Mavericks",
     "ticker": null,
     "isPublic": false,
     "host": "Guest",
-    "stance": "bear",
+    "stance": "bull",
     "conviction": "medium",
-    "summary": "Mark Cuban argues X is a structurally challenged advertising business: its embrace of extreme free speech drove away major advertisers, and the proliferation of hate speech and adult content makes the platform toxic for brands, undermining its revenue model.",
-    "quote": "There is no upside for being on Twitter right now, or X right now. And you add to that the porn. Kids 13 years old can go on that site and you can find any insane thing you want on X right now. And that also is a problem for advertisers.",
-    "quoteStartMs": 6984614,
-    "topics": [
-      "advertising",
-      "content moderation",
-      "business model"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Mark Cuban",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Mark Cuban believes NBA team valuations have not peaked, projecting the Mavericks could be worth $20B if a casino development around American Airlines Center is realized, justifying his decision to retain 27.7% rather than sell outright.",
+    "quote": "I don't think they've peaked yet because it— for the reasons I just mentioned, if we're able to build a Venetian-type casino in Dallas with an American Airlines Center in the middle of it, the valuation is $20 billion, but I own 27% of",
+    "quoteStartMs": 5595000,
+    "topics": [
+      "sports franchise valuation",
+      "real estate",
+      "NBA"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E198-groq-Guest-4",
+    "id": "E198-cost-plus-drugs-Guest-4",
+    "episodeId": "E198",
+    "episodeNumber": 198,
+    "episodeDate": "2024-10-03T20:19:00.000Z",
+    "company": "Cost Plus Drugs",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Mark Cuban is highly convicted that Cost Plus Drugs is on a hockey-stick growth trajectory by disrupting pharmacy benefit managers with radical price transparency, and that the business will ultimately be highly profitable despite current losses from capital investment in a robotics-driven manufacturing facility.",
+    "quote": "Our path is hockey stick, double, triple hockey stick. And so we're taking business from them, and I think the traditional legacy companies in insurance—",
+    "quoteStartMs": 6063000,
+    "topics": [
+      "healthcare disruption",
+      "pharmacy",
+      "growth trajectory"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E198-groq-Guest-5",
     "episodeId": "E198",
     "episodeNumber": 198,
     "episodeDate": "2024-10-03T20:19:00.000Z",
@@ -83,21 +129,68 @@
     "ticker": null,
     "isPublic": false,
     "host": "Guest",
-    "stance": "bull",
-    "conviction": "low",
-    "summary": "Mark Cuban co-invested in Groq alongside Chamath, viewing AI infrastructure ('picks and shovels') as the most attractive place to invest in the current AI gold rush.",
-    "quote": "So now I've kind of slowed down. I invested in Groq, right, with Chamath, right? Chamath is like, yeah, let's go, right? And he can tell you all the reasons.",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "explicit_long",
+    "excludeReason": null,
+    "scoreNote": "Confirms personal investment in Groq.",
+    "summary": "Mark Cuban invested in Groq alongside Chamath as a picks-and-shovels AI infrastructure play.",
+    "quote": "I invested in Groq, right, with Chamath, right? Chamath is like, yeah, let's go, right? And he can tell you all the reasons.",
     "quoteStartMs": 6302000,
     "topics": [
       "AI",
       "infrastructure",
-      "venture"
+      "investment"
     ],
-    "attributionConfidence": "high",
-    "callType": "explicit_long",
-    "guestName": "Mark Cuban",
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E198-x-Guest-6",
+    "episodeId": "E198",
+    "episodeNumber": 198,
+    "episodeDate": "2024-10-03T20:19:00.000Z",
+    "company": "X (Twitter)",
+    "ticker": "X",
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bear",
+    "conviction": "medium",
+    "callType": "view",
     "excludeReason": null,
-    "scoreNote": "Mark Cuban disclosed investing in Groq alongside Chamath"
+    "scoreNote": null,
+    "summary": "Mark Cuban argues X faces a structural advertising problem because its free-speech-permissive content environment—including anti-semitic content and adult material accessible to minors—makes it toxic for brand advertisers who have better-scaled alternatives, making the business model fundamentally challenged.",
+    "quote": "There is no upside for being on Twitter right now, or X right now. And you add to that the porn. Kids 13 years old can go on that site and you can find any insane thing you want on X right now. And that also is a problem for advertisers.",
+    "quoteStartMs": 6984614,
+    "topics": [
+      "advertising",
+      "content moderation",
+      "business model"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E198-tsla-Guest-7",
+    "episodeId": "E198",
+    "episodeNumber": 198,
+    "episodeDate": "2024-10-03T20:19:00.000Z",
+    "company": "Tesla",
+    "ticker": "TSLA",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "neutral",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Mark Cuban owns a Tesla and has tried FSD but stopped using it due to its inability to handle adversarial or novel situations, indicating FSD is not yet at the level needed for full trust—a product limitation with implications for Tesla's autonomous driving narrative.",
+    "quote": "I have, but I stopped using it just because it terrified me, um, because it doesn't know what adversarial things it doesn't know... until that gets to where it needs to be, where adversarial issues aren't an issue, I'm not going to fully",
+    "quoteStartMs": 7471000,
+    "topics": [
+      "FSD",
+      "autonomous driving",
+      "product"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E198-uso-Guest-a0",
@@ -108,49 +201,18 @@
     "ticker": "USO",
     "isPublic": true,
     "host": "Guest",
-    "stance": "mixed",
-    "conviction": "medium",
-    "summary": "Mark Cuban argues that Trump's 2020 deal with Saudi Arabia and Russia to cut oil production by 10% drove up the price of oil and gas over two years, contributing directly to the 9.1% inflation peak in 2022. He also notes oil prices are a global phenomenon and domestic production cuts alone don't fully drive domestic gas prices.",
-    "quote": "what he did, he said, okay, MBS owes me a favor over in Saudi Arabia... And so by reducing production over a plan of 2 years... that increased the price of gas, the price of oil, the price of energy. And that was bad for American consumers",
-    "quoteStartMs": 1491695,
-    "topics": [
-      "OPEC+",
-      "oil production cuts",
-      "inflation",
-      "energy prices",
-      "Trump",
-      "Saudi Arabia",
-      "Russia"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Mark Cuban",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E198-uso-Friedberg-a1",
-    "episodeId": "E198",
-    "episodeNumber": 198,
-    "episodeDate": "2024-10-03T20:19:00.000Z",
-    "company": "Oil",
-    "ticker": "USO",
-    "isPublic": true,
-    "host": "Friedberg",
     "stance": "neutral",
-    "conviction": "low",
-    "summary": "Friedberg pushes back on oil being the primary domestic inflation driver, noting that more than half of US crude oil production is exported, meaning production cuts would have primarily affected exporter profits rather than domestic energy costs.",
-    "quote": "US crude oil production chart, and more than half of this oil is exported. So you can see the reduction in production, but the domestic oil production capacity remained high relative to our consumption... it really would've affected the profits of the exporting companies, not necessarily the cost of energy domestically.",
-    "quoteStartMs": 2046783,
-    "topics": [
-      "US oil production",
-      "oil exports",
-      "domestic energy costs",
-      "inflation"
-    ],
-    "attributionConfidence": "high",
+    "conviction": "medium",
     "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "summary": "Mark Cuban argues that Trump's 2020 deal with Saudi Arabia and Russia to cut oil production by 10% over two years drove up oil/gas prices and contributed to the 9.1% inflation peak in 2022, framing oil price as a global phenomenon where OPEC+ supply decisions dominate domestic policy effects.",
+    "quote": "by reducing production over a plan of 2 years...that increased the price of gas, the price of oil, the price of energy...what matches up perfectly is that 9.1% in 2022 and the day that agreement ended where MBS and Russia limited production.",
+    "quoteStartMs": 1853655,
+    "topics": [
+      "OPEC+ production cuts",
+      "oil price inflation",
+      "Trump energy policy",
+      "Saudi Arabia-Russia price war"
+    ],
+    "attributionConfidence": "high"
   }
 ]

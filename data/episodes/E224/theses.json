@@ -10,19 +10,19 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "high",
-    "summary": "Chamath argues NVIDIA has been systematically circumventing US export controls by designing chips just below restriction thresholds and selling them to front companies that route them to China, making NVIDIA complicit in undermining US national security interests rather than acting in America's best interest.",
-    "quote": "I think the real problem that we have is that NVIDIA is not doing what is in the best interest of the United States... About 47% of all of NVIDIA's revenue goes to China and Chinese-related countries.",
-    "quoteStartMs": 908782,
-    "topics": [
-      "export controls",
-      "China",
-      "geopolitics",
-      "revenue concentration"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues NVIDIA has been actively working around US export controls at every turn—designing chips like the H800 and H20 to skirt thresholds—and that roughly 47% of its revenue flows to China and Chinese-adjacent countries, implying its business model is structurally misaligned with US national interests and dependent on questionable end-use customers.",
+    "quote": "About 47% of all of NVIDIA's revenue goes to China and Chinese-related countries. And I think when you peel back this onion, I think what you will find is a whole raft of companies that were stood up to buy these NVIDIA GPUs to essentially",
+    "quoteStartMs": 986511,
+    "topics": [
+      "export controls",
+      "China revenue",
+      "geopolitical risk",
+      "regulatory risk"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E224-nvda-Sacks-1",
@@ -34,19 +34,18 @@
     "isPublic": true,
     "host": "Sacks",
     "stance": "neutral",
-    "conviction": "medium",
-    "summary": "Sacks acknowledges that both legal and illegal attempts to circumvent US export controls have occurred and that the H20 chip's memory bandwidth arguably makes it too capable to sell to China, while arguing the government needs stronger enforcement and clearer boundary lines — stopping short of a directional investment call.",
-    "quote": "I think it is a fact that there have been both legal and illegal attempts to evade the US export controls. That is true... the memory bandwidth on the H20, it actually has 20% more memory bandwidth than the H100. So I think there's a view that this chip is just frankly too good.",
-    "quoteStartMs": 1113830,
-    "topics": [
-      "export controls",
-      "China",
-      "regulation",
-      "AI chips"
-    ],
-    "attributionConfidence": "high",
+    "conviction": "low",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Sacks explains the history of US chip export controls and acknowledges NVIDIA designed the H20 to comply with existing rules, but notes the chip's memory bandwidth may make it too capable for China, framing the issue as where to draw the line rather than a direct investment call on the stock.",
+    "quote": "If you look at the memory bandwidth on the H20, it actually has 20% more memory bandwidth than the H100. So I think there's a view that this chip is just frankly too good.",
+    "quoteStartMs": 593746,
+    "topics": [
+      "export controls",
+      "chip policy",
+      "China"
+    ],
+    "attributionConfidence": "high"
   }
 ]

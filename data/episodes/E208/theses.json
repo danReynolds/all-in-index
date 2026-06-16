@@ -8,21 +8,21 @@
     "ticker": null,
     "isPublic": false,
     "host": "Chamath",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath argues OpenAI's market share is eroding rapidly as competitors like Google, Meta, and xAI gain momentum, and the AI market is commoditizing, raising questions about where OpenAI's durable value lies.",
-    "quote": "it's all getting commoditized quite quickly. And so I'm just scratching my head, where is the market value here?",
-    "quoteStartMs": 3822650,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath argues that OpenAI's market share has declined meaningfully from ~50% to ~33%, that compute and capital advantages favor larger incumbents, and that the LLM market is commoditizing, raising questions about where OpenAI's durable value lies.",
+    "quote": "what that chart says is, hold on a second, why are corporates moving around? And what I can tell you just through the 80/90 lens is we are completely promiscuous in how we use models... I just see this world where it's all getting",
+    "quoteStartMs": 3764453,
     "topics": [
       "AI competition",
       "market share",
       "commoditization",
       "valuation"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E208-openai-Jason-1",
@@ -35,21 +35,44 @@
     "host": "Jason",
     "stance": "bear",
     "conviction": "high",
-    "summary": "Jason believes OpenAI has peaked and will fall to a number 3, 4, or 5 position within three years as Gemini, Meta, and xAI surpass it.",
-    "quote": "I think we've hit peak OpenAI in the market. I think they're gonna be the number 3 or 4 player. I think Gemini, Meta, and xAI are going to lead them if we're sitting here in 3 years.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Jason predicts OpenAI has hit peak market position and will fall to the #3–5 slot within 3 years, losing out to Google Gemini, Meta, and xAI.",
+    "quote": "I think we've hit peak OpenAI in the market. I think they're gonna be the number 3 or 4 player. I think Gemini, Meta, and xAI are going to lead them if we're sitting here in 3 years, I think OpenAI is number 3, 4, or 5, not 1 or 2.",
     "quoteStartMs": 5655000,
     "topics": [
       "AI competition",
       "market share",
       "competitive position"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E208-googl-Chamath-2",
+    "id": "E208-openai-Guest-2",
+    "episodeId": "E208",
+    "episodeNumber": 208,
+    "episodeDate": "2024-12-20T22:00:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "neutral",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Aaron Levie declines to rank OpenAI as a loser, noting you don't want to bet against Sam Altman or Greg Brockman, but frames the competitive landscape as wide open with no clear winner.",
+    "quote": "I don't think you want to bet against Sam and Greg. You don't want to bet against Elon. You don't want to bet against Sergey now in office with Sundar. You don't want to bet against Zuck. So I think the rankings are kind of less",
+    "quoteStartMs": 5678000,
+    "topics": [
+      "AI competition",
+      "competitive position"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E208-googl-Chamath-3",
     "episodeId": "E208",
     "episodeNumber": 208,
     "episodeDate": "2024-12-20T22:00:00.000Z",
@@ -59,22 +82,45 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Chamath argues Google's data advantage (especially YouTube video data), infrastructure, and renewed aggressive posture make it a long-term AI winner, with its compounding advantages only continuing to grow.",
-    "quote": "They were late and the compounding effects are playing out and it's only gonna continue to compound. And I will say the data repository at Google...the infrastructure, the team, all, everything down to components is advantaged.",
-    "quoteStartMs": 5315000,
-    "topics": [
-      "AI",
-      "competitive moat",
-      "data advantage",
-      "Google Gemini"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues Google has a compounding data, infrastructure, and personnel advantage in AI, has changed its posture to launch aggressively, and is now clearly competitive — dismissing prior doubts about the company.",
+    "quote": "They were late and the compounding effects are playing out and it's only gonna continue to compound. And I will say the data repository at Google... is advantaged. And so everyone's been kind of counting them out, but it's clear they're in",
+    "quoteStartMs": 5315000,
+    "topics": [
+      "AI competition",
+      "data advantage",
+      "competitive position"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E208-googl-Guest-3",
+    "id": "E208-googl-Jason-4",
+    "episodeId": "E208",
+    "episodeNumber": 208,
+    "episodeDate": "2024-12-20T22:00:00.000Z",
+    "company": "Google",
+    "ticker": "GOOGL",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "bull",
+    "conviction": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Jason argues Google's Gemini models have reached and exceeded parity with OpenAI's best offerings, and believes Google is now leading the AI race after being counted out.",
+    "quote": "I think not only have they caught up, I think they have exceeded. What are your thoughts? Because people were counting them out and here we are.",
+    "quoteStartMs": 5310000,
+    "topics": [
+      "AI competition",
+      "product",
+      "competitive position"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E208-googl-Guest-5",
     "episodeId": "E208",
     "episodeNumber": 208,
     "episodeDate": "2024-12-20T22:00:00.000Z",
@@ -83,24 +129,46 @@
     "isPublic": true,
     "host": "Guest",
     "stance": "bull",
-    "conviction": "high",
-    "summary": "Aaron Levie believes Google has woken up and is firing on all cylinders in AI, citing rapid model releases, browser AI (Project Mariner), and unique YouTube/screen-sharing data advantages as indicators of strong competitive momentum.",
-    "quote": "You can tell that Google's woken up and they are just on full assault. So I mean, just in 10 days, the quantum, the AI, open source Gemini updates, it's like every morning you're waking up to a Sundar tweet that is some new breakthrough.",
-    "quoteStartMs": 5567510,
-    "topics": [
-      "AI",
-      "competitive position",
-      "product momentum",
-      "Google Gemini"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Aaron Levie",
+    "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Aaron Levie says Google has woken up and is on full assault, citing rapid-fire AI releases including Gemini 2.0, Veo, and Project Mariner, with YouTube's unique visual and screen-sharing data as a durable competitive advantage.",
+    "quote": "you can tell that Google's woken up and they are just on full assault. So I mean, just in 10 days, the quantum, the AI, open source Gemini updates, it's like every morning you're waking up to a Sundar tweet that is some new breakthrough.",
+    "quoteStartMs": 5567510,
+    "topics": [
+      "AI competition",
+      "product velocity",
+      "data advantage"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E208-box-Guest-4",
+    "id": "E208-meta-Guest-6",
+    "episodeId": "E208",
+    "episodeNumber": 208,
+    "episodeDate": "2024-12-20T22:00:00.000Z",
+    "company": "Meta",
+    "ticker": "META",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Aaron Levie argues that Meta's open-source Llama models act as a permanent price ceiling on hosted AI models, and that Meta's at-scale compute position makes it one of only a handful of companies that can win the AI infrastructure race.",
+    "quote": "Zuck is this interesting counterbalance on all of this because of open source. If at any moment you know that Zuck will basically provide an open-source model that is at best-in-class benchmarks and at the frontier, then there is a limit",
+    "quoteStartMs": 3990146,
+    "topics": [
+      "AI competition",
+      "open source",
+      "pricing power"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E208-box-Guest-7",
     "episodeId": "E208",
     "episodeNumber": 208,
     "episodeDate": "2024-12-20T22:00:00.000Z",
@@ -110,23 +178,21 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Aaron Levie highlights that Box has benefited from the collapse in underlying storage costs while maintaining 82% gross margins, with all value captured in the software layer — demonstrating a resilient, high-margin business model.",
-    "quote": "We give our customers unlimited storage. We have 82% gross margin. The price of the underlying storage has gone down by hundreds of times since we started the company. And all our value is in the software layer on top of the storage.",
-    "quoteStartMs": 3917000,
-    "topics": [
-      "margins",
-      "business model",
-      "cloud storage",
-      "AI"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Aaron Levie",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Aaron Levie highlights that Box survived the post-COVID correction, is now cranking at all-time highs, and has built an 82% gross margin software business on top of commoditized storage infrastructure — demonstrating durable business quality.",
+    "quote": "Let me give you a fun stat. We give our customers unlimited storage. We have 82% gross margin. So the price of the underlying storage has gone down by hundreds of times since we started the company. And then our all our value is in the",
+    "quoteStartMs": 3917000,
+    "topics": [
+      "gross margin",
+      "business model",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E208-mstr-Jason-5",
+    "id": "E208-mstr-Jason-8",
     "episodeId": "E208",
     "episodeNumber": 208,
     "episodeDate": "2024-12-20T22:00:00.000Z",
@@ -134,19 +200,18 @@
     "ticker": "MSTR",
     "isPublic": true,
     "host": "Jason",
-    "stance": "mixed",
+    "stance": "neutral",
     "conviction": "low",
-    "summary": "Jason mentions loading up on MSTR while simultaneously shorting Bitcoin, suggesting a hedged or arbitrage-oriented trade rather than a directional conviction on the company as a long-term investment.",
-    "quote": "My last day trade is I'm loading up on MSTR and Bitcoin. I'm shorting Bitcoin and I'm buying MSTR. I don't know what that—",
-    "quoteStartMs": 5213000,
-    "topics": [
-      "Bitcoin treasury",
-      "trade",
-      "NASDAQ 100"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
+    "callType": "explicit_long",
     "excludeReason": "day_trade_aside",
-    "scoreNote": null
+    "scoreNote": "Explicitly labeled as a day trade by the speaker.",
+    "summary": "Jason mentions he is loading up on MSTR as a day trade alongside a short Bitcoin position, framing it as a tactical leveraged Bitcoin play.",
+    "quote": "My last day trade is I'm loading up on MSTR and Bitcoin. I'm shorting Bitcoin and I'm buying MSTR.",
+    "quoteStartMs": 5214000,
+    "topics": [
+      "Bitcoin",
+      "day trade"
+    ],
+    "attributionConfidence": "high"
   }
 ]

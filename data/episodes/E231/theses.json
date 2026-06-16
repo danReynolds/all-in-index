@@ -10,47 +10,21 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Chamath visited Tesla, audited meetings on Dojo and Optimus, was impressed by the talent and Musk's execution, and explicitly told listeners not to sleep on the company as an investment.",
-    "quote": "I would not be sleeping on this company is what I would say.",
-    "quoteStartMs": 5148429,
-    "topics": [
-      "AI",
-      "robotics",
-      "Optimus",
-      "valuation"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E231-federal-reserve-Chamath-1",
-    "episodeId": "E231",
-    "episodeNumber": 231,
-    "episodeDate": "2025-06-13T19:55:00.000Z",
-    "company": "Federal Reserve",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "high",
-    "summary": "Chamath argues the Fed is playing politics rather than following the data, and that a 100bp rate cut is mathematically justified by low inflation and would unlock ~$600B in combined savings and growth benefits for the US economy.",
-    "quote": "If Jerome Powell stays politicized, his incentive will be to keep interest rates where they are... if we cut by 100 basis points, that's another $300 billion.",
-    "quoteStartMs": 3686004,
+    "scoreNote": null,
+    "summary": "Chamath visited Tesla, was impressed by Dojo and Optimus teams and Elon's leadership in action, and explicitly said investors should not sleep on the company.",
+    "quote": "I saw Elon on Tuesday and I got to spend a couple hours with him at Tesla... What they're doing was amazing... And I would not be sleeping on this company is what I would say.",
+    "quoteStartMs": 5093830,
     "topics": [
-      "monetary policy",
-      "interest rates",
-      "Fed",
-      "macro"
+      "AI/robotics",
+      "management",
+      "competitive position"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E231-axp-Chamath-3",
+    "id": "E231-axp-Chamath-1",
     "episodeId": "E231",
     "episodeNumber": 231,
     "episodeDate": "2025-06-13T19:55:00.000Z",
@@ -58,21 +32,20 @@
     "ticker": "AXP",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bear",
-    "conviction": "medium",
-    "summary": "Chamath criticizes American Express for poor customer intelligence and clunky upgrade process, implying the company is losing high-value customers to competitors like Robinhood Gold.",
-    "quote": "I shat on American Express because I think they're just trash... They said here's a chance for you to apply for the black card. And I was like, this just proves— so insulting.",
-    "quoteStartMs": 6024000,
-    "topics": [
-      "fintech",
-      "credit card",
-      "competitive threat",
-      "customer retention"
-    ],
-    "attributionConfidence": "high",
+    "stance": "neutral",
+    "conviction": "low",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath criticized American Express as 'trash' with poor customer intelligence, contrasting it unfavorably with Robinhood's Gold Card, implying the company is losing ground in premium credit.",
+    "quote": "I shat on American Express because I think they're just trash... They have no idea who anybody is.",
+    "quoteStartMs": 6024000,
+    "topics": [
+      "consumer credit",
+      "competitive position",
+      "product"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E231-uso-Chamath-a0",
@@ -83,21 +56,42 @@
     "ticker": "USO",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath warns that a war with Iran could cause oil to double, reaching $100–$112/barrel, which would devastate the global economy and inflation — implying a strong upside price risk to oil in a conflict scenario.",
+    "callType": "view",
+    "summary": "Chamath warns that a war with Iran could cause oil to double, referencing $100-$112/barrel as a plausible and damaging outcome, framing it as a major risk to the global economy and inflation.",
     "quote": "you could see oil double, double. What happens to the economy of the world, of world GDP, of everything, of inflation if you have oil at $100 a barrel, $112 a barrel? It's not good.",
     "quoteStartMs": 5723144,
     "topics": [
+      "Iran",
+      "geopolitical risk",
+      "inflation",
+      "war escalation",
+      "energy prices"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E231-uso-Guest-a1",
+    "episodeId": "E231",
+    "episodeNumber": 231,
+    "episodeDate": "2025-06-13T19:55:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "low",
+    "callType": "view",
+    "summary": "Tucker Carlson flags that Iranian conventional weapons could damage energy production in countries the US relies on, implying upside risk to oil prices from a military engagement with Iran.",
+    "quote": "Their conventional weapons are fearsome and could do great damage to our allies, to Israel, and to American assets in that area, and also to energy production in countries that we rely on.",
+    "quoteStartMs": 5483763,
+    "topics": [
       "Iran conflict",
       "geopolitical risk",
-      "energy prices",
-      "inflation",
+      "energy supply disruption",
       "Middle East escalation"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

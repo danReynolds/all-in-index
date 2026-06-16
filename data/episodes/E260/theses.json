@@ -10,20 +10,19 @@
     "host": "Guest",
     "stance": "bear",
     "conviction": "high",
-    "summary": "Brad Gerstner argues Salesforce and similar SaaS companies deserve their derating because AI shrinks their future profit pool and terminal value, meaning they may never again trade at high free-cash-flow multiples regardless of current revenue stability.",
-    "quote": "it's never gonna trade at 30 times free cash flow again. And it's going to trade 17 times free cash flow because its available TAM in the future is now dramatically and permanently changed.",
-    "quoteStartMs": 1723002,
-    "topics": [
-      "SaaS disruption",
-      "AI threat",
-      "valuation",
-      "profit pool"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Brad Gerstner",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Brad Gerstner argues that Salesforce's multiple compression is structural and permanent — AI uncertainty has durably shrunk its terminal value, and it will never trade at 30x free cash flow again unless it proves it can re-accelerate revenue growth as an AI beneficiary.",
+    "quote": "it could be true that you're not gonna replace CRM, but it can also be true that it's never gonna trade at 30 times free cash flow again. And it's going to trade 17 times free cash flow because its available TAM in the future is now",
+    "quoteStartMs": 1716936,
+    "topics": [
+      "valuation",
+      "AI disruption",
+      "SaaS",
+      "multiple compression"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E260-crm-Sacks-1",
@@ -36,46 +35,22 @@
     "host": "Sacks",
     "stance": "mixed",
     "conviction": "medium",
-    "summary": "Sacks argues Salesforce's core system is too deeply embedded to be replaced by AI-generated code, but the real risk is that the value-capture layer shifts to cross-platform AI agents, leaving Salesforce as legacy infrastructure with a diminished future opportunity.",
-    "quote": "I don't think it's existential. It's where the future value capture is going to be... they become an old layer of the stack that now there's a new layer that gets built on top of.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks argues Salesforce won't be existentially replaced by AI — its deeply tested, enterprise-grade codebase is too entrenched — but its future value capture is at risk as a new agentic layer built on top of SaaS tools may absorb all the AI-driven upside that Salesforce was counting on.",
+    "quote": "I don't think it's existential. It's where the future value capture is going to be... they become an old layer of the stack that now there's a new layer that gets built on top of. I guess it becomes more legacy infrastructure.",
     "quoteStartMs": 1271835,
     "topics": [
-      "SaaS disruption",
-      "AI agents",
-      "competitive moat",
-      "valuation"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E260-tri-Jason-2",
-    "episodeId": "E260",
-    "episodeNumber": 260,
-    "episodeDate": "2026-02-07T04:35:00.000Z",
-    "company": "Thomson Reuters",
-    "ticker": "TRI",
-    "isPublic": true,
-    "host": "Jason",
-    "stance": "bear",
-    "conviction": "low",
-    "summary": "Jason notes Thomson Reuters dropped 20% in response to Anthropic adding a legal tool to Claude, implying AI is a meaningful threat to its legal research business.",
-    "quote": "Thomson Reuters down 20%. LexisNexis, which is a database of case law, uh, was down 15%. LegalZoom, which gives legal advice, um, and documents, down 15%.",
-    "quoteStartMs": 1017665,
-    "topics": [
       "AI disruption",
-      "legal tech",
-      "SaaS"
+      "SaaS",
+      "competitive moat",
+      "value capture"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E260-databricks-Guest-3",
+    "id": "E260-databricks-Guest-4",
     "episodeId": "E260",
     "episodeNumber": 260,
     "episodeDate": "2026-02-07T04:35:00.000Z",
@@ -85,22 +60,21 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Brad Gerstner highlights Databricks as a clear AI beneficiary, citing three consecutive quarters of re-accelerating growth above 60% at scale, driven by AI workloads that rely on data transformation.",
-    "quote": "Databricks just reaccelerated the last 3 quarters. They're growing over 60% at scale. Snowflake reaccelerating. ClickHouse reaccelerating. There are beneficiaries in the software space.",
-    "quoteStartMs": 1753687,
-    "topics": [
-      "AI beneficiary",
-      "data infrastructure",
-      "growth acceleration"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Brad Gerstner",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Brad Gerstner singles out Databricks as a clear AI beneficiary in software — it has reaccelerated revenue growth for three straight quarters, growing over 60% at scale, because AI tools rely on its data transformation platform.",
+    "quote": "I'll tell you a company that is doing this, Databricks. Databricks just reaccelerated the last 3 quarters. They're growing over 60% at scale.",
+    "quoteStartMs": 1750119,
+    "topics": [
+      "AI tailwind",
+      "revenue growth",
+      "data infrastructure"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E260-snow-Guest-4",
+    "id": "E260-snow-Guest-5",
     "episodeId": "E260",
     "episodeNumber": 260,
     "episodeDate": "2026-02-07T04:35:00.000Z",
@@ -108,75 +82,23 @@
     "ticker": "SNOW",
     "isPublic": true,
     "host": "Guest",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Brad Gerstner cites Snowflake's re-accelerating growth as evidence that data platform companies are AI beneficiaries, unlike thin-application SaaS vendors.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Brad Gerstner cites Snowflake's reacceleration as evidence it is an AI beneficiary in the data infrastructure layer, where AI tools' reliance on data transformation is driving renewed growth.",
     "quote": "Snowflake reaccelerating. ClickHouse reaccelerating. There are beneficiaries in the software space.",
     "quoteStartMs": 1758325,
     "topics": [
-      "AI beneficiary",
-      "data infrastructure",
-      "growth"
+      "AI tailwind",
+      "revenue growth",
+      "data infrastructure"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Brad Gerstner",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E260-spacex-xai-Guest-5",
-    "episodeId": "E260",
-    "episodeNumber": 260,
-    "episodeDate": "2026-02-07T04:35:00.000Z",
-    "company": "SpaceX / xAI",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Guest",
-    "stance": "bull",
-    "conviction": "high",
-    "summary": "Brad Gerstner argues the SpaceX–xAI merger is a uniquely compelling bet that combines the two largest TAMs—AI and space—under the world's greatest entrepreneur, with a structural cost advantage via space-based data centers, and sees strong retail and institutional demand for the eventual IPO.",
-    "quote": "You're merging the two biggest TAMs in the world, right? All of artificial intelligence. And all of space together with the world's greatest entrepreneur... if you can deliver that, right? And there are tons of retail investors and institutional investors like us who want to bet against that future.",
-    "quoteStartMs": 3711180,
-    "topics": [
-      "SpaceX IPO",
-      "xAI merger",
-      "AI infrastructure",
-      "space"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Brad Gerstner",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E260-spacex-xai-Jason-6",
-    "episodeId": "E260",
-    "episodeNumber": 260,
-    "episodeDate": "2026-02-07T04:35:00.000Z",
-    "company": "SpaceX / xAI",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Jason",
-    "stance": "bull",
-    "conviction": "high",
-    "summary": "Jason is unequivocally bullish on the SpaceX–xAI combination, arguing Elon is the strongest executor in entrepreneurial history and will deliver on space-based data centers, making this the largest and most transformative IPO ever.",
-    "quote": "There is no stronger entrepreneur when it comes to execution. In the history of entrepreneurs than Elon... it's going to change everything.",
-    "quoteStartMs": 4195430,
-    "topics": [
-      "SpaceX IPO",
-      "xAI merger",
-      "execution",
-      "AI infrastructure"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E260-amzn-Jason-7",
+    "id": "E260-amzn-Jason-6",
     "episodeId": "E260",
     "episodeNumber": 260,
     "episodeDate": "2026-02-07T04:35:00.000Z",
@@ -186,18 +108,68 @@
     "host": "Jason",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Jason names Amazon as his top pick for 'the company of the future,' arguing AI agents will allow it to do dramatically more with far fewer people, massively enhancing earnings power.",
-    "quote": "my number one pick for like the company of the future. They're going to be able to do so much more with so many fewer people. It's extraordinary.",
-    "quoteStartMs": 2075139,
+    "callType": "selection",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Jason picks Amazon as his number-one company of the future, arguing that AI agents will allow it to do dramatically more with far fewer people, creating extraordinary earnings power as job functions consolidate.",
+    "quote": "Amazon, which is like my number one pick for like the company of the future. They're going to be able to do so much more with so many fewer people. It's extraordinary.",
+    "quoteStartMs": 2073941,
     "topics": [
       "AI efficiency",
       "earnings power",
-      "top pick"
+      "selection"
     ],
-    "attributionConfidence": "high",
-    "callType": "selection",
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E260-spacex-xai-Guest-7",
+    "episodeId": "E260",
+    "episodeNumber": 260,
+    "episodeDate": "2026-02-07T04:35:00.000Z",
+    "company": "SpaceX / xAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "callType": "view",
     "excludeReason": null,
-    "scoreNote": "Jason called Amazon his number one company-of-the-future pick"
+    "scoreNote": null,
+    "summary": "Brad Gerstner is strongly bullish on the SpaceX-xAI merger, arguing it combines the two largest TAMs — AI and space — under the world's greatest entrepreneur, with Starlink scaling rapidly and space-based data centers providing a structural cost advantage in compute power.",
+    "quote": "You're merging the two biggest TAMs in the world, right? All of artificial intelligence. And all of space together with the world's greatest entrepreneur... there will be dramatic retail demand and institutional demand who wanna bet on",
+    "quoteStartMs": 3711180,
+    "topics": [
+      "M&A",
+      "AI infrastructure",
+      "space",
+      "valuation"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E260-spacex-xai-Jason-8",
+    "episodeId": "E260",
+    "episodeNumber": 260,
+    "episodeDate": "2026-02-07T04:35:00.000Z",
+    "company": "SpaceX / xAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Jason",
+    "stance": "bull",
+    "conviction": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Jason is strongly bullish on the SpaceX-xAI combination, arguing Musk's unmatched execution ability makes the space-based data center vision a certainty, and that the combined entity will change everything when it IPOs.",
+    "quote": "There is no stronger entrepreneur when it comes to execution. In the history of entrepreneurs than Elon... he will execute on this. And if he does, or when he does, I should say, it's going to change everything.",
+    "quoteStartMs": 4195430,
+    "topics": [
+      "M&A",
+      "AI infrastructure",
+      "space",
+      "execution"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E260-gld-Sacks-a0",
@@ -208,21 +180,19 @@
     "ticker": "GLD",
     "isPublic": true,
     "host": "Sacks",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "low",
-    "summary": "Sacks notes that gold and silver prices came down following the Warsh Fed pick, framing this as a reassuring signal for markets worried about currency debasement — implying the pick is bearish for gold.",
+    "callType": "view",
+    "summary": "Sacks notes that gold and silver prices came down following the Warsh Fed pick, interpreting this as markets being reassured about currency debasement concerns — implying a bearish signal for gold as a safe-haven.",
     "quote": "You saw that in financial markets on the heels of this, the price of gold and silver came down. It was reassuring to those who are worried about currency debasement, basically.",
     "quoteStartMs": 3214464,
     "topics": [
       "Fed pick",
-      "Kevin Warsh",
       "currency debasement",
-      "interest rates"
+      "interest rates",
+      "Kevin Warsh"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E260-slv-Sacks-a1",
@@ -233,45 +203,18 @@
     "ticker": "SLV",
     "isPublic": true,
     "host": "Sacks",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "low",
-    "summary": "Sacks notes that silver (alongside gold) prices came down following the Warsh Fed pick, framing it as a reassuring market reaction against currency debasement fears.",
+    "callType": "view",
+    "summary": "Sacks notes that silver prices fell alongside gold after the Warsh Fed pick, seeing it as a reassuring signal to markets worried about currency debasement.",
     "quote": "You saw that in financial markets on the heels of this, the price of gold and silver came down. It was reassuring to those who are worried about currency debasement, basically.",
     "quoteStartMs": 3214464,
     "topics": [
       "Fed pick",
-      "Kevin Warsh",
       "currency debasement",
-      "interest rates"
+      "interest rates",
+      "Kevin Warsh"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E260-gld-Friedberg-a2",
-    "episodeId": "E260",
-    "episodeNumber": 260,
-    "episodeDate": "2026-02-07T04:35:00.000Z",
-    "company": "Gold",
-    "ticker": "GLD",
-    "isPublic": true,
-    "host": "Friedberg",
-    "stance": "neutral",
-    "conviction": "low",
-    "summary": "Friedberg half-jokingly says that as 'emperor' he would return to the gold standard to stop money printing, implying a directional preference for gold as a monetary anchor.",
-    "quote": "My day as emperor would probably resolve us back to being on the gold standard so we wouldn't be printing money.",
-    "quoteStartMs": 3325000,
-    "topics": [
-      "gold standard",
-      "Fed independence",
-      "monetary policy",
-      "money printing"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": "Friedberg's half-joking remark about returning to the gold standard as 'emperor' is a monetary policy preference, not an explicit directional price call on gold."
+    "attributionConfidence": "high"
   }
 ]

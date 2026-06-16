@@ -9,20 +9,19 @@
     "isPublic": false,
     "host": "Sacks",
     "stance": "neutral",
-    "conviction": "high",
-    "summary": "Sacks argues Anthropic is pursuing regulatory capture to lock in monopolistic control of AI, by branding itself as the 'safe' AI company and characterizing competitors as reckless, which would concentrate power dangerously and harm the competitive market that currently benefits consumers.",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks argues Anthropic is pursuing regulatory capture by branding itself as the 'safe AI' company to characterize competitors as reckless, which could lead to monopolistic control over AI — a centralization outcome he views as dangerous, though he notes the market is currently competitive.",
     "quote": "if you brand yourself as the safe AI company and then try to characterize everybody else as a reckless player, and reckless AI needs to be stopped, you can see how this would basically further your monopolistic control over this industry.",
     "quoteStartMs": 2221384,
     "topics": [
       "regulatory capture",
-      "competitive moat",
-      "AI regulation",
+      "AI competition",
       "monopoly risk"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E275-anthropic-Guest-1",
@@ -33,48 +32,23 @@
     "ticker": null,
     "isPublic": false,
     "host": "Guest",
-    "stance": "bear",
-    "conviction": "high",
-    "summary": "Gurley argues Anthropic is either pursuing regulatory capture to entrench its market position, or genuinely believes it is 'midwifing a deity' — either way making it a dangerous and untrustworthy actor whose doomerism rhetoric has strategically created a public halo while masking its true agenda.",
-    "quote": "I've never ever seen a company that is both leading their field and the most negatively outspoken commenter on what they do... My initial theory was the regulatory capture theory... But then they got so loud that I've literally in the past 30 days read everything I can about Anthropic and I've come up with a new theory.",
-    "quoteStartMs": 1618624,
-    "topics": [
-      "regulatory capture",
-      "competitive strategy",
-      "AI safety narrative"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Bill Gurley",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E275-anthropic-Chamath-2",
-    "episodeId": "E275",
-    "episodeNumber": 275,
-    "episodeDate": "2026-05-29T22:23:00.000Z",
-    "company": "Anthropic",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Chamath",
     "stance": "neutral",
-    "conviction": "high",
-    "summary": "Chamath argues Anthropic's safety narrative and lobbying are a calculated game-theory strategy to dominate the regulatory environment, absorb capital, and create oversight bodies less capable than itself — enabling it to exploit competitors and lock in disproportionate market power.",
-    "quote": "if you want to be unexploitable, I think the best thing that you could do if you're trying to build a super god is have 3 or 4 entities in a room, close the door behind you, and then dominate those other 3 or 4 entities, and then you set the rules.",
-    "quoteStartMs": 2021000,
-    "topics": [
-      "regulatory capture",
-      "competitive strategy",
-      "AI market structure"
-    ],
-    "attributionConfidence": "high",
+    "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Bill Gurley believes Anthropic is a mystery — either engaged in deliberate regulatory capture or genuinely believes it is 'midwifing a deity,' with their doomer rhetoric giving them a reputational halo among intellectual elites while creating negative consequences like data center opposition.",
+    "quote": "I have to tell you that Anthropic is a mystery to me. I've never ever seen a company that is both leading their field and the most negatively outspoken commenter on what they do.",
+    "quoteStartMs": 1614000,
+    "topics": [
+      "regulatory capture",
+      "AI safety narrative",
+      "competitive positioning"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E275-anthropic-Sacks-3",
+    "id": "E275-anthropic-Sacks-2",
     "episodeId": "E275",
     "episodeNumber": 275,
     "episodeDate": "2026-05-29T22:23:00.000Z",
@@ -84,21 +58,69 @@
     "host": "Sacks",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Sacks notes Anthropic is pulling away from OpenAI in growth rate (reportedly ~10x YoY vs OpenAI's ~3x), and if sustained for two years the math suggests Anthropic would achieve near-monopoly market share — making it the clear momentum leader in the frontier AI race.",
-    "quote": "if you have one company that's growing at 10x year over year and another company that's growing at 3x year over year, within 2 years, the first company will have 90% market share... you would always rather be the company that has that inertia",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks observes that Anthropic appears to be pulling away from OpenAI in growth rate — citing ~10x YoY vs OpenAI's ~3x — and warns this compounding dynamic could lead to monopoly-level market share within two years, making it the company with the stronger momentum.",
+    "quote": "Anthropic does seem to be pulling away. There was an article in The Information showing the latest numbers... if you have one company that's growing at 10x year over year and another company that's growing at 3x year over year, within 2",
+    "quoteStartMs": 3345209,
+    "topics": [
+      "growth trajectory",
+      "market share",
+      "AI competition"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E275-anthropic-Chamath-3",
+    "episodeId": "E275",
+    "episodeNumber": 275,
+    "episodeDate": "2026-05-29T22:23:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath views Anthropic's doomerism and regulatory push as rational game-theory optimization — a strategy to absorb capital, influence rules, and create an oversight body less technically capable than themselves — rather than purely ideological belief.",
+    "quote": "if you want to be unexploitable, I think the best thing that you could do if you're trying to build a super god is have 3 or 4 entities in a room, close the door behind you, and then dominate those other 3 or 4 entities, and then you set",
+    "quoteStartMs": 2021000,
+    "topics": [
+      "regulatory capture",
+      "competitive strategy",
+      "AI policy"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E275-openai-Sacks-4",
+    "episodeId": "E275",
+    "episodeNumber": 275,
+    "episodeDate": "2026-05-29T22:23:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bear",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks notes OpenAI is being outgrown by Anthropic at roughly 3x YoY vs Anthropic's 10x, implying it is losing the compounding growth race and could see its market share eroded significantly over two years.",
+    "quote": "if you have one company that's growing at 10x year over year and another company that's growing at 3x year over year, within 2 years, the first company will have 90% market share... you would always rather be the company that has that",
     "quoteStartMs": 3357271,
     "topics": [
       "growth trajectory",
       "market share",
-      "competitive position"
+      "AI competition"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E275-aapl-Jason-4",
+    "id": "E275-aapl-Jason-5",
     "episodeId": "E275",
     "episodeNumber": 275,
     "episodeDate": "2026-05-29T22:23:00.000Z",
@@ -108,21 +130,21 @@
     "host": "Jason",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Jason argues Apple is a dark horse in AI because its hardware (M-series chips with large unified memory) enables local on-device AI model inference, giving it a unique 'intelligence sovereignty' value proposition that could become decisive as enterprises and consumers seek to avoid data lock-in with frontier AI labs.",
-    "quote": "I think Apple is just the dark horse in this entire race. If there is an open-source product that can run on this hardware, the M5s, the 48 gigs, 128 gigs, the new Mac Studio coming out with supposedly a terabyte, that changes the whole game.",
-    "quoteStartMs": 2384175,
-    "topics": [
-      "AI hardware",
-      "data sovereignty",
-      "competitive positioning"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Jason argues Apple is the dark horse in the AI race because its principled stance on data sovereignty and its powerful M-series hardware (capable of running local open-source models) positions it uniquely well as intelligence sovereignty becomes the next critical consumer value.",
+    "quote": "This is why I think Apple is just the dark horse in this entire race. If there is an open-source product that can run on this hardware, the M5s, the 48 gigs, 128 gigs, the new Mac Studio coming out with supposedly a terabyte, that changes",
+    "quoteStartMs": 2383144,
+    "topics": [
+      "AI sovereignty",
+      "open source",
+      "competitive positioning"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E275-meta-Chamath-5",
+    "id": "E275-meta-Chamath-7",
     "episodeId": "E275",
     "episodeNumber": 275,
     "episodeDate": "2026-05-29T22:23:00.000Z",
@@ -132,136 +154,41 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath argues Meta's recent large-scale layoffs are primarily a correction of years of overhiring and mismanagement — not AI-driven efficiency — and that the company could have been just as effective at a fraction of its peak headcount, implying the AI narrative is cover for operational cleanup.",
-    "quote": "You could have stopped the company at 3,000 people when I left and it would not have changed the outcome of that company. There was no need to go to 90,000 people and burn $50 billion on VR. They did it because they had the freedom to do it.",
-    "quoteStartMs": 4364099,
-    "topics": [
-      "cost structure",
-      "AI washing",
-      "operational efficiency"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues Meta's recent layoffs are primarily about correcting years of overhiring and mismanagement — not genuine AI-driven efficiency — and that the company could have achieved its current outcomes at a fraction of its peak headcount.",
+    "quote": "Meta overhired. You could have stopped the company at 3,000 people when I left and it would not have changed the outcome of that company. There was no need to go to 90,000 people and burn $50 billion on VR.",
+    "quoteStartMs": 4363477,
+    "topics": [
+      "headcount",
+      "cost structure",
+      "AI washing"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E275-xyz-Sacks-6",
+    "id": "E275-sq-Sacks-10",
     "episodeId": "E275",
     "episodeNumber": 275,
     "episodeDate": "2026-05-29T22:23:00.000Z",
     "company": "Block",
-    "ticker": "XYZ",
+    "ticker": "SQ",
     "isPublic": true,
     "host": "Sacks",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Sacks argues Block's AI-attributed 50% headcount cut is pure AI washing — the company had severely overstaffed relative to peers during COVID and needed the cut for fundamental operational reasons, not because AI generated real efficiencies.",
-    "quote": "within 24 hours, all the financial analysts on X said that Jack was AI washing and that Block had horribly overstaffed during COVID... running much more inefficiently than all of its other peers in this category, and they've needed to do a 50% job cut for a long time.",
-    "quoteStartMs": 4641184,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks argues that Block's 50% headcount cut attributed to AI by Jack Dorsey was actually AI washing masking deep pre-existing operational inefficiency and overstaffing relative to peers, suggesting real underlying business problems.",
+    "quote": "Jack Dorsey came out and said that he was going to do a 50% elimination because of AI... within 24 hours, all the financial analysts on X said that Jack was AI washing and that Block had horribly overstaffed during COVID... they've needed",
+    "quoteStartMs": 4635041,
     "topics": [
       "AI washing",
       "cost structure",
-      "overhiring"
+      "operational efficiency"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E275-msft-Chamath-7",
-    "episodeId": "E275",
-    "episodeNumber": 275,
-    "episodeDate": "2026-05-29T22:23:00.000Z",
-    "company": "Microsoft",
-    "ticker": "MSFT",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "bear",
-    "conviction": "low",
-    "summary": "Chamath notes Microsoft is cutting cloud AI licenses as enterprise customers pull back AI budgets after spending heavily on tokens with minimal measurable results, signaling a near-term headwind for AI-related cloud revenue.",
-    "quote": "You just saw Microsoft announce that they're killing the cloud licenses. It's a super dynamic market right now, and I don't think we know what the terminal solution looks like.",
-    "quoteStartMs": 2941815,
-    "topics": [
-      "AI spend",
-      "enterprise demand",
-      "cloud revenue"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E275-net-Jason-8",
-    "episodeId": "E275",
-    "episodeNumber": 275,
-    "episodeDate": "2026-05-29T22:23:00.000Z",
-    "company": "Cloudflare",
-    "ticker": "NET",
-    "isPublic": true,
-    "host": "Jason",
-    "stance": "neutral",
-    "conviction": "low",
-    "summary": "Jason notes Cloudflare cut 20% of staff (1,100 people) explicitly attributing it to AI, presenting it as evidence of real AI-driven job displacement rather than mere AI washing.",
-    "quote": "Cloudflare... He cut 20%... 1,100. Making friends every week, Chamath, here on the program... they both blamed AI explicitly and specifically.",
-    "quoteStartMs": 3627000,
-    "topics": [
-      "AI-driven layoffs",
-      "workforce reduction"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E275-wix-Chamath-9",
-    "episodeId": "E275",
-    "episodeNumber": 275,
-    "episodeDate": "2026-05-29T22:23:00.000Z",
-    "company": "Wix",
-    "ticker": "WIX",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "bear",
-    "conviction": "low",
-    "summary": "Chamath flags Wix's layoff announcement as a sign the website-builder business is fundamentally challenged, as tools like Claude can now build websites directly, implying structural headwinds for the company.",
-    "quote": "interesting that he just talked about operational details... You can build websites with Claude. Yeah, the whole website business is challenged.",
-    "quoteStartMs": 5413000,
-    "topics": [
-      "AI disruption",
-      "competitive threat",
-      "product obsolescence"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E275-cper-Chamath-a0",
-    "episodeId": "E275",
-    "episodeNumber": 275,
-    "episodeDate": "2026-05-29T22:23:00.000Z",
-    "company": "Copper",
-    "ticker": "CPER",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "low",
-    "summary": "Chamath mentions copper incidentally as one line item in a list of infrastructure costs (CapEx, OpEx, power, cabling, copper) when discussing AI training efficiency and hardware build-outs. No price or investment direction is expressed.",
-    "quote": "When you think about then the CapEx build-out, the OpEx, the power, the cabling, the copper, all of it",
-    "quoteStartMs": 3190318,
-    "topics": [
-      "AI infrastructure",
-      "compute efficiency",
-      "hardware costs"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

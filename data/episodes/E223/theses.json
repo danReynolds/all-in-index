@@ -1,5 +1,28 @@
 [
   {
+    "id": "E223-tsla-Sacks-2",
+    "episodeId": "E223",
+    "episodeNumber": 223,
+    "episodeDate": "2025-04-11T21:47:00.000Z",
+    "company": "Tesla",
+    "ticker": "TSLA",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": "not_investment_call",
+    "scoreNote": "Commentary on political harassment of Tesla; no forward-looking investment view expressed.",
+    "summary": "Sacks mentions that far-left activists are firebombing Tesla dealerships and painting swastikas on Tesla cars in reaction to Doge, framing it as politically motivated chaos rather than making any investment claim about Tesla.",
+    "quote": "You have crazy leftists firebombing Tesla dealerships, painting swastikas on Tesla cars, accosting Tesla drivers, okay, creating violence and chaos and trying to depress Tesla sales.",
+    "quoteStartMs": 6733780,
+    "topics": [
+      "political risk",
+      "Doge"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
     "id": "E223-ung-Guest-a0",
     "episodeId": "E223",
     "episodeNumber": 223,
@@ -10,44 +33,16 @@
     "host": "Guest",
     "stance": "neutral",
     "conviction": "medium",
-    "summary": "Larry Summers argues that halting LNG-related projects was a clear policy mistake, implying support for expanding natural gas as part of a broader energy security agenda.",
+    "callType": "view",
+    "summary": "Larry Summers (Guest) argues that restricting LNG exports and canceling the Keystone Pipeline were clear policy mistakes, implying a bullish view on natural gas as a strategic energy security resource that should be developed more freely.",
     "quote": "I thought the stopping a variety of things involving liquid natural gas were a clear mistake.",
     "quoteStartMs": 2505211,
     "topics": [
       "energy security",
-      "LNG policy",
-      "Biden administration",
-      "deregulation"
+      "LNG",
+      "Biden policy",
+      "trade policy"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Larry Summers",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": "Summers says halting LNG projects was a 'clear mistake' — this is policy commentary supporting LNG expansion, not an explicit directional price claim on natural gas."
-  },
-  {
-    "id": "E223-lit-Chamath-a1",
-    "episodeId": "E223",
-    "episodeNumber": 223,
-    "episodeDate": "2025-04-11T21:47:00.000Z",
-    "company": "Lithium",
-    "ticker": "LIT",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "low",
-    "summary": "Chamath references the lithium market as a strategic target in a broader resource competition with China, framing it as part of a sequenced approach to securing critical commodities, though no explicit price direction is stated.",
-    "quote": "you can't necessarily surgically go and attack the lithium market first, then the rare earth market second, because it all goes back to the same balance sheet. It's the same actor over and over.",
-    "quoteStartMs": 3133132,
-    "topics": [
-      "critical minerals",
-      "China competition",
-      "trade strategy",
-      "reshoring"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": "Purely geopolitical/strategic framing about resource competition with China. The summary itself notes no explicit price direction is stated."
+    "attributionConfidence": "high"
   }
 ]

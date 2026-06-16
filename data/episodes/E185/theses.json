@@ -11,45 +11,21 @@
     "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Chamath argues OpenAI should IPO as quickly as possible to monetize its current lead, warning that first-mover advantages in tech rarely predict who wins long-term, and that the company is smartly building an institutional ally base to entrench itself.",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath argues OpenAI should IPO as quickly as possible to monetize its current lead, since first-mover advantage in AI may not persist to the 9th inning, and the company is strategically building an institutional ally base (NSA board member, dropping Elon's lawsuit) to entrench itself.",
     "quote": "I think they should do it as quickly as possible. We are in the first inning of what should probably be an enormous tectonic shift in technology. And I think if anything, whoever wins in the first inning usually isn't the one that's",
     "quoteStartMs": 2621172,
     "topics": [
       "IPO",
       "AI competition",
-      "valuation",
-      "corporate strategy"
+      "monetization",
+      "strategy"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E185-openai-Sacks-1",
-    "episodeId": "E185",
-    "episodeNumber": 185,
-    "episodeDate": "2024-06-29T04:05:00.000Z",
-    "company": "OpenAI",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Sacks",
-    "stance": "neutral",
-    "conviction": "medium",
-    "callType": "view",
-    "summary": "Sacks argues OpenAI should clean up its Byzantine nonprofit/for-profit structure, make equity right with early stakeholders, and IPO so the public can participate in the AI wave the same way it did with the dot-com boom.",
-    "quote": "They should IPO so that the public actually has the ability to invest in this AI wave and ride this wave as, you know, the same way they did with the whole dot-com boom... the public had the opportunity to participate in that huge wave of",
-    "quoteStartMs": 2778036,
-    "topics": [
-      "IPO",
-      "corporate structure",
-      "AI investment"
-    ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E185-openai-Friedberg-2",
+    "id": "E185-openai-Friedberg-1",
     "episodeId": "E185",
     "episodeNumber": 185,
     "episodeDate": "2024-06-29T04:05:00.000Z",
@@ -58,46 +34,47 @@
     "isPublic": false,
     "host": "Friedberg",
     "stance": "bear",
-    "conviction": "low",
+    "conviction": "medium",
     "callType": "view",
-    "summary": "Friedberg is skeptical that the public has much upside left in OpenAI, noting the company doing $3B in revenue at an $80B valuation means the big wave may already have passed for public investors.",
-    "quote": "A company doing $3 billion in revenue getting an IPO done at $120 billion market cap, maybe the public already missed the big wave.",
-    "quoteStartMs": 2834838,
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg is skeptical that the public can still capture the upside at OpenAI's likely IPO valuation, noting $3B in revenue against an $80B+ raise implies a ~$120B market cap where the big wave may already be priced in.",
+    "quote": "one could also argue that a company doing $3 billion in revenue getting an IPO done at $120 billion market cap, maybe the public already missed the big wave.",
+    "quoteStartMs": 2833252,
     "topics": [
       "valuation",
       "IPO",
       "AI"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E185-anthropic-Chamath-3",
+    "id": "E185-openai-Sacks-2",
     "episodeId": "E185",
     "episodeNumber": 185,
     "episodeDate": "2024-06-29T04:05:00.000Z",
-    "company": "Anthropic",
+    "company": "OpenAI",
     "ticker": null,
     "isPublic": false,
-    "host": "Chamath",
-    "stance": "neutral",
+    "host": "Sacks",
+    "stance": "bull",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Chamath argues that AI foundational model costs are heading toward $100B by 2027, which will make the space an arms race that only a handful of tech giants (Google, Microsoft, Meta, Amazon, OpenAI) can survive — leaving startups like Anthropic without sufficient capital to compete.",
-    "quote": "Dario Amodei, the CEO of Anthropic, who said the cost of a good functional model today is in the billions, but by 2027 it could easily approach $100 billion. The problem that that represents for Ilya's company... there isn't $100 billion",
-    "quoteStartMs": 3601525,
-    "topics": [
-      "AI capex",
-      "competition",
-      "funding"
-    ],
-    "attributionConfidence": "high",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Sacks argues OpenAI should convert to a standard C-corp, resolve equity issues with Elon and Sam, and IPO so the public can participate in the AI wave, comparing the opportunity to the dot-com era where some companies like Amazon and Google delivered enormous returns.",
+    "quote": "they should IPO so that the public actually has the ability to invest in this AI wave and ride this wave as, you know, the same way they did with the whole dot-com boom... Amazon, Google, and so on. And the public had the opportunity to",
+    "quoteStartMs": 2778036,
+    "topics": [
+      "IPO",
+      "corporate structure",
+      "AI",
+      "public markets"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E185-safe-superintelligence-inc-ssi-Sacks-4",
+    "id": "E185-safe-superintelligence-inc-ssi-Sacks-3",
     "episodeId": "E185",
     "episodeNumber": 185,
     "episodeDate": "2024-06-29T04:05:00.000Z",
@@ -108,17 +85,43 @@
     "stance": "bear",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Sacks is bearish on SSI's prospects because its safety-first mandate acts as a governor that will slow it down relative to competitors like OpenAI who are racing to build AGI as fast as possible, creating a Darwinian disadvantage.",
-    "quote": "I'm not bullish about that pitch... safety concerns are a brake pedal. They don't help you move faster, they make you move slower... you're the guys who want to move slower. I don't think that's the recipe for winning.",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks is not bullish on SSI because making safety a core mandate acts as a brake pedal, slowing the company down relative to better-resourced competitors like OpenAI and Google, creating a Darwinian disadvantage in the race to AGI.",
+    "quote": "I'm not bullish about that pitch. Because I think it, it makes the company a little bit schizophrenic... safety concerns are a brake pedal. They don't help you move faster, they make you move slower.",
     "quoteStartMs": 3354488,
     "topics": [
       "AI safety",
       "competition",
-      "startup strategy"
+      "AGI race",
+      "startups"
     ],
-    "attributionConfidence": "high",
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E185-safe-superintelligence-inc-ssi-Chamath-4",
+    "episodeId": "E185",
+    "episodeNumber": 185,
+    "episodeDate": "2024-06-29T04:05:00.000Z",
+    "company": "Safe Superintelligence Inc. (SSI)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "medium",
+    "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues SSI faces a fatal capital problem: as foundation model costs approach $100B by 2027, only hyperscalers (Google, Microsoft, Meta, Amazon, OpenAI) can compete, leaving well-funded but smaller AI startups unable to sustain the arms race.",
+    "quote": "the cost of a good functional model today is in the billions, but by 2027 it could easily approach $100 billion. The problem that that represents for Ilya's company... the reality is there isn't $100 billion for him to have.",
+    "quoteStartMs": 3604111,
+    "topics": [
+      "AI capex",
+      "competition",
+      "startups",
+      "foundation models"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E185-msft-Sacks-5",
@@ -132,8 +135,10 @@
     "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Sacks argues Microsoft's bundling of Teams with Office is illegal anti-competitive behavior that the EU was right to challenge, and that without forced à la carte pricing Microsoft will systematically dominate enterprise software — though he frames this as a regulatory/conduct concern rather than a direct investment call on the stock.",
-    "quote": "When you have a monopoly in one product and you systematically use it to keep adding new products that again, on the margins appear to be free because you've bundled them... I do think that Microsoft will use the power of the bundle to",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks argues Microsoft's bundling of Teams with Office is illegal anti-competitive conduct that regulators should stop, but frames this as a regulatory/conduct critique rather than a forward claim about Microsoft's investment value.",
+    "quote": "when you have a monopoly in one product and you systematically use it to keep adding new products that again, on the margins appear to be free because you've bundled them... I do think that Microsoft will use the power of the bundle to",
     "quoteStartMs": 3956963,
     "topics": [
       "antitrust",
@@ -141,32 +146,6 @@
       "enterprise software",
       "regulation"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E185-slack-Chamath-6",
-    "episodeId": "E185",
-    "episodeNumber": 185,
-    "episodeDate": "2024-06-29T04:05:00.000Z",
-    "company": "Slack",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "low",
-    "callType": "view",
-    "summary": "Chamath reflects that Slack's sale to Salesforce was forced by Microsoft's bundling strategy, suggesting that without the competitive distortion Slack might have been able to compete feature-for-feature with Teams — not a forward-looking investment call but a retrospective on how bundling killed a viable competitor.",
-    "quote": "Would Slack have sold to Salesforce? Now look, I'm not complaining. It was a $27 billion acquisition, but the question is, if it were allowed to compete feature for feature, could it have beat Teams? Possibly.",
-    "quoteStartMs": 4145551,
-    "topics": [
-      "antitrust",
-      "bundling",
-      "M&A"
-    ],
-    "attributionConfidence": "high",
-    "excludeReason": "not_investment_call",
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

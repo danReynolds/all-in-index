@@ -10,72 +10,47 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Chamath argues Google is one of seven American quasi-monopolies that, if allowed to flourish, will drive strong economic value, and that a break-up would actually unlock even greater value for shareholders as the sum-of-parts valuation exceeds the current conglomerate discount.",
-    "quote": "There are 7 quasi-monopolies in the world. They're all American, and if we allow them to flourish, we'll be good. If we hamper them a little bit and allow other companies to pick up the white space, we'll be great.",
-    "quoteStartMs": 1820400,
-    "topics": [
-      "valuation",
-      "sum-of-parts",
-      "antitrust",
-      "competitive moat"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues that Google, as one of seven quasi-monopolies, is undervalued on a sum-of-parts basis — individual business units like YouTube would trade at higher multiples if spun off, making breakup value greater than the current conglomerate discount.",
+    "quote": "if you own stock in any of these companies, the sum of the parts analysis would tell you that the breakup value is greater than the way that these companies get discounted. You can look at the multiples that they trade at and you can see",
+    "quoteStartMs": 1855000,
+    "topics": [
+      "sum-of-parts valuation",
+      "conglomerate discount",
+      "breakup value",
+      "big tech"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E202-googl-Friedberg-1",
+    "id": "E202-googl-Jason-1",
     "episodeId": "E202",
     "episodeNumber": 202,
     "episodeDate": "2024-11-01T21:10:00.000Z",
-    "company": "Alphabet (Google)",
+    "company": "Alphabet (Google / YouTube)",
     "ticker": "GOOGL",
     "isPublic": true,
-    "host": "Friedberg",
+    "host": "Jason",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Friedberg argues that Google's conglomerate structure enabled massive long-term capital investment in YouTube and Google Cloud that standalone companies could not have funded, justifying the integrated business model as a driver of durable value creation.",
-    "quote": "Both YouTube and GCP required many, many, many, many billions of dollars of investment over many years... If those were standalone businesses and they didn't have the profits being derived from search and ads over many years, they would not have been able to build those incredible businesses.",
-    "quoteStartMs": 1914794,
-    "topics": [
-      "capital allocation",
-      "competitive moat",
-      "cloud",
-      "antitrust"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E202-googl-Sacks-2",
-    "episodeId": "E202",
-    "episodeNumber": 202,
-    "episodeDate": "2024-11-01T21:10:00.000Z",
-    "company": "Alphabet (Google)",
-    "ticker": "GOOGL",
-    "isPublic": true,
-    "host": "Sacks",
-    "stance": "neutral",
-    "conviction": "medium",
-    "summary": "Sacks argues Google's search algorithm is demonstrably and deliberately biased against Trump, surfacing obscure negative articles as top results — a credibility and regulatory risk that undermines the core value of its search product.",
-    "quote": "There's no question that just as a factual matter, this episode was suppressed in YouTube search... it's pretty obvious to me that they're using other factors in deciding what to surface here. And somehow the results end up being almost universally negative towards Trump.",
-    "quoteStartMs": 3412149,
+    "scoreNote": null,
+    "summary": "Jason highlights Google's blowout Q3 earnings — $88.3B revenue up 15% YoY, operating income up 34%, Cloud at 35% growth with $1.9B operating profit, and YouTube crossing $50B in annual revenue — framing these as evidence the business is printing money across multiple growth vectors.",
+    "quote": "Cloud had a blowout quarter. Google Cloud, I see that all the time now. $11.4 billion in revenue on 35% annual growth with $1.9 billion in operating profit. I mean, it's printing money.",
+    "quoteStartMs": 1806464,
     "topics": [
-      "search bias",
-      "regulation",
-      "trust",
-      "brand risk"
+      "earnings",
+      "cloud growth",
+      "YouTube revenue",
+      "operating leverage"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E202-bac-Chamath-3",
+    "id": "E202-bac-Chamath-2",
     "episodeId": "E202",
     "episodeNumber": 202,
     "episodeDate": "2024-11-01T21:10:00.000Z",
@@ -83,21 +58,21 @@
     "ticker": "BAC",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "high",
-    "summary": "Chamath argues Bank of America failed to heed Buffett's public warning to mark underwater bond holdings to market and sell them, leading Buffett to dump his entire position — signaling a serious unrealized-loss crisis on BofA's balance sheet.",
-    "quote": "Buffett warned BofA publicly, although a bit obliquely last year... I don't think BofA acted quickly enough. And so what did Buffett do? He just basically started dumping and he's almost completely out of BofA, if not completely out altogether.",
-    "quoteStartMs": 1080000,
-    "topics": [
-      "unrealized losses",
-      "interest rates",
-      "credit risk",
-      "balance sheet"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues Bank of America failed to heed Buffett's public warning to mark underwater bond holdings to market and sell them off, leading Buffett to dump his position — signaling a looming credit crisis from unrealized losses on bank balance sheets.",
+    "quote": "Buffett warned BofA publicly, although a bit obliquely last year during his annual conference...I don't think B of A acted quickly enough. And so what did Buffett do? He just basically started dumping and he's almost completely out of B of",
+    "quoteStartMs": 1081800,
+    "topics": [
+      "unrealized losses",
+      "interest rate risk",
+      "Buffett exit",
+      "banking crisis"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E202-gld-Friedberg-a0",
@@ -110,19 +85,16 @@
     "host": "Friedberg",
     "stance": "neutral",
     "conviction": "low",
-    "summary": "Friedberg suggests that amid US dollar hegemony challenges and BRICS alternatives emerging, people may be parking assets in gold (and Bitcoin) as a transitional store of value.",
-    "quote": "maybe everyone's kind of putting their assets away in, in gold and, and others and Bitcoin and other stuff while they're waiting for the transition to find another place to buy. We'll see.",
+    "callType": "view",
+    "summary": "Friedberg suggests that amid US dollar hegemony challenges, debt spirals, and BRICS alternatives emerging, investors may be parking assets in gold (and Bitcoin) while waiting for a transition away from the dollar.",
+    "quote": "maybe everyone's kind of putting their assets away in, in gold and, and others and Bitcoin and other stuff while they're waiting for the transition to find another place to buy.",
     "quoteStartMs": 1416452,
     "topics": [
-      "US dollar hegemony",
+      "US debt spiral",
+      "dollar hegemony",
       "BRICS",
-      "debt spiral",
-      "store of value",
-      "macro"
+      "store of value"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": "Friedberg speculatively muses that people 'maybe' are parking assets in gold during a transition — a highly hedged, uncertain observation, not an explicit directional price call."
+    "attributionConfidence": "high"
   }
 ]

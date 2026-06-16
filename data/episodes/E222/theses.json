@@ -1,80 +1,30 @@
 [
   {
-    "id": "E222-nmax-Guest-0",
+    "id": "E222-nwsm-Guest-0",
     "episodeId": "E222",
     "episodeNumber": 222,
     "episodeDate": "2025-04-05T19:03:00.000Z",
     "company": "Newsmax",
-    "ticker": "NMAX",
+    "ticker": "NWSM",
     "isPublic": true,
     "host": "Guest",
     "stance": "bear",
     "conviction": "medium",
-    "summary": "Shapiro argues Newsmax's IPO pop was a GameStop-style retail-driven meme trade with absurd PE ratios that will revert, estimating the stock ultimately settles at a $2–4 billion market cap well below its peak.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Shapiro argues Newsmax's IPO pop was a GameStop-style retail squeeze driven by fan enthusiasm rather than fundamentals, and that the stock will revert to a $2–4B market cap as the weighing machine takes over from the voting machine.",
     "quote": "I think the PE ratios on the Newsmax trade are, are, you know, ridiculous in the sense that it's going to revert back to something closer to normalcy... it's more like GameStop than anything else.",
     "quoteStartMs": 6704312,
     "topics": [
       "valuation",
-      "IPO",
       "media",
-      "meme stock"
+      "IPO"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E222-circle-Sacks-1",
-    "episodeId": "E222",
-    "episodeNumber": 222,
-    "episodeDate": "2025-04-05T19:03:00.000Z",
-    "company": "Circle",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Sacks",
-    "stance": "bull",
-    "conviction": "medium",
-    "summary": "Sacks views Circle's USDC stablecoin as a well-structured vehicle that could serve as a permanent bid for US Treasuries, making it strategically important and potentially very valuable if stablecoin legislation passes permissively.",
-    "quote": "what Circle does is I think quite structured and, you know, well— the legislation needs to be incredibly permissive because to your guys' point, we would want the bid to US treasuries to exist and to be as ferocious as possible",
-    "quoteStartMs": 5016655,
-    "topics": [
-      "stablecoins",
-      "regulation",
-      "US dollar",
-      "crypto"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E222-asml-Sacks-2",
-    "episodeId": "E222",
-    "episodeNumber": 222,
-    "episodeDate": "2025-04-05T19:03:00.000Z",
-    "company": "ASML",
-    "ticker": "ASML",
-    "isPublic": true,
-    "host": "Sacks",
-    "stance": "neutral",
-    "conviction": "low",
-    "summary": "Sacks flags ASML as a critical national-security chokepoint in the semiconductor supply chain, noting that publicly profiling its key operators is a security risk — implying the company's strategic monopoly is both a strength and a vulnerability.",
-    "quote": "One of the biggest national security threats that we created out of nowhere was when the Wall Street Journal was allowed to do a detailed article on ASML... there's a person, literally one person, that can operate these machines.",
-    "quoteStartMs": 4789000,
-    "topics": [
-      "semiconductors",
-      "national security",
-      "supply chain"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E222-daily-wire-Guest-3",
+    "id": "E222-daily-wire-Guest-1",
     "episodeId": "E222",
     "episodeNumber": 222,
     "episodeDate": "2025-04-05T19:03:00.000Z",
@@ -82,19 +32,44 @@
     "ticker": null,
     "isPublic": false,
     "host": "Guest",
-    "stance": "bull",
-    "conviction": "medium",
-    "summary": "Shapiro reveals Daily Wire generated $220 million in revenue last year and is considering raising capital, framing it as a financially healthy media business despite restructuring headlines.",
-    "quote": "Last year was $220 million. Oh my God, what's going on?... it has crossed our minds. Yes, for sure.",
-    "quoteStartMs": 6665000,
-    "topics": [
-      "media",
-      "revenue",
-      "capital raise"
-    ],
-    "attributionConfidence": "high",
+    "stance": "neutral",
+    "conviction": "low",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Shapiro confirms Daily Wire generated $220M in revenue last year and acknowledged that raising capital has crossed their minds, suggesting openness to outside investment given strong business performance.",
+    "quote": "Actually, last year was $220 million... it has crossed our minds. Yes, for sure.",
+    "quoteStartMs": 6665000,
+    "topics": [
+      "revenue",
+      "media",
+      "fundraising"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E222-credit-default-swaps-corporate-debt-protection-Chamath-2",
+    "episodeId": "E222",
+    "episodeNumber": 222,
+    "episodeDate": "2025-04-05T19:03:00.000Z",
+    "company": "Credit Default Swaps (corporate debt protection)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "callType": "explicit_long",
+    "excludeReason": "not_investment_call",
+    "scoreNote": "CDS is a derivatives instrument, not an equity — flagged as not_investment_call.",
+    "summary": "Chamath recommends buying CDS protection on corporate debt as an asymmetric insurance trade against a wave of corporate defaults in 2025, citing tariff-driven revenue pressure on leveraged companies and covenant risk, noting the trade has already returned ~7x.",
+    "quote": "I would be long CDS. So what am I buying? I am buying insurance... this is not something I think will happen... but if it hits, it will be the best performing asset of 2025.",
+    "quoteStartMs": 6423976,
+    "topics": [
+      "credit risk",
+      "tariffs",
+      "recession",
+      "corporate debt"
+    ],
+    "attributionConfidence": "high"
   }
 ]

@@ -10,47 +10,70 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Chamath argues SpaceX should IPO first to capture investor appetite before it wanes, that the IPO will provide a validated external mark-to-market valuation enabling an eventual Tesla merger, and that SpaceX will be the foundation for an enormous space economy.",
-    "quote": "I think we need to do this. It'll minimize the shareholder noise because it'll give less room to somebody that says, hey, he set a valuation out of thin air. Well, and— but dollars to donuts, these things are going to merge.",
-    "quoteStartMs": 335256,
-    "topics": [
-      "IPO",
-      "valuation",
-      "space economy",
-      "Tesla merger"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath is strongly bullish on SpaceX's IPO, arguing it will achieve a validated external valuation that enables a near-certain merger with Tesla, and that SpaceX is the foundational infrastructure for an enormous new space economy.",
+    "quote": "dollars to donuts, these things are going to merge... the amount of businesses I think that can get created and the amount of value that will be created on top of SpaceX's shoulders is vast. It's the beginning of the beginning of the",
+    "quoteStartMs": 348192,
+    "topics": [
+      "IPO",
+      "SpaceX-Tesla merger",
+      "space economy",
+      "valuation"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E267-spacex-Friedberg-1",
+    "id": "E267-spacex-Chamath-1",
     "episodeId": "E267",
     "episodeNumber": 267,
     "episodeDate": "2026-04-03T21:08:00.000Z",
     "company": "SpaceX",
     "ticker": null,
     "isPublic": false,
-    "host": "Friedberg",
+    "host": "Chamath",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Friedberg argues SpaceX is the foundational 'railroad' infrastructure for the next great economic frontier — moon industrialization and a backup internet via Starlink — making it a profoundly valuable long-term platform.",
-    "quote": "SpaceX will be to the moon and ultimately to Mars, and there's going to be an extraordinary abundance of production that's going to come out of the moon... SpaceX has also created... a backup to the internet.",
-    "quoteStartMs": 672555,
-    "topics": [
-      "space economy",
-      "Starlink",
-      "valuation",
-      "long-term growth"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
+    "callType": "explicit_long",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": "Chamath frames SpaceX as the must-own first mover in the IPO wave; implies strongest risk-adjusted position.",
+    "summary": "Chamath argues SpaceX should get out first in the IPO queue before investor appetite is exhausted, implying it is the most investable of the upcoming IPO cohort.",
+    "quote": "I think what happens is SpaceX is gonna get out, they're gonna do great, and then maybe the next one does good to great, then the next one will do good, and then the appetite runs out",
+    "quoteStartMs": 1484000,
+    "topics": [
+      "IPO",
+      "valuation",
+      "investor appetite"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E267-tsla-Friedberg-2",
+    "id": "E267-tsla-Chamath-2",
+    "episodeId": "E267",
+    "episodeNumber": 267,
+    "episodeDate": "2026-04-03T21:08:00.000Z",
+    "company": "Tesla",
+    "ticker": "TSLA",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath is bullish on a Tesla-SpaceX merger, arguing that a combined entity would resolve governance and valuation noise, and that the cross-company technology overlap makes the combination inevitable and value-accretive.",
+    "quote": "dollars to donuts, these things are going to merge... the amount of businesses I think that can get created and the amount of value that will be created on top of SpaceX's shoulders is vast",
+    "quoteStartMs": 348192,
+    "topics": [
+      "merger",
+      "governance",
+      "valuation"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E267-tsla-Friedberg-3",
     "episodeId": "E267",
     "episodeNumber": 267,
     "episodeDate": "2026-04-03T21:08:00.000Z",
@@ -60,8 +83,11 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Friedberg argues Tesla's autonomous and robotics competency makes it a far more interesting long-term investment than its EV origins suggest, potentially enabling it to supply robots for moon industrialization and an entirely new manufacturing frontier.",
-    "quote": "Tesla, I think 20 years from now is actually a more interesting story... Tesla started out as an electric car company, 100% ended up becoming an autonomous car company. And the autonomous competency is what led to the robotics revolution.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg argues Tesla's autonomy and robotics competency is far more valuable than its EV origins, and that the robotics revolution it is driving will power the next great industrial frontier on the Moon and beyond.",
+    "quote": "Tesla, I think 20 years from now is actually a more interesting story... Tesla started out as an electric car company, 100% ended up becoming an autonomous car company. And the autonomous competency is what led to the robotics revolution",
     "quoteStartMs": 599391,
     "topics": [
       "robotics",
@@ -69,13 +95,10 @@
       "space economy",
       "long-term growth"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E267-openai-Chamath-3",
+    "id": "E267-openai-Chamath-4",
     "episodeId": "E267",
     "episodeNumber": 267,
     "episodeDate": "2026-04-03T21:08:00.000Z",
@@ -83,10 +106,13 @@
     "ticker": null,
     "isPublic": false,
     "host": "Chamath",
-    "stance": "mixed",
-    "conviction": "high",
-    "summary": "Chamath believes OpenAI is genuinely a trillion-dollar-class business, but warns it must IPO as quickly as possible before investor appetite is exhausted and before AI/AGI dynamics erode the valuation premiums that currently support its $800B+ price tag.",
-    "quote": "Is there a market for OpenAI at $800 billion? Yes, and there should be... These are trillion-dollar companies. They both are... But these two companies need to get out as quickly as possible.",
+    "stance": "bull",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath believes OpenAI is genuinely a trillion-dollar-class business and that it must IPO quickly before investor appetite is exhausted and AGI uncertainty reprices the whole tech sector.",
+    "quote": "Is there a market for OpenAI at $800 billion? Yes, and there should be... These are trillion-dollar companies. They both are, and they both deserve to be... these 2 guys need to get their act together, file quickly, get out and just get",
     "quoteStartMs": 1804882,
     "topics": [
       "IPO",
@@ -94,13 +120,10 @@
       "AGI risk",
       "capital markets"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E267-anthropic-Chamath-4",
+    "id": "E267-anthropic-Chamath-5",
     "episodeId": "E267",
     "episodeNumber": 267,
     "episodeDate": "2026-04-03T21:08:00.000Z",
@@ -108,24 +131,23 @@
     "ticker": null,
     "isPublic": false,
     "host": "Chamath",
-    "stance": "mixed",
-    "conviction": "high",
-    "summary": "Chamath views Anthropic as a genuinely world-class business deserving a trillion-dollar valuation, but urgently needs to IPO before market appetite runs out and AGI uncertainty erodes software sector multiples.",
-    "quote": "I'd say the same thing of Anthropic. What an incredible thing that both of these two companies have been able to create... These are trillion-dollar companies. They both are... these 2 guys need to get their act together, file quickly, get out and just get the money.",
-    "quoteStartMs": 1816484,
+    "stance": "bull",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath views Anthropic as a genuinely unprecedented trillion-dollar-class business and urges it to IPO rapidly before broader market conditions deteriorate.",
+    "quote": "These are trillion-dollar companies. They both are, and they both deserve to be... these 2 guys need to get their act together, file quickly, get out and just get the money, fortify their balance sheets",
+    "quoteStartMs": 1830407,
     "topics": [
       "IPO",
       "valuation",
-      "AGI risk",
-      "capital markets"
+      "AI"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E267-openai-Friedberg-5",
+    "id": "E267-openai-Friedberg-6",
     "episodeId": "E267",
     "episodeNumber": 267,
     "episodeDate": "2026-04-03T21:08:00.000Z",
@@ -133,24 +155,24 @@
     "ticker": null,
     "isPublic": false,
     "host": "Friedberg",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Friedberg warns that pent-up selling pressure, dwindling Middle East capital flows due to the Iran conflict, and limited retail buying power could create a liquidity crunch that weighs heavily on OpenAI's post-IPO valuation.",
-    "quote": "there's only so much capital to absorb those shares on the buy side... there is so much pent-up selling demand. There is so much value that's been created. There's going to be so much selling pressure. And then there's going to be very litt",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg warns that pent-up selling pressure, lack of obvious large-scale buyers post-IPO, and a potential Middle East capital crunch create a liquidity squeeze that could suppress OpenAI's post-IPO price well below its private valuation.",
+    "quote": "there's only so much capital in the world... there's going to be so much selling pressure. And then there's going to be very little buying activity on some of these because anyone that could have bought at scale on the buy side post-public",
     "quoteStartMs": 1616313,
     "topics": [
       "IPO",
+      "liquidity",
       "valuation",
-      "capital markets",
-      "liquidity"
+      "capital markets"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E267-bittensor-tao-Jason-6",
+    "id": "E267-bittensor-tao-Jason-7",
     "episodeId": "E267",
     "episodeNumber": 267,
     "episodeDate": "2026-04-03T21:08:00.000Z",
@@ -160,66 +182,18 @@
     "host": "Jason",
     "stance": "bull",
     "conviction": "low",
-    "summary": "Jason discloses a small personal bet on TAO, citing the fascination with its decentralized subnet architecture as the reason for the position.",
-    "quote": "Well, I mean, the reason is because I did place a bet on DAO. A couple of weeks ago I went public with, \"Hey, yeah, I've got a small bet here because I think these subnets are fascinating.\" You're TAO maxing.\nI mean, it's like I might be $5",
-    "quoteStartMs": 4678310,
-    "topics": [
-      "crypto",
-      "decentralized AI",
-      "small bet"
-    ],
-    "attributionConfidence": "high",
     "callType": "explicit_long",
     "excludeReason": null,
-    "scoreNote": "Jason disclosed a small personal bet on TAO"
-  },
-  {
-    "id": "E267-vast-space-Jason-7",
-    "episodeId": "E267",
-    "episodeNumber": 267,
-    "episodeDate": "2026-04-03T21:08:00.000Z",
-    "company": "Vast Space",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Jason",
-    "stance": "bull",
-    "conviction": "low",
-    "summary": "Jason highlights Vast Space as an interesting investment thesis — a modular commercial space station company riding SpaceX's launch infrastructure, with potential demand from hyperscalers like Google or Amazon.",
-    "quote": "We also did this company called Vast, Vast Space... they're designing a space station... The thesis is, hey, what if Google or Amazon want to have a space station in space? It's completely possible they may want that.",
-    "quoteStartMs": 765069,
+    "scoreNote": "Jason explicitly states personal long position of $500K–$600K in TAO.",
+    "summary": "Jason discloses he has personally placed a $500K–$600K bet on TAO, believing decentralized compute subnets represent an important emerging architecture.",
+    "quote": "I did place a bet on DAO. A couple of weeks ago I went public with, 'Hey, yeah, I've got a small bet here because I think these subnets are fascinating.' I might be $500,000 or $600,000 in.",
+    "quoteStartMs": 4680000,
     "topics": [
-      "space economy",
-      "venture",
-      "commercial space stations"
+      "crypto",
+      "decentralized compute",
+      "AI infrastructure"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E267-gld-Friedberg-a0",
-    "episodeId": "E267",
-    "episodeNumber": 267,
-    "episodeDate": "2026-04-03T21:08:00.000Z",
-    "company": "Gold",
-    "ticker": "GLD",
-    "isPublic": true,
-    "host": "Friedberg",
-    "stance": "neutral",
-    "conviction": "low",
-    "summary": "Friedberg mentions gold as one of the abundant materials on the moon that could be mined and shipped back to Earth at very low cost, implying a future supply increase from extraterrestrial sources. This is incidental to a broader moon industrialization thesis rather than a direct price call.",
-    "quote": "there's aluminum, there's silicon, there's palladium, there's platinum, there's gold, there's everything you possibly need.",
-    "quoteStartMs": 1027716,
-    "topics": [
-      "moon mining",
-      "space industrialization",
-      "precious metals supply"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": "Incidental mention of gold among abundant moon materials — moon-industrialization commentary, not a directional price call."
+    "attributionConfidence": "high"
   },
   {
     "id": "E267-ung-Friedberg-a1",
@@ -230,21 +204,20 @@
     "ticker": "UNG",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Friedberg explains that natural gas is the critical input for nitrogen fertilizer production, and with the Strait of Hormuz disrupted and Qatar's main facility damaged, natural gas-linked fertilizer supply is severely constrained, implying upward price pressure on natural gas and fertilizer derived from it.",
-    "quote": "That nitrogen is primarily made where natural gas is produced and processed. And the reason is that they use the natural gas as an input to the production process... about 35% of the world's nitrogen fertilizer goes through the Strait of Hormuz",
+    "callType": "view",
+    "summary": "Friedberg highlights that natural gas is a critical input to nitrogen fertilizer production, and with the Strait of Hormuz disruption cutting off ~35% of global nitrogen fertilizer supply and Qatar's key facility damaged for 3–5 years, natural gas production hubs gain strategic importance and pricing power.",
+    "quote": "That nitrogen is primarily made where natural gas is produced and processed... about 35% of the world's nitrogen fertilizer goes through the Strait of Hormuz... the choke points on production is gonna keep prices very high.",
     "quoteStartMs": 2571997,
     "topics": [
-      "fertilizer crisis",
+      "natural gas",
+      "nitrogen fertilizer",
       "Strait of Hormuz",
       "supply disruption",
-      "Middle East conflict",
-      "food security"
+      "food crisis",
+      "geopolitics"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

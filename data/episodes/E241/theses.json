@@ -10,19 +10,19 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath argues the US government taking a 10% equity stake in Intel—rather than giving free grants—is a smart model that gives taxpayers upside while strategically supporting domestic chip manufacturing to compete with China.",
-    "quote": "I think that this approach is the much better approach, which is to say we can do exactly what China did with a couple of tweaks... own something on the balance sheet of the United States, not have a golden vote, have complete transparency, allow the capital markets to finance these businesses.",
-    "quoteStartMs": 2450205,
-    "topics": [
-      "government investment",
-      "semiconductor policy",
-      "national security",
-      "CHIPS Act"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues the US government taking a 10% equity stake in Intel in exchange for CHIPS Act funding is superior to free grants, giving American taxpayers upside participation in a strategically critical semiconductor company.",
+    "quote": "I think that this approach is the much better approach, which is to say we can do exactly what China did with a couple of tweaks... allow the capital markets to finance these businesses, but give them a chance to compete all around the",
+    "quoteStartMs": 2452000,
+    "topics": [
+      "CHIPS Act",
+      "government equity",
+      "semiconductors",
+      "national security"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E241-intc-Sacks-1",
@@ -35,19 +35,19 @@
     "host": "Sacks",
     "stance": "neutral",
     "conviction": "medium",
-    "summary": "Sacks supports the government taking equity in Intel rather than giving outright grants, arguing it's a better deal for taxpayers, creates the right incentives, and addresses the national security imperative of onshoring chip manufacturing.",
-    "quote": "If you are going to hand out billions of dollars to these companies, you're better off at least getting something for it, having the taxpayers have some upside in it, allowing the government to recoup, and creating the right incentive for these companies so they're not constantly seeking bailouts.",
-    "quoteStartMs": 2607004,
-    "topics": [
-      "government investment",
-      "semiconductor policy",
-      "national security",
-      "CHIPS Act"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Sacks supports the US government taking equity in Intel rather than giving free grants, viewing it as a better deal for taxpayers and the right incentive structure for companies receiving public funding for national security priorities.",
+    "quote": "I agree with Chamath that if you're going to give large amounts of money to chip manufacturers, it's better to get equity for that than for it to be a freebie... it's a better deal for taxpayers. We might be able to recoup the money and",
+    "quoteStartMs": 2537000,
+    "topics": [
+      "CHIPS Act",
+      "government equity",
+      "semiconductors",
+      "national security"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E241-openai-Friedberg-2",
@@ -58,65 +58,20 @@
     "ticker": null,
     "isPublic": false,
     "host": "Friedberg",
-    "stance": "bull",
-    "conviction": "high",
-    "summary": "Friedberg highlights OpenAI's GPT-4B Micro model achieving a 50x improvement in cellular rejuvenation protein efficiency as evidence that fine-tuned smaller LLMs will be extraordinary at specific scientific applications, opening vast new therapeutic and biological discovery use cases.",
-    "quote": "It's incredible what these LLMs can do... we're going to have these fine-tuned smaller models for specific applications rather than have one massive AI model that does everything for everyone in every context. People are going to take these base models, tune them, and they're going to be far less compute intensive and be extraordinary at specific applications.",
-    "quoteStartMs": 4659236,
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Friedberg highlights OpenAI's GPT-4B Micro model achieving a 50x improvement in cellular rejuvenation protein effectiveness in partnership with Retro Biosciences, demonstrating that fine-tuned smaller LLMs can deliver extraordinary results in specific scientific applications.",
+    "quote": "They actually got these new proteins to be 50 times more effective than the OSKNM proteins in basically rejuvenation or cellular reset... it's incredible what these LLMs can do.",
+    "quoteStartMs": 4592670,
     "topics": [
-      "AI biology",
-      "drug discovery",
-      "fine-tuned models",
+      "AI applications",
+      "biotech",
+      "LLMs",
       "longevity"
     ],
-    "attributionConfidence": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E241-lit-Chamath-a0",
-    "episodeId": "E241",
-    "episodeNumber": 241,
-    "episodeDate": "2025-08-29T23:10:00.000Z",
-    "company": "Lithium",
-    "ticker": "LIT",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "low",
-    "summary": "Chamath references rare earths/critical materials in the context of Chinese state-backed market manipulation (price shaping, dumping) to crowd out competitors and lock capital markets, using it as an illustrative example of strategic resource competition — no explicit price or investment directional claim on the commodity itself.",
-    "quote": "I can talk to you about rare earths as one very specific example through my involvement with MP and, and now with Intelis. The Chinese have an extremely sophisticated market-driven approach to how they help when they are on the cap table. They'll price shape, they'll price dump, they will change the spot markets",
-    "quoteStartMs": 2366777,
-    "topics": [
-      "rare earths",
-      "Chinese subsidies",
-      "strategic competition",
-      "US industrial policy"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E241-gld-Unknown-a0",
-    "episodeId": "E241",
-    "episodeNumber": 241,
-    "episodeDate": "2025-08-29T23:10:00.000Z",
-    "company": "Gold",
-    "ticker": "GLD",
-    "isPublic": true,
-    "host": "Unknown",
-    "stance": "neutral",
-    "conviction": "low",
-    "summary": "No commodity takes found in this excerpt.",
-    "quote": "",
-    "quoteStartMs": null,
-    "topics": [],
-    "attributionConfidence": "low",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "medium"
   }
 ]

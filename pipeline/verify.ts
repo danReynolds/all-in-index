@@ -108,17 +108,26 @@ export async function verifyTheses(
       `[${i}] host=${t.host} company=${t.company} stance=${t.stance} conviction=${t.conviction}\n     quote: "${t.quote}"\n     summary: ${t.summary}`,
   );
 
-  const { verdicts } = await callTool({
-    system: SYSTEM,
-    user:
-      `Episode ${ep.id} — "${ep.title}".\n\nFULL TRANSCRIPT:\n\n${formatTranscript(transcript)}\n\n` +
-      `=== ${theses.length} EXTRACTED THESES TO AUDIT ===\n\n${lines.join("\n\n")}`,
-    toolName: "submit_verdicts",
-    toolDescription: "Submit one keep/fix_quote/neutralize/drop verdict per thesis index.",
-    inputSchema: INPUT_SCHEMA,
-    validate: VerdictSchema,
-    maxTokens: 4096,
-  });
+  // Verify is a best-effort backstop: if the audit call fails (a malformed
+  // verdict the validator rejects, or a transient API error), keep the takes
+  // unverified rather than crash the extraction that depends on it.
+  let verdicts: z.infer<typeof VerdictSchema>["verdicts"];
+  try {
+    ({ verdicts } = await callTool({
+      system: SYSTEM,
+      user:
+        `Episode ${ep.id} — "${ep.title}".\n\nFULL TRANSCRIPT:\n\n${formatTranscript(transcript)}\n\n` +
+        `=== ${theses.length} EXTRACTED THESES TO AUDIT ===\n\n${lines.join("\n\n")}`,
+      toolName: "submit_verdicts",
+      toolDescription: "Submit one keep/fix_quote/neutralize/drop verdict per thesis index.",
+      inputSchema: INPUT_SCHEMA,
+      validate: VerdictSchema,
+      maxTokens: 4096,
+    }));
+  } catch (e) {
+    console.warn(`  ⚠ verify skipped for ${ep.id} (${e instanceof Error ? e.message.slice(0, 80) : e}) — keeping ${theses.length} takes unverified`);
+    return theses;
+  }
 
   // Haystack for validating any proposed replacement quote is genuinely verbatim.
   const haystack = norm(transcript.utterances.map((u) => u.text).join(" "));

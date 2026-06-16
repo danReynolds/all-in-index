@@ -10,20 +10,19 @@
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Elon Musk argues Tesla's fleet of 100M vehicles could collectively offer 100 gigawatts of inference compute in downtime, and that all current Tesla cars are already capable of unsupervised full autonomy, with CyberCab production starting Q2 next year scaling to millions of units annually — positioning Tesla as far more than a car company.",
-    "quote": "If ultimately there's a Tesla fleet that is 100 million vehicles, which I think we probably will get to at some point... they have, you know, mostly state-of-the-art, uh, inference computers in them... you'd have 100 gigawatts of inference compute.",
-    "quoteStartMs": 3404000,
-    "topics": [
-      "robotaxi",
-      "AI compute",
-      "autonomous driving",
-      "fleet scale"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Elon Musk",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Elon Musk argues Tesla is far more than a car company — all its vehicles are capable robotaxis with advanced AI, CyberCab production scales in Q2 next year to millions of units annually, and the fleet could eventually provide 100 gigawatts of distributed inference compute, making the business deeply underappreciated.",
+    "quote": "All of the cars we make right now are capable of being a robotaxi... we start production of the CyberCab in Q2 next year, and we'll scale that up to quite high volume. I think ultimately we'll make millions of CyberCabs per year.",
+    "quoteStartMs": 3639000,
+    "topics": [
+      "robotaxi",
+      "autonomy",
+      "AI compute",
+      "product roadmap"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E249-tsla-Guest-1",
@@ -34,22 +33,21 @@
     "ticker": "TSLA",
     "isPublic": true,
     "host": "Guest",
-    "stance": "mixed",
+    "stance": "neutral",
     "conviction": "high",
-    "summary": "Musk warns he will not build Tesla's robot army if he can be easily removed by activist investors via ISS/Glass Lewis, implying his continued leadership is a prerequisite for Tesla's long-term value creation in robotics and autonomy.",
-    "quote": "Let's just say I'm not going to build a robot army if I can be easily kicked out by activist investors.",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Musk warns he would not build the Optimus robot army at Tesla if activist investors (via ISS/Glass Lewis) can easily remove him, implying Tesla's future value is contingent on his maintaining sufficient voting control to execute on robotics and AI safety.",
+    "quote": "I'm not going to build a robot army if I can be easily kicked out by activist investors.",
     "quoteStartMs": 2820000,
     "topics": [
       "corporate governance",
+      "Optimus robotics",
       "CEO risk",
-      "Optimus",
-      "valuation"
+      "Tesla board vote"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Elon Musk",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E249-tsla-Jason-2",
@@ -62,19 +60,18 @@
     "host": "Jason",
     "stance": "bull",
     "conviction": "medium",
-    "summary": "Jason argues Tesla is an extraordinarily complex, multi-division business — spanning batteries, trucks, self-driving, and more — built over decades, making Musk essentially irreplaceable and the company's prospects deeply tied to his continued leadership.",
-    "quote": "Who is capable of running the 4 or 5 major product lines at Tesla? I mean, this is the madness of it. It's a very complex business... It's not a very simple thing to run. I don't think there's an Elon equivalent out there.",
-    "quoteStartMs": 2829000,
-    "topics": [
-      "management",
-      "competitive moat",
-      "valuation",
-      "CEO risk"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Jason argues Tesla is an extremely complex, multi-product-line business built over decades — including batteries, trucks, FSD, and robotics — with no obvious successor to Musk, making the company's future deeply tied to his continued leadership.",
+    "quote": "Who is capable of running the 4 or 5 major product lines at Tesla? I mean, this is the madness of it. It's a very complex business... It's not a very simple thing to run. I don't think there's an Elon equivalent out there who can just jump",
+    "quoteStartMs": 2829000,
+    "topics": [
+      "management risk",
+      "product complexity",
+      "CEO dependency"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E249-openai-Guest-3",
@@ -85,99 +82,45 @@
     "ticker": null,
     "isPublic": false,
     "host": "Guest",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "high",
-    "summary": "Musk argues OpenAI has completely betrayed its founding mission as an open-source nonprofit, is now pursuing maximum profit with source code locked tighter than Fort Knox, and that this trajectory will be tested in a jury trial over its charter violations.",
-    "quote": "It needs to change its name to Close to a Maximum Profit AI... OpenAI source code is locked up tighter than Fort Knox. And they are going for maximum profit, like maximum.",
-    "quoteStartMs": 3283087,
-    "topics": [
-      "governance",
-      "mission drift",
-      "litigation",
-      "competitive positioning"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Elon Musk",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Musk argues OpenAI has completely betrayed its founding mission as an open-source nonprofit, is now pursuing maximum profit with tightly closed source code, and faces a jury trial over evidence it violated its incorporation documents — framing it as a fundamentally illegitimate and legally vulnerable entity.",
+    "quote": "OpenAI source code is locked up tighter than Fort Knox. And they are going for maximum profit, like maximum... It needs to change its name to Close to a Maximum Profit AI.",
+    "quoteStartMs": 3320838,
+    "topics": [
+      "legal risk",
+      "mission drift",
+      "open source",
+      "governance"
+    ],
+    "attributionConfidence": "high"
   },
   {
-    "id": "E249-x-twitter-Guest-4",
+    "id": "E249-xai-x-twitter-Guest-4",
     "episodeId": "E249",
     "episodeNumber": 249,
     "episodeDate": "2025-10-31T20:11:00.000Z",
-    "company": "X (Twitter)",
+    "company": "xAI / X (Twitter)",
     "ticker": null,
     "isPublic": false,
     "host": "Guest",
     "stance": "bull",
     "conviction": "high",
-    "summary": "Musk describes a major product roadmap for X — including Grok reading 100M posts/day to personalize feeds, semantic search, and Grokipedia — positioning X as the best source of truth on the planet and a platform with compounding AI-driven value from the xAI integration.",
-    "quote": "Grok is going to... read through 100 million things and show you the things that it thinks out of 100 million posts per day, what are the most interesting posts to you... we want X to be the best source of truth on the planet by far.",
-    "quoteStartMs": 557000,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Musk highlights X's integration with Grok as a major competitive differentiator — Grok will read 100M posts/day, enable semantic search, and power Grokipedia — positioning X/xAI as the best source of truth and a superior AI-driven information platform versus incumbents like Google Search and Wikipedia.",
+    "quote": "Grokpedia will, will, will, will succeed, I think very well because it'll, it'll, it is fundamentally a superior product to Wikipedia. It is, it is a better source of information.",
+    "quoteStartMs": 1030641,
     "topics": [
       "AI integration",
       "product roadmap",
       "competitive moat",
-      "platform value"
+      "Grokipedia"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Elon Musk",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E249-xai-Guest-5",
-    "episodeId": "E249",
-    "episodeNumber": 249,
-    "episodeDate": "2025-10-31T20:11:00.000Z",
-    "company": "xAI",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Guest",
-    "stance": "bull",
-    "conviction": "high",
-    "summary": "Musk highlights Grok 2.5's open-source model as among the best in the world and positions xAI's truth-seeking Grok as the engine behind both X's personalization and Grokipedia, with a commitment to continued open-sourcing of models unlike OpenAI.",
-    "quote": "The Grok 2.5 open source model is actually very good... we'll continue to open source our models... do you know anyone who's running OpenAI's open source models? Exactly.",
-    "quoteStartMs": 3044000,
-    "topics": [
-      "open source",
-      "competitive positioning",
-      "AI models",
-      "product"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Elon Musk",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E249-lit-Guest-a0",
-    "episodeId": "E249",
-    "episodeNumber": 249,
-    "episodeDate": "2025-10-31T20:11:00.000Z",
-    "company": "Lithium",
-    "ticker": "LIT",
-    "isPublic": true,
-    "host": "Guest",
-    "stance": "neutral",
-    "conviction": "medium",
-    "summary": "Elon Musk argues lithium (along with iron, phosphorus, and carbon) is very common on Earth and there is no shortage of raw materials needed to power the planet with solar and batteries, implying no supply-side constraint on lithium demand.",
-    "quote": "lithium is also very common. So the, there's actually, you can do the math... that shows that you can completely power Earth with solar panels and batteries. Um, and, uh, there's no shortage of anything.",
-    "quoteStartMs": 5456154,
-    "topics": [
-      "supply abundance",
-      "battery materials",
-      "energy transition",
-      "iron phosphate lithium-ion"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Elon Musk",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": "Musk explicitly states lithium is 'very common' and there is 'no shortage' — this is an abundance/supply fact, not a bull price claim. If anything it implies no supply-driven price pressure."
+    "attributionConfidence": "high"
   }
 ]

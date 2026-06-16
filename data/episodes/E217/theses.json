@@ -9,20 +9,20 @@
     "isPublic": false,
     "host": "Chamath",
     "stance": "bull",
-    "conviction": "high",
-    "summary": "Chamath argues Stripe's ecosystem of ancillary products (e.g. billing at $500M ARR) is underappreciated relative to Adyen, its stablecoin opportunity could be enormous, and its scale positions it to dominate payments infrastructure including future stablecoin rails.",
-    "quote": "I think Patrick mentioned it, but he just kind of said it as a passing fact and none of us picked up on it. But in the report, they talk about all the additional products that they're able to build around core payments. And one of them is the billing product. It's half a billion dollars a year of ARR.",
-    "quoteStartMs": 1323126,
-    "topics": [
-      "ecosystem",
-      "stablecoins",
-      "valuation",
-      "growth"
-    ],
-    "attributionConfidence": "high",
+    "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues Stripe's ecosystem of ancillary products built around core payments (e.g., a $500M ARR billing product) is underappreciated and likely explains its valuation premium over Adyen, with potential for strong network effects.",
+    "quote": "the value of Stripe's ecosystem is probably underappreciated... they talk about all the additional products that they're able to build around core payments. And one of them is the billing product. It's half a billion dollars a year of ARR.",
+    "quoteStartMs": 1319956,
+    "topics": [
+      "ecosystem",
+      "valuation",
+      "payments",
+      "network effects"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E217-adyen-Chamath-1",
@@ -35,18 +35,18 @@
     "host": "Chamath",
     "stance": "neutral",
     "conviction": "low",
-    "summary": "Chamath implies Adyen's lower valuation versus Stripe is justified because it lacks the same ecosystem depth and ancillary revenue products, but offers no explicit buy or sell recommendation.",
-    "quote": "Adyen has less of that ecosystem, or at least it's not nearly as well described maybe as Stripe's is. That probably speaks to why there's such a difference in valuation.",
-    "quoteStartMs": 1366447,
-    "topics": [
-      "valuation",
-      "competitive position",
-      "payments"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath uses Adyen as a comparison point to Stripe, noting it has less of a surrounding product ecosystem, which may explain its lower relative valuation.",
+    "quote": "Adyen has less of that ecosystem, or at least it's not nearly as well described maybe as Stripe's is. That's number one.",
+    "quoteStartMs": 1366447,
+    "topics": [
+      "payments",
+      "valuation",
+      "ecosystem"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E217-crm-Chamath-2",
@@ -58,94 +58,46 @@
     "isPublic": true,
     "host": "Chamath",
     "stance": "bear",
-    "conviction": "medium",
-    "summary": "Chamath argues that enterprise software renewal cycles for companies like Salesforce are becoming harder to justify as AI-native alternatives emerge, signaling deteriorating competitive and revenue trajectory.",
-    "quote": "You can see it with what's happening to Salesforce and other big companies is that these renewal cycles are getting harder and harder to justify. And so people are willing to take some bets and see if there are different ways in dealing with this problem.",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath suggests Salesforce and similar large software incumbents are facing deteriorating renewal cycles as customers look to replace legacy spend with AI-driven alternatives.",
+    "quote": "you can see it with what's happening to Salesforce and other big companies is that these renewal cycles are getting harder and harder to justify.",
     "quoteStartMs": 1513199,
     "topics": [
       "AI disruption",
       "enterprise software",
-      "competitive threat"
+      "churn"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E217-figure-ai-Chamath-3",
+    "id": "E217-figure-Chamath-3",
     "episodeId": "E217",
     "episodeNumber": 217,
     "episodeDate": "2025-03-01T02:06:00.000Z",
-    "company": "Figure AI",
+    "company": "Figure",
     "ticker": null,
     "isPublic": false,
     "host": "Chamath",
-    "stance": "mixed",
+    "stance": "neutral",
     "conviction": "medium",
-    "summary": "Chamath highlights Figure AI's impressive multi-robot semantic coordination demo and accelerated home-deployment timeline as signs of meaningful progress, but flags that actuator dexterity limitations and AI model maturity will constrain general-purpose utility for at least a couple of years.",
-    "quote": "I think the model is not perfect yet to be general purpose... the actuators are good, they're not great. And so the physical dexterity is still relatively limited... we're probably like a couple years away.",
-    "quoteStartMs": 941164,
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath highlights Figure's accelerated timeline for home beta testing and a compelling robot collaboration demo, viewing semantic communication between robots as a meaningful breakthrough, though noting actuator dexterity remains a near-term limitation.",
+    "quote": "Friend of the pod, Brett Adcock, who's the CEO and founder of Figure. He just announced today that he's moved his timelines up by 2 years. He's going to be beta testing robots in the home by the middle to end of this year.",
+    "quoteStartMs": 864000,
     "topics": [
       "robotics",
       "AI",
-      "product roadmap"
+      "autonomous systems"
     ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
-    "id": "E217-spy-Chamath-4",
-    "episodeId": "E217",
-    "episodeNumber": 217,
-    "episodeDate": "2025-03-01T02:06:00.000Z",
-    "company": "S&P 500 Index (via ETFs)",
-    "ticker": "SPY",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "medium",
-    "summary": "Chamath warns that cap-weighted S&P index funds are no longer truly diversified — they are effectively a bet on the Mag 7 — making the conventional advice to 'just buy the S&P' misleading for retail investors seeking diversification.",
-    "quote": "The problem with these indices right now is those are not really well-balanced indices... when you're buying the S&P 500, you're not doing that anymore. You're buying the S&P 7, and then the rest in the 493 is, you know, 60%.",
-    "quoteStartMs": 3638084,
-    "topics": [
-      "index concentration",
-      "Mag 7",
-      "retail investing"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E217-mag-7-basket-Chamath-5",
-    "episodeId": "E217",
-    "episodeNumber": 217,
-    "episodeDate": "2025-03-01T02:06:00.000Z",
-    "company": "Mag 7 (basket)",
-    "ticker": null,
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "bear",
-    "conviction": "medium",
-    "summary": "Chamath argues the Mag 7 are priced to perfection with elevated forward P/Es that leave little room for error, and expects meaningful mean reversion if macro conditions deteriorate.",
-    "quote": "Mag 7 is really priced to perfection. And so you have to believe that the world kind of stays the way that it is. Otherwise you're going to have some amount of mean reversion. So I think the stock market on the margin is a little expensive and not particularly that attractive.",
-    "quoteStartMs": 1942760,
-    "topics": [
-      "valuation",
-      "mean reversion",
-      "macro"
-    ],
-    "attributionConfidence": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null
-  },
-  {
-    "id": "E217-washington-post-Chamath-6",
+    "id": "E217-washington-post-Chamath-4",
     "episodeId": "E217",
     "episodeNumber": 217,
     "episodeDate": "2025-03-01T02:06:00.000Z",
@@ -153,19 +105,43 @@
     "ticker": null,
     "isPublic": false,
     "host": "Chamath",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "low",
-    "summary": "Chamath is skeptical that Bezos's decision to restrict editorial scope to free-market/personal-liberty opinions will improve the Washington Post's business, arguing it further polarizes an already narrow Beltway readership rather than expanding it.",
-    "quote": "I think if you want to write about personal liberty, one of the tenets of personal liberty is free speech, but he's effectively said that certain opinions aren't allowed anymore. I don't think that that's the solution to the Washington Post.",
-    "quoteStartMs": 4288000,
-    "topics": [
-      "media strategy",
-      "editorial direction",
-      "readership"
-    ],
-    "attributionConfidence": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath is skeptical of Bezos's editorial pivot to free-markets/personal-liberty focus, arguing it further polarizes readership rather than fixing the publication's core problems.",
+    "quote": "I think if you want to write about personal liberty, one of the tenets of personal liberty is free speech, but he's effectively said that certain opinions aren't allowed anymore. I don't think that that's the solution to the Washington",
+    "quoteStartMs": 4288000,
+    "topics": [
+      "media",
+      "editorial strategy",
+      "readership"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E217-washington-post-Jason-5",
+    "episodeId": "E217",
+    "episodeNumber": 217,
+    "episodeDate": "2025-03-01T02:06:00.000Z",
+    "company": "Washington Post",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Jason",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Jason believes Bezos picking a clear editorial side and getting more engaged in founder mode will make the Washington Post more viable as a publication going forward.",
+    "quote": "I like him being more engaged in it and tightening it up... by picking a side and saying, hey, here's what we stand for, this is our belief system, I think it'll just make it viable in one way.",
+    "quoteStartMs": 4432609,
+    "topics": [
+      "media",
+      "editorial strategy",
+      "founder mode"
+    ],
+    "attributionConfidence": "high"
   }
 ]
