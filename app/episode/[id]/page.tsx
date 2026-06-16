@@ -1,7 +1,17 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getEpisode, allEpisodeIds, guestLinkMap } from "@/lib/data";
-import { pct, returnColor, fmtDate, callVerdict, STANCE_META } from "@/lib/format";
+import {
+  pct,
+  returnColor,
+  fmtDate,
+  fmtDuration,
+  daysBetween,
+  typicalMove,
+  takeVerdict,
+  STANCE_META,
+  type VerdictTone,
+} from "@/lib/format";
 import { StanceBadge, ConvictionDots } from "@/app/components/badges";
 import { HostAvatar, HostStack } from "@/app/components/host";
 import { GuestName } from "@/app/components/GuestName";
@@ -36,6 +46,18 @@ function sinceEpisode(h: Holding, episodeDate: string): number | null {
   return hist[hist.length - 1][1] / start[1] - 1;
 }
 
+/** Everything a verdict needs about one company since this episode aired. */
+function holdingContext(h: Holding, episodeDate: string) {
+  const ret = sinceEpisode(h, episodeDate);
+  const asOf = h.market?.asOf ?? h.market?.history?.at(-1)?.[0] ?? null;
+  return {
+    ret,
+    elapsedDays: asOf ? daysBetween(episodeDate, asOf) : null,
+    noise: typicalMove(h.market?.history),
+    asOf,
+  };
+}
+
 export default async function EpisodePage({ params }: PageProps<"/episode/[id]">) {
   const { id } = await params;
   const ep = getEpisode(id);
@@ -45,28 +67,32 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
   const takeCount = ep.groups.reduce((n, g) => n + g.takes.length, 0);
   const allTakes = ep.groups.flatMap((g) => g.takes);
 
-  // Scorecard: judge every directional take against the stock since air date.
-  let right = 0;
-  let wrong = 0;
+  // Scorecard: judge every directional take on the right horizon — only calls
+  // that have had time to breathe *and* moved beyond the stock's own noise get
+  // a firm verdict. The rest are honestly "too early to call", not "wrong".
+  let withCall = 0;
+  let against = 0;
+  let early = 0;
   for (const g of ep.groups) {
-    const ret = sinceEpisode(g.holding, ep.meta.date);
+    const ctx = holdingContext(g.holding, ep.meta.date);
     for (const t of g.takes) {
-      const v = callVerdict(t.stance, ret);
-      if (v?.right === true) right++;
-      else if (v?.right === false) wrong++;
+      const v = takeVerdict({
+        stance: t.stance,
+        since: ctx.ret,
+        elapsedDays: ctx.elapsedDays,
+        noiseFloor: ctx.noise,
+        positional: t.positional,
+      });
+      if (v?.tone === "with") withCall++;
+      else if (v?.tone === "against") against++;
+      else if (v?.tone === "early") early++;
     }
   }
-  const priced = right + wrong > 0;
-  // When nothing is scored yet, say why: a public directional call that just
-  // hasn't moved enough ("too early"), or calls only on private names.
+  const priced = withCall + against > 0;
+  // When nothing is graded yet, say why: directional calls still waiting on time
+  // or a real move ("too early"), or calls only on private names.
   const hasDirectional = allTakes.some((t) => t.stance === "bull" || t.stance === "bear");
-  const scorableSoon = ep.groups.some(
-    (g) =>
-      !!g.holding.ticker &&
-      !!g.holding.market &&
-      g.holding.market.history.length >= 2 &&
-      g.takes.some((t) => t.stance === "bull" || t.stance === "bear"),
-  );
+  const scorableSoon = early > 0;
 
   // Episode "mood": the mix of stances taken, and who showed up.
   const STANCE_ORDER: Stance[] = ["bull", "bear", "mixed", "neutral"];
@@ -130,8 +156,16 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
               {priced && (
                 <>
                   <div className="hidden h-12 w-px self-center bg-neutral-200 sm:block dark:bg-neutral-800" />
-                  <Stat label="Right so far" value={right} tone="good" />
-                  <Stat label="Wrong so far" value={wrong} tone="bad" />
+                  <Stat label="Playing out" value={withCall} tone="good" />
+                  <Stat label="Going against" value={against} tone="warn" />
+                  {early > 0 && (
+                    <span
+                      className="self-center text-xs text-neutral-400"
+                      title="Directional calls that haven't had time to play out or moved beyond the stock's normal range yet."
+                    >
+                      + {early} too early to call
+                    </span>
+                  )}
                 </>
               )}
               {!priced && hasDirectional && (
@@ -139,11 +173,11 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
                   className="self-center rounded-full border border-neutral-200 px-3 py-1 text-xs text-neutral-400 dark:border-neutral-700"
                   title={
                     scorableSoon
-                      ? "Verdicts appear once each name's price has moved enough since this episode aired."
+                      ? "A call is only graded once it's had time to play out and the stock has moved beyond its normal range — long-term views get a full quarter."
                       : "These calls are on private companies, so there's no market price to score them against."
                   }
                 >
-                  {scorableSoon ? "Too early to score" : "Private calls · not scored"}
+                  {scorableSoon ? "Too early to call" : "Private calls · not scored"}
                 </span>
               )}
             </div>
@@ -212,7 +246,9 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
 
           {priced && (
             <p className="text-xs text-neutral-400">
-              Directional takes judged by each name&apos;s price move since this episode aired.
+              A call is only graded once it&apos;s had time to play out and the stock has moved
+              beyond its normal range — long-term views get a full quarter before we&apos;ll say
+              they&apos;re tracking against.
             </p>
           )}
         </section>
@@ -226,7 +262,8 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
       ) : (
         <section className="space-y-4">
           {ep.groups.map(({ holding: h, takes }) => {
-            const ret = sinceEpisode(h, ep.meta.date);
+            const ctx = holdingContext(h, ep.meta.date);
+            const ret = ctx.ret;
             return (
               <article
                 key={h.slug}
@@ -247,15 +284,27 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
                     )}
                   </Link>
                   {ret != null && (
-                    <span className={`font-mono text-sm tabular-nums ${returnColor(ret)}`}>
-                      {pct(ret)} since this episode
+                    <span
+                      className="font-mono text-sm tabular-nums"
+                      title="The stock's move since this episode aired — not a verdict on the call."
+                    >
+                      <span className={returnColor(ret)}>{pct(ret)}</span>
+                      {ctx.asOf && (
+                        <span className="text-neutral-500"> over {fmtDuration(ep.meta.date, ctx.asOf)}</span>
+                      )}
                     </span>
                   )}
                 </div>
 
                 <div className="space-y-3">
                   {takes.map((t: Thesis) => {
-                    const v = callVerdict(t.stance, ret);
+                    const v = takeVerdict({
+                      stance: t.stance,
+                      since: ret,
+                      elapsedDays: ctx.elapsedDays,
+                      noiseFloor: ctx.noise,
+                      positional: t.positional,
+                    });
                     return (
                       <div key={t.id} className="rounded-lg bg-neutral-800/40 p-3.5 ring-1 ring-white/5">
                         <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1.5 text-xs text-neutral-500">
@@ -283,11 +332,7 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
                               📌 scored call
                             </span>
                           )}
-                          {v && v.right != null && (
-                            <span className={`font-semibold ${v.right ? "text-emerald-400" : "text-rose-400"}`}>
-                              {v.right ? "✓ right so far" : "✗ wrong so far"}
-                            </span>
-                          )}
+                          {v && <VerdictPill tone={v.tone} firm={v.firm} label={v.label} />}
                         </div>
                         <p className="mt-2 text-sm leading-relaxed text-neutral-200">{t.summary}</p>
                         {t.quote && (
@@ -331,7 +376,35 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
   );
 }
 
-function Stat({ label, value, tone }: { label: string; value: number; tone?: "good" | "bad" }) {
+const VERDICT_STYLE: Record<VerdictTone, { text: string; dot: string }> = {
+  with: { text: "text-emerald-400", dot: "bg-emerald-500" },
+  against: { text: "text-amber-400", dot: "bg-amber-500" },
+  early: { text: "text-neutral-400", dot: "bg-neutral-500" },
+  inline: { text: "text-neutral-500", dot: "bg-neutral-600" },
+};
+
+const VERDICT_HINT: Record<VerdictTone, string> = {
+  with: "The stock has moved the way this call expected.",
+  against: "The stock has moved against this call — but the thesis can still play out.",
+  early: "Too soon, or too small a move, to judge — long-term views get a full quarter.",
+  inline: "The stock has barely moved since, so there's nothing to read into yet.",
+};
+
+/** A take's standing, framed as a race still being run — never a red-X gotcha. */
+function VerdictPill({ tone, firm, label }: { tone: VerdictTone; firm: boolean; label: string }) {
+  const s = VERDICT_STYLE[tone];
+  return (
+    <span
+      className={`flex items-center gap-1.5 ${firm ? "font-semibold" : "font-normal"} ${s.text}`}
+      title={VERDICT_HINT[tone]}
+    >
+      <span className={`h-1.5 w-1.5 rounded-full ${s.dot}`} />
+      {label}
+    </span>
+  );
+}
+
+function Stat({ label, value, tone }: { label: string; value: number; tone?: "good" | "bad" | "warn" }) {
   return (
     <div>
       <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">{label}</div>
@@ -341,7 +414,9 @@ function Stat({ label, value, tone }: { label: string; value: number; tone?: "go
             ? "text-emerald-600 dark:text-emerald-400"
             : tone === "bad"
               ? "text-rose-500 dark:text-rose-400"
-              : ""
+              : tone === "warn"
+                ? "text-amber-600 dark:text-amber-400"
+                : ""
         }`}
       >
         {value}

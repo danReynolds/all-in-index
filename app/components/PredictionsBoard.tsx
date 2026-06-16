@@ -227,14 +227,14 @@ function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?:
         <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
           {p.category}
         </div>
-        <div className="mt-1.5 flex items-center gap-2">
-          <CompanyLogo name={p.pick} domain={p.domain} size="md" className="rounded-lg" />
-          <span className="min-w-0 font-display text-lg font-semibold leading-tight">{p.pick}</span>
-          {p.ticker && (
-            <span className="shrink-0 self-start rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-[10px] text-neutral-500 dark:bg-neutral-800">
-              {p.ticker}
-            </span>
-          )}
+        <div className="mt-1.5 flex items-start gap-2.5">
+          <CompanyLogo name={p.pick} domain={p.domain} size="md" className="mt-0.5 shrink-0 rounded-lg" />
+          <div className="min-w-0">
+            <div className="font-display text-lg font-semibold leading-tight">{p.pick}</div>
+            {p.ticker && (
+              <div className="mt-1 font-mono text-[11px] uppercase tracking-wide text-neutral-500">{p.ticker}</div>
+            )}
+          </div>
         </div>
       </div>
 
