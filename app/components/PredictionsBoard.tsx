@@ -27,8 +27,25 @@ export interface PredYear {
   year: number;
   episodeId: string;
   date: string;
-  scored: FinPick[];
-  other: FinPick[];
+  /** Every host's pick in the financial categories (graded + ungraded). */
+  picks: FinPick[];
+}
+
+/** Display order for the financial categories; unknown categories sort last. */
+const CATEGORY_ORDER = [
+  "Best performing asset",
+  "Worst performing asset",
+  "Biggest business winner",
+  "Biggest business loser",
+];
+const catRank = (c: string) => {
+  const i = CATEGORY_ORDER.findIndex((x) => x.toLowerCase() === c.toLowerCase());
+  return i === -1 ? CATEGORY_ORDER.length : i;
+};
+
+/** A pick is gradeable only if it maps to one ticker with a clear direction and price. */
+function isGraded(p: FinPick): boolean {
+  return !!p.ticker && !!p.direction && p.sinceReturn != null;
 }
 
 function verdictOf(p: FinPick): boolean | null {
@@ -156,6 +173,78 @@ function ScoredCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?: Epi
   );
 }
 
+/** A pick we can't score (a theme, basket, or private company — no single ticker). */
+function UngradedPick({ p }: { p: FinPick }) {
+  return (
+    <li className="flex items-start gap-3 rounded-xl border border-neutral-200/70 bg-white/50 px-4 py-3 dark:border-neutral-800/70 dark:bg-neutral-900/40">
+      <span className="mt-0.5 shrink-0">
+        <HostAvatar host={p.host} size="sm" />
+      </span>
+      <div className="min-w-0 flex-1">
+        <div className="flex items-center gap-2">
+          {p.host === "Guest" && p.guestSlug ? (
+            <GuestName name={p.speaker} slug={p.guestSlug} className="text-sm font-semibold text-neutral-200" />
+          ) : (
+            <span className="text-sm font-semibold text-neutral-200">{p.speaker}</span>
+          )}
+          <span
+            className="rounded-full bg-white/5 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-neutral-500 ring-1 ring-inset ring-white/10"
+            title="No single US-listed ticker to grade against"
+          >
+            Not scored
+          </span>
+        </div>
+        <div className="mt-0.5 text-[15px] font-medium leading-snug text-neutral-100">{p.pick}</div>
+        {p.quote && <p className="mt-1 line-clamp-2 text-xs italic leading-relaxed text-neutral-500">“{p.quote}”</p>}
+      </div>
+    </li>
+  );
+}
+
+function CategoryBlock({
+  title,
+  picks,
+  meta,
+  episodeId,
+  inProgress,
+}: {
+  title: string;
+  picks: FinPick[];
+  meta?: EpisodeMeta | null;
+  episodeId: string;
+  inProgress: boolean;
+}) {
+  const graded = picks.filter(isGraded).sort((a, b) => {
+    const adj = (x: FinPick) => (x.direction === "down" ? -(x.sinceReturn ?? 0) : x.sinceReturn ?? 0);
+    return adj(b) - adj(a);
+  });
+  const ungraded = picks.filter((p) => !isGraded(p));
+  return (
+    <section className="space-y-3">
+      <div className="flex items-baseline justify-between gap-3 border-b border-neutral-200/70 pb-2 dark:border-neutral-800">
+        <h3 className="font-display text-lg font-semibold tracking-tight text-neutral-100">{title}</h3>
+        <span className="shrink-0 text-xs text-neutral-500">
+          {graded.length > 0 ? `${graded.length} of ${picks.length} graded` : `${picks.length} picks · none gradeable`}
+        </span>
+      </div>
+      {graded.length > 0 && (
+        <div className="grid gap-4 lg:grid-cols-2">
+          {graded.map((p, i) => (
+            <ScoredCard key={`g${i}`} p={p} meta={meta} episodeId={episodeId} inProgress={inProgress} />
+          ))}
+        </div>
+      )}
+      {ungraded.length > 0 && (
+        <ul className="grid gap-2 sm:grid-cols-2">
+          {ungraded.map((p, i) => (
+            <UngradedPick key={`u${i}`} p={p} />
+          ))}
+        </ul>
+      )}
+    </section>
+  );
+}
+
 export function PredictionsBoard({
   years,
   episodes,
@@ -171,12 +260,25 @@ export function PredictionsBoard({
   if (!yr) return null;
 
   const inProgress = yr.year >= nowYear;
-  const graded = yr.scored.filter((p) => verdictOf(p) != null);
-  const good = graded.filter((p) => verdictOf(p) === true).length;
-  const bad = graded.filter((p) => verdictOf(p) === false).length;
+  const gradedAll = yr.picks.filter(isGraded);
+  const good = gradedAll.filter((p) => verdictOf(p) === true).length;
+  const bad = gradedAll.filter((p) => verdictOf(p) === false).length;
+  const tooClose = gradedAll.length - good - bad;
+
+  // Group every pick under its category, ordered by the show's flow.
+  const groups: { title: string; picks: FinPick[] }[] = [];
+  for (const p of yr.picks) {
+    let g = groups.find((x) => x.title.toLowerCase() === p.category.toLowerCase());
+    if (!g) {
+      g = { title: p.category, picks: [] };
+      groups.push(g);
+    }
+    g.picks.push(p);
+  }
+  groups.sort((a, b) => catRank(a.title) - catRank(b.title));
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       {/* Year tabs */}
       <div className="inline-flex rounded-full border border-neutral-200 bg-neutral-100 p-0.5 dark:border-neutral-800 dark:bg-neutral-950/70">
         {years.map((y) => (
@@ -200,9 +302,9 @@ export function PredictionsBoard({
 
       {/* Year summary */}
       <p className="text-sm text-neutral-500">
-        Year-ahead asset bets for <strong className="text-neutral-200">{yr.year}</strong>
+        Market picks for <strong className="text-neutral-200">{yr.year}</strong>
         {inProgress ? " — still playing out, scored against the market so far." : ", graded against the market."}{" "}
-        {graded.length > 0 && (
+        {gradedAll.length > 0 && (
           <>
             <span className="text-emerald-400">
               {good} {inProgress ? "on track" : "right"}
@@ -210,48 +312,30 @@ export function PredictionsBoard({
             ·{" "}
             <span className="text-rose-400">
               {bad} {inProgress ? "off track" : "wrong"}
-            </span>{" "}
-            of {graded.length}.
+            </span>
+            {tooClose > 0 && (
+              <>
+                {" "}
+                · <span className="text-neutral-400">{tooClose} too close</span>
+              </>
+            )}{" "}
+            of {gradedAll.length} graded.{" "}
           </>
         )}
+        <span>Themes, baskets, and private companies are shown but can&rsquo;t be scored against a single ticker.</span>
       </p>
 
-      {/* Graded calls — taller cards with a chart each */}
-      {yr.scored.length > 0 && (
-        <div className="grid gap-4 lg:grid-cols-2">
-          {yr.scored.map((p, i) => (
-            <ScoredCard key={i} p={p} meta={episodes[yr.episodeId]} episodeId={yr.episodeId} inProgress={inProgress} />
-          ))}
-        </div>
-      )}
-
-      {/* Other asset calls — financial but no clean ticker to grade */}
-      {yr.other.length > 0 && (
-        <div className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
-          <h3 className="text-sm font-semibold text-neutral-700 dark:text-neutral-200">Other asset calls</h3>
-          <p className="mb-3 text-xs text-neutral-400">Financial bets with no single ticker to grade against.</p>
-          <ul className="space-y-2">
-            {yr.other.map((p, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm">
-                <span className="mt-0.5 shrink-0">
-                  <HostAvatar host={p.host} size="xs" />
-                </span>
-                <span className="min-w-0">
-                  <span className="text-neutral-300">{p.speaker}</span>
-                  <span className="text-neutral-500"> · {p.category}: </span>
-                  <span className="text-neutral-200">{p.pick}</span>
-                  {p.direction && (
-                    <span className={p.direction === "up" ? "text-emerald-400" : "text-rose-400"}>
-                      {" "}
-                      {p.direction === "up" ? "↑" : "↓"}
-                    </span>
-                  )}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      {/* One section per category — all four hosts' picks, graded where possible */}
+      {groups.map((g) => (
+        <CategoryBlock
+          key={g.title}
+          title={g.title}
+          picks={g.picks}
+          meta={episodes[yr.episodeId]}
+          episodeId={yr.episodeId}
+          inProgress={inProgress}
+        />
+      ))}
     </div>
   );
 }

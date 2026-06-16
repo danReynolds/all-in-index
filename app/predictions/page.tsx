@@ -55,22 +55,13 @@ export default function PredictionsPage() {
         quoteStartMs: p.quoteStartMs,
         history: p.history ?? null,
       });
-      const financial = ep.predictions.filter(
-        (p) => !!p.ticker || (!!p.direction && FIN_CAT.test(p.category)),
-      );
-      const isScored = (p: { ticker: string | null; direction: string | null; sinceReturn: number | null }) =>
-        !!p.ticker && !!p.direction && p.sinceReturn != null;
-      const scored = financial
-        .filter(isScored)
-        .map(toPick)
-        .sort((a, b) => {
-          const adj = (x: FinPick) => (x.direction === "down" ? -(x.sinceReturn ?? 0) : x.sinceReturn ?? 0);
-          return adj(b) - adj(a);
-        });
-      const other = financial.filter((p) => !isScored(p)).map(toPick);
-      return { year: ep.year, episodeId: ep.id, date: ep.date, scored, other };
+      // Every host's pick in the financial categories — graded where it maps to a
+      // single ticker, shown but ungraded otherwise. Political/media/deal/trend
+      // categories are left off (this is a markets scorecard).
+      const picks = ep.predictions.filter((p) => FIN_CAT.test(p.category)).map(toPick);
+      return { year: ep.year, episodeId: ep.id, date: ep.date, picks };
     })
-    .filter((y) => y.scored.length > 0 || y.other.length > 0)
+    .filter((y) => y.picks.length > 0)
     .sort((a, b) => b.year - a.year);
 
   return (
@@ -83,8 +74,8 @@ export default function PredictionsPage() {
         </p>
         <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">Predictions Scorecard</h1>
         <p className="max-w-2xl text-neutral-600 dark:text-neutral-400">
-          Each January the besties make year-ahead bets. Here are the ones we can grade — asset and
-          market picks, scored against the market from the day they aired.
+          Each January the besties call the year ahead. Here are their market picks, by category —
+          graded against the market wherever a pick maps to a single ticker.
         </p>
       </header>
 
