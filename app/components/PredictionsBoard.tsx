@@ -100,15 +100,17 @@ function PickChart({ history, up }: { history: Array<[string, number]>; up: bool
   );
 }
 
-function ScoredCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?: EpisodeMeta | null; episodeId: string; inProgress: boolean }) {
+function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?: EpisodeMeta | null; episodeId: string; inProgress: boolean }) {
+  const graded = isGraded(p);
   const right = verdictOf(p);
   const v = verdictLabel(right, inProgress);
-  const accent = right === true ? "ring-emerald-500/25" : right === false ? "ring-rose-500/25" : "ring-white/10";
+  const accent = !graded ? "ring-white/10" : right === true ? "ring-emerald-500/25" : right === false ? "ring-rose-500/25" : "ring-white/10";
   // Chart line follows the actual price path (rose = green, fell = red) so its
   // color matches the line's slope and the return number below it; the verdict
   // pill alone carries on/off-track (a green line + "Off track" = right move,
   // wrong bet).
   const up = (p.sinceReturn ?? 0) >= 0;
+  const hasChart = !!p.history && p.history.length > 1;
   const fromDate = p.history?.[0]?.[0];
   return (
     <div className={`flex flex-col gap-3 rounded-2xl border border-neutral-200 bg-white p-5 ring-1 dark:border-neutral-800 dark:bg-neutral-900 ${accent}`}>
@@ -122,10 +124,19 @@ function ScoredCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?: Epi
             <span className="text-sm font-semibold text-neutral-100">{p.speaker}</span>
           )}
         </span>
-        <span className={`rounded-full px-2.5 py-1 text-xs font-bold uppercase tracking-wide ring-1 ring-inset ${v.cls}`}>
-          {right === true ? "✓ " : right === false ? "✗ " : ""}
-          {v.text}
-        </span>
+        {graded ? (
+          <span className={`rounded-full px-2.5 py-1 text-xs font-bold uppercase tracking-wide ring-1 ring-inset ${v.cls}`}>
+            {right === true ? "✓ " : right === false ? "✗ " : ""}
+            {v.text}
+          </span>
+        ) : (
+          <span
+            className="rounded-full border border-dashed border-neutral-300 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-neutral-400 dark:border-neutral-700"
+            title="Not a single stock or fund — there's no price to track this pick on/off-track."
+          >
+            Not tracked
+          </span>
+        )}
       </div>
 
       {/* the pick */}
@@ -144,10 +155,10 @@ function ScoredCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?: Epi
         </div>
       </div>
 
-      {/* chart */}
-      {p.history && p.history.length > 1 && (
+      {/* chart, or — for picks that aren't a single ticker — a matching untracked panel */}
+      {hasChart ? (
         <div className="text-neutral-700 dark:text-neutral-600">
-          <PickChart history={p.history} up={up} />
+          <PickChart history={p.history!} up={up} />
           <div className="mt-1 flex items-center justify-between text-[11px] text-neutral-500">
             <span>{fromDate ? fmtDate(fromDate) : "call"}</span>
             <span className={`font-mono text-sm font-semibold tabular-nums ${returnColor(p.sinceReturn)}`}>
@@ -155,6 +166,11 @@ function ScoredCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?: Epi
             </span>
             <span>now</span>
           </div>
+        </div>
+      ) : (
+        <div className="flex h-[84px] flex-col items-center justify-center gap-1.5 rounded-xl border border-dashed border-neutral-200/80 px-4 text-center dark:border-neutral-800">
+          <span className="text-xs font-medium text-neutral-500">A theme, not a single stock or fund</span>
+          <span className="text-[11px] leading-snug text-neutral-500/70">No ticker to score it on-track / off-track against</span>
         </div>
       )}
 
@@ -173,34 +189,6 @@ function ScoredCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?: Epi
   );
 }
 
-/** A pick we can't score (a theme, basket, or private company — no single ticker). */
-function UngradedPick({ p }: { p: FinPick }) {
-  return (
-    <li className="flex items-start gap-3 rounded-xl border border-neutral-200/70 bg-white/50 px-4 py-3 dark:border-neutral-800/70 dark:bg-neutral-900/40">
-      <span className="mt-0.5 shrink-0">
-        <HostAvatar host={p.host} size="sm" />
-      </span>
-      <div className="min-w-0 flex-1">
-        <div className="flex items-center gap-2">
-          {p.host === "Guest" && p.guestSlug ? (
-            <GuestName name={p.speaker} slug={p.guestSlug} className="text-sm font-semibold text-neutral-200" />
-          ) : (
-            <span className="text-sm font-semibold text-neutral-200">{p.speaker}</span>
-          )}
-          <span
-            className="rounded-full bg-white/5 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-neutral-500 ring-1 ring-inset ring-white/10"
-            title="No single US-listed ticker to grade against"
-          >
-            Not scored
-          </span>
-        </div>
-        <div className="mt-0.5 text-[15px] font-medium leading-snug text-neutral-100">{p.pick}</div>
-        {p.quote && <p className="mt-1 line-clamp-2 text-xs italic leading-relaxed text-neutral-500">“{p.quote}”</p>}
-      </div>
-    </li>
-  );
-}
-
 function CategoryBlock({
   title,
   picks,
@@ -214,33 +202,31 @@ function CategoryBlock({
   episodeId: string;
   inProgress: boolean;
 }) {
-  const graded = picks.filter(isGraded).sort((a, b) => {
-    const adj = (x: FinPick) => (x.direction === "down" ? -(x.sinceReturn ?? 0) : x.sinceReturn ?? 0);
-    return adj(b) - adj(a);
+  const gradedCount = picks.filter(isGraded).length;
+  // Graded picks first (best call → worst), then the untracked themes.
+  const ordered = [...picks].sort((a, b) => {
+    const ga = isGraded(a);
+    const gb = isGraded(b);
+    if (ga !== gb) return ga ? -1 : 1;
+    if (ga && gb) {
+      const adj = (x: FinPick) => (x.direction === "down" ? -(x.sinceReturn ?? 0) : x.sinceReturn ?? 0);
+      return adj(b) - adj(a);
+    }
+    return 0;
   });
-  const ungraded = picks.filter((p) => !isGraded(p));
   return (
     <section className="space-y-3">
       <div className="flex items-baseline justify-between gap-3 border-b border-neutral-200/70 pb-2 dark:border-neutral-800">
         <h3 className="font-display text-lg font-semibold tracking-tight text-neutral-100">{title}</h3>
         <span className="shrink-0 text-xs text-neutral-500">
-          {graded.length > 0 ? `${graded.length} of ${picks.length} graded` : `${picks.length} picks · none gradeable`}
+          {gradedCount > 0 ? `${gradedCount} of ${picks.length} tracked` : `${picks.length} picks · none tracked`}
         </span>
       </div>
-      {graded.length > 0 && (
-        <div className="grid gap-4 lg:grid-cols-2">
-          {graded.map((p, i) => (
-            <ScoredCard key={`g${i}`} p={p} meta={meta} episodeId={episodeId} inProgress={inProgress} />
-          ))}
-        </div>
-      )}
-      {ungraded.length > 0 && (
-        <ul className="grid gap-2 sm:grid-cols-2">
-          {ungraded.map((p, i) => (
-            <UngradedPick key={`u${i}`} p={p} />
-          ))}
-        </ul>
-      )}
+      <div className="grid gap-4 lg:grid-cols-2">
+        {ordered.map((p, i) => (
+          <PredictionCard key={i} p={p} meta={meta} episodeId={episodeId} inProgress={inProgress} />
+        ))}
+      </div>
     </section>
   );
 }
@@ -319,10 +305,10 @@ export function PredictionsBoard({
                 · <span className="text-neutral-400">{tooClose} too close</span>
               </>
             )}{" "}
-            of {gradedAll.length} graded.{" "}
+            of {gradedAll.length} tracked.{" "}
           </>
         )}
-        <span>Themes, baskets, and private companies are shown but can&rsquo;t be scored against a single ticker.</span>
+        <span>Themes, baskets, and private companies are shown too, but can&rsquo;t be tracked against a single ticker.</span>
       </p>
 
       {/* One section per category — all four hosts' picks, graded where possible */}
