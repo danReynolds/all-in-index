@@ -59,10 +59,12 @@ Rules:
   STANCE IS ECONOMIC DIRECTION, NOT APPROVAL — and the direction must be EXPLICITLY CLAIMED, never inferred. bull = the speaker claims the company's economic position or value is improving; bear = the speaker ties a concrete risk to the company's economics.
   All of these are NEUTRAL, not directional:
   - moral or policy disapproval of conduct ("they're pursuing regulatory capture to lock in monopolistic control") — even though a monopoly would be economically good for them;
+  - condemnation of a company's ETHICS, TRUSTWORTHINESS, or societal/ecosystem impact ("they surveil every prompt", "they're an untrustworthy / dangerous actor", "their restrictions hurt the open-source ecosystem") — disapproval of behavior is not a claim the business will do worse, and anti-competitive / regulatory-capture / lock-in behavior is often economically GOOD for the company;
   - describing a strategy as effective ("once rivals are gone they can raise the price of the bundle") — conduct commentary, unless the speaker says the business itself is strengthening;
   - morally-framed risk with no explicit economic tie ("they're circumventing export controls and 47% of revenue is China") — criticism of conduct, not a claimed revenue risk;
   - approving a policy or deal as good for outsiders ("the government taking equity is a better deal for taxpayers") — not a claim about the company's prospects.
-  DO record as bear: "Apple's mandatory 30% fee is the prime candidate for antitrust intervention" — the speaker explicitly ties a legal threat to a named revenue stream.
+  A take is BEAR only when the criticism is EXTENDED to a worse business outcome — lost customers, revenue, margins, share, or competitive position. Contrast: "Anthropic surveils prompts and is engaged in regulatory capture" is a NEUTRAL conduct critique (the behavior may even entrench them); "...so enterprises treat it as a non-starter and flee to open-source" is BEAR, because it claims lost customers. Likewise "Apple's 30% fee is the prime antitrust target" is bear only because it ties a legal threat to a named revenue stream.
+  A company you describe as WINNING — growing fast, gaining share, entrenching monopolistic control, pulling away from rivals — is bull or neutral, NEVER bear, even if the speaker frames that winning as dangerous, unfair, or untrustworthy ("Anthropic's regulatory capture entrenches its monopolistic control" → not bear).
   If the economic direction is not explicitly claimed, use "neutral".
 - conviction: how strongly the host commits (hedged aside = low; emphatic, repeated, "this is the trade" = high).
 - callType: classify what kind of statement this is. This single field decides whether the take is scored — there is no separate flag.
