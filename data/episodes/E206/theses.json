@@ -22,7 +22,8 @@
       "debt sustainability",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E206-mstr-Guest-1",
@@ -46,7 +47,8 @@
       "Bitcoin",
       "risk"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Joe Lonsdale"
   },
   {
     "id": "E206-xai-Guest-2",
@@ -70,7 +72,8 @@
       "scaling laws",
       "competitive position"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E206-openai-Guest-3",
@@ -94,7 +97,8 @@
       "talent",
       "compute scale"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E206-nvda-Guest-4",
@@ -118,7 +122,8 @@
       "GPU demand",
       "Blackwell"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E206-meta-Guest-5",
@@ -142,7 +147,8 @@
       "capex",
       "returns"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E206-googl-Guest-6",
@@ -166,7 +172,8 @@
       "capex",
       "returns"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E206-coin-Guest-7",
@@ -190,7 +197,8 @@
       "crypto",
       "SEC"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Joe Lonsdale"
   },
   {
     "id": "E206-anduril-industries-Guest-8",

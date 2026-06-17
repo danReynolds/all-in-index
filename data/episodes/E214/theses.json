@@ -72,7 +72,8 @@
       "competitive moat",
       "chips"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Antonio Gracias"
   },
   {
     "id": "E214-xai-Guest-3",
@@ -97,7 +98,8 @@
       "competitive moat",
       "data centers"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Antonio Gracias"
   },
   {
     "id": "E214-x-twitter-Guest-5",
@@ -121,6 +123,7 @@
       "debt",
       "operating efficiency"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Antonio Gracias"
   }
 ]

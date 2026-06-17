@@ -70,7 +70,8 @@
       "compute constraints",
       "growth trajectory"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-spacex-Chamath-3",
@@ -120,7 +121,8 @@
       "valuation",
       "AI infrastructure"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-spacex-Sacks-5",
@@ -265,7 +267,8 @@
       "valuation",
       "AI revenue"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-nvda-Guest-11",
@@ -289,7 +292,8 @@
       "AI capex",
       "compute"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-mu-Guest-12",
@@ -313,7 +317,8 @@
       "memory",
       "AI capex"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-000660.ks-Guest-13",
@@ -337,7 +342,8 @@
       "memory",
       "AI capex"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-005930.ks-Guest-14",
@@ -361,6 +367,7 @@
       "memory",
       "AI capex"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   }
 ]

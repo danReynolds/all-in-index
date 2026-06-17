@@ -171,7 +171,8 @@
       "AI",
       "manufacturing advantage"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Travis Kalanick"
   },
   {
     "id": "E213-waymo-Guest-7",
@@ -195,6 +196,7 @@
       "technology readiness",
       "scale"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Travis Kalanick"
   }
 ]

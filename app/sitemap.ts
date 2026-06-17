@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { allSlugs, allEpisodeIds } from "@/lib/data";
+import { allSlugs, allEpisodeIds, guestLinkMap } from "@/lib/data";
 import { REGULAR_HOSTS } from "@/lib/types";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -24,5 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
     priority: 0.5,
   }));
-  return [...statics, ...hosts, ...holdings, ...episodes];
+  // Guest profile pages exist for every guest in the leaderboard (≥1 scored
+  // call); guestLinkMap() is the canonical source of those slugs.
+  const guests = Object.values(guestLinkMap()).map((slug) => ({
+    url: `${base}/guest/${slug}`,
+    changeFrequency: "weekly" as const,
+    priority: 0.5,
+  }));
+  return [...statics, ...hosts, ...holdings, ...episodes, ...guests];
 }

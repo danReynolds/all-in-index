@@ -46,7 +46,8 @@
       "robotics",
       "consumer expansion"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Cyan Bowers-Franklin"
   },
   {
     "id": "E210-tsla-Guest-2",
@@ -71,7 +72,8 @@
       "competitive moat",
       "M&A"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Cyan Bowers-Franklin"
   },
   {
     "id": "E210-tsla-Chamath-3",
@@ -119,6 +121,7 @@
       "autonomous vehicles",
       "robotaxi"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Cyan Bowers-Franklin"
   }
 ]

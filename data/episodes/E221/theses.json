@@ -22,7 +22,8 @@
       "AI capex",
       "GPU demand"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E221-nvda-Guest-1",
@@ -46,7 +47,8 @@
       "customer concentration",
       "ecosystem strategy"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E221-coreweave-Guest-2",
@@ -71,7 +73,8 @@
       "valuation",
       "GPU infrastructure"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Gavin Baker"
   },
   {
     "id": "E221-coreweave-Chamath-3",

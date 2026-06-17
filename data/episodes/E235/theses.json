@@ -97,7 +97,8 @@
       "consumer device",
       "AI"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Travis Kalanick"
   },
   {
     "id": "E235-openai-Guest-4",

@@ -21,7 +21,8 @@
       "talent acquisition",
       "competitive moat"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E232-meta-Chamath-1",
@@ -117,7 +118,8 @@
       "competitive position",
       "M&A"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E232-googl-Chamath-5",
@@ -261,7 +263,8 @@
       "Optimus",
       "physical AI"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E232-nvda-Guest-11",
@@ -284,7 +287,8 @@
       "GPU dominance",
       "AI infrastructure"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Thomas Laffont"
   },
   {
     "id": "E232-nvda-Friedberg-12",

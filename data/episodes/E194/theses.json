@@ -22,7 +22,8 @@
       "valuation",
       "chips"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Reid Hoffman"
   },
   {
     "id": "E194-msft-Guest-1",
@@ -47,7 +48,8 @@
       "cloud",
       "competitive position"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Reid Hoffman"
   },
   {
     "id": "E194-aapl-Guest-2",
@@ -72,6 +74,7 @@
       "regulation",
       "competitive tactics"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Reid Hoffman"
   }
 ]

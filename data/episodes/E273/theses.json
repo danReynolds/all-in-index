@@ -22,7 +22,8 @@
       "AI efficiency",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Marc Benioff"
   },
   {
     "id": "E273-crm-Chamath-1",
@@ -95,7 +96,8 @@
       "valuation",
       "AI disruption"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Marc Benioff"
   },
   {
     "id": "E273-anthropic-Guest-4",
@@ -119,7 +121,8 @@
       "enterprise AI",
       "competitive positioning"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Marc Benioff"
   },
   {
     "id": "E273-anthropic-Guest-5",
@@ -143,7 +146,8 @@
       "AI competitive positioning",
       "product strategy"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Marc Benioff"
   },
   {
     "id": "E273-aapl-Jason-7",
@@ -290,7 +294,8 @@
       "payments",
       "trade deal upside"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Marc Benioff"
   },
   {
     "id": "E273-ma-Guest-13",
@@ -314,6 +319,7 @@
       "payments",
       "trade deal upside"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Marc Benioff"
   }
 ]

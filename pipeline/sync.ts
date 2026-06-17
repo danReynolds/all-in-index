@@ -111,7 +111,11 @@ export async function reextractAll(
   console.log(
     failed.length
       ? `✗ ${failed.length} episode(s) failed — retry with \`reextract --pending\` after fixing the cause.`
-      : "✓ re-extraction complete — now run build-index.",
+      : // reextract only runs the COMPANY extractor; commodity takes and guest
+        // names live in separate passes that get overwritten here. Run the full
+        // sequence or they silently vanish from the site (empty Guesties
+        // leaderboard, missing commodity holdings).
+        "✓ re-extraction complete — now run: extract-assets → name-guests → build-index.",
   );
   return failed;
 }

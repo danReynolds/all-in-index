@@ -22,7 +22,8 @@
       "SaaS",
       "multiple compression"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E260-crm-Sacks-1",
@@ -71,7 +72,8 @@
       "revenue growth",
       "data infrastructure"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E260-snow-Guest-5",
@@ -95,7 +97,8 @@
       "revenue growth",
       "data infrastructure"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E260-amzn-Jason-6",
@@ -144,7 +147,8 @@
       "space",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E260-spacex-xai-Jason-8",

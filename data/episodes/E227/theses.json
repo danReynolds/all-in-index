@@ -97,7 +97,8 @@
       "valuation",
       "growth"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Philippe Laffont"
   },
   {
     "id": "E227-openai-Chamath-4",
@@ -145,7 +146,8 @@
       "cloud compute",
       "earnings"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Philippe Laffont"
   },
   {
     "id": "E227-spacex-Chamath-6",

@@ -21,7 +21,8 @@
       "AI capex",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E250-openai-Chamath-1",
@@ -69,7 +70,8 @@
       "capital efficiency",
       "AI competition"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E250-anthropic-Chamath-3",
@@ -117,7 +119,8 @@
       "competition",
       "Google partnership"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E250-googl-Guest-6",
@@ -141,7 +144,8 @@
       "AI revenue",
       "competitive position"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E250-meta-Guest-7",
@@ -164,6 +168,7 @@
       "earnings",
       "Mag Seven dispersion"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   }
 ]
