@@ -246,6 +246,9 @@ export interface IndexFundPoint {
   invested: number;
 }
 
+/** Why a net-bullish call sits outside the tradable single-name index. */
+export type ExcludedKind = "private" | "crypto" | "macro";
+
 /**
  * A constructed equal-weight fund. The headline index is long every
  * net-bullish public call; host funds follow each host's scored exposure
@@ -266,9 +269,9 @@ export interface IndexFund {
   outperformance: number;
   constituents: IndexConstituent[];
   series: IndexFundPoint[];
-  /** Net-bullish private companies tracked but not in the tradable index. */
+  /** Net-bullish names tracked but outside the tradable single-name index. */
   excludedPrivateCount: number;
-  excludedPrivate: Array<{ slug: string; company: string; hosts: Host[] }>;
+  excludedPrivate: Array<{ slug: string; company: string; hosts: Host[]; kind: ExcludedKind }>;
   /** Second benchmark with matched cashflows (e.g. QQQ) — published honesty. */
   altBenchmark?: { symbol: string; ret: number } | null;
 }
