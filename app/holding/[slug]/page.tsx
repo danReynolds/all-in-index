@@ -5,6 +5,7 @@ import { getHolding, allSlugs, guestLinkMap } from "@/lib/data";
 import { pct, returnColor, fmtDate, fmtDuration, fmtMoney } from "@/lib/format";
 import { currentCall, followStats, scoredTakes, displayStance } from "@/lib/calls";
 import { isMacroAsset, isCryptoProxy } from "@/lib/assets";
+import { isGoingPrivate } from "@/lib/tradability";
 import { StanceBadge, ConvictionDots, SampleBanner } from "@/app/components/badges";
 import { Explainer } from "@/app/components/Explainer";
 import { Sparkline } from "@/app/components/Sparkline";
@@ -95,6 +96,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
   const marketAsOfMs = h.market ? Date.parse(`${h.market.asOf}T00:00:00Z`) : null;
   const yahooSymbol = h.market?.sourceSymbol ?? h.ticker;
   const macro = isMacroAsset(h.ticker);
+  const goingPrivate = isGoingPrivate(h.ticker);
 
   return (
     <div className="space-y-8">
@@ -151,6 +153,14 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
             {isCryptoProxy(h.ticker) ? "A crypto asset" : "A commodity"}, not a company — priced via the{" "}
             <span className="font-mono text-neutral-400">{h.ticker}</span> ETF as a clean proxy.
             Excluded from the index and host funds.
+          </p>
+        )}
+        {goingPrivate && (
+          <p className="text-xs text-amber-600 dark:text-amber-400">
+            Going private — under a definitive cash take-private. Public holders are cashed out at
+            the deal price, so the stock is pinned near it and there&apos;s no forward performance to
+            track; the bull case is about the company&apos;s private future. Excluded from the index
+            and host funds.
           </p>
         )}
         <p className="text-sm text-neutral-500">

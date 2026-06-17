@@ -3,6 +3,19 @@ import type { ExcludedKind } from "./types";
 
 export const EXCLUDED_ETFS = new Set(["SPY", "QQQ", "VOO", "VTI", "DIA", "IWM"]);
 
+/**
+ * Public names under a definitive cash take-private: the stock is pinned to the
+ * deal price and about to delist, so it's no longer a forward-performance public
+ * equity — holders are cashed out at the deal price and the upside accrues to
+ * the private buyers, not public shareholders. Tracked as a special situation
+ * (surfaced in "bullish but outside the index"), but excluded from the index,
+ * host funds, and Bear Book. Add the next take-private target here.
+ */
+export const GOING_PRIVATE = new Set(["EA"]); // Electronic Arts — $210/sh cash LBO, closing by Jun 30 2026.
+export function isGoingPrivate(ticker: string | null | undefined): boolean {
+  return !!ticker && GOING_PRIVATE.has(ticker.toUpperCase());
+}
+
 export interface TradableCandidate {
   ticker: string | null;
   isPublic: boolean;
@@ -20,7 +33,8 @@ export function isTradableCompanyExposure<T extends TradableCandidate>(
     candidate.isPublic &&
     !isCryptoTicker(candidate.ticker) &&
     !EXCLUDED_ETFS.has(candidate.ticker.toUpperCase()) &&
-    !isMacroAsset(candidate.ticker)
+    !isMacroAsset(candidate.ticker) &&
+    !isGoingPrivate(candidate.ticker)
   );
 }
 
