@@ -247,7 +247,7 @@ export interface IndexFundPoint {
 }
 
 /** Why a net-bullish call sits outside the tradable single-name index. */
-export type ExcludedKind = "private" | "crypto" | "macro";
+export type ExcludedKind = "private" | "crypto" | "macro" | "going_private";
 
 /**
  * A constructed equal-weight fund. The headline index is long every

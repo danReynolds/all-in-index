@@ -101,7 +101,7 @@ export default function IndexPage() {
       <Reveal>
       <section className="space-y-3">
         <div className="flex items-baseline justify-between gap-3">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Constituents</h2>
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Positions</h2>
           <span className="text-xs text-neutral-500">
             {fund.constituents.length} longs · tap a column to sort
           </span>
@@ -114,6 +114,7 @@ export default function IndexPage() {
       {fund.excludedPrivate.length > 0 && (() => {
         const GROUPS: Array<{ kind: ExcludedKind; label: string; note: string }> = [
           { kind: "private", label: "Private companies", note: "No public market yet — net-bullish calls tracked in the catalog." },
+          { kind: "going_private", label: "Going private", note: "Under a definitive cash take-private — public holders are cashed out at the deal price, so there's no forward stock performance to track; the upside accrues to the private buyers." },
           { kind: "crypto", label: "Crypto", note: "Investable, but via spot ETFs or tokens rather than single-name equities — tracked, outside the stock index." },
           { kind: "macro", label: "Macro & baskets", note: "Broad or multi-name bets with no single ticker to hold." },
         ];

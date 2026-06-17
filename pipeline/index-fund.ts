@@ -6,7 +6,7 @@ import {
   hostExposureWindows,
   type ExposureWindow,
 } from "../lib/calls";
-import { isTradableCompanyExposure, classifyExcluded } from "../lib/tradability";
+import { isTradableCompanyExposure, classifyExcluded, isGoingPrivate } from "../lib/tradability";
 import { guestSlug } from "../lib/format";
 import type {
   BearCall,
@@ -235,9 +235,14 @@ export async function buildWindowFund(
     if (windows.length) candidates.push({ h, windows });
   }
   const excludedPrivate = holdings
-    .filter((h) => !h.ticker && hostExposureWindows(h.theses, host).length > 0)
+    .filter((h) => (!h.ticker || isGoingPrivate(h.ticker)) && hostExposureWindows(h.theses, host).length > 0)
     .sort((a, b) => b.mentionCount - a.mentionCount)
-    .map((h) => ({ slug: h.slug, company: h.company, hosts: [host], kind: classifyExcluded(h.company) }))
+    .map((h) => ({
+      slug: h.slug,
+      company: h.company,
+      hosts: [host],
+      kind: isGoingPrivate(h.ticker) ? "going_private" : classifyExcluded(h.company),
+    }))
     .filter((e): e is typeof e & { kind: ExcludedKind } => e.kind !== null);
 
   if (candidates.length === 0) return null;
@@ -391,13 +396,13 @@ export async function buildIndexFund(
     .filter(isTradableCompanyExposure)
     .filter((h) => isCurrentNetBull(h.theses, hostSet));
   const excludedPrivate = holdings
-    .filter((h) => !h.ticker && isCurrentNetBull(h.theses, hostSet))
+    .filter((h) => (!h.ticker || isGoingPrivate(h.ticker)) && isCurrentNetBull(h.theses, hostSet))
     .sort((a, b) => b.mentionCount - a.mentionCount)
     .map((h) => ({
       slug: h.slug,
       company: h.company,
       hosts: currentBullHosts(h, hostSet),
-      kind: classifyExcluded(h.company),
+      kind: isGoingPrivate(h.ticker) ? "going_private" : classifyExcluded(h.company),
     }))
     .filter((e): e is typeof e & { kind: ExcludedKind } => e.kind !== null);
   const excludedPrivateCount = excludedPrivate.length;
