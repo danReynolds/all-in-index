@@ -43,6 +43,11 @@ const CANON: Canon[] = [
   },
   // OpenAI and its ChatGPT product are one entity (private).
   { company: "OpenAI", ticker: null, isPublic: false, aliases: ["openai", "open ai", "chatgpt", "openai chatgpt"] },
+  // Crypto is tracked like a commodity, priced via a liquid spot-ETF proxy
+  // (IBIT/ETHA — clean tickers, so they survive the crypto-token strip below
+  // and are recognized as macro assets, excluded from the company index).
+  { company: "Bitcoin", ticker: "IBIT", isPublic: true, aliases: ["bitcoin", "btc"] },
+  { company: "Ethereum", ticker: "ETHA", isPublic: true, aliases: ["ethereum", "ether"] },
 ];
 
 const ALIAS_INDEX = new Map<string, Canon>();
