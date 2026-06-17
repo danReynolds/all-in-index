@@ -26,9 +26,23 @@ const CANON: Canon[] = [
   { company: "Meta", ticker: "META", isPublic: true, aliases: ["meta", "meta platforms", "facebook", "instagram"] },
   { company: "Microsoft", ticker: "MSFT", isPublic: true, aliases: ["microsoft", "microsoft azure", "azure", "github"] },
   { company: "Salesforce", ticker: "CRM", isPublic: true, aliases: ["salesforce", "slack", "tableau", "mulesoft"] },
-  // xAI absorbed X/Twitter; the extractor also emits a combined "Elon Web
-  // Services" entity — consolidate the AI/social cluster under xAI (private).
-  { company: "xAI", ticker: null, isPublic: false, aliases: ["xai", "x", "twitter", "x corp", "xai spacex", "elon web services"] },
+  // Feb 2026: SpaceX consolidated xAI in a $1.25T all-stock merger; Starlink is
+  // a SpaceX division and Grok is xAI's model, so the whole rocket / satellite /
+  // AI / social (X) cluster is one company — public since the Jun 12 2026 IPO
+  // (NASDAQ: SPCX). Every call on any piece of it is now a call on SPCX.
+  {
+    company: "SpaceX",
+    ticker: "SPCX",
+    isPublic: true,
+    aliases: [
+      "spacex", "space exploration technologies", "starlink", "grok",
+      "xai", "x", "x corp", "twitter", "elon web services",
+      "spacex xai", "xai spacex", "spacex starlink", "starlink spacex", "xai grok",
+      "xai x", "x xai", "x twitter", "twitter x",
+    ],
+  },
+  // OpenAI and its ChatGPT product are one entity (private).
+  { company: "OpenAI", ticker: null, isPublic: false, aliases: ["openai", "open ai", "chatgpt", "openai chatgpt"] },
 ];
 
 const ALIAS_INDEX = new Map<string, Canon>();

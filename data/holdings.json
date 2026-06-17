@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T15:16:56.055Z",
+  "generatedAt": "2026-06-17T16:19:58.861Z",
   "holdings": [
     {
       "slug": "openai",
@@ -1563,6 +1563,54 @@
           "attributionConfidence": "high"
         },
         {
+          "id": "E179-openai-chatgpt-Sacks-1",
+          "episodeId": "E179",
+          "episodeNumber": 179,
+          "episodeDate": "2024-05-17T20:23:00.000Z",
+          "company": "OpenAI",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Sacks",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Sacks argues GPT-4o's omnichannel speed and performance improvements will unlock a wave of new applications and a B2B monetization model via metered API usage, making it a more attractive business than B2C subscriptions.",
+          "quote": "If they're metering the usage of the models and providing the best dev tools, I think there is a business model there.",
+          "quoteStartMs": 1554213,
+          "topics": [
+            "AI capabilities",
+            "business model",
+            "B2B"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E179-openai-chatgpt-Chamath-0",
+          "episodeId": "E179",
+          "episodeNumber": 179,
+          "episodeDate": "2024-05-17T20:23:00.000Z",
+          "company": "OpenAI",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Chamath argues ChatGPT's consumer growth has plateaued and that the 'Facebook of AI' has yet to be created, as the market is still in a primordial phase where basic capabilities will become table stakes within ~2 years before real businesses emerge.",
+          "quote": "I will maintain my perspective here, which is the 'Facebook of AI' has yet to be created.",
+          "quoteStartMs": 1304347,
+          "topics": [
+            "consumer growth",
+            "AI competition",
+            "product lifecycle"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
           "id": "E178-openai-Chamath-3",
           "episodeId": "E178",
           "episodeNumber": 178,
@@ -1587,11 +1635,11 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts hold a deeply divided and evolving view of OpenAI, with Sacks and Chamath generally more constructive and Friedberg and Jason more skeptical, though all four have shifted positions over time. Bulls — anchored by Sacks, Chamath, and guests like Brad Gerstner and Thomas LaFont — point to OpenAI's dominant consumer franchise (ChatGPT), explosive revenue growth toward a $20B+ run rate, its role as a search replacement, and the optionality of hardware and agentic computing as reasons the company could reach a multi-trillion-dollar valuation. Bears — led by Jason and periodically Friedberg and Chamath himself — counter that the $150B–$500B+ valuation is disconnected from $5B+ annual losses, that open-source models (DeepSeek, Llama, Kimi) are commoditizing the core product, that Anthropic is compounding revenue roughly 3x faster, and that executive departures, restrictive investor terms, copyright litigation, and a defensive product posture signal structural fragility. A recurring fault line across nearly all hosts is whether OpenAI's current consumer lead is durable or merely a first-mover position — analogous, as Chamath has framed it, to either AWS or AOL — with Sacks and Chamath ultimately landing on cautious optimism about its multi-trillion-dollar potential while Jason remains the most consistently bearish voice predicting OpenAI will fall to a third-place or lower competitive position within a few years.",
+      "synthesis": "The hosts hold a deeply divided and evolving view of OpenAI: Sacks and Chamath have each oscillated between bullish and cautious stances over time, while Jason has grown increasingly bearish, and Friedberg remains ambivalent. The core bull case — shared most consistently by Sacks, Chamath (especially in later 2025–2026), and guests like Brad Gerstner — rests on OpenAI's dominant consumer franchise (ChatGPT), explosive revenue growth toward a $20B+ run rate, its position as a search replacement, and the potential for a massive DAU-driven terminal valuation in the trillions. The primary bear case, pressed hardest by Jason and at times by Chamath, Friedberg, and Sacks, centers on commoditization from open-source models (Llama, DeepSeek), faster growth at Anthropic, a $157B–$500B+ valuation that prices in perfection against $5B+ annual losses, talent attrition, legal exposure (NYT lawsuit), governance controversies (nonprofit-to-for-profit conversion), and a defensive product posture that Friedberg argues has damaged the brand. A recurring point of contention is durability: Sacks and Chamath generally believe OpenAI's consumer mindshare and compute scale create a defensible moat, while Jason, Friedberg (at times), and guests like Gavin Baker and Mark Cuban warn that Google, Meta, and xAI are closing the gap and that OpenAI's lead is far from permanent.",
       "netStance": "bull",
       "firstMentioned": "2024-05-10T19:47:00.000Z",
       "lastMentioned": "2026-06-13T04:51:00.000Z",
-      "mentionCount": 64,
+      "mentionCount": 66,
       "market": null,
       "description": "AI research company that develops large language models and products including ChatGPT and the GPT series.",
       "domain": "openai.com"
@@ -1983,13 +2031,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-09-27",
         "basePrice": 567.36,
-        "latestPrice": 581.12,
+        "latestPrice": 580.67,
         "returns": {
           "1m": 0.019035532994923776,
           "3m": 0.05719472645234054,
           "6m": 0.06207698815566841,
           "1y": 0.31027918781725883,
-          "since": 0.024252679075014084
+          "since": 0.023459531866892175
         },
         "history": [
           [
@@ -2210,7 +2258,7 @@
           ],
           [
             "2026-06-17",
-            581.12
+            580.67
           ]
         ],
         "source": "yahoo"
@@ -3926,13 +3974,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-05-10",
         "basePrice": 183.05,
-        "latestPrice": 297.68,
+        "latestPrice": 298.74,
         "returns": {
           "1m": 0.055012291723572755,
           "3m": 0.18836383501775464,
           "6m": 0.22496585632340876,
           "1y": 0.1515432941819174,
-          "since": 0.6262223436219612
+          "since": 0.6320131111718109
         },
         "history": [
           [
@@ -4173,7 +4221,7 @@
           ],
           [
             "2026-06-17",
-            297.68
+            298.74
           ]
         ],
         "source": "yahoo"
@@ -4224,13 +4272,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2026-05-29",
         "basePrice": 75.72,
-        "latestPrice": 74.94,
+        "latestPrice": 75.57,
         "returns": {
           "1m": null,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": -0.010301109350237734
+          "since": -0.0019809825673534824
         },
         "history": [
           [
@@ -4282,8 +4330,12 @@
             74.35
           ],
           [
+            "2026-06-16",
+            74.68
+          ],
+          [
             "2026-06-17",
-            74.94
+            75.57
           ]
         ],
         "source": "yahoo"
@@ -5131,13 +5183,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-05-24",
         "basePrice": 106.469,
-        "latestPrice": 206.8301,
+        "latestPrice": 207.55,
         "returns": {
           "1m": 0.10933699010979728,
           "3m": 0.18776357437376137,
           "6m": 0.2775549690520247,
           "1y": 0.27267091829546636,
-          "since": 0.9426321276615729
+          "since": 0.9493937202378159
         },
         "history": [
           [
@@ -5374,7 +5426,7 @@
           ],
           [
             "2026-06-17",
-            206.8301
+            207.55
           ]
         ],
         "source": "yahoo"
@@ -5383,19 +5435,19 @@
       "domain": "nvidia.com"
     },
     {
-      "slug": "xai",
-      "company": "xAI",
-      "ticker": null,
-      "isPublic": false,
+      "slug": "spcx",
+      "company": "SpaceX",
+      "ticker": "SPCX",
+      "isPublic": true,
       "theses": [
         {
           "id": "E274-xai-Guest-7",
           "episodeId": "E274",
           "episodeNumber": 274,
           "episodeDate": "2026-05-22T22:46:00.000Z",
-          "company": "xAI",
-          "ticker": null,
-          "isPublic": false,
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Guest",
           "stance": "bull",
           "conviction": "medium",
@@ -5414,278 +5466,13 @@
           "guestName": "Gavin Baker"
         },
         {
-          "id": "E269-xai-Chamath-9",
-          "episodeId": "E269",
-          "episodeNumber": 269,
-          "episodeDate": "2026-04-17T20:35:00.000Z",
-          "company": "xAI",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Chamath notes that xAI/Elon is entering the hyperscaler business by building out Colossus and now renting excess capacity to others (e.g. Cursor), positioning xAI to be compute-privileged for its own models while monetizing surplus — a strategically strong position.",
-          "quote": "Elon just announced a deal this morning with Cursory. So Elon's renting a bunch of capacity, so he's now getting effectively into the data center business. He's going to be a hyperscaler. So he's going to use as much as he can for xAI, and",
-          "quoteStartMs": 1846000,
-          "topics": [
-            "data centers",
-            "compute",
-            "hyperscaler",
-            "AI infrastructure"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E268-x-twitter-Guest-7",
-          "episodeId": "E268",
-          "episodeNumber": 268,
-          "episodeDate": "2026-04-10T22:17:00.000Z",
-          "company": "xAI",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Guest",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Brad Gerstner argues X is better than ever with 70% fewer employees, demonstrating that AI enables companies to do more with less — a proof point that peak employment has been reached at tech firms, making X a poster child for efficiency.",
-          "quote": "X is better today than it's ever been. And remember, they have 70% fewer employees than they had the day Elon walked into the building... every other company in Silicon Valley is looking at that.",
-          "quoteStartMs": 5066000,
-          "topics": [
-            "AI productivity",
-            "operational efficiency",
-            "headcount"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Brad Gerstner"
-        },
-        {
-          "id": "E253-xai-Sacks-7",
-          "episodeId": "E253",
-          "episodeNumber": 253,
-          "episodeDate": "2025-12-06T01:41:00.000Z",
-          "company": "xAI",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Sacks",
-          "stance": "bull",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Sacks is bullish on xAI, citing its unique current-events advantage via X integration and Elon's ability to scale training infrastructure faster than rivals, with Colossus 2 and the largest Blackwell cluster portending strong results for Grok 5.",
-          "quote": "xAI...I think is the best at current events because of the integration with X. And also Elon seems to be able to scale his data center, his training cluster, the fastest...that portends good things for Grok 5.",
-          "quoteStartMs": 519000,
-          "topics": [
-            "AI competition",
-            "infrastructure",
-            "data"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E238-xai-Guest-2",
-          "episodeId": "E238",
-          "episodeNumber": 238,
-          "episodeDate": "2025-08-09T15:40:00.000Z",
-          "company": "xAI",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "explicit_long",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Gavin Baker, a disclosed shareholder of xAI, argues Grok 4 made exceptional benchmark progress and xAI's possession of the largest Blackwell cluster makes him optimistic for Grok 5's competitive position.",
-          "quote": "I should note my firm is a shareholder of xAI. So as much as I try to be objective, I am for sure biased... they have the largest Blackwell cluster, so I'm optimistic for GROK5.",
-          "quoteStartMs": 771818,
-          "topics": [
-            "AI models",
-            "competitive position",
-            "compute",
-            "shareholder"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Gavin Baker"
-        },
-        {
-          "id": "E218-xai-grok-Chamath-3",
-          "episodeId": "E218",
-          "episodeNumber": 218,
-          "episodeDate": "2025-03-08T00:58:00.000Z",
-          "company": "xAI",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Chamath has shifted his consumer AI usage to Grok 3, citing its elegant integration within X/Twitter as a key distribution advantage that makes it his preferred consumer AI tool.",
-          "quote": "As a consumer, I've mostly flipped my usage to Grok 3. And the reason is that it's in line with where I consume most of my information. It's elegantly integrated inside of X.",
-          "quoteStartMs": 5144000,
-          "topics": [
-            "AI models",
-            "distribution",
-            "competitive position"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E214-x-twitter-Guest-5",
-          "episodeId": "E214",
-          "episodeNumber": 214,
-          "episodeDate": "2025-02-07T22:20:00.000Z",
-          "company": "xAI",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Antonio Gracias characterizes the Twitter/X turnaround as the biggest in history: 80% headcount reduction, company now servicing its debt, and bank debt pricing at 97-98+ cents on the dollar — a rousing business success.",
-          "quote": "The company's now servicing its debt and they just priced yesterday, one of their bank deals at 97 cents... A giant business success, a rousing business success.",
-          "quoteStartMs": 391736,
-          "topics": [
-            "turnaround",
-            "debt",
-            "operating efficiency"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Antonio Gracias"
-        },
-        {
-          "id": "E214-xai-Guest-3",
-          "episodeId": "E214",
-          "episodeNumber": 214,
-          "episodeDate": "2025-02-07T22:20:00.000Z",
-          "company": "xAI",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Antonio Gracias argues xAI will have the highest return on capital due to its world's most dense coherent 100,000 GPU cluster — built fastest and most cheaply — combined with the best training data.",
-          "quote": "XAI will have the highest return on capital, and I also think the best training data, and therefore will win.",
-          "quoteStartMs": 4421977,
-          "topics": [
-            "AI infrastructure",
-            "ROIC",
-            "competitive moat",
-            "data centers"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Antonio Gracias"
-        },
-        {
-          "id": "E211-x-formerly-twitter-Chamath-1",
-          "episodeId": "E211",
-          "episodeNumber": 211,
-          "episodeDate": "2025-01-18T01:21:00.000Z",
-          "company": "xAI",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Chamath argues X is the ideal acquirer of TikTok's creator graph and content, as it would provide a safer American substrate for video creation, representing a significant strategic win for the platform.",
-          "quote": "I was super excited when I saw that there was the potential that X would take over TikTok. And the reason I say that is I do think that if you can take the video content of TikTok and the graph of creators, but have a different app and a",
-          "quoteStartMs": 4577000,
-          "topics": [
-            "TikTok acquisition",
-            "social media",
-            "competitive position"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E206-xai-Guest-2",
-          "episodeId": "E206",
-          "episodeNumber": 206,
-          "episodeDate": "2024-12-07T00:55:00.000Z",
-          "company": "xAI",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": "Gavin discloses his firm is an investor in xAI (FCI).",
-          "summary": "Gavin Baker argues that xAI's Colossus supercomputer — the first to make 100,000 GPUs coherent — is a landmark engineering achievement that, if scaling laws hold, should make Grok 3 the state-of-the-art model and put xAI ahead of OpenAI by early 2025.",
-          "quote": "Grok 3 should take the lead if scaling laws hold in January or February. I do think a lot of talent has left OpenAI.",
-          "quoteStartMs": 3662490,
-          "topics": [
-            "AI compute",
-            "scaling laws",
-            "competitive position"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Gavin Baker"
-        },
-        {
-          "id": "E198-x-Guest-6",
-          "episodeId": "E198",
-          "episodeNumber": 198,
-          "episodeDate": "2024-10-03T20:19:00.000Z",
-          "company": "xAI",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Guest",
-          "stance": "bear",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Mark Cuban argues X faces a structural advertising problem because its free-speech-permissive content environment—including anti-semitic content and adult material accessible to minors—makes it toxic for brand advertisers who have better-scaled alternatives, making the business model fundamentally challenged.",
-          "quote": "There is no upside for being on Twitter right now, or X right now. And you add to that the porn. Kids 13 years old can go on that site and you can find any insane thing you want on X right now. And that also is a problem for advertisers.",
-          "quoteStartMs": 6984614,
-          "topics": [
-            "advertising",
-            "content moderation",
-            "business model"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Mark Cuban"
-        }
-      ],
-      "synthesis": "The dominant view across hosts and guests is bullish on xAI's infrastructure and model trajectory, with recurring emphasis on the Colossus supercomputer cluster — first 100,000 coherent GPUs, now expanded to the largest Blackwell cluster — as a structural compute advantage that guest bulls Gavin Baker and Antonio Gracias argue positions Grok models (3, 4, 4.3, and prospectively 5) at or near the frontier, while Sacks adds that X's data integration gives xAI a unique current-events edge over rivals. On the X/Twitter platform itself, Gracias and Gerstner point to the operational turnaround — roughly 70–80% headcount reduction, debt servicing, and strong bond pricing — as a landmark business success, and Chamath sees meaningful strategic upside in potential TikTok asset acquisition and xAI's emerging hyperscaler role renting surplus compute to customers like Cursor. The lone dissenting voice is guest Mark Cuban (October 2024), who argued the platform faces a structural advertising problem due to its permissive content environment making it toxic for brand advertisers — a concern not directly addressed or refuted by the bullish guests, who focused primarily on the AI and infrastructure story rather than ad revenue. Chamath occupies a notably neutral-to-constructive middle ground, citing Grok 3's elegant X integration as his personal reason for switching consumer AI usage, without making strong directional claims on valuation or competitive outcome.",
-      "netStance": "bull",
-      "firstMentioned": "2024-10-03T20:19:00.000Z",
-      "lastMentioned": "2026-05-22T22:46:00.000Z",
-      "mentionCount": 11,
-      "market": null,
-      "description": "AI startup founded by Elon Musk that develops large language models, including the Grok series.",
-      "domain": "x.ai"
-    },
-    {
-      "slug": "spacex",
-      "company": "SpaceX",
-      "ticker": null,
-      "isPublic": false,
-      "theses": [
-        {
           "id": "E274-spacex-Guest-2",
           "episodeId": "E274",
           "episodeNumber": 274,
           "episodeDate": "2026-05-22T22:46:00.000Z",
           "company": "SpaceX",
-          "ticker": null,
-          "isPublic": false,
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Guest",
           "stance": "bull",
           "conviction": "high",
@@ -5710,8 +5497,8 @@
           "episodeNumber": 274,
           "episodeDate": "2026-05-22T22:46:00.000Z",
           "company": "SpaceX",
-          "ticker": null,
-          "isPublic": false,
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Chamath",
           "stance": "bull",
           "conviction": "high",
@@ -5735,8 +5522,8 @@
           "episodeNumber": 272,
           "episodeDate": "2026-05-08T22:16:00.000Z",
           "company": "SpaceX",
-          "ticker": null,
-          "isPublic": false,
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Sacks",
           "stance": "neutral",
           "conviction": "high",
@@ -5760,8 +5547,8 @@
           "episodeNumber": 272,
           "episodeDate": "2026-05-08T22:16:00.000Z",
           "company": "SpaceX",
-          "ticker": null,
-          "isPublic": false,
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Guest",
           "stance": "bull",
           "conviction": "high",
@@ -5786,8 +5573,8 @@
           "episodeNumber": 272,
           "episodeDate": "2026-05-08T22:16:00.000Z",
           "company": "SpaceX",
-          "ticker": null,
-          "isPublic": false,
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Chamath",
           "stance": "bull",
           "conviction": "high",
@@ -5811,8 +5598,8 @@
           "episodeNumber": 270,
           "episodeDate": "2026-04-24T21:20:00.000Z",
           "company": "SpaceX",
-          "ticker": null,
-          "isPublic": false,
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Sacks",
           "stance": "bull",
           "conviction": "medium",
@@ -5835,8 +5622,8 @@
           "episodeNumber": 270,
           "episodeDate": "2026-04-24T21:20:00.000Z",
           "company": "SpaceX",
-          "ticker": null,
-          "isPublic": false,
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Chamath",
           "stance": "bull",
           "conviction": "high",
@@ -5860,8 +5647,8 @@
           "episodeNumber": 270,
           "episodeDate": "2026-04-24T21:20:00.000Z",
           "company": "SpaceX",
-          "ticker": null,
-          "isPublic": false,
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Jason",
           "stance": "bull",
           "conviction": "high",
@@ -5880,13 +5667,38 @@
           "attributionConfidence": "high"
         },
         {
+          "id": "E269-xai-Chamath-9",
+          "episodeId": "E269",
+          "episodeNumber": 269,
+          "episodeDate": "2026-04-17T20:35:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Chamath notes that xAI/Elon is entering the hyperscaler business by building out Colossus and now renting excess capacity to others (e.g. Cursor), positioning xAI to be compute-privileged for its own models while monetizing surplus — a strategically strong position.",
+          "quote": "Elon just announced a deal this morning with Cursory. So Elon's renting a bunch of capacity, so he's now getting effectively into the data center business. He's going to be a hyperscaler. So he's going to use as much as he can for xAI, and",
+          "quoteStartMs": 1846000,
+          "topics": [
+            "data centers",
+            "compute",
+            "hyperscaler",
+            "AI infrastructure"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
           "id": "E269-spacex-Chamath-7",
           "episodeId": "E269",
           "episodeNumber": 269,
           "episodeDate": "2026-04-17T20:35:00.000Z",
           "company": "SpaceX",
-          "ticker": null,
-          "isPublic": false,
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Chamath",
           "stance": "neutral",
           "conviction": "high",
@@ -5905,13 +5717,38 @@
           "attributionConfidence": "high"
         },
         {
+          "id": "E268-x-twitter-Guest-7",
+          "episodeId": "E268",
+          "episodeNumber": 268,
+          "episodeDate": "2026-04-10T22:17:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Brad Gerstner argues X is better than ever with 70% fewer employees, demonstrating that AI enables companies to do more with less — a proof point that peak employment has been reached at tech firms, making X a poster child for efficiency.",
+          "quote": "X is better today than it's ever been. And remember, they have 70% fewer employees than they had the day Elon walked into the building... every other company in Silicon Valley is looking at that.",
+          "quoteStartMs": 5066000,
+          "topics": [
+            "AI productivity",
+            "operational efficiency",
+            "headcount"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
+        },
+        {
           "id": "E267-spacex-Chamath-1",
           "episodeId": "E267",
           "episodeNumber": 267,
           "episodeDate": "2026-04-03T21:08:00.000Z",
           "company": "SpaceX",
-          "ticker": null,
-          "isPublic": false,
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Chamath",
           "stance": "bull",
           "conviction": "high",
@@ -5934,8 +5771,8 @@
           "episodeNumber": 266,
           "episodeDate": "2026-03-27T20:03:00.000Z",
           "company": "SpaceX",
-          "ticker": null,
-          "isPublic": false,
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Friedberg",
           "stance": "bull",
           "conviction": "medium",
@@ -5954,13 +5791,64 @@
           "attributionConfidence": "high"
         },
         {
+          "id": "E260-spacex-xai-Jason-8",
+          "episodeId": "E260",
+          "episodeNumber": 260,
+          "episodeDate": "2026-02-07T04:35:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Jason",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Jason is strongly bullish on the SpaceX-xAI combination, arguing Musk's unmatched execution ability makes the space-based data center vision a certainty, and that the combined entity will change everything when it IPOs.",
+          "quote": "There is no stronger entrepreneur when it comes to execution. In the history of entrepreneurs than Elon... he will execute on this. And if he does, or when he does, I should say, it's going to change everything.",
+          "quoteStartMs": 4195430,
+          "topics": [
+            "M&A",
+            "AI infrastructure",
+            "space",
+            "execution"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E260-spacex-xai-Guest-7",
+          "episodeId": "E260",
+          "episodeNumber": 260,
+          "episodeDate": "2026-02-07T04:35:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Brad Gerstner is strongly bullish on the SpaceX-xAI merger, arguing it combines the two largest TAMs — AI and space — under the world's greatest entrepreneur, with Starlink scaling rapidly and space-based data centers providing a structural cost advantage in compute power.",
+          "quote": "You're merging the two biggest TAMs in the world, right? All of artificial intelligence. And all of space together with the world's greatest entrepreneur... there will be dramatic retail demand and institutional demand who wanna bet on",
+          "quoteStartMs": 3711180,
+          "topics": [
+            "M&A",
+            "AI infrastructure",
+            "space",
+            "valuation"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
+        },
+        {
           "id": "E257-spacex-Chamath-7",
           "episodeId": "E257",
           "episodeNumber": 257,
           "episodeDate": "2026-01-10T04:28:00.000Z",
           "company": "SpaceX",
-          "ticker": null,
-          "isPublic": false,
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Chamath",
           "stance": "neutral",
           "conviction": "medium",
@@ -5979,13 +5867,140 @@
           "attributionConfidence": "high"
         },
         {
+          "id": "E253-xai-Sacks-7",
+          "episodeId": "E253",
+          "episodeNumber": 253,
+          "episodeDate": "2025-12-06T01:41:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Sacks is bullish on xAI, citing its unique current-events advantage via X integration and Elon's ability to scale training infrastructure faster than rivals, with Colossus 2 and the largest Blackwell cluster portending strong results for Grok 5.",
+          "quote": "xAI...I think is the best at current events because of the integration with X. And also Elon seems to be able to scale his data center, his training cluster, the fastest...that portends good things for Grok 5.",
+          "quoteStartMs": 519000,
+          "topics": [
+            "AI competition",
+            "infrastructure",
+            "data"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E249-xai-x-twitter-Guest-4",
+          "episodeId": "E249",
+          "episodeNumber": 249,
+          "episodeDate": "2025-10-31T20:11:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Musk highlights X's integration with Grok as a major competitive differentiator — Grok will read 100M posts/day, enable semantic search, and power Grokipedia — positioning X/xAI as the best source of truth and a superior AI-driven information platform versus incumbents like Google Search and Wikipedia.",
+          "quote": "Grokpedia will, will, will, will succeed, I think very well because it'll, it'll, it is fundamentally a superior product to Wikipedia. It is, it is a better source of information.",
+          "quoteStartMs": 1030641,
+          "topics": [
+            "AI integration",
+            "product roadmap",
+            "competitive moat",
+            "Grokipedia"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Elon Musk"
+        },
+        {
+          "id": "E238-xai-Guest-2",
+          "episodeId": "E238",
+          "episodeNumber": 238,
+          "episodeDate": "2025-08-09T15:40:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "explicit_long",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Gavin Baker, a disclosed shareholder of xAI, argues Grok 4 made exceptional benchmark progress and xAI's possession of the largest Blackwell cluster makes him optimistic for Grok 5's competitive position.",
+          "quote": "I should note my firm is a shareholder of xAI. So as much as I try to be objective, I am for sure biased... they have the largest Blackwell cluster, so I'm optimistic for GROK5.",
+          "quoteStartMs": 771818,
+          "topics": [
+            "AI models",
+            "competitive position",
+            "compute",
+            "shareholder"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
+        },
+        {
+          "id": "E236-xai-grok-Guest-0",
+          "episodeId": "E236",
+          "episodeNumber": 236,
+          "episodeDate": "2025-07-19T02:21:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Gavin Baker argues Grok 4 represents the biggest AI leapfrog in a long time, scoring roughly twice as well as Google/OpenAI/Anthropic on semi-private benchmarks, and that a natural distribution partnership with Apple would further entrench its competitive position.",
+          "quote": "This is the biggest leapfrog we've seen in quite some time... it did roughly twice as good as the state-of-the-art Google, OpenAI, and Anthropic models... xAI and Apple are natural partners.",
+          "quoteStartMs": 1218000,
+          "topics": [
+            "AI models",
+            "benchmarks",
+            "distribution",
+            "partnerships"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
+        },
+        {
+          "id": "E235-xai-grok-Chamath-0",
+          "episodeId": "E235",
+          "episodeNumber": 235,
+          "episodeDate": "2025-07-11T21:28:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Chamath argues that xAI's architectural bet on general computation over human-labeled data — the 'Bitter Lesson' approach — has vaulted Grok 4 ahead of all rivals in under 2.5 years, and that this compute-scaling strategy will continue to widen the lead over competitors reliant on human labeling.",
+          "quote": "starting in March of 2023, so we're talking about less than 2.5 years, what this team has accomplished and how how far ahead they are of everybody else, as demonstrated by this.",
+          "quoteStartMs": 1250291,
+          "topics": [
+            "AI benchmarks",
+            "compute scaling",
+            "competitive moat",
+            "synthetic data"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
           "id": "E227-spacex-Chamath-6",
           "episodeId": "E227",
           "episodeNumber": 227,
           "episodeDate": "2025-05-09T20:26:00.000Z",
           "company": "SpaceX",
-          "ticker": null,
-          "isPublic": false,
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Chamath",
           "stance": "neutral",
           "conviction": "medium",
@@ -6008,8 +6023,8 @@
           "episodeNumber": 220,
           "episodeDate": "2025-03-22T02:17:00.000Z",
           "company": "SpaceX",
-          "ticker": null,
-          "isPublic": false,
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Chamath",
           "stance": "bull",
           "conviction": "high",
@@ -6027,13 +6042,187 @@
           "attributionConfidence": "high"
         },
         {
+          "id": "E218-xai-grok-Chamath-3",
+          "episodeId": "E218",
+          "episodeNumber": 218,
+          "episodeDate": "2025-03-08T00:58:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Chamath has shifted his consumer AI usage to Grok 3, citing its elegant integration within X/Twitter as a key distribution advantage that makes it his preferred consumer AI tool.",
+          "quote": "As a consumer, I've mostly flipped my usage to Grok 3. And the reason is that it's in line with where I consume most of my information. It's elegantly integrated inside of X.",
+          "quoteStartMs": 5144000,
+          "topics": [
+            "AI models",
+            "distribution",
+            "competitive position"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E216-xai-grok-Chamath-2",
+          "episodeId": "E216",
+          "episodeNumber": 216,
+          "episodeDate": "2025-02-21T23:41:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Chamath is impressed by xAI's rapid development of Grok 3, arguing the Colossus cluster proved pre-training scale still yields major gains and that xAI's keiretsu-style synergies with Tesla and SpaceX give it a unique competitive advantage.",
+          "quote": "the rate of change of this... Those guys have been doing it for years. These guys have been doing it for a year, and they did all of this MacGyver engineering and were able to pull this off.",
+          "quoteStartMs": 4969000,
+          "topics": [
+            "AI",
+            "LLM",
+            "competitive position",
+            "pre-training"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E214-x-twitter-Guest-5",
+          "episodeId": "E214",
+          "episodeNumber": 214,
+          "episodeDate": "2025-02-07T22:20:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Antonio Gracias characterizes the Twitter/X turnaround as the biggest in history: 80% headcount reduction, company now servicing its debt, and bank debt pricing at 97-98+ cents on the dollar — a rousing business success.",
+          "quote": "The company's now servicing its debt and they just priced yesterday, one of their bank deals at 97 cents... A giant business success, a rousing business success.",
+          "quoteStartMs": 391736,
+          "topics": [
+            "turnaround",
+            "debt",
+            "operating efficiency"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Antonio Gracias"
+        },
+        {
+          "id": "E214-xai-Guest-3",
+          "episodeId": "E214",
+          "episodeNumber": 214,
+          "episodeDate": "2025-02-07T22:20:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Antonio Gracias argues xAI will have the highest return on capital due to its world's most dense coherent 100,000 GPU cluster — built fastest and most cheaply — combined with the best training data.",
+          "quote": "XAI will have the highest return on capital, and I also think the best training data, and therefore will win.",
+          "quoteStartMs": 4421977,
+          "topics": [
+            "AI infrastructure",
+            "ROIC",
+            "competitive moat",
+            "data centers"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Antonio Gracias"
+        },
+        {
+          "id": "E211-x-formerly-twitter-Chamath-1",
+          "episodeId": "E211",
+          "episodeNumber": 211,
+          "episodeDate": "2025-01-18T01:21:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Chamath argues X is the ideal acquirer of TikTok's creator graph and content, as it would provide a safer American substrate for video creation, representing a significant strategic win for the platform.",
+          "quote": "I was super excited when I saw that there was the potential that X would take over TikTok. And the reason I say that is I do think that if you can take the video content of TikTok and the graph of creators, but have a different app and a",
+          "quoteStartMs": 4577000,
+          "topics": [
+            "TikTok acquisition",
+            "social media",
+            "competitive position"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E206-xai-Guest-2",
+          "episodeId": "E206",
+          "episodeNumber": 206,
+          "episodeDate": "2024-12-07T00:55:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": "Gavin discloses his firm is an investor in xAI (FCI).",
+          "summary": "Gavin Baker argues that xAI's Colossus supercomputer — the first to make 100,000 GPUs coherent — is a landmark engineering achievement that, if scaling laws hold, should make Grok 3 the state-of-the-art model and put xAI ahead of OpenAI by early 2025.",
+          "quote": "Grok 3 should take the lead if scaling laws hold in January or February. I do think a lot of talent has left OpenAI.",
+          "quoteStartMs": 3662490,
+          "topics": [
+            "AI compute",
+            "scaling laws",
+            "competitive position"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
+        },
+        {
+          "id": "E200-spacex-starlink-Friedberg-1",
+          "episodeId": "E200",
+          "episodeNumber": 200,
+          "episodeDate": "2024-10-18T22:49:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Friedberg projects Starlink could grow from 4 million to 100 million or more subscribers, potentially becoming one of the largest subscription businesses on earth, driven by satellite-to-phone expansion.",
+          "quote": "Starlink's running at 4 million subs right now. That's like $100 a month, 4 million subs... If we can get satellite to phone and you can get Starlink more broadly available, this could be a 100 million subscriber business.",
+          "quoteStartMs": 1282620,
+          "topics": [
+            "Starlink",
+            "subscribers",
+            "growth",
+            "ISP disruption"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
           "id": "E200-spacex-Friedberg-0",
           "episodeId": "E200",
           "episodeNumber": 200,
           "episodeDate": "2024-10-18T22:49:00.000Z",
           "company": "SpaceX",
-          "ticker": null,
-          "isPublic": false,
+          "ticker": "SPCX",
+          "isPublic": true,
           "host": "Friedberg",
           "stance": "bull",
           "conviction": "high",
@@ -6050,15 +6239,98 @@
             "competitive moat"
           ],
           "attributionConfidence": "high"
+        },
+        {
+          "id": "E198-x-Guest-6",
+          "episodeId": "E198",
+          "episodeNumber": 198,
+          "episodeDate": "2024-10-03T20:19:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bear",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Mark Cuban argues X faces a structural advertising problem because its free-speech-permissive content environment—including anti-semitic content and adult material accessible to minors—makes it toxic for brand advertisers who have better-scaled alternatives, making the business model fundamentally challenged.",
+          "quote": "There is no upside for being on Twitter right now, or X right now. And you add to that the porn. Kids 13 years old can go on that site and you can find any insane thing you want on X right now. And that also is a problem for advertisers.",
+          "quoteStartMs": 6984614,
+          "topics": [
+            "advertising",
+            "content moderation",
+            "business model"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Mark Cuban"
+        },
+        {
+          "id": "E196-starlink-spacex-Sacks-4",
+          "episodeId": "E196",
+          "episodeNumber": 196,
+          "episodeDate": "2024-09-20T19:58:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Sacks argues Starlink has already solved rural internet and is the best solution available, but is being unfairly blocked by the Biden-Harris administration for political reasons rather than technical ones.",
+          "quote": "the Biden-Harris administration doesn't want to admit that Elon has the best solution for rural internet, just like they couldn't admit he made the best electric cars.",
+          "quoteStartMs": 2221377,
+          "topics": [
+            "rural broadband",
+            "government policy",
+            "competitive position"
+          ],
+          "attributionConfidence": "high"
         }
       ],
-      "synthesis": "Across all hosts and guests, the collective stance on SpaceX is strongly bullish, with conviction built on multiple reinforcing layers: launch cost leadership, Starlink's revenue engine, and a rapidly expanding AI/compute business. Friedberg and Chamath consistently emphasize SpaceX's unmatched position in the launch market — driven by Starship's reusability milestones and a path to ~$10/kg launch costs — while Chamath, Sacks, and guests Brad Gerstner and Gavin Baker have grown increasingly bullish on the xAI/EWS hyperscaler angle, arguing that SpaceX's ability to build data centers faster and cheaper than anyone, combined with anchor tenants like Anthropic, justifies a 40–50x revenue multiple at IPO and a multi-trillion-dollar valuation. The one notable point of disagreement concerns the IPO itself: while Chamath (April–May 2026) argues SpaceX should IPO as soon as possible — both to lead the IPO queue and to allow him to reduce personal risk exposure — his earlier contrarian take (January 2026) was that SpaceX might instead reverse-merge into Tesla rather than pursue a traditional IPO, a view not echoed by any other host. Jason's bullish read on the Cursor acquisition as accretive to SpaceX's IPO story is directionally shared by Chamath and Sacks, though Jason uniquely frames it through a coding-leaderboard competitive lens tied to a $2T valuation target.",
+      "synthesis": "The hosts and guests are broadly and increasingly bullish on SpaceX and its constellation of related assets — Starlink, xAI, and now the emerging Elon Web Services hyperscaler business — with conviction rising over time as milestones accumulate. On the core launch and Starlink businesses, Chamath and Friedberg agree that SpaceX is the cheapest, most reliable launch provider with no near-term competitor, and Friedberg and Chamath see Starlink scaling from 4 million to potentially 100+ million subscribers; Sacks adds that political obstruction, not technical merit, is the main barrier to broader Starlink adoption. On xAI and Grok, there is near-unanimous bullishness from Friedberg, Chamath, Sacks, and repeat guests Gavin Baker and Antonio Gracias, who collectively cite the Colossus cluster's engineering feat, Grok's rapid benchmark progression from competitive to best-in-class (Grok 3 through Grok 4), and the synergistic distribution advantage of X integration as compounding moats — with Chamath and Baker going furthest in claiming Grok 4 is now meaningfully ahead of all rivals. The main point of disagreement is structural: guest Mark Cuban is bearish on X's advertising business due to brand-safety concerns, while Antonio Gracias and Brad Gerstner argue the X turnaround and xAI compute monetization (including deals with Anthropic and Cursor) have resolved the platform's financial challenges; additionally, Chamath holds a contrarian view that SpaceX will not IPO independently but reverse-merge into Tesla, while Friedberg, Jason, Baker, and Chamath (in other remarks) all anticipate and eagerly await a standalone IPO at valuations ranging up to $2T+ on 40–50x revenue multiples.",
       "netStance": "bull",
-      "firstMentioned": "2024-10-18T22:49:00.000Z",
+      "firstMentioned": "2024-09-20T19:58:00.000Z",
       "lastMentioned": "2026-05-22T22:46:00.000Z",
-      "mentionCount": 15,
-      "market": null,
-      "description": "Develops and launches rockets and spacecraft; operates the Starlink satellite internet network.",
+      "mentionCount": 34,
+      "market": {
+        "ticker": "SPCX",
+        "sourceSymbol": "SPCX",
+        "currency": "USD",
+        "asOf": "2026-06-17",
+        "anchorDate": "2024-09-20",
+        "basePrice": 160.95,
+        "latestPrice": 197.165,
+        "returns": {
+          "1m": 0,
+          "3m": 0,
+          "6m": 0,
+          "1y": 0,
+          "since": 0.22500776638707676
+        },
+        "history": [
+          [
+            "2026-06-12",
+            160.95
+          ],
+          [
+            "2026-06-15",
+            192.5
+          ],
+          [
+            "2026-06-16",
+            201.8
+          ],
+          [
+            "2026-06-17",
+            197.165
+          ]
+        ],
+        "source": "yahoo"
+      },
+      "description": "Designs, manufactures, and launches rockets and spacecraft, providing commercial and government space transportation services.",
       "domain": "spacex.com"
     },
     {
@@ -6229,13 +6501,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-03-08",
         "basePrice": 40,
-        "latestPrice": 118.99,
+        "latestPrice": 119.53,
         "returns": {
           "1m": 0.09024999999999998,
           "3m": 3.0524999999999998,
           "6m": 1.3387499999999999,
           "1y": 0.86025,
-          "since": 1.9747499999999998
+          "since": 1.98825
         },
         "history": [
           [
@@ -6444,7 +6716,7 @@
           ],
           [
             "2026-06-17",
-            118.99
+            119.53
           ]
         ],
         "source": "yahoo"
@@ -6639,13 +6911,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-04-11",
         "basePrice": 18.63,
-        "latestPrice": 11.475,
+        "latestPrice": 11.455,
         "returns": {
           "1m": -0.015029522275898958,
           "3m": -0.19914117015566288,
           "6m": -0.3462157809983897,
           "1y": -0.42673107890499196,
-          "since": -0.38405797101449274
+          "since": -0.3851315083199141
         },
         "history": [
           [
@@ -6890,7 +7162,7 @@
           ],
           [
             "2026-06-17",
-            11.475
+            11.455
           ]
         ],
         "source": "yahoo"
@@ -8588,13 +8860,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-05-10",
         "basePrice": 168.65,
-        "latestPrice": 364.15,
+        "latestPrice": 365.05,
         "returns": {
           "1m": 0.03771123628817068,
           "3m": -0.03771123628817085,
           "6m": 0.06937444411503106,
           "1y": -0.06042099021642453,
-          "since": 1.1592054550844944
+          "since": 1.1645419507856507
         },
         "history": [
           [
@@ -8835,7 +9107,7 @@
           ],
           [
             "2026-06-17",
-            364.15
+            365.05
           ]
         ],
         "source": "yahoo"
@@ -9211,13 +9483,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-05-31",
         "basePrice": 234.44,
-        "latestPrice": 158.55,
+        "latestPrice": 158.755,
         "returns": {
           "1m": 0.09285958027640327,
           "3m": 0.05809588807370758,
           "6m": 0.41191776147415116,
           "1y": 0.11593584712506401,
-          "since": -0.32370755843712673
+          "since": -0.32283313427742705
         },
         "history": [
           [
@@ -9450,7 +9722,7 @@
           ],
           [
             "2026-06-17",
-            158.55
+            158.755
           ]
         ],
         "source": "yahoo"
@@ -9502,13 +9774,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2026-05-15",
         "basePrice": 325.75,
-        "latestPrice": 333.985,
+        "latestPrice": 333.3,
         "returns": {
           "1m": -0.005924788948580221,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": 0.02528012279355338
+          "since": 0.02317728319263242
         },
         "history": [
           [
@@ -9601,7 +9873,7 @@
           ],
           [
             "2026-06-17",
-            333.985
+            333.3
           ]
         ],
         "source": "yahoo"
@@ -10174,13 +10446,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-06-14",
         "basePrice": 178.01,
-        "latestPrice": 398.265,
+        "latestPrice": 402.7,
         "returns": {
           "1m": 0.4192461097691141,
           "3m": 0.2739733722824561,
           "6m": 1.6010898264142464,
           "1y": 0.8489410707263637,
-          "since": 1.2373181281950452
+          "since": 1.2622324588506264
         },
         "history": [
           [
@@ -10409,7 +10681,7 @@
           ],
           [
             "2026-06-17",
-            398.265
+            402.7
           ]
         ],
         "source": "yahoo"
@@ -10461,13 +10733,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2026-05-01",
         "basePrice": 963.33,
-        "latestPrice": 1121.49,
+        "latestPrice": 1115.545,
         "returns": {
           "1m": 0.12339489063976,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": 0.1641804988944598
+          "since": 0.1580091972636584
         },
         "history": [
           [
@@ -10600,7 +10872,7 @@
           ],
           [
             "2026-06-17",
-            1121.49
+            1115.545
           ]
         ],
         "source": "yahoo"
@@ -10717,13 +10989,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-09-20",
         "basePrice": 248.29,
-        "latestPrice": 126.17,
+        "latestPrice": 127.34,
         "returns": {
           "1m": -0.01828506987796525,
           "3m": 0.0996818236739298,
           "6m": 0.008780055580168379,
           "1y": -0.02267509766804944,
-          "since": -0.49184421442667847
+          "since": -0.4871319827620927
         },
         "history": [
           [
@@ -10948,7 +11220,7 @@
           ],
           [
             "2026-06-17",
-            126.17
+            127.34
           ]
         ],
         "source": "yahoo"
@@ -11000,13 +11272,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2026-04-17",
         "basePrice": 207.86,
-        "latestPrice": 288.97,
+        "latestPrice": 290.1,
         "returns": {
           "1m": 0.2446358125661501,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": 0.390214567497354
+          "since": 0.3956509188877129
         },
         "history": [
           [
@@ -11174,8 +11446,12 @@
             274.5
           ],
           [
+            "2026-06-16",
+            280.88
+          ],
+          [
             "2026-06-17",
-            288.97
+            290.1
           ]
         ],
         "source": "yahoo"
@@ -11227,13 +11503,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2026-04-17",
         "basePrice": 10.8,
-        "latestPrice": 5.3913,
+        "latestPrice": 5.6923,
         "returns": {
           "1m": -0.6277777777777779,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": -0.5008055555555556
+          "since": -0.4729351851851852
         },
         "history": [
           [
@@ -11401,8 +11677,12 @@
             3.84
           ],
           [
+            "2026-06-16",
+            3.94
+          ],
+          [
             "2026-06-17",
-            5.3913
+            5.6923
           ]
         ],
         "source": "yahoo"
@@ -11543,13 +11823,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-06-21",
         "basePrice": 213.71,
-        "latestPrice": 236.31,
+        "latestPrice": 238.04,
         "returns": {
           "1m": 0.009077722146834484,
           "3m": 0.07407234102288139,
           "6m": 0.061438397828833445,
           "1y": null,
-          "since": 0.10575078377240182
+          "since": 0.11384586589303254
         },
         "history": [
           [
@@ -11754,7 +12034,7 @@
           ],
           [
             "2026-06-17",
-            236.31
+            238.04
           ]
         ],
         "source": "yahoo"
@@ -11806,13 +12086,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2026-03-27",
         "basePrice": 296.91,
-        "latestPrice": 226.295,
+        "latestPrice": 227.795,
         "returns": {
           "1m": -0.1263345795022062,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": -0.2378330133710553
+          "since": -0.2327809774005592
         },
         "history": [
           [
@@ -12041,7 +12321,7 @@
           ],
           [
             "2026-06-17",
-            226.295
+            227.795
           ]
         ],
         "source": "yahoo"
@@ -12356,13 +12636,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-06-20",
         "basePrice": 79.41,
-        "latestPrice": 116.27,
+        "latestPrice": 115.125,
         "returns": {
           "1m": -0.022541241657221912,
           "3m": -0.08172774209797248,
           "6m": -0.07946102505981617,
           "1y": 0.04671955673089042,
-          "since": 0.46417327792469465
+          "since": 0.44975443898753314
         },
         "history": [
           [
@@ -12591,7 +12871,7 @@
           ],
           [
             "2026-06-17",
-            116.27
+            115.125
           ]
         ],
         "source": "yahoo"
@@ -12689,13 +12969,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-12-13",
         "basePrice": 43.76,
-        "latestPrice": 84.245,
+        "latestPrice": 84.48,
         "returns": {
           "1m": -0.07381170018281528,
           "3m": -0.08935100548446062,
           "6m": -0.15607861060329065,
           "1y": 0.4536106032906765,
-          "since": 0.9251599634369289
+          "since": 0.930530164533821
         },
         "history": [
           [
@@ -12916,7 +13196,7 @@
           ],
           [
             "2026-06-17",
-            84.245
+            84.48
           ]
         ],
         "source": "yahoo"
@@ -13318,13 +13598,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-05-31",
         "basePrice": 215.3,
-        "latestPrice": 399.1,
+        "latestPrice": 400.4866,
         "returns": {
           "1m": 0.0012540640966092976,
           "3m": 0.0696237807710171,
           "6m": 0.13070134695773333,
           "1y": 0.4476079888527636,
-          "since": 0.8536925220622388
+          "since": 0.8601328379006038
         },
         "history": [
           [
@@ -13557,7 +13837,7 @@
           ],
           [
             "2026-06-17",
-            399.1
+            400.4866
           ]
         ],
         "source": "yahoo"
@@ -13608,13 +13888,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2026-02-13",
         "basePrice": 379.08,
-        "latestPrice": 359.87,
+        "latestPrice": 360.79,
         "returns": {
           "1m": -0.12456473567584671,
           "3m": -0.12132003798670468,
           "6m": null,
           "1y": null,
-          "since": -0.05067531919383766
+          "since": -0.04824839084098334
         },
         "history": [
           [
@@ -13786,8 +14066,12 @@
             354.91
           ],
           [
+            "2026-06-16",
+            366.13
+          ],
+          [
             "2026-06-17",
-            359.87
+            360.79
           ]
         ],
         "source": "yahoo"
@@ -13961,13 +14245,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-05-02",
         "basePrice": 189.98,
-        "latestPrice": 240.52,
+        "latestPrice": 240.225,
         "returns": {
           "1m": 0.08774607853458267,
           "3m": 0.11406463838298778,
           "6m": 0.3369828402989789,
           "1y": 0.4319928413517214,
-          "since": 0.2660280029476788
+          "since": 0.2644752079166228
         },
         "history": [
           [
@@ -14200,7 +14484,7 @@
           ],
           [
             "2026-06-17",
-            240.52
+            240.225
           ]
         ],
         "source": "yahoo"
@@ -14248,73 +14532,6 @@
       "market": null,
       "description": "Provides a cloud-based unified data analytics and AI platform built on Apache Spark and Delta Lake.",
       "domain": "databricks.com"
-    },
-    {
-      "slug": "spacex-xai",
-      "company": "SpaceX / xAI",
-      "ticker": null,
-      "isPublic": false,
-      "theses": [
-        {
-          "id": "E260-spacex-xai-Jason-8",
-          "episodeId": "E260",
-          "episodeNumber": 260,
-          "episodeDate": "2026-02-07T04:35:00.000Z",
-          "company": "SpaceX / xAI",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Jason",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Jason is strongly bullish on the SpaceX-xAI combination, arguing Musk's unmatched execution ability makes the space-based data center vision a certainty, and that the combined entity will change everything when it IPOs.",
-          "quote": "There is no stronger entrepreneur when it comes to execution. In the history of entrepreneurs than Elon... he will execute on this. And if he does, or when he does, I should say, it's going to change everything.",
-          "quoteStartMs": 4195430,
-          "topics": [
-            "M&A",
-            "AI infrastructure",
-            "space",
-            "execution"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E260-spacex-xai-Guest-7",
-          "episodeId": "E260",
-          "episodeNumber": 260,
-          "episodeDate": "2026-02-07T04:35:00.000Z",
-          "company": "SpaceX / xAI",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Brad Gerstner is strongly bullish on the SpaceX-xAI merger, arguing it combines the two largest TAMs — AI and space — under the world's greatest entrepreneur, with Starlink scaling rapidly and space-based data centers providing a structural cost advantage in compute power.",
-          "quote": "You're merging the two biggest TAMs in the world, right? All of artificial intelligence. And all of space together with the world's greatest entrepreneur... there will be dramatic retail demand and institutional demand who wanna bet on",
-          "quoteStartMs": 3711180,
-          "topics": [
-            "M&A",
-            "AI infrastructure",
-            "space",
-            "valuation"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Brad Gerstner"
-        }
-      ],
-      "synthesis": "Both Brad Gerstner (guest) and Jason are strongly bullish on the proposed SpaceX-xAI combination, with no notable disagreement between them. Gerstner frames the thesis around the convergence of what he sees as the two largest TAMs — AI and space — citing Starlink's rapid growth and the structural cost advantage of space-based data centers for compute. Jason echoes the conviction, anchoring his view specifically on Musk's track record of execution, arguing that a successful IPO of the combined entity would be a transformative market event. Both hosts treat the space-based data center concept as a key differentiator, and both anticipate strong investor demand upon a public offering.",
-      "netStance": "bull",
-      "firstMentioned": "2026-02-07T04:35:00.000Z",
-      "lastMentioned": "2026-02-07T04:35:00.000Z",
-      "mentionCount": 2,
-      "market": null,
-      "description": "SpaceX builds rockets and satellite networks; xAI develops large-scale artificial intelligence models.",
-      "domain": null
     },
     {
       "slug": "cper",
@@ -14381,13 +14598,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2026-01-10",
         "basePrice": 36.88,
-        "latestPrice": 39.465,
+        "latestPrice": 39.58,
         "returns": {
           "1m": -0.01491323210412159,
           "3m": -0.027386117136659574,
           "6m": null,
           "1y": null,
-          "since": 0.07009219088937095
+          "since": 0.0732104121475053
         },
         "history": [
           [
@@ -14608,7 +14825,7 @@
           ],
           [
             "2026-06-17",
-            39.465
+            39.58
           ]
         ],
         "source": "yahoo"
@@ -14833,13 +15050,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-06-29",
         "basePrice": 456.73,
-        "latestPrice": 385.25,
+        "latestPrice": 385.7551,
         "returns": {
           "1m": -0.06568432115254089,
           "3m": -0.05786788693538854,
           "6m": -0.06984432815886855,
           "1y": 0.08906793948284546,
-          "since": -0.15650384253278746
+          "since": -0.1553979375123158
         },
         "history": [
           [
@@ -15064,7 +15281,7 @@
           ],
           [
             "2026-06-17",
-            385.25
+            385.7551
           ]
         ],
         "source": "yahoo"
@@ -15359,13 +15576,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-01-25",
         "basePrice": 97.189,
-        "latestPrice": 78.1693,
+        "latestPrice": 77.91,
         "returns": {
           "1m": 0.005504738190536078,
           "3m": 0.13338958112543614,
           "6m": 0.2146333432795894,
           "1y": -0.11821296648797694,
-          "since": -0.19569807282717167
+          "since": -0.19836607023428576
         },
         "history": [
           [
@@ -15606,7 +15823,7 @@
           ],
           [
             "2026-06-17",
-            78.1693
+            77.91
           ]
         ],
         "source": "yahoo"
@@ -15764,13 +15981,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2026-01-10",
         "basePrice": 117.52,
-        "latestPrice": 105.7801,
+        "latestPrice": 108.545,
         "returns": {
           "1m": -0.2716133424098026,
           "3m": -0.4112491490810075,
           "6m": null,
           "1y": null,
-          "since": -0.099897038801906
+          "since": -0.07636997957794413
         },
         "history": [
           [
@@ -15991,7 +16208,7 @@
           ],
           [
             "2026-06-17",
-            105.7801
+            108.545
           ]
         ],
         "source": "yahoo"
@@ -16158,13 +16375,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-12-19",
         "basePrice": 1056.02,
-        "latestPrice": 1913.52,
+        "latestPrice": 1930.255,
         "returns": {
           "1m": 0.2557242287077896,
           "3m": 0.29390541845798385,
           "6m": null,
           "1y": null,
-          "since": 0.8120111361527244
+          "since": 0.827858373894434
         },
         "history": [
           [
@@ -16333,7 +16550,7 @@
           ],
           [
             "2026-06-17",
-            1913.52
+            1930.255
           ]
         ],
         "source": "yahoo"
@@ -16408,13 +16625,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-06-28",
         "basePrice": 55.98,
-        "latestPrice": 75.25,
+        "latestPrice": 75.13,
         "returns": {
           "1m": -0.07038227938549478,
           "3m": 0.024651661307609908,
           "6m": 0.24205073240443023,
           "1y": null,
-          "since": 0.3442300821722044
+          "since": 0.3420864594498035
         },
         "history": [
           [
@@ -16615,7 +16832,7 @@
           ],
           [
             "2026-06-17",
-            75.25
+            75.13
           ]
         ],
         "source": "yahoo"
@@ -16691,13 +16908,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-12-13",
         "basePrice": 29.71,
-        "latestPrice": 26.525,
+        "latestPrice": 26.506,
         "returns": {
           "1m": -0.028609895658027646,
           "3m": -0.0865028609895658,
           "6m": -0.09693705822955243,
           "1y": null,
-          "since": -0.1072029619656682
+          "since": -0.10784247728037699
         },
         "history": [
           [
@@ -16870,7 +17087,7 @@
           ],
           [
             "2026-06-17",
-            26.525
+            26.506
           ]
         ],
         "source": "yahoo"
@@ -17085,13 +17302,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-07-26",
         "basePrice": 27.18,
-        "latestPrice": 134.69,
+        "latestPrice": 135.105,
         "returns": {
           "1m": 0.13502575423105231,
           "3m": 0.6545253863134658,
           "6m": 1.7755702722590139,
           "1y": 4.8086828550404705,
-          "since": 3.955481972038263
+          "since": 3.970750551876379
         },
         "history": [
           [
@@ -17336,55 +17553,13 @@
           ],
           [
             "2026-06-17",
-            134.69
+            135.105
           ]
         ],
         "source": "yahoo"
       },
       "description": "Develops data analytics and AI software platforms for government intelligence and commercial enterprise clients.",
       "domain": "palantir.com"
-    },
-    {
-      "slug": "xai-x-twitter",
-      "company": "xAI / X (Twitter)",
-      "ticker": null,
-      "isPublic": false,
-      "theses": [
-        {
-          "id": "E249-xai-x-twitter-Guest-4",
-          "episodeId": "E249",
-          "episodeNumber": 249,
-          "episodeDate": "2025-10-31T20:11:00.000Z",
-          "company": "xAI / X (Twitter)",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Musk highlights X's integration with Grok as a major competitive differentiator — Grok will read 100M posts/day, enable semantic search, and power Grokipedia — positioning X/xAI as the best source of truth and a superior AI-driven information platform versus incumbents like Google Search and Wikipedia.",
-          "quote": "Grokpedia will, will, will, will succeed, I think very well because it'll, it'll, it is fundamentally a superior product to Wikipedia. It is, it is a better source of information.",
-          "quoteStartMs": 1030641,
-          "topics": [
-            "AI integration",
-            "product roadmap",
-            "competitive moat",
-            "Grokipedia"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Elon Musk"
-        }
-      ],
-      "synthesis": "The sole view represented comes from Elon Musk himself (appearing as a guest), who is highly bullish on the X/xAI combination. His core thesis is that integrating Grok deeply into X — processing 100 million posts per day to enable semantic search and power products like Grokipedia — creates a fundamentally superior AI-driven information platform that can displace incumbents such as Google Search and Wikipedia. No other hosts offered a thesis on this company, so there is no agreement or disagreement to note among the All-In panel. The conviction is entirely Musk's own, framed around real-time data advantages and product quality rather than financial metrics.",
-      "netStance": "bull",
-      "firstMentioned": "2025-10-31T20:11:00.000Z",
-      "lastMentioned": "2025-10-31T20:11:00.000Z",
-      "mentionCount": 1,
-      "market": null,
-      "description": "xAI is Elon Musk's AI research company; X (formerly Twitter) is a social media and messaging platform.",
-      "domain": "x.ai"
     },
     {
       "slug": "waymo",
@@ -17521,13 +17696,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-10-10",
         "basePrice": 214.9,
-        "latestPrice": 524.177,
+        "latestPrice": 523.205,
         "returns": {
           "1m": 0.13531875290832937,
           "3m": -0.03355048859934857,
           "6m": 0.14025127966496037,
           "1y": null,
-          "since": 1.4391670544439277
+          "since": 1.4346440204746396
         },
         "history": [
           [
@@ -17760,7 +17935,7 @@
           ],
           [
             "2026-06-17",
-            524.177
+            523.205
           ]
         ],
         "source": "yahoo"
@@ -17837,13 +18012,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-10-03",
         "basePrice": 200.69,
-        "latestPrice": 203.56,
+        "latestPrice": 203.29,
         "returns": {
           "1m": -0.0039862474463102865,
           "3m": 0.01828691015994826,
           "6m": 0.017290348298370617,
           "1y": null,
-          "since": 0.014300662713637972
+          "since": 0.012955304200508218
         },
         "history": [
           [
@@ -18084,7 +18259,7 @@
           ],
           [
             "2026-06-17",
-            203.56
+            203.29
           ]
         ],
         "source": "yahoo"
@@ -18217,13 +18392,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-10-03",
         "basePrice": 37.89,
-        "latestPrice": 27.39,
+        "latestPrice": 27.54,
         "returns": {
           "1m": -0.008973343890208587,
           "3m": 0.21166534705727094,
           "6m": -0.4196357878068092,
           "1y": null,
-          "since": -0.2771179730799683
+          "since": -0.27315914489311166
         },
         "history": [
           [
@@ -18464,7 +18639,7 @@
           ],
           [
             "2026-06-17",
-            27.39
+            27.54
           ]
         ],
         "source": "yahoo"
@@ -18590,13 +18765,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-08-23",
         "basePrice": 20.54,
-        "latestPrice": 121.172,
+        "latestPrice": 121.49,
         "returns": {
           "1m": 0.09834469328140212,
           "3m": 0.21080817916260963,
           "6m": 0.18159688412852973,
           "1y": 0.19522882181110038,
-          "since": 4.899318403115872
+          "since": 4.914800389483934
         },
         "history": [
           [
@@ -18829,105 +19004,13 @@
           ],
           [
             "2026-06-17",
-            121.172
+            121.49
           ]
         ],
         "source": "yahoo"
       },
       "description": "Semiconductor manufacturer designing and producing CPUs, chips, and computing hardware.",
       "domain": "intel.com"
-    },
-    {
-      "slug": "xai-grok",
-      "company": "xAI / Grok",
-      "ticker": null,
-      "isPublic": false,
-      "theses": [
-        {
-          "id": "E236-xai-grok-Guest-0",
-          "episodeId": "E236",
-          "episodeNumber": 236,
-          "episodeDate": "2025-07-19T02:21:00.000Z",
-          "company": "xAI / Grok",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Gavin Baker argues Grok 4 represents the biggest AI leapfrog in a long time, scoring roughly twice as well as Google/OpenAI/Anthropic on semi-private benchmarks, and that a natural distribution partnership with Apple would further entrench its competitive position.",
-          "quote": "This is the biggest leapfrog we've seen in quite some time... it did roughly twice as good as the state-of-the-art Google, OpenAI, and Anthropic models... xAI and Apple are natural partners.",
-          "quoteStartMs": 1218000,
-          "topics": [
-            "AI models",
-            "benchmarks",
-            "distribution",
-            "partnerships"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Gavin Baker"
-        },
-        {
-          "id": "E235-xai-grok-Chamath-0",
-          "episodeId": "E235",
-          "episodeNumber": 235,
-          "episodeDate": "2025-07-11T21:28:00.000Z",
-          "company": "xAI / Grok",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Chamath argues that xAI's architectural bet on general computation over human-labeled data — the 'Bitter Lesson' approach — has vaulted Grok 4 ahead of all rivals in under 2.5 years, and that this compute-scaling strategy will continue to widen the lead over competitors reliant on human labeling.",
-          "quote": "starting in March of 2023, so we're talking about less than 2.5 years, what this team has accomplished and how how far ahead they are of everybody else, as demonstrated by this.",
-          "quoteStartMs": 1250291,
-          "topics": [
-            "AI benchmarks",
-            "compute scaling",
-            "competitive moat",
-            "synthetic data"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E216-xai-grok-Chamath-2",
-          "episodeId": "E216",
-          "episodeNumber": 216,
-          "episodeDate": "2025-02-21T23:41:00.000Z",
-          "company": "xAI / Grok",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Chamath is impressed by xAI's rapid development of Grok 3, arguing the Colossus cluster proved pre-training scale still yields major gains and that xAI's keiretsu-style synergies with Tesla and SpaceX give it a unique competitive advantage.",
-          "quote": "the rate of change of this... Those guys have been doing it for years. These guys have been doing it for a year, and they did all of this MacGyver engineering and were able to pull this off.",
-          "quoteStartMs": 4969000,
-          "topics": [
-            "AI",
-            "LLM",
-            "competitive position",
-            "pre-training"
-          ],
-          "attributionConfidence": "high"
-        }
-      ],
-      "synthesis": "The hosts and guest are broadly bullish on xAI/Grok, with conviction increasing over time as the models have advanced. Chamath's view evolved from impressed-but-neutral in early 2025 — crediting xAI's \"MacGyver engineering\" on the Colossus cluster and its keiretsu-style synergies with Tesla and SpaceX — to strongly bullish by mid-2025, arguing that xAI's compute-scaling \"Bitter Lesson\" approach has vaulted Grok 4 ahead of all rivals in under 2.5 years. Guest Gavin Baker fully corroborates the bull case, calling Grok 4 the biggest AI leapfrog in a long time and citing semi-private benchmark scores roughly twice those of Google, OpenAI, and Anthropic, while adding that a natural Apple distribution partnership could further entrench xAI's lead. No meaningful disagreement is present across the views; the only distinction is Chamath's earlier neutral stance, which has since shifted to match the high-conviction bullish position shared by all contributors.",
-      "netStance": "bull",
-      "firstMentioned": "2025-02-21T23:41:00.000Z",
-      "lastMentioned": "2025-07-19T02:21:00.000Z",
-      "mentionCount": 3,
-      "market": null,
-      "description": "Elon Musk-founded AI company developing the Grok large language model and AI research systems.",
-      "domain": "x.ai"
     },
     {
       "slug": "perplexity",
@@ -19236,13 +19319,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-07-04",
         "basePrice": 376.93,
-        "latestPrice": 202.335,
+        "latestPrice": 204.37,
         "returns": {
           "1m": -0.10102671583583155,
           "3m": -0.07107420475950448,
           "6m": -0.12036717692940335,
           "1y": null,
-          "since": -0.46320271668479557
+          "since": -0.45780383625606874
         },
         "history": [
           [
@@ -19487,7 +19570,7 @@
           ],
           [
             "2026-06-17",
-            202.335
+            204.37
           ]
         ],
         "source": "yahoo"
@@ -19611,13 +19694,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-10-18",
         "basePrice": 79.16,
-        "latestPrice": 72.24,
+        "latestPrice": 73.205,
         "returns": {
           "1m": -0.12417887822132388,
           "3m": -0.1442647801920162,
           "6m": -0.07882769075290545,
           "1y": 0.183678625568469,
-          "since": -0.08741788782213242
+          "since": -0.07522738756947951
         },
         "history": [
           [
@@ -19862,7 +19945,7 @@
           ],
           [
             "2026-06-17",
-            72.24
+            73.205
           ]
         ],
         "source": "yahoo"
@@ -20109,13 +20192,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-05-17",
         "basePrice": 62.78,
-        "latestPrice": 100.12,
+        "latestPrice": 99.735,
         "returns": {
           "1m": 0.06865243708187324,
           "3m": 0.11771264733991718,
           "6m": 0.24896463841987887,
           "1y": 0.5289901242433895,
-          "since": 0.5947754061803122
+          "since": 0.5886428798980566
         },
         "history": [
           [
@@ -20340,7 +20423,7 @@
           ],
           [
             "2026-06-17",
-            100.12
+            99.735
           ]
         ],
         "source": "yahoo"
@@ -20392,13 +20475,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-05-17",
         "basePrice": 315.89,
-        "latestPrice": 407.68,
+        "latestPrice": 408.525,
         "returns": {
           "1m": -0.02222292570198481,
           "3m": -0.023425876096109334,
           "6m": 0.014657000854727898,
           "1y": 0.23818417803665837,
-          "since": 0.2905758333597139
+          "since": 0.29325081515717494
         },
         "history": [
           [
@@ -20623,7 +20706,7 @@
           ],
           [
             "2026-06-17",
-            407.68
+            408.525
           ]
         ],
         "source": "yahoo"
@@ -20855,13 +20938,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-05-09",
         "basePrice": 491.78,
-        "latestPrice": 575.3625,
+        "latestPrice": 574.91,
         "returns": {
           "1m": 0.030359103664240123,
           "3m": -0.056651348163813,
           "6m": -0.11952499084956683,
           "1y": 0.06092155028671365,
-          "since": 0.16995912806539507
+          "since": 0.16903900117938916
         },
         "history": [
           [
@@ -21090,7 +21173,7 @@
           ],
           [
             "2026-06-17",
-            575.3625
+            574.91
           ]
         ],
         "source": "yahoo"
@@ -21166,13 +21249,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-12-20",
         "basePrice": 32.03,
-        "latestPrice": 25.215,
+        "latestPrice": 25.34,
         "returns": {
           "1m": -0.005307524196066241,
           "3m": -0.05650952232282242,
           "6m": 0.07118326568841714,
           "1y": -0.059007180768029986,
-          "since": -0.21276927880112398
+          "since": -0.20886668748048706
         },
         "history": [
           [
@@ -21389,7 +21472,7 @@
           ],
           [
             "2026-06-17",
-            25.215
+            25.34
           ]
         ],
         "source": "yahoo"
@@ -21514,13 +21597,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-10-18",
         "basePrice": 33.46,
-        "latestPrice": 48.26,
+        "latestPrice": 48.46,
         "returns": {
           "1m": -0.04692169754931262,
           "3m": -0.12791392707710703,
           "6m": -0.3290496114763898,
           "1y": 0.5965331739390317,
-          "since": 0.4423191870890615
+          "since": 0.4482964734010759
         },
         "history": [
           [
@@ -21765,7 +21848,7 @@
           ],
           [
             "2026-06-17",
-            48.26
+            48.46
           ]
         ],
         "source": "yahoo"
@@ -21816,13 +21899,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-04-05",
         "basePrice": 47.12,
-        "latestPrice": 7.64,
+        "latestPrice": 7.7,
         "returns": {
           "1m": -0.5108234295415959,
           "3m": -0.692062818336163,
           "6m": -0.7232597623089984,
           "1y": -0.8834889643463497,
-          "since": -0.8378607809847198
+          "since": -0.8365874363327673
         },
         "history": [
           [
@@ -22027,7 +22110,7 @@
           ],
           [
             "2026-06-17",
-            7.64
+            7.7
           ]
         ],
         "source": "yahoo"
@@ -22281,13 +22364,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-08-16",
         "basePrice": 179.99,
-        "latestPrice": 227,
+        "latestPrice": 229.43,
         "returns": {
           "1m": -0.1357853214067448,
           "3m": -0.2006778154341908,
           "6m": 0.027668203789099337,
           "1y": 0.29123840213345176,
-          "since": 0.2611811767320406
+          "since": 0.2746819267737096
         },
         "history": [
           [
@@ -22524,7 +22607,7 @@
           ],
           [
             "2026-06-17",
-            227
+            229.43
           ]
         ],
         "source": "yahoo"
@@ -22756,13 +22839,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-01-04",
         "basePrice": 85.52,
-        "latestPrice": 109.75,
+        "latestPrice": 109.38,
         "returns": {
           "1m": 0.1967960710944808,
           "3m": 0.36272217025257264,
           "6m": 0.24263330215154352,
           "1y": 0.8271749298409729,
-          "since": 0.2833255378858747
+          "since": 0.27899906454630496
         },
         "history": [
           [
@@ -22975,7 +23058,7 @@
           ],
           [
             "2026-06-17",
-            109.75
+            109.38
           ]
         ],
         "source": "yahoo"
@@ -23224,13 +23307,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-01-25",
         "basePrice": 275,
-        "latestPrice": 271.03,
+        "latestPrice": 271.35,
         "returns": {
           "1m": -0.03887272727272727,
           "3m": -0.1891272727272727,
           "6m": 0.19036363636363646,
           "1y": 0.03734545454545448,
-          "since": -0.014436363636363735
+          "since": -0.01327272727272719
         },
         "history": [
           [
@@ -23466,8 +23549,12 @@
             250.67
           ],
           [
+            "2026-06-16",
+            268
+          ],
+          [
             "2026-06-17",
-            271.03
+            271.35
           ]
         ],
         "source": "yahoo"
@@ -23519,13 +23606,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-01-25",
         "basePrice": 202.13,
-        "latestPrice": 399.35,
+        "latestPrice": 398.62,
         "returns": {
           "1m": 0.002028397565922904,
           "3m": -0.04858259535942212,
           "6m": 0.43561074555978835,
           "1y": 0.6071340226586851,
-          "since": 0.9757087023202891
+          "since": 0.9720971651907189
         },
         "history": [
           [
@@ -23766,7 +23853,7 @@
           ],
           [
             "2026-06-17",
-            399.35
+            398.62
           ]
         ],
         "source": "yahoo"
@@ -24135,13 +24222,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-01-04",
         "basePrice": 179.49,
-        "latestPrice": 169.685,
+        "latestPrice": 170.45,
         "returns": {
           "1m": 0.1995654354003008,
           "3m": -0.5157947517967575,
           "6m": -0.14552342748899663,
           "1y": 0.3596857763663714,
-          "since": -0.0546269987185916
+          "since": -0.05036492283692696
         },
         "history": [
           [
@@ -24354,7 +24441,7 @@
           ],
           [
             "2026-06-17",
-            169.685
+            170.45
           ]
         ],
         "source": "yahoo"
@@ -24406,13 +24493,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2025-01-04",
         "basePrice": 175.02,
-        "latestPrice": 171.215,
+        "latestPrice": 172.982,
         "returns": {
           "1m": 0.11170151982630547,
           "3m": -0.06776368415038289,
           "6m": 0.4106387841389554,
           "1y": 0.29539481202148316,
-          "since": -0.02174037252885388
+          "since": -0.011644383499028745
         },
         "history": [
           [
@@ -24625,7 +24712,7 @@
           ],
           [
             "2026-06-17",
-            171.215
+            172.982
           ]
         ],
         "source": "yahoo"
@@ -24678,13 +24765,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-12-07",
         "basePrice": 365.34,
-        "latestPrice": 122.17,
+        "latestPrice": 123.39,
         "returns": {
           "1m": -0.06544588602397758,
           "3m": -0.21393770186675418,
           "6m": 0.07330158208791819,
           "1y": -0.4972080801445229,
-          "since": -0.6655991678983959
+          "since": -0.6622598127771391
         },
         "history": [
           [
@@ -24909,7 +24996,7 @@
           ],
           [
             "2026-06-17",
-            122.17
+            123.39
           ]
         ],
         "source": "yahoo"
@@ -25001,13 +25088,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-11-01",
         "basePrice": 41.76,
-        "latestPrice": 57.55,
+        "latestPrice": 57.555,
         "returns": {
           "1m": 0.12643678160919544,
           "3m": 0.1065613026819924,
           "6m": -0.03807471264367807,
           "1y": 0.2825670498084292,
-          "since": 0.37811302681992337
+          "since": 0.3782327586206897
         },
         "history": [
           [
@@ -25244,7 +25331,7 @@
           ],
           [
             "2026-06-17",
-            57.55
+            57.555
           ]
         ],
         "source": "yahoo"
@@ -25396,13 +25483,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-08-16",
         "basePrice": 94.81,
-        "latestPrice": 100.56,
+        "latestPrice": 100.98,
         "returns": {
           "1m": 0.01582111591604261,
           "3m": 0.0589600253137855,
           "6m": 0.19217382132686422,
           "1y": -0.023942622086277777,
-          "since": 0.060647611011496676
+          "since": 0.06507752346798862
         },
         "history": [
           [
@@ -25639,54 +25726,13 @@
           ],
           [
             "2026-06-17",
-            100.56
+            100.98
           ]
         ],
         "source": "yahoo"
       },
       "description": "Global coffeehouse chain selling coffee, beverages, and food through company-operated and licensed stores.",
       "domain": "starbucks.com"
-    },
-    {
-      "slug": "spacex-starlink",
-      "company": "SpaceX / Starlink",
-      "ticker": null,
-      "isPublic": false,
-      "theses": [
-        {
-          "id": "E200-spacex-starlink-Friedberg-1",
-          "episodeId": "E200",
-          "episodeNumber": 200,
-          "episodeDate": "2024-10-18T22:49:00.000Z",
-          "company": "SpaceX / Starlink",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Friedberg",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Friedberg projects Starlink could grow from 4 million to 100 million or more subscribers, potentially becoming one of the largest subscription businesses on earth, driven by satellite-to-phone expansion.",
-          "quote": "Starlink's running at 4 million subs right now. That's like $100 a month, 4 million subs... If we can get satellite to phone and you can get Starlink more broadly available, this could be a 100 million subscriber business.",
-          "quoteStartMs": 1282620,
-          "topics": [
-            "Starlink",
-            "subscribers",
-            "growth",
-            "ISP disruption"
-          ],
-          "attributionConfidence": "high"
-        }
-      ],
-      "synthesis": "Based on the available input, only Friedberg has offered a thesis on SpaceX / Starlink, making a high-conviction bull case. He argues that Starlink's current base of 4 million subscribers — generating roughly $100/month each — is just the beginning, with a potential path to 100+ million subscribers driven by satellite-to-phone capability and broader global availability displacing legacy ISPs and cellular providers. If realized, he believes this would make Starlink one of the largest subscription businesses in the world. No other hosts provided views, so no agreement or disagreement can be noted.",
-      "netStance": "bull",
-      "firstMentioned": "2024-10-18T22:49:00.000Z",
-      "lastMentioned": "2024-10-18T22:49:00.000Z",
-      "mentionCount": 1,
-      "market": null,
-      "description": "Private aerospace company developing rockets and operating Starlink satellite broadband internet service.",
-      "domain": "spacex.com"
     },
     {
       "slug": "expe",
@@ -25782,13 +25828,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-10-18",
         "basePrice": 159.61,
-        "latestPrice": 240.27,
+        "latestPrice": 243.05,
         "returns": {
           "1m": 0.13025499655410055,
           "3m": 0.1365202681536244,
           "6m": -0.08107261449783863,
           "1y": 0.3673955265960778,
-          "since": 0.5053568072175928
+          "since": 0.5227742622642692
         },
         "history": [
           [
@@ -26033,7 +26079,7 @@
           ],
           [
             "2026-06-17",
-            240.27
+            243.05
           ]
         ],
         "source": "yahoo"
@@ -26122,46 +26168,6 @@
       "market": null,
       "description": "Cost Plus Drugs is a pharmacy platform offering transparent, low-cost generic prescription medications directly to consumers.",
       "domain": "costplusdrugs.com"
-    },
-    {
-      "slug": "starlink-spacex",
-      "company": "Starlink / SpaceX",
-      "ticker": null,
-      "isPublic": false,
-      "theses": [
-        {
-          "id": "E196-starlink-spacex-Sacks-4",
-          "episodeId": "E196",
-          "episodeNumber": 196,
-          "episodeDate": "2024-09-20T19:58:00.000Z",
-          "company": "Starlink / SpaceX",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Sacks",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Sacks argues Starlink has already solved rural internet and is the best solution available, but is being unfairly blocked by the Biden-Harris administration for political reasons rather than technical ones.",
-          "quote": "the Biden-Harris administration doesn't want to admit that Elon has the best solution for rural internet, just like they couldn't admit he made the best electric cars.",
-          "quoteStartMs": 2221377,
-          "topics": [
-            "rural broadband",
-            "government policy",
-            "competitive position"
-          ],
-          "attributionConfidence": "high"
-        }
-      ],
-      "synthesis": "Among the hosts represented, only Sacks offers a view on Starlink, making a high-conviction bullish case as of September 2024. He argues that Starlink has effectively solved the rural internet problem and represents the best available solution, drawing a parallel to Tesla's position in electric vehicles. His primary criticism is directed not at the company but at the Biden-Harris administration, which he contends is blocking Starlink's broader adoption for political reasons rather than on technical or merit-based grounds. No other hosts provided theses, so no cross-host agreement or disagreement can be assessed.",
-      "netStance": "bull",
-      "firstMentioned": "2024-09-20T19:58:00.000Z",
-      "lastMentioned": "2024-09-20T19:58:00.000Z",
-      "mentionCount": 1,
-      "market": null,
-      "description": "SpaceX is a private aerospace company; Starlink is its satellite internet service providing global broadband coverage.",
-      "domain": "spacex.com"
     },
     {
       "slug": "abnb",
@@ -26254,13 +26260,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-08-09",
         "basePrice": 115.08,
-        "latestPrice": 141.6,
+        "latestPrice": 143.0301,
         "returns": {
           "1m": 0.011122697254084126,
           "3m": 0.19395203336809183,
           "6m": 0.1751824817518249,
           "1y": 0.027980535279805343,
-          "since": 0.23044838373305523
+          "since": 0.2428753910323254
         },
         "history": [
           [
@@ -26497,7 +26503,7 @@
           ],
           [
             "2026-06-17",
-            141.6
+            143.0301
           ]
         ],
         "source": "yahoo"
@@ -26547,13 +26553,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-09-06",
         "basePrice": 167.91,
-        "latestPrice": 279.68,
+        "latestPrice": 280.705,
         "returns": {
           "1m": 0.0063129057233041646,
           "3m": 0.2086832231552617,
           "6m": 0.06801262581144671,
           "1y": 0.17551069025072955,
-          "since": 0.6656542195223633
+          "since": 0.6717586802453694
         },
         "history": [
           [
@@ -26782,7 +26788,7 @@
           ],
           [
             "2026-06-17",
-            279.68
+            280.705
           ]
         ],
         "source": "yahoo"
@@ -26834,13 +26840,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-08-16",
         "basePrice": 73.45,
-        "latestPrice": 119.19,
+        "latestPrice": 118.92,
         "returns": {
           "1m": 0.0968005445881552,
           "3m": 0.14472430224642607,
           "6m": 0.41293396868618104,
           "1y": 0.371000680735194,
-          "since": 0.6227365554799182
+          "since": 0.6190605854322668
         },
         "history": [
           [
@@ -27077,7 +27083,7 @@
           ],
           [
             "2026-06-17",
-            119.19
+            118.92
           ]
         ],
         "source": "yahoo"
@@ -27128,13 +27134,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-08-16",
         "basePrice": 52.47,
-        "latestPrice": 32.24,
+        "latestPrice": 32.345,
         "returns": {
           "1m": 0.09891366495140076,
           "3m": 0.12083095101963033,
           "6m": 0.03849818944158573,
           "1y": -0.17324185248713544,
-          "since": -0.38555364970459305
+          "since": -0.38355250619401565
         },
         "history": [
           [
@@ -27371,7 +27377,7 @@
           ],
           [
             "2026-06-17",
-            32.24
+            32.345
           ]
         ],
         "source": "yahoo"
@@ -27463,13 +27469,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-07-26",
         "basePrice": 256.16,
-        "latestPrice": 681.945,
+        "latestPrice": 686.28,
         "returns": {
           "1m": 0.0379059962523422,
           "3m": 0.17629606495940023,
           "6m": 0.45904903185509044,
           "1y": 0.8433010618363521,
-          "since": 1.6621837913803872
+          "since": 1.6791068082448466
         },
         "history": [
           [
@@ -27714,7 +27720,7 @@
           ],
           [
             "2026-06-17",
-            681.945
+            686.28
           ]
         ],
         "source": "yahoo"
@@ -27765,13 +27771,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-07-26",
         "basePrice": 37.51,
-        "latestPrice": 52.132,
+        "latestPrice": 51.855,
         "returns": {
           "1m": 0.09517462010130633,
           "3m": 0.11996800853105839,
           "6m": 0.33697680618501735,
           "1y": 0.5035990402559318,
-          "since": 0.38981604905358574
+          "since": 0.38243135163956277
         },
         "history": [
           [
@@ -28016,7 +28022,7 @@
           ],
           [
             "2026-06-17",
-            52.132
+            51.855
           ]
         ],
         "source": "yahoo"
@@ -28107,13 +28113,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-07-04",
         "basePrice": 39.71,
-        "latestPrice": 27.53,
+        "latestPrice": 28,
         "returns": {
           "1m": 0.09821203727020898,
           "3m": 0.055653487786451794,
           "6m": 0.45152354570637115,
           "1y": 0.0007554772097708672,
-          "since": -0.30672374716696044
+          "since": -0.2948879375472173
         },
         "history": [
           [
@@ -28338,7 +28344,7 @@
           ],
           [
             "2026-06-17",
-            27.53
+            28
           ]
         ],
         "source": "yahoo"
@@ -28455,13 +28461,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-06-07",
         "basePrice": 28.22,
-        "latestPrice": 21.485,
+        "latestPrice": 21.705,
         "returns": {
           "1m": -0.13359319631467043,
           "3m": -0.14068036853295532,
           "6m": -0.010276399716513082,
           "1y": 0.07512402551382003,
-          "since": -0.23866052445074415
+          "since": -0.2308646350106308
         },
         "history": [
           [
@@ -28694,7 +28700,7 @@
           ],
           [
             "2026-06-17",
-            21.485
+            21.705
           ]
         ],
         "source": "yahoo"
@@ -28745,13 +28751,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-05-31",
         "basePrice": 139.56,
-        "latestPrice": 413.47,
+        "latestPrice": 418.245,
         "returns": {
           "1m": 0.023359128690169036,
           "3m": -0.2062912009171683,
           "6m": -0.09830897105187732,
           "1y": -0.22556606477500718,
-          "since": 1.9626683863571226
+          "since": 1.9968830610490111
         },
         "history": [
           [
@@ -28984,7 +28990,7 @@
           ],
           [
             "2026-06-17",
-            413.47
+            418.245
           ]
         ],
         "source": "yahoo"
@@ -29035,13 +29041,13 @@
         "asOf": "2026-06-17",
         "anchorDate": "2024-05-24",
         "basePrice": 258.11,
-        "latestPrice": 285.31,
+        "latestPrice": 285.1,
         "returns": {
           "1m": 0.008794699934136537,
           "3m": 0.11843787532447403,
           "6m": 0.14753399713300525,
           "1y": 0.2202161868970593,
-          "since": 0.10538142652357517
+          "since": 0.10456781992173882
         },
         "history": [
           [
@@ -29278,77 +29284,13 @@
           ],
           [
             "2026-06-17",
-            285.31
+            285.1
           ]
         ],
         "source": "yahoo"
       },
       "description": "Global fast-food chain operating and franchising burger-focused quick-service restaurants in over 100 countries.",
       "domain": "mcdonalds.com"
-    },
-    {
-      "slug": "openai-chatgpt",
-      "company": "OpenAI / ChatGPT",
-      "ticker": null,
-      "isPublic": false,
-      "theses": [
-        {
-          "id": "E179-openai-chatgpt-Sacks-1",
-          "episodeId": "E179",
-          "episodeNumber": 179,
-          "episodeDate": "2024-05-17T20:23:00.000Z",
-          "company": "OpenAI / ChatGPT",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Sacks",
-          "stance": "bull",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Sacks argues GPT-4o's omnichannel speed and performance improvements will unlock a wave of new applications and a B2B monetization model via metered API usage, making it a more attractive business than B2C subscriptions.",
-          "quote": "If they're metering the usage of the models and providing the best dev tools, I think there is a business model there.",
-          "quoteStartMs": 1554213,
-          "topics": [
-            "AI capabilities",
-            "business model",
-            "B2B"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E179-openai-chatgpt-Chamath-0",
-          "episodeId": "E179",
-          "episodeNumber": 179,
-          "episodeDate": "2024-05-17T20:23:00.000Z",
-          "company": "OpenAI / ChatGPT",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Chamath argues ChatGPT's consumer growth has plateaued and that the 'Facebook of AI' has yet to be created, as the market is still in a primordial phase where basic capabilities will become table stakes within ~2 years before real businesses emerge.",
-          "quote": "I will maintain my perspective here, which is the 'Facebook of AI' has yet to be created.",
-          "quoteStartMs": 1304347,
-          "topics": [
-            "consumer growth",
-            "AI competition",
-            "product lifecycle"
-          ],
-          "attributionConfidence": "high"
-        }
-      ],
-      "synthesis": "The hosts are split on OpenAI's trajectory, with Sacks taking a moderately bullish stance and Chamath remaining neutral. Sacks sees OpenAI's strongest opportunity in B2B and enterprise API monetization, arguing that GPT-4o's multimodal speed improvements unlock valuable new applications built on top of the platform. Chamath, by contrast, is skeptical of OpenAI's consumer momentum, contending that ChatGPT's growth has plateaued and that AI capabilities are being broadly commoditized, leaving the defining \"Facebook of AI\" consumer platform yet to be built. Both hosts implicitly agree that the B2C subscription model is not the primary value driver, but differ on whether OpenAI itself is well-positioned to capture the larger opportunity ahead.",
-      "netStance": "bull",
-      "firstMentioned": "2024-05-17T20:23:00.000Z",
-      "lastMentioned": "2024-05-17T20:23:00.000Z",
-      "mentionCount": 2,
-      "market": null,
-      "description": "Develops AI research and products including the ChatGPT conversational AI assistant and GPT model APIs.",
-      "domain": "openai.com"
     },
     {
       "slug": "glue",
@@ -29547,12 +29489,12 @@
     "inceptionDate": "2024-06-14",
     "benchmarkSymbol": "SPY",
     "contributionPerCall": 1000,
-    "totalInvested": 15000,
-    "portfolioValue": 17918,
-    "benchmarkValue": 17473,
-    "portfolioReturn": 0.19453333333333322,
-    "benchmarkReturn": 0.16486666666666672,
-    "outperformance": 0.029666666666666508,
+    "totalInvested": 16000,
+    "portfolioValue": 19207,
+    "benchmarkValue": 18816,
+    "portfolioReturn": 0.20043750000000005,
+    "benchmarkReturn": 0.17599999999999993,
+    "outperformance": 0.024437500000000112,
     "constituents": [
       {
         "slug": "tsla",
@@ -29566,10 +29508,10 @@
         ],
         "entryDate": "2024-06-14",
         "entryPrice": 178.01,
-        "latestPrice": 398.26,
-        "sinceReturn": 1.2373181281950454,
-        "benchmarkReturn": 0.3819042706068758,
-        "alpha": 0.8554138575881696,
+        "latestPrice": 402.7,
+        "sinceReturn": 1.2622324588506264,
+        "benchmarkReturn": 0.38359003647886825,
+        "alpha": 0.8786424223717582,
         "hosts": [
           "Sacks",
           "Jason",
@@ -29590,10 +29532,10 @@
         ],
         "entryDate": "2024-11-01",
         "entryPrice": 171.29,
-        "latestPrice": 364.15,
-        "sinceReturn": 1.1259267908225814,
-        "benchmarkReturn": 0.31351569066965546,
-        "alpha": 0.812411100152926,
+        "latestPrice": 365.05,
+        "sinceReturn": 1.1311810380057215,
+        "benchmarkReturn": 0.3151180302605774,
+        "alpha": 0.8160630077451441,
         "hosts": [
           "Friedberg",
           "Sacks",
@@ -29613,10 +29555,10 @@
         ],
         "entryDate": "2026-04-17",
         "entryPrice": 207.86,
-        "latestPrice": 288.73,
-        "sinceReturn": 0.389059944193207,
-        "benchmarkReturn": 0.056228349339566996,
-        "alpha": 0.33283159485364,
+        "latestPrice": 290.2,
+        "sinceReturn": 0.39613201193110736,
+        "benchmarkReturn": 0.057516827667783765,
+        "alpha": 0.3386151842633236,
         "hosts": [
           "Chamath"
         ]
@@ -29633,10 +29575,10 @@
         ],
         "entryDate": "2024-09-06",
         "entryPrice": 167.91,
-        "latestPrice": 278.92,
-        "sinceReturn": 0.661127985230183,
-        "benchmarkReturn": 0.3880931231031164,
-        "alpha": 0.2730348621270666,
+        "latestPrice": 280.92,
+        "sinceReturn": 0.6730391281043417,
+        "benchmarkReturn": 0.3897864386705159,
+        "alpha": 0.28325268943382587,
         "hosts": [
           "Chamath"
         ]
@@ -29653,10 +29595,10 @@
         ],
         "entryDate": "2026-05-01",
         "entryPrice": 963.33,
-        "latestPrice": 1120.64,
-        "sinceReturn": 0.16329814290014855,
-        "benchmarkReturn": 0.04082425588010841,
-        "alpha": 0.12247388702004014,
+        "latestPrice": 1115.55,
+        "sinceReturn": 0.15800919726365836,
+        "benchmarkReturn": 0.04209394296815372,
+        "alpha": 0.11591525429550464,
         "hosts": [
           "Friedberg"
         ]
@@ -29673,10 +29615,10 @@
         ],
         "entryDate": "2025-01-06",
         "entryPrice": 85.52,
-        "latestPrice": 109.78,
-        "sinceReturn": 0.2836763330215155,
-        "benchmarkReturn": 0.25985958075786075,
-        "alpha": 0.02381675226365476,
+        "latestPrice": 109.38,
+        "sinceReturn": 0.27899906454630496,
+        "benchmarkReturn": 0.26139646600376243,
+        "alpha": 0.017602598542542536,
         "hosts": [
           "Friedberg"
         ]
@@ -29693,10 +29635,10 @@
         ],
         "entryDate": "2025-12-15",
         "entryPrice": 67.53,
-        "latestPrice": 75.25,
-        "sinceReturn": 0.11431956167629198,
-        "benchmarkReturn": 0.10186123720123996,
-        "alpha": 0.012458324475052018,
+        "latestPrice": 75.13,
+        "sinceReturn": 0.11254257367096088,
+        "benchmarkReturn": 0.10320538245706823,
+        "alpha": 0.009337191213892648,
         "hosts": [
           "Jason"
         ]
@@ -29714,10 +29656,10 @@
         ],
         "entryDate": "2026-05-15",
         "entryPrice": 300.23,
-        "latestPrice": 297.68,
-        "sinceReturn": -0.008493488325617027,
-        "benchmarkReturn": 0.014746269464399386,
-        "alpha": -0.023239757790016413,
+        "latestPrice": 298.74,
+        "sinceReturn": -0.004962861805948848,
+        "benchmarkReturn": 0.015984144378153875,
+        "alpha": -0.020947006184102723,
         "hosts": [
           "Sacks",
           "Jason"
@@ -29735,12 +29677,35 @@
         ],
         "entryDate": "2026-05-15",
         "entryPrice": 225.32,
-        "latestPrice": 206.83,
-        "sinceReturn": -0.08206062488904675,
-        "benchmarkReturn": 0.014746269464399386,
-        "alpha": -0.09680689435344614,
+        "latestPrice": 207.55,
+        "sinceReturn": -0.07886561334990227,
+        "benchmarkReturn": 0.015984144378153875,
+        "alpha": -0.09484975772805615,
         "hosts": [
           "Chamath"
+        ]
+      },
+      {
+        "slug": "spcx",
+        "company": "SpaceX",
+        "ticker": "SPCX",
+        "sourceSymbol": "SPCX",
+        "currency": "USD",
+        "direction": "long",
+        "callTypes": [
+          "view",
+          "explicit_long"
+        ],
+        "entryDate": "2026-06-12",
+        "entryPrice": 160.95,
+        "latestPrice": 197.12,
+        "sinceReturn": 0.22472817645231458,
+        "benchmarkReturn": 0.32157501099868013,
+        "alpha": -0.09684683454636556,
+        "hosts": [
+          "Friedberg",
+          "Chamath",
+          "Jason"
         ]
       },
       {
@@ -29755,10 +29720,10 @@
         ],
         "entryDate": "2025-10-03",
         "entryPrice": 200.69,
-        "latestPrice": 203.56,
-        "sinceReturn": 0.014300662713637946,
-        "benchmarkReturn": 0.12082903722299432,
-        "alpha": -0.10652837450935637,
+        "latestPrice": 203.29,
+        "sinceReturn": 0.012955304200508166,
+        "benchmarkReturn": 0.12219632103525058,
+        "alpha": -0.10924101683474241,
         "hosts": [
           "Friedberg",
           "Chamath"
@@ -29776,10 +29741,10 @@
         ],
         "entryDate": "2026-04-24",
         "entryPrice": 178.16,
-        "latestPrice": 158.55,
-        "sinceReturn": -0.11006960035922753,
-        "benchmarkReturn": 0.05060649354287472,
-        "alpha": -0.16067609390210225,
+        "latestPrice": 158.75,
+        "sinceReturn": -0.10891894925909296,
+        "benchmarkReturn": 0.0518881138471019,
+        "alpha": -0.16080706310619486,
         "hosts": [
           "Chamath",
           "Sacks"
@@ -29797,10 +29762,10 @@
         ],
         "entryDate": "2025-11-14",
         "entryPrice": 174.01,
-        "latestPrice": 134.75,
-        "sinceReturn": -0.22564795126716852,
-        "benchmarkReturn": 0.1162918756418081,
-        "alpha": -0.3419398269089766,
+        "latestPrice": 135.24,
+        "sinceReturn": -0.22280328716740405,
+        "benchmarkReturn": 0.11765362463351847,
+        "alpha": -0.3404569118009225,
         "hosts": [
           "Chamath"
         ]
@@ -29817,10 +29782,10 @@
         ],
         "entryDate": "2025-10-24",
         "entryPrice": 523.61,
-        "latestPrice": 385.56,
-        "sinceReturn": -0.2636504268444071,
-        "benchmarkReturn": 0.10752307124400162,
-        "alpha": -0.3711734980884087,
+        "latestPrice": 385.85,
+        "sinceReturn": -0.2630965795152881,
+        "benchmarkReturn": 0.10887412329272794,
+        "alpha": -0.37197070280801603,
         "hosts": [
           "Chamath"
         ]
@@ -29837,10 +29802,10 @@
         ],
         "entryDate": "2026-03-27",
         "entryPrice": 296.91,
-        "latestPrice": 226.16,
-        "sinceReturn": -0.23827085648849833,
-        "benchmarkReturn": 0.18290778911510985,
-        "alpha": -0.4211786456036082,
+        "latestPrice": 227.79,
+        "sinceReturn": -0.23278097740055925,
+        "benchmarkReturn": 0.18435080193663356,
+        "alpha": -0.4171317793371928,
         "hosts": [
           "Friedberg"
         ]
@@ -29857,10 +29822,10 @@
         ],
         "entryDate": "2025-05-02",
         "entryPrice": 84.28,
-        "latestPrice": 72.26,
-        "sinceReturn": -0.14261983863312766,
-        "benchmarkReturn": 0.3234349636530456,
-        "alpha": -0.46605480228617324,
+        "latestPrice": 73.19,
+        "sinceReturn": -0.13152586616041773,
+        "benchmarkReturn": 0.3250494036276379,
+        "alpha": -0.4565752697880556,
         "hosts": [
           "Jason"
         ]
@@ -30373,12 +30338,12 @@
       },
       {
         "date": "2026-06-17",
-        "portfolio": 17918,
-        "benchmark": 17473,
-        "invested": 15000
+        "portfolio": 19207,
+        "benchmark": 18816,
+        "invested": 16000
       }
     ],
-    "excludedPrivateCount": 24,
+    "excludedPrivateCount": 16,
     "excludedPrivate": [
       {
         "slug": "openai",
@@ -30386,23 +30351,8 @@
         "hosts": [
           "Chamath",
           "Sacks"
-        ]
-      },
-      {
-        "slug": "spacex",
-        "company": "SpaceX",
-        "hosts": [
-          "Friedberg",
-          "Chamath",
-          "Jason"
-        ]
-      },
-      {
-        "slug": "xai",
-        "company": "xAI",
-        "hosts": [
-          "Sacks"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "wiz",
@@ -30411,7 +30361,8 @@
           "Chamath",
           "Friedberg",
           "Sacks"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "polymarket",
@@ -30419,29 +30370,16 @@
         "hosts": [
           "Chamath",
           "Sacks"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "groq",
         "company": "Groq",
         "hosts": [
           "Chamath"
-        ]
-      },
-      {
-        "slug": "xai-grok",
-        "company": "xAI / Grok",
-        "hosts": [
-          "Chamath"
-        ]
-      },
-      {
-        "slug": "s-p-500-us-equity-market",
-        "company": "S&P 500 / US Equity Market",
-        "hosts": [
-          "Sacks",
-          "Chamath"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "bitcoin",
@@ -30449,28 +30387,24 @@
         "hosts": [
           "Chamath",
           "Sacks"
-        ]
+        ],
+        "kind": "crypto"
       },
       {
         "slug": "ohalo",
         "company": "Ohalo",
         "hosts": [
           "Friedberg"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "cursor",
         "company": "Cursor",
         "hosts": [
           "Jason"
-        ]
-      },
-      {
-        "slug": "spacex-xai",
-        "company": "SpaceX / xAI",
-        "hosts": [
-          "Jason"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "huawei",
@@ -30478,89 +30412,77 @@
         "hosts": [
           "Friedberg",
           "Sacks"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "figma",
         "company": "Figma",
         "hosts": [
           "Friedberg"
-        ]
-      },
-      {
-        "slug": "openai-chatgpt",
-        "company": "OpenAI / ChatGPT",
-        "hosts": [
-          "Sacks"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "glue",
         "company": "Glue",
         "hosts": [
           "Jason"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "cerebras-systems",
         "company": "Cerebras Systems",
         "hosts": [
           "Friedberg"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "silver-lake",
         "company": "Silver Lake",
         "hosts": [
           "Chamath"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "credit-default-swaps-corporate-debt-protection",
         "company": "Credit Default Swaps (corporate debt protection)",
         "hosts": [
           "Chamath"
-        ]
+        ],
+        "kind": "macro"
       },
       {
         "slug": "chinese-tech-stocks-basket",
         "company": "Chinese tech stocks (basket)",
         "hosts": [
           "Friedberg"
-        ]
+        ],
+        "kind": "macro"
       },
       {
         "slug": "chinese-tech-etfs-basket",
         "company": "Chinese tech ETFs (basket)",
         "hosts": [
           "Friedberg"
-        ]
-      },
-      {
-        "slug": "spacex-starlink",
-        "company": "SpaceX / Starlink",
-        "hosts": [
-          "Friedberg"
-        ]
-      },
-      {
-        "slug": "starlink-spacex",
-        "company": "Starlink / SpaceX",
-        "hosts": [
-          "Sacks"
-        ]
+        ],
+        "kind": "macro"
       },
       {
         "slug": "athena-athenawow",
         "company": "Athena (AthenaWow)",
         "hosts": [
           "Jason"
-        ]
+        ],
+        "kind": "private"
       }
     ],
     "altBenchmark": {
       "symbol": "QQQ",
-      "ret": 0.2715566279065591
+      "ret": 0.2560898058570582
     }
   },
   "guestiesFund": {
@@ -30568,12 +30490,12 @@
     "inceptionDate": "2025-01-11",
     "benchmarkSymbol": "SPY",
     "contributionPerCall": 1000,
-    "totalInvested": 9000,
-    "portfolioValue": 11756,
-    "benchmarkValue": 10867,
-    "portfolioReturn": 0.3062222222222222,
-    "benchmarkReturn": 0.20744444444444454,
-    "outperformance": 0.09877777777777763,
+    "totalInvested": 10000,
+    "portfolioValue": 13018,
+    "benchmarkValue": 11899,
+    "portfolioReturn": 0.30180000000000007,
+    "benchmarkReturn": 0.18989999999999996,
+    "outperformance": 0.11190000000000011,
     "constituents": [
       {
         "slug": "crwv",
@@ -30587,10 +30509,10 @@
         ],
         "entryDate": "2025-03-31",
         "entryPrice": 37.08,
-        "latestPrice": 118.73,
-        "sinceReturn": 2.201995685005394,
-        "benchmarkReturn": 0.34087130624430184,
-        "alpha": 1.861124378761092,
+        "latestPrice": 119.52,
+        "sinceReturn": 2.2233009708737863,
+        "benchmarkReturn": 0.34250701657162264,
+        "alpha": 1.8807939543021637,
         "hosts": [
           "Guest"
         ]
@@ -30608,10 +30530,31 @@
         ],
         "entryDate": "2025-01-13",
         "entryPrice": 133.23,
-        "latestPrice": 206.83,
-        "sinceReturn": 0.5524288823838475,
-        "benchmarkReturn": 0.29013226921687685,
-        "alpha": 0.2622966131669706,
+        "latestPrice": 207.55,
+        "sinceReturn": 0.5578323200480375,
+        "benchmarkReturn": 0.29170608369596995,
+        "alpha": 0.26612623635206756,
+        "hosts": [
+          "Guest"
+        ]
+      },
+      {
+        "slug": "spcx",
+        "company": "SpaceX",
+        "ticker": "SPCX",
+        "sourceSymbol": "SPCX",
+        "currency": "USD",
+        "direction": "long",
+        "callTypes": [
+          "view",
+          "explicit_long"
+        ],
+        "entryDate": "2026-06-12",
+        "entryPrice": 160.95,
+        "latestPrice": 197.12,
+        "sinceReturn": 0.22472817645231458,
+        "benchmarkReturn": 0.01811908570808818,
+        "alpha": 0.2066090907442264,
         "hosts": [
           "Guest"
         ]
@@ -30628,10 +30571,10 @@
         ],
         "entryDate": "2025-11-07",
         "entryPrice": 278.83,
-        "latestPrice": 364.15,
-        "sinceReturn": 0.30599289889897063,
-        "benchmarkReturn": 0.11788902633500764,
-        "alpha": 0.188103872563963,
+        "latestPrice": 365.05,
+        "sinceReturn": 0.30922067209410753,
+        "benchmarkReturn": 0.11925272366871842,
+        "alpha": 0.1899679484253891,
         "hosts": [
           "Guest"
         ]
@@ -30648,10 +30591,10 @@
         ],
         "entryDate": "2025-01-21",
         "entryPrice": 85.38,
-        "latestPrice": 109.78,
-        "sinceReturn": 0.2857812133989226,
-        "benchmarkReturn": 0.24379404692811568,
-        "alpha": 0.041987166470806914,
+        "latestPrice": 109.38,
+        "sinceReturn": 0.28109627547435,
+        "benchmarkReturn": 0.24531133405190286,
+        "alpha": 0.03578494142244715,
         "hosts": [
           "Guest"
         ]
@@ -30668,10 +30611,10 @@
         ],
         "entryDate": "2026-05-15",
         "entryPrice": 173.51,
-        "latestPrice": 158.55,
-        "sinceReturn": -0.086219814419918,
-        "benchmarkReturn": 0.014746269464399386,
-        "alpha": -0.10096608388431738,
+        "latestPrice": 158.75,
+        "sinceReturn": -0.08503832632124952,
+        "benchmarkReturn": 0.015984144378153875,
+        "alpha": -0.1010224706994034,
         "hosts": [
           "Guest"
         ]
@@ -30689,10 +30632,10 @@
         ],
         "entryDate": "2025-10-31",
         "entryPrice": 456.56,
-        "latestPrice": 398.26,
-        "sinceReturn": -0.12768310846329078,
-        "benchmarkReturn": 0.09971263525203078,
-        "alpha": -0.22739574371532156,
+        "latestPrice": 402.7,
+        "sinceReturn": -0.11796916067986685,
+        "benchmarkReturn": 0.10105415945811225,
+        "alpha": -0.2190233201379791,
         "hosts": [
           "Guest"
         ]
@@ -30709,10 +30652,10 @@
         ],
         "entryDate": "2025-01-27",
         "entryPrice": 275,
-        "latestPrice": 271.23,
-        "sinceReturn": -0.013727272727272699,
-        "benchmarkReturn": 0.25143066886897913,
-        "alpha": -0.26515794159625183,
+        "latestPrice": 271.35,
+        "sinceReturn": -0.013272727272727214,
+        "benchmarkReturn": 0.25295727180205874,
+        "alpha": -0.26622999907478595,
         "hosts": [
           "Guest"
         ]
@@ -30729,10 +30672,10 @@
         ],
         "entryDate": "2025-08-11",
         "entryPrice": 765.87,
-        "latestPrice": 581.12,
-        "sinceReturn": -0.2412289291916383,
-        "benchmarkReturn": 0.1795037111586364,
-        "alpha": -0.4207326403502747,
+        "latestPrice": 580.67,
+        "sinceReturn": -0.24181649627221335,
+        "benchmarkReturn": 0.18094257139262804,
+        "alpha": -0.4227590676648414,
         "hosts": [
           "Guest"
         ]
@@ -30749,10 +30692,10 @@
         ],
         "entryDate": "2025-05-09",
         "entryPrice": 438.73,
-        "latestPrice": 385.56,
-        "sinceReturn": -0.12119070954801359,
-        "benchmarkReturn": 0.3291101109260375,
-        "alpha": -0.45030082047405107,
+        "latestPrice": 385.85,
+        "sinceReturn": -0.1205297107560458,
+        "benchmarkReturn": 0.33073147393415314,
+        "alpha": -0.45126118469019894,
         "hosts": [
           "Guest"
         ]
@@ -31295,145 +31238,116 @@
       },
       {
         "date": "2026-06-15",
-        "portfolio": 11604,
-        "benchmark": 10936,
-        "invested": 9000
+        "portfolio": 12800,
+        "benchmark": 11959,
+        "invested": 10000
       },
       {
         "date": "2026-06-17",
-        "portfolio": 11756,
-        "benchmark": 10867,
-        "invested": 9000
+        "portfolio": 13018,
+        "benchmark": 11899,
+        "invested": 10000
       }
     ],
-    "excludedPrivateCount": 11,
+    "excludedPrivateCount": 6,
     "excludedPrivate": [
-      {
-        "slug": "spacex",
-        "company": "SpaceX",
-        "hosts": [
-          "Guest"
-        ]
-      },
-      {
-        "slug": "xai",
-        "company": "xAI",
-        "hosts": [
-          "Guest"
-        ]
-      },
       {
         "slug": "tiktok-bytedance",
         "company": "TikTok / ByteDance",
         "hosts": [
           "Guest"
-        ]
-      },
-      {
-        "slug": "xai-grok",
-        "company": "xAI / Grok",
-        "hosts": [
-          "Guest"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "cursor",
         "company": "Cursor",
         "hosts": [
           "Guest"
-        ]
-      },
-      {
-        "slug": "spacex-xai",
-        "company": "SpaceX / xAI",
-        "hosts": [
-          "Guest"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "databricks",
         "company": "Databricks",
         "hosts": [
           "Guest"
-        ]
-      },
-      {
-        "slug": "xai-x-twitter",
-        "company": "xAI / X (Twitter)",
-        "hosts": [
-          "Guest"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "anduril-industries",
         "company": "Anduril Industries",
         "hosts": [
           "Guest"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "dallas-mavericks",
         "company": "Dallas Mavericks",
         "hosts": [
           "Guest"
-        ]
+        ],
+        "kind": "private"
       },
       {
         "slug": "cost-plus-drugs",
         "company": "Cost Plus Drugs",
         "hosts": [
           "Guest"
-        ]
+        ],
+        "kind": "private"
       }
     ],
     "altBenchmark": {
       "symbol": "QQQ",
-      "ret": 0.33605661448855617
+      "ret": 0.30460019159675067
     }
   },
   "leaderboard": [
     {
       "host": "Sacks",
       "positions": 1,
-      "portfolioReturn": 3.958,
-      "benchmarkReturn": 0.3779999999999999,
-      "alpha": 3.58,
+      "portfolioReturn": 3.976,
+      "benchmarkReturn": 0.379,
+      "alpha": 3.597,
       "topCall": {
         "ticker": "PLTR",
-        "alpha": 3.57981468047124
+        "alpha": 3.5963459750367477
       }
     },
     {
       "host": "Chamath",
-      "positions": 3,
-      "portfolioReturn": 0.6033333333333333,
-      "benchmarkReturn": 0.09699999999999998,
-      "alpha": 0.5063333333333333,
+      "positions": 4,
+      "portfolioReturn": 0.5117499999999999,
+      "benchmarkReturn": 0.1080000000000001,
+      "alpha": 0.40374999999999983,
       "topCall": {
         "ticker": "GOOGL",
-        "alpha": 0.9546270453594501
+        "alpha": 0.9585506982013097
       }
     },
     {
       "host": "Friedberg",
       "positions": 2,
-      "portfolioReturn": 0.4830000000000001,
-      "benchmarkReturn": 0.21649999999999991,
-      "alpha": 0.2665000000000002,
+      "portfolioReturn": 0.48849999999999993,
+      "benchmarkReturn": 0.21799999999999997,
+      "alpha": 0.27049999999999996,
       "topCall": {
         "ticker": "GOOGL",
-        "alpha": 0.9546270453594501
+        "alpha": 0.9585506982013097
       }
     },
     {
       "host": "Jason",
       "positions": 4,
-      "portfolioReturn": -0.02124999999999999,
-      "benchmarkReturn": 0.11674999999999991,
-      "alpha": -0.1379999999999999,
+      "portfolioReturn": -0.020750000000000046,
+      "benchmarkReturn": 0.1180000000000001,
+      "alpha": -0.13875000000000015,
       "topCall": {
         "ticker": "GOOGL",
-        "alpha": 0.0214074502319459
+        "alpha": 0.022864221110482807
       }
     }
   ],
@@ -31441,15 +31355,15 @@
     {
       "guest": "Gavin Baker",
       "slug": "gavin-baker",
-      "calls": 6,
-      "followReturn": 0.0013695099624834912,
-      "benchmarkReturn": 0.14301149003375743,
-      "alpha": -0.14164198007127393,
+      "calls": 7,
+      "followReturn": 0.0347536663318907,
+      "benchmarkReturn": 0.12379327225524735,
+      "alpha": -0.08903960592335665,
       "best": {
         "company": "MicroStrategy",
         "ticker": "MSTR",
         "slug": "mstr",
-        "ret": 0.6655991678983959
+        "ret": 0.6622598127771391
       },
       "picks": [
         {
@@ -31458,9 +31372,19 @@
           "slug": "nvda",
           "stance": "bull",
           "date": "2026-05-22T22:46:00.000Z",
-          "ret": -0.07813291139240519,
-          "benchmarkReturn": -0.000671471775536614,
-          "alpha": -0.07746143961686858
+          "ret": -0.0749242289178107,
+          "benchmarkReturn": 0.0004929455495010782,
+          "alpha": -0.07541717446731178
+        },
+        {
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "slug": "spcx",
+          "stance": "bull",
+          "date": "2026-05-22T22:46:00.000Z",
+          "ret": 0.22500776638707687,
+          "benchmarkReturn": 0.0004929455495010782,
+          "alpha": 0.2245148208375758
         },
         {
           "company": "CoreWeave",
@@ -31468,9 +31392,9 @@
           "slug": "crwv",
           "stance": "bull",
           "date": "2026-05-22T22:46:00.000Z",
-          "ret": -0.04670725845217116,
-          "benchmarkReturn": -0.000671471775536614,
-          "alpha": -0.04603578667663455
+          "ret": -0.042381028681301,
+          "benchmarkReturn": 0.0004929455495010782,
+          "alpha": -0.04287397423080208
         },
         {
           "company": "Meta",
@@ -31478,9 +31402,9 @@
           "slug": "meta",
           "stance": "bull",
           "date": "2025-08-09T15:40:00.000Z",
-          "ret": -0.2412289291916383,
-          "benchmarkReturn": 0.1795288715561707,
-          "alpha": -0.420757800747809
+          "ret": -0.24181649627221335,
+          "benchmarkReturn": 0.1809032582714809,
+          "alpha": -0.42271975454369426
         },
         {
           "company": "Apple",
@@ -31488,9 +31412,9 @@
           "slug": "aapl",
           "stance": "bear",
           "date": "2025-08-09T15:40:00.000Z",
-          "ret": -0.27880402096400037,
-          "benchmarkReturn": 0.1795288715561707,
-          "alpha": -0.45833289252017106
+          "ret": -0.2833576767763555,
+          "benchmarkReturn": 0.1809032582714809,
+          "alpha": -0.4642609350478364
         },
         {
           "company": "Tesla",
@@ -31498,9 +31422,9 @@
           "slug": "tsla",
           "stance": "bull",
           "date": "2025-01-04T00:23:00.000Z",
-          "ret": -0.01250898812327994,
-          "benchmarkReturn": 0.2598864552539639,
-          "alpha": -0.27239544337724386
+          "ret": -0.0015124841933005229,
+          "benchmarkReturn": 0.2613544746036012,
+          "alpha": -0.2628669587969017
         },
         {
           "company": "MicroStrategy",
@@ -31508,9 +31432,9 @@
           "slug": "mstr",
           "stance": "bear",
           "date": "2024-12-07T00:55:00.000Z",
-          "ret": 0.6655991678983959,
-          "benchmarkReturn": 0.24046768538731245,
-          "alpha": 0.42513148251108346
+          "ret": 0.6622598127771391,
+          "benchmarkReturn": 0.24191307799166517,
+          "alpha": 0.4203467347854739
         }
       ]
     },
@@ -31518,14 +31442,14 @@
       "guest": "Thomas Laffont",
       "slug": "thomas-laffont",
       "calls": 5,
-      "followReturn": -0.11846974636806913,
-      "benchmarkReturn": 0.25048147079468863,
-      "alpha": -0.36895121716275775,
+      "followReturn": -0.11462088448201183,
+      "benchmarkReturn": 0.2519385314590318,
+      "alpha": -0.3665594159410436,
       "best": {
         "company": "NVIDIA",
         "ticker": "NVDA",
         "slug": "nvda",
-        "ret": 0.3403544812390642
+        "ret": 0.34501976540729706
       },
       "picks": [
         {
@@ -31534,9 +31458,9 @@
           "slug": "meta",
           "stance": "bull",
           "date": "2025-06-21T02:53:00.000Z",
-          "ret": -0.1799966134221369,
-          "benchmarkReturn": 0.24983087561442985,
-          "alpha": -0.42982748903656676
+          "ret": -0.18063159677146245,
+          "benchmarkReturn": 0.25128717820544866,
+          "alpha": -0.4319187749769111
         },
         {
           "company": "NVIDIA",
@@ -31544,9 +31468,9 @@
           "slug": "nvda",
           "stance": "bull",
           "date": "2025-06-21T02:53:00.000Z",
-          "ret": 0.3403544812390642,
-          "benchmarkReturn": 0.24983087561442985,
-          "alpha": 0.09052360562463435
+          "ret": 0.34501976540729706,
+          "benchmarkReturn": 0.25128717820544866,
+          "alpha": 0.0937325872018484
         },
         {
           "company": "Tesla",
@@ -31554,9 +31478,9 @@
           "slug": "tsla",
           "stance": "bull",
           "date": "2025-06-21T02:53:00.000Z",
-          "ret": 0.26172976397909076,
-          "benchmarkReturn": 0.24983087561442985,
-          "alpha": 0.011898888364660909
+          "ret": 0.2757801362268335,
+          "benchmarkReturn": 0.25128717820544866,
+          "alpha": 0.024492958021384847
         },
         {
           "company": "Intel",
@@ -31565,8 +31489,8 @@
           "stance": "bear",
           "date": "2025-01-25T02:52:00.000Z",
           "ret": -1,
-          "benchmarkReturn": 0.25145736356507675,
-          "alpha": -1.2514573635650768
+          "benchmarkReturn": 0.2529155613394065,
+          "alpha": -1.2529155613394065
         },
         {
           "company": "Constellation Energy",
@@ -31574,24 +31498,24 @@
           "slug": "ceg",
           "stance": "bull",
           "date": "2025-01-25T02:52:00.000Z",
-          "ret": -0.014436363636363692,
-          "benchmarkReturn": 0.25145736356507675,
-          "alpha": -0.26589372720144044
+          "ret": -0.013272727272727214,
+          "benchmarkReturn": 0.2529155613394065,
+          "alpha": -0.2661882886121337
         }
       ]
     },
     {
       "guest": "Brad Gerstner",
       "slug": "brad-gerstner",
-      "calls": 3,
-      "followReturn": 0.010315806492547819,
-      "benchmarkReturn": 0.036690796396743774,
-      "alpha": -0.026374989904195956,
+      "calls": 4,
+      "followReturn": 0.06510125823242252,
+      "benchmarkReturn": 0.03236698014716238,
+      "alpha": 0.03273427808526014,
       "best": {
-        "company": "Salesforce",
-        "ticker": "CRM",
-        "slug": "crm",
-        "ret": 0.18285832087821463
+        "company": "SpaceX",
+        "ticker": "SPCX",
+        "slug": "spcx",
+        "ret": 0.22500776638707687
       },
       "picks": [
         {
@@ -31600,9 +31524,19 @@
           "slug": "nvda",
           "stance": "bull",
           "date": "2026-05-08T22:16:00.000Z",
-          "ret": -0.06967389348686581,
-          "benchmarkReturn": 0.014589476531854606,
-          "alpha": -0.08426337001872042
+          "ret": -0.06643576826196462,
+          "benchmarkReturn": 0.015771675909644456,
+          "alpha": -0.08220744417160908
+        },
+        {
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "slug": "spcx",
+          "stance": "bull",
+          "date": "2026-05-08T22:16:00.000Z",
+          "ret": 0.22500776638707687,
+          "benchmarkReturn": 0.015771675909644456,
+          "alpha": 0.2092360904774324
         },
         {
           "company": "Google",
@@ -31610,9 +31544,9 @@
           "slug": "googl",
           "stance": "bull",
           "date": "2026-05-08T22:16:00.000Z",
-          "ret": -0.08223700791370536,
-          "benchmarkReturn": 0.014589476531854606,
-          "alpha": -0.09682648444555997
+          "ret": -0.07996874842481971,
+          "benchmarkReturn": 0.015771675909644456,
+          "alpha": -0.09574042433446417
         },
         {
           "company": "Salesforce",
@@ -31620,9 +31554,45 @@
           "slug": "crm",
           "stance": "bear",
           "date": "2026-02-07T04:35:00.000Z",
-          "ret": 0.18285832087821463,
-          "benchmarkReturn": 0.08089343612652211,
-          "alpha": 0.10196488475169252
+          "ret": 0.18180178322939755,
+          "benchmarkReturn": 0.08215289285971616,
+          "alpha": 0.09964889036968139
+        }
+      ]
+    },
+    {
+      "guest": "Antonio Gracias",
+      "slug": "antonio-gracias",
+      "calls": 2,
+      "followReturn": 0.6065946189922422,
+      "benchmarkReturn": 0.2415640241382162,
+      "alpha": 0.365030594854026,
+      "best": {
+        "company": "Google",
+        "ticker": "GOOGL",
+        "slug": "googl",
+        "ret": 0.9881814715974075
+      },
+      "picks": [
+        {
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "slug": "spcx",
+          "stance": "bull",
+          "date": "2025-02-07T22:20:00.000Z",
+          "ret": 0.22500776638707687,
+          "benchmarkReturn": 0.2415640241382162,
+          "alpha": -0.016556257751139336
+        },
+        {
+          "company": "Google",
+          "ticker": "GOOGL",
+          "slug": "googl",
+          "stance": "bull",
+          "date": "2025-02-07T22:20:00.000Z",
+          "ret": 0.9881814715974075,
+          "benchmarkReturn": 0.2415640241382162,
+          "alpha": 0.7466174474591913
         }
       ]
     },
@@ -31630,14 +31600,14 @@
       "guest": "Aaron Levie",
       "slug": "aaron-levie",
       "calls": 2,
-      "followReturn": 0.3634544221452857,
-      "benchmarkReturn": 0.26130589046393915,
-      "alpha": 0.10214853168134658,
+      "followReturn": 0.367824226382166,
+      "benchmarkReturn": 0.26277556373909094,
+      "alpha": 0.10504866264307505,
       "best": {
         "company": "Google",
         "ticker": "GOOGL",
         "slug": "googl",
-        "ret": 0.922345985324394
+        "ret": 0.9270970807158316
       },
       "picks": [
         {
@@ -31646,9 +31616,9 @@
           "slug": "googl",
           "stance": "bull",
           "date": "2024-12-20T22:00:00.000Z",
-          "ret": 0.922345985324394,
-          "benchmarkReturn": 0.26130589046393915,
-          "alpha": 0.6610400948604549
+          "ret": 0.9270970807158316,
+          "benchmarkReturn": 0.26277556373909094,
+          "alpha": 0.6643215169767407
         },
         {
           "company": "Box",
@@ -31656,9 +31626,45 @@
           "slug": "box",
           "stance": "bull",
           "date": "2024-12-20T22:00:00.000Z",
-          "ret": -0.1954371410338226,
-          "benchmarkReturn": 0.26130589046393915,
-          "alpha": -0.45674303149776174
+          "ret": -0.19144862795149964,
+          "benchmarkReturn": 0.26277556373909094,
+          "alpha": -0.4542241916905906
+        }
+      ]
+    },
+    {
+      "guest": "Elon Musk",
+      "slug": "elon-musk",
+      "calls": 2,
+      "followReturn": 0.08128298544721696,
+      "benchmarkReturn": 0.09895513214505214,
+      "alpha": -0.017672146697835178,
+      "best": {
+        "company": "SpaceX",
+        "ticker": "SPCX",
+        "slug": "spcx",
+        "ret": 0.22500776638707687
+      },
+      "picks": [
+        {
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "slug": "spcx",
+          "stance": "bull",
+          "date": "2025-10-31T20:11:00.000Z",
+          "ret": 0.22500776638707687,
+          "benchmarkReturn": 0.09895513214505214,
+          "alpha": 0.12605263424202473
+        },
+        {
+          "company": "Tesla",
+          "ticker": "TSLA",
+          "slug": "tsla",
+          "stance": "bull",
+          "date": "2025-10-31T20:11:00.000Z",
+          "ret": -0.06244179549264295,
+          "benchmarkReturn": 0.09895513214505214,
+          "alpha": -0.1613969276376951
         }
       ]
     },
@@ -31666,14 +31672,14 @@
       "guest": "Cyan Bowers-Franklin",
       "slug": "cyan-bowers-franklin",
       "calls": 2,
-      "followReturn": 0.24470803589261164,
-      "benchmarkReturn": 0.29015978947006316,
-      "alpha": -0.045451753577451515,
+      "followReturn": 0.25282011401401705,
+      "benchmarkReturn": 0.2916630833003664,
+      "alpha": -0.03884296928634934,
       "best": {
         "company": "NVIDIA",
         "ticker": "NVDA",
         "slug": "nvda",
-        "ret": 0.5019250599085032
+        "ret": 0.5071527122213346
       },
       "picks": [
         {
@@ -31682,9 +31688,9 @@
           "slug": "nvda",
           "stance": "bull",
           "date": "2025-01-11T01:41:00.000Z",
-          "ret": 0.5019250599085032,
-          "benchmarkReturn": 0.29015978947006316,
-          "alpha": 0.21176527043844007
+          "ret": 0.5071527122213346,
+          "benchmarkReturn": 0.2916630833003664,
+          "alpha": 0.21548962892096823
         },
         {
           "company": "Tesla",
@@ -31692,35 +31698,9 @@
           "slug": "tsla",
           "stance": "bull",
           "date": "2025-01-11T01:41:00.000Z",
-          "ret": -0.01250898812327994,
-          "benchmarkReturn": 0.29015978947006316,
-          "alpha": -0.3026687775933431
-        }
-      ]
-    },
-    {
-      "guest": "Antonio Gracias",
-      "slug": "antonio-gracias",
-      "calls": 1,
-      "followReturn": 0.9832797777898805,
-      "benchmarkReturn": 0.2401190377779614,
-      "alpha": 0.7431607400119191,
-      "best": {
-        "company": "Google",
-        "ticker": "GOOGL",
-        "slug": "googl",
-        "ret": 0.9832797777898805
-      },
-      "picks": [
-        {
-          "company": "Google",
-          "ticker": "GOOGL",
-          "slug": "googl",
-          "stance": "bull",
-          "date": "2025-02-07T22:20:00.000Z",
-          "ret": 0.9832797777898805,
-          "benchmarkReturn": 0.2401190377779614,
-          "alpha": 0.7431607400119191
+          "ret": -0.0015124841933005229,
+          "benchmarkReturn": 0.2916630833003664,
+          "alpha": -0.2931755674936669
         }
       ]
     },
@@ -31728,14 +31708,14 @@
       "guest": "Reid Hoffman",
       "slug": "reid-hoffman",
       "calls": 1,
-      "followReturn": 0.942613881844651,
-      "benchmarkReturn": 0.3586545428198811,
-      "alpha": 0.5839593390247699,
+      "followReturn": 0.9493754109138726,
+      "benchmarkReturn": 0.36023764671786696,
+      "alpha": 0.5891377641960056,
       "best": {
         "company": "NVIDIA",
         "ticker": "NVDA",
         "slug": "nvda",
-        "ret": 0.942613881844651
+        "ret": 0.9493754109138726
       },
       "picks": [
         {
@@ -31744,9 +31724,9 @@
           "slug": "nvda",
           "stance": "bull",
           "date": "2024-08-30T15:04:00.000Z",
-          "ret": 0.942613881844651,
-          "benchmarkReturn": 0.3586545428198811,
-          "alpha": 0.5839593390247699
+          "ret": 0.9493754109138726,
+          "benchmarkReturn": 0.36023764671786696,
+          "alpha": 0.5891377641960056
         }
       ]
     },
@@ -31754,14 +31734,14 @@
       "guest": "Donald Trump",
       "slug": "donald-trump",
       "calls": 1,
-      "followReturn": 0.43066322136089585,
-      "benchmarkReturn": 0.3775431121558832,
-      "alpha": 0.053120109205012644,
+      "followReturn": 0.41657438169066086,
+      "benchmarkReturn": 0.37914822500964185,
+      "alpha": 0.03742615668101901,
       "best": {
         "company": "Oil",
         "ticker": "USO",
         "slug": "uso",
-        "ret": 0.43066322136089585
+        "ret": 0.41657438169066086
       },
       "picks": [
         {
@@ -31770,9 +31750,9 @@
           "slug": "uso",
           "stance": "bull",
           "date": "2024-06-20T20:23:00.000Z",
-          "ret": 0.43066322136089585,
-          "benchmarkReturn": 0.3775431121558832,
-          "alpha": 0.053120109205012644
+          "ret": 0.41657438169066086,
+          "benchmarkReturn": 0.37914822500964185,
+          "alpha": 0.03742615668101901
         }
       ]
     },
@@ -31780,14 +31760,14 @@
       "guest": "Tucker Carlson",
       "slug": "tucker-carlson",
       "calls": 1,
-      "followReturn": 0.008108312915203753,
-      "benchmarkReturn": 0.1018847413805768,
-      "alpha": -0.09377642846537304,
+      "followReturn": 0.01161080098007039,
+      "benchmarkReturn": 0.1031686571768542,
+      "alpha": -0.0915578561967838,
       "best": {
         "company": "Gold",
         "ticker": "GLD",
         "slug": "gld",
-        "ret": 0.008108312915203753
+        "ret": 0.01161080098007039
       },
       "picks": [
         {
@@ -31796,9 +31776,9 @@
           "slug": "gld",
           "stance": "bull",
           "date": "2025-12-13T02:31:00.000Z",
-          "ret": 0.008108312915203753,
-          "benchmarkReturn": 0.1018847413805768,
-          "alpha": -0.09377642846537304
+          "ret": 0.01161080098007039,
+          "benchmarkReturn": 0.1031686571768542,
+          "alpha": -0.0915578561967838
         }
       ]
     },
@@ -31806,14 +31786,14 @@
       "guest": "Mark Pincus",
       "slug": "mark-pincus",
       "calls": 1,
-      "followReturn": 0.14287201916067893,
-      "benchmarkReturn": 0.24382057872481555,
-      "alpha": -0.10094855956413662,
+      "followReturn": 0.1390190565448297,
+      "benchmarkReturn": 0.24526987811955903,
+      "alpha": -0.10625082157472931,
       "best": {
         "company": "Alibaba",
         "ticker": "BABA",
         "slug": "baba",
-        "ret": 0.14287201916067893
+        "ret": 0.1390190565448297
       },
       "picks": [
         {
@@ -31822,9 +31802,9 @@
           "slug": "baba",
           "stance": "bull",
           "date": "2025-01-18T01:21:00.000Z",
-          "ret": 0.14287201916067893,
-          "benchmarkReturn": 0.24382057872481555,
-          "alpha": -0.10094855956413662
+          "ret": 0.1390190565448297,
+          "benchmarkReturn": 0.24526987811955903,
+          "alpha": -0.10625082157472931
         }
       ]
     },
@@ -31832,14 +31812,14 @@
       "guest": "Marc Benioff",
       "slug": "marc-benioff",
       "calls": 1,
-      "followReturn": -0.11950907980229897,
-      "benchmarkReturn": 0.015482298788330073,
-      "alpha": -0.13499137859062904,
+      "followReturn": -0.11837063364247236,
+      "benchmarkReturn": 0.016665538482366626,
+      "alpha": -0.13503617212483898,
       "best": {
         "company": "Salesforce",
         "ticker": "CRM",
         "slug": "crm",
-        "ret": -0.11950907980229897
+        "ret": -0.11837063364247236
       },
       "picks": [
         {
@@ -31848,9 +31828,9 @@
           "slug": "crm",
           "stance": "bull",
           "date": "2026-05-15T21:21:00.000Z",
-          "ret": -0.11950907980229897,
-          "benchmarkReturn": 0.015482298788330073,
-          "alpha": -0.13499137859062904
+          "ret": -0.11837063364247236,
+          "benchmarkReturn": 0.016665538482366626,
+          "alpha": -0.13503617212483898
         }
       ]
     },
@@ -31858,14 +31838,14 @@
       "guest": "Travis Kalanick",
       "slug": "travis-kalanick",
       "calls": 1,
-      "followReturn": 0.10133565621370488,
-      "benchmarkReturn": 0.2548070328052596,
-      "alpha": -0.15347137659155474,
+      "followReturn": 0.11359991150931914,
+      "benchmarkReturn": 0.25626913361326276,
+      "alpha": -0.14266922210394362,
       "best": {
         "company": "Tesla",
         "ticker": "TSLA",
         "slug": "tsla",
-        "ret": 0.10133565621370488
+        "ret": 0.11359991150931914
       },
       "picks": [
         {
@@ -31874,35 +31854,9 @@
           "slug": "tsla",
           "stance": "bull",
           "date": "2025-01-31T21:52:00.000Z",
-          "ret": 0.10133565621370488,
-          "benchmarkReturn": 0.2548070328052596,
-          "alpha": -0.15347137659155474
-        }
-      ]
-    },
-    {
-      "guest": "Elon Musk",
-      "slug": "elon-musk",
-      "calls": 1,
-      "followReturn": -0.07276727509778358,
-      "benchmarkReturn": 0.09767612023297323,
-      "alpha": -0.1704433953307568,
-      "best": {
-        "company": "Tesla",
-        "ticker": "TSLA",
-        "slug": "tsla",
-        "ret": -0.07276727509778358
-      },
-      "picks": [
-        {
-          "company": "Tesla",
-          "ticker": "TSLA",
-          "slug": "tsla",
-          "stance": "bull",
-          "date": "2025-10-31T20:11:00.000Z",
-          "ret": -0.07276727509778358,
-          "benchmarkReturn": 0.09767612023297323,
-          "alpha": -0.1704433953307568
+          "ret": 0.11359991150931914,
+          "benchmarkReturn": 0.25626913361326276,
+          "alpha": -0.14266922210394362
         }
       ]
     },
@@ -31910,14 +31864,14 @@
       "guest": "Philippe Laffont",
       "slug": "philippe-laffont",
       "calls": 1,
-      "followReturn": -0.14247874282152873,
-      "benchmarkReturn": 0.28661898145765785,
-      "alpha": -0.4290977242791866,
+      "followReturn": -0.14135444953924226,
+      "benchmarkReturn": 0.28811814953944315,
+      "alpha": -0.4294725990786854,
       "best": {
         "company": "Microsoft",
         "ticker": "MSFT",
         "slug": "msft",
-        "ret": -0.14247874282152873
+        "ret": -0.14135444953924226
       },
       "picks": [
         {
@@ -31926,9 +31880,35 @@
           "slug": "msft",
           "stance": "bull",
           "date": "2025-05-09T20:26:00.000Z",
-          "ret": -0.14247874282152873,
-          "benchmarkReturn": 0.28661898145765785,
-          "alpha": -0.4290977242791866
+          "ret": -0.14135444953924226,
+          "benchmarkReturn": 0.28811814953944315,
+          "alpha": -0.4294725990786854
+        }
+      ]
+    },
+    {
+      "guest": "Mark Cuban",
+      "slug": "mark-cuban",
+      "calls": 1,
+      "followReturn": -0.22500776638707687,
+      "benchmarkReturn": 0.3106216621871618,
+      "alpha": -0.5356294285742387,
+      "best": {
+        "company": "SpaceX",
+        "ticker": "SPCX",
+        "slug": "spcx",
+        "ret": -0.22500776638707687
+      },
+      "picks": [
+        {
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "slug": "spcx",
+          "stance": "bear",
+          "date": "2024-10-03T20:19:00.000Z",
+          "ret": -0.22500776638707687,
+          "benchmarkReturn": 0.3106216621871618,
+          "alpha": -0.5356294285742387
         }
       ]
     }
@@ -31939,12 +31919,12 @@
       "inceptionDate": "2025-06-21",
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
-      "totalInvested": 3000,
-      "portfolioValue": 4810,
-      "benchmarkValue": 3291,
-      "portfolioReturn": 0.6033333333333333,
-      "benchmarkReturn": 0.09699999999999998,
-      "outperformance": 0.5063333333333333,
+      "totalInvested": 4000,
+      "portfolioValue": 6047,
+      "benchmarkValue": 4432,
+      "portfolioReturn": 0.5117499999999999,
+      "benchmarkReturn": 0.1080000000000001,
+      "outperformance": 0.40374999999999983,
       "constituents": [
         {
           "slug": "googl",
@@ -31958,10 +31938,10 @@
           ],
           "entryDate": "2025-06-23",
           "entryPrice": 165.19,
-          "latestPrice": 364.15,
-          "sinceReturn": 1.2044312609722136,
-          "benchmarkReturn": 0.24980421561276356,
-          "alpha": 0.9546270453594501,
+          "latestPrice": 365.05,
+          "sinceReturn": 1.2098795326593619,
+          "benchmarkReturn": 0.2513288344580522,
+          "alpha": 0.9585506982013097,
           "hosts": [
             "Chamath"
           ]
@@ -31978,10 +31958,30 @@
           ],
           "entryDate": "2025-07-07",
           "entryPrice": 376.93,
-          "latestPrice": 202.34,
-          "sinceReturn": 0.4632027166847956,
-          "benchmarkReturn": -0.2084649094541473,
-          "alpha": 0.6716676261389429,
+          "latestPrice": 204.37,
+          "sinceReturn": 0.4578038362560688,
+          "benchmarkReturn": -0.20993909905265196,
+          "alpha": 0.6677429353087208,
+          "hosts": [
+            "Chamath"
+          ]
+        },
+        {
+          "slug": "spcx",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "sourceSymbol": "SPCX",
+          "currency": "USD",
+          "direction": "long",
+          "callTypes": [
+            "explicit_long"
+          ],
+          "entryDate": "2026-06-12",
+          "entryPrice": 160.95,
+          "latestPrice": 197.12,
+          "sinceReturn": 0.22472817645231458,
+          "benchmarkReturn": 0.13970376215986535,
+          "alpha": 0.08502441429244922,
           "hosts": [
             "Chamath"
           ]
@@ -31998,10 +31998,10 @@
           ],
           "entryDate": "2025-06-23",
           "entryPrice": 348.68,
-          "latestPrice": 398.26,
-          "sinceReturn": 0.14220775496156923,
-          "benchmarkReturn": 0.24980421561276356,
-          "alpha": -0.10759646065119433,
+          "latestPrice": 402.7,
+          "sinceReturn": 0.15492715383732936,
+          "benchmarkReturn": 0.2513288344580522,
+          "alpha": -0.09640168062072285,
           "hosts": [
             "Chamath"
           ]
@@ -32406,142 +32406,130 @@
         },
         {
           "date": "2026-04-07",
-          "portfolio": 4206,
-          "benchmark": 3135,
-          "invested": 3000
+          "portfolio": 5206,
+          "benchmark": 4135,
+          "invested": 4000
         },
         {
           "date": "2026-04-10",
-          "portfolio": 4323,
-          "benchmark": 3170,
-          "invested": 3000
+          "portfolio": 5323,
+          "benchmark": 4201,
+          "invested": 4000
         },
         {
           "date": "2026-04-15",
-          "portfolio": 4516,
-          "benchmark": 3205,
-          "invested": 3000
+          "portfolio": 5516,
+          "benchmark": 4267,
+          "invested": 4000
         },
         {
           "date": "2026-04-20",
-          "portfolio": 4509,
-          "benchmark": 3220,
-          "invested": 3000
+          "portfolio": 5509,
+          "benchmark": 4296,
+          "invested": 4000
         },
         {
           "date": "2026-04-23",
-          "portfolio": 4489,
-          "benchmark": 3220,
-          "invested": 3000
+          "portfolio": 5489,
+          "benchmark": 4295,
+          "invested": 4000
         },
         {
           "date": "2026-04-28",
-          "portfolio": 4551,
-          "benchmark": 3225,
-          "invested": 3000
+          "portfolio": 5551,
+          "benchmark": 4305,
+          "invested": 4000
         },
         {
           "date": "2026-05-01",
-          "portfolio": 4791,
-          "benchmark": 3241,
-          "invested": 3000
+          "portfolio": 5791,
+          "benchmark": 4334,
+          "invested": 4000
         },
         {
           "date": "2026-05-06",
-          "portfolio": 4889,
-          "benchmark": 3263,
-          "invested": 3000
+          "portfolio": 5889,
+          "benchmark": 4377,
+          "invested": 4000
         },
         {
           "date": "2026-05-11",
-          "portfolio": 4976,
-          "benchmark": 3273,
-          "invested": 3000
+          "portfolio": 5976,
+          "benchmark": 4395,
+          "invested": 4000
         },
         {
           "date": "2026-05-14",
-          "portfolio": 5071,
-          "benchmark": 3288,
-          "invested": 3000
+          "portfolio": 6071,
+          "benchmark": 4423,
+          "invested": 4000
         },
         {
           "date": "2026-05-19",
-          "portfolio": 4829,
-          "benchmark": 3263,
-          "invested": 3000
+          "portfolio": 5829,
+          "benchmark": 4377,
+          "invested": 4000
         },
         {
           "date": "2026-05-22",
-          "portfolio": 4891,
-          "benchmark": 3284,
-          "invested": 3000
+          "portfolio": 5891,
+          "benchmark": 4415,
+          "invested": 4000
         },
         {
           "date": "2026-05-28",
-          "portfolio": 4989,
-          "benchmark": 3299,
-          "invested": 3000
+          "portfolio": 5989,
+          "benchmark": 4444,
+          "invested": 4000
         },
         {
           "date": "2026-06-02",
-          "portfolio": 4710,
-          "benchmark": 3307,
-          "invested": 3000
+          "portfolio": 5710,
+          "benchmark": 4460,
+          "invested": 4000
         },
         {
           "date": "2026-06-05",
-          "portfolio": 4685,
-          "benchmark": 3270,
-          "invested": 3000
+          "portfolio": 5685,
+          "benchmark": 4389,
+          "invested": 4000
         },
         {
           "date": "2026-06-10",
-          "portfolio": 4633,
-          "benchmark": 3249,
-          "invested": 3000
+          "portfolio": 5633,
+          "benchmark": 4350,
+          "invested": 4000
         },
         {
           "date": "2026-06-15",
-          "portfolio": 4868,
-          "benchmark": 3299,
-          "invested": 3000
+          "portfolio": 6064,
+          "benchmark": 4445,
+          "invested": 4000
         },
         {
           "date": "2026-06-17",
-          "portfolio": 4810,
-          "benchmark": 3291,
-          "invested": 3000
+          "portfolio": 6047,
+          "benchmark": 4432,
+          "invested": 4000
         }
       ],
-      "excludedPrivateCount": 4,
+      "excludedPrivateCount": 2,
       "excludedPrivate": [
         {
           "slug": "openai",
           "company": "OpenAI",
           "hosts": [
             "Chamath"
-          ]
-        },
-        {
-          "slug": "spacex",
-          "company": "SpaceX",
-          "hosts": [
-            "Chamath"
-          ]
-        },
-        {
-          "slug": "s-p-500-us-equity-market",
-          "company": "S&P 500 / US Equity Market",
-          "hosts": [
-            "Chamath"
-          ]
+          ],
+          "kind": "private"
         },
         {
           "slug": "ohalo",
           "company": "Ohalo",
           "hosts": [
             "Chamath"
-          ]
+          ],
+          "kind": "private"
         }
       ]
     },
@@ -32551,11 +32539,11 @@
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
       "totalInvested": 4000,
-      "portfolioValue": 3915,
-      "benchmarkValue": 4467,
-      "portfolioReturn": -0.02124999999999999,
-      "benchmarkReturn": 0.11674999999999991,
-      "outperformance": -0.1379999999999999,
+      "portfolioValue": 3917,
+      "benchmarkValue": 4472,
+      "portfolioReturn": -0.020750000000000046,
+      "benchmarkReturn": 0.1180000000000001,
+      "outperformance": -0.13875000000000015,
       "constituents": [
         {
           "slug": "googl",
@@ -32569,10 +32557,10 @@
           ],
           "entryDate": "2025-11-24",
           "entryPrice": 318.58,
-          "latestPrice": 364.15,
-          "sinceReturn": 0.14304099441270646,
-          "benchmarkReturn": 0.12163354418076056,
-          "alpha": 0.0214074502319459,
+          "latestPrice": 365.05,
+          "sinceReturn": 0.14586603051039004,
+          "benchmarkReturn": 0.12300180939990724,
+          "alpha": 0.022864221110482807,
           "hosts": [
             "Jason"
           ]
@@ -32589,10 +32577,10 @@
           ],
           "entryDate": "2026-05-15",
           "entryPrice": 300.23,
-          "latestPrice": 297.68,
-          "sinceReturn": -0.008493488325617027,
-          "benchmarkReturn": 0.014746269464399386,
-          "alpha": -0.023239757790016413,
+          "latestPrice": 298.74,
+          "sinceReturn": -0.004962861805948848,
+          "benchmarkReturn": 0.015984144378153875,
+          "alpha": -0.020947006184102723,
           "hosts": [
             "Jason"
           ]
@@ -32610,10 +32598,10 @@
           ],
           "entryDate": "2026-01-12",
           "entryPrice": 246.47,
-          "latestPrice": 240.52,
-          "sinceReturn": -0.02414086907128654,
-          "benchmarkReturn": 0.07898900972438017,
-          "alpha": -0.10312987879566671,
+          "latestPrice": 240.22,
+          "sinceReturn": -0.02533776930255205,
+          "benchmarkReturn": 0.08030525346682782,
+          "alpha": -0.10564302276937987,
           "hosts": [
             "Jason"
           ]
@@ -32630,10 +32618,10 @@
           ],
           "entryDate": "2025-01-27",
           "entryPrice": 97.19,
-          "latestPrice": 78.17,
-          "sinceReturn": -0.19569807282717167,
-          "benchmarkReturn": 0.25143066886897913,
-          "alpha": -0.4471287416961508,
+          "latestPrice": 77.91,
+          "sinceReturn": -0.19836607023428576,
+          "benchmarkReturn": 0.25295727180205874,
+          "alpha": -0.4513233420363445,
           "hosts": [
             "Jason"
           ]
@@ -33170,8 +33158,8 @@
         },
         {
           "date": "2026-06-17",
-          "portfolio": 3915,
-          "benchmark": 4467,
+          "portfolio": 3917,
+          "benchmark": 4472,
           "invested": 4000
         }
       ],
@@ -33182,42 +33170,48 @@
           "company": "Anthropic",
           "hosts": [
             "Jason"
-          ]
+          ],
+          "kind": "private"
         },
         {
           "slug": "ohalo",
           "company": "Ohalo",
           "hosts": [
             "Jason"
-          ]
+          ],
+          "kind": "private"
         },
         {
           "slug": "mag-7-basket",
           "company": "Mag 7 (basket)",
           "hosts": [
             "Jason"
-          ]
+          ],
+          "kind": "macro"
         },
         {
           "slug": "glue",
           "company": "Glue",
           "hosts": [
             "Jason"
-          ]
+          ],
+          "kind": "private"
         },
         {
           "slug": "bittensor-tao",
           "company": "Bittensor (TAO)",
           "hosts": [
             "Jason"
-          ]
+          ],
+          "kind": "private"
         },
         {
           "slug": "athena-athenawow",
           "company": "Athena (AthenaWow)",
           "hosts": [
             "Jason"
-          ]
+          ],
+          "kind": "private"
         }
       ]
     },
@@ -33227,11 +33221,11 @@
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
       "totalInvested": 1000,
-      "portfolioValue": 4958,
-      "benchmarkValue": 1378,
-      "portfolioReturn": 3.958,
-      "benchmarkReturn": 0.3779999999999999,
-      "outperformance": 3.58,
+      "portfolioValue": 4976,
+      "benchmarkValue": 1379,
+      "portfolioReturn": 3.976,
+      "benchmarkReturn": 0.379,
+      "outperformance": 3.597,
       "constituents": [
         {
           "slug": "pltr",
@@ -33245,10 +33239,10 @@
           ],
           "entryDate": "2024-07-26",
           "entryPrice": 27.18,
-          "latestPrice": 134.75,
-          "sinceReturn": 3.9575055187637975,
-          "benchmarkReturn": 0.37769083829255745,
-          "alpha": 3.57981468047124,
+          "latestPrice": 135.24,
+          "sinceReturn": 3.9757174392935983,
+          "benchmarkReturn": 0.37937146425685087,
+          "alpha": 3.5963459750367477,
           "hosts": [
             "Sacks"
           ]
@@ -33731,33 +33725,28 @@
         },
         {
           "date": "2026-06-17",
-          "portfolio": 4958,
-          "benchmark": 1378,
+          "portfolio": 4976,
+          "benchmark": 1379,
           "invested": 1000
         }
       ],
-      "excludedPrivateCount": 3,
+      "excludedPrivateCount": 2,
       "excludedPrivate": [
         {
           "slug": "polymarket",
           "company": "Polymarket",
           "hosts": [
             "Sacks"
-          ]
-        },
-        {
-          "slug": "s-p-500-us-equity-market",
-          "company": "S&P 500 / US Equity Market",
-          "hosts": [
-            "Sacks"
-          ]
+          ],
+          "kind": "private"
         },
         {
           "slug": "huawei",
           "company": "Huawei",
           "hosts": [
             "Sacks"
-          ]
+          ],
+          "kind": "private"
         }
       ]
     },
@@ -33767,11 +33756,11 @@
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
       "totalInvested": 2000,
-      "portfolioValue": 2966,
-      "benchmarkValue": 2433,
-      "portfolioReturn": 0.4830000000000001,
-      "benchmarkReturn": 0.21649999999999991,
-      "outperformance": 0.2665000000000002,
+      "portfolioValue": 2977,
+      "benchmarkValue": 2436,
+      "portfolioReturn": 0.48849999999999993,
+      "benchmarkReturn": 0.21799999999999997,
+      "outperformance": 0.27049999999999996,
       "constituents": [
         {
           "slug": "googl",
@@ -33785,10 +33774,10 @@
           ],
           "entryDate": "2025-06-23",
           "entryPrice": 165.19,
-          "latestPrice": 364.15,
-          "sinceReturn": 1.2044312609722136,
-          "benchmarkReturn": 0.24980421561276356,
-          "alpha": 0.9546270453594501,
+          "latestPrice": 365.05,
+          "sinceReturn": 1.2098795326593619,
+          "benchmarkReturn": 0.2513288344580522,
+          "alpha": 0.9585506982013097,
           "hosts": [
             "Friedberg"
           ]
@@ -33805,10 +33794,10 @@
           ],
           "entryDate": "2026-03-27",
           "entryPrice": 296.91,
-          "latestPrice": 226.16,
-          "sinceReturn": -0.23827085648849833,
-          "benchmarkReturn": 0.18290778911510985,
-          "alpha": -0.4211786456036082,
+          "latestPrice": 227.79,
+          "sinceReturn": -0.23278097740055925,
+          "benchmarkReturn": 0.18435080193663356,
+          "alpha": -0.4171317793371928,
           "hosts": [
             "Friedberg"
           ]
@@ -34315,8 +34304,8 @@
         },
         {
           "date": "2026-06-17",
-          "portfolio": 2966,
-          "benchmark": 2433,
+          "portfolio": 2977,
+          "benchmark": 2436,
           "invested": 2000
         }
       ],
@@ -34327,21 +34316,24 @@
           "company": "Utilities (electric)",
           "hosts": [
             "Friedberg"
-          ]
+          ],
+          "kind": "private"
         },
         {
           "slug": "chinese-tech-stocks-basket",
           "company": "Chinese tech stocks (basket)",
           "hosts": [
             "Friedberg"
-          ]
+          ],
+          "kind": "macro"
         },
         {
           "slug": "chinese-tech-etfs-basket",
           "company": "Chinese tech ETFs (basket)",
           "hosts": [
             "Friedberg"
-          ]
+          ],
+          "kind": "macro"
         }
       ]
     }
@@ -35041,8 +35033,8 @@
       "ticker": "CRWV",
       "entryDate": "2025-03-31",
       "basePrice": 37.08,
-      "latestPrice": 118.73,
-      "sinceReturn": 2.201995685005394,
+      "latestPrice": 119.52,
+      "sinceReturn": 2.2233009708737863,
       "hosts": [
         "Friedberg"
       ]
@@ -35053,8 +35045,8 @@
       "ticker": "EXPE",
       "entryDate": "2024-10-18",
       "basePrice": 159.61,
-      "latestPrice": 240.27,
-      "sinceReturn": 0.5053568072175929,
+      "latestPrice": 243.05,
+      "sinceReturn": 0.522774262264269,
       "hosts": [
         "Chamath"
       ]
@@ -35065,8 +35057,8 @@
       "ticker": "FOXA",
       "entryDate": "2024-07-26",
       "basePrice": 37.51,
-      "latestPrice": 52.13,
-      "sinceReturn": 0.3898160490535858,
+      "latestPrice": 51.85,
+      "sinceReturn": 0.38243135163956277,
       "hosts": [
         "Sacks"
       ]
@@ -35077,8 +35069,8 @@
       "ticker": "BA",
       "entryDate": "2025-03-24",
       "basePrice": 180.9,
-      "latestPrice": 227,
-      "sinceReturn": 0.2548369264787176,
+      "latestPrice": 229.43,
+      "sinceReturn": 0.2682697622996131,
       "hosts": [
         "Friedberg"
       ]
@@ -35089,8 +35081,8 @@
       "ticker": "ABNB",
       "entryDate": "2024-08-09",
       "basePrice": 115.08,
-      "latestPrice": 141.6,
-      "sinceReturn": 0.23044838373305532,
+      "latestPrice": 143.03,
+      "sinceReturn": 0.24287539103232536,
       "hosts": [
         "Sacks",
         "Chamath"
@@ -35102,8 +35094,8 @@
       "ticker": "SNOW",
       "entryDate": "2025-06-23",
       "basePrice": 213.71,
-      "latestPrice": 236.31,
-      "sinceReturn": 0.10575078377240188,
+      "latestPrice": 238.04,
+      "sinceReturn": 0.11384586589303258,
       "hosts": [
         "Chamath"
       ]
@@ -35114,8 +35106,8 @@
       "ticker": "SBUX",
       "entryDate": "2024-08-16",
       "basePrice": 94.81,
-      "latestPrice": 100.56,
-      "sinceReturn": 0.06064761101149663,
+      "latestPrice": 100.98,
+      "sinceReturn": 0.06507752346798856,
       "hosts": [
         "Friedberg",
         "Sacks",
@@ -35128,8 +35120,8 @@
       "ticker": "WDAY",
       "entryDate": "2026-04-24",
       "basePrice": 119.76,
-      "latestPrice": 126.17,
-      "sinceReturn": 0.053523714094856345,
+      "latestPrice": 127.34,
+      "sinceReturn": 0.0632932531730126,
       "hosts": [
         "Chamath"
       ]
@@ -35140,8 +35132,8 @@
       "ticker": "META",
       "entryDate": "2026-06-15",
       "basePrice": 593.48,
-      "latestPrice": 581.12,
-      "sinceReturn": -0.020826312596886165,
+      "latestPrice": 580.67,
+      "sinceReturn": -0.021584552133180668,
       "hosts": [
         "Chamath"
       ]
@@ -35152,8 +35144,8 @@
       "ticker": "WBD",
       "entryDate": "2025-12-15",
       "basePrice": 29.71,
-      "latestPrice": 26.52,
-      "sinceReturn": -0.10720296196566825,
+      "latestPrice": 26.51,
+      "sinceReturn": -0.10784247728037699,
       "hosts": [
         "Chamath"
       ]
@@ -35164,8 +35156,8 @@
       "ticker": "GME",
       "entryDate": "2024-06-07",
       "basePrice": 28.22,
-      "latestPrice": 21.48,
-      "sinceReturn": -0.23866052445074415,
+      "latestPrice": 21.7,
+      "sinceReturn": -0.23086463501063081,
       "hosts": [
         "Friedberg"
       ]
@@ -35176,8 +35168,8 @@
       "ticker": "ADBE",
       "entryDate": "2025-07-07",
       "basePrice": 376.93,
-      "latestPrice": 202.34,
-      "sinceReturn": -0.4632027166847956,
+      "latestPrice": 204.37,
+      "sinceReturn": -0.4578038362560688,
       "hosts": [
         "Chamath"
       ]

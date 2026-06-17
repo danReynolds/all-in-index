@@ -6,11 +6,12 @@ import {
   hostExposureWindows,
   type ExposureWindow,
 } from "../lib/calls";
-import { isTradableCompanyExposure } from "../lib/tradability";
+import { isTradableCompanyExposure, classifyExcluded } from "../lib/tradability";
 import { guestSlug } from "../lib/format";
 import type {
   BearCall,
   CallType,
+  ExcludedKind,
   GuestCall,
   GuestLeaderboardEntry,
   Holding,
@@ -236,7 +237,8 @@ export async function buildWindowFund(
   const excludedPrivate = holdings
     .filter((h) => !h.ticker && hostExposureWindows(h.theses, host).length > 0)
     .sort((a, b) => b.mentionCount - a.mentionCount)
-    .map((h) => ({ slug: h.slug, company: h.company, hosts: [host] }));
+    .map((h) => ({ slug: h.slug, company: h.company, hosts: [host], kind: classifyExcluded(h.company) }))
+    .filter((e): e is typeof e & { kind: ExcludedKind } => e.kind !== null);
 
   if (candidates.length === 0) return null;
   const inception = candidates.map((c) => c.windows[0].start).sort()[0];
@@ -388,16 +390,16 @@ export async function buildIndexFund(
   const bullish = holdings
     .filter(isTradableCompanyExposure)
     .filter((h) => isCurrentNetBull(h.theses, hostSet));
-  const excludedPrivateHoldings = holdings.filter(
-    (h) => !h.ticker && isCurrentNetBull(h.theses, hostSet),
-  );
-  const excludedPrivate = excludedPrivateHoldings
+  const excludedPrivate = holdings
+    .filter((h) => !h.ticker && isCurrentNetBull(h.theses, hostSet))
     .sort((a, b) => b.mentionCount - a.mentionCount)
     .map((h) => ({
       slug: h.slug,
       company: h.company,
       hosts: currentBullHosts(h, hostSet),
-    }));
+      kind: classifyExcluded(h.company),
+    }))
+    .filter((e): e is typeof e & { kind: ExcludedKind } => e.kind !== null);
   const excludedPrivateCount = excludedPrivate.length;
 
   if (bullish.length === 0) return null;

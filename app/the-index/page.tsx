@@ -1,13 +1,12 @@
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { getIndex } from "@/lib/data";
-import { pct, returnColor, fmtDate, fmtMoney } from "@/lib/format";
+import { pct, returnColor, fmtDate } from "@/lib/format";
 import { IndexChart } from "@/app/components/IndexChart";
-import { CompanyLogo } from "@/app/components/CompanyLogo";
-import { HostStack } from "@/app/components/host";
 import { Reveal } from "@/app/components/Reveal";
 import { BackLink } from "@/app/components/BackLink";
-import { LinkRow } from "@/app/components/LinkRow";
+import { ConstituentsTable, BearBookTable, GuestLeaderboardTable } from "@/app/components/IndexTables";
+import type { ExcludedKind } from "@/lib/types";
 
 const d = (ms: number) => ({ "--d": `${ms}ms` }) as CSSProperties;
 
@@ -41,6 +40,8 @@ export default function IndexPage() {
     const r = fund.constituents.map((c) => c.sinceReturn).sort((a, b) => a - b);
     return r.length ? r[Math.floor(r.length / 2)] : 0;
   })();
+  const constituentRows = fund.constituents.map((c) => ({ ...c, domain: domainOf.get(c.slug) ?? null }));
+  const bearRows = bearBook.map((b) => ({ ...b, domain: domainOf.get(b.slug) ?? null }));
 
   return (
     <div className="space-y-8">
@@ -52,6 +53,10 @@ export default function IndexPage() {
           A rules-based, equal-weight long basket of public companies where the hosts&apos;
           current scored view is net-bullish — bought when that bullish stance was adopted,
           held to today, and benchmarked against the S&amp;P with identical cashflows.
+          It&apos;s the <strong className="text-neutral-700 dark:text-neutral-300">long book</strong>;
+          names they&apos;ve turned bearish on aren&apos;t dropped — they move to{" "}
+          <Link href="#bear-book" className="text-rose-600 hover:underline dark:text-rose-400">the Bear Book</Link>,
+          scored as shorts.
         </p>
       </header>
 
@@ -95,75 +100,62 @@ export default function IndexPage() {
       {/* Constituents */}
       <Reveal>
       <section className="space-y-3">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
-          Constituents · sorted by alpha
-        </h2>
-        <div className="overflow-x-auto rounded-xl border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900">
-          <table className="w-full text-sm">
-            <thead className="border-b border-neutral-200 text-left text-[11px] uppercase tracking-[0.16em] text-neutral-500 dark:border-neutral-800">
-              <tr>
-                <th className="px-4 py-3 font-medium">#</th>
-                <th className="px-4 py-3 font-medium">Company</th>
-                <th className="hidden px-4 py-3 font-medium sm:table-cell">Entry</th>
-                <th className="hidden px-4 py-3 text-right font-medium md:table-cell">Entry → now</th>
-                <th className="px-4 py-3 text-right font-medium">Return</th>
-                <th className="hidden px-4 py-3 text-right font-medium sm:table-cell">S&amp;P</th>
-                <th className="px-4 py-3 text-right font-medium">Alpha</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
-              {fund.constituents.map((c, i) => (
-                <LinkRow key={c.slug} href={`/holding/${c.slug}`} className="group transition-colors hover:bg-white/[0.025]">
-                  <td className="px-4 py-3 text-neutral-400 tabular-nums">{i + 1}</td>
-                  <td className="px-4 py-3">
-                    <Link href={`/holding/${c.slug}`} className="flex items-center gap-2.5 font-medium">
-                      <CompanyLogo name={c.company} domain={domainOf.get(c.slug)} size="sm" />
-                      <span className="group-hover:underline">{c.company}</span>
-                      <span className="rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-xs text-neutral-500 dark:bg-neutral-800">{c.ticker}</span>
-                    </Link>
-                  </td>
-                  <td className="hidden px-4 py-3 text-neutral-500 sm:table-cell">{fmtDate(c.entryDate)}</td>
-                  <td className="hidden px-4 py-3 text-right font-mono tabular-nums text-neutral-500 md:table-cell">
-                    {fmtMoney(c.entryPrice, c)} → {fmtMoney(c.latestPrice, c)}
-                  </td>
-                  <td className={`px-4 py-3 text-right font-mono tabular-nums ${returnColor(c.sinceReturn)}`}>{pct(c.sinceReturn)}</td>
-                  <td className="hidden px-4 py-3 text-right font-mono tabular-nums text-neutral-500 sm:table-cell">{pct(c.benchmarkReturn)}</td>
-                  <td className={`px-4 py-3 text-right font-mono font-semibold tabular-nums ${returnColor(c.alpha)}`}>
-                    {c.alpha >= 0 ? "+" : ""}{(c.alpha * 100).toFixed(1)}pp
-                  </td>
-                </LinkRow>
-              ))}
-            </tbody>
-          </table>
+        <div className="flex items-baseline justify-between gap-3">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Constituents</h2>
+          <span className="text-xs text-neutral-500">
+            {fund.constituents.length} longs · tap a column to sort
+          </span>
         </div>
+        <ConstituentsTable rows={constituentRows} />
       </section>
       </Reveal>
 
-      {/* Excluded private */}
-      {fund.excludedPrivate.length > 0 && (
-        <Reveal>
-        <section className="space-y-2">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
-            Bullish but not investable · {fund.excludedPrivate.length} private companies
-          </h2>
-          <p className="text-sm text-neutral-500">
-            Net-bullish calls on private companies — tracked in the catalog, excluded from the
-            tradable index until there&apos;s a public market.
-          </p>
-          <div className="flex flex-wrap gap-2 pt-1">
-            {fund.excludedPrivate.map((p) => (
-              <Link
-                key={p.slug}
-                href={`/holding/${p.slug}`}
-                className="rounded-full border border-neutral-200 px-3 py-1 text-sm text-neutral-600 hover:border-neutral-400 dark:border-neutral-700 dark:text-neutral-300"
-              >
-                {p.company}
-              </Link>
-            ))}
-          </div>
-        </section>
-        </Reveal>
-      )}
+      {/* Bullish, but outside the single-name index — grouped by why */}
+      {fund.excludedPrivate.length > 0 && (() => {
+        const GROUPS: Array<{ kind: ExcludedKind; label: string; note: string }> = [
+          { kind: "private", label: "Private companies", note: "No public market yet — net-bullish calls tracked in the catalog." },
+          { kind: "crypto", label: "Crypto", note: "Investable, but via spot ETFs or tokens rather than single-name equities — tracked, outside the stock index." },
+          { kind: "macro", label: "Macro & baskets", note: "Broad or multi-name bets with no single ticker to hold." },
+        ];
+        return (
+          <Reveal>
+          <section className="space-y-4">
+            <div>
+              <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+                Bullish, but outside the index · {fund.excludedPrivate.length}
+              </h2>
+              <p className="mt-1 text-sm text-neutral-500">
+                Net-bullish calls that aren&apos;t a tradable single-name stock, so they can&apos;t sit
+                in the index — grouped by why.
+              </p>
+            </div>
+            {GROUPS.map(({ kind, label, note }) => {
+              const items = fund.excludedPrivate.filter((p) => p.kind === kind);
+              if (items.length === 0) return null;
+              return (
+                <div key={kind} className="space-y-1.5">
+                  <div className="text-xs font-medium text-neutral-400">
+                    {label} <span className="text-neutral-600">· {items.length}</span>
+                  </div>
+                  <p className="text-xs text-neutral-600">{note}</p>
+                  <div className="flex flex-wrap gap-2 pt-0.5">
+                    {items.map((p) => (
+                      <Link
+                        key={p.slug}
+                        href={`/holding/${p.slug}`}
+                        className="rounded-full border border-neutral-200 px-3 py-1 text-sm text-neutral-600 hover:border-neutral-400 dark:border-neutral-700 dark:text-neutral-300"
+                      >
+                        {p.company}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </section>
+          </Reveal>
+        );
+      })()}
 
       {/* Guesties — the fun side index */}
       {guesties && (
@@ -219,46 +211,7 @@ export default function IndexPage() {
                   the S&amp;P over the same window.
                 </p>
               </div>
-              <div className="overflow-x-auto rounded-xl border border-violet-200 bg-white dark:border-violet-900/50 dark:bg-neutral-900">
-                <table className="w-full text-sm">
-                  <thead className="border-b border-neutral-200 text-left text-[11px] uppercase tracking-[0.16em] text-neutral-500 dark:border-neutral-800">
-                    <tr>
-                      <th className="px-4 py-3 font-medium">Guest</th>
-                      <th className="px-4 py-3 text-right font-medium">Calls</th>
-                      <th className="px-4 py-3 text-right font-medium">Follow return</th>
-                      <th className="hidden px-4 py-3 text-right font-medium sm:table-cell">vs S&amp;P</th>
-                      <th className="hidden px-4 py-3 text-right font-medium md:table-cell">Best call</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
-                    {guestLeaders.map((g, i) => (
-                      <LinkRow key={g.guest} href={`/guest/${g.slug}`} className="group transition-colors hover:bg-violet-50/40 dark:hover:bg-violet-950/20">
-                        <td className="px-4 py-3">
-                          <span className="mr-2 inline-block w-4 text-right font-mono text-xs text-neutral-400">{i + 1}</span>
-                          <Link href={`/guest/${g.slug}`} className="relative z-10 font-medium group-hover:underline">{g.guest}</Link>
-                        </td>
-                        <td className="px-4 py-3 text-right tabular-nums text-neutral-500">{g.calls}</td>
-                        <td className={`px-4 py-3 text-right font-mono tabular-nums ${returnColor(g.followReturn)}`}>
-                          {pct(g.followReturn)}
-                        </td>
-                        <td className="hidden px-4 py-3 text-right font-mono tabular-nums sm:table-cell">
-                          <span className={returnColor(g.alpha)}>{g.alpha >= 0 ? "+" : ""}{(g.alpha * 100).toFixed(1)}pp</span>
-                        </td>
-                        <td className="hidden px-4 py-3 text-right md:table-cell">
-                          {g.best ? (
-                            <Link href={`/holding/${g.best.slug}`} className="relative z-10 font-mono text-xs hover:underline">
-                              <span className="text-neutral-600 dark:text-neutral-300">{g.best.ticker}</span>{" "}
-                              <span className={returnColor(g.best.ret)}>{g.best.ret >= 0 ? "+" : ""}{(g.best.ret * 100).toFixed(0)}%</span>
-                            </Link>
-                          ) : (
-                            <span className="text-neutral-400">—</span>
-                          )}
-                        </td>
-                      </LinkRow>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+              <GuestLeaderboardTable rows={guestLeaders} />
             </div>
           )}
         </section>
@@ -278,8 +231,10 @@ export default function IndexPage() {
             <div>
               <h2 className="font-display text-xl font-bold tracking-tight">The Bear Book 🐻</h2>
               <p className="mt-1 max-w-2xl text-sm text-neutral-600 dark:text-neutral-400">
-                Every public name the besties are currently net-bearish on, scored as if you&apos;d
-                shorted when that bear stance was adopted. Sorted by how wrong it has gone.
+                The short side of the same book. Every public name the besties are currently
+                net-<em>bearish</em> on — held to the same scoring bar as the index above, but
+                pointing down, so they sit here instead of in the long basket. Each is scored as
+                if you&apos;d shorted when that bear stance was adopted.
               </p>
             </div>
 
@@ -302,68 +257,7 @@ export default function IndexPage() {
               />
             </dl>
 
-            <div className="overflow-x-auto rounded-xl border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900">
-              <table className="w-full text-sm">
-                <thead className="border-b border-neutral-200 text-left text-[11px] uppercase tracking-[0.16em] text-neutral-500 dark:border-neutral-800">
-                  <tr>
-                    <th className="px-4 py-3 font-medium">Company</th>
-                    <th className="hidden px-4 py-3 font-medium sm:table-cell">Bear since</th>
-                    <th className="hidden px-4 py-3 font-medium md:table-cell">Who</th>
-                    <th className="px-4 py-3 text-right font-medium">Stock since</th>
-                    <th className="px-4 py-3 text-right font-medium">If shorted</th>
-                    <th className="px-4 py-3 text-right font-medium">Verdict</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
-                  {bearBook.map((b) => {
-                    const short = Math.max(-b.sinceReturn, -1);
-                    const wiped = -b.sinceReturn < -1;
-                    const wrongCall = b.sinceReturn > 0.02;
-                    const rightCall = b.sinceReturn < -0.02;
-                    const ageDays = Math.round((asOfMs - Date.parse(b.entryDate)) / 86400000);
-                    return (
-                      <LinkRow key={b.slug} href={`/holding/${b.slug}`} className="group transition-colors hover:bg-white/[0.025]">
-                        <td className="px-4 py-3">
-                          <Link href={`/holding/${b.slug}`} className="flex items-center gap-2.5 font-medium">
-                            <CompanyLogo name={b.company} domain={domainOf.get(b.slug)} size="sm" />
-                            <span className="group-hover:underline">{b.company}</span>
-                            <span className="rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-xs text-neutral-500 dark:bg-neutral-800">{b.ticker}</span>
-                          </Link>
-                        </td>
-                        <td className="hidden px-4 py-3 text-neutral-500 sm:table-cell">
-                          {fmtDate(b.entryDate)}
-                          {ageDays > 90 && (
-                            <span className="ml-1.5 text-xs text-amber-600 dark:text-amber-400" title="No fresh take since — view may be stale">
-                              · {ageDays}d
-                            </span>
-                          )}
-                        </td>
-                        <td className="hidden px-4 py-3 md:table-cell"><HostStack hosts={b.hosts} size="sm" /></td>
-                        <td className={`px-4 py-3 text-right font-mono tabular-nums ${returnColor(b.sinceReturn)}`}>
-                          {pct(b.sinceReturn)}
-                        </td>
-                        <td
-                          className={`px-4 py-3 text-right font-mono tabular-nums ${returnColor(short)}`}
-                          title={wiped ? "Capped at −100% — a real short is wiped out; no margin mechanics modeled." : undefined}
-                        >
-                          {pct(short)}
-                          {wiped && <span className="text-neutral-500">*</span>}
-                        </td>
-                        <td className="px-4 py-3 text-right text-xs font-semibold">
-                          {wrongCall ? (
-                            <span className="text-rose-500 dark:text-rose-400">✗ wrong</span>
-                          ) : rightCall ? (
-                            <span className="text-emerald-600 dark:text-emerald-400">✓ right</span>
-                          ) : (
-                            <span className="text-neutral-400">· early</span>
-                          )}
-                        </td>
-                      </LinkRow>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
+            <BearBookTable rows={bearRows} asOfMs={asOfMs} />
             <p className="text-xs text-neutral-400">
               Price-only, no borrow costs or margin mechanics — a scoreboard, not a strategy.
               Bear calls are never part of the long index above.
