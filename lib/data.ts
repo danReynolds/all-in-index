@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { IndexSnapshot, Holding, EpisodeMeta } from "./types";
+import type { IndexSnapshot, Holding, EpisodeMeta, IndexConstituent, BearCall } from "./types";
 
 const HOLDINGS_FILE = path.join(process.cwd(), "data", "holdings.json");
 const SAMPLE_FILE = path.join(process.cwd(), "data", "sample", "holdings.json");
@@ -34,17 +34,26 @@ export function getHolding(slug: string): {
   isSample: boolean;
   episodeLinks: Record<string, string | null>;
   episodes: Record<string, EpisodeMeta>;
+  /** This name's live index position (net-bull long), if any — the exact
+   *  daily-close return the ticker shows. */
+  indexPosition: IndexConstituent | null;
+  /** This name's live Bear Book entry (net-bear short), if any. */
+  bearPosition: BearCall | null;
 } {
   const { snapshot, isSample } = getIndex();
   const episodeLinks: Record<string, string | null> = {};
   for (const [id, meta] of Object.entries(snapshot.episodes ?? {})) {
     episodeLinks[id] = meta.link;
   }
+  const holding = snapshot.holdings.find((h) => h.slug === slug) ?? null;
+  const tk = holding?.ticker?.toUpperCase() ?? null;
   return {
-    holding: snapshot.holdings.find((h) => h.slug === slug) ?? null,
+    holding,
     isSample,
     episodeLinks,
     episodes: snapshot.episodes ?? {},
+    indexPosition: tk ? (snapshot.indexFund?.constituents.find((c) => c.ticker.toUpperCase() === tk) ?? null) : null,
+    bearPosition: tk ? ((snapshot.bearBook ?? []).find((b) => b.ticker.toUpperCase() === tk) ?? null) : null,
   };
 }
 
