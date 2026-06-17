@@ -499,6 +499,7 @@ export function PriceChart({
               stance={selected.thesis.stance}
               tone={selected.outcome != null ? "outcome" : "stance"}
               outcome={selected.outcome}
+              callType={selected.thesis.callType}
             />
             <Link
               href={`/episode/${selected.thesis.episodeId}`}

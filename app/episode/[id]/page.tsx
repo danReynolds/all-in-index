@@ -323,7 +323,7 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
                               </span>
                             )}
                           </span>
-                          <StanceBadge stance={t.stance} />
+                          <StanceBadge stance={t.stance} callType={t.callType} />
                           <ConvictionDots conviction={t.conviction} />
                           {isPortfolioScored(t) && (
                             <span
