@@ -12,15 +12,14 @@
     "conviction": "high",
     "callType": "explicit_long",
     "excludeReason": null,
-    "scoreNote": "Speaker explicitly states he bought more shares; also frames Anthropic as a multi-year structural bull.",
-    "summary": "Brad Gerstner is bullish on Anthropic, pointing to its explosive $6B/month revenue run rate driven by AI agents displacing labor budgets, and has been buying more shares; he argues the TAM is far larger than anyone imagined and that open-source competition hasn't slowed frontier-lab revenue growth.",
-    "quote": "we had a $6 billion month out of Anthropic in February, right? What widely reported. Okay, let that set in for a second, right? $6 billion in a month. It was only a 28-day month.",
-    "quoteStartMs": 1784253,
+    "scoreNote": "Confirmed active purchase: 'I bought a lot more since then'",
+    "summary": "Brad Gerstner bought more Anthropic shares after the BG2 episode and argues its $6B single-month revenue in February — unprecedented in software history — proves AI has crossed a threshold where agents compete with labor budgets, not just IT budgets, making it a compelling investment.",
+    "quote": "I bought a lot more since then, Jason... We had a $6 billion month out of Anthropic in February... That's more revenue than the annual revenue of Databricks and Snowflake that are two of the greatest software companies of all time after 12",
+    "quoteStartMs": 1725000,
     "topics": [
-      "revenue growth",
-      "AI agents",
+      "AI revenue",
       "valuation",
-      "TAM"
+      "growth"
     ],
     "attributionConfidence": "high",
     "guestName": "Brad Gerstner"
@@ -34,18 +33,17 @@
     "ticker": null,
     "isPublic": false,
     "host": "Guest",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "high",
     "callType": "explicit_long",
     "excludeReason": null,
-    "scoreNote": "Speaker explicitly states he bought more shares in both companies in context of discussing Anthropic and OpenAI together.",
-    "summary": "Brad Gerstner is bullish on OpenAI, citing its $20B annualized run rate and continued momentum; he has bought more shares and believes both OpenAI and Anthropic should go public to access cheap capital and expand the retail investor base.",
-    "quote": "OpenAI ended 2025 at $20 billion annualized run rate, and they've grown revenue from $2 billion to $20 billion in 24 months.",
-    "quoteStartMs": 1664080,
+    "scoreNote": "Same 'I bought a lot more' purchase statement covers both Anthropic and OpenAI as Gerstner confirmed investment in both",
+    "summary": "Brad Gerstner bought more OpenAI shares and sees both OpenAI and Anthropic as among the most important companies in the history of capitalism, with strong revenue momentum and a need to go public to access cheap capital for compute buildout.",
+    "quote": "These are 2 of the most important companies in the history of capitalism, in the history of America. It's destabilizing not to have them public.",
+    "quoteStartMs": 1895822,
     "topics": [
-      "revenue growth",
+      "AI revenue",
       "IPO",
-      "AI capex",
       "valuation"
     ],
     "attributionConfidence": "high",
@@ -65,14 +63,13 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath is skeptical about the quality and durability of Anthropic's revenue, arguing much of it reflects experimental test budgets rather than mission-critical production workflows, and that the industry's breathless messaging is creating a dangerous PR backlash that threatens future data center buildout.",
-    "quote": "There's not a single good example that we can find of sustained positive margin expansion and impact of AI inside of a true corporate enterprise that is not right now a small test.",
-    "quoteStartMs": 1938000,
+    "summary": "Chamath questions the durability and quality of Anthropic's revenue, arguing much of it is experimental checkbox spending rather than production-critical workflows, and criticizes leadership's inconsistent messaging as a risk to the business.",
+    "quote": "I am paying these models millions of dollars a year. And what I'm telling you is my revenues don't go up faster than their revenues. I'm consuming more tokens every single day. Do I get more economic output? I am not.",
+    "quoteStartMs": 2282087,
     "topics": [
-      "revenue quality",
-      "AI adoption",
-      "enterprise",
-      "PR risk"
+      "AI revenue quality",
+      "enterprise adoption",
+      "valuation"
     ],
     "attributionConfidence": "high"
   },
@@ -88,13 +85,14 @@
     "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Jason frames the oil price volatility as significant but contextualizes it historically, noting Brent crude spiked from $84 to $119 and back, currently at $99, with the Strait of Hormuz closure adding major uncertainty to the duration and direction of price moves.",
-    "quote": "Brent crude oil...it spiked to $84 on Friday....$119 on Monday...dropped back down to $84, jumped back up to $100 after 3 commercial ships were hit...Brent crude currently at $99 when we're taping this.",
+    "summary": "Jason frames the oil price volatility as significant and consequential, mapping out the spike from $84 to $119 and back, noting the Strait of Hormuz closure as an ongoing risk driver. His tone is descriptive/analytical rather than explicitly bullish or bearish, but he underscores the severity of the shock.",
+    "quote": "Brent crude oil... it spiked to $84 on Friday... $119 on Monday... dropped back down to $84, jumped back up to $100 after 3 commercial ships were hit in the strait... Brent crude currently at $99 when we're taping this.",
     "quoteStartMs": 229000,
     "topics": [
-      "Iran war",
       "Strait of Hormuz",
+      "Iran war",
       "oil price volatility",
+      "inflation",
       "geopolitical risk"
     ],
     "attributionConfidence": "high"
@@ -111,15 +109,14 @@
     "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Brad (Guest) acknowledges oil's short-term inflationary spike but believes the Trump doctrine limits conflict duration, implying oil price impacts will be shorter-lived than feared. He also notes Goldman Sachs raised PCE inflation forecasts largely due to oil.",
-    "quote": "I think the Trump doctrine is far more pragmatic than the neocon doctrine...my suspicion is that these impacts are shorter duration, but right now the market's having a little bit of post-traumatic stress flashbacks to Afghanistan and Iraq.",
+    "summary": "Brad (Guest) argues the Trump doctrine is pragmatic and limited in scope, suggesting the conflict will be shorter in duration than feared, implying oil price spikes will be transient rather than sustained.",
+    "quote": "I think the Trump doctrine is far more pragmatic than the neocon doctrine... my suspicion is that these impacts are shorter duration, but right now the market's having a little bit of post-traumatic stress flashbacks to Afghanistan and Iraq.",
     "quoteStartMs": 439605,
     "topics": [
       "Iran war",
-      "oil price spike",
-      "inflation",
+      "oil price duration",
       "Trump doctrine",
-      "geopolitical risk"
+      "market sentiment"
     ],
     "attributionConfidence": "high",
     "guestName": "Brad Gerstner"
@@ -134,17 +131,17 @@
     "isPublic": true,
     "host": "Chamath",
     "stance": "bear",
-    "conviction": "high",
+    "conviction": "medium",
     "callType": "view",
-    "summary": "Chamath is bullish on oil prices coming back down, arguing Trump's 'war will be over soon' comments triggered a rapid drop from $120 to $90, validating market belief in a short conflict. He also highlights coordinated IEA strategic reserve releases (~400M+ barrels) as a further dampener on price spikes.",
-    "quote": "President Trump was asked about the war and he said the war would be over very soon. What did the market do? The market literally took oil from $120 a barrel to $90 a barrel...Chris released 172 million barrels...a coordinated release of about 400 million barrels of petroleum. That's going to dampen the effect of any price spike.",
-    "quoteStartMs": 505919,
+    "summary": "Chamath interprets the market's sharp drop in oil from $120 to $90 on Trump's 'war over soon' comment as validation that sharps see no path to sustained conflict. He also highlights coordinated IEA strategic reserve releases (400M+ barrels) as a price dampener, concluding the worst is likely behind us.",
+    "quote": "The market literally took oil from $120 a barrel to $90 a barrel... the fact that there was this reflexive move, I think is a belief by a lot of the Sharps that there is no path to a sustained conflict... I think the estimate is there's probably another billion or so more barrels that one could release out of strategic stockpiles.",
+    "quoteStartMs": 513572,
     "topics": [
       "Iran war",
-      "oil price",
-      "strategic petroleum reserve",
-      "IEA",
-      "geopolitical risk"
+      "oil price trajectory",
+      "IEA strategic reserves",
+      "market signals",
+      "Strait of Hormuz"
     ],
     "attributionConfidence": "high"
   },
@@ -158,17 +155,17 @@
     "isPublic": true,
     "host": "Sacks",
     "stance": "neutral",
-    "conviction": "high",
+    "conviction": "medium",
     "callType": "view",
-    "summary": "Sacks warns of severe upside oil price risk if escalation continues — Iranian tit-for-tat strikes on Gulf oil and gas infrastructure could devastate production across the region even if the Strait of Hormuz reopens, representing a worst-case bull scenario for oil prices.",
-    "quote": "If the Iranians get hit, if their oil and gas infrastructure gets hit, they've already said they're going to engage in tit-for-tat retaliation against the Gulf states...it won't really matter if the straits get reopened because you won't be able to restart oil and gas production in the Middle East.",
+    "summary": "Sacks warns of significant oil price upside risk from escalation scenarios — Iranian tit-for-tat strikes on Gulf oil infrastructure could be far worse than the Strait closure alone — but favors de-escalation/declaring victory as the right path, which would be bullish for oil stabilization.",
+    "quote": "If the Iranians get hit, if their oil and gas infrastructure gets hit, they've already said they're going to engage in tit-for-tat retaliation against the Gulf states... it won't really matter if the straits get reopened because you won't be able to restart oil and gas production in the Middle East.",
     "quoteStartMs": 685340,
     "topics": [
       "Iran war",
-      "oil infrastructure",
+      "oil infrastructure risk",
       "Gulf states",
-      "Strait of Hormuz",
-      "escalation risk"
+      "escalation",
+      "Strait of Hormuz"
     ],
     "attributionConfidence": "high"
   }
