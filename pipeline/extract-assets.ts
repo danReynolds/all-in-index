@@ -103,12 +103,13 @@ function assetWindows(tr: Transcript): string {
  * proxy as ticker) — build-index then treats them as holdings; index/funds
  * exclude them via isMacroAsset.
  */
-export async function extractAssets(): Promise<void> {
+export async function extractAssets(onlyIds?: string[]): Promise<void> {
   const proxyOf = new Map(ASSETS.map((a) => [a.name, a.proxy]));
   let created = 0;
   let episodesScanned = 0;
 
-  for (const epId of store.listEpisodeIds()) {
+  const ids = onlyIds ? store.listEpisodeIds().filter((id) => onlyIds.includes(id)) : store.listEpisodeIds();
+  for (const epId of ids) {
     const tr = store.loadTranscript(epId);
     if (!tr) continue;
     const windows = assetWindows(tr);

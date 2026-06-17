@@ -181,11 +181,15 @@ async function main() {
     }
     case "extract-assets": {
       const { extractAssets } = await import("./extract-assets");
-      return extractAssets();
+      const oi = rest.indexOf("--only");
+      const only = oi >= 0 ? rest[oi + 1]?.split(",").map((s) => s.trim()).filter(Boolean) : undefined;
+      return extractAssets(only);
     }
     case "name-guests": {
       const { nameGuests } = await import("./name-guests");
-      return nameGuests();
+      const oi = rest.indexOf("--only");
+      const only = oi >= 0 ? rest[oi + 1]?.split(",").map((s) => s.trim()).filter(Boolean) : undefined;
+      return nameGuests(only);
     }
     case "extract-predictions": {
       const { extractPredictions } = await import("./extract-predictions");

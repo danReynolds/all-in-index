@@ -58,7 +58,8 @@ DECISIVE CHECK before you KEEP any bull or bear (do this for every directional t
 2. A company the host describes as WINNING — growing fast, gaining share, entrenching monopolistic control, pulling away from rivals — is bull or neutral, NEVER bear, even when the host frames that winning as dangerous, unfair, or untrustworthy. (Example: "Anthropic is pursuing regulatory capture to entrench monopolistic control and is pulling away from OpenAI" describes Anthropic winning + a conduct objection → NOT bear; neutralize. It only becomes bear if the host says the company will LOSE customers/revenue, e.g. "enterprises treat it as a non-starter and flee to open-source".)
 
 Rules:
-- Reserve fix_quote for a REAL claim that exists in the transcript; if no such sentence exists, neutralize (or drop). Never invent or paraphrase — newQuote must be an exact substring of the host's lines.
+- QUOTE OWNERSHIP: the published quote must be the attributed host's OWN words. If it was actually spoken by a DIFFERENT person (check the [<sec>s <Speaker>] prefixes — a common error is attaching one host's vivid line, or a moderator's setup stat, to another host's take), it cannot stand. Use fix_quote with a line THIS host actually said that proves the stance; if this host never made the claim in their own words, neutralize (or drop if they never gave the company a real view). Likewise never let a quote stitch words from two different speakers.
+- Reserve fix_quote for a REAL claim that exists in the transcript; if no such sentence exists, neutralize (or drop). Never invent or paraphrase — newQuote must be an exact substring of the host's OWN lines.
 - When torn between keep and fix_quote, prefer fix_quote only if the current quote genuinely fails to carry the claim; otherwise keep.
 - When torn between fix_quote and neutralize, neutralize — only supply a new quote when you can point to an unambiguous directional sentence.
 - When torn between neutralize and drop, drop if the company appears only as an example or list item.`;
@@ -129,8 +130,15 @@ export async function verifyTheses(
     return theses;
   }
 
-  // Haystack for validating any proposed replacement quote is genuinely verbatim.
-  const haystack = norm(transcript.utterances.map((u) => u.text).join(" "));
+  // Per-speaker haystacks for validating a replacement quote: a fix_quote must
+  // be verbatim in the ATTRIBUTED HOST's own lines, never another speaker's —
+  // this enforces quote ownership mechanically, not just via the prompt.
+  const speakerText = new Map<string, string[]>();
+  for (const u of transcript.utterances) {
+    (speakerText.get(u.speaker) ?? speakerText.set(u.speaker, []).get(u.speaker)!).push(u.text);
+  }
+  const hostHaystack = new Map<string, string>();
+  for (const [spk, texts] of speakerText) hostHaystack.set(spk, norm(texts.join(" ")));
   const byIndex = new Map(verdicts.map((v) => [v.index, v]));
   const kept: Thesis[] = [];
   let dropped = 0;
@@ -154,7 +162,11 @@ export async function verifyTheses(
 
     if (v.verdict === "fix_quote") {
       const candidate = (v.newQuote ?? "").trim();
-      if (isVerbatim(candidate, haystack)) {
+      // Validate against the attributed host's own lines only — a replacement
+      // that's verbatim somewhere in the transcript but not in this host's
+      // utterances is exactly the cross-speaker contamination we're guarding against.
+      const hostHay = hostHaystack.get(t.host) ?? "";
+      if (isVerbatim(candidate, hostHay)) {
         requoted++;
         console.log(`  ✎ requote ${t.company} (${t.stance}) — ${v.reason}`);
         kept.push({

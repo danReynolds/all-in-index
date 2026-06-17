@@ -173,13 +173,14 @@ function clusterAt(tr: Transcript, ms: number | null): string | null {
 }
 
 /** Identify guests per episode and stamp guestName onto their takes. */
-export async function nameGuests(): Promise<void> {
+export async function nameGuests(onlyIds?: string[]): Promise<void> {
   const byId = new Map<string, string>();
   let named = 0;
   let unnamed = 0;
   const overrides: string[] = [];
 
-  for (const epId of store.listEpisodeIds()) {
+  const epIds = onlyIds ? store.listEpisodeIds().filter((id) => onlyIds.includes(id)) : store.listEpisodeIds();
+  for (const epId of epIds) {
     const theses = store.loadTheses(epId);
     const guestTakes = theses.filter((t) => t.host === "Guest");
     if (!guestTakes.length) continue;

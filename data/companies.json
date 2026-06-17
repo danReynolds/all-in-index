@@ -842,5 +842,13 @@
   "starlink-spacex": {
     "description": "SpaceX is a private aerospace company; Starlink is its satellite internet service providing global broadband coverage.",
     "domain": "spacex.com"
+  },
+  "hyperscalers-amazon-microsoft-google-meta": {
+    "description": "Collective term for large-scale cloud and technology infrastructure providers: Amazon, Microsoft, Google, and Meta.",
+    "domain": null
+  },
+  "ohalo": {
+    "description": "Ohalo develops data amplification technology using genetic techniques to boost crop yields in agriculture.",
+    "domain": "ohalo.co"
   }
 }
