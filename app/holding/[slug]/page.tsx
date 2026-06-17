@@ -87,7 +87,7 @@ function groupByHost(theses: Thesis[]): Array<{ host: Host; takes: Thesis[]; fli
 
 export default async function HoldingPage({ params }: PageProps<"/holding/[slug]">) {
   const { slug } = await params;
-  const { holding: h, isSample, episodeLinks, episodes } = getHolding(slug);
+  const { holding: h, isSample, episodeLinks, episodes, indexPosition, bearPosition } = getHolding(slug);
   if (!h) notFound();
   const guestLinks = guestLinkMap();
 
@@ -184,64 +184,63 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
       {/* Full-width stat band: performance for public, conviction for private */}
       {h.market ? (
         <section className="rise flex flex-wrap items-center gap-x-10 gap-y-4 rounded-2xl border border-neutral-200 bg-white px-6 py-5 dark:border-neutral-800 dark:bg-neutral-900" style={d(120)}>
-          <div>
-            <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
-              Price since first call
-            </div>
-            <div className={`font-display text-5xl font-bold tabular-nums ${returnColor(h.market.returns.since)}`}>
-              {pct(h.market.returns.since)}
-            </div>
-            <div className="mt-0.5 text-xs text-neutral-400">
-              {fmtMoney(h.market.basePrice, h.market)} → {fmtMoney(h.market.latestPrice, h.market)}
-            </div>
-          </div>
-          <div className="hidden h-12 w-px bg-neutral-200 sm:block dark:bg-neutral-800" />
           {(() => {
+            // Headline = what their CURRENT call is worth, anchored to when that
+            // stance was adopted (not the first mention). For names the index /
+            // Bear Book hold, use their exact daily-close numbers so this matches
+            // the ticker; otherwise fall back to the (sampled) currentCall.
             const cc = currentCall(h);
-            if (!cc) return null;
-            const callOutcome =
-              cc.ret != null && cc.stance === "bear"
-                ? -cc.ret
-                : cc.ret != null && cc.stance === "bull"
-                  ? cc.ret
-                  : null;
+            const directional = cc && (cc.stance === "bull" || cc.stance === "bear");
+            const call =
+              directional && indexPosition
+                ? { dir: "bull" as const, ret: indexPosition.sinceReturn, entryDate: indexPosition.entryDate, p0: indexPosition.entryPrice, p1: indexPosition.latestPrice }
+                : directional && bearPosition
+                  ? { dir: "bear" as const, ret: Math.max(-bearPosition.sinceReturn, -1), entryDate: bearPosition.entryDate, p0: bearPosition.basePrice, p1: bearPosition.latestPrice }
+                  : directional && cc!.ret != null
+                    ? { dir: cc!.stance, ret: cc!.stance === "bear" ? -cc!.ret : cc!.ret, entryDate: cc!.sinceDate, p0: null as number | null, p1: null as number | null }
+                    : null;
+            const staleBadge = (() => {
+              const scored = scoredTakes(h.theses);
+              if (!scored.length || marketAsOfMs == null) return null;
+              const age = Math.round((marketAsOfMs - Date.parse(scored[scored.length - 1].episodeDate)) / 86400000);
+              return age > 90 ? (
+                <span className="ml-1.5 text-amber-600 dark:text-amber-400" title="No scored take on this name since — the stance behind this call may be stale.">
+                  · stance {age}d old
+                </span>
+              ) : null;
+            })();
+            if (!call) {
+              // No directional current stance (mixed / neutral / no scored take):
+              // fall back to plain price-since-first-discussed.
+              return (
+                <div>
+                  <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">Price since first discussed</div>
+                  <div className={`font-display text-5xl font-bold tabular-nums ${returnColor(h.market!.returns.since)}`}>{pct(h.market!.returns.since)}</div>
+                  <div className="mt-0.5 text-xs text-neutral-400">
+                    {fmtMoney(h.market!.basePrice, h.market)} → {fmtMoney(h.market!.latestPrice, h.market)}{staleBadge}
+                  </div>
+                </div>
+              );
+            }
             return (
               <div>
                 <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
-                  Current call
+                  Since their {call.dir === "bull" ? "bullish" : "bearish"} call
                 </div>
-                <div className="mt-1.5 flex items-center gap-2">
-                  <StanceBadge
-                    stance={cc.stance}
-                    tone={callOutcome != null ? "outcome" : "stance"}
-                    outcome={callOutcome}
-                  />
-                  {cc.ret != null && (
-                    <span className={`font-mono text-sm tabular-nums ${returnColor(cc.ret)}`}>
-                      {pct(cc.ret)}
-                    </span>
-                  )}
+                <div className={`font-display text-5xl font-bold tabular-nums ${returnColor(call.ret)}`}>{pct(call.ret)}</div>
+                <div className="mt-0.5 text-xs text-neutral-400">
+                  {call.p0 != null && call.p1 != null && <>{fmtMoney(call.p0, h.market)} → {fmtMoney(call.p1, h.market)} · </>}
+                  since {fmtDate(call.entryDate)}{staleBadge}
                 </div>
-                <div className="mt-1 text-xs text-neutral-400">
-                  since {fmtDate(cc.sinceDate)}
-                  {(() => {
-                    const scored = scoredTakes(h.theses);
-                    if (!scored.length) return null;
-                    if (marketAsOfMs == null) return null;
-                    const age = Math.round((marketAsOfMs - Date.parse(scored[scored.length - 1].episodeDate)) / 86400000);
-                    return age > 90 ? (
-                      <span
-                        className="ml-1.5 text-amber-600 dark:text-amber-400"
-                        title="No scored take on this name since — the stance behind this call may be stale."
-                      >
-                        · stance {age}d old
-                      </span>
-                    ) : null;
-                  })()}
-                </div>
+                {totalFlips > 0 && (
+                  <div className="mt-1 text-xs text-neutral-500" title="Total price move since the besties first discussed this name — across stance changes, so not what following their calls would have returned.">
+                    Stock {pct(h.market!.returns.since)} since first discussed {fmtDate(h.firstMentioned)}
+                  </div>
+                )}
               </div>
             );
           })()}
+          <div className="hidden h-12 w-px bg-neutral-200 sm:block dark:bg-neutral-800" />
           {(() => {
             const fs = followStats(h);
             if (!fs || !fs.evolved) return null;
