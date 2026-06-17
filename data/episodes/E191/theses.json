@@ -13,14 +13,14 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Friedberg argues Apple faces mounting regulatory risks — loss of Google's $20B TAC payment, China exposure, App Store antitrust scrutiny, and ad-tracking regulation — that could inflict significant financial pain during the transition from unregulated to regulated monopoly.",
-    "quote": "Apple also has a very deep relationship with China...And most importantly, we've talked a lot about the 30% vig that Apple takes on their App Store and how regulators are now stepping in...that transition could be financially painful for",
-    "quoteStartMs": 2995634,
+    "summary": "Friedberg argues Apple faces significant regulatory risks—from the Google antitrust ruling ($20B TAC payments at risk), China exposure, App Store fees under scrutiny—that could be financially painful during the transition from unregulated to regulated monopoly, unlike Berkshire's other holdings which are already regulated.",
+    "quote": "Apple, however, is not regulated... it is very clear that Apple is facing very deep and severe financial impact from the regulatory authorities that are overseeing the business.",
+    "quoteStartMs": 2975686,
     "topics": [
       "regulation",
       "antitrust",
-      "China risk",
-      "App Store"
+      "valuation",
+      "competitive moat"
     ],
     "attributionConfidence": "high"
   },
@@ -38,14 +38,14 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues Apple is 'a little bit wayward' — an effective unregulated monopoly that doesn't know what to do — and that investors should sensitize its valuation for the potential loss of Google's $20B annual TAC payment if the antitrust ruling stands, which could reduce Apple's value by half a trillion to a trillion dollars.",
-    "quote": "you have to take the $20 billion that Google pays you every year, which comes in at 99% margin, and you should probably sensitize the value of Apple for not having that $20 billion if this antitrust ruling against Google stands. That alone",
-    "quoteStartMs": 3286852,
+    "summary": "Chamath argues Apple is 'wayward'—an effective unregulated monopoly that doesn't know what to do—and warns holders should sensitize the stock's value for losing the $20B Google TAC payment, which could impact Apple's valuation by half a trillion to a trillion dollars if the antitrust ruling stands.",
+    "quote": "Apple is sort of a little bit wayward. It is a company with an effective and unregulated monopoly or duopoly that doesn't really know what to do... you should probably sensitize the value of Apple for not having that $20 billion if this",
+    "quoteStartMs": 3237958,
     "topics": [
+      "regulation",
       "antitrust",
       "valuation",
-      "TAC",
-      "regulation"
+      "Google TAC"
     ],
     "attributionConfidence": "high"
   },
@@ -63,12 +63,12 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks infers that Buffett's record cash pile signals a defensively positioned, risk-off stance on public equities, suggesting he sees poor risk-reward in the current market.",
-    "quote": "it does stand to reason that Buffett is building up a war chest here and he's somewhat defensively positioned...it seems logical to infer that he thinks that the risk reward right now is not great on public equities. And he is, again, he's",
+    "summary": "Sacks observes that Buffett's record cash pile and Apple stake reduction suggest Berkshire is defensively positioned, implying Buffett sees unfavorable risk/reward in public equities currently.",
+    "quote": "It does stand to reason that Buffett is building up a war chest here and he's somewhat defensively positioned... it seems logical to infer that he thinks that the risk reward right now is not great on public equities.",
     "quoteStartMs": 3080640,
     "topics": [
-      "cash pile",
-      "risk-off",
+      "capital allocation",
+      "defensive positioning",
       "valuation"
     ],
     "attributionConfidence": "high"
@@ -83,18 +83,17 @@
     "isPublic": true,
     "host": "Chamath",
     "stance": "neutral",
-    "conviction": "high",
+    "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues the Google antitrust ruling is the most important tech event since the 2000 Microsoft DOJ decision, and that the likely 'little O' consent decree outcome — though not a breakup — will be meaningfully broader than the narrow TAC/search scope of the lawsuit and will hobble Google for years, creating space for AI-powered search competitors.",
-    "quote": "I think this Google thing is the most important thing that's happened in tech since the Microsoft DOJ decision in 2000...if Google gets away with just having to do something around TAC and search, yeah, it— they have dodged an enormous",
+    "summary": "Chamath argues the Google antitrust ruling is the most important tech event since the Microsoft DOJ decision in 2000, and that even a 'little O' consent decree outcome—most likely—will be meaningfully worse than the narrow scope of the lawsuit, potentially hobbling the company for years the way Microsoft was constrained.",
+    "quote": "This Google thing is the most important thing that's happened in tech since the Microsoft DOJ decision in 2000... if Google gets away with just having to do something around TAC and search, they have dodged an enormous bullet.",
     "quoteStartMs": 3506000,
     "topics": [
       "antitrust",
       "regulation",
-      "competitive threat",
-      "AI search"
+      "competitive moat"
     ],
     "attributionConfidence": "high"
   },
@@ -112,62 +111,13 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks calls Google a multi-part monopoly (search, advertising, video) and argues it should be broken into at least 3-4 companies; he also views the company as a threat to democratic elections due to biased search results.",
-    "quote": "Google clearly is a monopoly. In fact, it's at least 2 or 3 monopolies. They have monopoly in search, they have monopoly in advertising...it should be at least 3 or 4 companies...search should be its own company. Advertising should be its",
+    "summary": "Sacks argues Google is clearly at least 2-3 monopolies (search, advertising, YouTube) and should be broken into 3-4 separate companies, viewing the antitrust ruling as a good decision that reflects real abuse of monopoly power.",
+    "quote": "Google clearly is a monopoly. In fact, it's at least 2 or 3 monopolies... I think it would be great if the government broke up this company. It should be at least 3 or 4 companies.",
     "quoteStartMs": 3672000,
     "topics": [
       "antitrust",
       "breakup",
-      "regulation",
-      "monopoly"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E191-abnb-Chamath-5",
-    "episodeId": "E191",
-    "episodeNumber": 191,
-    "episodeDate": "2024-08-09T20:20:00.000Z",
-    "company": "Airbnb",
-    "ticker": "ABNB",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "bear",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Chamath cites Airbnb's massive demand warning as evidence that excess consumer stimulus has been exhausted and demand is no longer there, using it as a data point to support his recession thesis.",
-    "quote": "the one that was interesting this past week...Airbnb, where you think all these young people are running around YOLOing what, whatever cash they have. Airbnb had a massive warning on demand.",
-    "quoteStartMs": 1835000,
-    "topics": [
-      "consumer weakness",
-      "demand",
-      "recession"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E191-abnb-Sacks-6",
-    "episodeId": "E191",
-    "episodeNumber": 191,
-    "episodeDate": "2024-08-09T20:20:00.000Z",
-    "company": "Airbnb",
-    "ticker": "ABNB",
-    "isPublic": true,
-    "host": "Sacks",
-    "stance": "bear",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Sacks highlights Airbnb's 15% single-day stock drop on soft demand as a major factor driving professional investor concern about consumer weakness and recession risk.",
-    "quote": "Airbnb stock went down 15% in, in one day on soft demand. And what's driving all of this is, is consumer weakness, or at least fear of consumer weakness.",
-    "quoteStartMs": 2124921,
-    "topics": [
-      "consumer weakness",
-      "demand",
-      "stock decline"
+      "regulation"
     ],
     "attributionConfidence": "high"
   }

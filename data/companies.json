@@ -854,5 +854,9 @@
   "spcx": {
     "description": "Designs, manufactures, and launches rockets and spacecraft, providing commercial and government space transportation services.",
     "domain": "spacex.com"
+  },
+  "ibit": {
+    "description": "BlackRock's iShares Bitcoin Trust ETF providing investors regulated exposure to Bitcoin's price.",
+    "domain": "ishares.com"
   }
 }

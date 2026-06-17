@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { getHolding, allSlugs, guestLinkMap } from "@/lib/data";
 import { pct, returnColor, fmtDate, fmtDuration, fmtMoney } from "@/lib/format";
 import { currentCall, followStats, scoredTakes, displayStance } from "@/lib/calls";
-import { isMacroAsset } from "@/lib/assets";
+import { isMacroAsset, isCryptoProxy } from "@/lib/assets";
 import { StanceBadge, ConvictionDots, SampleBanner } from "@/app/components/badges";
 import { Explainer } from "@/app/components/Explainer";
 import { Sparkline } from "@/app/components/Sparkline";
@@ -148,7 +148,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
         )}
         {macro && (
           <p className="text-xs text-neutral-500">
-            A commodity, not a company — priced via the{" "}
+            {isCryptoProxy(h.ticker) ? "A crypto asset" : "A commodity"}, not a company — priced via the{" "}
             <span className="font-mono text-neutral-400">{h.ticker}</span> ETF as a clean proxy.
             Excluded from the index and host funds.
           </p>

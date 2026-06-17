@@ -13,13 +13,13 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues Airbnb's stock is signaling that the market has reclassified it as a cyclical consumer-spending business rather than a technology company, meaning no amount of tech investment can shield it from recession-driven demand weakness.",
-    "quote": "if you look at the last 6 months in the stock, what is it telling you? It's telling you that the people that own it have realized that it's less of a technology business and it's more of a cyclical business that ebbs and flows with the",
-    "quoteStartMs": 1602842,
+    "summary": "Chamath argues Airbnb is being re-rated from a tech company to a cyclical consumer business, meaning its stock will ebb and flow with consumer spending power rather than product quality, making it vulnerable in a recession regardless of internal improvements.",
+    "quote": "If you look at a company like Airbnb and if you look at the last 6 months in the stock, what is it telling you? It's telling you that the people that own it have realized that it's less of a technology business and it's more of a cyclical",
+    "quoteStartMs": 1600044,
     "topics": [
       "valuation",
-      "business model",
-      "cyclical risk"
+      "cyclical re-rating",
+      "consumer spending"
     ],
     "attributionConfidence": "high"
   },
@@ -32,17 +32,18 @@
     "ticker": "PANW",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath cites Nikesh Arora's track record at Palo Alto Networks — creating $80 billion of value in 8 years — as evidence of elite value creation driven by a rare management archetype.",
+    "summary": "Chamath cites Nikesh Arora's track record at Palo Alto Networks — creating $80 billion in value over 8 years — as evidence of exceptional leadership-driven value creation at the company.",
     "quote": "If you look at what Nikesh Arora was able to do at Palo Alto Networks, it's incredible. I mean, in 8 years he's created $80 billion of value.",
     "quoteStartMs": 711311,
     "topics": [
-      "management",
-      "value creation"
+      "leadership",
+      "value creation",
+      "enterprise tech"
     ],
     "attributionConfidence": "high"
   }
