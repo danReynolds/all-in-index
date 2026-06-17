@@ -173,7 +173,7 @@ export function Timeline({
                 className="font-semibold text-neutral-100"
               />
             )}
-            <StanceBadge stance={t.stance} />
+            <StanceBadge stance={t.stance} callType={t.callType} />
             <ConvictionDots conviction={t.conviction} />
             <Link
               href={`/episode/${t.episodeId}`}

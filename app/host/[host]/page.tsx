@@ -289,7 +289,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
                   >
                     {t.company} <span className="arrow-nudge inline-block">→</span>
                   </Link>
-                  <StanceBadge stance={t.stance} />
+                  <StanceBadge stance={t.stance} callType={t.callType} />
                 </div>
                 <blockquote className="mt-2 line-clamp-4 text-sm italic leading-relaxed text-neutral-600 dark:text-neutral-400">
                   “{t.quote}”

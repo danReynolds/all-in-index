@@ -1,5 +1,5 @@
 import { STANCE_META, type CallVerdict } from "@/lib/format";
-import type { Stance, Conviction } from "@/lib/types";
+import type { Stance, Conviction, CallType } from "@/lib/types";
 
 export function StanceBadge({
   stance,
@@ -7,6 +7,7 @@ export function StanceBadge({
   tone = "stance",
   outcome,
   verdict,
+  callType,
 }: {
   stance: Stance;
   className?: string;
@@ -18,7 +19,30 @@ export function StanceBadge({
    * second color fighting the stance.
    */
   verdict?: CallVerdict | null;
+  /**
+   * The take's callType, when this badge represents a single take. A non-
+   * positional "view" with no directional lean (neutral/mixed) is commentary,
+   * not a stance — so it reads "Commentary" rather than "Neutral"/"Mixed".
+   * Omitted for aggregate/derived stances, which keep their stance label.
+   */
+  callType?: CallType | null;
 }) {
+  const commentary =
+    callType === "view" &&
+    (stance === "neutral" || stance === "mixed") &&
+    tone === "stance" &&
+    verdict == null &&
+    outcome == null;
+  if (commentary) {
+    return (
+      <span
+        className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium bg-white/5 text-neutral-400 ring-1 ring-inset ring-white/10 ${className}`}
+      >
+        <span className="h-1.5 w-1.5 rounded-full bg-neutral-500" />
+        Commentary
+      </span>
+    );
+  }
   const m = STANCE_META[stance];
   const badge =
     tone === "outcome" && outcome != null

@@ -349,7 +349,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
                         <HostAvatar host={host} size="md" />
                         <span className="font-semibold">{host === "Guest" ? "Guests" : host}</span>
                       </div>
-                      <StanceBadge stance={latest.stance} />
+                      <StanceBadge stance={latest.stance} callType={latest.callType} />
                     </div>
                     <p className="mt-2 line-clamp-3 text-sm text-neutral-700 dark:text-neutral-300">
                       {latest.summary}
