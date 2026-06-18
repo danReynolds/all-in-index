@@ -9,17 +9,27 @@ import type { CallType, Holding, Host, Stance, Thesis, TradeDirection } from "./
 
 const BESTIES: readonly Host[] = ["Chamath", "Jason", "Sacks", "Friedberg"];
 
+/**
+ * The minimal thesis shape the stance logic reads. Declaring it lets callers
+ * pass a projected take (e.g. the homepage table, which ships none of the
+ * quote/summary/topics text) without widening it back to a full Thesis.
+ */
+export type StanceInput = Pick<
+  Thesis,
+  "host" | "stance" | "conviction" | "attributionConfidence" | "episodeDate"
+>;
+
 /** Takes that score: bestie (by default), medium+ conviction, attribution OK. */
-export function scoredTakes(
-  theses: Thesis[],
+export function scoredTakes<T extends StanceInput>(
+  theses: T[],
   hosts: readonly Host[] = BESTIES,
-): Thesis[] {
+): T[] {
   // Same-date tie-break: a host's directional take outranks their neutral
   // commentary from the same episode (it sorts later, so "latest per host"
   // logic lands on it), and higher conviction outranks lower. Without this,
   // file order decided e.g. which of Sacks's two same-day Anthropic takes
   // counted as his stance.
-  const dirRank = (t: Thesis) => (t.stance === "neutral" ? 0 : t.stance === "mixed" ? 1 : 2);
+  const dirRank = (t: StanceInput) => (t.stance === "neutral" ? 0 : t.stance === "mixed" ? 1 : 2);
   const convRank = { low: 0, medium: 1, high: 2 } as const;
   return theses
     .filter(
@@ -52,7 +62,7 @@ function balance(latest: Map<Host, Stance>): number {
 
 /** Current stance for a specific host set, with no guest fallback. */
 export function currentStanceForHosts(
-  theses: Thesis[],
+  theses: StanceInput[],
   hosts: readonly Host[],
 ): Stance {
   const takes = scoredTakes(theses, hosts);
@@ -75,14 +85,14 @@ export function currentStanceForHosts(
  * "neutral", which means scored takes exist and balance out. Don't conflate
  * "the table is torn" with "we have nothing scoreable".
  */
-export function displayStance(theses: Thesis[]): Stance | "none" {
+export function displayStance(theses: StanceInput[]): Stance | "none" {
   if (scoredTakes(theses).length === 0 && scoredTakes(theses, ["Guest"]).length === 0) {
     return "none";
   }
   return currentStanceFromTheses(theses);
 }
 
-export function currentStanceFromTheses(theses: Thesis[]): Stance {
+export function currentStanceFromTheses(theses: StanceInput[]): Stance {
   if (scoredTakes(theses).length > 0) return currentStanceForHosts(theses, BESTIES);
   return currentStanceForHosts(theses, ["Guest"]);
 }

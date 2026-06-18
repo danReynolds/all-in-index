@@ -7,6 +7,7 @@ import { HostAvatar } from "@/app/components/host";
 import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { StanceBadge } from "@/app/components/badges";
 import { IndexChart, type TradeEvent, type PositionStat } from "@/app/components/IndexChart";
+import { toEventTake } from "@/lib/projections";
 import { Explainer } from "@/app/components/Explainer";
 import { Reveal } from "@/app/components/Reveal";
 import { ListenButton } from "@/app/components/player";
@@ -89,7 +90,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
           domain: holding.domain ?? null,
           kind: "in",
           direction: w.direction,
-          take: w.startTake ?? null,
+          take: toEventTake(w.startTake),
         });
         for (const t of w.reinforceTakes ?? []) {
           tradeEvents.push({
@@ -100,7 +101,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
             domain: holding.domain ?? null,
             kind: "reaffirm",
             direction: w.direction,
-            take: t,
+            take: toEventTake(t),
           });
         }
         if (w.end) {
@@ -112,7 +113,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
             domain: holding.domain ?? null,
             kind: "out",
             direction: w.direction,
-            take: w.endTake ?? null,
+            take: toEventTake(w.endTake),
           });
         }
       }

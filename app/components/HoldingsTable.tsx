@@ -11,7 +11,8 @@ import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { LinkRow } from "@/app/components/LinkRow";
 import { REGULAR_HOSTS } from "@/lib/types";
 import { HOST_UI } from "@/lib/hosts";
-import type { Holding, Host, Stance } from "@/lib/types";
+import type { Host, Stance } from "@/lib/types";
+import type { HoldingRow } from "@/lib/projections";
 
 type SortKey = "latest" | "takes" | "best" | "worst";
 
@@ -66,7 +67,7 @@ export function HoldingsTable({
   subtitle = "scored vs the market",
   entityLabel = "Company",
 }: {
-  holdings: Holding[];
+  holdings: HoldingRow[];
   title?: string;
   subtitle?: string;
   entityLabel?: string;
@@ -78,7 +79,7 @@ export function HoldingsTable({
     let list = holdings;
     if (stance !== "all") list = list.filter((h) => displayStance(h.theses) === stance);
     if (host) list = list.filter((h) => h.theses.some((t) => t.host === host));
-    const since = (h: Holding) => h.market?.returns.since;
+    const since = (h: HoldingRow) => h.market?.returns.since;
     return list.slice().sort((a, b) => {
       switch (sort) {
         case "latest":
