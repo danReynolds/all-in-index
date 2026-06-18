@@ -13,12 +13,13 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Friedberg notes NVIDIA is the only company that has meaningfully captured value from the AI buildout so far, with a $3 trillion market cap creation in the last couple of years, while the rest of the AI ecosystem's value creation remains unproven.",
+    "sectorProxy": null,
+    "summary": "Friedberg notes NVIDIA is the only company that has actually captured value from the AI buildout so far, citing its $3 trillion market cap creation as evidence it is the singular winner at this stage of the AI investment cycle.",
     "quote": "with the exception of NVIDIA, which has really got this $3 trillion market cap creation that's happened in the last couple years. Peter Thiel said this best. He's like, look at all the money that's going into AI. There's really only one",
     "quoteStartMs": 457421,
     "topics": [
       "AI capex",
-      "value capture",
+      "market cap",
       "competitive moat"
     ],
     "attributionConfidence": "high"
@@ -32,19 +33,20 @@
     "ticker": "ASML",
     "isPublic": true,
     "host": "Sacks",
-    "stance": "neutral",
+    "stance": "mixed",
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues ASML's EUV lithography monopoly is the West's single biggest strategic advantage in the AI race, given it is the only source of machines capable of producing leading-edge chips, making it an extremely effective export control — though he acknowledges China's reverse-engineering efforts are a growing risk.",
-    "quote": "EUV lithography, these machines that are made by ASML, is probably our single biggest advantage in the AI race because they're the only machines that are capable of creating, say, 2 to 3 nanometer chips, semiconductors.",
+    "sectorProxy": null,
+    "summary": "Sacks describes ASML's EUV monopoly as the West's single biggest advantage in the AI race but warns that China reverse-engineering it would be a meaningful blow to that competitive moat, even if the full picture from Reuters is unclear.",
+    "quote": "EUV lithography, these machines that are made by ASML, is probably our single biggest advantage in the AI race... if they figured out how to reverse EUV, that would be, I'd say, a blow because it is a real advantage for us.",
     "quoteStartMs": 3993000,
     "topics": [
-      "semiconductor monopoly",
+      "semiconductor",
       "export controls",
-      "competitive moat",
-      "China risk"
+      "China competition",
+      "competitive moat"
     ],
     "attributionConfidence": "high"
   },
@@ -59,17 +61,18 @@
     "host": "Friedberg",
     "stance": "bull",
     "conviction": "high",
-    "callType": "view",
+    "callType": "selection",
     "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Friedberg predicts Huawei will be the strongest challenger to NVIDIA in 2026, arguing China's AI-driven lithography breakthroughs will enable Huawei to bring competitive chip manufacturing into production, with the company likely already possessing a working lithography system.",
-    "quote": "My early prediction for 2026 is Huawei, where I think that there is lithography technology that exists in China that is not publicly discussed, that is going to be deployed in Huawei and all these fabs that they're building in mainland",
-    "quoteStartMs": 3748000,
+    "scoreNote": "Ranked as explicit top pick to challenge NVIDIA; Huawei is not US-listed.",
+    "sectorProxy": null,
+    "summary": "Friedberg selects Huawei as his top pick to challenge NVIDIA in 2026, predicting it will deploy undisclosed lithography technology in new fabs and emerge as the leading challenger in AI chips.",
+    "quote": "My early prediction for 2026 is Huawei, where I think that there is lithography technology that exists in in China that is not publicly discussed, that is going to be deployed in Huawei and all these fabs that they're building in mainland",
+    "quoteStartMs": 3748250,
     "topics": [
-      "China chips",
+      "AI chips",
+      "China competition",
       "lithography",
-      "AI hardware",
-      "NVIDIA competition"
+      "semiconductor"
     ],
     "attributionConfidence": "high"
   }
