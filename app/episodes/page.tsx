@@ -8,6 +8,7 @@ import type { Stance } from "@/lib/types";
 export const metadata = {
   title: "Episodes — The All-Index",
   description: "Every processed episode and the calls made in it.",
+  alternates: { canonical: "/episodes" },
 };
 
 const STANCE_ORDER: Stance[] = ["bull", "bear", "mixed", "neutral"];

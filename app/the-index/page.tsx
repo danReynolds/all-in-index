@@ -12,6 +12,7 @@ const d = (ms: number) => ({ "--d": `${ms}ms` }) as CSSProperties;
 
 export const metadata = {
   title: "The Besties Index — constituents & methodology",
+  alternates: { canonical: "/the-index" },
 };
 
 export default function IndexPage() {

@@ -30,6 +30,31 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://allindex.fyi";
+
+// Organization + WebSite for rich results. The site is an independent,
+// unofficial project — say so here too, not just in the footer.
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#org`,
+      name: "The All-Index",
+      url: SITE_URL,
+      description:
+        "An independent, unofficial project tracking every investment call made on the All-In podcast — extracted, attributed, and scored against the market.",
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#site`,
+      name: "The All-Index",
+      url: SITE_URL,
+      publisher: { "@id": `${SITE_URL}/#org` },
+    },
+  ],
+};
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const { snapshot } = getIndex();
   const tickerItems = (snapshot.indexFund?.constituents ?? []).map((c) => ({
@@ -47,6 +72,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       className={`${geistSans.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} dark h-full antialiased`}
     >
       <body className="min-h-full flex flex-col text-neutral-100">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
         <a
           href="#main"
           className="sr-only rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50"

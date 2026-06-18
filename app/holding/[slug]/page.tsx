@@ -40,6 +40,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${h.company}${h.ticker ? ` (${h.ticker})` : ""} — what the besties said`,
     description: `${h.description ?? `${h.mentionCount} takes from the All-In hosts.`}${factLine} Every quote sourced and timestamped.`,
+    alternates: { canonical: `/holding/${slug}` },
   };
 }
 

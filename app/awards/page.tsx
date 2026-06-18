@@ -9,6 +9,7 @@ import { Reveal } from "@/app/components/Reveal";
 export const metadata = {
   title: "The Besties Awards",
   description: "The Oracle, the Flip-Flopper, the Call of the Catalog, and the Fumble.",
+  alternates: { canonical: "/awards" },
 };
 
 export default function AwardsPage() {

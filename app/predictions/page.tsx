@@ -10,6 +10,7 @@ import type { PredictionsFile } from "@/pipeline/extract-predictions";
 export const metadata = {
   title: "Predictions Scorecard",
   description: "The besties' year-ahead asset picks, scored against the market.",
+  alternates: { canonical: "/predictions" },
 };
 
 function loadPredictions(): PredictionsFile | null {

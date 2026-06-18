@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ host: str
     description: e?.positions
       ? `${(e.portfolioReturn >= 0 ? "+" : "") + (e.portfolioReturn * 100).toFixed(1)}% on ${e.positions} scored calls vs the S&P's ${(e.benchmarkReturn * 100).toFixed(1)}% over the same windows. Every call sourced from the All-In podcast.`
       : `Every call ${host} has made on the All-In podcast, sourced and scored.`,
+    alternates: { canonical: `/host/${host.toLowerCase()}` },
   };
 }
 
