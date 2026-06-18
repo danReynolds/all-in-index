@@ -14,14 +14,14 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Sacks views Anthropic's products favorably, crediting their coding-focused strategy as both a path to recursive self-improvement and a smart business move that unlocked enterprise IT budgets and enabled product extensions into agents.",
-    "quote": "The company made a big bet on coding as the kind of big breakout use case... it was a very good business move as well, because code is the gateway into enterprise and enterprise IT budgets. And so they've been able to grow revenue pretty",
-    "quoteStartMs": 284386,
+    "summary": "Sacks views Anthropic's products favorably, crediting their bet on coding as a smart path to enterprise revenue and recursive self-improvement, while noting philosophical objections to their regulatory capture strategy.",
+    "quote": "I think they're firing on all cylinders. My issues with them in the past were related to what I have called the regulatory capture strategy... But again, I'm not a detractor of their products by any means.",
+    "quoteStartMs": 344755,
     "topics": [
-      "enterprise",
+      "enterprise AI",
       "coding",
-      "product strategy",
-      "AI"
+      "regulatory capture",
+      "competitive position"
     ],
     "attributionConfidence": "high"
   },
@@ -40,13 +40,12 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Chamath says from an enterprise lens, it's all Anthropic all the time, praising the technical team as head and shoulders above anything else and crediting it with enabling a vibrant business, despite cost and token consumption concerns.",
-    "quote": "From an enterprise lens, which is where I see most of the action, particularly through 80/90, it's all Anthropic all the time... in terms of the quality of that technical team and what they create, it's head and shoulders above anything",
+    "summary": "Chamath says Anthropic dominates the enterprise AI market, calling their technical team head and shoulders above anything else and enabling vibrant business building at 80/90, despite cost and token consumption concerns.",
+    "quote": "From an enterprise lens, which is where I see most of the action, particularly through 80/90, it's all Anthropic all the time... the quality of that technical team and what they create, it's head and shoulders above anything else.",
     "quoteStartMs": 565740,
     "topics": [
-      "enterprise",
-      "AI",
-      "product quality",
+      "enterprise AI",
+      "competitive position",
       "valuation"
     ],
     "attributionConfidence": "high"
@@ -66,23 +65,22 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Chamath argues OpenAI remains the dominant revenue generator and overwhelmingly wins consumer mindshare, and that if it focuses on consumer — where it is the clear juggernaut — it could be a multi-trillion-dollar company.",
-    "quote": "OpenAI is still the overwhelming revenue generator in this space... if OpenAI just won the consumer business, it is a multi-trillion-dollar company with enormous scale and value.",
-    "quoteStartMs": 632000,
+    "summary": "Chamath argues OpenAI retains dominant consumer mindshare and is still the overwhelming revenue generator, and that if forced to choose a lane, they should double down on consumer where they are the clear juggernaut.",
+    "quote": "OpenAI is still the overwhelming revenue generator in this space... if you give them a cold navigation experience, they rely on ChatGPT... If I was OpenAI and you had to pick one thing, you would pick consumer because they're the",
+    "quoteStartMs": 1116000,
     "topics": [
       "consumer AI",
       "revenue",
-      "market share",
-      "strategy"
+      "competitive position"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   },
   {
     "id": "E266-googl-Sacks-3",
     "episodeId": "E266",
     "episodeNumber": 266,
     "episodeDate": "2026-03-27T20:03:00.000Z",
-    "company": "Google",
+    "company": "Google (Alphabet)",
     "ticker": "GOOGL",
     "isPublic": true,
     "host": "Sacks",
@@ -92,23 +90,22 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Sacks argues Google is in an outstanding position to win the consumer AI/agent space because it already has user trust and access to calendar, documents, and email, and that Gemini's success has reversed his earlier bearish view — the stock reflects this, having roughly doubled.",
-    "quote": "Google is in an outstanding position to do the whole Open Claw thing because they already have access to your calendar, your documents, your email... I think we're probably pretty bullish on that company. And look at their stock chart, it",
-    "quoteStartMs": 1512000,
+    "summary": "Sacks argues Google is well-positioned to compete in consumer AI because it already has access to users' calendars, documents, and email, making it the natural platform for personal AI agents, and that Gemini's success has made the stock reflect renewed optimism.",
+    "quote": "Google is in an outstanding position to do the whole Open Claw thing because they already have access to your calendar, your documents, your email. So the agent doesn't really have to earn your trust because you already trust Google with",
+    "quoteStartMs": 1531977,
     "topics": [
       "AI agents",
       "consumer AI",
-      "competitive moat",
-      "valuation"
+      "competitive moat"
     ],
-    "attributionConfidence": "low"
+    "attributionConfidence": "high"
   },
   {
     "id": "E266-googl-Chamath-4",
     "episodeId": "E266",
     "episodeNumber": 266,
     "episodeDate": "2026-03-27T20:03:00.000Z",
-    "company": "Google",
+    "company": "Google (Alphabet)",
     "ticker": "GOOGL",
     "isPublic": true,
     "host": "Chamath",
@@ -118,14 +115,14 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Chamath argues Google is uniquely positioned as the only AI player with enough free cash flow to run separate enterprise and consumer AI businesses simultaneously, and that the market reflects this in its valuation by pricing its cash flows as monopolistically durable.",
-    "quote": "They're the only one that has so much free cash flow that they can almost view it as two separate companies... people believe the durability of Google more than they believe the durability of anything else.",
-    "quoteStartMs": 1554170,
+    "summary": "Chamath argues Google is uniquely positioned because its free cash flow lets it run consumer AI and enterprise cloud as two separate companies, and that public markets believe its cash flows are more durable than any competitor's.",
+    "quote": "They're probably the only one, and you can see it in the valuations actually, which I'm going to get to in a second. But people believe the durability of Google more than they believe the durability of anything else.",
+    "quoteStartMs": 1581342,
     "topics": [
+      "competitive moat",
       "free cash flow",
-      "AI strategy",
       "valuation",
-      "competitive moat"
+      "enterprise AI"
     ],
     "attributionConfidence": "high"
   },
@@ -138,47 +135,47 @@
     "ticker": "AAPL",
     "isPublic": true,
     "host": "Sacks",
-    "stance": "mixed",
+    "stance": "neutral",
     "conviction": "low",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Sacks raises the bear case that Apple's phone OS and app ecosystem could be disrupted if personal AI agents become so capable that users no longer need to interact with the device UI, but acknowledges the counterargument that users will still want visual readouts, leaving the outlook genuinely uncertain.",
-    "quote": "What if your personal digital assistant or a personal agent gets so good that you don't need to check your phone... you could imagine the phone operating system getting disrupted if the agents are good enough.",
-    "quoteStartMs": 2487000,
+    "summary": "Sacks raises a bear scenario where personal AI agents could disrupt Apple's phone OS and app ecosystem, but acknowledges the counterargument that users will still need Apple's UI for visualizing agent outputs, leaving the outcome genuinely uncertain.",
+    "quote": "What if your personal digital assistant or a personal agent gets so good that you don't need to check your phone... you don't need the wall of apps anymore? I mean, that's kind of what we're saying. You could imagine the phone operating",
+    "quoteStartMs": 2457000,
     "topics": [
-      "AI disruption",
-      "mobile platform",
-      "competitive risk"
+      "AI agents",
+      "platform disruption",
+      "competitive moat"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   },
   {
-    "id": "E266-lng-Friedberg-6",
+    "id": "E266-meta-Chamath-6",
     "episodeId": "E266",
     "episodeNumber": 266,
     "episodeDate": "2026-03-27T20:03:00.000Z",
-    "company": "Cheniere Energy",
-    "ticker": "LNG",
+    "company": "Meta",
+    "ticker": "META",
     "isPublic": true,
-    "host": "Friedberg",
-    "stance": "bull",
+    "host": "Chamath",
+    "stance": "neutral",
     "conviction": "medium",
-    "callType": "explicit_long",
+    "callType": "view",
     "excludeReason": null,
-    "scoreNote": "Friedberg explicitly states 'I just bought LNG'",
+    "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Friedberg says he just bought Cheniere, viewing it as a durable, well-run business with durability given geopolitical energy dynamics, fitting his 'high asset, low obsolescence' framework as a counter-AI-disruption investment.",
-    "quote": "I think businesses like nat gas production. You know, I just bought LNG, that Cheniere company... Given all the craziness in the Middle East, and you know, I visited there with Doug Burgum, so it was the first time I'd ever been exposed to",
-    "quoteStartMs": 2139000,
+    "summary": "Chamath warns that Meta's lawsuits — including a $375M judgment for child exploitation — have opened the floodgates for litigation by establishing a path around Section 230 via product liability, which he expects to result in a death-by-a-thousand-cuts scenario for the company.",
+    "quote": "A map has been drawn, which is this is how you navigate around Section 230 and you can get a decisive lawsuit in your favor against these large companies with enormous cash flows. And so I expect that this will be a death by a thousand",
+    "quoteStartMs": 3914567,
     "topics": [
-      "energy",
-      "LNG",
-      "counter-AI portfolio",
-      "geopolitics"
+      "litigation risk",
+      "Section 230",
+      "child safety",
+      "regulatory"
     ],
-    "attributionConfidence": "low"
+    "attributionConfidence": "high"
   },
   {
     "id": "E266-saas-sector-Chamath-7",
@@ -195,66 +192,65 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": "IGV",
-    "summary": "Chamath argues SaaS stocks are being systematically re-rated down as the market prices in superintelligence risk, compressing multiples from near-100x FCF to much lower as investors question the durability of software cash flows in a world of constant AI-driven disruption.",
-    "quote": "The market reaction is to put all these companies on a spectrum and they started here in software and they're re-rating everything down... if superintelligence is coming, we have to be very careful about what we're willing to pay for these",
+    "summary": "Chamath argues the SaaS sector is undergoing a structural re-rating as markets price in AI disruption risk, with valuation multiples collapsing as investors reduce their willingness to pay for long-duration software cash flows in the face of potential superintelligence.",
+    "quote": "The market reaction is to put all these companies on a spectrum and they started here in software and they're re-rating everything down... Snowflake in 2023, it would've taken you almost 100 years. And where is it now? It's been cut in",
     "quoteStartMs": 1849470,
     "topics": [
-      "SaaS",
       "valuation",
       "AI disruption",
-      "multiples compression"
+      "SaaS",
+      "capital markets"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E266-meta-Chamath-8",
+    "id": "E266-lng-Friedberg-8",
     "episodeId": "E266",
     "episodeNumber": 266,
     "episodeDate": "2026-03-27T20:03:00.000Z",
-    "company": "Meta",
-    "ticker": "META",
+    "company": "Cheniere Energy",
+    "ticker": "LNG",
     "isPublic": true,
-    "host": "Chamath",
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "medium",
+    "callType": "explicit_long",
+    "excludeReason": null,
+    "scoreNote": "Speaker explicitly states 'I just bought LNG, that Cheniere company' — direct equity purchase.",
+    "sectorProxy": null,
+    "summary": "Friedberg explicitly bought Cheniere Energy shares as a 'counter-AI' / high-asset-low-obsolescence play with durable cash flows independent of AI disruption, citing geopolitical tailwinds and his firsthand exposure to the business.",
+    "quote": "I just bought LNG, that Cheniere company. Given all the craziness in the Middle East, and you know, I visited there with Doug Burgum, so it was the first time I'd ever been exposed to this business.",
+    "quoteStartMs": 2159000,
+    "topics": [
+      "natural gas",
+      "energy",
+      "AI-resistant assets",
+      "geopolitics"
+    ],
+    "attributionConfidence": "low"
+  },
+  {
+    "id": "E266-spacex-Friedberg-9",
+    "episodeId": "E266",
+    "episodeNumber": 266,
+    "episodeDate": "2026-03-27T20:03:00.000Z",
+    "company": "SpaceX",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
     "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Chamath notes that the New Mexico and LA lawsuit verdicts against Meta have opened a legal pathway around Section 230 via product liability theory, and predicts a death-by-a-thousand-cuts litigation scenario that will compound, though he frames this as a legal risk observation rather than a definitive investment call.",
-    "quote": "The door has been opened and a map has been drawn, which is this is how you navigate around Section 230 and you can get a decisive lawsuit in your favor against these large companies with enormous cash flows. And so I expect that this will",
-    "quoteStartMs": 3912549,
+    "summary": "Friedberg is bullish on SpaceX's IPO potential, arguing the space industry represents a $15–30 trillion annual economic opportunity on the moon and that SpaceX will command an extraordinary valuation multiple at IPO.",
+    "quote": "I actually think there's probably a $15 to $30 trillion a year economic opportunity on the moon. That kind of a business, like you're going to see with SpaceX's IPO, is going to have an insane multiple.",
+    "quoteStartMs": 2185681,
     "topics": [
-      "litigation",
-      "Section 230",
-      "product liability",
-      "regulation"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E266-nvda-Chamath-9",
-    "episodeId": "E266",
-    "episodeNumber": 266,
-    "episodeDate": "2026-03-27T20:03:00.000Z",
-    "company": "Nvidia",
-    "ticker": "NVDA",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "sectorProxy": null,
-    "summary": "Chamath highlights that despite Nvidia being the most accretive, well-run company with highest margins generating ~$200B, the market is inexplicably valuing it like a disruptible SaaS company rather than a durable compounder, implying it is undervalued relative to its fundamentals.",
-    "quote": "NVIDIA, which is the most unbelievably accretive, well-run company, highest margins, making $200 billion, and they're treating it like they're treating ServiceNow and Snowflake. I just think it's so interesting what's happening.",
-    "quoteStartMs": 1975487,
-    "topics": [
-      "valuation",
-      "AI infrastructure",
-      "multiples",
-      "margins"
+      "space industry",
+      "IPO",
+      "valuation"
     ],
     "attributionConfidence": "high"
   }
