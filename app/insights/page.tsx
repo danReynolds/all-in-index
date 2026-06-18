@@ -50,7 +50,7 @@ export default function SignalsPage() {
         <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
           What the besties&apos; calls reveal
         </h1>
-        <p className="max-w-2xl text-neutral-600 dark:text-neutral-400">
+        <p className="max-w-2xl text-neutral-500 dark:text-neutral-400">
           Patterns mined from every scored call in the catalog — what has historically mattered, and
           where the besties stand right now. Tap any stat to see the calls behind it.
         </p>

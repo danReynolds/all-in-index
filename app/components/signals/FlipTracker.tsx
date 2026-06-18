@@ -19,7 +19,7 @@ function StancePath({ path }: { path: StancePathPoint[] }) {
     <div className="flex flex-wrap items-center gap-x-1.5 gap-y-1">
       {path.map((p, i) => (
         <span key={i} className="flex items-center gap-1.5">
-          {i > 0 && <span className="text-neutral-600">→</span>}
+          {i > 0 && <span className="text-neutral-500">→</span>}
           <span className="flex items-center gap-1">
             <span className={`inline-block h-2 w-2 rounded-full ${STANCE_META[p.stance].dot}`} />
             <span className="text-xs font-medium text-neutral-300">{STANCE_META[p.stance].label}</span>

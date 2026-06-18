@@ -22,7 +22,9 @@
   --color-neutral-800: #1a231e;
   --color-neutral-700: #2c3831;
   --color-neutral-600: #46544c;
-  --color-neutral-500: #68766e;
+  /* Lifted from #68766e (4.05:1) so secondary text clears WCAG AA (4.5:1) on
+     the near-black background; still clearly a muted/secondary tone. */
+  --color-neutral-500: #7e8d84;
   --color-neutral-400: #8d9a92;
   --color-neutral-300: #b6c0b9;
   --color-neutral-200: #d8deda;
@@ -58,6 +60,14 @@ button {
 }
 button:disabled {
   cursor: default;
+}
+
+/* A consistent, visible keyboard focus ring (browser defaults vary on dark
+   backgrounds). Only for keyboard nav, so mouse clicks stay ring-free. */
+:focus-visible {
+  outline: 2px solid #34d399;
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 html {

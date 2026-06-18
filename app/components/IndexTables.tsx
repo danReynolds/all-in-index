@@ -204,7 +204,7 @@ export function GuestLeaderboardTable({ rows }: { rows: GuestLeaderboardEntry[] 
       render: (r) =>
         r.best ? (
           <Link href={`/holding/${r.best.slug}`} className="relative z-10 font-mono text-xs hover:underline">
-            <span className="text-neutral-600 dark:text-neutral-300">{r.best.ticker}</span>{" "}
+            <span className="text-neutral-500 dark:text-neutral-300">{r.best.ticker}</span>{" "}
             <span className={returnColor(r.best.ret)}>{r.best.ret >= 0 ? "+" : ""}{(r.best.ret * 100).toFixed(0)}%</span>
           </Link>
         ) : (

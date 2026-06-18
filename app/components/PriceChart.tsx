@@ -442,7 +442,7 @@ export function PriceChart({
               className={`rounded-full border px-2 py-0.5 transition hover:border-white/25 hover:text-neutral-200 ${
                 on
                   ? "border-white/10 bg-white/[0.03] text-neutral-300"
-                  : "border-transparent text-neutral-600 line-through hover:text-neutral-400"
+                  : "border-transparent text-neutral-500 line-through hover:text-neutral-400"
               }`}
             >
               {STANCE_LABELS[s]}
@@ -559,7 +559,7 @@ export function PriceChart({
               </span>
               {selected.thesis.quote}”
               {selected.thesis.quoteStartMs != null && (
-                <span className="ml-2 font-mono text-[11px] not-italic text-neutral-600">
+                <span className="ml-2 font-mono text-[11px] not-italic text-neutral-500">
                   {mmss(selected.thesis.quoteStartMs)}
                 </span>
               )}

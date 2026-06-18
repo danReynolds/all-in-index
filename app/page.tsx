@@ -148,7 +148,7 @@ function PlainHeader() {
   return (
     <section className="space-y-3">
       <h1 className="font-display text-4xl font-bold tracking-tight">The All-Index</h1>
-      <p className="max-w-2xl text-neutral-600 dark:text-neutral-400">
+      <p className="max-w-2xl text-neutral-500 dark:text-neutral-400">
         What the besties said about every company — and how it played out.
       </p>
     </section>

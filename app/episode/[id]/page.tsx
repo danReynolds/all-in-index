@@ -124,7 +124,7 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
 
       <header className="space-y-3">
         <div className="flex flex-wrap items-center gap-3">
-          <span className="rounded-lg bg-neutral-100 px-2.5 py-1 font-mono text-sm font-semibold text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300">
+          <span className="rounded-lg bg-neutral-100 px-2.5 py-1 font-mono text-sm font-semibold text-neutral-500 dark:bg-neutral-800 dark:text-neutral-300">
             {ep.meta.number ? `E${ep.meta.number}` : "Special"}
           </span>
           <span className="text-sm text-neutral-500">{fmtDate(ep.meta.date)}</span>
@@ -355,7 +355,7 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
                                 </span>{" "}
                                 <a
                                   href={`mailto:me@danreynolds.ca?subject=${encodeURIComponent(`All-Index take report: ${t.id}`)}&body=${encodeURIComponent(`Take ${t.id} (${t.host} on ${h.company}, ${id}) looks wrong because: `)}`}
-                                  className="font-sans text-xs not-italic text-neutral-600 hover:text-neutral-300"
+                                  className="font-sans text-xs not-italic text-neutral-500 hover:text-neutral-300"
                                   title="Report a problem with this take"
                                 >
                                   ⚑

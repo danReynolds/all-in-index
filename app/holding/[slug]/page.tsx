@@ -108,7 +108,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
           <CompanyLogo name={h.company} domain={h.domain} size="lg" />
           <h1 className="font-display text-3xl font-bold tracking-tight">{h.company}</h1>
           {h.ticker ? (
-            <span className="rounded bg-neutral-100 px-2 py-1 font-mono text-sm text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300">
+            <span className="rounded bg-neutral-100 px-2 py-1 font-mono text-sm text-neutral-500 dark:bg-neutral-800 dark:text-neutral-300">
               {h.ticker}
             </span>
           ) : (

@@ -49,7 +49,7 @@ export default function IndexPage() {
 
       <header className="rise space-y-2">
         <h1 className="font-display text-3xl font-bold tracking-tight">The Besties Index</h1>
-        <p className="max-w-2xl text-neutral-600 dark:text-neutral-400">
+        <p className="max-w-2xl text-neutral-500 dark:text-neutral-400">
           A rules-based, equal-weight long basket of public companies where the hosts&apos;
           current scored view is net-bullish — bought when that bullish stance was adopted,
           held to today, and benchmarked against the S&amp;P with identical cashflows.
@@ -79,7 +79,7 @@ export default function IndexPage() {
                   {fund.portfolioReturn - fund.altBenchmark.ret >= 0 ? "+" : ""}
                   {((fund.portfolioReturn - fund.altBenchmark.ret) * 100).toFixed(1)}pp
                 </span>{" "}
-                <span className="text-neutral-600">— the tougher benchmark, shown on purpose</span>
+                <span className="text-neutral-500">— the tougher benchmark, shown on purpose</span>
               </div>
             )}
             <dl className="grid grid-cols-2 gap-x-6 gap-y-2 pt-1 text-sm">
@@ -136,15 +136,15 @@ export default function IndexPage() {
               return (
                 <div key={kind} className="space-y-1.5">
                   <div className="text-xs font-medium text-neutral-400">
-                    {label} <span className="text-neutral-600">· {items.length}</span>
+                    {label} <span className="text-neutral-500">· {items.length}</span>
                   </div>
-                  <p className="text-xs text-neutral-600">{note}</p>
+                  <p className="text-xs text-neutral-500">{note}</p>
                   <div className="flex flex-wrap gap-2 pt-0.5">
                     {items.map((p) => (
                       <Link
                         key={p.slug}
                         href={`/holding/${p.slug}`}
-                        className="rounded-full border border-neutral-200 px-3 py-1 text-sm text-neutral-600 hover:border-neutral-400 dark:border-neutral-700 dark:text-neutral-300"
+                        className="rounded-full border border-neutral-200 px-3 py-1 text-sm text-neutral-500 hover:border-neutral-400 dark:border-neutral-700 dark:text-neutral-300"
                       >
                         {p.company}
                       </Link>
@@ -166,7 +166,7 @@ export default function IndexPage() {
             <h2 className="flex items-center gap-2 font-display text-xl font-bold tracking-tight">
               The Guesties Index <span className="text-base font-normal">🎤</span>
             </h2>
-            <p className="mt-1 max-w-2xl text-sm text-neutral-600 dark:text-neutral-400">
+            <p className="mt-1 max-w-2xl text-sm text-neutral-500 dark:text-neutral-400">
               The same idea, but for the <em>guests</em> — every net-bullish public call made by
               someone the besties had on the show. How do the invited experts stack up?
             </p>
@@ -205,7 +205,7 @@ export default function IndexPage() {
             <div className="space-y-3 pt-2">
               <div>
                 <h3 className="font-display text-base font-bold tracking-tight">Guest leaderboard</h3>
-                <p className="mt-0.5 max-w-2xl text-sm text-neutral-600 dark:text-neutral-400">
+                <p className="mt-0.5 max-w-2xl text-sm text-neutral-500 dark:text-neutral-400">
                   Named guests with 2+ scored public calls, ranked by how those calls have
                   played out. Each call is scored as if you&apos;d <em>followed it</em> — long a
                   bull, an inverse-sized stake on a bear (capped at −100%) — versus simply buying
@@ -231,7 +231,7 @@ export default function IndexPage() {
           <section id="bear-book" className="scroll-mt-28 space-y-4 rounded-2xl border border-rose-200 bg-rose-50/40 p-5 dark:border-rose-900/50 dark:bg-rose-950/15 sm:p-6">
             <div>
               <h2 className="font-display text-xl font-bold tracking-tight">The Bear Book 🐻</h2>
-              <p className="mt-1 max-w-2xl text-sm text-neutral-600 dark:text-neutral-400">
+              <p className="mt-1 max-w-2xl text-sm text-neutral-500 dark:text-neutral-400">
                 The short side of the same book. Every public name the besties are currently
                 net-<em>bearish</em> on — held to the same scoring bar as the index above, but
                 pointing down, so they sit here instead of in the long basket. Each is scored as
@@ -270,7 +270,7 @@ export default function IndexPage() {
 
       {/* Methodology */}
       <Reveal>
-      <section id="methodology" className="scroll-mt-28 rounded-xl border border-neutral-200 bg-neutral-50 p-5 text-sm leading-relaxed text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900/50 dark:text-neutral-400">
+      <section id="methodology" className="scroll-mt-28 rounded-xl border border-neutral-200 bg-neutral-50 p-5 text-sm leading-relaxed text-neutral-500 dark:border-neutral-800 dark:bg-neutral-900/50 dark:text-neutral-400">
         <h2 className="mb-2 font-semibold text-neutral-700 dark:text-neutral-200">Methodology</h2>
         <ul className="list-disc space-y-1 pl-5">
           <li>One index position per public company whose <strong>current scored view</strong> is net-bullish across the selected hosts; bearish/mixed/neutral names are excluded.</li>

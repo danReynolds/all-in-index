@@ -129,7 +129,7 @@ export function HoldingsTable({
         </div>
         <Pills value={stance} onChange={setStance} options={STANCES} />
         <span className="ml-auto flex items-center gap-2">
-          <span className="hidden text-[11px] uppercase tracking-wider text-neutral-600 sm:inline">sort</span>
+          <span className="hidden text-[11px] uppercase tracking-wider text-neutral-500 sm:inline">sort</span>
           <Pills value={sort} onChange={setSort} options={SORTS} />
         </span>
       </div>

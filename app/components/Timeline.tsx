@@ -127,7 +127,7 @@ export function Timeline({
               style={{ left: `${y.x}%` }}
             />
             <span
-              className="absolute top-8 -translate-x-1/2 font-mono text-[10px] text-neutral-600"
+              className="absolute top-8 -translate-x-1/2 font-mono text-[10px] text-neutral-500"
               style={{ left: `${y.x}%` }}
             >
               {y.label}
@@ -212,7 +212,7 @@ export function Timeline({
             )}
             <a
               href={`mailto:me@danreynolds.ca?subject=${encodeURIComponent(`All-Index take report: ${t.id}`)}&body=${encodeURIComponent(`Take ${t.id} (${t.host} on ${t.company}, ${t.episodeId}) looks wrong because: `)}`}
-              className={`${episodes[t.episodeId]?.audioUrl || episodeLinks[t.episodeId] ? "" : "ml-auto "}text-neutral-600 hover:text-neutral-300`}
+              className={`${episodes[t.episodeId]?.audioUrl || episodeLinks[t.episodeId] ? "" : "ml-auto "}text-neutral-500 hover:text-neutral-300`}
               title="Report a problem with this take (misattributed, misquoted, mis-stanced)"
             >
               ⚑
@@ -229,7 +229,7 @@ export function Timeline({
               </span>
               {t.quote}”
               {t.quoteStartMs != null && (
-                <span className="ml-2 font-mono text-[11px] not-italic text-neutral-600">
+                <span className="ml-2 font-mono text-[11px] not-italic text-neutral-500">
                   {mmss(t.quoteStartMs)}
                 </span>
               )}

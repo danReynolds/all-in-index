@@ -93,7 +93,7 @@ export default async function GuestPage({ params }: { params: Promise<{ slug: st
             </div>
           </div>
         </div>
-        <p className="relative mt-4 max-w-2xl text-sm text-neutral-600 dark:text-neutral-400">
+        <p className="relative mt-4 max-w-2xl text-sm text-neutral-500 dark:text-neutral-400">
           Each call below is scored as if you&apos;d <em>followed it</em> — long a bull, an
           inverse-sized stake on a bear (capped at −100%) — from the day it aired to today, versus
           simply buying the S&amp;P over the same window.
@@ -169,7 +169,7 @@ export default async function GuestPage({ params }: { params: Promise<{ slug: st
                     </Link>
                     <StanceBadge stance={t.stance} callType={t.callType} />
                   </div>
-                  <blockquote className="mt-2 line-clamp-5 text-sm italic leading-relaxed text-neutral-600 dark:text-neutral-400">
+                  <blockquote className="mt-2 line-clamp-5 text-sm italic leading-relaxed text-neutral-500 dark:text-neutral-400">
                     “{t.quote}”
                   </blockquote>
                   <div className="mt-3 flex items-center justify-between text-xs text-neutral-400">
