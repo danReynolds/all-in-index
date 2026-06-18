@@ -44,7 +44,7 @@ export function HostAvatar({
         title={ui.name}
         loading="lazy"
         onError={() => setFailed(true)}
-        className={`inline-block shrink-0 ${shape} object-cover ring-1 ring-white/20 ${SIZES[size].split(" ").slice(0, 2).join(" ")}`}
+        className={`inline-block max-w-none shrink-0 ${shape} object-cover ring-1 ring-white/20 ${SIZES[size].split(" ").slice(0, 2).join(" ")}`}
       />
     );
   }
@@ -64,7 +64,7 @@ export function HostStack({ hosts, size = "md" }: { hosts: Host[]; size?: keyof 
   return (
     <span className="flex -space-x-1.5">
       {seen.map((h) => (
-        <span key={h} className="rounded-full ring-2 ring-white dark:ring-neutral-900">
+        <span key={h} className="shrink-0 rounded-full ring-2 ring-white dark:ring-neutral-900">
           <HostAvatar host={h} size={size} />
         </span>
       ))}
