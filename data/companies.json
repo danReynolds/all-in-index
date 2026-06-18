@@ -1046,5 +1046,25 @@
   "capital-equipment-basket-caterpillar-siemens-et-al": {
     "description": "A basket of capital equipment manufacturers including Caterpillar, Siemens, and similar industrial companies.",
     "domain": null
+  },
+  "saas-sector": {
+    "description": "Broad sector of companies delivering software applications to customers via cloud subscription models.",
+    "domain": null
+  },
+  "cloud-hyperscalers-aws-azure-gcp": {
+    "description": "Collective term for Amazon, Microsoft, and Google's large-scale cloud infrastructure and services platforms.",
+    "domain": null
+  },
+  "stablecoins-dollar-denominated": {
+    "description": "Digital tokens pegged to the US dollar, used for payments, trading, and value transfer on blockchains.",
+    "domain": null
+  },
+  "credit-default-swaps-cds-protection": {
+    "description": "Financial derivatives contracts that transfer credit risk of a borrower from one party to another.",
+    "domain": null
+  },
+  "legacy-auto-oems": {
+    "description": "Established traditional automakers manufacturing and selling internal combustion and transitioning electric vehicles.",
+    "domain": null
   }
 }

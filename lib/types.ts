@@ -156,6 +156,13 @@ export interface Thesis {
   excludeReason?: ExcludeReason | null;
   /** Optional one-line audit note: the evidence for the call, or its condition. */
   scoreNote?: string | null;
+  /**
+   * Representative ETF ticker for a sector/theme/macro basket the host named
+   * without a single tradable equity (e.g. "Mag 7" → MAGS). Chosen by the LLM
+   * from the proxy registry (lib/proxies.ts); attached and disclosed at index
+   * time (build-index attachSectorProxy). Null/absent for ordinary takes.
+   */
+  sectorProxy?: string | null;
   /** Identified name when host === "Guest" (e.g. "Brad Gerstner"). */
   guestName?: string;
   /** True for hand-authored placeholder data shown before the real pipeline runs. */

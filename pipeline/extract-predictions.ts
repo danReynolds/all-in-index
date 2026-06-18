@@ -5,7 +5,7 @@ import { callTool } from "./llm";
 import { store } from "./store";
 import { buildMarketData } from "./market";
 import { REGULAR_HOSTS } from "../lib/types";
-import { findProxyForPick } from "../lib/proxies";
+import { sectorProxyInfo, SECTOR_PROXY_PROMPT, SECTOR_PROXY_TICKER_VALUES } from "../lib/proxies";
 
 const HOST_VALUES = [...REGULAR_HOSTS, "Guest"] as const;
 const OUT_FILE = path.join(process.cwd(), "data", "predictions.json");
@@ -22,6 +22,11 @@ trend, etc.). Extract each participant's pick per category.
 - ticker: ONLY for asset picks that map cleanly to a tradable US-listed ticker
   or major ETF (use the obvious one; null otherwise). Commodities: Copper=CPER,
   Oil=USO, Gold=GLD, Silver=SLV, Uranium=URA, Lithium=LIT, Bitcoin=null.
+- sectorProxy: for a SECTOR/THEME asset pick with no direct ticker that IS
+  fairly represented by one of these liquid ETFs, set it to that ticker
+  (direction still comes from the category/direction, not the proxy); null
+  otherwise, and null whenever ticker is set. Available proxies:
+${SECTOR_PROXY_PROMPT}
 - direction: "up" if the pick is a bet on appreciation (best asset), "down" for
   declines (worst asset / collapse calls), null when not directional.
 - quote: SHORT verbatim excerpt (<= 240 chars) of the speaker making the pick,
@@ -34,6 +39,7 @@ const Item = z.object({
   category: z.string(),
   pick: z.string(),
   ticker: z.string().nullable(),
+  sectorProxy: z.string().nullable().optional(),
   direction: z.enum(["up", "down"]).nullable(),
   quote: z.string(),
   quoteStartSec: z.number().nullable(),
@@ -53,6 +59,7 @@ const INPUT_SCHEMA = {
           category: { type: "string" },
           pick: { type: "string" },
           ticker: { type: ["string", "null"] },
+          sectorProxy: { type: ["string", "null"], enum: [...SECTOR_PROXY_TICKER_VALUES, null], description: "Representative ETF for a sector/theme pick with no direct ticker; null otherwise" },
           direction: { type: ["string", "null"], enum: ["up", "down", null] },
           quote: { type: "string" },
           quoteStartSec: { type: ["number", "null"] },
@@ -111,7 +118,7 @@ function directionFromCategory(category: string): "up" | "down" | null {
 
 /** Resolve what symbol to price a pick on: its own ticker, or a sector ETF proxy.
  *  Proxies apply only to financial-category picks with no direct ticker. */
-function resolveProxy(p: { pick: string; ticker: string | null; category: string; direction: "up" | "down" | null }): {
+function resolveProxy(p: { pick: string; ticker: string | null; sectorProxy?: string | null; category: string; direction: "up" | "down" | null }): {
   symbol: string | null;
   proxyTicker: string | null;
   proxyNote: string | null;
@@ -119,7 +126,9 @@ function resolveProxy(p: { pick: string; ticker: string | null; category: string
 } {
   if (p.ticker) return { symbol: p.ticker.toUpperCase(), proxyTicker: null, proxyNote: null, direction: p.direction };
   if (!FIN_CAT.test(p.category)) return { symbol: null, proxyTicker: null, proxyNote: null, direction: p.direction };
-  const proxy = findProxyForPick(p.pick);
+  // The LLM names the representative ETF (sectorProxy) for sector/theme picks —
+  // no text matching here. Unknown tickers resolve to null and stay untracked.
+  const proxy = sectorProxyInfo(p.sectorProxy);
   if (!proxy) return { symbol: null, proxyTicker: null, proxyNote: null, direction: p.direction };
   // A "biggest business winner/loser" pick may carry no explicit direction — the
   // category states the bet, so infer it for the proxy verdict.

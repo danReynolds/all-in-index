@@ -3,7 +3,8 @@ import { transcribeEpisode } from "./transcribe";
 import { nameSpeakers } from "./speakers";
 import { extractTheses } from "./extract";
 import { buildIndex } from "./build-index";
-import { ASSETS } from "../lib/assets";
+import { ASSETS, CRYPTO } from "../lib/assets";
+import { sectorProxyInfo } from "../lib/proxies";
 import type { Episode, Thesis, Transcript } from "../lib/types";
 
 const SCOREABLE_CALL_TYPES = new Set<Thesis["callType"]>([
@@ -107,9 +108,42 @@ function normEntity(s: string): string {
 
 const CANONICAL_ASSET_PROXY = new Map(ASSETS.map((a) => [normEntity(a.name), a.proxy.toUpperCase()]));
 
+/**
+ * The ETF/ticker a row is effectively priced on: its own ticker, the sector
+ * proxy the LLM chose, or the commodity/crypto proxy its name resolves to. Lets
+ * dedup see that "Oil" and a "hydrocarbons … basket" are the same exposure even
+ * though their names normalize differently — the entity-key bug that let one
+ * commodity short survive as two scored rows.
+ */
+function effectiveProxyTicker(t: Thesis): string | null {
+  if (t.ticker) return t.ticker.toUpperCase();
+  if (t.sectorProxy) return sectorProxyInfo(t.sectorProxy)?.ticker ?? null;
+  const e = normEntity(t.company);
+  const tokens = new Set(e.split(" "));
+  for (const a of [...ASSETS, ...CRYPTO]) {
+    const name = normEntity(a.name);
+    if (e === name || tokens.has(name) || a.keywords.some((k) => e.includes(normEntity(k)))) {
+      return a.proxy.toUpperCase();
+    }
+  }
+  return null;
+}
+
+function sameExposure(a: Thesis, b: Thesis): boolean {
+  if (normEntity(a.company) === normEntity(b.company)) return true;
+  const pa = effectiveProxyTicker(a);
+  return pa != null && pa === effectiveProxyTicker(b);
+}
+
+function opposedStance(a: Thesis["stance"], b: Thesis["stance"]): boolean {
+  return (a === "bull" && b === "bear") || (a === "bear" && b === "bull");
+}
+
 function overlapsSameCall(a: Thesis, b: Thesis): boolean {
-  if (a.host !== b.host) return false;
-  if (normEntity(a.company) !== normEntity(b.company)) return false;
+  if (a.episodeId !== b.episodeId || a.host !== b.host) return false;
+  if (!sameExposure(a, b)) return false;
+  // Two directionally-opposite remarks are distinct calls, never a duplicate.
+  if (opposedStance(a.stance, b.stance)) return false;
   if (a.quoteStartMs != null && b.quoteStartMs != null && Math.abs(a.quoteStartMs - b.quoteStartMs) <= 5_000) {
     return true;
   }

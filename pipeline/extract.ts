@@ -3,6 +3,7 @@ import { callTool } from "./llm";
 import { verifyTheses } from "./verify";
 import { trimPublishedQuote } from "../lib/quotes";
 import { REGULAR_HOSTS } from "../lib/types";
+import { SECTOR_PROXY_PROMPT, SECTOR_PROXY_TICKER_VALUES } from "../lib/proxies";
 import type { Episode, Thesis, Transcript, Host } from "../lib/types";
 
 const HOST_VALUES = [...REGULAR_HOSTS, "Guest", "Unknown"] as const;
@@ -19,6 +20,7 @@ const ThesisItemSchema = z.object({
   callType: z.enum(CALL_TYPE_VALUES),
   excludeReason: z.enum(EXCLUDE_REASON_VALUES).nullable().optional(),
   scoreNote: z.string().nullable().optional(),
+  sectorProxy: z.string().nullable().optional(),
   summary: z.string(),
   quote: z.string(),
   quoteStartSec: z.number().nullable(),
@@ -86,6 +88,8 @@ Rules:
 - scoreNote: optional one-line audit note — the evidence that made it a call ("ranked #1 AI pick", "short leg of spread") or the condition that gates it. Omit for plain views.
   Note: an advantage scoped to ONE product category of a diversified company ("outstanding position to do the agent thing") is not, by itself, a company-level bull claim — without a stated company-level consequence, keep stance neutral or mark the hedge with low conviction.
 - ticker: the correct US-listed symbol ONLY if you are confident and the company is publicly traded. For private companies (e.g. SpaceX, OpenAI, Anthropic, Stripe) set ticker=null and isPublic=false.
+- sectorProxy: ONLY for a basket/sector/theme/macro call (not a single company) that has no direct ticker but IS fairly represented by one of these liquid ETFs — set it to that ticker so the call can be priced; otherwise null. Leave the company's own ticker null; this proxy is attached and disclosed downstream. Choose at most one, and only when the pick genuinely IS that exposure (a bearish "short the Mag 7" is still MAGS — direction comes from stance, not the proxy). Available proxies:
+${SECTOR_PROXY_PROMPT}
 - quote: a SHORT verbatim excerpt (≤ 240 characters) from that host that best supports the thesis. Copy it exactly from the transcript. Set quoteStartSec to the integer second shown in that line's "[<sec>s <Speaker>]" prefix.
   THE QUOTE MUST CARRY THE EVIDENCE FOR YOUR LABELS. For any non-"view" callType, the quote must contain the in/out or selection words ("I'm in", "I would be long it", "I just bought", "my pick", "number 1", "best place to invest", "long X / short Y"). If stance is bull/bear, the quote must contain the economic claim. Prefer the sentence that PROVES the classification over the most colorful one — a take whose quote doesn't evidence its labels will be treated as misclassified.
 - summary: one clear sentence capturing the host's view and reasoning.
@@ -114,6 +118,7 @@ const INPUT_SCHEMA = {
           callType: { type: "string", enum: [...CALL_TYPE_VALUES], description: "view = commentary (not scored); the rest are scoreable call shapes" },
           excludeReason: { type: ["string", "null"], enum: [...EXCLUDE_REASON_VALUES, null] },
           scoreNote: { type: ["string", "null"] },
+          sectorProxy: { type: ["string", "null"], enum: [...SECTOR_PROXY_TICKER_VALUES, null], description: "Representative ETF ticker for a sector/theme/macro basket with no direct ticker; null otherwise" },
           summary: { type: "string" },
           quote: { type: "string", description: "Verbatim excerpt ≤240 chars" },
           quoteStartSec: { type: ["number", "null"] },
@@ -140,147 +145,6 @@ const INPUT_SCHEMA = {
 
 const MAX_CHARS = 160_000;
 
-const EXPLICIT_LONG_RE = /\b(?:i\s+would\s+be\s+long|i'?d\s+be\s+long|i\s+am\s+long|i'?m\s+long|i'?m\s+in|i\s+just\s+bought|i\s+bought|i\s+own|i\s+have\s+shares|i'?m\s+an\s+investor|i\s+am\s+an\s+investor|shareholder\s+of|loading\s+up|buying\s+opportunity|this\s+is\s+the\s+trade|placed?\s+a\s+bet|put\s+a\s+[^.?!]{0,40}\bbet)\b/i;
-const EXPLICIT_SHORT_RE = /\b(?:i\s+would\s+be\s+short|i'?d\s+be\s+short|i\s+am\s+short|i'?m\s+short|go\s+short|short\s+the|this\s+is\s+a\s+short)\b/i;
-const EXPLICIT_SELECTION_RE = /\b(?:i\s+will\s+pick|i'?ll\s+pick|i\s+would\s+pick|i'?d\s+pick|i\s+pick|my\s+pick|my\s+number\s*(?:one|two|1|2)|i\s+went\s+with|i\s+picked|(?!there'?s\b|here'?s\b|that'?s\b|it'?s\b)[a-z][a-z0-9 .&-]{1,40}'s\s+(?:one|two)|best\s+place\s+to\s+invest|best\s+performing\s+asset|worst\s+performing\s+asset|poor\s+performing\s+asset|biggest\s+business\s+(?:winner|loser))\b/i;
-const EXPLICIT_EXIT_RE = /\b(?:i'?m\s+out|i\s+am\s+out|take\s+profits|wouldn'?t\s+touch|you\s+do\s+not\s+want)\b/i;
-const WEAK_CATEGORY_ASIDE_RE = /\b(?:one\s+category\s+we\s+didn'?t\s+talk\s+about|category\s+we\s+didn'?t\s+talk\s+about|kind\s+of\s+interesting)\b/i;
-const BASKET_OWNERSHIP_RE = /\b(?:synthetically\s+own|own\s+[^.?!]{0,80}\b(?:basket|sector|space)|portfolio\s+(?:in|exposure)|exposures?\s+(?:have\s+been\s+)?(?:in|to)|long\s+[^.?!]{0,80}\s+(?:basket|sector|space))\b/i;
-const DIRECTIONAL_FORECAST_RE = /\b(?:set\s+up\s+to\s+go|absolutely\s+parabolic|go\s+parabolic|will\s+be\s+short|going\s+to\s+be\s+short|short\s+about\s+\d+%|shrink\s+and\s+contract|contract\s+aggressively|best\s+place\s+to\s+invest|going\s+to\s+go\s+down|going\s+to\s+be\s+challenged)\b/i;
-const CALL_NOTE_RE = /\b(?:explicit|named|pick|selection|long|short|basket|portfolio|exposure|winner|loser|best-performing|worst-performing)\b/i;
-
-function normEvidenceText(s: string): string {
-  return s
-    .toLowerCase()
-    .replace(/&/g, " and ")
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim()
-    .replace(/\s+/g, " ");
-}
-
-function quoteAliases(t: Pick<Thesis, "company" | "ticker">): string[] {
-  const raw = t.company ?? "";
-  const aliases = new Set<string>();
-  const add = (s: string | null | undefined) => {
-    const norm = normEvidenceText(s ?? "");
-    if (norm.length >= 3) aliases.add(norm);
-  };
-
-  add(raw);
-  add(raw.replace(/\(.*?\)/g, " "));
-  for (const match of raw.matchAll(/\((.*?)\)/g)) add(match[1]);
-  for (const part of raw.split(/\s*(?:\/|\+|\bor\b|\band\b|,)\s*/i)) add(part);
-  if (t.ticker && t.ticker.length > 1) add(t.ticker);
-
-  if (/\b(?:alphabet|google|gemini)\b/i.test(raw)) {
-    add("alphabet");
-    add("google");
-  }
-  if (/\bopen\s*ai|chatgpt\b/i.test(raw)) {
-    add("openai");
-    add("open ai");
-    add("chatgpt");
-  }
-  if (/\bmeta|facebook|instagram\b/i.test(raw)) {
-    add("meta");
-    add("facebook");
-    add("instagram");
-  }
-  if (/\bus dollar|usd\b/i.test(raw)) {
-    add("usd");
-    add("dollar");
-    add("american dollar");
-  }
-  if (/\bs\s*&?\s*p|sp 493|s p 493/i.test(raw)) {
-    add("s p");
-    add("s p 500");
-    add("s&p");
-  }
-
-  return [...aliases];
-}
-
-function quoteNamesThesis(t: Pick<Thesis, "company" | "ticker" | "quote">): boolean {
-  const quote = normEvidenceText(t.quote ?? "");
-  return quoteAliases(t).some((alias) => quote.includes(alias));
-}
-
-function inferredCallTypeFromQuote(quote: string): Thesis["callType"] | null {
-  if (EXPLICIT_LONG_RE.test(quote)) return "explicit_long";
-  if (EXPLICIT_SHORT_RE.test(quote)) return "explicit_short";
-  if (EXPLICIT_SELECTION_RE.test(quote)) return "selection";
-  if (EXPLICIT_EXIT_RE.test(quote)) return "explicit_exit";
-  return null;
-}
-
-export function hasTightCallEvidence(t: Pick<Thesis, "company" | "ticker" | "quote" | "callType" | "scoreNote">): boolean {
-  if (!t.callType || t.callType === "view") return false;
-  const quote = t.quote ?? "";
-  if (!quoteNamesThesis(t)) return false;
-  if (WEAK_CATEGORY_ASIDE_RE.test(quote) && !inferredCallTypeFromQuote(quote)) return false;
-  if (inferredCallTypeFromQuote(quote)) return true;
-  if ((t.callType === "selection" || t.callType === "basket") && DIRECTIONAL_FORECAST_RE.test(quote)) return true;
-  if (t.callType === "basket" && BASKET_OWNERSHIP_RE.test(quote)) return true;
-  return !!t.scoreNote && CALL_NOTE_RE.test(t.scoreNote);
-}
-
-export function enforceTightCallEvidence(theses: Thesis[]): Thesis[] {
-  for (const t of theses) {
-    if (t.callType !== "view" && !quoteNamesThesis(t)) {
-      t.callType = "view";
-      t.scoreNote = "Not scored: published quote does not name the thesis exposure.";
-      continue;
-    }
-    if (t.callType === "explicit_long" && inferredCallTypeFromQuote(t.quote) !== "explicit_long") {
-      t.callType = "view";
-      t.scoreNote = "Not scored: published quote does not carry explicit buy/own/long language.";
-      continue;
-    }
-    if (t.callType === "explicit_short" && inferredCallTypeFromQuote(t.quote) !== "explicit_short") {
-      t.callType = "view";
-      t.scoreNote = "Not scored: published quote does not carry explicit short language.";
-      continue;
-    }
-    if (t.callType === "explicit_exit" && inferredCallTypeFromQuote(t.quote) !== "explicit_exit") {
-      t.callType = "view";
-      t.scoreNote = "Not scored: published quote does not carry explicit exit/avoid language.";
-      continue;
-    }
-    if (t.callType !== "basket" && t.callType !== "selection") continue;
-    if (t.stance === "neutral") {
-      t.callType = "view";
-      t.scoreNote ??= "Not scored: verifier found no explicit directional investment claim.";
-      continue;
-    }
-    if (hasTightCallEvidence(t)) continue;
-    t.callType = "view";
-    t.scoreNote ??= "Not scored: quote does not carry explicit pick/trade language.";
-  }
-  return theses;
-}
-
-function neutralViewScoreNote(t: Thesis): string | null {
-  if (t.callType !== "view" && t.stance !== "neutral") return t.scoreNote ?? null;
-  if (!t.scoreNote) return null;
-  if (!/\b(?:investment|pick|best-performing|worst-performing|basket|theme)\b/i.test(t.scoreNote)) {
-    return t.scoreNote;
-  }
-  return "Not scored: commentary on the category, not an explicit pick/trade.";
-}
-
-export function normalizeScoreNotes(theses: Thesis[]): Thesis[] {
-  for (const t of theses) {
-    t.scoreNote = neutralViewScoreNote(t);
-    if (t.scoreNote && REGULAR_HOSTS.includes(t.host)) {
-      for (const host of REGULAR_HOSTS) {
-        if (host === t.host) continue;
-        t.scoreNote = t.scoreNote.replace(new RegExp(`\\b${host}(?:'s|’s)\\b`, "g"), `${t.host}'s`);
-      }
-    }
-  }
-  return theses;
-}
-
 function formatTranscript(t: Transcript): { text: string; truncated: boolean } {
   const lines = t.utterances.map(
     (u) => `[${Math.round(u.startMs / 1000)}s ${u.speaker}] ${u.text}`,
@@ -300,27 +164,6 @@ function slug(company: string, ticker: string | null): string {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
-}
-
-export function repairCallTypesFromQuote(theses: Thesis[]): Thesis[] {
-  for (const t of theses) {
-    if (t.callType !== "view") continue;
-    const callType = inferredCallTypeFromQuote(t.quote);
-    let note: string | null = null;
-    if (callType === "explicit_long") {
-      note = "Quote contains explicit long/buy/own language.";
-    } else if (callType === "explicit_short") {
-      note = "Quote contains explicit short language.";
-    } else if (callType === "selection") {
-      note = "Quote contains explicit pick/selection language.";
-    } else if (callType === "explicit_exit") {
-      note = "Quote contains explicit exit/avoid language.";
-    }
-    if (!callType) continue;
-    t.callType = callType;
-    t.scoreNote ??= note;
-  }
-  return normalizeScoreNotes(enforceTightCallEvidence(theses));
 }
 
 /**
@@ -361,6 +204,7 @@ export async function extractRawTheses(
     callType: item.callType,
     excludeReason: item.excludeReason ?? null,
     scoreNote: item.scoreNote ?? null,
+    sectorProxy: item.sectorProxy ?? null,
     summary: item.summary,
     quote: trimPublishedQuote(item.quote),
     quoteStartMs: item.quoteStartSec != null ? item.quoteStartSec * 1000 : null,
@@ -376,8 +220,10 @@ export async function extractTheses(
   const theses = await extractRawTheses(ep, t);
 
   // Adversarial pass: drop passing mentions/enumerations, repair quotes that
-  // don't yet carry their claim, and neutralize genuinely inferred stances.
-  const verified = normalizeScoreNotes(enforceTightCallEvidence(repairCallTypesFromQuote(await verifyTheses(ep, theses, t))));
+  // don't yet carry their claim, neutralize genuinely inferred stances, and
+  // judge scoreability (callType) against the full transcript. This is the
+  // single place those judgments are made — no regex post-filter.
+  const verified = await verifyTheses(ep, theses, t);
 
   const byCompany = new Map<string, number>();
   for (const th of verified) byCompany.set(th.company, (byCompany.get(th.company) ?? 0) + 1);
