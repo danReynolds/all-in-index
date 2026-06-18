@@ -858,5 +858,9 @@
   "ibit": {
     "description": "BlackRock's iShares Bitcoin Trust ETF providing investors regulated exposure to Bitcoin's price.",
     "domain": "ishares.com"
+  },
+  "005930.ks": {
+    "description": "South Korean multinational manufacturing semiconductors, smartphones, displays, home appliances, and consumer electronics.",
+    "domain": "samsung.com"
   }
 }

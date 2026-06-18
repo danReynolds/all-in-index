@@ -39,6 +39,11 @@ function validateDuplicateQuotes(snapshot: IndexSnapshot, errors: string[]) {
   for (const h of snapshot.holdings) {
     for (const t of h.theses) {
       if (!t.quote) continue;
+      // Explicit calls may legitimately share one quote — a host naming several
+      // stocks in one breath ("25% in memory: SK Hynix 5×, Samsung 6×, Micron
+      // 7×") is N real positions, not lazy reuse. Reuse is only a smell for
+      // views/enumerations (which the build's list-mention filter already drops).
+      if (t.callType && t.callType !== "view") continue;
       const key = t.quote.slice(0, 60).toLowerCase();
       const companies = byQuote.get(key) ?? new Set<string>();
       companies.add(h.company);

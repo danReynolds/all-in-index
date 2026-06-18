@@ -157,7 +157,12 @@ export async function buildIndex(): Promise<IndexSnapshot> {
   const theses = allTheses.filter((t) => {
     if (t.quote) {
       const shared = quoteCompanies.get(t.quote.slice(0, 40).toLowerCase());
-      if (shared && shared.size > 1) return false; // shared across companies = list mention
+      // A quote shared across companies is usually a list mention ("companies
+      // like X and Y") — drop it. But a real per-name CALL stated in one breath
+      // ("25% in memory: SK Hynix 5×, Samsung 6×, Micron 7×") is N genuine
+      // positions, not a passing list, so keep explicit calls (callType != view);
+      // only enumerations (view/neutral) get dropped.
+      if (shared && shared.size > 1 && (t.callType == null || t.callType === "view")) return false;
     }
     if (t.conviction === "low" && t.stance === "neutral") return false; // no real view
     return true;
