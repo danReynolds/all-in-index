@@ -146,7 +146,7 @@ function ProxyModal({ pick, onClose }: { pick: FinPick; onClose: () => void }) {
           </button>
         </div>
 
-        <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
+        <p className="mt-3 text-sm leading-relaxed text-neutral-500 dark:text-neutral-300">
           {pick.speaker} picked <strong className="text-neutral-900 dark:text-neutral-100">“{pick.pick}”</strong> — a
           sector or theme, not a single stock. To put a number on it we track the closest liquid, widely-held ETF.
         </p>
@@ -240,7 +240,7 @@ function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?:
 
       {/* chart, or — for picks that aren't a single ticker — a matching untracked panel */}
       {hasChart ? (
-        <div className="text-neutral-700 dark:text-neutral-600">
+        <div className="text-neutral-700 dark:text-neutral-500">
           <PickChart history={p.history!} up={up} />
           <div className="mt-1 flex items-center justify-between text-[11px] text-neutral-500">
             <span>{fromDate ? fmtDate(fromDate) : "call"}</span>

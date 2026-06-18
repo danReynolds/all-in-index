@@ -38,7 +38,7 @@ export default function Error({
           try again, and if it sticks around, head back to the index.
         </p>
         {error.digest && (
-          <p className="font-mono text-[11px] text-neutral-600">ref: {error.digest}</p>
+          <p className="font-mono text-[11px] text-neutral-500">ref: {error.digest}</p>
         )}
       </div>
 

@@ -47,6 +47,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       className={`${geistSans.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} dark h-full antialiased`}
     >
       <body className="min-h-full flex flex-col text-neutral-100">
+        <a
+          href="#main"
+          className="sr-only rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50"
+        >
+          Skip to content
+        </a>
         <PlayerProvider>
         <header className="sticky top-0 z-40 border-b border-white/5 bg-neutral-950/70 backdrop-blur-md">
           <div className="mx-auto flex max-w-5xl items-center justify-between px-5 py-3">
@@ -68,7 +74,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <Ticker items={tickerItems} />
         </header>
 
-        <main className="mx-auto w-full max-w-5xl flex-1 px-5 py-10">{children}</main>
+        <main id="main" className="mx-auto w-full max-w-5xl flex-1 px-5 py-10">{children}</main>
 
         <footer className="border-t border-white/5 px-5 py-8 text-xs leading-relaxed text-neutral-500">
           <div className="mx-auto flex max-w-5xl flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">

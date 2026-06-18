@@ -75,7 +75,7 @@ export default function PredictionsPage() {
           The annual picks game
         </p>
         <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">Predictions Scorecard</h1>
-        <p className="max-w-2xl text-neutral-600 dark:text-neutral-400">
+        <p className="max-w-2xl text-neutral-500 dark:text-neutral-400">
           Each January the besties call the year ahead. Here are their market picks, by category —
           graded against the market wherever a pick maps to a single ticker.
         </p>

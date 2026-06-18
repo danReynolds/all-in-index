@@ -1,7 +1,7 @@
 import type { Stance } from "./types";
 
 export function pct(x: number | null | undefined): string {
-  if (x == null) return "—";
+  if (x == null || !Number.isFinite(x)) return "—";
   const s = (x * 100).toFixed(1);
   return (x >= 0 ? "+" : "") + s + "%";
 }
@@ -216,7 +216,7 @@ export function fmtMoney(
   v: number | null | undefined,
   market?: string | { ticker?: string | null; sourceSymbol?: string | null; currency?: string | null } | null,
 ): string {
-  if (v == null) return "—";
+  if (v == null || !Number.isFinite(v)) return "—";
   const ticker = typeof market === "string" ? market : (market?.sourceSymbol ?? market?.ticker);
   const currency = typeof market === "string" ? null : market?.currency;
   const suffix = ticker?.match(/\.([A-Za-z]+)$/)?.[1]?.toUpperCase();

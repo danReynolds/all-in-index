@@ -171,7 +171,7 @@ function PlayerBar({
 
         <span className="shrink-0 whitespace-nowrap font-mono text-[11px] tabular-nums text-neutral-400">
           {mmss(time * 1000)}
-          <span className="text-neutral-600"> / {duration ? mmss(duration * 1000) : "–:––"}</span>
+          <span className="text-neutral-500"> / {duration ? mmss(duration * 1000) : "–:––"}</span>
         </span>
 
         {track.link && (

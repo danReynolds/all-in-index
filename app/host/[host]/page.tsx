@@ -291,7 +291,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
                   </Link>
                   <StanceBadge stance={t.stance} callType={t.callType} />
                 </div>
-                <blockquote className="mt-2 line-clamp-4 text-sm italic leading-relaxed text-neutral-600 dark:text-neutral-400">
+                <blockquote className="mt-2 line-clamp-4 text-sm italic leading-relaxed text-neutral-500 dark:text-neutral-400">
                   “{t.quote}”
                 </blockquote>
                 <div className="mt-3 flex items-center justify-between text-xs text-neutral-400">

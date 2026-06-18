@@ -24,7 +24,7 @@ export default function AwardsPage() {
         <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
           🏆 Honors of the besties
         </h1>
-        <p className="mx-auto max-w-2xl text-neutral-600 dark:text-neutral-400">
+        <p className="mx-auto max-w-2xl text-neutral-500 dark:text-neutral-400">
           Computed live from every call in the catalog — no judges, no recounts, no mercy.
         </p>
       </header>

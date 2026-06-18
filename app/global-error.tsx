@@ -32,7 +32,7 @@ export default function GlobalError({
             reload the page.
           </p>
           {error.digest && (
-            <p className="font-mono text-[11px] text-neutral-600">ref: {error.digest}</p>
+            <p className="font-mono text-[11px] text-neutral-500">ref: {error.digest}</p>
           )}
           <div className="flex flex-wrap items-center justify-center gap-3">
             <button

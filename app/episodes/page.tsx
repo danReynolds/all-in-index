@@ -14,7 +14,7 @@ const STANCE_ORDER: Stance[] = ["bull", "bear", "mixed", "neutral"];
 
 /** Small cluster of the companies discussed, most-talked-about first. */
 function Discussed({ companies }: { companies: EpisodeSummary["companies"] }) {
-  if (companies.length === 0) return <span className="text-neutral-600">—</span>;
+  if (companies.length === 0) return <span className="text-neutral-500">—</span>;
   const shown = companies.slice(0, 5);
   const extra = companies.length - shown.length;
   return (
@@ -31,7 +31,7 @@ function Discussed({ companies }: { companies: EpisodeSummary["companies"] }) {
 
 /** Thin bull/bear/neutral mix bar — the episode's stance split at a glance. */
 function StanceBar({ stance, total }: { stance: EpisodeSummary["stance"]; total: number }) {
-  if (total === 0) return <span className="text-neutral-600">—</span>;
+  if (total === 0) return <span className="text-neutral-500">—</span>;
   return (
     <span className="flex h-1.5 w-24 overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-800">
       {STANCE_ORDER.filter((s) => stance[s] > 0).map((s) => (
@@ -59,7 +59,7 @@ export default function EpisodesPage() {
         <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
           Episodes, week by week
         </h1>
-        <p className="max-w-2xl text-neutral-600 dark:text-neutral-400">
+        <p className="max-w-2xl text-neutral-500 dark:text-neutral-400">
           {episodes.length} processed episodes · {withTakes} with scored calls. Click any episode
           for its scorecard.
         </p>
