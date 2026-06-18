@@ -19,6 +19,7 @@ import {
 export const metadata = {
   title: "Insights",
   description: "What the besties' calls reveal: consensus, conviction, flips, and live disagreements across every scored call.",
+  alternates: { canonical: "/insights" },
 };
 
 const pp = (x: number | null) =>

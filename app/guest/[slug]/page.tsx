@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${entry.guest} — guest call record`,
     description: `${pct(entry.followReturn)} across ${entry.calls} scored ${entry.calls === 1 ? "call" : "calls"} on the All-In podcast, vs the S&P's ${pct(entry.benchmarkReturn)} over the same windows — if you'd followed each call.`,
+    alternates: { canonical: `/guest/${slug}` },
   };
 }
 

@@ -34,6 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   return {
     title: `${ep.meta.number ? `E${ep.meta.number}` : "Special"} — ${ep.meta.title}`,
     description: `${takes} scored takes across ${ep.groups.length} companies from this episode, each judged by the price move since it aired.`,
+    alternates: { canonical: `/episode/${id}` },
   };
 }
 
@@ -104,8 +105,30 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
     ...new Set(allTakes.filter((t) => t.host === "Guest" && t.guestName).map((t) => t.guestName as string)),
   ];
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://allindex.fyi";
+  const episodeJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "PodcastEpisode",
+    name: ep.meta.title,
+    url: `${siteUrl}/episode/${id}`,
+    datePublished: ep.meta.date,
+    ...(ep.meta.number ? { episodeNumber: ep.meta.number } : {}),
+    description: `${takeCount} scored takes across ${ep.groups.length} companies from this episode, each judged by the price move since it aired.`,
+    partOfSeries: {
+      "@type": "PodcastSeries",
+      name: "All-In with Chamath, Jason, Sacks & Friedberg",
+    },
+    ...(ep.meta.audioUrl
+      ? { associatedMedia: { "@type": "MediaObject", contentUrl: ep.meta.audioUrl } }
+      : {}),
+  };
+
   return (
     <div className="space-y-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(episodeJsonLd) }}
+      />
       <div className="flex items-center justify-between gap-3 text-sm text-neutral-500">
         <BackLink href="/episodes">All episodes</BackLink>
         <span className="flex gap-4">

@@ -16,6 +16,10 @@ import type { Holding, IndexFund } from "@/lib/types";
 
 const d = (ms: number) => ({ "--d": `${ms}ms` }) as CSSProperties;
 
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 export default function Home() {
   const { snapshot, isSample } = getIndex();
   const holdings = snapshot.holdings;
