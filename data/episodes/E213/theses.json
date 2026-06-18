@@ -13,14 +13,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues that DeepSeek's use of PTX (bypassing CUDA) and its resource-constrained innovations signal that NVIDIA's CUDA moat is under threat, pushing the ecosystem toward a more heterogeneous chip environment that undermines NVIDIA's dominance.",
+    "sectorProxy": null,
+    "summary": "Chamath argues DeepSeek's use of PTX (bypassing CUDA) and GRPO (bypassing PPO) signals an 'emperor has no clothes' moment for NVIDIA's moat, pointing toward a more heterogeneous chip environment that reduces NVIDIA's lock-in advantage.",
     "quote": "apologies to the NVIDIA bulls, but it's going to create a more heterogeneous environment. And the reason is because there's too much money and risk on the line to go through a single point of failure. A chip, a high-level framework to get",
     "quoteStartMs": 2507430,
     "topics": [
-      "competitive moat",
-      "AI infrastructure",
+      "CUDA moat",
+      "competitive threat",
       "DeepSeek",
-      "chip ecosystem"
+      "AI infrastructure"
     ],
     "attributionConfidence": "high"
   },
@@ -38,69 +39,46 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath frames OpenAI's reported $40B raise at a $340B valuation as a bet that ChatGPT becomes the next billion-MAU consumer killer app, putting it on a collision course with Meta for consumer AI dominance.",
-    "quote": "if OpenAI raises $40 billion at $340 billion, that just hit the wire. The underwriting logic at $340 billion...It is the wrapper, meaning ChatGPT is the next killer app. It's getting to a billion-plus MAU, hundreds of millions of DAO.",
-    "quoteStartMs": 1792631,
+    "sectorProxy": null,
+    "summary": "Chamath is skeptical of OpenAI's $40B raise at $340B valuation, arguing the underlying thesis — that ChatGPT is the killer consumer app — puts them on a collision course with Meta's billions of DAUs, making the valuation hard to justify.",
+    "quote": "if OpenAI raises $40 billion at $340 billion, that just hit the wire. The underwriting logic at $340 billion, exactly what you just said, Friedberg. It is the wrapper, meaning ChatGPT is the next killer app... which puts them on a",
+    "quoteStartMs": 1789000,
     "topics": [
       "valuation",
-      "consumer AI",
       "fundraising",
+      "consumer AI",
       "competition"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E213-openai-Jason-2",
+    "id": "E213-openai-Friedberg-2",
     "episodeId": "E213",
     "episodeNumber": 213,
     "episodeDate": "2025-01-31T21:52:00.000Z",
     "company": "OpenAI",
     "ticker": null,
     "isPublic": false,
-    "host": "Jason",
-    "stance": "bear",
+    "host": "Friedberg",
+    "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Jason argues that open-source models are commoditizing AI, LLMs are rapidly depreciating assets, and OpenAI's closed-source, high-spend approach leaves it vulnerable now that DeepSeek has open-sourced comparable technology.",
-    "quote": "I'm glad that this is all going open source. It should have been open source and it's better for humanity. And the fact that the Chinese did it to Sam Altman is comeuppance for him stealing everybody else's content.",
-    "quoteStartMs": 2403211,
+    "sectorProxy": null,
+    "summary": "Friedberg questions whether OpenAI's massive fundraise and data-center moat thesis still holds after DeepSeek, suggesting model commoditization is happening faster than expected and the value will accrue elsewhere in the stack.",
+    "quote": "it's a window for OpenAI to say, we're going to go up against Meta. This is it. We're going to be the players... it becomes harder to believe in the context of what happened in the last week.",
+    "quoteStartMs": 1840000,
     "topics": [
-      "open source",
-      "commoditization",
       "valuation",
-      "competitive threat"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E213-openai-Sacks-3",
-    "episodeId": "E213",
-    "episodeNumber": 213,
-    "episodeDate": "2025-01-31T21:52:00.000Z",
-    "company": "OpenAI",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Sacks",
-    "stance": "mixed",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Sacks acknowledges DeepSeek closed the gap on reasoning models and that distillation of OpenAI's output likely occurred, but argues OpenAI's frontier (O3) is still ahead of R1, and it's premature to conclude there's no return on being at the frontier.",
-    "quote": "OpenAI is on O3 now. Its frontier is ahead of where R1 is...I think it's a little premature to conclude that there's no reward for being at the frontier.",
-    "quoteStartMs": 2857255,
-    "topics": [
+      "model commoditization",
       "competitive position",
-      "AI frontier",
-      "open source threat",
-      "DeepSeek"
+      "fundraising"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E213-meta-Chamath-4",
+    "id": "E213-meta-Chamath-3",
     "episodeId": "E213",
     "episodeNumber": 213,
     "episodeDate": "2025-01-31T21:52:00.000Z",
@@ -113,43 +91,45 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues Meta faces critical pressure to release the next LLaMA iteration that surpasses Gemini and R1, and must embrace DeepSeek-style innovations (e.g., PTX over CUDA) to serve as the Western open-source counterweight to China.",
-    "quote": "all the pressure right now I think is on Meta because I think Meta has to show up with the next iteration of LLaMA that beats and exceeds Gemini, that exceeds R1. And I think that that is going to be crucial for us to have a counterweight",
+    "sectorProxy": null,
+    "summary": "Chamath argues Meta is best positioned to respond to DeepSeek because it must embrace and extend the innovations (PTX, GRPO), and it already has billions of DAUs — making it the only company that can realistically bring AI to a billion-plus people.",
+    "quote": "I think all the pressure right now I think is on Meta because I think Meta has to show up with the next iteration of LLaMA that beats and exceeds Gemini, that exceeds R1. And I think that that is going to be crucial for us to have a",
     "quoteStartMs": 2447000,
     "topics": [
       "open source AI",
-      "competitive position",
       "LLaMA",
-      "China competition"
+      "competitive positioning",
+      "consumer AI"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E213-msft-Jason-5",
+    "id": "E213-msft-Friedberg-4",
     "episodeId": "E213",
     "episodeNumber": 213,
     "episodeDate": "2025-01-31T21:52:00.000Z",
     "company": "Microsoft",
     "ticker": "MSFT",
     "isPublic": true,
-    "host": "Jason",
-    "stance": "bear",
+    "host": "Friedberg",
+    "stance": "neutral",
     "conviction": "low",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Jason notes Microsoft showed weakness in cloud and is actively hosting DeepSeek R1, undercutting its own OpenAI partnership, suggesting no loyalty and a weakening strategic position.",
-    "quote": "Microsoft is hosting their version of R1, which means they are actively subverting their partner OpenAI and pushing people to a cheaper model.",
-    "quoteStartMs": 1977000,
+    "sectorProxy": null,
+    "summary": "Friedberg notes Microsoft showed cloud weakness and is down 6%, suggesting its position is deteriorating as OpenAI's value proposition is undermined by cheaper open-source alternatives that Microsoft itself is hosting.",
+    "quote": "Microsoft showed weakness in their cloud. And then Microsoft's down 6% today. And, you know, I think it's a window for OpenAI to say, we're going to go up against Meta.",
+    "quoteStartMs": 1840000,
     "topics": [
       "cloud weakness",
-      "OpenAI partnership",
-      "competitive dynamics"
+      "OpenAI relationship",
+      "valuation"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E213-tsla-Guest-6",
+    "id": "E213-tsla-Guest-5",
     "episodeId": "E213",
     "episodeNumber": 213,
     "episodeDate": "2025-01-31T21:52:00.000Z",
@@ -162,20 +142,21 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Travis Kalanick argues cheap AI is rapidly improving Tesla's FSD — citing a 10x performance improvement in miles per human intervention over 3 months — and that Tesla has a major manufacturing advantage in the autonomous vehicle race.",
-    "quote": "Tesla and FSD, their new models are like, I think in a 3-month period, he, they went up like 10x in terms of performance, meaning in number of miles per, per human intervention...cheap AI, cheap, good AI makes cheap, good autonomy.",
-    "quoteStartMs": 5238625,
+    "sectorProxy": null,
+    "summary": "Travis Kalanick argues Tesla has a significant manufacturing advantage in the autonomous vehicle race, and cheap AI is already turbocharging FSD performance, with 10x improvement in miles-per-intervention in just 3 months.",
+    "quote": "cheap AI makes cheap autonomy... Tesla and FSD, their new models are like, I think in a 3-month period, they went up like 10x in terms of performance, meaning in number of miles per human intervention. Tesla of course has huge advantage.",
+    "quoteStartMs": 5224604,
     "topics": [
       "autonomous vehicles",
       "FSD",
-      "AI",
-      "manufacturing advantage"
+      "manufacturing",
+      "cheap AI"
     ],
     "attributionConfidence": "high",
     "guestName": "Travis Kalanick"
   },
   {
-    "id": "E213-waymo-Guest-7",
+    "id": "E213-waymo-Guest-6",
     "episodeId": "E213",
     "episodeNumber": 213,
     "episodeDate": "2025-01-31T21:52:00.000Z",
@@ -188,15 +169,41 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Travis Kalanick observes that Waymo's technology now works seamlessly and is becoming normalized, and frames the key question as whether Waymo has the right manufacturing partners to achieve scale in autonomous vehicles.",
-    "quote": "You get in a Waymo today and it's like, you're not even thinking twice. You're just like, it's all good. You just get in, you get out...the technology works.",
+    "sectorProxy": null,
+    "summary": "Travis Kalanick is bullish on Waymo's technology maturity, noting it has normalized the robotaxi experience to the point where riders don't think twice, though he flags power grid constraints as the key bottleneck for scaling.",
+    "quote": "You get in a Waymo today and it's like, you're not even thinking twice. You're just like, it's all good. You just get in, you get out... The technology works.",
     "quoteStartMs": 5166768,
     "topics": [
       "autonomous vehicles",
-      "technology readiness",
-      "scale"
+      "robotaxi",
+      "technology maturity"
     ],
     "attributionConfidence": "high",
     "guestName": "Travis Kalanick"
+  },
+  {
+    "id": "E213-application-layer-ai-software-Jason-8",
+    "episodeId": "E213",
+    "episodeNumber": 213,
+    "episodeDate": "2025-01-31T21:52:00.000Z",
+    "company": "Application layer / AI software",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Jason",
+    "stance": "neutral",
+    "conviction": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Not scored: Jason's 'application layer' framing is a general thematic/sector view using analogies (YouTube, Uber) but he does not name a specific basket, pick, or explicit trade — he says 'the answer is the application layer' as analysis, not as 'my pick is' or 'I'd be long'. No transaction or selection language names this as a scoreable basket call.",
+    "sectorProxy": "IGV",
+    "summary": "Jason argues the application layer is the best place to invest as AI models commoditize rapidly, drawing the analogy that you want to be YouTube not storage, or Uber not GPS — the real value accrues at the application layer.",
+    "quote": "The answer to your question is the application layer because this is all going to become storage... Do you want to be in the storage business or you want to be in the YouTube business? Do you want to be in the Uber business or do you want",
+    "quoteStartMs": 2622000,
+    "topics": [
+      "application layer",
+      "AI commoditization",
+      "investment thesis"
+    ],
+    "attributionConfidence": "high"
   }
 ]
