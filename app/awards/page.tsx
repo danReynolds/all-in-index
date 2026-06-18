@@ -7,7 +7,7 @@ import { HOST_UI } from "@/lib/hosts";
 import { Reveal } from "@/app/components/Reveal";
 
 export const metadata = {
-  title: "The Besties Awards — The All-Index",
+  title: "The Besties Awards",
   description: "The Oracle, the Flip-Flopper, the Call of the Catalog, and the Fumble.",
 };
 

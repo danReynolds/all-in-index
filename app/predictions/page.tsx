@@ -8,7 +8,7 @@ import type { Host } from "@/lib/types";
 import type { PredictionsFile } from "@/pipeline/extract-predictions";
 
 export const metadata = {
-  title: "Predictions Scorecard — The All-Index",
+  title: "Predictions Scorecard",
   description: "The besties' year-ahead asset picks, scored against the market.",
 };
 
