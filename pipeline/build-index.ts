@@ -6,9 +6,11 @@ import { buildMarketData } from "./market";
 import { buildIndexFund, buildWindowFund, buildBearBook, buildGuestLeaderboard, BESTIES, GUESTS } from "./index-fund";
 import { canonicalize } from "./entities";
 import { ensureCompanyMeta } from "./descriptions";
-import { currentStanceFromTheses } from "../lib/calls";
+import { currentStanceFromTheses, isCallShaped } from "../lib/calls";
+import { findProxyForPick } from "../lib/proxies";
 import { trimPublishedQuote } from "../lib/quotes";
 import { store } from "./store";
+import { hasTightCallEvidence, normalizeScoreNotes } from "./extract";
 import { REGULAR_HOSTS } from "../lib/types";
 import type {
   Holding,
@@ -75,6 +77,34 @@ function netStance(theses: Thesis[]): Stance {
 
 const SynthSchema = z.object({ synthesis: z.string() });
 
+export function shouldKeepThesisForIndex(
+  t: Thesis,
+  sharedQuoteCompanyCount: number,
+): boolean {
+  if (sharedQuoteCompanyCount > 1 && !isCallShaped(t) && !t.scoreNote) {
+    return false;
+  }
+  if (t.conviction === "low" && t.stance === "neutral") return false;
+  return true;
+}
+
+function isNamedProxyExposure(t: Thesis): boolean {
+  if (t.callType === "basket") return true;
+  return /\b(?:basket|sector|market|stocks?|etfs?|s\s*&?\s*p|nasdaq|mag\s*(?:7|seven)|software|saas|metals?|minerals?|ipo|defense|aerospace|robotics|industrial|stablecoins?|dollar|media)\b/i.test(t.company);
+}
+
+export function attachSectorProxy(t: Thesis): void {
+  if (t.ticker || !isCallShaped(t) || t.excludeReason || !hasTightCallEvidence(t)) return;
+  if (!isNamedProxyExposure(t)) return;
+  const proxy = findProxyForPick(`${t.company} ${t.quote}`);
+  if (!proxy) return;
+  t.ticker = proxy.ticker;
+  t.isPublic = true;
+  t.scoreNote = t.scoreNote
+    ? `${t.scoreNote} ETF proxy: ${proxy.note}.`
+    : `ETF proxy: ${proxy.note}; quote is an explicit sector/theme call.`;
+}
+
 // Synthesis cache: keyed by the holding's exact take-set, so unchanged
 // holdings never re-spend tokens (the 6-hourly cron would otherwise
 // re-synthesize ~125 holdings every run).
@@ -134,6 +164,7 @@ export async function buildIndex(): Promise<IndexSnapshot> {
   const episodeIds = store.listEpisodeIds();
   const allTheses: Thesis[] = [];
   for (const id of episodeIds) allTheses.push(...store.loadTheses(id));
+  normalizeScoreNotes(allTheses);
   console.log(`Aggregating ${allTheses.length} theses from ${episodeIds.length} episodes…`);
 
   // Canonicalize entity names/tickers (merge variants, drop crypto tickers).
@@ -143,10 +174,12 @@ export async function buildIndex(): Promise<IndexSnapshot> {
     t.company = c.company;
     t.ticker = c.ticker;
     t.isPublic = c.isPublic;
+    attachSectorProxy(t);
   }
 
   // Drop weak / non-substantive theses so we never surface passing mentions:
-  //  - news-list mentions, where one quote is reused across multiple companies
+  //  - passive news-list mentions, where one quote is reused across multiple
+  //    companies without a call-shaped pick/trade
   //  - low-conviction non-views (hedged + neutral, no directional take)
   const quoteCompanies = new Map<string, Set<string>>();
   for (const t of allTheses) {
@@ -155,17 +188,10 @@ export async function buildIndex(): Promise<IndexSnapshot> {
     (quoteCompanies.get(key) ?? quoteCompanies.set(key, new Set()).get(key)!).add(t.company);
   }
   const theses = allTheses.filter((t) => {
-    if (t.quote) {
-      const shared = quoteCompanies.get(t.quote.slice(0, 40).toLowerCase());
-      // A quote shared across companies is usually a list mention ("companies
-      // like X and Y") — drop it. But a real per-name CALL stated in one breath
-      // ("25% in memory: SK Hynix 5×, Samsung 6×, Micron 7×") is N genuine
-      // positions, not a passing list, so keep explicit calls (callType != view);
-      // only enumerations (view/neutral) get dropped.
-      if (shared && shared.size > 1 && (t.callType == null || t.callType === "view")) return false;
-    }
-    if (t.conviction === "low" && t.stance === "neutral") return false; // no real view
-    return true;
+    const shared = t.quote
+      ? quoteCompanies.get(t.quote.slice(0, 40).toLowerCase())
+      : null;
+    return shouldKeepThesisForIndex(t, shared?.size ?? 1);
   });
   console.log(`Kept ${theses.length} substantive theses (dropped ${allTheses.length - theses.length} weak/passing-mention).`);
 

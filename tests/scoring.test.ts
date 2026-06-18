@@ -1,9 +1,14 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { currentStanceForHosts, hostExposureWindows, tradeDirectionForTake } from "../lib/calls";
+import { isMacroAsset, proxyAssetKind } from "../lib/assets";
 import { MAX_PUBLISHED_QUOTE_CHARS, trimPublishedQuote } from "../lib/quotes";
 import { auditTranscriptCandidates } from "../pipeline/take-candidate-audit";
+import { enforceTightCallEvidence, hasTightCallEvidence, normalizeScoreNotes, repairCallTypesFromQuote } from "../pipeline/extract";
+import { attachSectorProxy, shouldKeepThesisForIndex } from "../pipeline/build-index";
 import { validateIndexSnapshot } from "../pipeline/quality";
+import { dedupeOverlappingTheses, repairQuoteOwnership, snapQuoteTimestamps, stampAttribution } from "../pipeline/run-episode";
+import { shouldProtectExplicitCallFromDrop } from "../pipeline/verify";
 import type { IndexSnapshot, Transcript } from "../lib/types";
 import {
   BESTIES,
@@ -169,6 +174,467 @@ test("a private scored call is valid on its own — structural non-tradability i
   assert.deepEqual(validateIndexSnapshot(snapshot).errors, []);
 });
 
+test("shared quote filtering preserves call-shaped basket legs", () => {
+  const sharedView = thesis("Guest", "bull", "2026-05-08T00:00:00.000Z", {
+    id: "shared-view",
+    company: "Micron Technology",
+    ticker: "MU",
+    callType: "view",
+    quote: "The memory stocks are exciting: SK Hynix, Samsung, Micron.",
+  });
+  const sharedLong = thesis("Guest", "bull", "2026-05-08T00:00:00.000Z", {
+    id: "shared-long",
+    company: "Micron Technology",
+    ticker: "MU",
+    callType: "explicit_long",
+    quote: "We have 25% of our portfolio in SK Hynix, Samsung, Micron.",
+    scoreNote: "Shared memory-stock long basket; Micron named in the quote.",
+  });
+  const sharedBasket = thesis("Chamath", "bear", "2026-01-10T00:00:00.000Z", {
+    id: "shared-basket",
+    company: "Public SaaS / Software Industrial Complex",
+    ticker: null,
+    callType: "basket",
+    quote: "I will pick the software industrial complex.",
+    scoreNote: "Named basket pick.",
+  });
+
+  assert.equal(shouldKeepThesisForIndex(sharedView, 3), false);
+  assert.equal(shouldKeepThesisForIndex(sharedLong, 3), true);
+  assert.equal(shouldKeepThesisForIndex(sharedBasket, 3), true);
+  assert.equal(
+    shouldKeepThesisForIndex(
+      thesis("Jason", "neutral", "2026-01-01T00:00:00.000Z", {
+        conviction: "low",
+      }),
+      1,
+    ),
+    false,
+  );
+});
+
+test("quality allows intentional shared call quotes but rejects duplicate view quotes", () => {
+  const quote = "We have 25% of our portfolio in SK Hynix, Samsung, Micron.";
+  const sharedCallA = thesis("Guest", "bull", "2026-05-08T00:00:00.000Z", {
+    id: "shared-call-a",
+    company: "SK Hynix",
+    ticker: null,
+    isPublic: false,
+    callType: "explicit_long",
+    quote,
+    scoreNote: "Shared memory-stock long basket; SK Hynix named in the quote.",
+  });
+  const sharedCallB = thesis("Guest", "bull", "2026-05-08T00:00:00.000Z", {
+    id: "shared-call-b",
+    company: "Micron Technology",
+    ticker: null,
+    isPublic: false,
+    callType: "explicit_long",
+    quote,
+    scoreNote: "Shared memory-stock long basket; Micron named in the quote.",
+  });
+  const sharedViewA = thesis("Guest", "bull", "2026-05-08T00:00:00.000Z", {
+    id: "shared-view-a",
+    company: "Alpha",
+    ticker: null,
+    isPublic: false,
+    callType: "view",
+    quote: "These companies are examples of the broader AI infrastructure theme.",
+  });
+  const sharedViewB = thesis("Guest", "bull", "2026-05-08T00:00:00.000Z", {
+    id: "shared-view-b",
+    company: "Beta",
+    ticker: null,
+    isPublic: false,
+    callType: "view",
+    quote: "These companies are examples of the broader AI infrastructure theme.",
+  });
+  const snapshot: IndexSnapshot = {
+    generatedAt: "2026-06-18T00:00:00.000Z",
+    episodesProcessed: 1,
+    holdings: [
+      { ...holding([sharedCallA]), slug: "sk-hynix", company: "SK Hynix", ticker: null, isPublic: false },
+      { ...holding([sharedCallB]), slug: "micron", company: "Micron Technology", ticker: null, isPublic: false },
+    ],
+  };
+
+  assert.deepEqual(validateIndexSnapshot(snapshot).errors, []);
+
+  const duplicateViewSnapshot: IndexSnapshot = {
+    ...snapshot,
+    holdings: [
+      { ...holding([sharedViewA]), slug: "alpha", company: "Alpha", ticker: null, isPublic: false },
+      { ...holding([sharedViewB]), slug: "beta", company: "Beta", ticker: null, isPublic: false },
+    ],
+  };
+  assert.match(validateIndexSnapshot(duplicateViewSnapshot).errors.join("\n"), /quote reused across companies/);
+});
+
+test("quote ownership repair follows the transcript speaker label", () => {
+  const take = thesis("Chamath", "bear", "2026-01-10T00:00:00.000Z", {
+    id: "E257-software-Chamath-0",
+    company: "Software Industrial Complex",
+    ticker: null,
+    isPublic: false,
+    callType: "basket",
+    quote: "I will pick the software industrial complex.",
+  });
+  const transcript: Transcript = {
+    episodeId: "E257",
+    provider: "assemblyai",
+    speakerMap: { A: "Jason", B: "Friedberg" },
+    speakerConfidence: { A: "high", B: "high" },
+    utterances: [
+      {
+        cluster: "A",
+        speaker: "Jason",
+        text: "Chamath, who's your loser 2026?",
+        startMs: 2565000,
+        endMs: 2569000,
+      },
+      {
+        cluster: "B",
+        speaker: "Friedberg",
+        text: "I will pick the software industrial complex.",
+        startMs: 2583000,
+        endMs: 2587000,
+      },
+    ],
+    meta: {},
+  };
+
+  repairQuoteOwnership([take], transcript);
+  stampAttribution([take], transcript);
+
+  assert.equal(take.host, "Friedberg");
+  assert.equal(take.id, "E257-software-Friedberg-0");
+  assert.equal(take.attributionConfidence, "high");
+});
+
+test("obvious pick language repairs view callType", () => {
+  const take = thesis("Friedberg", "bull", "2025-06-21T00:00:00.000Z", {
+    company: "Tesla",
+    ticker: "TSLA",
+    callType: "view",
+    quote: "Tesla is the best place to invest if you want to have a shot at a massive new industry.",
+  });
+
+  repairCallTypesFromQuote([take]);
+
+  assert.equal(take.callType, "selection");
+  assert.equal(take.scoreNote, "Quote contains explicit pick/selection language.");
+});
+
+test("numbered-answer quote language repairs view callType", () => {
+  const take = thesis("Chamath", "bull", "2025-06-21T00:00:00.000Z", {
+    company: "Tesla",
+    ticker: "TSLA",
+    callType: "view",
+    quote: "Tesla's one and Google's two. And the reason is because they are the closest to having that vertically integrated stack.",
+  });
+
+  repairCallTypesFromQuote([take]);
+
+  assert.equal(take.callType, "selection");
+});
+
+test("clear sector calls get ETF proxies while weak category asides stay views", () => {
+  const clearSector = thesis("Friedberg", "bull", "2026-01-10T00:00:00.000Z", {
+    company: "Critical Metals Basket",
+    ticker: null,
+    isPublic: false,
+    callType: "basket",
+    quote: "I would pick a basket of critical metals.",
+    scoreNote: null,
+  });
+  const weakAside = thesis("Chamath", "bull", "2026-01-10T00:00:00.000Z", {
+    company: "Capital Equipment Basket",
+    ticker: null,
+    isPublic: false,
+    callType: "basket",
+    quote: "there's one category we didn't talk about, but I think it's kind of interesting, which is capital equipment.",
+    scoreNote: "Explicitly flagged as a best-performing asset category for 2026.",
+  });
+  const neutralizedBasket = thesis("Chamath", "neutral", "2026-01-10T00:00:00.000Z", {
+    company: "Capital Equipment Basket",
+    ticker: null,
+    isPublic: false,
+    callType: "basket",
+    quote: "the category of assets that qualify for accelerated depreciation, capital equipment.",
+    scoreNote: "Raised as an additional best-performing asset category.",
+  });
+  const explicitListPick = thesis("Jason", "bull", "2026-01-10T00:00:00.000Z", {
+    company: "Robinhood / Polymarket / PrizePicks basket",
+    ticker: "HOOD",
+    isPublic: true,
+    callType: "basket",
+    quote: "my pick for best performing asset will be the Robinhood PolyMarket Prize Picks.",
+  });
+  const privateCompanyPick = thesis("Sacks", "bull", "2026-01-10T00:00:00.000Z", {
+    company: "Huawei",
+    ticker: null,
+    isPublic: false,
+    callType: "selection",
+    quote: "My number 1 is Huawei, which I've mentioned in the past out of China.",
+    topics: ["China tech"],
+  });
+  const nonMag7Short = thesis("Friedberg", "bear", "2025-06-21T00:00:00.000Z", {
+    company: "S&P 493 (non-Mag7 S&P 500)",
+    ticker: null,
+    isPublic: false,
+    callType: "explicit_short",
+    quote: "it's an opportunity to short the S&P",
+  });
+
+  assert.equal(hasTightCallEvidence(clearSector), true);
+  attachSectorProxy(clearSector);
+  assert.equal(clearSector.ticker, "REMX");
+  assert.equal(clearSector.isPublic, true);
+  assert.equal(proxyAssetKind(clearSector.ticker), "sector");
+  assert.equal(isMacroAsset(clearSector.ticker), true);
+
+  enforceTightCallEvidence([weakAside]);
+  attachSectorProxy(weakAside);
+  assert.equal(weakAside.callType, "view");
+  assert.equal(weakAside.ticker, null);
+
+  enforceTightCallEvidence([neutralizedBasket]);
+  assert.equal(neutralizedBasket.callType, "view");
+  assert.equal(shouldProtectExplicitCallFromDrop(explicitListPick), true);
+
+  attachSectorProxy(privateCompanyPick);
+  assert.equal(privateCompanyPick.ticker, null);
+
+  attachSectorProxy(nonMag7Short);
+  assert.equal(nonMag7Short.ticker, null);
+});
+
+test("score notes cannot contradict the attributed host", () => {
+  const take = thesis("Friedberg", "bull", "2026-01-10T00:00:00.000Z", {
+    callType: "basket",
+    scoreNote: "Named as Chamath's best-performing asset pick for 2026.",
+  });
+
+  normalizeScoreNotes([take]);
+
+  assert.equal(take.scoreNote, "Named as Friedberg's best-performing asset pick for 2026.");
+});
+
+test("quote snapping uses the answer utterance at prompt boundaries", () => {
+  const take = thesis("Chamath", "bull", "2026-01-10T00:00:00.000Z", {
+    id: "E232-tsla-Chamath-4",
+    callType: "selection",
+    quote: "Tesla's one and Google's two... I think that Tesla has the best vision models.",
+    quoteStartMs: 999,
+  });
+  const transcript: Transcript = {
+    episodeId: "E232",
+    provider: "assemblyai",
+    speakerMap: { A: "Jason", B: "Chamath" },
+    speakerConfidence: { A: "high", B: "high" },
+    utterances: [
+      { cluster: "A", speaker: "Jason", text: "Chamath, who's your number one and number two?", startMs: 0, endMs: 1000 },
+      {
+        cluster: "B",
+        speaker: "Chamath",
+        text: "Tesla's one and Google's two. And the reason is because they are the closest to having that vertically integrated stack. I think that Tesla has the best vision models.",
+        startMs: 1000,
+        endMs: 8000,
+      },
+    ],
+    meta: {},
+  };
+
+  snapQuoteTimestamps([take], transcript);
+  stampAttribution([take], transcript);
+
+  assert.equal(take.quoteStartMs, 1000);
+  assert.equal(take.attributionConfidence, "high");
+});
+
+test("quote ownership repair can match same-speaker ellipses across adjacent utterances", () => {
+  const take = thesis("Chamath", "bear", "2026-01-10T00:00:00.000Z", {
+    id: "E257-saas-software-industrial-complex-basket-Chamath-5",
+    company: "SaaS / software industrial complex (basket)",
+    ticker: null,
+    isPublic: false,
+    callType: "selection",
+    quote:
+      "I will pick the software industrial complex... I think you're going to see that total economic opportunity shrink and contract aggressively... It's going to impact SaaS companies, public SaaS companies particularly, quite severely in 2026.",
+    quoteStartMs: 2583000,
+    attributionConfidence: "low",
+  });
+  const transcript: Transcript = {
+    episodeId: "E257",
+    provider: "assemblyai",
+    speakerMap: { D: "Friedberg" },
+    speakerConfidence: { D: "high" },
+    utterances: [
+      {
+        cluster: "D",
+        speaker: "Friedberg",
+        text:
+          "I will pick the software industrial complex. So these are the companies that sell licensed SaaS to the corporations of America. I think you're going to see that total economic opportunity shrink and contract aggressively.",
+        startMs: 2583450,
+        endMs: 2669950,
+      },
+      {
+        cluster: "D",
+        speaker: "Friedberg",
+        text:
+          "It's going to impact SaaS companies, public SaaS companies particularly, quite severely in 2026.",
+        startMs: 2672490,
+        endMs: 2690000,
+      },
+    ],
+    meta: {},
+  };
+
+  repairQuoteOwnership([take], transcript);
+  snapQuoteTimestamps([take], transcript);
+  stampAttribution([take], transcript);
+
+  assert.equal(take.host, "Friedberg");
+  assert.equal(take.id, "E257-saas-software-industrial-complex-basket-Friedberg-5");
+  assert.equal(take.attributionConfidence, "high");
+});
+
+test("overlapping company and asset rows dedupe to the ticker-backed row", () => {
+  const companyTake = thesis("Friedberg", "bull", "2026-01-10T00:00:00.000Z", {
+    id: "E257-copper-Friedberg-2",
+    company: "Copper",
+    ticker: null,
+    isPublic: false,
+    callType: "selection",
+    quote: "I will pick Copper... The asset that is set up to go absolutely parabolic is copper.",
+    quoteStartMs: 2067000,
+    attributionConfidence: "high",
+  });
+  const assetTake = thesis("Friedberg", "bull", "2026-01-10T00:00:00.000Z", {
+    id: "E257-cper-Friedberg-a0",
+    company: "Copper",
+    ticker: "CPER",
+    isPublic: true,
+    callType: "selection",
+    quote: "I will pick Copper... The asset that is set up to go absolutely parabolic is copper.",
+    quoteStartMs: 2067000,
+    attributionConfidence: "high",
+  });
+
+  const deduped = dedupeOverlappingTheses([companyTake, assetTake]);
+
+  assert.equal(deduped.length, 1);
+  assert.equal(deduped[0].id, "E257-cper-Friedberg-a0");
+});
+
+test("commodity quote ownership repair dedupes to the canonical asset proxy", () => {
+  const companyTake = thesis("Chamath", "bull", "2026-01-10T00:00:00.000Z", {
+    id: "E257-copx-Chamath-3",
+    company: "Copper (commodity basket)",
+    ticker: "COPX",
+    isPublic: true,
+    callType: "selection",
+    quote:
+      "I will pick Copper... The asset that is set up to go absolutely parabolic is copper... it is the most useful, cheap, amenable, conductive material that we have... we are on a path by 2040 where we will be short about 70% of the global",
+    quoteStartMs: 2067000,
+    attributionConfidence: "low",
+  });
+  const assetTake = thesis("Friedberg", "bull", "2026-01-10T00:00:00.000Z", {
+    id: "E257-cper-Friedberg-a0",
+    company: "Copper",
+    ticker: "CPER",
+    isPublic: true,
+    callType: "selection",
+    quote:
+      "I will pick Copper... the asset that is set up to go absolutely parabolic is copper... we are on a path by 2040 where we will be short about 70% of the global supply at current course and speed.",
+    quoteStartMs: 2067060,
+    attributionConfidence: "high",
+  });
+  const transcript: Transcript = {
+    episodeId: "E257",
+    provider: "assemblyai",
+    speakerMap: { D: "Friedberg", B: "Jason" },
+    speakerConfidence: { D: "high", B: "high" },
+    utterances: [
+      {
+        cluster: "D",
+        speaker: "Friedberg",
+        text:
+          "I will pick Copper. Okay, Copper. We are still completely underestimating how short we are in terms of the global demand-supply dynamics of a handful of critical elements that we need. The asset that is set up to go absolutely parabolic is copper. And the reason is that it is, at least as it stands today, the most useful, cheap, amenable, conductive material that we have. And right now, Jason, we are on a path by 2040 where we will be short about 70% of the global supply at current course and speed.",
+        startMs: 2067060,
+        endMs: 2137370,
+      },
+      {
+        cluster: "B",
+        speaker: "Jason",
+        text: "I will pick copper. Sachs, what do you got?",
+        startMs: 2137370,
+        endMs: 2142850,
+      },
+    ],
+    meta: {},
+  };
+
+  const repaired = [companyTake, assetTake];
+  repairQuoteOwnership(repaired, transcript);
+  snapQuoteTimestamps(repaired, transcript);
+  stampAttribution(repaired, transcript);
+  const deduped = dedupeOverlappingTheses(repaired);
+
+  assert.equal(deduped.length, 1);
+  assert.equal(deduped[0].id, "E257-cper-Friedberg-a0");
+  assert.equal(deduped[0].host, "Friedberg");
+  assert.equal(deduped[0].ticker, "CPER");
+  assert.equal(deduped[0].attributionConfidence, "high");
+});
+
+test("explicit long demotes when the published quote lacks action evidence", () => {
+  const take = thesis("Guest", "neutral", "2026-03-13T00:00:00.000Z", {
+    company: "OpenAI",
+    callType: "explicit_long",
+    quote: "OpenAI is one of the most important companies in the history of capitalism.",
+    scoreNote: "Same bought-more statement covers both companies.",
+  });
+
+  enforceTightCallEvidence([take]);
+
+  assert.equal(take.callType, "view");
+  assert.equal(take.scoreNote, "Not scored: published quote does not carry explicit buy/own/long language.");
+});
+
+test("explicit long demotes when the published quote does not name the exposure", () => {
+  const take = thesis("Guest", "bull", "2026-03-13T00:00:00.000Z", {
+    company: "OpenAI",
+    ticker: null,
+    isPublic: false,
+    callType: "explicit_long",
+    quote: "I bought a lot more since then, Jason.",
+    scoreNote: "Explicitly states he bought more of both companies.",
+  });
+
+  enforceTightCallEvidence([take]);
+
+  assert.equal(take.callType, "view");
+  assert.equal(take.scoreNote, "Not scored: published quote does not name the thesis exposure.");
+});
+
+test("named commodity forecast preserves scoreable selection evidence", () => {
+  const take = thesis("Friedberg", "bull", "2026-01-10T00:00:00.000Z", {
+    company: "Copper",
+    ticker: "CPER",
+    isPublic: true,
+    callType: "selection",
+    quote:
+      "The asset that is set up to go absolutely parabolic is copper... we are on a path by 2040 where we will be short about 70% of the global supply at current course and speed.",
+    scoreNote: null,
+  });
+
+  enforceTightCallEvidence([take]);
+
+  assert.equal(take.callType, "selection");
+  assert.equal(take.scoreNote, null);
+});
+
 test("prediction-round transcript picks are covered by audited receipts", () => {
   const transcript: Transcript = {
     episodeId: "E257",
@@ -195,7 +661,7 @@ test("prediction-round transcript picks are covered by audited receipts", () => 
       },
       {
         cluster: "C",
-        speaker: "Chamath",
+        speaker: "Friedberg",
         text: "I will pick the software industrial complex because AI will shrink that market aggressively.",
         startMs: 2583000,
         endMs: 2586000,
@@ -227,7 +693,7 @@ test("prediction-round transcript picks are covered by audited receipts", () => 
   // scoreable call or a non-scoreable view drifts between runs; the durable
   // contract is "covered, but not in the portfolio".
   const software = candidates.find(
-    (c) => c.speaker === "Chamath" && c.text.includes("software industrial complex"),
+    (c) => c.speaker === "Friedberg" && c.text.includes("software industrial complex"),
   );
   assert.ok(software, "software-sector pick should produce a candidate");
   assert.notEqual(software?.coverage, "missing");

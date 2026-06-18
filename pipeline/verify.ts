@@ -39,18 +39,19 @@ const INPUT_SCHEMA = {
   required: ["verdicts"],
 };
 
-const SYSTEM = `You are a strict auditor of investment theses extracted from one All-In podcast episode. Each thesis names a COMPANY or an ASSET (a commodity such as gold, oil, copper, or uranium — tracked via an ETF proxy), a HOST, and a STANCE (bull / bear / neutral / mixed), and shows ONE published quote. You are given the FULL TRANSCRIPT, so judge against what the host actually said — not against the single quote in isolation. Below, "the name" means the company or asset the thesis is about.
+const SYSTEM = `You are a strict auditor of investment theses extracted from one All-In podcast episode. Each thesis names a COMPANY, ASSET, named BASKET/SECTOR, or explicit MACRO EXPOSURE (examples: gold, oil, copper, uranium, S&P 500, credit default swaps/CDS, stablecoins, software industrial complex, Mag 7), a HOST, and a STANCE (bull / bear / neutral / mixed), and shows ONE published quote. You are given the FULL TRANSCRIPT, so judge against what the host actually said — not against the single quote in isolation. Below, "the name" means the company, asset, basket, sector, or macro exposure the thesis is about.
 
 A thesis's published quote must, on its own, prove its stance. So for every thesis decide:
 
 - "keep": the current quote already contains an explicit, company-specific economic claim matching the bull/bear/mixed stance (or the stance is neutral/mixed and the quote is a genuine company view). Nothing to change.
 - "fix_quote": the host DID make an explicit, company-specific directional claim for this company somewhere in the transcript that matches the stance, but the CURRENT quote doesn't carry it (it's evocative, partial, or off-point). Keep the stance and supply newQuote: a verbatim ≤240-char excerpt copied EXACTLY from one of this host's transcript lines that proves the stance, plus newQuoteStartSec from that line's [<sec>s <Speaker>] prefix. Use this whenever a real claim exists but the quote under-sells it — do NOT neutralize a real view just because the quoted sentence was weak.
 - "neutralize": the host has a company-specific view but nowhere makes an explicit economic DIRECTION claim for it — the stance was inferred from framing, tone, or "well positioned / beneficiary / important player" language. The stance is rewritten to "neutral".
-- "drop": the company is named only in passing — listed among others, cited as an EXAMPLE of an industry/category/trend, mentioned while reading a news item, used as a MACRO BAROMETER (a data point for a claim about the economy/consumer/rates/market rather than about itself, e.g. "Airbnb's demand warning shows the consumer is weak"), or with no company-specific investment claim anywhere. Enumerations are mentions, not theses ("companies like X and Y", "the whole chip complex"). Sector/theme sentiment ("AI is a tailwind for cybersecurity") is not a stance on any individual member company.
+- "drop": the name is mentioned only in passing — listed among others, cited as an EXAMPLE of an industry/category/trend, mentioned while reading a news item, used as a MACRO BAROMETER (a data point for a claim about the economy/consumer/rates/market rather than about itself, e.g. "Airbnb's demand warning shows the consumer is weak"), or with no investment claim anywhere. Enumerations are mentions, not theses ("companies like X and Y", "the whole chip complex"). Sector/theme sentiment ("AI is a tailwind for cybersecurity") is not a stance on any individual member company. But do NOT drop a named basket/sector/macro exposure when the basket/exposure itself is the host's explicit pick or trade ("I would be long CDS", "short the S&P", "my pick is enterprise SaaS", "stablecoins are my biggest business winner"). A formal-predictions answer like "my pick for best performing asset will be the Robinhood/Polymarket/PrizePicks gambling space" is a keep/fix_quote basket call, not a passive enumeration.
 
 What counts as an explicit economic-direction claim:
 - bull = the host claims the name's value / competitive position / financial trajectory is improving, or that it is the/a winner. For a commodity: its price/value is heading up, or it's "the trade".
 - bear = the host ties a concrete risk to the name's economics (revenue, margins, share, valuation), or names it a loser. For a commodity: its price is heading down or under pressure.
+- For a basket/sector/macro exposure: bull/bear means the host names that exposure as a winner/loser, long/short, best/worst asset, or explicit trade. The exposure does not need to be a single company or ETF to be kept; structural tradability is handled downstream.
 - Moral/conduct/political commentary, product praise, and "beneficiary/well-positioned" framing are NOT directional unless paired with an explicit economic claim. In particular, condemning a company's CONDUCT — anti-competitive behavior, regulatory capture, surveillance, censorship, being "untrustworthy", "dangerous", "too powerful", or causing "market centralization" / ecosystem harm — is NOT bear: that conduct is usually economically GOOD for the company.
 
 DECISIVE CHECK before you KEEP any bull or bear (do this for every directional take):
@@ -62,7 +63,7 @@ Rules:
 - Reserve fix_quote for a REAL claim that exists in the transcript; if no such sentence exists, neutralize (or drop). Never invent or paraphrase — newQuote must be an exact substring of the host's OWN lines.
 - When torn between keep and fix_quote, prefer fix_quote only if the current quote genuinely fails to carry the claim; otherwise keep.
 - When torn between fix_quote and neutralize, neutralize — only supply a new quote when you can point to an unambiguous directional sentence.
-- When torn between neutralize and drop, drop if the company appears only as an example or list item.`;
+- When torn between neutralize and drop, drop if the name appears only as an example or list item.`;
 
 /** Collapse to lowercase alphanumerics + single spaces, for verbatim matching. */
 function norm(s: string): string {
@@ -87,6 +88,12 @@ function formatTranscript(t: Transcript): string {
     .map((u) => `[${Math.round(u.startMs / 1000)}s ${u.speaker}] ${u.text}`)
     .join("\n");
   return text.length > MAX_CHARS ? text.slice(0, MAX_CHARS) : text;
+}
+
+const PROTECTED_EXPLICIT_CALL = /\b(?:my\s+pick|i\s+(?:will|would|'ll|’ll)\s+pick|my\s+number\s*(?:one|1)|best\s+performing\s+asset|worst\s+performing\s+asset|biggest\s+business\s+(?:winner|loser)|i\s+would\s+be\s+(?:long|short)|short\s+the)\b/i;
+
+export function shouldProtectExplicitCallFromDrop(t: Thesis): boolean {
+  return !!t.callType && t.callType !== "view" && PROTECTED_EXPLICIT_CALL.test(t.quote);
 }
 
 /**
@@ -155,6 +162,11 @@ export async function verifyTheses(
     }
 
     if (v.verdict === "drop") {
+      if (shouldProtectExplicitCallFromDrop(t)) {
+        console.log(`  ↺ keep explicit call ${t.company} (${t.stance}) — protected from drop: ${v.reason}`);
+        kept.push(t);
+        return;
+      }
       dropped++;
       console.log(`  ✂ drop  ${t.company} (${t.stance}) — ${v.reason}`);
       return;

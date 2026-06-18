@@ -3,7 +3,17 @@ import { transcribeEpisode } from "./transcribe";
 import { nameSpeakers } from "./speakers";
 import { extractTheses } from "./extract";
 import { buildIndex } from "./build-index";
+import { ASSETS } from "../lib/assets";
 import type { Episode, Thesis, Transcript } from "../lib/types";
+
+const SCOREABLE_CALL_TYPES = new Set<Thesis["callType"]>([
+  "explicit_long",
+  "explicit_short",
+  "explicit_exit",
+  "selection",
+  "pair_trade",
+  "basket",
+]);
 
 const normText = (s: string) =>
   s
@@ -12,6 +22,147 @@ const normText = (s: string) =>
     .replace(/[^a-z0-9 ]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+
+function quoteFragments(quote: string): string[] {
+  const parts = quote
+    .split(/\s*(?:\.\.\.|…)\s*/)
+    .map(normText)
+    .filter((frag) => frag.length >= 12);
+  return parts.length ? parts : [normText(quote)].filter((frag) => frag.length >= 12);
+}
+
+function words(s: string): string[] {
+  return normText(s).split(" ").filter(Boolean);
+}
+
+function hasWordsInOrder(hay: string, needle: string): boolean {
+  const hayWords = words(hay);
+  const needleWords = words(needle);
+  if (needleWords.length < 5) return false;
+  let pos = 0;
+  for (const word of needleWords) {
+    const idx = hayWords.indexOf(word, pos);
+    if (idx === -1) return false;
+    pos = idx + 1;
+  }
+  return true;
+}
+
+function quoteMatches(text: string, quote: string): boolean {
+  const hay = normText(text);
+  const fragments = quoteFragments(quote);
+  if (!fragments.length) return false;
+  return fragments.every((frag) => hay.includes(frag) || hasWordsInOrder(text, frag));
+}
+
+function findQuoteUtterance(
+  t: Transcript,
+  quote: string,
+  speaker?: Thesis["host"] | null,
+): Transcript["utterances"][number] | null {
+  const utterances = speaker ? t.utterances.filter((u) => u.speaker === speaker) : t.utterances;
+  const exact = utterances.find((u) => quoteMatches(u.text, quote));
+  if (exact) return exact;
+
+  for (let i = 0; i < t.utterances.length; i++) {
+    const first = t.utterances[i];
+    if (speaker && first.speaker !== speaker) continue;
+    let text = "";
+    for (let j = i; j < Math.min(t.utterances.length, i + 3); j++) {
+      const next = t.utterances[j];
+      if (next.speaker !== first.speaker) break;
+      text = `${text} ${next.text}`;
+      if (quoteMatches(text, quote)) return first;
+    }
+  }
+  return null;
+}
+
+function quoteOffsetMs(utterance: Transcript["utterances"][number], quote: string): number {
+  const fragments = quoteFragments(quote);
+  const nu = normText(utterance.text);
+  const firstHit = fragments
+    .map((frag) => nu.indexOf(frag))
+    .filter((idx) => idx >= 0)
+    .sort((a, b) => a - b)[0] ?? 0;
+  const wordsBefore = firstHit > 0 ? nu.slice(0, firstHit).split(" ").filter(Boolean).length : 0;
+  const totalWords = nu.split(" ").filter(Boolean).length || 1;
+  const durMs = Math.max(0, (utterance.endMs ?? utterance.startMs) - utterance.startMs);
+  return Math.round(utterance.startMs + (durMs * wordsBefore) / totalWords);
+}
+
+function rewriteHostInId(id: string, from: string, to: string): string {
+  return id.includes(`-${from}-`) ? id.replace(`-${from}-`, `-${to}-`) : id;
+}
+
+function normEntity(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/\(.*?\)/g, " ")
+    .replace(/\b(?:basket|sector|macro|asset|commodit(?:y|ies)|stocks?|etfs?|general)\b/g, " ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim()
+    .replace(/\s+/g, " ");
+}
+
+const CANONICAL_ASSET_PROXY = new Map(ASSETS.map((a) => [normEntity(a.name), a.proxy.toUpperCase()]));
+
+function overlapsSameCall(a: Thesis, b: Thesis): boolean {
+  if (a.host !== b.host) return false;
+  if (normEntity(a.company) !== normEntity(b.company)) return false;
+  if (a.quoteStartMs != null && b.quoteStartMs != null && Math.abs(a.quoteStartMs - b.quoteStartMs) <= 5_000) {
+    return true;
+  }
+  return quoteMatches(a.quote, b.quote) || quoteMatches(b.quote, a.quote);
+}
+
+function thesisRank(t: Thesis): number {
+  const canonicalProxy = CANONICAL_ASSET_PROXY.get(normEntity(t.company));
+  return (
+    (t.ticker ? 100 : 0) +
+    (canonicalProxy && t.ticker?.toUpperCase() === canonicalProxy ? 60 : 0) +
+    (t.attributionConfidence === "high" ? 30 : t.attributionConfidence === "medium" ? 15 : 0) +
+    (SCOREABLE_CALL_TYPES.has(t.callType) ? 10 : 0) +
+    (t.scoreNote ? 3 : 0) +
+    Math.min(t.quote.length / 1000, 1)
+  );
+}
+
+export function dedupeOverlappingTheses(theses: Thesis[]): Thesis[] {
+  const kept: Thesis[] = [];
+  for (const t of theses) {
+    const idx = kept.findIndex((existing) => overlapsSameCall(existing, t));
+    if (idx === -1) {
+      kept.push(t);
+      continue;
+    }
+    if (thesisRank(t) > thesisRank(kept[idx])) {
+      kept[idx] = t;
+    }
+  }
+  return kept;
+}
+
+/**
+ * Mechanical quote-ownership repair. The LLM is instructed to attribute by the
+ * transcript line prefix, but moderator handoffs sometimes tempt it to assign
+ * the next speaker's words to the addressed host. If the supporting quote does
+ * not appear in the attributed host's own lines but does appear in another
+ * resolved speaker's line, move the take to the quote owner before scoring.
+ */
+export function repairQuoteOwnership(theses: Thesis[], t: Transcript): Thesis[] {
+  for (const th of theses) {
+    if (!th.quote) continue;
+    const sameHost = findQuoteUtterance(t, th.quote, th.host);
+    if (sameHost) continue;
+    const owner = findQuoteUtterance(t, th.quote);
+    if (!owner || owner.speaker === "Unknown" || owner.speaker === th.host) continue;
+    const oldHost = th.host;
+    th.host = owner.speaker;
+    th.id = rewriteHostInId(th.id, oldHost, owner.speaker);
+  }
+  return theses;
+}
 
 /**
  * Snap each quote's timestamp to the words themselves, so "Listen · 1:19:01"
@@ -24,19 +175,15 @@ const normText = (s: string) =>
 export function snapQuoteTimestamps(theses: Thesis[], t: Transcript): Thesis[] {
   for (const th of theses) {
     if (!th.quote) continue;
-    const key = normText(th.quote).slice(0, 28);
-    if (key.length < 12) continue;
     const hit =
-      t.utterances.find((u) => u.speaker === th.host && normText(u.text).includes(key)) ??
-      t.utterances.find((u) => normText(u.text).includes(key));
+      findQuoteUtterance(t, th.quote, th.host) ??
+      findQuoteUtterance(t, th.quote);
     if (!hit) continue;
-    const nu = normText(hit.text);
-    const idx = nu.indexOf(key);
-    const wordsBefore = idx > 0 ? nu.slice(0, idx).split(" ").filter(Boolean).length : 0;
-    const totalWords = nu.split(" ").filter(Boolean).length || 1;
-    const durMs = Math.max(0, (hit.endMs ?? hit.startMs) - hit.startMs);
-    const est = Math.round(hit.startMs + (durMs * wordsBefore) / totalWords);
-    if (th.quoteStartMs == null || Math.abs(est - th.quoteStartMs) > 3_000) {
+    const est = quoteOffsetMs(hit, th.quote);
+    const currentSpeaker = th.quoteStartMs == null
+      ? null
+      : t.utterances.find((u) => th.quoteStartMs! >= u.startMs && th.quoteStartMs! < u.endMs)?.speaker ?? null;
+    if (th.quoteStartMs == null || Math.abs(est - th.quoteStartMs) > 3_000 || currentSpeaker !== th.host) {
       th.quoteStartMs = est;
     }
   }
@@ -61,6 +208,14 @@ export function stampAttribution(theses: Thesis[], t: Transcript): Thesis[] {
         t.utterances.find((u) => u.startMs >= th.quoteStartMs!) ??
         null;
       if (u && u.speaker === th.host) cluster = u.cluster;
+      else if (u && u.speaker !== th.host) {
+        const owner = findQuoteUtterance(t, th.quote, th.host);
+        if (owner) cluster = owner.cluster;
+        else {
+          th.attributionConfidence = "low";
+          continue;
+        }
+      }
     }
     if (!cluster) {
       // Best-confidence cluster mapped to this host.
@@ -97,7 +252,12 @@ export async function processEpisode(ep: Episode): Promise<number> {
   await nameSpeakers(transcript, ep);
   store.saveTranscript(transcript);
 
-  const theses = snapQuoteTimestamps(stampAttribution(await extractTheses(ep, transcript), transcript), transcript);
+  const theses = dedupeOverlappingTheses(
+    stampAttribution(
+      snapQuoteTimestamps(repairQuoteOwnership(await extractTheses(ep, transcript), transcript), transcript),
+      transcript,
+    ),
+  );
   store.saveTheses(ep.id, theses);
   console.log(`[${tag}] done — ${theses.length} theses`);
   return theses.length;

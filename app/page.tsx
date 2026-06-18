@@ -54,7 +54,7 @@ export default function Home() {
         <Reveal>
           <HoldingsTable
             holdings={macroHoldings.map(toHoldingRow)}
-            title="Commodities & macro"
+            title="Commodities, sectors & macro"
             subtitle="priced via ETF proxies · never part of the index or funds"
             entityLabel="Asset"
           />

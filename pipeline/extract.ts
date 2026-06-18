@@ -29,9 +29,11 @@ const ExtractionSchema = z.object({
   theses: z.array(ThesisItemSchema),
 });
 
-const SYSTEM = `You extract INVESTMENT theses about specific companies from All-In podcast transcripts.
+const SYSTEM = `You extract INVESTMENT theses about specific companies, named baskets/sectors, and explicit macro exposures from All-In podcast transcripts.
 
 A "thesis" is a host expressing a view about a company's value AS AN INVESTMENT — would you want to own the stock? Is it over- or under-valued? Are its business/competitive/financial prospects improving or deteriorating in a way that affects equity value?
+
+Also extract explicit, named investment calls on a non-company exposure when the host's own words make it a pick/trade: broad-market indexes ("short the S&P"), sector baskets ("software industrial complex", "capital equipment"), crypto/stablecoin sectors, credit default swaps/CDS, or other named asset classes. Use ticker=null and isPublic=false unless there is a clear listed ETF/equity proxy already named in the transcript. These are structurally excluded from company funds later, but they must still be recorded when the host made a real pick/trade.
 
 This is the critical filter — read it carefully:
 - COUNTS (investment-relevant): valuation calls, growth/revenue/margin trajectory, competitive moat or threat, would-buy/would-sell/would-hold, "this is cheap/expensive," product/market position as it affects the stock.
@@ -57,7 +59,7 @@ This is the critical filter — read it carefully:
 Rules:
 - Extract one thesis per (host, company) per episode. Merge a host's scattered remarks about the same company into a single, faithful thesis.
 - Attribute each thesis to the host who actually holds the view, using the speaker labels in the transcript. If two hosts express distinct views on the same company, produce one thesis each.
-  QUOTE OWNERSHIP: the quote you cite MUST be spoken by the attributed host — its transcript line's "[<sec>s <Speaker>]" prefix must name that host. Never attach another speaker's sentence to this host's thesis, and never stitch words from two different speakers into one quote, even when someone else phrased the idea more vividly. If only another person said the proving sentence, either quote the attributed host's OWN (possibly weaker) words or, if this host never made the claim themselves, drop the take.
+  QUOTE OWNERSHIP: the quote you cite MUST be spoken by the attributed host — its transcript line's "[<sec>s <Speaker>]" prefix must name that host. Never attach another speaker's sentence to this host's thesis, and never stitch words from two different speakers into one quote, even when someone else phrased the idea more vividly. If a moderator says "Chamath, what's your pick?" but the next transcript line is "[123s Friedberg]", attribute the answer to Friedberg; the line prefix controls. If only another person said the proving sentence, either quote the attributed host's OWN (possibly weaker) words or, if this host never made the claim themselves, drop the take.
 - stance: "bull" (positive/long), "bear" (negative/short/skeptical), "neutral" (balanced/uncertain), or "mixed" (explicitly both sides).
   STANCE IS ECONOMIC DIRECTION, NOT APPROVAL — and the direction must be EXPLICITLY CLAIMED, never inferred. bull = the speaker claims the company's economic position or value is improving; bear = the speaker ties a concrete risk to the company's economics.
   All of these are NEUTRAL, not directional:
@@ -76,9 +78,9 @@ Rules:
   - "explicit_long" — the speaker states their own buy/own/long: "I'm in", "I have shares", "I just bought", "I'd own it here", "I'd be long X", "this is the trade", "probably a buying opportunity".
   - "explicit_short" — the speaker states a short: "this is a short", "I'm short", "the short here is X".
   - "explicit_exit" — clear close/avoid that exits WITHOUT opening a short: "I'd take profits", "I'm out", "wouldn't touch it". (Criticizing a company someone might still hold is NOT an exit — that's a view.)
-  - "selection" — a ranked investment pick or selection: "my pick is X", "my #1 is X", "best place to invest". When a prompt asks "which would you bet on?" / "top picks?", the answer's named companies ARE selections.
+  - "selection" — a ranked investment pick or selection of one named company or asset: "my pick is X", "my #1 is X", "biggest business winner/loser is X", "best/worst performing asset is X", "best place to invest", "I will pick X". When a prompt asks "which would you bet on?" / "top picks?" / "biggest winner or loser?" / "best or worst asset?", the answer's named companies ARE selections.
   - "pair_trade" — a leg of a paired long/short: "long X / short Y", "own X over Y".
-  - "basket" — a named basket leg: "new Mag 7 basket".
+  - "basket" — a named basket/sector/theme pick rather than a single company: "Mag 7", "software industrial complex", "enterprise SaaS", "capital equipment", "memory stocks", "prediction-market/gambling space". Use this when the speaker's own pick/trade language is explicitly about the group. If the group is not a single tradable equity, still emit it with ticker=null; structural tradability is handled later.
   Only the SPEAKER's own transaction or selection language earns a non-"view" callType, in their words. Lean to "view" when unsure. Do not infer a position from enthusiasm.
 - excludeReason: leave null normally. Set it ONLY when the take is genuinely call-shaped (you gave it a non-"view" callType) but should be recorded WITHOUT scoring: "conditional" (the action waits on an unresolved event — "I'd buy if the deal breaks"), "day_trade_aside" (an explicitly tactical/day-trade remark), or "not_investment_call" (the pick isn't really an equity bet). Keep the callType that describes the shape and put the gating detail in scoreNote.
 - scoreNote: optional one-line audit note — the evidence that made it a call ("ranked #1 AI pick", "short leg of spread") or the condition that gates it. Omit for plain views.
@@ -90,7 +92,8 @@ Rules:
 - topics: 1–4 short tags (e.g. "AI capex", "valuation", "regulation").
 - Be conservative: if there is no substantive company-specific view, return an empty list. Do not invent quotes.
 - Do NOT extract passing mentions: a company merely named while reading a news item or listed alongside others is not a thesis. If a single sentence rattles off several companies, that is a mention, not a per-company thesis — skip it unless a host gives that specific company its own directional take.
-- Each thesis must have its OWN distinct supporting quote. Never reuse one quote across multiple companies.
+- Do NOT treat a category that is merely "interesting" or an explanatory aside as a selection. "There's a category we didn't talk about..." is a view unless the host says it is their pick/trade or explicitly long/short.
+- Shared quotes are allowed ONLY for one explicit list/basket call where the host names multiple selected legs in the same quoted sentence ("we have 25% of our portfolio in SK Hynix, Samsung, Micron", "long X and short Y", "my pick is Robinhood/Polymarket/PrizePicks"). In that case every emitted leg must be call-shaped (selection, basket, pair_trade, explicit_long/short), the quote must contain that leg's name, and scoreNote must explain the shared basket/list call. For ordinary views, news lists, and passive sector examples, never reuse one quote across multiple companies.
 
 Final self-check, for every thesis before you emit it: is this a forward-looking view on the company as an investment? If it is merely a reaction to a news item, emit nothing for that company.`;
 
@@ -137,6 +140,147 @@ const INPUT_SCHEMA = {
 
 const MAX_CHARS = 160_000;
 
+const EXPLICIT_LONG_RE = /\b(?:i\s+would\s+be\s+long|i'?d\s+be\s+long|i\s+am\s+long|i'?m\s+long|i'?m\s+in|i\s+just\s+bought|i\s+bought|i\s+own|i\s+have\s+shares|i'?m\s+an\s+investor|i\s+am\s+an\s+investor|shareholder\s+of|loading\s+up|buying\s+opportunity|this\s+is\s+the\s+trade|placed?\s+a\s+bet|put\s+a\s+[^.?!]{0,40}\bbet)\b/i;
+const EXPLICIT_SHORT_RE = /\b(?:i\s+would\s+be\s+short|i'?d\s+be\s+short|i\s+am\s+short|i'?m\s+short|go\s+short|short\s+the|this\s+is\s+a\s+short)\b/i;
+const EXPLICIT_SELECTION_RE = /\b(?:i\s+will\s+pick|i'?ll\s+pick|i\s+would\s+pick|i'?d\s+pick|i\s+pick|my\s+pick|my\s+number\s*(?:one|two|1|2)|i\s+went\s+with|i\s+picked|(?!there'?s\b|here'?s\b|that'?s\b|it'?s\b)[a-z][a-z0-9 .&-]{1,40}'s\s+(?:one|two)|best\s+place\s+to\s+invest|best\s+performing\s+asset|worst\s+performing\s+asset|poor\s+performing\s+asset|biggest\s+business\s+(?:winner|loser))\b/i;
+const EXPLICIT_EXIT_RE = /\b(?:i'?m\s+out|i\s+am\s+out|take\s+profits|wouldn'?t\s+touch|you\s+do\s+not\s+want)\b/i;
+const WEAK_CATEGORY_ASIDE_RE = /\b(?:one\s+category\s+we\s+didn'?t\s+talk\s+about|category\s+we\s+didn'?t\s+talk\s+about|kind\s+of\s+interesting)\b/i;
+const BASKET_OWNERSHIP_RE = /\b(?:synthetically\s+own|own\s+[^.?!]{0,80}\b(?:basket|sector|space)|portfolio\s+(?:in|exposure)|exposures?\s+(?:have\s+been\s+)?(?:in|to)|long\s+[^.?!]{0,80}\s+(?:basket|sector|space))\b/i;
+const DIRECTIONAL_FORECAST_RE = /\b(?:set\s+up\s+to\s+go|absolutely\s+parabolic|go\s+parabolic|will\s+be\s+short|going\s+to\s+be\s+short|short\s+about\s+\d+%|shrink\s+and\s+contract|contract\s+aggressively|best\s+place\s+to\s+invest|going\s+to\s+go\s+down|going\s+to\s+be\s+challenged)\b/i;
+const CALL_NOTE_RE = /\b(?:explicit|named|pick|selection|long|short|basket|portfolio|exposure|winner|loser|best-performing|worst-performing)\b/i;
+
+function normEvidenceText(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim()
+    .replace(/\s+/g, " ");
+}
+
+function quoteAliases(t: Pick<Thesis, "company" | "ticker">): string[] {
+  const raw = t.company ?? "";
+  const aliases = new Set<string>();
+  const add = (s: string | null | undefined) => {
+    const norm = normEvidenceText(s ?? "");
+    if (norm.length >= 3) aliases.add(norm);
+  };
+
+  add(raw);
+  add(raw.replace(/\(.*?\)/g, " "));
+  for (const match of raw.matchAll(/\((.*?)\)/g)) add(match[1]);
+  for (const part of raw.split(/\s*(?:\/|\+|\bor\b|\band\b|,)\s*/i)) add(part);
+  if (t.ticker && t.ticker.length > 1) add(t.ticker);
+
+  if (/\b(?:alphabet|google|gemini)\b/i.test(raw)) {
+    add("alphabet");
+    add("google");
+  }
+  if (/\bopen\s*ai|chatgpt\b/i.test(raw)) {
+    add("openai");
+    add("open ai");
+    add("chatgpt");
+  }
+  if (/\bmeta|facebook|instagram\b/i.test(raw)) {
+    add("meta");
+    add("facebook");
+    add("instagram");
+  }
+  if (/\bus dollar|usd\b/i.test(raw)) {
+    add("usd");
+    add("dollar");
+    add("american dollar");
+  }
+  if (/\bs\s*&?\s*p|sp 493|s p 493/i.test(raw)) {
+    add("s p");
+    add("s p 500");
+    add("s&p");
+  }
+
+  return [...aliases];
+}
+
+function quoteNamesThesis(t: Pick<Thesis, "company" | "ticker" | "quote">): boolean {
+  const quote = normEvidenceText(t.quote ?? "");
+  return quoteAliases(t).some((alias) => quote.includes(alias));
+}
+
+function inferredCallTypeFromQuote(quote: string): Thesis["callType"] | null {
+  if (EXPLICIT_LONG_RE.test(quote)) return "explicit_long";
+  if (EXPLICIT_SHORT_RE.test(quote)) return "explicit_short";
+  if (EXPLICIT_SELECTION_RE.test(quote)) return "selection";
+  if (EXPLICIT_EXIT_RE.test(quote)) return "explicit_exit";
+  return null;
+}
+
+export function hasTightCallEvidence(t: Pick<Thesis, "company" | "ticker" | "quote" | "callType" | "scoreNote">): boolean {
+  if (!t.callType || t.callType === "view") return false;
+  const quote = t.quote ?? "";
+  if (!quoteNamesThesis(t)) return false;
+  if (WEAK_CATEGORY_ASIDE_RE.test(quote) && !inferredCallTypeFromQuote(quote)) return false;
+  if (inferredCallTypeFromQuote(quote)) return true;
+  if ((t.callType === "selection" || t.callType === "basket") && DIRECTIONAL_FORECAST_RE.test(quote)) return true;
+  if (t.callType === "basket" && BASKET_OWNERSHIP_RE.test(quote)) return true;
+  return !!t.scoreNote && CALL_NOTE_RE.test(t.scoreNote);
+}
+
+export function enforceTightCallEvidence(theses: Thesis[]): Thesis[] {
+  for (const t of theses) {
+    if (t.callType !== "view" && !quoteNamesThesis(t)) {
+      t.callType = "view";
+      t.scoreNote = "Not scored: published quote does not name the thesis exposure.";
+      continue;
+    }
+    if (t.callType === "explicit_long" && inferredCallTypeFromQuote(t.quote) !== "explicit_long") {
+      t.callType = "view";
+      t.scoreNote = "Not scored: published quote does not carry explicit buy/own/long language.";
+      continue;
+    }
+    if (t.callType === "explicit_short" && inferredCallTypeFromQuote(t.quote) !== "explicit_short") {
+      t.callType = "view";
+      t.scoreNote = "Not scored: published quote does not carry explicit short language.";
+      continue;
+    }
+    if (t.callType === "explicit_exit" && inferredCallTypeFromQuote(t.quote) !== "explicit_exit") {
+      t.callType = "view";
+      t.scoreNote = "Not scored: published quote does not carry explicit exit/avoid language.";
+      continue;
+    }
+    if (t.callType !== "basket" && t.callType !== "selection") continue;
+    if (t.stance === "neutral") {
+      t.callType = "view";
+      t.scoreNote ??= "Not scored: verifier found no explicit directional investment claim.";
+      continue;
+    }
+    if (hasTightCallEvidence(t)) continue;
+    t.callType = "view";
+    t.scoreNote ??= "Not scored: quote does not carry explicit pick/trade language.";
+  }
+  return theses;
+}
+
+function neutralViewScoreNote(t: Thesis): string | null {
+  if (t.callType !== "view" && t.stance !== "neutral") return t.scoreNote ?? null;
+  if (!t.scoreNote) return null;
+  if (!/\b(?:investment|pick|best-performing|worst-performing|basket|theme)\b/i.test(t.scoreNote)) {
+    return t.scoreNote;
+  }
+  return "Not scored: commentary on the category, not an explicit pick/trade.";
+}
+
+export function normalizeScoreNotes(theses: Thesis[]): Thesis[] {
+  for (const t of theses) {
+    t.scoreNote = neutralViewScoreNote(t);
+    if (t.scoreNote && REGULAR_HOSTS.includes(t.host)) {
+      for (const host of REGULAR_HOSTS) {
+        if (host === t.host) continue;
+        t.scoreNote = t.scoreNote.replace(new RegExp(`\\b${host}(?:'s|’s)\\b`, "g"), `${t.host}'s`);
+      }
+    }
+  }
+  return theses;
+}
+
 function formatTranscript(t: Transcript): { text: string; truncated: boolean } {
   const lines = t.utterances.map(
     (u) => `[${Math.round(u.startMs / 1000)}s ${u.speaker}] ${u.text}`,
@@ -156,6 +300,27 @@ function slug(company: string, ticker: string | null): string {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+export function repairCallTypesFromQuote(theses: Thesis[]): Thesis[] {
+  for (const t of theses) {
+    if (t.callType !== "view") continue;
+    const callType = inferredCallTypeFromQuote(t.quote);
+    let note: string | null = null;
+    if (callType === "explicit_long") {
+      note = "Quote contains explicit long/buy/own language.";
+    } else if (callType === "explicit_short") {
+      note = "Quote contains explicit short language.";
+    } else if (callType === "selection") {
+      note = "Quote contains explicit pick/selection language.";
+    } else if (callType === "explicit_exit") {
+      note = "Quote contains explicit exit/avoid language.";
+    }
+    if (!callType) continue;
+    t.callType = callType;
+    t.scoreNote ??= note;
+  }
+  return normalizeScoreNotes(enforceTightCallEvidence(theses));
 }
 
 /**
@@ -212,7 +377,7 @@ export async function extractTheses(
 
   // Adversarial pass: drop passing mentions/enumerations, repair quotes that
   // don't yet carry their claim, and neutralize genuinely inferred stances.
-  const verified = await verifyTheses(ep, theses, t);
+  const verified = normalizeScoreNotes(enforceTightCallEvidence(repairCallTypesFromQuote(await verifyTheses(ep, theses, t))));
 
   const byCompany = new Map<string, number>();
   for (const th of verified) byCompany.set(th.company, (byCompany.get(th.company) ?? 0) + 1);

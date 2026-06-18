@@ -1,6 +1,8 @@
 // Canonical entity resolution: collapses the name variants the extractor
 // produces across episodes into one company, and cleans up bad tickers.
 
+import { ASSETS, CRYPTO } from "../lib/assets";
+
 interface Canon {
   company: string;
   ticker: string | null;
@@ -17,6 +19,24 @@ function norm(s: string): string {
     .trim()
     .replace(/\s+/g, " ");
 }
+
+const EXTRA_ASSET_ALIASES: Record<string, string[]> = {
+  Oil: ["oil", "crude oil", "hydrocarbons", "hydrocarbons oil"],
+};
+
+const ASSET_CANON: Canon[] = ASSETS.map((a) => ({
+  company: a.name,
+  ticker: a.proxy,
+  isPublic: true,
+  aliases: [a.name.toLowerCase(), ...(EXTRA_ASSET_ALIASES[a.name] ?? [])],
+}));
+
+const CRYPTO_CANON: Canon[] = CRYPTO.map((a) => ({
+  company: a.name,
+  ticker: a.proxy,
+  isPublic: true,
+  aliases: a.keywords,
+}));
 
 // Only clearly-correct consolidations. We deliberately keep distinct bets
 // separate (e.g. Waymo stays its own entity rather than folding into Google).
@@ -43,11 +63,10 @@ const CANON: Canon[] = [
   },
   // OpenAI and its ChatGPT product are one entity (private).
   { company: "OpenAI", ticker: null, isPublic: false, aliases: ["openai", "open ai", "chatgpt", "openai chatgpt"] },
-  // Crypto is tracked like a commodity, priced via a liquid spot-ETF proxy
-  // (IBIT/ETHA — clean tickers, so they survive the crypto-token strip below
-  // and are recognized as macro assets, excluded from the company index).
-  { company: "Bitcoin", ticker: "IBIT", isPublic: true, aliases: ["bitcoin", "btc"] },
-  { company: "Ethereum", ticker: "ETHA", isPublic: true, aliases: ["ethereum", "ether"] },
+  // Macro assets are priced via liquid ETF proxies and recognized as proxy
+  // assets downstream, so they stay out of the single-company index.
+  ...ASSET_CANON,
+  ...CRYPTO_CANON,
 ];
 
 const ALIAS_INDEX = new Map<string, Canon>();
