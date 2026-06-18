@@ -1,31 +1,6 @@
 [
   {
-    "id": "E191-aapl-Friedberg-0",
-    "episodeId": "E191",
-    "episodeNumber": 191,
-    "episodeDate": "2024-08-09T20:20:00.000Z",
-    "company": "Apple",
-    "ticker": "AAPL",
-    "isPublic": true,
-    "host": "Friedberg",
-    "stance": "bear",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Friedberg argues Apple faces significant regulatory risks—from the Google antitrust ruling ($20B TAC payments at risk), China exposure, App Store fees under scrutiny—that could be financially painful during the transition from unregulated to regulated monopoly, unlike Berkshire's other holdings which are already regulated.",
-    "quote": "Apple, however, is not regulated... it is very clear that Apple is facing very deep and severe financial impact from the regulatory authorities that are overseeing the business.",
-    "quoteStartMs": 2975686,
-    "topics": [
-      "regulation",
-      "antitrust",
-      "valuation",
-      "competitive moat"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E191-aapl-Chamath-1",
+    "id": "E191-aapl-Chamath-0",
     "episodeId": "E191",
     "episodeNumber": 191,
     "episodeDate": "2024-08-09T20:20:00.000Z",
@@ -38,14 +13,41 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues Apple is 'wayward'—an effective unregulated monopoly that doesn't know what to do—and warns holders should sensitize the stock's value for losing the $20B Google TAC payment, which could impact Apple's valuation by half a trillion to a trillion dollars if the antitrust ruling stands.",
+    "sectorProxy": null,
+    "summary": "Chamath argues Apple is 'a little bit wayward' as an unregulated monopoly/duopoly that doesn't know what to do with its position, and warns holders to sensitize valuation for the potential loss of Google's $20B annual TAC payment if the antitrust ruling stands — a hit worth up to half a trillion to a trillion dollars.",
     "quote": "Apple is sort of a little bit wayward. It is a company with an effective and unregulated monopoly or duopoly that doesn't really know what to do... you should probably sensitize the value of Apple for not having that $20 billion if this",
-    "quoteStartMs": 3237958,
+    "quoteStartMs": 3230000,
+    "topics": [
+      "antitrust",
+      "valuation",
+      "regulation",
+      "Google TAC"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E191-aapl-Friedberg-1",
+    "episodeId": "E191",
+    "episodeNumber": 191,
+    "episodeDate": "2024-08-09T20:20:00.000Z",
+    "company": "Apple",
+    "ticker": "AAPL",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Friedberg argues Apple faces deep regulatory risks — loss of Google's $20B TAC payment, China manufacturing/sales exposure, App Store fee scrutiny — because unlike Berkshire's other holdings it is not yet a regulated monopoly, making the transition to regulated status financially painful.",
+    "quote": "Apple is facing very deep and severe financial impact from the regulatory authorities that are overseeing the business... Google's paying Apple $20 billion a year to be the default search engine... that's a real risk to Apple.",
+    "quoteStartMs": 2978820,
     "topics": [
       "regulation",
       "antitrust",
-      "valuation",
-      "Google TAC"
+      "App Store",
+      "China risk"
     ],
     "attributionConfidence": "high"
   },
@@ -63,11 +65,12 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks observes that Buffett's record cash pile and Apple stake reduction suggest Berkshire is defensively positioned, implying Buffett sees unfavorable risk/reward in public equities currently.",
-    "quote": "It does stand to reason that Buffett is building up a war chest here and he's somewhat defensively positioned... it seems logical to infer that he thinks that the risk reward right now is not great on public equities.",
-    "quoteStartMs": 3080640,
+    "sectorProxy": null,
+    "summary": "Sacks infers from Buffett's record cash pile that Berkshire is defensively positioned and sees unfavorable risk/reward in public equities, suggesting the firm is building a war chest for cheaper entry points.",
+    "quote": "Buffett was sitting on this gigantic cash pile, by far the biggest cash pile that he's ever sat on... it does stand to reason that Buffett is building up a war chest here and he's somewhat defensively positioned... he thinks that the risk",
+    "quoteStartMs": 3069903,
     "topics": [
-      "capital allocation",
+      "cash allocation",
       "defensive positioning",
       "valuation"
     ],
@@ -78,31 +81,33 @@
     "episodeId": "E191",
     "episodeNumber": 191,
     "episodeDate": "2024-08-09T20:20:00.000Z",
-    "company": "Google",
+    "company": "Alphabet (Google)",
     "ticker": "GOOGL",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "medium",
+    "stance": "bear",
+    "conviction": "high",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues the Google antitrust ruling is the most important tech event since the Microsoft DOJ decision in 2000, and that even a 'little O' consent decree outcome—most likely—will be meaningfully worse than the narrow scope of the lawsuit, potentially hobbling the company for years the way Microsoft was constrained.",
-    "quote": "This Google thing is the most important thing that's happened in tech since the Microsoft DOJ decision in 2000... if Google gets away with just having to do something around TAC and search, they have dodged an enormous bullet.",
+    "sectorProxy": null,
+    "summary": "Chamath argues the Google antitrust ruling is the most important tech event since the 2000 Microsoft DOJ decision and expects a meaningful consent decree — much broader than the narrow TAC issue — that will hobble Google for years and open the door to AI-powered search competitors, representing a major negative for the company.",
+    "quote": "I think that this Google thing is the most important thing that's happened in tech since the Microsoft DOJ decision in 2000... a consent decree where Google gets handcuffed for some number of years and it creates a couple of big waves of",
     "quoteStartMs": 3506000,
     "topics": [
       "antitrust",
       "regulation",
-      "competitive moat"
+      "competitive moat",
+      "AI search"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   },
   {
     "id": "E191-googl-Sacks-4",
     "episodeId": "E191",
     "episodeNumber": 191,
     "episodeDate": "2024-08-09T20:20:00.000Z",
-    "company": "Google",
+    "company": "Alphabet (Google)",
     "ticker": "GOOGL",
     "isPublic": true,
     "host": "Sacks",
@@ -111,13 +116,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues Google is clearly at least 2-3 monopolies (search, advertising, YouTube) and should be broken into 3-4 separate companies, viewing the antitrust ruling as a good decision that reflects real abuse of monopoly power.",
-    "quote": "Google clearly is a monopoly. In fact, it's at least 2 or 3 monopolies... I think it would be great if the government broke up this company. It should be at least 3 or 4 companies.",
+    "sectorProxy": null,
+    "summary": "Sacks argues Google is clearly running at least two or three illegal monopolies (search, advertising, YouTube) and believes the company should be broken into three or four separate companies, representing a severe structural downside for the current entity.",
+    "quote": "Google clearly is a monopoly. In fact, it's at least 2 or 3 monopolies. They have monopoly in search, they have monopoly in advertising... I think that it would be great if the government broke up this company. It should be at least 3 or 4",
     "quoteStartMs": 3672000,
     "topics": [
       "antitrust",
-      "breakup",
-      "regulation"
+      "breakup risk",
+      "regulation",
+      "monopoly"
     ],
     "attributionConfidence": "high"
   }

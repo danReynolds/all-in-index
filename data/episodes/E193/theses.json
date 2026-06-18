@@ -8,18 +8,19 @@
     "ticker": "INTC",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "low",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Friedberg notes Intel is imploding and unable to manufacture, casting doubt on the CHIPS Act's ability to revitalize domestic chip manufacturing.",
+    "sectorProxy": null,
+    "summary": "Friedberg briefly notes Intel is imploding and unable to manufacture, casting doubt on whether CHIPS Act investment in domestic chip fabs will succeed.",
     "quote": "Meanwhile, Intel is imploding, you know, they can't manufacture.",
     "quoteStartMs": 5095000,
     "topics": [
       "manufacturing",
       "CHIPS Act",
-      "semiconductor"
+      "semiconductors"
     ],
     "attributionConfidence": "high"
   },
@@ -37,11 +38,13 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath views prediction markets like Polymarket as good businesses but frames them primarily as entertainment and gambling rather than reliable directional indicators.",
-    "quote": "I mean, I think these are really good businesses, but they are some combination of entertainment and gambling. I don't think that these things are as useful directional indicators as they are just really interesting businesses that allow",
-    "quoteStartMs": 2489000,
+    "sectorProxy": null,
+    "summary": "Chamath views prediction markets like Polymarket as really good businesses, framing them as a compelling combination of entertainment and gambling, though he does not treat them as reliable directional political indicators.",
+    "quote": "I mean, I think these are really good businesses, but they are some combination of entertainment and gambling.",
+    "quoteStartMs": 2489159,
     "topics": [
       "prediction markets",
+      "gambling",
       "business model"
     ],
     "attributionConfidence": "high"

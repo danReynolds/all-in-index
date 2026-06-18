@@ -8,48 +8,25 @@
     "ticker": "NVDA",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues NVIDIA and other AI stocks are at the tail end of the hype cycle, with every post-earnings spike being used by investors as a selling opportunity, evidenced by massive share turnover and prices moving straight down.",
-    "quote": "NVIDIA's turned over 308 million shares today... It's going straight down like a lead balloon.",
-    "quoteStartMs": 2547991,
+    "sectorProxy": null,
+    "summary": "Chamath argues NVIDIA and other AI names are at the tail end of the hype cycle, with every post-earnings spike being sold aggressively, and that the market doesn't believe the phantom ROI from AI capex will materialize anytime soon.",
+    "quote": "people know that we are at the tail end of the hype cycle in AI, and every chance, every time these things spike, people take an opportunity to just massively sell. I mean, NVIDIA's turned over 308 million shares today.",
+    "quoteStartMs": 2534939,
     "topics": [
       "AI capex",
-      "hype cycle",
       "valuation",
-      "sell-off"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E190-meta-Chamath-1",
-    "episodeId": "E190",
-    "episodeNumber": 190,
-    "episodeDate": "2024-08-02T18:13:00.000Z",
-    "company": "Meta Platforms",
-    "ticker": "META",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "low",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Chamath notes Meta rallied on AI demand commentary but then gave up all gains, consistent with his view that investors are selling into every spike as the AI hype cycle peaks.",
-    "quote": "Meta rallied. They've basically given up all of their gains. It's gone kind of straight down today.",
-    "quoteStartMs": 2559000,
-    "topics": [
-      "AI capex",
       "hype cycle",
-      "sell-off"
+      "selling pressure"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E190-pershing-square-capital-management-Chamath-2",
+    "id": "E190-pershing-square-capital-management-Chamath-3",
     "episodeId": "E190",
     "episodeNumber": 190,
     "episodeDate": "2024-08-02T18:13:00.000Z",
@@ -58,18 +35,19 @@
     "isPublic": false,
     "host": "Chamath",
     "stance": "neutral",
-    "conviction": "medium",
+    "conviction": "high",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath explains that Ackman's IPO failed because it is structurally very hard to assign durable equity value to a hedge fund / GP entity — the business of making bets cannot be underwritten over 20-30 years the way a product company can — and that Ackman will need a much larger AUM base (approaching $1T) to make the 'company' thesis work.",
+    "sectorProxy": null,
+    "summary": "Chamath argues Ackman's IPO failed because hedge fund GP equity is structurally un-investable — bets are short-term and unpredictable, making it nearly impossible to underwrite durable enterprise value, regardless of Ackman's personal track record.",
     "quote": "in finance, these entities that try to sell a piece of the quote-unquote general partner as a company, I just think that it's, um, frankly, that it doesn't work. And this is just, you know, an example, yet another example that there's not",
     "quoteStartMs": 4344200,
     "topics": [
       "IPO",
       "hedge fund",
-      "valuation",
-      "capital markets"
+      "business model",
+      "valuation"
     ],
     "attributionConfidence": "high"
   }
