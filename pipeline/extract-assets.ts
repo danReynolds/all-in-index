@@ -2,7 +2,8 @@ import { z } from "zod";
 import { callTool } from "./llm";
 import { verifyTheses } from "./verify";
 import { store } from "./store";
-import { snapQuoteTimestamps, stampAttribution } from "./run-episode";
+import { normalizeScoreNotes, repairCallTypesFromQuote } from "./extract";
+import { dedupeOverlappingTheses, repairQuoteOwnership, snapQuoteTimestamps, stampAttribution } from "./run-episode";
 import { ASSETS } from "../lib/assets";
 import { REGULAR_HOSTS } from "../lib/types";
 import type { Episode, Host, Thesis, Transcript } from "../lib/types";
@@ -29,8 +30,9 @@ The same standards as company takes apply:
 - callType: "view" for commentary or sentiment ("I like gold here", "uranium is
   interesting") — this is the default. Use "explicit_long" for the speaker's own
   buy/long ("I bought gold", "I'd be long copper"), "explicit_short" for an
-  explicit short, and "selection" for a ranked pick ("uranium is my pick"). Only
-  the speaker's own transaction/selection language earns a non-"view" callType.
+  explicit short, and "selection" for a ranked pick ("uranium is my pick",
+  "best/worst/poor performing asset"). Only the speaker's own transaction or
+  selection language earns a non-"view" callType.
 - quote: SHORT verbatim excerpt (<= 240 chars) that CARRIES the evidence for the
   labels. Copy exactly. quoteStartSec from the "[<sec>s <Speaker>]" prefix.
 - One take per (host, asset) per episode; merge scattered remarks. Be
@@ -73,6 +75,10 @@ const INPUT_SCHEMA = {
   },
   required: ["takes"],
 };
+
+function isWeakNeutralAssetTake(t: Thesis): boolean {
+  return t.callType === "view" && t.stance === "neutral" && t.conviction === "low";
+}
 
 /** Keyword-windowed mini-transcript: matching utterances ± one neighbor. */
 function assetWindows(tr: Transcript): string {
@@ -133,8 +139,9 @@ export async function extractAssets(onlyIds?: string[]): Promise<void> {
     result.takes.forEach((item, i) => {
       const proxy = proxyOf.get(item.asset);
       if (!proxy) return;
-      // One take per (host, asset, episode) — never duplicate (vs stored or this batch).
-      if (theses.some((t) => t.company === item.asset && t.host === item.host)) return;
+      // One take per (host, asset, episode). Existing company-extractor
+      // placeholders for commodities are replaced after verification so the
+      // asset pass can attach the ETF proxy and canonical commodity treatment.
       if (newTakes.some((t) => t.company === item.asset && t.host === item.host)) return;
       newTakes.push({
         id: `${epId}-${proxy.toLowerCase()}-${item.host}-a${i}`,
@@ -155,18 +162,32 @@ export async function extractAssets(onlyIds?: string[]): Promise<void> {
       });
     });
     if (newTakes.length) {
+      for (const t of newTakes) {
+        for (let i = theses.length - 1; i >= 0; i--) {
+          if (theses[i].company === t.company && theses[i].host === t.host) {
+            theses.splice(i, 1);
+          }
+        }
+      }
       // Route commodity takes through the SAME adversarial gate as company takes:
       // drop passing mentions, neutralize non-directional views, repair weak quotes.
       // (This is why a separate audit-commodity-stance pass is no longer needed.)
-      const verified = await verifyTheses({ id: epId, title: ep?.title ?? "" } as Episode, newTakes, tr);
+      const verified = normalizeScoreNotes(repairCallTypesFromQuote(await verifyTheses({ id: epId, title: ep?.title ?? "" } as Episode, newTakes, tr)));
       for (const t of verified) {
+        for (let i = theses.length - 1; i >= 0; i--) {
+          if (theses[i].company === t.company && theses[i].host === t.host) {
+            theses.splice(i, 1);
+          }
+        }
+        if (isWeakNeutralAssetTake(t)) continue;
         theses.push(t);
         created++;
         console.log(`  + ${epId} ${t.host} ${t.stance}/${t.conviction} on ${t.company}${t.callType && t.callType !== "view" ? " 📌" : ""}`);
       }
+      repairQuoteOwnership(theses, tr);
       snapQuoteTimestamps(theses, tr);
       stampAttribution(theses, tr);
-      store.saveTheses(epId, theses);
+      store.saveTheses(epId, dedupeOverlappingTheses(theses));
     }
   }
   console.log(`\n✓ scanned ${episodesScanned} episodes with commodity talk, created ${created} takes.`);

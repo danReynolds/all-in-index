@@ -97,7 +97,7 @@ export function currentStanceFromTheses(theses: StanceInput[]): Stance {
   return currentStanceForHosts(theses, ["Guest"]);
 }
 
-const SCOREABLE_CALL_TYPES = new Set<CallType>([
+export const SCOREABLE_CALL_TYPES = new Set<CallType>([
   "explicit_long",
   "explicit_short",
   "explicit_exit",
@@ -106,6 +106,10 @@ const SCOREABLE_CALL_TYPES = new Set<CallType>([
   "basket",
 ]);
 
+export function isCallShaped(t: Thesis): boolean {
+  return t.callType != null && SCOREABLE_CALL_TYPES.has(t.callType);
+}
+
 /**
  * A take is portfolio-scored when its callType is a real call shape (not a
  * "view") and it carries no judgment exclusion. callType is the single gate —
@@ -113,7 +117,7 @@ const SCOREABLE_CALL_TYPES = new Set<CallType>([
  * the tradable fund is a further, structural check — see isTradableCompanyExposure.)
  */
 export function isPortfolioScored(t: Thesis): boolean {
-  return t.callType != null && SCOREABLE_CALL_TYPES.has(t.callType) && !t.excludeReason;
+  return isCallShaped(t) && !t.excludeReason;
 }
 
 /**

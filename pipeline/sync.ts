@@ -1,5 +1,5 @@
 import { fetchFeed } from "./rss";
-import { processEpisode, stampAttribution, snapQuoteTimestamps } from "./run-episode";
+import { dedupeOverlappingTheses, processEpisode, repairQuoteOwnership, stampAttribution, snapQuoteTimestamps } from "./run-episode";
 import { extractTheses } from "./extract";
 import { nameSpeakers } from "./speakers";
 import { buildIndex } from "./build-index";
@@ -54,7 +54,12 @@ export async function renameAll(concurrency = 5): Promise<void> {
         const ep = store.loadEpisode(id)!;
         const tr = store.loadTranscript(id)!;
         try {
-          const theses = snapQuoteTimestamps(stampAttribution(await extractTheses(ep, tr), tr), tr);
+          const theses = dedupeOverlappingTheses(
+            stampAttribution(
+              snapQuoteTimestamps(repairQuoteOwnership(await extractTheses(ep, tr), tr), tr),
+              tr,
+            ),
+          );
           store.saveTheses(id, theses);
         } catch (e) {
           console.error(`[${id}] re-extract FAILED: ${e instanceof Error ? e.message : e}`);
@@ -91,7 +96,12 @@ export async function reextractAll(
         continue;
       }
       try {
-        const theses = snapQuoteTimestamps(stampAttribution(await extractTheses(ep, tr), tr), tr);
+        const theses = dedupeOverlappingTheses(
+          stampAttribution(
+            snapQuoteTimestamps(repairQuoteOwnership(await extractTheses(ep, tr), tr), tr),
+            tr,
+          ),
+        );
         // Guard: a transient empty extraction must never WIPE an episode that
         // previously had takes — treat it as a failure to retry, not a save.
         const prior = store.loadTheses(id).length;

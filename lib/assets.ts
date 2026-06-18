@@ -1,3 +1,5 @@
+import { SECTOR_PROXIES, isSectorProxy } from "./proxies";
+
 // Commodity / macro-asset calls: tracked and scored like holdings (priced via
 // liquid ETF proxies), but they are not company calls — excluded from the
 // Besties Index, host funds, and the Bear Book.
@@ -47,13 +49,24 @@ export function isCryptoProxy(ticker: string | null | undefined): boolean {
   return !!ticker && CRYPTO_PROXIES.has(ticker.toUpperCase());
 }
 
-/** Tickers that price macro/commodity/crypto holdings — never company calls. */
+/** Tickers that price macro/commodity/crypto/sector holdings — never company calls. */
 export const MACRO_PROXIES = new Set([
   ...ASSETS.map((a) => a.proxy),
   ...CRYPTO.map((a) => a.proxy),
-  "KWEB", // Chinese tech basket — same treatment if it ever resolves a ticker
+  ...SECTOR_PROXIES.map((p) => p.ticker),
 ]);
 
+export type ProxyAssetKind = "commodity" | "crypto" | "sector";
+
+export function proxyAssetKind(ticker: string | null | undefined): ProxyAssetKind | null {
+  if (!ticker) return null;
+  const tk = ticker.toUpperCase();
+  if (CRYPTO_PROXIES.has(tk)) return "crypto";
+  if (ASSETS.some((a) => a.proxy === tk)) return "commodity";
+  if (isSectorProxy(tk)) return "sector";
+  return null;
+}
+
 export function isMacroAsset(ticker: string | null | undefined): boolean {
-  return !!ticker && MACRO_PROXIES.has(ticker.toUpperCase());
+  return proxyAssetKind(ticker) != null;
 }

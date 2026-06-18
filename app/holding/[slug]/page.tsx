@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { getHolding, allSlugs, guestLinkMap } from "@/lib/data";
 import { pct, returnColor, fmtDate, fmtDuration, fmtMoney } from "@/lib/format";
 import { currentCall, followStats, scoredTakes, displayStance } from "@/lib/calls";
-import { isMacroAsset, isCryptoProxy } from "@/lib/assets";
+import { isMacroAsset, proxyAssetKind } from "@/lib/assets";
 import { isGoingPrivate } from "@/lib/tradability";
 import { StanceBadge, ConvictionDots, SampleBanner } from "@/app/components/badges";
 import { Explainer } from "@/app/components/Explainer";
@@ -97,6 +97,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
   const marketAsOfMs = h.market ? Date.parse(`${h.market.asOf}T00:00:00Z`) : null;
   const yahooSymbol = h.market?.sourceSymbol ?? h.ticker;
   const macro = isMacroAsset(h.ticker);
+  const proxyKind = proxyAssetKind(h.ticker);
   const goingPrivate = isGoingPrivate(h.ticker);
 
   return (
@@ -151,7 +152,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
         )}
         {macro && (
           <p className="text-xs text-neutral-500">
-            {isCryptoProxy(h.ticker) ? "A crypto asset" : "A commodity"}, not a company — priced via the{" "}
+            {proxyKind === "crypto" ? "A crypto asset" : proxyKind === "sector" ? "A sector/theme exposure" : "A commodity"}, not a company — priced via the{" "}
             <span className="font-mono text-neutral-400">{h.ticker}</span> ETF as a clean proxy.
             Excluded from the index and host funds.
           </p>

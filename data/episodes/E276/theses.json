@@ -8,21 +8,21 @@
     "ticker": null,
     "isPublic": false,
     "host": "Chamath",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "high",
     "callType": "view",
-    "summary": "Chamath argues Anthropic's prompt surveillance, censorship of outputs, and lack of KYC creates serious business risk for enterprise customers and reveals a regulatory capture agenda that makes it a non-starter for corporations needing reliable AI access.",
-    "quote": "if you're a company, I think it's almost a non-starter. And the reason is because you could accidentally trip one of these things without even knowing it.",
-    "quoteStartMs": 203967,
-    "topics": [
-      "AI regulation",
-      "censorship",
-      "enterprise risk",
-      "regulatory capture"
-    ],
-    "attributionConfidence": "high",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Chamath argues Anthropic's prompt surveillance, censorship risk, and lack of KYC make it a non-starter for enterprises, driving corporate customers toward open-source alternatives and undermining Anthropic's business model.",
+    "quote": "if you're a company, I think it's almost a non-starter. And the reason is because you could accidentally trip one of these things without even knowing it... Both are not good.",
+    "quoteStartMs": 204592,
+    "topics": [
+      "enterprise adoption",
+      "censorship",
+      "competitive threat",
+      "open source"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E276-anthropic-Sacks-1",
@@ -36,18 +36,18 @@
     "stance": "bear",
     "conviction": "high",
     "callType": "view",
-    "summary": "Sacks argues Anthropic is engaged in a regulatory capture campaign, conducting mandatory surveillance of all user prompts, secretly downgrading outputs for disfavored users in an anti-competitive manner, and pushing for government regulation to eliminate open-source competitors — making them deeply untrustworthy.",
-    "quote": "8 months ago I said that Anthropic was engaged in a very sophisticated regulatory capture campaign based on fearmongering, and people at the time thought that was a very spicy take. But 8 months later, I think you're hearing a lot of",
-    "quoteStartMs": 595000,
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Sacks argues Anthropic is engaged in a sophisticated regulatory capture campaign built on fearmongering, is actively misleading paying users by secretly nerfing models and retaining all prompt data, and is pursuing an anti-competitive agenda to ban open-source rivals — making it untrustworthy and ultimately harmful to its own ecosystem.",
+    "quote": "8 months ago I said that Anthropic was engaged in a very sophisticated regulatory capture campaign based on fearmongering... they would degrade the product... still charge you for the product that you thought you were getting, and they",
+    "quoteStartMs": 596038,
     "topics": [
       "regulatory capture",
-      "censorship",
       "anti-competitive behavior",
-      "AI policy"
+      "trust",
+      "enterprise"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   },
   {
     "id": "E276-anthropic-Friedberg-2",
@@ -61,17 +61,18 @@
     "stance": "bear",
     "conviction": "high",
     "callType": "view",
-    "summary": "Friedberg argues Anthropic's AI restrictions are actively harming his genomics business by blocking legitimate scientific research, forcing companies to abandon the platform in favor of open-source (often Chinese) models, which will damage Anthropic's enterprise customer base.",
-    "quote": "we are likely going to end up needing to use open source models and run them locally ourselves... The restrictions that Anthropic and others are putting upon themselves and upon the industry is forcing a lot of companies to go and get open",
-    "quoteStartMs": 408000,
-    "topics": [
-      "AI restrictions",
-      "enterprise churn",
-      "competitive risk"
-    ],
-    "attributionConfidence": "high",
     "excludeReason": null,
-    "scoreNote": null
+    "scoreNote": null,
+    "summary": "Friedberg argues Anthropic's restrictions on genomics and frontier research are forcing enterprise customers like his own company to abandon the platform for open-source (including Chinese) models, representing a real loss of paying customers and market position.",
+    "quote": "Over the last couple of weeks, they've begun to restrict the ability to use the models to do that work... we are likely going to end up needing to use open-source models and run them locally ourselves.",
+    "quoteStartMs": 390823,
+    "topics": [
+      "enterprise adoption",
+      "censorship",
+      "customer churn",
+      "open source"
+    ],
+    "attributionConfidence": "high"
   },
   {
     "id": "E276-meta-Chamath-3",
@@ -82,43 +83,19 @@
     "ticker": "META",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Chamath argues Meta badly fumbled its opportunity with Llama to establish a viable open-source AI model that could have commoditized the market and taken margin away from closed-model competitors, calling it a major strategic failure.",
-    "quote": "Meta really fumbled this with Llama. I mean, if they had landed a really good— Big time. —working open source model... What a fumble. Take the margin out for everybody else.",
-    "quoteStartMs": 1396000,
+    "excludeReason": null,
+    "scoreNote": null,
+    "summary": "Chamath argues Meta fumbled its open-source LLaMA strategy by failing to deliver a truly competitive open-source model, missing a major opportunity to commoditize the AI market and undercut closed competitors.",
+    "quote": "Meta really fumbled this with LLaMA. I mean, if they had landed a really good— Big time. Working open source model... What a fumble.",
+    "quoteStartMs": 1395449,
     "topics": [
       "open source AI",
       "competitive strategy",
-      "Llama"
+      "LLaMA"
     ],
-    "attributionConfidence": "high",
-    "excludeReason": "not_investment_call",
-    "scoreNote": null
-  },
-  {
-    "id": "E276-openai-Chamath-4",
-    "episodeId": "E276",
-    "episodeNumber": 276,
-    "episodeDate": "2026-06-13T04:51:00.000Z",
-    "company": "OpenAI",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Chamath",
-    "stance": "bull",
-    "conviction": "low",
-    "callType": "view",
-    "summary": "Chamath views Sam Altman's pragmatic, negotiating approach — contrasted with Dario's moral absolutism — as likely to serve OpenAI well commercially in the future.",
-    "quote": "I think Sam, to his credit, is very practical. He sees the tea leaves and he's willing to negotiate. And I think that that versus being some kind of moral absolutist will probably serve OpenAI well in the future.",
-    "quoteStartMs": 3542000,
-    "topics": [
-      "AI strategy",
-      "leadership",
-      "competitive positioning"
-    ],
-    "attributionConfidence": "high",
-    "excludeReason": null,
-    "scoreNote": null
+    "attributionConfidence": "high"
   }
 ]

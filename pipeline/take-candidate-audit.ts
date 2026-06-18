@@ -156,7 +156,12 @@ function entityAliases(): EntityAlias[] {
 
 function containsAlias(text: string, alias: string): boolean {
   const escaped = alias.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\s+/g, "\\s+");
-  return new RegExp(`(^|[^a-z0-9])${escaped}([^a-z0-9]|$)`, "i").test(text);
+  if (new RegExp(`(^|[^a-z0-9])${escaped}([^a-z0-9]|$)`, "i").test(text)) return true;
+  const normText = normalize(text);
+  const normAlias = normalize(alias);
+  if (!normAlias) return false;
+  const normEscaped = normAlias.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\s+/g, "\\s+");
+  return new RegExp(`(^|[^a-z0-9])${normEscaped}([^a-z0-9]|$)`, "i").test(normText);
 }
 
 function mentionedEntities(text: string, aliases: EntityAlias[]): EntityAlias[] {
@@ -172,6 +177,13 @@ function candidateKinds(text: string): string[] {
   if (MODERATOR_HANDOFF.test(text)) return [];
   if (kinds.length === 1 && kinds[0] === "best_asset" && BEST_ASSET_TRANSITION.test(text) && !OWN_BEST_ASSET_PICK.test(text)) return [];
   if (kinds.includes("best_asset") && BEST_ASSET_RECAP_PROMPT.test(text) && !OWN_BEST_ASSET_PICK.test(text)) return [];
+  if (
+    kinds.includes("best_asset") &&
+    !OWN_BEST_ASSET_PICK.test(text) &&
+    /\b(?:one\s+category\s+we\s+didn'?t\s+talk\s+about|kind\s+of\s+interesting)\b/i.test(text)
+  ) {
+    return kinds.filter((kind) => kind !== "best_asset");
+  }
   if (MODERATOR_PROMPT.test(text) && !PERSONAL_PICK.test(text)) return [];
   if (RECAP_ONLY.test(text) && !CURRENT_PICK.test(text)) return [];
   return kinds;
@@ -312,6 +324,7 @@ export function buildTakeCandidateAuditReport(): TakeCandidateAuditReport {
 
 export function runTakeCandidateAudit(): void {
   const showAll = process.argv.includes("--all");
+  const failOnReview = process.argv.includes("--fail-on-review");
   const report = buildTakeCandidateAuditReport();
   const { candidates, needsReview } = report;
   console.log(`Scanned ${report.scannedEpisodeIds.length}/${report.thesisEpisodeCount} episodes with thesis files and cached transcripts.`);
@@ -348,6 +361,9 @@ export function runTakeCandidateAudit(): void {
   }
 
   printCandidates("\nNeeds review:", needsReview);
+  if (failOnReview) {
+    process.exitCode = 1;
+  }
 }
 
 function printCandidates(label: string, candidates: TakeCandidate[]): void {

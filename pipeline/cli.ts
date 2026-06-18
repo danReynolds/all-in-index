@@ -87,9 +87,16 @@ async function main() {
       const fs = await import("node:fs");
       const PENDING_FILE = "data/.reextract-pending.json";
       const pendingMode = rest.includes("--pending");
+      const onlyIdx = rest.indexOf("--only");
+      const explicitOnly = onlyIdx >= 0
+        ? rest[onlyIdx + 1]?.split(",").map((s) => s.trim()).filter(Boolean)
+        : undefined;
+      if (pendingMode && explicitOnly) {
+        throw new Error("Use either --pending or --only, not both.");
+      }
       const onlyIds = pendingMode
         ? (JSON.parse(fs.readFileSync(PENDING_FILE, "utf8")) as string[])
-        : undefined;
+        : explicitOnly;
       if (pendingMode && (!onlyIds || onlyIds.length === 0)) {
         console.log("Nothing pending — all episodes are on the current extraction rules.");
         return;
@@ -218,7 +225,8 @@ async function main() {
           "  sync [--limit N] [--include-interviews]  process new episodes + rebuild index\n" +
           "  build-index                           re-aggregate processed episodes\n" +
           "  rebuild-all                           reextract → extract-assets → name-guests → build-index\n" +
-          "  audit-candidates [--all]              find high-signal transcript picks needing review\n" +
+          "  reextract --only E209,E257            re-run company extractor for specific cached episodes\n" +
+          "  audit-candidates [--all] [--fail-on-review] find high-signal transcript picks needing review\n" +
           "  quality                               validate generated data invariants",
       );
   }

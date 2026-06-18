@@ -85,7 +85,21 @@ export const PROXY_BY_TICKER: Record<string, ProxyInfo> = Object.fromEntries(
   SECTOR_PROXIES.map((p) => [p.ticker, p]),
 );
 
+const SECTOR_PROXY_TICKERS = new Set(SECTOR_PROXIES.map((p) => p.ticker));
+
+export function isSectorProxy(ticker: string | null | undefined): boolean {
+  return !!ticker && SECTOR_PROXY_TICKERS.has(ticker.toUpperCase());
+}
+
+export function sectorProxyInfo(ticker: string | null | undefined): ProxyInfo | null {
+  return ticker ? (PROXY_BY_TICKER[ticker.toUpperCase()] ?? null) : null;
+}
+
 /** First proxy whose matcher hits the pick text, or null. */
 export function findProxyForPick(pick: string): ProxyInfo | null {
-  return SECTOR_PROXIES.find((p) => p.match.test(pick)) ?? null;
+  const normalized = pick.toLowerCase();
+  return SECTOR_PROXIES.find((p) => {
+    if (p.ticker === "MAGS" && /\bnon[\s-]*mag(?:nificent)?[\s-]*(?:7|seven)\b/.test(normalized)) return false;
+    return p.match.test(pick);
+  }) ?? null;
 }

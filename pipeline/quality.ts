@@ -1,7 +1,7 @@
-import { currentStanceForHosts, isPortfolioScored } from "../lib/calls";
+import { currentStanceForHosts, isCallShaped, isPortfolioScored } from "../lib/calls";
 import { MAX_PUBLISHED_QUOTE_CHARS } from "../lib/quotes";
 import { store } from "./store";
-import type { Host, IndexFund, IndexSnapshot } from "../lib/types";
+import type { Host, IndexFund, IndexSnapshot, Thesis } from "../lib/types";
 
 const BESTIES: Host[] = ["Chamath", "Jason", "Sacks", "Friedberg"];
 const GUESTS: Host[] = ["Guest"];
@@ -35,7 +35,7 @@ function validateFund(
 }
 
 function validateDuplicateQuotes(snapshot: IndexSnapshot, errors: string[]) {
-  const byQuote = new Map<string, Set<string>>();
+  const byQuote = new Map<string, Array<{ company: string; thesis: Thesis }>>();
   for (const h of snapshot.holdings) {
     for (const t of h.theses) {
       if (!t.quote) continue;
@@ -45,13 +45,16 @@ function validateDuplicateQuotes(snapshot: IndexSnapshot, errors: string[]) {
       // views/enumerations (which the build's list-mention filter already drops).
       if (t.callType && t.callType !== "view") continue;
       const key = t.quote.slice(0, 60).toLowerCase();
-      const companies = byQuote.get(key) ?? new Set<string>();
-      companies.add(h.company);
-      byQuote.set(key, companies);
+      const rows = byQuote.get(key) ?? [];
+      rows.push({ company: h.company, thesis: t });
+      byQuote.set(key, rows);
     }
   }
-  for (const [quote, companies] of byQuote) {
+  for (const [quote, rows] of byQuote) {
+    const companies = new Set(rows.map((row) => row.company));
     if (companies.size > 1) {
+      const intentionalSharedCall = rows.every((row) => isCallShaped(row.thesis) && row.thesis.scoreNote);
+      if (intentionalSharedCall) continue;
       errors.push(`quote reused across companies (${[...companies].join(", ")}): ${quote}`);
     }
   }

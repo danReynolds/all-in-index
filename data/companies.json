@@ -860,7 +860,191 @@
     "domain": "ishares.com"
   },
   "005930.ks": {
-    "description": "South Korean multinational manufacturing semiconductors, smartphones, displays, home appliances, and consumer electronics.",
+    "description": "South Korean multinational conglomerate manufacturing semiconductors, smartphones, displays, and consumer electronics.",
     "domain": "samsung.com"
+  },
+  "enterprise-saas-software-industrial-complex": {
+    "description": "Basket representing enterprise software companies delivering cloud-based subscription services to businesses.",
+    "domain": null
+  },
+  "california-luxury-real-estate": {
+    "description": "Basket representing high-end residential real estate assets located across California markets.",
+    "domain": null
+  },
+  "hydrocarbons-oil": {
+    "description": "Basket representing crude oil and hydrocarbon commodity exposure across energy markets.",
+    "domain": null
+  },
+  "us-dollar": {
+    "description": "The official fiat currency of the United States, serving as the world's primary reserve currency.",
+    "domain": null
+  },
+  "critical-metals-basket": {
+    "description": "Basket representing strategic and critical metals including lithium, cobalt, rare earths, and related commodities.",
+    "domain": null
+  },
+  "ipo-market-spacex-anthropic-stripe-anduril-openai": {
+    "description": "Basket of high-profile private companies anticipated to access public markets via IPO in coming years.",
+    "domain": null
+  },
+  "government-service-providers-basket": {
+    "description": "Basket of companies providing technology, logistics, and consulting services primarily to government clients.",
+    "domain": null
+  },
+  "legacy-defense-contractors-basket": {
+    "description": "Basket of established defense contractors supplying military hardware, systems, and services to governments.",
+    "domain": null
+  },
+  "chinese-tech-etf-basket": {
+    "description": "Basket tracking Chinese technology companies across internet, e-commerce, semiconductors, and related sectors.",
+    "domain": null
+  },
+  "chamath-s-ai-compute-basket": {
+    "description": "A thematic basket of AI and compute infrastructure companies favored by investor Chamath Palihapitiya.",
+    "domain": null
+  },
+  "software-industrial-complex-enterprise-saas": {
+    "description": "A thematic basket tracking large-scale enterprise SaaS and business software platform companies.",
+    "domain": null
+  },
+  "traditional-media": {
+    "description": "A thematic basket of legacy broadcast, print, and cable media companies facing digital disruption.",
+    "domain": null
+  },
+  "capital-equipment-basket": {
+    "description": "A thematic basket of companies manufacturing industrial and semiconductor capital equipment.",
+    "domain": null
+  },
+  "prediction-market-gambling-basket-robinhood-polymarket-prizepicks": {
+    "description": "A thematic basket spanning prediction markets and online gambling platforms including Robinhood, Polymarket, and PrizePicks.",
+    "domain": null
+  },
+  "s-p-493-non-mag-7-s-p-500": {
+    "description": "A thematic basket representing the S&P 500 index excluding the seven largest mega-cap technology companies.",
+    "domain": null
+  },
+  "aws-azure-gcp-cloud-index": {
+    "description": "A thematic index tracking the three dominant hyperscale public cloud platforms: AWS, Microsoft Azure, and Google Cloud.",
+    "domain": null
+  },
+  "high-bandwidth-memory-sk-hynix-micron-basket": {
+    "description": "A thematic basket of high-bandwidth memory chip manufacturers, anchored by SK Hynix and Micron Technology.",
+    "domain": null
+  },
+  "cds-credit-default-swaps-macro": {
+    "description": "A macro-focused thematic position in credit default swaps used to hedge or speculate on credit risk.",
+    "domain": null
+  },
+  "enterprise-application-software-saas-basket": {
+    "description": "A thematic basket of enterprise application software and SaaS companies serving business workflow needs.",
+    "domain": null
+  },
+  "legacy-defense-aerospace-boeing-lockheed-raytheon-basket": {
+    "description": "A thematic basket of established defense and aerospace contractors including Boeing, Lockheed Martin, and Raytheon.",
+    "domain": null
+  },
+  "dollar-denominated-stablecoins-basket": {
+    "description": "A thematic basket of USD-pegged stablecoins designed to maintain a stable value relative to the US dollar.",
+    "domain": null
+  },
+  "saas-software-industrial-complex": {
+    "description": "Broad category encompassing enterprise SaaS and software vendors selling subscription-based business software.",
+    "domain": null
+  },
+  "traditional-media-stocks": {
+    "description": "Publicly traded legacy media companies operating broadcast, print, and cable television businesses.",
+    "domain": null
+  },
+  "capital-equipment-sector": {
+    "description": "Sector comprising companies that manufacture heavy machinery, industrial tools, and production equipment.",
+    "domain": null
+  },
+  "ipo-market-stripe-anthropic-spacex-anduril-openai": {
+    "description": "Basket of high-profile private companies including Stripe, Anthropic, SpaceX, Anduril, and OpenAI awaiting public listings.",
+    "domain": null
+  },
+  "s-p-493-non-mag7-s-p-500": {
+    "description": "The 493 S&P 500 constituents excluding the seven largest mega-cap technology companies.",
+    "domain": null
+  },
+  "aws-azure-gcp-cloud-basket": {
+    "description": "Basket tracking the three dominant public cloud platforms: Amazon AWS, Microsoft Azure, and Google GCP.",
+    "domain": null
+  },
+  "software-industrial-complex-saas-basket": {
+    "description": "A curated basket of publicly traded SaaS and enterprise software companies grouped as a thematic investment.",
+    "domain": null
+  },
+  "igv": {
+    "description": "ETF tracking an index of publicly listed enterprise software and SaaS companies.",
+    "domain": "ishares.com"
+  },
+  "kweb": {
+    "description": "ETF providing exposure to publicly listed Chinese internet and technology companies.",
+    "domain": "kraneshares.com"
+  },
+  "ipo": {
+    "description": "ETF tracking recently public companies across sectors listed via IPO.",
+    "domain": "renaissancecapital.com"
+  },
+  "remx": {
+    "description": "ETF tracking companies involved in mining and producing rare earth and critical metals.",
+    "domain": "vaneck.com"
+  },
+  "qqq": {
+    "description": "ETF tracking the Nasdaq-100 index of the 100 largest non-financial Nasdaq-listed companies.",
+    "domain": "invesco.com"
+  },
+  "mags": {
+    "description": "ETF providing equal-weight exposure to the seven largest US mega-cap technology companies.",
+    "domain": "roundhillinvestments.com"
+  },
+  "ita": {
+    "description": "ETF tracking US aerospace and defense companies including major contractors and manufacturers.",
+    "domain": "ishares.com"
+  },
+  "california-state-economy-real-estate": {
+    "description": "Represents California's state economy and real estate market, encompassing residential and commercial property activity.",
+    "domain": null
+  },
+  "capital-equipment-sector-caterpillar-siemens-broad-capital-equipment": {
+    "description": "Represents the capital equipment sector, including heavy machinery, industrial equipment, and manufacturing hardware providers.",
+    "domain": null
+  },
+  "uup": {
+    "description": "ETF tracking the US Dollar Index, reflecting the dollar's value against a basket of major currencies.",
+    "domain": "invesco.com"
+  },
+  "traditional-media-stocks-basket": {
+    "description": "A curated basket of publicly traded traditional media companies spanning broadcast, print, and cable sectors.",
+    "domain": null
+  },
+  "ipo-market-new-public-companies": {
+    "description": "Thematic basket tracking companies that have recently completed initial public offerings on major exchanges.",
+    "domain": null
+  },
+  "california-state-economy-luxury-real-estate": {
+    "description": "Thematic exposure to California's broader state economy and high-end residential and commercial real estate market.",
+    "domain": null
+  },
+  "capital-equipment-accelerated-depreciation-basket": {
+    "description": "Thematic basket of capital equipment companies benefiting from accelerated depreciation tax incentives and industrial investment.",
+    "domain": null
+  },
+  "expanding-tech-supercycle": {
+    "description": "Thematic basket capturing companies positioned to benefit from a broad, multi-year technology spending and innovation supercycle.",
+    "domain": null
+  },
+  "cloud-hyperscalers-basket-aws-azure-gcp": {
+    "description": "Thematic basket covering the three dominant cloud infrastructure providers: Amazon AWS, Microsoft Azure, and Google Cloud.",
+    "domain": null
+  },
+  "ipo-market-basket": {
+    "description": "A basket tracking the broad IPO market, grouping recently public companies across sectors.",
+    "domain": null
+  },
+  "capital-equipment-basket-caterpillar-siemens-et-al": {
+    "description": "A basket of capital equipment manufacturers including Caterpillar, Siemens, and similar industrial companies.",
+    "domain": null
   }
 }
