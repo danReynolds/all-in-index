@@ -17,7 +17,7 @@ import {
 } from "@/lib/insights";
 
 export const metadata = {
-  title: "Insights — The All-Index",
+  title: "Insights",
   description: "What the besties' calls reveal: consensus, conviction, flips, and live disagreements across every scored call.",
 };
 

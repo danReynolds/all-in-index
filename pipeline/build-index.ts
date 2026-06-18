@@ -264,6 +264,24 @@ export async function buildIndex(): Promise<IndexSnapshot> {
     episodes,
     bearBook,
   };
+  // Regression floor: holdings only grow as episodes accrue, so a material drop
+  // signals a broken run (partial feed/cache/extraction failure), not real data.
+  // Refuse to overwrite a healthy catalog with a gutted one — throwing here aborts
+  // the bot's run before it can commit, leaving the last good holdings.json intact.
+  const priorCount = (() => {
+    try {
+      return store.loadIndex()?.holdings?.length ?? 0;
+    } catch {
+      return 0;
+    }
+  })();
+  if (priorCount >= 20 && holdings.length < priorCount * 0.8) {
+    throw new Error(
+      `Refusing to write index: holdings dropped ${priorCount} → ${holdings.length} (>20%). ` +
+        `That looks like a broken run, not real data — investigate before committing.`,
+    );
+  }
+
   store.saveIndex(snapshot);
   console.log(`✓ wrote ${holdings.length} holdings to data/holdings.json`);
   logFund("Besties", indexFund);
