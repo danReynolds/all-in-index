@@ -13,14 +13,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues the US government taking a 10% equity stake in Intel in exchange for CHIPS Act funding is superior to free grants, giving American taxpayers upside participation in a strategically critical semiconductor company.",
-    "quote": "I think that this approach is the much better approach, which is to say we can do exactly what China did with a couple of tweaks... allow the capital markets to finance these businesses, but give them a chance to compete all around the",
-    "quoteStartMs": 2452000,
+    "sectorProxy": null,
+    "summary": "Chamath argues the US government taking equity in Intel (rather than giving free grants) is the right model — it gives taxpayers upside, mirrors China's strategic champion approach but without a golden vote, and allows capital markets to finance the business competitively.",
+    "quote": "I think that this approach is the much better approach, which is to say we can do exactly what China did with a couple of tweaks... have complete transparency, allow the capital markets to finance these businesses, but give them a chance",
+    "quoteStartMs": 2450205,
     "topics": [
+      "government equity stake",
       "CHIPS Act",
-      "government equity",
-      "semiconductors",
-      "national security"
+      "national security",
+      "semiconductor"
     ],
     "attributionConfidence": "high"
   },
@@ -38,14 +39,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks supports the US government taking equity in Intel rather than giving free grants, viewing it as a better deal for taxpayers and the right incentive structure for companies receiving public funding for national security priorities.",
-    "quote": "I agree with Chamath that if you're going to give large amounts of money to chip manufacturers, it's better to get equity for that than for it to be a freebie... it's a better deal for taxpayers. We might be able to recoup the money and",
-    "quoteStartMs": 2537000,
+    "sectorProxy": null,
+    "summary": "Sacks supports the government taking equity in Intel in exchange for CHIPS Act funding as a better deal for taxpayers than free grants, creating proper incentives and allowing possible upside recovery, given the national security imperative to onshore chip manufacturing.",
+    "quote": "If you are going to hand out billions of dollars to these companies, you're better off at least, again, getting something for it, having the taxpayers have some upside in it, allowing the government to recoup, and creating the right",
+    "quoteStartMs": 2607004,
     "topics": [
+      "government equity stake",
       "CHIPS Act",
-      "government equity",
-      "semiconductors",
-      "national security"
+      "national security",
+      "semiconductor"
     ],
     "attributionConfidence": "high"
   },
@@ -63,14 +65,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Friedberg highlights OpenAI's GPT-4B Micro model achieving a 50x improvement in cellular rejuvenation protein effectiveness in partnership with Retro Biosciences, demonstrating that fine-tuned smaller LLMs can deliver extraordinary results in specific scientific applications.",
-    "quote": "They actually got these new proteins to be 50 times more effective than the OSKNM proteins in basically rejuvenation or cellular reset... it's incredible what these LLMs can do.",
-    "quoteStartMs": 4592670,
+    "sectorProxy": null,
+    "summary": "Friedberg highlights OpenAI's GPT-4B Micro model achieving a 50x improvement in cellular rejuvenation protein efficacy in partnership with Retro Biosciences, demonstrating that fine-tuned smaller LLMs can produce extraordinary results in specific scientific applications.",
+    "quote": "They actually got these new proteins to be 50 times more effective than the OSKNM proteins in basically rejuvenation or cellular reset. Within 7 days, they got more than 30% of the cells to show the markers. And by day 12, 85% of them",
+    "quoteStartMs": 4340990,
     "topics": [
-      "AI applications",
+      "AI",
       "biotech",
-      "LLMs",
-      "longevity"
+      "longevity",
+      "fine-tuned models"
     ],
     "attributionConfidence": "medium"
   }

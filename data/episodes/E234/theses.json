@@ -12,8 +12,9 @@
     "conviction": "medium",
     "callType": "pair_trade",
     "excludeReason": null,
-    "scoreNote": "Long leg of Figma/Adobe pair trade; Chamath explicitly states he'd be long Figma and short Adobe.",
-    "summary": "Chamath sees Figma as a strong business but with uncertain long-term durability vs. AI model absorption; he'd go long Figma and short an equivalent amount of Adobe to capture the spread safely.",
+    "scoreNote": "Long Figma / Short Adobe pair trade explicitly stated.",
+    "sectorProxy": null,
+    "summary": "Chamath sees Figma as a strong business but prefers to hedge AI model risk by going long Figma and short Adobe, capturing the spread since Adobe would face valuation re-rating faster than Figma if AI disrupts the space.",
     "quote": "if I could get like $50 or $100 million of Figma, I would probably be long it and I would short an equivalent Quantum of Adobe, and I would just book the spread.",
     "quoteStartMs": 4594446,
     "topics": [
@@ -37,15 +38,15 @@
     "conviction": "medium",
     "callType": "pair_trade",
     "excludeReason": null,
-    "scoreNote": "Short leg of Figma/Adobe pair trade; Chamath explicitly states Adobe will face faster valuation compression.",
-    "summary": "Chamath is short Adobe as the hedge leg against Figma, arguing Adobe will face faster valuation compression than Figma if AI disrupts the design software market.",
-    "quote": "I would short an equivalent Quantum of Adobe, and I would just book the spread... the person who's going to take a retrade on valuation faster than Figma will be Adobe.",
-    "quoteStartMs": 4599301,
+    "scoreNote": "Short leg of explicit Figma long / Adobe short pair trade.",
+    "sectorProxy": null,
+    "summary": "Chamath argues Adobe will face a faster valuation re-rating than Figma in an AI disruption scenario, making it the short leg of a Figma/Adobe pair trade.",
+    "quote": "The person who's going to take a retrade on valuation faster than Figma will be Adobe. And so you'll be hedged and you'll probably make money that way.",
+    "quoteStartMs": 4611438,
     "topics": [
       "AI disruption",
       "valuation",
-      "pair trade",
-      "design software"
+      "pair trade"
     ],
     "attributionConfidence": "high"
   },
@@ -63,13 +64,40 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Friedberg highlights Figma's strong financials—40%+ revenue growth, 43% operating cash flow margin, 130% net revenue retention—as evidence of a durable land-and-expand business, though acknowledges uncertainty about AI disruption in 3-4 years.",
-    "quote": "They ran a 43% operating cash flow margin in Q1... net revenue retention of like 130%. So this land and expand is proven out and there's real durability, it looks like, to this business for now.",
+    "sectorProxy": null,
+    "summary": "Friedberg highlights Figma's strong fundamentals — 40%+ revenue growth, 43% operating cash flow margin, 130% net revenue retention — as evidence of a durable land-and-expand business, while acknowledging the open question of whether AI absorbs the category in 3-4 years.",
+    "quote": "They ran a 43% operating cash flow margin in Q1. So in Q1 of this year, Figma generated $95 million of free cash flow. They've got net revenue retention of like 130%. So this land and expand is proven out and there's real durability.",
     "quoteStartMs": 4548796,
     "topics": [
       "IPO",
       "revenue quality",
       "AI disruption",
+      "SaaS"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E234-figma-Chamath-3",
+    "episodeId": "E234",
+    "episodeNumber": 234,
+    "episodeDate": "2025-07-04T14:07:00.000Z",
+    "company": "Figma",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "mixed",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Chamath views Figma as a phenomenal business with strong growth and margins, but flags an industry-wide uncertainty about whether foundational AI models will absorb its revenue, making years 3-5 hard to underwrite for institutional investors.",
+    "quote": "on the surface, in the absence of these AI businesses, I would say, man, what a gangbusters business growing by 40-something percent a year at this scale... the question is, what am I buying? And does this revenue growth sit adjacent to",
+    "quoteStartMs": 4382688,
+    "topics": [
+      "IPO",
+      "AI disruption",
+      "valuation",
       "SaaS"
     ],
     "attributionConfidence": "high"

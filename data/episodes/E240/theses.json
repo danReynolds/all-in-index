@@ -13,13 +13,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath makes the bull case for OpenAI at a $500B valuation by projecting DAU growth to 2B and applying a fraction of Facebook/Google ARPU, arriving at a ~$1.5T terminal valuation.",
-    "quote": "if you take 400 or 500 million MAO DAO growing at... 50%... 500 goes to a billion, billion goes to 2 in 4 years. And at 2 billion DAO, they generate a 10th of Facebook's revenue... you probably get to a trillion 5 valuation there.",
-    "quoteStartMs": 2099772,
+    "sectorProxy": null,
+    "summary": "Chamath makes a bull case for OpenAI at a $500B valuation by extrapolating MAU/DAU growth and applying a fraction of Facebook/Google ARPU, arriving at a potential $1.5T valuation in 4 years.",
+    "quote": "At 2 billion DAO, they generate a 10th of Facebook's revenue, just to be very conservative. And you probably get to a trillion 5 valuation there.",
+    "quoteStartMs": 2122801,
     "topics": [
       "valuation",
       "user growth",
-      "consumer AI"
+      "AI",
+      "consumer platform"
     ],
     "attributionConfidence": "high"
   },
@@ -37,18 +39,72 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues OpenAI's dominant consumer position and real subscription revenue — plus its role as a search replacement — make a $500B valuation supportable on fundamentals.",
-    "quote": "OpenAI has actual revenue... they have subscriptions and they appear to have the dominant position in the consumer space. And it is a replacement for a lot of people for search, which is the most lucrative franchise on the internet.",
-    "quoteStartMs": 2135000,
+    "sectorProxy": null,
+    "summary": "Sacks argues OpenAI has actual subscription revenue, a dominant consumer position, and is replacing search — the internet's most lucrative franchise — making a $500B valuation justifiable.",
+    "quote": "OpenAI has actual revenue. I mean, they have actual revenue because they have subscriptions and they appear to have the dominant position in the consumer space. And it is a replacement for a lot of people for search, which is the most",
+    "quoteStartMs": 2135980,
     "topics": [
       "valuation",
+      "revenue",
       "consumer AI",
-      "search disruption"
+      "search"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E240-meta-Sacks-2",
+    "id": "E240-ai-vertical-slm-applications-basket-Sacks-2",
+    "episodeId": "E240",
+    "episodeNumber": 240,
+    "episodeDate": "2025-08-22T18:59:00.000Z",
+    "company": "AI vertical/SLM applications (basket)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": "IGV",
+    "summary": "Sacks is bullish on vertical AI applications and specialized/small language models as the real value-capture layer in AI, arguing they solve the 'last mile' problem that general LLMs fail at.",
+    "quote": "I think this is a great thing ultimately for the ecosystem because it implies that you're going to get lots of vertical applications and lots of specialized models that capture value in lots of different markets.",
+    "quoteStartMs": 2135080,
+    "topics": [
+      "AI",
+      "vertical SaaS",
+      "SLMs",
+      "enterprise"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E240-ai-capex-hyperscaler-infrastructure-basket-Friedberg-3",
+    "episodeId": "E240",
+    "episodeNumber": 240,
+    "episodeDate": "2025-08-22T18:59:00.000Z",
+    "company": "AI capex / hyperscaler infrastructure (basket)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": "QQQ",
+    "summary": "Friedberg sees the current AI CapEx ROIC as TBD, analogizing to the dot-com fiber overbuild, but believes architectural shifts to SLMs could dramatically improve efficiency and ultimately vindicate the investment.",
+    "quote": "Whether this particular CapEx cycle is going to have that ROIC or not, I think is a bit TBD... if the architectural redesigns work, then these systems become much more efficient, 10x, 100x more efficient.",
+    "quoteStartMs": 1276000,
+    "topics": [
+      "AI capex",
+      "ROIC",
+      "SLMs",
+      "infrastructure"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E240-meta-Sacks-4",
     "episodeId": "E240",
     "episodeNumber": 240,
     "episodeDate": "2025-08-22T18:59:00.000Z",
@@ -61,13 +117,14 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks views Meta's AI hiring freeze as a normal consolidation after aggressive acquihires rather than a sign of a broader bust, and does not make a directional investment call.",
-    "quote": "I think that what Meta is doing is probably digesting a little bit. They've now made a bunch of talent acquisitions... and they're probably just consolidating a little bit.",
+    "sectorProxy": null,
+    "summary": "Sacks views Meta's AI hiring freeze as a natural consolidation after an expensive talent acquisition spree, not a sign of a bust, and sees the company as still participating in the AI supercycle.",
+    "quote": "I think that what Meta is doing is probably digesting a little bit. They've now made a bunch of talent acquisitions... and they're probably just consolidating a little bit. I don't think this is the bust part of the cycle.",
     "quoteStartMs": 1939174,
     "topics": [
       "AI talent",
       "hiring",
-      "strategy"
+      "consolidation"
     ],
     "attributionConfidence": "high"
   }

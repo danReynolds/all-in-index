@@ -13,11 +13,12 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues that Anthropic's safety warnings are strategically timed to coincide with fundraising rounds, and that the company is using AI doomerism as a smart business angle to secure its position as one of the foundational model winners, while also noting it builds genuinely great product.",
+    "sectorProxy": null,
+    "summary": "Chamath argues Anthropic's AI safety warnings are strategically timed to coincide with fundraising rounds, serving a smart business agenda rather than purely altruistic concern, while acknowledging Claude is a great product.",
     "quote": "it seems that these safety warnings tend to be pretty coincidental with key fundraising moments in Anthropic's journey... I think that there is a very smart business strategy here",
     "quoteStartMs": 578198,
     "topics": [
-      "AI safety narrative",
+      "AI safety",
       "fundraising strategy",
       "regulatory capture"
     ],
@@ -37,13 +38,14 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks identifies Anthropic as a node in a tightly connected network linking the EA movement, Biden administration staffers, and Open Philanthropy funding, framing the company's safety messaging as politically motivated global compute governance advocacy — but does not make a forward-looking economic judgment on the company itself.",
-    "quote": "there's 3 key nodes here. There's the effective altruist movement... There's the Biden administration and like the key staffers, and then you've got Anthropic, and it's a very tightly wound network.",
+    "sectorProxy": null,
+    "summary": "Sacks identifies Anthropic as a central node in a network linking the EA movement, Biden administration staffers, and global compute governance agenda, but frames this as a political concern rather than a negative investment view on the company itself.",
+    "quote": "There's 3 key nodes here. There's the effective altruist movement... There's the Biden administration and like the key staffers, and then you've got Anthropic, and it's a very tightly wound network.",
     "quoteStartMs": 919123,
     "topics": [
-      "regulatory capture",
-      "AI governance",
-      "political agenda"
+      "AI regulation",
+      "political agenda",
+      "effective altruism"
     ],
     "attributionConfidence": "high"
   },
@@ -61,16 +63,17 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath views the Nippon Steel–US Steel deal as a model for the US government taking strategic equity stakes (golden votes) in critical industries, arguing this structure — similar to Brazil, UK, and China — positions the company and the country on the 'forward foot' rather than rescuing a stranded asset.",
-    "quote": "This is a really important example of things that we need to copy... those deals are about companies that are thriving and on the forward foot.",
-    "quoteStartMs": 4736005,
+    "sectorProxy": null,
+    "summary": "Chamath is bullish on the Nippon Steel / US Steel deal structure as a model of strategic government partnership with a golden vote, arguing it positions the company on the 'forward foot' similar to national champions in Brazil, UK, and China.",
+    "quote": "I think this is a really important example of things that we need to copy... if the president is creating a more expansive idea beyond US Steel with this idea of US support, maybe there'll be preferred capital in the future to US Steel.",
+    "quoteStartMs": 4665000,
     "topics": [
       "M&A",
-      "industrial policy",
-      "golden share",
-      "national security"
+      "national champions",
+      "steel industry",
+      "government partnership"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   },
   {
     "id": "E230-x-Sacks-3",
@@ -86,13 +89,14 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues steel production is strategically necessary for national security and supports government subsidies or protection to reshore it, endorsing the view that some industries must be protected even if it requires departing from free-market principles.",
-    "quote": "steel production is definitely strategic. Steel, aluminum, and I'd say the rare earths, we have to have that capacity. We cannot be completely dependent on China for our supply chain.",
+    "sectorProxy": null,
+    "summary": "Sacks argues steel production is a strategic industry that must be reshored, justifying government subsidies and protection for national security reasons, implicitly supporting the US Steel deal.",
+    "quote": "steel production is definitely strategic. Steel, aluminum, and I'd say the rare earths, we have to have that capacity. We cannot be completely dependent on China for our supply chain. So some of these industries have to be reshored, and if",
     "quoteStartMs": 4902629,
     "topics": [
-      "industrial policy",
       "national security",
-      "reshoring"
+      "reshoring",
+      "steel industry"
     ],
     "attributionConfidence": "high"
   }
