@@ -1066,5 +1066,189 @@
   "legacy-auto-oems": {
     "description": "Established traditional automakers manufacturing and selling internal combustion and transitioning electric vehicles.",
     "domain": null
+  },
+  "saas-sector-enterprise-software": {
+    "description": "Broad sector grouping of software companies delivering enterprise applications via subscription cloud models.",
+    "domain": null
+  },
+  "andreessen-horowitz-a16z": {
+    "description": "Prominent venture capital firm investing across technology, bio, crypto, and consumer sectors.",
+    "domain": "a16z.com"
+  },
+  "memory-stocks-sk-hynix-samsung-micron": {
+    "description": "Basket of leading DRAM and NAND flash memory semiconductor manufacturers globally.",
+    "domain": null
+  },
+  "chamath-macro-broad-market-long": {
+    "description": "Macro-oriented long position on broad equity markets, associated with investor Chamath Palihapitiya.",
+    "domain": null
+  },
+  "hyperscaler-capex-beneficiaries-capital-equipment-infrastructure": {
+    "description": "Companies supplying capital equipment and infrastructure benefiting from hyperscaler data center spending.",
+    "domain": null
+  },
+  "bayry": {
+    "description": "German multinational life sciences company operating in pharmaceuticals, consumer health, and crop science.",
+    "domain": "bayer.com"
+  },
+  "cursor-anysphere": {
+    "description": "Anysphere develops Cursor, an AI-powered code editor designed to enhance developer productivity.",
+    "domain": "cursor.com"
+  },
+  "enterprise-saas-broad-sector": {
+    "description": "Broad sector grouping of enterprise-focused software companies operating on subscription-based cloud models.",
+    "domain": null
+  },
+  "igv-enterprise-software-basket": {
+    "description": "iShares Expanded Tech-Software ETF (IGV) tracking a basket of publicly listed enterprise software companies.",
+    "domain": "ishares.com"
+  },
+  "enterprise-software-sector": {
+    "description": "Broad sector encompassing companies that develop and sell software products to business customers.",
+    "domain": null
+  },
+  "enterprise-saas-software-sector": {
+    "description": "Sector grouping of cloud-based software companies providing subscription services to enterprise clients.",
+    "domain": null
+  },
+  "high-asset-low-obsolescence-halo-businesses": {
+    "description": "Investment thesis grouping businesses with durable, high-value assets and low technological obsolescence risk.",
+    "domain": null
+  },
+  "bitcoin-crypto": {
+    "description": "Digital asset class encompassing Bitcoin and broader decentralized cryptocurrency markets and protocols.",
+    "domain": null
+  },
+  "tao-bittensor": {
+    "description": "Bittensor is a decentralized blockchain network designed to facilitate open, incentivized machine learning development.",
+    "domain": "bittensor.com"
+  },
+  "saas-sector-software-enterprise-applications": {
+    "description": "Sector grouping of cloud-delivered software companies serving enterprise application needs on subscription models.",
+    "domain": null
+  },
+  "spacex-xai-combined-entity": {
+    "description": "Conceptual grouping of SpaceX, a private space launch company, and xAI, Elon Musk's AI research firm.",
+    "domain": null
+  },
+  "utilities-us-electric-grid": {
+    "description": "Sector of regulated US electric utility companies operating and maintaining the national power grid.",
+    "domain": null
+  },
+  "california-municipal-bonds": {
+    "description": "Debt securities issued by California state and local governments to fund public infrastructure and services.",
+    "domain": null
+  },
+  "botz": {
+    "description": "Global X Robotics & Artificial Intelligence ETF tracking companies in robotics, AI, and automation infrastructure.",
+    "domain": "globalxetfs.com"
+  },
+  "private-equity-broad-sector": {
+    "description": "Asset class comprising firms that acquire, restructure, and manage private companies for long-term returns.",
+    "domain": null
+  },
+  "ai-vertical-slm-applications-basket": {
+    "description": "Basket of companies building vertical AI applications and small language models for specific industry use cases.",
+    "domain": null
+  },
+  "xai-apple-partnership": {
+    "description": "Conceptual entity representing the commercial partnership between xAI and Apple to integrate AI into Apple devices.",
+    "domain": null
+  },
+  "us-treasuries-bond-market": {
+    "description": "Market for US government-issued debt securities spanning short-term bills to long-term bonds.",
+    "domain": null
+  },
+  "pharmacy-benefit-managers-pbm-sector": {
+    "description": "Sector of intermediaries managing prescription drug benefits, formularies, and reimbursements for health insurers.",
+    "domain": null
+  },
+  "large-us-pharma-biotech-sector": {
+    "description": "Sector grouping of large-cap US pharmaceutical and biotechnology companies engaged in drug development and commercialization.",
+    "domain": null
+  },
+  "new-mag-7-next-generation-tech-leaders-basket": {
+    "description": "Basket of next-generation technology companies proposed as successors to the original Magnificent Seven.",
+    "domain": null
+  },
+  "chamath-s-new-mag-7-basket-public-private": {
+    "description": "Chamath Palihapitiya's curated basket of seven high-conviction public and private technology company bets.",
+    "domain": null
+  },
+  "venture-capital-asset-class": {
+    "description": "Asset class comprising early-stage equity investments in private startups seeking high-growth returns.",
+    "domain": null
+  },
+  "s-p-500": {
+    "description": "Market-cap-weighted index tracking 500 of the largest publicly listed US companies across major sectors.",
+    "domain": null
+  },
+  "credit-default-swaps-cds": {
+    "description": "Financial derivatives used to hedge or speculate on the credit risk of corporate or sovereign debt issuers.",
+    "domain": null
+  },
+  "magnificent-seven-mag-7": {
+    "description": "Basket of seven dominant US mega-cap technology companies: Apple, Microsoft, Nvidia, Alphabet, Amazon, Meta, Tesla.",
+    "domain": null
+  },
+  "cognition-devin": {
+    "description": "Cognition AI develops Devin, an autonomous AI software engineer capable of completing end-to-end coding tasks.",
+    "domain": "cognition.ai"
+  },
+  "s-p-500-index": {
+    "description": "Benchmark index tracking 500 large-cap US equities, widely used as a proxy for overall US market performance.",
+    "domain": null
+  },
+  "application-layer-ai-software": {
+    "description": "Sector of software companies building end-user AI-powered applications on top of foundational model infrastructure.",
+    "domain": null
+  },
+  "stablecoins-us-crypto-infrastructure": {
+    "description": "Digital assets pegged to fiat currencies and the US regulatory and technical infrastructure supporting them.",
+    "domain": null
+  },
+  "crypto-fintech-sector-deregulation-beneficiaries": {
+    "description": "Crypto and fintech companies positioned to benefit from anticipated US regulatory easing and deregulation.",
+    "domain": null
+  },
+  "crypto-sector-fit21-regulatory-clarity": {
+    "description": "Cryptocurrency sector companies expected to benefit from regulatory clarity provided by the FIT21 legislation.",
+    "domain": null
+  },
+  "commodities-basket": {
+    "description": "Diversified basket of raw material commodity assets including energy, metals, and agricultural products.",
+    "domain": null
+  },
+  "florida-coastal-real-estate": {
+    "description": "Residential and commercial real estate assets located along Florida's coastline and waterfront markets.",
+    "domain": null
+  },
+  "miami-real-estate-sacks-exit": {
+    "description": "Miami residential real estate market, referenced in context of David Sacks reducing property exposure.",
+    "domain": null
+  },
+  "ai-customer-support-call-center-disruption": {
+    "description": "Companies developing AI solutions that automate or replace traditional customer support and call center operations.",
+    "domain": null
+  },
+  "venture-capital-industry": {
+    "description": "Industry comprising firms and funds that provide equity financing to early- and growth-stage private companies.",
+    "domain": null
+  },
+  "ai-capex-hyperscalers-basket": {
+    "description": "Basket of large cloud providers investing heavily in AI-related capital expenditure and data center infrastructure.",
+    "domain": null
+  },
+  "ai-infrastructure-hyperscalers-basket": {
+    "description": "Basket of hyperscale cloud companies building and operating AI compute and infrastructure at massive scale.",
+    "domain": null
+  },
+  "argentina-adr-basket": {
+    "description": "Basket of American Depositary Receipts representing publicly listed Argentine companies traded on US exchanges.",
+    "domain": null
+  },
+  "ai-content-rights-marketplace-unnamed": {
+    "description": "Unnamed proposed marketplace for licensing and trading AI training data and digital content rights.",
+    "domain": null
   }
 }
