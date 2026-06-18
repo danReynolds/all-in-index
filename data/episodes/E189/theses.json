@@ -1,30 +1,6 @@
 [
   {
-    "id": "E189-wiz-Chamath-0",
-    "episodeId": "E189",
-    "episodeNumber": 189,
-    "episodeDate": "2024-07-26T22:55:00.000Z",
-    "company": "Wiz",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Chamath argues Wiz rejected Google's $23B offer because its ARR growth momentum and the tailwinds from the CrowdStrike outage make a standalone path more valuable, reflecting how badly cloud security is needed.",
-    "quote": "I think if you're a hyperscaler... your business is pretty fragile and brittle if the services... are not reliable. I've never heard of a business that has generated so much ARR so quickly. I think it just goes to show you how bad security",
-    "quoteStartMs": 317000,
-    "topics": [
-      "cloud security",
-      "ARR growth",
-      "M&A"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E189-wiz-Sacks-1",
+    "id": "E189-wiz-Sacks-0",
     "episodeId": "E189",
     "episodeNumber": 189,
     "episodeDate": "2024-07-26T22:55:00.000Z",
@@ -37,18 +13,19 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues Google's $23B offer for Wiz may be reasonable given Wiz's ~100% growth rate projecting to $1B ARR, and that the founders rationally want to build a large standalone company.",
-    "quote": "If Wiz is growing at 100%... they're projecting a billion in ARR next year up from roughly 500. Like that offer may not be that crazy... I can see why these guys would just want to go for it if they think they're building a big standalone",
-    "quoteStartMs": 543000,
+    "sectorProxy": null,
+    "summary": "Sacks argues that Wiz's ~100% growth rate and path to $1B ARR next year makes Google's $23B offer potentially reasonable, and that the founders were right to pursue standalone growth as a high-growth company that could justify a premium multiple.",
+    "quote": "if Wiz is growing at 100%...they're projecting a billion in ARR next year up from, what is it, roughly 500. Like that offer may not be that crazy...I can see why these guys would just want to go for it if they think they're building a big",
+    "quoteStartMs": 542000,
     "topics": [
-      "cloud security",
       "valuation",
-      "ARR growth"
+      "cloud security",
+      "growth trajectory"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E189-wiz-Friedberg-2",
+    "id": "E189-wiz-Friedberg-1",
     "episodeId": "E189",
     "episodeNumber": 189,
     "episodeDate": "2024-07-26T22:55:00.000Z",
@@ -61,18 +38,69 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Friedberg argues that if Wiz continues its growth trajectory it could reach Palo Alto Networks-level $100B market cap, making the standalone path a reasonable risk over accepting Google's $23B offer.",
-    "quote": "If Wizz continues to grow at this rate, it's conceivable they could be in the range of a Palo Alto Networks $100 billion market cap in a couple of years, given this momentum... So if I was them, I would ask that question. Could we reach",
+    "sectorProxy": null,
+    "summary": "Friedberg argues that Wiz's growth momentum makes it conceivable they could reach a $100B market cap, making the decision to reject Google's $23B offer and pursue an IPO a reasonable risk with limited downside.",
+    "quote": "if Wizz continues to grow at this rate, it's conceivable they could be in the range of a Palo Alto Networks $100 billion market cap in a couple of years...if I was them, I would ask that question. Could we reach $100 billion if we feel",
     "quoteStartMs": 713991,
     "topics": [
-      "cloud security",
       "valuation",
+      "IPO",
+      "cloud security",
       "growth trajectory"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E189-googl-Friedberg-3",
+    "id": "E189-crwd-Sacks-2",
+    "episodeId": "E189",
+    "episodeNumber": 189,
+    "episodeDate": "2024-07-26T22:55:00.000Z",
+    "company": "CrowdStrike",
+    "ticker": "CRWD",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Not scored: Sacks's stated reason for avoiding CrowdStrike is distrust of alleged 'deep state' connections and conduct/integrity concerns — not an explicit economic claim about CrowdStrike's revenue, margins, share, or valuation deteriorating. Removing it from servers is a personal operational decision rooted in political/conduct distrust, not a bear investment thesis. The callType must be 'view' since a neutralized stance cannot be a scoreable short.",
+    "sectorProxy": null,
+    "summary": "Sacks says he does not trust CrowdStrike due to its alleged deep-state connections and had his IT department verify they were not running its products, implying he would avoid the stock.",
+    "quote": "I can say this, that in the wake of this, Elon announced that he was removing CrowdStrike from any of his company's servers. Similarly, I had my IT department check and make sure that we didn't have it running anywhere. We don't. I'm just",
+    "quoteStartMs": 969487,
+    "topics": [
+      "trust/credibility",
+      "cybersecurity",
+      "risk management"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E189-pltr-Sacks-3",
+    "episodeId": "E189",
+    "episodeNumber": 189,
+    "episodeDate": "2024-07-26T22:55:00.000Z",
+    "company": "Palantir",
+    "ticker": "PLTR",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "medium",
+    "callType": "explicit_long",
+    "excludeReason": null,
+    "scoreNote": "Speaker directly discloses share ownership and investment view.",
+    "sectorProxy": null,
+    "summary": "Sacks discloses he holds shares in Palantir and considers it a good investment.",
+    "quote": "I have shares in the company. I think it's a good investment.",
+    "quoteStartMs": 1031000,
+    "topics": [
+      "ownership",
+      "defense tech"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E189-googl-Friedberg-4",
     "episodeId": "E189",
     "episodeNumber": 189,
     "episodeDate": "2024-07-26T22:55:00.000Z",
@@ -85,66 +113,20 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Friedberg highlights Google Cloud's rapid revenue and profit growth—$10.3B in the quarter at $1.2B operating profit—and argues cloud and AI tools are the key accelerators for Alphabet's future, with the company likely to pursue more M&A to grow GCP.",
-    "quote": "GCP in the last quarter did $10.3 billion in revenue... they're running at a $1.2 billion operating profit out of GCP. If you kind of think about what cloud margin should be over time... this cloud business could be generating $20 to $30",
-    "quoteStartMs": 599000,
+    "sectorProxy": null,
+    "summary": "Friedberg highlights Google Cloud's accelerating profitability—$1.2B operating profit on $10.3B revenue—and argues it could generate $20–30B in annual free cash flow at scale, positioning it as a key strategic growth driver for Alphabet alongside AI.",
+    "quote": "they're running at a $1.2 billion operating profit out of GCP. So, you know, if you kind of think about what cloud margin should be over time and kind of call it 20 to 30% margin, this cloud business could be generating $20 to $30 billion",
+    "quoteStartMs": 610347,
     "topics": [
-      "cloud",
-      "revenue growth",
-      "M&A",
-      "AI"
+      "cloud growth",
+      "profitability",
+      "AI",
+      "valuation"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E189-crwd-Sacks-4",
-    "episodeId": "E189",
-    "episodeNumber": 189,
-    "episodeDate": "2024-07-26T22:55:00.000Z",
-    "company": "CrowdStrike",
-    "ticker": "CRWD",
-    "isPublic": true,
-    "host": "Sacks",
-    "stance": "neutral",
-    "conviction": "high",
-    "callType": "explicit_exit",
-    "excludeReason": null,
-    "scoreNote": "Speaker confirmed not running the product and states distrust; framed as avoid/exit, not a short.",
-    "summary": "Sacks expresses distrust of CrowdStrike due to alleged ties to government actors and the catastrophic update outage, and had his IT department verify and confirm they are not running it anywhere.",
-    "quote": "I don't trust this company... I had my IT department check and make sure that we didn't have it running anywhere. We don't. I'm just gonna be frank, I don't trust this company.",
-    "quoteStartMs": 953000,
-    "topics": [
-      "cybersecurity",
-      "trust/integrity",
-      "outage"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E189-pltr-Sacks-5",
-    "episodeId": "E189",
-    "episodeNumber": 189,
-    "episodeDate": "2024-07-26T22:55:00.000Z",
-    "company": "Palantir",
-    "ticker": "PLTR",
-    "isPublic": true,
-    "host": "Sacks",
-    "stance": "bull",
-    "conviction": "medium",
-    "callType": "explicit_long",
-    "excludeReason": null,
-    "scoreNote": "Direct ownership disclosure with explicit affirmation of investment merit.",
-    "summary": "Sacks discloses he holds shares in Palantir and views it as a good investment.",
-    "quote": "I have shares in the company. I think it's a good investment.",
-    "quoteStartMs": 1031000,
-    "topics": [
-      "government tech",
-      "investment thesis"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E189-foxa-Sacks-6",
+    "id": "E189-foxa-Sacks-5",
     "episodeId": "E189",
     "episodeNumber": 189,
     "episodeDate": "2024-07-26T22:55:00.000Z",
@@ -157,12 +139,14 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues Fox News already has a market position problem—misaligned with its more populist audience due to Rupert Murdoch's neocon leanings—and warns that a liberal shift under James Murdoch would destroy revenue and profit.",
+    "sectorProxy": null,
+    "summary": "Sacks argues Fox already has a market position problem because it is misaligned with its audience under Rupert's neoconservative direction, which is bad for business, and the risk of the more liberal siblings taking over would be even worse for revenue and profit.",
     "quote": "Fox already has a problem where they are becoming misaligned with their audience. And regardless of what you think of the politics, this is bad for business.",
     "quoteStartMs": 2736589,
     "topics": [
       "media",
       "audience alignment",
+      "management succession",
       "revenue risk"
     ],
     "attributionConfidence": "high"

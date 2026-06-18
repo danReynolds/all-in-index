@@ -4,7 +4,7 @@
     "episodeId": "E186",
     "episodeNumber": 186,
     "episodeDate": "2024-07-04T17:31:00.000Z",
-    "company": "Rick's Cabaret (RCI Hospitality Holdings)",
+    "company": "RCI Hospitality Holdings (Rick's Cabaret)",
     "ticker": "RICK",
     "isPublic": true,
     "host": "Chamath",
@@ -13,13 +13,14 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath highlights that Rick's Cabaret stock has dropped ~25-30% recently, reviving the 'strip club recession index' as a potential leading indicator of an upcoming recession.",
-    "quote": "The Rick's Cabaret recession index is back on. Did you guys see this?... the stock just you know, puked up like 25 or 30% in the last week.",
-    "quoteStartMs": 3710156,
+    "sectorProxy": null,
+    "summary": "Chamath notes Rick's Cabaret stock has dropped ~25-30% recently and historically has presaged recessions, suggesting the move signals an upcoming economic downturn.",
+    "quote": "Rick's Cabaret is a collection of public strip clubs...what's interesting about the Rick's Cabaret stock price is that it has presaged the last two recessions...the stock just puked up like 25 or 30% in the last week.",
+    "quoteStartMs": 3717152,
     "topics": [
       "recession indicator",
       "consumer spending",
-      "stock decline"
+      "valuation"
     ],
     "attributionConfidence": "high"
   },
@@ -28,22 +29,23 @@
     "episodeId": "E186",
     "episodeNumber": 186,
     "episodeDate": "2024-07-04T17:31:00.000Z",
-    "company": "RCI Hospitality Holdings",
+    "company": "RCI Hospitality Holdings (Rick's Cabaret)",
     "ticker": "RICK",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "low",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Friedberg argues the Rick's Cabaret stock decline is structural rather than cyclical, driven by OnlyFans pulling talent from the strip club industry, reducing product quality and thus revenue.",
-    "quote": "OnlyFans took all the entertainers out of the strip club industry because they make more money online... the quality of the product at the cabaret business has declined, and as a result, revenue has declined.",
-    "quoteStartMs": 3827000,
+    "sectorProxy": null,
+    "summary": "Friedberg argues Rick's Cabaret revenue decline is structural, driven by OnlyFans pulling top talent out of physical venues, reducing product quality and foot traffic — not merely a recession signal.",
+    "quote": "the strip club industry has been decimated by OnlyFans...Rick's Cabaret is more likely down because of OnlyFans and the lack of employee base available to work in these establishments because they make more money working online at OnlyFans",
+    "quoteStartMs": 3780907,
     "topics": [
       "competitive disruption",
       "OnlyFans",
-      "revenue decline"
+      "entertainment industry"
     ],
     "attributionConfidence": "high"
   }

@@ -13,7 +13,8 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath thinks the DOJ antitrust investigation into Nvidia is premature given the nascent state of the AI market, but separately supports SEC scrutiny of whether AI-related revenue is real, given massive spend generating minimal revenue.",
+    "sectorProxy": null,
+    "summary": "Chamath thinks the DOJ antitrust investigation into Nvidia is premature given the AI market's immaturity, but sees some merit in scrutinizing complex financing arrangements; the investigation itself is not a forward investment claim.",
     "quote": "I don't see what they're exactly investigating in an extremely immature market where we haven't yet seen one cycle of boom and bust so that we know what we're actually dealing with. So it's way too premature.",
     "quoteStartMs": 1222656,
     "topics": [
@@ -37,7 +38,8 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks believes it is too early to investigate Nvidia for antitrust violations, as the AI market is only 18 months to 2 years old and competition is still ongoing.",
+    "sectorProxy": null,
+    "summary": "Sacks believes Nvidia has a market lead but the AI market is too young to label it a monopolist, and the antitrust investigation is too early.",
     "quote": "It's true that OpenAI and NVIDIA have leads in their respective markets, but that's all it is at this point. It's way too early in the development of these markets to say that these are clearly monopolists.",
     "quoteStartMs": 1470909,
     "topics": [
@@ -61,18 +63,19 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Friedberg argues GameStop is wildly overvalued at 192x EBITDA with 12% declining revenue, making any investment decision entirely disconnected from business fundamentals.",
-    "quote": "This stock is currently trading at about 192 times EBITDA. A business that is profitable...will typically trade for 7 to 12 times EBITDA. And this stock is trading at 192 times EBITDA and the revenue is declining 12% a year.",
+    "sectorProxy": null,
+    "summary": "Friedberg lays out a detailed bear case: GameStop trades at ~192x EBITDA with revenue declining 12% YoY, making it fundamentally uninvestable at current prices — it's purely a speculative/meme trade.",
+    "quote": "This stock is currently trading at about 192 times EBITDA. A business that is profitable... will typically trade for 7 to 12 times EBITDA. And this stock is trading at 192 times EBITDA and the revenue is declining 12% a year.",
     "quoteStartMs": 2411160,
     "topics": [
       "valuation",
-      "meme stocks",
+      "meme stock",
       "fundamentals"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E182-aapl-Chamath-4",
+    "id": "E182-aapl-Chamath-3",
     "episodeId": "E182",
     "episodeNumber": 182,
     "episodeDate": "2024-06-07T19:02:00.000Z",
@@ -85,18 +88,20 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath is skeptical that the Apple-OpenAI iPhone deal will reinvigorate the iPhone upgrade cycle, arguing that the killer AI form factor hasn't been figured out yet, and that a $1,500 iPhone is not the right vehicle for consumer AI.",
+    "sectorProxy": null,
+    "summary": "Chamath is skeptical that the Apple-OpenAI iPhone integration will reinvigorate the iPhone upgrade cycle, arguing the right AI form factor hasn't been discovered yet and expensive iPhones aren't the answer.",
     "quote": "The idea that Apple with this $1,000 device is all of a sudden going to figure out that this is why you're gonna upgrade, I think is pretty speculative. And I think they're going to be disappointed.",
     "quoteStartMs": 4023052,
     "topics": [
       "AI integration",
-      "iPhone upgrade cycle",
-      "product strategy"
+      "iPhone",
+      "product strategy",
+      "upgrade cycle"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E182-aapl-Sacks-5",
+    "id": "E182-aapl-Sacks-4",
     "episodeId": "E182",
     "episodeNumber": 182,
     "episodeDate": "2024-06-07T19:02:00.000Z",
@@ -109,13 +114,39 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks sees the Apple-OpenAI partnership as potentially transformative for Siri, arguing that combining OpenAI's conversational AI with native iPhone speed and app API access could make Siri a genuinely powerful agent.",
-    "quote": "If you give it the power of the best OpenAI model and then the speed of running it natively on the iPhone...And then you give it access to the internal APIs you're using to control apps. That could be really powerful because now Siri could",
+    "sectorProxy": null,
+    "summary": "Sacks is positive on the Apple-OpenAI Siri integration, arguing that combining ChatGPT-4o's language capabilities with iPhone's native speed and app API access could make Siri genuinely useful as an agent for the first time.",
+    "quote": "If you give it the power of the best OpenAI model and then the speed of running it natively on the iPhone... and then you give it access to the internal APIs you're using to control apps. That could be really powerful because now Siri",
     "quoteStartMs": 3867000,
     "topics": [
       "AI integration",
       "Siri",
       "product strategy"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E182-texas-stock-exchange-txse-Chamath-5",
+    "episodeId": "E182",
+    "episodeNumber": 182,
+    "episodeDate": "2024-06-07T19:02:00.000Z",
+    "company": "Texas Stock Exchange (TXSE)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Chamath strongly supports the Texas Stock Exchange as a competitive alternative to the NYSE/NASDAQ duopoly, arguing it could drive more rational listing requirements and better capital allocation.",
+    "quote": "I think that the duopoly hasn't created enough competition... they've probably been a little regressive in terms of filing requirements, listing requirements... if you have a third player, there's a chance that more competition will create",
+    "quoteStartMs": 3610896,
+    "topics": [
+      "stock exchange competition",
+      "regulation",
+      "capital markets"
     ],
     "attributionConfidence": "high"
   }

@@ -8,18 +8,18 @@
     "ticker": "USO",
     "isPublic": true,
     "host": "Guest",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Trump argues that if Democrats win, oil production would be shut down and prices would spike dramatically. He also claims Biden's energy policies caused inflation by restricting oil, and notes oil prices are currently going up. He frames domestic oil production as key to economic growth and deficit reduction.",
-    "quote": "If this election were won by them, I can tell you right now, you would be— we would see oil go through the roof because they would really close it up... Oil prices all over the country are going up, as you probably have noticed.",
+    "summary": "Trump argues that restricting U.S. oil production under a Democratic administration would cause oil prices to spike dramatically, and that Biden's energy policies (high oil prices) directly fueled inflation and funded Russia's war in Ukraine. He frames domestic oil production as key to economic growth and deficit reduction.",
+    "quote": "If this election were won by them, I can tell you right now, you would be— we would see oil go through the roof because they would really close it up.",
     "quoteStartMs": 787480,
     "topics": [
       "energy policy",
       "inflation",
-      "domestic production",
-      "Ukraine war funding",
-      "strategic reserves"
+      "deficit",
+      "Ukraine war",
+      "domestic production"
     ],
     "attributionConfidence": "high",
     "guestName": "Donald Trump"

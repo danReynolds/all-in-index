@@ -4,7 +4,7 @@
     "episodeId": "E180",
     "episodeNumber": 180,
     "episodeDate": "2024-05-24T20:15:00.000Z",
-    "company": "NVIDIA",
+    "company": "Nvidia",
     "ticker": "NVDA",
     "isPublic": true,
     "host": "Chamath",
@@ -13,14 +13,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues NVIDIA's explosive growth is real but historically precedented by Intel's eventual stagnation, predicting value will migrate up the stack to hyperscalers and that competitors will be incentivized to chip away at NVIDIA's margins, while also predicting NVIDIA will be forced to compete directly with hyperscalers to defend its market cap.",
+    "sectorProxy": null,
+    "summary": "Chamath sees Nvidia's extraordinary growth as real but argues that the laws of capitalism will eventually attract competitors to attack its margins, and that Nvidia will be forced to compete directly with hyperscalers to defend its market cap — a dynamic that could eventually redirect value up the stack just as happened with Intel after the PC boom.",
     "quote": "At some point, the spread trade will be that NVIDIA loses share even though revenues keep compounding to these upstarts.",
-    "quoteStartMs": 1878000,
+    "quoteStartMs": 1878055,
     "topics": [
       "AI capex",
-      "competition",
+      "competitive moat",
       "valuation",
-      "semiconductors"
+      "chips"
     ],
     "attributionConfidence": "high"
   },
@@ -29,7 +30,7 @@
     "episodeId": "E180",
     "episodeNumber": 180,
     "episodeDate": "2024-05-24T20:15:00.000Z",
-    "company": "NVIDIA",
+    "company": "Nvidia",
     "ticker": "NVDA",
     "isPublic": true,
     "host": "Sacks",
@@ -38,12 +39,13 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues NVIDIA has a stronger moat than Cisco due to its product complexity and continuous R&D cycle, making commoditization much harder, though he acknowledges it remains an open question.",
+    "sectorProxy": null,
+    "summary": "Sacks argues Nvidia has a stronger moat than Cisco because its GPU hardware is far more complex to replicate and Nvidia stays ahead via continuous R&D cycles, though he acknowledges it remains an open question.",
     "quote": "I think you can make the case that NVIDIA has a much better moat than Cisco. And just by the way, on this Cisco comparison... NVIDIA's had 2 blowout quarters and the competitors don't seem to be that much closer.",
     "quoteStartMs": 2022770,
     "topics": [
       "competitive moat",
-      "semiconductors",
+      "chips",
       "AI capex"
     ],
     "attributionConfidence": "high"
@@ -53,7 +55,7 @@
     "episodeId": "E180",
     "episodeNumber": 180,
     "episodeDate": "2024-05-24T20:15:00.000Z",
-    "company": "NVIDIA",
+    "company": "Nvidia",
     "ticker": "NVDA",
     "isPublic": true,
     "host": "Friedberg",
@@ -62,14 +64,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Friedberg highlights NVIDIA's deep customer concentration risk — roughly one-third of revenue from the top 4 hyperscalers — and argues NVIDIA has less strategic maneuvering capability than Cisco did, making it structurally more vulnerable.",
+    "sectorProxy": null,
+    "summary": "Friedberg argues Nvidia faces deep customer concentration risk — roughly one-third of quarterly revenue from the top 4 hyperscalers — and has less business maneuvering capability than Cisco had, making it structurally more vulnerable to a demand cliff or customer defection.",
     "quote": "I think that they're going to have less maneuvering capability than Cisco had. In the future. And obviously there's this deep concentration risk, which is going to be deeply challenging.",
-    "quoteStartMs": 2182000,
+    "quoteStartMs": 2182429,
     "topics": [
       "customer concentration",
-      "competition",
-      "semiconductors",
-      "valuation"
+      "competitive moat",
+      "chips",
+      "AI capex"
     ],
     "attributionConfidence": "high"
   },
@@ -87,37 +90,14 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath views OpenAI as technically unrivaled and rationally organized around protecting its enormous value, but notes it will be remembered for unnecessary drama and for transferring massive value to employees via secondaries before building a fully functional business.",
-    "quote": "They're technically ahead of everybody else. A lot of people want to put in money at, you know, crazy prices. A bunch of that value is transferred immediately to the employees. Who circle the wagons and do what's necessary to keep the taps",
-    "quoteStartMs": 450483,
+    "sectorProxy": null,
+    "summary": "Chamath views OpenAI as technically ahead and deserving credit for creating an entire industry, but notes it will also be remembered for repeated drama and for transferring enormous value to employees through secondaries before a fully functional business exists — a rational but culturally conflicted organization.",
+    "quote": "They're technically ahead of everybody else. A lot of people want to put in money at crazy prices. A bunch of that value is transferred immediately to the employees. Who circle the wagons and do what's necessary to keep the taps flowing.",
+    "quoteStartMs": 399050,
     "topics": [
       "valuation",
       "corporate governance",
       "AI"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E180-mcd-Chamath-4",
-    "episodeId": "E180",
-    "episodeNumber": 180,
-    "episodeDate": "2024-05-24T20:15:00.000Z",
-    "company": "McDonald's",
-    "ticker": "MCD",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "bull",
-    "conviction": "low",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Chamath observes that McDonald's stock is up significantly because the company has been rewarded by shareholders for aggressively raising prices, even at the expense of customers.",
-    "quote": "If you look at what's happened to the stock, the stock is way up. They've been very motivated and rewarded as a company for just rewarding the shareholder and screwing over the customer.",
-    "quoteStartMs": 3181000,
-    "topics": [
-      "pricing power",
-      "consumer",
-      "inflation"
     ],
     "attributionConfidence": "high"
   }
