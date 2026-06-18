@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useState, type CSSProperties } from "react";
-import type { EpisodeMeta, IndexFundPoint, Thesis, TradeDirection } from "@/lib/types";
+import type { EpisodeMeta, IndexFundPoint, TradeDirection } from "@/lib/types";
+import type { TradeEventTake } from "@/lib/projections";
 import { fmtDate } from "@/lib/format";
 import { StanceBadge } from "@/app/components/badges";
 import { CompanyLogo } from "@/app/components/CompanyLogo";
@@ -19,7 +20,7 @@ export interface TradeEvent {
   kind: "in" | "out" | "reaffirm";
   direction?: TradeDirection;
   /** The position call behind this trade — shown when the marker is clicked. */
-  take?: Thesis | null;
+  take?: TradeEventTake | null;
 }
 
 interface Props {

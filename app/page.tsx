@@ -7,6 +7,7 @@ import { StanceBadge, SampleBanner } from "@/app/components/badges";
 import { IndexChart } from "@/app/components/IndexChart";
 import { Leaderboard } from "@/app/components/Leaderboard";
 import { HoldingsTable } from "@/app/components/HoldingsTable";
+import { toHoldingRow } from "@/lib/projections";
 import { HostStack } from "@/app/components/host";
 import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { Logo } from "@/app/components/Logo";
@@ -46,13 +47,13 @@ export default function Home() {
       {leaderboard.length > 0 && <Leaderboard entries={leaderboard} />}
 
       <Reveal>
-        <HoldingsTable holdings={publicHoldings} title="Public companies" />
+        <HoldingsTable holdings={publicHoldings.map(toHoldingRow)} title="Public companies" />
       </Reveal>
 
       {macroHoldings.length > 0 && (
         <Reveal>
           <HoldingsTable
-            holdings={macroHoldings}
+            holdings={macroHoldings.map(toHoldingRow)}
             title="Commodities & macro"
             subtitle="priced via ETF proxies · never part of the index or funds"
             entityLabel="Asset"
