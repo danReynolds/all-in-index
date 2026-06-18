@@ -416,7 +416,7 @@ export function PriceChart({
                     <span className="text-[9px] uppercase tracking-[0.12em] text-neutral-300">calls</span>
                     <span className="ml-0.5 flex items-center -space-x-1">
                       {g.markers.slice(0, 4).map((m) => (
-                        <span key={m.id} className={`rounded-full ring-1 ${returnRingClass(verdictRet(m.thesis.stance, m.returnSince))}`}>
+                        <span key={m.id} className={`shrink-0 rounded-full ring-1 ${returnRingClass(verdictRet(m.thesis.stance, m.returnSince))}`}>
                           <HostAvatar host={m.thesis.host} size="xs" />
                         </span>
                       ))}
