@@ -1,26 +1,55 @@
 [
   {
-    "id": "E223-tsla-Sacks-2",
+    "id": "E223-ba-Chamath-0",
     "episodeId": "E223",
     "episodeNumber": 223,
     "episodeDate": "2025-04-11T21:47:00.000Z",
-    "company": "Tesla",
-    "ticker": "TSLA",
+    "company": "Boeing",
+    "ticker": "BA",
     "isPublic": true,
-    "host": "Sacks",
+    "host": "Chamath",
     "stance": "neutral",
     "conviction": "low",
     "callType": "view",
-    "excludeReason": "not_investment_call",
-    "scoreNote": "Commentary on political harassment of Tesla; no forward-looking investment view expressed.",
-    "summary": "Sacks mentions that far-left activists are firebombing Tesla dealerships and painting swastikas on Tesla cars in reaction to Doge, framing it as politically motivated chaos rather than making any investment claim about Tesla.",
-    "quote": "You have crazy leftists firebombing Tesla dealerships, painting swastikas on Tesla cars, accosting Tesla drivers, okay, creating violence and chaos and trying to depress Tesla sales.",
-    "quoteStartMs": 6733780,
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Chamath relayed that a foreign government representative, seeking to cut a deal with the Trump administration, was advised to cancel an Airbus order and swap it for Boeing as a concession — implying Boeing would be a beneficiary of trade negotiations.",
+    "quote": "yeah, you know, we have an enormous capital purchase with Airbus. I said, cancel it, swap it to Boeing. He's like, done.",
+    "quoteStartMs": 3878634,
     "topics": [
-      "political risk",
-      "Doge"
+      "trade negotiations",
+      "aerospace",
+      "onshoring"
     ],
     "attributionConfidence": "high"
+  },
+  {
+    "id": "E223-s-p-500-Guest-1",
+    "episodeId": "E223",
+    "episodeNumber": 223,
+    "episodeDate": "2025-04-11T21:47:00.000Z",
+    "company": "S&P 500",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "neutral",
+    "conviction": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": "QQQ",
+    "summary": "Larry Summers argues that tariff policy has caused roughly $6 trillion in stock market losses, with broader economic damage in the $30 trillion range when scaled beyond corporate profits, representing a devastatingly negative market judgment on the administration's trade policies.",
+    "quote": "let's be conservative and say these policies have taken $6 trillion off the stock market... what you get is a loss in the $30 trillion range as the present value as estimated by markets of what's being done.",
+    "quoteStartMs": 382317,
+    "topics": [
+      "tariffs",
+      "market impact",
+      "economic damage",
+      "valuation"
+    ],
+    "attributionConfidence": "high",
+    "guestName": "Larry Summers"
   },
   {
     "id": "E223-ung-Guest-a0",
@@ -34,14 +63,14 @@
     "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Larry Summers (Guest) argues that restricting LNG exports and canceling the Keystone Pipeline were clear policy mistakes, implying a bullish view on natural gas as a strategic energy security resource that should be developed more freely.",
+    "summary": "Larry Summers argues that stopping liquid natural gas initiatives under Biden was a clear mistake, implying LNG/natural gas development should be supported as part of energy security.",
     "quote": "I thought the stopping a variety of things involving liquid natural gas were a clear mistake.",
     "quoteStartMs": 2505211,
     "topics": [
       "energy security",
-      "LNG",
-      "Biden policy",
-      "trade policy"
+      "LNG policy",
+      "Biden administration",
+      "industrial policy"
     ],
     "attributionConfidence": "high",
     "guestName": "Larry Summers"
