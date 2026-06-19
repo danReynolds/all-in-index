@@ -77,7 +77,7 @@ export const SECTOR_PROXIES: ProxyInfo[] = [
     ticker: "IEF",
     name: "iShares 7-10 Year Treasury Bond ETF",
     note: "10-year Treasuries ETF",
-    what: "Intermediate (7–10 year) US Treasury bonds — the proxy for a call on “owning Treasuries / the bond trade” at the belly of the curve. A bearish call (yields up, avoid bonds, bonds get debased) is a short of this; a bullish call (own duration, rates falling) is a long.",
+    what: "Intermediate (7–10 year) US Treasury bonds — ONLY for a call on Treasuries / government bonds / fixed income themselves (“avoid treasuries”, “own duration”, “zero fixed income”, “the bond trade”). A bearish call (yields up, avoid bonds, bonds debased) is a short; a bullish call (own duration, rates falling) is a long. NOT for the US dollar / FX, and not for a generic macro or rates view that isn't a position in bonds.",
   },
 ];
 

@@ -12,9 +12,9 @@
     "conviction": "medium",
     "callType": "pair_trade",
     "excludeReason": null,
-    "scoreNote": "Long Figma / Short Adobe pair trade explicitly stated.",
+    "scoreNote": "Explicit pair trade: long Figma / short Adobe. Long leg attributed here; Adobe bear leg emitted separately.",
     "sectorProxy": null,
-    "summary": "Chamath sees Figma as a strong business but prefers to hedge AI model risk by going long Figma and short Adobe, capturing the spread since Adobe would face valuation re-rating faster than Figma if AI disrupts the space.",
+    "summary": "Chamath sees Figma as a strong business but with AI uncertainty; he would go long Figma and short an equivalent amount of Adobe to capture the spread, as Adobe would re-rate faster than Figma in any AI-driven valuation compression.",
     "quote": "if I could get like $50 or $100 million of Figma, I would probably be long it and I would short an equivalent Quantum of Adobe, and I would just book the spread.",
     "quoteStartMs": 4594446,
     "topics": [
@@ -38,15 +38,16 @@
     "conviction": "medium",
     "callType": "pair_trade",
     "excludeReason": null,
-    "scoreNote": "Short leg of explicit Figma long / Adobe short pair trade.",
+    "scoreNote": "Short leg of Figma/Adobe pair trade explicitly named by Chamath.",
     "sectorProxy": null,
-    "summary": "Chamath argues Adobe will face a faster valuation re-rating than Figma in an AI disruption scenario, making it the short leg of a Figma/Adobe pair trade.",
+    "summary": "Chamath argues Adobe will face faster valuation compression than Figma in an AI-disruption scenario, making it the short leg of a Figma/Adobe pair trade.",
     "quote": "The person who's going to take a retrade on valuation faster than Figma will be Adobe. And so you'll be hedged and you'll probably make money that way.",
     "quoteStartMs": 4611438,
     "topics": [
       "AI disruption",
       "valuation",
-      "pair trade"
+      "pair trade",
+      "software"
     ],
     "attributionConfidence": "high"
   },
@@ -65,14 +66,14 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Friedberg highlights Figma's strong fundamentals — 40%+ revenue growth, 43% operating cash flow margin, 130% net revenue retention — as evidence of a durable land-and-expand business, while acknowledging the open question of whether AI absorbs the category in 3-4 years.",
+    "summary": "Friedberg highlights Figma's strong financials — 40%+ revenue growth, 43% operating cash flow margin, 130% net revenue retention — as evidence of durable land-and-expand dynamics, though he acknowledges AI could overnight obsolete any software.",
     "quote": "They ran a 43% operating cash flow margin in Q1. So in Q1 of this year, Figma generated $95 million of free cash flow. They've got net revenue retention of like 130%. So this land and expand is proven out and there's real durability.",
     "quoteStartMs": 4548796,
     "topics": [
       "IPO",
       "revenue quality",
       "AI disruption",
-      "SaaS"
+      "SaaS metrics"
     ],
     "attributionConfidence": "high"
   }

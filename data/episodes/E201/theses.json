@@ -1,57 +1,84 @@
 [
   {
-    "id": "E201-btc-usd-Chamath-0",
-    "episodeId": "E201",
-    "episodeNumber": 201,
-    "episodeDate": "2024-10-25T22:51:00.000Z",
-    "company": "Bitcoin",
-    "ticker": "BTC-USD",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "bull",
-    "conviction": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": "Not scored: The current quote expresses a long-term view but does not contain explicit_long transaction language. However, at [842s Jason] Chamath is asked 'are you off buying gold and Bitcoin?' and at [856s Friedberg] Paul Tudor Jones says 'I'm long gold. I'm long Bitcoin.' — but Chamath himself never says 'I'm long Bitcoin' or 'I'd be long Bitcoin' in his own words. His strongest statement is the die-has-been-cast quote, which is a view not a position. There is no explicit_long language from Chamath himself about Bitcoin in the transcript. Downgrade callType to view.",
-    "sectorProxy": null,
-    "summary": "Chamath argues Bitcoin is the resounding inflation hedge asset for the next 50-100 years, displacing gold, and called it as the breakout asset at the start of the year.",
-    "quote": "at the beginning of the year, I said the breakout asset was going to be Bitcoin. I think it looks like it's going to be the resounding inflation hedge asset for the next 50 or 100 years. So that die has been cast.",
-    "quoteStartMs": 1565271,
-    "topics": [
-      "inflation hedge",
-      "macro",
-      "crypto"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E201-us-treasuries-Sacks-2",
+    "id": "E201-us-treasuries-Sacks-0",
     "episodeId": "E201",
     "episodeNumber": 201,
     "episodeDate": "2024-10-25T22:51:00.000Z",
     "company": "US Treasuries",
     "ticker": null,
-    "isPublic": true,
+    "isPublic": false,
     "host": "Sacks",
     "stance": "bear",
     "conviction": "high",
-    "callType": "view",
+    "callType": "selection",
     "excludeReason": null,
-    "scoreNote": "Not scored: The current quote is rhetorical/question-form and does not contain Sacks's own explicit short/avoid transaction language. His clearest directional statement is at [2387s Sacks]: 'the easy one to avoid is treasuries' — but that is also not explicit_short. He never says 'I'm short treasuries' or 'I'd be short.' He references Druckenmiller's short but that is not his own position. Downgrade to view.",
-    "sectorProxy": null,
-    "summary": "Sacks argues US Treasuries are a bad investment given looming inflation, rising debt service costs, and the Fed's potentially premature rate cuts, citing Druckenmiller's 20% short as confirmation.",
+    "scoreNote": "Named as the explicit 'easy one to avoid' in direct answer to a repositioning/allocation prompt.",
+    "sectorProxy": "IEF",
+    "summary": "Sacks says Treasuries are the easy asset to avoid given looming inflation risks and the deteriorating US fiscal picture, with rates likely to stay higher for longer.",
     "quote": "the easy one to avoid is treasuries, right? I mean, do you really want to accept a 4.2% yield for 10 years to own a US bond? And with the looming inflation that is still out there, or the looming debt crisis that might be out there.",
     "quoteStartMs": 2390709,
     "topics": [
-      "fixed income",
       "inflation",
-      "macro",
-      "fiscal deficit"
+      "fiscal deficit",
+      "interest rates",
+      "macro"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E201-commodities-basket-Friedberg-3",
+    "id": "E201-us-equities-Sacks-1",
+    "episodeId": "E201",
+    "episodeNumber": 201,
+    "episodeDate": "2024-10-25T22:51:00.000Z",
+    "company": "US Equities",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bear",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": "QQQ",
+    "summary": "Sacks is cautious on equities at all-time highs, arguing that a sustained period of higher interest rates would hurt valuations even though equities are normally an inflation hedge.",
+    "quote": "if we do head into a new regime of higher rates longer, does that hurt equities even though equities normally are a pretty good inflation hedge? So I just don't know the answer to that.",
+    "quoteStartMs": 2760066,
+    "topics": [
+      "equities",
+      "interest rates",
+      "valuation",
+      "inflation"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E201-bitcoin-Chamath-2",
+    "episodeId": "E201",
+    "episodeNumber": 201,
+    "episodeDate": "2024-10-25T22:51:00.000Z",
+    "company": "Bitcoin",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "high",
+    "callType": "selection",
+    "excludeReason": null,
+    "scoreNote": "Chamath stated he made the call at the start of the year and reaffirms conviction; framed as a held position.",
+    "sectorProxy": null,
+    "summary": "Chamath argues Bitcoin is the breakout asset of the year and will be the definitive inflation hedge for the next 50–100 years, displacing gold.",
+    "quote": "at the beginning of the year, I said the breakout asset was going to be Bitcoin. I think it looks like it's going to be the resounding inflation hedge asset for the next 50 or 100 years. So that die has been cast.",
+    "quoteStartMs": 1565271,
+    "topics": [
+      "Bitcoin",
+      "inflation hedge",
+      "macro",
+      "gold"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E201-commodities-basket-Friedberg-4",
     "episodeId": "E201",
     "episodeNumber": 201,
     "episodeDate": "2024-10-25T22:51:00.000Z",
@@ -63,20 +90,47 @@
     "conviction": "high",
     "callType": "explicit_long",
     "excludeReason": null,
-    "scoreNote": "Explicit long declaration across gold, Bitcoin, and commodities as a basket.",
+    "scoreNote": "Friedberg states explicit long positions in gold, Bitcoin, and commodities in direct answer to a portfolio-positioning prompt.",
     "sectorProxy": null,
-    "summary": "Friedberg argues commodity-linked businesses will outperform in an inflationary environment because their profits grow with underlying commodity prices, and states he is personally long gold, Bitcoin, and commodities.",
+    "summary": "Friedberg says he is long commodities and commodity-linked businesses (mining, agricultural trading) as inflation hedges, arguing they are ridiculously under-owned and their profits grow with underlying commodity prices.",
     "quote": "I'm long gold. I'm long Bitcoin. I think commodities are so ridiculously under-owned. So I'm long commodities.",
     "quoteStartMs": 856000,
     "topics": [
       "commodities",
       "inflation hedge",
-      "macro"
+      "macro",
+      "portfolio positioning"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E201-sbux-Chamath-4",
+    "id": "E201-us-treasuries-Friedberg-5",
+    "episodeId": "E201",
+    "episodeNumber": 201,
+    "episodeDate": "2024-10-25T22:51:00.000Z",
+    "company": "US Treasuries",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "high",
+    "callType": "explicit_exit",
+    "excludeReason": null,
+    "scoreNote": "Explicit statement of owning zero fixed income in direct answer to a portfolio positioning prompt.",
+    "sectorProxy": "IEF",
+    "summary": "Friedberg says he would own zero fixed income given persistent inflation risks and the monetization path for US debt, preferring very short-term cash instead.",
+    "quote": "I would own zero fixed income. If I had my cash, it'd be very short-term.",
+    "quoteStartMs": 875415,
+    "topics": [
+      "fixed income",
+      "inflation",
+      "macro",
+      "portfolio positioning"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E201-sbux-Chamath-6",
     "episodeId": "E201",
     "episodeNumber": 201,
     "episodeDate": "2024-10-25T22:51:00.000Z",
@@ -90,45 +144,45 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Chamath argues Starbucks faces an existential structural headwind from GLP-1 drug adoption reducing sugar consumption among its core customers, making its current product mix and valuation unsustainable; he believes it should be a ~$20B asset, implying significant multiple compression.",
-    "quote": "This business is in trouble… But the structural problem is Starbucks should be probably a $20 billion asset.",
-    "quoteStartMs": null,
+    "summary": "Chamath argues Starbucks faces an existential headwind from GLP-1 drug adoption reducing demand for its high-sugar products, and the business should be worth far less than its current market cap, with the only path forward being cost-stripping.",
+    "quote": "This business is in trouble. Nick, please show the chart. This is Eli Lilly versus Starbucks... GLP-1s versus things that cause you to need GLP-1s. GLP-1s are winning. And so I think this existential issue for Starbucks is about resetting",
+    "quoteStartMs": 5102279,
     "topics": [
       "GLP-1",
-      "consumer trends",
+      "same-store sales",
       "valuation",
-      "brand maturity"
+      "consumer trends"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E201-sbux-Friedberg-5",
+    "id": "E201-aapl-Friedberg-7",
     "episodeId": "E201",
     "episodeNumber": 201,
     "episodeDate": "2024-10-25T22:51:00.000Z",
-    "company": "Starbucks",
-    "ticker": "SBUX",
+    "company": "Apple",
+    "ticker": "AAPL",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Friedberg argues Starbucks has hit a revenue maximum by exhausting all three growth levers (brand, coverage, price), making further same-store sales growth structurally limited and the company a mature, multiple-compressing business similar to Apple.",
-    "quote": "I would argue that Starbucks is a victim of the same maximization effect, that at some point you get all the customers, you get 'em to come in and spend as— and buy as many products from you as they can, and you charge 'em the highest price",
-    "quoteStartMs": 5316665,
+    "summary": "Friedberg argues Apple has hit a revenue maximization ceiling — brand, coverage, and price are all tapped out — so future value depends on cost efficiency and buybacks, not growth, leading to multiple compression.",
+    "quote": "I think that Apple has faced a similar dilemma in the last couple of years, which is how do we get more customers? It's the most recognized brand on earth... at some point you reach a revenue maximum.",
+    "quoteStartMs": 5290460,
     "topics": [
-      "brand maturity",
       "revenue ceiling",
       "valuation",
-      "QSR"
+      "multiple compression",
+      "market maturity"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E201-aapl-Chamath-6",
+    "id": "E201-aapl-Chamath-8",
     "episodeId": "E201",
     "episodeNumber": 201,
     "episodeDate": "2024-10-25T22:51:00.000Z",
@@ -142,19 +196,19 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Chamath acknowledges Apple can continue its free-cash-flow-maximization and buyback playbook for another decade unlike Starbucks, but expresses frustration with iOS 18 quality degradation as a sign of complacency that could eventually erode customer loyalty.",
-    "quote": "Apple can still be at the point that you described earlier, which is let me just maximize free cash flow generation, which is what they do. And then let me allocate that back to shareholders via buybacks, which is also what they do. So they",
+    "summary": "Chamath says Apple, unlike Starbucks, lacks a GLP-1-style competitive threat and can continue to maximize free cash flow and return it via buybacks for another decade, though he criticizes iOS 18 quality as evidence of complacency.",
+    "quote": "Apple can still be at the point that you described earlier, which is let me just maximize free cash flow generation, which is what they do. And then let me allocate that back to shareholders via buybacks... there could be another decade or",
     "quoteStartMs": 5414319,
     "topics": [
-      "FCF",
-      "brand maturity",
-      "product quality",
-      "buybacks"
+      "free cash flow",
+      "buybacks",
+      "competitive position",
+      "product quality"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E201-lly-Chamath-7",
+    "id": "E201-lly-Chamath-9",
     "episodeId": "E201",
     "episodeNumber": 201,
     "episodeDate": "2024-10-25T22:51:00.000Z",
@@ -168,13 +222,14 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Chamath contrasts Eli Lilly's performance against Starbucks to illustrate that GLP-1/anti-sugar trends are structurally winning, implicitly endorsing Eli Lilly as a beneficiary.",
+    "summary": "Chamath implicitly endorses Eli Lilly's trajectory by contrasting its multi-year outperformance against Starbucks as evidence that GLP-1 drugs (anti-sugar) are a winning secular trend.",
     "quote": "This is Eli Lilly versus Starbucks... This shows sugar versus anti-sugar, and anti-sugar is winning. GLP-1s versus things that cause you to need GLP-1s. GLP-1s are winning.",
     "quoteStartMs": 5106134,
     "topics": [
       "GLP-1",
-      "pharma",
-      "consumer trends"
+      "consumer health",
+      "secular trend",
+      "relative performance"
     ],
     "attributionConfidence": "high"
   },
@@ -190,14 +245,14 @@
     "stance": "bull",
     "conviction": "high",
     "callType": "explicit_long",
-    "summary": "Friedberg states he is long gold as part of an inflation-hedge basket, citing commodities as ridiculously under-owned and gold as a beneficiary of global leverage/inflation dynamics.",
+    "summary": "Friedberg explicitly states he is long gold as part of an inflation-hedge basket, citing commodities as ridiculously under-owned and gold as a beneficiary of global leverage/inflation dynamics.",
     "quote": "I'm long gold. I'm long Bitcoin. I think commodities are so ridiculously under-owned. So I'm long commodities... I probably have some basket of gold, Bitcoin, commodities, and NASDAQ, something like that.",
     "quoteStartMs": 856000,
     "topics": [
       "inflation hedge",
-      "macro",
-      "global leverage",
-      "dollar debasement"
+      "global debt",
+      "commodities under-owned",
+      "macro positioning"
     ],
     "attributionConfidence": "high"
   },
@@ -213,14 +268,14 @@
     "stance": "bull",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Chamath says gold will go up more if Trump wins due to medium-term inflation hedging, but views it as the 'last vestiges' of gold as rational economic insurance, with Bitcoin being the future inflation hedge.",
-    "quote": "Gold's going to go up more, probably… in the medium term inflation goes up and so you want to hedge… I think you're seeing the last vestiges of people using gold as a rational economic insurance policy, but I think the future is specificall",
-    "quoteStartMs": null,
+    "summary": "Chamath says gold will likely go up more if Trump wins, as markets hedge medium-term inflation, but views gold as the 'last vestiges' of a rational insurance policy being supplanted by Bitcoin.",
+    "quote": "If Trump wins... Gold's going to go up more, probably... in the medium term inflation goes up and so you want to hedge... Bitcoin and gold, I think, will trade that way.",
+    "quoteStartMs": 720000,
     "topics": [
-      "inflation hedge",
       "Trump trade",
-      "macro repositioning",
-      "gold vs Bitcoin"
+      "inflation hedge",
+      "election pricing",
+      "macro repositioning"
     ],
     "attributionConfidence": "high"
   }

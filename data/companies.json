@@ -1258,5 +1258,69 @@
   "credit-default-swaps-cds-corporate-credit-protection": {
     "description": "Financial derivative contracts that transfer credit risk of corporate debt between two parties, functioning as insurance against default.",
     "domain": null
+  },
+  "enterprise-saas-sector-low-end-vertical": {
+    "description": "Sector basket of lower-end and vertical-focused enterprise software-as-a-service companies.",
+    "domain": null
+  },
+  "saas-sector-broad": {
+    "description": "Broad sector basket covering a wide range of software-as-a-service companies.",
+    "domain": null
+  },
+  "spacex-xai-merger": {
+    "description": "Speculative basket representing a potential merger between SpaceX and Elon Musk's xAI.",
+    "domain": null
+  },
+  "ief": {
+    "description": "iShares ETF tracking an index of US Treasury bonds with 7–10 year maturities.",
+    "domain": "ishares.com"
+  },
+  "gambling-prediction-market-basket": {
+    "description": "Basket of companies operating in online gambling and prediction market platforms.",
+    "domain": null
+  },
+  "stablecoins-genius-act-beneficiaries": {
+    "description": "Basket of stablecoin issuers and related firms positioned to benefit from the GENIUS Act legislation.",
+    "domain": null
+  },
+  "magnificent-seven": {
+    "description": "Basket of seven dominant US mega-cap technology companies: Apple, Microsoft, Nvidia, Alphabet, Amazon, Meta, and Tesla.",
+    "domain": null
+  },
+  "new-mag-7-basket-next-gen-top-companies": {
+    "description": "Basket of next-generation high-growth companies seen as successors to current mega-cap tech leaders.",
+    "domain": null
+  },
+  "us-equities-broad-market": {
+    "description": "Broad basket representing the overall US public equity market across sectors and market caps.",
+    "domain": null
+  },
+  "tiktok-bytedance-us-asset": {
+    "description": "TikTok's US operations, a short-form video platform owned by China-based ByteDance.",
+    "domain": "tiktok.com"
+  },
+  "stablecoins-us-dollar-backed": {
+    "description": "Sector basket of US dollar-pegged stablecoins and their issuing entities.",
+    "domain": null
+  },
+  "cds-credit-protection-macro": {
+    "description": "Macro basket of credit default swaps used to hedge or gain exposure to credit risk.",
+    "domain": null
+  },
+  "dollar-denominated-stablecoins-macro-sector": {
+    "description": "Macro-level sector view on dollar-denominated stablecoins and their broader market implications.",
+    "domain": null
+  },
+  "unitree": {
+    "description": "Chinese robotics company designing and manufacturing agile quadruped and humanoid robots.",
+    "domain": "unitree.com"
+  },
+  "us-equities": {
+    "description": "General basket representing publicly traded equities listed on US stock exchanges.",
+    "domain": null
+  },
+  "california-real-estate": {
+    "description": "California-based real estate company involved in buying, selling, or managing residential or commercial properties.",
+    "domain": null
   }
 }
