@@ -15,7 +15,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks argues Anthropic's ~10x annual revenue growth rate (vs OpenAI's 3-4x), driven by enterprise coding focus and metered token consumption, puts it on a trajectory to be the dominant frontier model if it can solve compute constraints.",
-    "quote": "The Anthropic growth rate has been around 10x a year. So they went from, let's call it, $1 to $10 billion of ARR last year, and by the end of Q1 this year, they were already at $30 billion... they're going to end this year at $80 to $100",
+    "quote": "The Anthropic growth rate has been around 10x a year. So they went from, let's call it, $1 to $10 billion of ARR last year, and by the end of Q1 this year, they were already at $30 billion. Of, again, let's call it their revenue. And they'r",
     "quoteStartMs": 1380915,
     "topics": [
       "revenue growth",
@@ -41,8 +41,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks warns Anthropic's exponential growth will hit physical limits (compute, power, data centers) and that its past support for doomer/NIMBY anti-data-center politics may now backfire as it needs to build its own infrastructure.",
-    "quote": "I do wonder if over the next year Anthropic will reconsider whether its support for all this doomer nimbyism was the right call... they might regret salting the earth for data centers all over the country. And I wonder if that'll be the",
-    "quoteStartMs": 1570000,
+    "quote": "I do wonder if over the next year Anthropic will reconsider whether its support for all this doomer nimbyism was the right call, because it kind of made sense for them from a business standpoint when their competitors were building data cen",
+    "quoteStartMs": 1567516,
     "topics": [
       "compute constraints",
       "data centers",
@@ -67,7 +67,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg argues Anthropic's release cadence and innovation pace are head and shoulders above everyone else, with his organization shifting to ~90% Anthropic usage in 6 months, indicating a powerful and accelerating flywheel.",
-    "quote": "The pace of innovation at Anthropic is, from my experience, unprecedented... we're probably 90% Anthropic in just the last 6 months at my organization. There's something very powerful about the flywheel they have going on.",
+    "quote": "the pace of innovation at Anthropic is, from my experience, unprecedented. I mean, they're release cadence is extraordinary. They've basically supplanted OpenClaw already with this release they did a few days ago, and then today the new Opu",
     "quoteStartMs": 1119265,
     "topics": [
       "product velocity",
@@ -118,7 +118,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks argues OpenAI's 3-4x annual growth rate is far inferior to Anthropic's 10x, and its prioritization of consumer over enterprise coding means it is losing the scalable revenue race and risks falling irreversibly behind within 1-2 years.",
-    "quote": "The OpenAI growth rate's been around 3 to 4x a year. The Anthropic growth rate has been around 10x a year... if it's taking Anthropic 1 year to 10x and it's taking OpenAI 2 years to achieve a 10x, then it's obvious which one's gonna win.",
+    "quote": "The OpenAI growth rate's been around 3 to 4x a year. The Anthropic growth rate has been around 10x a year. So they went from, let's call it, $1 to $10 billion of ARR last year, and by the end of Q1 this year, they were already at $30 billio",
     "quoteStartMs": 1377345,
     "topics": [
       "revenue growth",
@@ -143,8 +143,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Travis Kalanick argues that if OpenAI's growth rate is materially lower than Anthropic's, network effects from compute, tokens, and reinforcement learning will compound against it, making the gap increasingly hard to close.",
-    "quote": "If they are growing faster than OpenAI by a significant clip, the investors right now are going to play it forward... if they are half the growth rate, a third the growth rate, a fifth the growth rate, I would be— I'd be worried.",
-    "quoteStartMs": 961000,
+    "quote": "Growth is king right now in this, in this world, in this segment. Growth is the whole damn thing. And if Anthropic is growing faster than OpenAI by a significant clip, the investors right now are going to play it forward.",
+    "quoteStartMs": 961130,
     "topics": [
       "growth rate",
       "network effects",

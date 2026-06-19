@@ -15,8 +15,8 @@
     "scoreNote": "Guest confirmed: 'we do own some OpenAI' and 'I am bullish on OpenAI'",
     "sectorProxy": null,
     "summary": "Thomas LaFont is bullish on OpenAI, citing ChatGPT's dominant 80%+ market share, 300 million weekly actives, over a million enterprise users, and its fast-growing franchise as the core investment thesis, with Stargate's $500B infrastructure buildout adding scale optionality.",
-    "quote": "I am bullish on OpenAI... it is maintaining 80% plus market share... I think the ChatGPT franchise inside of OpenAI is one of the great most successful, fastest growing kind of stories.",
-    "quoteStartMs": 4420539,
+    "quote": "we do own some OpenAI. I am bullish on OpenAI… it is maintaining 80% plus market share… I do think the ChatGPT franchise inside of OpenAI is one of the great most successful, fastest growing kind of stories.",
+    "quoteStartMs": 4418853,
     "topics": [
       "AI",
       "market share",
@@ -42,8 +42,8 @@
     "scoreNote": "Guest disclosed existing investor position in ByteDance/TikTok",
     "sectorProxy": null,
     "summary": "Thomas LaFont, an existing investor in ByteDance, argues TikTok US is worth roughly $100B using a Meta-comparative DAU/time-spent framework, though the actual deal value may be heavily discounted by government leverage.",
-    "quote": "we are investors in TikTok... is $100 billion a reasonable scenario? You know, I think the math proves it. And then could it be a trillion-dollar asset the way Trump has mentioned? I mean, in a world where Facebook's $1.5 trillion... I",
-    "quoteStartMs": 2054000,
+    "quote": "we are investors in TikTok… is $100 billion a reasonable scenario? You know, I think the math proves it. And then could it be a trillion-dollar asset the way Trump has mentioned? I mean, in a world where Facebook's $1.5 trillion, right, and",
+    "quoteStartMs": null,
     "topics": [
       "TikTok",
       "valuation",

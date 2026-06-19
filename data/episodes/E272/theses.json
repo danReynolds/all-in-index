@@ -40,7 +40,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues that landing terrestrial compute capacity blunts the bear case on orbital data center delays and creates a structural core hyperscaler business that subsidizes Grok training, reinforcing SpaceX's valuation ahead of IPO.",
-    "quote": "By actually landing a bunch of terrestrial capacity, I think you start to blunt that because you can now start to say that even if the orbital data centers get delayed… he now has a structural core business that will effectively subsidize",
+    "quote": "by actually landing a bunch of terrestrial capacity, I think you start to blunt that because you can now start to say that even if the orbital data centers get delayed by a few months or a few quarters, even if the technological de-risking ",
     "quoteStartMs": 475218,
     "topics": [
       "valuation",
@@ -93,7 +93,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks argues Anthropic's 10x annual growth trajectory — tripling ARR from $10B to $30B in Q1 and accelerating to $44B in April — combined with the new compute deal makes it nearly certain to hit ~$100B ARR by year-end and potentially become the most valuable tech company in history.",
-    "quote": "They grew from roughly $10 billion of ARR to $30 billion. So it tripled. And then in April… they went from $30 to $44 billion of ARR. Nobody in Silicon Valley has ever seen anything like it… I think it's pretty much a foregone conclusion",
+    "quote": "they grew from roughly $10 billion of ARR to $30 billion. So it tripled. And then in April, if anything, the rate of increase seemed to accelerate. They went from $30 to $44 billion of ARR. Nobody in Silicon Valley has ever seen anything li",
     "quoteStartMs": 877493,
     "topics": [
       "revenue growth",
@@ -351,8 +351,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Brad Gerstner highlights Google Cloud's stunning 63% growth and notes Google at 24x GAAP earnings is not overvalued, with the hyperscaler business expanding operating margins.",
-    "quote": "Google Cloud stunning everybody with 63% growth… Google at 24 times… operating margins are all expanding. This is not the stuff that bubbles are made of.",
-    "quoteStartMs": 3748000,
+    "quote": "we just saw Azure grow 39% in the quarter. We saw Google Cloud grow 63% in the quarter. Headcount growth for those companies the last 3 years, MAG5 combined, is about 3%. So their operating margins are all expanding.",
+    "quoteStartMs": 4479954,
     "topics": [
       "cloud growth",
       "valuation",
@@ -378,7 +378,7 @@
     "sectorProxy": "QQQ",
     "summary": "Chamath says markets will keep going up for roughly 500 days driven by AI infrastructure value creation, but warns of a coming reckoning when token buyers must show measurable ROI on margins.",
     "quote": "I think the markets are going to keep going up for a while, and then at some point they're going to go down… I think we have, call it, 500 days where you just got to be net long.",
-    "quoteStartMs": 4032000,
+    "quoteStartMs": null,
     "topics": [
       "macro outlook",
       "AI ROI",

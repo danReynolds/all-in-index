@@ -196,7 +196,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg acknowledges NVIDIA's durable moat and competitive strengths but flags a low-probability, high-severity risk from China developing competitive semiconductor manufacturing, arguing Western isolation policy is inadvertently incentivizing Chinese alternatives.",
-    "quote": "I do think that there's going to be an emergent competitive threat coming out of China to NVIDIA. And just like we were knocked over by Deepseek, I think we will be knocked over by some semiconductor manufacturing processes coming out of",
+    "quote": "I do think that there's going to be an emergent competitive threat coming out of China to NVIDIA. And just like we were knocked over by Deepseek, I think we will be knocked over by some semiconductor manufacturing processes. Coming out of C",
     "quoteStartMs": 2210450,
     "topics": [
       "China competition",
@@ -248,8 +248,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg calls Tesla the best place to invest for a shot at the massive humanoid robotics industry, describing its Optimus opportunity as a low-probability, high-upside call option, though he notes valuation already prices in a premium for that optionality.",
-    "quote": "Tesla probably has the— it is the best place to invest if you want to have a shot at a massive new industry...I think this humanoid robot opportunity is absolutely mind-blowingly ginormous. And I don't think that there's a better company",
-    "quoteStartMs": 2129558,
+    "quote": "I think that Tesla probably has the— it is the best place to invest if you want to have a shot at a massive new industry. So they've got a baseline business in, in obviously the automobiles. But I think this humanoid robot opportunity is ab",
+    "quoteStartMs": 2128475,
     "topics": [
       "humanoid robotics",
       "physical AI",
@@ -274,8 +274,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Apple has transitioned into cash-cow mode, is losing the talent war for AI researchers, has no credible AI strategy, and faces inevitable creative destruction — comparing its trajectory to HP, Lotus, and Intel, with the tactic of swapping connector types and selling incremental hardware substituting for real innovation.",
-    "quote": "I don't think they have any chance of anything...A company that focuses on this kind of revenue growth is not capable of creating something that's exceptionally unexpected. That will come from a new company who has no ties to the past.",
-    "quoteStartMs": 3087000,
+    "quote": "I don't think they have any chance of anything. Okay.",
+    "quoteStartMs": 3086700,
     "topics": [
       "AI talent deficit",
       "innovation stagnation",
@@ -377,7 +377,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg argues Microsoft faces real probability of revenue decline as its enterprise software install base ages out, cloud gets competed away, and native-AI-built workflows displace legacy Microsoft customers — predicting the company will have fewer employees in 5 years.",
-    "quote": "I do think like on this, on the application software layer, they're going to have a really hard time in this new world because the old school customers that buy Microsoft are going to die...Microsoft's core business for the— is going to",
+    "quote": "I do think like on this, on the application software layer, they're going to have a really hard time in this new world because the old school customers that buy Microsoft are going to die. They're more likely to die in their marketplace com",
     "quoteStartMs": 5663932,
     "topics": [
       "enterprise software disruption",
@@ -402,7 +402,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Microsoft's employee base will grow because AI-written code quality is still too poor to drive real layoffs, Azure will grow by bundling point-feature SaaS products, and the company can attract talent to expand its business — dismissing AI productivity metrics as 'vanity' air cover for existing headcount reductions.",
-    "quote": "I suspect that Microsoft's business on the margin grows...It'll be cheaper for Microsoft to bundle together a bunch of other products that are point features today, and so they'll have more people.",
+    "quote": "I suspect that Microsoft's business on the margin grows. Back to Dave's point, some of the 493 shrink and go away. It'll be cheaper for Microsoft to bundle together a bunch of other products that are point features today, and so they'll hav",
     "quoteStartMs": 5617868,
     "topics": [
       "Azure growth",
@@ -427,7 +427,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Amazon's retail side will be a kingmaker for physical AI by generating massive demand for robots and drones, but AWS faces a bottleneck from being a generalist marketplace — and Andy Jassy will need to spend hundreds of billions to either differentiate Trainium from NVIDIA or acquire Anthropic to tightly couple next-gen code gen into AWS.",
-    "quote": "Amazon retail side is going to be a kingmaker for all of these physical AI things...The thing that they'll have to embrace is, well, do I differentiate my own hardware from NVIDIA's at some point? Do I actually make a real bet on models",
+    "quote": "The thing that they'll have to embrace is, well, do I differentiate my own hardware from NVIDIA's at some point? Do I actually make a real bet on models and try to frankly buy Anthropic, which is probably their only solution, and tightly co",
     "quoteStartMs": 5399804,
     "topics": [
       "physical AI demand",
@@ -478,14 +478,14 @@
     "scoreNote": "Not scored: Chamath makes an explicit bear claim on the SaaS sector — median growth collapsed, consumption pricing unsustainable, AI rebuilds displacing incumbents, 'the jig is totally up for software' — this is a named basket with an explicit directional bear claim; callType=basket is appropriate but the quote doesn't contain Chamath's own transaction language so should remain view.",
     "sectorProxy": "IGV",
     "summary": "Chamath argues the jig is up for enterprise SaaS — median growth has collapsed from 17% to 9%, AI-native software rebuilds are displacing incumbents, consumption-based pricing doesn't work, and the entire software cartel built on per-seat licensing will be undone.",
-    "quote": "I think the jig is totally up for software...Nobody's going to pay consumption because you're like, how do you expect me to, you know, hold and store and pay for terabytes and terabytes, potentially a day of data? It's not sustainable.",
-    "quoteStartMs": 3886000,
+    "quote": "I think that the jig is totally up for software.",
+    "quoteStartMs": 3952360,
     "topics": [
       "SaaS disruption",
       "AI-native software",
       "pricing model collapse"
     ],
-    "attributionConfidence": "low"
+    "attributionConfidence": "high"
   },
   {
     "id": "E232-s-p-493-non-mag7-s-p-500-Friedberg-21",
@@ -503,8 +503,8 @@
     "scoreNote": "Explicit short call on the broad S&P (non-Mag7); QQQ is a reasonable but imperfect proxy",
     "sectorProxy": "QQQ",
     "summary": "Friedberg says this is the first time in 20 years he would feel comfortable going short the S&P (ex-Mag7) while picking a handful of AI winners, as the AI transformation will create dramatic dispersion between companies that adopt and those that don't.",
-    "quote": "I think it's the first time you could probably argue that you could go short the S&P Yeah, and pick a couple of winners. It might be the first time that I would feel in the last 20 years— because I'm pretty negative on people being able to",
-    "quoteStartMs": 4781000,
+    "quote": "I think it's the first time you could probably argue that you could go short the S&P Yeah, and pick a couple of winners. It might be the first time that I would feel in the last 20 years— because I'm pretty negative on people being able to ",
+    "quoteStartMs": 4780990,
     "topics": [
       "AI disruption",
       "S&P dispersion",

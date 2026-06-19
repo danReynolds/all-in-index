@@ -40,8 +40,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks describes ASML's EUV monopoly as the West's single biggest advantage in the AI race but warns that China reverse-engineering it would be a meaningful blow to that competitive moat, even if the full picture from Reuters is unclear.",
-    "quote": "EUV lithography, these machines that are made by ASML, is probably our single biggest advantage in the AI race... if they figured out how to reverse EUV, that would be, I'd say, a blow because it is a real advantage for us.",
-    "quoteStartMs": 3993000,
+    "quote": "EUV lithography, these machines that are made by ASML, is probably our single biggest advantage in the AI race... if they figured out how to reverse EUV, that would be, I'd say, a blow because it is a real advantage for us. But I'm not conv",
+    "quoteStartMs": 3992670,
     "topics": [
       "semiconductor",
       "export controls",
@@ -66,7 +66,7 @@
     "scoreNote": "Ranked as explicit top pick to challenge NVIDIA; Huawei is not US-listed.",
     "sectorProxy": null,
     "summary": "Friedberg selects Huawei as his top pick to challenge NVIDIA in 2026, predicting it will deploy undisclosed lithography technology in new fabs and emerge as the leading challenger in AI chips.",
-    "quote": "My early prediction for 2026 is Huawei, where I think that there is lithography technology that exists in in China that is not publicly discussed, that is going to be deployed in Huawei and all these fabs that they're building in mainland",
+    "quote": "My early prediction for 2026 is Huawei, where I think that there is lithography technology that exists in in China that is not publicly discussed, that is going to be deployed in Huawei and all these fabs that they're building in mainland C",
     "quoteStartMs": 3748250,
     "topics": [
       "AI chips",

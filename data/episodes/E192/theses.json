@@ -15,7 +15,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg argues that a government-forced breakup of Google is anti-success rather than anti-competition, and that a voluntary spin-out of YouTube could unlock meaningful shareholder value via the conglomerate discount, though shared infrastructure complicates clean separation.",
-    "quote": "I do think that there's a lot of value unlock in YouTube. So if Google were to just generally spin out YouTube, That is probably a business that on its own would attract an investor base that might otherwise not want to get into the",
+    "quote": "I do think that there's a lot of value unlock in YouTube. So if Google were to just generally spin out YouTube, That is probably a business that on its own would attract an investor base that might otherwise not want to get into the conglom",
     "quoteStartMs": 496827,
     "topics": [
       "breakup/antitrust",
@@ -92,7 +92,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Jason sees spinning out YouTube and Waymo as value-unlocking for Google shareholders, but warns that being forced to divest Android would be massively damaging since the Android default search would be auctioned to the highest bidder (potentially Microsoft/Bing).",
-    "quote": "The easy solution for Google…is to just spin out YouTube and Waymo. Those two are perfect standalone businesses…The most damaging one would be Android. If they force them to sell Android, that is going to be massively damaging.",
+    "quote": "The easy solution for Google, and I agree with, I think, people who said that here, is to just spin out YouTube and Waymo. Those two are perfect standalone businesses… The most damaging one would be Android. If they force them to sell Andro",
     "quoteStartMs": 1123057,
     "topics": [
       "breakup/antitrust",
@@ -118,8 +118,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg sees Starbucks as a structurally challenged business with declining operating margins, rising costs, and a sugar-heavy menu facing headwinds, but believes incoming CEO Brian Niccol's cost-cutting and menu-simplification track record could improve profitability.",
-    "quote": "Brian Niccol has an incredible reputation…He is notorious for being a cost cutter, for being an efficiency driver, for being a productivity hound…Brian Nichols is probably the right guy, which is why you're seeing the stock kind of rally",
-    "quoteStartMs": 1896000,
+    "quote": "Brian Niccol has an incredible reputation… He is notorious for being a cost cutter, for being an efficiency driver, for being a productivity hound… And Brian Nichols is probably the right guy, which is why you're seeing the stock kind of ra",
+    "quoteStartMs": null,
     "topics": [
       "CEO change",
       "margins",
@@ -221,8 +221,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Boeing's repeated Starliner failures stem from a structural cultural problem — incentives aligned to EPS growth rather than engineering safety — that has persisted across leadership, making the business fundamentally broken across its three complex divisions.",
-    "quote": "I observed this company about 5 years ago, and I wrote about it in my annual letter…show me the incentive and I'll show you the outcome. If the incentive is safety and world-class engineering, that's what you'll get. But if the incentive",
-    "quoteStartMs": 5258967,
+    "quote": "show me the incentive and I'll show you the outcome. If the incentive is safety and world-class engineering, that's what you'll get. But if the incentive is earnings per share growth, then that's what you'll also get.",
+    "quoteStartMs": 5315375,
     "topics": [
       "culture",
       "EPS incentives",

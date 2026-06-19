@@ -93,7 +93,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks acknowledges the market liked Apple's AI announcement and that Apple did exactly what he recommended — reinventing Siri as an LLM agent — but raises serious concerns about the privacy and competitive implications of opening the OS to OpenAI, which could undermine Apple's walled-garden advantage.",
-    "quote": "Apple did exactly what I said they should do last week... However, Apple took a shortcut to get here. They partnered with OpenAI... This is allowing someone, OpenAI, to get access to your data and to control your apps at the operating",
+    "quote": "Apple did exactly what I said they should do last week, which was to reinvent Siri as an LLM with the ability, with the capability to reach into apps as an agent and take actions on the user's behalf. That's what they effectively announced.",
     "quoteStartMs": 2839936,
     "topics": [
       "AI",
@@ -146,8 +146,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks is impressed by OpenAI's product quality and revenue growth but sees risk in consumer B2C churn; he believes long-term value lies in the B2B/API developer business, and questions whether OpenAI can maintain its leadership as other LLMs catch up.",
-    "quote": "I would separate the B2C business from the B2B business... as somebody who invests in SaaS, when we see a business that has B2C subscriptions and B2B, we place all the value on B2B... Historically, the churn rates in B2C are too high.",
-    "quoteStartMs": 3182000,
+    "quote": "if I was to try and take apart this business as an investor, I would separate the B2C business from the B2B business… as somebody who invests in SaaS, when we see a business that has B2C subscriptions and B2B, we place all the value on B2B.",
+    "quoteStartMs": null,
     "topics": [
       "AI",
       "revenue growth",
@@ -173,8 +173,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues OpenAI may be the 'AOL' of the AI era — dominant today but ultimately displaced by open-source models like Llama that deliver 85-90% of the capability at far lower cost, especially as enterprises figure out how to build their own LLM-driven tools.",
-    "quote": "Maybe OpenAI is AOL, right? Like, I think that there's going to be a Google that'll show up... ultimately the cost comes down so much with the open source tools... If you're an enterprise user, why would you pay thousands of dollars for",
-    "quoteStartMs": 3555000,
+    "quote": "Maybe OpenAI is AOL, right? Like, I think that there's going to be a Google that'll show up that'll— maybe it's Google. Grab a large part of the value here, or, you know, ultimately the cost comes down so much with the open source tools.",
+    "quoteStartMs": 3554940,
     "topics": [
       "AI",
       "open source",

@@ -15,8 +15,8 @@
     "scoreNote": "Investor in Anthropic; states 'I'm a buyer of the shares today' for both Anthropic and OpenAI at ~3670s",
     "sectorProxy": null,
     "summary": "Brad Gerstner, an investor in Anthropic, argues the company has posted the fastest revenue ramp in tech history, is compute-constrained not demand-constrained, has exploding gross margins, and is likely to exit the year at $80–100B run rate; he is a buyer of shares in both Anthropic and OpenAI today.",
-    "quote": "I'm a buyer of the shares today, notwithstanding all of the vibes that you describe. I think these companies are firmly on the wave.",
-    "quoteStartMs": 3654234,
+    "quote": "I would not be shocked if you see Anthropic exiting this year at $80 to $100 billion in revenue.",
+    "quoteStartMs": 2897440,
     "topics": [
       "revenue growth",
       "AI models",
@@ -42,8 +42,8 @@
     "scoreNote": "Explicit buy statement; context makes clear 'these companies' refers to both Anthropic and OpenAI",
     "sectorProxy": null,
     "summary": "Brad Gerstner argues OpenAI is at peak FUD, has an incoming model (SpUD) on par with Anthropic's Mythos, and is firmly on the AI revenue wave; he says he is a buyer of OpenAI shares today despite the current negative vibes.",
-    "quote": "I'm a buyer of the shares today, notwithstanding all of the vibes that you describe. I think these companies are firmly on the wave.",
-    "quoteStartMs": 3654234,
+    "quote": "OpenAI, who is also on the wave, they'll be releasing an incredible model in the next— imminently they're going to be on that wave and you're going to see an inflection in their revenues as well.",
+    "quoteStartMs": 2907199,
     "topics": [
       "AI models",
       "valuation",

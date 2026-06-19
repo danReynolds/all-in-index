@@ -67,8 +67,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg highlights OpenAI's GPT-4B Micro model achieving a 50x improvement in cellular rejuvenation protein efficacy in partnership with Retro Biosciences, demonstrating that fine-tuned smaller LLMs can produce extraordinary results in specific scientific applications.",
-    "quote": "They actually got these new proteins to be 50 times more effective than the OSKNM proteins in basically rejuvenation or cellular reset. Within 7 days, they got more than 30% of the cells to show the markers. And by day 12, 85% of them",
-    "quoteStartMs": 4340990,
+    "quote": "They actually got these new proteins to be 50 times more effective than the OSKNM proteins in basically rejuvenation or cellular reset. Within 7 days, they got more than 30% of the cells to show the, the markers. And by day 12, 85% of them ",
+    "quoteStartMs": 4592670,
     "topics": [
       "AI",
       "biotech",

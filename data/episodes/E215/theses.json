@@ -15,15 +15,15 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Naval argues that OpenAI's conversion from nonprofit to fully private/for-profit is self-dealing and unjustifiable — the nonprofit portion should remain in control, and the privatization of the whole entity for Sam Altman's personal benefit undermines the mission and represents a structural governance failure.",
-    "quote": "I just don't understand this conversion... it also looks like self-dealing, right? The board tried to fire Sam and Sam took over the board. Now it's his handpicked board... If you're going to capture the light code of all future value or",
-    "quoteStartMs": 5653000,
+    "quote": "I just don't understand this conversion. I mean, there was a, there was a board coup, right? The board tried to fire Sam and Sam took over the board. Now it's his handpicked board. So it also looks like self-dealing, right?",
+    "quoteStartMs": 5658765,
     "topics": [
       "governance",
       "nonprofit conversion",
       "valuation",
       "self-dealing"
     ],
-    "attributionConfidence": "low",
+    "attributionConfidence": "high",
     "guestName": "Naval Ravikant"
   },
   {
@@ -42,7 +42,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Jason argues there is a non-trivial chance OpenAI loses the New York Times copyright lawsuit badly, potentially facing injunctions and being forced to pay large revenue-sharing settlements to content holders, which would structurally impair its business model.",
-    "quote": "I think this is all going to wind up like the Napster-Spotify case... there is a non-zero chance, like it might be 5 or 10%, that OpenAI is going to lose the New York Times lawsuit and they're going to lose it hard and there could be",
+    "quote": "I think this is all going to wind up like the Napster-Spotify case… there is a non-zero chance, like it might be 5 or 10%, that OpenAI is going to lose the New York Times lawsuit and they're going to lose it hard and there could be injuncti",
     "quoteStartMs": 5085524,
     "topics": [
       "copyright",

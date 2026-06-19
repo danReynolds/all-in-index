@@ -41,8 +41,8 @@
     "scoreNote": "Not scored: Friedberg makes an explicit directional claim that crypto/fintech businesses 'are clearly going to benefit' from deregulation, naming the basket and an economic outcome (ability to launch products, generate revenue); this is a basket-level bull view, not a scoreable portfolio call.",
     "sectorProxy": null,
     "summary": "Friedberg argues that Trump's deregulatory agenda will meaningfully benefit crypto and fintech companies that have been hampered by regulatory constraints, allowing them to launch products and generate revenue in ways previously blocked, driving earnings acceleration.",
-    "quote": "The deregulatory nature on its own benefits markets that have been encumbered by regulatory oversight and regulatory challenges like crypto finance and fintech. Those types of businesses are clearly going to benefit or expected to benefit",
-    "quoteStartMs": 641270,
+    "quote": "The deregulatory nature on its own benefits markets that have been encumbered by regulatory oversight and regulatory challenges like crypto finance and fintech. So those types of businesses are clearly going to benefit or expected to benefi",
+    "quoteStartMs": 667222,
     "topics": [
       "deregulation",
       "fintech",
@@ -67,7 +67,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks argues that Republican control of Congress and the likely departure of Gary Gensler mean clear regulatory rules for crypto are imminent under FIT21, removing the overhang that has depressed crypto markets and explaining the current rally.",
-    "quote": "The bottom line here is that I think that we are close to having clear rules of the road codified by Congress, which is what the crypto industry's been asking for. And the days of Gensler terrorizing crypto companies by issuing Wells",
+    "quote": "the bottom line here is that I think that we are close to having clear rules of the road codified by Congress, which is what the crypto industry's been asking for. And the days of Gensler terrorizing crypto companies by issuing Wells notice",
     "quoteStartMs": 1237453,
     "topics": [
       "crypto regulation",
@@ -171,8 +171,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg argues Google is significantly handicapped in its ability to pursue M&A due to ongoing regulatory and antitrust pressure from both parties, limiting its strategic optionality.",
-    "quote": "I think that those guys are buyers, JKL. I don't think that Google's in a place right now where they can go out and make a bunch of acquisitions. They're going to do everything they can to avoid the regulatory sledgehammer that's coming",
-    "quoteStartMs": 1920000,
+    "quote": "I don't think that those guys are buyers, JKL. I don't think that Google's in a place right now where they can go out and make a bunch of acquisitions. They're going to do everything they can to avoid the regulatory sledgehammer that's comi",
+    "quoteStartMs": 1956666,
     "topics": [
       "antitrust",
       "M&A constraints",
@@ -181,14 +181,14 @@
     "attributionConfidence": "high"
   },
   {
-    "id": "E204-polymarket-Jason-7",
+    "id": "E204-polymarket-Chamath-7",
     "episodeId": "E204",
     "episodeNumber": 204,
     "episodeDate": "2024-11-16T16:55:00.000Z",
     "company": "Polymarket",
     "ticker": null,
     "isPublic": false,
-    "host": "Jason",
+    "host": "Chamath",
     "stance": "neutral",
     "conviction": "low",
     "callType": "view",
@@ -196,15 +196,15 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Jason views the FBI raid on Polymarket's CEO as likely a minor regulatory enforcement action (a 'speeding ticket') related to their prior CFTC settlement, not a serious criminal matter, and expects it to resolve without major consequence.",
-    "quote": "I actually think about— I'm guessing that somebody made him aware, pure speculation, of something in the system, and that probably was on his phone and they probably wanted to get that. And it's probably like a speeding ticket, ticky-tacky",
-    "quoteStartMs": 3903000,
+    "quote": "I'm guessing that somebody made him aware, pure speculation, of something in the system, and that probably was on his phone and they probably wanted to get that. And it's probably like a speeding ticket, ticky-tacky thing.",
+    "quoteStartMs": 3915784,
     "topics": [
       "prediction markets",
       "regulation",
       "CFTC",
       "FBI"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   },
   {
     "id": "E204-wbd-Sacks-8",
@@ -222,8 +222,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks highlights that CNN and MSNBC are experiencing severe rating declines (MSNBC down ~50% since the election) and layoffs, suggesting these legacy cable news networks face structural audience erosion.",
-    "quote": "CNN and MSNBC, you're absolutely right that they're announcing a bunch of layoffs. Their ratings are destroyed. I think they're down. MSNBC ratings are down like 50% since the election.",
-    "quoteStartMs": 2609946,
+    "quote": "just on CNN and MSNBC, you're absolutely right that they're announcing a bunch of layoffs. Their ratings are destroyed. I think they're down. MSNBC ratings are down like 50% since the election.",
+    "quoteStartMs": 2609414,
     "topics": [
       "legacy media",
       "ratings decline",

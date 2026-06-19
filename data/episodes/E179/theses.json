@@ -115,7 +115,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg reveals Ohalo's 'Boosted Breeding' breakthrough — a protein-based method that doubles a plant's chromosome set, yielding 50–100%+ gains in crop yield — arguing it creates durable moats through compounding variety improvement and could transform global food security.",
-    "quote": "The yield on some of these plants goes up by 50 to 100% or more... With our system, we are seeing 50 to 100% jump in the size of these plants.",
+    "quote": "the yield on some of these plants goes up by 50 to 100% or more. Just to give you a sense, like, In the corn seed industry, breeders that are breeding corn are spending $3 billion a year on breeding, and they're getting maybe 1.5% yield gai",
     "quoteStartMs": 2607620,
     "topics": [
       "agtech",
@@ -166,8 +166,8 @@
     "scoreNote": "Explicit re-underwriting from prior bear to bull; Chamath cites Isomorphic Labs and Search AI as the drivers.",
     "sectorProxy": null,
     "summary": "Chamath reverses his prior bearish stance on Google, arguing that AI Overviews in Search plus hidden optionality like Isomorphic Labs (a potential multi-hundred-billion-dollar business) and Waymo make the company significantly underappreciated.",
-    "quote": "I think the Google thing is pretty special between last week's announcement of Isomorphic Labs, which let's be honest, that's just a multi-hundred billion dollar company... the reports of their death were premature and exaggerated.",
-    "quoteStartMs": 5079000,
+    "quote": "I think the Google thing is pretty special between last week's announcement of Isomorphic Labs, which let's be honest, that's just a multi-hundred billion dollar company… the reports of their death were premature and exaggerated.",
+    "quoteStartMs": null,
     "topics": [
       "AI search",
       "Isomorphic Labs",
@@ -192,8 +192,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg argues Google's AI-powered OneBox/snippet approach will keep more users on-page, increase search volume, and allow Google to monetize queries it previously lost to third-party content — driving revenue per search query up, not down — while hidden assets like Isomorphic Labs represent upside that precision-focused analysts miss.",
-    "quote": "The revenue per search query in some of those categories actually has the potential to go up, not down... Meta and Amazon do not have an isomorphics lab and Waymo sitting inside their business that suddenly pops to a couple hundred billion",
-    "quoteStartMs": 5308000,
+    "quote": "I do think that the revenue per search query in some of those categories actually has the potential to go up, not down… Meta and Amazon do not have an isomorphics lab and Waymo sitting inside their business that suddenly pops to a couple hu",
+    "quoteStartMs": null,
     "topics": [
       "AI search",
       "monetization",
@@ -217,14 +217,14 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks argues that Google's monopoly is so powerful it can absorb multiple AI missteps and ultimately win by copying Perplexity's citation-based search model, likely growing to a $5 trillion company as Gemini-powered OneBox becomes the future of Search.",
-    "quote": "They can make 10 mistakes, but their monopoly is so strong that they can finally get it right by copying the innovator. And they're probably gonna become a $5 trillion company now.",
-    "quoteStartMs": 5674000,
+    "quote": "They can make 10 mistakes, but their monopoly is so strong that they can finally get it right by copying the innovator. And they're probably gonna become a $5 billion company now. Sorry, $5 trillion company.",
+    "quoteStartMs": 5675868,
     "topics": [
       "monopoly durability",
       "AI search",
       "valuation"
     ],
-    "attributionConfidence": "low"
+    "attributionConfidence": "high"
   },
   {
     "id": "E179-perplexity-Sacks-9",

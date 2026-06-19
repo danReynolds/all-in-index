@@ -68,7 +68,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks pushes back on the 'SaaS is dead' narrative for entrenched systems like Salesforce — nobody will rip out a 25-year-tested platform — but concedes real risk that SaaS companies become legacy infrastructure while a new agentic layer above them captures future value and cuts into their growth opportunity.",
-    "quote": "I don't think it's existential...the risk for the SaaS companies...is that they become an old layer of the stack that now there's a new layer that gets built on top of...all the action kind of moves to a new layer of the stack, and that's",
+    "quote": "I don't think it's existential. It's where the future value capture is going to be...I think the risk for the SaaS companies, it's not that they get replaced, although that'll happen to some degree, but it's that they become an old layer of",
     "quoteStartMs": 1271835,
     "topics": [
       "AI disruption",
@@ -146,8 +146,8 @@
     "scoreNote": "Jason explicitly labels Amazon his 'number one pick for the company of the future'.",
     "sectorProxy": null,
     "summary": "Jason explicitly names Amazon as his number-one pick for the company of the future, arguing that AI-driven productivity gains will let it do dramatically more with far fewer people, making it uniquely positioned to extract value from the agentic era.",
-    "quote": "Amazon, which is like my number one pick for like the company of the future. They're going to be able to do so much more with so many fewer people. It's extraordinary.",
-    "quoteStartMs": 2073941,
+    "quote": "a company like Amazon, which is like my number one pick for like the company of the future. They're going to be able to do so much more with so many fewer people. It's extraordinary.",
+    "quoteStartMs": 2073043,
     "topics": [
       "AI productivity",
       "valuation",

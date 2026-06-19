@@ -41,8 +41,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg warns that Google's imminent integration of a Cowork-like coding agent into G Suite poses a serious competitive threat that could sweep the market away from Anthropic within ~90 days.",
-    "quote": "It's only gonna take 90 days for Google to flip on a virtual version of Cowork. And once Google has this integrated with G Suite... I think Google sweeps the market with this same competitor.",
-    "quoteStartMs": 3884669,
+    "quote": "it's only gonna take 90 days for Google to flip on a virtual version of Cowork. And once Google like has this integrated with G Suite and you have a virtual hosted version of Cowork, I think Google sweeps the market with this same competito",
+    "quoteStartMs": 3874208,
     "topics": [
       "competition",
       "AI",
@@ -67,7 +67,7 @@
     "scoreNote": "Explicitly named as the top pick in a forced-choice between OpenAI, Anthropic, and Google; 'Google is the bet'",
     "sectorProxy": null,
     "summary": "Friedberg picks Google as the best net market value creator among AI plays, citing its own cloud infrastructure (lower margins vs. Anthropic), G Suite distribution advantage, and imminent Cowork-like agent rollout.",
-    "quote": "I think Google is the bet. I think Google is the market value creator bet, but I think Anthropic is the multiple bet. I think Anthropic is a trillion five market cap at the end of the day, unless this blows them up.",
+    "quote": "I think Google is the bet. I think Google is the market value creator bet, but I think Anthropic is the multiple bet.",
     "quoteStartMs": 3824913,
     "topics": [
       "AI",
@@ -93,8 +93,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Emil Michael highlights Anduril as a prime beneficiary of the shift from legacy defense primes to low-cost, mass-producible unmanned systems, and wants them to win big contracts quickly to grow the defense-tech flywheel.",
-    "quote": "Androl, sure... warfare is going from big carrier ships that cost $20 billion and a decade and a half to build to mass, attritable, low-cost things. And that's what these new entrants can do.",
-    "quoteStartMs": 4451000,
+    "quote": "Androl, sure, um, uh, Saronic, sure, like a bunch of these companies, so that more money flows in, more entrepreneurs do it, and I could buy more. Because genuinely, I do think warfare is going from big carrier ships that cost $20 billion a",
+    "quoteStartMs": 4468106,
     "topics": [
       "defense tech",
       "drones",
@@ -146,8 +146,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Emil Michael highlights Google's structural cost advantage in AI due to owning its own cloud, meaning it doesn't carry the margin pass-through burden that Anthropic does, giving it a superior long-term economic proposition.",
-    "quote": "I do think Google has a long-term strategic advantage... because they have their own cloud. So between them, they don't have the margin on top of the cloud that Anthropic have to pass on. So it's an interesting economic proposition from",
-    "quoteStartMs": 3936000,
+    "quote": "I do think Google has a long-term strategic advantage, not because of, not only because of their consumer thing, but because they have their own cloud. So between them, they don't have the margin on top of the cloud that Anthropical have to",
+    "quoteStartMs": 3971830,
     "topics": [
       "AI",
       "cloud",
@@ -170,8 +170,8 @@
     "conviction": "medium",
     "callType": "view",
     "summary": "Jason highlights that the closure of the Strait of Hormuz would remove 3.3 million barrels of daily production, driving oil prices higher, and notes oil had already risen to $84/barrel, framing acute economic second-order effects over the coming weeks.",
-    "quote": "Unless the strait opens, 3.3 million barrels of daily production would be lost early next week... Oil has rose to $84 a barrel Wednesday... could be, uh, you know, intense and acute.",
-    "quoteStartMs": 2250393,
+    "quote": "Unless the strait opens, 3.3 million barrels of daily production would be lost early next week. And then there's insurance companies. They've all canceled the war risk coverage of vessels in the Gulf effective March 5th. Supertanker traffic",
+    "quoteStartMs": 2268291,
     "topics": [
       "Strait of Hormuz",
       "supply disruption",

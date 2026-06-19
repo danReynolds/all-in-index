@@ -15,7 +15,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath is highly bullish on Tether, calling it an incredible business with 500 million users, 30 million user growth per quarter, ~95%+ profit margins, and $135B in Treasury holdings generating ~$10B/year in earnings.",
-    "quote": "There are 500 million people using US dollar-backed stablecoins from Tether all around the world… his user base is growing by 30 million users a quarter. It's the financial inclusion that then ties back to US dollar hegemony is",
+    "quote": "There are 500 million people using US dollar-backed stablecoins from Tether all around the world, all over Africa, all over Central America, all over Asia, number 1. Number 2, his user base is growing by 30 million users a quarter. It's the",
     "quoteStartMs": 907605,
     "topics": [
       "stablecoins",
@@ -119,7 +119,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath pushes back on Michael Burry's depreciation-based bear thesis, arguing Burry lacks technical understanding of how AI chips generate revenue from output tokens, but does not make a directional investment call on Nvidia itself.",
-    "quote": "I think this conversation lacks technical literacy… he needs to understand he's equating this to energy, but the reality is that in AI models, the thing that we care about is what is that output token? What is the revenue that's being",
+    "quote": "I think this conversation lacks technical literacy.",
     "quoteStartMs": 1747410,
     "topics": [
       "AI chips",
@@ -249,8 +249,8 @@
     "scoreNote": "Named as explicit long leg alongside Google and Groq in a pair-trade framing vs. short OpenAI.",
     "sectorProxy": null,
     "summary": "Jason argues Anthropic is winning enterprise AI by staying neutral on application layers, driving startups to trust it with their data over OpenAI; he would be long Anthropic.",
-    "quote": "I think I would be long Google, Groq, and Anthropic… they're going to go with a model like Anthropic, which is taking a more neutral, we're not going to go to the application level.",
-    "quoteStartMs": 2330000,
+    "quote": "I think I would be long Google, Groq, and Anthropic. I think that they're going to have many challenges. Also, I don't think the startup community— I'll just add this as my final thought on it— the startup community is not trusting OpenAI w",
+    "quoteStartMs": 2330455,
     "topics": [
       "AI",
       "enterprise",

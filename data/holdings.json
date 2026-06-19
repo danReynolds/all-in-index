@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T11:34:59.011Z",
+  "generatedAt": "2026-06-19T14:02:23.109Z",
   "holdings": [
     {
       "slug": "meta",
@@ -429,7 +429,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks argues Meta is executing extremely well — successful cost-cutting, advances in AI including leading the open-source movement with Llama 3.2, and now appearing ahead on augmented reality — making it a strong performer across multiple fronts.",
-          "quote": "it seems to me that Meta is executing extremely well… they've caught up and now they're leading the open source movement… And now it seems to me that they're ahead on augmented reality",
+          "quote": "It seems to me that Meta is executing extremely well… they've caught up and now they're leading the open source movement… And now it seems to me that they're ahead on augmented reality",
           "quoteStartMs": 3638290,
           "topics": [
             "execution",
@@ -784,7 +784,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks observes that Anthropic appears to be pulling away from OpenAI in growth — growing at 10x YoY vs OpenAI's 3x — and that if sustained, this trajectory leads to monopoly market share, making it the company with the better inertia.",
-          "quote": "Anthropic does seem to be pulling away. There was an article in The Information showing the latest numbers... if you have one company that's growing at 10x year over year and another company that's growing at 3x year over year, within 2",
+          "quote": "Anthropic does seem to be pulling away. There was an article in The Information showing the latest numbers where I think Anthropic's now at— they seem to have pulled away from OpenAI, which is not surprising. It's something I predicted. Loo",
           "quoteStartMs": 3345209,
           "topics": [
             "growth",
@@ -964,7 +964,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks argues Anthropic's 10x annual growth trajectory — tripling ARR from $10B to $30B in Q1 and accelerating to $44B in April — combined with the new compute deal makes it nearly certain to hit ~$100B ARR by year-end and potentially become the most valuable tech company in history.",
-          "quote": "They grew from roughly $10 billion of ARR to $30 billion. So it tripled. And then in April… they went from $30 to $44 billion of ARR. Nobody in Silicon Valley has ever seen anything like it… I think it's pretty much a foregone conclusion",
+          "quote": "they grew from roughly $10 billion of ARR to $30 billion. So it tripled. And then in April, if anything, the rate of increase seemed to accelerate. They went from $30 to $44 billion of ARR. Nobody in Silicon Valley has ever seen anything li",
           "quoteStartMs": 877493,
           "topics": [
             "revenue growth",
@@ -1091,7 +1091,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg argues Anthropic's release cadence and innovation pace are head and shoulders above everyone else, with his organization shifting to ~90% Anthropic usage in 6 months, indicating a powerful and accelerating flywheel.",
-          "quote": "The pace of innovation at Anthropic is, from my experience, unprecedented... we're probably 90% Anthropic in just the last 6 months at my organization. There's something very powerful about the flywheel they have going on.",
+          "quote": "the pace of innovation at Anthropic is, from my experience, unprecedented. I mean, they're release cadence is extraordinary. They've basically supplanted OpenClaw already with this release they did a few days ago, and then today the new Opu",
           "quoteStartMs": 1119265,
           "topics": [
             "product velocity",
@@ -1116,8 +1116,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks warns Anthropic's exponential growth will hit physical limits (compute, power, data centers) and that its past support for doomer/NIMBY anti-data-center politics may now backfire as it needs to build its own infrastructure.",
-          "quote": "I do wonder if over the next year Anthropic will reconsider whether its support for all this doomer nimbyism was the right call... they might regret salting the earth for data centers all over the country. And I wonder if that'll be the",
-          "quoteStartMs": 1570000,
+          "quote": "I do wonder if over the next year Anthropic will reconsider whether its support for all this doomer nimbyism was the right call, because it kind of made sense for them from a business standpoint when their competitors were building data cen",
+          "quoteStartMs": 1567516,
           "topics": [
             "compute constraints",
             "data centers",
@@ -1142,7 +1142,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks argues Anthropic's ~10x annual revenue growth rate (vs OpenAI's 3-4x), driven by enterprise coding focus and metered token consumption, puts it on a trajectory to be the dominant frontier model if it can solve compute constraints.",
-          "quote": "The Anthropic growth rate has been around 10x a year. So they went from, let's call it, $1 to $10 billion of ARR last year, and by the end of Q1 this year, they were already at $30 billion... they're going to end this year at $80 to $100",
+          "quote": "The Anthropic growth rate has been around 10x a year. So they went from, let's call it, $1 to $10 billion of ARR last year, and by the end of Q1 this year, they were already at $30 billion. Of, again, let's call it their revenue. And they'r",
           "quoteStartMs": 1380915,
           "topics": [
             "revenue growth",
@@ -1219,8 +1219,8 @@
           "scoreNote": "Investor in Anthropic; states 'I'm a buyer of the shares today' for both Anthropic and OpenAI at ~3670s",
           "sectorProxy": null,
           "summary": "Brad Gerstner, an investor in Anthropic, argues the company has posted the fastest revenue ramp in tech history, is compute-constrained not demand-constrained, has exploding gross margins, and is likely to exit the year at $80–100B run rate; he is a buyer of shares in both Anthropic and OpenAI today.",
-          "quote": "I'm a buyer of the shares today, notwithstanding all of the vibes that you describe. I think these companies are firmly on the wave.",
-          "quoteStartMs": 3654234,
+          "quote": "I would not be shocked if you see Anthropic exiting this year at $80 to $100 billion in revenue.",
+          "quoteStartMs": 2897440,
           "topics": [
             "revenue growth",
             "AI models",
@@ -1272,7 +1272,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath says Anthropic dominates the enterprise AI market and its technical team is head and shoulders above competitors, making it the default choice for enterprise use cases through his firm 8090.",
-          "quote": "From an enterprise lens, which is where I see most of the action, particularly through 80/90, it's all Anthropic all the time... in terms of the quality of that technical team and what they create, it's head and shoulders above anything",
+          "quote": "From an enterprise lens, which is where I see most of the action, particularly through 80/90, it's all Anthropic all the time. And I agree with Sachs, my philosophical issues with the management aside around their ideology and sometimes how",
           "quoteStartMs": 565740,
           "topics": [
             "enterprise AI",
@@ -1297,8 +1297,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks praises Anthropic's product execution — particularly the coding-focused strategy as a gateway into enterprise IT budgets — while maintaining philosophical objections to its regulatory capture strategy.",
-          "quote": "The company made a big bet on coding as the kind of big breakout use case... it was a very good business move as well, because code is the gateway into enterprise and enterprise IT budgets. And so they've been able to grow revenue pretty",
-          "quoteStartMs": 284386,
+          "quote": "I think they're firing on all cylinders.",
+          "quoteStartMs": 344755,
           "topics": [
             "enterprise",
             "AI coding",
@@ -1323,7 +1323,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath acknowledges Anthropic's revenue growth is real but argues the enterprise revenue is largely experimental test budgets rather than production-critical workflows, the messaging around existential AI risk is counterproductive and dishonest, and the industry is still early and unsolved — though he concedes it will be a good investment eventually.",
-          "quote": "In the 1849 Gold Rush, Anthropic and OpenAI and all of these model makers are selling the pick and shovel in the gold rush... most of these companies will go out of business. And all I'm saying is if we are really circumspect and honest,",
+          "quote": "In the 1849 Gold Rush, Anthropic and OpenAI and all of these model makers are selling the pick and shovel in the gold rush. I am buying it and I'm trying to pan for gold. But as with the gold rush, most of these companies will go out of bus",
           "quoteStartMs": 3338528,
           "topics": [
             "AI revenue quality",
@@ -1400,8 +1400,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg warns that Google's imminent integration of a Cowork-like coding agent into G Suite poses a serious competitive threat that could sweep the market away from Anthropic within ~90 days.",
-          "quote": "It's only gonna take 90 days for Google to flip on a virtual version of Cowork. And once Google has this integrated with G Suite... I think Google sweeps the market with this same competitor.",
-          "quoteStartMs": 3884669,
+          "quote": "it's only gonna take 90 days for Google to flip on a virtual version of Cowork. And once Google like has this integrated with G Suite and you have a virtual hosted version of Cowork, I think Google sweeps the market with this same competito",
+          "quoteStartMs": 3874208,
           "topics": [
             "competition",
             "AI",
@@ -1529,8 +1529,8 @@
           "scoreNote": "Named as explicit long leg alongside Google and Groq in a pair-trade framing vs. short OpenAI.",
           "sectorProxy": null,
           "summary": "Jason argues Anthropic is winning enterprise AI by staying neutral on application layers, driving startups to trust it with their data over OpenAI; he would be long Anthropic.",
-          "quote": "I think I would be long Google, Groq, and Anthropic… they're going to go with a model like Anthropic, which is taking a more neutral, we're not going to go to the application level.",
-          "quoteStartMs": 2330000,
+          "quote": "I think I would be long Google, Groq, and Anthropic. I think that they're going to have many challenges. Also, I don't think the startup community— I'll just add this as my final thought on it— the startup community is not trusting OpenAI w",
+          "quoteStartMs": 2330455,
           "topics": [
             "AI",
             "enterprise",
@@ -1899,7 +1899,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath praises Tim Cook's stewardship — massive buybacks, silicon transition, capital efficiency — but warns that Apple's dependence on high per-unit iPhone pricing is at risk as AI opens a heterogeneous device world that erodes its moat.",
-          "quote": "The problem is if you get too addicted to a single thing that has an incredibly juicy profit margin and great stickiness... I think the moats decay. I think if that happens, that's problematic if you're too reliant on a single thing to",
+          "quote": "the problem is if you get too addicted to a single thing that has an incredibly juicy profit margin and great stickiness and the ability to raise price, It's a hard drug to get off of. I think really what John Ternus has to do is figure out",
           "quoteStartMs": 3374230,
           "topics": [
             "AI disruption",
@@ -2028,8 +2028,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Keith argues Apple has missed every possible window on AI due to cultural and infrastructure challenges, and that its vertical integration is the only thing keeping it alive — emphasizing that buying Perplexity would not fix its structural AI deficit.",
-          "quote": "Apple has missed every possible window on AI and continues to miss it. And it has cultural— I think the CEO has challenges. I think culturally they have challenges. I think they have infrastructure challenges. So it's not an easy fix.",
-          "quoteStartMs": 3294120,
+          "quote": "Apple has missed every possible window on AI and continues to miss it. And it has cultural I think the CEO has challenges. I think culturally they have challenges. I think they have infrastructure challenges. So it's, it's not an easy fix",
+          "quoteStartMs": 3301501,
           "topics": [
             "AI strategy",
             "missed opportunity",
@@ -2079,8 +2079,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Apple has transitioned into cash-cow mode, is losing the talent war for AI researchers, has no credible AI strategy, and faces inevitable creative destruction — comparing its trajectory to HP, Lotus, and Intel, with the tactic of swapping connector types and selling incremental hardware substituting for real innovation.",
-          "quote": "I don't think they have any chance of anything...A company that focuses on this kind of revenue growth is not capable of creating something that's exceptionally unexpected. That will come from a new company who has no ties to the past.",
-          "quoteStartMs": 3087000,
+          "quote": "I don't think they have any chance of anything. Okay.",
+          "quoteStartMs": 3086700,
           "topics": [
             "AI talent deficit",
             "innovation stagnation",
@@ -2131,15 +2131,15 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Jason argues Apple Intelligence is a failure compared to Google's Gemini, positioning Apple as losing the AI assistant race and potentially ceding smartphone market share to Android AI experiences.",
-          "quote": "Apple Intelligence is terrible. I just bought the Google Pixel Fold 9. And the Gemini works perfectly... it does it in 1/5 or 1/10 the amount of time that Apple takes. And Apple gets it wrong every fucking time. It's a piece of garbage.",
-          "quoteStartMs": 3454000,
+          "quote": "Apple Intelligence... it sucks. It's terrible. I just bought the Google Pixel Fold 9. And the Gemini works perfectly... it does it in 1/5 or 1/10 the amount of time that Apple takes. And Apple gets it wrong every fucking time. It's a piece",
+          "quoteStartMs": 3465167,
           "topics": [
             "Apple Intelligence",
             "AI",
             "competitive position",
             "smartphone"
           ],
-          "attributionConfidence": "low"
+          "attributionConfidence": "high"
         },
         {
           "id": "E207-aapl-Chamath-2",
@@ -2209,7 +2209,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath acknowledges Apple can continue its free-cash-flow-maximization and buyback playbook for another decade unlike Starbucks, but expresses frustration with iOS 18 quality degradation as a sign of complacency that could eventually erode customer loyalty.",
-          "quote": "Apple can still be at the point that you described earlier, which is let me just maximize free cash flow generation... they could be another decade or so where Apple can continue to run this play with very little impact to them.",
+          "quote": "Apple can still be at the point that you described earlier, which is let me just maximize free cash flow generation, which is what they do. And then let me allocate that back to shareholders via buybacks, which is also what they do. So they",
           "quoteStartMs": 5414319,
           "topics": [
             "FCF",
@@ -2261,8 +2261,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Reid Hoffman identifies Apple's App Store as the prime antitrust target among big tech, arguing that mandatory use of the App Store and its payment mechanism quells startup innovation and represents anti-competitive behavior that regulators should address, creating a meaningful legal/regulatory risk to Apple's high-margin services revenue.",
-          "quote": "I think the prime candidate is likely to be, and I'm speaking as an individual and as a venture capitalist here, is Apple with the App Store... that quells a ton of startup innovation.",
-          "quoteStartMs": 2250000,
+          "quote": "the prime candidate is likely to be, and I'm speaking as an individual and as a venture capitalist here, is Apple with the App Store, right?… You have to use App Store. You have to use the payment mechanism… that quells a ton of startup inn",
+          "quoteStartMs": null,
           "topics": [
             "antitrust",
             "App Store",
@@ -2288,7 +2288,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg argues Apple faces deep regulatory risks — loss of Google's $20B TAC payment, China manufacturing/sales exposure, App Store fee scrutiny — because unlike Berkshire's other holdings it is not yet a regulated monopoly, making the transition to regulated status financially painful.",
-          "quote": "Apple is facing very deep and severe financial impact from the regulatory authorities that are overseeing the business... Google's paying Apple $20 billion a year to be the default search engine... that's a real risk to Apple.",
+          "quote": "Apple is facing very deep and severe financial impact from the regulatory authorities that are overseeing the business. So if you look at the Google antitrust, right, we're going to get into the Google deal in a sec. Yeah, there's a real re",
           "quoteStartMs": 2978820,
           "topics": [
             "regulation",
@@ -2314,8 +2314,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Apple is 'a little bit wayward' as an unregulated monopoly/duopoly that doesn't know what to do with its position, and warns holders to sensitize valuation for the potential loss of Google's $20B annual TAC payment if the antitrust ruling stands — a hit worth up to half a trillion to a trillion dollars.",
-          "quote": "Apple is sort of a little bit wayward. It is a company with an effective and unregulated monopoly or duopoly that doesn't really know what to do... you should probably sensitize the value of Apple for not having that $20 billion if this",
-          "quoteStartMs": 3230000,
+          "quote": "Apple is sort of a little bit wayward. It is a company with an effective and unregulated monopoly or duopoly that doesn't really know what to do.",
+          "quoteStartMs": 3237958,
           "topics": [
             "antitrust",
             "valuation",
@@ -2340,8 +2340,8 @@
           "scoreNote": "Not scored: Sacks saying 'I will definitely upgrade to the iPhone 16' is a personal consumer decision, not a portfolio action — he uses no investment language ('I'd be long', 'I'd buy the stock'). The callType should not be explicit_long; it is commentary about a product upgrade cycle. The stance itself is product optimism without an explicit economic claim about Apple's financials or stock.",
           "sectorProxy": null,
           "summary": "Sacks says he will upgrade to the iPhone 16 because LLM-powered Siri will drive a major upgrade cycle, making it a compelling buy.",
-          "quote": "I think it's gonna lead to a huge upgrade cycle. I mean, I'm still on an iPhone 13 because I haven't seen a reason to upgrade. I will definitely upgrade to the iPhone 16.",
-          "quoteStartMs": 2107600,
+          "quote": "The second one I think will be when Apple comes out with iPhone 16, you know, with LLM-powered Siri, assuming they do a decent job with that. I, it's gonna lead to a huge upgrade cycle. I mean, I'm still on an iPhone 13 because I haven't se",
+          "quoteStartMs": 2121957,
           "topics": [
             "iPhone upgrade cycle",
             "AI integration",
@@ -2365,7 +2365,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks acknowledges the market liked Apple's AI announcement and that Apple did exactly what he recommended — reinventing Siri as an LLM agent — but raises serious concerns about the privacy and competitive implications of opening the OS to OpenAI, which could undermine Apple's walled-garden advantage.",
-          "quote": "Apple did exactly what I said they should do last week... However, Apple took a shortcut to get here. They partnered with OpenAI... This is allowing someone, OpenAI, to get access to your data and to control your apps at the operating",
+          "quote": "Apple did exactly what I said they should do last week, which was to reinvent Siri as an LLM with the ability, with the capability to reach into apps as an agent and take actions on the user's behalf. That's what they effectively announced.",
           "quoteStartMs": 2839936,
           "topics": [
             "AI",
@@ -2495,7 +2495,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks argues Apple has run out of in-house innovation — exemplified by the iPad merely getting thinner — and with an inability to execute meaningful M&A, its growth options are structurally limited.",
-          "quote": "If you're running out of in-house innovation and you can't do M&A, then your options are kind of limited. I do think that the fact that the big news out of Apple is the iPad's getting thinner does represent kind of the end of the road in",
+          "quote": "Well, if you're running out of in-house innovation and you can't do M&A, then your options are kind of limited. I mean, I do think that the fact that the big news out of Apple is the iPad's getting thinner does represent kind of the end of",
           "quoteStartMs": 4999270,
           "topics": [
             "innovation",
@@ -2921,8 +2921,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Travis Kalanick argues that if OpenAI's growth rate is materially lower than Anthropic's, network effects from compute, tokens, and reinforcement learning will compound against it, making the gap increasingly hard to close.",
-          "quote": "If they are growing faster than OpenAI by a significant clip, the investors right now are going to play it forward... if they are half the growth rate, a third the growth rate, a fifth the growth rate, I would be— I'd be worried.",
-          "quoteStartMs": 961000,
+          "quote": "Growth is king right now in this, in this world, in this segment. Growth is the whole damn thing. And if Anthropic is growing faster than OpenAI by a significant clip, the investors right now are going to play it forward.",
+          "quoteStartMs": 961130,
           "topics": [
             "growth rate",
             "network effects",
@@ -2947,7 +2947,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks argues OpenAI's 3-4x annual growth rate is far inferior to Anthropic's 10x, and its prioritization of consumer over enterprise coding means it is losing the scalable revenue race and risks falling irreversibly behind within 1-2 years.",
-          "quote": "The OpenAI growth rate's been around 3 to 4x a year. The Anthropic growth rate has been around 10x a year... if it's taking Anthropic 1 year to 10x and it's taking OpenAI 2 years to achieve a 10x, then it's obvious which one's gonna win.",
+          "quote": "The OpenAI growth rate's been around 3 to 4x a year. The Anthropic growth rate has been around 10x a year. So they went from, let's call it, $1 to $10 billion of ARR last year, and by the end of Q1 this year, they were already at $30 billio",
           "quoteStartMs": 1377345,
           "topics": [
             "revenue growth",
@@ -2972,8 +2972,8 @@
           "scoreNote": "Explicit buy statement; context makes clear 'these companies' refers to both Anthropic and OpenAI",
           "sectorProxy": null,
           "summary": "Brad Gerstner argues OpenAI is at peak FUD, has an incoming model (SpUD) on par with Anthropic's Mythos, and is firmly on the AI revenue wave; he says he is a buyer of OpenAI shares today despite the current negative vibes.",
-          "quote": "I'm a buyer of the shares today, notwithstanding all of the vibes that you describe. I think these companies are firmly on the wave.",
-          "quoteStartMs": 3654234,
+          "quote": "OpenAI, who is also on the wave, they'll be releasing an incredible model in the next— imminently they're going to be on that wave and you're going to see an inflection in their revenues as well.",
+          "quoteStartMs": 2907199,
           "topics": [
             "AI models",
             "valuation",
@@ -3025,7 +3025,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath believes OpenAI is a genuinely extraordinary, trillion-dollar-caliber business and urges it to IPO as quickly as possible before investor appetite is exhausted by a wave of large listings.",
-          "quote": "Is there a market for OpenAI at $800 billion? Yes, and there should be... These are trillion-dollar companies. They both are, and they both deserve to be... these two companies need to get out as quickly as possible.",
+          "quote": "Is there a market for OpenAI at $800 billion? Yes, and there should be. When I read that press release, my mind was blown. This is a— I've never seen a business like this. And I'd say the same thing of Anthropic. What an incredible thing th",
           "quoteStartMs": 1804882,
           "topics": [
             "IPO",
@@ -3051,8 +3051,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues OpenAI remains the dominant consumer AI brand with overwhelming mindshare and should focus on that strength rather than chasing enterprise, noting it is still the overwhelming revenue generator in the space.",
-          "quote": "OpenAI is still the overwhelming revenue generator in this space... If I was OpenAI and you had to pick one thing, you would pick consumer because they're the juggernaut and they're the clear leader and they have an enormous brand.",
-          "quoteStartMs": 1196000,
+          "quote": "if you normalize these two businesses, what you would see is OpenAI OpenAI is still the overwhelming revenue generator in this space… if I was OpenAI and you had to pick one thing, you would pick consumer because they're the juggernaut and",
+          "quoteStartMs": null,
           "topics": [
             "consumer AI",
             "brand",
@@ -3128,8 +3128,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg argues OpenAI's defensive, risk-averse product posture — driven by being the incumbent target of media criticism — has fundamentally damaged its product quality and brand, ceding ground to Google.",
-          "quote": "ChatGPT is now acting, and OpenAI has been acting like an incumbent fearful of losing market share and fearful of getting attacked in the media... And so they've taken this kind of defensive posture that I think has fundamentally damaged",
-          "quoteStartMs": 1450000,
+          "quote": "ChatGPT is now acting, and OpenAI has been acting like an incumbent fearful of losing market share and fearful of getting attacked in the media and attacked by consumers for saying the wrong thing. And so they've taken this kind of defensiv",
+          "quoteStartMs": 1448873,
           "topics": [
             "product quality",
             "competitive position",
@@ -3334,8 +3334,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg highlights OpenAI's GPT-4B Micro model achieving a 50x improvement in cellular rejuvenation protein efficacy in partnership with Retro Biosciences, demonstrating that fine-tuned smaller LLMs can produce extraordinary results in specific scientific applications.",
-          "quote": "They actually got these new proteins to be 50 times more effective than the OSKNM proteins in basically rejuvenation or cellular reset. Within 7 days, they got more than 30% of the cells to show the markers. And by day 12, 85% of them",
-          "quoteStartMs": 4340990,
+          "quote": "They actually got these new proteins to be 50 times more effective than the OSKNM proteins in basically rejuvenation or cellular reset. Within 7 days, they got more than 30% of the cells to show the, the markers. And by day 12, 85% of them",
+          "quoteStartMs": 4592670,
           "topics": [
             "AI",
             "biotech",
@@ -3360,8 +3360,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks argues OpenAI has actual subscription revenue, a dominant consumer position, and is replacing search — the internet's most lucrative franchise — making a $500B valuation justifiable.",
-          "quote": "OpenAI has actual revenue. I mean, they have actual revenue because they have subscriptions and they appear to have the dominant position in the consumer space. And it is a replacement for a lot of people for search, which is the most",
-          "quoteStartMs": 2135980,
+          "quote": "I mean, look, OpenAI has actual revenue. I mean, they have actual revenue because they have subscriptions and they appear to have the dominant position in the consumer space. And it is a replacement for a lot of people for search, which is",
+          "quoteStartMs": 2135080,
           "topics": [
             "valuation",
             "revenue",
@@ -3464,8 +3464,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks frames the Jony Ive acquisition as a binary outcome — either OpenAI creates an iPhone-like breakout consumer device that doubles the company's value, or the hardware effort fizzles to zero.",
-          "quote": "I don't think it's going to be 1 or 2% better. I think it's going to be either zero or a doubling of the company's value... Either he develops an iPhone-like amazing hit product no one's seen before... or probably they do something that",
-          "quoteStartMs": 3344000,
+          "quote": "I don't think it's going to be 1 or 2% better. I think it's going to be either zero or a doubling of the company's value, something like that. Either he develops an iPhone-like amazing hit product no one's seen before, some new consumer dev",
+          "quoteStartMs": 3343670,
           "topics": [
             "hardware",
             "product design",
@@ -3541,8 +3541,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath views GPT-4.5 as a weak release that went largely unnoticed, and argues the broader problem is that model makers are overfitting to benchmarks, making performance claims unreliable and eroding OpenAI's perceived leadership.",
-          "quote": "The dirty little secret of these model makers is that these guys are so trained on the evals that they're overfitting. And all this overfitting basically makes it pretty unreliable.",
-          "quoteStartMs": 5233010,
+          "quote": "the dirty little secret of these model makers is that these guys are so trained on the evals that they're overfitting. Yeah. And all this overfitting basically makes it pretty unreliable.",
+          "quoteStartMs": 5267626,
           "topics": [
             "AI models",
             "benchmarks",
@@ -3566,7 +3566,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Jason argues there is a non-trivial chance OpenAI loses the New York Times copyright lawsuit badly, potentially facing injunctions and being forced to pay large revenue-sharing settlements to content holders, which would structurally impair its business model.",
-          "quote": "I think this is all going to wind up like the Napster-Spotify case... there is a non-zero chance, like it might be 5 or 10%, that OpenAI is going to lose the New York Times lawsuit and they're going to lose it hard and there could be",
+          "quote": "I think this is all going to wind up like the Napster-Spotify case… there is a non-zero chance, like it might be 5 or 10%, that OpenAI is going to lose the New York Times lawsuit and they're going to lose it hard and there could be injuncti",
           "quoteStartMs": 5085524,
           "topics": [
             "copyright",
@@ -3591,15 +3591,15 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Naval argues that OpenAI's conversion from nonprofit to fully private/for-profit is self-dealing and unjustifiable — the nonprofit portion should remain in control, and the privatization of the whole entity for Sam Altman's personal benefit undermines the mission and represents a structural governance failure.",
-          "quote": "I just don't understand this conversion... it also looks like self-dealing, right? The board tried to fire Sam and Sam took over the board. Now it's his handpicked board... If you're going to capture the light code of all future value or",
-          "quoteStartMs": 5653000,
+          "quote": "I just don't understand this conversion. I mean, there was a, there was a board coup, right? The board tried to fire Sam and Sam took over the board. Now it's his handpicked board. So it also looks like self-dealing, right?",
+          "quoteStartMs": 5658765,
           "topics": [
             "governance",
             "nonprofit conversion",
             "valuation",
             "self-dealing"
           ],
-          "attributionConfidence": "low",
+          "attributionConfidence": "high",
           "guestName": "Naval Ravikant"
         },
         {
@@ -3670,8 +3670,8 @@
           "scoreNote": "Guest confirmed: 'we do own some OpenAI' and 'I am bullish on OpenAI'",
           "sectorProxy": null,
           "summary": "Thomas LaFont is bullish on OpenAI, citing ChatGPT's dominant 80%+ market share, 300 million weekly actives, over a million enterprise users, and its fast-growing franchise as the core investment thesis, with Stargate's $500B infrastructure buildout adding scale optionality.",
-          "quote": "I am bullish on OpenAI... it is maintaining 80% plus market share... I think the ChatGPT franchise inside of OpenAI is one of the great most successful, fastest growing kind of stories.",
-          "quoteStartMs": 4420539,
+          "quote": "we do own some OpenAI. I am bullish on OpenAI… it is maintaining 80% plus market share… I do think the ChatGPT franchise inside of OpenAI is one of the great most successful, fastest growing kind of stories.",
+          "quoteStartMs": 4418853,
           "topics": [
             "AI",
             "market share",
@@ -3754,7 +3754,7 @@
             "commoditization",
             "valuation"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "low"
         },
         {
           "id": "E206-openai-Guest-2",
@@ -3903,8 +3903,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks sees OpenAI as the clear AI leader with best models and developer ecosystem, but flags that durability of its moat is the key question — if it can consolidate its lead it's on track to be a trillion-dollar company; if not, it could be commoditized.",
-          "quote": "there's no question that OpenAI is the leader of the pack… The question is just how durable that advantage is, is there really a moat to any of this?… If so, it's on track to be the next trillion-dollar big tech company. But if not, it",
-          "quoteStartMs": 713484,
+          "quote": "I think there's no question that OpenAI is the leader of the pack. It has the most advanced AI models, it's got the best developer ecosystem, the best APIs, it keeps rolling out new products. And the question is just how durable that advant",
+          "quoteStartMs": 712773,
           "topics": [
             "AI leadership",
             "moat",
@@ -3955,7 +3955,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks is bullish on OpenAI, citing its $3.4B in revenue doubling year-over-year and its position as a dominant semantic search engine, comparing its long-term potential to Google's search franchise.",
-          "quote": "OpenAI is effectively semantic search, right? It's a different kind of search engine where it understands the question you're asking and gives you an answer instead of blue links. And they're already at... $3.4 billion in revenue... this",
+          "quote": "OpenAI is effectively semantic search, right? It's a different kind of search engine where it understands the question you're asking and gives you an answer instead of blue links. And they're already at, was it, we talked about this previou",
           "quoteStartMs": 2071489,
           "topics": [
             "AI revenue",
@@ -4057,8 +4057,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues OpenAI may be the 'AOL' of the AI era — dominant today but ultimately displaced by open-source models like Llama that deliver 85-90% of the capability at far lower cost, especially as enterprises figure out how to build their own LLM-driven tools.",
-          "quote": "Maybe OpenAI is AOL, right? Like, I think that there's going to be a Google that'll show up... ultimately the cost comes down so much with the open source tools... If you're an enterprise user, why would you pay thousands of dollars for",
-          "quoteStartMs": 3555000,
+          "quote": "Maybe OpenAI is AOL, right? Like, I think that there's going to be a Google that'll show up that'll— maybe it's Google. Grab a large part of the value here, or, you know, ultimately the cost comes down so much with the open source tools.",
+          "quoteStartMs": 3554940,
           "topics": [
             "AI",
             "open source",
@@ -4084,8 +4084,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks is impressed by OpenAI's product quality and revenue growth but sees risk in consumer B2C churn; he believes long-term value lies in the B2B/API developer business, and questions whether OpenAI can maintain its leadership as other LLMs catch up.",
-          "quote": "I would separate the B2C business from the B2B business... as somebody who invests in SaaS, when we see a business that has B2C subscriptions and B2B, we place all the value on B2B... Historically, the churn rates in B2C are too high.",
-          "quoteStartMs": 3182000,
+          "quote": "if I was to try and take apart this business as an investor, I would separate the B2C business from the B2B business… as somebody who invests in SaaS, when we see a business that has B2C subscriptions and B2B, we place all the value on B2B.",
+          "quoteStartMs": null,
           "topics": [
             "AI",
             "revenue growth",
@@ -4111,8 +4111,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath views OpenAI as technically ahead and deserving credit for creating an entire industry, but notes it will also be remembered for repeated drama and for transferring enormous value to employees through secondaries before a fully functional business exists — a rational but culturally conflicted organization.",
-          "quote": "They're technically ahead of everybody else. A lot of people want to put in money at crazy prices. A bunch of that value is transferred immediately to the employees. Who circle the wagons and do what's necessary to keep the taps flowing.",
-          "quoteStartMs": 399050,
+          "quote": "They're technically ahead of everybody else. A lot of people want to put in money at, you know, crazy prices. A bunch of that value is transferred immediately to the employees. Who circle the wagons and do what's necessary to keep the taps",
+          "quoteStartMs": 450483,
           "topics": [
             "valuation",
             "corporate governance",
@@ -4228,8 +4228,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues that the feared DSA/domain-specific architecture disruption to Nvidia is actually happening inside Nvidia itself, as evidenced by their co-design programs with every major lab, making Nvidia's competitive position stronger than bears anticipated.",
-          "quote": "the reality is that that DSA market evolution is actually happening inside of NVIDIA. That's what's so insane to me. That was my takeaway from the quarter as well, which is like, holy shit, these guys actually have domain-specific",
-          "quoteStartMs": 4753000,
+          "quote": "the reality is that that DSA market evolution is actually happening inside of NVIDIA. That's what's so insane to me. That was my takeaway from the quarter as well, which is like, holy shit, these guys actually have domain-specific architect",
+          "quoteStartMs": 4753945,
           "topics": [
             "competitive moat",
             "AI chips",
@@ -4590,7 +4590,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg acknowledges NVIDIA's durable moat and competitive strengths but flags a low-probability, high-severity risk from China developing competitive semiconductor manufacturing, arguing Western isolation policy is inadvertently incentivizing Chinese alternatives.",
-          "quote": "I do think that there's going to be an emergent competitive threat coming out of China to NVIDIA. And just like we were knocked over by Deepseek, I think we will be knocked over by some semiconductor manufacturing processes coming out of",
+          "quote": "I do think that there's going to be an emergent competitive threat coming out of China to NVIDIA. And just like we were knocked over by Deepseek, I think we will be knocked over by some semiconductor manufacturing processes. Coming out of C",
           "quoteStartMs": 2210450,
           "topics": [
             "China competition",
@@ -4692,8 +4692,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Nvidia has been systematically working around US export controls by designing downgraded chips (A800, H800, H20) to keep selling into China, and that roughly 47% of its revenue flows to China-linked entities — implying the company is acting against US national security interests and faces significant regulatory and revenue risk as controls tighten.",
-          "quote": "About 47% of all of NVIDIA's revenue goes to China and Chinese-related countries. And I think when you peel back this onion, I think what you will find is a whole raft of companies that were stood up to buy these NVIDIA GPUs to essentially",
-          "quoteStartMs": 986511,
+          "quote": "I think we can all do the math. About 47% of all of NVIDIA's revenue goes to China and Chinese-related countries. And I think when you peel back this onion, I think what you will find is a whole raft of companies that were stood up to buy t",
+          "quoteStartMs": 983768,
           "topics": [
             "export controls",
             "China revenue",
@@ -5032,7 +5032,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks argues Nvidia has a stronger moat than Cisco because its GPU hardware is far more complex to replicate and Nvidia stays ahead via continuous R&D cycles, though he acknowledges it remains an open question.",
-          "quote": "I think you can make the case that NVIDIA has a much better moat than Cisco. And just by the way, on this Cisco comparison... NVIDIA's had 2 blowout quarters and the competitors don't seem to be that much closer.",
+          "quote": "I think you can make the case that NVIDIA has a much better moat than Cisco. And just by the way, on this Cisco comparison, just to finish the thought, people were making this comparison 6 months ago. And what's happened since then? NVIDIA'",
           "quoteStartMs": 2022770,
           "topics": [
             "competitive moat",
@@ -5486,7 +5486,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues that landing terrestrial compute capacity blunts the bear case on orbital data center delays and creates a structural core hyperscaler business that subsidizes Grok training, reinforcing SpaceX's valuation ahead of IPO.",
-          "quote": "By actually landing a bunch of terrestrial capacity, I think you start to blunt that because you can now start to say that even if the orbital data centers get delayed… he now has a structural core business that will effectively subsidize",
+          "quote": "by actually landing a bunch of terrestrial capacity, I think you start to blunt that because you can now start to say that even if the orbital data centers get delayed by a few months or a few quarters, even if the technological de-risking",
           "quoteStartMs": 475218,
           "topics": [
             "valuation",
@@ -5614,7 +5614,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg argues SpaceX is effectively the railroad infrastructure for the next great frontier — the moon and Mars — and has also built a backup extraterrestrial internet via Starlink, making it a foundational technology platform for civilizational-scale value creation.",
-          "quote": "SpaceX will be to the moon and ultimately to Mars... SpaceX has also created a backup to the internet... that backup internet can coincide with the Earth's internet, but it creates this extraterrestrial communication network.",
+          "quote": "SpaceX will be to the moon and ultimately to Mars, and there's going to be an extraordinary abundance of production that's going to come out of the moon… SpaceX has also created— and this is going to be a a big part of the valuation analysi",
           "quoteStartMs": 672555,
           "topics": [
             "space economy",
@@ -5718,7 +5718,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks is bullish on xAI's competitive positioning, citing its unique real-time advantage from X integration, Elon's ability to scale training clusters faster than rivals, and a forthcoming Grok 5 trained on the largest Blackwell cluster.",
-          "quote": "You've got xAI, which I think is the best at current events because of the integration with X. And also Elon seems to be able to scale his data center, his training cluster, the fastest... that portends good things for Grok 5.",
+          "quote": "you've got xAI, which I think is the best at current events because of the integration with X. And also Elon seems to be able to scale his data center, his training cluster, the fastest. He had Colossus 1, now he's got Colossus 2, and that",
           "quoteStartMs": 503630,
           "topics": [
             "AI",
@@ -5851,8 +5851,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues that xAI's bet on massive compute scale and a general-computation approach (the 'Bitter Lesson') has allowed Grok 4 to leapfrog all competitors in under 2.5 years, with future iterations relying on synthetic data rather than human labeling — a compounding structural advantage over rivals like OpenAI, Google, and Meta who remain dependent on human-labeled data.",
-          "quote": "Two things. One is how quickly, starting in March of 2023, so we're talking about less than 2.5 years, what this team has accomplished and how far ahead they are of everybody else, as demonstrated by this.",
-          "quoteStartMs": 1240000,
+          "quote": "Two things. One is how quickly, starting in March of 2023, so we're talking about less than 2.5 years, what this team has accomplished and how how far ahead they are of everybody else, as demonstrated by this.",
+          "quoteStartMs": 1247989,
           "topics": [
             "AI compute scale",
             "competitive moat",
@@ -5902,8 +5902,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath, a shareholder, argues SpaceX has no economic alternative — it is the only company consistently crushing launch costs and operating at scale, with competitors years away from being viable.",
-          "quote": "SpaceX is the best. There's nobody even close. The next closest alternative is years and years away...they are the only solution and they're safe and they're reliable.",
-          "quoteStartMs": 4675701,
+          "quote": "The point is SpaceX is the best. There's nobody even close. The next closest alternative is years and years away. Would we benefit from more capacity? Sure. But the reality is they are the only solution and they're safe and they're reliable",
+          "quoteStartMs": 4674584,
           "topics": [
             "space",
             "competitive moat",
@@ -6032,7 +6032,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg contends Starlink could grow from 4 million subscribers to 100 million or more, potentially becoming one of the largest subscription businesses on Earth as satellite-to-phone expands availability.",
-          "quote": "Starlink's running at 4 million subs right now. That's like $100 a month, 4 million subs... If we can get satellite to phone and you can get Starlink more broadly available, this could be a 100 million subscriber business.",
+          "quote": "Starlink's running at 4 million subs right now. That's like $100 a month, 4 million subs. And if you do the math, I mean, how many people have ISPs that are slower than Starlink, right? How many people have cell phone providers that they're",
           "quoteStartMs": 1282620,
           "topics": [
             "subscriber growth",
@@ -6317,8 +6317,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath is impressed by CoreWeave's technical differentiation (bare-metal, no hypervisor) and revenue trajectory, but flags that the key investment risk is whether the assumed useful life of NVIDIA GPUs proves correct — if it's shorter than modeled, the business is deeply underwater.",
-          "quote": "The bet is they've built an amount of headway… But the other side of it is, is the useful life right? Is the technology curve right?… if we thought the useful life was 10 years, but it turned out to be 5, this business is deeply underwater.",
-          "quoteStartMs": 3395000,
+          "quote": "The bet is they've built an amount of headway. They're going to continue to do this good technical engineering. But the other side of it is, is the useful life right? Is the technology curve right?… we thought the useful life was 10 years,",
+          "quoteStartMs": 3397599,
           "topics": [
             "GPU depreciation",
             "cloud infrastructure",
@@ -7079,8 +7079,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Brad Gerstner highlights Google Cloud's stunning 63% growth and notes Google at 24x GAAP earnings is not overvalued, with the hyperscaler business expanding operating margins.",
-          "quote": "Google Cloud stunning everybody with 63% growth… Google at 24 times… operating margins are all expanding. This is not the stuff that bubbles are made of.",
-          "quoteStartMs": 3748000,
+          "quote": "we just saw Azure grow 39% in the quarter. We saw Google Cloud grow 63% in the quarter. Headcount growth for those companies the last 3 years, MAG5 combined, is about 3%. So their operating margins are all expanding.",
+          "quoteStartMs": 4479954,
           "topics": [
             "cloud growth",
             "valuation",
@@ -7105,7 +7105,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Jason argues Google brilliantly integrated Gemini into Search, growing to ~750M users while keeping search revenue surging, and the stock is being rewarded for solving the AI-vs-search revenue tension.",
-          "quote": "Search revenue is surging and they're also surging. So they figured out a way to balance those two competing forces, having search results that are AI-enabled and still getting people to click on links. They've done it brilliantly,",
+          "quote": "Search revenue is surging and they're also surging. So they figured out a way to balance those two competing forces, having search results that are AI-enabled and still getting people to click on links. They've done it brilliantly, apparent",
           "quoteStartMs": 1055267,
           "topics": [
             "AI integration",
@@ -7155,7 +7155,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Google's massive free cash flow allows it to run consumer and enterprise AI as effectively two separate companies, and that the market believes in the durability of its cash flows more than any other player.",
-          "quote": "They're probably the only one, and you can see it in the valuations actually... people believe the durability of Google more than they believe the durability of anything else.",
+          "quote": "They're probably the only one, and you can see it in the valuations actually, which I'm going to get to in a second. But people believe the durability of Google more than they believe the durability of anything else.",
           "quoteStartMs": 1581342,
           "topics": [
             "valuation",
@@ -7181,7 +7181,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks argues Google is well-positioned for the AI agent era given its existing access to users' calendars, documents, and email, and that it will compete vigorously for the consumer given the existential nature of search/AI convergence.",
-          "quote": "Google is in an outstanding position to do the whole Open Claw thing because they already have access to your calendar, your documents, your email. So the agent doesn't really have to earn your trust because you already trust Google with",
+          "quote": "Google is in an outstanding position to do the whole Open Claw thing because they already have access to your calendar, your documents, your email. So the agent doesn't really have to earn your trust because you already trust Google with al",
           "quoteStartMs": 1531977,
           "topics": [
             "AI agents",
@@ -7207,8 +7207,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Emil Michael highlights Google's structural cost advantage in AI due to owning its own cloud, meaning it doesn't carry the margin pass-through burden that Anthropic does, giving it a superior long-term economic proposition.",
-          "quote": "I do think Google has a long-term strategic advantage... because they have their own cloud. So between them, they don't have the margin on top of the cloud that Anthropic have to pass on. So it's an interesting economic proposition from",
-          "quoteStartMs": 3936000,
+          "quote": "I do think Google has a long-term strategic advantage, not because of, not only because of their consumer thing, but because they have their own cloud. So between them, they don't have the margin on top of the cloud that Anthropical have to",
+          "quoteStartMs": 3971830,
           "topics": [
             "AI",
             "cloud",
@@ -7234,7 +7234,7 @@
           "scoreNote": "Explicitly named as the top pick in a forced-choice between OpenAI, Anthropic, and Google; 'Google is the bet'",
           "sectorProxy": null,
           "summary": "Friedberg picks Google as the best net market value creator among AI plays, citing its own cloud infrastructure (lower margins vs. Anthropic), G Suite distribution advantage, and imminent Cowork-like agent rollout.",
-          "quote": "I think Google is the bet. I think Google is the market value creator bet, but I think Anthropic is the multiple bet. I think Anthropic is a trillion five market cap at the end of the day, unless this blows them up.",
+          "quote": "I think Google is the bet. I think Google is the market value creator bet, but I think Anthropic is the multiple bet.",
           "quoteStartMs": 3824913,
           "topics": [
             "AI",
@@ -7286,8 +7286,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg argues Google's shift to a risk-taking posture, combined with leadership changes, reversed its decline against OpenAI — and that OpenAI's role as the media lightning rod was an unexpected strategic gift to Google.",
-          "quote": "In a way, no greater blessing has ever happened to Alphabet than OpenAI's rise... it also took the attention away from Google, focused in on OpenAI, and that attention fundamentally damaged OpenAI's strategic product capabilities.",
-          "quoteStartMs": 1609000,
+          "quote": "So in a, in a way, no greater blessing has ever happened to Alphabet than OpenAI's rise. And I think that that rise, not only did it create the foil for Google in the monopoly sense,, but it also took the attention away from Google, focused",
+          "quoteStartMs": 1608780,
           "topics": [
             "AI",
             "competitive position",
@@ -7442,7 +7442,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath sees Google's immense unrealized intrinsic value across subsidiaries (DeepMind, Waymo, etc.) exceeding its trading price, but argues the conglomerate structure creates valuation pressure and fissures that will force asset separations over time.",
-          "quote": "The intrinsic value of everything they have will far exceed the actual value that it trades at. And so there'll always be these fissures of pressure... I suspect that this is going to happen at Google.",
+          "quote": "the intrinsic value of everything they have will far exceed the actual value that it trades at. And so there'll always be these fissures of pressure… I suspect that this is going to happen at Google.",
           "quoteStartMs": 2269657,
           "topics": [
             "conglomerate discount",
@@ -7468,7 +7468,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg highlights Google Cloud's accelerating 32-40% YoY growth and sees the AWS outage as a further tailwind for GCP as enterprises diversify cloud providers.",
-          "quote": "Google Cloud is accelerating at 32% year over year, and some say getting closer to 40% growth rate... I do think this is actually a very beneficial situation for Microsoft and GCP.",
+          "quote": "Google Cloud is accelerating at 32% year over year, and some say getting closer to 40% growth rate… I do think this is actually a very beneficial situation for Microsoft and GCP",
           "quoteStartMs": 1877615,
           "topics": [
             "cloud",
@@ -7570,8 +7570,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Keith argues Google Search is toast and that the assets best positioned to save Alphabet have nothing to do with search — framing the core search business as a loser against ChatGPT unless Google combines Chrome with Gemini into a competitive product.",
-          "quote": "Google Search, cross-search is toast. And since they have Chrome and they theoretically have a quality team in Gemini, they should be putting these two things together... the assets that are best at Google right now have nothing to do with",
-          "quoteStartMs": 2967010,
+          "quote": "Google Search, cross-search is toast. And since they have Chrome and they theoretically have a, a quality team in Gemini, they should be putting these two things together and company to compete with ChatGPT, they're gonna lose the search ga",
+          "quoteStartMs": 2954807,
           "topics": [
             "search obsolescence",
             "AI competition",
@@ -7647,8 +7647,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath sees Google's AI Mode as a meaningful but incomplete step — they need to move faster to flip the switch and allocate resources to new form factors before OpenAI's hardware push forces them onto the back foot.",
-          "quote": "I think this is not the destination, but they've taken a really important step... what you don't want to have when you are going through an innovator's dilemma is to have the competitor be onto the next lily pad while you are figuring out",
-          "quoteStartMs": 2733918,
+          "quote": "I think that this is not the destination, but they've taken a really important step. And now they have to follow through... what you don't want to have when you are going through an innovator's dilemma is to have the competitor be onto the",
+          "quoteStartMs": 2664260,
           "topics": [
             "AI search",
             "innovator's dilemma",
@@ -7673,7 +7673,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks views Google's AI Mode launch as an important step that shows they are in the game and responding to AI disruption, with the market validating the move via a 5% stock jump.",
-          "quote": "I think they've taken an important step in that direction... it certainly shows that they're in the game and they're not going to get caught totally flat-footed and let the whole world disrupt them while they're trying to figure out AI.",
+          "quote": "I think they've taken an important step in that direction. They've sort thread the needle here between keeping their old UI and product and then also incorporating the new sort of AI UI... it certainly shows that they're in the game and the",
           "quoteStartMs": 2581698,
           "topics": [
             "AI search",
@@ -7777,8 +7777,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Google has the best models in many domains and significant advantages, but faces a strategic risk from ceding the new AI query bucket to OpenAI; the market will now start pricing in search share decay, and only aggressive founder-led product cannibalization can avert structural decline.",
-          "quote": "The market will now start to price this decay in... ChatGPT is running away with it. And if you look at the growth and the share that OpenAI is seeing, it's quite an incredible thing.",
-          "quoteStartMs": 2258000,
+          "quote": "The reality is that ChatGPT is running away with it. And if you look at the growth and the share that OpenAI is seeing, it's quite an incredible thing.",
+          "quoteStartMs": 2298202,
           "topics": [
             "AI search",
             "competitive threat",
@@ -7829,8 +7829,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg sees Alphabet as an 'incredible business' with Gemini as a genuinely better model, but warns the company is squandering its 270M paid subscriber base by failing to put Gemini front-and-center across Gmail, YouTube, and Google One, risking competitive irrelevance vs. OpenAI if leadership doesn't impose decisive product direction.",
-          "quote": "What an incredible business... they need to do something with the subscriptions that they have and put Gemini right in front and really do a head-on attack against ChatGPT. Otherwise, you're going to look back in 4 years and regret hemming",
-          "quoteStartMs": 3035000,
+          "quote": "I think the Google business is profoundly amazing. I think they need to do something with the subscriptions that they have and put Gemini right in front and really do a head-on attack against ChatGPT.",
+          "quoteStartMs": 3371332,
           "topics": [
             "AI competition",
             "product strategy",
@@ -7854,8 +7854,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks acknowledges Alphabet's strong business and Gemini's benchmark improvements, but warns the company faces a genuine innovator's dilemma — the longer it delays making Gemini front-and-center, the more users entrench ChatGPT as a habit, putting Google in a tough competitive spot.",
-          "quote": "I do think Google is in a really tough spot and the longer they wait to make Gemini front and center, the worse this usage problem gets. Users are learning a new habit... they're learning to go to ChatGPT",
-          "quoteStartMs": 3532593,
+          "quote": "I do think Google is, is in a really tough spot and the longer they wait to make Gemini front and center, the worse this usage problem gets. I mean, what's basically happening right now is Users are learning a new habit. Totally. I mean, th",
+          "quoteStartMs": 3519292,
           "topics": [
             "AI competition",
             "innovator's dilemma",
@@ -8111,8 +8111,8 @@
           "excludeReason": null,
           "scoreNote": null,
           "summary": "Jason argues Google's Gemini models have reached and exceeded parity with OpenAI's best offerings, and believes Google is now leading the AI race after being counted out.",
-          "quote": "I think not only have they caught up, I think they have exceeded. What are your thoughts? Because people were counting them out and here we are.",
-          "quoteStartMs": 5310000,
+          "quote": "I think Google now has reached parity and they have an app out. Freeberg, what are your thoughts? Because people were counting them out and here we are. I think not only have they caught up, I think they have exceeded.",
+          "quoteStartMs": 5301520,
           "topics": [
             "AI competition",
             "product",
@@ -8135,8 +8135,8 @@
           "excludeReason": null,
           "scoreNote": null,
           "summary": "Chamath argues Google has a compounding data, infrastructure, and personnel advantage in AI, has changed its posture to launch aggressively, and is now clearly competitive — dismissing prior doubts about the company.",
-          "quote": "They were late and the compounding effects are playing out and it's only gonna continue to compound. And I will say the data repository at Google... is advantaged. And so everyone's been kind of counting them out, but it's clear they're in",
-          "quoteStartMs": 5315000,
+          "quote": "They were late and the compounding effects are playing out and it's only gonna continue to compound. And I will say the data repository at Google, the engine that they they have the infrastructure, the team, all, everything down to componen",
+          "quoteStartMs": 5314780,
           "topics": [
             "AI competition",
             "data advantage",
@@ -8212,8 +8212,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg argues Google is significantly handicapped in its ability to pursue M&A due to ongoing regulatory and antitrust pressure from both parties, limiting its strategic optionality.",
-          "quote": "I think that those guys are buyers, JKL. I don't think that Google's in a place right now where they can go out and make a bunch of acquisitions. They're going to do everything they can to avoid the regulatory sledgehammer that's coming",
-          "quoteStartMs": 1920000,
+          "quote": "I don't think that those guys are buyers, JKL. I don't think that Google's in a place right now where they can go out and make a bunch of acquisitions. They're going to do everything they can to avoid the regulatory sledgehammer that's comi",
+          "quoteStartMs": 1956666,
           "topics": [
             "antitrust",
             "M&A constraints",
@@ -8263,8 +8263,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Google is one of seven quasi-monopolies whose parts are worth more than the whole, making shareholders better off through a breakup that would unlock higher individual valuations for each business unit.",
-          "quote": "There are 7 quasi-monopolies in the world. They're all American... if you own stock in any of these companies, the sum of the parts analysis would tell you that the breakup value is greater than the way that these companies get discounted.",
-          "quoteStartMs": 1820000,
+          "quote": "if you own stock in any of these companies, the, some of the parts analysis would tell you that the breakup value is greater than the way that these companies get discounted.",
+          "quoteStartMs": 1857738,
           "topics": [
             "valuation",
             "sum-of-parts",
@@ -8315,8 +8315,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks argues a Google breakup would likely be good for shareholders, as the company should probably be split into three separate entities, though he acknowledges the irony that this action comes precisely as Google faces its greatest existential threat from OpenAI.",
-          "quote": "I actually think that would be good. At the end of the day, it might even be good for shareholders. This thing should be probably 3 separate companies like we've talked about in a previous show.",
-          "quoteStartMs": 2710110,
+          "quote": "But it is true that Google is facing the most existential threat to its search monopoly, and it is a monopoly, in the form of OpenAI at this point in time.",
+          "quoteStartMs": 2720582,
           "topics": [
             "antitrust",
             "breakup",
@@ -8393,7 +8393,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Jason sees spinning out YouTube and Waymo as value-unlocking for Google shareholders, but warns that being forced to divest Android would be massively damaging since the Android default search would be auctioned to the highest bidder (potentially Microsoft/Bing).",
-          "quote": "The easy solution for Google…is to just spin out YouTube and Waymo. Those two are perfect standalone businesses…The most damaging one would be Android. If they force them to sell Android, that is going to be massively damaging.",
+          "quote": "The easy solution for Google, and I agree with, I think, people who said that here, is to just spin out YouTube and Waymo. Those two are perfect standalone businesses… The most damaging one would be Android. If they force them to sell Andro",
           "quoteStartMs": 1123057,
           "topics": [
             "breakup/antitrust",
@@ -8470,7 +8470,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg argues that a government-forced breakup of Google is anti-success rather than anti-competition, and that a voluntary spin-out of YouTube could unlock meaningful shareholder value via the conglomerate discount, though shared infrastructure complicates clean separation.",
-          "quote": "I do think that there's a lot of value unlock in YouTube. So if Google were to just generally spin out YouTube, That is probably a business that on its own would attract an investor base that might otherwise not want to get into the",
+          "quote": "I do think that there's a lot of value unlock in YouTube. So if Google were to just generally spin out YouTube, That is probably a business that on its own would attract an investor base that might otherwise not want to get into the conglom",
           "quoteStartMs": 496827,
           "topics": [
             "breakup/antitrust",
@@ -8496,8 +8496,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks argues Google is clearly running at least two or three illegal monopolies (search, advertising, YouTube) and believes the company should be broken into three or four separate companies, representing a severe structural downside for the current entity.",
-          "quote": "Google clearly is a monopoly. In fact, it's at least 2 or 3 monopolies. They have monopoly in search, they have monopoly in advertising... I think that it would be great if the government broke up this company. It should be at least 3 or 4",
-          "quoteStartMs": 3672000,
+          "quote": "Google clearly is a monopoly. In fact, it's at least 2 or 3 monopolies. They have monopoly in search, they have monopoly in advertising, and they at least have a dominant position in video with YouTube. And I think that it would be great if",
+          "quoteStartMs": 3674316,
           "topics": [
             "antitrust",
             "breakup risk",
@@ -8574,14 +8574,14 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks argues that Google's monopoly is so powerful it can absorb multiple AI missteps and ultimately win by copying Perplexity's citation-based search model, likely growing to a $5 trillion company as Gemini-powered OneBox becomes the future of Search.",
-          "quote": "They can make 10 mistakes, but their monopoly is so strong that they can finally get it right by copying the innovator. And they're probably gonna become a $5 trillion company now.",
-          "quoteStartMs": 5674000,
+          "quote": "They can make 10 mistakes, but their monopoly is so strong that they can finally get it right by copying the innovator. And they're probably gonna become a $5 billion company now. Sorry, $5 trillion company.",
+          "quoteStartMs": 5675868,
           "topics": [
             "monopoly durability",
             "AI search",
             "valuation"
           ],
-          "attributionConfidence": "low"
+          "attributionConfidence": "high"
         },
         {
           "id": "E179-googl-Friedberg-7",
@@ -8599,8 +8599,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg argues Google's AI-powered OneBox/snippet approach will keep more users on-page, increase search volume, and allow Google to monetize queries it previously lost to third-party content — driving revenue per search query up, not down — while hidden assets like Isomorphic Labs represent upside that precision-focused analysts miss.",
-          "quote": "The revenue per search query in some of those categories actually has the potential to go up, not down... Meta and Amazon do not have an isomorphics lab and Waymo sitting inside their business that suddenly pops to a couple hundred billion",
-          "quoteStartMs": 5308000,
+          "quote": "I do think that the revenue per search query in some of those categories actually has the potential to go up, not down… Meta and Amazon do not have an isomorphics lab and Waymo sitting inside their business that suddenly pops to a couple hu",
+          "quoteStartMs": null,
           "topics": [
             "AI search",
             "monetization",
@@ -8624,8 +8624,8 @@
           "scoreNote": "Explicit re-underwriting from prior bear to bull; Chamath cites Isomorphic Labs and Search AI as the drivers.",
           "sectorProxy": null,
           "summary": "Chamath reverses his prior bearish stance on Google, arguing that AI Overviews in Search plus hidden optionality like Isomorphic Labs (a potential multi-hundred-billion-dollar business) and Waymo make the company significantly underappreciated.",
-          "quote": "I think the Google thing is pretty special between last week's announcement of Isomorphic Labs, which let's be honest, that's just a multi-hundred billion dollar company... the reports of their death were premature and exaggerated.",
-          "quoteStartMs": 5079000,
+          "quote": "I think the Google thing is pretty special between last week's announcement of Isomorphic Labs, which let's be honest, that's just a multi-hundred billion dollar company… the reports of their death were premature and exaggerated.",
+          "quoteStartMs": null,
           "topics": [
             "AI search",
             "Isomorphic Labs",
@@ -8650,8 +8650,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg argues that AlphaFold 3 and Isomorphic Labs represent an extraordinary, underappreciated portfolio of high-value bets at Google that could unlock a $100B+ drug discovery business, and that Google's decision to keep AlphaFold 3 proprietary signals serious commercial intent.",
-          "quote": "I think Google's got this like portfolio of like quiet, you know, extraordinarily high bets. And the fact that they didn't open source everything in this says a lot about their intentions.",
-          "quoteStartMs": 5874000,
+          "quote": "I think the other side of this is Google is hugely advantaged and they just showed the world a little bit about some of these jewels that they have in the treasure chest.",
+          "quoteStartMs": 5671953,
           "topics": [
             "AI",
             "drug discovery",
@@ -8950,8 +8950,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues that high-end enterprise software like Salesforce is safe from AI disruption — companies with deep C-suite relationships and strong net dollar retention are positioned to 'crush' as the market re-rates back and enterprises need trusted partners to deploy AI ROI.",
-          "quote": "The high end of the market where Marc operates, where the large monoliths operate is quite safe... who has the best relationships, meaning they're inside the CXOs and the C-suite... Those guys I think are positioned to crush.",
-          "quoteStartMs": 2162000,
+          "quote": "I think the high end of the market where Marc operates, where the large monoliths operate is quite safe… who has the best relationships, meaning they're inside the CXOs and the C-suite. They have relationships with the CEOs and they're trus",
+          "quoteStartMs": null,
           "topics": [
             "SaaS re-rating",
             "AI disruption",
@@ -8976,8 +8976,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Benioff argues Salesforce is fundamentally strong despite the SaaS re-rating — $46B revenue, $16B+ cash flow, massive buyback — and that AI/agents create unprecedented new capabilities for the business, making the stock undervalued relative to fundamentals.",
-          "quote": "We'll do over $46 billion this year, more than $16 billion in cash flow. We have more than 83,000 employees... I think it's one of the largest in history. Yeah, we were, we want to buy back as much as we can.",
-          "quoteStartMs": 2100000,
+          "quote": "we'll do over $46 billion this year, more than $16 billion in cash flow. We have more than 83,000 employees. These are the things that I'm focused on. What is the level of customer success that we're delivering?",
+          "quoteStartMs": 2106977,
           "topics": [
             "SaaS re-rating",
             "AI agents",
@@ -9003,7 +9003,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath acknowledges Salesforce looks cheap at 10x FCF historically but warns that AI-driven compression of SaaS unit economics could reset multiples to 3-5x FCF, making the floor uncertain regardless of business quality.",
-          "quote": "Is Salesforce a good buy at 10 times free cash flow? Historical artifacts would tell us a screaming yes. The problem is that if you cut everybody's cash flows off at year 5 or 6 or 7, then all of a sudden I think you see the natural",
+          "quote": "is Salesforce a good buy at 10 times free cash flow? Historical artifacts would tell us a screaming yes. The problem is that if you cut everybody's cash flows off at year 5 or 6 or 7, then all of a sudden I think you see the natural compres",
           "quoteStartMs": 2035153,
           "topics": [
             "valuation",
@@ -9029,7 +9029,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks suggests Salesforce's stock might be a bargain given Benioff's track record of riding every tech wave and his willingness to bet the company on headless/AI transformation, despite the broader SaaS headwinds.",
-          "quote": "He's made every previous wave work to his benefit, whether it was social, whether it was mobile, whether it was big data, all that kind of stuff. What are the odds he's going to make AI work to his benefit? I'd say pretty good. So his",
+          "quote": "He's made every previous wave work to his benefit, whether it was social, whether it was mobile, whether it was big data, all that kind of stuff. What are the odds he's going to make AI work to his benefit? I'd say pretty good. So his stock",
           "quoteStartMs": 2143115,
           "topics": [
             "valuation",
@@ -9055,8 +9055,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg notes Salesforce is trading at under 10x free cash flow and highlights that its founder-led, headless AI product pivot gives it unusual maneuverability among legacy SaaS companies to adapt and potentially win the AI transition.",
-          "quote": "I think it's very smart. There's ways that that business can maneuver, right? And I think they're pretty unique. It may be that of all the businesses in the scape like that, you know, the ones that have that scale, that have that",
-          "quoteStartMs": 1984493,
+          "quote": "Salesforce today is down 9%, $140 billion enterprise value on $15 billion of free cash flow. This thing is trading at less than 10 times free cash flow. It's unbelievable.",
+          "quoteStartMs": 1953172,
           "topics": [
             "valuation",
             "AI transition",
@@ -9081,7 +9081,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks pushes back on the 'SaaS is dead' narrative for entrenched systems like Salesforce — nobody will rip out a 25-year-tested platform — but concedes real risk that SaaS companies become legacy infrastructure while a new agentic layer above them captures future value and cuts into their growth opportunity.",
-          "quote": "I don't think it's existential...the risk for the SaaS companies...is that they become an old layer of the stack that now there's a new layer that gets built on top of...all the action kind of moves to a new layer of the stack, and that's",
+          "quote": "I don't think it's existential. It's where the future value capture is going to be...I think the risk for the SaaS companies, it's not that they get replaced, although that'll happen to some degree, but it's that they become an old layer of",
           "quoteStartMs": 1271835,
           "topics": [
             "AI disruption",
@@ -9133,8 +9133,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Salesforce and the broader enterprise software complex are facing harder renewal cycles as customers grow frustrated with legacy software spend and look to AI-driven alternatives, pressuring revenue.",
-          "quote": "You can see it with what's happening to Salesforce and other big companies is that these renewal cycles are getting harder and harder to justify.",
-          "quoteStartMs": 1513199,
+          "quote": "you, you can see it with what's happening to Salesforce and other big companies is that these renewal cycles are getting harder and harder to justify.",
+          "quoteStartMs": 1512879,
           "topics": [
             "enterprise software",
             "AI disruption",
@@ -9158,7 +9158,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues that AI agents will erode the necessity of traditional systems of record like Salesforce, making their expensive software unjustifiable as companies can pipe data directly and achieve the same outcomes at a fraction of the cost.",
-          "quote": "systems of record lose a grip on the vault that they had in terms of the data that runs a company… You don't necessarily need it with the same reliance and primacy that you did 5 and 10 years ago. That'll have an impact to the software",
+          "quote": "systems of record lose a grip on the vault that they had in terms of the data that runs a company. You don't necessarily need it with, in the same reliance and primacy that you did 5 and 10 years ago. That'll have an impact to the software",
           "quoteStartMs": 1656480,
           "topics": [
             "AI disruption",
@@ -9635,7 +9635,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg argues Tesla's autonomous competency led to a robotics revolution, and those robots — deployable on the moon — make Tesla a more interesting long-term story than its origins as an EV company suggest, especially in combination with SpaceX.",
-          "quote": "Tesla, I think 20 years from now is actually a more interesting story... Tesla started out as an electric car company, 100% ended up becoming an autonomous car company. And the autonomous competency is what led to the robotics revolution.",
+          "quote": "Tesla, I think 20 years from now is actually a more interesting story, whether they're the same independent company or the same company. I think we're going to look back one day and have this kind of laughing observation that Tesla started",
           "quoteStartMs": 599391,
           "topics": [
             "robotics",
@@ -9714,8 +9714,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Elon Musk argues Tesla is not just a car company but a uniquely complex, multi-product business encompassing batteries, autonomy, Optimus robots, and a coming fleet of millions of CyberCabs, making it irreplaceable and unsuited for any other leader.",
-          "quote": "all of the cars we make right now are capable of being a robotaxi... all of our cars are capable of on supervised full autonomy... I think ultimately we'll make millions of CyberCabs per year.",
-          "quoteStartMs": 3639000,
+          "quote": "all of the cars we make right now are capable of being a robotaxi... all of the cars we make are capable of on supervised full autonomy... I think ultimately we'll make millions of CyberCabs per year. But, but it is important to emphasize t",
+          "quoteStartMs": 3639249,
           "topics": [
             "robotaxi",
             "autonomy",
@@ -9793,8 +9793,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg calls Tesla the best place to invest for a shot at the massive humanoid robotics industry, describing its Optimus opportunity as a low-probability, high-upside call option, though he notes valuation already prices in a premium for that optionality.",
-          "quote": "Tesla probably has the— it is the best place to invest if you want to have a shot at a massive new industry...I think this humanoid robot opportunity is absolutely mind-blowingly ginormous. And I don't think that there's a better company",
-          "quoteStartMs": 2129558,
+          "quote": "I think that Tesla probably has the— it is the best place to invest if you want to have a shot at a massive new industry. So they've got a baseline business in, in obviously the automobiles. But I think this humanoid robot opportunity is ab",
+          "quoteStartMs": 2128475,
           "topics": [
             "humanoid robotics",
             "physical AI",
@@ -9947,7 +9947,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Travis Kalanick argues Tesla has a significant manufacturing advantage in the autonomous vehicle race, and cheap AI is already turbocharging FSD performance, with 10x improvement in miles-per-intervention in just 3 months.",
-          "quote": "cheap AI makes cheap autonomy... Tesla and FSD, their new models are like, I think in a 3-month period, they went up like 10x in terms of performance, meaning in number of miles per human intervention. Tesla of course has huge advantage.",
+          "quote": "cheap AI makes cheap autonomy. Okay? So if, as cheap AI gets out there and proliferates and gets broadly distributed, we should expect autonomy gets easier and easier and easier. And you see some of the stuff that's happening with Tesla and",
           "quoteStartMs": 5224604,
           "topics": [
             "autonomous vehicles",
@@ -10027,8 +10027,8 @@
           "scoreNote": "Named as one of Jason's two biggest business winners for 2025; framed as a forward investment view.",
           "sectorProxy": null,
           "summary": "Jason names Tesla as one of his biggest business winners for 2025, citing its AI and robotics investments and Colossus GPU cluster build-out as positioning it for unexpected breakthroughs.",
-          "quote": "I am just absolutely amazed at the comeback that Google has made with AI, and I'm absolutely in awe of what Elon did with Colossus... those two specifically... are gonna be the biggest winners next year.",
-          "quoteStartMs": 1742000,
+          "quote": "My biggest business winner prediction for 2025 is Tesla and Google... those two specifically, those two, three names I think are gonna be the biggest winners next year.",
+          "quoteStartMs": null,
           "topics": [
             "AI",
             "robotics",
@@ -11161,7 +11161,7 @@
           "sectorProxy": "QQQ",
           "summary": "Chamath says markets will keep going up for roughly 500 days driven by AI infrastructure value creation, but warns of a coming reckoning when token buyers must show measurable ROI on margins.",
           "quote": "I think the markets are going to keep going up for a while, and then at some point they're going to go down… I think we have, call it, 500 days where you just got to be net long.",
-          "quoteStartMs": 4032000,
+          "quoteStartMs": null,
           "topics": [
             "macro outlook",
             "AI ROI",
@@ -11526,7 +11526,7 @@
           "scoreNote": null,
           "sectorProxy": "MAGS",
           "summary": "Chamath argues the hyperscalers' massive CapEx commitments at above-market energy rates will force them to lever up, become bulky industrial businesses, and compress valuations — suggesting investors should instead follow the trillion dollars flowing out of them and buy the recipient companies.",
-          "quote": "I'm not sure that there's a good valuation case to be made at that point. And so I think it may be simpler...to just follow the dollars, like a trillion dollars a year going out of the hyperscalers. Where is it going? Just follow those",
+          "quote": "I'm not sure that there's a good valuation case to be made at that point. And so I think it may be simpler, and this is what I tweeted, to just follow the dollars, like a trillion dollars a year going out of the hyperscalers. Where is it go",
           "quoteStartMs": 2740145,
           "topics": [
             "CapEx",
@@ -12509,8 +12509,8 @@
           "scoreNote": null,
           "sectorProxy": "IGV",
           "summary": "Chamath argues that as SpaceX, OpenAI, and Anthropic come public, their AI capabilities will cannibalize the moats of existing software companies, causing tech sector P/E multiples to converge toward non-tech multiples — a bearish re-rating for the software complex.",
-          "quote": "As those three companies come out, the combination of SpaceX, OpenAI, and Anthropic, all three are baking an AI technology that first and foremost will go after the tech sector. It will eliminate and it will cannibalize and it will erode",
-          "quoteStartMs": 1870000,
+          "quote": "as these companies come out, the combination of SpaceX, OpenAI, and Anthropic, all three are baking an AI technology that first and foremost will go after the tech sector. It will eliminate and it will cannibalize and it will erode most of",
+          "quoteStartMs": 1875490,
           "topics": [
             "AI disruption",
             "valuation compression",
@@ -12593,7 +12593,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath warns that Bitcoin and crypto broadly are the most obvious honeypot for a non-state actor wielding near-term quantum computing, and that the ecosystem has 5–7 years to achieve quantum-resistance or face existential risk.",
-          "quote": "If a non-state actor gets ahold of quantum technology that can defeat crypto as we know it today... a non-state actor's incentive will first be to drain the obvious honeypots... I think crypto is the most obvious honeypot in a world where",
+          "quote": "if a non-state actor gets ahold of quantum technology that can defeat crypto as we know it today, SHA-256, ECDS, the elliptical curve stuff, the run-of-the-mill stuff that we all rely on, a non-state actor's incentive will first be to drain",
           "quoteStartMs": 3925247,
           "topics": [
             "quantum computing",
@@ -12703,14 +12703,14 @@
           "scoreNote": "Not scored: Chamath makes an explicit bear claim on the SaaS sector — median growth collapsed, consumption pricing unsustainable, AI rebuilds displacing incumbents, 'the jig is totally up for software' — this is a named basket with an explicit directional bear claim; callType=basket is appropriate but the quote doesn't contain Chamath's own transaction language so should remain view.",
           "sectorProxy": "IGV",
           "summary": "Chamath argues the jig is up for enterprise SaaS — median growth has collapsed from 17% to 9%, AI-native software rebuilds are displacing incumbents, consumption-based pricing doesn't work, and the entire software cartel built on per-seat licensing will be undone.",
-          "quote": "I think the jig is totally up for software...Nobody's going to pay consumption because you're like, how do you expect me to, you know, hold and store and pay for terabytes and terabytes, potentially a day of data? It's not sustainable.",
-          "quoteStartMs": 3886000,
+          "quote": "I think that the jig is totally up for software.",
+          "quoteStartMs": 3952360,
           "topics": [
             "SaaS disruption",
             "AI-native software",
             "pricing model collapse"
           ],
-          "attributionConfidence": "low"
+          "attributionConfidence": "high"
         }
       ],
       "synthesis": "The All-In hosts present a uniformly bearish view on the SaaS sector, with Chamath the sole contributor and expressing high conviction across two separate occasions. In mid-2025, Chamath argued that enterprise SaaS is structurally broken — median growth has halved to ~9%, AI-native software is displacing incumbents, and neither consumption-based nor per-seat pricing models are sustainable long-term. By early 2026, he extended that thesis to valuation, contending that markets are actively re-rating SaaS multiples downward as investors discount the risk that AI and potential superintelligence erode the long-duration cash flows that once justified premium prices, citing Snowflake's dramatic multiple compression as a concrete example. With only one host represented, there is no internal disagreement, but Chamath's consistent, high-conviction bearishness across both periods suggests a firm and deepening negative stance on the sector's structural outlook.",
@@ -12744,19 +12744,19 @@
           "scoreNote": "Friedberg explicitly states 'I just bought LNG, that Cheniere company' — direct equity purchase.",
           "sectorProxy": null,
           "summary": "Friedberg bought shares of Cheniere Energy, citing it as a durable, well-run business with relevance given geopolitical instability in the Middle East and fitting his 'counter-AI / high asset, low obsolescence' investment framework.",
-          "quote": "I just bought LNG, that Cheniere company. Given all the craziness in the Middle East, and you know, I visited there with Doug Burgum, so it was the first time I'd ever been exposed to this business.",
-          "quoteStartMs": 2159000,
+          "quote": "I just bought LNG, that Cheniere company.",
+          "quoteStartMs": 2157093,
           "topics": [
             "LNG",
             "energy",
             "geopolitics",
             "HALO assets"
           ],
-          "attributionConfidence": "low"
+          "attributionConfidence": "high"
         }
       ],
       "synthesis": "The hosts' collective view on Cheniere Energy (LNG) is represented solely by Friedberg, who holds a bullish position at medium conviction as of late March 2026. He recently initiated a buy, characterizing Cheniere as a well-run, durable natural gas business that is resilient to AI-driven disruption — framing it as part of a deliberate \"high asset, low obsolescence\" strategy to counter AI risk in his portfolio. No other hosts offered a view on Cheniere, so no points of agreement or disagreement can be drawn from the available material.",
-      "netStance": "neutral",
+      "netStance": "bull",
       "firstMentioned": "2026-03-27T20:03:00.000Z",
       "lastMentioned": "2026-03-27T20:03:00.000Z",
       "mentionCount": 1,
@@ -13058,8 +13058,8 @@
           "conviction": "medium",
           "callType": "view",
           "summary": "Chamath argues the oil price spike is likely short-lived, pointing to the market's reflexive drop from $120 to $90 on Trump's 'war will be over soon' comment as validation. He also cites the IEA coordinated release of ~400M barrels plus ~1B more in strategic reserves as dampening further price spikes.",
-          "quote": "Trump was asked about the war and he said the war would be over very soon. What did the market do? The market literally took oil from $120 a barrel to $90 a barrel...Chris released 172 million barrels...a coordinated release of about 400",
-          "quoteStartMs": 506267,
+          "quote": "I think President Trump was asked about the war and he said the war would be over very soon. What did the market do? The market literally took oil from $120 a barrel to $90 a barrel.",
+          "quoteStartMs": 505224,
           "topics": [
             "Iran war",
             "oil price",
@@ -13155,8 +13155,8 @@
           "conviction": "medium",
           "callType": "view",
           "summary": "Jason highlights that the closure of the Strait of Hormuz would remove 3.3 million barrels of daily production, driving oil prices higher, and notes oil had already risen to $84/barrel, framing acute economic second-order effects over the coming weeks.",
-          "quote": "Unless the strait opens, 3.3 million barrels of daily production would be lost early next week... Oil has rose to $84 a barrel Wednesday... could be, uh, you know, intense and acute.",
-          "quoteStartMs": 2250393,
+          "quote": "Unless the strait opens, 3.3 million barrels of daily production would be lost early next week. And then there's insurance companies. They've all canceled the war risk coverage of vessels in the Gulf effective March 5th. Supertanker traffic",
+          "quoteStartMs": 2268291,
           "topics": [
             "Strait of Hormuz",
             "supply disruption",
@@ -13187,7 +13187,7 @@
             "2026 predictions",
             "worst performing asset"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "low"
         },
         {
           "id": "E231-uso-Chamath-a0",
@@ -13516,8 +13516,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Emil Michael highlights Anduril as a prime beneficiary of the shift from legacy defense primes to low-cost, mass-producible unmanned systems, and wants them to win big contracts quickly to grow the defense-tech flywheel.",
-          "quote": "Androl, sure... warfare is going from big carrier ships that cost $20 billion and a decade and a half to build to mass, attritable, low-cost things. And that's what these new entrants can do.",
-          "quoteStartMs": 4451000,
+          "quote": "Androl, sure, um, uh, Saronic, sure, like a bunch of these companies, so that more money flows in, more entrepreneurs do it, and I could buy more. Because genuinely, I do think warfare is going from big carrier ships that cost $20 billion a",
+          "quoteStartMs": 4468106,
           "topics": [
             "defense tech",
             "drones",
@@ -13543,8 +13543,8 @@
           "scoreNote": "Joe Lonsdale discloses he started and invested in multiple defense tech unicorns in this space.",
           "sectorProxy": null,
           "summary": "Joe Lonsdale, who has co-founded and invested in multiple defense tech unicorns, is highly bullish on the new wave of defense tech primes like Anduril, expecting 7-10 new primes to emerge and generate huge returns for investors who can access them.",
-          "quote": "There's going to be like 7 to 10 new primes. One of them's obviously Anduril... these 7 to 10 new primes are going to be huge and if you can get access to them, you're going to do really well.",
-          "quoteStartMs": 2791000,
+          "quote": "It's going to be like 7 to 10 new primes. One of them's obviously under all, I think one is probably Seronic and Everest, but we'll see. But like there's going to be 7 to 10 new primes and that's what it's going to be. So there's going to b",
+          "quoteStartMs": 2808387,
           "topics": [
             "defense tech",
             "AI",
@@ -13675,7 +13675,7 @@
           "conviction": "high",
           "callType": "explicit_long",
           "summary": "Tucker (Guest) reveals he is a long-standing physical gold buyer — specifically 1-ounce coins — and is now launching a business selling gold at near-wholesale prices. He says it has 'turned out to be a good thing' despite being mocked, and also endorses firewood and ammo as portfolio diversifiers.",
-          "quote": "I am personally a 1-ounce coin buyer of longstanding. Turned out to be a pretty good route, I would say. I was much mocked by everyone I know... And yeah, I do bury it in my yard because that's the kind of man I am.",
+          "quote": "I am personally a 1-ounce coin buyer of longstanding. Turned out to be a pretty good route, I would say. I was much mocked by everyone I know… And yeah, I do bury it in my yard because that's the kind of man I am.",
           "quoteStartMs": 5604829,
           "topics": [
             "physical gold",
@@ -13773,8 +13773,8 @@
           "conviction": "medium",
           "callType": "view",
           "summary": "Chamath explains gold's rise as driven by net new buyers (Tether Gold stablecoin issuance), central bank rebalancing, and macro funds losing confidence in central bank policy — going long gold instead of bonds or currencies.",
-          "quote": "Gold is up because there are many more net new buyers. Who is the most important net new buyer? It's Tether... central banks are rebalancing... macro funds have essentially decided that central banks aren't to be trusted... so they're long",
-          "quoteStartMs": 4570712,
+          "quote": "Why is gold up? Gold is up because there are many more net new buyers. Who is the most important net new buyer? It's Tether. Tether has been issuing a stablecoin called Tether Gold where they'll actually custody the gold on your behalf.",
+          "quoteStartMs": 4569425,
           "topics": [
             "gold price rally",
             "Tether Gold",
@@ -13819,8 +13819,8 @@
           "conviction": "medium",
           "callType": "view",
           "summary": "Chamath says gold will go up more if Trump wins due to medium-term inflation hedging, but views it as the 'last vestiges' of gold as rational economic insurance, with Bitcoin being the future inflation hedge.",
-          "quote": "Gold's going to go up more, probably... In the medium term inflation goes up and so you want to hedge... you're seeing the last vestiges of people using gold as a rational economic insurance policy, but I think the future is specifically",
-          "quoteStartMs": 712000,
+          "quote": "Gold's going to go up more, probably… in the medium term inflation goes up and so you want to hedge… I think you're seeing the last vestiges of people using gold as a rational economic insurance policy, but I think the future is specificall",
+          "quoteStartMs": null,
           "topics": [
             "inflation hedge",
             "Trump trade",
@@ -14392,8 +14392,8 @@
           "scoreNote": "Jason explicitly labels Amazon his 'number one pick for the company of the future'.",
           "sectorProxy": null,
           "summary": "Jason explicitly names Amazon as his number-one pick for the company of the future, arguing that AI-driven productivity gains will let it do dramatically more with far fewer people, making it uniquely positioned to extract value from the agentic era.",
-          "quote": "Amazon, which is like my number one pick for like the company of the future. They're going to be able to do so much more with so many fewer people. It's extraordinary.",
-          "quoteStartMs": 2073941,
+          "quote": "a company like Amazon, which is like my number one pick for like the company of the future. They're going to be able to do so much more with so many fewer people. It's extraordinary.",
+          "quoteStartMs": 2073043,
           "topics": [
             "AI productivity",
             "valuation",
@@ -14418,7 +14418,7 @@
           "scoreNote": "Named as Jason's explicit prediction pick for biggest business winner of 2026; stated 'I'm going to place a bet on that'.",
           "sectorProxy": null,
           "summary": "Jason picks Amazon as his biggest business winner of 2026, arguing it will be the first company to deploy more robots than humans, driving bottom-line growth via automation in delivery and logistics.",
-          "quote": "my prediction for 2026 is that Amazon is gonna have a massive year... I think they'll be the first corporate singularity, which is to say the first company to have more robots driving their bottom line than humans.",
+          "quote": "my prediction for 2026 is that Amazon is gonna have a massive year... I think they'll be the first corporate, uh, singularity, which is to say the first company to have more robots driving their bottom line than humans. So that's my predict",
           "quoteStartMs": 2182916,
           "topics": [
             "robotics",
@@ -14444,8 +14444,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg argues the AWS outage will accelerate enterprise multi-cloud diversification away from AWS toward Microsoft Azure, Google Cloud, and Oracle, as customers recognize the risk of single-cloud dependency.",
-          "quote": "The outage that happened this week, I think starts to highlight for folks that they can't and shouldn't have a dependency on a single cloud service provider and will only accelerate the diversification of companies into the other clouds.",
-          "quoteStartMs": 1862420,
+          "quote": "the outage that happened this week, I think starts to highlight for folks that they can't and shouldn't have a dependency on a single cloud service provider. Provider and will only accelerate the diversification of companies into the other",
+          "quoteStartMs": 1922894,
           "topics": [
             "cloud",
             "competition",
@@ -14469,7 +14469,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Amazon's retail side will be a kingmaker for physical AI by generating massive demand for robots and drones, but AWS faces a bottleneck from being a generalist marketplace — and Andy Jassy will need to spend hundreds of billions to either differentiate Trainium from NVIDIA or acquire Anthropic to tightly couple next-gen code gen into AWS.",
-          "quote": "Amazon retail side is going to be a kingmaker for all of these physical AI things...The thing that they'll have to embrace is, well, do I differentiate my own hardware from NVIDIA's at some point? Do I actually make a real bet on models",
+          "quote": "The thing that they'll have to embrace is, well, do I differentiate my own hardware from NVIDIA's at some point? Do I actually make a real bet on models and try to frankly buy Anthropic, which is probably their only solution, and tightly co",
           "quoteStartMs": 5399804,
           "topics": [
             "physical AI demand",
@@ -15177,7 +15177,7 @@
           "conviction": "high",
           "callType": "selection",
           "summary": "Friedberg picks Copper as his best performing asset prediction, arguing massive global supply shortfalls (70% short by 2040), national security demand, and ubiquitous use in data centers, chips, and weapons systems will send the price 'absolutely parabolic'.",
-          "quote": "I will pick Copper... we are still completely underestimating how short we are in terms of the global demand-supply dynamics... The asset that is set up to go absolutely parabolic is copper.",
+          "quote": "I will pick Copper... The asset that is set up to go absolutely parabolic is copper.",
           "quoteStartMs": 2067060,
           "topics": [
             "supply shortage",
@@ -15462,8 +15462,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Kimi K2.5 is a landmark moment for open-source AI — a trillion-parameter mixture-of-experts model with Agent Swarm technology that democratizes reasoning capabilities previously locked behind closed models, and represents a clear shot across the bow of closed-source AI that could cut AI costs by 90%.",
-          "quote": "I think there is the clear shot across the bow of closed source, and I think open source can win. Because when KIMI 2.5 is accessible, it democratizes something, this trillion-parameter reasoning that right now you could not otherwise get.",
-          "quoteStartMs": 3491150,
+          "quote": "I think there is the clear shot across the bow of closed source, and I think open source can win. Why? Yes. Because when KIMI 2.5 is accessible, it democratizes something, this trillion-parameter reasoning that right now you could not other",
+          "quoteStartMs": 3632217,
           "topics": [
             "open source AI",
             "AI competition",
@@ -15587,8 +15587,8 @@
           "scoreNote": "Named as Sacks's explicit selection for biggest business winner of 2026.",
           "sectorProxy": null,
           "summary": "Sacks picks Polymarket as his biggest business winner of 2026, citing its evolution from a niche prediction market into a mainstream news and market insights platform, with exchanges like Robinhood, Coinbase, and Nasdaq expected to follow.",
-          "quote": "I think Polymarket's evolved from being kind of this one-off quirky prediction market to actually really providing insights into current events and the news in a way that none of us anticipated. And I do expect that after the deal we saw",
-          "quoteStartMs": 2005729,
+          "quote": "my number 1 is Huawei... And the second is, uh, Polymarket. I think Polymarket's evolved from being kind of this one-off quirky prediction market to actually really providing insights into current events and the news in a way that none of u",
+          "quoteStartMs": 1985413,
           "topics": [
             "prediction markets",
             "fintech",
@@ -15728,8 +15728,8 @@
           "scoreNote": "Named as Friedberg's explicit biggest business loser selection for 2026; also his own company's business model targets this disruption. ETF proxy: software sector ETF.",
           "sectorProxy": "IGV",
           "summary": "Friedberg picks the software industrial complex (licensed SaaS) as his biggest business loser of 2026, arguing that AI agents will aggressively compress the $3–4T maintenance and migration revenue base, severely impacting public SaaS companies.",
-          "quote": "I will pick the software industrial complex... I think you're going to see that total economic opportunity shrink and contract aggressively... It's going to impact SaaS companies, public SaaS companies particularly, quite severely in 2026.",
-          "quoteStartMs": 2583000,
+          "quote": "I will pick the software industrial complex... I think you're going to see that total economic opportunity shrink and contract aggressively... it's going to impact SaaS companies, public SaaS companies particularly, quite severely in 2026.",
+          "quoteStartMs": null,
           "topics": [
             "SaaS",
             "AI disruption",
@@ -15806,8 +15806,8 @@
           "scoreNote": "Named as Gavin's explicit worst performing asset pick for 2025. ETF proxy: software sector ETF.",
           "sectorProxy": "IGV",
           "summary": "Gavin Baker picks enterprise application software as his worst performing asset for 2025, arguing AI agents from cloud providers will replace the labor-efficiency premise of legacy SaaS, and these companies lack their own models or compute to compete.",
-          "quote": "Enterprise application software... 2025 is going to be the year of agents... if the labs and the big cloud providers dominate agents... enterprise application software, I think, is going to be in a lot of pain... they don't have their own",
-          "quoteStartMs": 5015000,
+          "quote": "Gavin, enterprise application software... 2025 is going to be, I think, the year of agents... if the labs and the big cloud providers dominate agents, which seems likely... enterprise application software, I think, is going to be in a lot o",
+          "quoteStartMs": 5014512,
           "topics": [
             "SaaS",
             "AI agents",
@@ -16751,7 +16751,7 @@
           "scoreNote": "Ranked 'number 1' biggest business winner pick for 2026.",
           "sectorProxy": null,
           "summary": "Sacks names Huawei as his number-one biggest business winner pick for 2026, citing its partnership with SMIC to go deeper in the chip stack and its broad operational momentum that will outperform Western expectations.",
-          "quote": "My number 1 is Huawei, which I've mentioned in the past out of China. I think Huawei's effort to partner with SMIC to go deeper in the chip stack. And they're just firing on all cylinders. I do think keep an eye on Huawei over the next",
+          "quote": "My number 1 is Huawei, which I've mentioned in the past out of China. I think Huawei's effort to partner with SMIC to go deeper in the chip stack. And they're just firing on all cylinders. I do think keep an eye on Huawei over the next year",
           "quoteStartMs": 1985413,
           "topics": [
             "semiconductors",
@@ -16776,7 +16776,7 @@
           "scoreNote": "Ranked as explicit top pick to challenge NVIDIA; Huawei is not US-listed.",
           "sectorProxy": null,
           "summary": "Friedberg selects Huawei as his top pick to challenge NVIDIA in 2026, predicting it will deploy undisclosed lithography technology in new fabs and emerge as the leading challenger in AI chips.",
-          "quote": "My early prediction for 2026 is Huawei, where I think that there is lithography technology that exists in in China that is not publicly discussed, that is going to be deployed in Huawei and all these fabs that they're building in mainland",
+          "quote": "My early prediction for 2026 is Huawei, where I think that there is lithography technology that exists in in China that is not publicly discussed, that is going to be deployed in Huawei and all these fabs that they're building in mainland C",
           "quoteStartMs": 3748250,
           "topics": [
             "AI chips",
@@ -16818,8 +16818,8 @@
           "scoreNote": "Named as Chamath's explicit biggest business winner selection for 2026. ETF proxy: Renaissance IPO ETF.",
           "sectorProxy": "IPO",
           "summary": "Chamath picks the 2026 IPO market as the biggest business winner, forecasting a wave of successful public offerings creating trillions in new market cap and reversing the trend of shrinking public company count.",
-          "quote": "I think 2026 is going to be a big year for IPOs... I think there's gonna be a bunch of 'em, a bunch of successful ones, and I think we could see trillions of dollars of new market cap created of public companies.",
-          "quoteStartMs": 2143000,
+          "quote": "I said the IPO. I think 2026 is going to be a big year for IPOs. I'm not going to say which ones. Oh, great. I think there's gonna be a bunch of 'em, a bunch of successful ones, and I think we could see trillions of dollars of new market ca",
+          "quoteStartMs": 2142850,
           "topics": [
             "IPO market",
             "M&A",
@@ -17536,8 +17536,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath highlights Groq's $1.7B AI inference deal with Saudi Arabia and its unique US export license for AI inference as major milestones for a company he co-founded 10 years ago.",
-          "quote": "We announced almost $2 billion deal, $1.7 I think is what it was. This is Groq. Groq did a deal. Yeah, for AI inference. We're starting to build some enormous data centers in Saudi. The only inference company in the world with an export",
-          "quoteStartMs": 871310,
+          "quote": "we announced almost $2 billion deal, $1.7 I think is what it was. This is Groq. Groq did a deal. Yeah, for AI inference. We're starting to build some enormous data centers in Saudi.",
+          "quoteStartMs": 879861,
           "topics": [
             "AI inference",
             "Saudi Arabia",
@@ -17562,8 +17562,8 @@
           "scoreNote": "Cuban confirms his own investment in Groq.",
           "sectorProxy": null,
           "summary": "Mark Cuban invested in Groq alongside Chamath, viewing it as a compelling 'picks and shovels' AI infrastructure play.",
-          "quote": "I invested in Groq, right, with Chamath, right? Chamath is like, yeah, let's go, right? And he can tell you all the reasons.",
-          "quoteStartMs": 6303942,
+          "quote": "So now I've kind of slowed down. I invested in Groq, right, with Chamath, right? Chamath is like, yeah, let's go, right? And he can tell you all the reasons.",
+          "quoteStartMs": 6302460,
           "topics": [
             "AI infrastructure",
             "picks and shovels",
@@ -17604,8 +17604,8 @@
           "scoreNote": "Not scored: The published quote is actually Friedberg's words (spoken during Chamath and Friedberg's holiday conversation, recounted by Chamath), not Chamath's own direct claim. However, Chamath does make his own explicit bear call on California muni bonds in his own words at ~3405s and ~3512s. A verbatim Chamath line that carries the directional bear claim should replace the current quote. The callType should be 'view' not 'explicit_short' as Chamath never says 'I am short' or 'I would short' — he predicts bond market repricing and collapse but does not express a personal short position.",
           "sectorProxy": null,
           "summary": "Chamath warns that bond markets will reprice California's fiscal risk as government fraud and pension obligations are exposed, predicting failed Treasury auctions, muni bond collapse, and a death spiral for California's balance sheet that makes its bonds uninvestable.",
-          "quote": "if you know that this is happening Yeah. If you break munis, you can't underwrite this.",
-          "quoteStartMs": 3512000,
+          "quote": "if risk gets massively repriced, and munis shit the bed, and a bunch of state bonds shit the bed, and a bunch of these issues get broken, these folks will have no choice except to run and hide and cover their ass.",
+          "quoteStartMs": 3456571,
           "topics": [
             "municipal bonds",
             "California fiscal crisis",
@@ -17646,8 +17646,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks describes ASML's EUV monopoly as the West's single biggest advantage in the AI race but warns that China reverse-engineering it would be a meaningful blow to that competitive moat, even if the full picture from Reuters is unclear.",
-          "quote": "EUV lithography, these machines that are made by ASML, is probably our single biggest advantage in the AI race... if they figured out how to reverse EUV, that would be, I'd say, a blow because it is a real advantage for us.",
-          "quoteStartMs": 3993000,
+          "quote": "EUV lithography, these machines that are made by ASML, is probably our single biggest advantage in the AI race... if they figured out how to reverse EUV, that would be, I'd say, a blow because it is a real advantage for us. But I'm not conv",
+          "quoteStartMs": 3992670,
           "topics": [
             "semiconductor",
             "export controls",
@@ -17900,8 +17900,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks highlights that CNN and MSNBC are experiencing severe rating declines (MSNBC down ~50% since the election) and layoffs, suggesting these legacy cable news networks face structural audience erosion.",
-          "quote": "CNN and MSNBC, you're absolutely right that they're announcing a bunch of layoffs. Their ratings are destroyed. I think they're down. MSNBC ratings are down like 50% since the election.",
-          "quoteStartMs": 2609946,
+          "quote": "just on CNN and MSNBC, you're absolutely right that they're announcing a bunch of layoffs. Their ratings are destroyed. I think they're down. MSNBC ratings are down like 50% since the election.",
+          "quoteStartMs": 2609414,
           "topics": [
             "legacy media",
             "ratings decline",
@@ -18581,7 +18581,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath is highly bullish on Tether, calling it an incredible business with 500 million users, 30 million user growth per quarter, ~95%+ profit margins, and $135B in Treasury holdings generating ~$10B/year in earnings.",
-          "quote": "There are 500 million people using US dollar-backed stablecoins from Tether all around the world… his user base is growing by 30 million users a quarter. It's the financial inclusion that then ties back to US dollar hegemony is",
+          "quote": "There are 500 million people using US dollar-backed stablecoins from Tether all around the world, all over Africa, all over Central America, all over Asia, number 1. Number 2, his user base is growing by 30 million users a quarter. It's the",
           "quoteStartMs": 907605,
           "topics": [
             "stablecoins",
@@ -18623,8 +18623,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Palantir's premium valuation is justified because it has no viable competitor — enterprises cannot churn to an alternative — making its cash flows uniquely durable compared to peers like Snowflake or MongoDB, so shorting it is a losing trade.",
-          "quote": "Palantir is both unique and well-run, and there's no clear alternative, so there's no place to churn to. And so I think the reason why it has a premium valuation is because the duration and the durability of these cash flows are much",
-          "quoteStartMs": 969123,
+          "quote": "Well, I think the Palantir short is stupid, and I think that those people will lose money… Palantir is both unique and well-run, and there's no clear alternative, so there's no place to churn to. And so I think the reason why it has a premi",
+          "quoteStartMs": 916770,
           "topics": [
             "valuation",
             "competitive moat",
@@ -19079,8 +19079,8 @@
           "scoreNote": "Not scored: Chamath makes an explicit bull claim on Bitcoin price appreciation post-halving with ETF tailwinds and dollar debasement, but the current quote is truncated mid-sentence. A better verbatim excerpt from Chamath's own lines captures the directional claim more cleanly. However, the callType must be checked: the quote needs to carry his own transaction/selection language to be explicit_long. Reviewing the transcript, Chamath says this is 'not financial advice' and 'just data/guesses' — he never says 'I'm long' or 'I'd buy' in the published quote or nearby. He did say earlier 'I remember I called my family office. I'm like, buy me a million of these things' — but that was a historical anecdote about 2010, not a current position. The analysis/halving data presentation is a view, not an explicit_long. Demote to view.",
           "sectorProxy": null,
           "summary": "Chamath argues that post-halving historical price cycles, combined with the new Bitcoin ETFs enabling mainstream adoption, point to significant price appreciation; he sees Bitcoin increasingly serving as a hard-asset reserve currency for countries moving to dual-currency systems amid dollar debasement.",
-          "quote": "if you marry that with this worry that some folks have about dollar debasement, you start to see some really interesting opportunities. So I just thought that this was an interesting thing that he— here's our disclaimer— interesting thing",
-          "quoteStartMs": 3497101,
+          "quote": "18 months after the first halving, the Bitcoin price returned 45x. After the second halving, it returned almost 28x. And after this third halving, it returned almost an 8x… if you marry that with this worry that some folks have about dollar",
+          "quoteStartMs": null,
           "topics": [
             "Bitcoin",
             "halving cycle",
@@ -19371,7 +19371,7 @@
           "scoreNote": "Altimeter's stated multi-year long position in 'all of compute'; trimmed to medium-small but still long. ETF proxy: robotics & AI ETF.",
           "sectorProxy": "BOTZ",
           "summary": "Brad Gerstner states Altimeter has owned 'all of compute' for three years and continues to believe the AI trade has room to run, though he has trimmed position size tactically given the 40% market move.",
-          "quote": "We still believe that owning all of compute like we have for 3 years, and this AI trade has room to run.",
+          "quote": "we still believe that owning all of compute like we have for 3 years, and this AI trade has room to run.",
           "quoteStartMs": 2582118,
           "topics": [
             "AI capex",
@@ -19663,7 +19663,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Microsoft's employee base will grow because AI-written code quality is still too poor to drive real layoffs, Azure will grow by bundling point-feature SaaS products, and the company can attract talent to expand its business — dismissing AI productivity metrics as 'vanity' air cover for existing headcount reductions.",
-          "quote": "I suspect that Microsoft's business on the margin grows...It'll be cheaper for Microsoft to bundle together a bunch of other products that are point features today, and so they'll have more people.",
+          "quote": "I suspect that Microsoft's business on the margin grows. Back to Dave's point, some of the 493 shrink and go away. It'll be cheaper for Microsoft to bundle together a bunch of other products that are point features today, and so they'll hav",
           "quoteStartMs": 5617868,
           "topics": [
             "Azure growth",
@@ -19688,7 +19688,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg argues Microsoft faces real probability of revenue decline as its enterprise software install base ages out, cloud gets competed away, and native-AI-built workflows displace legacy Microsoft customers — predicting the company will have fewer employees in 5 years.",
-          "quote": "I do think like on this, on the application software layer, they're going to have a really hard time in this new world because the old school customers that buy Microsoft are going to die...Microsoft's core business for the— is going to",
+          "quote": "I do think like on this, on the application software layer, they're going to have a really hard time in this new world because the old school customers that buy Microsoft are going to die. They're more likely to die in their marketplace com",
           "quoteStartMs": 5663932,
           "topics": [
             "enterprise software disruption",
@@ -20390,8 +20390,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Brad Gerstner sees AMD's OpenAI deal as a high-risk, high-reward 'bet the farm' moment: the MI450 must prove competitive against Nvidia's Vera Rubin or AMD remains irrelevant to the AI wave, but success could unlock $150B+ in incremental revenue.",
-          "quote": "Either the MI450 gets adopted and they get back into the game, right? Or they're out. She's a total warrior. I think she believes in the 450. She went to her board and said, listen, this is— we got to take the shot here. We got to bet the",
-          "quoteStartMs": 2714610,
+          "quote": "Either the MI450 gets adopted and they get back into the game, right? Or they're out. She's a total warrior. I think she believes in the 450. She went to her board and she said, listen, this is— we got to take the shot here. We got to bet t",
+          "quoteStartMs": 2838891,
           "topics": [
             "AI chips",
             "competitive position",
@@ -21830,7 +21830,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath believes building a browser is a terrible capital allocation decision for Perplexity in 2025, but argues the company's best path to a durable business is replacing Bloomberg in financial data and information — a $100B opportunity where Perplexity already shows strong product quality.",
-          "quote": "I think building a browser is an absolutely stupid capital allocation decision. Just totally stupid and unjustifiable in 2025. Specifically for Perplexity, I think their path to building a legacy business is to replace Bloomberg... I think",
+          "quote": "I think building a browser is an absolutely stupid capital allocation decision. Just totally stupid and unjustifiable in 2025. Specifically for Perplexity, I think their path to building a legacy business is to replace Bloomberg",
           "quoteStartMs": 3145851,
           "topics": [
             "capital allocation",
@@ -21988,7 +21988,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath views Figma as a phenomenal business with strong growth and margins, but flags an industry-wide uncertainty about whether foundational AI models will absorb its revenue, making years 3-5 hard to underwrite for institutional investors.",
-          "quote": "on the surface, in the absence of these AI businesses, I would say, man, what a gangbusters business growing by 40-something percent a year at this scale... the question is, what am I buying? And does this revenue growth sit adjacent to",
+          "quote": "on the surface, in the absence of these AI businesses, I would say, man, what a gangbusters business growing by 40-something percent a year at this scale. They're adjusted, I think operating margins are 18%… The Question that I think the in",
           "quoteStartMs": 4382688,
           "topics": [
             "IPO",
@@ -22370,7 +22370,7 @@
             "equity rally",
             "macro"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "low"
         },
         {
           "id": "E232-s-p-493-non-mag7-s-p-500-Friedberg-21",
@@ -22389,7 +22389,7 @@
           "sectorProxy": "QQQ",
           "summary": "Friedberg says this is the first time in 20 years he would feel comfortable going short the S&P (ex-Mag7) while picking a handful of AI winners, as the AI transformation will create dramatic dispersion between companies that adopt and those that don't.",
           "quote": "I think it's the first time you could probably argue that you could go short the S&P Yeah, and pick a couple of winners. It might be the first time that I would feel in the last 20 years— because I'm pretty negative on people being able to",
-          "quoteStartMs": 4781000,
+          "quoteStartMs": 4780990,
           "topics": [
             "AI disruption",
             "S&P dispersion",
@@ -22425,7 +22425,7 @@
         }
       ],
       "synthesis": "The hosts are divided on the broad market, with views shifting notably over time. Chamath held a bearish stance in mid-2024, pointing to the extreme spread between cap-weighted and equal-weighted S&P 500 performance — the widest since March 2000 — as a sign that a hype-cycle contraction was imminent outside the top AI names; Friedberg echoed this in mid-2025, arguing that AI-driven dispersion makes the S&P ex-Mag7 a viable short paired with selective AI winners, a view he called unprecedented in 20 years. By late June 2025, however, Chamath reversed to a high-conviction bull, citing money market dry powder, returning velocity of money, and anticipated Fed rate cuts as catalysts for the S&P reaching 7,000 on a leveraged long trade. Sacks aligned with the bullish camp at the same time, framing media-driven panic over Trump policies as a reliable contrarian buy signal and noting that inflation near 2.4% supports rate cuts and thus equities.",
-      "netStance": "mixed",
+      "netStance": "bear",
       "firstMentioned": "2024-07-12T05:09:00.000Z",
       "lastMentioned": "2025-06-28T04:51:00.000Z",
       "mentionCount": 4,
@@ -23049,15 +23049,15 @@
           "scoreNote": "Sacks describes it as 'free money' and confirms the Polymarket trade closed out profitably; explicit directional bet placed. ETF proxy: Magnificent Seven ETF.",
           "sectorProxy": "MAGS",
           "summary": "Sacks placed an explicit bet (via Polymarket) that the Mag Seven would shrink below 30% of the S&P 500 in 2025, citing the Trump administration's indifference to the stock market and its focus on working-class and MAGA economic priorities rather than the asset economy.",
-          "quote": "Magnificent Seven shrinks below 30% of S&P 500 in 2025. This was free money. This was like the stock market giving out free money.",
-          "quoteStartMs": 3013000,
+          "quote": "\"The equity market sell-off is a Mag Seven problem, not a MAGA problem.\"",
+          "quoteStartMs": 3054174,
           "topics": [
             "Mag Seven",
             "tariffs",
             "market concentration",
             "MAGA policy"
           ],
-          "attributionConfidence": "low"
+          "attributionConfidence": "high"
         },
         {
           "id": "E209-magnificent-seven-Jason-7",
@@ -23075,7 +23075,7 @@
           "scoreNote": "Ranked as Jason's #1 best performing asset pick for 2025. ETF proxy: Magnificent Seven ETF.",
           "sectorProxy": "MAGS",
           "summary": "Jason picks the Mag 7 as his best performing asset for 2025, arguing AI-driven internal efficiency gains will produce earnings growth that markets cannot yet comprehend.",
-          "quote": "I think the Mag 7 is going to be the best performing asset... The gains we'll see from AI... they're applying first internally. So the internal application of AI will allow these companies to have earnings growth that people will not be",
+          "quote": "I think the Mag 7 is going to be the best performing asset... the gains we'll see from AI, which they're producing for other companies and for consumers, they're applying first internally. So the internal application of AI will allow these",
           "quoteStartMs": 4930420,
           "topics": [
             "AI",
@@ -23100,8 +23100,8 @@
           "scoreNote": null,
           "sectorProxy": "MAGS",
           "summary": "Chamath warns that excessive index concentration in the Mag 7 (~40% of indices) historically foreshadows a large drawdown, projecting a potential multi-trillion-dollar absolute dollar loss even if fundamentals remain strong.",
-          "quote": "I am a little bit worried about just the general concentration of the top 7, 8, 9, 10 companies in the indices. I think it's approaching 40%... they've generally foreshadowed a big drawdown.",
-          "quoteStartMs": 2438119,
+          "quote": "I am a little bit worried, and I tweeted this a few days ago, about just the general concentration of the top 7, 8, 9, 10 companies in the indices. I think it's approaching 40%... when you look at these historic concentrations, they've gene",
+          "quoteStartMs": 2418185,
           "topics": [
             "concentration risk",
             "valuation",
@@ -23112,7 +23112,7 @@
         }
       ],
       "synthesis": "The hosts are broadly cautious on the Magnificent Seven as a group heading into 2025, with three of four voices leaning bearish, though for different reasons. Chamath flags a structural risk from index concentration (~40%), arguing historically such levels precede large drawdowns, while Sacks goes further with an explicit Polymarket bet that the Mag 7's S&P 500 weight falls below 30%, citing the Trump administration's indifference to asset markets. Guest Philippe Lafont adds a thematic bearish dimension, contending that AI-driven disruption is eroding the cohort's correlated dominance and effectively marking the end of an era where owning just those seven names was sufficient. Jason is the lone bull, holding high conviction that AI efficiency gains applied internally will produce earnings growth the market has not yet priced in, making the Mag 7 his top asset pick for 2025.",
-      "netStance": "mixed",
+      "netStance": "bear",
       "firstMentioned": "2025-01-04T00:23:00.000Z",
       "lastMentioned": "2025-05-09T20:26:00.000Z",
       "mentionCount": 4,
@@ -23852,8 +23852,8 @@
           "excludeReason": null,
           "scoreNote": null,
           "summary": "Aaron Levie highlights that Box survived the post-COVID correction, is now cranking at all-time highs, and has built an 82% gross margin software business on top of commoditized storage infrastructure — demonstrating durable business quality.",
-          "quote": "Let me give you a fun stat. We give our customers unlimited storage. We have 82% gross margin. So the price of the underlying storage has gone down by hundreds of times since we started the company. And then our all our value is in the",
-          "quoteStartMs": 3917000,
+          "quote": "Let me give you a fun stat. We give our customers unlimited storage. We have 82% gross margin. So, so the, the, what, what happened was the price of the underlying storage has gone down by hundreds of times since we started the company. And",
+          "quoteStartMs": 3916830,
           "topics": [
             "gross margin",
             "business model",
@@ -24160,14 +24160,14 @@
       "isPublic": false,
       "theses": [
         {
-          "id": "E222-credit-default-swaps-cds-Sacks-1",
+          "id": "E222-credit-default-swaps-cds-Chamath-1",
           "episodeId": "E222",
           "episodeNumber": 222,
           "episodeDate": "2025-04-05T19:03:00.000Z",
           "company": "Credit Default Swaps (CDS)",
           "ticker": null,
           "isPublic": false,
-          "host": "Sacks",
+          "host": "Chamath",
           "stance": "bull",
           "conviction": "high",
           "callType": "explicit_long",
@@ -24183,11 +24183,11 @@
             "recession risk",
             "tariffs"
           ],
-          "attributionConfidence": "high"
+          "attributionConfidence": "low"
         }
       ],
-      "synthesis": "The only host thesis provided comes from Chamath (attributed here under Sacks), who is strongly bullish on holding long CDS positions as an asymmetric insurance trade against a potential corporate default wave in 2025. He argues that tariff-driven revenue pressure on highly leveraged companies creates a compelling catalyst for a wave of defaults, making CDS an attractive hedge that has already returned roughly 7x. No other hosts' views are supplied, so agreement or disagreement among the group cannot be assessed from the available material.",
-      "netStance": "bull",
+      "synthesis": "Chamath is the sole host with a stated view, holding a high-conviction bullish position on long CDS as an asymmetric insurance trade against a coming wave of corporate defaults in 2025. He argues that tariff-driven revenue pressure on heavily leveraged companies creates the catalyst for widespread defaults, making CDS a high-reward hedge — one he notes has already returned roughly 7x at the time of his comments. No other hosts offered a competing or supporting view, so there is no cross-host agreement or disagreement to note.",
+      "netStance": "neutral",
       "firstMentioned": "2025-04-05T19:03:00.000Z",
       "lastMentioned": "2025-04-05T19:03:00.000Z",
       "mentionCount": 1,
@@ -24485,8 +24485,8 @@
           "scoreNote": "Not scored: Chamath names the 'software industrial complex' as his own labeled basket, explicitly sizes it at $3.5-4T, and makes a concrete bear claim that AI agents will allow small teams to 'blow a hole right in the side of that $3 trillion economy' — incumbents 'cannot compete with that cost scale.' This is an explicit directional bear claim on a named basket. However, the callType should be 'view' not 'basket' because Chamath does not use transaction/selection language (no 'I'm short', 'my pick is short', etc.) — it is analytical commentary about disruption risk.",
           "sectorProxy": "IGV",
           "summary": "Chamath argues the $3.5-4 trillion enterprise software industry is highly vulnerable to disruption by AI agents — small teams using agents can do the work of thousands, making incumbent SaaS companies structurally unable to compete on cost and threatening their valuations.",
-          "quote": "The software industrial complex as I call it, right? That's like a $3.5, $4 trillion industry… if these agents can scale, the OPEX, the actual load of making something, will go down by an order of magnitude and maybe even two orders of",
-          "quoteStartMs": 1620000,
+          "quote": "the software industrial complex as I call it, right? That's like a $3.5, $4 trillion industry. It grows by 10% a year. So every year it's adding $300 billion of quote unquote enterprise value. Is that value that is being created? I think a",
+          "quoteStartMs": 1618761,
           "topics": [
             "AI disruption",
             "SaaS valuation",
@@ -24527,7 +24527,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Wiz earned its $32B valuation by combining multi-cloud security with exceptional design and UX taste, and that its explosive revenue growth rate (doubling in months) justifies fantastical but defensible DCF models.",
-          "quote": "They have done one thing better than everybody else...they have incredible taste...it is the most beautiful, it is the most intuitive, it's the most well-integrated. And it's just an incredible lesson where even when other people do this",
+          "quote": "they have done one thing better than everybody else, and I think it's really worth rewarding, which is they have incredible taste...it is the most beautiful, it is the most intuitive, it's the most well-integrated. And it's just an incredib",
           "quoteStartMs": 2223034,
           "topics": [
             "M&A",
@@ -24553,7 +24553,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg argues that Wiz's growth momentum makes it conceivable they could reach a $100B market cap, making the decision to reject Google's $23B offer and pursue an IPO a reasonable risk with limited downside.",
-          "quote": "if Wizz continues to grow at this rate, it's conceivable they could be in the range of a Palo Alto Networks $100 billion market cap in a couple of years...if I was them, I would ask that question. Could we reach $100 billion if we feel",
+          "quote": "if Wizz continues to grow at this rate, it's conceivable they could be in the range of a Palo Alto Networks $100 billion market cap in a couple of years. Um, you know, given, uh, given this momentum and if you, if you progress it forward. S",
           "quoteStartMs": 713991,
           "topics": [
             "valuation",
@@ -24579,8 +24579,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks argues that Wiz's ~100% growth rate and path to $1B ARR next year makes Google's $23B offer potentially reasonable, and that the founders were right to pursue standalone growth as a high-growth company that could justify a premium multiple.",
-          "quote": "if Wiz is growing at 100%...they're projecting a billion in ARR next year up from, what is it, roughly 500. Like that offer may not be that crazy...I can see why these guys would just want to go for it if they think they're building a big",
-          "quoteStartMs": 542000,
+          "quote": "if Wiz is growing at 100%, 100%, I mean, I don't know if it's still growing at 100%, but I mean, I guess they're projecting 50%…They're, they're projecting a billion in ARR next year up from, what is it, roughly 500. Like that offer may not",
+          "quoteStartMs": null,
           "topics": [
             "valuation",
             "cloud security",
@@ -24645,7 +24645,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg notes the Starliner program is effectively dead after the debacle, a costly failure that wasted more resources than SpaceX's entire Crew Dragon program.",
-          "quote": "Having spent far more on the Starliner program than on the Crew Dragon program, the Starliner program is gone now. It's basically done.",
+          "quote": "having spent far more on the Starliner program than on the Crew Dragon program, the Starliner program is gone now. It's basically done.",
           "quoteStartMs": 4432330,
           "topics": [
             "aerospace",
@@ -24670,8 +24670,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Boeing's repeated Starliner failures stem from a structural cultural problem — incentives aligned to EPS growth rather than engineering safety — that has persisted across leadership, making the business fundamentally broken across its three complex divisions.",
-          "quote": "I observed this company about 5 years ago, and I wrote about it in my annual letter…show me the incentive and I'll show you the outcome. If the incentive is safety and world-class engineering, that's what you'll get. But if the incentive",
-          "quoteStartMs": 5258967,
+          "quote": "show me the incentive and I'll show you the outcome. If the incentive is safety and world-class engineering, that's what you'll get. But if the incentive is earnings per share growth, then that's what you'll also get.",
+          "quoteStartMs": 5315375,
           "topics": [
             "culture",
             "EPS incentives",
@@ -25008,8 +25008,8 @@
           "scoreNote": null,
           "sectorProxy": "MAGS",
           "summary": "Chamath observes that the Mag 7 is compressing toward the rest of the S&P 500, and argues that a deliberate policy of deflating equity asset prices (to reduce consumer wealth effects and lower bond yields) will weigh on high-multiple tech stocks.",
-          "quote": "You're seeing the Mag 7 compressed towards the rest of the S&P 500… if you rebase the equity values that people have, what you do is you actually depress the amount of free cash flow that they have to spend on other things.",
-          "quoteStartMs": 444000,
+          "quote": "you're seeing the Mag 7 compressed towards the rest of the S&P 500",
+          "quoteStartMs": 446992,
           "topics": [
             "valuation",
             "macro policy",
@@ -25117,8 +25117,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Stripe's ecosystem value is underappreciated — its hub-and-spoke model around payments generates significant ARR from adjacent products (e.g. $500M billing ARR), which likely explains its premium valuation over Adyen, and its stablecoin opportunity could be enormous given its scale.",
-          "quote": "The value of Stripe's ecosystem is probably underappreciated... the billing product, it's half a billion dollars a year of ARR. That's just incredible. And I think if they figure out network effects inside of the Stripe ecosystem, that's",
-          "quoteStartMs": 1340032,
+          "quote": "the value of Stripe's ecosystem is, is probably underappreciated... the billing product. It's half a billion dollars a year of ARR. That's just incredible. And I think if they figure out network effects inside of the Stripe ecosystem, that'",
+          "quoteStartMs": 1319956,
           "topics": [
             "payments",
             "ecosystem",
@@ -25369,7 +25369,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg highlights Waymo's rapid market share gain in SF (0% to 22% in 15 months), new lower-capex hardware platform improving ROIC, and national expansion as indicators of a transformative business event in 2025 — potentially an IPO, major financing, or acquisition.",
-          "quote": "Waymo is now at 22% market share of rides in SF... they also just moved the hardware platform over to a new device. That's supposedly going to bring the CapEx significantly down... you could see something happen with Waymo this year.",
+          "quote": "Waymo is now at 22% market share of rides in SF... they also just moved the, the hardware platform over to a new, new device. That's supposedly going to bring the CapEx significantly down... you could see something happen with Waymo this ye",
           "quoteStartMs": 3284844,
           "topics": [
             "autonomous vehicles",
@@ -25499,7 +25499,7 @@
           "conviction": "high",
           "callType": "explicit_long",
           "summary": "Friedberg says he predicted uranium stocks a year ago and reiterates the bull case: GDP growth drives energy demand that cannot be met without nuclear, making uranium a necessity. He explicitly states his prior year prediction was to buy uranium stocks.",
-          "quote": "it was also my prediction for the year was to by the uranium stocks predicated on what I think is a really important point, which is as GDP per capita grows, energy consumption per capita grows... there is no way to meet the energy demand",
+          "quote": "it was also my prediction for the year was to by the uranium stocks predicated on what I think is a really important point, which is as GDP per capita grows, energy consumption per capita grows",
           "quoteStartMs": 2943984,
           "topics": [
             "energy demand",
@@ -25805,8 +25805,8 @@
           "scoreNote": "Guest disclosed existing investor position in ByteDance/TikTok",
           "sectorProxy": null,
           "summary": "Thomas LaFont, an existing investor in ByteDance, argues TikTok US is worth roughly $100B using a Meta-comparative DAU/time-spent framework, though the actual deal value may be heavily discounted by government leverage.",
-          "quote": "we are investors in TikTok... is $100 billion a reasonable scenario? You know, I think the math proves it. And then could it be a trillion-dollar asset the way Trump has mentioned? I mean, in a world where Facebook's $1.5 trillion... I",
-          "quoteStartMs": 2054000,
+          "quote": "we are investors in TikTok… is $100 billion a reasonable scenario? You know, I think the math proves it. And then could it be a trillion-dollar asset the way Trump has mentioned? I mean, in a world where Facebook's $1.5 trillion, right, and",
+          "quoteStartMs": null,
           "topics": [
             "TikTok",
             "valuation",
@@ -26490,7 +26490,7 @@
           "scoreNote": "Friedberg identifies this as his stock pick/prediction; China tech basket with no single ticker named ETF proxy: China internet ETF.",
           "sectorProxy": "KWEB",
           "summary": "Friedberg selected Chinese tech stocks as a contrarian pick, citing China's weakened deflationary economy and the likelihood of a grand US-China trade deal in the first six months of the Trump administration that would boost Chinese equities.",
-          "quote": "this was my stock prediction. Yeah, this was like my, I picked the Chinese tech stocks.",
+          "quote": "This was my stock prediction. Yeah, this was like my, I picked the Chinese tech stocks.",
           "quoteStartMs": 4743974,
           "topics": [
             "China",
@@ -26516,8 +26516,8 @@
           "scoreNote": "Explicit best-performing-asset selection; basket of Chinese tech via ETF. ETF proxy: China internet ETF.",
           "sectorProxy": "KWEB",
           "summary": "Friedberg picks Chinese tech ETFs as his best performing asset for 2025, citing cheap valuations, potential US-China trade deal under Trump, accelerating Chinese electricity buildout lowering costs, and CCP throttling up free-market activity.",
-          "quote": "I went with Chinese tech stocks, uh, Chinese tech ETFs... these stocks look pretty cheap. I was just looking at Alibaba, and it trades at a pretty decent multiple. It seems like these stocks could be poised for a pretty good run in '25 if",
-          "quoteStartMs": 4660000,
+          "quote": "I went with Chinese tech stocks, uh, Chinese tech ETFs... these stocks look pretty cheap. I was just looking at Alibaba, and it trades at a pretty decent multiple. It seems like these stocks could be poised for a pretty good run in '25 if t",
+          "quoteStartMs": 4660235,
           "topics": [
             "China tech",
             "valuation",
@@ -27216,8 +27216,8 @@
           "scoreNote": "CDS protection is not a listed equity; non-standard instrument requiring ISDA. Explicitly framed as insurance/asymmetric tail-risk bet, not a directional equity call.",
           "sectorProxy": null,
           "summary": "Chamath says he would be long CDS (buying protection) as an insurance policy against a tail-risk credit/bank crisis in 2025, citing debt concentration, high rates, and S&P index concentration as systemic risks.",
-          "quote": "I would be long CDS. So what am I buying? I am buying insurance... I'm buying protection... if it hits, it will be the best performing asset of 2025. It will be the equivalent of Ackman buying CDS right at the beginning of the COVID crisis.",
-          "quoteStartMs": 4506000,
+          "quote": "I would be long CDS. So what am I buying? I am buying insurance. I'm buying insurance using credit default swaps. I'm buying what's called protection... if it hits, it will be the best performing asset of 2025. It will be the equivalent of",
+          "quoteStartMs": 4534567,
           "topics": [
             "CDS",
             "tail risk",
@@ -27258,7 +27258,7 @@
           "scoreNote": "Named as Friedberg's explicit biggest business loser pick for 2025; shared quote covers the named basket of three companies. ETF proxy: aerospace & defense ETF.",
           "sectorProxy": "ITA",
           "summary": "Friedberg picks legacy defense/aerospace primes (Boeing, Lockheed Martin, Raytheon) as biggest business losers of 2025, citing government budget rationalization toward tech-oriented spending, operational failures, and new entrants like Palantir and Anduril.",
-          "quote": "I went with the kind of old defense and aerospace providers, Boeing, Lockheed Martin, Raytheon, Defense 1.0... I think that this government contracting business across the board is going to be deeply challenged this year with all the new",
+          "quote": "I went with the kind of old defense and aerospace providers, Boeing, Lockheed Martin, Raytheon, Defense 1.0... I think that this government contracting business across the board is going to be deeply challenged this year with all the new bl",
           "quoteStartMs": 2490289,
           "topics": [
             "defense",
@@ -27292,7 +27292,7 @@
             "defense",
             "biggest business loser"
           ],
-          "attributionConfidence": "high",
+          "attributionConfidence": "low",
           "guestName": "Gavin Baker"
         }
       ],
@@ -27584,7 +27584,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath predicts traditional auto OEMs (Volkswagen, Stellantis, Honda, Nissan, etc.) are uninvestable melting icebergs caught between Tesla and Chinese EV makers, and expects a wave of mega-mergers as capital markets force consolidation.",
-          "quote": "The European OEMs are in real trouble... what does Volkswagen do? It's not clear. What does Stellantis do? It's not clear. These are all businesses that are effectively melting icebergs.",
+          "quote": "the European OEMs are in real trouble. You know, what does Volkswagen do? It's not clear. What does Stellantis do? It's not clear. These are all businesses that are effectively melting icebergs.",
           "quoteStartMs": 2903606,
           "topics": [
             "auto OEMs",
@@ -27668,7 +27668,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Gavin Baker warns that MicroStrategy's debt-funded Bitcoin accumulation strategy will become unsustainable as the underlying business ($400M revenue) is too small to support growing interest expenses unless fixed income markets fully accept Bitcoin as collateral, which they don't yet.",
-          "quote": "I think a lot of hedge funds are short MicroStrategy... unless debt investors have absolute confidence in Bitcoin as collateral, and I don't think that's where fixed income markets are yet. He... it will get to a point where it is too big",
+          "quote": "I think a lot of hedge funds are short MicroStrategy, but I have no horse in the race. But his, the underlying business that pays the interest expense on the debt only does $400 million a year in revenue and it's high gross margin revenue.",
           "quoteStartMs": 2528821,
           "topics": [
             "leverage",
@@ -27953,8 +27953,8 @@
           "scoreNote": "Not scored: Friedberg makes an explicit directional claim that crypto/fintech businesses 'are clearly going to benefit' from deregulation, naming the basket and an economic outcome (ability to launch products, generate revenue); this is a basket-level bull view, not a scoreable portfolio call.",
           "sectorProxy": null,
           "summary": "Friedberg argues that Trump's deregulatory agenda will meaningfully benefit crypto and fintech companies that have been hampered by regulatory constraints, allowing them to launch products and generate revenue in ways previously blocked, driving earnings acceleration.",
-          "quote": "The deregulatory nature on its own benefits markets that have been encumbered by regulatory oversight and regulatory challenges like crypto finance and fintech. Those types of businesses are clearly going to benefit or expected to benefit",
-          "quoteStartMs": 641270,
+          "quote": "The deregulatory nature on its own benefits markets that have been encumbered by regulatory oversight and regulatory challenges like crypto finance and fintech. So those types of businesses are clearly going to benefit or expected to benefi",
+          "quoteStartMs": 667222,
           "topics": [
             "deregulation",
             "fintech",
@@ -27995,7 +27995,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks argues that Republican control of Congress and the likely departure of Gary Gensler mean clear regulatory rules for crypto are imminent under FIT21, removing the overhang that has depressed crypto markets and explaining the current rally.",
-          "quote": "The bottom line here is that I think that we are close to having clear rules of the road codified by Congress, which is what the crypto industry's been asking for. And the days of Gensler terrorizing crypto companies by issuing Wells",
+          "quote": "the bottom line here is that I think that we are close to having clear rules of the road codified by Congress, which is what the crypto industry's been asking for. And the days of Gensler terrorizing crypto companies by issuing Wells notice",
           "quoteStartMs": 1237453,
           "topics": [
             "crypto regulation",
@@ -28375,7 +28375,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg argues Starbucks has hit a revenue maximum by exhausting all three growth levers (brand, coverage, price), making further same-store sales growth structurally limited and the company a mature, multiple-compressing business similar to Apple.",
-          "quote": "I would argue that Starbucks is a victim of the same maximization effect, that at some point you get all the customers, you get 'em to come in and spend as— and buy as many products from you as they can, and you charge 'em the highest",
+          "quote": "I would argue that Starbucks is a victim of the same maximization effect, that at some point you get all the customers, you get 'em to come in and spend as— and buy as many products from you as they can, and you charge 'em the highest price",
           "quoteStartMs": 5316665,
           "topics": [
             "brand maturity",
@@ -28401,8 +28401,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Starbucks faces an existential structural headwind from GLP-1 drug adoption reducing sugar consumption among its core customers, making its current product mix and valuation unsustainable; he believes it should be a ~$20B asset, implying significant multiple compression.",
-          "quote": "This business is in trouble... Starbucks should be probably a $20 billion asset.",
-          "quoteStartMs": 5102000,
+          "quote": "This business is in trouble… But the structural problem is Starbucks should be probably a $20 billion asset.",
+          "quoteStartMs": null,
           "topics": [
             "GLP-1",
             "consumer trends",
@@ -28479,8 +28479,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg sees Starbucks as a structurally challenged business with declining operating margins, rising costs, and a sugar-heavy menu facing headwinds, but believes incoming CEO Brian Niccol's cost-cutting and menu-simplification track record could improve profitability.",
-          "quote": "Brian Niccol has an incredible reputation…He is notorious for being a cost cutter, for being an efficiency driver, for being a productivity hound…Brian Nichols is probably the right guy, which is why you're seeing the stock kind of rally",
-          "quoteStartMs": 1896000,
+          "quote": "Brian Niccol has an incredible reputation… He is notorious for being a cost cutter, for being an efficiency driver, for being a productivity hound… And Brian Nichols is probably the right guy, which is why you're seeing the stock kind of ra",
+          "quoteStartMs": null,
           "topics": [
             "CEO change",
             "margins",
@@ -28884,7 +28884,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Expedia is a fragile UI layer on top of licensed third-party data that AI agents will disintermediate, making it a terrible capital allocation at a $30B acquisition price.",
-          "quote": "I cannot think of a more fragile business model than the UI layer on top of widely available data... a more reasonable assumption is that those things are pretty fragile.",
+          "quote": "I cannot think of a more fragile business model than the UI layer on top of widely available data. So the problem that Expedia has is the same that Booking and a bunch of these other folks have, which is that the principal heartbeat of the",
           "quoteStartMs": 1777208,
           "topics": [
             "AI disruption",
@@ -29188,8 +29188,8 @@
           "scoreNote": "Not scored: Chamath expresses a bear view on valuation ('massively overpriced') and structural risks, but there is no transaction/selection language ('I'm short', 'I would short', 'I'd be short') in the quote or anywhere in his transcript lines — it is stated as a personal belief/analysis. The callType explicit_short requires the host's own position/transaction language, which is absent. Downgrade to view.",
           "sectorProxy": null,
           "summary": "Chamath believes Florida coastal and California coastal real estate (specifically West Palm Beach and Malibu) are massively overpriced when climate risk, insurance costs, and long-term financial instability of insurers are properly accounted for.",
-          "quote": "my personal belief is I think that the real estate markets in some of these places are meaningfully mispriced and Specifically what I mean is that they're massively overpriced... I'll name two to be specific, West Palm Beach and Malibu.",
-          "quoteStartMs": 1557240,
+          "quote": "My personal belief is I think that the, the real estate markets in some of these places are, um, meaningfully mispriced and Specifically what I mean is that they're massively overpriced.",
+          "quoteStartMs": 1531540,
           "topics": [
             "real estate",
             "climate risk",
@@ -29314,8 +29314,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks argues that LLMs plus voice AI will massively disrupt call centers within 2-3 years, replacing Level 1 customer support first and working up the chain, because the data sets are large and accessible, error tolerance is built into the tiered support structure, and reasoning models are now good enough.",
-          "quote": "I think it's now becoming really clear that call centers are going to be the first really big disruption caused by AI... within the next 2 to 3 years, you're going to see a massive disruption in that industry.",
-          "quoteStartMs": 1058000,
+          "quote": "I think it's now becoming really clear that call centers are going to be the first really big disruption caused by AI… I think within the next 2 to 3 years, you're going to see a massive disruption in that industry.",
+          "quoteStartMs": null,
           "topics": [
             "AI disruption",
             "call centers",
@@ -29356,7 +29356,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks says VC is in a hangover from the 2020-2021 liquidity bubble that doubled entry prices and distorted returns, but sees light at the end of the tunnel with rate cuts and the AI wave potentially ushering in a new golden era for the industry.",
-          "quote": "I think we're just in the hangover of this massive liquidity bubble... the good news is that we now have maybe the most exciting tech wave ever, which is AI... So the hope is we're finally going to have really exciting things to invest in",
+          "quote": "I think we're just in the hangover of this massive liquidity bubble… the good news is that we now have maybe the most exciting tech wave ever, which is AI… So the hope is we're finally going to have really exciting things to invest in again",
           "quoteStartMs": 3382211,
           "topics": [
             "venture capital",
@@ -29382,8 +29382,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues the VC industry is structurally broken due to extended company gestation periods, the 2021 bubble inflating entry prices, broken IPO and M&A exit paths, and AI companies requiring far less capital — predicting average returns will decay 50-100% and the industry must reinvent its liquidity mechanisms.",
-          "quote": "I do think that we are in a situation where the average returns are going to decay by 50 to 100%... the IPO process is broken... we are not in a sustainable industry. It is if you raise funds and think about fee generation, but it is not",
-          "quoteStartMs": 3503000,
+          "quote": "we are not in a sustainable industry. It is if you raise funds and think about fee generation, but it is not… I do think that we are in a situation where the average returns are going to decay by 50 to 100%",
+          "quoteStartMs": null,
           "topics": [
             "venture capital",
             "returns",
@@ -31025,8 +31025,8 @@
           "scoreNote": null,
           "sectorProxy": "MAGS",
           "summary": "Sacks draws parallels to broadband and railroad buildouts to argue that current AI infrastructure spending, while appearing bubble-like in the short term, will be validated in the medium-to-long term as applications mature.",
-          "quote": "I tend to think that's what's gonna happen with AI... there's already enough, let's call it realness to the applications... OpenAI is at $3.4 billion in revenue... it's doubling year over year.",
-          "quoteStartMs": 1996000,
+          "quote": "I tend to think that's what's gonna happen with AI. I mean, I, I do think that there's already enough, let's call it realness to the applications. I mean, I'll give you 3 examples. Number 1, OpenAI. I mean, OpenAI is effectively semantic se",
+          "quoteStartMs": 2058948,
           "topics": [
             "AI capex",
             "historical analogy",
@@ -31093,8 +31093,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues SSI cannot compete because foundational model costs are heading toward $100B by 2027, and only hyperscalers like Google, Microsoft, Meta, and OpenAI can fund that arms race — SSI simply won't have the capital.",
-          "quote": "The problem that that represents for Ilya's company, and I wish him the best of luck, but the reality is there isn't $100 billion for him to have. Google will find it, Microsoft will find it, Facebook will find it... OpenAI will probably",
-          "quoteStartMs": 3606000,
+          "quote": "The problem that that represents for Ilya's company, and I wish him the best of luck, but the reality is there isn't $100 billion for him to have. Google will find it, Microsoft will find it, Facebook will find it.",
+          "quoteStartMs": 3610900,
           "topics": [
             "AI capex",
             "competition",
@@ -31119,8 +31119,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Sacks is not bullish on SSI because its safety-first mandate is a brake pedal that will slow it down versus competitors like OpenAI and Google, making it structurally unable to win an AGI race.",
-          "quote": "I'm not bullish about that pitch. Because I think it makes the company a little bit schizophrenic. It's working at cross purposes with itself... safety concerns are a brake pedal. They don't help you move faster, they make you move slower.",
-          "quoteStartMs": 3379988,
+          "quote": "I'm not bullish about that pitch. Because I think it, it makes the company a little bit schizophrenic. It's working at cross purposes with itself. On the one hand, you're a new company, which means you're behind. You've gotta catch up with",
+          "quoteStartMs": 3354488,
           "topics": [
             "AI safety",
             "competition",
@@ -31160,7 +31160,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg lays out a detailed bear case: GameStop trades at ~192x EBITDA with revenue declining 12% YoY, making it fundamentally uninvestable at current prices — it's purely a speculative/meme trade.",
-          "quote": "This stock is currently trading at about 192 times EBITDA. A business that is profitable... will typically trade for 7 to 12 times EBITDA. And this stock is trading at 192 times EBITDA and the revenue is declining 12% a year.",
+          "quote": "this stock is currently trading at about 192 times EBITDA. A business that is profitable and you can say that the profits are stable and predictable and is likely not going to grow very much will typically trade for 7 to 12 times EBITDA. An",
           "quoteStartMs": 2411160,
           "topics": [
             "valuation",
@@ -31451,7 +31451,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath strongly supports the Texas Stock Exchange as a competitive alternative to the NYSE/NASDAQ duopoly, arguing it could drive more rational listing requirements and better capital allocation.",
-          "quote": "I think that the duopoly hasn't created enough competition... they've probably been a little regressive in terms of filing requirements, listing requirements... if you have a third player, there's a chance that more competition will create",
+          "quote": "I think that the duopoly hasn't created enough competition. So the NASDAQ and, and New York Stock Exchange haven't innovated. And in fact, they've, they've probably been a little regressive in terms of filing requirements, listing requireme",
           "quoteStartMs": 3610896,
           "topics": [
             "stock exchange competition",
@@ -31875,7 +31875,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg reveals Ohalo's 'Boosted Breeding' breakthrough — a protein-based method that doubles a plant's chromosome set, yielding 50–100%+ gains in crop yield — arguing it creates durable moats through compounding variety improvement and could transform global food security.",
-          "quote": "The yield on some of these plants goes up by 50 to 100% or more... With our system, we are seeing 50 to 100% jump in the size of these plants.",
+          "quote": "the yield on some of these plants goes up by 50 to 100% or more. Just to give you a sense, like, In the corn seed industry, breeders that are breeding corn are spending $3 billion a year on breeding, and they're getting maybe 1.5% yield gai",
           "quoteStartMs": 2607620,
           "topics": [
             "agtech",
@@ -32026,12 +32026,12 @@
     "inceptionDate": "2024-07-26",
     "benchmarkSymbol": "SPY",
     "contributionPerCall": 1000,
-    "totalInvested": 7000,
-    "portfolioValue": 11271,
-    "benchmarkValue": 8285,
-    "portfolioReturn": 0.6101428571428571,
-    "benchmarkReturn": 0.1835714285714285,
-    "outperformance": 0.4265714285714286,
+    "totalInvested": 8000,
+    "portfolioValue": 12036,
+    "benchmarkValue": 9462,
+    "portfolioReturn": 0.5045,
+    "benchmarkReturn": 0.18274999999999997,
+    "outperformance": 0.32175,
     "constituents": [
       {
         "slug": "pltr",
@@ -32155,6 +32155,26 @@
         "hosts": [
           "Chamath",
           "Jason"
+        ]
+      },
+      {
+        "slug": "lng",
+        "company": "Cheniere Energy",
+        "ticker": "LNG",
+        "sourceSymbol": "LNG",
+        "currency": "USD",
+        "direction": "long",
+        "callTypes": [
+          "explicit_long"
+        ],
+        "entryDate": "2026-03-27",
+        "entryPrice": 296.91,
+        "latestPrice": 227.03,
+        "sinceReturn": -0.2353575157455121,
+        "benchmarkReturn": 0.17765616868267897,
+        "alpha": -0.4130136844281911,
+        "hosts": [
+          "Friedberg"
         ]
       },
       {
@@ -32601,72 +32621,72 @@
       },
       {
         "date": "2026-03-31",
-        "portfolio": 10171,
-        "benchmark": 6335,
-        "invested": 6000
+        "portfolio": 11127,
+        "benchmark": 7361,
+        "invested": 7000
       },
       {
         "date": "2026-04-09",
-        "portfolio": 9854,
-        "benchmark": 6623,
-        "invested": 6000
+        "portfolio": 10749,
+        "benchmark": 7696,
+        "invested": 7000
       },
       {
         "date": "2026-04-17",
-        "portfolio": 10886,
-        "benchmark": 6918,
-        "invested": 6000
+        "portfolio": 11732,
+        "benchmark": 8038,
+        "invested": 7000
       },
       {
         "date": "2026-04-27",
-        "portfolio": 10680,
-        "benchmark": 6967,
-        "invested": 6000
+        "portfolio": 11553,
+        "benchmark": 8095,
+        "invested": 7000
       },
       {
         "date": "2026-05-05",
-        "portfolio": 10590,
-        "benchmark": 7051,
-        "invested": 6000
+        "portfolio": 11498,
+        "benchmark": 8192,
+        "invested": 7000
       },
       {
         "date": "2026-05-13",
-        "portfolio": 10563,
-        "benchmark": 7231,
-        "invested": 6000
+        "portfolio": 11369,
+        "benchmark": 8402,
+        "invested": 7000
       },
       {
         "date": "2026-05-21",
-        "portfolio": 11711,
-        "benchmark": 8240,
-        "invested": 7000
+        "portfolio": 12521,
+        "benchmark": 9411,
+        "invested": 8000
       },
       {
         "date": "2026-06-01",
-        "portfolio": 12570,
-        "benchmark": 8416,
-        "invested": 7000
+        "portfolio": 13337,
+        "benchmark": 9612,
+        "invested": 8000
       },
       {
         "date": "2026-06-09",
-        "portfolio": 11183,
-        "benchmark": 8177,
-        "invested": 7000
+        "portfolio": 11990,
+        "benchmark": 9339,
+        "invested": 8000
       },
       {
         "date": "2026-06-17",
-        "portfolio": 11255,
-        "benchmark": 8220,
-        "invested": 7000
+        "portfolio": 12034,
+        "benchmark": 9389,
+        "invested": 8000
       },
       {
         "date": "2026-06-18",
-        "portfolio": 11271,
-        "benchmark": 8285,
-        "invested": 7000
+        "portfolio": 12036,
+        "benchmark": 9462,
+        "invested": 8000
       }
     ],
-    "excludedPrivateCount": 13,
+    "excludedPrivateCount": 12,
     "excludedPrivate": [
       {
         "slug": "openai",
@@ -32728,14 +32748,6 @@
         "kind": "private"
       },
       {
-        "slug": "credit-default-swaps-cds",
-        "company": "Credit Default Swaps (CDS)",
-        "hosts": [
-          "Sacks"
-        ],
-        "kind": "macro"
-      },
-      {
         "slug": "stablecoins-us-crypto-infrastructure",
         "company": "Stablecoins / US crypto infrastructure",
         "hosts": [
@@ -32778,7 +32790,7 @@
     ],
     "altBenchmark": {
       "symbol": "QQQ",
-      "ret": 0.32434145907166245
+      "ret": 0.3233575949891019
     }
   },
   "guestiesFund": {
@@ -33561,22 +33573,22 @@
       }
     },
     {
-      "host": "Friedberg",
-      "positions": 1,
-      "portfolioReturn": 1.2280000000000002,
-      "benchmarkReturn": 0.244,
-      "alpha": 0.9840000000000002,
+      "host": "Chamath",
+      "positions": 3,
+      "portfolioReturn": 0.6196666666666666,
+      "benchmarkReturn": 0.09499999999999997,
+      "alpha": 0.5246666666666666,
       "topCall": {
         "ticker": "GOOGL",
         "alpha": 0.9836637628130549
       }
     },
     {
-      "host": "Chamath",
-      "positions": 3,
-      "portfolioReturn": 0.6196666666666666,
-      "benchmarkReturn": 0.09499999999999997,
-      "alpha": 0.5246666666666666,
+      "host": "Friedberg",
+      "positions": 2,
+      "portfolioReturn": 0.49649999999999994,
+      "benchmarkReturn": 0.21100000000000008,
+      "alpha": 0.28549999999999986,
       "topCall": {
         "ticker": "GOOGL",
         "alpha": 0.9836637628130549
@@ -33642,52 +33654,6 @@
       ]
     },
     {
-      "guest": "Gavin Baker",
-      "slug": "gavin-baker",
-      "calls": 3,
-      "followReturn": -0.12510095372630892,
-      "benchmarkReturn": 0.2275999519781932,
-      "alpha": -0.3527009057045021,
-      "best": {
-        "company": "SpaceX",
-        "ticker": "SPCX",
-        "slug": "spcx",
-        "ret": 0.149425287356322
-      },
-      "picks": [
-        {
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "slug": "spcx",
-          "stance": "bull",
-          "date": "2025-08-09",
-          "ret": 0.149425287356322,
-          "benchmarkReturn": 0.17426720342181423,
-          "alpha": -0.024841916065492242
-        },
-        {
-          "company": "Enterprise Application Software",
-          "ticker": "IGV",
-          "slug": "igv",
-          "stance": "bear",
-          "date": "2025-01-04",
-          "ret": 0.12381982690794657,
-          "benchmarkReturn": 0.2542663262563827,
-          "alpha": -0.1304464993484361
-        },
-        {
-          "company": "Government Service Providers / Defense Contractors (legacy)",
-          "ticker": "ITA",
-          "slug": "ita",
-          "stance": "bear",
-          "date": "2025-01-04",
-          "ret": -0.6485479754431953,
-          "benchmarkReturn": 0.2542663262563827,
-          "alpha": -0.902814301699578
-        }
-      ]
-    },
-    {
       "guest": "Thomas Laffont",
       "slug": "thomas-laffont",
       "calls": 2,
@@ -33720,6 +33686,42 @@
           "ret": 0.2687787105971806,
           "benchmarkReturn": 0.24425560276597524,
           "alpha": 0.02452310783120537
+        }
+      ]
+    },
+    {
+      "guest": "Gavin Baker",
+      "slug": "gavin-baker",
+      "calls": 2,
+      "followReturn": 0.13662255713213428,
+      "benchmarkReturn": 0.21426676483909846,
+      "alpha": -0.07764420770696417,
+      "best": {
+        "company": "SpaceX",
+        "ticker": "SPCX",
+        "slug": "spcx",
+        "ret": 0.149425287356322
+      },
+      "picks": [
+        {
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "slug": "spcx",
+          "stance": "bull",
+          "date": "2025-08-09",
+          "ret": 0.149425287356322,
+          "benchmarkReturn": 0.17426720342181423,
+          "alpha": -0.024841916065492242
+        },
+        {
+          "company": "Enterprise Application Software",
+          "ticker": "IGV",
+          "slug": "igv",
+          "stance": "bear",
+          "date": "2025-01-04",
+          "ret": 0.12381982690794657,
+          "benchmarkReturn": 0.2542663262563827,
+          "alpha": -0.1304464993484361
         }
       ]
     },
@@ -35767,7 +35769,7 @@
           "invested": 1000
         }
       ],
-      "excludedPrivateCount": 4,
+      "excludedPrivateCount": 3,
       "excludedPrivate": [
         {
           "slug": "polymarket",
@@ -35786,14 +35788,6 @@
           "kind": "private"
         },
         {
-          "slug": "credit-default-swaps-cds",
-          "company": "Credit Default Swaps (CDS)",
-          "hosts": [
-            "Sacks"
-          ],
-          "kind": "macro"
-        },
-        {
           "slug": "ai-content-rights-marketplace-unnamed",
           "company": "AI content rights marketplace (unnamed)",
           "hosts": [
@@ -35808,12 +35802,12 @@
       "inceptionDate": "2025-06-21",
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
-      "totalInvested": 1000,
-      "portfolioValue": 2228,
-      "benchmarkValue": 1244,
-      "portfolioReturn": 1.2280000000000002,
-      "benchmarkReturn": 0.244,
-      "outperformance": 0.9840000000000002,
+      "totalInvested": 2000,
+      "portfolioValue": 2993,
+      "benchmarkValue": 2422,
+      "portfolioReturn": 0.49649999999999994,
+      "benchmarkReturn": 0.21100000000000008,
+      "outperformance": 0.28549999999999986,
       "constituents": [
         {
           "slug": "googl",
@@ -35831,6 +35825,26 @@
           "sinceReturn": 1.2279193655790301,
           "benchmarkReturn": 0.24425560276597524,
           "alpha": 0.9836637628130549,
+          "hosts": [
+            "Friedberg"
+          ]
+        },
+        {
+          "slug": "lng",
+          "company": "Cheniere Energy",
+          "ticker": "LNG",
+          "sourceSymbol": "LNG",
+          "currency": "USD",
+          "direction": "long",
+          "callTypes": [
+            "explicit_long"
+          ],
+          "entryDate": "2026-03-27",
+          "entryPrice": 296.91,
+          "latestPrice": 227.03,
+          "sinceReturn": -0.2353575157455121,
+          "benchmarkReturn": 0.17765616868267897,
+          "alpha": -0.4130136844281911,
           "hosts": [
             "Friedberg"
           ]
@@ -36223,123 +36237,123 @@
         },
         {
           "date": "2026-03-27",
-          "portfolio": 1661,
-          "benchmark": 1057,
-          "invested": 1000
+          "portfolio": 2661,
+          "benchmark": 2057,
+          "invested": 2000
         },
         {
           "date": "2026-04-01",
-          "portfolio": 1800,
-          "benchmark": 1092,
-          "invested": 1000
+          "portfolio": 2729,
+          "benchmark": 2125,
+          "invested": 2000
         },
         {
           "date": "2026-04-07",
-          "portfolio": 1849,
-          "benchmark": 1098,
-          "invested": 1000
+          "portfolio": 2807,
+          "benchmark": 2138,
+          "invested": 2000
         },
         {
           "date": "2026-04-10",
-          "portfolio": 1920,
-          "benchmark": 1132,
-          "invested": 1000
+          "portfolio": 2815,
+          "benchmark": 2204,
+          "invested": 2000
         },
         {
           "date": "2026-04-15",
-          "portfolio": 2041,
-          "benchmark": 1166,
-          "invested": 1000
+          "portfolio": 2906,
+          "benchmark": 2270,
+          "invested": 2000
         },
         {
           "date": "2026-04-20",
-          "portfolio": 2043,
-          "benchmark": 1181,
-          "invested": 1000
+          "portfolio": 2893,
+          "benchmark": 2299,
+          "invested": 2000
         },
         {
           "date": "2026-04-23",
-          "portfolio": 2052,
-          "benchmark": 1180,
-          "invested": 1000
+          "portfolio": 2918,
+          "benchmark": 2298,
+          "invested": 2000
         },
         {
           "date": "2026-04-28",
-          "portfolio": 2117,
-          "benchmark": 1186,
-          "invested": 1000
+          "portfolio": 3010,
+          "benchmark": 2308,
+          "invested": 2000
         },
         {
           "date": "2026-05-01",
-          "portfolio": 2335,
-          "benchmark": 1201,
-          "invested": 1000
+          "portfolio": 3244,
+          "benchmark": 2337,
+          "invested": 2000
         },
         {
           "date": "2026-05-06",
-          "portfolio": 2410,
-          "benchmark": 1223,
-          "invested": 1000
+          "portfolio": 3290,
+          "benchmark": 2380,
+          "invested": 2000
         },
         {
           "date": "2026-05-11",
-          "portfolio": 2353,
-          "benchmark": 1232,
-          "invested": 1000
+          "portfolio": 3163,
+          "benchmark": 2398,
+          "invested": 2000
         },
         {
           "date": "2026-05-14",
-          "portfolio": 2428,
-          "benchmark": 1247,
-          "invested": 1000
+          "portfolio": 3240,
+          "benchmark": 2427,
+          "invested": 2000
         },
         {
           "date": "2026-05-19",
-          "portfolio": 2347,
-          "benchmark": 1223,
-          "invested": 1000
+          "portfolio": 3178,
+          "benchmark": 2380,
+          "invested": 2000
         },
         {
           "date": "2026-05-22",
-          "portfolio": 2318,
-          "benchmark": 1242,
-          "invested": 1000
+          "portfolio": 3130,
+          "benchmark": 2418,
+          "invested": 2000
         },
         {
           "date": "2026-05-28",
-          "portfolio": 2362,
-          "benchmark": 1257,
-          "invested": 1000
+          "portfolio": 3135,
+          "benchmark": 2447,
+          "invested": 2000
         },
         {
           "date": "2026-06-02",
-          "portfolio": 2191,
-          "benchmark": 1266,
-          "invested": 1000
+          "portfolio": 2985,
+          "benchmark": 2464,
+          "invested": 2000
         },
         {
           "date": "2026-06-05",
-          "portfolio": 2231,
-          "benchmark": 1229,
-          "invested": 1000
+          "portfolio": 3035,
+          "benchmark": 2392,
+          "invested": 2000
         },
         {
           "date": "2026-06-10",
-          "portfolio": 2157,
-          "benchmark": 1209,
-          "invested": 1000
+          "portfolio": 2972,
+          "benchmark": 2353,
+          "invested": 2000
         },
         {
           "date": "2026-06-15",
-          "portfolio": 2236,
-          "benchmark": 1258,
-          "invested": 1000
+          "portfolio": 3028,
+          "benchmark": 2448,
+          "invested": 2000
         },
         {
           "date": "2026-06-18",
-          "portfolio": 2228,
-          "benchmark": 1244,
-          "invested": 1000
+          "portfolio": 2993,
+          "benchmark": 2422,
+          "invested": 2000
         }
       ],
       "excludedPrivateCount": 2,

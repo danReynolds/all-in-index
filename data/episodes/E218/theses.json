@@ -15,8 +15,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath is impressed by CoreWeave's technical differentiation (bare-metal, no hypervisor) and revenue trajectory, but flags that the key investment risk is whether the assumed useful life of NVIDIA GPUs proves correct — if it's shorter than modeled, the business is deeply underwater.",
-    "quote": "The bet is they've built an amount of headway… But the other side of it is, is the useful life right? Is the technology curve right?… if we thought the useful life was 10 years, but it turned out to be 5, this business is deeply underwater.",
-    "quoteStartMs": 3395000,
+    "quote": "The bet is they've built an amount of headway. They're going to continue to do this good technical engineering. But the other side of it is, is the useful life right? Is the technology curve right?… we thought the useful life was 10 years, ",
+    "quoteStartMs": 3397599,
     "topics": [
       "GPU depreciation",
       "cloud infrastructure",
@@ -41,7 +41,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg draws an analogy to 'speed doubler' internet companies from 2003 — transitory arbitrage businesses that were disrupted when broadband arrived — warning that hyperscalers spending $80B+ in CapEx each may commoditize what CoreWeave currently offers, compressing demand and pricing.",
-    "quote": "I worry a little bit about a business like this where there's 4 or 5 companies that are each doing $80 billion of CapEx this year to create infrastructure that effectively starts to replace what these guys are effectively offering out as a",
+    "quote": "I worry a little bit about a business like this where there's 4 or 5 companies that are each doing $80 billion of CapEx this year to create infrastructure that effectively starts to replace what these guys are effectively offering out as a ",
     "quoteStartMs": 3629461,
     "topics": [
       "cloud infrastructure",
@@ -117,8 +117,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath views GPT-4.5 as a weak release that went largely unnoticed, and argues the broader problem is that model makers are overfitting to benchmarks, making performance claims unreliable and eroding OpenAI's perceived leadership.",
-    "quote": "The dirty little secret of these model makers is that these guys are so trained on the evals that they're overfitting. And all this overfitting basically makes it pretty unreliable.",
-    "quoteStartMs": 5233010,
+    "quote": "the dirty little secret of these model makers is that these guys are so trained on the evals that they're overfitting. Yeah. And all this overfitting basically makes it pretty unreliable.",
+    "quoteStartMs": 5267626,
     "topics": [
       "AI models",
       "benchmarks",
@@ -168,8 +168,8 @@
     "scoreNote": null,
     "sectorProxy": "MAGS",
     "summary": "Chamath observes that the Mag 7 is compressing toward the rest of the S&P 500, and argues that a deliberate policy of deflating equity asset prices (to reduce consumer wealth effects and lower bond yields) will weigh on high-multiple tech stocks.",
-    "quote": "You're seeing the Mag 7 compressed towards the rest of the S&P 500… if you rebase the equity values that people have, what you do is you actually depress the amount of free cash flow that they have to spend on other things.",
-    "quoteStartMs": 444000,
+    "quote": "you're seeing the Mag 7 compressed towards the rest of the S&P 500",
+    "quoteStartMs": 446992,
     "topics": [
       "valuation",
       "macro policy",

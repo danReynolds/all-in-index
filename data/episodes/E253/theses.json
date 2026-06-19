@@ -66,8 +66,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg argues OpenAI's defensive, risk-averse product posture — driven by being the incumbent target of media criticism — has fundamentally damaged its product quality and brand, ceding ground to Google.",
-    "quote": "ChatGPT is now acting, and OpenAI has been acting like an incumbent fearful of losing market share and fearful of getting attacked in the media... And so they've taken this kind of defensive posture that I think has fundamentally damaged",
-    "quoteStartMs": 1450000,
+    "quote": "ChatGPT is now acting, and OpenAI has been acting like an incumbent fearful of losing market share and fearful of getting attacked in the media and attacked by consumers for saying the wrong thing. And so they've taken this kind of defensiv",
+    "quoteStartMs": 1448873,
     "topics": [
       "product quality",
       "competitive position",
@@ -144,8 +144,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg argues Google's shift to a risk-taking posture, combined with leadership changes, reversed its decline against OpenAI — and that OpenAI's role as the media lightning rod was an unexpected strategic gift to Google.",
-    "quote": "In a way, no greater blessing has ever happened to Alphabet than OpenAI's rise... it also took the attention away from Google, focused in on OpenAI, and that attention fundamentally damaged OpenAI's strategic product capabilities.",
-    "quoteStartMs": 1609000,
+    "quote": "So in a, in a way, no greater blessing has ever happened to Alphabet than OpenAI's rise. And I think that that rise, not only did it create the foil for Google in the monopoly sense,, but it also took the attention away from Google, focused",
+    "quoteStartMs": 1608780,
     "topics": [
       "AI",
       "competitive position",
@@ -170,7 +170,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks acknowledges Anthropic's products are excellent — best-in-class coding assistant — and that it is successfully carving out a lucrative enterprise niche, despite his disagreement with its regulatory strategy.",
-    "quote": "I don't particularly love what I've called their regulatory capture strategy, but I have to acknowledge their products are very good. Everybody seems to say that they have the best coding assistant. And they're carving out a very lucrative",
+    "quote": "I don't particularly love what I've called their regulatory capture strategy, but I have to acknowledge their products are very good. Everybody seems to say that they have the best coding assistant. And they're carving out a very lucrative ",
     "quoteStartMs": 489769,
     "topics": [
       "AI",
@@ -196,7 +196,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks is bullish on xAI's competitive positioning, citing its unique real-time advantage from X integration, Elon's ability to scale training clusters faster than rivals, and a forthcoming Grok 5 trained on the largest Blackwell cluster.",
-    "quote": "You've got xAI, which I think is the best at current events because of the integration with X. And also Elon seems to be able to scale his data center, his training cluster, the fastest... that portends good things for Grok 5.",
+    "quote": "you've got xAI, which I think is the best at current events because of the integration with X. And also Elon seems to be able to scale his data center, his training cluster, the fastest. He had Colossus 1, now he's got Colossus 2, and that ",
     "quoteStartMs": 503630,
     "topics": [
       "AI",

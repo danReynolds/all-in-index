@@ -67,7 +67,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath acknowledges Anthropic's revenue growth is real but argues the enterprise revenue is largely experimental test budgets rather than production-critical workflows, the messaging around existential AI risk is counterproductive and dishonest, and the industry is still early and unsolved — though he concedes it will be a good investment eventually.",
-    "quote": "In the 1849 Gold Rush, Anthropic and OpenAI and all of these model makers are selling the pick and shovel in the gold rush... most of these companies will go out of business. And all I'm saying is if we are really circumspect and honest,",
+    "quote": "In the 1849 Gold Rush, Anthropic and OpenAI and all of these model makers are selling the pick and shovel in the gold rush. I am buying it and I'm trying to pan for gold. But as with the gold rush, most of these companies will go out of bus",
     "quoteStartMs": 3338528,
     "topics": [
       "AI revenue quality",
@@ -163,8 +163,8 @@
     "conviction": "medium",
     "callType": "view",
     "summary": "Chamath argues the oil price spike is likely short-lived, pointing to the market's reflexive drop from $120 to $90 on Trump's 'war will be over soon' comment as validation. He also cites the IEA coordinated release of ~400M barrels plus ~1B more in strategic reserves as dampening further price spikes.",
-    "quote": "Trump was asked about the war and he said the war would be over very soon. What did the market do? The market literally took oil from $120 a barrel to $90 a barrel...Chris released 172 million barrels...a coordinated release of about 400 million barrels of petroleum. That's going to dampen the effect of any price spike.",
-    "quoteStartMs": 506267,
+    "quote": "I think President Trump was asked about the war and he said the war would be over very soon. What did the market do? The market literally took oil from $120 a barrel to $90 a barrel.",
+    "quoteStartMs": 505224,
     "topics": [
       "Iran war",
       "oil price",

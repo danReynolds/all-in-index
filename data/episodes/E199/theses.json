@@ -41,8 +41,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks argues a Google breakup would likely be good for shareholders, as the company should probably be split into three separate entities, though he acknowledges the irony that this action comes precisely as Google faces its greatest existential threat from OpenAI.",
-    "quote": "I actually think that would be good. At the end of the day, it might even be good for shareholders. This thing should be probably 3 separate companies like we've talked about in a previous show.",
-    "quoteStartMs": 2710110,
+    "quote": "But it is true that Google is facing the most existential threat to its search monopoly, and it is a monopoly, in the form of OpenAI at this point in time.",
+    "quoteStartMs": 2720582,
     "topics": [
       "antitrust",
       "breakup",
@@ -93,8 +93,8 @@
     "scoreNote": "Not scored: Chamath expresses a bear view on valuation ('massively overpriced') and structural risks, but there is no transaction/selection language ('I'm short', 'I would short', 'I'd be short') in the quote or anywhere in his transcript lines — it is stated as a personal belief/analysis. The callType explicit_short requires the host's own position/transaction language, which is absent. Downgrade to view.",
     "sectorProxy": null,
     "summary": "Chamath believes Florida coastal and California coastal real estate (specifically West Palm Beach and Malibu) are massively overpriced when climate risk, insurance costs, and long-term financial instability of insurers are properly accounted for.",
-    "quote": "my personal belief is I think that the real estate markets in some of these places are meaningfully mispriced and Specifically what I mean is that they're massively overpriced... I'll name two to be specific, West Palm Beach and Malibu.",
-    "quoteStartMs": 1557240,
+    "quote": "My personal belief is I think that the, the real estate markets in some of these places are, um, meaningfully mispriced and Specifically what I mean is that they're massively overpriced.",
+    "quoteStartMs": 1531540,
     "topics": [
       "real estate",
       "climate risk",

@@ -15,7 +15,7 @@
     "scoreNote": "Named as Jason's explicit prediction pick for biggest business winner of 2026; stated 'I'm going to place a bet on that'.",
     "sectorProxy": null,
     "summary": "Jason picks Amazon as his biggest business winner of 2026, arguing it will be the first company to deploy more robots than humans, driving bottom-line growth via automation in delivery and logistics.",
-    "quote": "my prediction for 2026 is that Amazon is gonna have a massive year... I think they'll be the first corporate singularity, which is to say the first company to have more robots driving their bottom line than humans.",
+    "quote": "my prediction for 2026 is that Amazon is gonna have a massive year... I think they'll be the first corporate, uh, singularity, which is to say the first company to have more robots driving their bottom line than humans. So that's my predict",
     "quoteStartMs": 2182916,
     "topics": [
       "robotics",
@@ -41,8 +41,8 @@
     "scoreNote": "Named as Sacks's explicit selection for biggest business winner of 2026.",
     "sectorProxy": null,
     "summary": "Sacks picks Polymarket as his biggest business winner of 2026, citing its evolution from a niche prediction market into a mainstream news and market insights platform, with exchanges like Robinhood, Coinbase, and Nasdaq expected to follow.",
-    "quote": "I think Polymarket's evolved from being kind of this one-off quirky prediction market to actually really providing insights into current events and the news in a way that none of us anticipated. And I do expect that after the deal we saw",
-    "quoteStartMs": 2005729,
+    "quote": "my number 1 is Huawei... And the second is, uh, Polymarket. I think Polymarket's evolved from being kind of this one-off quirky prediction market to actually really providing insights into current events and the news in a way that none of u",
+    "quoteStartMs": 1985413,
     "topics": [
       "prediction markets",
       "fintech",
@@ -66,7 +66,7 @@
     "scoreNote": "Ranked 'number 1' biggest business winner pick for 2026.",
     "sectorProxy": null,
     "summary": "Sacks names Huawei as his number-one biggest business winner pick for 2026, citing its partnership with SMIC to go deeper in the chip stack and its broad operational momentum that will outperform Western expectations.",
-    "quote": "My number 1 is Huawei, which I've mentioned in the past out of China. I think Huawei's effort to partner with SMIC to go deeper in the chip stack. And they're just firing on all cylinders. I do think keep an eye on Huawei over the next",
+    "quote": "My number 1 is Huawei, which I've mentioned in the past out of China. I think Huawei's effort to partner with SMIC to go deeper in the chip stack. And they're just firing on all cylinders. I do think keep an eye on Huawei over the next year",
     "quoteStartMs": 1985413,
     "topics": [
       "semiconductors",
@@ -88,7 +88,7 @@
     "conviction": "high",
     "callType": "selection",
     "summary": "Friedberg picks Copper as his best performing asset prediction, arguing massive global supply shortfalls (70% short by 2040), national security demand, and ubiquitous use in data centers, chips, and weapons systems will send the price 'absolutely parabolic'.",
-    "quote": "I will pick Copper... we are still completely underestimating how short we are in terms of the global demand-supply dynamics... The asset that is set up to go absolutely parabolic is copper.",
+    "quote": "I will pick Copper... The asset that is set up to go absolutely parabolic is copper.",
     "quoteStartMs": 2067060,
     "topics": [
       "supply shortage",
@@ -115,8 +115,8 @@
     "scoreNote": "Named as Chamath's explicit biggest business winner selection for 2026.",
     "sectorProxy": "IPO",
     "summary": "Chamath picks the 2026 IPO market as the biggest business winner, forecasting a wave of successful public offerings creating trillions in new market cap and reversing the trend of shrinking public company count.",
-    "quote": "I think 2026 is going to be a big year for IPOs... I think there's gonna be a bunch of 'em, a bunch of successful ones, and I think we could see trillions of dollars of new market cap created of public companies.",
-    "quoteStartMs": 2143000,
+    "quote": "I said the IPO. I think 2026 is going to be a big year for IPOs. I'm not going to say which ones. Oh, great. I think there's gonna be a bunch of 'em, a bunch of successful ones, and I think we could see trillions of dollars of new market ca",
+    "quoteStartMs": 2142850,
     "topics": [
       "IPO market",
       "M&A",
@@ -140,8 +140,8 @@
     "scoreNote": "Named as Friedberg's explicit biggest business loser selection for 2026; also his own company's business model targets this disruption.",
     "sectorProxy": "IGV",
     "summary": "Friedberg picks the software industrial complex (licensed SaaS) as his biggest business loser of 2026, arguing that AI agents will aggressively compress the $3–4T maintenance and migration revenue base, severely impacting public SaaS companies.",
-    "quote": "I will pick the software industrial complex... I think you're going to see that total economic opportunity shrink and contract aggressively... It's going to impact SaaS companies, public SaaS companies particularly, quite severely in 2026.",
-    "quoteStartMs": 2583000,
+    "quote": "I will pick the software industrial complex... I think you're going to see that total economic opportunity shrink and contract aggressively... it's going to impact SaaS companies, public SaaS companies particularly, quite severely in 2026.",
+    "quoteStartMs": null,
     "topics": [
       "SaaS",
       "AI disruption",
@@ -223,7 +223,7 @@
       "2026 predictions",
       "worst performing asset"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   },
   {
     "id": "E257-us-dollar-Jason-9",

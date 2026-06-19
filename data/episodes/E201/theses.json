@@ -91,8 +91,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Starbucks faces an existential structural headwind from GLP-1 drug adoption reducing sugar consumption among its core customers, making its current product mix and valuation unsustainable; he believes it should be a ~$20B asset, implying significant multiple compression.",
-    "quote": "This business is in trouble... Starbucks should be probably a $20 billion asset.",
-    "quoteStartMs": 5102000,
+    "quote": "This business is in trouble… But the structural problem is Starbucks should be probably a $20 billion asset.",
+    "quoteStartMs": null,
     "topics": [
       "GLP-1",
       "consumer trends",
@@ -117,7 +117,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg argues Starbucks has hit a revenue maximum by exhausting all three growth levers (brand, coverage, price), making further same-store sales growth structurally limited and the company a mature, multiple-compressing business similar to Apple.",
-    "quote": "I would argue that Starbucks is a victim of the same maximization effect, that at some point you get all the customers, you get 'em to come in and spend as— and buy as many products from you as they can, and you charge 'em the highest",
+    "quote": "I would argue that Starbucks is a victim of the same maximization effect, that at some point you get all the customers, you get 'em to come in and spend as— and buy as many products from you as they can, and you charge 'em the highest price",
     "quoteStartMs": 5316665,
     "topics": [
       "brand maturity",
@@ -143,7 +143,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath acknowledges Apple can continue its free-cash-flow-maximization and buyback playbook for another decade unlike Starbucks, but expresses frustration with iOS 18 quality degradation as a sign of complacency that could eventually erode customer loyalty.",
-    "quote": "Apple can still be at the point that you described earlier, which is let me just maximize free cash flow generation... they could be another decade or so where Apple can continue to run this play with very little impact to them.",
+    "quote": "Apple can still be at the point that you described earlier, which is let me just maximize free cash flow generation, which is what they do. And then let me allocate that back to shareholders via buybacks, which is also what they do. So they",
     "quoteStartMs": 5414319,
     "topics": [
       "FCF",
@@ -214,8 +214,8 @@
     "conviction": "medium",
     "callType": "view",
     "summary": "Chamath says gold will go up more if Trump wins due to medium-term inflation hedging, but views it as the 'last vestiges' of gold as rational economic insurance, with Bitcoin being the future inflation hedge.",
-    "quote": "Gold's going to go up more, probably... In the medium term inflation goes up and so you want to hedge... you're seeing the last vestiges of people using gold as a rational economic insurance policy, but I think the future is specifically Bitcoin.",
-    "quoteStartMs": 712000,
+    "quote": "Gold's going to go up more, probably… in the medium term inflation goes up and so you want to hedge… I think you're seeing the last vestiges of people using gold as a rational economic insurance policy, but I think the future is specificall",
+    "quoteStartMs": null,
     "topics": [
       "inflation hedge",
       "Trump trade",

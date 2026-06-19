@@ -47,7 +47,7 @@
       "equity rally",
       "macro"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   },
   {
     "id": "E233-s-p-500-broad-market-Sacks-2",
@@ -90,8 +90,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks discusses the Anthropic AI copyright ruling, noting the fair use reasoning aligns with his prior views on input vs. output, but flags that Anthropic faces a separate piracy claim for books it allegedly did not purchase.",
-    "quote": "Anthropic is allegedly in some hot water. And then I think there is some case that's gonna move forward about that.",
-    "quoteStartMs": 5852000,
+    "quote": "Anthropic is allegedly, by the way, allegedly is in some hot water. And then I think there is some case that's gonna move forward about that.",
+    "quoteStartMs": 5859340,
     "topics": [
       "AI copyright",
       "fair use",

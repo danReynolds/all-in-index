@@ -41,7 +41,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg contends Starlink could grow from 4 million subscribers to 100 million or more, potentially becoming one of the largest subscription businesses on Earth as satellite-to-phone expands availability.",
-    "quote": "Starlink's running at 4 million subs right now. That's like $100 a month, 4 million subs... If we can get satellite to phone and you can get Starlink more broadly available, this could be a 100 million subscriber business.",
+    "quote": "Starlink's running at 4 million subs right now. That's like $100 a month, 4 million subs. And if you do the math, I mean, how many people have ISPs that are slower than Starlink, right? How many people have cell phone providers that they're",
     "quoteStartMs": 1282620,
     "topics": [
       "subscriber growth",
@@ -66,7 +66,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Expedia is a fragile UI layer on top of licensed third-party data that AI agents will disintermediate, making it a terrible capital allocation at a $30B acquisition price.",
-    "quote": "I cannot think of a more fragile business model than the UI layer on top of widely available data... a more reasonable assumption is that those things are pretty fragile.",
+    "quote": "I cannot think of a more fragile business model than the UI layer on top of widely available data. So the problem that Expedia has is the same that Booking and a bunch of these other folks have, which is that the principal heartbeat of the ",
     "quoteStartMs": 1777208,
     "topics": [
       "AI disruption",
@@ -165,7 +165,7 @@
     "conviction": "high",
     "callType": "explicit_long",
     "summary": "Friedberg says he predicted uranium stocks a year ago and reiterates the bull case: GDP growth drives energy demand that cannot be met without nuclear, making uranium a necessity. He explicitly states his prior year prediction was to buy uranium stocks.",
-    "quote": "it was also my prediction for the year was to by the uranium stocks predicated on what I think is a really important point, which is as GDP per capita grows, energy consumption per capita grows... there is no way to meet the energy demand without nuclear.",
+    "quote": "it was also my prediction for the year was to by the uranium stocks predicated on what I think is a really important point, which is as GDP per capita grows, energy consumption per capita grows",
     "quoteStartMs": 2943984,
     "topics": [
       "energy demand",

@@ -67,8 +67,8 @@
     "scoreNote": "Not scored: The published quote is actually Friedberg's words (spoken during Chamath and Friedberg's holiday conversation, recounted by Chamath), not Chamath's own direct claim. However, Chamath does make his own explicit bear call on California muni bonds in his own words at ~3405s and ~3512s. A verbatim Chamath line that carries the directional bear claim should replace the current quote. The callType should be 'view' not 'explicit_short' as Chamath never says 'I am short' or 'I would short' — he predicts bond market repricing and collapse but does not express a personal short position.",
     "sectorProxy": null,
     "summary": "Chamath warns that bond markets will reprice California's fiscal risk as government fraud and pension obligations are exposed, predicting failed Treasury auctions, muni bond collapse, and a death spiral for California's balance sheet that makes its bonds uninvestable.",
-    "quote": "if you know that this is happening Yeah. If you break munis, you can't underwrite this.",
-    "quoteStartMs": 3512000,
+    "quote": "if risk gets massively repriced, and munis shit the bed, and a bunch of state bonds shit the bed, and a bunch of these issues get broken, these folks will have no choice except to run and hide and cover their ass.",
+    "quoteStartMs": 3456571,
     "topics": [
       "municipal bonds",
       "California fiscal crisis",

@@ -41,8 +41,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks sees OpenAI as the clear AI leader with best models and developer ecosystem, but flags that durability of its moat is the key question — if it can consolidate its lead it's on track to be a trillion-dollar company; if not, it could be commoditized.",
-    "quote": "there's no question that OpenAI is the leader of the pack… The question is just how durable that advantage is, is there really a moat to any of this?… If so, it's on track to be the next trillion-dollar big tech company. But if not, it",
-    "quoteStartMs": 713484,
+    "quote": "I think there's no question that OpenAI is the leader of the pack. It has the most advanced AI models, it's got the best developer ecosystem, the best APIs, it keeps rolling out new products. And the question is just how durable that advant",
+    "quoteStartMs": 712773,
     "topics": [
       "AI leadership",
       "moat",
@@ -93,7 +93,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues that AI agents will erode the necessity of traditional systems of record like Salesforce, making their expensive software unjustifiable as companies can pipe data directly and achieve the same outcomes at a fraction of the cost.",
-    "quote": "systems of record lose a grip on the vault that they had in terms of the data that runs a company… You don't necessarily need it with the same reliance and primacy that you did 5 and 10 years ago. That'll have an impact to the software",
+    "quote": "systems of record lose a grip on the vault that they had in terms of the data that runs a company. You don't necessarily need it with, in the same reliance and primacy that you did 5 and 10 years ago. That'll have an impact to the software ",
     "quoteStartMs": 1656480,
     "topics": [
       "AI disruption",
@@ -145,7 +145,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks argues Meta is executing extremely well — successful cost-cutting, advances in AI including leading the open-source movement with Llama 3.2, and now appearing ahead on augmented reality — making it a strong performer across multiple fronts.",
-    "quote": "it seems to me that Meta is executing extremely well… they've caught up and now they're leading the open source movement… And now it seems to me that they're ahead on augmented reality",
+    "quote": "It seems to me that Meta is executing extremely well… they've caught up and now they're leading the open source movement… And now it seems to me that they're ahead on augmented reality",
     "quoteStartMs": 3638290,
     "topics": [
       "execution",

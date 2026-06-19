@@ -22,7 +22,7 @@
       "commoditization",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   },
   {
     "id": "E208-openai-Jason-1",
@@ -64,7 +64,7 @@
     "scoreNote": null,
     "summary": "Aaron Levie declines to rank OpenAI as a loser, noting you don't want to bet against Sam Altman or Greg Brockman, but frames the competitive landscape as wide open with no clear winner.",
     "quote": "I don't think you want to bet against Sam and Greg. You don't want to bet against Elon. You don't want to bet against Sergey now in office with Sundar. You don't want to bet against Zuck. So I think the rankings are kind of less",
-    "quoteStartMs": 5678000,
+    "quoteStartMs": 5678260,
     "topics": [
       "AI competition",
       "competitive position"
@@ -87,8 +87,8 @@
     "excludeReason": null,
     "scoreNote": null,
     "summary": "Chamath argues Google has a compounding data, infrastructure, and personnel advantage in AI, has changed its posture to launch aggressively, and is now clearly competitive — dismissing prior doubts about the company.",
-    "quote": "They were late and the compounding effects are playing out and it's only gonna continue to compound. And I will say the data repository at Google... is advantaged. And so everyone's been kind of counting them out, but it's clear they're in",
-    "quoteStartMs": 5315000,
+    "quote": "They were late and the compounding effects are playing out and it's only gonna continue to compound. And I will say the data repository at Google, the engine that they they have the infrastructure, the team, all, everything down to componen",
+    "quoteStartMs": 5314780,
     "topics": [
       "AI competition",
       "data advantage",
@@ -111,8 +111,8 @@
     "excludeReason": null,
     "scoreNote": null,
     "summary": "Jason argues Google's Gemini models have reached and exceeded parity with OpenAI's best offerings, and believes Google is now leading the AI race after being counted out.",
-    "quote": "I think not only have they caught up, I think they have exceeded. What are your thoughts? Because people were counting them out and here we are.",
-    "quoteStartMs": 5310000,
+    "quote": "I think Google now has reached parity and they have an app out. Freeberg, what are your thoughts? Because people were counting them out and here we are. I think not only have they caught up, I think they have exceeded.",
+    "quoteStartMs": 5301520,
     "topics": [
       "AI competition",
       "product",
@@ -185,8 +185,8 @@
     "excludeReason": null,
     "scoreNote": null,
     "summary": "Aaron Levie highlights that Box survived the post-COVID correction, is now cranking at all-time highs, and has built an 82% gross margin software business on top of commoditized storage infrastructure — demonstrating durable business quality.",
-    "quote": "Let me give you a fun stat. We give our customers unlimited storage. We have 82% gross margin. So the price of the underlying storage has gone down by hundreds of times since we started the company. And then our all our value is in the",
-    "quoteStartMs": 3917000,
+    "quote": "Let me give you a fun stat. We give our customers unlimited storage. We have 82% gross margin. So, so the, the, what, what happened was the price of the underlying storage has gone down by hundreds of times since we started the company. And",
+    "quoteStartMs": 3916830,
     "topics": [
       "gross margin",
       "business model",
@@ -211,7 +211,7 @@
     "scoreNote": "Explicitly labeled as a day trade by the speaker.",
     "summary": "Jason mentions he is loading up on MSTR as a day trade alongside a short Bitcoin position, framing it as a tactical leveraged Bitcoin play.",
     "quote": "My last day trade is I'm loading up on MSTR and Bitcoin. I'm shorting Bitcoin and I'm buying MSTR.",
-    "quoteStartMs": 5214000,
+    "quoteStartMs": 5214150,
     "topics": [
       "Bitcoin",
       "day trade"

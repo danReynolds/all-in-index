@@ -191,16 +191,17 @@ async function main() {
         const tr = store.loadTranscript(id);
         if (!tr) continue;
         const theses = store.loadTheses(id);
-        const beforeHost = new Map(theses.map((t) => [t.id, t.host]));
+        // Capture by index — repairQuoteOwnership rewrites the id on re-attribution.
+        const beforeHost = theses.map((t) => t.host);
         const beforeConf = theses.map((t) => t.attributionConfidence);
         repairQuoteOwnership(theses, tr);
         snapQuoteTimestamps(theses, tr);
         stampAttribution(theses, tr);
         enforceVerbatimQuotes(theses, tr);
         theses.forEach((t, i) => {
-          if (beforeHost.get(t.id) && beforeHost.get(t.id) !== t.host) {
+          if (beforeHost[i] !== t.host) {
             moved++;
-            console.log(`  ⇄ ${id} ${beforeHost.get(t.id)} → ${t.host}: ${t.company}`);
+            console.log(`  ⇄ ${id} ${beforeHost[i]} → ${t.host}: ${t.company}`);
           }
           if (beforeConf[i] !== "low" && t.attributionConfidence === "low") demoted++;
         });

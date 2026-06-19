@@ -15,8 +15,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks argues that LLMs plus voice AI will massively disrupt call centers within 2-3 years, replacing Level 1 customer support first and working up the chain, because the data sets are large and accessible, error tolerance is built into the tiered support structure, and reasoning models are now good enough.",
-    "quote": "I think it's now becoming really clear that call centers are going to be the first really big disruption caused by AI... within the next 2 to 3 years, you're going to see a massive disruption in that industry.",
-    "quoteStartMs": 1058000,
+    "quote": "I think it's now becoming really clear that call centers are going to be the first really big disruption caused by AI… I think within the next 2 to 3 years, you're going to see a massive disruption in that industry.",
+    "quoteStartMs": null,
     "topics": [
       "AI disruption",
       "call centers",
@@ -118,8 +118,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues the VC industry is structurally broken due to extended company gestation periods, the 2021 bubble inflating entry prices, broken IPO and M&A exit paths, and AI companies requiring far less capital — predicting average returns will decay 50-100% and the industry must reinvent its liquidity mechanisms.",
-    "quote": "I do think that we are in a situation where the average returns are going to decay by 50 to 100%... the IPO process is broken... we are not in a sustainable industry. It is if you raise funds and think about fee generation, but it is not",
-    "quoteStartMs": 3503000,
+    "quote": "we are not in a sustainable industry. It is if you raise funds and think about fee generation, but it is not… I do think that we are in a situation where the average returns are going to decay by 50 to 100%",
+    "quoteStartMs": null,
     "topics": [
       "venture capital",
       "returns",
@@ -144,7 +144,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks says VC is in a hangover from the 2020-2021 liquidity bubble that doubled entry prices and distorted returns, but sees light at the end of the tunnel with rate cuts and the AI wave potentially ushering in a new golden era for the industry.",
-    "quote": "I think we're just in the hangover of this massive liquidity bubble... the good news is that we now have maybe the most exciting tech wave ever, which is AI... So the hope is we're finally going to have really exciting things to invest in",
+    "quote": "I think we're just in the hangover of this massive liquidity bubble… the good news is that we now have maybe the most exciting tech wave ever, which is AI… So the hope is we're finally going to have really exciting things to invest in again",
     "quoteStartMs": 3382211,
     "topics": [
       "venture capital",

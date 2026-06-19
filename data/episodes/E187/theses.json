@@ -66,7 +66,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks is bullish on OpenAI, citing its $3.4B in revenue doubling year-over-year and its position as a dominant semantic search engine, comparing its long-term potential to Google's search franchise.",
-    "quote": "OpenAI is effectively semantic search, right? It's a different kind of search engine where it understands the question you're asking and gives you an answer instead of blue links. And they're already at... $3.4 billion in revenue... this",
+    "quote": "OpenAI is effectively semantic search, right? It's a different kind of search engine where it understands the question you're asking and gives you an answer instead of blue links. And they're already at, was it, we talked about this previou",
     "quoteStartMs": 2071489,
     "topics": [
       "AI revenue",
@@ -91,8 +91,8 @@
     "scoreNote": "Not scored: Sacks saying 'I will definitely upgrade to the iPhone 16' is a personal consumer decision, not a portfolio action — he uses no investment language ('I'd be long', 'I'd buy the stock'). The callType should not be explicit_long; it is commentary about a product upgrade cycle. The stance itself is product optimism without an explicit economic claim about Apple's financials or stock.",
     "sectorProxy": null,
     "summary": "Sacks says he will upgrade to the iPhone 16 because LLM-powered Siri will drive a major upgrade cycle, making it a compelling buy.",
-    "quote": "I think it's gonna lead to a huge upgrade cycle. I mean, I'm still on an iPhone 13 because I haven't seen a reason to upgrade. I will definitely upgrade to the iPhone 16.",
-    "quoteStartMs": 2107600,
+    "quote": "The second one I think will be when Apple comes out with iPhone 16, you know, with LLM-powered Siri, assuming they do a decent job with that. I, it's gonna lead to a huge upgrade cycle. I mean, I'm still on an iPhone 13 because I haven't se",
+    "quoteStartMs": 2121957,
     "topics": [
       "iPhone upgrade cycle",
       "AI integration",
@@ -194,8 +194,8 @@
     "scoreNote": null,
     "sectorProxy": "MAGS",
     "summary": "Sacks draws parallels to broadband and railroad buildouts to argue that current AI infrastructure spending, while appearing bubble-like in the short term, will be validated in the medium-to-long term as applications mature.",
-    "quote": "I tend to think that's what's gonna happen with AI... there's already enough, let's call it realness to the applications... OpenAI is at $3.4 billion in revenue... it's doubling year over year.",
-    "quoteStartMs": 1996000,
+    "quote": "I tend to think that's what's gonna happen with AI. I mean, I, I do think that there's already enough, let's call it realness to the applications. I mean, I'll give you 3 examples. Number 1, OpenAI. I mean, OpenAI is effectively semantic se",
+    "quoteStartMs": 2058948,
     "topics": [
       "AI capex",
       "historical analogy",

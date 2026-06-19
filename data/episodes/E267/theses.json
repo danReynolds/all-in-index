@@ -41,7 +41,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg argues SpaceX is effectively the railroad infrastructure for the next great frontier — the moon and Mars — and has also built a backup extraterrestrial internet via Starlink, making it a foundational technology platform for civilizational-scale value creation.",
-    "quote": "SpaceX will be to the moon and ultimately to Mars... SpaceX has also created a backup to the internet... that backup internet can coincide with the Earth's internet, but it creates this extraterrestrial communication network.",
+    "quote": "SpaceX will be to the moon and ultimately to Mars, and there's going to be an extraordinary abundance of production that's going to come out of the moon… SpaceX has also created— and this is going to be a a big part of the valuation analysi",
     "quoteStartMs": 672555,
     "topics": [
       "space economy",
@@ -67,7 +67,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg argues Tesla's autonomous competency led to a robotics revolution, and those robots — deployable on the moon — make Tesla a more interesting long-term story than its origins as an EV company suggest, especially in combination with SpaceX.",
-    "quote": "Tesla, I think 20 years from now is actually a more interesting story... Tesla started out as an electric car company, 100% ended up becoming an autonomous car company. And the autonomous competency is what led to the robotics revolution.",
+    "quote": "Tesla, I think 20 years from now is actually a more interesting story, whether they're the same independent company or the same company. I think we're going to look back one day and have this kind of laughing observation that Tesla started ",
     "quoteStartMs": 599391,
     "topics": [
       "robotics",
@@ -93,7 +93,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath believes OpenAI is a genuinely extraordinary, trillion-dollar-caliber business and urges it to IPO as quickly as possible before investor appetite is exhausted by a wave of large listings.",
-    "quote": "Is there a market for OpenAI at $800 billion? Yes, and there should be... These are trillion-dollar companies. They both are, and they both deserve to be... these two companies need to get out as quickly as possible.",
+    "quote": "Is there a market for OpenAI at $800 billion? Yes, and there should be. When I read that press release, my mind was blown. This is a— I've never seen a business like this. And I'd say the same thing of Anthropic. What an incredible thing th",
     "quoteStartMs": 1804882,
     "topics": [
       "IPO",
@@ -145,8 +145,8 @@
     "scoreNote": null,
     "sectorProxy": "IGV",
     "summary": "Chamath argues that as SpaceX, OpenAI, and Anthropic come public, their AI capabilities will cannibalize the moats of existing software companies, causing tech sector P/E multiples to converge toward non-tech multiples — a bearish re-rating for the software complex.",
-    "quote": "As those three companies come out, the combination of SpaceX, OpenAI, and Anthropic, all three are baking an AI technology that first and foremost will go after the tech sector. It will eliminate and it will cannibalize and it will erode",
-    "quoteStartMs": 1870000,
+    "quote": "as these companies come out, the combination of SpaceX, OpenAI, and Anthropic, all three are baking an AI technology that first and foremost will go after the tech sector. It will eliminate and it will cannibalize and it will erode most of ",
+    "quoteStartMs": 1875490,
     "topics": [
       "AI disruption",
       "valuation compression",
@@ -197,7 +197,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath warns that Bitcoin and crypto broadly are the most obvious honeypot for a non-state actor wielding near-term quantum computing, and that the ecosystem has 5–7 years to achieve quantum-resistance or face existential risk.",
-    "quote": "If a non-state actor gets ahold of quantum technology that can defeat crypto as we know it today... a non-state actor's incentive will first be to drain the obvious honeypots... I think crypto is the most obvious honeypot in a world where",
+    "quote": "if a non-state actor gets ahold of quantum technology that can defeat crypto as we know it today, SHA-256, ECDS, the elliptical curve stuff, the run-of-the-mill stuff that we all rely on, a non-state actor's incentive will first be to drain",
     "quoteStartMs": 3925247,
     "topics": [
       "quantum computing",

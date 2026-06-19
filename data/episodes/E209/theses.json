@@ -42,8 +42,8 @@
     "scoreNote": "Named as one of Jason's two biggest business winners for 2025; framed as a forward investment view.",
     "sectorProxy": null,
     "summary": "Jason names Tesla as one of his biggest business winners for 2025, citing its AI and robotics investments and Colossus GPU cluster build-out as positioning it for unexpected breakthroughs.",
-    "quote": "I am just absolutely amazed at the comeback that Google has made with AI, and I'm absolutely in awe of what Elon did with Colossus... those two specifically... are gonna be the biggest winners next year.",
-    "quoteStartMs": 1742000,
+    "quote": "My biggest business winner prediction for 2025 is Tesla and Google... those two specifically, those two, three names I think are gonna be the biggest winners next year.",
+    "quoteStartMs": null,
     "topics": [
       "AI",
       "robotics",
@@ -172,8 +172,8 @@
     "scoreNote": null,
     "sectorProxy": "MAGS",
     "summary": "Chamath warns that excessive index concentration in the Mag 7 (~40% of indices) historically foreshadows a large drawdown, projecting a potential multi-trillion-dollar absolute dollar loss even if fundamentals remain strong.",
-    "quote": "I am a little bit worried about just the general concentration of the top 7, 8, 9, 10 companies in the indices. I think it's approaching 40%... they've generally foreshadowed a big drawdown.",
-    "quoteStartMs": 2438119,
+    "quote": "I am a little bit worried, and I tweeted this a few days ago, about just the general concentration of the top 7, 8, 9, 10 companies in the indices. I think it's approaching 40%... when you look at these historic concentrations, they've gene",
+    "quoteStartMs": 2418185,
     "topics": [
       "concentration risk",
       "valuation",
@@ -198,7 +198,7 @@
     "scoreNote": "Ranked as Jason's #1 best performing asset pick for 2025.",
     "sectorProxy": "MAGS",
     "summary": "Jason picks the Mag 7 as his best performing asset for 2025, arguing AI-driven internal efficiency gains will produce earnings growth that markets cannot yet comprehend.",
-    "quote": "I think the Mag 7 is going to be the best performing asset... The gains we'll see from AI... they're applying first internally. So the internal application of AI will allow these companies to have earnings growth that people will not be",
+    "quote": "I think the Mag 7 is going to be the best performing asset... the gains we'll see from AI, which they're producing for other companies and for consumers, they're applying first internally. So the internal application of AI will allow these ",
     "quoteStartMs": 4930420,
     "topics": [
       "AI",
@@ -250,8 +250,8 @@
     "scoreNote": "CDS protection is not a listed equity; non-standard instrument requiring ISDA. Explicitly framed as insurance/asymmetric tail-risk bet, not a directional equity call.",
     "sectorProxy": null,
     "summary": "Chamath says he would be long CDS (buying protection) as an insurance policy against a tail-risk credit/bank crisis in 2025, citing debt concentration, high rates, and S&P index concentration as systemic risks.",
-    "quote": "I would be long CDS. So what am I buying? I am buying insurance... I'm buying protection... if it hits, it will be the best performing asset of 2025. It will be the equivalent of Ackman buying CDS right at the beginning of the COVID crisis.",
-    "quoteStartMs": 4506000,
+    "quote": "I would be long CDS. So what am I buying? I am buying insurance. I'm buying insurance using credit default swaps. I'm buying what's called protection... if it hits, it will be the best performing asset of 2025. It will be the equivalent of ",
+    "quoteStartMs": 4534567,
     "topics": [
       "CDS",
       "tail risk",
@@ -276,8 +276,8 @@
     "scoreNote": "Explicit best-performing-asset selection; basket of Chinese tech via ETF.",
     "sectorProxy": "KWEB",
     "summary": "Friedberg picks Chinese tech ETFs as his best performing asset for 2025, citing cheap valuations, potential US-China trade deal under Trump, accelerating Chinese electricity buildout lowering costs, and CCP throttling up free-market activity.",
-    "quote": "I went with Chinese tech stocks, uh, Chinese tech ETFs... these stocks look pretty cheap. I was just looking at Alibaba, and it trades at a pretty decent multiple. It seems like these stocks could be poised for a pretty good run in '25 if",
-    "quoteStartMs": 4660000,
+    "quote": "I went with Chinese tech stocks, uh, Chinese tech ETFs... these stocks look pretty cheap. I was just looking at Alibaba, and it trades at a pretty decent multiple. It seems like these stocks could be poised for a pretty good run in '25 if t",
+    "quoteStartMs": 4660235,
     "topics": [
       "China tech",
       "valuation",
@@ -302,8 +302,8 @@
     "scoreNote": "Named as Gavin's explicit worst performing asset pick for 2025.",
     "sectorProxy": "IGV",
     "summary": "Gavin Baker picks enterprise application software as his worst performing asset for 2025, arguing AI agents from cloud providers will replace the labor-efficiency premise of legacy SaaS, and these companies lack their own models or compute to compete.",
-    "quote": "Enterprise application software... 2025 is going to be the year of agents... if the labs and the big cloud providers dominate agents... enterprise application software, I think, is going to be in a lot of pain... they don't have their own",
-    "quoteStartMs": 5015000,
+    "quote": "Gavin, enterprise application software... 2025 is going to be, I think, the year of agents... if the labs and the big cloud providers dominate agents, which seems likely... enterprise application software, I think, is going to be in a lot o",
+    "quoteStartMs": 5014512,
     "topics": [
       "SaaS",
       "AI agents",
@@ -389,7 +389,7 @@
       "defense",
       "biggest business loser"
     ],
-    "attributionConfidence": "high",
+    "attributionConfidence": "low",
     "guestName": "Gavin Baker"
   },
   {
@@ -408,7 +408,7 @@
     "scoreNote": "Named as Friedberg's explicit biggest business loser pick for 2025; shared quote covers the named basket of three companies.",
     "sectorProxy": "ITA",
     "summary": "Friedberg picks legacy defense/aerospace primes (Boeing, Lockheed Martin, Raytheon) as biggest business losers of 2025, citing government budget rationalization toward tech-oriented spending, operational failures, and new entrants like Palantir and Anduril.",
-    "quote": "I went with the kind of old defense and aerospace providers, Boeing, Lockheed Martin, Raytheon, Defense 1.0... I think that this government contracting business across the board is going to be deeply challenged this year with all the new",
+    "quote": "I went with the kind of old defense and aerospace providers, Boeing, Lockheed Martin, Raytheon, Defense 1.0... I think that this government contracting business across the board is going to be deeply challenged this year with all the new bl",
     "quoteStartMs": 2490289,
     "topics": [
       "defense",
@@ -434,7 +434,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath predicts traditional auto OEMs (Volkswagen, Stellantis, Honda, Nissan, etc.) are uninvestable melting icebergs caught between Tesla and Chinese EV makers, and expects a wave of mega-mergers as capital markets force consolidation.",
-    "quote": "The European OEMs are in real trouble... what does Volkswagen do? It's not clear. What does Stellantis do? It's not clear. These are all businesses that are effectively melting icebergs.",
+    "quote": "the European OEMs are in real trouble. You know, what does Volkswagen do? It's not clear. What does Stellantis do? It's not clear. These are all businesses that are effectively melting icebergs.",
     "quoteStartMs": 2903606,
     "topics": [
       "auto OEMs",
@@ -513,7 +513,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg highlights Waymo's rapid market share gain in SF (0% to 22% in 15 months), new lower-capex hardware platform improving ROIC, and national expansion as indicators of a transformative business event in 2025 — potentially an IPO, major financing, or acquisition.",
-    "quote": "Waymo is now at 22% market share of rides in SF... they also just moved the hardware platform over to a new device. That's supposedly going to bring the CapEx significantly down... you could see something happen with Waymo this year.",
+    "quote": "Waymo is now at 22% market share of rides in SF... they also just moved the, the hardware platform over to a new, new device. That's supposedly going to bring the CapEx significantly down... you could see something happen with Waymo this ye",
     "quoteStartMs": 3284844,
     "topics": [
       "autonomous vehicles",
@@ -539,15 +539,15 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Jason argues Apple Intelligence is a failure compared to Google's Gemini, positioning Apple as losing the AI assistant race and potentially ceding smartphone market share to Android AI experiences.",
-    "quote": "Apple Intelligence is terrible. I just bought the Google Pixel Fold 9. And the Gemini works perfectly... it does it in 1/5 or 1/10 the amount of time that Apple takes. And Apple gets it wrong every fucking time. It's a piece of garbage.",
-    "quoteStartMs": 3454000,
+    "quote": "Apple Intelligence... it sucks. It's terrible. I just bought the Google Pixel Fold 9. And the Gemini works perfectly... it does it in 1/5 or 1/10 the amount of time that Apple takes. And Apple gets it wrong every fucking time. It's a piece ",
+    "quoteStartMs": 3465167,
     "topics": [
       "Apple Intelligence",
       "AI",
       "competitive position",
       "smartphone"
     ],
-    "attributionConfidence": "low"
+    "attributionConfidence": "high"
   },
   {
     "id": "E209-aapl-Guest-22",

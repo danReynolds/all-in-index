@@ -15,8 +15,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Stripe's ecosystem value is underappreciated — its hub-and-spoke model around payments generates significant ARR from adjacent products (e.g. $500M billing ARR), which likely explains its premium valuation over Adyen, and its stablecoin opportunity could be enormous given its scale.",
-    "quote": "The value of Stripe's ecosystem is probably underappreciated... the billing product, it's half a billion dollars a year of ARR. That's just incredible. And I think if they figure out network effects inside of the Stripe ecosystem, that's",
-    "quoteStartMs": 1340032,
+    "quote": "the value of Stripe's ecosystem is, is probably underappreciated... the billing product. It's half a billion dollars a year of ARR. That's just incredible. And I think if they figure out network effects inside of the Stripe ecosystem, that'",
+    "quoteStartMs": 1319956,
     "topics": [
       "payments",
       "ecosystem",
@@ -66,8 +66,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Salesforce and the broader enterprise software complex are facing harder renewal cycles as customers grow frustrated with legacy software spend and look to AI-driven alternatives, pressuring revenue.",
-    "quote": "You can see it with what's happening to Salesforce and other big companies is that these renewal cycles are getting harder and harder to justify.",
-    "quoteStartMs": 1513199,
+    "quote": "you, you can see it with what's happening to Salesforce and other big companies is that these renewal cycles are getting harder and harder to justify.",
+    "quoteStartMs": 1512879,
     "topics": [
       "enterprise software",
       "AI disruption",

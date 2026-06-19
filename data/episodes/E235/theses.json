@@ -15,8 +15,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues that xAI's bet on massive compute scale and a general-computation approach (the 'Bitter Lesson') has allowed Grok 4 to leapfrog all competitors in under 2.5 years, with future iterations relying on synthetic data rather than human labeling — a compounding structural advantage over rivals like OpenAI, Google, and Meta who remain dependent on human-labeled data.",
-    "quote": "Two things. One is how quickly, starting in March of 2023, so we're talking about less than 2.5 years, what this team has accomplished and how far ahead they are of everybody else, as demonstrated by this.",
-    "quoteStartMs": 1240000,
+    "quote": "Two things. One is how quickly, starting in March of 2023, so we're talking about less than 2.5 years, what this team has accomplished and how how far ahead they are of everybody else, as demonstrated by this.",
+    "quoteStartMs": 1247989,
     "topics": [
       "AI compute scale",
       "competitive moat",
@@ -141,7 +141,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath believes building a browser is a terrible capital allocation decision for Perplexity in 2025, but argues the company's best path to a durable business is replacing Bloomberg in financial data and information — a $100B opportunity where Perplexity already shows strong product quality.",
-    "quote": "I think building a browser is an absolutely stupid capital allocation decision. Just totally stupid and unjustifiable in 2025. Specifically for Perplexity, I think their path to building a legacy business is to replace Bloomberg... I think",
+    "quote": "I think building a browser is an absolutely stupid capital allocation decision. Just totally stupid and unjustifiable in 2025. Specifically for Perplexity, I think their path to building a legacy business is to replace Bloomberg",
     "quoteStartMs": 3145851,
     "topics": [
       "capital allocation",
@@ -167,8 +167,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Keith argues Apple has missed every possible window on AI due to cultural and infrastructure challenges, and that its vertical integration is the only thing keeping it alive — emphasizing that buying Perplexity would not fix its structural AI deficit.",
-    "quote": "Apple has missed every possible window on AI and continues to miss it. And it has cultural— I think the CEO has challenges. I think culturally they have challenges. I think they have infrastructure challenges. So it's not an easy fix.",
-    "quoteStartMs": 3294120,
+    "quote": "Apple has missed every possible window on AI and continues to miss it. And it has cultural I think the CEO has challenges. I think culturally they have challenges. I think they have infrastructure challenges. So it's, it's not an easy fix",
+    "quoteStartMs": 3301501,
     "topics": [
       "AI strategy",
       "missed opportunity",
@@ -217,8 +217,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Keith argues Google Search is toast and that the assets best positioned to save Alphabet have nothing to do with search — framing the core search business as a loser against ChatGPT unless Google combines Chrome with Gemini into a competitive product.",
-    "quote": "Google Search, cross-search is toast. And since they have Chrome and they theoretically have a quality team in Gemini, they should be putting these two things together... the assets that are best at Google right now have nothing to do with",
-    "quoteStartMs": 2967010,
+    "quote": "Google Search, cross-search is toast. And since they have Chrome and they theoretically have a, a quality team in Gemini, they should be putting these two things together and company to compete with ChatGPT, they're gonna lose the search ga",
+    "quoteStartMs": 2954807,
     "topics": [
       "search obsolescence",
       "AI competition",

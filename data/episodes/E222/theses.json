@@ -15,25 +15,25 @@
     "scoreNote": "Sacks describes it as 'free money' and confirms the Polymarket trade closed out profitably; explicit directional bet placed.",
     "sectorProxy": "MAGS",
     "summary": "Sacks placed an explicit bet (via Polymarket) that the Mag Seven would shrink below 30% of the S&P 500 in 2025, citing the Trump administration's indifference to the stock market and its focus on working-class and MAGA economic priorities rather than the asset economy.",
-    "quote": "Magnificent Seven shrinks below 30% of S&P 500 in 2025. This was free money. This was like the stock market giving out free money.",
-    "quoteStartMs": 3013000,
+    "quote": "\"The equity market sell-off is a Mag Seven problem, not a MAGA problem.\"",
+    "quoteStartMs": 3054174,
     "topics": [
       "Mag Seven",
       "tariffs",
       "market concentration",
       "MAGA policy"
     ],
-    "attributionConfidence": "low"
+    "attributionConfidence": "high"
   },
   {
-    "id": "E222-credit-default-swaps-cds-Sacks-1",
+    "id": "E222-credit-default-swaps-cds-Chamath-1",
     "episodeId": "E222",
     "episodeNumber": 222,
     "episodeDate": "2025-04-05T19:03:00.000Z",
     "company": "Credit Default Swaps (CDS)",
     "ticker": null,
     "isPublic": false,
-    "host": "Sacks",
+    "host": "Chamath",
     "stance": "bull",
     "conviction": "high",
     "callType": "explicit_long",
@@ -49,7 +49,7 @@
       "recession risk",
       "tariffs"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   },
   {
     "id": "E222-nmax-Friedberg-2",

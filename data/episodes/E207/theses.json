@@ -119,14 +119,14 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath suggests Stripe is at risk of being disrupted by crypto stablecoins and is making defensive moves, implying they may be missing their IPO window.",
-    "quote": "They're waiting to get disrupted by crypto stablecoins. Get out there, boys. They bought that crypto stablecoin company for like a billion dollars. Defensive.",
-    "quoteStartMs": 4000000,
+    "quote": "Well, I was just going to ask Keith a question, which is what is the game theory behind Stripe not going out? Like, what's the, hmm, what's the strategic rationale?",
+    "quoteStartMs": 4140920,
     "topics": [
       "stablecoins",
       "disruption",
       "IPO timing"
     ],
-    "attributionConfidence": "low"
+    "attributionConfidence": "high"
   },
   {
     "id": "E207-mstr-Friedberg-5",
@@ -144,8 +144,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg explains that MicroStrategy's convertible note structure is effectively a synthetic call option on Bitcoin, noting that hedge funds are buying the converts because the Black-Scholes value of the embedded option appears attractive — a structural observation rather than a directional call.",
-    "quote": "It looks a lot like a synthetic call option on Bitcoin... if you actually were to sit down and do the Black-Scholes modeling of the value of the synthetic call option that he's selling you with the convertible note. There's a reason people",
-    "quoteStartMs": 5087000,
+    "quote": "it looks a lot like a synthetic call option on Bitcoin. You get a convertible note, so you earn a coupon on the note, and then you have a conversion price, which is a premium to the stock price",
+    "quoteStartMs": 5092272,
     "topics": [
       "Bitcoin",
       "convertible notes",

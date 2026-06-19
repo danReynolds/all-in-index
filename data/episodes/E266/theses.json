@@ -15,8 +15,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks praises Anthropic's product execution — particularly the coding-focused strategy as a gateway into enterprise IT budgets — while maintaining philosophical objections to its regulatory capture strategy.",
-    "quote": "The company made a big bet on coding as the kind of big breakout use case... it was a very good business move as well, because code is the gateway into enterprise and enterprise IT budgets. And so they've been able to grow revenue pretty",
-    "quoteStartMs": 284386,
+    "quote": "I think they're firing on all cylinders.",
+    "quoteStartMs": 344755,
     "topics": [
       "enterprise",
       "AI coding",
@@ -41,7 +41,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath says Anthropic dominates the enterprise AI market and its technical team is head and shoulders above competitors, making it the default choice for enterprise use cases through his firm 8090.",
-    "quote": "From an enterprise lens, which is where I see most of the action, particularly through 80/90, it's all Anthropic all the time... in terms of the quality of that technical team and what they create, it's head and shoulders above anything",
+    "quote": "From an enterprise lens, which is where I see most of the action, particularly through 80/90, it's all Anthropic all the time. And I agree with Sachs, my philosophical issues with the management aside around their ideology and sometimes how",
     "quoteStartMs": 565740,
     "topics": [
       "enterprise AI",
@@ -66,8 +66,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues OpenAI remains the dominant consumer AI brand with overwhelming mindshare and should focus on that strength rather than chasing enterprise, noting it is still the overwhelming revenue generator in the space.",
-    "quote": "OpenAI is still the overwhelming revenue generator in this space... If I was OpenAI and you had to pick one thing, you would pick consumer because they're the juggernaut and they're the clear leader and they have an enormous brand.",
-    "quoteStartMs": 1196000,
+    "quote": "if you normalize these two businesses, what you would see is OpenAI OpenAI is still the overwhelming revenue generator in this space… if I was OpenAI and you had to pick one thing, you would pick consumer because they're the juggernaut and ",
+    "quoteStartMs": null,
     "topics": [
       "consumer AI",
       "brand",
@@ -92,7 +92,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks argues Google is well-positioned for the AI agent era given its existing access to users' calendars, documents, and email, and that it will compete vigorously for the consumer given the existential nature of search/AI convergence.",
-    "quote": "Google is in an outstanding position to do the whole Open Claw thing because they already have access to your calendar, your documents, your email. So the agent doesn't really have to earn your trust because you already trust Google with",
+    "quote": "Google is in an outstanding position to do the whole Open Claw thing because they already have access to your calendar, your documents, your email. So the agent doesn't really have to earn your trust because you already trust Google with al",
     "quoteStartMs": 1531977,
     "topics": [
       "AI agents",
@@ -118,7 +118,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Google's massive free cash flow allows it to run consumer and enterprise AI as effectively two separate companies, and that the market believes in the durability of its cash flows more than any other player.",
-    "quote": "They're probably the only one, and you can see it in the valuations actually... people believe the durability of Google more than they believe the durability of anything else.",
+    "quote": "They're probably the only one, and you can see it in the valuations actually, which I'm going to get to in a second. But people believe the durability of Google more than they believe the durability of anything else.",
     "quoteStartMs": 1581342,
     "topics": [
       "valuation",
@@ -170,15 +170,15 @@
     "scoreNote": "Friedberg explicitly states 'I just bought LNG, that Cheniere company' — direct equity purchase.",
     "sectorProxy": null,
     "summary": "Friedberg bought shares of Cheniere Energy, citing it as a durable, well-run business with relevance given geopolitical instability in the Middle East and fitting his 'counter-AI / high asset, low obsolescence' investment framework.",
-    "quote": "I just bought LNG, that Cheniere company. Given all the craziness in the Middle East, and you know, I visited there with Doug Burgum, so it was the first time I'd ever been exposed to this business.",
-    "quoteStartMs": 2159000,
+    "quote": "I just bought LNG, that Cheniere company.",
+    "quoteStartMs": 2157093,
     "topics": [
       "LNG",
       "energy",
       "geopolitics",
       "HALO assets"
     ],
-    "attributionConfidence": "low"
+    "attributionConfidence": "high"
   },
   {
     "id": "E266-saas-sector-Chamath-7",

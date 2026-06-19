@@ -118,8 +118,8 @@
     "scoreNote": "Not scored: Chamath names the 'software industrial complex' as his own labeled basket, explicitly sizes it at $3.5-4T, and makes a concrete bear claim that AI agents will allow small teams to 'blow a hole right in the side of that $3 trillion economy' — incumbents 'cannot compete with that cost scale.' This is an explicit directional bear claim on a named basket. However, the callType should be 'view' not 'basket' because Chamath does not use transaction/selection language (no 'I'm short', 'my pick is short', etc.) — it is analytical commentary about disruption risk.",
     "sectorProxy": "IGV",
     "summary": "Chamath argues the $3.5-4 trillion enterprise software industry is highly vulnerable to disruption by AI agents — small teams using agents can do the work of thousands, making incumbent SaaS companies structurally unable to compete on cost and threatening their valuations.",
-    "quote": "The software industrial complex as I call it, right? That's like a $3.5, $4 trillion industry… if these agents can scale, the OPEX, the actual load of making something, will go down by an order of magnitude and maybe even two orders of",
-    "quoteStartMs": 1620000,
+    "quote": "the software industrial complex as I call it, right? That's like a $3.5, $4 trillion industry. It grows by 10% a year. So every year it's adding $300 billion of quote unquote enterprise value. Is that value that is being created? I think a ",
+    "quoteStartMs": 1618761,
     "topics": [
       "AI disruption",
       "SaaS valuation",
