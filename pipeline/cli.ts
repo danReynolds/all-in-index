@@ -178,6 +178,37 @@ async function main() {
       const { amendPositional } = await import("./positional");
       return amendPositional();
     }
+    case "repair-attribution": {
+      // Deterministic, no-LLM repair over existing theses: handoff-aware quote
+      // ownership, re-snap timestamps, re-stamp confidence, and demote any
+      // non-verbatim scored quote. Run after upgrade-quotes; build-index after.
+      const { repairQuoteOwnership, snapQuoteTimestamps, stampAttribution, enforceVerbatimQuotes } =
+        await import("./run-episode");
+      const { store } = await import("./store");
+      let moved = 0;
+      let demoted = 0;
+      for (const id of store.listEpisodeIds()) {
+        const tr = store.loadTranscript(id);
+        if (!tr) continue;
+        const theses = store.loadTheses(id);
+        const beforeHost = new Map(theses.map((t) => [t.id, t.host]));
+        const beforeConf = theses.map((t) => t.attributionConfidence);
+        repairQuoteOwnership(theses, tr);
+        snapQuoteTimestamps(theses, tr);
+        stampAttribution(theses, tr);
+        enforceVerbatimQuotes(theses, tr);
+        theses.forEach((t, i) => {
+          if (beforeHost.get(t.id) && beforeHost.get(t.id) !== t.host) {
+            moved++;
+            console.log(`  ⇄ ${id} ${beforeHost.get(t.id)} → ${t.host}: ${t.company}`);
+          }
+          if (beforeConf[i] !== "low" && t.attributionConfidence === "low") demoted++;
+        });
+        store.saveTheses(id, theses);
+      }
+      console.log(`\n✓ re-attributed ${moved} takes (handoff merges), demoted ${demoted} non-verbatim scored quotes. Run build-index next.`);
+      return;
+    }
     case "audit-candidates": {
       const { runTakeCandidateAudit } = await import("./take-candidate-audit");
       return runTakeCandidateAudit();

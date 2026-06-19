@@ -5,7 +5,9 @@ import { extractTheses } from "./extract";
 import { buildIndex } from "./build-index";
 import { ASSETS, CRYPTO } from "../lib/assets";
 import { sectorProxyInfo } from "../lib/proxies";
-import type { Episode, Thesis, Transcript } from "../lib/types";
+import { isQuoteVerbatim, normForMatch } from "../lib/quotes";
+import { isPortfolioScored } from "../lib/calls";
+import type { Episode, Host, Thesis, Transcript } from "../lib/types";
 
 const SCOREABLE_CALL_TYPES = new Set<Thesis["callType"]>([
   "explicit_long",
@@ -184,11 +186,45 @@ export function dedupeOverlappingTheses(theses: Thesis[]): Thesis[] {
  * not appear in the attributed host's own lines but does appear in another
  * resolved speaker's line, move the take to the quote owner before scoring.
  */
+const HANDOFF_HOSTS = ["Chamath", "Jason", "Sacks", "Friedberg"] as const;
+
+/**
+ * If an utterance OPENS by handing the floor to another host — "What do you got,
+ * Chamath?" / "Chamath, what's your pick?" — and the diarizer merged that handoff
+ * into the answer, the words that follow belong to the addressed host, not the
+ * one the line is labeled. Returns that host, but only when the handoff is right
+ * at the start, so normal mid-discussion cross-talk ("Jason, I disagree…") never
+ * triggers it. Mechanical transcript repair, not a judgment.
+ */
+function handoffTarget(text: string, currentSpeaker: string): Host | null {
+  const head = normForMatch(text.slice(0, 64));
+  const lead = "(?:ok |okay |all right |alright |and |so |um |well )*";
+  for (const h of HANDOFF_HOSTS) {
+    if (h === currentSpeaker) continue;
+    const n = h.toLowerCase();
+    const addressed = new RegExp(`^${lead}${n} (?:what|whats|who|whos|how|your|you|give|go|tell|take|the floor)`);
+    const handedTo = new RegExp(`^${lead}(?:what do you got|what is your|whats your|who is your|whos your|how about|go ahead|over to you|your (?:pick|turn|prediction)|the floor (?:is yours|goes to)) ${n}\\b`);
+    if (addressed.test(head) || handedTo.test(head)) return h;
+  }
+  return null;
+}
+
 export function repairQuoteOwnership(theses: Thesis[], t: Transcript): Thesis[] {
   for (const th of theses) {
     if (!th.quote) continue;
     const sameHost = findQuoteUtterance(t, th.quote, th.host);
-    if (sameHost) continue;
+    if (sameHost) {
+      // The quote is in the attributed host's lines — but if that utterance
+      // opens by handing off to another host, the diarizer merged the handoff
+      // into the answer; the take belongs to the addressed host.
+      const tgt = handoffTarget(sameHost.text, th.host);
+      if (tgt && tgt !== th.host) {
+        const oldHost = th.host;
+        th.host = tgt;
+        th.id = rewriteHostInId(th.id, oldHost, tgt);
+      }
+      continue;
+    }
     const owner = findQuoteUtterance(t, th.quote);
     if (!owner || owner.speaker === "Unknown" || owner.speaker === th.host) continue;
     const oldHost = th.host;
@@ -263,6 +299,22 @@ export function stampAttribution(theses: Thesis[], t: Transcript): Thesis[] {
 }
 
 /**
+ * Scoring fail-safe: a take must never score on a quote that isn't a faithful
+ * verbatim excerpt of the transcript. After the LLM passes (verify, upgrade-
+ * quotes) have had their chance to repair, any still-non-verbatim quote on a
+ * scoreable take is demoted to low attribution confidence so it drops out of
+ * the index/leaderboard. Views (never scored) are left untouched.
+ */
+export function enforceVerbatimQuotes(theses: Thesis[], t: Transcript): Thesis[] {
+  const full = t.utterances.map((u) => u.text).join(" ");
+  for (const th of theses) {
+    if (!th.quote || !isPortfolioScored(th)) continue;
+    if (!isQuoteVerbatim(th.quote, full)) th.attributionConfidence = "low";
+  }
+  return theses;
+}
+
+/**
  * Process one episode: transcribe → name speakers → extract theses, saving
  * each artifact. Does NOT rebuild the index (the caller does that once after a
  * batch). The transcript (the expensive AssemblyAI step) is cached on disk, so
@@ -287,8 +339,11 @@ export async function processEpisode(ep: Episode): Promise<number> {
   store.saveTranscript(transcript);
 
   const theses = dedupeOverlappingTheses(
-    stampAttribution(
-      snapQuoteTimestamps(repairQuoteOwnership(await extractTheses(ep, transcript), transcript), transcript),
+    enforceVerbatimQuotes(
+      stampAttribution(
+        snapQuoteTimestamps(repairQuoteOwnership(await extractTheses(ep, transcript), transcript), transcript),
+        transcript,
+      ),
       transcript,
     ),
   );
