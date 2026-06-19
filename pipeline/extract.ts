@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { callTool } from "./llm";
+import { callTool, type CallToolArgs } from "./llm";
 import { verifyTheses } from "./verify";
 import { trimPublishedQuote } from "../lib/quotes";
 import { REGULAR_HOSTS } from "../lib/types";
@@ -177,16 +177,15 @@ function slug(company: string, ticker: string | null): string {
  * rows, BEFORE the adversarial verify pass. Exposed so callers (and evals) can
  * run extraction and verification as separate, swappable stages.
  */
-export async function extractRawTheses(
-  ep: Episode,
-  t: Transcript,
-): Promise<Thesis[]> {
+type ExtractionResult = z.infer<typeof ExtractionSchema>;
+
+/** The extract tool-call args for one episode — shared by the sync and batch paths. */
+export function extractArgs(ep: Episode, t: Transcript): CallToolArgs<ExtractionResult> {
   const { text, truncated } = formatTranscript(t);
   if (truncated) {
     console.log(`  (transcript truncated to ${MAX_CHARS} chars for extraction)`);
   }
-
-  const result = await callTool({
+  return {
     system: SYSTEM,
     user: `Episode ${ep.id} — "${ep.title}" (${ep.date.slice(0, 10)}).\n\nTranscript:\n\n${text}`,
     toolName: "submit_theses",
@@ -194,8 +193,11 @@ export async function extractRawTheses(
     inputSchema: INPUT_SCHEMA,
     validate: ExtractionSchema,
     maxTokens: 8192,
-  });
+  };
+}
 
+/** Map a raw extraction result to Thesis rows. Pure; no LLM call. */
+export function mapExtraction(ep: Episode, result: ExtractionResult): Thesis[] {
   return result.theses.map((item, i) => ({
     id: `${ep.id}-${slug(item.company, item.ticker)}-${item.host}-${i}`,
     episodeId: ep.id,
@@ -216,6 +218,10 @@ export async function extractRawTheses(
     quoteStartMs: item.quoteStartSec != null ? item.quoteStartSec * 1000 : null,
     topics: item.topics,
   }));
+}
+
+export async function extractRawTheses(ep: Episode, t: Transcript): Promise<Thesis[]> {
+  return mapExtraction(ep, await callTool(extractArgs(ep, t)));
 }
 
 /** Extract per-host company theses from a named transcript, then verify them. */
