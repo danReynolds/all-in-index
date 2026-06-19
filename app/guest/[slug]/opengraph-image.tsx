@@ -87,18 +87,23 @@ export default async function Image({ params }: { params: Promise<{ slug: string
             </div>
             <div
               style={{
-                fontSize: 86,
+                fontSize: entry && entry.followReturn != null ? 86 : 52,
                 fontWeight: 800,
                 lineHeight: 1.05,
-                color: entry && entry.followReturn >= 0 ? "#34d399" : "#fb7185",
+                color:
+                  entry && entry.followReturn != null
+                    ? entry.followReturn >= 0
+                      ? "#34d399"
+                      : "#fb7185"
+                    : "#8d9a92",
               }}
             >
-              {entry ? pct(entry.followReturn) : "—"}
+              {entry && entry.followReturn != null ? pct(entry.followReturn) : "Commentary"}
             </div>
             <div style={{ fontSize: 28, color: "#b6c0b9", display: "flex" }}>
-              {entry
-                ? `vs S&P ${pct(entry.benchmarkReturn)} · ${entry.calls} scored ${entry.calls === 1 ? "call" : "calls"}, if you'd followed each one`
-                : "no scored calls yet"}
+              {entry && entry.followReturn != null
+                ? `vs S&P ${pct(entry.benchmarkReturn ?? 0)} · ${entry.calls} scored ${entry.calls === 1 ? "call" : "calls"}, if you'd followed each one`
+                : "takes on the show — recorded, never a position to score"}
             </div>
           </div>
         </div>

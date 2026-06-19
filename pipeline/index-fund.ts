@@ -1,6 +1,7 @@
 import { fetchDailyHistory } from "./market";
 import {
   hostExposureWindows,
+  guestExposureWindows,
   type ExposureWindow,
 } from "../lib/calls";
 import { isTradableCompanyExposure, classifyExcluded, isGoingPrivate } from "../lib/tradability";
@@ -17,7 +18,6 @@ import type {
   IndexConstituent,
   IndexFundPoint,
   Host,
-  Thesis,
   TradeDirection,
 } from "../lib/types";
 
@@ -149,80 +149,89 @@ export async function buildBearBook(
 }
 
 /**
- * Named-guest scorecards (the Guesties side game). For each guest, take their
- * scored directional public calls (deduped to the latest per company) and score
- * each "if you'd followed it" — long a bull, short a bear — from the call date
- * to today, vs SPY over the same window. View-based, not position-based: guests
- * rarely state in/out, and the Guesties are explicitly the fun index.
+ * Named-guest scorecards (the Guesties side game), on the SAME call-based engine
+ * as the besties: a guest is scored over their portfolio-scored CALL windows
+ * (explicit longs/shorts, ranked picks, pair legs), long a bull / short a bear,
+ * from the window start to today, vs SPY over the same window. A guest's view is
+ * commentary — surfaced on the holding pages, never scored. Guests who only ever
+ * commented still get an entry (calls=0, null score) so their page survives.
  */
 export async function buildGuestLeaderboard(holdings: Holding[]): Promise<GuestLeaderboardEntry[]> {
-  // guest -> slug -> latest scored directional take on that public name
-  const byGuest = new Map<string, Map<string, { take: Thesis; h: Holding }>>();
-  for (const h of holdings) {
-    if (!h.ticker || !h.isPublic || !h.market || h.market.history.length < 2) continue;
-    for (const t of h.theses) {
-      if (
-        t.host !== "Guest" ||
-        !t.guestName ||
-        t.conviction === "low" ||
-        t.attributionConfidence === "low" ||
-        (t.stance !== "bull" && t.stance !== "bear")
-      )
-        continue;
-      const m = byGuest.get(t.guestName) ?? new Map();
-      const prev = m.get(h.slug);
-      if (!prev || t.episodeDate > prev.take.episodeDate) m.set(h.slug, { take: t, h });
-      byGuest.set(t.guestName, m);
-    }
-  }
+  // Every named guest who said anything (so view-only guests keep a page).
+  const allGuests = new Set<string>();
+  for (const h of holdings)
+    for (const t of h.theses) if (t.host === "Guest" && t.guestName) allGuests.add(t.guestName);
 
   const spyHistAll = await fetchDailyHistory(BENCHMARK, "2019-01-01");
   const spy = spyHistAll ? new Series(spyHistAll) : null;
+  const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / xs.length;
 
   const out: GuestLeaderboardEntry[] = [];
-  for (const [guest, calls] of byGuest) {
+  for (const guest of allGuests) {
     const rows: GuestCall[] = [];
-    for (const { take, h } of calls.values()) {
-      const series = new Series(h.market!.history);
-      const entry = series.onOrAfter(take.episodeDate);
-      if (!entry) continue;
-      const stockRet = series.last / entry.close - 1;
-      // Direction-adjusted: long a bull, "short" a bear. A short's loss is
-      // floored at −100% — as if the view were expressed with a capped position
-      // (a put / inverse stake) rather than an unbounded margin short, so one
-      // blown bear call can't drag the mean past total loss of the stake.
-      const ret = Math.max(take.stance === "bull" ? stockRet : -stockRet, -1);
-      const spyEntry = spy?.onOrAfter(take.episodeDate);
-      const bench = spy && spyEntry ? spy.last / spyEntry.close - 1 : 0;
-      rows.push({
-        company: h.company,
-        ticker: h.ticker!,
-        slug: h.slug,
-        stance: take.stance as "bull" | "bear",
-        date: take.episodeDate,
-        ret,
-        benchmarkReturn: bench,
-        alpha: ret - bench,
+    for (const h of holdings) {
+      if (!h.ticker || !h.isPublic || !h.market || h.market.history.length < 2) continue;
+      const series = new Series(h.market.history);
+      const spyHist = spy ?? null;
+      for (const w of guestExposureWindows(h.theses, guest)) {
+        const e = series.onOrAfter(w.start);
+        if (!e) continue;
+        const exit = w.end ? series.asOf(w.end) : series.last;
+        if (exit == null) continue;
+        const stockRet = exit / e.close - 1;
+        // Direction-adjusted; a short's loss floored at −100% (a capped inverse
+        // stake, so one blown bear call can't drag the mean past a total loss).
+        const ret = Math.max(w.direction === "long" ? stockRet : -stockRet, -1);
+        const spyEntry = spyHist?.onOrAfter(w.start);
+        const spyExit = w.end ? spyHist?.asOf(w.end) : spyHist?.last;
+        const bench = spyHist && spyEntry && spyExit != null ? spyExit / spyEntry.close - 1 : 0;
+        rows.push({
+          company: h.company,
+          ticker: h.ticker,
+          slug: h.slug,
+          stance: w.direction === "long" ? "bull" : "bear",
+          date: w.start,
+          ret,
+          benchmarkReturn: bench,
+          alpha: ret - bench,
+        });
+      }
+    }
+    if (rows.length) {
+      const followReturn = mean(rows.map((r) => r.ret));
+      const benchmarkReturn = mean(rows.map((r) => r.benchmarkReturn));
+      const best = rows.slice().sort((a, b) => b.ret - a.ret)[0];
+      out.push({
+        guest,
+        slug: guestSlug(guest),
+        calls: rows.length,
+        followReturn,
+        benchmarkReturn,
+        alpha: followReturn - benchmarkReturn,
+        best: { company: best.company, ticker: best.ticker, slug: best.slug, ret: best.ret },
+        picks: rows.slice().sort((a, b) => b.date.localeCompare(a.date)),
+      });
+    } else {
+      // Commentary-only guest: keep the page, no score.
+      out.push({
+        guest,
+        slug: guestSlug(guest),
+        calls: 0,
+        followReturn: null,
+        benchmarkReturn: null,
+        alpha: null,
+        best: null,
+        picks: [],
       });
     }
-    if (!rows.length) continue;
-    const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / xs.length;
-    const followReturn = mean(rows.map((r) => r.ret));
-    const benchmarkReturn = mean(rows.map((r) => r.benchmarkReturn));
-    const best = rows.slice().sort((a, b) => b.ret - a.ret)[0];
-    out.push({
-      guest,
-      slug: guestSlug(guest),
-      calls: rows.length,
-      followReturn,
-      benchmarkReturn,
-      alpha: followReturn - benchmarkReturn,
-      best: { company: best.company, ticker: best.ticker, slug: best.slug, ret: best.ret },
-      picks: rows.slice().sort((a, b) => b.date.localeCompare(a.date)),
-    });
   }
-  // Most calls first (more signal), then by alpha.
-  return out.sort((a, b) => b.calls - a.calls || b.alpha - a.alpha);
+  // Scored guests first (most calls, then alpha); commentary guests after.
+  return out.sort(
+    (a, b) =>
+      Number(b.calls > 0) - Number(a.calls > 0) ||
+      b.calls - a.calls ||
+      (b.alpha ?? 0) - (a.alpha ?? 0),
+  );
 }
 
 /**

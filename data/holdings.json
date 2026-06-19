@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T11:02:16.987Z",
+  "generatedAt": "2026-06-19T11:34:59.011Z",
   "holdings": [
     {
       "slug": "meta",
@@ -33596,436 +33596,58 @@
   ],
   "guestLeaderboard": [
     {
-      "guest": "Gavin Baker",
-      "slug": "gavin-baker",
-      "calls": 9,
-      "followReturn": -0.013002793043014204,
-      "benchmarkReturn": 0.15002353522367917,
-      "alpha": -0.1630263282666934,
-      "best": {
-        "company": "Google",
-        "ticker": "GOOGL",
-        "slug": "googl",
-        "ret": 0.9077808304390647
-      },
-      "picks": [
-        {
-          "company": "Nvidia",
-          "ticker": "NVDA",
-          "slug": "nvda",
-          "stance": "bull",
-          "date": "2026-05-22T22:46:00.000Z",
-          "ret": -0.060928864325191734,
-          "benchmarkReturn": -0.0051292982853489155,
-          "alpha": -0.05579956603984282
-        },
-        {
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "slug": "spcx",
-          "stance": "bull",
-          "date": "2026-05-22T22:46:00.000Z",
-          "ret": 0.149425287356322,
-          "benchmarkReturn": -0.0051292982853489155,
-          "alpha": 0.1545545856416709
-        },
-        {
-          "company": "CoreWeave",
-          "ticker": "CRWV",
-          "slug": "crwv",
-          "stance": "bull",
-          "date": "2026-05-22T22:46:00.000Z",
-          "ret": -0.055039256529402225,
-          "benchmarkReturn": -0.0051292982853489155,
-          "alpha": -0.04990995824405331
-        },
-        {
-          "company": "Meta",
-          "ticker": "META",
-          "slug": "meta",
-          "stance": "bull",
-          "date": "2025-08-09T15:40:00.000Z",
-          "ret": -0.2463211772232885,
-          "benchmarkReturn": 0.17426720342181423,
-          "alpha": -0.42058838064510273
-        },
-        {
-          "company": "Apple",
-          "ticker": "AAPL",
-          "slug": "aapl",
-          "stance": "bear",
-          "date": "2025-08-09T15:40:00.000Z",
-          "ret": -0.28022166852822394,
-          "benchmarkReturn": 0.17426720342181423,
-          "alpha": -0.4544888719500382
-        },
-        {
-          "company": "Google",
-          "ticker": "GOOGL",
-          "slug": "googl",
-          "stance": "bull",
-          "date": "2025-01-04T00:23:00.000Z",
-          "ret": 0.9077808304390647,
-          "benchmarkReturn": 0.2542663262563827,
-          "alpha": 0.653514504182682
-        },
-        {
-          "company": "Tesla",
-          "ticker": "TSLA",
-          "slug": "tsla",
-          "stance": "bull",
-          "date": "2025-01-04T00:23:00.000Z",
-          "ret": -0.006992140041159334,
-          "benchmarkReturn": 0.2542663262563827,
-          "alpha": -0.261258466297542
-        },
-        {
-          "company": "Enterprise Application Software",
-          "ticker": "IGV",
-          "slug": "igv",
-          "stance": "bear",
-          "date": "2025-01-04T00:23:00.000Z",
-          "ret": 0.12381982690794657,
-          "benchmarkReturn": 0.2542663262563827,
-          "alpha": -0.1304464993484361
-        },
-        {
-          "company": "Government Service Providers / Defense Contractors (legacy)",
-          "ticker": "ITA",
-          "slug": "ita",
-          "stance": "bear",
-          "date": "2025-01-04T00:23:00.000Z",
-          "ret": -0.6485479754431953,
-          "benchmarkReturn": 0.2542663262563827,
-          "alpha": -0.902814301699578
-        }
-      ]
-    },
-    {
       "guest": "Brad Gerstner",
       "slug": "brad-gerstner",
-      "calls": 6,
-      "followReturn": 0.26421366282010117,
-      "benchmarkReturn": 0.04042713091625916,
-      "alpha": 0.223786531903842,
+      "calls": 3,
+      "followReturn": 0.49208800983245055,
+      "benchmarkReturn": 0.012364089910794185,
+      "alpha": 0.47972391992165636,
       "best": {
-        "company": "Micron Technology",
-        "ticker": "MU",
-        "slug": "mu",
-        "ret": 0.42581066978486914
+        "company": "SK Hynix",
+        "ticker": "000660.KS",
+        "slug": "000660.ks",
+        "ret": 0.6393831553973903
       },
       "picks": [
-        {
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "slug": "spcx",
-          "stance": "bull",
-          "date": "2026-05-08T22:16:00.000Z",
-          "ret": 0.149425287356322,
-          "benchmarkReturn": 0.010063573650750834,
-          "alpha": 0.13936171370557116
-        },
         {
           "company": "SK Hynix",
           "ticker": "000660.KS",
           "slug": "000660.ks",
           "stance": "bull",
-          "date": "2026-05-08T22:16:00.000Z",
-          "ret": 0.3987854251012146,
-          "benchmarkReturn": 0.010063573650750834,
-          "alpha": 0.3887218514504638
+          "date": "2026-05-08",
+          "ret": 0.6393831553973903,
+          "benchmarkReturn": 0.012364089910794185,
+          "alpha": 0.6270190654865961
         },
         {
           "company": "Samsung",
           "ticker": "005930.KS",
           "slug": "005930.ks",
           "stance": "bull",
-          "date": "2026-05-08T22:16:00.000Z",
-          "ret": 0.23992994746059537,
-          "benchmarkReturn": 0.010063573650750834,
-          "alpha": 0.22986637380984454
+          "date": "2026-05-08",
+          "ret": 0.3184357541899441,
+          "benchmarkReturn": 0.012364089910794185,
+          "alpha": 0.3060716642791499
         },
         {
           "company": "Micron Technology",
           "ticker": "MU",
           "slug": "mu",
           "stance": "bull",
-          "date": "2026-05-08T22:16:00.000Z",
-          "ret": 0.42581066978486914,
-          "benchmarkReturn": 0.010063573650750834,
-          "alpha": 0.4157470961341183
-        },
-        {
-          "company": "Salesforce",
-          "ticker": "CRM",
-          "slug": "crm",
-          "stance": "bear",
-          "date": "2026-02-07T04:35:00.000Z",
-          "ret": 0.2177498325001288,
-          "benchmarkReturn": 0.07607176309532382,
-          "alpha": 0.14167806940480498
-        },
-        {
-          "company": "Nvidia",
-          "ticker": "NVDA",
-          "slug": "nvda",
-          "stance": "bull",
-          "date": "2025-10-10T19:21:00.000Z",
-          "ret": 0.1535808147174771,
-          "benchmarkReturn": 0.1262367277992278,
-          "alpha": 0.0273440869182493
+          "date": "2026-05-08",
+          "ret": 0.5184451199100173,
+          "benchmarkReturn": 0.012364089910794185,
+          "alpha": 0.5060810299992231
         }
       ]
     },
     {
-      "guest": "Thomas Laffont",
-      "slug": "thomas-laffont",
+      "guest": "Gavin Baker",
+      "slug": "gavin-baker",
       "calls": 3,
-      "followReturn": 0.14954910745954972,
-      "benchmarkReturn": 0.24425560276597524,
-      "alpha": -0.09470649530642553,
-      "best": {
-        "company": "Nvidia",
-        "ticker": "NVDA",
-        "slug": "nvda",
-        "ret": 0.3653684142310931
-      },
-      "picks": [
-        {
-          "company": "Meta",
-          "ticker": "META",
-          "slug": "meta",
-          "stance": "bull",
-          "date": "2025-06-21T02:53:00.000Z",
-          "ret": -0.1854998024496246,
-          "benchmarkReturn": 0.24425560276597524,
-          "alpha": -0.42975540521559985
-        },
-        {
-          "company": "Nvidia",
-          "ticker": "NVDA",
-          "slug": "nvda",
-          "stance": "bull",
-          "date": "2025-06-21T02:53:00.000Z",
-          "ret": 0.3653684142310931,
-          "benchmarkReturn": 0.24425560276597524,
-          "alpha": 0.12111281146511788
-        },
-        {
-          "company": "Tesla",
-          "ticker": "TSLA",
-          "slug": "tsla",
-          "stance": "bull",
-          "date": "2025-06-21T02:53:00.000Z",
-          "ret": 0.2687787105971806,
-          "benchmarkReturn": 0.24425560276597524,
-          "alpha": 0.02452310783120537
-        }
-      ]
-    },
-    {
-      "guest": "Antonio Gracias",
-      "slug": "antonio-gracias",
-      "calls": 2,
-      "followReturn": 0.5769184058915479,
-      "benchmarkReturn": 0.2345870877076961,
-      "alpha": 0.34233131818385176,
-      "best": {
-        "company": "Google",
-        "ticker": "GOOGL",
-        "slug": "googl",
-        "ret": 1.0044115244267737
-      },
-      "picks": [
-        {
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "slug": "spcx",
-          "stance": "bull",
-          "date": "2025-02-07T22:20:00.000Z",
-          "ret": 0.149425287356322,
-          "benchmarkReturn": 0.2345870877076961,
-          "alpha": -0.0851618003513741
-        },
-        {
-          "company": "Google",
-          "ticker": "GOOGL",
-          "slug": "googl",
-          "stance": "bull",
-          "date": "2025-02-07T22:20:00.000Z",
-          "ret": 1.0044115244267737,
-          "benchmarkReturn": 0.2345870877076961,
-          "alpha": 0.7698244367190776
-        }
-      ]
-    },
-    {
-      "guest": "Aaron Levie",
-      "slug": "aaron-levie",
-      "calls": 2,
-      "followReturn": 0.36771290258778877,
-      "benchmarkReturn": 0.255679429618793,
-      "alpha": 0.1120334729689958,
-      "best": {
-        "company": "Google",
-        "ticker": "GOOGL",
-        "slug": "googl",
-        "ret": 0.9428284854563689
-      },
-      "picks": [
-        {
-          "company": "Google",
-          "ticker": "GOOGL",
-          "slug": "googl",
-          "stance": "bull",
-          "date": "2024-12-20T22:00:00.000Z",
-          "ret": 0.9428284854563689,
-          "benchmarkReturn": 0.255679429618793,
-          "alpha": 0.6871490558375759
-        },
-        {
-          "company": "Box",
-          "ticker": "BOX",
-          "slug": "box",
-          "stance": "bull",
-          "date": "2024-12-20T22:00:00.000Z",
-          "ret": -0.20740268028079134,
-          "benchmarkReturn": 0.255679429618793,
-          "alpha": -0.4630821098995843
-        }
-      ]
-    },
-    {
-      "guest": "Cyan Bowers-Franklin",
-      "slug": "cyan-bowers-franklin",
-      "calls": 2,
-      "followReturn": 0.26148105582358555,
-      "benchmarkReturn": 0.28440461652247206,
-      "alpha": -0.022923560698886514,
-      "best": {
-        "company": "Nvidia",
-        "ticker": "NVDA",
-        "slug": "nvda",
-        "ret": 0.5299542516883304
-      },
-      "picks": [
-        {
-          "company": "Nvidia",
-          "ticker": "NVDA",
-          "slug": "nvda",
-          "stance": "bull",
-          "date": "2025-01-11T01:41:00.000Z",
-          "ret": 0.5299542516883304,
-          "benchmarkReturn": 0.28440461652247206,
-          "alpha": 0.24554963516585837
-        },
-        {
-          "company": "Tesla",
-          "ticker": "TSLA",
-          "slug": "tsla",
-          "stance": "bull",
-          "date": "2025-01-11T01:41:00.000Z",
-          "ret": -0.006992140041159334,
-          "benchmarkReturn": 0.28440461652247206,
-          "alpha": -0.2913967565636314
-        }
-      ]
-    },
-    {
-      "guest": "Philippe Laffont",
-      "slug": "philippe-laffont",
-      "calls": 2,
-      "followReturn": -0.20373056384428645,
-      "benchmarkReturn": 0.2808796034237293,
-      "alpha": -0.48461016726801576,
-      "best": {
-        "company": "Microsoft",
-        "ticker": "MSFT",
-        "slug": "msft",
-        "ret": -0.15550015581177945
-      },
-      "picks": [
-        {
-          "company": "Microsoft",
-          "ticker": "MSFT",
-          "slug": "msft",
-          "stance": "bull",
-          "date": "2025-05-09T20:26:00.000Z",
-          "ret": -0.15550015581177945,
-          "benchmarkReturn": 0.2808796034237293,
-          "alpha": -0.43637975923550876
-        },
-        {
-          "company": "Magnificent Seven",
-          "ticker": "MAGS",
-          "slug": "mags",
-          "stance": "bear",
-          "date": "2025-05-09T20:26:00.000Z",
-          "ret": -0.25196097187679345,
-          "benchmarkReturn": 0.2808796034237293,
-          "alpha": -0.5328405753005228
-        }
-      ]
-    },
-    {
-      "guest": "Reid Hoffman",
-      "slug": "reid-hoffman",
-      "calls": 1,
-      "followReturn": 0.9788672865595942,
-      "benchmarkReturn": 0.3525938269815967,
-      "alpha": 0.6262734595779975,
-      "best": {
-        "company": "Nvidia",
-        "ticker": "NVDA",
-        "slug": "nvda",
-        "ret": 0.9788672865595942
-      },
-      "picks": [
-        {
-          "company": "Nvidia",
-          "ticker": "NVDA",
-          "slug": "nvda",
-          "stance": "bull",
-          "date": "2024-08-30T15:04:00.000Z",
-          "ret": 0.9788672865595942,
-          "benchmarkReturn": 0.3525938269815967,
-          "alpha": 0.6262734595779975
-        }
-      ]
-    },
-    {
-      "guest": "Emil Michael",
-      "slug": "emil-michael",
-      "calls": 1,
-      "followReturn": 0.2124197002141326,
-      "benchmarkReturn": 0.10094800005897353,
-      "alpha": 0.11147170015515906,
-      "best": {
-        "company": "Google",
-        "ticker": "GOOGL",
-        "slug": "googl",
-        "ret": 0.2124197002141326
-      },
-      "picks": [
-        {
-          "company": "Google",
-          "ticker": "GOOGL",
-          "slug": "googl",
-          "stance": "bull",
-          "date": "2026-03-06T09:23:00.000Z",
-          "ret": 0.2124197002141326,
-          "benchmarkReturn": 0.10094800005897353,
-          "alpha": 0.11147170015515906
-        }
-      ]
-    },
-    {
-      "guest": "Elon Musk",
-      "slug": "elon-musk",
-      "calls": 1,
-      "followReturn": 0.149425287356322,
-      "benchmarkReturn": 0.09277958263821806,
-      "alpha": 0.05664570471810393,
+      "followReturn": -0.12510095372630892,
+      "benchmarkReturn": 0.2275999519781932,
+      "alpha": -0.3527009057045021,
       "best": {
         "company": "SpaceX",
         "ticker": "SPCX",
@@ -34038,10 +33660,66 @@
           "ticker": "SPCX",
           "slug": "spcx",
           "stance": "bull",
-          "date": "2025-10-31T20:11:00.000Z",
+          "date": "2025-08-09",
           "ret": 0.149425287356322,
-          "benchmarkReturn": 0.09277958263821806,
-          "alpha": 0.05664570471810393
+          "benchmarkReturn": 0.17426720342181423,
+          "alpha": -0.024841916065492242
+        },
+        {
+          "company": "Enterprise Application Software",
+          "ticker": "IGV",
+          "slug": "igv",
+          "stance": "bear",
+          "date": "2025-01-04",
+          "ret": 0.12381982690794657,
+          "benchmarkReturn": 0.2542663262563827,
+          "alpha": -0.1304464993484361
+        },
+        {
+          "company": "Government Service Providers / Defense Contractors (legacy)",
+          "ticker": "ITA",
+          "slug": "ita",
+          "stance": "bear",
+          "date": "2025-01-04",
+          "ret": -0.6485479754431953,
+          "benchmarkReturn": 0.2542663262563827,
+          "alpha": -0.902814301699578
+        }
+      ]
+    },
+    {
+      "guest": "Thomas Laffont",
+      "slug": "thomas-laffont",
+      "calls": 2,
+      "followReturn": 0.31707356241413687,
+      "benchmarkReturn": 0.24425560276597524,
+      "alpha": 0.07281795964816162,
+      "best": {
+        "company": "Nvidia",
+        "ticker": "NVDA",
+        "slug": "nvda",
+        "ret": 0.3653684142310931
+      },
+      "picks": [
+        {
+          "company": "Nvidia",
+          "ticker": "NVDA",
+          "slug": "nvda",
+          "stance": "bull",
+          "date": "2025-06-21",
+          "ret": 0.3653684142310931,
+          "benchmarkReturn": 0.24425560276597524,
+          "alpha": 0.12111281146511788
+        },
+        {
+          "company": "Tesla",
+          "ticker": "TSLA",
+          "slug": "tsla",
+          "stance": "bull",
+          "date": "2025-06-21",
+          "ret": 0.2687787105971806,
+          "benchmarkReturn": 0.24425560276597524,
+          "alpha": 0.02452310783120537
         }
       ]
     },
@@ -34064,7 +33742,7 @@
           "ticker": "BABA",
           "slug": "baba",
           "stance": "bull",
-          "date": "2025-01-18T01:21:00.000Z",
+          "date": "2025-01-18",
           "ret": 0.2543921293042868,
           "benchmarkReturn": 0.23827211673990556,
           "alpha": 0.016120012564381225
@@ -34090,7 +33768,7 @@
           "ticker": "GLD",
           "slug": "gld",
           "stance": "bull",
-          "date": "2025-12-13T02:31:00.000Z",
+          "date": "2025-12-13",
           "ret": -0.02215261815150671,
           "benchmarkReturn": 0.09696942987674984,
           "alpha": -0.11912204802825654
@@ -34098,56 +33776,194 @@
       ]
     },
     {
-      "guest": "Travis Kalanick",
-      "slug": "travis-kalanick",
-      "calls": 1,
-      "followReturn": 0.10748852386483043,
-      "benchmarkReturn": 0.24920956220619983,
-      "alpha": -0.1417210383413694,
-      "best": {
-        "company": "Tesla",
-        "ticker": "TSLA",
-        "slug": "tsla",
-        "ret": 0.10748852386483043
-      },
-      "picks": [
-        {
-          "company": "Tesla",
-          "ticker": "TSLA",
-          "slug": "tsla",
-          "stance": "bull",
-          "date": "2025-01-31T21:52:00.000Z",
-          "ret": 0.10748852386483043,
-          "benchmarkReturn": 0.24920956220619983,
-          "alpha": -0.1417210383413694
-        }
-      ]
+      "guest": "Aaron Levie",
+      "slug": "aaron-levie",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Mark Cuban",
+      "slug": "mark-cuban",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Bill Gurley",
+      "slug": "bill-gurley",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
     },
     {
       "guest": "Marc Benioff",
       "slug": "marc-benioff",
-      "calls": 1,
-      "followReturn": -0.15710557005608927,
-      "benchmarkReturn": 0.010952413186218202,
-      "alpha": -0.16805798324230747,
-      "best": {
-        "company": "Salesforce",
-        "ticker": "CRM",
-        "slug": "crm",
-        "ret": -0.15710557005608927
-      },
-      "picks": [
-        {
-          "company": "Salesforce",
-          "ticker": "CRM",
-          "slug": "crm",
-          "stance": "bull",
-          "date": "2026-05-15T21:21:00.000Z",
-          "ret": -0.15710557005608927,
-          "benchmarkReturn": 0.010952413186218202,
-          "alpha": -0.16805798324230747
-        }
-      ]
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Travis Kalanick",
+      "slug": "travis-kalanick",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Keith Rabois",
+      "slug": "keith-rabois",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Reid Hoffman",
+      "slug": "reid-hoffman",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Elon Musk",
+      "slug": "elon-musk",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Naval Ravikant",
+      "slug": "naval-ravikant",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Cyan Bowers-Franklin",
+      "slug": "cyan-bowers-franklin",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Antonio Gracias",
+      "slug": "antonio-gracias",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Larry Summers",
+      "slug": "larry-summers",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Emil Michael",
+      "slug": "emil-michael",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Philippe Laffont",
+      "slug": "philippe-laffont",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Donald Trump",
+      "slug": "donald-trump",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Ryan Peterson",
+      "slug": "ryan-peterson",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Ben Shapiro",
+      "slug": "ben-shapiro",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Cyan Bannister",
+      "slug": "cyan-bannister",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Joe Lonsdale",
+      "slug": "joe-lonsdale",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
     }
   ],
   "hostFunds": {

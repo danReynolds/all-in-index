@@ -26,7 +26,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!entry) return { title: "Guest not found" };
   return {
     title: `${entry.guest} — guest call record`,
-    description: `${pct(entry.followReturn)} across ${entry.calls} scored ${entry.calls === 1 ? "call" : "calls"} on the All-In podcast, vs the S&P's ${pct(entry.benchmarkReturn)} over the same windows — if you'd followed each call.`,
+    description:
+      entry.followReturn != null
+        ? `${pct(entry.followReturn)} across ${entry.calls} scored ${entry.calls === 1 ? "call" : "calls"} on the All-In podcast, vs the S&P's ${pct(entry.benchmarkReturn)} over the same windows — if you'd followed each call.`
+        : `${entry.guest}'s takes on the All-In podcast — commentary recorded, but no explicit position calls to score.`,
     alternates: { canonical: `/guest/${slug}` },
   };
 }
@@ -77,31 +80,49 @@ export default async function GuestPage({ params }: { params: Promise<{ slug: st
           <div className="min-w-0 flex-1">
             <h1 className="font-display text-3xl font-bold tracking-tight">{entry.guest}</h1>
             <p className="text-sm text-neutral-500">
-              Guest on the All-In podcast · {entry.calls} scored{" "}
-              {entry.calls === 1 ? "call" : "calls"}
+              Guest on the All-In podcast ·{" "}
+              {entry.followReturn != null
+                ? `${entry.calls} scored ${entry.calls === 1 ? "call" : "calls"}`
+                : "commentary only"}
             </p>
           </div>
           <div className="w-full text-left sm:ml-auto sm:w-auto sm:text-right">
-            <div className={`text-4xl font-black tabular-nums ${returnColor(entry.followReturn)}`}>
-              {pct(entry.followReturn)}
-            </div>
-            <div className="text-xs text-neutral-500">
-              vs S&amp;P {pct(entry.benchmarkReturn)} ·{" "}
-              <span className={returnColor(entry.alpha)}>
-                {entry.alpha >= 0 ? "+" : ""}
-                {(entry.alpha * 100).toFixed(1)}pp
-              </span>
-            </div>
+            {entry.followReturn != null ? (
+              <>
+                <div className={`text-4xl font-black tabular-nums ${returnColor(entry.followReturn)}`}>
+                  {pct(entry.followReturn)}
+                </div>
+                <div className="text-xs text-neutral-500">
+                  vs S&amp;P {pct(entry.benchmarkReturn)} ·{" "}
+                  <span className={returnColor(entry.alpha)}>
+                    {(entry.alpha ?? 0) >= 0 ? "+" : ""}
+                    {((entry.alpha ?? 0) * 100).toFixed(1)}pp
+                  </span>
+                </div>
+              </>
+            ) : (
+              <div className="text-sm font-medium text-neutral-400">Commentary — not scored</div>
+            )}
           </div>
         </div>
         <p className="relative mt-4 max-w-2xl text-sm text-neutral-500 dark:text-neutral-400">
-          Each call below is scored as if you&apos;d <em>followed it</em> — long a bull, an
-          inverse-sized stake on a bear (capped at −100%) — from the day it aired to today, versus
-          simply buying the S&amp;P over the same window.
+          {entry.followReturn != null ? (
+            <>
+              Each call below is scored as if you&apos;d <em>followed it</em> — long a bull, an
+              inverse-sized stake on a bear (capped at −100%) — from the day it aired to today, versus
+              simply buying the S&amp;P over the same window.
+            </>
+          ) : (
+            <>
+              {entry.guest}
+              {" weighed in on the companies below but never made an explicit position call, so there’s nothing to score — these takes are recorded as commentary."}
+            </>
+          )}
         </p>
       </header>
 
-      {/* Their scored calls */}
+      {/* Their scored calls — only for guests who actually made calls */}
+      {entry.picks.length > 0 && (
       <section className="rise rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900 sm:p-6" style={{ "--d": "120ms" } as React.CSSProperties}>
         <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-500">
           Scored calls
@@ -144,6 +165,7 @@ export default async function GuestPage({ params }: { params: Promise<{ slug: st
           </table>
         </div>
       </section>
+      )}
 
       {/* Their takes, with receipts */}
       {quoted.length > 0 && (

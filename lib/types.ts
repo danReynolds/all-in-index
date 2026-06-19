@@ -319,12 +319,13 @@ export interface GuestLeaderboardEntry {
   guest: string;
   /** URL slug for the guest's page (slugified name). */
   slug: string;
+  /** Number of scored CALL windows; 0 for a commentary-only guest. */
   calls: number;
-  /** Mean direction-adjusted return across their calls. */
-  followReturn: number;
-  /** Mean SPY return over the same windows. */
-  benchmarkReturn: number;
-  alpha: number;
+  /** Mean direction-adjusted return across their calls — null = commentary only (no scored calls). */
+  followReturn: number | null;
+  /** Mean SPY return over the same windows — null for commentary-only guests. */
+  benchmarkReturn: number | null;
+  alpha: number | null;
   /** Their single best call by follow-return. */
   best: { company: string; ticker: string; slug: string; ret: number } | null;
   /** Every scored call behind the aggregate, newest first. */

@@ -163,6 +163,9 @@ export function BearBookTable({ rows, asOfMs }: { rows: Array<WithDomain<BearCal
 
 /** Guest leaderboard — ranked by follow-return, sortable. */
 export function GuestLeaderboardTable({ rows }: { rows: GuestLeaderboardEntry[] }) {
+  // The ranking is scored guests only; commentary-only guests (no calls) keep
+  // their page but aren't ranked — there's no follow-return to rank them by.
+  const ranked = rows.filter((r) => r.followReturn != null);
   const columns: Array<Column<GuestLeaderboardEntry>> = [
     {
       key: "guest",
@@ -183,7 +186,7 @@ export function GuestLeaderboardTable({ rows }: { rows: GuestLeaderboardEntry[] 
       key: "follow",
       header: "Follow return",
       align: "right",
-      sortValue: (r) => r.followReturn,
+      sortValue: (r) => r.followReturn ?? 0,
       cellClass: (r) => `font-mono tabular-nums ${returnColor(r.followReturn)}`,
       render: (r) => pct(r.followReturn),
     },
@@ -192,9 +195,9 @@ export function GuestLeaderboardTable({ rows }: { rows: GuestLeaderboardEntry[] 
       header: "vs S&P",
       align: "right",
       hide: "sm",
-      sortValue: (r) => r.alpha,
+      sortValue: (r) => r.alpha ?? 0,
       cellClass: "font-mono tabular-nums",
-      render: (r) => <span className={returnColor(r.alpha)}>{r.alpha >= 0 ? "+" : ""}{(r.alpha * 100).toFixed(1)}pp</span>,
+      render: (r) => <span className={returnColor(r.alpha)}>{(r.alpha ?? 0) >= 0 ? "+" : ""}{((r.alpha ?? 0) * 100).toFixed(1)}pp</span>,
     },
     {
       key: "best",
@@ -214,7 +217,7 @@ export function GuestLeaderboardTable({ rows }: { rows: GuestLeaderboardEntry[] 
   ];
   return (
     <SortableTable
-      rows={rows}
+      rows={ranked}
       columns={columns}
       rowKey={(r) => r.slug}
       getHref={(r) => `/guest/${r.slug}`}
