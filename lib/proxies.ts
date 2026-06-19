@@ -73,6 +73,12 @@ export const SECTOR_PROXIES: ProxyInfo[] = [
     note: "Nasdaq-100 ETF",
     what: "The Nasdaq-100 — the 100 largest non-financial companies on the Nasdaq, heavily weighted toward megacap tech.",
   },
+  {
+    ticker: "IEF",
+    name: "iShares 7-10 Year Treasury Bond ETF",
+    note: "10-year Treasuries ETF",
+    what: "Intermediate (7–10 year) US Treasury bonds — the proxy for a call on “owning Treasuries / the bond trade” at the belly of the curve. A bearish call (yields up, avoid bonds, bonds get debased) is a short of this; a bullish call (own duration, rates falling) is a long.",
+  },
 ];
 
 export const PROXY_BY_TICKER: Record<string, ProxyInfo> = Object.fromEntries(
