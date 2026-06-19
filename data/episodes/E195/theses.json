@@ -8,14 +8,15 @@
     "ticker": "ABNB",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bear",
+    "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues Airbnb is being re-rated from a tech company to a cyclical consumer business, meaning its stock will ebb and flow with consumer spending power rather than product quality, making it vulnerable in a recession regardless of internal improvements.",
-    "quote": "If you look at a company like Airbnb and if you look at the last 6 months in the stock, what is it telling you? It's telling you that the people that own it have realized that it's less of a technology business and it's more of a cyclical",
-    "quoteStartMs": 1600044,
+    "sectorProxy": null,
+    "summary": "Chamath argues that Airbnb's stock performance reveals it is being re-rated from a technology company to a cyclical consumer business, meaning its valuation is now tied to consumer spending capacity rather than product quality or technology investment.",
+    "quote": "if you look at the last 6 months in the stock, what is it telling you? It's telling you that the people that own it have realized that it's less of a technology business and it's more of a cyclical business that ebbs and flows with the",
+    "quoteStartMs": 1602842,
     "topics": [
       "valuation",
       "cyclical re-rating",
@@ -37,13 +38,39 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath cites Nikesh Arora's track record at Palo Alto Networks — creating $80 billion in value over 8 years — as evidence of exceptional leadership-driven value creation at the company.",
+    "sectorProxy": null,
+    "summary": "Chamath cites Nikesh Arora's creation of $80 billion in value at Palo Alto Networks over 8 years as a prime example of a non-founder leader driving extraordinary enterprise value through first-principles thinking.",
     "quote": "If you look at what Nikesh Arora was able to do at Palo Alto Networks, it's incredible. I mean, in 8 years he's created $80 billion of value.",
     "quoteStartMs": 711311,
     "topics": [
-      "leadership",
+      "management",
       "value creation",
-      "enterprise tech"
+      "leadership"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E195-adyen-Chamath-2",
+    "episodeId": "E195",
+    "episodeNumber": 195,
+    "episodeDate": "2024-09-06T18:20:00.000Z",
+    "company": "Adyen",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Chamath asserts that Adyen is the first and only company to have implemented AI in production at scale, making it a uniquely compelling case study in enterprise AI deployment.",
+    "quote": "Adyen, I think, is the first and really only company that's implemented AI in production at scale. It'll be really interesting to understand where that's gone in the last year.",
+    "quoteStartMs": 218000,
+    "topics": [
+      "AI",
+      "payments",
+      "enterprise technology"
     ],
     "attributionConfidence": "high"
   }

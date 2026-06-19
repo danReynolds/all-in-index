@@ -13,13 +13,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues the antitrust ruling removes a major risk overhang for Google, freeing it to compete aggressively in the AI era, while the judge's logic that the free market is already delivering competition is vindicated.",
+    "sectorProxy": null,
+    "summary": "Chamath argues the antitrust ruling removes enormous downside risk for Google, freeing it to compete aggressively in AI without internal/external drag, and that the free market is already doing the job of forcing competition.",
     "quote": "The great news for Google is that this takes an enormous risk off the table. And now I think that they probably have even more ambition and energy to just go for it and try to compete.",
     "quoteStartMs": 3615847,
     "topics": [
       "antitrust",
-      "competitive position",
-      "AI competition"
+      "regulation",
+      "AI competition",
+      "valuation"
     ],
     "attributionConfidence": "high"
   },
@@ -32,42 +34,20 @@
     "ticker": "GOOGL",
     "isPublic": true,
     "host": "Sacks",
-    "stance": "mixed",
+    "stance": "bear",
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks reversed his prior pro-breakup stance, now seeing Google as facing a genuine existential threat from AI substituting for search — not needing to be broken up but still needing to execute a major pivot as its core business is being disrupted.",
+    "sectorProxy": null,
+    "summary": "Sacks argues Google faces an existential threat to its core search business as users shift to AI chatbots, with ~90% of AI revenue going to OpenAI and multiple competitive AI players challenging its dominant position.",
     "quote": "Google for the first time in a long while is existentially threatened by what's happened with AI. I mean, their cash cow, the core of their business is search, and people are starting to substitute in droves from traditional Google",
     "quoteStartMs": 3721724,
     "topics": [
-      "antitrust",
-      "AI competition",
-      "search disruption"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E242-openai-Sacks-2",
-    "episodeId": "E242",
-    "episodeNumber": 242,
-    "episodeDate": "2025-09-07T07:18:00.000Z",
-    "company": "OpenAI",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Sacks",
-    "stance": "neutral",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Sacks notes that roughly 90% of AI revenue is flowing to OpenAI, giving it dominant consumer position in the AI chatbot market that is displacing traditional search.",
-    "quote": "If you look at AI revenue, I think something like 90% of it is going to OpenAI. I mean, they have the dominant position among consumers for now.",
-    "quoteStartMs": 3756000,
-    "topics": [
-      "AI market share",
-      "revenue dominance",
-      "search disruption"
+      "AI disruption",
+      "search",
+      "competition",
+      "antitrust"
     ],
     "attributionConfidence": "high"
   }

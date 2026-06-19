@@ -4,17 +4,15 @@ import { currentStanceForHosts, hostExposureWindows, tradeDirectionForTake } fro
 import { isMacroAsset, proxyAssetKind } from "../lib/assets";
 import { MAX_PUBLISHED_QUOTE_CHARS, trimPublishedQuote } from "../lib/quotes";
 import { auditTranscriptCandidates } from "../pipeline/take-candidate-audit";
-import { enforceTightCallEvidence, hasTightCallEvidence, normalizeScoreNotes, repairCallTypesFromQuote } from "../pipeline/extract";
 import { attachSectorProxy, shouldKeepThesisForIndex } from "../pipeline/build-index";
 import { validateIndexSnapshot } from "../pipeline/quality";
 import { dedupeOverlappingTheses, repairQuoteOwnership, snapQuoteTimestamps, stampAttribution } from "../pipeline/run-episode";
-import { shouldProtectExplicitCallFromDrop } from "../pipeline/verify";
 import type { IndexSnapshot, Transcript } from "../lib/types";
 import {
   BESTIES,
-  currentBullEntryDate,
-  currentBullHosts,
-  isCurrentNetBull,
+  hasCurrentLong,
+  currentLongEntryDate,
+  currentLongHosts,
 } from "../pipeline/index-fund";
 import type { Holding, Host, Stance, Thesis } from "../lib/types";
 
@@ -71,19 +69,28 @@ test("current net bull uses each host's latest scored take, not all historical t
   ];
 
   assert.equal(currentStanceForHosts(takes, hosts), "mixed");
-  assert.equal(isCurrentNetBull(takes, BESTIES), false);
 });
 
-test("current bull entry date is when the current bullish stance was adopted", () => {
+test("the index holds a name from its open long CALL and ignores bullish views", () => {
   const h = holding([
-    thesis("Chamath", "bull", "2025-01-01T00:00:00.000Z"),
-    thesis("Sacks", "bear", "2025-02-01T00:00:00.000Z"),
-    thesis("Jason", "bull", "2025-03-01T00:00:00.000Z"),
+    thesis("Sacks", "bull", "2025-01-01T00:00:00.000Z", { callType: "explicit_long" }),
+    thesis("Jason", "bull", "2025-02-01T00:00:00.000Z", { callType: "view" }),
+    thesis("Chamath", "bull", "2025-03-01T00:00:00.000Z", { callType: "explicit_long" }),
   ]);
 
-  assert.equal(isCurrentNetBull(h.theses, BESTIES), true);
-  assert.equal(currentBullEntryDate(h, BESTIES), "2025-03-01");
-  assert.deepEqual(currentBullHosts(h, BESTIES).sort(), ["Chamath", "Jason"]);
+  assert.equal(hasCurrentLong(h.theses, BESTIES), true);
+  // entry = the EARLIEST still-open long call, never a later bullish view
+  assert.equal(currentLongEntryDate(h, BESTIES), "2025-01-01");
+  // the view-only host (Jason) is not a holder — only the actual longs are
+  assert.deepEqual(currentLongHosts(h, BESTIES).sort(), ["Chamath", "Sacks"]);
+});
+
+test("a host who flips out of their long no longer holds it (no open long window)", () => {
+  const h = holding([
+    thesis("Chamath", "bull", "2025-01-01T00:00:00.000Z", { callType: "explicit_long" }),
+    thesis("Chamath", "bear", "2025-04-01T00:00:00.000Z", { callType: "explicit_short" }),
+  ]);
+  assert.equal(hasCurrentLong(h.theses, BESTIES), false);
 });
 
 test("published quotes are trimmed to a verbatim prefix", () => {
@@ -311,73 +318,35 @@ test("quote ownership repair follows the transcript speaker label", () => {
   assert.equal(take.attributionConfidence, "high");
 });
 
-test("obvious pick language repairs view callType", () => {
-  const take = thesis("Friedberg", "bull", "2025-06-21T00:00:00.000Z", {
-    company: "Tesla",
-    ticker: "TSLA",
-    callType: "view",
-    quote: "Tesla is the best place to invest if you want to have a shot at a massive new industry.",
-  });
-
-  repairCallTypesFromQuote([take]);
-
-  assert.equal(take.callType, "selection");
-  assert.equal(take.scoreNote, "Quote contains explicit pick/selection language.");
-});
-
-test("numbered-answer quote language repairs view callType", () => {
-  const take = thesis("Chamath", "bull", "2025-06-21T00:00:00.000Z", {
-    company: "Tesla",
-    ticker: "TSLA",
-    callType: "view",
-    quote: "Tesla's one and Google's two. And the reason is because they are the closest to having that vertically integrated stack.",
-  });
-
-  repairCallTypesFromQuote([take]);
-
-  assert.equal(take.callType, "selection");
-});
-
-test("clear sector calls get ETF proxies while weak category asides stay views", () => {
+test("a sector pick gets its LLM-chosen ETF proxy; takes without one stay untickered", () => {
+  // The LLM names the representative ETF in Thesis.sectorProxy; attachSectorProxy
+  // just looks it up. No text matching — its absence IS the gate.
   const clearSector = thesis("Friedberg", "bull", "2026-01-10T00:00:00.000Z", {
-    company: "Critical Metals Basket",
+    company: "Critical metals basket",
     ticker: null,
     isPublic: false,
     callType: "basket",
+    sectorProxy: "REMX",
     quote: "I would pick a basket of critical metals.",
-    scoreNote: null,
   });
-  const weakAside = thesis("Chamath", "bull", "2026-01-10T00:00:00.000Z", {
-    company: "Capital Equipment Basket",
-    ticker: null,
-    isPublic: false,
-    callType: "basket",
-    quote: "there's one category we didn't talk about, but I think it's kind of interesting, which is capital equipment.",
-    scoreNote: "Explicitly flagged as a best-performing asset category for 2026.",
-  });
-  const neutralizedBasket = thesis("Chamath", "neutral", "2026-01-10T00:00:00.000Z", {
-    company: "Capital Equipment Basket",
-    ticker: null,
-    isPublic: false,
-    callType: "basket",
-    quote: "the category of assets that qualify for accelerated depreciation, capital equipment.",
-    scoreNote: "Raised as an additional best-performing asset category.",
-  });
-  const explicitListPick = thesis("Jason", "bull", "2026-01-10T00:00:00.000Z", {
-    company: "Robinhood / Polymarket / PrizePicks basket",
-    ticker: "HOOD",
-    isPublic: true,
-    callType: "basket",
-    quote: "my pick for best performing asset will be the Robinhood PolyMarket Prize Picks.",
-  });
+  attachSectorProxy(clearSector);
+  assert.equal(clearSector.ticker, "REMX");
+  assert.equal(clearSector.isPublic, true);
+  assert.equal(proxyAssetKind(clearSector.ticker), "sector");
+  assert.equal(isMacroAsset(clearSector.ticker), true);
+
+  // No sectorProxy → nothing attached (a private single-name pick, or a macro
+  // short with no representative ETF). The pick stays untickered, not mispriced.
   const privateCompanyPick = thesis("Sacks", "bull", "2026-01-10T00:00:00.000Z", {
     company: "Huawei",
     ticker: null,
     isPublic: false,
     callType: "selection",
     quote: "My number 1 is Huawei, which I've mentioned in the past out of China.",
-    topics: ["China tech"],
   });
+  attachSectorProxy(privateCompanyPick);
+  assert.equal(privateCompanyPick.ticker, null);
+
   const nonMag7Short = thesis("Friedberg", "bear", "2025-06-21T00:00:00.000Z", {
     company: "S&P 493 (non-Mag7 S&P 500)",
     ticker: null,
@@ -385,39 +354,18 @@ test("clear sector calls get ETF proxies while weak category asides stay views",
     callType: "explicit_short",
     quote: "it's an opportunity to short the S&P",
   });
-
-  assert.equal(hasTightCallEvidence(clearSector), true);
-  attachSectorProxy(clearSector);
-  assert.equal(clearSector.ticker, "REMX");
-  assert.equal(clearSector.isPublic, true);
-  assert.equal(proxyAssetKind(clearSector.ticker), "sector");
-  assert.equal(isMacroAsset(clearSector.ticker), true);
-
-  enforceTightCallEvidence([weakAside]);
-  attachSectorProxy(weakAside);
-  assert.equal(weakAside.callType, "view");
-  assert.equal(weakAside.ticker, null);
-
-  enforceTightCallEvidence([neutralizedBasket]);
-  assert.equal(neutralizedBasket.callType, "view");
-  assert.equal(shouldProtectExplicitCallFromDrop(explicitListPick), true);
-
-  attachSectorProxy(privateCompanyPick);
-  assert.equal(privateCompanyPick.ticker, null);
-
   attachSectorProxy(nonMag7Short);
   assert.equal(nonMag7Short.ticker, null);
-});
 
-test("score notes cannot contradict the attributed host", () => {
-  const take = thesis("Friedberg", "bull", "2026-01-10T00:00:00.000Z", {
-    callType: "basket",
-    scoreNote: "Named as Chamath's best-performing asset pick for 2026.",
+  // A direct-ticker pick is left alone even if it also carries a proxy hint.
+  const alreadyTickered = thesis("Chamath", "bull", "2026-01-10T00:00:00.000Z", {
+    company: "Nvidia",
+    ticker: "NVDA",
+    callType: "selection",
+    sectorProxy: "MAGS",
   });
-
-  normalizeScoreNotes([take]);
-
-  assert.equal(take.scoreNote, "Named as Friedberg's best-performing asset pick for 2026.");
+  attachSectorProxy(alreadyTickered);
+  assert.equal(alreadyTickered.ticker, "NVDA");
 });
 
 test("quote snapping uses the answer utterance at prompt boundaries", () => {
@@ -588,51 +536,35 @@ test("commodity quote ownership repair dedupes to the canonical asset proxy", ()
   assert.equal(deduped[0].attributionConfidence, "high");
 });
 
-test("explicit long demotes when the published quote lacks action evidence", () => {
-  const take = thesis("Guest", "neutral", "2026-03-13T00:00:00.000Z", {
-    company: "OpenAI",
-    callType: "explicit_long",
-    quote: "OpenAI is one of the most important companies in the history of capitalism.",
-    scoreNote: "Same bought-more statement covers both companies.",
-  });
-
-  enforceTightCallEvidence([take]);
-
-  assert.equal(take.callType, "view");
-  assert.equal(take.scoreNote, "Not scored: published quote does not carry explicit buy/own/long language.");
-});
-
-test("explicit long demotes when the published quote does not name the exposure", () => {
-  const take = thesis("Guest", "bull", "2026-03-13T00:00:00.000Z", {
-    company: "OpenAI",
+test("a commodity short filed under two names dedupes to one proxy-backed row", () => {
+  // Regression: the same Friedberg oil short survived as two scored rows because
+  // "Oil" and "Hydrocarbons … basket" normalize to different entity keys. Dedup
+  // is now proxy-aware — both resolve to USO — so they collapse to the ticker row.
+  const basketRow = thesis("Friedberg", "bear", "2026-01-10T00:00:00.000Z", {
+    id: "E257-hydrocarbons-oil-commodity-basket-Friedberg-8",
+    company: "Hydrocarbons / oil commodity basket",
     ticker: null,
     isPublic: false,
-    callType: "explicit_long",
-    quote: "I bought a lot more since then, Jason.",
-    scoreNote: "Explicitly states he bought more of both companies.",
+    callType: "basket",
+    quote: "I won't say the worst performing, but I think a very poor performing asset will be hydrocarbons.",
+    quoteStartMs: 4264000,
+    attributionConfidence: "high",
   });
-
-  enforceTightCallEvidence([take]);
-
-  assert.equal(take.callType, "view");
-  assert.equal(take.scoreNote, "Not scored: published quote does not name the thesis exposure.");
-});
-
-test("named commodity forecast preserves scoreable selection evidence", () => {
-  const take = thesis("Friedberg", "bull", "2026-01-10T00:00:00.000Z", {
-    company: "Copper",
-    ticker: "CPER",
+  const assetRow = thesis("Friedberg", "bear", "2026-01-10T00:00:00.000Z", {
+    id: "E257-uso-Friedberg-a1",
+    company: "Oil",
+    ticker: "USO",
     isPublic: true,
     callType: "selection",
-    quote:
-      "The asset that is set up to go absolutely parabolic is copper... we are on a path by 2040 where we will be short about 70% of the global supply at current course and speed.",
-    scoreNote: null,
+    quote: "I think a very poor performing asset will be hydrocarbons. The trend in oil is inexorable and it's down.",
+    quoteStartMs: 4268135,
+    attributionConfidence: "high",
   });
 
-  enforceTightCallEvidence([take]);
+  const deduped = dedupeOverlappingTheses([basketRow, assetRow]);
 
-  assert.equal(take.callType, "selection");
-  assert.equal(take.scoreNote, null);
+  assert.equal(deduped.length, 1);
+  assert.equal(deduped[0].ticker, "USO");
 });
 
 test("prediction-round transcript picks are covered by audited receipts", () => {

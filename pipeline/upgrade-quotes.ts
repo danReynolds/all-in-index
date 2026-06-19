@@ -2,6 +2,7 @@ import fs from "node:fs";
 import { z } from "zod";
 import { callTool } from "./llm";
 import { isPortfolioScored } from "../lib/calls";
+import { isQuoteVerbatim } from "../lib/quotes";
 import { store } from "./store";
 import { snapQuoteTimestamps } from "./run-episode";
 import { HOLDINGS_FILE } from "./config";
@@ -9,23 +10,28 @@ import type { IndexSnapshot, Thesis, Transcript } from "../lib/types";
 
 const BESTIES = new Set(["Chamath", "Jason", "Sacks", "Friedberg"]);
 
-const SYSTEM = `You audit whether a take's QUOTE evidences its LABELS. The quote is the
-load-bearing receipt: a positional take's quote must contain the speaker's own
-in/out or selection words ("I'm in", "I have shares", "I would be long it",
-"my pick is", "number 1", "best place to invest", "long X / short Y",
-"the short here is X");
-a bull/bear take's quote must contain the economic claim itself.
+const SYSTEM = `You audit whether a take's QUOTE (a) evidences its LABELS and (b) is
+WORD-FOR-WORD real. The quote is the load-bearing receipt: a positional take's
+quote must contain the speaker's own in/out or selection words ("I'm in", "I
+have shares", "I would be long it", "my pick is", "number 1", "best place to
+invest", "long X / short Y", "the short here is X"); a bull/bear take's quote
+must contain the economic claim itself. AND the quote must be an EXACT verbatim
+excerpt of the provided utterances — a real substring, or real fragments joined
+by "…". A quote that captures the gist but is paraphrased, compressed, smoothed,
+or stitches words the speaker didn't actually say in sequence is NOT acceptable,
+even if it carries the claim.
 
 You are given the take's labels, its current quote, and the speaker's
 utterances about that company from the transcript. Decide:
-- evidenced: does the CURRENT quote carry the proof for the labels?
-- If not, find a BETTER quote: a verbatim contiguous excerpt (<= 240 chars)
-  from the provided utterances that does carry the proof. Copy it EXACTLY.
+- evidenced: does the CURRENT quote carry the proof AND is it exact verbatim?
+- If not (unevidenced OR not exact verbatim), find a BETTER quote: a verbatim
+  contiguous excerpt (<= 240 chars) from the provided utterances that carries
+  the proof. Copy it EXACTLY, character for character.
 - If no excerpt in the provided utterances evidences the labels, return
   betterQuote: null — do NOT invent or paraphrase.
 
-Be conservative: if the current quote is adequate, say evidenced=true and move
-on. Only propose a swap when the improvement is clear.`;
+Be conservative on swaps that don't improve faithfulness or proof, but DO swap
+any quote that isn't an exact substring of what the speaker said.`;
 
 const Schema = z.object({
   takes: z.array(
@@ -101,6 +107,7 @@ export async function upgradeQuotes(): Promise<void> {
     const tr = store.loadTranscript(epId);
     if (!tr) continue;
     const theses = store.loadTheses(epId);
+    const fullText = tr.utterances.map((u) => u.text).join(" ");
     const cands = theses.filter(
       (t) =>
         t.quote &&
@@ -108,7 +115,9 @@ export async function upgradeQuotes(): Promise<void> {
           t.conviction !== "low" &&
           t.attributionConfidence !== "low" &&
           t.stance !== "neutral") ||
-          isPortfolioScored(t)),
+          isPortfolioScored(t) ||
+          // any take whose published quote isn't a faithful verbatim excerpt
+          !isQuoteVerbatim(t.quote, fullText)),
     );
     if (!cands.length) continue;
     candidates += cands.length;
@@ -142,8 +151,7 @@ export async function upgradeQuotes(): Promise<void> {
       if (!t) continue;
       // Verify the proposed quote is genuinely verbatim in the transcript.
       const key = norm(v.betterQuote);
-      const hit = tr.utterances.some((u) => norm(u.text).includes(key.slice(0, 60)));
-      if (!hit || key.length < 15) continue;
+      if (v.betterQuote.length < 15 || !isQuoteVerbatim(v.betterQuote, fullText)) continue;
       // Never let two takes share a quote — the aggregator's passing-mention
       // filter (correctly) drops shared quotes as list mentions.
       const dupe = theses.some(

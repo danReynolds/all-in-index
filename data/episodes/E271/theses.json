@@ -8,19 +8,20 @@
     "ticker": null,
     "isPublic": false,
     "host": "Sacks",
-    "stance": "bull",
+    "stance": "mixed",
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues that despite missing consumer targets, OpenAI's GPT-5.5 product improvements, new base model, and superior compute capacity are driving a resurgence in developer/enterprise adoption—especially in coding—suggesting the company's competitive position is strengthening even if for different reasons than originally planned.",
+    "sectorProxy": null,
+    "summary": "Sacks has a contrarian take: OpenAI missed consumer targets partly because Google took share, but the strong GPT-5.5 release, new Spud base model, and growing compute advantage over token-constrained Anthropic suggest OpenAI may end up winning the all-important coding/enterprise market even if it missed on consumer.",
     "quote": "I think Sam may end up being right here for the wrong reason, which is he missed on consumer, but enterprise is going gangbusters and is giving him the ability now, I think, to catch up on consumer.",
     "quoteStartMs": 452205,
     "topics": [
-      "AI competition",
-      "product",
-      "enterprise",
-      "compute"
+      "product competitiveness",
+      "enterprise AI",
+      "compute advantage",
+      "IPO"
     ],
     "attributionConfidence": "high"
   },
@@ -38,13 +39,14 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath believes OpenAI will be fine and is a multi-trillion-dollar company; any revenue misses are due entirely to power/compute supply constraints, not weak demand, making the long-term outlook strong.",
-    "quote": "I think they're going to be fine. I think this is a multi-trillion-dollar company... To the extent that OpenAI missed, I think what that is is an insight to not enough compute capacity today.",
-    "quoteStartMs": 509000,
+    "sectorProxy": null,
+    "summary": "Chamath believes OpenAI will be fine and is a multi-trillion-dollar company; any revenue misses are entirely due to power/compute supply constraints, not weak demand, and OpenAI is among the players most hurt by those constraints but also best positioned to benefit from hyperscaler infrastructure deals.",
+    "quote": "I think they're going to be fine. I think this is a multi-trillion-dollar company. I think the thing that's happening right now is a complete misunderstanding of what's actually happening inside of the world of AI.",
+    "quoteStartMs": 509399,
     "topics": [
       "valuation",
-      "compute",
-      "power constraints"
+      "compute constraints",
+      "power infrastructure"
     ],
     "attributionConfidence": "high"
   },
@@ -62,14 +64,14 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues Anthropic is compute-constrained in a way that is hurting its competitive position: token rationing is degrading Opus 4.7's quality versus GPT-5.5, causing developers to switch away and limiting Anthropic's ability to serve the all-important coding market.",
+    "sectorProxy": null,
+    "summary": "Sacks argues Anthropic is token-constrained, forcing compute gating on Opus 4.7 which appears to be a bust, causing developers to roll back to older versions and shift coding usage toward GPT-5.5, suggesting Anthropic is losing competitive ground in the all-important coding market.",
     "quote": "Anthropic is token constrained. It's reducing their ability to serve Mythos, for example. It's causing them to engage in compute gating with Opus 4.7.",
     "quoteStartMs": 435203,
     "topics": [
-      "compute",
-      "competition",
-      "AI coding",
-      "product quality"
+      "compute constraints",
+      "product competitiveness",
+      "coding AI"
     ],
     "attributionConfidence": "high"
   },
@@ -83,17 +85,18 @@
     "isPublic": false,
     "host": "Chamath",
     "stance": "bull",
-    "conviction": "high",
+    "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath believes Anthropic is a multi-trillion-dollar company; any shortfalls are purely supply-side (power/compute constraints), not demand weakness.",
+    "sectorProxy": null,
+    "summary": "Chamath believes Anthropic is a multi-trillion-dollar company but is currently power-constrained, forcing it to negotiate equity/control concessions to hyperscalers for compute access, creating near-term headwinds but not undermining long-term value.",
     "quote": "I think Anthropic is a multi-trillion-dollar company. I think the thing that's happening right now is a complete misunderstanding of what's actually happening inside of the world of AI.",
     "quoteStartMs": 515128,
     "topics": [
       "valuation",
-      "power constraints",
-      "AI demand"
+      "compute constraints",
+      "power infrastructure"
     ],
     "attributionConfidence": "high"
   },
@@ -111,13 +114,14 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks attributes OpenAI's consumer miss largely to Google successfully taking share with Gemini integrated into Search, validating Google's competitive resurgence in consumer AI.",
-    "quote": "If there is a single reason why OpenAI did not hit its user targets and its revenue targets, certainly around consumer, you'd have to say it's because Google managed to take meaningful share.",
-    "quoteStartMs": 1121805,
+    "sectorProxy": null,
+    "summary": "Sacks argues Google has taken meaningful consumer AI share from OpenAI through Sergey's return and the brilliant integration of Gemini into Search, validating its consumer AI strategy.",
+    "quote": "I would say that if there is a single reason why OpenAI did not hit its user targets and its revenue targets, certainly around consumer, you'd have to say it's because Google managed to take meaningful share.",
+    "quoteStartMs": 1120472,
     "topics": [
       "AI competition",
-      "market share",
-      "consumer"
+      "consumer market share",
+      "Gemini"
     ],
     "attributionConfidence": "high"
   },
@@ -135,18 +139,71 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Jason argues Google brilliantly balanced AI-enabled search with continued ad revenue growth, driving both surging search revenue and user growth, with the stock rewarding them for it.",
-    "quote": "Search revenue is surging and they're also surging. So they figured out a way to balance those two competing forces... They've done it brilliantly, apparently, and the stock is rewarding them.",
-    "quoteStartMs": 1055000,
+    "sectorProxy": null,
+    "summary": "Jason argues Google brilliantly integrated Gemini into Search, growing to ~750M users while keeping search revenue surging, and the stock is being rewarded for solving the AI-vs-search revenue tension.",
+    "quote": "Search revenue is surging and they're also surging. So they figured out a way to balance those two competing forces, having search results that are AI-enabled and still getting people to click on links. They've done it brilliantly, apparent",
+    "quoteStartMs": 1055267,
     "topics": [
-      "search revenue",
       "AI integration",
-      "stock performance"
+      "search revenue",
+      "valuation"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E271-lly-Friedberg-6",
+    "id": "E271-hyperscalers-amazon-microsoft-google-meta-Chamath-6",
+    "episodeId": "E271",
+    "episodeNumber": 271,
+    "episodeDate": "2026-05-01T21:37:00.000Z",
+    "company": "Hyperscalers (Amazon, Microsoft, Google, Meta)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": "MAGS",
+    "summary": "Chamath argues the hyperscalers' massive CapEx commitments at above-market energy rates will force them to lever up, become bulky industrial businesses, and compress valuations — suggesting investors should instead follow the trillion dollars flowing out of them and buy the recipient companies.",
+    "quote": "I'm not sure that there's a good valuation case to be made at that point. And so I think it may be simpler, and this is what I tweeted, to just follow the dollars, like a trillion dollars a year going out of the hyperscalers. Where is it go",
+    "quoteStartMs": 2740145,
+    "topics": [
+      "CapEx",
+      "valuation",
+      "free cash flow",
+      "energy costs"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E271-hyperscaler-capex-beneficiaries-capital-equipment-infrastructure-Chamath-7",
+    "episodeId": "E271",
+    "episodeNumber": 271,
+    "episodeDate": "2026-05-01T21:37:00.000Z",
+    "company": "Hyperscaler CapEx beneficiaries (capital equipment / infrastructure)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "callType": "explicit_long",
+    "excludeReason": null,
+    "scoreNote": "Explicit buy call on the basket of hyperscaler CapEx recipients (power, grid, data center infrastructure) described as 'already underpriced'",
+    "sectorProxy": null,
+    "summary": "Chamath explicitly recommends buying the companies that receive the trillion dollars flowing out of hyperscalers as CapEx, arguing those companies are already underpriced.",
+    "quote": "Just follow those dollars and buy those companies because those companies are already underpriced.",
+    "quoteStartMs": 2757703,
+    "topics": [
+      "CapEx",
+      "capital equipment",
+      "infrastructure",
+      "AI buildout"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E271-lly-Friedberg-8",
     "episodeId": "E271",
     "episodeNumber": 271,
     "episodeDate": "2026-05-01T21:37:00.000Z",
@@ -155,48 +212,24 @@
     "isPublic": true,
     "host": "Friedberg",
     "stance": "bull",
-    "conviction": "medium",
+    "conviction": "high",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Friedberg sees retatrutide's Phase 3 data—showing superior fat loss, muscle preservation, and metabolic benefits—as positioning Lilly with a premium upgrade product that will command high prices and drive significant revenue, above and beyond tirzepatide.",
+    "sectorProxy": null,
+    "summary": "Friedberg highlights retatrutide's exceptional Phase 3 data — 37-lb weight loss, 80% liver fat reduction, A1C improvement — and frames it as Lilly's premium upgrade product that will command high pricing, making it a major revenue opportunity on top of discounted tirzepatide.",
     "quote": "I'm sure if I'm Lilly and I'm sitting there and I'm looking at this data coming out, I'm like, my God, people 'pay for this.' And that starts to become sort of like the upgrade to the BMW, or the Model S Plaid, if you will.",
     "quoteStartMs": 3841000,
     "topics": [
-      "GLP-1",
       "drug pipeline",
-      "pricing power",
-      "valuation"
+      "retatrutide",
+      "GLP-1",
+      "pricing power"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E271-hyperscalers-amazon-microsoft-google-meta-Chamath-10",
-    "episodeId": "E271",
-    "episodeNumber": 271,
-    "episodeDate": "2026-05-01T21:37:00.000Z",
-    "company": "Hyperscalers (Amazon, Microsoft, Google, Meta)",
-    "ticker": null,
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Chamath warns that hyperscalers are taking on massive CapEx and operating costs at above-market energy rates, which will force them to lever up and look like bulky industrial businesses in 5 years, undermining their valuation case; he advises following the dollars to the companies receiving their spending instead.",
-    "quote": "I'm not sure that there's a good valuation case to be made at that point. And so I think it may be simpler... to just follow the dollars, like a trillion dollars a year going out of the hyperscalers. Where is it going? Just follow those",
-    "quoteStartMs": 2740145,
-    "topics": [
-      "valuation",
-      "capex",
-      "free cash flow",
-      "energy costs"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E271-bayry-Friedberg-11",
+    "id": "E271-bayry-Friedberg-9",
     "episodeId": "E271",
     "episodeNumber": 271,
     "episodeDate": "2026-05-01T21:37:00.000Z",
@@ -205,18 +238,20 @@
     "isPublic": true,
     "host": "Friedberg",
     "stance": "neutral",
-    "conviction": "low",
+    "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Friedberg describes Bayer's massive Roundup litigation exposure—$10B paid, $10B reserved, 90,000 cases outstanding—and a Supreme Court case that could go either way on federal preemption, leaving the financial outcome deeply uncertain.",
-    "quote": "To date, Bayer, which now owns Monsanto, has paid out $10 billion in these lawsuits, and they have reserved $10 billion on their balance sheet. They have 90,000 cases still outstanding in the courts.",
-    "quoteStartMs": 4273682,
+    "sectorProxy": null,
+    "summary": "Friedberg describes Bayer's massive Roundup litigation exposure — $10B paid, $10B reserved, 90,000 cases outstanding — noting the Supreme Court case outcome is now a coin flip rather than the expected 6-3 Bayer win, creating significant uncertainty for the stock.",
+    "quote": "They have 90,000 cases still outstanding in the courts...going into it, we were kind of like trying to say, hey, maybe this could be 6-3. So honestly...this could be a 50-50 coin flip, 5-4 either way.",
+    "quoteStartMs": 4285000,
     "topics": [
       "litigation",
-      "regulatory",
-      "liability"
+      "regulation",
+      "Roundup",
+      "Supreme Court"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   }
 ]

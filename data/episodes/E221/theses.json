@@ -13,7 +13,8 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Gavin Baker argues Nvidia's rising accounts receivable is a temporary, understandable artifact of the complex Hopper-to-Blackwell product transition, not a structural concern, and that Blackwell will be a very successful product cycle driven by insatiable compute demand.",
+    "sectorProxy": null,
+    "summary": "Gavin Baker argues Nvidia's rising accounts receivable is a normal and understandable byproduct of the historically complex Hopper-to-Blackwell product transition, not a sign of fundamental weakness, and that Blackwell will be a very successful product cycle with no demand shortfall.",
     "quote": "Blackwell is going to be a very successful product cycle. There is a little bit of a prisoner's dilemma where you're going to spend on Blackwell almost no matter what, because if you don't, you are afraid that you cede a big advantage to a",
     "quoteStartMs": 698425,
     "topics": [
@@ -26,29 +27,29 @@
     "guestName": "Gavin Baker"
   },
   {
-    "id": "E221-nvda-Guest-1",
+    "id": "E221-nvda-Chamath-1",
     "episodeId": "E221",
     "episodeNumber": 221,
     "episodeDate": "2025-03-29T01:40:00.000Z",
     "company": "Nvidia",
     "ticker": "NVDA",
     "isPublic": true,
-    "host": "Guest",
-    "stance": "bull",
+    "host": "Chamath",
+    "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Gavin Baker argues Nvidia's strategy of investing in neo-clouds like CoreWeave was smart diversification that reduced buyer concentration and power, analogous to Intel Inside, strengthening Nvidia's long-term competitive position.",
-    "quote": "The big three kind of cloud computing hyperscalers, their incremental share of revenue went down. And that was nothing but good for NVIDIA because they now have kind of a more fragmented base of buyers who have less power over them.",
-    "quoteStartMs": 241865,
+    "sectorProxy": null,
+    "summary": "Chamath argues Nvidia's investments in neo-clouds like CoreWeave mirror Intel's Inside program — strategically diversifying its buyer base to reduce dependence on a small oligopoly of hyperscalers and increase pricing power.",
+    "quote": "A lot of this quote unquote round tripping from your perspective is diversifying the ownership pool of Nvidia is what you're saying.",
+    "quoteStartMs": 509733,
     "topics": [
-      "competitive moat",
+      "ecosystem strategy",
       "customer concentration",
-      "ecosystem strategy"
+      "competitive moat"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Gavin Baker"
+    "attributionConfidence": "high"
   },
   {
     "id": "E221-coreweave-Guest-2",
@@ -60,18 +61,19 @@
     "isPublic": false,
     "host": "Guest",
     "stance": "bull",
-    "conviction": "medium",
+    "conviction": "high",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Gavin Baker argues CoreWeave is underappreciated by skeptics — running large GPU training clusters is genuinely difficult and operationally differentiated, not the commodity business the market assumes, and its contract NPV and asset value support the investment case.",
+    "sectorProxy": null,
+    "summary": "Gavin Baker argues CoreWeave is underappreciated and likely not the commodity business the market believes — running large GPU training clusters at scale is genuinely difficult, and the NPV of their contracts and asset value offer an identifiable floor, making the bearish consensus potentially wrong.",
     "quote": "I do think CoreWeave runs these big GPU clusters as well as anyone, and there aren't that many people on planet Earth who can run them well. And it's kind of easy. You can just look at the NPV of their contracts and the asset value.",
     "quoteStartMs": 886459,
     "topics": [
       "IPO",
-      "competitive differentiation",
+      "GPU infrastructure",
       "valuation",
-      "GPU infrastructure"
+      "competitive moat"
     ],
     "attributionConfidence": "high",
     "guestName": "Gavin Baker"
@@ -85,18 +87,44 @@
     "ticker": null,
     "isPublic": false,
     "host": "Chamath",
-    "stance": "neutral",
+    "stance": "bull",
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath endorses CoreWeave as a great business that deserves to succeed, seconding Gavin Baker's positive view on the company.",
+    "sectorProxy": null,
+    "summary": "Chamath seconds the bullish view on CoreWeave, calling it a great business that deserves to be successful.",
     "quote": "I think it's a good company. I would second that. I mean, I think it's a great business and I think they deserve to be successful.",
     "quoteStartMs": 914000,
     "topics": [
       "IPO",
-      "GPU infrastructure",
-      "neo-cloud"
+      "GPU infrastructure"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E221-enterprise-saas-software-industrial-complex-Chamath-4",
+    "episodeId": "E221",
+    "episodeNumber": 221,
+    "episodeDate": "2025-03-29T01:40:00.000Z",
+    "company": "Enterprise SaaS / Software Industrial Complex",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": "Not scored: Chamath names the 'software industrial complex' as his own labeled basket, explicitly sizes it at $3.5-4T, and makes a concrete bear claim that AI agents will allow small teams to 'blow a hole right in the side of that $3 trillion economy' — incumbents 'cannot compete with that cost scale.' This is an explicit directional bear claim on a named basket. However, the callType should be 'view' not 'basket' because Chamath does not use transaction/selection language (no 'I'm short', 'my pick is short', etc.) — it is analytical commentary about disruption risk.",
+    "sectorProxy": "IGV",
+    "summary": "Chamath argues the $3.5-4 trillion enterprise software industry is highly vulnerable to disruption by AI agents — small teams using agents can do the work of thousands, making incumbent SaaS companies structurally unable to compete on cost and threatening their valuations.",
+    "quote": "the software industrial complex as I call it, right? That's like a $3.5, $4 trillion industry. It grows by 10% a year. So every year it's adding $300 billion of quote unquote enterprise value. Is that value that is being created? I think a ",
+    "quoteStartMs": 1618761,
+    "topics": [
+      "AI disruption",
+      "SaaS valuation",
+      "agentic AI",
+      "competitive threat"
     ],
     "attributionConfidence": "high"
   }

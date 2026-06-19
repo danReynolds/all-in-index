@@ -1,30 +1,6 @@
 [
   {
-    "id": "E261-crm-Jason-0",
-    "episodeId": "E261",
-    "episodeNumber": 261,
-    "episodeDate": "2026-02-13T21:56:00.000Z",
-    "company": "Slack (Salesforce)",
-    "ticker": "CRM",
-    "isPublic": true,
-    "host": "Jason",
-    "stance": "neutral",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Jason describes Slack as a key enterprise AI infrastructure layer, calling it Chamath's number-two career investment and upgrading to the enterprise version to power his AI agents.",
-    "quote": "I'm upgrading to the enterprise version of Slack, Chamath. I think probably your number 2 investment in your career. What an amazing investment that was.",
-    "quoteStartMs": 832267,
-    "topics": [
-      "AI infrastructure",
-      "enterprise software",
-      "investment returns"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E261-coreweave-Chamath-1",
+    "id": "E261-coreweave-Chamath-0",
     "episodeId": "E261",
     "episodeNumber": 261,
     "episodeDate": "2026-02-13T21:56:00.000Z",
@@ -37,18 +13,19 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath describes CoreWeave as an excellent business, noting its cloud GPU infrastructure is in high demand, though he flags the pricing structure (mostly guaranteed/reserved rather than spot) as a constraint for enterprise customers.",
-    "quote": "So then you go to CoreWeave. Okay, fine. But what does CoreWeave tell you? They're an excellent business.",
+    "sectorProxy": null,
+    "summary": "Chamath describes CoreWeave as an excellent business, noting its model is focused on training workloads with customers locked into guaranteed future commitments rather than spot pricing.",
+    "quote": "So then you go to CoreWeave. Okay, fine. But what does CoreWeave tell you? They're an excellent business. A, it's all training.",
     "quoteStartMs": 1047142,
     "topics": [
       "AI infrastructure",
-      "cloud computing",
+      "cloud compute",
       "GPU capacity"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E261-race-Chamath-2",
+    "id": "E261-race-Chamath-1",
     "episodeId": "E261",
     "episodeNumber": 261,
     "episodeDate": "2026-02-13T21:56:00.000Z",
@@ -56,18 +33,19 @@
     "ticker": "RACE",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "mixed",
+    "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath is positive on Ferrari's brand and the new CEO's talent, but warns that the rise of FSD/autonomy will shrink the addressable market for premium driver-focused cars over time, leaving Ferrari as a niche luxury experience.",
-    "quote": "The new CEO, Benedetto Vigna, he's a very talented executive, and I think that he's probably going to land something beautiful. The thing is that we are racing against time, and FSD and autonomy is going to shift the number of people that",
-    "quoteStartMs": 4060402,
+    "sectorProxy": null,
+    "summary": "Chamath argues Ferrari's new CEO is talented and will likely produce a beautiful product, and that Ferrari's ultra-premium positioning means it will retain a market among wealthy buyers even as autonomous driving erodes broader car culture — luxury and experience justify the price.",
+    "quote": "I think that the new CEO, Benedetto Vigna, he's a very talented executive, and I think that he's probably going to land something beautiful... the experience inside of the Ferrari is second to none.",
+    "quoteStartMs": 4059368,
     "topics": [
-      "autonomous vehicles",
-      "luxury autos",
-      "long-term demand"
+      "EV transition",
+      "luxury automotive",
+      "autonomous driving impact"
     ],
     "attributionConfidence": "high"
   },
@@ -83,14 +61,15 @@
     "stance": "bull",
     "conviction": "high",
     "callType": "view",
-    "summary": "Chamath argues that as debt-to-GDP ratios trend upward globally and currencies erode in value, real durable assets like gold will do 'much, much better' over time as people seek protection from currency debasement.",
+    "summary": "Chamath argues that as debt-to-GDP ratios rise globally and currencies erode, people will seek real durable assets, and gold will do 'much, much better over time' as a hedge against dollar depreciation.",
     "quote": "we probably see things like gold. Do much, much better over time because people will be afraid about the durability of their dollar-denominated resources.",
     "quoteStartMs": 2756695,
     "topics": [
       "debt-to-GDP",
       "currency debasement",
       "inflation hedge",
-      "store of value"
+      "store of value",
+      "macro"
     ],
     "attributionConfidence": "high"
   }

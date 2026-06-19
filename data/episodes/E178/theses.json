@@ -4,23 +4,24 @@
     "episodeId": "E178",
     "episodeNumber": 178,
     "episodeDate": "2024-05-10T19:47:00.000Z",
-    "company": "Alphabet (Google / Isomorphic Labs)",
+    "company": "Alphabet (Google)",
     "ticker": "GOOGL",
     "isPublic": true,
     "host": "Friedberg",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "high",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Friedberg argues that Google's AlphaFold 3, kept proprietary inside Isomorphic Labs, represents an extraordinary competitive asset that could generate $100B+ in value from drug discovery, giving Alphabet a massive, underappreciated portfolio bet in bioengineering that is now commercially locked up.",
-    "quote": "I think Google's got this like portfolio of like quiet, extraordinarily high bets... the fact that they didn't open source everything in this says a lot about their intentions.",
-    "quoteStartMs": 5878840,
+    "sectorProxy": null,
+    "summary": "Friedberg argues that AlphaFold 3 and Isomorphic Labs represent an extraordinary, underappreciated portfolio of high-value bets at Google that could unlock a $100B+ drug discovery business, and that Google's decision to keep AlphaFold 3 proprietary signals serious commercial intent.",
+    "quote": "I think the other side of this is Google is hugely advantaged and they just showed the world a little bit about some of these jewels that they have in the treasure chest.",
+    "quoteStartMs": 5671953,
     "topics": [
       "AI",
       "drug discovery",
-      "competitive moat",
-      "biotech"
+      "AlphaFold",
+      "competitive moat"
     ],
     "attributionConfidence": "high"
   },
@@ -38,13 +39,14 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues Apple has run out of in-house innovation and lacks the M&A capability to offset it, with the thinner iPad as evidence that the product pipeline has hit a dead end — a structurally bearish trajectory for the business.",
-    "quote": "If you're running out of in-house innovation and you can't do M&A, then your options are kind of limited. I do think that the fact that the big news out of Apple is the iPad's getting thinner does represent kind of the end of the road in",
-    "quoteStartMs": 4999000,
+    "sectorProxy": null,
+    "summary": "Sacks argues Apple has run out of in-house innovation — exemplified by the iPad merely getting thinner — and with an inability to execute meaningful M&A, its growth options are structurally limited.",
+    "quote": "Well, if you're running out of in-house innovation and you can't do M&A, then your options are kind of limited. I mean, I do think that the fact that the big news out of Apple is the iPad's getting thinner does represent kind of the end of ",
+    "quoteStartMs": 4999270,
     "topics": [
       "innovation",
       "M&A",
-      "product pipeline",
+      "product cycle",
       "valuation"
     ],
     "attributionConfidence": "high"
@@ -58,19 +60,20 @@
     "ticker": "AAPL",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "neutral",
+    "stance": "bear",
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues Apple has too much capital and too few ideas, missed strategic opportunities (Tesla, car, gaming), and cannot execute large M&A — signaling a company with deteriorating growth prospects despite its enormous cash position.",
-    "quote": "There are just too many examples here where these guys have so much money and not enough ideas. That's a shame... it goes back to a complete lack of will.",
-    "quoteStartMs": 5107710,
+    "sectorProxy": null,
+    "summary": "Chamath argues Apple has too much cash with no ideas, lacks the M&A muscle to deploy it, and missed category-defining opportunities like the car — pointing to Buffett quietly selling $20B of shares as a telling signal.",
+    "quote": "It's an incredible business that has so much money with nothing to do. They're probably just going to buy back the stock. Just a total waste.",
+    "quoteStartMs": 4919000,
     "topics": [
+      "capital allocation",
       "innovation",
       "M&A",
-      "capital allocation",
-      "growth"
+      "Buffett"
     ],
     "attributionConfidence": "high"
   },
@@ -88,13 +91,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath views OpenAI as one of four major companies that will matter in AI, with its durable value coming not just from the model but from the surrounding infrastructure and scaffolding that customers will pay for — analogous to AWS for open-source software.",
-    "quote": "I think that these guys are going to be one of the four major companies that matter in this whole space... the models will basically be all really good. And then it's all this other stuff that you'll have to pay for.",
+    "sectorProxy": null,
+    "summary": "Chamath believes OpenAI will be one of four dominant AI companies, and that the real economic value will accrue from proprietary scaffolding and infrastructure built around commoditizing models — analogous to paid cloud infrastructure running open-source software.",
+    "quote": "I think that these guys are going to be one of the four major companies that matter in this whole space. I think that that's clear.",
     "quoteStartMs": 3947000,
     "topics": [
-      "AI platform",
-      "competitive position",
-      "monetization"
+      "AI",
+      "competitive moat",
+      "business model",
+      "infrastructure"
     ],
     "attributionConfidence": "high"
   }

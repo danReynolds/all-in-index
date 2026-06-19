@@ -192,8 +192,8 @@ export interface BullWindow extends ExposureWindow {
  * legs open shorts; exits and opposite-direction calls close the old window.
  * Commentary never trades.
  */
-export function hostExposureWindows(theses: Thesis[], host: Host): ExposureWindow[] {
-  const takes = positionTakes(theses, [host]);
+/** The window-building loop, over an already-filtered, date-sorted take list. */
+function windowsFromTakes(takes: Thesis[]): ExposureWindow[] {
   const windows: ExposureWindow[] = [];
   let open: ExposureWindow | null = null;
   for (const t of takes) {
@@ -221,6 +221,28 @@ export function hostExposureWindows(theses: Thesis[], host: Host): ExposureWindo
   }
   if (open) windows.push(open);
   return windows;
+}
+
+export function hostExposureWindows(theses: Thesis[], host: Host): ExposureWindow[] {
+  return windowsFromTakes(positionTakes(theses, [host]));
+}
+
+/**
+ * A named guest's exposure windows on a name — the guest analogue of
+ * hostExposureWindows, so the Guesties are scored on the SAME call-based engine
+ * as the besties (a guest's view is commentary and never opens a position).
+ */
+export function guestExposureWindows(theses: Thesis[], guestName: string): ExposureWindow[] {
+  const takes = theses
+    .filter(
+      (t) =>
+        t.host === "Guest" &&
+        t.guestName === guestName &&
+        isPortfolioScored(t) &&
+        t.attributionConfidence !== "low",
+    )
+    .sort((a, b) => a.episodeDate.localeCompare(b.episodeDate));
+  return windowsFromTakes(takes);
 }
 
 /**

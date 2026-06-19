@@ -156,6 +156,13 @@ export interface Thesis {
   excludeReason?: ExcludeReason | null;
   /** Optional one-line audit note: the evidence for the call, or its condition. */
   scoreNote?: string | null;
+  /**
+   * Representative ETF ticker for a sector/theme/macro basket the host named
+   * without a single tradable equity (e.g. "Mag 7" → MAGS). Chosen by the LLM
+   * from the proxy registry (lib/proxies.ts); attached and disclosed at index
+   * time (build-index attachSectorProxy). Null/absent for ordinary takes.
+   */
+  sectorProxy?: string | null;
   /** Identified name when host === "Guest" (e.g. "Brad Gerstner"). */
   guestName?: string;
   /** True for hand-authored placeholder data shown before the real pipeline runs. */
@@ -312,12 +319,13 @@ export interface GuestLeaderboardEntry {
   guest: string;
   /** URL slug for the guest's page (slugified name). */
   slug: string;
+  /** Number of scored CALL windows; 0 for a commentary-only guest. */
   calls: number;
-  /** Mean direction-adjusted return across their calls. */
-  followReturn: number;
-  /** Mean SPY return over the same windows. */
-  benchmarkReturn: number;
-  alpha: number;
+  /** Mean direction-adjusted return across their calls — null = commentary only (no scored calls). */
+  followReturn: number | null;
+  /** Mean SPY return over the same windows — null for commentary-only guests. */
+  benchmarkReturn: number | null;
+  alpha: number | null;
   /** Their single best call by follow-return. */
   best: { company: string; ticker: string; slug: string; ret: number } | null;
   /** Every scored call behind the aggregate, newest first. */

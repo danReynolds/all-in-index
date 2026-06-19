@@ -7,10 +7,9 @@ import { buildIndexFund, buildWindowFund, buildBearBook, buildGuestLeaderboard, 
 import { canonicalize } from "./entities";
 import { ensureCompanyMeta } from "./descriptions";
 import { currentStanceFromTheses, isCallShaped } from "../lib/calls";
-import { findProxyForPick } from "../lib/proxies";
+import { sectorProxyInfo } from "../lib/proxies";
 import { trimPublishedQuote } from "../lib/quotes";
 import { store } from "./store";
-import { hasTightCallEvidence, normalizeScoreNotes } from "./extract";
 import { REGULAR_HOSTS } from "../lib/types";
 import type {
   Holding,
@@ -88,15 +87,16 @@ export function shouldKeepThesisForIndex(
   return true;
 }
 
-function isNamedProxyExposure(t: Thesis): boolean {
-  if (t.callType === "basket") return true;
-  return /\b(?:basket|sector|market|stocks?|etfs?|s\s*&?\s*p|nasdaq|mag\s*(?:7|seven)|software|saas|metals?|minerals?|ipo|defense|aerospace|robotics|industrial|stablecoins?|dollar|media)\b/i.test(t.company);
-}
-
+/**
+ * Attach the representative ETF the extractor chose for a sector/theme/macro
+ * basket (Thesis.sectorProxy), so the call can be priced. Only for a scoreable
+ * call with no direct ticker — the LLM's having named a proxy IS the gate
+ * (replacing the old regex term-list + matcher). The proxy is disclosed in the
+ * scoreNote; structural exclusion from the company funds is handled downstream.
+ */
 export function attachSectorProxy(t: Thesis): void {
-  if (t.ticker || !isCallShaped(t) || t.excludeReason || !hasTightCallEvidence(t)) return;
-  if (!isNamedProxyExposure(t)) return;
-  const proxy = findProxyForPick(`${t.company} ${t.quote}`);
+  if (t.ticker || !isCallShaped(t) || t.excludeReason || !t.sectorProxy) return;
+  const proxy = sectorProxyInfo(t.sectorProxy);
   if (!proxy) return;
   t.ticker = proxy.ticker;
   t.isPublic = true;
@@ -164,7 +164,6 @@ export async function buildIndex(): Promise<IndexSnapshot> {
   const episodeIds = store.listEpisodeIds();
   const allTheses: Thesis[] = [];
   for (const id of episodeIds) allTheses.push(...store.loadTheses(id));
-  normalizeScoreNotes(allTheses);
   console.log(`Aggregating ${allTheses.length} theses from ${episodeIds.length} episodes…`);
 
   // Canonicalize entity names/tickers (merge variants, drop crypto tickers).

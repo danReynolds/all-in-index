@@ -13,13 +13,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues Tesla shareholders were right to reapprove Elon's pay package because Elon remains absolutely vital to Tesla's future innovation, and the stock ripping on the news confirms the market agrees that securing Elon's tenure was the correct decision.",
-    "quote": "I still think he's absolutely vital to all the innovation that's going to come in the future from Tesla. And you see this, the stock is ripping on the news, is up about 3% today in a down market.",
+    "sectorProxy": null,
+    "summary": "Sacks argues that Tesla shareholders were right to reapprove Elon's pay package because Elon delivered on his promises and is still vital to the company's future innovation, as evidenced by the stock ripping on the news.",
+    "quote": "I still think he's absolutely vital to all the innovation that's going to come in the future from Tesla. And you see this, the stock is ripping on the news, is up about 3% today in a down market. So clearly the market thinks that securing",
     "quoteStartMs": 1646872,
     "topics": [
       "executive compensation",
-      "governance",
-      "Elon Musk retention"
+      "corporate governance",
+      "Elon Musk",
+      "Delaware incorporation"
     ],
     "attributionConfidence": "high"
   },
@@ -37,13 +39,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues that shareholders who voted against Elon's pay package miscalculated: securing Elon at Tesla caused the stock to rise by more than the 10% dilution they were trying to avoid, meaning the pay package was actually value-accretive.",
-    "quote": "The irony of the thing is that these folks thought that they were getting a 10% free roll when they voted no. And the reality is that by him getting the pay package, the certainty of him sticking around at the company cause the stock to go",
-    "quoteStartMs": 2064000,
+    "sectorProxy": null,
+    "summary": "Chamath argues that investors who voted against Elon's pay package had the calculus wrong — by ensuring Elon stays, the stock rose more than 10%, more than offsetting the dilution from the pay package.",
+    "quote": "By him getting the pay package, the certainty of him sticking around at the company cause the stock to go up by 10%. So they actually had the calculus wrong, that if they had gotten their way, the stock would have declined by more than the",
+    "quoteStartMs": 2071818,
     "topics": [
       "executive compensation",
-      "governance",
-      "Elon Musk retention"
+      "corporate governance",
+      "Elon Musk",
+      "valuation"
     ],
     "attributionConfidence": "high"
   },
@@ -57,47 +61,24 @@
     "isPublic": true,
     "host": "Jason",
     "stance": "bull",
-    "conviction": "medium",
+    "conviction": "high",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Jason argues Apple's AI announcement — particularly the AI-powered Siri with deep app integration — positions Apple to win the AI consumer market and should drive a phone upgrade cycle, while the OpenAI deal sets up a lucrative LLM auction similar to the $20B Google search deal.",
-    "quote": "I think this means that Apple is going to win the AI consumer... Apple is also talking to Google about a similar deal. Obviously, it doesn't take a genius to predict that Apple is going to auction off the LLM integration to the highest",
+    "sectorProxy": null,
+    "summary": "Jason argues Apple's AI announcement, especially the AI-powered Siri with app-layer agent capabilities and the ChatGPT integration, positions Apple to win the AI consumer market and drive a new device upgrade cycle.",
+    "quote": "I think this means that Apple is going to win the AI consumer. There is a deal with ChatGPT that I'll get your feedback on, gentlemen, in a moment.",
     "quoteStartMs": 2515950,
     "topics": [
-      "AI strategy",
-      "product",
-      "monetization",
+      "AI",
+      "Apple Intelligence",
+      "Siri",
       "upgrade cycle"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E183-aapl-Chamath-3",
-    "episodeId": "E183",
-    "episodeNumber": 183,
-    "episodeDate": "2024-06-14T21:58:00.000Z",
-    "company": "Apple",
-    "ticker": "AAPL",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "low",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Chamath is underwhelmed by Apple's AI announcement, noting that unlike the Jobs era of shipping finished products, Apple is now pre-announcing third-party software integrations that won't arrive for a year, with no money changing hands in the OpenAI deal — making it 'really not much of anything' yet.",
-    "quote": "For a company this big, it's really not much of anything. You can't really touch it and feel it. And it's going to take a year before we really know what the totality of all of this is. Meanwhile, the economics of the ChatGPT deal were",
-    "quoteStartMs": 2607036,
-    "topics": [
-      "AI strategy",
-      "product",
-      "valuation"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E183-aapl-Sacks-4",
+    "id": "E183-aapl-Sacks-3",
     "episodeId": "E183",
     "episodeNumber": 183,
     "episodeDate": "2024-06-14T21:58:00.000Z",
@@ -110,14 +91,42 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks is bullish that the market correctly rewarded Apple for reinventing Siri as an AI agent, but bearish on the privacy risk: by opening the OS to OpenAI beneath the App Store layer, Apple has compromised its core privacy narrative and opened Pandora's box for future antitrust and privacy challenges.",
-    "quote": "Apple did exactly what I said they should do last week... However, Apple took a shortcut to get here... This is allowing OpenAI to get access to your data and to control your apps at the operating system level. And I think there are major",
+    "sectorProxy": null,
+    "summary": "Sacks acknowledges the market liked Apple's AI announcement and that Apple did exactly what he recommended — reinventing Siri as an LLM agent — but raises serious concerns about the privacy and competitive implications of opening the OS to OpenAI, which could undermine Apple's walled-garden advantage.",
+    "quote": "Apple did exactly what I said they should do last week, which was to reinvent Siri as an LLM with the ability, with the capability to reach into apps as an agent and take actions on the user's behalf. That's what they effectively announced.",
     "quoteStartMs": 2839936,
     "topics": [
-      "AI strategy",
-      "privacy risk",
-      "competitive moat",
-      "antitrust"
+      "AI",
+      "Apple Intelligence",
+      "OpenAI partnership",
+      "privacy",
+      "competitive moat"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E183-aapl-Friedberg-4",
+    "episodeId": "E183",
+    "episodeNumber": 183,
+    "episodeDate": "2024-06-14T21:58:00.000Z",
+    "company": "Apple",
+    "ticker": "AAPL",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Chamath is underwhelmed by Apple's AI announcement, noting the shift toward announcing future software integrations from third parties rather than shipping finished products, and suggesting the economics of the ChatGPT deal add little value.",
+    "quote": "For a company this big, it's really not much of anything. You can't really touch it and feel it. And it's going to take a year before we really know what the totality of all of this is. Meanwhile, the economics of the ChatGPT deal were",
+    "quoteStartMs": 2607036,
+    "topics": [
+      "AI",
+      "Apple Intelligence",
+      "product roadmap",
+      "valuation"
     ],
     "attributionConfidence": "high"
   },
@@ -135,13 +144,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks acknowledges OpenAI's products are best-in-class and the revenue surge reflects that, but argues the real terminal value lies in B2B API consumption — not the B2C subscription side, which faces high churn as competing LLMs catch up — and he'd want to know the B2B/B2C revenue split before assigning a valuation.",
-    "quote": "I would separate the B2C business from the B2B business... it's probably the only LLM that I would pay $20 a month for... the other LLMs are catching up... I would place the future value of this company [in B2B]. Historically, the churn",
-    "quoteStartMs": 3195000,
+    "sectorProxy": null,
+    "summary": "Sacks is impressed by OpenAI's product quality and revenue growth but sees risk in consumer B2C churn; he believes long-term value lies in the B2B/API developer business, and questions whether OpenAI can maintain its leadership as other LLMs catch up.",
+    "quote": "if I was to try and take apart this business as an investor, I would separate the B2C business from the B2B business… as somebody who invests in SaaS, when we see a business that has B2C subscriptions and B2B, we place all the value on B2B.",
+    "quoteStartMs": null,
     "topics": [
-      "revenue quality",
+      "AI",
+      "revenue growth",
       "B2B vs B2C",
-      "competitive dynamics",
+      "competition",
       "valuation"
     ],
     "attributionConfidence": "high"
@@ -160,12 +171,14 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath is skeptical of OpenAI's long-term revenue sustainability, arguing that enterprises will migrate to tuned open-source models (e.g. Llama) as they mature, that most current revenue is consumer-driven and ARPU is falling outside the US, and that OpenAI could be 'AOL' — an early leader displaced by a superior successor.",
-    "quote": "Maybe OpenAI is AOL, right?... if you're an enterprise user, why would you pay thousands of dollars for the OpenAI platform when you can use Llama and you can tune it... It's just early days for enterprises figuring out how to do that.",
-    "quoteStartMs": 3555000,
+    "sectorProxy": null,
+    "summary": "Chamath argues OpenAI may be the 'AOL' of the AI era — dominant today but ultimately displaced by open-source models like Llama that deliver 85-90% of the capability at far lower cost, especially as enterprises figure out how to build their own LLM-driven tools.",
+    "quote": "Maybe OpenAI is AOL, right? Like, I think that there's going to be a Google that'll show up that'll— maybe it's Google. Grab a large part of the value here, or, you know, ultimately the cost comes down so much with the open source tools.",
+    "quoteStartMs": 3554940,
     "topics": [
-      "competitive dynamics",
-      "open-source risk",
+      "AI",
+      "open source",
+      "competition",
       "enterprise adoption",
       "valuation"
     ],
@@ -185,15 +198,16 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Friedberg acknowledges OpenAI's revenue growth is 'legendary' but argues enterprises haven't yet deployed AI in production, most revenue is likely consumer-driven with falling US engagement and an ARPU problem in international markets, so the long-term enterprise value thesis is unproven.",
-    "quote": "If this number is right, it's just an incredible testament to what they've been able to uncover and create in a short amount of time... But what I can tell you in working with enterprises around these AI experiences... we have not yet seen",
-    "quoteStartMs": 3478192,
+    "sectorProxy": null,
+    "summary": "Friedberg believes most of OpenAI's revenue is currently consumer-driven, as enterprises have not yet deployed production-level AI, and flags a looming ARPU problem as US growth plateaus and growth shifts to lower-monetization international markets.",
+    "quote": "I still haven't seen enterprises building production-level products using AI... I suspect that most of the revenue then is on the consumer side right now... the traffic in the United States is down about 25, 26% since the end of the school",
+    "quoteStartMs": 3314000,
     "topics": [
+      "AI",
       "enterprise adoption",
       "revenue quality",
-      "international growth",
-      "valuation"
+      "international growth"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   }
 ]

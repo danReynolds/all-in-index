@@ -1,6 +1,6 @@
 [
   {
-    "id": "E275-anthropic-Sacks-0",
+    "id": "E275-anthropic-Sacks-3",
     "episodeId": "E275",
     "episodeNumber": 275,
     "episodeDate": "2026-05-29T22:23:00.000Z",
@@ -8,18 +8,19 @@
     "ticker": null,
     "isPublic": false,
     "host": "Sacks",
-    "stance": "neutral",
-    "conviction": "medium",
+    "stance": "bull",
+    "conviction": "high",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues Anthropic is pursuing regulatory capture by branding itself as the 'safe AI' company to characterize competitors as reckless, which could lead to monopolistic control over AI — a centralization outcome he views as dangerous, though he notes the market is currently competitive.",
-    "quote": "if you brand yourself as the safe AI company and then try to characterize everybody else as a reckless player, and reckless AI needs to be stopped, you can see how this would basically further your monopolistic control over this industry.",
-    "quoteStartMs": 2221384,
+    "sectorProxy": null,
+    "summary": "Sacks observes that Anthropic appears to be pulling away from OpenAI in growth — growing at 10x YoY vs OpenAI's 3x — and that if sustained, this trajectory leads to monopoly market share, making it the company with the better inertia.",
+    "quote": "Anthropic does seem to be pulling away. There was an article in The Information showing the latest numbers where I think Anthropic's now at— they seem to have pulled away from OpenAI, which is not surprising. It's something I predicted. Loo",
+    "quoteStartMs": 3345209,
     "topics": [
-      "regulatory capture",
-      "AI competition",
-      "monopoly risk"
+      "growth",
+      "market share",
+      "competitive positioning"
     ],
     "attributionConfidence": "high"
   },
@@ -33,47 +34,24 @@
     "isPublic": false,
     "host": "Guest",
     "stance": "neutral",
-    "conviction": "medium",
+    "conviction": "high",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Bill Gurley believes Anthropic is a mystery — either engaged in deliberate regulatory capture or genuinely believes it is 'midwifing a deity,' with their doomer rhetoric giving them a reputational halo among intellectual elites while creating negative consequences like data center opposition.",
-    "quote": "I have to tell you that Anthropic is a mystery to me. I've never ever seen a company that is both leading their field and the most negatively outspoken commenter on what they do.",
-    "quoteStartMs": 1614000,
+    "sectorProxy": null,
+    "summary": "Gurley argues Anthropic is either pursuing regulatory capture or genuinely believes it is 'midwifing a deity' — either way its doomerism rhetoric has given it a halo with intellectual elites while creating negative ramifications like data center opposition.",
+    "quote": "I think they're midwifing a deity here. And I don't know which one I'm more afraid of, the regulatory capture or this second theory I call the Dr. Frankenstein theory.",
+    "quoteStartMs": 1937000,
     "topics": [
       "regulatory capture",
-      "AI safety narrative",
+      "AI safety",
       "competitive positioning"
     ],
     "attributionConfidence": "high",
     "guestName": "Bill Gurley"
   },
   {
-    "id": "E275-anthropic-Sacks-2",
-    "episodeId": "E275",
-    "episodeNumber": 275,
-    "episodeDate": "2026-05-29T22:23:00.000Z",
-    "company": "Anthropic",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Sacks",
-    "stance": "bull",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Sacks observes that Anthropic appears to be pulling away from OpenAI in growth rate — citing ~10x YoY vs OpenAI's ~3x — and warns this compounding dynamic could lead to monopoly-level market share within two years, making it the company with the stronger momentum.",
-    "quote": "Anthropic does seem to be pulling away. There was an article in The Information showing the latest numbers... if you have one company that's growing at 10x year over year and another company that's growing at 3x year over year, within 2",
-    "quoteStartMs": 3345209,
-    "topics": [
-      "growth trajectory",
-      "market share",
-      "AI competition"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E275-anthropic-Chamath-3",
+    "id": "E275-anthropic-Chamath-2",
     "episodeId": "E275",
     "episodeNumber": 275,
     "episodeDate": "2026-05-29T22:23:00.000Z",
@@ -86,13 +64,14 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath views Anthropic's doomerism and regulatory push as rational game-theory optimization — a strategy to absorb capital, influence rules, and create an oversight body less technically capable than themselves — rather than purely ideological belief.",
+    "sectorProxy": null,
+    "summary": "Chamath views Anthropic's doomerism and lobbying as rational game-theory optimization — absorbing capital, shaping rules via a less technically capable oversight body — while acknowledging Claude is genuinely exceptional as a product.",
     "quote": "if you want to be unexploitable, I think the best thing that you could do if you're trying to build a super god is have 3 or 4 entities in a room, close the door behind you, and then dominate those other 3 or 4 entities, and then you set",
-    "quoteStartMs": 2021000,
+    "quoteStartMs": 2023478,
     "topics": [
       "regulatory capture",
-      "competitive strategy",
-      "AI policy"
+      "competitive positioning",
+      "AI strategy"
     ],
     "attributionConfidence": "high"
   },
@@ -105,18 +84,19 @@
     "ticker": null,
     "isPublic": false,
     "host": "Sacks",
-    "stance": "bear",
-    "conviction": "low",
+    "stance": "neutral",
+    "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks notes OpenAI is being outgrown by Anthropic at roughly 3x YoY vs Anthropic's 10x, implying it is losing the compounding growth race and could see its market share eroded significantly over two years.",
-    "quote": "if you have one company that's growing at 10x year over year and another company that's growing at 3x year over year, within 2 years, the first company will have 90% market share... you would always rather be the company that has that",
+    "sectorProxy": null,
+    "summary": "Sacks notes OpenAI is growing at only 3x YoY versus Anthropic's 10x, implying it risks losing dominant market share within two years if the divergence continues.",
+    "quote": "if you have one company that's growing at 10x year over year and another company that's growing at 3x year over year, within 2 years, the first company will have 90% market share.",
     "quoteStartMs": 3357271,
     "topics": [
-      "growth trajectory",
+      "growth",
       "market share",
-      "AI competition"
+      "competitive positioning"
     ],
     "attributionConfidence": "high"
   },
@@ -134,18 +114,20 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Jason argues Apple is the dark horse in the AI race because its principled stance on data sovereignty and its powerful M-series hardware (capable of running local open-source models) positions it uniquely well as intelligence sovereignty becomes the next critical consumer value.",
+    "sectorProxy": null,
+    "summary": "Jason argues Apple is the dark horse in AI because its principled data-sovereignty stance and powerful M-series hardware (M5, Mac Studio) position it uniquely to run open-source models locally, giving it a key role in intelligence sovereignty.",
     "quote": "This is why I think Apple is just the dark horse in this entire race. If there is an open-source product that can run on this hardware, the M5s, the 48 gigs, 128 gigs, the new Mac Studio coming out with supposedly a terabyte, that changes",
     "quoteStartMs": 2383144,
     "topics": [
-      "AI sovereignty",
+      "AI",
       "open source",
-      "competitive positioning"
+      "data sovereignty",
+      "hardware"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E275-meta-Chamath-7",
+    "id": "E275-meta-Chamath-6",
     "episodeId": "E275",
     "episodeNumber": 275,
     "episodeDate": "2026-05-29T22:23:00.000Z",
@@ -158,36 +140,13 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues Meta's recent layoffs are primarily about correcting years of overhiring and mismanagement — not genuine AI-driven efficiency — and that the company could have achieved its current outcomes at a fraction of its peak headcount.",
+    "sectorProxy": null,
+    "summary": "Chamath argues Meta's layoffs are a correction from years of overhiring and mismanagement — burning $50B on VR and growing to 90,000 employees — not primarily driven by AI, so current headcount reductions are a return to efficiency rather than an AI-led structural shift.",
     "quote": "Meta overhired. You could have stopped the company at 3,000 people when I left and it would not have changed the outcome of that company. There was no need to go to 90,000 people and burn $50 billion on VR.",
     "quoteStartMs": 4363477,
     "topics": [
-      "headcount",
-      "cost structure",
-      "AI washing"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E275-sq-Sacks-10",
-    "episodeId": "E275",
-    "episodeNumber": 275,
-    "episodeDate": "2026-05-29T22:23:00.000Z",
-    "company": "Block",
-    "ticker": "SQ",
-    "isPublic": true,
-    "host": "Sacks",
-    "stance": "neutral",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Sacks argues that Block's 50% headcount cut attributed to AI by Jack Dorsey was actually AI washing masking deep pre-existing operational inefficiency and overstaffing relative to peers, suggesting real underlying business problems.",
-    "quote": "Jack Dorsey came out and said that he was going to do a 50% elimination because of AI... within 24 hours, all the financial analysts on X said that Jack was AI washing and that Block had horribly overstaffed during COVID... they've needed",
-    "quoteStartMs": 4635041,
-    "topics": [
+      "layoffs",
       "AI washing",
-      "cost structure",
       "operational efficiency"
     ],
     "attributionConfidence": "high"

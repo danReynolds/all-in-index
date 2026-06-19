@@ -9,17 +9,19 @@
     "isPublic": false,
     "host": "Guest",
     "stance": "neutral",
-    "conviction": "medium",
+    "conviction": "high",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Naval argues OpenAI's conversion from nonprofit to fully private entity is self-dealing and unnecessary, and that the nonprofit portion should retain control while employees receive incentive packages separately — the current structure amounts to a 'shell game.'",
-    "quote": "I just don't understand this conversion... it also looks like self-dealing, right? And yeah, they'll get an independent valuation, but we all know that game.",
+    "sectorProxy": null,
+    "summary": "Naval argues that OpenAI's conversion from nonprofit to fully private/for-profit is self-dealing and unjustifiable — the nonprofit portion should remain in control, and the privatization of the whole entity for Sam Altman's personal benefit undermines the mission and represents a structural governance failure.",
+    "quote": "I just don't understand this conversion. I mean, there was a, there was a board coup, right? The board tried to fire Sam and Sam took over the board. Now it's his handpicked board. So it also looks like self-dealing, right?",
     "quoteStartMs": 5658765,
     "topics": [
       "governance",
       "nonprofit conversion",
-      "OpenAI structure"
+      "valuation",
+      "self-dealing"
     ],
     "attributionConfidence": "high",
     "guestName": "Naval Ravikant"
@@ -38,13 +40,88 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Jason predicts OpenAI could lose the New York Times copyright lawsuit badly, potentially facing injunctions, and that a Napster-style settlement could force closed AI models to pay a large share of revenue to content holders — a structural threat to OpenAI's economics.",
-    "quote": "I think this is all going to wind up like the Napster-Spotify case... there is a non-zero chance... that OpenAI is going to lose the New York Times lawsuit and they're going to lose it hard and there could be injunctions.",
+    "sectorProxy": null,
+    "summary": "Jason argues there is a non-trivial chance OpenAI loses the New York Times copyright lawsuit badly, potentially facing injunctions and being forced to pay large revenue-sharing settlements to content holders, which would structurally impair its business model.",
+    "quote": "I think this is all going to wind up like the Napster-Spotify case… there is a non-zero chance, like it might be 5 or 10%, that OpenAI is going to lose the New York Times lawsuit and they're going to lose it hard and there could be injuncti",
     "quoteStartMs": 5085524,
     "topics": [
-      "copyright litigation",
-      "fair use",
-      "AI training data"
+      "copyright",
+      "litigation risk",
+      "business model"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E215-nyt-Jason-3",
+    "episodeId": "E215",
+    "episodeNumber": 215,
+    "episodeDate": "2025-02-15T01:48:00.000Z",
+    "company": "New York Times",
+    "ticker": "NYT",
+    "isPublic": true,
+    "host": "Jason",
+    "stance": "bull",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Jason argues the New York Times' copyright lawsuit against OpenAI could be transformative for the company — winning licensing revenue from LLMs could eventually exceed advertising and subscription revenue, renewing the media company's economic model.",
+    "quote": "I think the New York Times will make more money from licenses from LLMs than they will make from advertising or subscriptions eventually. This will renew the model almost.",
+    "quoteStartMs": 5303375,
+    "topics": [
+      "copyright licensing",
+      "AI revenue",
+      "media business model"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E215-anduril-industries-Chamath-4",
+    "episodeId": "E215",
+    "episodeNumber": 215,
+    "episodeDate": "2025-02-15T01:48:00.000Z",
+    "company": "Anduril Industries",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Chamath cites Anduril stepping in to execute a $24B US Army contract that Microsoft could not deliver on as evidence that Anduril has genuine technological superiority in defense execution.",
+    "quote": "What did they do? They went to Anduril. Now, why did they go to Anduril? Because Anduril has the technological supremacy to actually execute.",
+    "quoteStartMs": 2394412,
+    "topics": [
+      "defense tech",
+      "competitive position",
+      "government contracts"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E215-polymarket-Friedberg-5",
+    "episodeId": "E215",
+    "episodeNumber": 215,
+    "episodeDate": "2025-02-15T01:48:00.000Z",
+    "company": "Polymarket",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Friedberg highlights Polymarket's superior accuracy in predicting RFK Jr. and other cabinet confirmations versus mainstream media, citing it as evidence of the platform's information edge and reliability.",
+    "quote": "If you look at Polymarket, Polymarket had it all right a couple weeks ago... the media was like, no way he's getting confirmed... But Polymarket knows. It's so interesting, huh?",
+    "quoteStartMs": 6308000,
+    "topics": [
+      "prediction markets",
+      "information accuracy"
     ],
     "attributionConfidence": "high"
   }

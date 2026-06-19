@@ -212,13 +212,13 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
           </h2>
           <div className="mb-4">
             <Explainer summary="How this portfolio is scored">
-              {`$1,000 per name, in the market only while their scored calls carry exposure — clear buys, ranked picks, explicit investment selections, explicit shorts, and pair legs count; exits and re-entries included — vs the S&P traded in the same direction over identical windows. Commentary and criticism never trade. Click any marker for the call behind it.`}
+              {`We put $1,000 into each name the day ${host} turned bullish or bearish on it as a real call — a clear take, a ranked pick, a short — and hold until they back off, then compare to putting the same money in the S&P over the exact same stretch. Just talking about a stock never counts. Click any marker for the call behind it.`}
             </Explainer>
           </div>
           <p className="mb-4 text-sm text-neutral-400">
-            <strong className="text-neutral-200">{fund.constituents.length}</strong> tradable{" "}
-            {fund.constituents.length === 1 ? "position" : "positions"} — $1,000 in each, scored against
-            the S&amp;P over the windows below.
+            <strong className="text-neutral-200">{fund.constituents.length}</strong>{" "}
+            {fund.constituents.length === 1 ? "call" : "calls"} we could put a price on — $1,000 in
+            each, measured against the S&amp;P over the same stretch.
           </p>
           <IndexChart
             series={fund.series}

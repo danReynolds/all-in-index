@@ -1,6 +1,32 @@
 [
   {
-    "id": "E196-crm-Chamath-0",
+    "id": "E196-ai-customer-support-call-center-disruption-Sacks-0",
+    "episodeId": "E196",
+    "episodeNumber": 196,
+    "episodeDate": "2024-09-20T19:58:00.000Z",
+    "company": "AI Customer Support / Call Center Disruption",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "bull",
+    "conviction": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Sacks argues that LLMs plus voice AI will massively disrupt call centers within 2-3 years, replacing Level 1 customer support first and working up the chain, because the data sets are large and accessible, error tolerance is built into the tiered support structure, and reasoning models are now good enough.",
+    "quote": "I think it's now becoming really clear that call centers are going to be the first really big disruption caused by AI… I think within the next 2 to 3 years, you're going to see a massive disruption in that industry.",
+    "quoteStartMs": null,
+    "topics": [
+      "AI disruption",
+      "call centers",
+      "LLMs",
+      "labor market"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E196-crm-Chamath-1",
     "episodeId": "E196",
     "episodeNumber": 196,
     "episodeDate": "2024-09-20T19:58:00.000Z",
@@ -13,18 +39,20 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues that AI agents can now reverse-engineer and replace systems of record like Salesforce, as demonstrated by Klarna deprecating it, making such legacy enterprise software vulnerable to disruption and cost elimination.",
-    "quote": "I was like, guys, we got to go after the hardest, most regulated places... you cannot, we cannot touch customer service... it's going to get commoditized and run over by these foundational models within a year",
-    "quoteStartMs": 1607922,
+    "sectorProxy": null,
+    "summary": "Chamath argues that AI agents can reverse-engineer and replace systems of record like Salesforce by observing inputs and outputs and building digital twins, citing Klarna's reported deprecation as evidence that these expensive platforms face an existential threat from AI-native replacements.",
+    "quote": "over time what the agents start to do is by observing the inputs and the outputs, they start to guess on what the intervening code is... you develop a digital twin and then you run that against that counterfactual against Workday or",
+    "quoteStartMs": 1707262,
     "topics": [
       "AI disruption",
       "enterprise software",
-      "competitive threat"
+      "competitive threat",
+      "systems of record"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E196-wday-Chamath-1",
+    "id": "E196-wday-Chamath-2",
     "episodeId": "E196",
     "episodeNumber": 196,
     "episodeDate": "2024-09-20T19:58:00.000Z",
@@ -37,18 +65,20 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues that AI agents can observe inputs/outputs of systems like Workday and build digital twins to replace them, as Klarna demonstrated, threatening the long-held belief that systems of record are untouchable.",
+    "sectorProxy": null,
+    "summary": "Chamath argues that AI agents can observe, replicate, and replace systems of record like Workday via digital twins, citing Klarna's reported deprecation as evidence these platforms are vulnerable to AI-native replacements that eliminate their cost.",
     "quote": "over time what the agents start to do is by observing the inputs and the outputs, they start to guess on what the intervening code is... you develop a digital twin and then you run that against that counterfactual against Workday or",
     "quoteStartMs": 1707262,
     "topics": [
       "AI disruption",
       "enterprise software",
-      "competitive threat"
+      "competitive threat",
+      "systems of record"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E196-crm-Sacks-2",
+    "id": "E196-crm-Sacks-3",
     "episodeId": "E196",
     "episodeNumber": 196,
     "episodeDate": "2024-09-20T19:58:00.000Z",
@@ -61,21 +91,75 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks is skeptical of Klarna's claim to have fully replaced Salesforce via AI-generated code, questioning why such a solution hasn't been open-sourced or replicated by the broader market.",
-    "quote": "if it's so easy to do, why hasn't the market already been flooded with new startups that are effectively able to reverse engineer... I don't think you're right.",
-    "quoteStartMs": 1857000,
+    "sectorProxy": null,
+    "summary": "Sacks is skeptical of the Klarna/AI deprecation story for Salesforce and Workday, questioning why Klarna hasn't open-sourced its replacement and why the market hasn't been flooded with startups doing the same, suggesting it may be harder or more limited than claimed.",
+    "quote": "I have to say I'm a little bit skeptical of that story for a couple of reasons. One is, if that's their goal, why wouldn't they have open-sourced these products that they created?... if it's so easy to do, why hasn't the market already",
+    "quoteStartMs": 1837021,
     "topics": [
       "AI disruption",
-      "enterprise software"
+      "enterprise software",
+      "skepticism"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E196-starlink-spacex-Sacks-4",
+    "id": "E196-venture-capital-industry-Chamath-4",
     "episodeId": "E196",
     "episodeNumber": 196,
     "episodeDate": "2024-09-20T19:58:00.000Z",
-    "company": "Starlink / SpaceX",
+    "company": "Venture Capital industry",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Chamath argues the VC industry is structurally broken due to extended company gestation periods, the 2021 bubble inflating entry prices, broken IPO and M&A exit paths, and AI companies requiring far less capital — predicting average returns will decay 50-100% and the industry must reinvent its liquidity mechanisms.",
+    "quote": "we are not in a sustainable industry. It is if you raise funds and think about fee generation, but it is not… I do think that we are in a situation where the average returns are going to decay by 50 to 100%",
+    "quoteStartMs": null,
+    "topics": [
+      "venture capital",
+      "returns",
+      "liquidity",
+      "AI capex"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E196-venture-capital-industry-Sacks-5",
+    "episodeId": "E196",
+    "episodeNumber": 196,
+    "episodeDate": "2024-09-20T19:58:00.000Z",
+    "company": "Venture Capital industry",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "mixed",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Sacks says VC is in a hangover from the 2020-2021 liquidity bubble that doubled entry prices and distorted returns, but sees light at the end of the tunnel with rate cuts and the AI wave potentially ushering in a new golden era for the industry.",
+    "quote": "I think we're just in the hangover of this massive liquidity bubble… the good news is that we now have maybe the most exciting tech wave ever, which is AI… So the hope is we're finally going to have really exciting things to invest in again",
+    "quoteStartMs": 3382211,
+    "topics": [
+      "venture capital",
+      "AI tailwind",
+      "rate cuts",
+      "bubble hangover"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E196-spacex-starlink-Sacks-6",
+    "episodeId": "E196",
+    "episodeNumber": 196,
+    "episodeDate": "2024-09-20T19:58:00.000Z",
+    "company": "SpaceX / Starlink",
     "ticker": null,
     "isPublic": false,
     "host": "Sacks",
@@ -84,13 +168,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues Starlink has already solved rural internet and is the best solution available, but is being unfairly blocked by the Biden-Harris administration for political reasons rather than technical ones.",
-    "quote": "the Biden-Harris administration doesn't want to admit that Elon has the best solution for rural internet, just like they couldn't admit he made the best electric cars.",
-    "quoteStartMs": 2221377,
+    "sectorProxy": null,
+    "summary": "Sacks argues Starlink has already solved the rural internet problem and is the best and cheapest solution available, but is being deliberately excluded by the Biden-Harris administration for political reasons, wasting taxpayer money and depriving rural Americans of connectivity.",
+    "quote": "we could spend a fraction of that giving people Starlink and allowing the private sector to do its job.",
+    "quoteStartMs": 2162402,
     "topics": [
+      "Starlink",
       "rural broadband",
-      "government policy",
-      "competitive position"
+      "government contracts",
+      "political retaliation"
     ],
     "attributionConfidence": "high"
   }

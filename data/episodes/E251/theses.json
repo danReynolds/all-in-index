@@ -13,13 +13,14 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues Palantir's premium valuation is justified because it is both unique and well-run with no viable competitor to switch to, giving its cash flows far greater duration and durability than peers — making the short thesis stupid.",
-    "quote": "Palantir is both unique and well-run, and there's no clear alternative, so there's no place to churn to. And so I think the reason why it has a premium valuation is because the duration and the durability of these cash flows are much",
-    "quoteStartMs": 969123,
+    "sectorProxy": null,
+    "summary": "Chamath argues Palantir's premium valuation is justified because it has no viable competitor — enterprises cannot churn to an alternative — making its cash flows uniquely durable compared to peers like Snowflake or MongoDB, so shorting it is a losing trade.",
+    "quote": "Well, I think the Palantir short is stupid, and I think that those people will lose money… Palantir is both unique and well-run, and there's no clear alternative, so there's no place to churn to. And so I think the reason why it has a premi",
+    "quoteStartMs": 916770,
     "topics": [
       "valuation",
       "competitive moat",
-      "short squeeze risk"
+      "short thesis rebuttal"
     ],
     "attributionConfidence": "high"
   },
@@ -37,12 +38,38 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Friedberg declines to take a directional view on Palantir's valuation, noting the market is trying to find a price based on differing estimates of future earnings potential, and that the right answer depends entirely on one's time horizon and assessment of future cash generation.",
+    "sectorProxy": null,
+    "summary": "Friedberg declines to take a firm valuation stance on Palantir, noting the market is trying to price future earnings potential where opinions differ widely, and he has not studied the business sufficiently to have a strong view.",
     "quote": "I've not studied the business well. I don't have a strong point of view or opinion on the value of the business. Relative to its future earnings potential. That's how I would look at it.",
-    "quoteStartMs": 847685,
+    "quoteStartMs": 845000,
     "topics": [
       "valuation",
       "earnings potential"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E251-meta-Chamath-4",
+    "episodeId": "E251",
+    "episodeNumber": 251,
+    "episodeDate": "2025-11-14T21:03:00.000Z",
+    "company": "Meta Platforms",
+    "ticker": "META",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Chamath dismisses Burry's depreciation-fraud thesis against hyperscalers like Meta, arguing their business models are too strong to need accounting games and that ongoing kernel/chip innovations drive genuine utilization longevity, making the short ill-founded.",
+    "quote": "The business models of these companies are just far too good for them to get to the point of having exhausted every other operational tactic that then they have to cook the books. These are not the 7 companies that are going to cook the",
+    "quoteStartMs": 541460,
+    "topics": [
+      "earnings quality",
+      "AI capex",
+      "short thesis rebuttal"
     ],
     "attributionConfidence": "high"
   }

@@ -8,17 +8,18 @@
     "ticker": null,
     "isPublic": false,
     "host": "Chamath",
-    "stance": "neutral",
+    "stance": "bull",
     "conviction": "low",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath sees Sequoia marking Stripe at a $70B valuation as a positive sign for the company, though he has governance concerns about the cross-fund structure of the transaction.",
+    "sectorProxy": null,
+    "summary": "Chamath views Sequoia marking Stripe's valuation up to $70 billion as a positive sign for the company, though he has governance concerns about the cross-fund secondary structure Sequoia used.",
     "quote": "it's interesting to see that they mark the valuation up to $70 billion. So that's, I think, a good sign for Stripe.",
     "quoteStartMs": 3731000,
     "topics": [
       "valuation",
-      "secondary markets",
+      "private markets",
       "VC liquidity"
     ],
     "attributionConfidence": "high"
@@ -37,13 +38,39 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath is bullish on Wiz's market position, arguing that cloud security is critical infrastructure for cloud vendors and the 46x revenue acquisition premium reflects both strong product quality and the strategic necessity of cloud security for hyperscalers to grow.",
+    "sectorProxy": null,
+    "summary": "Chamath argues that cloud security is a massive and critical market, and Google's willingness to pay a 46x revenue premium for Wiz reflects both strong product quality and the existential need for cloud vendors to secure their platforms in order to continue growing.",
     "quote": "the fact that they're willing to pay such a premium means, A, the product is good, but more importantly, B, in the absence of cloud security, these cloud vendors are going to be constrained in how fast they can grow. So what an incredible",
     "quoteStartMs": 4128053,
     "topics": [
       "cloud security",
       "M&A",
       "valuation"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E188-sequoia-capital-stripe-secondary-Sacks-2",
+    "episodeId": "E188",
+    "episodeNumber": 188,
+    "episodeDate": "2024-07-19T19:09:00.000Z",
+    "company": "Sequoia Capital (Stripe secondary)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Sacks views Sequoia's cross-fund secondary as a reasonable structural solution to the illiquidity problem in late-stage venture funds, while flagging that the valuation sanity-check is less robust than a true third-party market-clearing price.",
+    "quote": "if you have a security that's not public yet, but is semi-liquid because it's a very late-stage private company, then what you can do is spin those shares into an SPV… and you let new investors come in and buy those shares at some price…",
+    "quoteStartMs": 3925224,
+    "topics": [
+      "VC liquidity",
+      "private markets",
+      "fund structure"
     ],
     "attributionConfidence": "high"
   }

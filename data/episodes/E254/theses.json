@@ -13,14 +13,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues Netflix is the dominant force in Hollywood with the largest market cap among streamers, but questions whether regulators will allow the Warner Bros. acquisition given serious antitrust concerns, and notes the Paramount offer appears to be a better deal for WBD shareholders.",
+    "sectorProxy": null,
+    "summary": "Sacks notes Netflix is the dominant streamer with the biggest market cap and the party Hollywood is most worried about, but flags serious antitrust concerns about its proposed acquisition of Warner Bros. Discovery's assets, making regulatory approval harder to achieve than the Paramount bid.",
     "quote": "Netflix really is the 800-pound gorilla in Hollywood right now. It's the number one streamer by far. It's got the biggest market cap, and they're the party who the rest of Hollywood is freaked out about right now.",
     "quoteStartMs": 645742,
     "topics": [
-      "M&A",
-      "streaming",
+      "media consolidation",
       "antitrust",
-      "media consolidation"
+      "streaming",
+      "M&A"
     ],
     "attributionConfidence": "high"
   },
@@ -38,67 +39,20 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues WBD shareholders would be better served by Paramount's $108B all-in offer versus Netflix's lower bid for only the streaming/studio assets, and questions why the board chose Netflix.",
-    "quote": "I'm a little surprised actually that the Warner's board went with Netflix when they had Paramount as an option, assuming this Paramount offer was on the table because it seems like a better deal and it's probably a little bit more likely",
-    "quoteStartMs": 762277,
+    "sectorProxy": null,
+    "summary": "Sacks argues WBD shareholders would be better served by Paramount's higher all-cash offer for the whole company rather than the Netflix deal that leaves them stuck with the cable 'shit co' assets, expressing surprise the board chose Netflix.",
+    "quote": "I think if you're a shareholder in Warner's, you probably want to sell the whole thing. You don't want to just be stuck with the bad assets. So I'm a little surprised actually that the Warner's board went with Netflix when they had",
+    "quoteStartMs": 753137,
     "topics": [
       "M&A",
-      "shareholder value",
-      "media consolidation"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E254-wbd-Chamath-2",
-    "episodeId": "E254",
-    "episodeNumber": 254,
-    "episodeDate": "2025-12-13T02:31:00.000Z",
-    "company": "Warner Bros. Discovery",
-    "ticker": "WBD",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "bear",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Chamath argues that $100B+ assets like WBD are anchored to the past and that the shift to UGC and short-form video will erode the value of historic IP like WBD's Marvel and DC franchises even faster regardless of who acquires it.",
-    "quote": "If those trends accelerate, the value of historic IP is going to erode even faster, meaning this generation of kids will have no idea or care about the Marvel Cinematic Universe, about Star Wars.",
-    "quoteStartMs": 596000,
-    "topics": [
       "media consolidation",
-      "IP value",
-      "streaming",
-      "UGC"
+      "shareholder value",
+      "streaming"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E254-googl-Chamath-3",
-    "episodeId": "E254",
-    "episodeNumber": 254,
-    "episodeDate": "2025-12-13T02:31:00.000Z",
-    "company": "YouTube",
-    "ticker": "GOOGL",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Chamath identifies YouTube as the 800-pound gorilla in media, with UGC and short-form video being the future landscape that will not be affected by the Netflix/Paramount/WBD consolidation deals.",
-    "quote": "The future is unscripted, uncontrolled, user-generated content. You see it on YouTube. It is already the 800-pound gorilla in the space.",
-    "quoteStartMs": 579567,
-    "topics": [
-      "streaming",
-      "UGC",
-      "media competition"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E254-nyt-Jason-4",
+    "id": "E254-nyt-Jason-2",
     "episodeId": "E254",
     "episodeNumber": 254,
     "episodeDate": "2025-12-13T02:31:00.000Z",
@@ -111,13 +65,39 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Jason argues the New York Times has successfully navigated the digital transition, with 12 million paid subscribers making it the most successful news organization in America by objective metrics.",
+    "sectorProxy": null,
+    "summary": "Jason argues the New York Times has objectively figured out the digital subscription model better than any other news organization, now boasting 12 million paid subscribers and crushing it financially.",
     "quote": "They're also crushing it, by the way. When they move to subscriptions, they have 12 million paid subscribers now. They are objectively crushing it and figured it out better than any other news organization.",
-    "quoteStartMs": 1528000,
+    "quoteStartMs": 1525449,
     "topics": [
       "subscriptions",
-      "media business model",
-      "digital transition"
+      "digital media",
+      "revenue model"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E254-nyt-Chamath-3",
+    "episodeId": "E254",
+    "episodeNumber": 254,
+    "episodeDate": "2025-12-13T02:31:00.000Z",
+    "company": "New York Times",
+    "ticker": "NYT",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Chamath speculates the New York Times will commit an egregious libel or falsehood that results in a massive lawsuit, potentially forcing it into a nonprofit structure — effectively ending it as a going concern.",
+    "quote": "I think they will in the next 5 years do something so egregious and over the line, akin to some sort of libel or some sort of statement that it turned out to be completely false. They will get sued.",
+    "quoteStartMs": 1473304,
+    "topics": [
+      "media liability",
+      "legal risk",
+      "journalism"
     ],
     "attributionConfidence": "high"
   },
@@ -133,15 +113,15 @@
     "stance": "bull",
     "conviction": "high",
     "callType": "explicit_long",
-    "summary": "Tucker (Guest) reveals he is a longstanding personal buyer of physical gold (1-oz coins), buries it in his yard, and is now launching a business to sell gold near wholesale. He frames it as a proven hedge that 'turned out to be a pretty good route' despite mockery from finance peers.",
-    "quote": "I am personally a 1-ounce coin buyer of longstanding. Turned out to be a pretty good route, I would say. I was much mocked by everyone I know... And yeah, I do bury it in my yard because that's the kind of man I am.",
-    "quoteStartMs": 5602000,
+    "summary": "Tucker (Guest) reveals he is a long-standing physical gold buyer — specifically 1-ounce coins — and is now launching a business selling gold at near-wholesale prices. He says it has 'turned out to be a good thing' despite being mocked, and also endorses firewood and ammo as portfolio diversifiers.",
+    "quote": "I am personally a 1-ounce coin buyer of longstanding. Turned out to be a pretty good route, I would say. I was much mocked by everyone I know… And yeah, I do bury it in my yard because that's the kind of man I am.",
+    "quoteStartMs": 5604829,
     "topics": [
       "physical gold",
-      "store of value",
-      "hedge",
-      "retail gold market",
-      "gold scams"
+      "gold as hedge",
+      "gold retail",
+      "portfolio diversification",
+      "precious metals"
     ],
     "attributionConfidence": "high",
     "guestName": "Tucker Carlson"
@@ -158,13 +138,14 @@
     "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Chamath endorses gold as a practical hedge alongside crypto, praising Tucker's initiative to make physical gold accessible near wholesale prices.",
+    "summary": "Chamath endorses physical gold as a practical hedge, saying there are good reasons to own it alongside cryptocurrencies, and praises Tucker's near-wholesale gold retail venture.",
     "quote": "I do think that having this as a practical hedge, there's like a whole set of elements that we all have to be educated on to hedge the status quo. And there are lots of reasons to own cryptocurrencies, gold.",
     "quoteStartMs": 5682077,
     "topics": [
       "gold as hedge",
       "portfolio diversification",
-      "retail gold market"
+      "physical gold",
+      "retail gold"
     ],
     "attributionConfidence": "high"
   }

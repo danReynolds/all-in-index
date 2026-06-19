@@ -163,7 +163,7 @@ export function HoldingsTable({
                     return ds === "none" ? (
                       <span
                         className="text-neutral-500"
-                        title="No take on this name clears the scoring bar (medium+ conviction, verified speaker) — views shown on the holding page, nothing scored."
+                        title="Nothing they said here was a firm enough call to score — the view's on the company page, but it doesn't move the numbers."
                       >
                         —
                       </span>

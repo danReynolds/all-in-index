@@ -13,43 +13,20 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues OpenAI should IPO as quickly as possible to monetize its current lead, since first-mover advantage in AI may not persist to the 9th inning, and the company is strategically building an institutional ally base (NSA board member, dropping Elon's lawsuit) to entrench itself.",
+    "sectorProxy": null,
+    "summary": "Chamath argues OpenAI should IPO as quickly as possible to monetize their current lead, warning that early leaders in transformative tech cycles rarely end up as the ultimate winner, so securing the bag now is the smart strategic move.",
     "quote": "I think they should do it as quickly as possible. We are in the first inning of what should probably be an enormous tectonic shift in technology. And I think if anything, whoever wins in the first inning usually isn't the one that's",
     "quoteStartMs": 2621172,
     "topics": [
       "IPO",
       "AI competition",
-      "monetization",
-      "strategy"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E185-openai-Friedberg-1",
-    "episodeId": "E185",
-    "episodeNumber": 185,
-    "episodeDate": "2024-06-29T04:05:00.000Z",
-    "company": "OpenAI",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Friedberg",
-    "stance": "bear",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Friedberg is skeptical that the public can still capture the upside at OpenAI's likely IPO valuation, noting $3B in revenue against an $80B+ raise implies a ~$120B market cap where the big wave may already be priced in.",
-    "quote": "one could also argue that a company doing $3 billion in revenue getting an IPO done at $120 billion market cap, maybe the public already missed the big wave.",
-    "quoteStartMs": 2833252,
-    "topics": [
       "valuation",
-      "IPO",
-      "AI"
+      "monetization"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E185-openai-Sacks-2",
+    "id": "E185-openai-Sacks-1",
     "episodeId": "E185",
     "episodeNumber": 185,
     "episodeDate": "2024-06-29T04:05:00.000Z",
@@ -62,14 +39,40 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues OpenAI should convert to a standard C-corp, resolve equity issues with Elon and Sam, and IPO so the public can participate in the AI wave, comparing the opportunity to the dot-com era where some companies like Amazon and Google delivered enormous returns.",
-    "quote": "they should IPO so that the public actually has the ability to invest in this AI wave and ride this wave as, you know, the same way they did with the whole dot-com boom... Amazon, Google, and so on. And the public had the opportunity to",
-    "quoteStartMs": 2778036,
+    "sectorProxy": null,
+    "summary": "Sacks argues OpenAI should convert to a standard C-corp, fix its Byzantine cap table, compensate Sam and Elon appropriately, and IPO so the public can participate in the AI wave the same way they could in the dot-com boom.",
+    "quote": "They should make it a standard C-corp. They should make things right with Elon... They should make it right with Sam. He should get his CEO comp. And then they should IPO so that the public actually has the ability to invest in this AI",
+    "quoteStartMs": 2766977,
     "topics": [
       "IPO",
       "corporate structure",
       "AI",
-      "public markets"
+      "governance"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E185-openai-Friedberg-2",
+    "episodeId": "E185",
+    "episodeNumber": 185,
+    "episodeDate": "2024-06-29T04:05:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bear",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Friedberg is skeptical that the public can still capture significant upside from an OpenAI IPO, noting that at $3B in revenue and an ~$80B+ valuation, the big wave of value creation may have already passed.",
+    "quote": "A company doing $3 billion in revenue getting an IPO done at $120 billion market cap, maybe the public already missed the big wave.",
+    "quoteStartMs": 2834838,
+    "topics": [
+      "IPO",
+      "valuation",
+      "AI"
     ],
     "attributionConfidence": "high"
   },
@@ -87,13 +90,13 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks is not bullish on SSI because making safety a core mandate acts as a brake pedal, slowing the company down relative to better-resourced competitors like OpenAI and Google, creating a Darwinian disadvantage in the race to AGI.",
-    "quote": "I'm not bullish about that pitch. Because I think it, it makes the company a little bit schizophrenic... safety concerns are a brake pedal. They don't help you move faster, they make you move slower.",
+    "sectorProxy": null,
+    "summary": "Sacks is not bullish on SSI because its safety-first mandate is a brake pedal that will slow it down versus competitors like OpenAI and Google, making it structurally unable to win an AGI race.",
+    "quote": "I'm not bullish about that pitch. Because I think it, it makes the company a little bit schizophrenic. It's working at cross purposes with itself. On the one hand, you're a new company, which means you're behind. You've gotta catch up with ",
     "quoteStartMs": 3354488,
     "topics": [
       "AI safety",
       "competition",
-      "AGI race",
       "startups"
     ],
     "attributionConfidence": "high"
@@ -112,14 +115,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues SSI faces a fatal capital problem: as foundation model costs approach $100B by 2027, only hyperscalers (Google, Microsoft, Meta, Amazon, OpenAI) can compete, leaving well-funded but smaller AI startups unable to sustain the arms race.",
-    "quote": "the cost of a good functional model today is in the billions, but by 2027 it could easily approach $100 billion. The problem that that represents for Ilya's company... the reality is there isn't $100 billion for him to have.",
-    "quoteStartMs": 3604111,
+    "sectorProxy": null,
+    "summary": "Chamath argues SSI cannot compete because foundational model costs are heading toward $100B by 2027, and only hyperscalers like Google, Microsoft, Meta, and OpenAI can fund that arms race — SSI simply won't have the capital.",
+    "quote": "The problem that that represents for Ilya's company, and I wish him the best of luck, but the reality is there isn't $100 billion for him to have. Google will find it, Microsoft will find it, Facebook will find it.",
+    "quoteStartMs": 3610900,
     "topics": [
       "AI capex",
       "competition",
       "startups",
-      "foundation models"
+      "valuation"
     ],
     "attributionConfidence": "high"
   },
@@ -133,18 +137,45 @@
     "isPublic": true,
     "host": "Sacks",
     "stance": "neutral",
+    "conviction": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Sacks argues Microsoft's illegal bundling strategy — giving enterprise customers Teams effectively for free via Office bundles, then raising bundle prices after killing competition — harms the tech ecosystem and should be broken up by regulators into à la carte pricing.",
+    "quote": "When you have a monopoly in one product and you systematically use it to keep adding new products that again, on the margins appear to be free because you've bundled them... I do think that Microsoft will use the power of the bundle to",
+    "quoteStartMs": 3955000,
+    "topics": [
+      "antitrust",
+      "bundling",
+      "regulation",
+      "enterprise software"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E185-msft-Chamath-6",
+    "episodeId": "E185",
+    "episodeNumber": 185,
+    "episodeDate": "2024-06-29T04:05:00.000Z",
+    "company": "Microsoft",
+    "ticker": "MSFT",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Sacks argues Microsoft's bundling of Teams with Office is illegal anti-competitive conduct that regulators should stop, but frames this as a regulatory/conduct critique rather than a forward claim about Microsoft's investment value.",
-    "quote": "when you have a monopoly in one product and you systematically use it to keep adding new products that again, on the margins appear to be free because you've bundled them... I do think that Microsoft will use the power of the bundle to",
-    "quoteStartMs": 3956963,
+    "sectorProxy": null,
+    "summary": "Chamath argues Microsoft has used illegal bundling for 40 years to kill competitors and regulators need to dust off the old consent decree, noting the strategy directly cost Slack the chance to compete fairly and will stifle future software competition.",
+    "quote": "Microsoft has been bundling products to kill competitors for 40 years... What this comes down to is the FTC and the DOJ need to dust off that old consent decree, read it, and figure out whether this makes sense again.",
+    "quoteStartMs": 4092310,
     "topics": [
       "antitrust",
       "bundling",
-      "enterprise software",
-      "regulation"
+      "regulation",
+      "enterprise software"
     ],
     "attributionConfidence": "high"
   }

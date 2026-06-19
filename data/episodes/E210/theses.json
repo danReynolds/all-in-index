@@ -4,7 +4,7 @@
     "episodeId": "E210",
     "episodeNumber": 210,
     "episodeDate": "2025-01-11T01:41:00.000Z",
-    "company": "Meta",
+    "company": "Meta Platforms",
     "ticker": "META",
     "isPublic": true,
     "host": "Chamath",
@@ -13,13 +13,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath argues Meta's pivot away from censorship toward free speech is a smart, value-maximizing business decision for shareholders given the changed political environment under Trump.",
-    "quote": "I think it's the smart value-maximizing decision yet again for Facebook shareholders.",
-    "quoteStartMs": 4032000,
+    "sectorProxy": null,
+    "summary": "Chamath argues Zuckerberg's pivot to free speech and removal of fact-checkers is the value-maximizing decision for Meta shareholders given the new political winds under Trump, calling it a smart business move regardless of Zuckerberg's personal moral views.",
+    "quote": "I do think it's the smart value-maximizing decision yet again for Facebook shareholders.",
+    "quoteStartMs": 3969093,
     "topics": [
       "content moderation",
       "political risk",
-      "business strategy"
+      "free speech",
+      "valuation"
     ],
     "attributionConfidence": "high"
   },
@@ -37,14 +39,15 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Guest Sian Bowers-Franklin is very bullish on NVIDIA, believing AI demand is still in its early innings and the cloud GPU business remains strong, while the company is expanding into new areas like consumer AI hardware and robotics to grow into its valuation.",
+    "sectorProxy": null,
+    "summary": "Sian is very bullish on NVIDIA, arguing AI demand is nowhere near its ceiling and the music won't stop on GPU revenue, while their consumer and robotics moves help justify their valuation over the long run.",
     "quote": "I'm very bullish on NVIDIA. It is interesting. It's an interesting thing to go consumer.",
     "quoteStartMs": 4930379,
     "topics": [
-      "AI hardware",
-      "valuation",
+      "AI capex",
+      "GPU demand",
       "robotics",
-      "consumer expansion"
+      "valuation"
     ],
     "attributionConfidence": "high",
     "guestName": "Cyan Bowers-Franklin"
@@ -63,65 +66,42 @@
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Guest Sian Bowers-Franklin argues Tesla has a unique and unmatched Full Self-Drive data advantage that positions it to dominate the robotaxi market, and suggests it should acquire Uber to accelerate that opportunity.",
+    "sectorProxy": null,
+    "summary": "Sian is bullish on Tesla's long-term value, citing its unmatched Full Self-Drive data advantage over any other car company, and argues it should acquire Uber to dominate the robotaxi market.",
     "quote": "I don't think of a— there's one single car company out there that has the kind of data that Full Self-Drive has and Tesla has. Um, so if they enter the robo-taxi market, I actually think they should buy Uber.",
     "quoteStartMs": 4949067,
     "topics": [
       "autonomous vehicles",
       "robotaxi",
-      "competitive moat",
+      "data moat",
       "M&A"
     ],
     "attributionConfidence": "high",
     "guestName": "Cyan Bowers-Franklin"
   },
   {
-    "id": "E210-tsla-Chamath-3",
+    "id": "E210-waymo-Chamath-3",
     "episodeId": "E210",
     "episodeNumber": 210,
     "episodeDate": "2025-01-11T01:41:00.000Z",
-    "company": "Tesla",
-    "ticker": "TSLA",
-    "isPublic": true,
+    "company": "Waymo",
+    "ticker": null,
+    "isPublic": false,
     "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
-    "summary": "Chamath believes Waymo and Tesla will dominate the autonomous vehicle market and run away from competitors, forcing consolidation among traditional auto OEMs.",
+    "sectorProxy": null,
+    "summary": "Chamath believes Waymo and Tesla will run away with the autonomous vehicle market and force consolidation among traditional auto OEMs.",
     "quote": "I think that Waymo and Tesla are going to run away with this market, and I think it's going to force a bunch of consolidation in the traditional auto OEMs.",
     "quoteStartMs": 5092112,
     "topics": [
       "autonomous vehicles",
-      "competitive position",
-      "market consolidation"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E210-uber-Guest-4",
-    "episodeId": "E210",
-    "episodeNumber": 210,
-    "episodeDate": "2025-01-11T01:41:00.000Z",
-    "company": "Uber",
-    "ticker": "UBER",
-    "isPublic": true,
-    "host": "Guest",
-    "stance": "neutral",
-    "conviction": "low",
-    "callType": "view",
-    "excludeReason": "not_investment_call",
-    "scoreNote": "Framed as a strategic suggestion for Tesla to acquire Uber, not a direct investment call on Uber equity.",
-    "summary": "Guest Sian Bowers-Franklin suggests Uber is an attractive acquisition target for Tesla, as combining Tesla's robotaxi capability with Uber's global ride-hailing network would create a dominant player in the autonomous transport market.",
-    "quote": "I actually think they should buy Uber. Then it's kind of— Oh yeah, I think they should buy Uber.",
-    "quoteStartMs": 4959790,
-    "topics": [
-      "M&A",
-      "autonomous vehicles",
+      "competitive dynamics",
       "robotaxi"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Cyan Bowers-Franklin"
+    "attributionConfidence": "high"
   }
 ]

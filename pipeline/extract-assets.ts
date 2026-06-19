@@ -2,7 +2,6 @@ import { z } from "zod";
 import { callTool } from "./llm";
 import { verifyTheses } from "./verify";
 import { store } from "./store";
-import { normalizeScoreNotes, repairCallTypesFromQuote } from "./extract";
 import { dedupeOverlappingTheses, repairQuoteOwnership, snapQuoteTimestamps, stampAttribution } from "./run-episode";
 import { ASSETS } from "../lib/assets";
 import { REGULAR_HOSTS } from "../lib/types";
@@ -170,9 +169,9 @@ export async function extractAssets(onlyIds?: string[]): Promise<void> {
         }
       }
       // Route commodity takes through the SAME adversarial gate as company takes:
-      // drop passing mentions, neutralize non-directional views, repair weak quotes.
-      // (This is why a separate audit-commodity-stance pass is no longer needed.)
-      const verified = normalizeScoreNotes(repairCallTypesFromQuote(await verifyTheses({ id: epId, title: ep?.title ?? "" } as Episode, newTakes, tr)));
+      // drop passing mentions, neutralize non-directional views, repair weak
+      // quotes, and judge scoreability (callType) — all in the verify LLM pass.
+      const verified = await verifyTheses({ id: epId, title: ep?.title ?? "" } as Episode, newTakes, tr);
       for (const t of verified) {
         for (let i = theses.length - 1; i >= 0; i--) {
           if (theses[i].company === t.company && theses[i].host === t.host) {

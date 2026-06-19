@@ -8,42 +8,20 @@
     "ticker": "TSLA",
     "isPublic": true,
     "host": "Chamath",
-    "stance": "bull",
+    "stance": "neutral",
     "conviction": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Chamath visited Tesla, was impressed by Dojo and Optimus teams and Elon's leadership in action, and explicitly said investors should not sleep on the company.",
-    "quote": "I saw Elon on Tuesday and I got to spend a couple hours with him at Tesla... What they're doing was amazing... And I would not be sleeping on this company is what I would say.",
-    "quoteStartMs": 5093830,
+    "scoreNote": "Not scored: Chamath's 'I would not be sleeping on this company' is motivational framing/beneficiary language, not an explicit economic direction claim. He praises Elon's leadership and the teams he observed, but makes no specific claim about Tesla's revenue, margins, valuation, or competitive trajectory improving. No explicit long position or directional economic claim exists anywhere in the transcript for Tesla. The callType must be 'view' as a neutralized stance cannot be a scored call.",
+    "sectorProxy": null,
+    "summary": "Chamath visited Tesla, was impressed by the Dojo and Optimus teams and Elon's leadership, and explicitly says investors should not sleep on the company.",
+    "quote": "I would not be sleeping on this company is what I would say.",
+    "quoteStartMs": 5148429,
     "topics": [
-      "AI/robotics",
+      "Optimus",
+      "Dojo",
       "management",
-      "competitive position"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E231-axp-Chamath-1",
-    "episodeId": "E231",
-    "episodeNumber": 231,
-    "episodeDate": "2025-06-13T19:55:00.000Z",
-    "company": "American Express",
-    "ticker": "AXP",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "neutral",
-    "conviction": "low",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "summary": "Chamath criticized American Express as 'trash' with poor customer intelligence, contrasting it unfavorably with Robinhood's Gold Card, implying the company is losing ground in premium credit.",
-    "quote": "I shat on American Express because I think they're just trash... They have no idea who anybody is.",
-    "quoteStartMs": 6024000,
-    "topics": [
-      "consumer credit",
-      "competitive position",
-      "product"
+      "valuation"
     ],
     "attributionConfidence": "high"
   },
@@ -59,40 +37,16 @@
     "stance": "neutral",
     "conviction": "medium",
     "callType": "view",
-    "summary": "Chamath warns that a war with Iran could cause oil to double, referencing $100-$112/barrel as a plausible and damaging outcome, framing it as a major risk to the global economy and inflation.",
+    "summary": "Chamath warns that a military conflict with Iran could cause oil to double — reaching $100-$112/barrel — devastating the global economy and inflation. He frames this as a reason to avoid war, implying the oil price spike risk is real and significant.",
     "quote": "you could see oil double, double. What happens to the economy of the world, of world GDP, of everything, of inflation if you have oil at $100 a barrel, $112 a barrel? It's not good.",
     "quoteStartMs": 5723144,
     "topics": [
-      "Iran",
-      "geopolitical risk",
-      "inflation",
-      "war escalation",
-      "energy prices"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E231-uso-Guest-a1",
-    "episodeId": "E231",
-    "episodeNumber": 231,
-    "episodeDate": "2025-06-13T19:55:00.000Z",
-    "company": "Oil",
-    "ticker": "USO",
-    "isPublic": true,
-    "host": "Guest",
-    "stance": "bull",
-    "conviction": "low",
-    "callType": "view",
-    "summary": "Tucker Carlson flags that Iranian conventional weapons could damage energy production in countries the US relies on, implying upside risk to oil prices from a military engagement with Iran.",
-    "quote": "Their conventional weapons are fearsome and could do great damage to our allies, to Israel, and to American assets in that area, and also to energy production in countries that we rely on.",
-    "quoteStartMs": 5483763,
-    "topics": [
       "Iran conflict",
       "geopolitical risk",
-      "energy supply disruption",
+      "energy prices",
+      "inflation",
       "Middle East escalation"
     ],
-    "attributionConfidence": "high",
-    "guestName": "Tucker Carlson"
+    "attributionConfidence": "high"
   }
 ]
