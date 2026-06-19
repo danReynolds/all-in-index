@@ -212,7 +212,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
           </h2>
           <div className="mb-4">
             <Explainer summary="How this portfolio is scored">
-              {`We put $1,000 into each name the day ${host} called it — a buy, a ranked pick, or a short — and hold until they back off, then compare to putting the same money in the S&P over the exact same stretch. Just talking about a stock never counts. Click any marker for the call behind it.`}
+              {`We put $1,000 into each name the day ${host} turned bullish or bearish on it as a real call — a clear take, a ranked pick, a short — and hold until they back off, then compare to putting the same money in the S&P over the exact same stretch. Just talking about a stock never counts. Click any marker for the call behind it.`}
             </Explainer>
           </div>
           <p className="mb-4 text-sm text-neutral-400">
