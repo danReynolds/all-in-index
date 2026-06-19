@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { callTool } from "./llm";
+import { callTool, type CallToolArgs } from "./llm";
 import { isQuoteVerbatim, trimPublishedQuote } from "../lib/quotes";
 import type { Episode, Thesis, Transcript } from "../lib/types";
 
@@ -102,33 +102,55 @@ export async function verifyTheses(
   theses: Thesis[],
   transcript: Transcript,
 ): Promise<Thesis[]> {
-  if (theses.length === 0) return theses;
-
-  const lines = theses.map(
-    (t, i) =>
-      `[${i}] host=${t.host} company=${t.company} stance=${t.stance} conviction=${t.conviction} callType=${t.callType}\n     quote: "${t.quote}"\n     summary: ${t.summary}`,
-  );
-
+  const args = verifyArgs(ep, theses, transcript);
+  if (!args) return theses;
   // Verify is a best-effort backstop: if the audit call fails (a malformed
   // verdict the validator rejects, or a transient API error), keep the takes
   // unverified rather than crash the extraction that depends on it.
-  let verdicts: z.infer<typeof VerdictSchema>["verdicts"];
+  let result: z.infer<typeof VerdictSchema>;
   try {
-    ({ verdicts } = await callTool({
-      system: SYSTEM,
-      user:
-        `Episode ${ep.id} — "${ep.title}".\n\nFULL TRANSCRIPT:\n\n${formatTranscript(transcript)}\n\n` +
-        `=== ${theses.length} EXTRACTED THESES TO AUDIT ===\n\n${lines.join("\n\n")}`,
-      toolName: "submit_verdicts",
-      toolDescription: "Submit one keep/fix_quote/neutralize/drop verdict per thesis index.",
-      inputSchema: INPUT_SCHEMA,
-      validate: VerdictSchema,
-      maxTokens: 4096,
-    }));
+    result = await callTool(args);
   } catch (e) {
     console.warn(`  ⚠ verify skipped for ${ep.id} (${e instanceof Error ? e.message.slice(0, 80) : e}) — keeping ${theses.length} takes unverified`);
     return theses;
   }
+  return applyVerdicts(theses, transcript, result.verdicts);
+}
+
+/** The verify tool-call args for one episode — shared by the sync and batch paths. */
+export function verifyArgs(
+  ep: Episode,
+  theses: Thesis[],
+  transcript: Transcript,
+): CallToolArgs<z.infer<typeof VerdictSchema>> | null {
+  if (theses.length === 0) return null;
+  const lines = theses.map(
+    (t, i) =>
+      `[${i}] host=${t.host} company=${t.company} stance=${t.stance} conviction=${t.conviction} callType=${t.callType}\n     quote: "${t.quote}"\n     summary: ${t.summary}`,
+  );
+  return {
+    system: SYSTEM,
+    user:
+      `Episode ${ep.id} — "${ep.title}".\n\nFULL TRANSCRIPT:\n\n${formatTranscript(transcript)}\n\n` +
+      `=== ${theses.length} EXTRACTED THESES TO AUDIT ===\n\n${lines.join("\n\n")}`,
+    toolName: "submit_verdicts",
+    toolDescription: "Submit one keep/fix_quote/neutralize/drop verdict per thesis index.",
+    inputSchema: INPUT_SCHEMA,
+    validate: VerdictSchema,
+    maxTokens: 4096,
+  };
+}
+
+/**
+ * Apply the auditor's verdicts to the raw theses — drop / neutralize / repair
+ * quote (validated verbatim against the host's own lines) / set final callType.
+ * Pure; no LLM call, so the batch path can apply verdicts collected from a batch.
+ */
+export function applyVerdicts(
+  theses: Thesis[],
+  transcript: Transcript,
+  verdicts: z.infer<typeof VerdictSchema>["verdicts"],
+): Thesis[] {
 
   // Per-speaker haystacks for validating a replacement quote: a fix_quote must
   // be verbatim in the ATTRIBUTED HOST's own lines, never another speaker's —

@@ -1,10 +1,12 @@
 import { fetchFeed } from "./rss";
 import { dedupeOverlappingTheses, processEpisode, repairQuoteOwnership, stampAttribution, snapQuoteTimestamps } from "./run-episode";
-import { extractTheses } from "./extract";
+import { extractTheses, extractArgs, mapExtraction } from "./extract";
+import { verifyArgs, applyVerdicts } from "./verify";
+import { callToolBatch } from "./llm";
 import { nameSpeakers } from "./speakers";
 import { buildIndex } from "./build-index";
 import { store } from "./store";
-import type { Episode } from "../lib/types";
+import type { Episode, Thesis } from "../lib/types";
 
 /**
  * Re-run the (title-primed) speaker-naming pass across all cached episodes.
@@ -126,6 +128,75 @@ export async function reextractAll(
         // sequence or they silently vanish from the site (empty Guesties
         // leaderboard, missing commodity holdings).
         "✓ re-extraction complete — now run: extract-assets → name-guests → build-index.",
+  );
+  return failed;
+}
+
+/**
+ * Batch-API re-extraction: identical model/prompts/post-processing as
+ * reextractAll, but the two LLM passes run through the Message Batches API (50%
+ * cheaper, processed async). Phase 1 submits every episode's extract call as one
+ * batch; phase 2 submits every episode's verify call as a second batch (verify
+ * depends on phase-1 output); then the deterministic chain (repair → snap →
+ * stamp → dedupe) runs locally per episode, exactly as the sync path does.
+ * Returns the ids that failed (extract error/empty), retryable via --pending.
+ */
+export async function reextractAllBatched(onlyIds?: string[]): Promise<string[]> {
+  const all = store.listEpisodeIds();
+  const ids = (onlyIds ? all.filter((id) => onlyIds.includes(id)) : all).filter(
+    (id) => store.loadEpisode(id) && store.loadTranscript(id),
+  );
+  console.log(`Re-extracting ${ids.length} episodes via Message Batches (50% cost, async)…`);
+  const failed: string[] = [];
+
+  // Phase 1 — extract (one batched request per episode).
+  const extractResults = await callToolBatch(
+    ids.map((id) => ({ customId: id, args: extractArgs(store.loadEpisode(id)!, store.loadTranscript(id)!) })),
+    { label: "extract" },
+  );
+  const raw = new Map<string, Thesis[]>();
+  for (const id of ids) {
+    const r = extractResults.get(id);
+    if (r?.ok) raw.set(id, mapExtraction(store.loadEpisode(id)!, r.value));
+    else {
+      console.error(`[${id}] extract failed: ${r && !r.ok ? r.error : "no result"}`);
+      failed.push(id);
+    }
+  }
+
+  // Phase 2 — verify (skip episodes that extracted nothing).
+  const verifyItems = [...raw.entries()].flatMap(([id, theses]) => {
+    const args = verifyArgs(store.loadEpisode(id)!, theses, store.loadTranscript(id)!);
+    return args ? [{ customId: id, args }] : [];
+  });
+  const verifyResults = await callToolBatch(verifyItems, { label: "verify" });
+
+  // Phase 3 — apply verdicts + deterministic chain + save, per episode.
+  let saved = 0;
+  for (const [id, rawTheses] of raw) {
+    const tr = store.loadTranscript(id)!;
+    let verified = rawTheses;
+    const vr = verifyResults.get(id);
+    if (vr?.ok) verified = applyVerdicts(rawTheses, tr, vr.value.verdicts);
+    else if (verifyItems.some((v) => v.customId === id)) {
+      console.warn(`  ⚠ verify failed for ${id} (${vr && !vr.ok ? vr.error : "no result"}) — keeping ${rawTheses.length} unverified`);
+    }
+    const theses = dedupeOverlappingTheses(
+      stampAttribution(snapQuoteTimestamps(repairQuoteOwnership(verified, tr), tr), tr),
+    );
+    // Same guard as the sync path: never let a transient empty pass wipe takes.
+    const prior = store.loadTheses(id).length;
+    if (theses.length === 0 && prior > 0) {
+      console.error(`[${id}] FAILED: 0 takes but episode had ${prior} — not overwriting.`);
+      failed.push(id);
+      continue;
+    }
+    store.saveTheses(id, theses);
+    saved++;
+  }
+  console.log(
+    `✓ batch re-extraction complete — saved ${saved}, ${failed.length} failed. ` +
+      `Now run: extract-assets → name-guests → build-index.`,
   );
   return failed;
 }

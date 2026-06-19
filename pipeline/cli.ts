@@ -83,10 +83,13 @@ async function main() {
       return buildFundOnly();
     }
     case "reextract": {
-      const { reextractAll } = await import("./sync");
+      const { reextractAll, reextractAllBatched } = await import("./sync");
       const fs = await import("node:fs");
       const PENDING_FILE = "data/.reextract-pending.json";
       const pendingMode = rest.includes("--pending");
+      // --batch routes the two LLM passes through the Message Batches API
+      // (50% cheaper, async) instead of the synchronous concurrency pool.
+      const batchMode = rest.includes("--batch");
       const onlyIdx = rest.indexOf("--only");
       const explicitOnly = onlyIdx >= 0
         ? rest[onlyIdx + 1]?.split(",").map((s) => s.trim()).filter(Boolean)
@@ -101,7 +104,9 @@ async function main() {
         console.log("Nothing pending — all episodes are on the current extraction rules.");
         return;
       }
-      const failed = await reextractAll(5, onlyIds);
+      const failed = batchMode
+        ? await reextractAllBatched(onlyIds)
+        : await reextractAll(5, onlyIds);
       // Persist the failure list so a retry only re-pays for what's missing.
       fs.writeFileSync(PENDING_FILE, JSON.stringify(failed, null, 2) + "\n");
       if (pendingMode && failed.length === 0) {
