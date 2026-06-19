@@ -10,9 +10,9 @@ import { dedupeOverlappingTheses, repairQuoteOwnership, snapQuoteTimestamps, sta
 import type { IndexSnapshot, Transcript } from "../lib/types";
 import {
   BESTIES,
-  currentBullEntryDate,
-  currentBullHosts,
-  isCurrentNetBull,
+  hasCurrentLong,
+  currentLongEntryDate,
+  currentLongHosts,
 } from "../pipeline/index-fund";
 import type { Holding, Host, Stance, Thesis } from "../lib/types";
 
@@ -69,19 +69,28 @@ test("current net bull uses each host's latest scored take, not all historical t
   ];
 
   assert.equal(currentStanceForHosts(takes, hosts), "mixed");
-  assert.equal(isCurrentNetBull(takes, BESTIES), false);
 });
 
-test("current bull entry date is when the current bullish stance was adopted", () => {
+test("the index holds a name from its open long CALL and ignores bullish views", () => {
   const h = holding([
-    thesis("Chamath", "bull", "2025-01-01T00:00:00.000Z"),
-    thesis("Sacks", "bear", "2025-02-01T00:00:00.000Z"),
-    thesis("Jason", "bull", "2025-03-01T00:00:00.000Z"),
+    thesis("Sacks", "bull", "2025-01-01T00:00:00.000Z", { callType: "explicit_long" }),
+    thesis("Jason", "bull", "2025-02-01T00:00:00.000Z", { callType: "view" }),
+    thesis("Chamath", "bull", "2025-03-01T00:00:00.000Z", { callType: "explicit_long" }),
   ]);
 
-  assert.equal(isCurrentNetBull(h.theses, BESTIES), true);
-  assert.equal(currentBullEntryDate(h, BESTIES), "2025-03-01");
-  assert.deepEqual(currentBullHosts(h, BESTIES).sort(), ["Chamath", "Jason"]);
+  assert.equal(hasCurrentLong(h.theses, BESTIES), true);
+  // entry = the EARLIEST still-open long call, never a later bullish view
+  assert.equal(currentLongEntryDate(h, BESTIES), "2025-01-01");
+  // the view-only host (Jason) is not a holder — only the actual longs are
+  assert.deepEqual(currentLongHosts(h, BESTIES).sort(), ["Chamath", "Sacks"]);
+});
+
+test("a host who flips out of their long no longer holds it (no open long window)", () => {
+  const h = holding([
+    thesis("Chamath", "bull", "2025-01-01T00:00:00.000Z", { callType: "explicit_long" }),
+    thesis("Chamath", "bear", "2025-04-01T00:00:00.000Z", { callType: "explicit_short" }),
+  ]);
+  assert.equal(hasCurrentLong(h.theses, BESTIES), false);
 });
 
 test("published quotes are trimmed to a verbatim prefix", () => {

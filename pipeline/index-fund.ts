@@ -1,8 +1,5 @@
 import { fetchDailyHistory } from "./market";
 import {
-  currentStanceForHosts,
-  stancePath,
-  scoredTakes,
   hostExposureWindows,
   type ExposureWindow,
 } from "../lib/calls";
@@ -21,6 +18,7 @@ import type {
   IndexFundPoint,
   Host,
   Thesis,
+  TradeDirection,
 } from "../lib/types";
 
 const BENCHMARK = "SPY";
@@ -46,9 +44,37 @@ function hostList(hostSet: Set<Host>): Host[] {
   return [...hostSet];
 }
 
-/** True only when the relevant hosts' latest scored takes are net-bullish. */
-export function isCurrentNetBull(theses: Holding["theses"], hostSet: Set<Host>): boolean {
-  return currentStanceForHosts(theses, hostList(hostSet)) === "bull";
+/**
+ * Currently-open exposure of one direction across the host set, aggregated to
+ * the name. Built ONLY from scored calls (hostExposureWindows ignores views), so
+ * a bullish *view* never makes a name a constituent — only an actual long/short
+ * call does. `start` is the earliest still-open window across the besties (the
+ * date the position the index holds today was opened); a host who exits or flips
+ * has a closed window and no longer contributes. This is the call-based
+ * replacement for net-stance membership. A genuinely split name (one host long,
+ * another short) surfaces on BOTH books — long here, short in the Bear Book.
+ */
+function openExposure(
+  theses: Holding["theses"],
+  hostSet: Set<Host>,
+  direction: TradeDirection,
+): { start: string; hosts: Host[] } | null {
+  let start: string | null = null;
+  const hosts = new Set<Host>();
+  for (const host of hostList(hostSet)) {
+    for (const w of hostExposureWindows(theses, host)) {
+      if (w.direction === direction && w.end === null) {
+        hosts.add(host);
+        if (start === null || w.start < start) start = w.start;
+      }
+    }
+  }
+  return start ? { start, hosts: [...hosts] } : null;
+}
+
+/** A name the host set currently holds long (≥1 open long call-window). */
+export function hasCurrentLong(theses: Holding["theses"], hostSet: Set<Host>): boolean {
+  return openExposure(theses, hostSet, "long") != null;
 }
 
 /** A date-indexed price series with as-of (forward-filled) lookup. */
@@ -88,44 +114,26 @@ class Series {
   }
 }
 
-/** Bull takes that actually score: in the host set, conviction + attribution OK. */
-function scoredBulls(h: Holding, hostSet: Set<Host>) {
-  return h.theses.filter(
-    (t) => t.stance === "bull" && hostSet.has(t.host) && takeScores(t),
-  );
-}
-
-
-
 /**
- * The Bear Book: every tradable name the table is CURRENTLY net-bearish on,
- * scored as a short entered when that bear stance was adopted (the last time
- * the net direction flipped to bearish — not the first bear take ever, which
- * misjudges names the view evolved on). Sorted worst-call-first.
+ * The Bear Book: every tradable name the besties currently hold a SHORT call on
+ * — an explicit short or the short leg of a pair — scored from when that short
+ * was opened (the still-open short window's start). Call-based, like the index:
+ * a bearish *view* is commentary and never shorts anything. Sorted worst-first.
  */
 export async function buildBearBook(
   holdings: Holding[],
   hostSet: Set<Host> = BESTIES,
 ): Promise<BearCall[]> {
-  const bearish = holdings
-    .filter(isTradableCompanyExposure)
-    .filter((h) => currentStanceForHosts(h.theses, hostList(hostSet)) === "bear");
   const out: BearCall[] = [];
-  for (const h of bearish) {
-    const path = stancePath(h.theses, hostList(hostSet));
-    if (path.length === 0 || path[path.length - 1].dir !== -1) continue;
-    const entryWanted = path[path.length - 1].date;
-    const hist = await fetchDailyHistory(h.ticker, entryWanted);
+  for (const h of holdings.filter(isTradableCompanyExposure)) {
+    const short = openExposure(h.theses, hostSet, "short");
+    if (!short) continue;
+    const hist = await fetchDailyHistory(h.ticker, short.start);
     if (!hist) continue;
     const series = new Series(hist);
-    const entry = series.onOrAfter(entryWanted);
+    const entry = series.onOrAfter(short.start);
     if (!entry) continue;
-    // Hosts whose LATEST scored take is bearish — the ones holding the position.
-    const latest = new Map<Host, string>();
-    for (const t of scoredTakes(h.theses, hostList(hostSet))) latest.set(t.host, t.stance);
-    const bearHosts = [...latest.entries()]
-      .filter(([, s]) => s === "bear")
-      .map(([host]) => host);
+    const bearHosts = short.hosts;
     out.push({
       slug: h.slug,
       company: h.company,
@@ -355,20 +363,14 @@ export async function buildWindowFund(
   };
 }
 
-export function currentBullEntryDate(h: Holding, hostSet: Set<Host>): string {
-  const path = stancePath(h.theses, hostList(hostSet));
-  const latest = path[path.length - 1];
-  if (latest?.dir === 1) return latest.date;
-  const bullDates = scoredBulls(h, hostSet).map((t) => t.episodeDate).sort();
-  return (bullDates[0] ?? h.firstMentioned).slice(0, 10);
+/** Entry for the current long: the earliest still-open long call-window start. */
+export function currentLongEntryDate(h: Holding, hostSet: Set<Host>): string {
+  return openExposure(h.theses, hostSet, "long")?.start ?? h.firstMentioned.slice(0, 10);
 }
 
-export function currentBullHosts(h: Holding, hostSet: Set<Host>): Host[] {
-  const latest = new Map<Host, string>();
-  for (const t of scoredTakes(h.theses, hostList(hostSet))) latest.set(t.host, t.stance);
-  return [...latest.entries()]
-    .filter(([, stance]) => stance === "bull")
-    .map(([host]) => host);
+/** Hosts currently holding an open long on the name. */
+export function currentLongHosts(h: Holding, hostSet: Set<Host>): Host[] {
+  return openExposure(h.theses, hostSet, "long")?.hosts ?? [];
 }
 
 function downsample(points: IndexFundPoint[], max = 90): IndexFundPoint[] {
@@ -382,10 +384,11 @@ function downsample(points: IndexFundPoint[], max = 90): IndexFundPoint[] {
 }
 
 /**
- * Construct the equal-weight long index from net-bullish public holdings:
- * $CONTRIBUTION is notionally invested in each at its (first bullish) call-date
- * close and held to today; the benchmark receives the identical contributions
- * on the identical dates. Returns null if there are no tradable bullish calls.
+ * Construct the equal-weight long index from the names the besties currently
+ * hold a LONG CALL on (an open long window — not net sentiment, so bullish
+ * views never enter): $CONTRIBUTION is notionally invested in each at its
+ * open-long-window-start close and held to today; the benchmark receives the
+ * identical contributions on the identical dates. Returns null if none.
  */
 export async function buildIndexFund(
   holdings: Holding[],
@@ -394,14 +397,14 @@ export async function buildIndexFund(
 ): Promise<IndexFund | null> {
   const bullish = holdings
     .filter(isTradableCompanyExposure)
-    .filter((h) => isCurrentNetBull(h.theses, hostSet));
+    .filter((h) => hasCurrentLong(h.theses, hostSet));
   const excludedPrivate = holdings
-    .filter((h) => (!h.ticker || isGoingPrivate(h.ticker)) && isCurrentNetBull(h.theses, hostSet))
+    .filter((h) => (!h.ticker || isGoingPrivate(h.ticker)) && hasCurrentLong(h.theses, hostSet))
     .sort((a, b) => b.mentionCount - a.mentionCount)
     .map((h) => ({
       slug: h.slug,
       company: h.company,
-      hosts: currentBullHosts(h, hostSet),
+      hosts: currentLongHosts(h, hostSet),
       kind: isGoingPrivate(h.ticker) ? "going_private" : classifyExcluded(h.company),
     }))
     .filter((e): e is typeof e & { kind: ExcludedKind } => e.kind !== null);
@@ -410,7 +413,7 @@ export async function buildIndexFund(
   if (bullish.length === 0) return null;
 
   const inception = bullish
-    .map((h) => currentBullEntryDate(h, hostSet))
+    .map((h) => currentLongEntryDate(h, hostSet))
     .sort()[0];
 
   // Benchmark series defines the trading calendar.
@@ -433,7 +436,7 @@ export async function buildIndexFund(
     const hist = await fetchDailyHistory(h.ticker, inception);
     if (!hist) continue;
     const series = new Series(hist);
-    const wanted = currentBullEntryDate(h, hostSet);
+    const wanted = currentLongEntryDate(h, hostSet);
     const entry = series.onOrAfter(wanted);
     const spyEntryPt = spy.onOrAfter(wanted);
     if (!entry || !spyEntryPt) continue;
@@ -502,12 +505,12 @@ export async function buildIndexFund(
       const latest = c.series.last;
       const sinceReturn = latest / c.entryPrice - 1;
       const benchReturn = spy.last / c.spyEntry - 1;
-      const hosts = currentBullHosts(c.h, hostSet);
+      const hosts = currentLongHosts(c.h, hostSet);
       const direction: IndexDirection = "long";
       const callTypes = [
         ...new Set(
           c.h.theses
-            .filter((t) => hosts.includes(t.host) && t.stance === "bull")
+            .filter((t) => hosts.includes(t.host) && t.stance === "bull" && t.callType !== "view")
             .map((t) => t.callType)
             .filter((callType): callType is CallType => callType != null),
         ),
