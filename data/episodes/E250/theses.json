@@ -1,30 +1,5 @@
 [
   {
-    "id": "E250-openai-Chamath-0",
-    "episodeId": "E250",
-    "episodeNumber": 250,
-    "episodeDate": "2025-11-07T20:36:00.000Z",
-    "company": "OpenAI",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Chamath",
-    "stance": "bull",
-    "conviction": "high",
-    "callType": "explicit_long",
-    "excludeReason": null,
-    "scoreNote": "Gerstner explicitly states he owns shares and wants to buy more; cites $20B run rate and steep growth as evidence.",
-    "sectorProxy": null,
-    "summary": "Brad Gerstner is bullish on OpenAI, citing a $20B forward revenue run rate, steep growth trajectory, and dominant consumer retention cohorts; he owns shares and wants to buy more, viewing the AI capex concerns as a misunderstood tempest-in-a-teapot.",
-    "quote": "He knows that I don't want to sell my shares. He knows that I would like to buy more shares in the company",
-    "quoteStartMs": 204976,
-    "topics": [
-      "revenue growth",
-      "AI capex",
-      "valuation"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
     "id": "E250-openai-Chamath-1",
     "episodeId": "E250",
     "episodeNumber": 250,

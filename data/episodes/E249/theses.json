@@ -1,32 +1,5 @@
 [
   {
-    "id": "E249-tsla-Guest-0",
-    "episodeId": "E249",
-    "episodeNumber": 249,
-    "episodeDate": "2025-10-31T20:11:00.000Z",
-    "company": "Tesla",
-    "ticker": "TSLA",
-    "isPublic": true,
-    "host": "Guest",
-    "stance": "neutral",
-    "conviction": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "sectorProxy": null,
-    "summary": "Elon Musk argues Tesla is not just a car company but a uniquely complex, multi-product business encompassing batteries, autonomy, Optimus robots, and a coming fleet of millions of CyberCabs, making it irreplaceable and unsuited for any other leader.",
-    "quote": "all of the cars we make right now are capable of being a robotaxi... all of the cars we make are capable of on supervised full autonomy... I think ultimately we'll make millions of CyberCabs per year. But, but it is important to emphasize t",
-    "quoteStartMs": 3639249,
-    "topics": [
-      "robotaxi",
-      "autonomy",
-      "Optimus",
-      "product roadmap"
-    ],
-    "attributionConfidence": "high",
-    "guestName": "Elon Musk"
-  },
-  {
     "id": "E249-tsla-Guest-1",
     "episodeId": "E249",
     "episodeNumber": 249,

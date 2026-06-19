@@ -146,10 +146,10 @@ function overlapsSameCall(a: Thesis, b: Thesis): boolean {
   if (!sameExposure(a, b)) return false;
   // Two directionally-opposite remarks are distinct calls, never a duplicate.
   if (opposedStance(a.stance, b.stance)) return false;
-  if (a.quoteStartMs != null && b.quoteStartMs != null && Math.abs(a.quoteStartMs - b.quoteStartMs) <= 5_000) {
-    return true;
-  }
-  return quoteMatches(a.quote, b.quote) || quoteMatches(b.quote, a.quote);
+  // Same episode, same host, same exposure, same direction → one call, however
+  // far apart the two mentions sit. Restating "I'm long OpenAI" 30 minutes later
+  // is the same position, not a second one; keep the stronger-ranked row.
+  return true;
 }
 
 function thesisRank(t: Thesis): number {

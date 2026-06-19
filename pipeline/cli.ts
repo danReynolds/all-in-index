@@ -182,15 +182,21 @@ async function main() {
       // Deterministic, no-LLM repair over existing theses: handoff-aware quote
       // ownership, re-snap timestamps, re-stamp confidence, and demote any
       // non-verbatim scored quote. Run after upgrade-quotes; build-index after.
-      const { repairQuoteOwnership, snapQuoteTimestamps, stampAttribution, enforceVerbatimQuotes } =
-        await import("./run-episode");
+      const {
+        repairQuoteOwnership,
+        snapQuoteTimestamps,
+        stampAttribution,
+        enforceVerbatimQuotes,
+        dedupeOverlappingTheses,
+      } = await import("./run-episode");
       const { store } = await import("./store");
       let moved = 0;
       let demoted = 0;
+      let merged = 0;
       for (const id of store.listEpisodeIds()) {
         const tr = store.loadTranscript(id);
         if (!tr) continue;
-        const theses = store.loadTheses(id);
+        let theses = store.loadTheses(id);
         // Capture by index — repairQuoteOwnership rewrites the id on re-attribution.
         const beforeHost = theses.map((t) => t.host);
         const beforeConf = theses.map((t) => t.attributionConfidence);
@@ -205,9 +211,14 @@ async function main() {
           }
           if (beforeConf[i] !== "low" && t.attributionConfidence === "low") demoted++;
         });
+        // Re-attribution and timestamp snapping can newly collapse two rows onto
+        // the same exposure (e.g. a restated long), so dedupe last.
+        const beforeCount = theses.length;
+        theses = dedupeOverlappingTheses(theses);
+        merged += beforeCount - theses.length;
         store.saveTheses(id, theses);
       }
-      console.log(`\n✓ re-attributed ${moved} takes (handoff merges), demoted ${demoted} non-verbatim scored quotes. Run build-index next.`);
+      console.log(`\n✓ re-attributed ${moved} takes (handoff merges), demoted ${demoted} non-verbatim scored quotes, merged ${merged} duplicate rows. Run build-index next.`);
       return;
     }
     case "audit-candidates": {

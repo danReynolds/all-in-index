@@ -26,32 +26,6 @@
     "attributionConfidence": "high"
   },
   {
-    "id": "E269-anthropic-Sacks-1",
-    "episodeId": "E269",
-    "episodeNumber": 269,
-    "episodeDate": "2026-04-17T20:35:00.000Z",
-    "company": "Anthropic",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Sacks",
-    "stance": "mixed",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "sectorProxy": null,
-    "summary": "Sacks warns Anthropic's exponential growth will hit physical limits (compute, power, data centers) and that its past support for doomer/NIMBY anti-data-center politics may now backfire as it needs to build its own infrastructure.",
-    "quote": "I do wonder if over the next year Anthropic will reconsider whether its support for all this doomer nimbyism was the right call, because it kind of made sense for them from a business standpoint when their competitors were building data cen",
-    "quoteStartMs": 1567516,
-    "topics": [
-      "compute constraints",
-      "data centers",
-      "infrastructure",
-      "strategy"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
     "id": "E269-anthropic-Friedberg-2",
     "episodeId": "E269",
     "episodeNumber": 269,

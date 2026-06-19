@@ -152,31 +152,6 @@
     "attributionConfidence": "high"
   },
   {
-    "id": "E235-aapl-Guest-6",
-    "episodeId": "E235",
-    "episodeNumber": 235,
-    "episodeDate": "2025-07-11T21:28:00.000Z",
-    "company": "Apple",
-    "ticker": "AAPL",
-    "isPublic": true,
-    "host": "Guest",
-    "stance": "bear",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "sectorProxy": null,
-    "summary": "Keith argues Apple has missed every possible window on AI due to cultural and infrastructure challenges, and that its vertical integration is the only thing keeping it alive — emphasizing that buying Perplexity would not fix its structural AI deficit.",
-    "quote": "Apple has missed every possible window on AI and continues to miss it. And it has cultural I think the CEO has challenges. I think culturally they have challenges. I think they have infrastructure challenges. So it's, it's not an easy fix",
-    "quoteStartMs": 3301501,
-    "topics": [
-      "AI strategy",
-      "missed opportunity",
-      "competitive position"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
     "id": "E235-aapl-Guest-7",
     "episodeId": "E235",
     "episodeNumber": 235,

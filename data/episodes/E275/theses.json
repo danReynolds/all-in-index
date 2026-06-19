@@ -1,6 +1,6 @@
 [
   {
-    "id": "E275-anthropic-Sacks-0",
+    "id": "E275-anthropic-Sacks-3",
     "episodeId": "E275",
     "episodeNumber": 275,
     "episodeDate": "2026-05-29T22:23:00.000Z",
@@ -8,20 +8,19 @@
     "ticker": null,
     "isPublic": false,
     "host": "Sacks",
-    "stance": "neutral",
+    "stance": "bull",
     "conviction": "high",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Sacks argues Anthropic is pursuing regulatory capture to ban open-source/open-weight models, which would entrench its monopolistic control over AI — a dangerous centralization of power — even as it appears to be pulling away from OpenAI in growth.",
-    "quote": "if you brand yourself as the safe AI company and then try to characterize everybody else as a reckless player, and reckless AI needs to be stopped, you can see how this would basically further your monopolistic control over this industry.",
-    "quoteStartMs": 2221384,
+    "summary": "Sacks observes that Anthropic appears to be pulling away from OpenAI in growth — growing at 10x YoY vs OpenAI's 3x — and that if sustained, this trajectory leads to monopoly market share, making it the company with the better inertia.",
+    "quote": "Anthropic does seem to be pulling away. There was an article in The Information showing the latest numbers where I think Anthropic's now at— they seem to have pulled away from OpenAI, which is not surprising. It's something I predicted. Loo",
+    "quoteStartMs": 3345209,
     "topics": [
-      "regulatory capture",
-      "open source",
-      "monopoly",
-      "AI safety"
+      "growth",
+      "market share",
+      "competitive positioning"
     ],
     "attributionConfidence": "high"
   },
@@ -73,31 +72,6 @@
       "regulatory capture",
       "competitive positioning",
       "AI strategy"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E275-anthropic-Sacks-3",
-    "episodeId": "E275",
-    "episodeNumber": 275,
-    "episodeDate": "2026-05-29T22:23:00.000Z",
-    "company": "Anthropic",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Sacks",
-    "stance": "bull",
-    "conviction": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "sectorProxy": null,
-    "summary": "Sacks observes that Anthropic appears to be pulling away from OpenAI in growth — growing at 10x YoY vs OpenAI's 3x — and that if sustained, this trajectory leads to monopoly market share, making it the company with the better inertia.",
-    "quote": "Anthropic does seem to be pulling away. There was an article in The Information showing the latest numbers where I think Anthropic's now at— they seem to have pulled away from OpenAI, which is not surprising. It's something I predicted. Loo",
-    "quoteStartMs": 3345209,
-    "topics": [
-      "growth",
-      "market share",
-      "competitive positioning"
     ],
     "attributionConfidence": "high"
   },

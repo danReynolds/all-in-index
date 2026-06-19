@@ -130,32 +130,6 @@
     "attributionConfidence": "high"
   },
   {
-    "id": "E252-nvda-Friedberg-5",
-    "episodeId": "E252",
-    "episodeNumber": 252,
-    "episodeDate": "2025-11-22T00:40:00.000Z",
-    "company": "Nvidia",
-    "ticker": "NVDA",
-    "isPublic": true,
-    "host": "Friedberg",
-    "stance": "neutral",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "sectorProxy": null,
-    "summary": "Friedberg refutes Burry's accounting-fraud thesis on big tech's GPU depreciation, arguing GAAP standards are being followed correctly and all cash flows are transparent to investors, so there is no hidden cooking of books.",
-    "quote": "Burry is incorrect in thinking that they're hiding anything because it's all there. They're following GAAP standards. And then investors make a market and they all decide, what do I want to value this company on?",
-    "quoteStartMs": 2082340,
-    "topics": [
-      "accounting",
-      "GAAP",
-      "depreciation",
-      "AI capex"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
     "id": "E252-googl-Jason-6",
     "episodeId": "E252",
     "episodeNumber": 252,

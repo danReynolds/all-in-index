@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T14:02:23.109Z",
+  "generatedAt": "2026-06-19T14:35:41.760Z",
   "holdings": [
     {
       "slug": "meta",
@@ -769,31 +769,6 @@
           "attributionConfidence": "high"
         },
         {
-          "id": "E275-anthropic-Sacks-3",
-          "episodeId": "E275",
-          "episodeNumber": 275,
-          "episodeDate": "2026-05-29T22:23:00.000Z",
-          "company": "Anthropic",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Sacks",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Sacks observes that Anthropic appears to be pulling away from OpenAI in growth — growing at 10x YoY vs OpenAI's 3x — and that if sustained, this trajectory leads to monopoly market share, making it the company with the better inertia.",
-          "quote": "Anthropic does seem to be pulling away. There was an article in The Information showing the latest numbers where I think Anthropic's now at— they seem to have pulled away from OpenAI, which is not surprising. It's something I predicted. Loo",
-          "quoteStartMs": 3345209,
-          "topics": [
-            "growth",
-            "market share",
-            "competitive positioning"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
           "id": "E275-anthropic-Chamath-2",
           "episodeId": "E275",
           "episodeNumber": 275,
@@ -845,7 +820,7 @@
           "guestName": "Bill Gurley"
         },
         {
-          "id": "E275-anthropic-Sacks-0",
+          "id": "E275-anthropic-Sacks-3",
           "episodeId": "E275",
           "episodeNumber": 275,
           "episodeDate": "2026-05-29T22:23:00.000Z",
@@ -853,20 +828,19 @@
           "ticker": null,
           "isPublic": false,
           "host": "Sacks",
-          "stance": "neutral",
+          "stance": "bull",
           "conviction": "high",
           "callType": "view",
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Sacks argues Anthropic is pursuing regulatory capture to ban open-source/open-weight models, which would entrench its monopolistic control over AI — a dangerous centralization of power — even as it appears to be pulling away from OpenAI in growth.",
-          "quote": "if you brand yourself as the safe AI company and then try to characterize everybody else as a reckless player, and reckless AI needs to be stopped, you can see how this would basically further your monopolistic control over this industry.",
-          "quoteStartMs": 2221384,
+          "summary": "Sacks observes that Anthropic appears to be pulling away from OpenAI in growth — growing at 10x YoY vs OpenAI's 3x — and that if sustained, this trajectory leads to monopoly market share, making it the company with the better inertia.",
+          "quote": "Anthropic does seem to be pulling away. There was an article in The Information showing the latest numbers where I think Anthropic's now at— they seem to have pulled away from OpenAI, which is not surprising. It's something I predicted. Loo",
+          "quoteStartMs": 3345209,
           "topics": [
-            "regulatory capture",
-            "open source",
-            "monopoly",
-            "AI safety"
+            "growth",
+            "market share",
+            "competitive positioning"
           ],
           "attributionConfidence": "high"
         },
@@ -1097,32 +1071,6 @@
             "product velocity",
             "competitive position",
             "enterprise adoption"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E269-anthropic-Sacks-1",
-          "episodeId": "E269",
-          "episodeNumber": 269,
-          "episodeDate": "2026-04-17T20:35:00.000Z",
-          "company": "Anthropic",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Sacks",
-          "stance": "mixed",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Sacks warns Anthropic's exponential growth will hit physical limits (compute, power, data centers) and that its past support for doomer/NIMBY anti-data-center politics may now backfire as it needs to build its own infrastructure.",
-          "quote": "I do wonder if over the next year Anthropic will reconsider whether its support for all this doomer nimbyism was the right call, because it kind of made sense for them from a business standpoint when their competitors were building data cen",
-          "quoteStartMs": 1567516,
-          "topics": [
-            "compute constraints",
-            "data centers",
-            "infrastructure",
-            "strategy"
           ],
           "attributionConfidence": "high"
         },
@@ -1768,11 +1716,11 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts hold a broadly bullish long-term view on Anthropic, anchored by near-universal agreement that Claude is best-in-class for coding and enterprise AI, and supported by revenue growth figures — a ~10x annual growth rate, an alleged $6B month in February 2026, and recent EBIT profitability — that Sacks, Gerstner (guest), Friedberg, and Chamath all describe as unprecedented at scale. Chamath, Jason, and Sacks converge on Anthropic as the enterprise AI leader on model quality, while Gerstner and Friedberg go further, calling it a generational investment and flagging Chamath and Gerstner's direct investor stakes. However, significant and growing skepticism surrounds Anthropic's conduct: Chamath, Sacks, and guests Gurley and Gerstner all separately criticize its AI-safety messaging as strategically timed regulatory capture rather than genuine altruism, and Sacks escalates this by late 2026 to accusing the company of secretly degrading models, retaining prompt data, and seeking to ban open-source rivals. More recently, Chamath warns that Anthropic's content restrictions and prompt surveillance make it a non-starter for enterprises, Friedberg reports his own organization is migrating to open-source models due to research restrictions, and Sacks flags compute gating and developer churn toward GPT as near-term competitive risks — creating a notable split between the hosts' confidence in Anthropic's commercial trajectory and their distrust of its governance and strategic behavior.",
+      "synthesis": "The hosts' collective view on Anthropic has evolved from broadly enthusiastic to increasingly mixed, with near-universal agreement on the company's exceptional product quality — particularly in coding — and extraordinary revenue growth (cited as the fastest in tech history), but growing divergence on governance, trust, and competitive durability. Chamath, Sacks, Friedberg, Jason, and guest investors Brad Gerstner, Travis Kalanick, Gavin Baker, and Marc Benioff all acknowledge Claude's best-in-class coding performance and a revenue ramp that has accelerated from ~$10B to ~$44B ARR within months, with Gerstner projecting an $80–100B exit run rate by year-end and Sacks calling it the fastest growing revenue at scale ever seen. However, Chamath, Sacks, and Friedberg each raise serious concerns about Anthropic's trustworthiness as an enterprise vendor: Sacks accuses it of secretly degrading models, retaining all prompt data, and running a regulatory capture campaign to ban open-source rivals; Friedberg reports his own company is abandoning the platform due to content restrictions on genomics research; and Chamath warns that prompt surveillance and censorship risk make it a near non-starter for corporate customers. Despite these concerns, several hosts — including Chamath, Sacks, Friedberg, and Gerstner — remain net bullish on Anthropic's long-term value, citing supply constraints (not weak demand) as the primary near-term limiter and viewing its coding flywheel and recent EBIT profitability as indicators of a structurally dominant position, though Chamath and Sacks each maintain philosophical objections to its safety-framing and regulatory strategy.",
       "netStance": "bear",
       "firstMentioned": "2025-03-08T00:58:00.000Z",
       "lastMentioned": "2026-06-13T04:51:00.000Z",
-      "mentionCount": 42,
+      "mentionCount": 40,
       "market": null,
       "description": "AI safety company that develops and deploys large language models, including the Claude series.",
       "domain": "anthropic.com"
@@ -2009,31 +1957,6 @@
             "vertical integration",
             "AI miss",
             "valuation"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E235-aapl-Guest-6",
-          "episodeId": "E235",
-          "episodeNumber": 235,
-          "episodeDate": "2025-07-11T21:28:00.000Z",
-          "company": "Apple",
-          "ticker": "AAPL",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bear",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Keith argues Apple has missed every possible window on AI due to cultural and infrastructure challenges, and that its vertical integration is the only thing keeping it alive — emphasizing that buying Perplexity would not fix its structural AI deficit.",
-          "quote": "Apple has missed every possible window on AI and continues to miss it. And it has cultural I think the CEO has challenges. I think culturally they have challenges. I think they have infrastructure challenges. So it's, it's not an easy fix",
-          "quoteStartMs": 3301501,
-          "topics": [
-            "AI strategy",
-            "missed opportunity",
-            "competitive position"
           ],
           "attributionConfidence": "high"
         },
@@ -2506,11 +2429,11 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts are broadly bearish-to-mixed on Apple, with the dominant concern being a structural failure to compete in AI: Chamath, Sacks, Jason (at times), and guests Gavin Baker, Keith Rabois, and Travis Kalanick all argue that Apple has missed the AI wave due to cultural decay, talent deficits, and misallocated capital toward buybacks rather than R&D, resulting in visibly poor AI products. Compounding this, Chamath, Friedberg, Sacks, and guests Reid Hoffman and Gavin Baker flag serious regulatory risks — particularly the potential loss of Google's ~$20B annual TAC payment and App Store antitrust scrutiny — that could materially impair Apple's high-margin services revenue. There is meaningful disagreement on Apple's longer-term resilience: Friedberg cautions against counting Apple out given its unique systems advantage and a history of defying decline narratives, guest Thomas LaFont notes Apple still commands a monopoly on users and has pivoted successfully before, and Jason — despite earlier criticizing Apple Intelligence — later turns bullish, arguing Apple's M-series hardware and data-sovereignty positioning make it the dark horse AI platform play. The one point of near-universal agreement is that Apple's current valuation reflects a cash-cow business running on existing moats rather than an innovation premium, with Chamath explicitly calling it fairly valued for a company that has stopped innovating.",
+      "synthesis": "The hosts are broadly bearish-to-mixed on Apple, with the dominant concern being a persistent failure to execute on AI — Chamath (most consistently negative) argues the company has entered cash-cow mode, is losing the AI talent war, and faces inevitable creative destruction, while Jason and guest Gavin Baker echo that Apple Intelligence has been an embarrassing product failure relative to competitors like Google Gemini. A secondary cluster of concerns centers on structural risks: Chamath, Friedberg, Sacks, and guests Hoffman and Rabois all flag the potential loss of Google's ~$20B TAC payment and App Store antitrust exposure as material valuation threats, and Chamath and guest LaFont note Apple's lack of control over its own AI models leaves it in a structurally weak position analogous to PC makers who didn't own their OS. Sacks is the most internally divided — he has been consistently bearish on Apple's innovation deficit but turned constructive on the OpenAI-Siri integration and LLM-powered iPhone 16 upgrade cycle thesis, while also raising concerns about the privacy and competitive costs of that same partnership. The sole consistent bull is Jason, who in mid-2026 pivoted to argue Apple is a dark horse in AI due to its M-series silicon, local model-running capability, and data-sovereignty positioning — a view not shared by Chamath, Friedberg, or the bear-leaning guests, with Friedberg offering the only general caution against writing Apple off given its history of defying decline narratives.",
       "netStance": "bull",
       "firstMentioned": "2024-05-10T19:47:00.000Z",
       "lastMentioned": "2026-05-29T22:23:00.000Z",
-      "mentionCount": 28,
+      "mentionCount": 27,
       "market": {
         "ticker": "AAPL",
         "sourceSymbol": "AAPL",
@@ -3237,31 +3160,6 @@
             "AI supercycle",
             "revenue growth",
             "capex"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E250-openai-Chamath-0",
-          "episodeId": "E250",
-          "episodeNumber": 250,
-          "episodeDate": "2025-11-07T20:36:00.000Z",
-          "company": "OpenAI",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "explicit_long",
-          "excludeReason": null,
-          "scoreNote": "Gerstner explicitly states he owns shares and wants to buy more; cites $20B run rate and steep growth as evidence.",
-          "sectorProxy": null,
-          "summary": "Brad Gerstner is bullish on OpenAI, citing a $20B forward revenue run rate, steep growth trajectory, and dominant consumer retention cohorts; he owns shares and wants to buy more, viewing the AI capex concerns as a misunderstood tempest-in-a-teapot.",
-          "quote": "He knows that I don't want to sell my shares. He knows that I would like to buy more shares in the company",
-          "quoteStartMs": 204976,
-          "topics": [
-            "revenue growth",
-            "AI capex",
-            "valuation"
           ],
           "attributionConfidence": "high"
         },
@@ -4197,11 +4095,11 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts hold a broadly mixed but increasingly cautious view of OpenAI over time: early optimism about its technical leadership and ability to monetize AI infrastructure has given way to growing concern about valuation, competitive erosion, and governance. Sacks and Chamath (in his more recent bullish moments) argue OpenAI's dominant consumer franchise, subscription revenue, and position as a \"semantic search\" replacement justify a multi-trillion-dollar ceiling, while Sacks also sees its pivot toward enterprise/coding and GPT-5.5 as a potential rebound catalyst — though he and Travis Kalanick (guest) flag that Anthropic's ~10x annual growth rate versus OpenAI's ~3x is a structurally alarming divergence. Jason is the most consistently bearish, predicting OpenAI has passed peak market share and will fall to a #3–5 position as Google, Meta, xAI, and Anthropic outcompete it, and calling the $150B–$340B+ valuations difficult to justify given ~$5B in annual losses; Friedberg adds softer skepticism around model commoditization post-DeepSeek, poor partnership durability, and a defensive product posture that has ceded ground to Google. Governance is a point of near-universal concern — Chamath, Sacks, Naval (guest), and Elon Musk (guest) all criticize OpenAI's nonprofit-to-for-profit conversion as self-dealing, while Chamath and multiple guests note meaningful talent departures and benchmark overfitting as signals of internal stress, even as Brad Gerstner (guest) and Chamath in his most recent appearances remain convicted buyers citing $20B+ revenue run rates and dominant consumer retention.",
+      "synthesis": "The hosts hold a deeply divided and evolving view on OpenAI, with Sacks and Chamath shifting between bull and bear stances over time, while Jason has grown consistently more bearish and Friedberg remains cautiously skeptical. The broadest area of agreement is that OpenAI created the AI category, built a dominant consumer brand in ChatGPT, and has real, rapidly scaling revenue — but nearly all hosts question whether its current valuation ($150B–$800B+ across different dates) is justified given ~$5B in annual losses, intensifying competition from Google, Meta, Anthropic, and xAI, and a market share that has visibly eroded from a near-monopoly to roughly a third of the market. Sacks and Chamath are most optimistic about OpenAI's long-term potential — Sacks sees it as a semantic search replacement for Google with a defensible B2B/API business, and Chamath at various points has called it a multi-trillion-dollar company and applauded its consumer dominance — but both have also flagged the 3x annual growth rate versus Anthropic's 10x as a serious structural risk. Jason is the most consistently bearish host, predicting OpenAI will fall to the #3–5 market position within a few years, citing competition, developer distrust from OpenAI competing in application layers, and valuation excess; Friedberg adds concerns about model commoditization, a defensive product posture, partnership instability, and insufficient IPO buyer demand, while governance criticisms — including the nonprofit-to-for-profit conversion and executive churn — surface repeatedly across Chamath, Jason, and multiple guests.",
       "netStance": "mixed",
       "firstMentioned": "2024-05-10T19:47:00.000Z",
       "lastMentioned": "2026-05-29T22:23:00.000Z",
-      "mentionCount": 55,
+      "mentionCount": 54,
       "market": null,
       "description": "AI research company that develops large language models and products including ChatGPT and the GPT series.",
       "domain": "openai.com"
@@ -4337,32 +4235,6 @@
             "AI capex",
             "market cap",
             "competitive moat"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E252-nvda-Friedberg-5",
-          "episodeId": "E252",
-          "episodeNumber": 252,
-          "episodeDate": "2025-11-22T00:40:00.000Z",
-          "company": "Nvidia",
-          "ticker": "NVDA",
-          "isPublic": true,
-          "host": "Friedberg",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Friedberg refutes Burry's accounting-fraud thesis on big tech's GPU depreciation, arguing GAAP standards are being followed correctly and all cash flows are transparent to investors, so there is no hidden cooking of books.",
-          "quote": "Burry is incorrect in thinking that they're hiding anything because it's all there. They're following GAAP standards. And then investors make a market and they all decide, what do I want to value this company on?",
-          "quoteStartMs": 2082340,
-          "topics": [
-            "accounting",
-            "GAAP",
-            "depreciation",
-            "AI capex"
           ],
           "attributionConfidence": "high"
         },
@@ -5068,11 +4940,11 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts hold a broadly constructive but contested long-term view on Nvidia, with the weight of opinion leaning bullish on its durable competitive position while acknowledging meaningful structural risks. Sacks and guest contributors (Reid Hoffman, Gavin Baker, Brad Gerstner, Thomas LaFont, and Sian) are the most consistently bullish, pointing to Nvidia's superior full-stack ecosystem, rapid generational chip improvement (3–4x per year), near-total capture of incremental AI data center revenue, and the co-design relationships with major labs that are internalizing the DSA disruption threat — with Gerstner going so far as to say competitor chips priced at zero still can't match Nvidia economically. Chamath is the most volatile voice, oscillating between bear (AI capex producing no commensurate revenue, DeepSeek undermining CUDA lock-in, ~47% China revenue exposure creating regulatory risk) and bull (Grok 3 validating massive pre-training, Jensen Huang's unmatched industry mastery, domain-specific disruption happening inside Nvidia itself), ultimately settling into a nuanced neutral that sees Nvidia as the clear infrastructure winner while arguing future value will migrate to upstream suppliers like HBM memory makers and energy providers. Friedberg is the most persistently cautious, flagging deep customer concentration risk, the unresolved gap between AI capex and hyperscaler revenue, the threat of purpose-built chips eroding general-purpose GPU dominance, and a medium-term black-swan risk from Chinese semiconductor competition (Huawei) — though he acknowledges Nvidia is currently the singular value capture winner of the AI buildout cycle and explicitly refutes accounting-fraud concerns about its financials.",
+      "synthesis": "The hosts hold a collectively mixed but increasingly constructive view on Nvidia, with the weight of opinion shifting toward bullishness over time. Sacks and guests — particularly Gavin Baker, Brad Gerstner, Thomas LaFont, and Sian — are the most consistently positive, pointing to Nvidia's unmatched GPU ecosystem, continuous generational chip improvements (3–4x per cycle), near-total capture of incremental AI data center revenue, and a full-stack moat that competitors priced at zero still cannot match. Chamath is the most volatile voice, oscillating between bear (valuation unjustified by AI ROI, DeepSeek eroding CUDA lock-in, China revenue risk from tightening export controls) and bull (Grok 3 validating massive pre-training capex, DSA disruption occurring inside Nvidia rather than against it, Jensen Huang's unmatched industry insight), ultimately landing in a constructive neutral-to-bull stance by mid-2026. Friedberg is the most persistently cautious, citing deep customer concentration among hyperscalers, the absence of meaningful downstream revenue from AI capex, and rising longer-term threats from purpose-built chips, Chinese semiconductor manufacturing, and potentially transformative efficiency architectures — though he concedes Nvidia has been the singular value captor of the AI buildout so far. The main fault lines are whether Nvidia's moat is durable (Sacks and Baker bullish, Friedberg and early Chamath skeptical), whether China exposure is a liability or a strategic asset (Chamath bearish on regulatory risk, Sacks and Baker arguing H20 sales keep China dependent on American silicon), and whether surging AI capex will ultimately be justified by downstream returns (Sacks and guests say yes, Friedberg and earlier Chamath express doubt).",
       "netStance": "bull",
       "firstMentioned": "2024-05-24T20:15:00.000Z",
       "lastMentioned": "2026-05-22T22:46:00.000Z",
-      "mentionCount": 33,
+      "mentionCount": 32,
       "market": {
         "ticker": "NVDA",
         "sourceSymbol": "NVDA",
@@ -5414,32 +5286,6 @@
             "valuation",
             "data centers",
             "Starlink"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E272-spacex-Chamath-16",
-          "episodeId": "E272",
-          "episodeNumber": 272,
-          "episodeDate": "2026-05-08T22:16:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath predicts a Tesla-SpaceX merger into 'Elon Corp' by end of year or mid-next year will command an unprecedented valuation premium that will break conventional analysis, as Elon is the only person demonstrably still innovating at scale.",
-          "quote": "When Tesla and SpaceX merge and we have all things Elon in Elon Corp, okay, which will happen probably by the end of the year… it's going to then break everybody's brains again, because you'll have this one asset… that will trade at a",
-          "quoteStartMs": 1489121,
-          "topics": [
-            "valuation",
-            "merger",
-            "innovation premium",
-            "IPO"
           ],
           "attributionConfidence": "high"
         },
@@ -6120,11 +5966,11 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts are broadly bullish on SpaceX across its core launch, Starlink, and emerging xAI/data center businesses, with Chamath and Friedberg expressing the strongest conviction — Chamath as a disclosed shareholder and Friedberg citing SpaceX's role as foundational \"railroad\" infrastructure for the moon and Mars. On the launch side, there is near-unanimous agreement that SpaceX has no credible near-term competitor, with Chamath calling it \"the only solution,\" Friedberg pointing to Starship's booster catch as enabling a potential 1,000x reduction in launch costs to ~$10/kg, and Sacks highlighting Starlink as already having solved rural internet access but being blocked for political reasons. The IPO narrative dominates more recent commentary, with Chamath, Friedberg, Jason, and guests like Gerstner and Baker converging on a ~$2 trillion target valuation underpinned by terrestrial data center revenue, Starlink subscriber growth to potentially 100 million users, and the Cursor acquisition adding meaningful revenue — though Friedberg dissents on the IPO path, predicting a reverse merger into Tesla instead, a view Chamath and others increasingly share as a likely subsequent step. The xAI/Grok thread, while technically a separate entity, is treated by most hosts as inseparable from the SpaceX valuation story, with Chamath, Sacks, and repeat guests Gavin Baker and Antonio Gracias all bullish on Grok's technical leadership and the Colossus cluster's compute advantage, while Chamath predicts a full Tesla-SpaceX-xAI consolidation into \"Elon Corp\" that he believes will command a valuation premium that defies conventional analysis.",
+      "synthesis": "The hosts are broadly bullish on SpaceX across its core businesses — launch, Starlink, and the emerging xAI/compute stack — with Friedberg and Chamath most consistently enthusiastic, and Sacks adding focused support for Starlink and xAI's competitive positioning. On the launch side, Chamath and Friedberg agree that SpaceX is in a category of its own: Chamath calls it \"the only solution\" with no close competitor, while Friedberg sees Starship's successful booster catch as validating a path to ~$10/kg launch costs and eventual Mars colonization at civilizational scale. On Starlink, Friedberg projects subscriber growth from 4 million toward 100 million+, Sacks argues it already solves rural internet cheaply but is being blocked for political reasons, and multiple guests frame it as foundational infrastructure for a multiplanetary internet. The xAI/Grok thread draws near-unanimous bullishness — Chamath, Friedberg, Sacks, and repeat guest Gavin Baker all cite Grok 3 and Grok 4's benchmark leapfrogs, the Colossus compute cluster's scale and cost advantages, and the X/Twitter integration as durable structural edges over OpenAI, Google, and Anthropic — though disclosed investor conflicts (Baker's firm, Chamath's shareholding) are noted. Heading into IPO, Chamath and Friedberg both see a $2 trillion valuation as justifiable on terrestrial data center revenue alone, with Cursor's acquisition and the Anthropic offtake deal cited as incremental validation; Chamath personally wants the IPO done quickly to reduce his own exposure, while Friedberg floats a contrarian reverse-merger-into-Tesla scenario that the others do not explicitly endorse.",
       "netStance": "bull",
       "firstMentioned": "2024-08-16T18:42:00.000Z",
       "lastMentioned": "2026-05-22T22:46:00.000Z",
-      "mentionCount": 30,
+      "mentionCount": 29,
       "market": {
         "ticker": "SPCX",
         "sourceSymbol": "SPCX",
@@ -9699,33 +9545,6 @@
           "guestName": "Elon Musk"
         },
         {
-          "id": "E249-tsla-Guest-0",
-          "episodeId": "E249",
-          "episodeNumber": 249,
-          "episodeDate": "2025-10-31T20:11:00.000Z",
-          "company": "Tesla",
-          "ticker": "TSLA",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "neutral",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Elon Musk argues Tesla is not just a car company but a uniquely complex, multi-product business encompassing batteries, autonomy, Optimus robots, and a coming fleet of millions of CyberCabs, making it irreplaceable and unsuited for any other leader.",
-          "quote": "all of the cars we make right now are capable of being a robotaxi... all of the cars we make are capable of on supervised full autonomy... I think ultimately we'll make millions of CyberCabs per year. But, but it is important to emphasize t",
-          "quoteStartMs": 3639249,
-          "topics": [
-            "robotaxi",
-            "autonomy",
-            "Optimus",
-            "product roadmap"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Elon Musk"
-        },
-        {
           "id": "E248-tsla-Chamath-8",
           "episodeId": "E248",
           "episodeNumber": 248,
@@ -9828,31 +9647,6 @@
           ],
           "attributionConfidence": "high",
           "guestName": "Thomas Laffont"
-        },
-        {
-          "id": "E232-tsla-Chamath-4",
-          "episodeId": "E232",
-          "episodeNumber": 232,
-          "episodeDate": "2025-06-21T02:53:00.000Z",
-          "company": "Tesla",
-          "ticker": "TSLA",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath says he would not be sleeping on Tesla, calling it 'misunderstood' again despite its stock being down, and noting its strong position in physical AI while flagging its current stock weakness is puzzling given its competitive positioning.",
-          "quote": "I spent time last week at Tesla. I would not be sleeping on this business. I think that it is yet again back into the land of being misunderstood.",
-          "quoteStartMs": 1534778,
-          "topics": [
-            "physical AI",
-            "misunderstood valuation",
-            "vertical integration"
-          ],
-          "attributionConfidence": "high"
         },
         {
           "id": "E232-tsla-Chamath-3",
@@ -10168,11 +9962,11 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts are broadly and increasingly bullish on Tesla across the full period, with the dominant view centering on FSD/autonomy, Optimus robotics, and Elon Musk's irreplaceability as the compounding thesis. Chamath is the most consistently and emphatically bullish, naming Tesla his #1 AI winner over five years, citing its vertically integrated stack (vision models, Dojo, xAI's LLM, and physical AI products), and repeatedly warning investors not to \"sleep on\" the company; he is joined in high conviction by Jason, who highlights Colossus and AI/robotics positioning, and by guest Gavin Baker, who calls FSD at or near mainstream adoption. Friedberg occupies a slightly more tempered position — personally impressed by FSD and bullish on Optimus as a high-upside call option, but consistently noting that valuation already prices in much of the optionality — while Sacks focuses on Elon-specific risk premiums, framing the 2024 pay package reapproval and the post-election stock surge as the market correctly repricing the cost of losing Musk. Guest contributors reinforce the bull case from different angles: Travis Kalanick points to Tesla's manufacturing advantage and rapid FSD improvement (10x miles-per-intervention in three months), Sian flags Tesla's unmatched real-world driving data, Thomas LaFont highlights full vertical integration potential, and Elon Musk himself warns that his continued involvement in the Optimus/robotaxi mission is contingent on securing voting control — a governance risk none of the hosts meaningfully push back on.",
+      "synthesis": "The hosts are broadly and increasingly bullish on Tesla across a multi-year span, with conviction centered on three converging themes: FSD/autonomous driving, the Optimus humanoid robotics opportunity, and Elon Musk's indispensability. Chamath is the most consistently vocal bull, evolving from defending Elon's pay package (arguing the stock's 10%+ pop more than offset dilution) to naming Tesla his #1 AI winner in five years on the strength of its vertically integrated stack — best-in-class vision models, Dojo infrastructure, xAI's LLM, and physical AI products including CyberCab and Optimus — while also flagging near-term catalysts like the AI5 chip and a fast-growing energy business. Sacks and Jason share high conviction, with Sacks attributing Tesla's post-2024-election surge to the removal of a regulatory and \"lawfare\" discount, and Jason citing the Colossus GPU build-out and AI/robotics positioning as drivers of outsized 2025 upside; guest voices Gavin Baker, Travis Kalanick, and Thomas LaFont reinforce the FSD and vertical-integration theses, with Kalanick specifically noting 10x improvement in miles-per-intervention in three months driven by cheaper AI. Friedberg is the most measured, rating himself neutral on two occasions while still personally buying Tesla vehicles and calling FSD \"incredible,\" framing Optimus as a high-upside but low-probability call option at a stretched valuation — the one note of caution in an otherwise strongly aligned bullish chorus, alongside Elon's own warning that he could walk away from the robotics mission without sufficient voting control.",
       "netStance": "bull",
       "firstMentioned": "2024-06-14T21:58:00.000Z",
       "lastMentioned": "2026-05-08T22:16:00.000Z",
-      "mentionCount": 22,
+      "mentionCount": 20,
       "market": {
         "ticker": "TSLA",
         "sourceSymbol": "TSLA",
@@ -21973,32 +21767,6 @@
       "isPublic": false,
       "theses": [
         {
-          "id": "E234-figma-Chamath-3",
-          "episodeId": "E234",
-          "episodeNumber": 234,
-          "episodeDate": "2025-07-04T14:07:00.000Z",
-          "company": "Figma",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Chamath",
-          "stance": "mixed",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath views Figma as a phenomenal business with strong growth and margins, but flags an industry-wide uncertainty about whether foundational AI models will absorb its revenue, making years 3-5 hard to underwrite for institutional investors.",
-          "quote": "on the surface, in the absence of these AI businesses, I would say, man, what a gangbusters business growing by 40-something percent a year at this scale. They're adjusted, I think operating margins are 18%… The Question that I think the in",
-          "quoteStartMs": 4382688,
-          "topics": [
-            "IPO",
-            "AI disruption",
-            "valuation",
-            "SaaS"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
           "id": "E234-figma-Friedberg-2",
           "episodeId": "E234",
           "episodeNumber": 234,
@@ -22051,11 +21819,11 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts are broadly constructive on Figma's current business quality, with Friedberg the clearest bull, pointing to 40%+ revenue growth, a 43% operating cash flow margin, and 130% net revenue retention as proof of a durable land-and-expand model. Chamath shares the admiration for Figma's fundamentals but is more cautious, flagging that AI model risk makes years 3–5 difficult to underwrite for institutional investors — a concern Friedberg also acknowledges, though he treats it as an open question rather than a disqualifier. Both hosts agree the core business is strong today; their divergence is on how much weight to assign the longer-term AI displacement risk. Chamath's preferred expression is a long Figma / short Adobe pairs trade, capturing the spread on the view that Adobe would face a faster valuation re-rating than Figma if AI disrupts the design category.",
+      "synthesis": "Both Chamath and Friedberg view Figma as a fundamentally strong business, pointing to impressive financials including 40%+ revenue growth, a 43% operating cash flow margin, and 130% net revenue retention as evidence of a proven land-and-expand model. Friedberg is the more straightforwardly bullish of the two, treating these metrics as signs of near-term durability, though he acknowledges uncertainty about AI disruption in the 3–4 year horizon. Chamath shares appreciation for the business but frames his conviction more cautiously, preferring to express it as a paired trade — long Figma, short an equivalent amount of Adobe — to capture the spread rather than take outright directional risk. The key point of agreement is that Figma is durable for now; the shared uncertainty is whether AI model absorption could erode that position over the longer term.",
       "netStance": "bull",
       "firstMentioned": "2025-07-04T14:07:00.000Z",
       "lastMentioned": "2025-07-04T14:07:00.000Z",
-      "mentionCount": 3,
+      "mentionCount": 2,
       "market": null,
       "description": "Offers a cloud-based collaborative interface design and prototyping platform for product and UX teams.",
       "domain": "figma.com"
@@ -23001,10 +22769,10 @@
       "domain": null
     },
     {
-      "slug": "mags",
-      "company": "Magnificent Seven",
-      "ticker": "MAGS",
-      "isPublic": true,
+      "slug": "magnificent-seven-basket",
+      "company": "Magnificent Seven (basket)",
+      "ticker": null,
+      "isPublic": false,
       "theses": [
         {
           "id": "E227-magnificent-seven-basket-Guest-4",
@@ -23032,322 +22800,15 @@
           ],
           "attributionConfidence": "high",
           "guestName": "Philippe Laffont"
-        },
-        {
-          "id": "E222-magnificent-seven-basket-Sacks-0",
-          "episodeId": "E222",
-          "episodeNumber": 222,
-          "episodeDate": "2025-04-05T19:03:00.000Z",
-          "company": "Magnificent Seven (basket)",
-          "ticker": "MAGS",
-          "isPublic": true,
-          "host": "Sacks",
-          "stance": "bear",
-          "conviction": "high",
-          "callType": "selection",
-          "excludeReason": null,
-          "scoreNote": "Sacks describes it as 'free money' and confirms the Polymarket trade closed out profitably; explicit directional bet placed. ETF proxy: Magnificent Seven ETF.",
-          "sectorProxy": "MAGS",
-          "summary": "Sacks placed an explicit bet (via Polymarket) that the Mag Seven would shrink below 30% of the S&P 500 in 2025, citing the Trump administration's indifference to the stock market and its focus on working-class and MAGA economic priorities rather than the asset economy.",
-          "quote": "\"The equity market sell-off is a Mag Seven problem, not a MAGA problem.\"",
-          "quoteStartMs": 3054174,
-          "topics": [
-            "Mag Seven",
-            "tariffs",
-            "market concentration",
-            "MAGA policy"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E209-magnificent-seven-Jason-7",
-          "episodeId": "E209",
-          "episodeNumber": 209,
-          "episodeDate": "2025-01-04T00:23:00.000Z",
-          "company": "Magnificent Seven",
-          "ticker": "MAGS",
-          "isPublic": true,
-          "host": "Jason",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "selection",
-          "excludeReason": null,
-          "scoreNote": "Ranked as Jason's #1 best performing asset pick for 2025. ETF proxy: Magnificent Seven ETF.",
-          "sectorProxy": "MAGS",
-          "summary": "Jason picks the Mag 7 as his best performing asset for 2025, arguing AI-driven internal efficiency gains will produce earnings growth that markets cannot yet comprehend.",
-          "quote": "I think the Mag 7 is going to be the best performing asset... the gains we'll see from AI, which they're producing for other companies and for consumers, they're applying first internally. So the internal application of AI will allow these",
-          "quoteStartMs": 4930420,
-          "topics": [
-            "AI",
-            "earnings growth",
-            "best performing asset"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E209-magnificent-seven-Chamath-6",
-          "episodeId": "E209",
-          "episodeNumber": 209,
-          "episodeDate": "2025-01-04T00:23:00.000Z",
-          "company": "Magnificent Seven",
-          "ticker": null,
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bear",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": "MAGS",
-          "summary": "Chamath warns that excessive index concentration in the Mag 7 (~40% of indices) historically foreshadows a large drawdown, projecting a potential multi-trillion-dollar absolute dollar loss even if fundamentals remain strong.",
-          "quote": "I am a little bit worried, and I tweeted this a few days ago, about just the general concentration of the top 7, 8, 9, 10 companies in the indices. I think it's approaching 40%... when you look at these historic concentrations, they've gene",
-          "quoteStartMs": 2418185,
-          "topics": [
-            "concentration risk",
-            "valuation",
-            "index",
-            "drawdown"
-          ],
-          "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts are broadly cautious on the Magnificent Seven as a group heading into 2025, with three of four voices leaning bearish, though for different reasons. Chamath flags a structural risk from index concentration (~40%), arguing historically such levels precede large drawdowns, while Sacks goes further with an explicit Polymarket bet that the Mag 7's S&P 500 weight falls below 30%, citing the Trump administration's indifference to asset markets. Guest Philippe Lafont adds a thematic bearish dimension, contending that AI-driven disruption is eroding the cohort's correlated dominance and effectively marking the end of an era where owning just those seven names was sufficient. Jason is the lone bull, holding high conviction that AI efficiency gains applied internally will produce earnings growth the market has not yet priced in, making the Mag 7 his top asset pick for 2025.",
+      "synthesis": "Guest Philippe Lafont takes a bearish stance on the Magnificent Seven as a collective investment thesis, arguing that the rapid, AI-driven pace of change is eroding the correlated dominance that made the basket a reliable holding. He contends that the era of simply owning those seven names is drawing to a close, as AI is disrupting the competitive landscape in ways that will differentiate winners and losers even within that group. Lafont's primary forward-looking message is that investors should shift their focus toward identifying the next cohort of dominant companies rather than anchoring to the existing Mag 7 framework. No other hosts provided theses on this basket for comparison.",
       "netStance": "bear",
-      "firstMentioned": "2025-01-04T00:23:00.000Z",
+      "firstMentioned": "2025-05-09T20:26:00.000Z",
       "lastMentioned": "2025-05-09T20:26:00.000Z",
-      "mentionCount": 4,
-      "market": {
-        "ticker": "MAGS",
-        "sourceSymbol": "MAGS",
-        "currency": "USD",
-        "asOf": "2026-06-19",
-        "anchorDate": "2025-01-04",
-        "basePrice": 56.66,
-        "latestPrice": 65.44,
-        "returns": {
-          "1m": -0.01729615248852801,
-          "3m": -0.27003176844334625,
-          "6m": -0.02823861630780082,
-          "1y": 0.16290151782562662,
-          "since": 0.15495940698905755
-        },
-        "history": [
-          [
-            "2025-01-06",
-            56.66
-          ],
-          [
-            "2025-01-16",
-            54.45
-          ],
-          [
-            "2025-01-28",
-            56.22
-          ],
-          [
-            "2025-02-06",
-            55.42
-          ],
-          [
-            "2025-02-18",
-            55.12
-          ],
-          [
-            "2025-02-27",
-            50.12
-          ],
-          [
-            "2025-03-10",
-            46.33
-          ],
-          [
-            "2025-03-19",
-            46.75
-          ],
-          [
-            "2025-03-28",
-            46.03
-          ],
-          [
-            "2025-04-08",
-            40.5
-          ],
-          [
-            "2025-04-17",
-            42.48
-          ],
-          [
-            "2025-04-29",
-            46.59
-          ],
-          [
-            "2025-05-08",
-            47.67
-          ],
-          [
-            "2025-05-19",
-            52.27
-          ],
-          [
-            "2025-05-29",
-            52.9
-          ],
-          [
-            "2025-06-09",
-            53.27
-          ],
-          [
-            "2025-06-18",
-            53.44
-          ],
-          [
-            "2025-06-30",
-            55.47
-          ],
-          [
-            "2025-07-10",
-            55.99
-          ],
-          [
-            "2025-07-21",
-            57.61
-          ],
-          [
-            "2025-07-30",
-            57.82
-          ],
-          [
-            "2025-08-08",
-            59.93
-          ],
-          [
-            "2025-08-19",
-            59.34
-          ],
-          [
-            "2025-08-28",
-            60.63
-          ],
-          [
-            "2025-09-09",
-            61.72
-          ],
-          [
-            "2025-09-18",
-            64.3
-          ],
-          [
-            "2025-09-29",
-            64.78
-          ],
-          [
-            "2025-10-08",
-            65.19
-          ],
-          [
-            "2025-10-17",
-            64.33
-          ],
-          [
-            "2025-10-28",
-            68.37
-          ],
-          [
-            "2025-11-06",
-            66.19
-          ],
-          [
-            "2025-11-17",
-            64.75
-          ],
-          [
-            "2025-11-26",
-            66.31
-          ],
-          [
-            "2025-12-08",
-            67.02
-          ],
-          [
-            "2025-12-17",
-            65.31
-          ],
-          [
-            "2025-12-29",
-            67.46
-          ],
-          [
-            "2026-01-08",
-            65.88
-          ],
-          [
-            "2026-01-20",
-            62.94
-          ],
-          [
-            "2026-01-29",
-            66.38
-          ],
-          [
-            "2026-02-09",
-            63.84
-          ],
-          [
-            "2026-02-19",
-            61.59
-          ],
-          [
-            "2026-03-02",
-            61.61
-          ],
-          [
-            "2026-03-11",
-            62.15
-          ],
-          [
-            "2026-03-20",
-            58.37
-          ],
-          [
-            "2026-03-31",
-            57.94
-          ],
-          [
-            "2026-04-10",
-            61.14
-          ],
-          [
-            "2026-04-21",
-            65.31
-          ],
-          [
-            "2026-04-30",
-            66.24
-          ],
-          [
-            "2026-05-11",
-            69.44
-          ],
-          [
-            "2026-05-20",
-            69.49
-          ],
-          [
-            "2026-06-01",
-            69.86
-          ],
-          [
-            "2026-06-10",
-            64.22
-          ],
-          [
-            "2026-06-18",
-            65.44
-          ]
-        ],
-        "source": "yahoo"
-      },
-      "description": "ETF providing equal-weight exposure to the seven largest US mega-cap technology companies.",
+      "mentionCount": 1,
+      "market": null,
+      "description": "A basket grouping seven large-cap U.S. technology and growth stocks: Apple, Microsoft, Nvidia, Alphabet, Amazon, Meta, and Tesla.",
       "domain": null
     },
     {
@@ -24154,45 +23615,45 @@
       "domain": null
     },
     {
-      "slug": "credit-default-swaps-cds",
-      "company": "Credit Default Swaps (CDS)",
+      "slug": "credit-default-swaps-cds-corporate-credit-protection",
+      "company": "Credit Default Swaps (CDS) / Corporate Credit Protection",
       "ticker": null,
       "isPublic": false,
       "theses": [
         {
-          "id": "E222-credit-default-swaps-cds-Chamath-1",
+          "id": "E222-credit-default-swaps-cds-corporate-credit-protection-Sacks-0",
           "episodeId": "E222",
           "episodeNumber": 222,
           "episodeDate": "2025-04-05T19:03:00.000Z",
-          "company": "Credit Default Swaps (CDS)",
+          "company": "Credit Default Swaps (CDS) / Corporate Credit Protection",
           "ticker": null,
           "isPublic": false,
-          "host": "Chamath",
+          "host": "Sacks",
           "stance": "bull",
-          "conviction": "high",
+          "conviction": "medium",
           "callType": "explicit_long",
           "excludeReason": null,
-          "scoreNote": "Explicit 'I would be long CDS' + described as 'my pick for the best investment idea'; already in the money per Chamath's update.",
+          "scoreNote": "Explicit long call on CDS/credit protection as best investment idea; already in the money per discussion. Not a single-company equity — macro/credit instrument.",
           "sectorProxy": null,
-          "summary": "Chamath picks being long CDS as an asymmetric insurance trade against a corporate default wave in 2025, noting the trade has already paid off ~7x and citing tariff-driven revenue pressure on levered companies as the catalyst.",
-          "quote": "I would be long CDS. So what am I buying? I am buying insurance... if it hits, it will be the best performing asset of 2025.",
+          "summary": "Chamath recommends buying CDS (credit default swaps) as an asymmetric insurance policy against a corporate debt default wave in 2025, citing tariff-driven revenue pressure, debt covenants tied to EBITDA, and overall macro fragility — noting the trade has already returned ~7x in roughly 3 months.",
+          "quote": "I would be long CDS. So what am I buying? I am buying insurance...I'm buying protection that there is no default event in 2025...if it hits, it will be the best performing asset of 2025.",
           "quoteStartMs": 6423976,
           "topics": [
+            "credit risk",
             "CDS",
-            "corporate debt",
-            "recession risk",
-            "tariffs"
+            "tariffs",
+            "macro hedge"
           ],
           "attributionConfidence": "low"
         }
       ],
-      "synthesis": "Chamath is the sole host with a stated view, holding a high-conviction bullish position on long CDS as an asymmetric insurance trade against a coming wave of corporate defaults in 2025. He argues that tariff-driven revenue pressure on heavily leveraged companies creates the catalyst for widespread defaults, making CDS a high-reward hedge — one he notes has already returned roughly 7x at the time of his comments. No other hosts offered a competing or supporting view, so there is no cross-host agreement or disagreement to note.",
+      "synthesis": "Only one host, Chamath Palihapitiya, has offered a view here, framing long CDS positions as an asymmetric insurance play against a potential corporate debt default wave in 2025. His thesis rests on three interconnected pressures: tariff-driven revenue compression, EBITDA-linked debt covenants that could trigger defaults, and broader macro fragility — with the trade reportedly already up roughly 7x in about three months at the time of his comments. No other hosts weighed in, so there is neither corroboration nor dissent from Friedberg, Calacanis, or Levchin on this specific idea. The overall panel stance is therefore inconclusive beyond Chamath's medium-conviction bullish view.",
       "netStance": "neutral",
       "firstMentioned": "2025-04-05T19:03:00.000Z",
       "lastMentioned": "2025-04-05T19:03:00.000Z",
       "mentionCount": 1,
       "market": null,
-      "description": "Financial derivatives used to hedge or speculate on the credit risk of corporate or sovereign debt issuers.",
+      "description": "Financial derivative contracts that transfer credit risk of corporate debt between two parties, functioning as insurance against default.",
       "domain": null
     },
     {
@@ -24202,7 +23663,7 @@
       "isPublic": true,
       "theses": [
         {
-          "id": "E222-nmax-Friedberg-2",
+          "id": "E222-nmax-Friedberg-1",
           "episodeId": "E222",
           "episodeNumber": 222,
           "episodeDate": "2025-04-05T19:03:00.000Z",
@@ -24216,19 +23677,19 @@
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Ben Shapiro argues Newsmax's IPO spike to ~$240 is a GameStop-style retail meme trade with no fundamental backing, and expects the stock to revert to a $2–4 billion market cap as the weighing machine takes over from the voting machine.",
-          "quote": "I think the PE ratios on the Newsmax trade are ridiculous in the sense that it's going to revert back to something closer to normalcy... it spoke to like $240, so it's more like GameStop than anything else.",
-          "quoteStartMs": 6714365,
+          "summary": "Ben Shapiro argues Newsmax's IPO pop is a GameStop-style retail-driven voting machine moment with absurd PE ratios that will revert, and that the stock's fair market cap is likely $2–4 billion, well below its peak of over $20 billion.",
+          "quote": "I think the PE ratios on the Newsmax trade are ridiculous in the sense that it's going to revert back to something closer to normalcy...it's more like GameStop than anything else.",
+          "quoteStartMs": 6715705,
           "topics": [
-            "IPO",
             "valuation",
-            "retail speculation",
-            "media"
+            "IPO",
+            "media",
+            "retail trading"
           ],
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The only view on record comes from Friedberg (attributing Ben Shapiro's argument), who is bearish on Newsmax at medium conviction. He characterizes the IPO's spike to roughly $240 as a GameStop-style meme trade driven by retail sentiment rather than any fundamental business value, and expects the stock to revert to a more rational $2–4 billion market cap as price-discovery reasserts itself. With only one host's perspective available, there is no agreement or disagreement to note among the broader group.",
+      "synthesis": "The lone host view provided comes from Friedberg (attributing arguments made by Ben Shapiro), who holds a bearish, medium-conviction stance on Newsmax as of April 2025. The core argument is that Newsmax's IPO price surge was a retail-driven, sentiment-fueled event akin to the GameStop short squeeze, resulting in PE ratios seen as fundamentally unjustifiable and unsustainable. Friedberg cites a fair market cap of roughly $2–4 billion as a more reasonable anchor, far below the peak valuation of over $20 billion. With only one host's thesis supplied, no cross-host agreement or disagreement can be assessed.",
       "netStance": "bear",
       "firstMentioned": "2025-04-05T19:03:00.000Z",
       "lastMentioned": "2025-04-05T19:03:00.000Z",
@@ -27149,6 +26610,303 @@
       "mentionCount": 1,
       "market": null,
       "description": "Digital tokens pegged to the US dollar, used for payments, trading, and value transfer on blockchains.",
+      "domain": null
+    },
+    {
+      "slug": "mags",
+      "company": "Magnificent Seven",
+      "ticker": "MAGS",
+      "isPublic": true,
+      "theses": [
+        {
+          "id": "E209-magnificent-seven-Jason-7",
+          "episodeId": "E209",
+          "episodeNumber": 209,
+          "episodeDate": "2025-01-04T00:23:00.000Z",
+          "company": "Magnificent Seven",
+          "ticker": "MAGS",
+          "isPublic": true,
+          "host": "Jason",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "selection",
+          "excludeReason": null,
+          "scoreNote": "Ranked as Jason's #1 best performing asset pick for 2025. ETF proxy: Magnificent Seven ETF.",
+          "sectorProxy": "MAGS",
+          "summary": "Jason picks the Mag 7 as his best performing asset for 2025, arguing AI-driven internal efficiency gains will produce earnings growth that markets cannot yet comprehend.",
+          "quote": "I think the Mag 7 is going to be the best performing asset... the gains we'll see from AI, which they're producing for other companies and for consumers, they're applying first internally. So the internal application of AI will allow these",
+          "quoteStartMs": 4930420,
+          "topics": [
+            "AI",
+            "earnings growth",
+            "best performing asset"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E209-magnificent-seven-Chamath-6",
+          "episodeId": "E209",
+          "episodeNumber": 209,
+          "episodeDate": "2025-01-04T00:23:00.000Z",
+          "company": "Magnificent Seven",
+          "ticker": null,
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bear",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": "MAGS",
+          "summary": "Chamath warns that excessive index concentration in the Mag 7 (~40% of indices) historically foreshadows a large drawdown, projecting a potential multi-trillion-dollar absolute dollar loss even if fundamentals remain strong.",
+          "quote": "I am a little bit worried, and I tweeted this a few days ago, about just the general concentration of the top 7, 8, 9, 10 companies in the indices. I think it's approaching 40%... when you look at these historic concentrations, they've gene",
+          "quoteStartMs": 2418185,
+          "topics": [
+            "concentration risk",
+            "valuation",
+            "index",
+            "drawdown"
+          ],
+          "attributionConfidence": "high"
+        }
+      ],
+      "synthesis": "The hosts are split on the Magnificent Seven heading into 2025. Jason is a high-conviction bull, arguing that AI-driven internal efficiency gains will deliver earnings growth that markets have not yet priced in, making the Mag 7 his top pick for the year. Chamath, by contrast, is a medium-conviction bear on the group as an index holding, warning that their near-40% concentration in major indices historically precedes significant drawdowns — a risk he sees as meaningful even if the underlying fundamentals of individual companies remain intact. The disagreement centers less on business quality and more on market structure: Jason focuses on earnings upside, while Chamath flags valuation and concentration risk as the dominant concern.",
+      "netStance": "mixed",
+      "firstMentioned": "2025-01-04T00:23:00.000Z",
+      "lastMentioned": "2025-01-04T00:23:00.000Z",
+      "mentionCount": 2,
+      "market": {
+        "ticker": "MAGS",
+        "sourceSymbol": "MAGS",
+        "currency": "USD",
+        "asOf": "2026-06-19",
+        "anchorDate": "2025-01-04",
+        "basePrice": 56.66,
+        "latestPrice": 65.44,
+        "returns": {
+          "1m": -0.01729615248852801,
+          "3m": -0.27003176844334625,
+          "6m": -0.02823861630780082,
+          "1y": 0.16290151782562662,
+          "since": 0.15495940698905755
+        },
+        "history": [
+          [
+            "2025-01-06",
+            56.66
+          ],
+          [
+            "2025-01-16",
+            54.45
+          ],
+          [
+            "2025-01-28",
+            56.22
+          ],
+          [
+            "2025-02-06",
+            55.42
+          ],
+          [
+            "2025-02-18",
+            55.12
+          ],
+          [
+            "2025-02-27",
+            50.12
+          ],
+          [
+            "2025-03-10",
+            46.33
+          ],
+          [
+            "2025-03-19",
+            46.75
+          ],
+          [
+            "2025-03-28",
+            46.03
+          ],
+          [
+            "2025-04-08",
+            40.5
+          ],
+          [
+            "2025-04-17",
+            42.48
+          ],
+          [
+            "2025-04-29",
+            46.59
+          ],
+          [
+            "2025-05-08",
+            47.67
+          ],
+          [
+            "2025-05-19",
+            52.27
+          ],
+          [
+            "2025-05-29",
+            52.9
+          ],
+          [
+            "2025-06-09",
+            53.27
+          ],
+          [
+            "2025-06-18",
+            53.44
+          ],
+          [
+            "2025-06-30",
+            55.47
+          ],
+          [
+            "2025-07-10",
+            55.99
+          ],
+          [
+            "2025-07-21",
+            57.61
+          ],
+          [
+            "2025-07-30",
+            57.82
+          ],
+          [
+            "2025-08-08",
+            59.93
+          ],
+          [
+            "2025-08-19",
+            59.34
+          ],
+          [
+            "2025-08-28",
+            60.63
+          ],
+          [
+            "2025-09-09",
+            61.72
+          ],
+          [
+            "2025-09-18",
+            64.3
+          ],
+          [
+            "2025-09-29",
+            64.78
+          ],
+          [
+            "2025-10-08",
+            65.19
+          ],
+          [
+            "2025-10-17",
+            64.33
+          ],
+          [
+            "2025-10-28",
+            68.37
+          ],
+          [
+            "2025-11-06",
+            66.19
+          ],
+          [
+            "2025-11-17",
+            64.75
+          ],
+          [
+            "2025-11-26",
+            66.31
+          ],
+          [
+            "2025-12-08",
+            67.02
+          ],
+          [
+            "2025-12-17",
+            65.31
+          ],
+          [
+            "2025-12-29",
+            67.46
+          ],
+          [
+            "2026-01-08",
+            65.88
+          ],
+          [
+            "2026-01-20",
+            62.94
+          ],
+          [
+            "2026-01-29",
+            66.38
+          ],
+          [
+            "2026-02-09",
+            63.84
+          ],
+          [
+            "2026-02-19",
+            61.59
+          ],
+          [
+            "2026-03-02",
+            61.61
+          ],
+          [
+            "2026-03-11",
+            62.15
+          ],
+          [
+            "2026-03-20",
+            58.37
+          ],
+          [
+            "2026-03-31",
+            57.94
+          ],
+          [
+            "2026-04-10",
+            61.14
+          ],
+          [
+            "2026-04-21",
+            65.31
+          ],
+          [
+            "2026-04-30",
+            66.24
+          ],
+          [
+            "2026-05-11",
+            69.44
+          ],
+          [
+            "2026-05-20",
+            69.49
+          ],
+          [
+            "2026-06-01",
+            69.86
+          ],
+          [
+            "2026-06-10",
+            64.22
+          ],
+          [
+            "2026-06-18",
+            65.44
+          ]
+        ],
+        "source": "yahoo"
+      },
+      "description": "ETF providing equal-weight exposure to the seven largest US mega-cap technology companies.",
       "domain": null
     },
     {

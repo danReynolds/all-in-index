@@ -410,31 +410,5 @@
       "Elon premium"
     ],
     "attributionConfidence": "high"
-  },
-  {
-    "id": "E272-spacex-Chamath-16",
-    "episodeId": "E272",
-    "episodeNumber": 272,
-    "episodeDate": "2026-05-08T22:16:00.000Z",
-    "company": "SpaceX",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Chamath",
-    "stance": "bull",
-    "conviction": "high",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "sectorProxy": null,
-    "summary": "Chamath predicts a Tesla-SpaceX merger into 'Elon Corp' by end of year or mid-next year will command an unprecedented valuation premium that will break conventional analysis, as Elon is the only person demonstrably still innovating at scale.",
-    "quote": "When Tesla and SpaceX merge and we have all things Elon in Elon Corp, okay, which will happen probably by the end of the year… it's going to then break everybody's brains again, because you'll have this one asset… that will trade at a",
-    "quoteStartMs": 1489121,
-    "topics": [
-      "valuation",
-      "merger",
-      "innovation premium",
-      "IPO"
-    ],
-    "attributionConfidence": "high"
   }
 ]

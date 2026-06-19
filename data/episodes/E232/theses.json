@@ -104,31 +104,6 @@
     "attributionConfidence": "high"
   },
   {
-    "id": "E232-tsla-Chamath-4",
-    "episodeId": "E232",
-    "episodeNumber": 232,
-    "episodeDate": "2025-06-21T02:53:00.000Z",
-    "company": "Tesla",
-    "ticker": "TSLA",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "bull",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "sectorProxy": null,
-    "summary": "Chamath says he would not be sleeping on Tesla, calling it 'misunderstood' again despite its stock being down, and noting its strong position in physical AI while flagging its current stock weakness is puzzling given its competitive positioning.",
-    "quote": "I spent time last week at Tesla. I would not be sleeping on this business. I think that it is yet again back into the land of being misunderstood.",
-    "quoteStartMs": 1534778,
-    "topics": [
-      "physical AI",
-      "misunderstood valuation",
-      "vertical integration"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
     "id": "E232-nvda-Guest-5",
     "episodeId": "E232",
     "episodeNumber": 232,

@@ -181,14 +181,14 @@
     "attributionConfidence": "high"
   },
   {
-    "id": "E204-polymarket-Chamath-7",
+    "id": "E204-polymarket-Jason-7",
     "episodeId": "E204",
     "episodeNumber": 204,
     "episodeDate": "2024-11-16T16:55:00.000Z",
     "company": "Polymarket",
     "ticker": null,
     "isPublic": false,
-    "host": "Chamath",
+    "host": "Jason",
     "stance": "neutral",
     "conviction": "low",
     "callType": "view",
@@ -204,7 +204,7 @@
       "CFTC",
       "FBI"
     ],
-    "attributionConfidence": "low"
+    "attributionConfidence": "high"
   },
   {
     "id": "E204-wbd-Sacks-8",

@@ -1,58 +1,32 @@
 [
   {
-    "id": "E222-magnificent-seven-basket-Sacks-0",
+    "id": "E222-credit-default-swaps-cds-corporate-credit-protection-Sacks-0",
     "episodeId": "E222",
     "episodeNumber": 222,
     "episodeDate": "2025-04-05T19:03:00.000Z",
-    "company": "Magnificent Seven (basket)",
+    "company": "Credit Default Swaps (CDS) / Corporate Credit Protection",
     "ticker": null,
     "isPublic": false,
     "host": "Sacks",
-    "stance": "bear",
-    "conviction": "high",
-    "callType": "selection",
-    "excludeReason": null,
-    "scoreNote": "Sacks describes it as 'free money' and confirms the Polymarket trade closed out profitably; explicit directional bet placed.",
-    "sectorProxy": "MAGS",
-    "summary": "Sacks placed an explicit bet (via Polymarket) that the Mag Seven would shrink below 30% of the S&P 500 in 2025, citing the Trump administration's indifference to the stock market and its focus on working-class and MAGA economic priorities rather than the asset economy.",
-    "quote": "\"The equity market sell-off is a Mag Seven problem, not a MAGA problem.\"",
-    "quoteStartMs": 3054174,
-    "topics": [
-      "Mag Seven",
-      "tariffs",
-      "market concentration",
-      "MAGA policy"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
-    "id": "E222-credit-default-swaps-cds-Chamath-1",
-    "episodeId": "E222",
-    "episodeNumber": 222,
-    "episodeDate": "2025-04-05T19:03:00.000Z",
-    "company": "Credit Default Swaps (CDS)",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Chamath",
     "stance": "bull",
-    "conviction": "high",
+    "conviction": "medium",
     "callType": "explicit_long",
     "excludeReason": null,
-    "scoreNote": "Explicit 'I would be long CDS' + described as 'my pick for the best investment idea'; already in the money per Chamath's update.",
+    "scoreNote": "Explicit long call on CDS/credit protection as best investment idea; already in the money per discussion. Not a single-company equity — macro/credit instrument.",
     "sectorProxy": null,
-    "summary": "Chamath picks being long CDS as an asymmetric insurance trade against a corporate default wave in 2025, noting the trade has already paid off ~7x and citing tariff-driven revenue pressure on levered companies as the catalyst.",
-    "quote": "I would be long CDS. So what am I buying? I am buying insurance... if it hits, it will be the best performing asset of 2025.",
+    "summary": "Chamath recommends buying CDS (credit default swaps) as an asymmetric insurance policy against a corporate debt default wave in 2025, citing tariff-driven revenue pressure, debt covenants tied to EBITDA, and overall macro fragility — noting the trade has already returned ~7x in roughly 3 months.",
+    "quote": "I would be long CDS. So what am I buying? I am buying insurance...I'm buying protection that there is no default event in 2025...if it hits, it will be the best performing asset of 2025.",
     "quoteStartMs": 6423976,
     "topics": [
+      "credit risk",
       "CDS",
-      "corporate debt",
-      "recession risk",
-      "tariffs"
+      "tariffs",
+      "macro hedge"
     ],
     "attributionConfidence": "low"
   },
   {
-    "id": "E222-nmax-Friedberg-2",
+    "id": "E222-nmax-Friedberg-1",
     "episodeId": "E222",
     "episodeNumber": 222,
     "episodeDate": "2025-04-05T19:03:00.000Z",
@@ -66,40 +40,15 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Ben Shapiro argues Newsmax's IPO spike to ~$240 is a GameStop-style retail meme trade with no fundamental backing, and expects the stock to revert to a $2–4 billion market cap as the weighing machine takes over from the voting machine.",
-    "quote": "I think the PE ratios on the Newsmax trade are ridiculous in the sense that it's going to revert back to something closer to normalcy... it spoke to like $240, so it's more like GameStop than anything else.",
-    "quoteStartMs": 6714365,
+    "summary": "Ben Shapiro argues Newsmax's IPO pop is a GameStop-style retail-driven voting machine moment with absurd PE ratios that will revert, and that the stock's fair market cap is likely $2–4 billion, well below its peak of over $20 billion.",
+    "quote": "I think the PE ratios on the Newsmax trade are ridiculous in the sense that it's going to revert back to something closer to normalcy...it's more like GameStop than anything else.",
+    "quoteStartMs": 6715705,
     "topics": [
-      "IPO",
       "valuation",
-      "retail speculation",
-      "media"
+      "IPO",
+      "media",
+      "retail trading"
     ],
     "attributionConfidence": "high"
-  },
-  {
-    "id": "E222-daily-wire-Guest-3",
-    "episodeId": "E222",
-    "episodeNumber": 222,
-    "episodeDate": "2025-04-05T19:03:00.000Z",
-    "company": "Daily Wire",
-    "ticker": null,
-    "isPublic": false,
-    "host": "Guest",
-    "stance": "neutral",
-    "conviction": "low",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "sectorProxy": null,
-    "summary": "Ben Shapiro confirms Daily Wire is not going bankrupt, is doing $220M in annual revenue, and has considered raising capital, but provides no explicit investment recommendation.",
-    "quote": "Actually, last year was $220 million... we're not going bankrupt... it has crossed our minds. Yes, for sure.",
-    "quoteStartMs": 6665000,
-    "topics": [
-      "media",
-      "fundraising",
-      "revenue"
-    ],
-    "attributionConfidence": "low"
   }
 ]
