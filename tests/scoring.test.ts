@@ -567,6 +567,66 @@ test("a commodity short filed under two names dedupes to one proxy-backed row", 
   assert.equal(deduped[0].ticker, "USO");
 });
 
+test("same-direction restatements merge however far apart, keeping the stronger row", () => {
+  // Regression for E250: Chamath stated "I'm long OpenAI" twice ~29 min apart
+  // with different, non-overlapping quotes. These share no timestamp window and
+  // no quote substring, so the old (≤5s OR quoteMatches) rule kept both — one
+  // position counted twice. Same host + exposure + direction is now one call.
+  const first = thesis("Chamath", "bull", "2026-01-10T00:00:00.000Z", {
+    id: "E250-openai-Chamath-2",
+    company: "OpenAI",
+    ticker: null,
+    isPublic: false,
+    callType: "explicit_long",
+    quote: "I'm long OpenAI, it's the single biggest position I have.",
+    quoteStartMs: 600_000,
+    attributionConfidence: "high",
+  });
+  const restated = thesis("Chamath", "bull", "2026-01-10T00:00:00.000Z", {
+    id: "E250-openai-Chamath-9",
+    company: "OpenAI",
+    ticker: null,
+    isPublic: false,
+    callType: "explicit_long",
+    quote: "This is the biggest supercycle of all and I am betting the whole thing on it.",
+    quoteStartMs: 2_340_000,
+    attributionConfidence: "high",
+    scoreNote: "Restated long on OpenAI.",
+  });
+
+  const deduped = dedupeOverlappingTheses([first, restated]);
+
+  assert.equal(deduped.length, 1);
+  // The scoreNote gives `restated` the higher rank, so it survives the merge.
+  assert.equal(deduped[0].id, "E250-openai-Chamath-9");
+});
+
+test("an opposite-direction call on the same name is a flip, never a merge", () => {
+  // The opposed-stance guard is the only thing keeping a genuine bull→bear flip
+  // from collapsing into one row. Pin it: a long and a short on the same name by
+  // the same host stay two distinct calls.
+  const long = thesis("Chamath", "bull", "2026-01-10T00:00:00.000Z", {
+    id: "E260-tsla-Chamath-1",
+    company: "Tesla",
+    ticker: "TSLA",
+    callType: "explicit_long",
+    quote: "I'm long Tesla here.",
+    quoteStartMs: 100_000,
+  });
+  const short = thesis("Chamath", "bear", "2026-01-10T00:00:00.000Z", {
+    id: "E260-tsla-Chamath-7",
+    company: "Tesla",
+    ticker: "TSLA",
+    callType: "explicit_short",
+    quote: "I flipped — this is a short now.",
+    quoteStartMs: 200_000,
+  });
+
+  const deduped = dedupeOverlappingTheses([long, short]);
+
+  assert.equal(deduped.length, 2);
+});
+
 test("prediction-round transcript picks are covered by audited receipts", () => {
   const transcript: Transcript = {
     episodeId: "E257",
