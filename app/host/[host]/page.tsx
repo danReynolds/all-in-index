@@ -149,14 +149,17 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
     if (g) {
       g.count++;
       if (t.episodeDate > g.latest.episodeDate) g.latest = t;
+      // Display take = the most recent one carrying an actual quote.
+      if (t.quote && (!g.display || t.episodeDate > g.display.episodeDate)) g.display = t;
     } else {
-      m.set(t.slug, { latest: t, count: 1 });
+      m.set(t.slug, { latest: t, count: 1, display: t.quote ? t : undefined });
     }
     return m;
-  }, new Map<string, { latest: HostTake; count: number }>());
+  }, new Map<string, { latest: HostTake; count: number; display?: HostTake }>());
   const weighedIn: HostCompanyRow[] = [...grouped.values()]
     .map((g) => {
       const holding = snapshot.holdings.find((h) => h.slug === g.latest.slug);
+      const dt = g.display ?? g.latest;
       return {
         slug: g.latest.slug,
         company: g.latest.company,
@@ -167,6 +170,15 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
         count: g.count,
         lastDate: g.latest.episodeDate,
         sinceReturn: holding?.market?.returns.since ?? null,
+        take: {
+          quote: dt.quote || dt.summary,
+          stance: dt.stance,
+          callType: dt.callType,
+          episodeId: dt.episodeId,
+          episodeNumber: dt.episodeNumber,
+          episodeDate: dt.episodeDate,
+          quoteStartMs: dt.quoteStartMs,
+        },
       };
     })
     .sort((a, b) => b.lastDate.localeCompare(a.lastDate));
@@ -217,7 +229,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
           </div>
           <p className="mb-4 text-sm text-neutral-400">
             <strong className="text-neutral-200">{fund.constituents.length}</strong>{" "}
-            {fund.constituents.length === 1 ? "call" : "calls"} we could put a price on — $1,000 in
+            {fund.constituents.length === 1 ? "call" : "calls"}{" "}we could put a price on — $1,000 in
             each, measured against the S&amp;P over the same stretch.
           </p>
           <IndexChart
@@ -329,7 +341,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
       {/* Every company they've discussed — scored stance per name, filterable */}
       {weighedIn.length > 0 && (
         <Reveal>
-          <HostCompanies host={host} rows={weighedIn} />
+          <HostCompanies host={host} rows={weighedIn} episodes={episodes} episodeLinks={episodeLinks} />
         </Reveal>
       )}
 
