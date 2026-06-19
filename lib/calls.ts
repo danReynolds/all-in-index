@@ -155,7 +155,7 @@ export function tradeDirectionForTake(t: Thesis): TradeDirection | null {
  * the clearest possible "I'm in"; selection/ranking language in an investment
  * frame is also scoreable. Attribution must still be clean.
  */
-export function positionTakes(
+function positionTakes(
   theses: Thesis[],
   hosts: readonly Host[] = BESTIES,
 ): Thesis[] {
@@ -180,10 +180,6 @@ export interface ExposureWindow {
   reinforceTakes?: Thesis[];
   /** The position call that closed it. */
   endTake?: Thesis;
-}
-
-export interface BullWindow extends ExposureWindow {
-  direction: "long";
 }
 
 /**
@@ -245,14 +241,6 @@ export function guestExposureWindows(theses: Thesis[], guestName: string): Expos
   return windowsFromTakes(takes);
 }
 
-/**
- * Compatibility helper for long-only surfaces: enter on scored long, exit on
- * next scored non-long. New scoring code should use hostExposureWindows.
- */
-export function hostBullWindows(theses: Thesis[], host: Host): BullWindow[] {
-  return hostExposureWindows(theses, host).filter((w): w is BullWindow => w.direction === "long");
-}
-
 export interface StanceSegment {
   date: string;
   dir: -1 | 0 | 1;
@@ -263,7 +251,7 @@ export interface StanceSegment {
  * did the table's balance point? Consecutive same-direction states merge, so
  * the path reads like ▲ → ▼ → ▲.
  */
-export function stancePath(
+function stancePath(
   theses: Thesis[],
   hosts: readonly Host[] = BESTIES,
 ): StanceSegment[] {

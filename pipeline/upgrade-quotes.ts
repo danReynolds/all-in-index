@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { z } from "zod";
 import { callTool } from "./llm";
 import { isPortfolioScored } from "../lib/calls";
-import { isQuoteVerbatim } from "../lib/quotes";
+import { isQuoteVerbatim, normForMatch } from "../lib/quotes";
 import { store } from "./store";
 import { snapQuoteTimestamps } from "./run-episode";
 import { HOLDINGS_FILE } from "./config";
@@ -61,14 +61,6 @@ const INPUT_SCHEMA = {
   },
   required: ["takes"],
 };
-
-const norm = (s: string) =>
-  s
-    .toLowerCase()
-    .replace(/[‘’“”"']/g, "")
-    .replace(/[^a-z0-9 ]+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
 
 /** The host's transcript context for a take: company mentions + quote vicinity. */
 function contextFor(t: Thesis, tr: Transcript): string {
@@ -150,12 +142,12 @@ export async function upgradeQuotes(): Promise<void> {
       const t = cands.find((x) => x.id === v.id);
       if (!t) continue;
       // Verify the proposed quote is genuinely verbatim in the transcript.
-      const key = norm(v.betterQuote);
+      const key = normForMatch(v.betterQuote);
       if (v.betterQuote.length < 15 || !isQuoteVerbatim(v.betterQuote, fullText)) continue;
       // Never let two takes share a quote — the aggregator's passing-mention
       // filter (correctly) drops shared quotes as list mentions.
       const dupe = theses.some(
-        (other) => other.id !== t.id && norm(other.quote ?? "").includes(key.slice(0, 60)),
+        (other) => other.id !== t.id && normForMatch(other.quote ?? "").includes(key.slice(0, 60)),
       );
       if (dupe) continue;
       t.quote = v.betterQuote.slice(0, 240);

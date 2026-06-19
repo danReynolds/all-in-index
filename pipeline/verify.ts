@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { callTool } from "./llm";
-import { trimPublishedQuote } from "../lib/quotes";
+import { isQuoteVerbatim, trimPublishedQuote } from "../lib/quotes";
 import type { Episode, Thesis, Transcript } from "../lib/types";
 
 const VERDICT_VALUES = ["keep", "fix_quote", "neutralize", "drop"] as const;
@@ -80,24 +80,6 @@ Rules:
 - When torn between fix_quote and neutralize, neutralize — only supply a new quote when you can point to an unambiguous directional sentence.
 - When torn between neutralize and drop, drop if the name appears only as an example or list item.`;
 
-/** Collapse to lowercase alphanumerics + single spaces, for verbatim matching. */
-function norm(s: string): string {
-  return s.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-}
-
-/**
- * Is `candidate` a verbatim excerpt of the transcript? Quotes are often stitched
- * from non-contiguous lines with an ellipsis ("A … B"); accept that by requiring
- * each substantive ellipsis-separated fragment to appear verbatim in the haystack.
- */
-function isVerbatim(candidate: string, haystack: string): boolean {
-  const frags = candidate
-    .split(/\s*(?:\.\.\.|…)\s*/)
-    .map(norm)
-    .filter((f) => f.length >= 12);
-  return frags.length > 0 && frags.every((f) => haystack.includes(f));
-}
-
 function formatTranscript(t: Transcript): string {
   const text = t.utterances
     .map((u) => `[${Math.round(u.startMs / 1000)}s ${u.speaker}] ${u.text}`)
@@ -151,12 +133,13 @@ export async function verifyTheses(
   // Per-speaker haystacks for validating a replacement quote: a fix_quote must
   // be verbatim in the ATTRIBUTED HOST's own lines, never another speaker's —
   // this enforces quote ownership mechanically, not just via the prompt.
+  // Stored raw; isQuoteVerbatim normalizes both sides with the shared matcher.
   const speakerText = new Map<string, string[]>();
   for (const u of transcript.utterances) {
     (speakerText.get(u.speaker) ?? speakerText.set(u.speaker, []).get(u.speaker)!).push(u.text);
   }
   const hostHaystack = new Map<string, string>();
-  for (const [spk, texts] of speakerText) hostHaystack.set(spk, norm(texts.join(" ")));
+  for (const [spk, texts] of speakerText) hostHaystack.set(spk, texts.join(" "));
   const byIndex = new Map(verdicts.map((v) => [v.index, v]));
   const kept: Thesis[] = [];
   let dropped = 0;
@@ -193,7 +176,7 @@ export async function verifyTheses(
       // that's verbatim somewhere in the transcript but not in this host's
       // utterances is exactly the cross-speaker contamination we're guarding against.
       const hostHay = hostHaystack.get(t.host) ?? "";
-      if (isVerbatim(candidate, hostHay)) {
+      if (isQuoteVerbatim(candidate, hostHay)) {
         requoted++;
         console.log(`  ✎ requote ${t.company} (${t.stance}) — ${v.reason}`);
         kept.push(applyCallType({
