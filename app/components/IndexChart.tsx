@@ -453,14 +453,14 @@ export function IndexChart({
                   stats.ret,
                   "since this call",
                 )}
-                {tile("S&P match", fmtPct(stats.bench), stats.bench, "same dates")}
-                {tile("Alpha", pp(stats.alpha), stats.alpha, "vs matched S&P")}
+                {tile("S&P, same dates", fmtPct(stats.bench), stats.bench, "what the S&P did")}
+                {tile("Alpha", pp(stats.alpha), stats.alpha, "beat the S&P by")}
                 {portfolioReturn != null &&
                   tile(
-                    "Contribution",
+                    "Share of the total",
                     pp(stats.contribPp),
                     stats.contribPp,
-                    `of ${fmtPct(portfolioReturn)} total`,
+                    `of ${fmtPct(portfolioReturn)} overall`,
                   )}
               </div>
             </div>

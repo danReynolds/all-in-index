@@ -270,14 +270,14 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
       ) : (
         <section className="rise flex flex-wrap items-center gap-x-10 gap-y-4 rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-6 py-5 dark:border-neutral-700 dark:bg-neutral-900/50" style={d(120)}>
           <div>
-            <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">Net conviction</div>
+            <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">Where they land</div>
             <div className="mt-1">
               {(() => {
                 const ds = displayStance(h.theses);
                 return ds !== "none" ? (
                   <StanceBadge stance={ds} />
                 ) : (
-                  <span className="text-sm text-neutral-500" title="No take on this name clears the scoring bar (medium+ conviction, verified speaker).">
+                  <span className="text-sm text-neutral-500" title="Nothing they said here was a firm enough call to score — just passing commentary.">
                     —
                   </span>
                 );

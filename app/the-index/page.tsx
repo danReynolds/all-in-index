@@ -51,13 +51,10 @@ export default function IndexPage() {
       <header className="rise space-y-2">
         <h1 className="font-display text-3xl font-bold tracking-tight">The Besties Index</h1>
         <p className="max-w-2xl text-neutral-500 dark:text-neutral-400">
-          A rules-based, equal-weight long basket of public companies where the hosts&apos;
-          current scored view is net-bullish — bought when that bullish stance was adopted,
-          held to today, and benchmarked against the S&amp;P with identical cashflows.
-          It&apos;s the <strong className="text-neutral-700 dark:text-neutral-300">long book</strong>;
-          names they&apos;ve turned bearish on aren&apos;t dropped — they move to{" "}
-          <Link href="#bear-book" className="text-rose-600 hover:underline dark:text-rose-400">the Bear Book</Link>,
-          scored as shorts.
+          Every public stock the besties actually called a buy — equal-weighted, bought at the
+          price the day they said it and held to today, measured against the S&amp;P over the same
+          stretch. Looking for the names they&apos;ve turned bearish on? Those live in{" "}
+          <Link href="#bear-book" className="text-rose-600 hover:underline dark:text-rose-400">the Bear Book</Link>.
         </p>
       </header>
 
@@ -114,7 +111,7 @@ export default function IndexPage() {
       {/* Bullish, but outside the single-name index — grouped by why */}
       {fund.excludedPrivate.length > 0 && (() => {
         const GROUPS: Array<{ kind: ExcludedKind; label: string; note: string }> = [
-          { kind: "private", label: "Private companies", note: "No public market yet — net-bullish calls tracked in the catalog." },
+          { kind: "private", label: "Private companies", note: "No public stock to buy yet — we still track every call." },
           { kind: "going_private", label: "Going private", note: "Under a definitive cash take-private — public holders are cashed out at the deal price, so there's no forward stock performance to track; the upside accrues to the private buyers." },
           { kind: "crypto", label: "Crypto", note: "Investable, but via spot ETFs or tokens rather than single-name equities — tracked, outside the stock index." },
           { kind: "macro", label: "Macro & baskets", note: "Broad or multi-name bets with no single ticker to hold." },
@@ -127,8 +124,8 @@ export default function IndexPage() {
                 Bullish, but outside the index · {fund.excludedPrivate.length}
               </h2>
               <p className="mt-1 text-sm text-neutral-500">
-                Net-bullish calls that aren&apos;t a tradable single-name stock, so they can&apos;t sit
-                in the index — grouped by why.
+                Buy calls that don&apos;t map to one public stock you could hold — private companies,
+                crypto, broad bets. We still track them; they just can&apos;t sit in the index.
               </p>
             </div>
             {GROUPS.map(({ kind, label, note }) => {
@@ -168,8 +165,8 @@ export default function IndexPage() {
               The Guesties Index <span className="text-base font-normal">🎤</span>
             </h2>
             <p className="mt-1 max-w-2xl text-sm text-neutral-500 dark:text-neutral-400">
-              The same idea, but for the <em>guests</em> — every net-bullish public call made by
-              someone the besties had on the show. How do the invited experts stack up?
+              Same scoreboard, but for the <em>guests</em> — every buy call made by someone the
+              besties brought on the show. How do the invited experts stack up?
             </p>
           </div>
           <div className="grid gap-6 lg:grid-cols-[260px_1fr]">
@@ -233,10 +230,9 @@ export default function IndexPage() {
             <div>
               <h2 className="font-display text-xl font-bold tracking-tight">The Bear Book 🐻</h2>
               <p className="mt-1 max-w-2xl text-sm text-neutral-500 dark:text-neutral-400">
-                The short side of the same book. Every public name the besties are currently
-                net-<em>bearish</em> on — held to the same scoring bar as the index above, but
-                pointing down, so they sit here instead of in the long basket. Each is scored as
-                if you&apos;d shorted when that bear stance was adopted.
+                The flip side of the index: every public stock the besties have called a{" "}
+                <em>short</em> or a sell. Each one is scored as if you&apos;d shorted it the day
+                they made the call.
               </p>
             </div>
 
@@ -274,17 +270,15 @@ export default function IndexPage() {
       <section id="methodology" className="scroll-mt-28 rounded-xl border border-neutral-200 bg-neutral-50 p-5 text-sm leading-relaxed text-neutral-500 dark:border-neutral-800 dark:bg-neutral-900/50 dark:text-neutral-400">
         <h2 className="mb-2 font-semibold text-neutral-700 dark:text-neutral-200">Methodology</h2>
         <ul className="list-disc space-y-1 pl-5">
-          <li>One index position per public company whose <strong>current scored view</strong> is net-bullish across the selected hosts; bearish/mixed/neutral names are excluded.</li>
-          <li><strong>Scored views</strong> are medium- or high-conviction, attributed theses. They can move a holding&apos;s stance and the Besties Index, even when the host was analyzing the company rather than saying &quot;buy this stock.&quot;</li>
-          <li><strong>Portfolio-scored calls</strong> are a narrower subset: clear in/out language, ranked investment selections, explicit shorts, or named pair/basket legs. Host funds use only these exposure windows.</li>
-          <li>Host pages show the <strong>calls behind the score</strong>; holding pages keep the <strong>full company history</strong>, including extra commentary mentions.</li>
-          <li>A holding&apos;s stance is its <strong>current</strong> view — the balance of each host&apos;s latest scored take — and is judged only over the window since that view was adopted. Evolved names additionally show a <strong>follow-their-calls</strong> return (long in bullish stretches, short in bearish, flat when split).</li>
-          <li>Benchmark ETFs (SPY, QQQ, …), broad-market/macro calls, private companies, and crypto tokens are tracked when useful but excluded from the public-company index.</li>
-          <li>Two benchmarks, both with identical cashflows: the S&amp;P (SPY) and the tougher tech-heavy QQQ — published so you don&apos;t have to ask.</li>
-          <li>Follow-their-calls, duels, and episode scorecards use sampled (~weekly) price history — directionally solid, not penny-accurate. The index and host funds use full daily closes.</li>
-          <li><strong>Equal weight</strong>: {dollars(fund.contributionPerCall)} notionally invested in each at the close when its current bullish stance was adopted, held to today.</li>
-          <li>The benchmark ({fund.benchmarkSymbol}) receives the <strong>identical cashflows on the identical dates</strong>, so the comparison isolates stock selection.</li>
-          <li>Private companies are excluded (no public market). Returns are price-only, exclude dividends and trading costs, and are <strong>not investment advice</strong>.</li>
+          <li>The index holds one spot for every public company a bestie currently has an open <strong>buy call</strong> on. Names they&apos;ve shorted or sold sit in the Bear Book instead; names they only talked about don&apos;t count.</li>
+          <li>A <strong>call</strong> is something they actually said — &quot;I&apos;m long,&quot; &quot;I just bought,&quot; &quot;my #1 pick,&quot; &quot;this is a short.&quot; Sounding bullish in conversation is <strong>commentary</strong>: it shows up on the company&apos;s page, but it never puts a stock in the index.</li>
+          <li>We hold each name from the day of the call until they back off it — an exit, or a flip the other way — then it leaves the index.</li>
+          <li>A company&apos;s page keeps everything ever said about it, calls and commentary alike; a host&apos;s page shows just the calls behind their score.</li>
+          <li><strong>Equal weight</strong>: {dollars(fund.contributionPerCall)} into each name at the closing price the day the call was made, held to today.</li>
+          <li>The benchmark ({fund.benchmarkSymbol}) gets the <strong>same dollars on the same days</strong>, so the only thing being measured is their stock picking. We also run the tougher, tech-heavy QQQ — so you don&apos;t have to ask.</li>
+          <li>ETFs, broad-market and macro bets, private companies, and crypto are tracked when useful but kept out of the public-stock index.</li>
+          <li>Episode scorecards and &quot;follow their calls&quot; returns use ~weekly price history — directionally solid, not penny-accurate; the index and host funds use full daily closes.</li>
+          <li>Returns are price-only — no dividends, no trading costs — and this is <strong>not investment advice</strong>.</li>
           <li>As of {fmtDate(fund.asOf)}.</li>
         </ul>
       </section>

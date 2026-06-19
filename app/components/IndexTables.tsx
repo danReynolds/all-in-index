@@ -127,7 +127,7 @@ export function BearBookTable({ rows, asOfMs }: { rows: Array<WithDomain<BearCal
         const short = Math.max(-r.sinceReturn, -1);
         const wiped = -r.sinceReturn < -1;
         return (
-          <span title={wiped ? "Capped at −100% — a real short is wiped out; no margin mechanics modeled." : undefined}>
+          <span title={wiped ? "Capped at −100% — a real short can only lose what you put in." : undefined}>
             {pct(short)}
             {wiped && <span className="text-neutral-500">*</span>}
           </span>
