@@ -1322,5 +1322,9 @@
   "california-real-estate": {
     "description": "California-based real estate company involved in buying, selling, or managing residential or commercial properties.",
     "domain": null
+  },
+  "new-mag-7-future-leaders-basket": {
+    "description": "A thematic basket grouping emerging large-cap technology and growth companies considered potential future market leaders.",
+    "domain": null
   }
 }
