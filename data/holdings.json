@@ -1,426 +1,436 @@
 {
-  "generatedAt": "2026-06-20T00:45:34.526Z",
+  "generatedAt": "2026-06-20T00:56:12.248Z",
   "holdings": [
     {
-      "slug": "meta",
-      "company": "Meta",
-      "ticker": "META",
+      "slug": "spcx",
+      "company": "SpaceX",
+      "ticker": "SPCX",
       "isPublic": true,
       "theses": [
         {
-          "id": "E276-meta-Chamath-3",
-          "episodeId": "E276",
-          "episodeNumber": 276,
-          "episodeDate": "2026-06-13T04:51:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Chamath argues Meta fumbled its open-source LLaMA strategy by failing to deliver a truly competitive open-source model, missing a major opportunity to commoditize the AI market and undercut closed competitors.",
-          "quote": "Meta really fumbled this with LLaMA. I mean, if they had landed a really good— Big time. Working open source model... What a fumble.",
-          "quoteStartMs": 1395449,
-          "topics": [
-            "open source AI",
-            "competitive strategy",
-            "LLaMA"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E275-meta-Chamath-6",
-          "episodeId": "E275",
-          "episodeNumber": 275,
-          "episodeDate": "2026-05-29T22:23:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues Meta's layoffs are a correction from years of overhiring and mismanagement — burning $50B on VR and growing to 90,000 employees — not primarily driven by AI, so current headcount reductions are a return to efficiency rather than an AI-led structural shift.",
-          "quote": "Meta overhired. You could have stopped the company at 3,000 people when I left and it would not have changed the outcome of that company. There was no need to go to 90,000 people and burn $50 billion on VR.",
-          "quoteStartMs": 4363477,
-          "topics": [
-            "layoffs",
-            "AI washing",
-            "operational efficiency"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E268-meta-Chamath-7",
-          "episodeId": "E268",
-          "episodeNumber": 268,
-          "episodeDate": "2026-04-10T22:17:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues Meta's massive compute infrastructure gives it a structural advantage in AI — its models are highly performant — and predicts Meta will seek to make AI a capital problem to outcompete leaner rivals like Anthropic and OpenAI.",
-          "quote": "Meta's models today, what people's general reviews are, it's okay, but the one thing that people say is it's incredibly performant... which speaks to Meta's huge advantage. They have a massive compute infrastructure.",
-          "quoteStartMs": 3189371,
-          "topics": [
-            "AI models",
-            "compute advantage",
-            "competitive position"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E266-meta-Chamath-9",
-          "episodeId": "E266",
-          "episodeNumber": 266,
-          "episodeDate": "2026-03-27T20:03:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath warns that the Section 230 workaround established by the New Mexico and LA verdicts opens a 'death by a thousand cuts' litigation wave against Meta that will compound, given the jury map has now been drawn for plaintiffs' lawyers to extract large judgments.",
-          "quote": "I expect that this will be a death by a thousand cuts kind of scenario where folks are just going to rally around this... we've opened the floodgates.",
-          "quoteStartMs": 3926343,
-          "topics": [
-            "litigation",
-            "regulation",
-            "Section 230",
-            "child safety"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E251-meta-Chamath-4",
-          "episodeId": "E251",
-          "episodeNumber": 251,
-          "episodeDate": "2025-11-14T21:03:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath dismisses Burry's depreciation-fraud thesis against hyperscalers like Meta, arguing their business models are too strong to need accounting games and that ongoing kernel/chip innovations drive genuine utilization longevity, making the short ill-founded.",
-          "quote": "The business models of these companies are just far too good for them to get to the point of having exhausted every other operational tactic that then they have to cook the books. These are not the 7 companies that are going to cook the",
-          "quoteStartMs": 541460,
-          "topics": [
-            "earnings quality",
-            "AI capex",
-            "short thesis rebuttal"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E247-meta-Jason-6",
-          "episodeId": "E247",
-          "episodeNumber": 247,
-          "episodeDate": "2025-10-17T23:45:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
-          "isPublic": true,
-          "host": "Jason",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Jason points to Meta's headcount declining from a peak of 86,000 to 75,000 as evidence that AI deployment at scale is structurally reducing employment at leading tech companies.",
-          "quote": "Meta peaked at 86,000 employees, now at 75,000.",
-          "quoteStartMs": 4381000,
-          "topics": [
-            "AI automation",
-            "headcount",
-            "labor displacement"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E245-meta-Sacks-4",
-          "episodeId": "E245",
-          "episodeNumber": 245,
-          "episodeDate": "2025-10-03T16:39:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
+          "id": "E277-spacex-Sacks-1",
+          "episodeId": "E277",
+          "episodeNumber": 277,
+          "episodeDate": "2026-06-19T22:07:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
           "isPublic": true,
           "host": "Sacks",
           "stance": "neutral",
-          "conviction": "medium",
+          "conviction": "high",
           "callType": "view",
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Sacks notes that Meta's LLaMA 4 open-source release was considered disappointing and that Meta may be backing away from open source entirely to go proprietary, weakening the US position in open-source AI.",
-          "quote": "Meta, most notably, has invested billions and billions of dollars in LLaMA, but the release of LLaMA 4, I think, was considered disappointing by a lot of people. And now there's statements by Meta that they might be backing away from open",
-          "quoteStartMs": 3010927,
+          "summary": "Sacks is bullish on SpaceX as Elon's life's work and a wealth-creating machine, predicting Elon will hold his shares well beyond the one-year lockup because SpaceX represents a machine that will continue creating value for humanity.",
+          "quote": "He's under a one-year lockup, and I predict that he'll hold on for much longer than that because creating SpaceX is his life's work.",
+          "quoteStartMs": 1166958,
           "topics": [
-            "open source AI",
-            "LLaMA",
-            "competitive position"
+            "SpaceX IPO",
+            "valuation",
+            "long-term hold"
           ],
           "attributionConfidence": "high"
         },
         {
-          "id": "E238-meta-Guest-4",
-          "episodeId": "E238",
-          "episodeNumber": 238,
-          "episodeDate": "2025-08-09T15:40:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
+          "id": "E277-spacex-Chamath-0",
+          "episodeId": "E277",
+          "episodeNumber": 277,
+          "episodeDate": "2026-06-19T22:07:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
           "isPublic": true,
-          "host": "Guest",
+          "host": "Chamath",
           "stance": "bull",
-          "conviction": "medium",
+          "conviction": "high",
           "callType": "view",
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Gavin Baker cites Meta's most recent quarter — with revenue significantly ahead of expectations — as evidence that AI is already generating real economic returns, through increased user engagement and improved ad targeting ROAS.",
-          "quote": "Meta just reported a quarter with revenue significantly ahead, and I think a lot of that was due to AI, AI making people spend longer and AI improving the quality of their ad targeting systems such that advertisers get a better ROAS and",
-          "quoteStartMs": 1212098,
+          "summary": "Chamath views SpaceX as a unique, one-of-a-kind company that has peaked in price-to-sales and will grow into and beyond its current valuation, with a likely Tesla merger ahead that will be transformative.",
+          "quote": "It's an incredible company. It's a one of one. It's just a unique, unique animal. I think that the highest price to sales was essentially these last few days. And now it's just going to grow into its valuation and generally just grow",
+          "quoteStartMs": 985190,
           "topics": [
-            "AI monetization",
-            "advertising",
-            "revenue growth"
+            "valuation",
+            "growth",
+            "IPO",
+            "Tesla merger"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E274-xai-grok-Guest-5",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T22:46:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Gavin Baker argues xAI is now a frontier model with Grok 4.3, and the launch of Grok Build as a runtime/harness—combined with Cursor's proprietary coding data and Colossus compute—positions xAI to rapidly close the gap and become a dominant coding AI platform.",
+          "quote": "the newest version of Groq 4.3 is on the Pareto frontier for all frontier models. And you're either on the frontier or you're not. And the companies on the frontier are xAI with one build of Groq 4.3... Google 3.1 Pro, and then OpenAI and",
+          "quoteStartMs": 3187402,
+          "topics": [
+            "AI",
+            "competitive moat",
+            "compute",
+            "coding"
           ],
           "attributionConfidence": "high",
           "guestName": "Gavin Baker"
         },
         {
-          "id": "E235-meta-Guest-9",
-          "episodeId": "E235",
-          "episodeNumber": 235,
-          "episodeDate": "2025-07-11T21:28:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
+          "id": "E274-spacex-Guest-2",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T22:46:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
           "isPublic": true,
           "host": "Guest",
-          "stance": "bear",
-          "conviction": "medium",
+          "stance": "bull",
+          "conviction": "high",
           "callType": "view",
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Keith argues that Grok 4's results show Meta has missed the AI boat and needs to build a whole new AI team, having failed to keep pace despite massive spending.",
-          "quote": "Grok, if anything, Grok 4 shows that Mark really does need to spend money to build a whole new team because everything they've done in AI has also missed the boat.",
-          "quoteStartMs": 3346000,
+          "summary": "Gavin Baker is bullish on SpaceX's Elon Web Services / data center business, citing its ability to build data centers faster and cheaper than anyone else, Anthropic's $15B offtake deal as validation, and Cursor's Composer 2.5 breakthrough as evidence of the compute cluster's strategic value.",
+          "quote": "they build data centers dramatically faster than anyone else. At a lower cost. And now that you have a clear offtake partner, and I would expect partner to become partners, there is no reason they can't start stamping these data centers",
+          "quoteStartMs": 2913072,
           "topics": [
-            "AI strategy",
-            "missed opportunity",
-            "competitive position"
+            "data centers",
+            "AI compute",
+            "IPO",
+            "competitive moat"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
+        },
+        {
+          "id": "E274-spacex-Chamath-1",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T22:46:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues SpaceX at $2T is justifiable by underwriting terrestrial data center revenue alone to $100-200B by 2030, plus Starlink scaling to hundreds of millions of users, a growing AI/compute business with a unique capital and execution moat, and Elon's unique ability to create civilizational-scale innovations.",
+          "quote": "terrestrial data centers alone are $100 or $200 billion of revenue by 2030, 2032. Just— and that means just building it. So already you're buying it at 20 times revenue just for that business.",
+          "quoteStartMs": 3813000,
+          "topics": [
+            "IPO",
+            "valuation",
+            "data centers",
+            "Starlink"
           ],
           "attributionConfidence": "high"
         },
         {
-          "id": "E232-meta-Guest-1",
-          "episodeId": "E232",
-          "episodeNumber": 232,
-          "episodeDate": "2025-06-21T02:53:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
+          "id": "E272-spacex-Guest-2",
+          "episodeId": "E272",
+          "episodeNumber": 272,
+          "episodeDate": "2026-05-08T22:16:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
           "isPublic": true,
           "host": "Guest",
           "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Brad Gerstner estimates the Anthropic compute deal adds $4–5B of incremental revenue this year, resolves the biggest valuation question around xAI's losses, and justifies SpaceX trading at 40–50x revenue on its IPO.",
+          "quote": "I estimate that this is going to generate in this year an incremental $4 to $5 billion of revenue on top of what I've seen analyst estimates in the mid-20s… This is why the SpaceX IPO is gonna trade at 40 to 50 times revenue.",
+          "quoteStartMs": 534000,
+          "topics": [
+            "valuation",
+            "IPO",
+            "hyperscaler revenue",
+            "compute"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
+        },
+        {
+          "id": "E272-spacex-Chamath-1",
+          "episodeId": "E272",
+          "episodeNumber": 272,
+          "episodeDate": "2026-05-08T22:16:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues that landing terrestrial compute capacity blunts the bear case on orbital data center delays and creates a structural core hyperscaler business that subsidizes Grok training, reinforcing SpaceX's valuation ahead of IPO.",
+          "quote": "by actually landing a bunch of terrestrial capacity, I think you start to blunt that because you can now start to say that even if the orbital data centers get delayed by a few months or a few quarters, even if the technological de-risking",
+          "quoteStartMs": 475218,
+          "topics": [
+            "valuation",
+            "hyperscaler",
+            "IPO",
+            "compute"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E270-spacex-Sacks-3",
+          "episodeId": "E270",
+          "episodeNumber": 270,
+          "episodeDate": "2026-04-24T21:20:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "neutral",
           "conviction": "medium",
           "callType": "view",
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Thomas LaFont argues Meta's Scale AI investment is highly rational given the size of the AI opportunity relative to its market cap, drawing parallels to the Onavo acquisition as a data-layer chess move that locks out competitors.",
-          "quote": "If you're the CEO and you ultimately believe that maybe 50% of your market cap is at risk because of AI, $850 billion, why would you not spend maybe 4 or 5% of that if you think it increases the odds even slightly that you're going to win",
-          "quoteStartMs": 794690,
+          "summary": "Sacks sees the SpaceX-Cursor deal as highly complementary — Cursor brings coding strength, enterprise clients, and training data while xAI provides compute and a foundation model, accelerating xAI in the coding space.",
+          "quote": "Cursor obviously is very strong in coding. That's what it brings to xAI. XAI brings compute and they bring a foundation model... this will accelerate xAI in this area.",
+          "quoteStartMs": 628120,
           "topics": [
-            "AI strategy",
+            "AI coding",
             "M&A",
-            "competitive moat",
-            "valuation"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Thomas Laffont"
-        },
-        {
-          "id": "E232-meta-Chamath-0",
-          "episodeId": "E232",
-          "episodeNumber": 232,
-          "episodeDate": "2025-06-21T02:53:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues Meta's aggressive moves to acquire labeling secrets (Scale), app secrets (Nat Friedman/Daniel Gross), and now needing infrastructure/compute secrets mirror the playbook of OpenAI, Google, and DeepSeek — and if Zuck assembles all three layers, Meta has a credible path to competing at the frontier.",
-          "quote": "He's bought the training secrets, he's bought the app secrets, and now he has to buy some infrastructure and compute hardware secrets. You put it together and he's got a pretty good strategy here.",
-          "quoteStartMs": 1270000,
-          "topics": [
-            "AI strategy",
-            "talent acquisition",
-            "vertical integration",
             "competitive position"
           ],
           "attributionConfidence": "high"
         },
         {
-          "id": "E213-meta-Chamath-3",
-          "episodeId": "E213",
-          "episodeNumber": 213,
-          "episodeDate": "2025-01-31T21:52:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
+          "id": "E270-spacex-Chamath-2",
+          "episodeId": "E270",
+          "episodeNumber": 270,
+          "episodeDate": "2026-04-24T21:20:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
           "isPublic": true,
           "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "medium",
+          "stance": "bull",
+          "conviction": "high",
           "callType": "view",
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Chamath argues Meta is best positioned to respond to DeepSeek because it must embrace and extend the innovations (PTX, GRPO), and it already has billions of DAUs — making it the only company that can realistically bring AI to a billion-plus people.",
-          "quote": "I think all the pressure right now I think is on Meta because I think Meta has to show up with the next iteration of LLaMA that beats and exceeds Gemini, that exceeds R1. And I think that that is going to be crucial for us to have a",
-          "quoteStartMs": 2447000,
+          "summary": "Chamath argues the Cursor deal is a smart jiu-jitsu move by Elon — acquiring the most valuable AI coding wrapper at an effective $30B discount by paying in stock at IPO valuation, while gaining valuable RL training data and a crack team.",
+          "quote": "He can issue $60 billion of stock at a $2 trillion valuation and get a model and a service that I think is extremely compelling in coding... He gets all of that, and then he gets a very crack team.",
+          "quoteStartMs": 492212,
           "topics": [
-            "open source AI",
-            "LLaMA",
-            "competitive positioning",
-            "consumer AI"
+            "M&A",
+            "AI coding",
+            "valuation",
+            "IPO"
           ],
           "attributionConfidence": "high"
         },
         {
-          "id": "E210-meta-Chamath-0",
-          "episodeId": "E210",
-          "episodeNumber": 210,
-          "episodeDate": "2025-01-11T01:41:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
+          "id": "E270-spacex-Jason-1",
+          "episodeId": "E270",
+          "episodeNumber": 270,
+          "episodeDate": "2026-04-24T21:20:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
           "isPublic": true,
-          "host": "Chamath",
+          "host": "Jason",
           "stance": "bull",
-          "conviction": "medium",
+          "conviction": "high",
           "callType": "view",
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Chamath argues Zuckerberg's pivot to free speech and removal of fact-checkers is the value-maximizing decision for Meta shareholders given the new political winds under Trump, calling it a smart business move regardless of Zuckerberg's personal moral views.",
-          "quote": "I do think it's the smart value-maximizing decision yet again for Facebook shareholders.",
-          "quoteStartMs": 3969093,
+          "summary": "Jason views the Cursor acquisition as highly accretive to SpaceX's revenue story ahead of its IPO, with Cursor's $6B projected run rate adding meaningfully to SpaceX's $22-24B 2026 revenue at a $2 trillion target valuation.",
+          "quote": "SpaceX projected revenue between $22 and $24 billion in 2026. So this is quite accretive to the revenue story at SpaceX, at the IPO of SpaceX, which is now targeting a valuation of $2 trillion.",
+          "quoteStartMs": 351026,
           "topics": [
-            "content moderation",
-            "political risk",
-            "free speech",
+            "IPO",
+            "M&A",
+            "AI coding",
             "valuation"
           ],
           "attributionConfidence": "high"
         },
         {
-          "id": "E208-meta-Guest-6",
-          "episodeId": "E208",
-          "episodeNumber": 208,
-          "episodeDate": "2024-12-20T22:00:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "summary": "Aaron Levie argues that Meta's open-source Llama models act as a permanent price ceiling on hosted AI models, and that Meta's at-scale compute position makes it one of only a handful of companies that can win the AI infrastructure race.",
-          "quote": "Zuck is this interesting counterbalance on all of this because of open source. If at any moment you know that Zuck will basically provide an open-source model that is at best-in-class benchmarks and at the frontier, then there is a limit",
-          "quoteStartMs": 3990146,
-          "topics": [
-            "AI competition",
-            "open source",
-            "pricing power"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Aaron Levie"
-        },
-        {
-          "id": "E198-meta-Guest-7",
-          "episodeId": "E198",
-          "episodeNumber": 198,
-          "episodeDate": "2024-10-03T20:19:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Mark Cuban highlights Meta's open-source AI strategy as getting 'better and better,' framing it as a strong competitive threat to OpenAI with no guaranteed winner in the foundational model race.",
-          "quote": "Meta as open source and what they're doing is getting better and better. There is no, you know, there's nothing that says that OpenAI is going to win, nothing at all.",
-          "quoteStartMs": 7282164,
-          "topics": [
-            "AI competition",
-            "open source",
-            "Meta AI"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Mark Cuban"
-        },
-        {
-          "id": "E197-meta-Chamath-6",
-          "episodeId": "E197",
-          "episodeNumber": 197,
-          "episodeDate": "2024-09-27T17:36:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
+          "id": "E269-spacex-Chamath-9",
+          "episodeId": "E269",
+          "episodeNumber": 269,
+          "episodeDate": "2026-04-17T20:35:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
           "isPublic": true,
           "host": "Chamath",
-          "stance": "bull",
-          "conviction": "low",
+          "stance": "neutral",
+          "conviction": "high",
           "callType": "view",
           "excludeReason": null,
-          "scoreNote": null,
+          "scoreNote": "Not scored: Chamath says he wants the SpaceX IPO done 'so that I can delever and get some chips off the table' — this describes wanting to EXIT/reduce his SpaceX position, not go long. The extracted stance of 'bull' and callType 'explicit_long' are wrong. However, the exit language ('take chips off the table') implies he holds SpaceX but the quote does not express a bull forward view; it expresses a desire to reduce. This is best treated as a view with no clear directional economic claim about SpaceX's prospects — neutralize.",
           "sectorProxy": null,
-          "summary": "Chamath credits Meta for persistent iteration on AR glasses and believes they will be commercially successful, though he is uncertain whether glasses are the ultimate killer AI device form factor.",
-          "quote": "I think these glasses are going to be successful. My only comment is that I think that when you look back 25 and 30 years from now and say that was the killer AI device, I don't think it's going to look like something we know today.",
-          "quoteStartMs": 3683304,
+          "summary": "Chamath states he is personally long SpaceX and views its IPO as crucial and urgent so he can deleverage his position and take chips off the table while valuations are high.",
+          "quote": "I'm waiting for these IPOs so that I can, to be very honest with you, delever and get some chips off the table. I think that it is crucial that this SpaceX IPO get done ASAP.",
+          "quoteStartMs": 4633421,
           "topics": [
-            "AR glasses",
-            "hardware",
-            "AI interface"
+            "IPO",
+            "valuation",
+            "position management"
           ],
           "attributionConfidence": "high"
         },
         {
-          "id": "E197-meta-Sacks-5",
-          "episodeId": "E197",
-          "episodeNumber": 197,
-          "episodeDate": "2024-09-27T17:36:00.000Z",
-          "company": "Meta",
-          "ticker": "META",
+          "id": "E267-spacex-Friedberg-1",
+          "episodeId": "E267",
+          "episodeNumber": 267,
+          "episodeDate": "2026-04-03T21:08:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Friedberg argues SpaceX is effectively the railroad infrastructure for the next great frontier — the moon and Mars — and has also built a backup extraterrestrial internet via Starlink, making it a foundational technology platform for civilizational-scale value creation.",
+          "quote": "SpaceX will be to the moon and ultimately to Mars, and there's going to be an extraordinary abundance of production that's going to come out of the moon… SpaceX has also created— and this is going to be a a big part of the valuation analysi",
+          "quoteStartMs": 672555,
+          "topics": [
+            "space economy",
+            "Starlink",
+            "infrastructure",
+            "valuation"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E267-spacex-Chamath-0",
+          "episodeId": "E267",
+          "episodeNumber": 267,
+          "episodeDate": "2026-04-03T21:08:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues the SpaceX IPO will provide a validated external mark-to-market valuation that simplifies governance, enables a Tesla merger, and unleashes an enormous economy of downstream space businesses — he views it as the beginning of a massive value creation cycle.",
+          "quote": "I think that this is going to unleash just an unbelievably large economy of things that we have no idea about... dollars to donuts, these things are going to merge.",
+          "quoteStartMs": 803000,
+          "topics": [
+            "IPO",
+            "valuation",
+            "Tesla merger",
+            "space economy"
+          ],
+          "attributionConfidence": "low"
+        },
+        {
+          "id": "E266-spacex-Friedberg-10",
+          "episodeId": "E266",
+          "episodeNumber": 266,
+          "episodeDate": "2026-03-27T20:03:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Friedberg argues the space industry represents a $15–30 trillion annual economic opportunity on the moon, and that SpaceX's IPO will command an enormous multiple given this runway — making it a durable, AI-unlocked growth story.",
+          "quote": "I actually think there's probably a $15 to $30 trillion a year economic opportunity on the moon. That kind of a business, like you're going to see with SpaceX's IPO, is going to have an insane multiple.",
+          "quoteStartMs": 2185681,
+          "topics": [
+            "space economy",
+            "IPO",
+            "valuation",
+            "durability"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E263-xai-grok-Guest-6",
+          "episodeId": "E263",
+          "episodeNumber": 263,
+          "episodeDate": "2026-03-06T09:23:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Emil Michael states Grok/xAI has agreed to all lawful use cases across all classified and unclassified networks with no policy restrictions, making it the most cooperative AI partner for the Department of War.",
+          "quote": "Grok's all in for all awful use cases across all classified and unclassified networks, as you'd expect, because, and you know, Elon's truth-seeking. We want truth in Department of War. We don't want ideology.",
+          "quoteStartMs": 3130000,
+          "topics": [
+            "AI",
+            "defense tech",
+            "government contracts",
+            "competitive position"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Emil Michael"
+        },
+        {
+          "id": "E257-spacex-Friedberg-15",
+          "episodeId": "E257",
+          "episodeNumber": 257,
+          "episodeDate": "2026-01-10T04:28:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Friedberg's contrarian prediction is that SpaceX will not IPO but instead reverse merge into Tesla, allowing Elon Musk to consolidate control of his two seminal assets onto one cap table.",
+          "quote": "My contrarian belief number one is I don't think SpaceX will IPO. I think that it will reverse merge into Tesla, and I think Elon will use it as a moment to consolidate control and power of his two seminal assets into one cap table.",
+          "quoteStartMs": 3628000,
+          "topics": [
+            "IPO",
+            "reverse merger",
+            "Elon Musk",
+            "space"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E253-xai-Sacks-6",
+          "episodeId": "E253",
+          "episodeNumber": 253,
+          "episodeDate": "2025-12-06T01:41:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
           "isPublic": true,
           "host": "Sacks",
           "stance": "bull",
@@ -429,264 +439,452 @@
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Sacks argues Meta is executing extremely well — successful cost-cutting, advances in AI including leading the open-source movement with Llama 3.2, and now appearing ahead on augmented reality — making it a strong performer across multiple fronts.",
-          "quote": "It seems to me that Meta is executing extremely well… they've caught up and now they're leading the open source movement… And now it seems to me that they're ahead on augmented reality",
-          "quoteStartMs": 3638290,
+          "summary": "Sacks is bullish on xAI, citing its edge in current-events AI via X integration and Elon Musk's ability to scale training infrastructure faster than rivals — with Colossus 2 training Grok 5 on the largest Blackwell cluster — as indicators of strong competitive positioning.",
+          "quote": "xAI, which I think is the best at current events because of the integration with X. And also Elon seems to be able to scale his data center, his training cluster, the fastest. He had Colossus 1, now he's got Colossus 2, and that portends",
+          "quoteStartMs": 504261,
           "topics": [
-            "execution",
-            "AI",
-            "AR/VR",
-            "open source"
+            "AI competition",
+            "infrastructure",
+            "training compute"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E249-x-twitter-Guest-4",
+          "episodeId": "E249",
+          "episodeNumber": 249,
+          "episodeDate": "2025-10-31T20:11:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "neutral",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Elon Musk describes X's trajectory as transformative: Grok will semantically index 100M posts/day to personalize feeds and enable plain-language search, making X the best source of truth on the planet and dramatically increasing its platform value.",
+          "quote": "Grok is going to... read through 100 million things and show you the things that it thinks out of 100 million posts per day, what are the most interesting posts to you... we want X to be the best source of truth on the planet by far.",
+          "quoteStartMs": 1411000,
+          "topics": [
+            "AI integration",
+            "platform value",
+            "search",
+            "free speech"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Elon Musk"
+        },
+        {
+          "id": "E249-xai-grok-Guest-3",
+          "episodeId": "E249",
+          "episodeNumber": 249,
+          "episodeDate": "2025-10-31T20:11:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Elon Musk argues Grokipedia is a fundamentally superior product to Wikipedia — more accurate, comprehensive, neutral, and soon to include video — and will naturally win because users will recognize and share the better source.",
+          "quote": "I have complete confidence that Grokkoopedia is going to succeed because Wikipedia is actually not a very good product... It's not going to be a little bit better than Wikipedia. It's going to be 100 times better than Wikipedia.",
+          "quoteStartMs": 1115236,
+          "topics": [
+            "Grokipedia",
+            "AI product",
+            "competitive moat",
+            "knowledge platform"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Elon Musk"
+        },
+        {
+          "id": "E238-xai-Guest-1",
+          "episodeId": "E238",
+          "episodeNumber": 238,
+          "episodeDate": "2025-08-09T15:40:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "explicit_long",
+          "excludeReason": null,
+          "scoreNote": "Gavin confirms active ownership position in xAI.",
+          "sectorProxy": null,
+          "summary": "Gavin Baker, a disclosed shareholder of xAI, is bullish on the company due to Grok 4's exceptional benchmark performance, the largest Blackwell cluster positioning it well for Grok 5, and its consistent ability to outpace OpenAI on key metrics.",
+          "quote": "I should note my firm is a shareholder of xAI. So as much as I try to be objective, I am for sure biased because I am human and to be human is to be biased. But they have the largest Blackwell cluster, so I'm optimistic for GROK5.",
+          "quoteStartMs": 771818,
+          "topics": [
+            "AI models",
+            "benchmarks",
+            "GPU infrastructure",
+            "competitive position"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
+        },
+        {
+          "id": "E236-xai-grok-Guest-5",
+          "episodeId": "E236",
+          "episodeNumber": 236,
+          "episodeDate": "2025-07-19T02:21:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Gavin Baker says Grok 4 is the biggest leapfrog seen in quite some time — roughly twice as good as state-of-the-art rivals on ARC-AGI-2 (a semi-private benchmark) and 50-75% better on Humanity's Last Exam — establishing xAI as the current technical leader in AI.",
+          "quote": "I would say this is the biggest leapfrog we've seen in quite some time... it did roughly twice as good as, you know, the state-of-the-art Google, OpenAI, and Anthropic models. And then on humanity's last exam, you know, we can call it 50",
+          "quoteStartMs": 1218340,
+          "topics": [
+            "AI benchmarks",
+            "competitive positioning",
+            "compute"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
+        },
+        {
+          "id": "E235-xai-grok-Chamath-0",
+          "episodeId": "E235",
+          "episodeNumber": 235,
+          "episodeDate": "2025-07-11T21:28:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues that xAI's bet on massive compute scale and a general-computation approach (the 'Bitter Lesson') has allowed Grok 4 to leapfrog all competitors in under 2.5 years, with future iterations relying on synthetic data rather than human labeling — a compounding structural advantage over rivals like OpenAI, Google, and Meta who remain dependent on human-labeled data.",
+          "quote": "Two things. One is how quickly, starting in March of 2023, so we're talking about less than 2.5 years, what this team has accomplished and how how far ahead they are of everybody else, as demonstrated by this.",
+          "quoteStartMs": 1247989,
+          "topics": [
+            "AI compute scale",
+            "competitive moat",
+            "synthetic data",
+            "Bitter Lesson"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E227-spacex-Chamath-6",
+          "episodeId": "E227",
+          "episodeNumber": 227,
+          "episodeDate": "2025-05-09T20:26:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues SpaceX belongs in the optimal basket of companies to own for the future and that ignoring it simply because it is private would be a mistake.",
+          "quote": "SpaceX would be in the basket. It's private. Correct. Stripe would be in the basket. To be long some rando public company because it's public and ignore SpaceX and Stripe would just be stupid.",
+          "quoteStartMs": 5391861,
+          "topics": [
+            "private markets",
+            "portfolio construction"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E220-spacex-Chamath-3",
+          "episodeId": "E220",
+          "episodeNumber": 220,
+          "episodeDate": "2025-03-22T02:17:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath, a shareholder, argues SpaceX has no economic alternative — it is the only company consistently crushing launch costs and operating at scale, with competitors years away from being viable.",
+          "quote": "The point is SpaceX is the best. There's nobody even close. The next closest alternative is years and years away. Would we benefit from more capacity? Sure. But the reality is they are the only solution and they're safe and they're reliable",
+          "quoteStartMs": 4674584,
+          "topics": [
+            "space",
+            "competitive moat",
+            "cost leadership"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E218-xai-grok-Chamath-3",
+          "episodeId": "E218",
+          "episodeNumber": 218,
+          "episodeDate": "2025-03-08T00:58:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath has switched his consumer AI usage to Grok 3 because of its elegant integration inside X/Twitter, giving it a distribution advantage that he believes makes it more useful than standalone AI tools for news and commentary consumption.",
+          "quote": "As a consumer, I've mostly flipped my usage to Grok 3. And the reason is that it's in line with where I consume most of my information. It's elegantly integrated inside of X.",
+          "quoteStartMs": 5129819,
+          "topics": [
+            "AI models",
+            "distribution",
+            "consumer adoption"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E216-xai-Chamath-3",
+          "episodeId": "E216",
+          "episodeNumber": 216,
+          "episodeDate": "2025-02-21T23:41:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath is highly impressed by xAI's Grok 3 results, arguing that Elon's ability to leverage Tesla Powerpacks, cross-company engineering talent, and artificial time constraints to build the Colossus supercluster in record time proves the keiretsu model creates an enduring competitive advantage in AI.",
+          "quote": "the size of that cluster made no sense. And it could only be a result like this where he basically proved that there was still value in pre-training where size actually led to better outcomes.",
+          "quoteStartMs": 5362599,
+          "topics": [
+            "AI infrastructure",
+            "Grok 3",
+            "competitive moat",
+            "pre-training"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E214-xai-Guest-3",
+          "episodeId": "E214",
+          "episodeNumber": 214,
+          "episodeDate": "2025-02-07T22:20:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Antonio Gracias argues xAI's Colossus data center — the densest coherent GPU cluster in the world, built cheaply and quickly — will deliver the highest ROIC of any AI player and produce superior training outcomes, giving xAI a durable competitive edge.",
+          "quote": "XAI will have the highest return on capital, and I also think the best training data, and therefore will win.",
+          "quoteStartMs": 4421977,
+          "topics": [
+            "AI infrastructure",
+            "ROIC",
+            "competitive moat",
+            "data center"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Antonio Gracias"
+        },
+        {
+          "id": "E206-xai-Guest-1",
+          "episodeId": "E206",
+          "episodeNumber": 206,
+          "episodeDate": "2024-12-07T00:55:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": "Gavin discloses his firm is an investor in xAI (FCI).",
+          "sectorProxy": null,
+          "summary": "Gavin Baker argues xAI's Colossus supercomputer (100K+ coherent GPUs, the world's largest) is a breakthrough that no one else achieved, and if scaling laws hold, Grok 3 should take the lead in AI model capability in early 2025; his firm is also an investor in xAI.",
+          "quote": "Grok 3 should take the lead if scaling laws hold in January or February... My firm is an investor in FCI.",
+          "quoteStartMs": 3643000,
+          "topics": [
+            "AI scaling",
+            "compute",
+            "model capability",
+            "competitive position"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
+        },
+        {
+          "id": "E200-spacex-starlink-Jason-1",
+          "episodeId": "E200",
+          "episodeNumber": 200,
+          "episodeDate": "2024-10-18T22:49:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Jason",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Jason believes Starlink could become the largest subscription business in human history, potentially reaching 500 million subscribers and surpassing Netflix, Disney+, and Verizon.",
+          "quote": "It could be the largest subscription business in the history of humanity... it could be the first 500 million subscriber product in the world.",
+          "quoteStartMs": 1310000,
+          "topics": [
+            "Starlink growth",
+            "subscription business"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E200-spacex-starlink-Friedberg-0",
+          "episodeId": "E200",
+          "episodeNumber": 200,
+          "episodeDate": "2024-10-18T22:49:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Friedberg argues SpaceX's successful booster catch unlocks a path to $10/kg launch costs, making the Mars colony economically feasible, while Starlink at 4M subs could scale to 100M+ and become one of the biggest businesses on earth.",
+          "quote": "Starlink's running at 4 million subs right now. That's like $100 a month, 4 million subs... this could be a 100 million subscriber business. One of the biggest businesses on the, on the, on the earth.",
+          "quoteStartMs": 1279000,
+          "topics": [
+            "space economics",
+            "Starlink growth",
+            "launch cost",
+            "reusability"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E196-spacex-starlink-Sacks-6",
+          "episodeId": "E196",
+          "episodeNumber": 196,
+          "episodeDate": "2024-09-20T19:58:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Sacks argues Starlink has already solved the rural internet problem and is the best and cheapest solution available, but is being deliberately excluded by the Biden-Harris administration for political reasons, wasting taxpayer money and depriving rural Americans of connectivity.",
+          "quote": "we could spend a fraction of that giving people Starlink and allowing the private sector to do its job.",
+          "quoteStartMs": 2162402,
+          "topics": [
+            "Starlink",
+            "rural broadband",
+            "government contracts",
+            "political retaliation"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E192-spacex-Chamath-11",
+          "episodeId": "E192",
+          "episodeNumber": 192,
+          "episodeDate": "2024-08-16T18:42:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath contrasts SpaceX's reliable, on-time Crew Dragon program favorably against Boeing's Starliner disaster, noting SpaceX delivered a safer and cheaper solution — 40% cheaper — through competitive market dynamics rather than government mandates.",
+          "quote": "The more capable solution was 40% cheaper than the one that they thought was going to work. And the one that was 40% cheaper was also on time and the other one was— and reliable. And this other one, 7, 8, 9, 10 years delayed.",
+          "quoteStartMs": 5418000,
+          "topics": [
+            "competitive advantage",
+            "reliability",
+            "cost efficiency",
+            "space program"
           ],
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The overall host view on Meta is cautiously constructive but increasingly mixed over time, with a broad consensus on the company's strong business fundamentals — cost discipline, massive compute infrastructure, billions of daily active users, and AI-driven advertising gains — while growing disagreement centers on Meta's AI model competitiveness and the trajectory of its open-source strategy. Sacks and Chamath were early bulls on Meta's execution across cost-cutting, AR glasses, and Llama-led open-source AI, and guest voices like Gavin Baker and Thomas LaFont reinforced the bull case by pointing to strong revenue beats and the strategic rationality of Meta's AI spending relative to its $1.7T market cap. However, sentiment has soured on the AI model front: Sacks flagged the LLaMA 4 release as disappointing and warned Meta may abandon open source altogether, Chamath later conceded Meta \"fumbled\" the LLaMA opportunity to commoditize the AI market, and bear guest Keith argued Grok 4's results show Meta has outright \"missed the boat\" on AI despite massive investment. Additional risks flagged include a potentially compounding litigation wave over Section 230 liability (Chamath) and structural headcount reduction as evidence of AI-driven displacement (Jason), though Chamath separately dismisses accounting-fraud short theses against Meta as ill-founded given the strength of its underlying business model.",
-      "netStance": "neutral",
-      "firstMentioned": "2024-09-27T17:36:00.000Z",
-      "lastMentioned": "2026-06-13T04:51:00.000Z",
-      "mentionCount": 17,
+      "synthesis": "The hosts are broadly and strongly bullish on SpaceX, with enthusiasm spanning its launch dominance, Starlink's subscription potential, xAI/Grok's AI capabilities, and the anticipated IPO. Chamath, Friedberg, Jason, and Sacks all agree that SpaceX is unmatched in launch reliability and cost efficiency, with Chamath calling it \"the only solution\" and Friedberg framing it as railroad-like infrastructure for the moon and Mars; Friedberg alone floats a contrarian view that SpaceX may reverse-merge into Tesla rather than IPO, though Chamath also expects an eventual merger post-IPO. On Starlink, Friedberg and Jason are both highly bullish on subscriber scale, with Jason projecting up to 500 million subscribers and the largest subscription business in history, while Sacks adds that political exclusion by the Biden-Harris administration is artificially suppressing its adoption. Across multiple guests and Chamath, xAI and Grok are viewed as having achieved a durable AI leadership position through compute scale (Colossus 1 and 2), the Cursor acquisition, and Grok 4's benchmark leapfrog — with Gavin Baker (a disclosed xAI investor) and Antonio Gracias citing highest ROIC and best training data as structural advantages — though Chamath's personal urgency to delever at IPO signals some valuation caution even amid his overall bullishness.",
+      "netStance": "bull",
+      "firstMentioned": "2024-08-16T18:42:00.000Z",
+      "lastMentioned": "2026-06-19T22:07:00.000Z",
+      "mentionCount": 32,
       "market": {
-        "ticker": "META",
-        "sourceSymbol": "META",
+        "ticker": "SPCX",
+        "sourceSymbol": "SPCX",
         "currency": "USD",
         "asOf": "2026-06-20",
-        "anchorDate": "2024-09-27",
-        "basePrice": 567.36,
-        "latestPrice": 577.22,
+        "anchorDate": "2024-08-16",
+        "basePrice": 160.95,
+        "latestPrice": 185,
         "returns": {
-          "1m": 0.019035532994923776,
-          "3m": 0.05719472645234054,
-          "6m": 0.06207698815566841,
-          "1y": 0.31027918781725883,
-          "since": 0.017378736604624953
+          "1m": 0,
+          "3m": 0,
+          "6m": 0,
+          "1y": 0,
+          "since": 0.1494252873563219
         },
         "history": [
           [
-            "2024-09-27",
-            567.36
+            "2026-06-12",
+            160.95
           ],
           [
-            "2024-10-09",
-            590.51
+            "2026-06-15",
+            192.5
           ],
           [
-            "2024-10-21",
-            575.16
+            "2026-06-16",
+            211.39
           ],
           [
-            "2024-10-31",
-            567.58
-          ],
-          [
-            "2024-11-12",
-            584.82
-          ],
-          [
-            "2024-11-22",
-            559.14
-          ],
-          [
-            "2024-12-05",
-            608.93
-          ],
-          [
-            "2024-12-17",
-            619.44
-          ],
-          [
-            "2024-12-30",
-            591.24
-          ],
-          [
-            "2025-01-13",
-            608.33
-          ],
-          [
-            "2025-01-24",
-            647.49
-          ],
-          [
-            "2025-02-05",
-            704.87
-          ],
-          [
-            "2025-02-18",
-            716.37
-          ],
-          [
-            "2025-02-28",
-            668.2
-          ],
-          [
-            "2025-03-12",
-            619.56
-          ],
-          [
-            "2025-03-24",
-            618.85
-          ],
-          [
-            "2025-04-03",
-            531.62
-          ],
-          [
-            "2025-04-15",
-            521.52
-          ],
-          [
-            "2025-04-28",
-            549.74
-          ],
-          [
-            "2025-05-08",
-            598.01
-          ],
-          [
-            "2025-05-20",
-            637.1
-          ],
-          [
-            "2025-06-02",
-            670.9
-          ],
-          [
-            "2025-06-12",
-            693.36
-          ],
-          [
-            "2025-06-25",
-            708.68
-          ],
-          [
-            "2025-07-08",
-            720.67
-          ],
-          [
-            "2025-07-18",
-            704.28
-          ],
-          [
-            "2025-07-30",
-            695.21
-          ],
-          [
-            "2025-08-11",
-            765.87
-          ],
-          [
-            "2025-08-21",
-            739.1
-          ],
-          [
-            "2025-09-03",
-            737.05
-          ],
-          [
-            "2025-09-15",
-            764.7
-          ],
-          [
-            "2025-09-25",
-            748.91
-          ],
-          [
-            "2025-10-07",
-            713.08
-          ],
-          [
-            "2025-10-17",
-            716.92
-          ],
-          [
-            "2025-10-29",
-            751.67
-          ],
-          [
-            "2025-11-10",
-            631.76
-          ],
-          [
-            "2025-11-20",
-            589.15
-          ],
-          [
-            "2025-12-03",
-            639.6
-          ],
-          [
-            "2025-12-15",
-            647.51
-          ],
-          [
-            "2025-12-26",
-            663.29
-          ],
-          [
-            "2026-01-08",
-            646.06
-          ],
-          [
-            "2026-01-21",
-            612.96
-          ],
-          [
-            "2026-02-02",
-            706.41
-          ],
-          [
-            "2026-02-12",
-            649.81
-          ],
-          [
-            "2026-02-25",
-            653.69
-          ],
-          [
-            "2026-03-09",
-            647.39
-          ],
-          [
-            "2026-03-19",
-            606.7
-          ],
-          [
-            "2026-03-31",
-            572.13
-          ],
-          [
-            "2026-04-13",
-            634.53
-          ],
-          [
-            "2026-04-23",
-            659.15
-          ],
-          [
-            "2026-05-05",
-            604.96
-          ],
-          [
-            "2026-05-15",
-            614.23
-          ],
-          [
-            "2026-05-28",
-            635.29
-          ],
-          [
-            "2026-06-09",
-            584.59
+            "2026-06-17",
+            191.82
           ],
           [
             "2026-06-18",
-            577.22
+            185
           ]
         ],
         "source": "yahoo"
       },
-      "description": "Operates social media platforms Facebook, Instagram, and WhatsApp; develops AR/VR hardware.",
-      "domain": "meta.com"
+      "description": "Designs, manufactures, and launches rockets and spacecraft, providing commercial and government space transportation services.",
+      "domain": "spacex.com"
     },
     {
       "slug": "anthropic",
@@ -694,6 +892,58 @@
       "ticker": null,
       "isPublic": false,
       "theses": [
+        {
+          "id": "E277-anthropic-Sacks-4",
+          "episodeId": "E277",
+          "episodeNumber": 277,
+          "episodeDate": "2026-06-19T22:07:00.000Z",
+          "company": "Anthropic",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Sacks",
+          "stance": "neutral",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Sacks argues Anthropic's doomtrolling, regulatory-capture strategy, and mishandling of the Fable/Mythos situation has broken government trust, created a damaging precedent, and opened the door for hyperscalers to displace them as gatekeeper — a self-inflicted competitive wound.",
+          "quote": "Once you're in one of these situations, it's always harder to extricate yourself than to avoid getting in them in the first place because the trust is broken. The trust is now gone.",
+          "quoteStartMs": 2630043,
+          "topics": [
+            "regulation",
+            "government relations",
+            "competitive risk",
+            "trust"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E277-anthropic-Chamath-3",
+          "episodeId": "E277",
+          "episodeNumber": 277,
+          "episodeDate": "2026-06-19T22:07:00.000Z",
+          "company": "Anthropic",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Chamath",
+          "stance": "mixed",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath acknowledges Anthropic's strong revenue growth and shareholder returns but argues the Frontier Lab leaders — especially Anthropic's — are consistently evasive and immature, creating regulatory and trust risks that will hand market control to hyperscalers and damage the broader AI ecosystem.",
+          "quote": "I think the revenue run rate of this business continues to accelerate. All of it's incredible, but I want to understand this person. I am paying millions of dollars, and so I just want to understand.",
+          "quoteStartMs": 3746136,
+          "topics": [
+            "regulation",
+            "trust",
+            "competitive moat",
+            "hyperscalers"
+          ],
+          "attributionConfidence": "high"
+        },
         {
           "id": "E276-anthropic-Friedberg-2",
           "episodeId": "E276",
@@ -1691,14 +1941,1190 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts broadly view Anthropic as one of the most compelling businesses in AI, with near-universal agreement on its exceptional model quality — particularly in coding — and a revenue growth trajectory that Sacks and Gerstner describe as the fastest at scale in tech history, with ARR reportedly accelerating from $10B to $44B in roughly one quarter. Chamath, Jason, Sacks, Friedberg, and multiple guests (Gerstner, Benioff, Baker, Kalanick) converge on a bullish long-term view, citing enterprise dominance, a coding-led flywheel, and improving unit economics, with Gerstner and Sacks projecting $80–100B ARR by year-end. However, a meaningful strand of concern has emerged around Anthropic's conduct: Sacks (bear, high conviction, June 2026) accuses it of regulatory capture, secret model degradation, and prompt data retention; Friedberg reports losing Anthropic as a vendor due to research restrictions; and Chamath — despite being an investor and calling it a multi-trillion-dollar company — warns that ideologically driven terms-of-service and prompt surveillance make it a structural enterprise risk and \"almost a non-starter\" for corporate customers. The dominant tension in the thesis is therefore between Anthropic's undeniable product and revenue momentum on one side, and growing host unease about its safety-messaging strategy, content policies, and regulatory ambitions on the other.",
-      "netStance": "bear",
+      "synthesis": "The hosts are broadly bullish on Anthropic's business fundamentals — particularly its dominance in enterprise coding AI, extraordinary revenue growth (cited at a ~10x annual pace), and capital efficiency — but a meaningful split has emerged over its safety messaging, content policies, and regulatory strategy. Chamath, Sacks, Friedberg, Jason, and guest investors including Brad Gerstner and Gavin Baker all affirm Claude's best-in-class coding performance and the company's position as the enterprise AI leader, with Gerstner and Sacks pointing to the fastest revenue ramp in tech history and a trajectory toward $80–100B ARR. However, Chamath and Sacks have grown increasingly critical of Anthropic's conduct: Chamath argues its doomerism is strategically timed around fundraising, its prompt surveillance and content restrictions make it a non-starter for serious enterprises, and its leadership is evasive; Sacks goes further, accusing Anthropic of secretly nerfing models, retaining all user prompts, and pursuing regulatory capture to ban open-source competitors — calling it untrustworthy. Friedberg corroborates the enterprise risk, noting his own company has been forced off the platform due to research restrictions, while also holding a bullish long-term valuation view of $1.5T. The emerging consensus is that Anthropic's product and growth are exceptional, but its ideological and regulatory posture represents a structural risk that could cede ground to hyperscalers and open-source alternatives.",
+      "netStance": "mixed",
       "firstMentioned": "2025-03-08T00:58:00.000Z",
-      "lastMentioned": "2026-06-13T04:51:00.000Z",
-      "mentionCount": 39,
+      "lastMentioned": "2026-06-19T22:07:00.000Z",
+      "mentionCount": 41,
       "market": null,
       "description": "AI safety company that develops and deploys large language models, including the Claude series.",
       "domain": "anthropic.com"
+    },
+    {
+      "slug": "amzn",
+      "company": "Amazon",
+      "ticker": "AMZN",
+      "isPublic": true,
+      "theses": [
+        {
+          "id": "E277-amzn-Chamath-5",
+          "episodeId": "E277",
+          "episodeNumber": 277,
+          "episodeDate": "2026-06-19T22:07:00.000Z",
+          "company": "Amazon",
+          "ticker": "AMZN",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues Amazon (and other hyperscalers) stands to benefit enormously from Anthropic's self-inflicted trust crisis, positioning AWS and its peers to become the KYC-gated, government-backed gatekeepers for AI — a lucrative oligopoly role that hyperscalers are well-positioned to fill given their existing compliance and cloud infrastructure.",
+          "quote": "What does that create? Now that creates an oligopoly for AI, the most powerful economically leveling instrument we've ever seen in the hands of maybe a handful of hyperscalers... the hyperscalers are out over their ski tips... The best",
+          "quoteStartMs": 2929000,
+          "topics": [
+            "AI regulation",
+            "cloud",
+            "competitive moat",
+            "hyperscalers"
+          ],
+          "attributionConfidence": "low"
+        },
+        {
+          "id": "E260-amzn-Jason-6",
+          "episodeId": "E260",
+          "episodeNumber": 260,
+          "episodeDate": "2026-02-07T04:35:00.000Z",
+          "company": "Amazon",
+          "ticker": "AMZN",
+          "isPublic": true,
+          "host": "Jason",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "selection",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Jason names Amazon as his top pick for the company of the future, arguing AI-driven efficiency will allow it to dramatically increase output with fewer people, making it extraordinarily more profitable.",
+          "quote": "a company like Amazon, which is like my number one pick for like the company of the future. They're going to be able to do so much more with so many fewer people. It's extraordinary.",
+          "quoteStartMs": 2073043,
+          "topics": [
+            "AI efficiency",
+            "future of work",
+            "valuation",
+            "productivity"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E257-amzn-Jason-0",
+          "episodeId": "E257",
+          "episodeNumber": 257,
+          "episodeDate": "2026-01-10T04:28:00.000Z",
+          "company": "Amazon",
+          "ticker": "AMZN",
+          "isPublic": true,
+          "host": "Jason",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "selection",
+          "excludeReason": null,
+          "scoreNote": "Named as Jason's explicit biggest business winner pick for 2026 in the predictions round.",
+          "sectorProxy": null,
+          "summary": "Jason picks Amazon as his biggest business winner of 2026, citing the company's robotics deployment surge, same-day delivery expansion, and his belief it will be the first company to have more robots driving its bottom line than humans.",
+          "quote": "my prediction for 2026 is that Amazon is gonna have a massive year... I think they'll be the first corporate, uh, singularity, which is to say the first company to have more robots driving their bottom line than humans. So that's my",
+          "quoteStartMs": 2182916,
+          "topics": [
+            "robotics",
+            "automation",
+            "logistics",
+            "AI"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E248-amzn-Friedberg-4",
+          "episodeId": "E248",
+          "episodeNumber": 248,
+          "episodeDate": "2025-10-24T22:38:00.000Z",
+          "company": "Amazon Web Services / Amazon",
+          "ticker": "AMZN",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "bear",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Friedberg argues the AWS outage will accelerate enterprise multi-cloud diversification away from AWS toward Microsoft Azure, Google Cloud, and Oracle, as customers recognize the risk of single-cloud dependency.",
+          "quote": "the outage that happened this week, I think starts to highlight for folks that they can't and shouldn't have a dependency on a single cloud service provider. Provider and will only accelerate the diversification of companies into the other",
+          "quoteStartMs": 1922894,
+          "topics": [
+            "cloud",
+            "competition",
+            "multi-cloud"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E232-amzn-Chamath-20",
+          "episodeId": "E232",
+          "episodeNumber": 232,
+          "episodeDate": "2025-06-21T02:53:00.000Z",
+          "company": "Amazon",
+          "ticker": "AMZN",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues Amazon's retail business will be a kingmaker for physical AI demand (robots, drones, autonomous vehicles), but AWS faces a strategic decision about whether to differentiate its silicon from Nvidia and potentially acquire Anthropic to tightly couple next-gen code gen to AWS.",
+          "quote": "The Amazon retail side is going to be a kingmaker for all of these physical AI things... do I differentiate my own hardware from NVIDIA's at some point? Do I actually make a real bet on models and try to frankly buy Anthropic, which is",
+          "quoteStartMs": 5402904,
+          "topics": [
+            "physical AI",
+            "AWS",
+            "robotics",
+            "strategic decisions"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E226-amzn-Guest-5",
+          "episodeId": "E226",
+          "episodeNumber": 226,
+          "episodeDate": "2025-05-02T23:31:00.000Z",
+          "company": "Amazon",
+          "ticker": "AMZN",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Ryan Peterson argues Amazon misplayed the tariff transparency situation, and structurally enables foreign (primarily Chinese) sellers who bypass US registration requirements, disadvantaging American sellers and undermining the platform's long-term competitiveness with domestic brands.",
+          "quote": "I think that Amazon totally misplayed this...it's 60% of all the sellers on Amazon are these Chinese registered. They're not registered in the United States at all, just Chinese companies.",
+          "quoteStartMs": 3020000,
+          "topics": [
+            "tariffs",
+            "marketplace competition",
+            "regulation"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Ryan Peterson"
+        }
+      ],
+      "synthesis": "The hosts are broadly bullish on Amazon, with Jason holding the highest conviction, predicting it will be the defining corporate winner of the coming years by deploying robotics at scale and dramatically improving profitability through AI-driven efficiency. Chamath is constructively positive on Amazon's retail side as a potential kingmaker for physical AI (robots, drones, autonomous vehicles) and sees AWS benefiting from an emerging hyperscaler oligopoly in regulated AI access, though he flags a key strategic decision around silicon differentiation from Nvidia and whether to acquire Anthropic. Friedberg introduces a notable bearish counterpoint, arguing that a major AWS outage will accelerate enterprise multi-cloud diversification toward Azure, Google Cloud, and Oracle, eroding AWS's dominance. The lone critical structural concern comes from guest Ryan Peterson, who is neutral-to-negative on Amazon's marketplace, arguing the company mishandled tariff transparency and that its heavy reliance on unregistered Chinese sellers disadvantages American merchants and threatens long-term platform competitiveness.",
+      "netStance": "bull",
+      "firstMentioned": "2025-05-02T23:31:00.000Z",
+      "lastMentioned": "2026-06-19T22:07:00.000Z",
+      "mentionCount": 6,
+      "market": {
+        "ticker": "AMZN",
+        "sourceSymbol": "AMZN",
+        "currency": "USD",
+        "asOf": "2026-06-20",
+        "anchorDate": "2025-05-02",
+        "basePrice": 189.98,
+        "latestPrice": 244.39,
+        "returns": {
+          "1m": 0.08774607853458267,
+          "3m": 0.11406463838298778,
+          "6m": 0.3369828402989789,
+          "1y": 0.4319928413517214,
+          "since": 0.28639856827034427
+        },
+        "history": [
+          [
+            "2025-05-02",
+            189.98
+          ],
+          [
+            "2025-05-09",
+            193.06
+          ],
+          [
+            "2025-05-16",
+            205.59
+          ],
+          [
+            "2025-05-23",
+            200.99
+          ],
+          [
+            "2025-06-02",
+            206.65
+          ],
+          [
+            "2025-06-09",
+            216.98
+          ],
+          [
+            "2025-06-16",
+            216.1
+          ],
+          [
+            "2025-06-24",
+            212.77
+          ],
+          [
+            "2025-07-01",
+            220.46
+          ],
+          [
+            "2025-07-09",
+            222.54
+          ],
+          [
+            "2025-07-16",
+            223.19
+          ],
+          [
+            "2025-07-23",
+            228.29
+          ],
+          [
+            "2025-07-30",
+            230.19
+          ],
+          [
+            "2025-08-06",
+            222.31
+          ],
+          [
+            "2025-08-13",
+            224.56
+          ],
+          [
+            "2025-08-20",
+            223.81
+          ],
+          [
+            "2025-08-27",
+            229.12
+          ],
+          [
+            "2025-09-04",
+            235.68
+          ],
+          [
+            "2025-09-11",
+            229.95
+          ],
+          [
+            "2025-09-18",
+            231.23
+          ],
+          [
+            "2025-09-25",
+            218.15
+          ],
+          [
+            "2025-10-02",
+            222.41
+          ],
+          [
+            "2025-10-09",
+            227.74
+          ],
+          [
+            "2025-10-16",
+            214.47
+          ],
+          [
+            "2025-10-23",
+            221.09
+          ],
+          [
+            "2025-10-30",
+            222.86
+          ],
+          [
+            "2025-11-06",
+            243.04
+          ],
+          [
+            "2025-11-13",
+            237.58
+          ],
+          [
+            "2025-11-20",
+            217.14
+          ],
+          [
+            "2025-11-28",
+            233.22
+          ],
+          [
+            "2025-12-05",
+            229.53
+          ],
+          [
+            "2025-12-12",
+            226.19
+          ],
+          [
+            "2025-12-19",
+            227.35
+          ],
+          [
+            "2025-12-29",
+            232.07
+          ],
+          [
+            "2026-01-06",
+            240.93
+          ],
+          [
+            "2026-01-13",
+            242.6
+          ],
+          [
+            "2026-01-21",
+            231.31
+          ],
+          [
+            "2026-01-28",
+            243.01
+          ],
+          [
+            "2026-02-04",
+            232.99
+          ],
+          [
+            "2026-02-11",
+            204.08
+          ],
+          [
+            "2026-02-19",
+            204.86
+          ],
+          [
+            "2026-02-26",
+            207.92
+          ],
+          [
+            "2026-03-05",
+            218.94
+          ],
+          [
+            "2026-03-12",
+            209.53
+          ],
+          [
+            "2026-03-19",
+            208.76
+          ],
+          [
+            "2026-03-26",
+            207.54
+          ],
+          [
+            "2026-04-02",
+            209.77
+          ],
+          [
+            "2026-04-10",
+            238.38
+          ],
+          [
+            "2026-04-17",
+            250.56
+          ],
+          [
+            "2026-04-24",
+            263.99
+          ],
+          [
+            "2026-05-01",
+            268.26
+          ],
+          [
+            "2026-05-08",
+            272.68
+          ],
+          [
+            "2026-05-15",
+            264.14
+          ],
+          [
+            "2026-05-22",
+            266.32
+          ],
+          [
+            "2026-06-01",
+            261.26
+          ],
+          [
+            "2026-06-08",
+            245.22
+          ],
+          [
+            "2026-06-15",
+            246.02
+          ],
+          [
+            "2026-06-18",
+            244.39
+          ]
+        ],
+        "source": "yahoo"
+      },
+      "description": "Operates e-commerce marketplaces, cloud computing via AWS, and digital streaming and advertising services.",
+      "domain": "amazon.com"
+    },
+    {
+      "slug": "cursor",
+      "company": "Cursor",
+      "ticker": null,
+      "isPublic": false,
+      "theses": [
+        {
+          "id": "E277-cursor-Chamath-2",
+          "episodeId": "E277",
+          "episodeNumber": 277,
+          "episodeDate": "2026-06-19T22:07:00.000Z",
+          "company": "Cursor",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues that once SpaceX's appreciation is factored in, it effectively acquired Cursor for only ~$15 billion — calling it an incredible deal that reflects Elon's off-the-charts business intellect.",
+          "quote": "What I didn't factor as well is that the revenue run rate would essentially double on top of that. So he essentially got Cursor for $15 billion. Which is unbelievable. His business intellect is off the charts. That is an incredible deal.",
+          "quoteStartMs": 1053000,
+          "topics": [
+            "M&A",
+            "valuation",
+            "AI coding"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E274-cursor-Guest-6",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T22:46:00.000Z",
+          "company": "Cursor",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Gavin Baker argues Cursor's Composer 2.5 Pareto-dominant benchmark result—achieved after just 3-4 weeks of RL on Colossus 2—proves the unique value of Cursor's proprietary coding token dataset and points to an even larger leap when a new base model is trained with that data.",
+          "quote": "this jump from Composer 2 to Composer 2.5 showed us is that when you do an appropriate amount of reinforcement learning using that data... this is 3 or 4 weeks and it is Pareto dominant.",
+          "quoteStartMs": 3039969,
+          "topics": [
+            "AI",
+            "competitive moat",
+            "coding",
+            "compute"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
+        }
+      ],
+      "synthesis": "The hosts hold a broadly positive view of Cursor, though from different angles. Gavin Baker (bullish, high conviction) focuses on the company's technical moat, arguing that the rapid benchmark gains from Composer 2 to 2.5—achieved in just 3–4 weeks of reinforcement learning on Colossus 2—validate the unique value of Cursor's proprietary coding token dataset, with an even larger leap anticipated once a new base model is trained on that data. Chamath takes a more transaction-focused, neutral stance, contending that when SpaceX's appreciation is accounted for, Elon Musk effectively acquired Cursor for only ~$15 billion, which he characterizes as an extraordinary deal given that Cursor's revenue run rate simultaneously doubled. The two hosts do not directly disagree, but they emphasize distinct dimensions: Baker on Cursor's standalone technical trajectory, and Chamath on the financial terms of its acquisition.",
+      "netStance": "neutral",
+      "firstMentioned": "2026-05-22T22:46:00.000Z",
+      "lastMentioned": "2026-06-19T22:07:00.000Z",
+      "mentionCount": 2,
+      "market": null,
+      "description": "Develops an AI-powered code editor designed to assist software developers with writing and editing code.",
+      "domain": "cursor.com"
+    },
+    {
+      "slug": "meta",
+      "company": "Meta",
+      "ticker": "META",
+      "isPublic": true,
+      "theses": [
+        {
+          "id": "E276-meta-Chamath-3",
+          "episodeId": "E276",
+          "episodeNumber": 276,
+          "episodeDate": "2026-06-13T04:51:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Chamath argues Meta fumbled its open-source LLaMA strategy by failing to deliver a truly competitive open-source model, missing a major opportunity to commoditize the AI market and undercut closed competitors.",
+          "quote": "Meta really fumbled this with LLaMA. I mean, if they had landed a really good— Big time. Working open source model... What a fumble.",
+          "quoteStartMs": 1395449,
+          "topics": [
+            "open source AI",
+            "competitive strategy",
+            "LLaMA"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E275-meta-Chamath-6",
+          "episodeId": "E275",
+          "episodeNumber": 275,
+          "episodeDate": "2026-05-29T22:23:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues Meta's layoffs are a correction from years of overhiring and mismanagement — burning $50B on VR and growing to 90,000 employees — not primarily driven by AI, so current headcount reductions are a return to efficiency rather than an AI-led structural shift.",
+          "quote": "Meta overhired. You could have stopped the company at 3,000 people when I left and it would not have changed the outcome of that company. There was no need to go to 90,000 people and burn $50 billion on VR.",
+          "quoteStartMs": 4363477,
+          "topics": [
+            "layoffs",
+            "AI washing",
+            "operational efficiency"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E268-meta-Chamath-7",
+          "episodeId": "E268",
+          "episodeNumber": 268,
+          "episodeDate": "2026-04-10T22:17:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues Meta's massive compute infrastructure gives it a structural advantage in AI — its models are highly performant — and predicts Meta will seek to make AI a capital problem to outcompete leaner rivals like Anthropic and OpenAI.",
+          "quote": "Meta's models today, what people's general reviews are, it's okay, but the one thing that people say is it's incredibly performant... which speaks to Meta's huge advantage. They have a massive compute infrastructure.",
+          "quoteStartMs": 3189371,
+          "topics": [
+            "AI models",
+            "compute advantage",
+            "competitive position"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E266-meta-Chamath-9",
+          "episodeId": "E266",
+          "episodeNumber": 266,
+          "episodeDate": "2026-03-27T20:03:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath warns that the Section 230 workaround established by the New Mexico and LA verdicts opens a 'death by a thousand cuts' litigation wave against Meta that will compound, given the jury map has now been drawn for plaintiffs' lawyers to extract large judgments.",
+          "quote": "I expect that this will be a death by a thousand cuts kind of scenario where folks are just going to rally around this... we've opened the floodgates.",
+          "quoteStartMs": 3926343,
+          "topics": [
+            "litigation",
+            "regulation",
+            "Section 230",
+            "child safety"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E251-meta-Chamath-4",
+          "episodeId": "E251",
+          "episodeNumber": 251,
+          "episodeDate": "2025-11-14T21:03:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath dismisses Burry's depreciation-fraud thesis against hyperscalers like Meta, arguing their business models are too strong to need accounting games and that ongoing kernel/chip innovations drive genuine utilization longevity, making the short ill-founded.",
+          "quote": "The business models of these companies are just far too good for them to get to the point of having exhausted every other operational tactic that then they have to cook the books. These are not the 7 companies that are going to cook the",
+          "quoteStartMs": 541460,
+          "topics": [
+            "earnings quality",
+            "AI capex",
+            "short thesis rebuttal"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E247-meta-Jason-6",
+          "episodeId": "E247",
+          "episodeNumber": 247,
+          "episodeDate": "2025-10-17T23:45:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Jason",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Jason points to Meta's headcount declining from a peak of 86,000 to 75,000 as evidence that AI deployment at scale is structurally reducing employment at leading tech companies.",
+          "quote": "Meta peaked at 86,000 employees, now at 75,000.",
+          "quoteStartMs": 4381000,
+          "topics": [
+            "AI automation",
+            "headcount",
+            "labor displacement"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E245-meta-Sacks-4",
+          "episodeId": "E245",
+          "episodeNumber": 245,
+          "episodeDate": "2025-10-03T16:39:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Sacks notes that Meta's LLaMA 4 open-source release was considered disappointing and that Meta may be backing away from open source entirely to go proprietary, weakening the US position in open-source AI.",
+          "quote": "Meta, most notably, has invested billions and billions of dollars in LLaMA, but the release of LLaMA 4, I think, was considered disappointing by a lot of people. And now there's statements by Meta that they might be backing away from open",
+          "quoteStartMs": 3010927,
+          "topics": [
+            "open source AI",
+            "LLaMA",
+            "competitive position"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E238-meta-Guest-4",
+          "episodeId": "E238",
+          "episodeNumber": 238,
+          "episodeDate": "2025-08-09T15:40:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Gavin Baker cites Meta's most recent quarter — with revenue significantly ahead of expectations — as evidence that AI is already generating real economic returns, through increased user engagement and improved ad targeting ROAS.",
+          "quote": "Meta just reported a quarter with revenue significantly ahead, and I think a lot of that was due to AI, AI making people spend longer and AI improving the quality of their ad targeting systems such that advertisers get a better ROAS and",
+          "quoteStartMs": 1212098,
+          "topics": [
+            "AI monetization",
+            "advertising",
+            "revenue growth"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
+        },
+        {
+          "id": "E235-meta-Guest-9",
+          "episodeId": "E235",
+          "episodeNumber": 235,
+          "episodeDate": "2025-07-11T21:28:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bear",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Keith argues that Grok 4's results show Meta has missed the AI boat and needs to build a whole new AI team, having failed to keep pace despite massive spending.",
+          "quote": "Grok, if anything, Grok 4 shows that Mark really does need to spend money to build a whole new team because everything they've done in AI has also missed the boat.",
+          "quoteStartMs": 3346000,
+          "topics": [
+            "AI strategy",
+            "missed opportunity",
+            "competitive position"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E232-meta-Guest-1",
+          "episodeId": "E232",
+          "episodeNumber": 232,
+          "episodeDate": "2025-06-21T02:53:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Thomas LaFont argues Meta's Scale AI investment is highly rational given the size of the AI opportunity relative to its market cap, drawing parallels to the Onavo acquisition as a data-layer chess move that locks out competitors.",
+          "quote": "If you're the CEO and you ultimately believe that maybe 50% of your market cap is at risk because of AI, $850 billion, why would you not spend maybe 4 or 5% of that if you think it increases the odds even slightly that you're going to win",
+          "quoteStartMs": 794690,
+          "topics": [
+            "AI strategy",
+            "M&A",
+            "competitive moat",
+            "valuation"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Thomas Laffont"
+        },
+        {
+          "id": "E232-meta-Chamath-0",
+          "episodeId": "E232",
+          "episodeNumber": 232,
+          "episodeDate": "2025-06-21T02:53:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues Meta's aggressive moves to acquire labeling secrets (Scale), app secrets (Nat Friedman/Daniel Gross), and now needing infrastructure/compute secrets mirror the playbook of OpenAI, Google, and DeepSeek — and if Zuck assembles all three layers, Meta has a credible path to competing at the frontier.",
+          "quote": "He's bought the training secrets, he's bought the app secrets, and now he has to buy some infrastructure and compute hardware secrets. You put it together and he's got a pretty good strategy here.",
+          "quoteStartMs": 1270000,
+          "topics": [
+            "AI strategy",
+            "talent acquisition",
+            "vertical integration",
+            "competitive position"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E213-meta-Chamath-3",
+          "episodeId": "E213",
+          "episodeNumber": 213,
+          "episodeDate": "2025-01-31T21:52:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues Meta is best positioned to respond to DeepSeek because it must embrace and extend the innovations (PTX, GRPO), and it already has billions of DAUs — making it the only company that can realistically bring AI to a billion-plus people.",
+          "quote": "I think all the pressure right now I think is on Meta because I think Meta has to show up with the next iteration of LLaMA that beats and exceeds Gemini, that exceeds R1. And I think that that is going to be crucial for us to have a",
+          "quoteStartMs": 2447000,
+          "topics": [
+            "open source AI",
+            "LLaMA",
+            "competitive positioning",
+            "consumer AI"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E210-meta-Chamath-0",
+          "episodeId": "E210",
+          "episodeNumber": 210,
+          "episodeDate": "2025-01-11T01:41:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues Zuckerberg's pivot to free speech and removal of fact-checkers is the value-maximizing decision for Meta shareholders given the new political winds under Trump, calling it a smart business move regardless of Zuckerberg's personal moral views.",
+          "quote": "I do think it's the smart value-maximizing decision yet again for Facebook shareholders.",
+          "quoteStartMs": 3969093,
+          "topics": [
+            "content moderation",
+            "political risk",
+            "free speech",
+            "valuation"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E208-meta-Guest-6",
+          "episodeId": "E208",
+          "episodeNumber": 208,
+          "episodeDate": "2024-12-20T22:00:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "summary": "Aaron Levie argues that Meta's open-source Llama models act as a permanent price ceiling on hosted AI models, and that Meta's at-scale compute position makes it one of only a handful of companies that can win the AI infrastructure race.",
+          "quote": "Zuck is this interesting counterbalance on all of this because of open source. If at any moment you know that Zuck will basically provide an open-source model that is at best-in-class benchmarks and at the frontier, then there is a limit",
+          "quoteStartMs": 3990146,
+          "topics": [
+            "AI competition",
+            "open source",
+            "pricing power"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Aaron Levie"
+        },
+        {
+          "id": "E198-meta-Guest-7",
+          "episodeId": "E198",
+          "episodeNumber": 198,
+          "episodeDate": "2024-10-03T20:19:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Mark Cuban highlights Meta's open-source AI strategy as getting 'better and better,' framing it as a strong competitive threat to OpenAI with no guaranteed winner in the foundational model race.",
+          "quote": "Meta as open source and what they're doing is getting better and better. There is no, you know, there's nothing that says that OpenAI is going to win, nothing at all.",
+          "quoteStartMs": 7282164,
+          "topics": [
+            "AI competition",
+            "open source",
+            "Meta AI"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Mark Cuban"
+        },
+        {
+          "id": "E197-meta-Chamath-6",
+          "episodeId": "E197",
+          "episodeNumber": 197,
+          "episodeDate": "2024-09-27T17:36:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "low",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath credits Meta for persistent iteration on AR glasses and believes they will be commercially successful, though he is uncertain whether glasses are the ultimate killer AI device form factor.",
+          "quote": "I think these glasses are going to be successful. My only comment is that I think that when you look back 25 and 30 years from now and say that was the killer AI device, I don't think it's going to look like something we know today.",
+          "quoteStartMs": 3683304,
+          "topics": [
+            "AR glasses",
+            "hardware",
+            "AI interface"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E197-meta-Sacks-5",
+          "episodeId": "E197",
+          "episodeNumber": 197,
+          "episodeDate": "2024-09-27T17:36:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Sacks argues Meta is executing extremely well — successful cost-cutting, advances in AI including leading the open-source movement with Llama 3.2, and now appearing ahead on augmented reality — making it a strong performer across multiple fronts.",
+          "quote": "It seems to me that Meta is executing extremely well… they've caught up and now they're leading the open source movement… And now it seems to me that they're ahead on augmented reality",
+          "quoteStartMs": 3638290,
+          "topics": [
+            "execution",
+            "AI",
+            "AR/VR",
+            "open source"
+          ],
+          "attributionConfidence": "high"
+        }
+      ],
+      "synthesis": "The overall host view on Meta is cautiously constructive but increasingly mixed over time, with a broad consensus on the company's strong business fundamentals — cost discipline, massive compute infrastructure, billions of daily active users, and AI-driven advertising gains — while growing disagreement centers on Meta's AI model competitiveness and the trajectory of its open-source strategy. Sacks and Chamath were early bulls on Meta's execution across cost-cutting, AR glasses, and Llama-led open-source AI, and guest voices like Gavin Baker and Thomas LaFont reinforced the bull case by pointing to strong revenue beats and the strategic rationality of Meta's AI spending relative to its $1.7T market cap. However, sentiment has soured on the AI model front: Sacks flagged the LLaMA 4 release as disappointing and warned Meta may abandon open source altogether, Chamath later conceded Meta \"fumbled\" the LLaMA opportunity to commoditize the AI market, and bear guest Keith argued Grok 4's results show Meta has outright \"missed the boat\" on AI despite massive investment. Additional risks flagged include a potentially compounding litigation wave over Section 230 liability (Chamath) and structural headcount reduction as evidence of AI-driven displacement (Jason), though Chamath separately dismisses accounting-fraud short theses against Meta as ill-founded given the strength of its underlying business model.",
+      "netStance": "neutral",
+      "firstMentioned": "2024-09-27T17:36:00.000Z",
+      "lastMentioned": "2026-06-13T04:51:00.000Z",
+      "mentionCount": 17,
+      "market": {
+        "ticker": "META",
+        "sourceSymbol": "META",
+        "currency": "USD",
+        "asOf": "2026-06-20",
+        "anchorDate": "2024-09-27",
+        "basePrice": 567.36,
+        "latestPrice": 577.22,
+        "returns": {
+          "1m": 0.019035532994923776,
+          "3m": 0.05719472645234054,
+          "6m": 0.06207698815566841,
+          "1y": 0.31027918781725883,
+          "since": 0.017378736604624953
+        },
+        "history": [
+          [
+            "2024-09-27",
+            567.36
+          ],
+          [
+            "2024-10-09",
+            590.51
+          ],
+          [
+            "2024-10-21",
+            575.16
+          ],
+          [
+            "2024-10-31",
+            567.58
+          ],
+          [
+            "2024-11-12",
+            584.82
+          ],
+          [
+            "2024-11-22",
+            559.14
+          ],
+          [
+            "2024-12-05",
+            608.93
+          ],
+          [
+            "2024-12-17",
+            619.44
+          ],
+          [
+            "2024-12-30",
+            591.24
+          ],
+          [
+            "2025-01-13",
+            608.33
+          ],
+          [
+            "2025-01-24",
+            647.49
+          ],
+          [
+            "2025-02-05",
+            704.87
+          ],
+          [
+            "2025-02-18",
+            716.37
+          ],
+          [
+            "2025-02-28",
+            668.2
+          ],
+          [
+            "2025-03-12",
+            619.56
+          ],
+          [
+            "2025-03-24",
+            618.85
+          ],
+          [
+            "2025-04-03",
+            531.62
+          ],
+          [
+            "2025-04-15",
+            521.52
+          ],
+          [
+            "2025-04-28",
+            549.74
+          ],
+          [
+            "2025-05-08",
+            598.01
+          ],
+          [
+            "2025-05-20",
+            637.1
+          ],
+          [
+            "2025-06-02",
+            670.9
+          ],
+          [
+            "2025-06-12",
+            693.36
+          ],
+          [
+            "2025-06-25",
+            708.68
+          ],
+          [
+            "2025-07-08",
+            720.67
+          ],
+          [
+            "2025-07-18",
+            704.28
+          ],
+          [
+            "2025-07-30",
+            695.21
+          ],
+          [
+            "2025-08-11",
+            765.87
+          ],
+          [
+            "2025-08-21",
+            739.1
+          ],
+          [
+            "2025-09-03",
+            737.05
+          ],
+          [
+            "2025-09-15",
+            764.7
+          ],
+          [
+            "2025-09-25",
+            748.91
+          ],
+          [
+            "2025-10-07",
+            713.08
+          ],
+          [
+            "2025-10-17",
+            716.92
+          ],
+          [
+            "2025-10-29",
+            751.67
+          ],
+          [
+            "2025-11-10",
+            631.76
+          ],
+          [
+            "2025-11-20",
+            589.15
+          ],
+          [
+            "2025-12-03",
+            639.6
+          ],
+          [
+            "2025-12-15",
+            647.51
+          ],
+          [
+            "2025-12-26",
+            663.29
+          ],
+          [
+            "2026-01-08",
+            646.06
+          ],
+          [
+            "2026-01-21",
+            612.96
+          ],
+          [
+            "2026-02-02",
+            706.41
+          ],
+          [
+            "2026-02-12",
+            649.81
+          ],
+          [
+            "2026-02-25",
+            653.69
+          ],
+          [
+            "2026-03-09",
+            647.39
+          ],
+          [
+            "2026-03-19",
+            606.7
+          ],
+          [
+            "2026-03-31",
+            572.13
+          ],
+          [
+            "2026-04-13",
+            634.53
+          ],
+          [
+            "2026-04-23",
+            659.15
+          ],
+          [
+            "2026-05-05",
+            604.96
+          ],
+          [
+            "2026-05-15",
+            614.23
+          ],
+          [
+            "2026-05-28",
+            635.29
+          ],
+          [
+            "2026-06-09",
+            584.59
+          ],
+          [
+            "2026-06-18",
+            577.22
+          ]
+        ],
+        "source": "yahoo"
+      },
+      "description": "Operates social media platforms Facebook, Instagram, and WhatsApp; develops AR/VR hardware.",
+      "domain": "meta.com"
     },
     {
       "slug": "aapl",
@@ -5229,840 +6655,6 @@
       "domain": "nvidia.com"
     },
     {
-      "slug": "spcx",
-      "company": "SpaceX",
-      "ticker": "SPCX",
-      "isPublic": true,
-      "theses": [
-        {
-          "id": "E274-xai-grok-Guest-5",
-          "episodeId": "E274",
-          "episodeNumber": 274,
-          "episodeDate": "2026-05-22T22:46:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Gavin Baker argues xAI is now a frontier model with Grok 4.3, and the launch of Grok Build as a runtime/harness—combined with Cursor's proprietary coding data and Colossus compute—positions xAI to rapidly close the gap and become a dominant coding AI platform.",
-          "quote": "the newest version of Groq 4.3 is on the Pareto frontier for all frontier models. And you're either on the frontier or you're not. And the companies on the frontier are xAI with one build of Groq 4.3... Google 3.1 Pro, and then OpenAI and",
-          "quoteStartMs": 3187402,
-          "topics": [
-            "AI",
-            "competitive moat",
-            "compute",
-            "coding"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Gavin Baker"
-        },
-        {
-          "id": "E274-spacex-Guest-2",
-          "episodeId": "E274",
-          "episodeNumber": 274,
-          "episodeDate": "2026-05-22T22:46:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Gavin Baker is bullish on SpaceX's Elon Web Services / data center business, citing its ability to build data centers faster and cheaper than anyone else, Anthropic's $15B offtake deal as validation, and Cursor's Composer 2.5 breakthrough as evidence of the compute cluster's strategic value.",
-          "quote": "they build data centers dramatically faster than anyone else. At a lower cost. And now that you have a clear offtake partner, and I would expect partner to become partners, there is no reason they can't start stamping these data centers",
-          "quoteStartMs": 2913072,
-          "topics": [
-            "data centers",
-            "AI compute",
-            "IPO",
-            "competitive moat"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Gavin Baker"
-        },
-        {
-          "id": "E274-spacex-Chamath-1",
-          "episodeId": "E274",
-          "episodeNumber": 274,
-          "episodeDate": "2026-05-22T22:46:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues SpaceX at $2T is justifiable by underwriting terrestrial data center revenue alone to $100-200B by 2030, plus Starlink scaling to hundreds of millions of users, a growing AI/compute business with a unique capital and execution moat, and Elon's unique ability to create civilizational-scale innovations.",
-          "quote": "terrestrial data centers alone are $100 or $200 billion of revenue by 2030, 2032. Just— and that means just building it. So already you're buying it at 20 times revenue just for that business.",
-          "quoteStartMs": 3813000,
-          "topics": [
-            "IPO",
-            "valuation",
-            "data centers",
-            "Starlink"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E272-spacex-Guest-2",
-          "episodeId": "E272",
-          "episodeNumber": 272,
-          "episodeDate": "2026-05-08T22:16:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Brad Gerstner estimates the Anthropic compute deal adds $4–5B of incremental revenue this year, resolves the biggest valuation question around xAI's losses, and justifies SpaceX trading at 40–50x revenue on its IPO.",
-          "quote": "I estimate that this is going to generate in this year an incremental $4 to $5 billion of revenue on top of what I've seen analyst estimates in the mid-20s… This is why the SpaceX IPO is gonna trade at 40 to 50 times revenue.",
-          "quoteStartMs": 534000,
-          "topics": [
-            "valuation",
-            "IPO",
-            "hyperscaler revenue",
-            "compute"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Brad Gerstner"
-        },
-        {
-          "id": "E272-spacex-Chamath-1",
-          "episodeId": "E272",
-          "episodeNumber": 272,
-          "episodeDate": "2026-05-08T22:16:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues that landing terrestrial compute capacity blunts the bear case on orbital data center delays and creates a structural core hyperscaler business that subsidizes Grok training, reinforcing SpaceX's valuation ahead of IPO.",
-          "quote": "by actually landing a bunch of terrestrial capacity, I think you start to blunt that because you can now start to say that even if the orbital data centers get delayed by a few months or a few quarters, even if the technological de-risking",
-          "quoteStartMs": 475218,
-          "topics": [
-            "valuation",
-            "hyperscaler",
-            "IPO",
-            "compute"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E270-spacex-Sacks-3",
-          "episodeId": "E270",
-          "episodeNumber": 270,
-          "episodeDate": "2026-04-24T21:20:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Sacks",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Sacks sees the SpaceX-Cursor deal as highly complementary — Cursor brings coding strength, enterprise clients, and training data while xAI provides compute and a foundation model, accelerating xAI in the coding space.",
-          "quote": "Cursor obviously is very strong in coding. That's what it brings to xAI. XAI brings compute and they bring a foundation model... this will accelerate xAI in this area.",
-          "quoteStartMs": 628120,
-          "topics": [
-            "AI coding",
-            "M&A",
-            "competitive position"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E270-spacex-Chamath-2",
-          "episodeId": "E270",
-          "episodeNumber": 270,
-          "episodeDate": "2026-04-24T21:20:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues the Cursor deal is a smart jiu-jitsu move by Elon — acquiring the most valuable AI coding wrapper at an effective $30B discount by paying in stock at IPO valuation, while gaining valuable RL training data and a crack team.",
-          "quote": "He can issue $60 billion of stock at a $2 trillion valuation and get a model and a service that I think is extremely compelling in coding... He gets all of that, and then he gets a very crack team.",
-          "quoteStartMs": 492212,
-          "topics": [
-            "M&A",
-            "AI coding",
-            "valuation",
-            "IPO"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E270-spacex-Jason-1",
-          "episodeId": "E270",
-          "episodeNumber": 270,
-          "episodeDate": "2026-04-24T21:20:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Jason",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Jason views the Cursor acquisition as highly accretive to SpaceX's revenue story ahead of its IPO, with Cursor's $6B projected run rate adding meaningfully to SpaceX's $22-24B 2026 revenue at a $2 trillion target valuation.",
-          "quote": "SpaceX projected revenue between $22 and $24 billion in 2026. So this is quite accretive to the revenue story at SpaceX, at the IPO of SpaceX, which is now targeting a valuation of $2 trillion.",
-          "quoteStartMs": 351026,
-          "topics": [
-            "IPO",
-            "M&A",
-            "AI coding",
-            "valuation"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E269-spacex-Chamath-9",
-          "episodeId": "E269",
-          "episodeNumber": 269,
-          "episodeDate": "2026-04-17T20:35:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": "Not scored: Chamath says he wants the SpaceX IPO done 'so that I can delever and get some chips off the table' — this describes wanting to EXIT/reduce his SpaceX position, not go long. The extracted stance of 'bull' and callType 'explicit_long' are wrong. However, the exit language ('take chips off the table') implies he holds SpaceX but the quote does not express a bull forward view; it expresses a desire to reduce. This is best treated as a view with no clear directional economic claim about SpaceX's prospects — neutralize.",
-          "sectorProxy": null,
-          "summary": "Chamath states he is personally long SpaceX and views its IPO as crucial and urgent so he can deleverage his position and take chips off the table while valuations are high.",
-          "quote": "I'm waiting for these IPOs so that I can, to be very honest with you, delever and get some chips off the table. I think that it is crucial that this SpaceX IPO get done ASAP.",
-          "quoteStartMs": 4633421,
-          "topics": [
-            "IPO",
-            "valuation",
-            "position management"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E267-spacex-Friedberg-1",
-          "episodeId": "E267",
-          "episodeNumber": 267,
-          "episodeDate": "2026-04-03T21:08:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Friedberg",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Friedberg argues SpaceX is effectively the railroad infrastructure for the next great frontier — the moon and Mars — and has also built a backup extraterrestrial internet via Starlink, making it a foundational technology platform for civilizational-scale value creation.",
-          "quote": "SpaceX will be to the moon and ultimately to Mars, and there's going to be an extraordinary abundance of production that's going to come out of the moon… SpaceX has also created— and this is going to be a a big part of the valuation analysi",
-          "quoteStartMs": 672555,
-          "topics": [
-            "space economy",
-            "Starlink",
-            "infrastructure",
-            "valuation"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E267-spacex-Chamath-0",
-          "episodeId": "E267",
-          "episodeNumber": 267,
-          "episodeDate": "2026-04-03T21:08:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues the SpaceX IPO will provide a validated external mark-to-market valuation that simplifies governance, enables a Tesla merger, and unleashes an enormous economy of downstream space businesses — he views it as the beginning of a massive value creation cycle.",
-          "quote": "I think that this is going to unleash just an unbelievably large economy of things that we have no idea about... dollars to donuts, these things are going to merge.",
-          "quoteStartMs": 803000,
-          "topics": [
-            "IPO",
-            "valuation",
-            "Tesla merger",
-            "space economy"
-          ],
-          "attributionConfidence": "low"
-        },
-        {
-          "id": "E266-spacex-Friedberg-10",
-          "episodeId": "E266",
-          "episodeNumber": 266,
-          "episodeDate": "2026-03-27T20:03:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Friedberg",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Friedberg argues the space industry represents a $15–30 trillion annual economic opportunity on the moon, and that SpaceX's IPO will command an enormous multiple given this runway — making it a durable, AI-unlocked growth story.",
-          "quote": "I actually think there's probably a $15 to $30 trillion a year economic opportunity on the moon. That kind of a business, like you're going to see with SpaceX's IPO, is going to have an insane multiple.",
-          "quoteStartMs": 2185681,
-          "topics": [
-            "space economy",
-            "IPO",
-            "valuation",
-            "durability"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E263-xai-grok-Guest-6",
-          "episodeId": "E263",
-          "episodeNumber": 263,
-          "episodeDate": "2026-03-06T09:23:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Emil Michael states Grok/xAI has agreed to all lawful use cases across all classified and unclassified networks with no policy restrictions, making it the most cooperative AI partner for the Department of War.",
-          "quote": "Grok's all in for all awful use cases across all classified and unclassified networks, as you'd expect, because, and you know, Elon's truth-seeking. We want truth in Department of War. We don't want ideology.",
-          "quoteStartMs": 3130000,
-          "topics": [
-            "AI",
-            "defense tech",
-            "government contracts",
-            "competitive position"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Emil Michael"
-        },
-        {
-          "id": "E257-spacex-Friedberg-15",
-          "episodeId": "E257",
-          "episodeNumber": 257,
-          "episodeDate": "2026-01-10T04:28:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Friedberg",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Friedberg's contrarian prediction is that SpaceX will not IPO but instead reverse merge into Tesla, allowing Elon Musk to consolidate control of his two seminal assets onto one cap table.",
-          "quote": "My contrarian belief number one is I don't think SpaceX will IPO. I think that it will reverse merge into Tesla, and I think Elon will use it as a moment to consolidate control and power of his two seminal assets into one cap table.",
-          "quoteStartMs": 3628000,
-          "topics": [
-            "IPO",
-            "reverse merger",
-            "Elon Musk",
-            "space"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E253-xai-Sacks-6",
-          "episodeId": "E253",
-          "episodeNumber": 253,
-          "episodeDate": "2025-12-06T01:41:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Sacks",
-          "stance": "bull",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Sacks is bullish on xAI, citing its edge in current-events AI via X integration and Elon Musk's ability to scale training infrastructure faster than rivals — with Colossus 2 training Grok 5 on the largest Blackwell cluster — as indicators of strong competitive positioning.",
-          "quote": "xAI, which I think is the best at current events because of the integration with X. And also Elon seems to be able to scale his data center, his training cluster, the fastest. He had Colossus 1, now he's got Colossus 2, and that portends",
-          "quoteStartMs": 504261,
-          "topics": [
-            "AI competition",
-            "infrastructure",
-            "training compute"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E249-x-twitter-Guest-4",
-          "episodeId": "E249",
-          "episodeNumber": 249,
-          "episodeDate": "2025-10-31T20:11:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "neutral",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Elon Musk describes X's trajectory as transformative: Grok will semantically index 100M posts/day to personalize feeds and enable plain-language search, making X the best source of truth on the planet and dramatically increasing its platform value.",
-          "quote": "Grok is going to... read through 100 million things and show you the things that it thinks out of 100 million posts per day, what are the most interesting posts to you... we want X to be the best source of truth on the planet by far.",
-          "quoteStartMs": 1411000,
-          "topics": [
-            "AI integration",
-            "platform value",
-            "search",
-            "free speech"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Elon Musk"
-        },
-        {
-          "id": "E249-xai-grok-Guest-3",
-          "episodeId": "E249",
-          "episodeNumber": 249,
-          "episodeDate": "2025-10-31T20:11:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Elon Musk argues Grokipedia is a fundamentally superior product to Wikipedia — more accurate, comprehensive, neutral, and soon to include video — and will naturally win because users will recognize and share the better source.",
-          "quote": "I have complete confidence that Grokkoopedia is going to succeed because Wikipedia is actually not a very good product... It's not going to be a little bit better than Wikipedia. It's going to be 100 times better than Wikipedia.",
-          "quoteStartMs": 1115236,
-          "topics": [
-            "Grokipedia",
-            "AI product",
-            "competitive moat",
-            "knowledge platform"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Elon Musk"
-        },
-        {
-          "id": "E238-xai-Guest-1",
-          "episodeId": "E238",
-          "episodeNumber": 238,
-          "episodeDate": "2025-08-09T15:40:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "explicit_long",
-          "excludeReason": null,
-          "scoreNote": "Gavin confirms active ownership position in xAI.",
-          "sectorProxy": null,
-          "summary": "Gavin Baker, a disclosed shareholder of xAI, is bullish on the company due to Grok 4's exceptional benchmark performance, the largest Blackwell cluster positioning it well for Grok 5, and its consistent ability to outpace OpenAI on key metrics.",
-          "quote": "I should note my firm is a shareholder of xAI. So as much as I try to be objective, I am for sure biased because I am human and to be human is to be biased. But they have the largest Blackwell cluster, so I'm optimistic for GROK5.",
-          "quoteStartMs": 771818,
-          "topics": [
-            "AI models",
-            "benchmarks",
-            "GPU infrastructure",
-            "competitive position"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Gavin Baker"
-        },
-        {
-          "id": "E236-xai-grok-Guest-5",
-          "episodeId": "E236",
-          "episodeNumber": 236,
-          "episodeDate": "2025-07-19T02:21:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Gavin Baker says Grok 4 is the biggest leapfrog seen in quite some time — roughly twice as good as state-of-the-art rivals on ARC-AGI-2 (a semi-private benchmark) and 50-75% better on Humanity's Last Exam — establishing xAI as the current technical leader in AI.",
-          "quote": "I would say this is the biggest leapfrog we've seen in quite some time... it did roughly twice as good as, you know, the state-of-the-art Google, OpenAI, and Anthropic models. And then on humanity's last exam, you know, we can call it 50",
-          "quoteStartMs": 1218340,
-          "topics": [
-            "AI benchmarks",
-            "competitive positioning",
-            "compute"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Gavin Baker"
-        },
-        {
-          "id": "E235-xai-grok-Chamath-0",
-          "episodeId": "E235",
-          "episodeNumber": 235,
-          "episodeDate": "2025-07-11T21:28:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues that xAI's bet on massive compute scale and a general-computation approach (the 'Bitter Lesson') has allowed Grok 4 to leapfrog all competitors in under 2.5 years, with future iterations relying on synthetic data rather than human labeling — a compounding structural advantage over rivals like OpenAI, Google, and Meta who remain dependent on human-labeled data.",
-          "quote": "Two things. One is how quickly, starting in March of 2023, so we're talking about less than 2.5 years, what this team has accomplished and how how far ahead they are of everybody else, as demonstrated by this.",
-          "quoteStartMs": 1247989,
-          "topics": [
-            "AI compute scale",
-            "competitive moat",
-            "synthetic data",
-            "Bitter Lesson"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E227-spacex-Chamath-6",
-          "episodeId": "E227",
-          "episodeNumber": 227,
-          "episodeDate": "2025-05-09T20:26:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues SpaceX belongs in the optimal basket of companies to own for the future and that ignoring it simply because it is private would be a mistake.",
-          "quote": "SpaceX would be in the basket. It's private. Correct. Stripe would be in the basket. To be long some rando public company because it's public and ignore SpaceX and Stripe would just be stupid.",
-          "quoteStartMs": 5391861,
-          "topics": [
-            "private markets",
-            "portfolio construction"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E220-spacex-Chamath-3",
-          "episodeId": "E220",
-          "episodeNumber": 220,
-          "episodeDate": "2025-03-22T02:17:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath, a shareholder, argues SpaceX has no economic alternative — it is the only company consistently crushing launch costs and operating at scale, with competitors years away from being viable.",
-          "quote": "The point is SpaceX is the best. There's nobody even close. The next closest alternative is years and years away. Would we benefit from more capacity? Sure. But the reality is they are the only solution and they're safe and they're reliable",
-          "quoteStartMs": 4674584,
-          "topics": [
-            "space",
-            "competitive moat",
-            "cost leadership"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E218-xai-grok-Chamath-3",
-          "episodeId": "E218",
-          "episodeNumber": 218,
-          "episodeDate": "2025-03-08T00:58:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath has switched his consumer AI usage to Grok 3 because of its elegant integration inside X/Twitter, giving it a distribution advantage that he believes makes it more useful than standalone AI tools for news and commentary consumption.",
-          "quote": "As a consumer, I've mostly flipped my usage to Grok 3. And the reason is that it's in line with where I consume most of my information. It's elegantly integrated inside of X.",
-          "quoteStartMs": 5129819,
-          "topics": [
-            "AI models",
-            "distribution",
-            "consumer adoption"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E216-xai-Chamath-3",
-          "episodeId": "E216",
-          "episodeNumber": 216,
-          "episodeDate": "2025-02-21T23:41:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath is highly impressed by xAI's Grok 3 results, arguing that Elon's ability to leverage Tesla Powerpacks, cross-company engineering talent, and artificial time constraints to build the Colossus supercluster in record time proves the keiretsu model creates an enduring competitive advantage in AI.",
-          "quote": "the size of that cluster made no sense. And it could only be a result like this where he basically proved that there was still value in pre-training where size actually led to better outcomes.",
-          "quoteStartMs": 5362599,
-          "topics": [
-            "AI infrastructure",
-            "Grok 3",
-            "competitive moat",
-            "pre-training"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E214-xai-Guest-3",
-          "episodeId": "E214",
-          "episodeNumber": 214,
-          "episodeDate": "2025-02-07T22:20:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Antonio Gracias argues xAI's Colossus data center — the densest coherent GPU cluster in the world, built cheaply and quickly — will deliver the highest ROIC of any AI player and produce superior training outcomes, giving xAI a durable competitive edge.",
-          "quote": "XAI will have the highest return on capital, and I also think the best training data, and therefore will win.",
-          "quoteStartMs": 4421977,
-          "topics": [
-            "AI infrastructure",
-            "ROIC",
-            "competitive moat",
-            "data center"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Antonio Gracias"
-        },
-        {
-          "id": "E206-xai-Guest-1",
-          "episodeId": "E206",
-          "episodeNumber": 206,
-          "episodeDate": "2024-12-07T00:55:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": "Gavin discloses his firm is an investor in xAI (FCI).",
-          "sectorProxy": null,
-          "summary": "Gavin Baker argues xAI's Colossus supercomputer (100K+ coherent GPUs, the world's largest) is a breakthrough that no one else achieved, and if scaling laws hold, Grok 3 should take the lead in AI model capability in early 2025; his firm is also an investor in xAI.",
-          "quote": "Grok 3 should take the lead if scaling laws hold in January or February... My firm is an investor in FCI.",
-          "quoteStartMs": 3643000,
-          "topics": [
-            "AI scaling",
-            "compute",
-            "model capability",
-            "competitive position"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Gavin Baker"
-        },
-        {
-          "id": "E200-spacex-starlink-Jason-1",
-          "episodeId": "E200",
-          "episodeNumber": 200,
-          "episodeDate": "2024-10-18T22:49:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Jason",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Jason believes Starlink could become the largest subscription business in human history, potentially reaching 500 million subscribers and surpassing Netflix, Disney+, and Verizon.",
-          "quote": "It could be the largest subscription business in the history of humanity... it could be the first 500 million subscriber product in the world.",
-          "quoteStartMs": 1310000,
-          "topics": [
-            "Starlink growth",
-            "subscription business"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E200-spacex-starlink-Friedberg-0",
-          "episodeId": "E200",
-          "episodeNumber": 200,
-          "episodeDate": "2024-10-18T22:49:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Friedberg",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Friedberg argues SpaceX's successful booster catch unlocks a path to $10/kg launch costs, making the Mars colony economically feasible, while Starlink at 4M subs could scale to 100M+ and become one of the biggest businesses on earth.",
-          "quote": "Starlink's running at 4 million subs right now. That's like $100 a month, 4 million subs... this could be a 100 million subscriber business. One of the biggest businesses on the, on the, on the earth.",
-          "quoteStartMs": 1279000,
-          "topics": [
-            "space economics",
-            "Starlink growth",
-            "launch cost",
-            "reusability"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E196-spacex-starlink-Sacks-6",
-          "episodeId": "E196",
-          "episodeNumber": 196,
-          "episodeDate": "2024-09-20T19:58:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Sacks",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Sacks argues Starlink has already solved the rural internet problem and is the best and cheapest solution available, but is being deliberately excluded by the Biden-Harris administration for political reasons, wasting taxpayer money and depriving rural Americans of connectivity.",
-          "quote": "we could spend a fraction of that giving people Starlink and allowing the private sector to do its job.",
-          "quoteStartMs": 2162402,
-          "topics": [
-            "Starlink",
-            "rural broadband",
-            "government contracts",
-            "political retaliation"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E192-spacex-Chamath-11",
-          "episodeId": "E192",
-          "episodeNumber": 192,
-          "episodeDate": "2024-08-16T18:42:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath contrasts SpaceX's reliable, on-time Crew Dragon program favorably against Boeing's Starliner disaster, noting SpaceX delivered a safer and cheaper solution — 40% cheaper — through competitive market dynamics rather than government mandates.",
-          "quote": "The more capable solution was 40% cheaper than the one that they thought was going to work. And the one that was 40% cheaper was also on time and the other one was— and reliable. And this other one, 7, 8, 9, 10 years delayed.",
-          "quoteStartMs": 5418000,
-          "topics": [
-            "competitive advantage",
-            "reliability",
-            "cost efficiency",
-            "space program"
-          ],
-          "attributionConfidence": "high"
-        }
-      ],
-      "synthesis": "The hosts are broadly bullish on SpaceX and its affiliated entities (Starlink, xAI), with enthusiasm intensifying over time as each business line has demonstrated tangible progress. All four hosts view SpaceX as the unrivaled leader in launch infrastructure — Chamath most forcefully, calling it \"the only solution\" with no credible near-term competitor — while Friedberg and Jason frame it as foundational railroad-like infrastructure for a civilizational-scale moon and Mars economy, and Jason and Friedberg separately project Starlink scaling to 100–500 million subscribers to become one of the largest subscription businesses in history. On xAI, Chamath, Sacks, and recurring guest Gavin Baker converge on the view that the Colossus compute clusters, Grok's X-integration distribution advantage, and a synthetic-data training loop give xAI a durable structural edge over OpenAI, Google, and Anthropic — with Baker and Chamath both citing Grok 4's benchmark leapfrog as the clearest evidence yet — though Baker and Antonio Gracias disclose they are investors in xAI, introducing acknowledged bias. The main area of disagreement is around corporate structure: Chamath (as shareholder) is eager for a near-term SpaceX IPO to delever his position and sees a subsequent Tesla merger as likely, Friedberg offered the contrarian prediction that SpaceX would skip an IPO and go straight to a reverse merger into Tesla, while Jason views the Cursor acquisition as straightforwardly revenue-accretive to the IPO story and Sacks treats it as a pragmatic compute-plus-coding combination without taking a strong view on timing.",
-      "netStance": "bull",
-      "firstMentioned": "2024-08-16T18:42:00.000Z",
-      "lastMentioned": "2026-05-22T22:46:00.000Z",
-      "mentionCount": 30,
-      "market": {
-        "ticker": "SPCX",
-        "sourceSymbol": "SPCX",
-        "currency": "USD",
-        "asOf": "2026-06-20",
-        "anchorDate": "2024-08-16",
-        "basePrice": 160.95,
-        "latestPrice": 185,
-        "returns": {
-          "1m": 0,
-          "3m": 0,
-          "6m": 0,
-          "1y": 0,
-          "since": 0.1494252873563219
-        },
-        "history": [
-          [
-            "2026-06-12",
-            160.95
-          ],
-          [
-            "2026-06-15",
-            192.5
-          ],
-          [
-            "2026-06-16",
-            211.39
-          ],
-          [
-            "2026-06-17",
-            191.82
-          ],
-          [
-            "2026-06-18",
-            185
-          ]
-        ],
-        "source": "yahoo"
-      },
-      "description": "Designs, manufactures, and launches rockets and spacecraft, providing commercial and government space transportation services.",
-      "domain": "spacex.com"
-    },
-    {
       "slug": "crwv",
       "company": "CoreWeave",
       "ticker": "CRWV",
@@ -6883,49 +7475,6 @@
       },
       "description": "Exchange-traded fund tracking near-month natural gas futures contracts for commodity exposure.",
       "domain": null
-    },
-    {
-      "slug": "cursor",
-      "company": "Cursor",
-      "ticker": null,
-      "isPublic": false,
-      "theses": [
-        {
-          "id": "E274-cursor-Guest-6",
-          "episodeId": "E274",
-          "episodeNumber": 274,
-          "episodeDate": "2026-05-22T22:46:00.000Z",
-          "company": "Cursor",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Gavin Baker argues Cursor's Composer 2.5 Pareto-dominant benchmark result—achieved after just 3-4 weeks of RL on Colossus 2—proves the unique value of Cursor's proprietary coding token dataset and points to an even larger leap when a new base model is trained with that data.",
-          "quote": "this jump from Composer 2 to Composer 2.5 showed us is that when you do an appropriate amount of reinforcement learning using that data... this is 3 or 4 weeks and it is Pareto dominant.",
-          "quoteStartMs": 3039969,
-          "topics": [
-            "AI",
-            "competitive moat",
-            "coding",
-            "compute"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Gavin Baker"
-        }
-      ],
-      "synthesis": "The sole thesis provided comes from guest Gavin Baker, who is bullish with high conviction on Cursor as of May 2026. His core argument centers on the rapid benchmark gains seen in Composer 2.5—achieved in just 3–4 weeks of reinforcement learning on Colossus 2—which he views as strong evidence that Cursor's proprietary coding token dataset is a durable competitive advantage. He contends the jump to Pareto-dominant performance is only a preview, with an even larger leap expected once a new base model is trained from scratch on that data. With only one host thesis supplied, there is no agreement or disagreement to note among the All-In hosts on this company.",
-      "netStance": "bull",
-      "firstMentioned": "2026-05-22T22:46:00.000Z",
-      "lastMentioned": "2026-05-22T22:46:00.000Z",
-      "mentionCount": 1,
-      "market": null,
-      "description": "Develops an AI-powered code editor designed to assist software developers with writing and editing code.",
-      "domain": "cursor.com"
     },
     {
       "slug": "googl",
@@ -14406,401 +14955,6 @@
       },
       "description": "Designs, manufactures, and sells luxury high-performance sports cars and racing vehicles under the Ferrari brand.",
       "domain": "ferrari.com"
-    },
-    {
-      "slug": "amzn",
-      "company": "Amazon",
-      "ticker": "AMZN",
-      "isPublic": true,
-      "theses": [
-        {
-          "id": "E260-amzn-Jason-6",
-          "episodeId": "E260",
-          "episodeNumber": 260,
-          "episodeDate": "2026-02-07T04:35:00.000Z",
-          "company": "Amazon",
-          "ticker": "AMZN",
-          "isPublic": true,
-          "host": "Jason",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "selection",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Jason names Amazon as his top pick for the company of the future, arguing AI-driven efficiency will allow it to dramatically increase output with fewer people, making it extraordinarily more profitable.",
-          "quote": "a company like Amazon, which is like my number one pick for like the company of the future. They're going to be able to do so much more with so many fewer people. It's extraordinary.",
-          "quoteStartMs": 2073043,
-          "topics": [
-            "AI efficiency",
-            "future of work",
-            "valuation",
-            "productivity"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E257-amzn-Jason-0",
-          "episodeId": "E257",
-          "episodeNumber": 257,
-          "episodeDate": "2026-01-10T04:28:00.000Z",
-          "company": "Amazon",
-          "ticker": "AMZN",
-          "isPublic": true,
-          "host": "Jason",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "selection",
-          "excludeReason": null,
-          "scoreNote": "Named as Jason's explicit biggest business winner pick for 2026 in the predictions round.",
-          "sectorProxy": null,
-          "summary": "Jason picks Amazon as his biggest business winner of 2026, citing the company's robotics deployment surge, same-day delivery expansion, and his belief it will be the first company to have more robots driving its bottom line than humans.",
-          "quote": "my prediction for 2026 is that Amazon is gonna have a massive year... I think they'll be the first corporate, uh, singularity, which is to say the first company to have more robots driving their bottom line than humans. So that's my",
-          "quoteStartMs": 2182916,
-          "topics": [
-            "robotics",
-            "automation",
-            "logistics",
-            "AI"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E248-amzn-Friedberg-4",
-          "episodeId": "E248",
-          "episodeNumber": 248,
-          "episodeDate": "2025-10-24T22:38:00.000Z",
-          "company": "Amazon Web Services / Amazon",
-          "ticker": "AMZN",
-          "isPublic": true,
-          "host": "Friedberg",
-          "stance": "bear",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Friedberg argues the AWS outage will accelerate enterprise multi-cloud diversification away from AWS toward Microsoft Azure, Google Cloud, and Oracle, as customers recognize the risk of single-cloud dependency.",
-          "quote": "the outage that happened this week, I think starts to highlight for folks that they can't and shouldn't have a dependency on a single cloud service provider. Provider and will only accelerate the diversification of companies into the other",
-          "quoteStartMs": 1922894,
-          "topics": [
-            "cloud",
-            "competition",
-            "multi-cloud"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E232-amzn-Chamath-20",
-          "episodeId": "E232",
-          "episodeNumber": 232,
-          "episodeDate": "2025-06-21T02:53:00.000Z",
-          "company": "Amazon",
-          "ticker": "AMZN",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues Amazon's retail business will be a kingmaker for physical AI demand (robots, drones, autonomous vehicles), but AWS faces a strategic decision about whether to differentiate its silicon from Nvidia and potentially acquire Anthropic to tightly couple next-gen code gen to AWS.",
-          "quote": "The Amazon retail side is going to be a kingmaker for all of these physical AI things... do I differentiate my own hardware from NVIDIA's at some point? Do I actually make a real bet on models and try to frankly buy Anthropic, which is",
-          "quoteStartMs": 5402904,
-          "topics": [
-            "physical AI",
-            "AWS",
-            "robotics",
-            "strategic decisions"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E226-amzn-Guest-5",
-          "episodeId": "E226",
-          "episodeNumber": 226,
-          "episodeDate": "2025-05-02T23:31:00.000Z",
-          "company": "Amazon",
-          "ticker": "AMZN",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Ryan Peterson argues Amazon misplayed the tariff transparency situation, and structurally enables foreign (primarily Chinese) sellers who bypass US registration requirements, disadvantaging American sellers and undermining the platform's long-term competitiveness with domestic brands.",
-          "quote": "I think that Amazon totally misplayed this...it's 60% of all the sellers on Amazon are these Chinese registered. They're not registered in the United States at all, just Chinese companies.",
-          "quoteStartMs": 3020000,
-          "topics": [
-            "tariffs",
-            "marketplace competition",
-            "regulation"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Ryan Peterson"
-        }
-      ],
-      "synthesis": "The hosts are broadly bullish on Amazon, particularly around its AI and physical automation potential, though with notable dissent on specific structural issues. Jason (high conviction, bull) is the most enthusiastic, predicting Amazon will be the \"company of the future\" and the first to have robots drive its bottom line more than humans, with Zoox adding further upside; Chamath (medium conviction, bull) agrees on Amazon's retail side being a kingmaker for physical AI demand—robots, drones, autonomous vehicles—while flagging a critical strategic decision for AWS around silicon differentiation from Nvidia and a potential Anthropic acquisition. Friedberg (medium conviction, bear) is the lone skeptic on AWS specifically, arguing that a major outage will accelerate enterprise multi-cloud diversification away from AWS toward Azure, Google Cloud, and Oracle. Guest Ryan Peterson (neutral, medium conviction) raises a distinct concern unrelated to AI: that Amazon has structurally disadvantaged American sellers by enabling large numbers of unregistered Chinese sellers on its platform, which he argues undermines long-term competitiveness.",
-      "netStance": "bull",
-      "firstMentioned": "2025-05-02T23:31:00.000Z",
-      "lastMentioned": "2026-02-07T04:35:00.000Z",
-      "mentionCount": 5,
-      "market": {
-        "ticker": "AMZN",
-        "sourceSymbol": "AMZN",
-        "currency": "USD",
-        "asOf": "2026-06-20",
-        "anchorDate": "2025-05-02",
-        "basePrice": 189.98,
-        "latestPrice": 244.39,
-        "returns": {
-          "1m": 0.08774607853458267,
-          "3m": 0.11406463838298778,
-          "6m": 0.3369828402989789,
-          "1y": 0.4319928413517214,
-          "since": 0.28639856827034427
-        },
-        "history": [
-          [
-            "2025-05-02",
-            189.98
-          ],
-          [
-            "2025-05-09",
-            193.06
-          ],
-          [
-            "2025-05-16",
-            205.59
-          ],
-          [
-            "2025-05-23",
-            200.99
-          ],
-          [
-            "2025-06-02",
-            206.65
-          ],
-          [
-            "2025-06-09",
-            216.98
-          ],
-          [
-            "2025-06-16",
-            216.1
-          ],
-          [
-            "2025-06-24",
-            212.77
-          ],
-          [
-            "2025-07-01",
-            220.46
-          ],
-          [
-            "2025-07-09",
-            222.54
-          ],
-          [
-            "2025-07-16",
-            223.19
-          ],
-          [
-            "2025-07-23",
-            228.29
-          ],
-          [
-            "2025-07-30",
-            230.19
-          ],
-          [
-            "2025-08-06",
-            222.31
-          ],
-          [
-            "2025-08-13",
-            224.56
-          ],
-          [
-            "2025-08-20",
-            223.81
-          ],
-          [
-            "2025-08-27",
-            229.12
-          ],
-          [
-            "2025-09-04",
-            235.68
-          ],
-          [
-            "2025-09-11",
-            229.95
-          ],
-          [
-            "2025-09-18",
-            231.23
-          ],
-          [
-            "2025-09-25",
-            218.15
-          ],
-          [
-            "2025-10-02",
-            222.41
-          ],
-          [
-            "2025-10-09",
-            227.74
-          ],
-          [
-            "2025-10-16",
-            214.47
-          ],
-          [
-            "2025-10-23",
-            221.09
-          ],
-          [
-            "2025-10-30",
-            222.86
-          ],
-          [
-            "2025-11-06",
-            243.04
-          ],
-          [
-            "2025-11-13",
-            237.58
-          ],
-          [
-            "2025-11-20",
-            217.14
-          ],
-          [
-            "2025-11-28",
-            233.22
-          ],
-          [
-            "2025-12-05",
-            229.53
-          ],
-          [
-            "2025-12-12",
-            226.19
-          ],
-          [
-            "2025-12-19",
-            227.35
-          ],
-          [
-            "2025-12-29",
-            232.07
-          ],
-          [
-            "2026-01-06",
-            240.93
-          ],
-          [
-            "2026-01-13",
-            242.6
-          ],
-          [
-            "2026-01-21",
-            231.31
-          ],
-          [
-            "2026-01-28",
-            243.01
-          ],
-          [
-            "2026-02-04",
-            232.99
-          ],
-          [
-            "2026-02-11",
-            204.08
-          ],
-          [
-            "2026-02-19",
-            204.86
-          ],
-          [
-            "2026-02-26",
-            207.92
-          ],
-          [
-            "2026-03-05",
-            218.94
-          ],
-          [
-            "2026-03-12",
-            209.53
-          ],
-          [
-            "2026-03-19",
-            208.76
-          ],
-          [
-            "2026-03-26",
-            207.54
-          ],
-          [
-            "2026-04-02",
-            209.77
-          ],
-          [
-            "2026-04-10",
-            238.38
-          ],
-          [
-            "2026-04-17",
-            250.56
-          ],
-          [
-            "2026-04-24",
-            263.99
-          ],
-          [
-            "2026-05-01",
-            268.26
-          ],
-          [
-            "2026-05-08",
-            272.68
-          ],
-          [
-            "2026-05-15",
-            264.14
-          ],
-          [
-            "2026-05-22",
-            266.32
-          ],
-          [
-            "2026-06-01",
-            261.26
-          ],
-          [
-            "2026-06-08",
-            245.22
-          ],
-          [
-            "2026-06-15",
-            246.02
-          ],
-          [
-            "2026-06-18",
-            244.39
-          ]
-        ],
-        "source": "yahoo"
-      },
-      "description": "Operates e-commerce marketplaces, cloud computing via AWS, and digital streaming and advertising services.",
-      "domain": "amazon.com"
     },
     {
       "slug": "saas-sector-broad",
@@ -23877,13 +24031,13 @@
         "asOf": "2026-06-20",
         "anchorDate": "2024-12-20",
         "basePrice": 32.03,
-        "latestPrice": 24.84,
+        "latestPrice": 24.94,
         "returns": {
           "1m": -0.005307524196066241,
           "3m": -0.05650952232282242,
           "6m": 0.07118326568841714,
           "1y": -0.059007180768029986,
-          "since": -0.22447705276303467
+          "since": -0.22135497970652512
         },
         "history": [
           [
@@ -24101,10 +24255,6 @@
           [
             "2026-06-17",
             24.94
-          ],
-          [
-            "2026-06-18",
-            24.84
           ]
         ],
         "source": "yahoo"
@@ -27778,13 +27928,13 @@
         "asOf": "2026-06-20",
         "anchorDate": "2025-01-04",
         "basePrice": 144.97,
-        "latestPrice": 238.99,
+        "latestPrice": 242.79,
         "returns": {
           "1m": 0.07491205076912474,
           "3m": -0.06663447609850312,
           "6m": 0.2973028902531558,
           "1y": 0.5622542595019658,
-          "since": 0.6485479754431952
+          "since": 0.6747602952334966
         },
         "history": [
           [
@@ -27996,8 +28146,8 @@
             224.87
           ],
           [
-            "2026-06-18",
-            238.99
+            "2026-06-17",
+            242.79
           ]
         ],
         "source": "yahoo"
@@ -32617,7 +32767,7 @@
       "domain": null
     }
   ],
-  "episodesProcessed": 98,
+  "episodesProcessed": 99,
   "indexFund": {
     "asOf": "2026-06-20",
     "inceptionDate": "2024-07-26",
@@ -34387,8 +34537,8 @@
       ]
     },
     {
-      "guest": "Aaron Levie",
-      "slug": "aaron-levie",
+      "guest": "Emil Michael",
+      "slug": "emil-michael",
       "calls": 0,
       "followReturn": null,
       "benchmarkReturn": null,
@@ -34397,8 +34547,18 @@
       "picks": []
     },
     {
-      "guest": "Mark Cuban",
-      "slug": "mark-cuban",
+      "guest": "Elon Musk",
+      "slug": "elon-musk",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Antonio Gracias",
+      "slug": "antonio-gracias",
       "calls": 0,
       "followReturn": null,
       "benchmarkReturn": null,
@@ -34437,6 +34597,36 @@
       "picks": []
     },
     {
+      "guest": "Ryan Peterson",
+      "slug": "ryan-peterson",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Aaron Levie",
+      "slug": "aaron-levie",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Mark Cuban",
+      "slug": "mark-cuban",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
       "guest": "Keith Rabois",
       "slug": "keith-rabois",
       "calls": 0,
@@ -34457,16 +34647,6 @@
       "picks": []
     },
     {
-      "guest": "Elon Musk",
-      "slug": "elon-musk",
-      "calls": 0,
-      "followReturn": null,
-      "benchmarkReturn": null,
-      "alpha": null,
-      "best": null,
-      "picks": []
-    },
-    {
       "guest": "Naval Ravikant",
       "slug": "naval-ravikant",
       "calls": 0,
@@ -34479,26 +34659,6 @@
     {
       "guest": "Cyan Bowers-Franklin",
       "slug": "cyan-bowers-franklin",
-      "calls": 0,
-      "followReturn": null,
-      "benchmarkReturn": null,
-      "alpha": null,
-      "best": null,
-      "picks": []
-    },
-    {
-      "guest": "Emil Michael",
-      "slug": "emil-michael",
-      "calls": 0,
-      "followReturn": null,
-      "benchmarkReturn": null,
-      "alpha": null,
-      "best": null,
-      "picks": []
-    },
-    {
-      "guest": "Antonio Gracias",
-      "slug": "antonio-gracias",
       "calls": 0,
       "followReturn": null,
       "benchmarkReturn": null,
@@ -34529,16 +34689,6 @@
     {
       "guest": "Donald Trump",
       "slug": "donald-trump",
-      "calls": 0,
-      "followReturn": null,
-      "benchmarkReturn": null,
-      "alpha": null,
-      "best": null,
-      "picks": []
-    },
-    {
-      "guest": "Ryan Peterson",
-      "slug": "ryan-peterson",
       "calls": 0,
       "followReturn": null,
       "benchmarkReturn": null,
@@ -37668,6 +37818,13 @@
       "date": "2026-06-13T04:51:00.000Z",
       "number": 276,
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/secure/allinchamathjason/ALLIN-E276_Ch.mp3?dest-id=1928300"
+    },
+    "E277": {
+      "title": "World's First Trillionaire, Anthropic Fable Banned, The New Oligarchs, Iran Peace Deal",
+      "link": "https://allinchamathjason.libsyn.com/worlds-first-trillionaire-anthropic-fable-banned-the-new-oligarchs-iran-peace-deal",
+      "date": "2026-06-19T22:07:00.000Z",
+      "number": 277,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/secure/allinchamathjason/ALLIN-E277_Ch.mp3?dest-id=1928300"
     }
   },
   "bearBook": [
