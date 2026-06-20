@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T22:55:47.166Z",
+  "generatedAt": "2026-06-20T00:45:34.526Z",
   "holdings": [
     {
       "slug": "meta",
@@ -450,7 +450,7 @@
         "ticker": "META",
         "sourceSymbol": "META",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-09-27",
         "basePrice": 567.36,
         "latestPrice": 577.22,
@@ -2438,7 +2438,7 @@
         "ticker": "AAPL",
         "sourceSymbol": "AAPL",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-05-10",
         "basePrice": 183.05,
         "latestPrice": 298.01,
@@ -3408,18 +3408,18 @@
           "isPublic": false,
           "host": "Chamath",
           "stance": "neutral",
-          "conviction": "high",
+          "conviction": "medium",
           "callType": "view",
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Chamath argues OpenAI is running away with AI query share and is concentrating talent at a level he hasn't seen since early Facebook, making it a formidable competitive threat to Google.",
-          "quote": "If you look at the growth and the share that OpenAI is seeing, it's quite an incredible thing... You're seeing a level of talent concentrate that I have not seen since I was at Facebook.",
-          "quoteStartMs": 2326000,
+          "summary": "Chamath highlights OpenAI's accelerating talent concentration — including the hire of Fiji Simo as CEO of apps — as evidence it is pulling away as the dominant consumer AI platform, drawing a parallel to Facebook's unstoppable talent magnet era.",
+          "quote": "You're seeing a level of talent concentrate that I have not seen since I was at Facebook. There was nobody we couldn't get when we thought we were building a model that was totally orthogonal to Google.",
+          "quoteStartMs": 2978000,
           "topics": [
-            "AI market share",
             "talent",
-            "competitive moat"
+            "competitive position",
+            "AI platform"
           ],
           "attributionConfidence": "high"
         },
@@ -4974,7 +4974,7 @@
         "ticker": "NVDA",
         "sourceSymbol": "NVDA",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-05-24",
         "basePrice": 106.469,
         "latestPrice": 210.69,
@@ -5768,18 +5768,17 @@
           "isPublic": true,
           "host": "Chamath",
           "stance": "neutral",
-          "conviction": "high",
+          "conviction": "medium",
           "callType": "view",
           "excludeReason": null,
-          "scoreNote": "Not scored: Chamath is agreeing with Philippe's framing of an optimal basket — he is not answering a positioning prompt for his own fund or stating his own position; he is endorsing a conceptual basket. The 'would be stupid to ignore' language is analytical commentary, not a first-person pick or declared position, so callType should be view.",
+          "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Chamath explicitly names SpaceX as a member of the optimal future basket of top companies, arguing it would be 'stupid' to ignore it simply because it is private.",
+          "summary": "Chamath argues SpaceX belongs in the optimal basket of companies to own for the future and that ignoring it simply because it is private would be a mistake.",
           "quote": "SpaceX would be in the basket. It's private. Correct. Stripe would be in the basket. To be long some rando public company because it's public and ignore SpaceX and Stripe would just be stupid.",
           "quoteStartMs": 5391861,
           "topics": [
             "private markets",
-            "portfolio construction",
-            "next Mag 7"
+            "portfolio construction"
           ],
           "attributionConfidence": "high"
         },
@@ -6025,7 +6024,7 @@
         "ticker": "SPCX",
         "sourceSymbol": "SPCX",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-08-16",
         "basePrice": 160.95,
         "latestPrice": 185,
@@ -6233,7 +6232,7 @@
         "ticker": "CRWV",
         "sourceSymbol": "CRWV",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-03-08",
         "basePrice": 40,
         "latestPrice": 117.95,
@@ -6623,7 +6622,7 @@
         "ticker": "UNG",
         "sourceSymbol": "UNG",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-04-11",
         "basePrice": 18.63,
         "latestPrice": 11.74,
@@ -7578,7 +7577,34 @@
           "attributionConfidence": "high"
         },
         {
-          "id": "E227-googl-Jason-3",
+          "id": "E227-googl-Guest-3",
+          "episodeId": "E227",
+          "episodeNumber": 227,
+          "episodeDate": "2025-05-09T20:26:00.000Z",
+          "company": "Google",
+          "ticker": "GOOGL",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "mixed",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Philippe Lafont sees Google as facing a classic innovator's dilemma — possibly becoming the next IBM with slow growth rather than a high-growth compounder — but acknowledges its cash position, Waymo, YouTube, and Cloud as significant assets, and has not formed a firm opinion.",
+          "quote": "I haven't made an opinion on Google, is like, hey, is this the next IBM? You're going to stick around for a really, really long time, but you're just not going to be like a company growing as fast as you used to.",
+          "quoteStartMs": 2465086,
+          "topics": [
+            "innovator's dilemma",
+            "valuation",
+            "AI search",
+            "competitive position"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Philippe Laffont"
+        },
+        {
+          "id": "E227-googl-Jason-2",
           "episodeId": "E227",
           "episodeNumber": 227,
           "episodeDate": "2025-05-09T20:26:00.000Z",
@@ -7592,41 +7618,16 @@
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Jason is optimistic on Google, arguing its deep ecosystem integration (YouTube, Android, Docs, Calendar, Gmail) and data advantage give it the tools to figure out the AI transition, and that headcount cuts would drive massive earnings upside.",
-          "quote": "I think Google's going to figure this out, and if they cut their team size down, the earnings are going to go massively up. And they're spending $75 billion on infrastructure.",
+          "summary": "Jason is bullish on Google's ability to navigate the AI transition, citing deep product integration across billions of users, a data advantage, and the potential for AI-enhanced advertising revenue to exceed even traditional search.",
+          "quote": "I think Google's going to figure this out, and if they cut their team size down, the earnings are going to go massively up.",
           "quoteStartMs": 2697240,
           "topics": [
             "AI integration",
-            "cost efficiency",
-            "ecosystem moat"
+            "earnings",
+            "product ecosystem",
+            "advertising"
           ],
           "attributionConfidence": "high"
-        },
-        {
-          "id": "E227-googl-Guest-2",
-          "episodeId": "E227",
-          "episodeNumber": 227,
-          "episodeDate": "2025-05-09T20:26:00.000Z",
-          "company": "Google",
-          "ticker": "GOOGL",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Philippe Lafont frames Google as a potential 'next IBM' — a company that persists but grows slowly — noting it has three good businesses (Waymo, YouTube, Cloud) but that search is ~110% of profits and faces an innovator's dilemma; he finds the stock 'a little bit too complicated' and has not made an investment call.",
-          "quote": "I haven't made an opinion on Google, is like, hey, is this the next IBM? You're going to stick around for a really, really long time, but you're just not going to be like a company growing as fast as you used to",
-          "quoteStartMs": 2465086,
-          "topics": [
-            "AI search",
-            "innovator's dilemma",
-            "valuation"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Philippe Laffont"
         },
         {
           "id": "E227-googl-Chamath-1",
@@ -7638,19 +7639,19 @@
           "isPublic": true,
           "host": "Chamath",
           "stance": "bear",
-          "conviction": "high",
+          "conviction": "medium",
           "callType": "view",
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Chamath argues Google is strategically exposed as ChatGPT takes share in the new AI query bucket, and that its in-the-middle strategy of spending $75B on capex while stage-gating Gemini adoption is the worst possible outcome — warning the market will begin pricing in search decay.",
-          "quote": "the market will now start to price this decay in.",
+          "summary": "Chamath argues Google is losing search share to ChatGPT and faces a strategic error by waiting for data rather than aggressively integrating Gemini as the front-facing product, warning the market will begin pricing in this decay.",
+          "quote": "The market will now start to price this decay in.",
           "quoteStartMs": 3264045,
           "topics": [
             "AI search",
             "competitive threat",
             "valuation",
-            "strategy"
+            "product strategy"
           ],
           "attributionConfidence": "high"
         },
@@ -7669,13 +7670,13 @@
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Friedberg is cautiously positive on Google's ability to navigate the AI search transition, citing competitive models, existing users, and the company's history of iterative testing — though he acknowledges the cost and cannibalization challenges of flipping to a chat interface.",
+          "summary": "Friedberg is broadly positive on Google's ability to navigate the AI search transition, citing competitive models, existing products, and a culture of incremental testing, while noting the transition will be slow and complex.",
           "quote": "I'm pretty positive on their ability to respond to the shift if there is one underway.",
-          "quoteStartMs": 2188001,
+          "quoteStartMs": 2190000,
           "topics": [
             "AI search",
-            "competitive moat",
-            "innovation dilemma"
+            "competitive position",
+            "product transition"
           ],
           "attributionConfidence": "high"
         },
@@ -8501,7 +8502,7 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts are broadly bullish on Google/Alphabet across the full arc of the dataset, with near-unanimous agreement that its AI assets — Gemini models, TPUs, DeepMind/Isomorphic Labs, Waymo, Google Cloud, and its vast data ecosystem — make it one of the most compelling positions in tech, a view held with particular conviction by Friedberg (who names it his #1 overall pick), Chamath (his #2 AI winner), and Jason (who would be explicitly long). The main shared thesis is that Google's combination of proprietary infrastructure, a massive captive user base across Search, YouTube, Gmail, Android, and G Suite, and accelerating Cloud profitability gives it structural advantages that compound over time, with any single moonshot (Waymo, quantum, biologics) representing potential trillion-dollar upside on top of the core business. The primary disagreement runs through the antitrust and search-disruption threads: Chamath and Sacks at various points raised high-conviction bear cases — Chamath called the 2024 antitrust ruling the most important tech event since the 2000 Microsoft DOJ decision, Sacks argued Google runs at least three illegal monopolies and should be broken up, and Chamath warned in mid-2025 that Google's in-the-middle capex-vs-Gemini-adoption strategy was the worst possible outcome as ChatGPT took share — while Friedberg consistently pushed back, arguing breakup logic targets size rather than behavior and that Google's search-to-AI transition is navigable. By late 2025 and into 2026, even the skeptics had largely shifted bullish, with the antitrust risk seen as diminished, Gemini viewed as genuinely competitive or leading, and Google Cloud's accelerating growth (reaching 63% YoY by Q1 2026) cited as a durable second engine; the residual bear risk flagged by Sacks and Chamath centers on search self-cannibalization and the pace of the AI mode transition rather than existential collapse.",
+      "synthesis": "The hosts are broadly bullish on Google across the full period, with near-unanimous agreement that the company's AI resurgence — anchored by Gemini, Google Cloud's accelerating growth, and hidden-value assets like Waymo, Isomorphic Labs, and quantum computing — makes it significantly underappreciated relative to its market price. Friedberg is the most consistently enthusiastic, naming Google his #1 overall pick and highlighting its portfolio of high-beta bets, disciplined CapEx, and Cloud profitability; Jason and Chamath largely converge on this view by late 2025–2026, with Chamath citing Gemini's model quality, TPU infrastructure, and durable free cash flow as compounding advantages. The primary area of disagreement is antitrust and the innovator's dilemma: Sacks and Chamath (at various points in 2024) argue Google runs multiple illegal monopolies and should be broken up — with Sacks warning as late as mid-2025 that search faces an existential threat from AI chatbots — while Friedberg pushes back that antitrust remedies should target specific behaviors rather than punish scale, and that a breakup would destroy unique R&D value. A recurring tension, voiced by Sacks, Friedberg, and Chamath, is that Google's biggest self-inflicted risk is hesitation: the longer it delays making Gemini the front-and-center product, the more users entrench ChatGPT as a habit — though by 2026, most hosts conclude Google has largely threaded that needle.",
       "netStance": "bull",
       "firstMentioned": "2024-05-10T19:47:00.000Z",
       "lastMentioned": "2026-05-15T21:21:00.000Z",
@@ -8510,7 +8511,7 @@
         "ticker": "GOOGL",
         "sourceSymbol": "GOOGL",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-05-10",
         "basePrice": 168.65,
         "latestPrice": 368.03,
@@ -9071,7 +9072,7 @@
         "ticker": "CRM",
         "sourceSymbol": "CRM",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-05-31",
         "basePrice": 234.44,
         "latestPrice": 151.78,
@@ -9900,7 +9901,7 @@
         "ticker": "TSLA",
         "sourceSymbol": "TSLA",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-06-14",
         "basePrice": 178.01,
         "latestPrice": 400.49,
@@ -10214,7 +10215,7 @@
         "ticker": "000660.KS",
         "sourceSymbol": "000660.KS",
         "currency": "KRW",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-10-10",
         "basePrice": 428000,
         "latestPrice": 2764000,
@@ -10550,7 +10551,7 @@
         "ticker": "005930.KS",
         "sourceSymbol": "005930.KS",
         "currency": "KRW",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2026-05-08",
         "basePrice": 268500,
         "latestPrice": 354000,
@@ -10727,7 +10728,7 @@
         "ticker": "MU",
         "sourceSymbol": "MU",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2026-05-08",
         "basePrice": 746.81,
         "latestPrice": 1133.99,
@@ -10970,7 +10971,7 @@
         "ticker": "LLY",
         "sourceSymbol": "LLY",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-10-25",
         "basePrice": 892.7,
         "latestPrice": 1098.5699,
@@ -11354,7 +11355,7 @@
         "ticker": "BAYRY",
         "sourceSymbol": "BAYRY",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2026-05-01",
         "basePrice": 11.11,
         "latestPrice": 10.56,
@@ -11674,7 +11675,7 @@
         "ticker": "BE",
         "sourceSymbol": "BE",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2026-04-17",
         "basePrice": 207.86,
         "latestPrice": 328.91,
@@ -11934,7 +11935,7 @@
         "ticker": "BIRD",
         "sourceSymbol": "BIRD",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2026-04-17",
         "basePrice": 10.8,
         "latestPrice": 5.97,
@@ -12551,7 +12552,7 @@
         "ticker": "IGV",
         "sourceSymbol": "IGV",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-01-04",
         "basePrice": 101.68,
         "latestPrice": 89.09,
@@ -12823,7 +12824,7 @@
         "ticker": "LNG",
         "sourceSymbol": "LNG",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2026-03-27",
         "basePrice": 296.91,
         "latestPrice": 227.03,
@@ -13285,7 +13286,7 @@
         "ticker": "USO",
         "sourceSymbol": "USO",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-06-20",
         "basePrice": 79.41,
         "latestPrice": 114.87,
@@ -13921,7 +13922,7 @@
         "ticker": "GLD",
         "sourceSymbol": "GLD",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-05-31",
         "basePrice": 215.3,
         "latestPrice": 387.12,
@@ -14212,7 +14213,7 @@
         "ticker": "RACE",
         "sourceSymbol": "RACE",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2026-02-13",
         "basePrice": 379.08,
         "latestPrice": 362.13,
@@ -14551,7 +14552,7 @@
         "ticker": "AMZN",
         "sourceSymbol": "AMZN",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-05-02",
         "basePrice": 189.98,
         "latestPrice": 244.39,
@@ -15045,7 +15046,7 @@
         "ticker": "CPER",
         "sourceSymbol": "CPER",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2026-01-10",
         "basePrice": 36.88,
         "latestPrice": 38.86,
@@ -15620,7 +15621,7 @@
         "ticker": "IPO",
         "sourceSymbol": "IPO",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-11-16",
         "basePrice": 44.3,
         "latestPrice": 59.54,
@@ -15962,7 +15963,7 @@
         "ticker": "NFLX",
         "sourceSymbol": "NFLX",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-01-25",
         "basePrice": 97.189,
         "latestPrice": 77.38,
@@ -16673,7 +16674,7 @@
         "ticker": "ASML",
         "sourceSymbol": "ASML",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-12-19",
         "basePrice": 1056.02,
         "latestPrice": 1929.6801,
@@ -16927,7 +16928,7 @@
         "ticker": "WBD",
         "sourceSymbol": "WBD",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-11-16",
         "basePrice": 9.47,
         "latestPrice": 26.2,
@@ -17268,7 +17269,7 @@
         "ticker": "NYT",
         "sourceSymbol": "NYT",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-02-15",
         "basePrice": 49.19,
         "latestPrice": 73.06,
@@ -17699,7 +17700,7 @@
         "ticker": "PLTR",
         "sourceSymbol": "PLTR",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-07-26",
         "basePrice": 27.18,
         "latestPrice": 128.47,
@@ -18107,7 +18108,7 @@
         "ticker": "IBIT",
         "sourceSymbol": "IBIT",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-05-31",
         "basePrice": 38.55,
         "latestPrice": 35.62,
@@ -18398,7 +18399,7 @@
         "ticker": "BOTZ",
         "sourceSymbol": "BOTZ",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-11-07",
         "basePrice": 36,
         "latestPrice": 38.37,
@@ -18708,6 +18709,33 @@
           "attributionConfidence": "high"
         },
         {
+          "id": "E227-msft-Guest-10",
+          "episodeId": "E227",
+          "episodeNumber": 227,
+          "episodeDate": "2025-05-09T20:26:00.000Z",
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Philippe Lafont cites Microsoft's Q1 report of 100 trillion AI tokens processed — going 'basically vertical' — as a decisive signal that AI demand is real and accelerating, which was a turning point in his own market outlook.",
+          "quote": "Microsoft said that in their Q1, they processed 100 trillion tokens, 50 trillion alone in March... the tokens are really going basically vertical... that was a really big deal.",
+          "quoteStartMs": 1746474,
+          "topics": [
+            "AI demand",
+            "cloud",
+            "tokens",
+            "earnings"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Philippe Laffont"
+        },
+        {
           "id": "E194-msft-Guest-1",
           "episodeId": "E194",
           "episodeNumber": 194,
@@ -18786,16 +18814,16 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts hold a mixed but cautiously constructive overall view of Microsoft, with the sharpest consensus around concerns over its long-running bundling practices. Both Sacks and Chamath are critical of Microsoft's strategy of leveraging its Office/enterprise monopoly to bundle products like Teams at effectively no marginal cost, crowding out competitors like Slack — Chamath noting this pattern has persisted for 40 years and calling for regulators to revisit the old consent decree, while Sacks argues it warrants a forced move to à la carte pricing. On the business outlook, views diverge more sharply: Friedberg initially argued Microsoft's core enterprise software revenue will face structural decline as its biggest legacy customers are disrupted by AI, but later turned more constructive, pointing to Microsoft Azure's 26% YoY cloud growth outpacing AWS's 17% and the likelihood that enterprises diversify toward Azure following the AWS outage. Chamath also leans bullish on Microsoft's forward trajectory, arguing Azure will benefit as the broader S&P shrinks and that Microsoft can cheaply bundle AI-era point features to grow its footprint — a view reinforced by guest Reid Hoffman, who singled out CEO Satya Nadella as the best public-market CEO of his generation for his disciplined balance of AI investment and capital returns.",
+      "synthesis": "The hosts hold a mixed but increasingly constructive view of Microsoft, with the most pointed criticism centered on its competitive practices rather than its business fundamentals. Both Sacks and Chamath are sharply critical of Microsoft's decades-long bundling strategy — most recently with Teams — arguing it illegally crushes competition and warrants regulatory intervention via a revived consent decree. On the business outlook, views diverge: Friedberg warns that Microsoft's core enterprise software revenues will face structural decline as its largest legacy customers are disrupted by AI and new-generation builders bypass traditional Microsoft products entirely, while Chamath counters that Azure's growth and Microsoft's ability to cheaply bundle emerging point-feature products will actually expand the company's footprint and headcount. Supporting the bull case, guest Philippe Lafont points to Microsoft's explosive AI token-processing growth as a concrete signal of accelerating demand, and guest Reid Hoffman singles out CEO Satya Nadella as the best public-market CEO of his generation for his disciplined balance of strategic AI investment and capital returns — with Friedberg also noting Microsoft Azure's 26% YoY cloud growth outpacing AWS as a further tailwind.",
       "netStance": "bull",
       "firstMentioned": "2024-06-29T04:05:00.000Z",
       "lastMentioned": "2025-10-24T22:38:00.000Z",
-      "mentionCount": 6,
+      "mentionCount": 7,
       "market": {
         "ticker": "MSFT",
         "sourceSymbol": "MSFT",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-06-29",
         "basePrice": 456.73,
         "latestPrice": 379.4,
@@ -19105,7 +19133,7 @@
         "ticker": "MP",
         "sourceSymbol": "MP",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-10-17",
         "basePrice": 80.79,
         "latestPrice": 60.88,
@@ -19394,7 +19422,7 @@
         "ticker": "AMD",
         "sourceSymbol": "AMD",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-10-10",
         "basePrice": 214.9,
         "latestPrice": 537.37,
@@ -19689,7 +19717,7 @@
         "ticker": "HOOD",
         "sourceSymbol": "HOOD",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-10-10",
         "basePrice": 138.96,
         "latestPrice": 108.15,
@@ -20011,7 +20039,7 @@
         "ticker": "EA",
         "sourceSymbol": "EA",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-10-03",
         "basePrice": 200.69,
         "latestPrice": 202.15,
@@ -20392,7 +20420,7 @@
         "ticker": "U",
         "sourceSymbol": "U",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-10-03",
         "basePrice": 37.89,
         "latestPrice": 27.48,
@@ -20768,7 +20796,7 @@
         "ticker": "INTC",
         "sourceSymbol": "INTC",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-01-25",
         "basePrice": 20.29,
         "latestPrice": 133.99,
@@ -21404,7 +21432,7 @@
         "ticker": "ADBE",
         "sourceSymbol": "ADBE",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-07-04",
         "basePrice": 376.93,
         "latestPrice": 195.16,
@@ -21737,7 +21765,7 @@
         "ticker": "QQQ",
         "sourceSymbol": "QQQ",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-07-12",
         "basePrice": 494.82,
         "latestPrice": 740.62,
@@ -22060,7 +22088,7 @@
         "ticker": "CRCL",
         "sourceSymbol": "CRCL",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-06-21",
         "basePrice": 263.45,
         "latestPrice": 80.23,
@@ -22324,7 +22352,7 @@
         "ticker": "SNOW",
         "sourceSymbol": "SNOW",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-06-21",
         "basePrice": 213.71,
         "latestPrice": 232.29,
@@ -22893,18 +22921,17 @@
           "isPublic": false,
           "host": "Chamath",
           "stance": "neutral",
-          "conviction": "high",
+          "conviction": "medium",
           "callType": "view",
           "excludeReason": null,
-          "scoreNote": "Not scored: Same as SpaceX — Chamath is riffing on Philippe's basket concept, not naming his own pick or position; no personal investment action or pick-prompt answer, so not a scoreable selection.",
+          "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Chamath explicitly names Stripe as a member of the optimal future basket of top companies, arguing it would be 'stupid' to ignore it simply because it is private.",
-          "quote": "SpaceX would be in the basket. It's private. Correct. Stripe would be in the basket. To be long some rando public company because it's public and ignore SpaceX and Stripe would just be stupid.",
-          "quoteStartMs": 5391861,
+          "summary": "Chamath argues Stripe belongs in the optimal basket of companies to own for the future and that ignoring it simply because it is private would be a mistake.",
+          "quote": "Stripe would be in the basket. To be long some rando public company because it's public and ignore SpaceX and Stripe would just be stupid.",
+          "quoteStartMs": 5395326,
           "topics": [
             "private markets",
-            "portfolio construction",
-            "next Mag 7"
+            "portfolio construction"
           ],
           "attributionConfidence": "high"
         },
@@ -23022,59 +23049,365 @@
       "domain": "stripe.com"
     },
     {
-      "slug": "magnificent-seven",
-      "company": "Magnificent Seven",
-      "ticker": null,
+      "slug": "mags",
+      "company": "Magnificent Seven (basket)",
+      "ticker": "MAGS",
       "isPublic": true,
       "theses": [
         {
-          "id": "E227-magnificent-seven-Guest-4",
+          "id": "E227-magnificent-seven-basket-Guest-4",
           "episodeId": "E227",
           "episodeNumber": 227,
           "episodeDate": "2025-05-09T20:26:00.000Z",
-          "company": "Magnificent Seven",
+          "company": "Magnificent Seven (basket)",
           "ticker": null,
-          "isPublic": true,
+          "isPublic": false,
           "host": "Guest",
-          "stance": "neutral",
+          "stance": "bear",
           "conviction": "medium",
           "callType": "view",
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": "MAGS",
-          "summary": "Philippe Lafont argues that AI-driven rapid change is effectively ending the era of the Mag 7 as a monolithic index concept, with correlation breaking down and the next generation of top companies being a different mix of public and private names.",
-          "quote": "To me, it's a little bit like the end of the Mac 7. And what we should do is almost think like, hey, what is the next?... there's going to be a new index that comes up.",
-          "quoteStartMs": 2573000,
+          "summary": "Philippe Lafont argues that AI-driven rapid change signals the end of the Mag 7 as a monolithic index concept, as correlations break down and a new set of leaders — some private, some public — will replace it.",
+          "quote": "I think what AI is showing is that at a time of great change... it's a little bit like the end of the Mac 7. And what we should do is almost think like, hey, what is the next?",
+          "quoteStartMs": 2562000,
           "topics": [
+            "Mag 7",
             "AI disruption",
-            "portfolio strategy",
-            "index evolution"
+            "index composition"
           ],
           "attributionConfidence": "high",
           "guestName": "Philippe Laffont"
+        },
+        {
+          "id": "E222-magnificent-seven-basket-Sacks-1",
+          "episodeId": "E222",
+          "episodeNumber": 222,
+          "episodeDate": "2025-04-05T19:03:00.000Z",
+          "company": "Magnificent Seven (basket)",
+          "ticker": null,
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "bear",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": "not_investment_call",
+          "scoreNote": "Not scored: The published quote splices a Bessant quote ('The equity market sell-off is a Mag Seven problem, not a MAGA problem') with Sacks's own words, but Bessant's line is quoted by Sacks — it's not Sacks's own claim. The actual scoreable Sacks statement is about the Polymarket bet closing and his reasoning. The callType should be 'view' not 'selection' because this is a Polymarket/prediction-market structural bet (Mag 7 shrinking as a share of the index, not a directional equity short), which per the rules is not a scored selection.",
+          "sectorProxy": "MAGS",
+          "summary": "Sacks named the Mag Seven shrinking below 30% of the S&P 500 as a 'free money' Polymarket bet he made early in 2025, arguing the Trump administration explicitly does not care about the asset economy or megacap tech stocks, a thesis that played out with the tariff-driven sell-off.",
+          "quote": "The equity market sell-off is a Mag Seven problem, not a MAGA problem...This was free money...it was very clear to me early on that the rhetoric had shifted to say, 'We care about MAGA...None of those folks are deeply invested in the asset",
+          "quoteStartMs": 3024690,
+          "topics": [
+            "Mag 7",
+            "tariffs",
+            "market structure",
+            "MAGA policy"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E209-magnificent-seven-basket-Jason-7",
+          "episodeId": "E209",
+          "episodeNumber": 209,
+          "episodeDate": "2025-01-04T00:23:00.000Z",
+          "company": "Magnificent Seven (basket)",
+          "ticker": "MAGS",
+          "isPublic": true,
+          "host": "Jason",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "selection",
+          "excludeReason": null,
+          "scoreNote": "Named as best performing asset pick for 2025. ETF proxy: Magnificent Seven ETF.",
+          "sectorProxy": "MAGS",
+          "summary": "Jason picks the Mag 7 as the best performing asset of 2025, arguing their internal AI application will drive earnings growth beyond market expectations.",
+          "quote": "I think the Mag 7 is going to be the best performing asset... the internal application of AI will allow these companies to have earnings growth that people will not be able to comprehend over the next couple of years. So I'm going with Mag",
+          "quoteStartMs": 4930420,
+          "topics": [
+            "AI",
+            "earnings growth",
+            "internal AI adoption"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E209-magnificent-seven-basket-Chamath-6",
+          "episodeId": "E209",
+          "episodeNumber": 209,
+          "episodeDate": "2025-01-04T00:23:00.000Z",
+          "company": "Magnificent Seven (basket)",
+          "ticker": "MAGS",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bear",
+          "conviction": "medium",
+          "callType": "selection",
+          "excludeReason": null,
+          "scoreNote": "Named as biggest business loser pick for 2025; MAGS used as proxy for the Mag 7 basket. ETF proxy: Magnificent Seven ETF.",
+          "sectorProxy": "MAGS",
+          "summary": "Chamath predicts the Mag 7 will see a multi-trillion dollar absolute drawdown in 2025 due to dangerous index concentration near 40%, regardless of underlying business quality.",
+          "quote": "I think when we look back, the absolute dollar drawdown of the Mag Seven will be in the trillions of dollars... I think it's approaching 40%... they've generally foreshadowed a big drawdown.",
+          "quoteStartMs": 2402492,
+          "topics": [
+            "index concentration",
+            "valuation",
+            "drawdown risk"
+          ],
+          "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The sole view presented comes from guest Philippe Lafont, who takes a neutral but notably forward-looking stance on the Magnificent Seven as a concept: he argues that AI-driven disruption is fracturing the group's historical correlation, effectively rendering the \"Mag 7\" label obsolete as a meaningful investing framework. His medium-conviction thesis is not that these companies are failing, but that the monolithic index concept itself is breaking down, with the next cohort of dominant companies likely to be a different mix of public and private names. No other hosts provided theses on this topic, so no agreement or disagreement among the panel can be assessed.",
-      "netStance": "neutral",
-      "firstMentioned": "2025-05-09T20:26:00.000Z",
+      "synthesis": "Three of the four voices are bearish on the Magnificent Seven as a basket, though for distinct reasons. Chamath warns of a multi-trillion dollar drawdown driven by dangerous index concentration approaching 40%, while Sacks — with high conviction — argues the Trump administration's explicit indifference to megacap tech and the asset economy makes a shrinkage of the Mag 7's S&P 500 weighting below 30% a near-certainty, a view he says was borne out by the tariff-driven sell-off. Guest Philippe Lafont adds a structural bear case, contending that AI-driven disruption is breaking down the correlations that made the Mag 7 a coherent concept, with a new set of leaders — public and private — set to replace it. Jason stands alone as the bull, arguing with high conviction that internal AI adoption will generate earnings growth well beyond market expectations, making the basket the best-performing asset of 2025.",
+      "netStance": "bear",
+      "firstMentioned": "2025-01-04T00:23:00.000Z",
       "lastMentioned": "2025-05-09T20:26:00.000Z",
-      "mentionCount": 1,
-      "market": null,
-      "description": "Basket of seven dominant US mega-cap technology companies: Apple, Microsoft, Nvidia, Alphabet, Amazon, Meta, and Tesla.",
+      "mentionCount": 4,
+      "market": {
+        "ticker": "MAGS",
+        "sourceSymbol": "MAGS",
+        "currency": "USD",
+        "asOf": "2026-06-20",
+        "anchorDate": "2025-01-04",
+        "basePrice": 56.66,
+        "latestPrice": 65.44,
+        "returns": {
+          "1m": -0.01729615248852801,
+          "3m": -0.27003176844334625,
+          "6m": -0.02823861630780082,
+          "1y": 0.16290151782562662,
+          "since": 0.15495940698905755
+        },
+        "history": [
+          [
+            "2025-01-06",
+            56.66
+          ],
+          [
+            "2025-01-16",
+            54.45
+          ],
+          [
+            "2025-01-28",
+            56.22
+          ],
+          [
+            "2025-02-06",
+            55.42
+          ],
+          [
+            "2025-02-18",
+            55.12
+          ],
+          [
+            "2025-02-27",
+            50.12
+          ],
+          [
+            "2025-03-10",
+            46.33
+          ],
+          [
+            "2025-03-19",
+            46.75
+          ],
+          [
+            "2025-03-28",
+            46.03
+          ],
+          [
+            "2025-04-08",
+            40.5
+          ],
+          [
+            "2025-04-17",
+            42.48
+          ],
+          [
+            "2025-04-29",
+            46.59
+          ],
+          [
+            "2025-05-08",
+            47.67
+          ],
+          [
+            "2025-05-19",
+            52.27
+          ],
+          [
+            "2025-05-29",
+            52.9
+          ],
+          [
+            "2025-06-09",
+            53.27
+          ],
+          [
+            "2025-06-18",
+            53.44
+          ],
+          [
+            "2025-06-30",
+            55.47
+          ],
+          [
+            "2025-07-10",
+            55.99
+          ],
+          [
+            "2025-07-21",
+            57.61
+          ],
+          [
+            "2025-07-30",
+            57.82
+          ],
+          [
+            "2025-08-08",
+            59.93
+          ],
+          [
+            "2025-08-19",
+            59.34
+          ],
+          [
+            "2025-08-28",
+            60.63
+          ],
+          [
+            "2025-09-09",
+            61.72
+          ],
+          [
+            "2025-09-18",
+            64.3
+          ],
+          [
+            "2025-09-29",
+            64.78
+          ],
+          [
+            "2025-10-08",
+            65.19
+          ],
+          [
+            "2025-10-17",
+            64.33
+          ],
+          [
+            "2025-10-28",
+            68.37
+          ],
+          [
+            "2025-11-06",
+            66.19
+          ],
+          [
+            "2025-11-17",
+            64.75
+          ],
+          [
+            "2025-11-26",
+            66.31
+          ],
+          [
+            "2025-12-08",
+            67.02
+          ],
+          [
+            "2025-12-17",
+            65.31
+          ],
+          [
+            "2025-12-29",
+            67.46
+          ],
+          [
+            "2026-01-08",
+            65.88
+          ],
+          [
+            "2026-01-20",
+            62.94
+          ],
+          [
+            "2026-01-29",
+            66.38
+          ],
+          [
+            "2026-02-09",
+            63.84
+          ],
+          [
+            "2026-02-19",
+            61.59
+          ],
+          [
+            "2026-03-02",
+            61.61
+          ],
+          [
+            "2026-03-11",
+            62.15
+          ],
+          [
+            "2026-03-20",
+            58.37
+          ],
+          [
+            "2026-03-31",
+            57.94
+          ],
+          [
+            "2026-04-10",
+            61.14
+          ],
+          [
+            "2026-04-21",
+            65.31
+          ],
+          [
+            "2026-04-30",
+            66.24
+          ],
+          [
+            "2026-05-11",
+            69.44
+          ],
+          [
+            "2026-05-20",
+            69.49
+          ],
+          [
+            "2026-06-01",
+            69.86
+          ],
+          [
+            "2026-06-10",
+            64.22
+          ],
+          [
+            "2026-06-18",
+            65.44
+          ]
+        ],
+        "source": "yahoo"
+      },
+      "description": "ETF providing equal-weight exposure to the seven largest US mega-cap technology companies.",
       "domain": null
     },
     {
-      "slug": "new-mag-7-basket-next-gen-top-companies",
-      "company": "New Mag 7 basket (next-gen top companies)",
+      "slug": "new-mag-7-future-leaders-basket",
+      "company": "New Mag 7 / Future Leaders Basket",
       "ticker": null,
       "isPublic": false,
       "theses": [
         {
-          "id": "E227-new-mag-7-basket-next-gen-top-companies-Guest-5",
+          "id": "E227-new-mag-7-future-leaders-basket-Guest-5",
           "episodeId": "E227",
           "episodeNumber": 227,
           "episodeDate": "2025-05-09T20:26:00.000Z",
-          "company": "New Mag 7 basket (next-gen top companies)",
+          "company": "New Mag 7 / Future Leaders Basket",
           "ticker": null,
           "isPublic": false,
           "host": "Guest",
@@ -23082,27 +23415,69 @@
           "conviction": "high",
           "callType": "selection",
           "excludeReason": null,
-          "scoreNote": "Named as explicit north-star selection for the Coatue interval fund; basket includes unnamed public leaders plus private names like SpaceX and Stripe.",
+          "scoreNote": "Named pick/mandate for Coatue's new interval fund — a basket of ~25 future dominant public and private companies.",
           "sectorProxy": null,
-          "summary": "Philippe Lafont states his north star for the Coatue interval fund is to build the 'new Mag 7' — a basket of the next 10–25 largest companies in 10 years, spanning public and private (e.g. SpaceX, Stripe, a leading humanoid, a leading robotaxi company), identified by leadership position.",
-          "quote": "My north star is, Jason, I got to build for you in 10 years the new Mag 7. That's my job... Some are already public, they're just going to get bigger, and some are private.",
+          "summary": "Philippe Lafont's explicit investment north star for his new Coatue interval fund is to identify and build a basket of the next 25 dominant companies — a new Mag 7 — spanning both public and private markets including SpaceX and Stripe.",
+          "quote": "To me, the north star is, Jason, I got to build for you in 10 years the new Mag 7. That's my job... Some are already public, they're just going to get bigger, and some are private.",
           "quoteStartMs": 5313000,
           "topics": [
             "portfolio construction",
-            "private/public hybrid",
-            "AI megatrend"
+            "private markets",
+            "future leaders"
           ],
           "attributionConfidence": "low",
           "guestName": "Philippe Laffont"
         }
       ],
-      "synthesis": "Philippe Lafont frames the entire investment thesis of the Coatue interval fund around identifying and assembling what he calls the \"new Mag 7\" — a basket of the 10–25 companies he believes will be the largest in the world a decade from now. He cites a mix of already-public companies expected to grow further alongside private giants such as SpaceX, Stripe, a leading humanoid robotics company, and a leading robotaxi company, with selection driven by clear leadership position in their respective categories. As the sole host represented, there is no disagreement to note; Lafont expresses high conviction in this framework as his guiding north star for the fund.",
+      "synthesis": "Philippe Lafont, appearing as a guest, expressed high conviction that the central investment thesis behind Coatue's new interval fund is to identify the next generation of dominant companies — roughly 25 in total — that will collectively form a \"new Mag 7\" over the next decade. He noted this basket would span both public and private markets, citing SpaceX and Stripe as examples of private companies already on his radar alongside public names he expects to grow larger. No other hosts offered competing or corroborating views on this thesis, so the perspective is solely Lafont's as shared on the May 9, 2025 episode.",
       "netStance": "neutral",
       "firstMentioned": "2025-05-09T20:26:00.000Z",
       "lastMentioned": "2025-05-09T20:26:00.000Z",
       "mentionCount": 1,
       "market": null,
-      "description": "Basket of next-generation high-growth companies seen as successors to current mega-cap tech leaders.",
+      "description": "A thematic basket grouping emerging large-cap technology and growth companies considered potential future market leaders.",
+      "domain": null
+    },
+    {
+      "slug": "venture-capital-asset-class",
+      "company": "Venture Capital (asset class)",
+      "ticker": null,
+      "isPublic": false,
+      "theses": [
+        {
+          "id": "E227-venture-capital-asset-class-Chamath-9",
+          "episodeId": "E227",
+          "episodeNumber": 227,
+          "episodeDate": "2025-05-09T20:26:00.000Z",
+          "company": "Venture Capital (asset class)",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Chamath",
+          "stance": "bear",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": "not_investment_call",
+          "scoreNote": "Commentary on the VC asset class economics broadly, not a tradable equity position.",
+          "sectorProxy": null,
+          "summary": "Chamath argues that at current course — with IPOs suppressed and M&A blocked — venture capital returns are insufficient to justify the illiquidity premium, making the asset class unjustifiable unless treated almost philanthropically.",
+          "quote": "I think at current course and speed, with the lack of IPOs and with the lack of M&A, you can't justify that asset class on its own, in my opinion, unless you think about it as something that you're doing almost philanthropically.",
+          "quoteStartMs": 4356037,
+          "topics": [
+            "venture capital",
+            "liquidity",
+            "returns",
+            "regulation"
+          ],
+          "attributionConfidence": "high"
+        }
+      ],
+      "synthesis": "The only host view supplied comes from Chamath, who holds a high-conviction bearish stance on venture capital as an asset class (as of May 2025). He argues that the prolonged suppression of IPOs combined with blocked M&A activity has choked off the exit pathways that justify VC's illiquidity premium, making expected returns insufficient on a standalone basis. In his view, the only rational framing for continuing to allocate to the asset class is a quasi-philanthropic one rather than a purely financial one. No other hosts' views were provided, so agreement or disagreement across the group cannot be assessed.",
+      "netStance": "bear",
+      "firstMentioned": "2025-05-09T20:26:00.000Z",
+      "lastMentioned": "2025-05-09T20:26:00.000Z",
+      "mentionCount": 1,
+      "market": null,
+      "description": "Asset class comprising early-stage equity investments in private startups seeking high-growth returns.",
       "domain": null
     },
     {
@@ -23171,7 +23546,7 @@
         "ticker": "UBER",
         "sourceSymbol": "UBER",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-10-18",
         "basePrice": 79.16,
         "latestPrice": 71.64,
@@ -23499,7 +23874,7 @@
         "ticker": "BOX",
         "sourceSymbol": "BOX",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-12-20",
         "basePrice": 32.03,
         "latestPrice": 24.84,
@@ -23874,7 +24249,7 @@
         "ticker": "IEF",
         "sourceSymbol": "IEF",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-10-25",
         "basePrice": 94.89,
         "latestPrice": 94.36,
@@ -24133,328 +24508,6 @@
       "domain": null
     },
     {
-      "slug": "mags",
-      "company": "Magnificent Seven (basket)",
-      "ticker": "MAGS",
-      "isPublic": true,
-      "theses": [
-        {
-          "id": "E222-magnificent-seven-basket-Sacks-1",
-          "episodeId": "E222",
-          "episodeNumber": 222,
-          "episodeDate": "2025-04-05T19:03:00.000Z",
-          "company": "Magnificent Seven (basket)",
-          "ticker": null,
-          "isPublic": true,
-          "host": "Sacks",
-          "stance": "bear",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": "not_investment_call",
-          "scoreNote": "Not scored: The published quote splices a Bessant quote ('The equity market sell-off is a Mag Seven problem, not a MAGA problem') with Sacks's own words, but Bessant's line is quoted by Sacks — it's not Sacks's own claim. The actual scoreable Sacks statement is about the Polymarket bet closing and his reasoning. The callType should be 'view' not 'selection' because this is a Polymarket/prediction-market structural bet (Mag 7 shrinking as a share of the index, not a directional equity short), which per the rules is not a scored selection.",
-          "sectorProxy": "MAGS",
-          "summary": "Sacks named the Mag Seven shrinking below 30% of the S&P 500 as a 'free money' Polymarket bet he made early in 2025, arguing the Trump administration explicitly does not care about the asset economy or megacap tech stocks, a thesis that played out with the tariff-driven sell-off.",
-          "quote": "The equity market sell-off is a Mag Seven problem, not a MAGA problem...This was free money...it was very clear to me early on that the rhetoric had shifted to say, 'We care about MAGA...None of those folks are deeply invested in the asset",
-          "quoteStartMs": 3024690,
-          "topics": [
-            "Mag 7",
-            "tariffs",
-            "market structure",
-            "MAGA policy"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E209-magnificent-seven-basket-Jason-7",
-          "episodeId": "E209",
-          "episodeNumber": 209,
-          "episodeDate": "2025-01-04T00:23:00.000Z",
-          "company": "Magnificent Seven (basket)",
-          "ticker": "MAGS",
-          "isPublic": true,
-          "host": "Jason",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "selection",
-          "excludeReason": null,
-          "scoreNote": "Named as best performing asset pick for 2025. ETF proxy: Magnificent Seven ETF.",
-          "sectorProxy": "MAGS",
-          "summary": "Jason picks the Mag 7 as the best performing asset of 2025, arguing their internal AI application will drive earnings growth beyond market expectations.",
-          "quote": "I think the Mag 7 is going to be the best performing asset... the internal application of AI will allow these companies to have earnings growth that people will not be able to comprehend over the next couple of years. So I'm going with Mag",
-          "quoteStartMs": 4930420,
-          "topics": [
-            "AI",
-            "earnings growth",
-            "internal AI adoption"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E209-magnificent-seven-basket-Chamath-6",
-          "episodeId": "E209",
-          "episodeNumber": 209,
-          "episodeDate": "2025-01-04T00:23:00.000Z",
-          "company": "Magnificent Seven (basket)",
-          "ticker": "MAGS",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bear",
-          "conviction": "medium",
-          "callType": "selection",
-          "excludeReason": null,
-          "scoreNote": "Named as biggest business loser pick for 2025; MAGS used as proxy for the Mag 7 basket. ETF proxy: Magnificent Seven ETF.",
-          "sectorProxy": "MAGS",
-          "summary": "Chamath predicts the Mag 7 will see a multi-trillion dollar absolute drawdown in 2025 due to dangerous index concentration near 40%, regardless of underlying business quality.",
-          "quote": "I think when we look back, the absolute dollar drawdown of the Mag Seven will be in the trillions of dollars... I think it's approaching 40%... they've generally foreshadowed a big drawdown.",
-          "quoteStartMs": 2402492,
-          "topics": [
-            "index concentration",
-            "valuation",
-            "drawdown risk"
-          ],
-          "attributionConfidence": "high"
-        }
-      ],
-      "synthesis": "The hosts are split on the Magnificent Seven basket, with Jason standing alone as a bull while Chamath and Sacks both hold bearish views. Jason (high conviction) argues that internal AI adoption will drive earnings growth far beyond market expectations, making the Mag 7 the top-performing asset of 2025. Chamath (medium conviction) agrees a significant drawdown is coming but frames it as a structural index-concentration problem — with the basket near 40% of major indices — rather than a reflection of business quality. Sacks (high conviction) goes further, contending that the Trump administration's explicit indifference to megacap tech and the asset economy made a Mag 7 decline near-certain, a view he says was validated by the tariff-driven sell-off and his early Polymarket bet on the basket falling below 30% of the S&P 500.",
-      "netStance": "bear",
-      "firstMentioned": "2025-01-04T00:23:00.000Z",
-      "lastMentioned": "2025-04-05T19:03:00.000Z",
-      "mentionCount": 3,
-      "market": {
-        "ticker": "MAGS",
-        "sourceSymbol": "MAGS",
-        "currency": "USD",
-        "asOf": "2026-06-19",
-        "anchorDate": "2025-01-04",
-        "basePrice": 56.66,
-        "latestPrice": 65.44,
-        "returns": {
-          "1m": -0.01729615248852801,
-          "3m": -0.27003176844334625,
-          "6m": -0.02823861630780082,
-          "1y": 0.16290151782562662,
-          "since": 0.15495940698905755
-        },
-        "history": [
-          [
-            "2025-01-06",
-            56.66
-          ],
-          [
-            "2025-01-16",
-            54.45
-          ],
-          [
-            "2025-01-28",
-            56.22
-          ],
-          [
-            "2025-02-06",
-            55.42
-          ],
-          [
-            "2025-02-18",
-            55.12
-          ],
-          [
-            "2025-02-27",
-            50.12
-          ],
-          [
-            "2025-03-10",
-            46.33
-          ],
-          [
-            "2025-03-19",
-            46.75
-          ],
-          [
-            "2025-03-28",
-            46.03
-          ],
-          [
-            "2025-04-08",
-            40.5
-          ],
-          [
-            "2025-04-17",
-            42.48
-          ],
-          [
-            "2025-04-29",
-            46.59
-          ],
-          [
-            "2025-05-08",
-            47.67
-          ],
-          [
-            "2025-05-19",
-            52.27
-          ],
-          [
-            "2025-05-29",
-            52.9
-          ],
-          [
-            "2025-06-09",
-            53.27
-          ],
-          [
-            "2025-06-18",
-            53.44
-          ],
-          [
-            "2025-06-30",
-            55.47
-          ],
-          [
-            "2025-07-10",
-            55.99
-          ],
-          [
-            "2025-07-21",
-            57.61
-          ],
-          [
-            "2025-07-30",
-            57.82
-          ],
-          [
-            "2025-08-08",
-            59.93
-          ],
-          [
-            "2025-08-19",
-            59.34
-          ],
-          [
-            "2025-08-28",
-            60.63
-          ],
-          [
-            "2025-09-09",
-            61.72
-          ],
-          [
-            "2025-09-18",
-            64.3
-          ],
-          [
-            "2025-09-29",
-            64.78
-          ],
-          [
-            "2025-10-08",
-            65.19
-          ],
-          [
-            "2025-10-17",
-            64.33
-          ],
-          [
-            "2025-10-28",
-            68.37
-          ],
-          [
-            "2025-11-06",
-            66.19
-          ],
-          [
-            "2025-11-17",
-            64.75
-          ],
-          [
-            "2025-11-26",
-            66.31
-          ],
-          [
-            "2025-12-08",
-            67.02
-          ],
-          [
-            "2025-12-17",
-            65.31
-          ],
-          [
-            "2025-12-29",
-            67.46
-          ],
-          [
-            "2026-01-08",
-            65.88
-          ],
-          [
-            "2026-01-20",
-            62.94
-          ],
-          [
-            "2026-01-29",
-            66.38
-          ],
-          [
-            "2026-02-09",
-            63.84
-          ],
-          [
-            "2026-02-19",
-            61.59
-          ],
-          [
-            "2026-03-02",
-            61.61
-          ],
-          [
-            "2026-03-11",
-            62.15
-          ],
-          [
-            "2026-03-20",
-            58.37
-          ],
-          [
-            "2026-03-31",
-            57.94
-          ],
-          [
-            "2026-04-10",
-            61.14
-          ],
-          [
-            "2026-04-21",
-            65.31
-          ],
-          [
-            "2026-04-30",
-            66.24
-          ],
-          [
-            "2026-05-11",
-            69.44
-          ],
-          [
-            "2026-05-20",
-            69.49
-          ],
-          [
-            "2026-06-01",
-            69.86
-          ],
-          [
-            "2026-06-10",
-            64.22
-          ],
-          [
-            "2026-06-18",
-            65.44
-          ]
-        ],
-        "source": "yahoo"
-      },
-      "description": "ETF providing equal-weight exposure to the seven largest US mega-cap technology companies.",
-      "domain": null
-    },
-    {
       "slug": "credit-default-swaps-cds-corporate-credit-protection",
       "company": "Credit Default Swaps (CDS / corporate credit protection)",
       "ticker": null,
@@ -24538,7 +24591,7 @@
         "ticker": "NMAX",
         "sourceSymbol": "NMAX",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-04-05",
         "basePrice": 47.12,
         "latestPrice": 7.78,
@@ -25033,7 +25086,7 @@
         "ticker": "BA",
         "sourceSymbol": "BA",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-08-16",
         "basePrice": 179.99,
         "latestPrice": 222.72,
@@ -25702,7 +25755,7 @@
         "ticker": "URA",
         "sourceSymbol": "URA",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-10-18",
         "basePrice": 33.46,
         "latestPrice": 47.78,
@@ -26089,7 +26142,7 @@
         "ticker": "CEG",
         "sourceSymbol": "CEG",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-01-25",
         "basePrice": 275,
         "latestPrice": 274.06,
@@ -26388,7 +26441,7 @@
         "ticker": "AVGO",
         "sourceSymbol": "AVGO",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-01-25",
         "basePrice": 202.13,
         "latestPrice": 411.35,
@@ -26755,7 +26808,7 @@
         "ticker": "KWEB",
         "sourceSymbol": "KWEB",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-01-04",
         "basePrice": 28.49,
         "latestPrice": 25.24,
@@ -27028,7 +27081,7 @@
         "ticker": "BABA",
         "sourceSymbol": "BABA",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-01-18",
         "basePrice": 85.38,
         "latestPrice": 107.1,
@@ -27396,7 +27449,7 @@
         "ticker": "MSTR",
         "sourceSymbol": "MSTR",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-12-07",
         "basePrice": 365.34,
         "latestPrice": 112.53,
@@ -27722,7 +27775,7 @@
         "ticker": "ITA",
         "sourceSymbol": "ITA",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-01-04",
         "basePrice": 144.97,
         "latestPrice": 238.99,
@@ -28245,7 +28298,7 @@
         "ticker": "DJT",
         "sourceSymbol": "DJT",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2025-01-04",
         "basePrice": 36.17,
         "latestPrice": 8.49,
@@ -28643,7 +28696,7 @@
         "ticker": "BAC",
         "sourceSymbol": "BAC",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-11-01",
         "basePrice": 41.76,
         "latestPrice": 56.2,
@@ -29017,7 +29070,7 @@
         "ticker": "SBUX",
         "sourceSymbol": "SBUX",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-08-16",
         "basePrice": 94.81,
         "latestPrice": 100.65,
@@ -29448,7 +29501,7 @@
         "ticker": "EXPE",
         "sourceSymbol": "EXPE",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-10-18",
         "basePrice": 159.61,
         "latestPrice": 240.9,
@@ -29987,7 +30040,7 @@
         "ticker": "ABNB",
         "sourceSymbol": "ABNB",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-09-06",
         "basePrice": 114.28,
         "latestPrice": 142.41,
@@ -30274,7 +30327,7 @@
         "ticker": "PANW",
         "sourceSymbol": "PANW",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-09-06",
         "basePrice": 167.91,
         "latestPrice": 287.78,
@@ -30602,7 +30655,7 @@
         "ticker": "CMG",
         "sourceSymbol": "CMG",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-08-16",
         "basePrice": 52.47,
         "latestPrice": 32.49,
@@ -30939,7 +30992,7 @@
         "ticker": "CRWD",
         "sourceSymbol": "CRWD",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-07-26",
         "basePrice": 256.16,
         "latestPrice": 684.86,
@@ -31243,7 +31296,7 @@
         "ticker": "FOXA",
         "sourceSymbol": "FOXA",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-07-26",
         "basePrice": 37.51,
         "latestPrice": 52.23,
@@ -31723,7 +31776,7 @@
         "ticker": "GME",
         "sourceSymbol": "GME",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-06-07",
         "basePrice": 28.22,
         "latestPrice": 21.52,
@@ -32056,7 +32109,7 @@
         "ticker": "DELL",
         "sourceSymbol": "DELL",
         "currency": "USD",
-        "asOf": "2026-06-19",
+        "asOf": "2026-06-20",
         "anchorDate": "2024-05-31",
         "basePrice": 139.56,
         "latestPrice": 409.5,
@@ -32566,7 +32619,7 @@
   ],
   "episodesProcessed": 98,
   "indexFund": {
-    "asOf": "2026-06-19",
+    "asOf": "2026-06-20",
     "inceptionDate": "2024-07-26",
     "benchmarkSymbol": "SPY",
     "contributionPerCall": 1000,
@@ -33334,7 +33387,7 @@
     }
   },
   "guestiesFund": {
-    "asOf": "2026-06-19",
+    "asOf": "2026-06-20",
     "inceptionDate": "2025-01-18",
     "benchmarkSymbol": "SPY",
     "contributionPerCall": 1000,
@@ -34526,7 +34579,7 @@
   ],
   "hostFunds": {
     "Chamath": {
-      "asOf": "2026-06-19",
+      "asOf": "2026-06-20",
       "inceptionDate": "2025-06-21",
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
@@ -35181,7 +35234,7 @@
       ]
     },
     "Jason": {
-      "asOf": "2026-06-19",
+      "asOf": "2026-06-20",
       "inceptionDate": "2025-01-04",
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
@@ -35793,7 +35846,7 @@
       ]
     },
     "Sacks": {
-      "asOf": "2026-06-19",
+      "asOf": "2026-06-20",
       "inceptionDate": "2024-07-26",
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
@@ -36350,7 +36403,7 @@
       ]
     },
     "Friedberg": {
-      "asOf": "2026-06-19",
+      "asOf": "2026-06-20",
       "inceptionDate": "2025-06-21",
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,

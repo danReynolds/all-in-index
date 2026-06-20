@@ -1,4 +1,5 @@
-import { currentStanceForHosts, isCallShaped, isPortfolioScored } from "../lib/calls";
+import { guestExposureWindows, isCallShaped, isPortfolioScored } from "../lib/calls";
+import { hasCurrentLong } from "./index-fund";
 import { MAX_PUBLISHED_QUOTE_CHARS } from "../lib/quotes";
 import { store } from "./store";
 import type { Host, IndexFund, IndexSnapshot, Thesis } from "../lib/types";
@@ -27,11 +28,28 @@ function validateFund(
       errors.push(`${label}: constituent ${c.slug} is not present in holdings`);
       continue;
     }
-    const stance = currentStanceForHosts(holding.theses, hosts);
-    if (stance !== "bull") {
-      errors.push(`${label}: ${holding.company} (${c.ticker}) is ${stance}, not current bull`);
+    // A fund constituent must be a CURRENT open long — validate against the
+    // same call-window logic buildIndexFund uses for membership (Model B), not
+    // a net stance. A name where one host holds an open long but another is bear
+    // reads "mixed" by net stance yet is correctly in the fund on that long.
+    if (!hasOpenLong(holding.theses, hosts)) {
+      errors.push(`${label}: ${holding.company} (${c.ticker}) has no current open long call`);
     }
   }
+}
+
+/** Does any of these hosts (or any guest, for the Guesties fund) hold an open long? */
+function hasOpenLong(theses: Thesis[], hosts: Host[]): boolean {
+  if (hosts.length === 1 && hosts[0] === "Guest") {
+    const guests = new Set(
+      theses.filter((t) => t.host === "Guest" && t.guestName).map((t) => t.guestName as string),
+    );
+    for (const g of guests) {
+      if (guestExposureWindows(theses, g).some((w) => w.direction === "long" && w.end === null)) return true;
+    }
+    return false;
+  }
+  return hasCurrentLong(theses, new Set(hosts));
 }
 
 function validateDuplicateQuotes(snapshot: IndexSnapshot, errors: string[]) {
