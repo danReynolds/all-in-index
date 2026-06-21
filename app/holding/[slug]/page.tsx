@@ -3,7 +3,7 @@ import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import { getHolding, allSlugs, guestLinkMap } from "@/lib/data";
 import { pct, returnColor, fmtDate, fmtDuration, fmtMoney } from "@/lib/format";
-import { currentCall, followStats, scoredTakes, displayStance } from "@/lib/calls";
+import { currentCall, scoredTakes, holdingBadge, hasScoredCall, isScoredPosition } from "@/lib/calls";
 import { isMacroAsset, proxyAssetKind } from "@/lib/assets";
 import { isGoingPrivate } from "@/lib/tradability";
 import { StanceBadge, ConvictionDots, SampleBanner } from "@/app/components/badges";
@@ -29,9 +29,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { holding: h } = getHolding(slug);
   if (!h) return { title: "Not found" };
   const since = h.market?.returns.since;
-  const ds = displayStance(h.theses);
+  const badge = holdingBadge(h.theses);
   const facts: string[] = [];
-  if (ds !== "none") facts.push(`currently ${ds}`);
+  if (badge.scored) facts.push(`currently ${badge.stance}`);
   if (since != null)
     facts.push(`price ${(since >= 0 ? "+" : "") + (since * 100).toFixed(1)}% since their first call`);
   const factLine = facts.length
@@ -94,6 +94,9 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
 
   const hostGroups = groupByHost(h.theses);
   const totalFlips = hostGroups.reduce((n, g) => n + g.flips, 0);
+  // Performance/returns UI is gated on an actual scored call — a name they only
+  // commented on has no position to score, so it shows no up/down numbers.
+  const hasCall = hasScoredCall(h.theses);
   const marketAsOfMs = h.market ? Date.parse(`${h.market.asOf}T00:00:00Z`) : null;
   const yahooSymbol = h.market?.sourceSymbol ?? h.ticker;
   const macro = isMacroAsset(h.ticker);
@@ -119,8 +122,8 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
             </span>
           )}
           {(() => {
-            const ds = displayStance(h.theses);
-            return ds !== "none" ? <StanceBadge stance={ds} /> : null;
+            const b = holdingBadge(h.theses);
+            return <StanceBadge stance={b.stance} scored={b.scored} />;
           })()}
         </div>
         {h.description && (
@@ -173,7 +176,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
             <>
               {" "}
               ·{" "}
-              <span className="font-medium text-amber-600 dark:text-amber-400">
+              <span className="font-medium text-neutral-600 dark:text-neutral-300">
                 {totalFlips} stance {totalFlips === 1 ? "reversal" : "reversals"}
               </span>
             </>
@@ -183,8 +186,9 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
 
       {isSample && <SampleBanner />}
 
-      {/* Full-width stat band: performance for public, conviction for private */}
-      {h.market ? (
+      {/* Full-width stat band: performance only when there's a scored call;
+          otherwise the no-numbers "where they land" band (sentiment + who weighed in). */}
+      {h.market && hasCall ? (
         <section className="rise flex flex-wrap items-center gap-x-10 gap-y-4 rounded-2xl border border-neutral-200 bg-white px-6 py-5 dark:border-neutral-800 dark:bg-neutral-900" style={d(120)}>
           {(() => {
             // Headline = what their CURRENT call is worth, anchored to when that
@@ -234,36 +238,18 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
                   {call.p0 != null && call.p1 != null && <>{fmtMoney(call.p0, h.market)} → {fmtMoney(call.p1, h.market)} · </>}
                   since {fmtDate(call.entryDate)}{staleBadge}
                 </div>
-                {totalFlips > 0 && (
-                  <div className="mt-1 text-xs text-neutral-500" title="Total price move since the besties first discussed this name — across stance changes, so not what following their calls would have returned.">
+                {h.firstMentioned.slice(0, 10) < call.entryDate.slice(0, 10) && (
+                  <div className="mt-1 text-xs text-neutral-500" title="The stock's total move since the besties first started discussing this name — context for the call above, not a call return.">
                     Stock {pct(h.market!.returns.since)} since first discussed {fmtDate(h.firstMentioned)}
                   </div>
                 )}
               </div>
             );
           })()}
-          <div className="hidden h-12 w-px bg-neutral-200 sm:block dark:bg-neutral-800" />
-          {(() => {
-            const fs = followStats(h);
-            if (!fs || !fs.evolved) return null;
-            return (
-              <div title="Long during their bullish stretches, short during bearish, flat when the besties were split.">
-                <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
-                  Following their calls
-                </div>
-                <div className={`font-mono text-lg font-medium tabular-nums ${returnColor(fs.followReturn)}`}>
-                  {pct(fs.followReturn)}
-                </div>
-                <div className="mt-0.5 text-xs text-neutral-400">
-                  vs {pct(fs.buyHold)} buy &amp; hold · {fs.flips} {fs.flips === 1 ? "reversal" : "reversals"}
-                </div>
-              </div>
-            );
-          })()}
           <div className="ml-auto flex flex-col items-end gap-1">
             <Sparkline points={h.market.history.map(([, c]) => c)} width={170} height={48} />
             <span className="text-[11px] text-neutral-400">
-              since {fmtDate(h.market.anchorDate)} · {fmtDuration(h.market.anchorDate, h.market.asOf)}
+              since first discussed · {fmtDuration(h.market.anchorDate, h.market.asOf)}
             </span>
           </div>
         </section>
@@ -273,14 +259,8 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
             <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">Where they land</div>
             <div className="mt-1">
               {(() => {
-                const ds = displayStance(h.theses);
-                return ds !== "none" ? (
-                  <StanceBadge stance={ds} />
-                ) : (
-                  <span className="text-sm text-neutral-500" title="Nothing they said here was a firm enough call to score — just passing commentary.">
-                    —
-                  </span>
-                );
+                const b = holdingBadge(h.theses);
+                return <StanceBadge stance={b.stance} scored={b.scored} />;
               })()}
             </div>
           </div>
@@ -297,26 +277,31 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
             <div className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">First discussed</div>
             <div className="text-lg font-semibold">{fmtDate(h.firstMentioned)}</div>
           </div>
-          <p className="ml-auto max-w-[260px] text-right text-xs text-neutral-400">
-            {h.ticker
-              ? "No live market data available for this ticker — likely delisted, renamed, or unsupported by the current price source. We still track what they said."
-              : "Private company — no public price to score. We track what they said; valuation-mark tracking is on the roadmap."}
+          <p className="ml-auto max-w-[280px] text-right text-xs text-neutral-400">
+            {h.market
+              ? "Commentary only — they've discussed this name but haven't made a scored call on it, so we don't attribute any call return to it. The stock's price chart and the takes are below."
+              : h.ticker
+                ? "No live market data available for this ticker — likely delisted, renamed, or unsupported by the current price source. We still track what they said."
+                : "Private company — no public price to score. We track what they said; valuation-mark tracking is on the roadmap."}
           </p>
         </section>
       )}
 
       <div className="space-y-6">
         <div className="space-y-6">
-          {/* How the calls played out */}
+          {/* The price chart shows for any name with market data; on a
+              commentary-only name it's the stock's history (mentions, not calls). */}
           {h.market && h.market.history.length > 1 && (
             <section className="rise rounded-xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900" style={d(220)}>
               <div className="mb-3 flex flex-wrap items-end justify-between gap-2">
                 <div>
                   <h2 className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-500">
-                    How the calls played out
+                    {hasCall ? "How the calls played out" : "How the stock has moved"}
                   </h2>
                   <p className="mt-1 text-xs text-neutral-400">
-                    Click a call to see the price move since it aired.
+                    {hasCall
+                      ? "Click a call to see the price move since it aired."
+                      : "The price since they started discussing it. Click a mention to see where it stood — these are comments, not scored calls."}
                   </p>
                 </div>
                 <span className="text-[11px] text-neutral-500">
@@ -350,7 +335,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
                         <HostAvatar host={host} size="md" />
                         <span className="font-semibold">{host === "Guest" ? "Guests" : host}</span>
                       </div>
-                      <StanceBadge stance={latest.stance} callType={latest.callType} />
+                      <StanceBadge stance={latest.stance} callType={latest.callType} scored={isScoredPosition(latest)} />
                     </div>
                     <p className="mt-2 line-clamp-3 text-sm text-neutral-700 dark:text-neutral-300">
                       {latest.summary}
@@ -392,7 +377,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
             <h2 className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-500">
               How they got there
             </h2>
-            {hostGroups.map(({ host, takes, flips }) => (
+            {hostGroups.map(({ host, takes }) => (
               <article
                 key={host}
                 id={`takes-${host.toLowerCase()}`}
@@ -419,14 +404,6 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
                       {mentionCount(takes.length)} since {fmtDate(takes[0].episodeDate)}
                     </span>
                   </div>
-                  {flips > 0 && (
-                    <span
-                      className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-500/15 dark:text-amber-300"
-                      title={`${flips} bull↔bear ${flips === 1 ? "reversal" : "reversals"} across ${host}'s scored calls (mixed/neutral takes in between aren't counted).`}
-                    >
-                      {flips === 1 ? "flipped once" : `flipped ${flips}×`}
-                    </span>
-                  )}
                 </div>
                 <Timeline theses={takes} episodeLinks={episodeLinks} episodes={episodes} guestLinks={guestLinks} />
               </article>

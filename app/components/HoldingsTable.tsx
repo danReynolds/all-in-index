@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { pct, returnColor, fmtDate } from "@/lib/format";
-import { displayStance } from "@/lib/calls";
 import { StanceBadge } from "@/app/components/badges";
 import { Sparkline } from "@/app/components/Sparkline";
 import { HostAvatar } from "@/app/components/host";
@@ -28,7 +27,7 @@ const STANCES: Array<[Stance | "all", string]> = [
   ["bull", "Bullish"],
   ["bear", "Bearish"],
   ["mixed", "Mixed"],
-  ["neutral", "Neutral"],
+  ["neutral", "Commentary"],
 ];
 
 function Pills<T extends string>({
@@ -77,7 +76,10 @@ export function HoldingsTable({
   const [host, setHost] = useState<Host | null>(null);
   const shown = useMemo(() => {
     let list = holdings;
-    if (stance !== "all") list = list.filter((h) => displayStance(h.theses) === stance);
+    // "Commentary" = anything without a scored position; Bullish/Bearish are positions only.
+    if (stance !== "all") {
+      list = list.filter((h) => (stance === "neutral" ? !h.scored : h.scored && h.stance === stance));
+    }
     if (host) list = list.filter((h) => h.theses.some((t) => t.host === host));
     const since = (h: HoldingRow) => h.market?.returns.since;
     return list.slice().sort((a, b) => {
@@ -158,19 +160,7 @@ export function HoldingsTable({
                   </Link>
                 </td>
                 <td className="px-4 py-3">
-                  {(() => {
-                    const ds = displayStance(h.theses);
-                    return ds === "none" ? (
-                      <span
-                        className="text-neutral-500"
-                        title="Nothing they said here was a firm enough call to score — the view's on the company page, but it doesn't move the numbers."
-                      >
-                        —
-                      </span>
-                    ) : (
-                      <StanceBadge stance={ds} />
-                    );
-                  })()}
+                  <StanceBadge stance={h.stance} scored={h.scored} />
                 </td>
                 <td className="hidden px-4 py-3 sm:table-cell">
                   <span className="flex -space-x-1.5">
@@ -195,15 +185,15 @@ export function HoldingsTable({
                 <td className="hidden px-4 py-3 text-neutral-500 md:table-cell">
                   {fmtDate(sort === "latest" ? h.lastMentioned : h.firstMentioned)}
                 </td>
-                <td className={`px-4 py-3 text-right font-mono tabular-nums ${returnColor(h.market?.returns.since)}`}>
-                  {h.market ? (
+                <td className={`px-4 py-3 text-right font-mono tabular-nums ${h.hasCall ? returnColor(h.market?.returns.since) : ""}`}>
+                  {h.market && h.hasCall ? (
                     pct(h.market.returns.since)
                   ) : (
-                    <span className="text-neutral-400">—</span>
+                    <span className="text-neutral-400" title={h.market ? "Commentary only — no scored call, so no performance is tracked." : undefined}>—</span>
                   )}
                 </td>
                 <td className="hidden px-4 py-3 text-right lg:table-cell">
-                  {h.market && h.market.history.length > 1 ? (
+                  {h.market && h.market.history.length > 1 && h.hasCall ? (
                     <Sparkline points={h.market.history.map(([, c]) => c)} animate={false} className="ml-auto inline-block align-middle" />
                   ) : (
                     <span className="text-xs text-neutral-400">—</span>

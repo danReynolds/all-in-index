@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import { pct, returnColor, fmtDate, callVerdict } from "@/lib/format";
 import { HostAvatar } from "@/app/components/host";
 import { GuestName } from "@/app/components/GuestName";
@@ -25,6 +25,9 @@ export interface FinPick {
   /** Set when a sector/theme pick is tracked via a representative ETF. */
   proxyTicker: string | null;
   proxyNote: string | null;
+  /** Set when the pick names multiple public companies, scored equal-weight:
+   *  each constituent ticker and its own since-call return. */
+  basket: Array<{ ticker: string; sinceReturn: number | null }> | null;
 }
 
 export interface PredYear {
@@ -105,10 +108,24 @@ function PickChart({ history, up }: { history: Array<[string, number]>; up: bool
   );
 }
 
-/** In-context explainer for why a sector/theme pick is tracked via an ETF. */
-function ProxyModal({ pick, onClose }: { pick: FinPick; onClose: () => void }) {
-  const ticker = pick.proxyTicker ?? "";
+/** In-context explainer for exactly how a prediction is scored: what it's
+ *  tracked against, the price move since the call, and how that maps to the
+ *  on/off-track verdict. Works for a direct ticker or an ETF proxy. */
+function ScoreModal({ pick, inProgress, onClose }: { pick: FinPick; inProgress: boolean; onClose: () => void }) {
+  const ticker = pick.proxyTicker ?? pick.ticker ?? "";
   const info = PROXY_BY_TICKER[ticker];
+  const isProxy = !!pick.proxyTicker;
+  const right = verdictOf(pick);
+  const v = verdictLabel(right, inProgress);
+  const wanted = pick.direction === "up" ? "rise" : "fall";
+  const moved = (pick.sinceReturn ?? 0) >= 0 ? "risen" : "fallen";
+  const basket = pick.basket && pick.basket.length >= 2 ? pick.basket : null;
+  const subject = basket ? "the basket" : ticker;
+  const hist = pick.history && pick.history.length > 1 ? pick.history : null;
+  const entry = hist?.[0];
+  const latest = hist?.[hist.length - 1];
+  const verdictColor =
+    right === true ? "text-emerald-600 dark:text-emerald-400" : right === false ? "text-rose-600 dark:text-rose-400" : "text-neutral-600 dark:text-neutral-300";
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -134,7 +151,7 @@ function ProxyModal({ pick, onClose }: { pick: FinPick; onClose: () => void }) {
       >
         <div className="flex items-start justify-between gap-3">
           <p className="font-display text-[11px] font-semibold uppercase tracking-[0.18em] text-emerald-600 dark:text-emerald-400">
-            Why this proxy?
+            How this is scored
           </p>
           <button
             type="button"
@@ -147,43 +164,100 @@ function ProxyModal({ pick, onClose }: { pick: FinPick; onClose: () => void }) {
         </div>
 
         <p className="mt-3 text-sm leading-relaxed text-neutral-500 dark:text-neutral-300">
-          {pick.speaker} picked <strong className="text-neutral-900 dark:text-neutral-100">“{pick.pick}”</strong> — a
-          sector or theme, not a single stock. To put a number on it we track the closest liquid, widely-held ETF.
+          {pick.speaker} called <strong className="text-neutral-900 dark:text-neutral-100">“{pick.pick}”</strong> the{" "}
+          {pick.category.toLowerCase()} — a bet that it would <strong className="text-neutral-700 dark:text-neutral-200">{wanted}</strong>.
         </p>
 
-        {info && (
+        {/* what we track it against */}
+        {basket ? (
+          <div className="mt-3 rounded-xl border border-neutral-200 bg-neutral-50 p-3 dark:border-neutral-800 dark:bg-neutral-950/40">
+            <div className="flex items-center justify-between gap-2">
+              <span className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">Equal-weight basket</span>
+              <span className="text-[10px] uppercase tracking-wide text-neutral-500">{basket.length} public names</span>
+            </div>
+            <p className="mt-1.5 text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+              “{pick.pick}” names more than one company, so we score the publicly-traded ones equally weighted from the
+              call-day close. Private names in the pick aren&rsquo;t tracked.
+            </p>
+            <ul className="mt-2.5 space-y-1.5 border-t border-neutral-200/70 pt-2.5 dark:border-neutral-800">
+              {basket.map((l) => (
+                <li key={l.ticker} className="flex items-center justify-between gap-2 text-xs">
+                  <a
+                    href={`https://finance.yahoo.com/quote/${l.ticker}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-neutral-500 hover:text-emerald-600 hover:underline dark:text-neutral-400 dark:hover:text-emerald-400"
+                  >
+                    {l.ticker} ↗
+                  </a>
+                  <span className={`font-mono tabular-nums ${returnColor(l.sinceReturn)}`}>
+                    {l.sinceReturn != null ? pct(l.sinceReturn) : "—"}
+                  </span>
+                </li>
+              ))}
+              <li className="flex items-center justify-between gap-2 border-t border-neutral-200/60 pt-1.5 text-xs font-semibold dark:border-neutral-800/80">
+                <span className="text-neutral-700 dark:text-neutral-200">Blend</span>
+                <span className={`font-mono tabular-nums ${returnColor(pick.sinceReturn)}`}>{pct(pick.sinceReturn)}</span>
+              </li>
+            </ul>
+          </div>
+        ) : (
           <div className="mt-3 rounded-xl border border-neutral-200 bg-neutral-50 p-3 dark:border-neutral-800 dark:bg-neutral-950/40">
             <div className="flex items-center gap-2">
               <span className="rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-[10px] text-neutral-500 dark:bg-neutral-800">
-                {info.ticker}
+                {ticker}
               </span>
-              <span className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">{info.name}</span>
+              <span className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">{info?.name ?? "the tracked stock"}</span>
             </div>
-            <p className="mt-1.5 text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">{info.what}</p>
+            <p className="mt-1.5 text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+              {info
+                ? info.what
+                : `“${pick.pick}” isn't a single stock, so we score it against ${ticker} — the public name that best stands in for the pick.`}
+            </p>
+            {entry && latest && (
+              <div className="mt-2.5 flex items-center justify-between gap-2 border-t border-neutral-200/70 pt-2.5 text-xs dark:border-neutral-800">
+                <span className="text-neutral-500 dark:text-neutral-400">
+                  {fmtDate(entry[0])} <span className="font-mono">${entry[1].toFixed(2)}</span> → now{" "}
+                  <span className="font-mono">${latest[1].toFixed(2)}</span>
+                </span>
+                <span className={`font-mono font-semibold tabular-nums ${returnColor(pick.sinceReturn)}`}>{pct(pick.sinceReturn)}</span>
+              </div>
+            )}
           </div>
         )}
 
+        {/* the verdict logic */}
         <p className="mt-3 text-sm leading-relaxed text-neutral-500 dark:text-neutral-400">
-          It&rsquo;s the best stand-in we have — but only an approximation. The ETF holds names they never mentioned, and
-          the exact company or sub-segment they had in mind can move very differently. Read the verdict as a directional
-          gut-check on the call, not a precise scorecard.
+          The call was that it would <strong className="text-neutral-700 dark:text-neutral-200">{wanted}</strong>; {subject} has{" "}
+          {moved} <span className="font-mono">{pct(pick.sinceReturn)}</span> since — so it&rsquo;s scored{" "}
+          <strong className={verdictColor}>{v.text.toLowerCase()}</strong>
+          {inProgress ? ", and can still flip before year-end" : ""}.
         </p>
 
-        <a
-          href={`https://finance.yahoo.com/quote/${ticker}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 inline-flex items-center gap-1 text-sm text-emerald-600 hover:underline dark:text-emerald-400"
-        >
-          View {ticker} on Yahoo Finance ↗
-        </a>
+        {isProxy && (
+          <p className="mt-3 text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+            The ETF is only an approximation — it holds names they never mentioned, and the exact theme can move very
+            differently. Read the verdict as a directional gut-check, not a precise scorecard.
+          </p>
+        )}
+
+        {!basket && (
+          <a
+            href={`https://finance.yahoo.com/quote/${ticker}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center gap-1 text-sm text-emerald-600 hover:underline dark:text-emerald-400"
+          >
+            View {ticker} on Yahoo Finance ↗
+          </a>
+        )}
       </div>
     </div>
   );
 }
 
-function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?: EpisodeMeta | null; episodeId: string; inProgress: boolean }) {
-  const [showProxy, setShowProxy] = useState(false);
+function PredictionCard({ p, meta, episodeId, inProgress, nav }: { p: FinPick; meta?: EpisodeMeta | null; episodeId: string; inProgress: boolean; nav?: ReactNode }) {
+  const [showScore, setShowScore] = useState(false);
   const graded = isGraded(p);
   const right = verdictOf(p);
   const v = verdictLabel(right, inProgress);
@@ -196,7 +270,7 @@ function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?:
   const hasChart = !!p.history && p.history.length > 1;
   const fromDate = p.history?.[0]?.[0];
   return (
-    <div className={`flex flex-col gap-3 rounded-2xl border border-neutral-200 bg-white p-5 ring-1 dark:border-neutral-800 dark:bg-neutral-900 ${accent}`}>
+    <div className={`flex h-full flex-col gap-3 rounded-2xl border border-neutral-200 bg-white p-5 ring-1 dark:border-neutral-800 dark:bg-neutral-900 ${accent}`}>
       {/* who + verdict */}
       <div className="flex items-start justify-between gap-2">
         <span className="flex items-center gap-2">
@@ -206,6 +280,7 @@ function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?:
           ) : (
             <span className="text-sm font-semibold text-neutral-100">{p.speaker}</span>
           )}
+          {nav}
         </span>
         {graded ? (
           <span className={`rounded-full px-2.5 py-1 text-xs font-bold uppercase tracking-wide ring-1 ring-inset ${v.cls}`}>
@@ -228,12 +303,20 @@ function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?:
           {p.category}
         </div>
         <div className="mt-1.5 flex items-start gap-2.5">
-          <CompanyLogo name={p.pick} domain={p.domain} size="md" className="mt-0.5 shrink-0 rounded-lg" />
+          {/* center the logo on the title's first line — looks balanced whether
+              the title is one line or wraps to several */}
+          <span className="flex h-[1.4rem] shrink-0 items-center">
+            <CompanyLogo name={p.pick} domain={p.domain} size="md" className="rounded-lg" />
+          </span>
           <div className="min-w-0">
             <div className="font-display text-lg font-semibold leading-tight">{p.pick}</div>
-            {p.ticker && (
+            {p.basket && p.basket.length >= 2 ? (
+              <div className="mt-1 font-mono text-[11px] uppercase tracking-wide text-neutral-500">
+                {p.basket.map((l) => l.ticker).join(" · ")}
+              </div>
+            ) : p.ticker ? (
               <div className="mt-1 font-mono text-[11px] uppercase tracking-wide text-neutral-500">{p.ticker}</div>
-            )}
+            ) : null}
           </div>
         </div>
       </div>
@@ -249,18 +332,34 @@ function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?:
             </span>
             <span>now</span>
           </div>
-          {p.proxyTicker && (
+          {graded && (
             <button
               type="button"
-              onClick={() => setShowProxy(true)}
+              onClick={() => setShowScore(true)}
               className="group/px mt-2 flex w-full items-center justify-between gap-2 rounded-lg border border-dashed border-neutral-200/70 px-3 py-1.5 text-[11px] text-neutral-500 transition hover:border-neutral-300/80 hover:text-neutral-300 dark:border-neutral-800 dark:hover:border-neutral-700 dark:hover:bg-neutral-800/30"
             >
               <span>
-                Sector proxy ·{" "}
-                <span className="font-mono text-neutral-400 transition group-hover/px:text-neutral-200">{p.proxyTicker}</span>{" "}
-                <span>({p.proxyNote})</span>
+                {p.basket && p.basket.length >= 2 ? (
+                  <>
+                    Equal-weight ·{" "}
+                    <span className="font-mono text-neutral-400 transition group-hover/px:text-neutral-200">
+                      {p.basket.map((l) => l.ticker).join(" + ")}
+                    </span>
+                  </>
+                ) : p.proxyTicker ? (
+                  <>
+                    Sector proxy ·{" "}
+                    <span className="font-mono text-neutral-400 transition group-hover/px:text-neutral-200">{p.proxyTicker}</span>{" "}
+                    <span>({p.proxyNote})</span>
+                  </>
+                ) : (
+                  <>
+                    Tracked via{" "}
+                    <span className="font-mono text-neutral-400 transition group-hover/px:text-neutral-200">{p.ticker}</span>
+                  </>
+                )}
               </span>
-              <span className="shrink-0 font-medium transition group-hover/px:text-neutral-300">Why this?</span>
+              <span className="shrink-0 font-medium transition group-hover/px:text-neutral-300">How it&rsquo;s scored</span>
             </button>
           )}
         </div>
@@ -283,7 +382,7 @@ function PredictionCard({ p, meta, episodeId, inProgress }: { p: FinPick; meta?:
         </blockquote>
       )}
 
-      {showProxy && p.proxyTicker && <ProxyModal pick={p} onClose={() => setShowProxy(false)} />}
+      {showScore && graded && <ScoreModal pick={p} inProgress={inProgress} onClose={() => setShowScore(false)} />}
     </div>
   );
 }
@@ -302,16 +401,29 @@ function CategoryBlock({
   inProgress: boolean;
 }) {
   const gradedCount = picks.filter(isGraded).length;
-  // Graded picks first (best call → worst), then the untracked themes.
-  const ordered = [...picks].sort((a, b) => {
-    const ga = isGraded(a);
-    const gb = isGraded(b);
-    if (ga !== gb) return ga ? -1 : 1;
-    if (ga && gb) {
-      const adj = (x: FinPick) => (x.direction === "down" ? -(x.sinceReturn ?? 0) : x.sinceReturn ?? 0);
-      return adj(b) - adj(a);
+  const adj = (x: FinPick) => (x.direction === "down" ? -(x.sinceReturn ?? 0) : x.sinceReturn ?? 0);
+  // Keep a speaker's multiple ranked picks together (spoken order) in one slot,
+  // then order speakers: best tracked call first, untracked themes last.
+  const bySpeaker: { speaker: string; picks: FinPick[] }[] = [];
+  for (const p of picks) {
+    let g = bySpeaker.find((x) => x.speaker === p.speaker);
+    if (!g) {
+      g = { speaker: p.speaker, picks: [] };
+      bySpeaker.push(g);
     }
-    return 0;
+    g.picks.push(p);
+  }
+  const rank = (g: { picks: FinPick[] }) => {
+    const graded = g.picks.filter(isGraded);
+    return graded.length ? Math.max(...graded.map(adj)) : -Infinity;
+  };
+  const ordered = [...bySpeaker].sort((a, b) => {
+    const ra = rank(a);
+    const rb = rank(b);
+    if (ra === rb) return 0;
+    if (ra === -Infinity) return 1;
+    if (rb === -Infinity) return -1;
+    return rb - ra;
   });
   return (
     <section className="space-y-3">
@@ -322,12 +434,47 @@ function CategoryBlock({
         </span>
       </div>
       <div className="grid gap-4 lg:grid-cols-2">
-        {ordered.map((p, i) => (
-          <PredictionCard key={i} p={p} meta={meta} episodeId={episodeId} inProgress={inProgress} />
-        ))}
+        {ordered.map((g, i) =>
+          g.picks.length === 1 ? (
+            <PredictionCard key={i} p={g.picks[0]} meta={meta} episodeId={episodeId} inProgress={inProgress} />
+          ) : (
+            <PredictionCarousel key={i} picks={g.picks} meta={meta} episodeId={episodeId} inProgress={inProgress} />
+          ),
+        )}
       </div>
     </section>
   );
+}
+
+/** A speaker's multiple ranked picks in one category, shown one at a time with
+ *  prev/next nav — e.g. Sacks's "#1 Huawei / #2 Polymarket". */
+function PredictionCarousel({
+  picks,
+  meta,
+  episodeId,
+  inProgress,
+}: {
+  picks: FinPick[];
+  meta?: EpisodeMeta | null;
+  episodeId: string;
+  inProgress: boolean;
+}) {
+  const [idx, setIdx] = useState(0);
+  const n = picks.length;
+  const i = ((idx % n) + n) % n;
+  const p = picks[i];
+  // The nav lives INSIDE the card header (next to the speaker), not as a strip
+  // above it — so a carousel tile is exactly as tall as a single-pick tile.
+  const btn =
+    "flex h-5 w-5 items-center justify-center rounded-full border border-neutral-300 pb-0.5 text-neutral-500 transition hover:border-neutral-400 hover:text-neutral-200 dark:border-neutral-700";
+  const nav = (
+    <span className="flex items-center gap-1" title={`${p.speaker}'s ${n} ranked picks`}>
+      <button type="button" onClick={() => setIdx(i - 1)} aria-label="Previous pick" className={btn}>‹</button>
+      <span className="font-mono text-[11px] tabular-nums text-neutral-500">{i + 1}/{n}</span>
+      <button type="button" onClick={() => setIdx(i + 1)} aria-label="Next pick" className={btn}>›</button>
+    </span>
+  );
+  return <PredictionCard p={p} meta={meta} episodeId={episodeId} inProgress={inProgress} nav={nav} />;
 }
 
 export function PredictionsBoard({

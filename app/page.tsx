@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import { getIndex } from "@/lib/data";
 import { pct, returnColor, fmtDate } from "@/lib/format";
-import { displayStance } from "@/lib/calls";
+import { holdingBadge } from "@/lib/calls";
 import { StanceBadge, SampleBanner } from "@/app/components/badges";
 import { IndexChart } from "@/app/components/IndexChart";
 import { Leaderboard } from "@/app/components/Leaderboard";
@@ -203,8 +203,8 @@ function PrivateSection({ holdings }: { holdings: Holding[] }) {
                 <span className="group-hover:underline">{h.company}</span>
               </span>
               {(() => {
-                const ds = displayStance(h.theses);
-                return ds !== "none" ? <StanceBadge stance={ds} /> : null;
+                const b = holdingBadge(h.theses);
+                return <StanceBadge stance={b.stance} scored={b.scored} />;
               })()}
             </div>
             <div className="mt-3 flex items-center justify-between">

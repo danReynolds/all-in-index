@@ -85,16 +85,56 @@ export function currentStanceForHosts(
  * "neutral", which means scored takes exist and balance out. Don't conflate
  * "the table is torn" with "we have nothing scoreable".
  */
-export function displayStance(theses: StanceInput[]): Stance | "none" {
-  if (scoredTakes(theses).length === 0 && scoredTakes(theses, ["Guest"]).length === 0) {
-    return "none";
+/**
+ * A holding's badge stance — POSITION-based (Model B), not view sentiment. The
+ * direction of its open position(s) across besties + guests: "bull" (open long),
+ * "bear" (open short), "mixed" (both), or "neutral" (no position — a
+ * discussion-only name, badged "Commentary"). This is the single gate deciding
+ * Bullish/Bearish vs Commentary wherever a holding badge or stance filter shows,
+ * so a bullish *opinion* never reads as a position.
+ */
+export function displayStance(theses: Thesis[]): Stance {
+  let long = false;
+  let short = false;
+  const mark = (dir: TradeDirection) => {
+    if (dir === "long") long = true;
+    else short = true;
+  };
+  for (const host of BESTIES) {
+    for (const w of hostExposureWindows(theses, host)) if (w.end === null) mark(w.direction);
   }
-  return currentStanceFromTheses(theses);
+  const guests = new Set(
+    theses.filter((t) => t.host === "Guest" && t.guestName).map((t) => t.guestName as string),
+  );
+  for (const g of guests) {
+    for (const w of guestExposureWindows(theses, g)) if (w.end === null) mark(w.direction);
+  }
+  if (long && short) return "mixed";
+  if (long) return "bull";
+  if (short) return "bear";
+  return "neutral";
 }
 
 export function currentStanceFromTheses(theses: StanceInput[]): Stance {
   if (scoredTakes(theses).length > 0) return currentStanceForHosts(theses, BESTIES);
   return currentStanceForHosts(theses, ["Guest"]);
+}
+
+/**
+ * The holding-level badge: an open POSITION shows its direction as a scored
+ * Bullish/Bearish (scored: true); a holding with no position is "Commentary"
+ * (scored: false — the badge ignores the stance and just reads "Commentary").
+ */
+export function holdingBadge(theses: Thesis[]): { stance: Stance; scored: boolean } {
+  const position = displayStance(theses);
+  return position !== "neutral"
+    ? { stance: position, scored: true }
+    : { stance: "neutral", scored: false };
+}
+
+/** Does this holding have any scored position call? Gates performance/returns UI. */
+export function hasScoredCall(theses: Thesis[]): boolean {
+  return theses.some(isScoredPosition);
 }
 
 export const SCOREABLE_CALL_TYPES = new Set<CallType>([
@@ -118,6 +158,16 @@ export function isCallShaped(t: Thesis): boolean {
  */
 export function isPortfolioScored(t: Thesis): boolean {
   return isCallShaped(t) && !t.excludeReason;
+}
+
+/**
+ * Is this take a real tracked POSITION — the predicate the funds use for
+ * membership (a scored call with usable attribution, the same gate as
+ * positionTakes)? Used to badge a take "Bullish"/"Bearish" only when it's a
+ * position; a bullish *view* or a low-attribution call reads "Commentary".
+ */
+export function isScoredPosition(t: Thesis): boolean {
+  return isPortfolioScored(t) && t.attributionConfidence !== "low";
 }
 
 /**

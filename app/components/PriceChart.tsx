@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, type CSSProperties } from "react";
 import { fmtDate, fmtMoney, mmss, pct } from "@/lib/format";
 import { StanceBadge } from "@/app/components/badges";
+import { isScoredPosition } from "@/lib/calls";
 import { HostAvatar } from "@/app/components/host";
 import { GuestName } from "@/app/components/GuestName";
 import { ListenButton } from "@/app/components/player";
@@ -73,6 +74,8 @@ interface PlottedMarker {
   price: number;
   returnSince: number;
   outcome: number | null;
+  /** A scored position — the only kind that carries a return on this chart. */
+  scored: boolean;
   seriesIndex: number;
 }
 
@@ -110,20 +113,13 @@ function returnRingClass(ret: number | null | undefined): string {
   return ret >= 0 ? "ring-emerald-400/45" : "ring-rose-400/45";
 }
 
+// The chart's verdict (green/red return) is reserved for SCORED positions — a
+// commentary take's price move is gray context, shown as "—", never a verdict.
 function callOutcome(stance: Stance, stockReturn: number): number | null {
   if (stance === "bull") return stockReturn;
   if (stance === "bear") return -stockReturn;
   return null;
 }
-
-// A since-return only reads as a green/red VERDICT when there was a directional
-// call. Neutral/mixed takes aren't calls, so their move is gray context — never
-// painted red/green (a red chip on a neutral take looks like a bad call).
-function verdictRet(stance: Stance, ret: number | null | undefined): number | null {
-  if (ret == null) return null;
-  return stance === "bull" || stance === "bear" ? ret : null;
-}
-const isDirectional = (stance: Stance) => stance === "bull" || stance === "bear";
 
 function speakerName(t: Thesis): string {
   return t.guestName ?? (t.host === "Guest" ? "Guest" : t.host);
@@ -155,6 +151,29 @@ export function PriceChart({
   const [active, setActive] = useState<Host[]>(["Chamath", "Jason", "Sacks", "Friedberg", "Guest", "Unknown"]);
   const [activeStances, setActiveStances] = useState<Stance[]>(["bull", "bear", "mixed", "neutral"]);
   if (history.length < 2) return null;
+
+  // Noun for this name: all scored calls → "calls", all commentary → "comments",
+  // a mix → the neutral "mentions" (so we never call a pile of comments "calls").
+  const callCount = theses.filter(isScoredPosition).length;
+  const onlyCalls = callCount > 0 && callCount === theses.length;
+  const onlyComments = callCount === 0;
+  const chartHasCall = callCount > 0;
+  const NOUNS = onlyCalls ? "calls" : onlyComments ? "comments" : "mentions";
+  const NOUN = onlyCalls ? "call" : onlyComments ? "comment" : "mention";
+  /** Precise noun for one marker group, by what it actually contains. */
+  const groupNoun = (markers: PlottedMarker[]) =>
+    markers.every((m) => m.scored) ? "calls" : markers.every((m) => !m.scored) ? "comments" : "mentions";
+  /** The stance of a scored CALL in this group (the position it opens), if any —
+   * so the marker that begins a bull/bear position can be tinted to show it. */
+  const groupCallStance = (markers: PlottedMarker[]): Stance | null =>
+    markers.find((m) => m.scored)?.thesis.stance ?? null;
+  /** Which marker to preselect when a group is opened: the most recent scored
+   * call (the actual position) if any, else the most recent mention — never the
+   * oldest. Markers are oldest→newest, so scan from the end. */
+  const defaultGroupMarker = (markers: PlottedMarker[]): PlottedMarker => {
+    for (let i = markers.length - 1; i >= 0; i--) if (markers[i].scored) return markers[i];
+    return markers[markers.length - 1];
+  };
 
   // Only offer chips for speakers who actually have takes on this name.
   const presentHosts = (["Chamath", "Jason", "Sacks", "Friedberg", "Guest", "Unknown"] as Host[]).filter(
@@ -224,6 +243,7 @@ export function PriceChart({
     const lineY = y(closeAt(t));
     const labelY = lineY - 34 < padT + 12 ? Math.min(H - padB - 18, lineY + 34) : lineY - 34;
     const returnSince = price > 0 ? latestClose / price - 1 : 0;
+    const scored = isScoredPosition(th);
     return {
       id: `${th.id}-${idx}`,
       thesis: th,
@@ -232,7 +252,9 @@ export function PriceChart({
       labelY,
       price,
       returnSince,
-      outcome: callOutcome(th.stance, returnSince),
+      // Only a scored position has a "since the call" return; commentary is gray context.
+      outcome: scored ? callOutcome(th.stance, returnSince) : null,
+      scored,
       seriesIndex: times.findIndex((value) => value >= t),
     };
   });
@@ -278,7 +300,7 @@ export function PriceChart({
                 key={h}
                 type="button"
                 onClick={() => toggleHost(h)}
-                title={`${on ? "Hide" : "Show"} ${h}'s calls`}
+                title={`${on ? "Hide" : "Show"} ${h}'s ${NOUNS}`}
                 aria-pressed={on}
                 className={`rounded-full transition-all duration-150 hover:scale-110 active:scale-90 ${
                   on ? "" : "opacity-30 grayscale hover:opacity-60"
@@ -294,13 +316,13 @@ export function PriceChart({
           value={mode}
           onChange={setMode}
           options={[
-            ["all", "All calls"],
+            ["all", chartHasCall ? "All calls" : "All mentions"],
             ["flips", "Stance changes"],
           ]}
         />
       </div>
       <div className="relative">
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full overflow-visible" role="img" aria-label={`${ticker} price with the hosts' calls marked`}>
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full overflow-visible" role="img" aria-label={`${ticker} price with the hosts' ${NOUNS} marked`}>
           <defs>
             <linearGradient id="pcFill" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stopColor={lineColor} stopOpacity="0.16" />
@@ -338,21 +360,36 @@ export function PriceChart({
             return (
               <g key={g.id}>
                 <line x1={g.x} y1={stemStart} x2={g.x} y2={g.lineY} stroke="currentColor" strokeWidth="1" strokeOpacity="0.22" />
-                {g.markers.map((m, markerIdx) => (
-                  <circle
-                    key={m.id}
-                    cx={startX + markerIdx * dotGap}
-                    cy={g.lineY}
-                    r={isSel ? 4.2 : 3.2}
-                    fill={isSel ? "#f4f4f5" : "#a1a1aa"}
-                    stroke={isSel ? "#fff" : "rgba(7,11,9,0.78)"}
-                    strokeWidth="1.4"
-                  />
-                ))}
+                {g.markers.map((m, markerIdx) => {
+                  // A scored call is the position entry — tint its dot by stance
+                  // (green bull / red bear); commentary dots stay gray. Selection
+                  // brightens the outline and enlarges; it must NOT overwrite the
+                  // fill (that turned a whole selected cluster solid white).
+                  const dotFill =
+                    m.scored && m.thesis.stance === "bull"
+                      ? "#34d399"
+                      : m.scored && m.thesis.stance === "bear"
+                        ? "#fb7185"
+                        : "#a1a1aa";
+                  const isCallDot = dotFill !== "#a1a1aa";
+                  return (
+                    <circle
+                      key={m.id}
+                      cx={startX + markerIdx * dotGap}
+                      cy={g.lineY}
+                      r={isSel || isCallDot ? 4 : 3.2}
+                      fill={dotFill}
+                      stroke={isSel ? "#ffffff" : "rgba(7,11,9,0.78)"}
+                      strokeWidth={isSel ? 1.8 : 1.4}
+                    />
+                  );
+                })}
                 <title>
                   {g.markers.length === 1
-                    ? `${speakerName(g.markers[0].thesis)} on ${ticker} · ${pct(g.markers[0].returnSince)} since ${fmtDate(g.markers[0].thesis.episodeDate)}`
-                    : `${g.markers.length} calls near ${fmtDate(g.markers[0].thesis.episodeDate)}`}
+                    ? g.markers[0].scored
+                      ? `${speakerName(g.markers[0].thesis)} on ${ticker} · ${pct(g.markers[0].returnSince)} since ${fmtDate(g.markers[0].thesis.episodeDate)}`
+                      : `${speakerName(g.markers[0].thesis)} on ${ticker} · commentary ${fmtDate(g.markers[0].thesis.episodeDate)}`
+                    : `${g.markers.length} ${groupNoun(g.markers)} near ${fmtDate(g.markers[0].thesis.episodeDate)}`}
                 </title>
               </g>
             );
@@ -374,13 +411,17 @@ export function PriceChart({
               <button
                 key={g.id}
                 type="button"
-                onClick={() => setSel(selectedInGroup ? null : first.id)}
+                onClick={() => setSel(selectedInGroup ? null : defaultGroupMarker(g.markers).id)}
                 className={`pointer-events-auto absolute inline-flex min-h-8 -translate-x-1/2 -translate-y-1/2 items-center gap-1.5 rounded-full border px-1.5 py-1 text-[10px] font-semibold shadow-lg shadow-black/30 backdrop-blur transition hover:border-white/30 ${
                   g.markers.length === 1
-                    ? returnChipClass(verdictRet(first.thesis.stance, first.returnSince), selectedInGroup)
+                    ? returnChipClass(first.scored ? first.returnSince : null, selectedInGroup)
                     : selectedInGroup
                       ? "border-white/35 bg-neutral-950/95 text-neutral-100 ring-2 ring-white/20"
-                      : "border-white/10 bg-neutral-950/90 text-neutral-100"
+                      : groupCallStance(g.markers) === "bull"
+                        ? "border-emerald-400/50 bg-neutral-950/90 text-neutral-100 ring-1 ring-emerald-400/30"
+                        : groupCallStance(g.markers) === "bear"
+                          ? "border-rose-400/50 bg-neutral-950/90 text-neutral-100 ring-1 ring-rose-400/30"
+                          : "border-white/10 bg-neutral-950/90 text-neutral-100"
                 }`}
                 style={{
                   left: `${(g.x / W) * 100}%`,
@@ -388,24 +429,26 @@ export function PriceChart({
                 } as CSSProperties}
                 aria-label={
                   g.markers.length === 1
-                    ? `${speakerName(first.thesis)} on ${ticker}, ${pct(first.returnSince)} since the call`
-                    : `${g.markers.length} calls near ${fmtDate(first.thesis.episodeDate)}`
+                    ? first.scored
+                      ? `${speakerName(first.thesis)} on ${ticker}, ${pct(first.returnSince)} since the call`
+                      : `${speakerName(first.thesis)} on ${ticker} — commentary`
+                    : `${g.markers.length} ${groupNoun(g.markers)} near ${fmtDate(first.thesis.episodeDate)}`
                 }
                 title={
                   g.markers.length === 1
-                    ? `${speakerName(first.thesis)} · ${pct(first.returnSince)} since the call`
-                    : `${g.markers.length} calls near ${fmtDate(first.thesis.episodeDate)}`
+                    ? first.scored
+                      ? `${speakerName(first.thesis)} · ${pct(first.returnSince)} since the call`
+                      : `${speakerName(first.thesis)} · commentary`
+                    : `${g.markers.length} ${groupNoun(g.markers)} near ${fmtDate(first.thesis.episodeDate)}`
                 }
               >
                 {g.markers.length === 1 ? (
                   <>
                     <HostAvatar host={first.thesis.host} size="sm" />
-                    {isDirectional(first.thesis.stance) ? (
+                    {first.scored ? (
                       <span className="font-mono text-[11px]">{pct(first.returnSince)}</span>
                     ) : (
-                      <span className="text-[10px] font-medium capitalize text-neutral-400">
-                        {first.thesis.stance}
-                      </span>
+                      <span className="text-[11px] font-medium text-neutral-400" title="Commentary — not a scored position, so no return is tracked.">—</span>
                     )}
                   </>
                 ) : (
@@ -413,10 +456,10 @@ export function PriceChart({
                     <span className="inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-white/10 px-1.5 font-mono text-[10px]">
                       {g.markers.length}
                     </span>
-                    <span className="text-[9px] uppercase tracking-[0.12em] text-neutral-300">calls</span>
+                    <span className="text-[9px] uppercase tracking-[0.12em] text-neutral-300">{groupNoun(g.markers)}</span>
                     <span className="ml-0.5 flex items-center -space-x-1">
                       {g.markers.slice(0, 4).map((m) => (
-                        <span key={m.id} className={`shrink-0 rounded-full ring-1 ${returnRingClass(verdictRet(m.thesis.stance, m.returnSince))}`}>
+                        <span key={m.id} className={`shrink-0 rounded-full ring-1 ${returnRingClass(m.scored ? m.returnSince : null)}`}>
                           <HostAvatar host={m.thesis.host} size="xs" />
                         </span>
                       ))}
@@ -438,7 +481,7 @@ export function PriceChart({
               type="button"
               onClick={() => toggleStance(s)}
               aria-pressed={on}
-              title={on ? `Hide ${STANCE_LABELS[s]} calls` : `Show ${STANCE_LABELS[s]} calls`}
+              title={on ? `Hide ${STANCE_LABELS[s]} ${NOUNS}` : `Show ${STANCE_LABELS[s]} ${NOUNS}`}
               className={`rounded-full border px-2 py-0.5 transition hover:border-white/25 hover:text-neutral-200 ${
                 on
                   ? "border-white/10 bg-white/[0.03] text-neutral-300"
@@ -455,8 +498,8 @@ export function PriceChart({
             : activeStances.length === 0
               ? "no stances selected"
             : shown.length === 0
-                ? "no calls match these filters"
-                : `${shown.length < scoped.length ? `showing ${shown.length} of ${scoped.length} calls · ` : ""}click a chip for the quote + move since call`}
+                ? `no ${NOUNS} match these filters`
+                : `${shown.length < scoped.length ? `showing ${shown.length} of ${scoped.length} ${NOUNS} · ` : ""}click a chip for the quote + move since ${NOUN}`}
         </span>
       </div>
 
@@ -466,7 +509,7 @@ export function PriceChart({
           {selectedGroup && selectedGroup.markers.length > 1 && (
             <div className="mb-3 flex flex-wrap items-center gap-1.5 border-b border-white/5 pb-3">
               <span className="mr-1 text-[11px] uppercase tracking-[0.14em] text-neutral-500">
-                {selectedGroup.markers.length} calls
+                {selectedGroup.markers.length} {groupNoun(selectedGroup.markers)}
               </span>
               {selectedGroup.markers.map((m) => (
                 <button
@@ -474,12 +517,12 @@ export function PriceChart({
                   type="button"
                   onClick={() => setSel(m.id)}
                   className={`inline-flex items-center gap-1.5 rounded-full border px-2 py-1 text-xs transition hover:border-white/25 ${
-                    returnChipClass(verdictRet(m.thesis.stance, m.returnSince), selected.id === m.id)
+                    returnChipClass(m.scored ? m.returnSince : null, selected.id === m.id)
                   }`}
                 >
                   <HostAvatar host={m.thesis.host} size="xs" />
                   <span>{speakerName(m.thesis)}</span>
-                  <span className={`font-mono ${returnTextClass(verdictRet(m.thesis.stance, m.returnSince))}`}>{pct(m.returnSince)}</span>
+                  <span className={`font-mono ${returnTextClass(m.scored ? m.returnSince : null)}`}>{m.scored ? pct(m.returnSince) : "—"}</span>
                 </button>
               ))}
             </div>
@@ -500,11 +543,12 @@ export function PriceChart({
               tone={selected.outcome != null ? "outcome" : "stance"}
               outcome={selected.outcome}
               callType={selected.thesis.callType}
+              scored={selected.scored}
             />
             <Link
               href={`/episode/${selected.thesis.episodeId}`}
               className="font-mono text-[11px] hover:text-neutral-200 hover:underline"
-              title="All calls from this episode"
+              title={`All ${NOUNS} from this episode`}
             >
               {selected.thesis.episodeNumber ? `E${selected.thesis.episodeNumber}` : selected.thesis.episodeId}
             </Link>
@@ -524,17 +568,17 @@ export function PriceChart({
           <div className="mt-3 grid gap-2 sm:grid-cols-3">
             <div className="rounded-lg bg-neutral-950/35 px-3 py-2 ring-1 ring-white/5">
               <div className="text-[10px] font-medium uppercase tracking-[0.14em] text-neutral-500">
-                {ticker} since this {isDirectional(selected.thesis.stance) ? "call" : "mention"}
+                {ticker} since this {selected.scored ? "call" : "mention"}
               </div>
-              <div className={`mt-1 font-mono text-2xl font-semibold tabular-nums ${returnTextClass(verdictRet(selected.thesis.stance, selected.returnSince))}`}>
-                {pct(selected.returnSince)}
+              <div className={`mt-1 font-mono text-2xl font-semibold tabular-nums ${returnTextClass(selected.scored ? selected.returnSince : null)}`}>
+                {selected.scored ? pct(selected.returnSince) : "—"}
               </div>
               <div className="mt-0.5 text-[11px] text-neutral-500">
                 {fmtMoney(selected.price, market ?? ticker)} → {fmtMoney(latestClose, market ?? ticker)}
               </div>
             </div>
             <div className="rounded-lg bg-neutral-950/35 px-3 py-2 ring-1 ring-white/5">
-              <div className="text-[10px] font-medium uppercase tracking-[0.14em] text-neutral-500">Call price</div>
+              <div className="text-[10px] font-medium uppercase tracking-[0.14em] text-neutral-500">{selected.scored ? "Call price" : "Price then"}</div>
               <div className="mt-1 font-mono text-lg font-semibold text-neutral-200">{fmtMoney(selected.price, market ?? ticker)}</div>
               <div className="mt-0.5 text-[11px] text-neutral-500">
                 {fmtDate(selected.thesis.episodeDate)}

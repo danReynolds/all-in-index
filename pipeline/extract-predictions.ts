@@ -15,13 +15,30 @@ const SYSTEM = `You extract the formal PREDICTIONS from an All-In annual-predict
 These episodes run a recurring format: each participant gives picks for named
 categories (biggest political winner/loser, biggest business winner/loser, best
 performing asset, worst performing asset, biggest surprise, most anticipated
-trend, etc.). Extract each participant's pick per category.
+trend, etc.). Extract each participant's pick(s) per category.
 
+- A participant usually gives ONE pick per category, but sometimes gives several
+  distinct, ranked answers ("my number one is Huawei… and the second is
+  Polymarket"). When they do, output ONE prediction object PER distinct pick —
+  same host and category, in the order spoken, each with its OWN pick text,
+  ticker/direction, and quote. NEVER merge distinct picks into a single pick
+  string (no "Huawei; Polymarket"). This is different from a single themed bet
+  that merely names example companies ("the defense primes — Boeing, Lockheed,
+  Raytheon"; "the wagering space — Robinhood and Coinbase"): that stays ONE pick
+  (use \`tickers\` to score it as an equal-weight basket). Rule of thumb: separate
+  answers → separate rows; one theme/space named with examples → one row.
 - category: the show's category name, normalized (e.g. "Best performing asset").
-- pick: the prediction itself, concise (e.g. "Uranium", "MSTR collapses", "Google").
+- pick: a SINGLE prediction, concise (e.g. "Uranium", "MSTR collapses", "Google").
 - ticker: ONLY for asset picks that map cleanly to a tradable US-listed ticker
-  or major ETF (use the obvious one; null otherwise). Commodities: Copper=CPER,
-  Oil=USO, Gold=GLD, Silver=SLV, Uranium=URA, Lithium=LIT, Bitcoin=null.
+  or major ETF (use the single most representative one; null otherwise).
+  Commodities: Copper=CPER, Oil=USO, Gold=GLD, Silver=SLV, Uranium=URA,
+  Lithium=LIT, Bitcoin=null.
+- tickers: when the pick EXPLICITLY names MULTIPLE publicly-traded companies (a
+  basket, e.g. "Robinhood and Coinbase" or "the gambling names — DraftKings,
+  Coinbase, Robinhood"), list ALL their US-listed tickers here, INCLUDING the
+  one in \`ticker\` — we score an equal-weight blend of them. Omit any name that
+  isn't publicly US-listed (private companies, unlisted foreign names). null for
+  single-name picks, theme picks, and any pick naming only one public company.
 - sectorProxy: for a SECTOR/THEME asset pick with no direct ticker that IS
   fairly represented by one of these liquid ETFs, set it to that ticker
   (direction still comes from the category/direction, not the proxy); null
@@ -39,6 +56,7 @@ const Item = z.object({
   category: z.string(),
   pick: z.string(),
   ticker: z.string().nullable(),
+  tickers: z.array(z.string()).nullable().optional(),
   sectorProxy: z.string().nullable().optional(),
   direction: z.enum(["up", "down"]).nullable(),
   quote: z.string(),
@@ -59,6 +77,7 @@ const INPUT_SCHEMA = {
           category: { type: "string" },
           pick: { type: "string" },
           ticker: { type: ["string", "null"] },
+          tickers: { type: ["array", "null"], items: { type: "string" }, description: "All US-listed tickers when the pick names multiple public companies (a basket); scored equal-weight. null otherwise." },
           sectorProxy: { type: ["string", "null"], enum: [...SECTOR_PROXY_TICKER_VALUES, null], description: "Representative ETF for a sector/theme pick with no direct ticker; null otherwise" },
           direction: { type: ["string", "null"], enum: ["up", "down", null] },
           quote: { type: "string" },
@@ -80,14 +99,19 @@ export interface ScoredPrediction {
   direction: "up" | "down" | null;
   quote: string;
   quoteStartMs: number | null;
-  /** Stock/proxy return from the episode date to asOf (tracked picks only). */
+  /** Stock/proxy return from the episode date to asOf (tracked picks only).
+   *  For a basket, this is the equal-weight blend of the constituents. */
   sinceReturn: number | null;
-  /** Sparse [isoDate, close] price path since the episode, for the pick's chart. */
+  /** Sparse [isoDate, close] price path since the episode, for the pick's chart.
+   *  For a basket, an equal-weight index normalized to 100 at the episode date. */
   history?: Array<[string, number]>;
   /** When a sector/theme pick is tracked via a representative ETF, the proxy
    *  symbol and a short label of what it represents (null for direct tickers). */
   proxyTicker?: string | null;
   proxyNote?: string | null;
+  /** When the pick names multiple public companies, the equal-weight basket:
+   *  each constituent ticker and its own since-call return (null if unpriced). */
+  basket?: Array<{ ticker: string; sinceReturn: number | null }>;
 }
 
 /** Price the named ticker from the episode date to now: return + sparse history. */
@@ -102,6 +126,53 @@ async function scoreTicker(
   } catch {
     return { sinceReturn: null, history: [] };
   }
+}
+
+/** Blend constituent price paths into one equal-weight index normalized to 100
+ *  at the episode date. Each name is rebased to its own first close, then we
+ *  average (forward-filling the last known value for names sampled on other
+ *  days). The index's total return equals the equal-weight mean of the legs. */
+function blendEqualWeight(histories: Array<Array<[string, number]>>): Array<[string, number]> {
+  const valid = histories.filter((h) => h.length > 1);
+  if (!valid.length) return [];
+  const norm = valid.map((h) => new Map(h.map(([d, c]) => [d, c / (h[0][1] || 1)])));
+  const dates = [...new Set(valid.flatMap((h) => h.map(([d]) => d)))].sort();
+  const last = valid.map(() => 1);
+  const out: Array<[string, number]> = [];
+  for (const d of dates) {
+    norm.forEach((m, i) => {
+      const v = m.get(d);
+      if (v != null) last[i] = v;
+    });
+    out.push([d, +((last.reduce((s, v) => s + v, 0) / last.length) * 100).toFixed(2)]);
+  }
+  return out;
+}
+
+/** Price an equal-weight basket of named tickers from the episode date to now:
+ *  the blended return, a blended index for the chart, and each leg's own return
+ *  (for the "how it's scored" breakdown). Unpriceable legs are kept as null. */
+async function scoreBasket(
+  tickers: string[],
+  epDate: string,
+  nowIso: string,
+): Promise<{ sinceReturn: number | null; history: Array<[string, number]>; legs: Array<{ ticker: string; sinceReturn: number | null }> }> {
+  const priced = await Promise.all(
+    tickers.map(async (t) => {
+      try {
+        const md = await buildMarketData(t.toUpperCase(), epDate, nowIso);
+        return { ticker: t.toUpperCase(), sinceReturn: md.returns.since, history: md.history ?? [] };
+      } catch {
+        return { ticker: t.toUpperCase(), sinceReturn: null, history: [] as Array<[string, number]> };
+      }
+    }),
+  );
+  const legs = priced.map(({ ticker, sinceReturn }) => ({ ticker, sinceReturn }));
+  const withReturn = priced.filter((p) => p.sinceReturn != null);
+  if (!withReturn.length) return { sinceReturn: null, history: [], legs };
+  const sinceReturn = withReturn.reduce((s, p) => s + (p.sinceReturn as number), 0) / withReturn.length;
+  const history = blendEqualWeight(withReturn.map((p) => p.history));
+  return { sinceReturn, history, legs };
 }
 
 // The financial categories we surface; only these get ETF proxies (the rest are
@@ -175,17 +246,39 @@ export async function extractPredictions(): Promise<void> {
     const nowIso = new Date().toISOString();
     const scored: ScoredPrediction[] = [];
     for (const p of result.predictions) {
-      const r = resolveProxy(p);
-      const m = r.symbol ? await scoreTicker(r.symbol, ep.date, nowIso) : { sinceReturn: null, history: [] };
-      scored.push({
+      const common = {
         host: p.host,
         guestName: p.guestName,
         category: p.category,
         pick: p.pick,
-        ticker: p.ticker?.toUpperCase() ?? null,
-        direction: r.direction,
         quote: p.quote,
         quoteStartMs: p.quoteStartSec != null ? p.quoteStartSec * 1000 : null,
+      };
+      // A pick naming 2+ public companies is scored as an equal-weight basket.
+      const basketTickers =
+        FIN_CAT.test(p.category) && p.tickers && p.tickers.length >= 2
+          ? [...new Set(p.tickers.map((t) => t.toUpperCase()))]
+          : null;
+      if (basketTickers) {
+        const b = await scoreBasket(basketTickers, ep.date, nowIso);
+        scored.push({
+          ...common,
+          ticker: p.ticker?.toUpperCase() ?? basketTickers[0],
+          direction: p.direction ?? directionFromCategory(p.category),
+          sinceReturn: b.sinceReturn,
+          history: b.history.length ? b.history : undefined,
+          proxyTicker: null,
+          proxyNote: null,
+          basket: b.legs,
+        });
+        continue;
+      }
+      const r = resolveProxy(p);
+      const m = r.symbol ? await scoreTicker(r.symbol, ep.date, nowIso) : { sinceReturn: null, history: [] };
+      scored.push({
+        ...common,
+        ticker: p.ticker?.toUpperCase() ?? null,
+        direction: r.direction,
         sinceReturn: m.sinceReturn,
         history: m.history.length ? m.history : undefined,
         proxyTicker: r.proxyTicker,
@@ -222,6 +315,18 @@ export async function rescorePredictions(): Promise<void> {
   for (const ep of data.episodes) {
     let n = 0;
     for (const p of ep.predictions) {
+      // Re-price a basket from its stored constituents (equal-weight).
+      if (p.basket && p.basket.length >= 2) {
+        const b = await scoreBasket(p.basket.map((l) => l.ticker), ep.date, nowIso);
+        p.sinceReturn = b.sinceReturn;
+        p.history = b.history.length ? b.history : undefined;
+        p.basket = b.legs;
+        p.proxyTicker = null;
+        p.proxyNote = null;
+        n++;
+        priced++;
+        continue;
+      }
       const r = resolveProxy(p);
       p.proxyTicker = r.proxyTicker;
       p.proxyNote = r.proxyNote;

@@ -4,6 +4,7 @@ import { getIndex } from "@/lib/data";
 import { pct, returnColor, fmtDate } from "@/lib/format";
 import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { StanceBadge } from "@/app/components/badges";
+import { isScoredPosition } from "@/lib/calls";
 import { Reveal } from "@/app/components/Reveal";
 import { ListenButton } from "@/app/components/player";
 import { BackLink } from "@/app/components/BackLink";
@@ -190,7 +191,7 @@ export default async function GuestPage({ params }: { params: Promise<{ slug: st
                       {t.company}
                       <span className="arrow-nudge inline-block">→</span>
                     </Link>
-                    <StanceBadge stance={t.stance} callType={t.callType} />
+                    <StanceBadge stance={t.stance} callType={t.callType} scored={isScoredPosition(t)} />
                   </div>
                   <blockquote className="mt-2 line-clamp-5 text-sm italic leading-relaxed text-neutral-500 dark:text-neutral-400">
                     “{t.quote}”

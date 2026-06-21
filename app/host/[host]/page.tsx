@@ -12,7 +12,7 @@ import { Explainer } from "@/app/components/Explainer";
 import { Reveal } from "@/app/components/Reveal";
 import { ListenButton } from "@/app/components/player";
 import { BackLink } from "@/app/components/BackLink";
-import { hostExposureWindows, currentStanceForHosts } from "@/lib/calls";
+import { hostExposureWindows, currentStanceForHosts, isScoredPosition } from "@/lib/calls";
 import { HostCompanies, type HostCompanyRow } from "@/app/components/HostCompanies";
 import { LinkRow } from "@/app/components/LinkRow";
 import { HOST_UI, RANK_MEDAL } from "@/lib/hosts";
@@ -174,6 +174,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
           quote: dt.quote || dt.summary,
           stance: dt.stance,
           callType: dt.callType,
+          scored: isScoredPosition(dt),
           episodeId: dt.episodeId,
           episodeNumber: dt.episodeNumber,
           episodeDate: dt.episodeDate,
@@ -303,7 +304,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
                   >
                     {t.company} <span className="arrow-nudge inline-block">→</span>
                   </Link>
-                  <StanceBadge stance={t.stance} callType={t.callType} />
+                  <StanceBadge stance={t.stance} callType={t.callType} scored={isScoredPosition(t)} />
                 </div>
                 <blockquote className="mt-2 line-clamp-4 text-sm italic leading-relaxed text-neutral-500 dark:text-neutral-400">
                   “{t.quote}”

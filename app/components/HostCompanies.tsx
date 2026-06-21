@@ -13,6 +13,8 @@ export interface HostTakePreview {
   quote: string;
   stance: Stance;
   callType: Thesis["callType"];
+  /** True only when this take is a scored position — else the badge reads "Commentary". */
+  scored: boolean;
   episodeId: string;
   episodeNumber: number | null;
   episodeDate: string;
@@ -158,16 +160,12 @@ export function HostCompanies({
                       </span>
                     </td>
                     <td className="px-4 py-3">
-                      {isCall(c) ? (
-                        <StanceBadge stance={c.stance} />
-                      ) : (
-                        <span className="text-xs text-neutral-500">Commentary</span>
-                      )}
+                      <StanceBadge stance={c.stance} scored={isCall(c)} />
                     </td>
                     <td className="hidden px-4 py-3 text-neutral-500 sm:table-cell">{fmtDate(c.lastDate)}</td>
                     <td className="px-4 py-3 text-right font-mono tabular-nums text-neutral-400">{c.count}</td>
-                    <td className={`hidden px-4 py-3 text-right font-mono tabular-nums md:table-cell ${returnColor(c.sinceReturn)}`}>
-                      {c.sinceReturn != null ? pct(c.sinceReturn) : "—"}
+                    <td className={`hidden px-4 py-3 text-right font-mono tabular-nums md:table-cell ${isCall(c) ? returnColor(c.sinceReturn) : ""}`}>
+                      {isCall(c) && c.sinceReturn != null ? pct(c.sinceReturn) : "—"}
                     </td>
                   </tr>
                   {isOpen && (
@@ -229,7 +227,7 @@ function TakePanel({
   return (
     <div className="max-w-[82vw] rounded-xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900/60 sm:max-w-2xl">
       <div className="mb-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-neutral-400">
-        <StanceBadge stance={take.stance} callType={take.callType} />
+        <StanceBadge stance={take.stance} callType={take.callType} scored={take.scored} />
         <Link
           href={`/episode/${take.episodeId}`}
           className="font-mono text-[11px] hover:text-neutral-200 hover:underline"

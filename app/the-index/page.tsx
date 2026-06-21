@@ -232,8 +232,8 @@ export default function IndexPage() {
               <h2 className="font-display text-xl font-bold tracking-tight">The Bear Book 🐻</h2>
               <p className="mt-1 max-w-2xl text-sm text-neutral-500 dark:text-neutral-400">
                 The flip side of the index: every public stock the besties have turned{" "}
-                <em>bearish</em> on as a real call. Each one is scored as if you&apos;d shorted it
-                the day they made the call.
+                <em>bearish</em>{" "}on as a real call. Each one is scored as if you&apos;d
+                shorted it the day they made the call.
               </p>
             </div>
 

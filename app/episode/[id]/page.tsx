@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getEpisode, allEpisodeIds, guestLinkMap } from "@/lib/data";
-import { isPortfolioScored } from "@/lib/calls";
+import { isPortfolioScored, isScoredPosition } from "@/lib/calls";
 import {
   pct,
   returnColor,
@@ -346,7 +346,7 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
                               </span>
                             )}
                           </span>
-                          <StanceBadge stance={t.stance} callType={t.callType} />
+                          <StanceBadge stance={t.stance} callType={t.callType} scored={isScoredPosition(t)} />
                           <ConvictionDots conviction={t.conviction} />
                           {isPortfolioScored(t) && (
                             <span

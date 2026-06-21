@@ -8,6 +8,7 @@ export function StanceBadge({
   outcome,
   verdict,
   callType,
+  scored,
 }: {
   stance: Stance;
   className?: string;
@@ -20,23 +21,30 @@ export function StanceBadge({
    */
   verdict?: CallVerdict | null;
   /**
-   * The take's callType, when this badge represents a single take. A non-
-   * positional "view" with no directional lean (neutral/mixed) is commentary,
-   * not a stance — so it reads "Commentary" rather than "Neutral"/"Mixed".
+   * The take's callType, when this badge represents a single take. Used as a
+   * fallback signal for commentary when `scored` isn't supplied.
    * Omitted for aggregate/derived stances, which keep their stance label.
    */
   callType?: CallType | null;
+  /**
+   * Whether THIS take is a portfolio-scored position. When provided, it's
+   * authoritative: a take that isn't a scored bull/bear position reads
+   * "Commentary", never "Bullish"/"Bearish" — so a bullish *opinion* never
+   * looks like a tracked call. Omit for aggregate/derived stances.
+   */
+  scored?: boolean;
 }) {
-  const commentary =
-    callType === "view" &&
-    (stance === "neutral" || stance === "mixed") &&
-    tone === "stance" &&
-    verdict == null &&
-    outcome == null;
+  // Bullish/Bearish is reserved for a scored POSITION; anything else is
+  // "Commentary" (its actual lean lives in the take's words, not a label that
+  // could fight the extraction's stance tag). `scored` is authoritative when
+  // given; otherwise a "view" callType counts as commentary (aggregate badges
+  // pass neither and keep their stance).
+  const isUnscoredTake = scored === false || (scored === undefined && callType === "view");
+  const commentary = isUnscoredTake && tone === "stance" && verdict == null && outcome == null;
   if (commentary) {
     return (
       <span
-        className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium bg-white/5 text-neutral-400 ring-1 ring-inset ring-white/10 ${className}`}
+        className={`inline-flex items-center gap-1.5 rounded-full bg-white/5 px-2.5 py-0.5 text-xs font-medium text-neutral-400 ring-1 ring-inset ring-white/10 ${className}`}
       >
         <span className="h-1.5 w-1.5 rounded-full bg-neutral-500" />
         Commentary

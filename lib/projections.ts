@@ -8,8 +8,9 @@
 // can call them — functions exported from client modules can't be invoked
 // server-side.
 
-import type { Holding, Thesis } from "./types";
+import type { Holding, Thesis, Stance } from "./types";
 import type { StanceInput } from "./calls";
+import { holdingBadge, hasScoredCall } from "./calls";
 
 /**
  * The slice of a Holding the homepage table renders: a few scalars plus the
@@ -18,10 +19,19 @@ import type { StanceInput } from "./calls";
 export type HoldingRow = Pick<
   Holding,
   "slug" | "company" | "ticker" | "domain" | "market" | "firstMentioned" | "lastMentioned" | "mentionCount"
-> & { theses: StanceInput[] };
+> & {
+  theses: StanceInput[];
+  /** Badge stance + whether it's a scored position, precomputed server-side (the
+   * trimmed theses here lack the callType the position logic needs). */
+  stance: Stance;
+  scored: boolean;
+  /** True when the holding has any scored call — gates the returns column. */
+  hasCall: boolean;
+};
 
 /** Project a full Holding down to what the homepage table renders. */
 export function toHoldingRow(h: Holding): HoldingRow {
+  const badge = holdingBadge(h.theses);
   return {
     slug: h.slug,
     company: h.company,
@@ -31,6 +41,9 @@ export function toHoldingRow(h: Holding): HoldingRow {
     firstMentioned: h.firstMentioned,
     lastMentioned: h.lastMentioned,
     mentionCount: h.mentionCount,
+    stance: badge.stance,
+    scored: badge.scored,
+    hasCall: hasScoredCall(h.theses),
     theses: h.theses.map((t) => ({
       host: t.host,
       stance: t.stance,
