@@ -1,4 +1,4 @@
-import { STANCE_META, type CallVerdict } from "@/lib/format";
+import { STANCE_META, SENTIMENT_META, type CallVerdict } from "@/lib/format";
 import type { Stance, Conviction, CallType } from "@/lib/types";
 
 export function StanceBadge({
@@ -9,6 +9,7 @@ export function StanceBadge({
   verdict,
   callType,
   scored,
+  sentiment = false,
 }: {
   stance: Stance;
   className?: string;
@@ -33,6 +34,13 @@ export function StanceBadge({
    * looks like a tracked call. Omit for aggregate/derived stances.
    */
   scored?: boolean;
+  /**
+   * On discussion surfaces (the chart's comment detail), pair "Commentary" with
+   * the take's sentiment — "Commentary · Positive" — so a single glance shows
+   * it's not a scored call *and* which way it leaned. The pill stays gray so it
+   * never reads as a position; only the dot + trailing lean carry colour.
+   */
+  sentiment?: boolean;
 }) {
   // Bullish/Bearish is reserved for a scored POSITION; anything else is
   // "Commentary" (its actual lean lives in the take's words, not a label that
@@ -42,11 +50,18 @@ export function StanceBadge({
   const isUnscoredTake = scored === false || (scored === undefined && callType === "view");
   const commentary = isUnscoredTake && tone === "stance" && verdict == null && outcome == null;
   if (commentary) {
+    // With `sentiment`, the colour *is* the label: "Commentary" + its dot take the
+    // lean's hue (positive/negative/mixed); the pill stays gray-bodied so it never
+    // reads as a position. "neutral" has no lean, so it stays plain. The tooltip
+    // spells the lean out for clarity + colorblind users.
+    const sm = SENTIMENT_META[stance];
+    const lean = sentiment && (stance === "bull" || stance === "bear" || stance === "mixed");
     return (
       <span
-        className={`inline-flex items-center gap-1.5 rounded-full bg-white/5 px-2.5 py-0.5 text-xs font-medium text-neutral-400 ring-1 ring-inset ring-white/10 ${className}`}
+        title={lean ? `${sm.label.toLowerCase()} commentary` : undefined}
+        className={`inline-flex items-center gap-1.5 rounded-full bg-white/5 px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset ring-white/10 ${lean ? sm.text : "text-neutral-400"} ${className}`}
       >
-        <span className="h-1.5 w-1.5 rounded-full bg-neutral-500" />
+        <span className={`h-1.5 w-1.5 rounded-full ${lean ? sm.dot : "bg-neutral-500"}`} />
         Commentary
       </span>
     );

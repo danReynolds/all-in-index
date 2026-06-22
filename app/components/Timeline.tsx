@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { fmtDate, mmss } from "@/lib/format";
+import { fmtDate, mmss, SENTIMENT_META } from "@/lib/format";
 import { isPortfolioScored, isScoredPosition } from "@/lib/calls";
 import { ConvictionDots } from "@/app/components/badges";
 import { GuestName } from "@/app/components/GuestName";
@@ -19,15 +19,8 @@ const STANCE_HEX: Record<Stance, string> = {
 // On the timeline each take reads as SENTIMENT over time — positive / negative /
 // mixed / neutral — not as a scored position. (Bullish/Bearish/Commentary stay
 // for the scored index takes elsewhere; here the 📌 pill marks which ones score.)
-const SENTIMENT: Record<Stance, { label: string; badge: string; dot: string }> = {
-  bull: { label: "Positive", badge: "bg-emerald-500/10 text-emerald-300 ring-emerald-500/25", dot: "bg-emerald-400" },
-  bear: { label: "Negative", badge: "bg-rose-500/10 text-rose-300 ring-rose-500/25", dot: "bg-rose-400" },
-  mixed: { label: "Mixed", badge: "bg-amber-500/10 text-amber-300 ring-amber-500/25", dot: "bg-amber-400" },
-  neutral: { label: "Neutral", badge: "bg-white/5 text-neutral-300 ring-white/10", dot: "bg-neutral-400" },
-};
-
 function SentimentBadge({ stance }: { stance: Stance }) {
-  const s = SENTIMENT[stance];
+  const s = SENTIMENT_META[stance];
   return (
     <span className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset ${s.badge}`}>
       <span className={`h-1.5 w-1.5 rounded-full ${s.dot}`} />
@@ -191,8 +184,8 @@ export function Timeline({
               key={th.id}
               type="button"
               onClick={() => setSel(i)}
-              title={`${fmtDate(th.episodeDate)} — ${SENTIMENT[th.stance].label.toLowerCase()}${dim ? " (low conviction)" : ""}`}
-              aria-label={`${fmtDate(th.episodeDate)} ${SENTIMENT[th.stance].label.toLowerCase()}`}
+              title={`${fmtDate(th.episodeDate)} — ${SENTIMENT_META[th.stance].label.toLowerCase()}${dim ? " (low conviction)" : ""}`}
+              aria-label={`${fmtDate(th.episodeDate)} ${SENTIMENT_META[th.stance].label.toLowerCase()}`}
               className="absolute top-4 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full transition-transform duration-150 hover:scale-[1.6]"
               style={{
                 left: `${single ? 50 : Math.max(2, Math.min(xs[i], 98))}%`,

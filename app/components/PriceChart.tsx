@@ -544,6 +544,7 @@ export function PriceChart({
               outcome={selected.outcome}
               callType={selected.thesis.callType}
               scored={selected.scored}
+              sentiment
             />
             <Link
               href={`/episode/${selected.thesis.episodeId}`}
