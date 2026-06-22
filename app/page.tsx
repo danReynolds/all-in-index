@@ -32,6 +32,17 @@ export default function Home() {
   const privateHoldings = holdings.filter((h) => !h.ticker);
   const totalTheses = holdings.reduce((n, h) => n + h.mentionCount, 0);
 
+  // The return shown per row = the scored call's P&L, matched by ticker to the
+  // Besties Index (longs) and the Bear Book (shorts → −stockMove, floored at
+  // −100%). Without this a winning short renders as a red loss (raw stock move).
+  const callReturnByTicker = new Map<string, number>();
+  // Guests first (lowest precedence), then besties longs, then bear shorts — so a
+  // name the besties hold wins over a guest-only call, and a guest-only call still
+  // shows its return (not "—" under a Bullish badge).
+  for (const c of guesties?.constituents ?? []) callReturnByTicker.set(c.ticker.toUpperCase(), c.sinceReturn);
+  for (const c of fund?.constituents ?? []) callReturnByTicker.set(c.ticker.toUpperCase(), c.sinceReturn);
+  for (const b of snapshot.bearBook ?? []) callReturnByTicker.set(b.ticker.toUpperCase(), Math.max(-b.sinceReturn, -1));
+
   return (
     <div className="space-y-10">
       {fund ? <Hero fund={fund} /> : <PlainHeader />}
@@ -47,13 +58,13 @@ export default function Home() {
       {leaderboard.length > 0 && <Leaderboard entries={leaderboard} />}
 
       <Reveal>
-        <HoldingsTable holdings={publicHoldings.map(toHoldingRow)} title="Public companies" />
+        <HoldingsTable holdings={publicHoldings.map((h) => toHoldingRow(h, callReturnByTicker))} title="Public companies" />
       </Reveal>
 
       {macroHoldings.length > 0 && (
         <Reveal>
           <HoldingsTable
-            holdings={macroHoldings.map(toHoldingRow)}
+            holdings={macroHoldings.map((h) => toHoldingRow(h, callReturnByTicker))}
             title="Commodities, sectors & macro"
             subtitle="priced via ETF proxies · never part of the index or funds"
             entityLabel="Asset"
@@ -73,6 +84,7 @@ export default function Home() {
 
 function Hero({ fund }: { fund: IndexFund }) {
   const dollars = (n: number) => "$" + Math.round(n).toLocaleString();
+  const wins = fund.constituents.filter((c) => c.alpha > 0).length;
   return (
     <section className="relative overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-950 p-6 text-white sm:p-9">
       <div
@@ -103,10 +115,13 @@ function Hero({ fund }: { fund: IndexFund }) {
               </span>{" "}
               since {fmtDate(fund.inceptionDate)}
             </div>
+            <div className="rise mt-1 text-xs text-neutral-500" style={d(220)}>
+              {wins} of {fund.constituents.length} beat the S&amp;P — a few big winners carry the average.
+            </div>
             <p className="rise mt-4 max-w-md text-sm leading-relaxed text-neutral-400" style={d(280)}>
               If you&apos;d put {dollars(fund.contributionPerCall)} into each of{" "}
               <strong className="text-neutral-200">{fund.constituents.length}</strong>
-              {" companies the besties turned bullish on — at the price the day they said it — you'd have "}
+              {" companies the besties are currently bullish on — at the price the day each call opened — you'd have "}
               <strong className="text-emerald-400">{dollars(fund.portfolioValue)}</strong>
               {" today vs "}
               {dollars(fund.benchmarkValue)}

@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import { getHolding, allSlugs, guestLinkMap } from "@/lib/data";
-import { pct, returnColor, fmtDate, fmtDuration, fmtMoney } from "@/lib/format";
+import { pct, returnColor, fmtDate, fmtDuration, fmtMoney, daysBetween } from "@/lib/format";
 import { currentCall, scoredTakes, holdingBadge, hasScoredCall, isScoredPosition } from "@/lib/calls";
 import { isMacroAsset, proxyAssetKind } from "@/lib/assets";
 import { isGoingPrivate } from "@/lib/tradability";
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const facts: string[] = [];
   if (badge.scored) facts.push(`currently ${badge.stance}`);
   if (since != null)
-    facts.push(`price ${(since >= 0 ? "+" : "") + (since * 100).toFixed(1)}% since their first call`);
+    facts.push(`stock ${(since >= 0 ? "+" : "") + (since * 100).toFixed(1)}% since first discussed`);
   const factLine = facts.length
     ? ` ${facts.join("; ").replace(/^./, (c) => c.toUpperCase())}.`
     : "";
@@ -182,6 +182,18 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
             </>
           )}
         </p>
+        {(() => {
+          // A name discussed while still private (e.g. SpaceX pre-IPO) has no
+          // priced return until it lists — say so, so the call date isn't read
+          // as the start of the measured window.
+          const firstPrice = h.market?.history[0]?.[0];
+          if (!firstPrice || daysBetween(h.firstMentioned, firstPrice) <= 120) return null;
+          return (
+            <p className="mt-1 text-xs text-amber-600 dark:text-amber-400/90">
+              Private when first discussed — performance is tracked from {fmtDate(firstPrice)}, its first public price.
+            </p>
+          );
+        })()}
       </header>
 
       {isSample && <SampleBanner />}
@@ -251,6 +263,14 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
             <span className="text-[11px] text-neutral-400">
               since first discussed · {fmtDuration(h.market.anchorDate, h.market.asOf)}
             </span>
+            {h.market.currency && h.market.currency !== "USD" && (
+              <span
+                className="text-[10px] font-medium text-amber-600 dark:text-amber-400/90"
+                title={`This stock trades in ${h.market.currency}. The return is measured in local currency and compared to the USD S&P — it is not FX-adjusted, so a US investor's return would differ by the ${h.market.currency}/USD move.`}
+              >
+                priced in {h.market.currency} · not FX-adjusted
+              </span>
+            )}
           </div>
         </section>
       ) : (

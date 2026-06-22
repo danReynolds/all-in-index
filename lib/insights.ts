@@ -433,7 +433,7 @@ export function computeAwards(s: IndexSnapshot): Award[] {
       title: "Call of the Catalog",
       recipient: `${best.company} (${best.ticker})`,
       stat: `${ppf(best.alpha)} over the S&P`,
-      detail: `Called by ${best.hosts.join(" & ")} on ${best.entryDate} — the single best call on record.`,
+      detail: `Called by ${best.hosts.join(" & ")} on ${best.entryDate} — the best call they're still holding.`,
       href: `/holding/${best.slug}`,
     });
     awards.push({
@@ -492,13 +492,18 @@ export function computeAwards(s: IndexSnapshot): Award[] {
 
   const cvs = consensusVsSolo(s);
   if (cvs.consensus.meanAlpha != null && cvs.solo.meanAlpha != null) {
+    // Tell the truth in whichever direction the current calls actually point —
+    // consensus does not always beat solo, so don't hard-code "better together".
+    const consensusWins = cvs.consensus.meanAlpha >= cvs.solo.meanAlpha;
     awards.push({
       key: "together",
-      emoji: "🤝",
-      title: "Better Together",
-      recipient: "The besties, together",
-      stat: `consensus calls ${ppf(cvs.consensus.meanAlpha)} vs solo ${ppf(cvs.solo.meanAlpha)}`,
-      detail: "When two or more besties agree, the hit is historically far bigger.",
+      emoji: consensusWins ? "🤝" : "🐺",
+      title: consensusWins ? "Better Together" : "Lone Wolves",
+      recipient: consensusWins ? "The besties, together" : "Going it alone",
+      stat: `consensus ${ppf(cvs.consensus.meanAlpha)} vs solo ${ppf(cvs.solo.meanAlpha)}`,
+      detail: consensusWins
+        ? "Among the names they currently hold, calls two or more besties share are beating solo calls."
+        : "Among the names they currently hold, a bestie's solo calls are actually beating the ones they agree on.",
       href: "/insights",
     });
   }
