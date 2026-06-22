@@ -7,8 +7,8 @@ import { StanceBadge } from "@/app/components/badges";
 import { isScoredPosition } from "@/lib/calls";
 import { Reveal } from "@/app/components/Reveal";
 import { ListenButton } from "@/app/components/player";
+import { GuestCalls, type GuestCallRow } from "@/app/components/GuestCalls";
 import { BackLink } from "@/app/components/BackLink";
-import { LinkRow } from "@/app/components/LinkRow";
 import type { GuestLeaderboardEntry, Thesis } from "@/lib/types";
 
 export function generateStaticParams() {
@@ -29,8 +29,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${entry.guest} — guest call record`,
     description:
       entry.followReturn != null
-        ? `${pct(entry.followReturn)} across ${entry.calls} scored ${entry.calls === 1 ? "call" : "calls"} on the All-In podcast, vs the S&P's ${pct(entry.benchmarkReturn)} over the same windows — if you'd followed each call.`
-        : `${entry.guest}'s takes on the All-In podcast — commentary recorded, but no explicit position calls to score.`,
+        ? `${pct(entry.followReturn)} across ${entry.calls} ${entry.calls === 1 ? "call" : "calls"} on the All-In podcast, vs the S&P's ${pct(entry.benchmarkReturn)} over the same windows — if you'd followed each call.`
+        : `${entry.guest}'s takes on the All-In podcast — commentary recorded, but no explicit calls to track.`,
     alternates: { canonical: `/guest/${slug}` },
   };
 }
@@ -66,6 +66,30 @@ export default async function GuestPage({ params }: { params: Promise<{ slug: st
         takes.push({ ...t, slug: h.slug, domain: h.domain ?? null });
   takes.sort((a, b) => b.episodeDate.localeCompare(a.episodeDate));
   const quoted = takes.filter((t) => t.quote);
+  // The call quotes live in the expandable calls table; "In their words"
+  // carries only the non-call commentary so nothing is shown twice.
+  const commentary = quoted.filter((t) => !isScoredPosition(t));
+
+  // One row per tracked call, joined to the guest's own words behind it.
+  const callRows: GuestCallRow[] = entry.picks.map((p) => {
+    const callTakes = takes.filter((t) => t.slug === p.slug && isScoredPosition(t));
+    const take = callTakes.find((t) => t.quote) ?? callTakes[0];
+    return {
+      slug: p.slug,
+      company: p.company,
+      ticker: p.ticker ?? null,
+      domain: domainOf.get(p.slug) ?? null,
+      stance: p.stance,
+      ret: p.ret,
+      alpha: p.alpha,
+      date: p.date,
+      takeId: take?.id ?? null,
+      quote: take?.quote ?? null,
+      episodeId: take?.episodeId ?? null,
+      episodeNumber: take?.episodeNumber ?? null,
+      quoteStartMs: take?.quoteStartMs ?? null,
+    };
+  });
 
   return (
     <div className="space-y-10">
@@ -83,7 +107,7 @@ export default async function GuestPage({ params }: { params: Promise<{ slug: st
             <p className="text-sm text-neutral-500">
               Guest on the All-In podcast ·{" "}
               {entry.followReturn != null
-                ? `${entry.calls} scored ${entry.calls === 1 ? "call" : "calls"}`
+                ? `${entry.calls} ${entry.calls === 1 ? "call" : "calls"}`
                 : "commentary only"}
             </p>
           </div>
@@ -109,74 +133,33 @@ export default async function GuestPage({ params }: { params: Promise<{ slug: st
         <p className="relative mt-4 max-w-2xl text-sm text-neutral-500 dark:text-neutral-400">
           {entry.followReturn != null ? (
             <>
-              Each call below is scored as if you&apos;d <em>followed it</em> — long a bull, an
+              Each call below is measured as if you&apos;d <em>followed it</em> — long a bull, an
               inverse-sized stake on a bear (capped at −100%) — from the day it aired to today, versus
               simply buying the S&amp;P over the same window.
             </>
           ) : (
             <>
               {entry.guest}
-              {" weighed in on the companies below but never made an explicit position call, so there’s nothing to score — these takes are recorded as commentary."}
+              {" weighed in on the companies below but never made an explicit position call, so there’s nothing to track — these takes are recorded as commentary."}
             </>
           )}
         </p>
       </header>
 
-      {/* Their scored calls — only for guests who actually made calls */}
+      {/* Their calls — a scannable table; tap a row to read the take in place. */}
       {entry.picks.length > 0 && (
-      <section className="rise rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900 sm:p-6" style={{ "--d": "120ms" } as React.CSSProperties}>
-        <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-500">
-          Scored calls
-        </h2>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead className="border-b border-neutral-200 text-left text-[11px] uppercase tracking-[0.16em] text-neutral-500 dark:border-neutral-800">
-              <tr>
-                <th className="py-2 pr-4 font-medium">Company</th>
-                <th className="hidden py-2 pr-4 font-medium sm:table-cell">Call</th>
-                <th className="hidden py-2 pr-4 font-medium md:table-cell">Date</th>
-                <th className="py-2 pr-4 text-right font-medium">Return</th>
-                <th className="py-2 text-right font-medium">vs S&amp;P</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
-              {entry.picks.map((p) => (
-                <LinkRow key={p.slug} href={`/holding/${p.slug}`} className="group transition-colors hover:bg-white/[0.025]">
-                  <td className="py-2.5 pr-4">
-                    <Link href={`/holding/${p.slug}`} className="flex items-center gap-2 font-medium group-hover:underline">
-                      <CompanyLogo name={p.company} domain={domainOf.get(p.slug)} size="sm" />
-                      {p.company}
-                      <span className="font-mono text-xs text-neutral-400">{p.ticker}</span>
-                    </Link>
-                  </td>
-                  <td className="hidden py-2.5 pr-4 sm:table-cell">
-                    <StanceBadge stance={p.stance} />
-                  </td>
-                  <td className="hidden py-2.5 pr-4 text-neutral-500 md:table-cell">{fmtDate(p.date)}</td>
-                  <td className={`py-2.5 pr-4 text-right font-mono tabular-nums ${returnColor(p.ret)}`}>
-                    {pct(p.ret)}
-                  </td>
-                  <td className={`py-2.5 text-right font-mono font-semibold tabular-nums ${returnColor(p.alpha)}`}>
-                    {p.alpha >= 0 ? "+" : ""}
-                    {(p.alpha * 100).toFixed(1)}pp
-                  </td>
-                </LinkRow>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
+        <GuestCalls guest={entry.guest} rows={callRows} episodes={episodes} episodeLinks={episodeLinks} />
       )}
 
-      {/* Their takes, with receipts */}
-      {quoted.length > 0 && (
+      {/* Their non-call commentary, with receipts (calls show their own quotes above) */}
+      {commentary.length > 0 && (
         <Reveal stagger>
           <section className="space-y-3">
             <h2 className="stagger-item text-sm font-semibold uppercase tracking-wide text-neutral-500">
               In their words
             </h2>
             <div className="grid gap-3 lg:grid-cols-2">
-              {quoted.map((t, i) => (
+              {commentary.map((t, i) => (
                 <div
                   key={t.id}
                   style={{ "--d": `${50 + i * 50}ms` } as React.CSSProperties}

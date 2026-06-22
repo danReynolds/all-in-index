@@ -88,6 +88,28 @@ export function Timeline({
     return () => ro.disconnect();
   }, []);
 
+  // Deep-link: `?call=<takeId>` (e.g. arriving from a call table) selects that
+  // specific take instead of the latest. A one-time URL→state sync on mount —
+  // a static page can't read the param during render without a hydration
+  // mismatch, so the effect is the right tool here; the `#takes-<host>` hash
+  // still drives the scroll natively.
+  /* eslint-disable react-hooks/set-state-in-effect, react-hooks/exhaustive-deps -- intentional one-time deep-link sync */
+  useEffect(() => {
+    const callId = new URLSearchParams(window.location.search).get("call");
+    if (!callId) return;
+    const inSignal = (defaultSorted.length > 0 ? defaultSorted : allSorted).findIndex((th) => th.id === callId);
+    if (inSignal >= 0) {
+      setSel(inSignal);
+      return;
+    }
+    const inAll = allSorted.findIndex((th) => th.id === callId);
+    if (inAll >= 0) {
+      setMode("all");
+      setSel(inAll);
+    }
+  }, []);
+  /* eslint-enable react-hooks/set-state-in-effect, react-hooks/exhaustive-deps */
+
   // Time-proportional x positions (2%..98%), with a minimum gap so clustered
   // takes stay separately clickable.
   const { xs, years } = useMemo(() => {
@@ -229,7 +251,7 @@ export function Timeline({
                 className="rounded-full bg-emerald-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-300 ring-1 ring-inset ring-emerald-500/25"
                 title="A clear in/out call, ranked pick, or investment selection — this take trades in the money simulations. Everything else is view/commentary."
               >
-                📌 scored call
+                📌 tracked call
               </span>
             )}
             {t.attributionConfidence === "low" && (
