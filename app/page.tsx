@@ -121,7 +121,7 @@ function Hero({ fund }: { fund: IndexFund }) {
             <p className="rise mt-4 max-w-md text-sm leading-relaxed text-neutral-400" style={d(280)}>
               If you&apos;d put {dollars(fund.contributionPerCall)} into each of{" "}
               <strong className="text-neutral-200">{fund.constituents.length}</strong>
-              {" companies the besties are currently bullish on — at the price the day each call opened — you'd have "}
+              {" companies the besties are still bullish on — at the price the day they called it — you'd have "}
               <strong className="text-emerald-400">{dollars(fund.portfolioValue)}</strong>
               {" today vs "}
               {dollars(fund.benchmarkValue)}

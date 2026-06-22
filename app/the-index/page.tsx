@@ -51,9 +51,9 @@ export default function IndexPage() {
       <header className="rise space-y-2">
         <h1 className="font-display text-3xl font-bold tracking-tight">The Besties Index</h1>
         <p className="max-w-2xl text-neutral-500 dark:text-neutral-400">
-          Every public stock a bestie is currently bullish on as a real call — equal-weighted, bought
-          at the price the day the call opened and held to today, measured against the S&amp;P over the
-          same stretch. Looking for the names they&apos;ve turned bearish on? Those live in{" "}
+          Every public stock the besties are still bullish on — equal-weighted, bought at the price
+          the day they called it and held to today, measured against the S&amp;P over the same
+          stretch. Looking for the names they&apos;ve turned bearish on? Those live in{" "}
           <Link href="#bear-book" className="text-rose-600 hover:underline dark:text-rose-400">the Bear Book</Link>.
         </p>
       </header>
