@@ -16,7 +16,11 @@ export function Ticker({ items }: { items: TickerItem[] }) {
       className="ticker-shell ticker-mask overflow-hidden border-b border-white/5 bg-neutral-950/60"
       aria-label="Index constituents — return since the call"
     >
-      <div className="ticker-track flex w-max items-center gap-7 px-6 py-1.5">
+      {/* No flex `gap` or track padding: each item carries its own trailing
+          margin (mr-7) so the two copies tile to exactly 50% of the track and
+          the -50% loop is seamless. Gap/padding here would offset that point
+          and make the tape visibly hop once per loop. */}
+      <div className="ticker-track flex w-max items-center py-1.5">
         {loop.map((it, i) => {
           // The second copy exists only for the seamless CSS loop — hide it from
           // screen readers and the tab order so the ticker isn't announced twice.
@@ -27,7 +31,7 @@ export function Ticker({ items }: { items: TickerItem[] }) {
             href={`/holding/${it.slug}`}
             aria-hidden={dup || undefined}
             tabIndex={dup ? -1 : undefined}
-            className="flex shrink-0 items-baseline gap-1.5 font-mono text-[11px] tabular-nums tracking-tight"
+            className="mr-7 flex shrink-0 items-baseline gap-1.5 font-mono text-[11px] tabular-nums tracking-tight"
           >
             <span className="text-neutral-400">{it.ticker}</span>
             <span className={it.ret >= 0 ? "text-emerald-400" : "text-rose-400"}>

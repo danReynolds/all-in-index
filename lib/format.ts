@@ -46,6 +46,23 @@ export const STANCE_META: Record<
   },
 };
 
+/**
+ * The SENTIMENT lens — how a take *read*, used on discussion surfaces (the
+ * timeline, and the commentary detail in the price chart). Deliberately
+ * distinct from STANCE_META's Bullish/Bearish, which is reserved for scored
+ * positions. `badge` omits ring-1/ring-inset (callers add them); `text` is the
+ * label colour alone, for the "Commentary · <lean>" combined pill.
+ */
+export const SENTIMENT_META: Record<
+  Stance,
+  { label: string; badge: string; text: string; dot: string }
+> = {
+  bull: { label: "Positive", badge: "bg-emerald-500/10 text-emerald-300 ring-emerald-500/25", text: "text-emerald-300", dot: "bg-emerald-400" },
+  bear: { label: "Negative", badge: "bg-rose-500/10 text-rose-300 ring-rose-500/25", text: "text-rose-300", dot: "bg-rose-400" },
+  mixed: { label: "Mixed", badge: "bg-amber-500/10 text-amber-300 ring-amber-500/25", text: "text-amber-300", dot: "bg-amber-400" },
+  neutral: { label: "Neutral", badge: "bg-white/5 text-neutral-300 ring-white/10", text: "text-neutral-400", dot: "bg-neutral-400" },
+};
+
 export interface CallVerdict {
   label: string;
   /** true = the call is working, false = it's wrong so far, null = too close. */

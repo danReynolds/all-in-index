@@ -1,4 +1,4 @@
-import { STANCE_META, type CallVerdict } from "@/lib/format";
+import { STANCE_META, SENTIMENT_META, type CallVerdict } from "@/lib/format";
 import type { Stance, Conviction, CallType } from "@/lib/types";
 
 export function StanceBadge({
@@ -8,6 +8,8 @@ export function StanceBadge({
   outcome,
   verdict,
   callType,
+  scored,
+  sentiment = false,
 }: {
   stance: Stance;
   className?: string;
@@ -20,25 +22,46 @@ export function StanceBadge({
    */
   verdict?: CallVerdict | null;
   /**
-   * The take's callType, when this badge represents a single take. A non-
-   * positional "view" with no directional lean (neutral/mixed) is commentary,
-   * not a stance — so it reads "Commentary" rather than "Neutral"/"Mixed".
+   * The take's callType, when this badge represents a single take. Used as a
+   * fallback signal for commentary when `scored` isn't supplied.
    * Omitted for aggregate/derived stances, which keep their stance label.
    */
   callType?: CallType | null;
+  /**
+   * Whether THIS take is a portfolio-scored position. When provided, it's
+   * authoritative: a take that isn't a scored bull/bear position reads
+   * "Commentary", never "Bullish"/"Bearish" — so a bullish *opinion* never
+   * looks like a tracked call. Omit for aggregate/derived stances.
+   */
+  scored?: boolean;
+  /**
+   * On discussion surfaces (the chart's comment detail), pair "Commentary" with
+   * the take's sentiment — "Commentary · Positive" — so a single glance shows
+   * it's not a scored call *and* which way it leaned. The pill stays gray so it
+   * never reads as a position; only the dot + trailing lean carry colour.
+   */
+  sentiment?: boolean;
 }) {
-  const commentary =
-    callType === "view" &&
-    (stance === "neutral" || stance === "mixed") &&
-    tone === "stance" &&
-    verdict == null &&
-    outcome == null;
+  // Bullish/Bearish is reserved for a scored POSITION; anything else is
+  // "Commentary" (its actual lean lives in the take's words, not a label that
+  // could fight the extraction's stance tag). `scored` is authoritative when
+  // given; otherwise a "view" callType counts as commentary (aggregate badges
+  // pass neither and keep their stance).
+  const isUnscoredTake = scored === false || (scored === undefined && callType === "view");
+  const commentary = isUnscoredTake && tone === "stance" && verdict == null && outcome == null;
   if (commentary) {
+    // With `sentiment`, the colour *is* the label: "Commentary" + its dot take the
+    // lean's hue (positive/negative/mixed); the pill stays gray-bodied so it never
+    // reads as a position. "neutral" has no lean, so it stays plain. The tooltip
+    // spells the lean out for clarity + colorblind users.
+    const sm = SENTIMENT_META[stance];
+    const lean = sentiment && (stance === "bull" || stance === "bear" || stance === "mixed");
     return (
       <span
-        className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium bg-white/5 text-neutral-400 ring-1 ring-inset ring-white/10 ${className}`}
+        title={lean ? `${sm.label.toLowerCase()} commentary` : undefined}
+        className={`inline-flex items-center gap-1.5 rounded-full bg-white/5 px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset ring-white/10 ${lean ? sm.text : "text-neutral-400"} ${className}`}
       >
-        <span className="h-1.5 w-1.5 rounded-full bg-neutral-500" />
+        <span className={`h-1.5 w-1.5 rounded-full ${lean ? sm.dot : "bg-neutral-500"}`} />
         Commentary
       </span>
     );

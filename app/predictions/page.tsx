@@ -57,6 +57,7 @@ export default function PredictionsPage() {
         history: p.history ?? null,
         proxyTicker: p.proxyTicker ?? null,
         proxyNote: p.proxyNote ?? null,
+        basket: p.basket ?? null,
       });
       // Every host's pick in the financial categories — graded where it maps to a
       // single ticker, shown but ungraded otherwise. Political/media/deal/trend

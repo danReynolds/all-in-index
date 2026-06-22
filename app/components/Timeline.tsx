@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
-import { fmtDate, mmss } from "@/lib/format";
-import { isPortfolioScored } from "@/lib/calls";
-import { StanceBadge, ConvictionDots } from "@/app/components/badges";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { fmtDate, mmss, SENTIMENT_META } from "@/lib/format";
+import { isPortfolioScored, isScoredPosition } from "@/lib/calls";
+import { ConvictionDots } from "@/app/components/badges";
 import { GuestName } from "@/app/components/GuestName";
 import { ListenButton } from "@/app/components/player";
 import type { EpisodeMeta, Stance, Thesis } from "@/lib/types";
@@ -16,13 +16,29 @@ const STANCE_HEX: Record<Stance, string> = {
   neutral: "#8d9a92",
 };
 
+// On the timeline each take reads as SENTIMENT over time — positive / negative /
+// mixed / neutral — not as a scored position. (Bullish/Bearish/Commentary stay
+// for the scored index takes elsewhere; here the 📌 pill marks which ones score.)
+function SentimentBadge({ stance }: { stance: Stance }) {
+  const s = SENTIMENT_META[stance];
+  return (
+    <span className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset ${s.badge}`}>
+      <span className={`h-1.5 w-1.5 rounded-full ${s.dot}`} />
+      {s.label}
+    </span>
+  );
+}
+
 type TimelineMode = "signal" | "all";
 
 // "Key calls" = the site's canonical SCORED takes (medium+ conviction, verified
 // speaker). Same set the stance, index, and flip count are built from — so the
 // flips a host's badge claims are actually visible in this default view.
 function isDefaultTimelineTake(t: Thesis): boolean {
-  return t.attributionConfidence !== "low" && t.conviction !== "low";
+  // Always surface the scored position calls — they're what the holding's
+  // Bullish/Bearish badge is built on, so hiding one (e.g. a low-conviction
+  // long) would leave that badge unexplained. Otherwise show non-low takes.
+  return isScoredPosition(t) || (t.attributionConfidence !== "low" && t.conviction !== "low");
 }
 
 function mentionCount(n: number): string {
@@ -59,16 +75,41 @@ export function Timeline({
   const hiddenCount = allSorted.length - defaultSorted.length;
   const allMentionsLabel = hiddenCount > 0 ? `All mentions +${hiddenCount}` : "All mentions";
 
-  // Time-proportional x positions (2%..98%), with a minimum gap so same-week
-  // takes don't fully overlap.
+  // Measure the track so the minimum dot gap can be set in real pixels (a %-only
+  // gap overlaps on narrow screens and over-spreads on wide ones).
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [trackW, setTrackW] = useState(0);
+  useEffect(() => {
+    const el = trackRef.current;
+    if (!el) return;
+    setTrackW(el.clientWidth);
+    const ro = new ResizeObserver(([e]) => setTrackW(e.contentRect.width));
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
+  // Time-proportional x positions (2%..98%), with a minimum gap so clustered
+  // takes stay separately clickable.
   const { xs, years } = useMemo(() => {
     if (sorted.length === 0) return { xs: [], years: [] };
     const t0 = Date.parse(sorted[0].episodeDate);
     const t1 = Date.parse(sorted[sorted.length - 1].episodeDate);
     const span = Math.max(t1 - t0, 1);
+    // ~18px centre-to-centre clears a 10px dot plus its conviction/selection halo
+    // (≈17–19px); derived from the measured width, capped so a phone-width track
+    // still fits the whole run.
+    const minGap = trackW > 0 ? Math.min((18 / trackW) * 100, 6.5) : 2.2;
     const xs = sorted.map((th) => 2 + 96 * ((Date.parse(th.episodeDate) - t0) / span));
+    // Push crowded dots right; if the run spills past the right edge, relax it
+    // back to the left so the whole cluster stays on-track and un-stacked.
     for (let i = 1; i < xs.length; i++) {
-      if (xs[i] - xs[i - 1] < 1.4) xs[i] = xs[i - 1] + 1.4;
+      if (xs[i] - xs[i - 1] < minGap) xs[i] = xs[i - 1] + minGap;
+    }
+    if (xs.length > 1 && xs[xs.length - 1] > 98) {
+      xs[xs.length - 1] = 98;
+      for (let i = xs.length - 2; i >= 0; i--) {
+        if (xs[i + 1] - xs[i] < minGap) xs[i] = xs[i + 1] - minGap;
+      }
     }
     const years: Array<{ x: number; label: string }> = [];
     if (span > 120 * 86400_000) {
@@ -82,7 +123,7 @@ export function Timeline({
       }
     }
     return { xs, years };
-  }, [sorted]);
+  }, [sorted, trackW]);
 
   const single = sorted.length === 1;
 
@@ -118,7 +159,7 @@ export function Timeline({
       )}
 
       {/* The track */}
-      <div className="relative h-12">
+      <div ref={trackRef} className="relative h-12">
         <div className="absolute left-0 right-0 top-4 h-px bg-neutral-800" />
         {years.map((y) => (
           <div key={y.label}>
@@ -143,11 +184,11 @@ export function Timeline({
               key={th.id}
               type="button"
               onClick={() => setSel(i)}
-              title={`${fmtDate(th.episodeDate)} — ${th.stance}${dim ? " (low conviction)" : ""}`}
-              aria-label={`${fmtDate(th.episodeDate)} ${th.stance}`}
+              title={`${fmtDate(th.episodeDate)} — ${SENTIMENT_META[th.stance].label.toLowerCase()}${dim ? " (low conviction)" : ""}`}
+              aria-label={`${fmtDate(th.episodeDate)} ${SENTIMENT_META[th.stance].label.toLowerCase()}`}
               className="absolute top-4 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full transition-transform duration-150 hover:scale-[1.6]"
               style={{
-                left: `${single ? 50 : Math.min(xs[i], 98)}%`,
+                left: `${single ? 50 : Math.max(2, Math.min(xs[i], 98))}%`,
                 background: c,
                 opacity: dim && !selected ? 0.45 : 1,
                 boxShadow: selected
@@ -173,7 +214,7 @@ export function Timeline({
                 className="font-semibold text-neutral-100"
               />
             )}
-            <StanceBadge stance={t.stance} callType={t.callType} />
+            <SentimentBadge stance={t.stance} />
             <ConvictionDots conviction={t.conviction} />
             <Link
               href={`/episode/${t.episodeId}`}

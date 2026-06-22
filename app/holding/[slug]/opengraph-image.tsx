@@ -18,9 +18,9 @@ const STANCE_UI: Record<string, { label: string; color: string }> = {
 export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const { holding: h } = getHolding(slug);
-  // No pill when nothing clears the scoring bar — absence over a fake stance.
+  // No pill unless there's an actual open position — absence over a fake stance.
   const ds = h ? displayStance(h.theses) : "neutral";
-  const stance = ds === "none" ? null : STANCE_UI[ds];
+  const stance = ds === "neutral" ? null : STANCE_UI[ds];
   const since = h?.market?.returns.since ?? null;
   const cc = h ? currentCall(h) : null;
 
