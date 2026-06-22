@@ -57,7 +57,7 @@ export default async function Image() {
           </div>
           <div style={{ fontSize: 30, color: "#b6c0b9" }}>
             {fund
-              ? `vs the S&P's ${pct(fund.benchmarkReturn)} · ${fund.constituents.length} bullish calls, held since they said it`
+              ? `vs the S&P's ${pct(fund.benchmarkReturn)} · ${fund.constituents.length} bull calls they're still holding`
               : "Every All-In call, scored"}
           </div>
         </div>

@@ -97,7 +97,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
             )}
             {since != null && (
               <div style={{ fontSize: 34, color: since >= 0 ? "#34d399" : "#fb7185", fontWeight: 700 }}>
-                {`stock ${pct(since)} since first call`}
+                {`stock ${pct(since)} since first discussed`}
               </div>
             )}
             {since == null && (

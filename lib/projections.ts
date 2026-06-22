@@ -10,7 +10,7 @@
 
 import type { Holding, Thesis, Stance } from "./types";
 import type { StanceInput } from "./calls";
-import { holdingBadge, hasScoredCall } from "./calls";
+import { holdingBadge, hasScoredCall, currentCall } from "./calls";
 
 /**
  * The slice of a Holding the homepage table renders: a few scalars plus the
@@ -27,10 +27,38 @@ export type HoldingRow = Pick<
   scored: boolean;
   /** True when the holding has any scored call — gates the returns column. */
   hasCall: boolean;
+  /**
+   * The direction-adjusted, call-anchored return to display — the same number
+   * the detail page leads with. For a BEAR this is the short's P&L (capped at
+   * −100%), never the raw stock move, so a winning short reads green. Null when
+   * there's no current scored call to attribute a return to.
+   */
+  callReturn: number | null;
 };
 
-/** Project a full Holding down to what the homepage table renders. */
-export function toHoldingRow(h: Holding): HoldingRow {
+/**
+ * The displayed call return: prefer the scored fund position (Besties Index long
+ * or Bear Book short, matched by ticker), else fall back to the current call —
+ * exactly the precedence the holding detail page uses. A bear's value is the
+ * short's P&L (`−stockMove`, floored at −100%), so the table never shows a
+ * winning short as a red loss (or a losing short as a green gain).
+ */
+function computeCallReturn(h: Holding, fundByTicker?: Map<string, number>): number | null {
+  const fromFund = h.ticker ? fundByTicker?.get(h.ticker.toUpperCase()) : undefined;
+  if (fromFund != null) return fromFund;
+  const cc = currentCall(h);
+  if (cc && cc.ret != null && (cc.stance === "bull" || cc.stance === "bear")) {
+    return cc.stance === "bear" ? Math.max(-cc.ret, -1) : cc.ret;
+  }
+  return null;
+}
+
+/**
+ * Project a full Holding down to what the homepage table renders. Pass
+ * `callReturnByTicker` (Besties Index long returns + Bear Book short P&Ls, keyed
+ * by upper-case ticker) so the displayed return matches the fund/detail pages.
+ */
+export function toHoldingRow(h: Holding, callReturnByTicker?: Map<string, number>): HoldingRow {
   const badge = holdingBadge(h.theses);
   return {
     slug: h.slug,
@@ -44,6 +72,9 @@ export function toHoldingRow(h: Holding): HoldingRow {
     stance: badge.stance,
     scored: badge.scored,
     hasCall: hasScoredCall(h.theses),
+    // Only a scored position (Bullish/Bearish badge) gets a return — commentary,
+    // even when it leans directionally, shows "—" so the number agrees with the badge.
+    callReturn: badge.scored ? computeCallReturn(h, callReturnByTicker) : null,
     theses: h.theses.map((t) => ({
       host: t.host,
       stance: t.stance,

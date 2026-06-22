@@ -62,18 +62,28 @@ export default function SignalsPage() {
         <SectionHead
           emoji="🤝"
           title="The Consensus Meter"
-          sub="When two or more besties agree, history says pay attention."
-          badge={edge != null ? `${pp(edge)} edge` : undefined}
-          detail="Consensus = two or more besties landing the same way on a name; a solo call is one only a single bestie made. Alpha is how much it beat the S&P over the same stretch; the returns below run from the besties' first call on the name."
+          sub="How calls two or more besties share have done versus solo calls."
+          badge={edge != null ? `${edge >= 0 ? "consensus" : "solo"} +${(Math.abs(edge) * 100).toFixed(1)}pp` : undefined}
+          detail="Consensus = two or more besties landing the same way on a name; a solo call is one only a single bestie made. Alpha is how much it beat the S&P over the same stretch; the returns below run from the besties' first call on the name. This compares the names they currently hold, not a full historical record."
         />
         <ConsensusCards split={cvs} />
-        <p className="text-sm text-neutral-500">
-          Agreement has been worth{" "}
-          <strong className="text-neutral-700 dark:text-neutral-200">
-            {edge != null ? `${pp(edge)} more alpha` : "more"}
-          </strong>{" "}
-          than going it alone.
-        </p>
+        {edge != null && (
+          <p className="text-sm text-neutral-500">
+            {edge >= 0 ? (
+              <>
+                Among the names they currently hold, agreement is worth{" "}
+                <strong className="text-neutral-700 dark:text-neutral-200">{pp(edge)} more alpha</strong>{" "}
+                than going it alone.
+              </>
+            ) : (
+              <>
+                Among the names they currently hold, going it alone has actually edged consensus by{" "}
+                <strong className="text-neutral-700 dark:text-neutral-200">{(Math.abs(edge) * 100).toFixed(1)}pp</strong>{" "}
+                of alpha.
+              </>
+            )}
+          </p>
+        )}
         <div className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
           <h3 className="mb-1 text-sm font-semibold text-neutral-700 dark:text-neutral-200">
             Where the besties agree today

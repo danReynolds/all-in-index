@@ -81,7 +81,7 @@ export function HoldingsTable({
       list = list.filter((h) => (stance === "neutral" ? !h.scored : h.scored && h.stance === stance));
     }
     if (host) list = list.filter((h) => h.theses.some((t) => t.host === host));
-    const since = (h: HoldingRow) => h.market?.returns.since;
+    const since = (h: HoldingRow) => h.callReturn ?? undefined;
     return list.slice().sort((a, b) => {
       switch (sort) {
         case "latest":
@@ -185,15 +185,21 @@ export function HoldingsTable({
                 <td className="hidden px-4 py-3 text-neutral-500 md:table-cell">
                   {fmtDate(sort === "latest" ? h.lastMentioned : h.firstMentioned)}
                 </td>
-                <td className={`px-4 py-3 text-right font-mono tabular-nums ${h.hasCall ? returnColor(h.market?.returns.since) : ""}`}>
-                  {h.market && h.hasCall ? (
-                    pct(h.market.returns.since)
+                <td className={`px-4 py-3 text-right font-mono tabular-nums ${h.callReturn != null ? returnColor(h.callReturn) : ""}`}>
+                  {h.callReturn != null ? (
+                    h.market?.currency && h.market.currency !== "USD" ? (
+                      <span title={`Return in ${h.market.currency} (local currency) — not FX-adjusted to the USD S&P.`}>
+                        {pct(h.callReturn)}<span className="text-amber-500"> *</span>
+                      </span>
+                    ) : (
+                      pct(h.callReturn)
+                    )
                   ) : (
                     <span className="text-neutral-400" title={h.market ? "Commentary only — no call here, so no return is shown." : undefined}>—</span>
                   )}
                 </td>
                 <td className="hidden px-4 py-3 text-right lg:table-cell">
-                  {h.market && h.market.history.length > 1 && h.hasCall ? (
+                  {h.market && h.market.history.length > 1 && h.callReturn != null && h.stance !== "bear" ? (
                     <Sparkline points={h.market.history.map(([, c]) => c)} animate={false} className="ml-auto inline-block align-middle" />
                   ) : (
                     <span className="text-xs text-neutral-400">—</span>
