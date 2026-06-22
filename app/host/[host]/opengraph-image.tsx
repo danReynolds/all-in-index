@@ -97,8 +97,8 @@ export default async function Image({ params }: { params: Promise<{ host: string
             </div>
             <div style={{ fontSize: 28, color: "#b6c0b9" }}>
               {entry
-                ? `vs S&P ${pct(entry.benchmarkReturn)} · ${entry.positions} scored calls, over their own windows`
-                : "no scored calls yet"}
+                ? `vs S&P ${pct(entry.benchmarkReturn)} · ${entry.positions} calls, over their own windows`
+                : "no calls yet"}
             </div>
           </div>
         </div>

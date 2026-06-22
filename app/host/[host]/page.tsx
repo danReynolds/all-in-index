@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ host: str
   return {
     title: `${HOST_PROFILES[host as keyof typeof HOST_PROFILES]?.fullName ?? host} — track record`,
     description: e?.positions
-      ? `${(e.portfolioReturn >= 0 ? "+" : "") + (e.portfolioReturn * 100).toFixed(1)}% on ${e.positions} scored calls vs the S&P's ${(e.benchmarkReturn * 100).toFixed(1)}% over the same windows. Every call sourced from the All-In podcast.`
+      ? `${(e.portfolioReturn >= 0 ? "+" : "") + (e.portfolioReturn * 100).toFixed(1)}% on ${e.positions} calls vs the S&P's ${(e.benchmarkReturn * 100).toFixed(1)}% over the same windows. Every call sourced from the All-In podcast.`
       : `Every call ${host} has made on the All-In podcast, sourced and scored.`,
     alternates: { canonical: `/host/${host.toLowerCase()}` },
   };
@@ -76,12 +76,16 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
   }
 
   // Entry/exit events for the fund chart, from their portfolio-scored windows.
+  // Also remember each open position's entry call, so clicking a constituent
+  // deep-links to *that* take (not the latest) on the company timeline.
   const tradeEvents: TradeEvent[] = [];
+  const entryTakeBySlug: Record<string, string> = {};
   if (fund) {
     for (const c of fund.constituents) {
       const holding = snapshot.holdings.find((x) => x.slug === c.slug);
       if (!holding) continue;
       for (const w of hostExposureWindows(holding.theses, host)) {
+        if (w.end === null && w.startTake) entryTakeBySlug[c.slug] = w.startTake.id;
         tradeEvents.push({
           date: w.start,
           ticker: c.ticker,
@@ -255,10 +259,13 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
                 </tr>
               </thead>
               <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
-                {fund.constituents.map((c) => (
-                  <LinkRow key={c.slug} href={`/holding/${c.slug}#takes-${host.toLowerCase()}`} className="group transition-colors hover:bg-white/[0.025]">
+                {fund.constituents.map((c) => {
+                  const callId = entryTakeBySlug[c.slug];
+                  const href = `/holding/${c.slug}${callId ? `?call=${callId}` : ""}#takes-${host.toLowerCase()}`;
+                  return (
+                  <LinkRow key={c.slug} href={href} className="group transition-colors hover:bg-white/[0.025]">
                     <td className="py-2.5 pr-4">
-                      <Link href={`/holding/${c.slug}#takes-${host.toLowerCase()}`} className="flex items-center gap-2 font-medium group-hover:underline">
+                      <Link href={href} className="flex items-center gap-2 font-medium group-hover:underline">
                         <CompanyLogo name={c.company} domain={domainOf.get(c.slug)} size="sm" />
                         {c.company}
                         <span className="font-mono text-xs text-neutral-400">{c.ticker}</span>
@@ -275,7 +282,8 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
                       {(c.alpha * 100).toFixed(1)}pp
                     </td>
                   </LinkRow>
-                ))}
+                  );
+                })}
               </tbody>
             </table>
           </div>
@@ -299,7 +307,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
                 <div className="flex items-center justify-between gap-2">
                   {/* Stretched link: the whole card clicks through to this host's take. */}
                   <Link
-                    href={`/holding/${t.slug}#takes-${host.toLowerCase()}`}
+                    href={`/holding/${t.slug}?call=${t.id}#takes-${host.toLowerCase()}`}
                     className="font-semibold after:absolute after:inset-0 after:content-[''] group-hover:underline"
                   >
                     {t.company} <span className="arrow-nudge inline-block">→</span>

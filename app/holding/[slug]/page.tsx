@@ -279,7 +279,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
           </div>
           <p className="ml-auto max-w-[280px] text-right text-xs text-neutral-400">
             {h.market
-              ? "Commentary only — they've discussed this name but haven't made a scored call on it, so we don't attribute any call return to it. The stock's price chart and the takes are below."
+              ? "Commentary only — they've discussed this name but haven't made a tracked call on it, so we don't attribute any call return to it. The stock's price chart and the takes are below."
               : h.ticker
                 ? "No live market data available for this ticker — likely delisted, renamed, or unsupported by the current price source. We still track what they said."
                 : "Private company — no public price to score. We track what they said; valuation-mark tracking is on the roadmap."}
@@ -301,7 +301,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
                   <p className="mt-1 text-xs text-neutral-400">
                     {hasCall
                       ? "Click a call to see the price move since it aired."
-                      : "The price since they started discussing it. Click a mention to see where it stood — these are comments, not scored calls."}
+                      : "The price since they started discussing it. Click a mention to see where it stood — these are comments, not calls."}
                   </p>
                 </div>
                 <span className="text-[11px] text-neutral-500">

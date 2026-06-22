@@ -61,7 +61,7 @@ export default function EpisodesPage() {
           Episodes, week by week
         </h1>
         <p className="max-w-2xl text-neutral-500 dark:text-neutral-400">
-          {episodes.length} processed episodes · {withTakes} with scored calls. Click any episode
+          {episodes.length} processed episodes · {withTakes} with tracked calls. Click any episode
           for its scorecard.
         </p>
       </header>
