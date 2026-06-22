@@ -189,7 +189,7 @@ export function HoldingsTable({
                   {h.market && h.hasCall ? (
                     pct(h.market.returns.since)
                   ) : (
-                    <span className="text-neutral-400" title={h.market ? "Commentary only — no tracked call, so no return is shown." : undefined}>—</span>
+                    <span className="text-neutral-400" title={h.market ? "Commentary only — no call here, so no return is shown." : undefined}>—</span>
                   )}
                 </td>
                 <td className="hidden px-4 py-3 text-right lg:table-cell">
