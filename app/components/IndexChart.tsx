@@ -65,22 +65,31 @@ interface MarkerGroup {
   markers: PlottedTradeEvent[];
 }
 
+// Colour carries DIRECTION (the signal that matters): a long entry is emerald,
+// a short is rose, a closed position is muted. Drives the on-line dots.
 function eventColor(e: Pick<TradeEvent, "kind" | "direction">): string {
   if (e.kind === "out") return "#71717a";
-  if (e.kind === "reaffirm") return "#a3a3a3";
-  return "#d4d4d8";
+  return e.direction === "short" ? "#fb7185" : "#34d399";
 }
 
 function eventAction(e: Pick<TradeEvent, "kind" | "direction">): string {
   if (e.kind === "out") return "closed call";
   if (e.kind === "reaffirm") return "added to call";
-  return "opened call";
+  return e.direction === "short" ? "opened short" : "opened long";
 }
 
-function eventGlyph(e: Pick<TradeEvent, "kind" | "direction">): string {
-  if (e.kind === "out") return "×";
-  if (e.kind === "reaffirm") return "+";
-  return e.direction === "short" ? "▼" : "▲";
+// Trailing mark on a pill. A long entry is the default for this index, so it
+// stays clean; a short gets a rose tag so the rare contrarian bet pops; a
+// close/add reads as a muted ×/+.
+function EventMark({ e }: { e: Pick<TradeEvent, "kind" | "direction"> }) {
+  if (e.kind === "in") {
+    return e.direction === "short" ? (
+      <span className="rounded-sm bg-rose-500/15 px-1 py-px text-[8px] font-bold uppercase tracking-[0.08em] text-rose-300">
+        short
+      </span>
+    ) : null;
+  }
+  return <span className="font-mono text-[11px] text-neutral-500">{e.kind === "out" ? "×" : "+"}</span>;
 }
 
 /** Two-line cumulative-return chart: the index vs its benchmark, both from 0%. */
@@ -302,7 +311,7 @@ export function IndexChart({
                   />
                 </span>
                 <span className="font-mono">{first.ticker}</span>
-                <span className="font-mono text-neutral-400">{eventGlyph(first)}</span>
+                <EventMark e={first} />
               </>
             ) : (
               <>
@@ -351,7 +360,7 @@ export function IndexChart({
                   <CompanyLogo name={m.company} domain={m.domain} size="sm" className="h-[18px] w-[18px] rounded-full" />
                 </span>
                 <span className="font-mono">{m.ticker}</span>
-                <span className="font-mono text-neutral-400">{eventGlyph(m)}</span>
+                <EventMark e={m} />
               </button>
             ))}
           </div>

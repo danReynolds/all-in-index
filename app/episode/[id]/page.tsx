@@ -348,14 +348,6 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
                           </span>
                           <StanceBadge stance={t.stance} callType={t.callType} scored={isScoredPosition(t)} />
                           <ConvictionDots conviction={t.conviction} />
-                          {isPortfolioScored(t) && (
-                            <span
-                              className="rounded-full bg-emerald-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-300 ring-1 ring-inset ring-emerald-500/25"
-                              title="A clear in/out call, ranked pick, or investment selection — trades in the money simulations."
-                            >
-                              📌 tracked call
-                            </span>
-                          )}
                           {v && <VerdictPill tone={v.tone} firm={v.firm} label={v.label} />}
                         </div>
                         <p className="mt-2 text-sm leading-relaxed text-neutral-200">{t.summary}</p>

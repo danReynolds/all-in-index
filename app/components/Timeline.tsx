@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { fmtDate, mmss, SENTIMENT_META } from "@/lib/format";
-import { isPortfolioScored, isScoredPosition } from "@/lib/calls";
+import { isScoredPosition } from "@/lib/calls";
 import { ConvictionDots } from "@/app/components/badges";
 import { GuestName } from "@/app/components/GuestName";
 import { ListenButton } from "@/app/components/player";
@@ -18,7 +18,7 @@ const STANCE_HEX: Record<Stance, string> = {
 
 // On the timeline each take reads as SENTIMENT over time — positive / negative /
 // mixed / neutral — not as a scored position. (Bullish/Bearish/Commentary stay
-// for the scored index takes elsewhere; here the 📌 pill marks which ones score.)
+// for the scored index takes elsewhere, e.g. the chart's tinted markers.)
 function SentimentBadge({ stance }: { stance: Stance }) {
   const s = SENTIMENT_META[stance];
   return (
@@ -246,14 +246,6 @@ export function Timeline({
               {t.episodeNumber ? `E${t.episodeNumber}` : t.episodeId}
             </Link>
             <span>{fmtDate(t.episodeDate)}</span>
-            {isPortfolioScored(t) && (
-              <span
-                className="rounded-full bg-emerald-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-300 ring-1 ring-inset ring-emerald-500/25"
-                title="A clear in/out call, ranked pick, or investment selection — this take trades in the money simulations. Everything else is view/commentary."
-              >
-                📌 tracked call
-              </span>
-            )}
             {t.attributionConfidence === "low" && (
               <span
                 className="rounded bg-white/5 px-1.5 py-0.5 text-[10px] font-medium text-neutral-400 ring-1 ring-inset ring-white/10"
