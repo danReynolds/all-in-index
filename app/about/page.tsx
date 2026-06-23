@@ -40,7 +40,7 @@ export default function AboutPage() {
           identify the podcast this project covers; all trademarks belong to their respective owners. For
           the real thing, visit the{" "}
           <a
-            href="https://www.allinpodcast.co"
+            href="https://allin.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-emerald-400 hover:underline"
