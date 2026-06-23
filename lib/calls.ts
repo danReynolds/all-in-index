@@ -207,13 +207,21 @@ export function tradeDirectionForTake(t: Thesis): TradeDirection | null {
 }
 
 /**
- * A short position's P&L from the underlying's raw return: the inverse, floored
- * at −100% (you can't lose more than the position). The single source for this —
- * used everywhere a bear call's return is shown — so a winning short can never
- * render as a red loss (the bug this guards against).
+ * One position leg's P&L from the underlying's raw return, adjusted for
+ * direction and floored at a total loss: a long is the raw move; a short is its
+ * inverse, both capped at −100% — you can't lose more than the stake. The single
+ * source for short/long return math across the funds, the leaderboard, and every
+ * UI surface, so a short is scored identically everywhere (a winning short never
+ * renders as a red loss; a runaway short can never post a return past −100% or,
+ * compounded as a value factor, flip a position's sign).
  */
+export function directionalReturn(stockReturn: number, direction: TradeDirection): number {
+  return Math.max(direction === "long" ? stockReturn : -stockReturn, -1);
+}
+
+/** A short's P&L — the underlying's inverse, floored at −100%. */
 export function shortReturn(stockReturn: number): number {
-  return Math.max(-stockReturn, -1);
+  return directionalReturn(stockReturn, "short");
 }
 
 /**
