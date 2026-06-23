@@ -207,6 +207,16 @@ export function tradeDirectionForTake(t: Thesis): TradeDirection | null {
 }
 
 /**
+ * A short position's P&L from the underlying's raw return: the inverse, floored
+ * at −100% (you can't lose more than the position). The single source for this —
+ * used everywhere a bear call's return is shown — so a winning short can never
+ * render as a red loss (the bug this guards against).
+ */
+export function shortReturn(stockReturn: number): number {
+  return Math.max(-stockReturn, -1);
+}
+
+/**
  * Portfolio-scored calls (View ≠ Trade). Note: deliberately NOT gated on
  * conviction — "I have shares, I think it's a good investment" said calmly is
  * the clearest possible "I'm in"; selection/ranking language in an investment

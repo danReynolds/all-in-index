@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import { getIndex } from "@/lib/data";
 import { pct, returnColor, fmtDate } from "@/lib/format";
-import { holdingBadge } from "@/lib/calls";
+import { holdingBadge, shortReturn } from "@/lib/calls";
 import { StanceBadge, SampleBanner } from "@/app/components/badges";
 import { IndexChart } from "@/app/components/IndexChart";
 import { Leaderboard } from "@/app/components/Leaderboard";
@@ -41,7 +41,7 @@ export default function Home() {
   // shows its return (not "—" under a Bullish badge).
   for (const c of guesties?.constituents ?? []) callReturnByTicker.set(c.ticker.toUpperCase(), c.sinceReturn);
   for (const c of fund?.constituents ?? []) callReturnByTicker.set(c.ticker.toUpperCase(), c.sinceReturn);
-  for (const b of snapshot.bearBook ?? []) callReturnByTicker.set(b.ticker.toUpperCase(), Math.max(-b.sinceReturn, -1));
+  for (const b of snapshot.bearBook ?? []) callReturnByTicker.set(b.ticker.toUpperCase(), shortReturn(b.sinceReturn));
 
   return (
     <div className="space-y-10">
