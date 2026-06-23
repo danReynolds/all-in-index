@@ -51,6 +51,24 @@ jobs:
           npm run quality
           npm run build
 
+      # Guard against the silent-staleness failure mode: a sync that "succeeds"
+      # but never actually refreshed prices would commit nothing and stay green,
+      # leaving the site quietly stale. Fail loudly if the index as-of date is
+      # more than 5 days behind today (5d absorbs weekends/holidays when markets
+      # are closed, but a genuinely stuck cron shows up immediately).
+      - name: Guard against stale prices
+        run: |
+          node -e '
+            const s = require("./data/holdings.json");
+            const asOf = s.indexFund?.asOf ?? s.generatedAt;
+            const ageDays = (Date.now() - new Date(asOf).getTime()) / 86400000;
+            if (!(ageDays <= 5)) {
+              console.error(`::error::Index as-of ${asOf} is ${ageDays.toFixed(1)}d old — prices did not refresh.`);
+              process.exit(1);
+            }
+            console.log(`Prices fresh: index as-of ${asOf} (${ageDays.toFixed(1)}d old).`);
+          '
+
       - name: Commit updated data
         run: |
           git config user.name "all-in-index-bot"

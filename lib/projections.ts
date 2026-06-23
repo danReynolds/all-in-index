@@ -10,7 +10,7 @@
 
 import type { Holding, Thesis, Stance } from "./types";
 import type { StanceInput } from "./calls";
-import { holdingBadge, hasScoredCall, currentCall } from "./calls";
+import { holdingBadge, hasScoredCall, currentCall, shortReturn } from "./calls";
 
 /**
  * The slice of a Holding the homepage table renders: a few scalars plus the
@@ -48,7 +48,7 @@ function computeCallReturn(h: Holding, fundByTicker?: Map<string, number>): numb
   if (fromFund != null) return fromFund;
   const cc = currentCall(h);
   if (cc && cc.ret != null && (cc.stance === "bull" || cc.stance === "bear")) {
-    return cc.stance === "bear" ? Math.max(-cc.ret, -1) : cc.ret;
+    return cc.stance === "bear" ? shortReturn(cc.ret) : cc.ret;
   }
   return null;
 }

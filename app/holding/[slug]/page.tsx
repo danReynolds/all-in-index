@@ -3,7 +3,7 @@ import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import { getHolding, allSlugs, guestLinkMap } from "@/lib/data";
 import { pct, returnColor, fmtDate, fmtDuration, fmtMoney, daysBetween } from "@/lib/format";
-import { currentCall, scoredTakes, holdingBadge, hasScoredCall, isScoredPosition } from "@/lib/calls";
+import { currentCall, scoredTakes, holdingBadge, hasScoredCall, isScoredPosition, shortReturn } from "@/lib/calls";
 import { isMacroAsset, proxyAssetKind } from "@/lib/assets";
 import { isGoingPrivate } from "@/lib/tradability";
 import { StanceBadge, ConvictionDots, SampleBanner } from "@/app/components/badges";
@@ -213,7 +213,7 @@ export default async function HoldingPage({ params }: PageProps<"/holding/[slug]
               directional && indexPosition
                 ? { dir: "bull" as const, ret: indexPosition.sinceReturn, entryDate: indexPosition.entryDate, p0: indexPosition.entryPrice, p1: indexPosition.latestPrice }
                 : directional && bearPosition
-                  ? { dir: "bear" as const, ret: Math.max(-bearPosition.sinceReturn, -1), entryDate: bearPosition.entryDate, p0: bearPosition.basePrice, p1: bearPosition.latestPrice }
+                  ? { dir: "bear" as const, ret: shortReturn(bearPosition.sinceReturn), entryDate: bearPosition.entryDate, p0: bearPosition.basePrice, p1: bearPosition.latestPrice }
                   : directional && cc!.ret != null
                     ? { dir: cc!.stance, ret: cc!.stance === "bear" ? -cc!.ret : cc!.ret, entryDate: cc!.sinceDate, p0: null as number | null, p1: null as number | null }
                     : null;

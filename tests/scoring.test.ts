@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { currentStanceForHosts, hostExposureWindows, tradeDirectionForTake } from "../lib/calls";
+import { currentStanceForHosts, hostExposureWindows, tradeDirectionForTake, isScoredPosition, shortReturn } from "../lib/calls";
+import { toHoldingRow } from "../lib/projections";
 import { isMacroAsset, proxyAssetKind } from "../lib/assets";
 import { MAX_PUBLISHED_QUOTE_CHARS, trimPublishedQuote } from "../lib/quotes";
 import { auditTranscriptCandidates } from "../pipeline/take-candidate-audit";
@@ -91,6 +92,37 @@ test("a host who flips out of their long no longer holds it (no open long window
     thesis("Chamath", "bear", "2025-04-01T00:00:00.000Z", { callType: "explicit_short" }),
   ]);
   assert.equal(hasCurrentLong(h.theses, BESTIES), false);
+});
+
+test("a scored position requires an actual direction — a directionless pair leg is commentary", () => {
+  const d = "2025-01-01T00:00:00.000Z";
+  // The Figma bug: a pair-trade leg the extractor left "mixed" is call-shaped but
+  // opens no long/short, so it must NOT read as a scored position (no ghost).
+  assert.equal(isScoredPosition(thesis("Chamath", "mixed", d, { callType: "pair_trade" })), false);
+  // a neutral selection has no direction either
+  assert.equal(isScoredPosition(thesis("Jason", "neutral", d, { callType: "selection" })), false);
+  // an explicit long/short IS its direction, regardless of a neutral stance label
+  assert.equal(isScoredPosition(thesis("Sacks", "neutral", d, { callType: "explicit_long" })), true);
+  // a directional pick is scored
+  assert.equal(isScoredPosition(thesis("Friedberg", "bull", d, { callType: "selection" })), true);
+});
+
+test("a short's shown return is the inverse of the stock move, floored at -100%", () => {
+  assert.equal(shortReturn(-0.3), 0.3); // stock fell 30% -> short +30% (winning: must read green)
+  assert.equal(shortReturn(0.2), -0.2); // stock rose 20% -> short -20% (losing)
+  assert.equal(shortReturn(2), -1); // stock tripled -> short capped at -100%
+});
+
+test("a holding row's return is the scored call's P&L; commentary shows none", () => {
+  const d = "2025-01-01T00:00:00.000Z";
+  const fund = new Map([["EXM", 0.5]]); // the fund says +50% for EXM's open call
+  // a scored long takes the fund's (direction-adjusted) return
+  const longRow = toHoldingRow(holding([thesis("Chamath", "bull", d, { callType: "explicit_long" })]), fund);
+  assert.equal(longRow.callReturn, 0.5);
+  // commentary (a bare view) shows no return even if a stray fund entry exists
+  const viewRow = toHoldingRow(holding([thesis("Jason", "bull", d, { callType: "view" })]), fund);
+  assert.equal(viewRow.scored, false);
+  assert.equal(viewRow.callReturn, null);
 });
 
 test("published quotes are trimmed to a verbatim prefix", () => {
