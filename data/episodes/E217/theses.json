@@ -14,13 +14,13 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Chamath argues Stripe's ecosystem value is underappreciated — its hub-and-spoke model around payments generates significant ARR from adjacent products (e.g. $500M billing ARR), which likely explains its premium valuation over Adyen, and its stablecoin opportunity could be enormous given its scale.",
-    "quote": "the value of Stripe's ecosystem is, is probably underappreciated... the billing product. It's half a billion dollars a year of ARR. That's just incredible. And I think if they figure out network effects inside of the Stripe ecosystem, that'",
-    "quoteStartMs": 1319956,
+    "summary": "Chamath argues Stripe's ecosystem of ancillary products (e.g. billing at $500M ARR) is underappreciated and drives its valuation premium over Adyen, with stablecoin infrastructure as an additional growth lever.",
+    "quote": "the value of Stripe's ecosystem is probably underappreciated... they talk about all the additional products... one of them is the billing product. It's half a billion dollars a year of ARR. That's just incredible.",
+    "quoteStartMs": 1332988,
     "topics": [
-      "payments",
       "ecosystem",
-      "stablecoin",
+      "payments",
+      "stablecoins",
       "valuation"
     ],
     "attributionConfidence": "high"
@@ -40,13 +40,13 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Chamath notes Adyen has less of an ecosystem around its core payments business compared to Stripe, which likely accounts for the valuation gap between the two companies.",
+    "summary": "Chamath notes Adyen has less ecosystem development than Stripe, implying its lower valuation is justified, but makes no directional call on the stock itself.",
     "quote": "Adyen has less of that ecosystem, or at least it's not nearly as well described maybe as Stripe's is.",
     "quoteStartMs": 1366447,
     "topics": [
       "payments",
-      "valuation",
-      "competitive position"
+      "ecosystem",
+      "valuation"
     ],
     "attributionConfidence": "high"
   },
@@ -65,24 +65,24 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Chamath argues Salesforce and the broader enterprise software complex are facing harder renewal cycles as customers grow frustrated with legacy software spend and look to AI-driven alternatives, pressuring revenue.",
-    "quote": "you, you can see it with what's happening to Salesforce and other big companies is that these renewal cycles are getting harder and harder to justify.",
-    "quoteStartMs": 1512879,
+    "summary": "Chamath argues enterprise software renewal cycles are getting harder to justify, citing Salesforce as a prime example of the 'software industrial complex' under pressure from AI alternatives.",
+    "quote": "you can see it with what's happening to Salesforce and other big companies is that these renewal cycles are getting harder and harder to justify.",
+    "quoteStartMs": 1513199,
     "topics": [
       "enterprise software",
       "AI disruption",
-      "competitive threat"
+      "renewal cycles"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E217-magnificent-seven-mag-7-Chamath-3",
+    "id": "E217-magnificent-seven-Chamath-3",
     "episodeId": "E217",
     "episodeNumber": 217,
     "episodeDate": "2025-03-01T02:06:00.000Z",
-    "company": "Magnificent Seven / Mag 7",
+    "company": "Magnificent Seven",
     "ticker": null,
-    "isPublic": false,
+    "isPublic": true,
     "host": "Chamath",
     "stance": "bear",
     "conviction": "medium",
@@ -90,22 +90,72 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": "MAGS",
-    "summary": "Chamath argues the Mag 7 is priced to perfection at current forward P/E levels, making meaningful mean reversion likely if macro conditions deteriorate; he sees the stock market as expensive and unattractive on the margin.",
-    "quote": "Mag 7 is really priced to perfection. And so you have to believe that the world kind of stays the way that it is. Otherwise you're going to have some amount of mean reversion. So I think the stock market on the margin is a little expensive",
-    "quoteStartMs": 1945000,
+    "summary": "Chamath argues the Mag 7 is priced to perfection with elevated forward PEs, making it vulnerable to mean reversion, and that the market overall is a little expensive and not particularly attractive.",
+    "quote": "Mag 7 is really priced to perfection... you have to believe that the world kind of stays the way that it is. Otherwise you're going to have some amount of mean reversion.",
+    "quoteStartMs": 1946000,
     "topics": [
       "valuation",
-      "mean reversion",
-      "macro"
+      "Mag 7",
+      "mean reversion"
     ],
     "attributionConfidence": "low"
   },
   {
-    "id": "E217-s-p-500-index-Friedberg-4",
+    "id": "E217-us-treasury-bonds-10-year-Chamath-4",
     "episodeId": "E217",
     "episodeNumber": 217,
     "episodeDate": "2025-03-01T02:06:00.000Z",
-    "company": "S&P 500 Index",
+    "company": "US Treasury Bonds (10-year)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": "IEF",
+    "summary": "Chamath views the bond market's compression in the 10-year yield as meaningful and positive, suggesting rates could fall further under 4% if fiscal data cooperates, which benefits the US refinancing effort.",
+    "quote": "the bond market has basically said, okay, we are going to give you credit that Doge is going to work... you could see this thing maybe even get under 4% if we get a good string of data.",
+    "quoteStartMs": 1963051,
+    "topics": [
+      "rates",
+      "fiscal policy",
+      "bonds"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E217-us-treasury-bonds-10-year-Friedberg-5",
+    "episodeId": "E217",
+    "episodeNumber": 217,
+    "episodeDate": "2025-03-01T02:06:00.000Z",
+    "company": "US Treasury Bonds (10-year)",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "low",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": "IEF",
+    "summary": "Friedberg notes the 10-year yield has dropped half a point in the last month, reading it as a signal that markets do not expect rampant inflation from current policy — generally a bullish sign for bonds.",
+    "quote": "the 10-year was— it peaked at 5% two weeks before the election... Now it's down to 4.26% today... it's actually a reasonable, like, sign that we don't think there's going to be rampant inflation over the next decade.",
+    "quoteStartMs": 2460210,
+    "topics": [
+      "rates",
+      "inflation",
+      "bonds"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E217-s-p-500-index-broad-equities-Friedberg-6",
+    "episodeId": "E217",
+    "episodeNumber": 217,
+    "episodeDate": "2025-03-01T02:06:00.000Z",
+    "company": "S&P 500 Index (broad equities)",
     "ticker": null,
     "isPublic": false,
     "host": "Friedberg",
@@ -113,15 +163,40 @@
     "conviction": "medium",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": "Not scored: Friedberg's 'they should buy the S&P' is advice directed at unsophisticated retail investors in a normative debate — not the host's own position or a ranked pick answering a best-asset prompt; the callType explicit_long requires the host claiming their own position/trade, which is absent here.",
-    "sectorProxy": "QQQ",
-    "summary": "Friedberg recommends retail/non-sophisticated investors buy the S&P index rather than private companies — describing it as proven, audited, profitable and well-vetted — implying it is the right equity vehicle for most people.",
-    "quote": "They should buy the S&P. They should buy the S&P index. Proven, scaled, audited, profitable, well-vetted, solid fiduciary responsibility with public board companies.",
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Friedberg argues retail investors are better served buying the S&P 500 index — vetted, audited, profitable public companies — rather than speculating in private markets.",
+    "quote": "they should buy the S&P. They should buy the S&P index. Proven, scaled, audited, profitable, well-vetted, solid fiduciary responsibility with public board companies.",
     "quoteStartMs": 3469298,
     "topics": [
-      "index investing",
-      "retail investors",
-      "asset allocation"
+      "retail investing",
+      "index funds",
+      "S&P 500"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E217-figure-Chamath-7",
+    "episodeId": "E217",
+    "episodeNumber": 217,
+    "episodeDate": "2025-03-01T02:06:00.000Z",
+    "company": "Figure",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "bull",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Chamath highlights Figure's accelerated home-robot timeline and its breakthrough multi-robot semantic collaboration demo as evidence of meaningful progress, while noting actuator dexterity and AI model maturity remain limiting factors for a couple more years.",
+    "quote": "the two robots basically figuring out how to communicate semantically between the robots, and that's incredibly powerful. And it's yet another sort of breakthrough that we need.",
+    "quoteStartMs": 1015256,
+    "topics": [
+      "humanoid robots",
+      "AI",
+      "autonomy"
     ],
     "attributionConfidence": "high"
   }

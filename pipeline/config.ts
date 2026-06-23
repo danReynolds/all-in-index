@@ -11,6 +11,10 @@ loadEnv({ path: path.resolve(process.cwd(), ".env"), quiet: true, override: true
 export const ROOT = process.cwd();
 export const DATA_DIR = path.join(ROOT, "data");
 export const EPISODES_DIR = path.join(DATA_DIR, "episodes");
+/** Persistent daily-price cache (one file per Yahoo symbol). Lets a rebuild run
+ *  "price-frozen" — re-aggregating from cached prices without re-fetching, so a
+ *  content-only fix doesn't churn every number. Seeded by any normal build. */
+export const PRICES_DIR = path.join(DATA_DIR, "prices");
 export const HOLDINGS_FILE = path.join(DATA_DIR, "holdings.json");
 export const SAMPLE_HOLDINGS_FILE = path.join(DATA_DIR, "sample", "holdings.json");
 

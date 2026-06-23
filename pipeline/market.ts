@@ -1,4 +1,7 @@
+import fs from "node:fs";
+import path from "node:path";
 import { toYahooSymbol } from "./entities";
+import { PRICES_DIR } from "./config";
 import type { MarketData, ReturnSet } from "../lib/types";
 
 /** Daily close history as [isoDate, close], oldest first. */
@@ -29,6 +32,60 @@ interface YahooChartResponse {
 // times per build; one fetch per (ticker, sufficient range) is plenty.
 const histCache = new Map<string, { from: string; result: HistoryResult }>();
 
+// Frozen mode: serve prices from the on-disk cache and never hit the network, so
+// a content-only re-extract + rebuild leaves every price (and everything derived
+// from it) byte-identical. A normal build leaves this off and refreshes prices,
+// re-seeding the cache as it goes.
+let FROZEN = false;
+export function setPriceMode(opts: { frozen: boolean }) {
+  FROZEN = opts.frozen;
+}
+
+function priceCacheFile(cacheKey: string): string {
+  return path.join(PRICES_DIR, `${cacheKey.replace(/[^A-Za-z0-9._^-]/g, "_")}.json`);
+}
+
+function readPriceCache(cacheKey: string): HistoryResult | null {
+  try {
+    const d = JSON.parse(fs.readFileSync(priceCacheFile(cacheKey), "utf8")) as {
+      sourceSymbol?: string;
+      currency: string | null;
+      history: History;
+    };
+    return d.history?.length
+      ? { history: d.history, sourceSymbol: d.sourceSymbol ?? cacheKey, currency: d.currency }
+      : null;
+  } catch {
+    return null;
+  }
+}
+
+function writePriceCache(cacheKey: string, result: HistoryResult) {
+  try {
+    fs.mkdirSync(PRICES_DIR, { recursive: true });
+    // Merge with any prior cache so the longest-coverage history wins — the
+    // benchmark is fetched over many windows and we want the widest one on disk.
+    const prior = readPriceCache(cacheKey);
+    let history = result.history;
+    if (prior?.history.length) {
+      const merged = new Map(prior.history);
+      for (const [date, close] of result.history) merged.set(date, close); // fresher closes win
+      history = [...merged.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+    }
+    fs.writeFileSync(
+      priceCacheFile(cacheKey),
+      JSON.stringify({
+        sourceSymbol: result.sourceSymbol,
+        currency: result.currency,
+        asOf: new Date().toISOString().slice(0, 10),
+        history,
+      }) + "\n",
+    );
+  } catch {
+    // Caching is best-effort; a write failure must never break a build.
+  }
+}
+
 /**
  * Yahoo Finance's chart endpoint is free and key-less. We fetch from a little
  * before the anchor date through today so backfilling old episodes only pulls
@@ -50,8 +107,20 @@ async function fetchDailyHistoryResult(
   const want = (fromIso ?? "1990-01-01").slice(0, 10);
   const cached = histCache.get(cacheKey);
   if (cached && cached.from <= want) return cached.result;
+
+  if (FROZEN) {
+    // Disk only — never fetch. A missing symbol degrades to null (same as a
+    // failed fetch / a private name), keeping frozen rebuilds deterministic.
+    const disk = readPriceCache(cacheKey);
+    if (disk) histCache.set(cacheKey, { from: disk.history[0]?.[0] ?? "1990-01-01", result: disk });
+    return disk;
+  }
+
   const fresh = await fetchDailyHistoryUncached(ticker, fromIso);
-  if (fresh) histCache.set(cacheKey, { from: want, result: fresh });
+  if (fresh) {
+    writePriceCache(cacheKey, fresh);
+    histCache.set(cacheKey, { from: want, result: fresh });
+  }
   return fresh;
 }
 

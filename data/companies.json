@@ -1326,5 +1326,45 @@
   "new-mag-7-future-leaders-basket": {
     "description": "A thematic basket grouping emerging large-cap technology and growth companies considered potential future market leaders.",
     "domain": null
+  },
+  "s-p-500-broad-equities-levered-long": {
+    "description": "Leveraged long exposure to the S&P 500 index, amplifying broad U.S. equity market returns.",
+    "domain": null
+  },
+  "broad-equity-market-s-p-500": {
+    "description": "Represents broad U.S. equity market exposure tracking the S&P 500 index of large-cap stocks.",
+    "domain": null
+  },
+  "broad-equity-market-mag-7-vs-s-p-493": {
+    "description": "Tracks relative performance between the Magnificent Seven mega-cap stocks and the remaining S&P 493 companies.",
+    "domain": null
+  },
+  "magnificent-seven-megacap-tech-basket": {
+    "description": "Basket of seven dominant mega-cap technology and growth companies driving U.S. equity market returns.",
+    "domain": null
+  },
+  "us-treasuries-long-duration-bonds": {
+    "description": "Long-duration U.S. government Treasury bonds, reflecting interest rate sensitivity and sovereign debt exposure.",
+    "domain": null
+  },
+  "us-treasury-bonds-10-year": {
+    "description": "U.S. government-issued 10-year Treasury bonds serving as a benchmark for interest rates and fixed income.",
+    "domain": null
+  },
+  "s-p-500-index-broad-equities": {
+    "description": "Index tracking 500 large-cap U.S. publicly traded companies across major sectors of the economy.",
+    "domain": null
+  },
+  "us-equities-broad": {
+    "description": "Broad basket of U.S.-listed equities representing diversified exposure across sectors and market capitalizations.",
+    "domain": null
+  },
+  "magnificent-seven-mega-cap-ai-stocks": {
+    "description": "Seven leading mega-cap technology companies at the forefront of artificial intelligence development and investment.",
+    "domain": null
+  },
+  "ai-infrastructure-hyperscaler-capex-basket": {
+    "description": "Basket of companies benefiting from AI infrastructure buildout and large-scale hyperscaler capital expenditure spending.",
+    "domain": null
   }
 }

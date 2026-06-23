@@ -71,7 +71,15 @@ async function main() {
     case "run":
       return cmdRun(rest);
     case "build-index": {
+      // --frozen: re-aggregate from the on-disk price cache without re-fetching,
+      // so a content-only change (e.g. a targeted reextract) doesn't churn every
+      // number. The cache is seeded by any normal (non-frozen) build.
       const { buildIndex } = await import("./build-index");
+      if (rest.includes("--frozen")) {
+        const { setPriceMode } = await import("./market");
+        setPriceMode({ frozen: true });
+        console.log("Price mode: FROZEN — reading data/prices/, no network fetch.");
+      }
       return buildIndex();
     }
     case "quality": {
@@ -126,6 +134,11 @@ async function main() {
       const { nameGuests } = await import("./name-guests");
       const { buildIndex } = await import("./build-index");
       const fs = await import("node:fs");
+      if (rest.includes("--frozen")) {
+        const { setPriceMode } = await import("./market");
+        setPriceMode({ frozen: true });
+        console.log("Price mode: FROZEN — reading data/prices/, no network fetch.");
+      }
       const failed = await reextractAll(5);
       fs.writeFileSync("data/.reextract-pending.json", JSON.stringify(failed, null, 2) + "\n");
       if (failed.length) {
@@ -271,8 +284,8 @@ async function main() {
           "  market <TICKER> <YYYY-MM-DD>          test market data\n" +
           "  run [--latest|--number N|--id E274]   process one episode end-to-end\n" +
           "  sync [--limit N] [--include-interviews]  process new episodes + rebuild index\n" +
-          "  build-index                           re-aggregate processed episodes\n" +
-          "  rebuild-all                           reextract → extract-assets → name-guests → build-index\n" +
+          "  build-index [--frozen]                re-aggregate processed episodes (--frozen: use cached prices, no fetch)\n" +
+          "  rebuild-all [--frozen]                reextract → extract-assets → name-guests → build-index\n" +
           "  reextract --only E209,E257            re-run company extractor for specific cached episodes\n" +
           "  audit-candidates [--all] [--fail-on-review] find high-signal transcript picks needing review\n" +
           "  quality                               validate generated data invariants",

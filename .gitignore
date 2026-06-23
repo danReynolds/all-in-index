@@ -51,3 +51,6 @@ data/**/transcript.json
 # local agent tooling + pipeline state
 .claude/
 data/.reextract-pending.json
+
+# Local daily-price cache for --frozen rebuilds (seeded per-machine)
+data/prices/
