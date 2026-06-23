@@ -116,7 +116,7 @@ function Hero({ fund }: { fund: IndexFund }) {
               since {fmtDate(fund.inceptionDate)}
             </div>
             <div className="rise mt-1 text-xs text-neutral-500" style={d(220)}>
-              {wins} of {fund.constituents.length} beat the S&amp;P — a few big winners carry the average.
+              {wins} of {fund.constituents.length}{" "}beat the S&amp;P — a few big winners carry the average.
             </div>
             <p className="rise mt-4 max-w-md text-sm leading-relaxed text-neutral-400" style={d(280)}>
               If you&apos;d put {dollars(fund.contributionPerCall)} into each of{" "}
