@@ -121,9 +121,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 Theses are extracted from publicly available episodes; short excerpts are quoted
                 with attribution and link back to the source. Market data via Yahoo Finance.
               </p>
-              <p>
-                <Link href="/about" className="text-neutral-400 hover:text-neutral-200 hover:underline">
-                  About &amp; full disclaimer
+              <p className="pt-1">
+                <Link
+                  href="/about"
+                  className="group/about inline-flex items-center gap-1 font-medium text-neutral-300 underline decoration-neutral-600 underline-offset-4 transition hover:text-white hover:decoration-neutral-300"
+                >
+                  Read the full disclaimer
+                  <span aria-hidden className="transition-transform group-hover/about:translate-x-0.5">→</span>
                 </Link>
               </p>
             </div>
