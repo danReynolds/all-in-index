@@ -8,6 +8,8 @@ import { fmtDate } from "@/lib/format";
 import { StanceBadge } from "@/app/components/badges";
 import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { ListenButton } from "@/app/components/player";
+import { sectorProxyInfo } from "@/lib/proxies";
+import { proxyAssetKind } from "@/lib/assets";
 
 const fadeAt = (s: number) => ({ "--d": `${s}s` }) as CSSProperties;
 
@@ -198,6 +200,16 @@ export function IndexChart({
     : null;
   const selectedStats = selected ? positionStats[selected.slug] : null;
 
+  // For a proxied basket/commodity/sector call, the ticker is an ETF stand-in,
+  // not the thing itself — so we name what it is and why we chose it, rather
+  // than leaving a bare ticker the reader can't decode.
+  const proxyKind = selected ? proxyAssetKind(selected.ticker) : null;
+  const proxyInfo = selected ? sectorProxyInfo(selected.ticker) : null;
+  const isProxy = proxyKind != null;
+  const proxyLabel =
+    proxyInfo?.name ??
+    (proxyKind === "crypto" ? "Crypto ETF proxy" : proxyKind === "commodity" ? "Commodity ETF proxy" : "Sector ETF proxy");
+
   return (
     <div>
     <div className="relative">
@@ -371,7 +383,7 @@ export function IndexChart({
           <Link href={`/holding/${selected.slug}`} className="font-semibold text-neutral-100 hover:underline">
             {selected.company}
           </Link>
-          <span className="font-mono text-[11px] text-neutral-500">{selected.ticker}</span>
+          {!isProxy && <span className="font-mono text-[11px] text-neutral-500">{selected.ticker}</span>}
           {selected.take && (
             <StanceBadge
               stance={selected.take.stance}
@@ -421,6 +433,42 @@ export function IndexChart({
           </p>
         )}
 
+        {/* Proxied call: the ticker is an ETF stand-in, so name it and explain
+            the pick + its limits up front (progressive-disclosure, no overlay). */}
+        {isProxy && (
+          <details
+            key={selected.id}
+            className="group/px mt-3 rounded-lg border border-white/10 bg-white/[0.02] px-3 py-2 open:bg-white/[0.035] [&_summary::-webkit-details-marker]:hidden"
+          >
+            <summary className="flex cursor-pointer list-none items-center gap-2 text-xs">
+              <span className="rounded bg-white/10 px-1.5 py-0.5 font-mono text-[10px] text-neutral-300">{selected.ticker}</span>
+              <span className="min-w-0 flex-1 truncate text-neutral-300">{proxyLabel}</span>
+              <span className="inline-flex shrink-0 items-center gap-1 whitespace-nowrap text-neutral-500 transition group-hover/px:text-neutral-300">
+                Why this proxy?
+                <svg viewBox="0 0 10 6" className="h-1.5 w-2.5 fill-none stroke-current transition-transform group-open/px:rotate-180" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <path d="M1 1l4 4 4-4" />
+                </svg>
+              </span>
+            </summary>
+            <p className="mt-2 border-t border-white/5 pt-2 text-[11px] leading-relaxed text-neutral-400">
+              {proxyInfo ? (
+                <>
+                  <span className="text-neutral-300">{selected.company}</span> isn&apos;t a single stock, so it&apos;s scored against{" "}
+                  <span className="font-mono text-neutral-300">{selected.ticker}</span>. {proxyInfo.what}{" "}It&apos;s only an approximation — the
+                  ETF holds names they never mentioned and the theme can move differently, so read it as a directional gut-check, not a precise
+                  scorecard.
+                </>
+              ) : (
+                <>
+                  <span className="text-neutral-300">{selected.company}</span> is a {proxyKind}, not a company, so it&apos;s priced via the{" "}
+                  <span className="font-mono text-neutral-300">{selected.ticker}</span> ETF — a clean, liquid stand-in that lets the call be
+                  tracked. The proxy can drift from the underlying.
+                </>
+              )}
+            </p>
+          </details>
+        )}
+
         {/* What the call DID: this name's windowed performance and its exact
             share of the headline number (equal weight ⇒ return ÷ N). */}
         {(() => {
@@ -449,10 +497,14 @@ export function IndexChart({
             <div className="mt-4 rounded-lg bg-neutral-950/35 p-3 ring-1 ring-white/5">
               <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
                 <div className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
-                  Selected company performance
+                  {isProxy ? `How ${selected.ticker} tracked this call` : "Selected company performance"}
                 </div>
-                <Link href={`/holding/${selected.slug}`} className="text-xs text-neutral-400 hover:text-neutral-100 hover:underline">
-                  Open holding
+                <Link
+                  href={`/holding/${selected.slug}`}
+                  className="group/full inline-flex items-center gap-1 text-xs text-neutral-400 transition hover:text-neutral-100"
+                >
+                  Full history
+                  <span aria-hidden className="transition-transform group-hover/full:translate-x-0.5">→</span>
                 </Link>
               </div>
               <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
