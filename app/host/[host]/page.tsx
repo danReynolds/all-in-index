@@ -4,17 +4,16 @@ import { notFound } from "next/navigation";
 import { getIndex } from "@/lib/data";
 import { pct, returnColor, fmtDate } from "@/lib/format";
 import { HostAvatar } from "@/app/components/host";
-import { CompanyLogo } from "@/app/components/CompanyLogo";
 import { StanceBadge } from "@/app/components/badges";
 import { IndexChart, type TradeEvent, type PositionStat } from "@/app/components/IndexChart";
-import { toEventTake } from "@/lib/projections";
+import { PositionsTable, type PositionRow } from "@/app/components/PositionsTable";
+import { toEventTake, type TradeEventTake } from "@/lib/projections";
 import { Explainer } from "@/app/components/Explainer";
 import { Reveal } from "@/app/components/Reveal";
 import { ListenButton } from "@/app/components/player";
 import { BackLink } from "@/app/components/BackLink";
 import { hostExposureWindows, currentStanceForHosts, isScoredPosition } from "@/lib/calls";
 import { HostCompanies, type HostCompanyRow } from "@/app/components/HostCompanies";
-import { LinkRow } from "@/app/components/LinkRow";
 import { HOST_UI, RANK_MEDAL } from "@/lib/hosts";
 import { HOST_PROFILES, REGULAR_HOSTS } from "@/lib/types";
 import type { Host, Thesis } from "@/lib/types";
@@ -80,12 +79,16 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
   // deep-links to *that* take (not the latest) on the company timeline.
   const tradeEvents: TradeEvent[] = [];
   const entryTakeBySlug: Record<string, string> = {};
+  const entryEventTakeBySlug: Record<string, TradeEventTake | null> = {};
   if (fund) {
     for (const c of fund.constituents) {
       const holding = snapshot.holdings.find((x) => x.slug === c.slug);
       if (!holding) continue;
       for (const w of hostExposureWindows(holding.theses, host)) {
-        if (w.end === null && w.startTake) entryTakeBySlug[c.slug] = w.startTake.id;
+        if (w.end === null && w.startTake) {
+          entryTakeBySlug[c.slug] = w.startTake.id;
+          entryEventTakeBySlug[c.slug] = toEventTake(w.startTake);
+        }
         tradeEvents.push({
           date: w.start,
           ticker: c.ticker,
@@ -188,6 +191,25 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
     })
     .sort((a, b) => b.lastDate.localeCompare(a.lastDate));
 
+  // Scored positions for the expandable table — each row carries its entry call
+  // + windowed performance so it can reveal the same receipt the chart does, and
+  // deep-links to this host's take timeline on the holding when expanded.
+  const fundRows: PositionRow[] = (fund?.constituents ?? []).map((c) => {
+    const callId = entryTakeBySlug[c.slug];
+    return {
+      slug: c.slug,
+      company: c.company,
+      ticker: c.ticker,
+      domain: domainOf.get(c.slug) ?? null,
+      entryDate: c.entryDate,
+      sinceReturn: c.sinceReturn,
+      alpha: c.alpha,
+      take: entryEventTakeBySlug[c.slug] ?? null,
+      stats: positionStats[c.slug] ?? null,
+      href: `/holding/${c.slug}${callId ? `?call=${callId}` : ""}#takes-${host.toLowerCase()}`,
+    };
+  });
+
   return (
     <div className="space-y-10">
       <BackLink href="/">Home</BackLink>
@@ -248,45 +270,12 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
             portfolioReturn={fund.portfolioReturn}
           />
 
-          <div className="mt-6 overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead className="border-b border-neutral-200 text-left text-xs uppercase tracking-wide text-neutral-500 dark:border-neutral-800">
-                <tr>
-                  <th className="py-2 pr-4 font-medium">Call</th>
-                  <th className="hidden py-2 pr-4 font-medium sm:table-cell">Entry</th>
-                  <th className="py-2 pr-4 text-right font-medium">Return</th>
-                  <th className="py-2 text-right font-medium">Alpha</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/70">
-                {fund.constituents.map((c) => {
-                  const callId = entryTakeBySlug[c.slug];
-                  const href = `/holding/${c.slug}${callId ? `?call=${callId}` : ""}#takes-${host.toLowerCase()}`;
-                  return (
-                  <LinkRow key={c.slug} href={href} className="group transition-colors hover:bg-white/[0.025]">
-                    <td className="py-2.5 pr-4">
-                      <Link href={href} className="flex items-center gap-2 font-medium group-hover:underline">
-                        <CompanyLogo name={c.company} domain={domainOf.get(c.slug)} size="sm" />
-                        {c.company}
-                        <span className="font-mono text-xs text-neutral-400">{c.ticker}</span>
-                      </Link>
-                    </td>
-                    <td className="hidden py-2.5 pr-4 text-neutral-500 sm:table-cell">
-                      {fmtDate(c.entryDate)}
-                    </td>
-                    <td className={`py-2.5 pr-4 text-right font-mono tabular-nums ${returnColor(c.sinceReturn)}`}>
-                      {pct(c.sinceReturn)}
-                    </td>
-                    <td className={`py-2.5 text-right font-mono font-semibold tabular-nums ${returnColor(c.alpha)}`}>
-                      {c.alpha >= 0 ? "+" : ""}
-                      {(c.alpha * 100).toFixed(1)}pp
-                    </td>
-                  </LinkRow>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
+          <PositionsTable
+            rows={fundRows}
+            episodes={episodes}
+            episodeLinks={episodeLinks}
+            portfolioReturn={fund.portfolioReturn}
+          />
         </section>
       )}
 
