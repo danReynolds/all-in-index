@@ -56,10 +56,16 @@ export const SECTOR_PROXIES: ProxyInfo[] = [
     what: "US aerospace and defense primes and suppliers — Boeing, Lockheed, RTX and peers.",
   },
   {
+    ticker: "DBC",
+    name: "Invesco DB Commodity Index Tracking Fund",
+    note: "broad commodities ETF",
+    what: "A diversified basket of the major commodity futures — energy, industrial and precious metals, and agriculture. The catch-all for a generic “I’m long commodities / commodities are under-owned” basket call that doesn’t name a specific commodity.",
+  },
+  {
     ticker: "REMX",
     name: "VanEck Rare Earth & Strategic Metals ETF",
     note: "rare-earth & strategic-metals ETF",
-    what: "Miners and processors of rare-earth and strategic/critical metals used in batteries, magnets and electronics.",
+    what: "Miners and processors of rare-earth and strategic/critical metals (lithium, neodymium, etc.) used in batteries, magnets and electronics. ONLY for a call specifically about rare earths / strategic metals / critical minerals — NOT for a generic “long commodities” basket (use DBC for that).",
   },
   {
     ticker: "IPO",

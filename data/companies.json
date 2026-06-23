@@ -1366,5 +1366,9 @@
   "ai-infrastructure-hyperscaler-capex-basket": {
     "description": "Basket of companies benefiting from AI infrastructure buildout and large-scale hyperscaler capital expenditure spending.",
     "domain": null
+  },
+  "dbc": {
+    "description": "Exchange-traded fund tracking a diversified basket of commodity futures across energy, metals, and agriculture.",
+    "domain": "invesco.com"
   }
 }
