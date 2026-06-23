@@ -12,21 +12,38 @@ import fs from "node:fs";
 const [beforePath, afterPath, outMd = "scored-change.md"] = process.argv.slice(2);
 const load = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 
-/** The scored SET each fund holds — tickers only, so a price move doesn't count. */
-const membership = (s) => ({
-  "Besties Index": (s.indexFund?.constituents ?? []).map((c) => c.ticker).sort(),
-  "Bear Book": (s.bearBook ?? []).map((b) => b.ticker).sort(),
-  "Guesties Index": (s.guestiesFund?.constituents ?? []).map((c) => c.ticker).sort(),
-});
+/**
+ * The scored SET behind every reviewable surface — tickers only, so a price move
+ * doesn't count. Covers the index/bear book/guesties AND the per-host funds and
+ * per-guest scorecards: a host opening a call on a name already in the index, or
+ * a guest's first scored call, is a scored change that must route to review even
+ * though the headline ticker-sets don't move.
+ */
+const membership = (s) => {
+  const sets = {
+    "Besties Index": (s.indexFund?.constituents ?? []).map((c) => c.ticker).sort(),
+    "Bear Book": (s.bearBook ?? []).map((b) => b.ticker).sort(),
+    "Guesties Index": (s.guestiesFund?.constituents ?? []).map((c) => c.ticker).sort(),
+  };
+  for (const [host, f] of Object.entries(s.hostFunds ?? {})) {
+    sets[`${host}'s calls`] = (f.constituents ?? []).map((c) => c.ticker).sort();
+  }
+  sets["Guest scorecards"] = (s.guestLeaderboard ?? [])
+    .flatMap((g) => (g.picks ?? []).map((p) => `${g.guest ?? g.slug}:${p.ticker}`))
+    .sort();
+  return sets;
+};
 
 const before = membership(load(beforePath));
 const after = membership(load(afterPath));
 
 let changed = false;
 const lines = [];
-for (const fund of Object.keys(after)) {
-  const added = after[fund].filter((t) => !before[fund].includes(t));
-  const dropped = before[fund].filter((t) => !after[fund].includes(t));
+for (const fund of new Set([...Object.keys(before), ...Object.keys(after)])) {
+  const a = after[fund] ?? [];
+  const b = before[fund] ?? [];
+  const added = a.filter((t) => !b.includes(t));
+  const dropped = b.filter((t) => !a.includes(t));
   if (added.length || dropped.length) {
     changed = true;
     const parts = [];

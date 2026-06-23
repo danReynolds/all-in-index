@@ -41,11 +41,15 @@ interface Props {
 export interface PositionStat {
   /** The name's return over this host's call windows. */
   ret: number;
-  /** S&P over the identical windows. */
+  /** S&P over the identical windows, IN THE SAME DIRECTION (a short is scored
+   * against shorting the S&P) — so the benchmark tile must label itself by
+   * `direction`, not as a bald "what the S&P did". */
   bench: number;
   alpha: number;
   /** Exact share of the portfolio's return (equal-weight: ret / N). */
   contribPp: number;
+  /** Long vs short — drives the direction-aware benchmark label in the receipt. */
+  direction?: "long" | "short";
 }
 
 interface PlottedTradeEvent extends TradeEvent {

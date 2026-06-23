@@ -73,8 +73,11 @@ export function toHoldingRow(h: Holding, callReturnByTicker?: Map<string, number
     scored: badge.scored,
     hasCall: hasScoredCall(h.theses),
     // Only a scored position (Bullish/Bearish badge) gets a return — commentary,
-    // even when it leans directionally, shows "—" so the number agrees with the badge.
-    callReturn: badge.scored ? computeCallReturn(h, callReturnByTicker) : null,
+    // even when it leans directionally, shows "—" so the number agrees with the
+    // badge. A "mixed" name (held long by one bestie AND short by another) has no
+    // single P&L either — show "—" rather than letting one leg's return (whichever
+    // map-pass wrote last) stand in for both and read as a misleading loss.
+    callReturn: badge.scored && badge.stance !== "mixed" ? computeCallReturn(h, callReturnByTicker) : null,
     theses: h.theses.map((t) => ({
       host: t.host,
       stance: t.stance,

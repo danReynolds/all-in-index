@@ -178,8 +178,13 @@ export function CallReceipt({
           </div>
           <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
             {tile(`${ticker} call return`, pct(stats.ret), stats.ret, "since this call")}
-            {tile("S&P, same dates", pct(stats.bench), stats.bench, "what the S&P did")}
-            {tile("Alpha", pp(stats.alpha), stats.alpha, "beat the S&P by")}
+            {/* For a short the benchmark is the SAME bet on the S&P (shorting it),
+                not "what the S&P did" — labeling it that way would invert the
+                index's actual move (a short's bench is the negated S&P). */}
+            {stats.direction === "short"
+              ? tile("S&P, shorted", pct(stats.bench), stats.bench, "the same bet, same dates")
+              : tile("S&P, same dates", pct(stats.bench), stats.bench, "what the S&P did")}
+            {tile("Alpha", pp(stats.alpha), stats.alpha, stats.direction === "short" ? "vs shorting the S&P" : "beat the S&P by")}
             {portfolioReturn != null &&
               tile("Share of the total", pp(stats.contribPp), stats.contribPp, `of ${pct(portfolioReturn)} overall`)}
           </div>

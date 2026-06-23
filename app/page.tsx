@@ -85,6 +85,9 @@ export default function Home() {
 function Hero({ fund }: { fund: IndexFund }) {
   const dollars = (n: number) => "$" + Math.round(n).toLocaleString();
   const wins = fund.constituents.filter((c) => c.alpha > 0).length;
+  // "Best call" = the biggest winner by return. Constituents are sorted by ALPHA,
+  // so [0] isn't necessarily the top return — pick it explicitly.
+  const best = fund.constituents.reduce((a, c) => (c.sinceReturn > a.sinceReturn ? c : a), fund.constituents[0]);
   return (
     <section className="relative overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-950 p-6 text-white sm:p-9">
       <div
@@ -134,13 +137,13 @@ function Hero({ fund }: { fund: IndexFund }) {
               >
                 Explore the index <span className="arrow-nudge">→</span>
               </Link>
-              {fund.constituents[0] && (
+              {best && (
                 <Link
-                  href={`/holding/${fund.constituents[0].slug}`}
+                  href={`/holding/${best.slug}`}
                   className="rounded-full border border-neutral-700 px-4 py-2 text-sm text-neutral-300 transition-colors hover:border-neutral-500 hover:text-white"
                 >
-                  Best call: {fund.constituents[0].company}{" "}
-                  <span className="text-emerald-400">{pct(fund.constituents[0].sinceReturn)}</span>{" "}
+                  Best call: {best.company}{" "}
+                  <span className="text-emerald-400">{pct(best.sinceReturn)}</span>{" "}
                   <span className="arrow-nudge">→</span>
                 </Link>
               )}
