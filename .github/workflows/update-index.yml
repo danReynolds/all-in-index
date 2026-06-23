@@ -17,6 +17,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: update-index
@@ -44,7 +45,11 @@ jobs:
         env:
           ASSEMBLYAI_API_KEY: ${{ secrets.ASSEMBLYAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: npm run pipeline sync -- --limit "${{ github.event.inputs.limit || '2' }}"
+        run: |
+          # Snapshot the live scored set first, so we can tell a membership
+          # change from a pure price refresh after the rebuild.
+          git show HEAD:data/holdings.json > /tmp/holdings-before.json
+          npm run pipeline sync -- --limit "${{ github.event.inputs.limit || '2' }}"
 
       - name: Validate generated site
         run: |
@@ -69,14 +74,36 @@ jobs:
             console.log(`Prices fresh: index as-of ${asOf} (${ageDays.toFixed(1)}d old).`);
           '
 
-      - name: Commit updated data
+      # Price/return refreshes auto-deploy to main. But a run that changes WHAT we
+      # score — adds a new call, flips a name, drops a position — routes to a
+      # review PR instead, so an index-moving extraction gets a human glance
+      # before it goes live. The audit was a snapshot; this keeps it honest.
+      - name: Commit (auto-push price-only, PR on scored changes)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "all-in-index-bot"
           git config user.email "bot@users.noreply.github.com"
           git add data/
           if git diff --staged --quiet; then
-            echo "No data changes."
-          else
-            git commit -m "chore: update index ($(date -u +%Y-%m-%dT%H:%MZ))"
+            echo "No data changes."; exit 0
+          fi
+          KIND=$(node scripts/scored-set-changed.mjs /tmp/holdings-before.json data/holdings.json scored-change.md)
+          STAMP=$(date -u +%Y-%m-%dT%H:%MZ)
+          if [ "$KIND" = "price-only" ]; then
+            echo "Price-only refresh — auto-deploying to main."
+            git commit -m "chore: update index ($STAMP)"
             git push
+          else
+            echo "Scored set changed — opening a review PR instead of pushing to main."
+            cat scored-change.md
+            BRANCH=cron/pending-review
+            git checkout -b "$BRANCH"
+            git commit -m "chore: index update needs review ($STAMP)"
+            git push -f origin "$BRANCH"
+            # One standing review PR; the force-push refreshes it each run until merged.
+            gh pr view "$BRANCH" --json state --jq .state 2>/dev/null | grep -q OPEN \
+              || gh pr create --base main --head "$BRANCH" \
+                   --title "Index update needs review ($STAMP)" \
+                   --body-file scored-change.md
           fi

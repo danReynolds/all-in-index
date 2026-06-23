@@ -54,3 +54,4 @@ data/.reextract-pending.json
 
 # Local daily-price cache for --frozen rebuilds (seeded per-machine)
 data/prices/
+scored-change.md
