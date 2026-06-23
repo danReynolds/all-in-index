@@ -1,8 +1,8 @@
 import { SECTOR_PROXIES, isSectorProxy } from "./proxies";
 
-// Commodity / macro-asset calls: tracked and scored like holdings (priced via
-// liquid ETF proxies), but they are not company calls — excluded from the
-// Besties Index, host funds, and the Bear Book.
+// Commodity / macro-asset calls: tracked and scored like any holding, priced via
+// liquid ETF proxies. They count in the Besties Index, host funds, and the Bear
+// Book alongside direct company calls — a proxied call is still a tracked call.
 
 export interface AssetDef {
   /** Display name; also becomes the holding's company name. */

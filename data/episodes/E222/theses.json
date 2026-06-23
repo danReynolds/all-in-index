@@ -1,13 +1,13 @@
 [
   {
-    "id": "E222-credit-default-swaps-cds-corporate-credit-protection-Sacks-0",
+    "id": "E222-credit-default-swaps-cds-corporate-credit-protection-Chamath-0",
     "episodeId": "E222",
     "episodeNumber": 222,
     "episodeDate": "2025-04-05T19:03:00.000Z",
     "company": "Credit Default Swaps (CDS / corporate credit protection)",
     "ticker": null,
     "isPublic": false,
-    "host": "Sacks",
+    "host": "Chamath",
     "stance": "bull",
     "conviction": "medium",
     "callType": "explicit_long",
@@ -23,7 +23,7 @@
       "recession risk",
       "corporate debt"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   },
   {
     "id": "E222-nmax-Friedberg-1",

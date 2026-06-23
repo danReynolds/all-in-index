@@ -78,32 +78,6 @@
     "attributionConfidence": "high"
   },
   {
-    "id": "E201-gld-Chamath-3",
-    "episodeId": "E201",
-    "episodeNumber": 201,
-    "episodeDate": "2024-10-25T22:51:00.000Z",
-    "company": "Gold",
-    "ticker": "GLD",
-    "isPublic": true,
-    "host": "Chamath",
-    "stance": "bear",
-    "conviction": "medium",
-    "callType": "view",
-    "excludeReason": null,
-    "scoreNote": null,
-    "sectorProxy": null,
-    "summary": "Chamath believes gold is seeing its last vestiges of use as a rational economic insurance policy, with Bitcoin set to replace it as the primary inflation hedge going forward.",
-    "quote": "I think you're seeing the last vestiges of people using gold as a rational economic insurance policy, but I think the future is specifically Bitcoin on that dimension.",
-    "quoteStartMs": 1579687,
-    "topics": [
-      "inflation hedge",
-      "gold",
-      "Bitcoin",
-      "macro"
-    ],
-    "attributionConfidence": "high"
-  },
-  {
     "id": "E201-commodities-basket-Friedberg-4",
     "episodeId": "E201",
     "episodeNumber": 201,
@@ -282,6 +256,53 @@
       "product quality",
       "maturity",
       "competitive moat"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E201-gld-Friedberg-a0",
+    "episodeId": "E201",
+    "episodeNumber": 201,
+    "episodeDate": "2024-10-25T22:51:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Friedberg",
+    "stance": "bull",
+    "conviction": "high",
+    "callType": "explicit_long",
+    "summary": "Friedberg states he is long gold, views it as an inflation hedge, and sees commodities as ridiculously under-owned. He also contextualizes gold's rise as a flight to safety amid global leverage crises and dollar debasement risks.",
+    "quote": "I'm long gold. I'm long Bitcoin. I think commodities are so ridiculously under-owned. So I'm long commodities.",
+    "quoteStartMs": 856000,
+    "topics": [
+      "inflation hedge",
+      "global debt crisis",
+      "flight to safety",
+      "dollar debasement",
+      "commodities under-owned"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E201-gld-Chamath-a1",
+    "episodeId": "E201",
+    "episodeNumber": 201,
+    "episodeDate": "2024-10-25T22:51:00.000Z",
+    "company": "Gold",
+    "ticker": "GLD",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "mixed",
+    "conviction": "medium",
+    "callType": "view",
+    "summary": "Chamath sees gold going up more in a Trump-win scenario as a medium-term inflation hedge, but believes gold is in its 'last vestiges' as the rational insurance policy, with Bitcoin replacing it as the dominant inflation hedge going forward.",
+    "quote": "I think you're seeing the last vestiges of people using gold as a rational economic insurance policy, but I think the future is specifically Bitcoin on that dimension.",
+    "quoteStartMs": 1579687,
+    "topics": [
+      "Trump trade",
+      "inflation hedge",
+      "gold vs Bitcoin",
+      "macro repositioning"
     ],
     "attributionConfidence": "high"
   }
