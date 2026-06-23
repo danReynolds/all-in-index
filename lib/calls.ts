@@ -167,7 +167,14 @@ export function isPortfolioScored(t: Thesis): boolean {
  * position; a bullish *view* or a low-attribution call reads "Commentary".
  */
 export function isScoredPosition(t: Thesis): boolean {
-  return isPortfolioScored(t) && t.attributionConfidence !== "low";
+  // A scored POSITION must actually open a long/short. A call-shaped take that
+  // yields no direction — a pair-trade leg the extractor left "mixed", a neutral
+  // selection, a bare exit — is commentary, not a tracked position. Gating on
+  // tradeDirectionForTake (rather than the looser isPortfolioScored) keeps the
+  // badge, the "tracked call" pin, and hasScoredCall in lockstep with the funds,
+  // which already require a direction via positionTakes — so a "scored but no
+  // position" ghost can't exist no matter what the extractor emits.
+  return tradeDirectionForTake(t) !== null && t.attributionConfidence !== "low";
 }
 
 /**
