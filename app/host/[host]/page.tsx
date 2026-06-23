@@ -70,6 +70,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
         bench: c.benchmarkReturn,
         alpha: c.alpha,
         contribPp: c.sinceReturn / fund.constituents.length,
+        direction: c.direction === "short" ? "short" : "long",
       };
     }
   }
