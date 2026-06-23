@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { currentStanceForHosts, hostExposureWindows, tradeDirectionForTake, isScoredPosition, shortReturn } from "../lib/calls";
+import { currentStanceForHosts, hostExposureWindows, tradeDirectionForTake, isScoredPosition, shortReturn, directionalReturn } from "../lib/calls";
 import { toHoldingRow } from "../lib/projections";
 import { isMacroAsset, proxyAssetKind } from "../lib/assets";
 import { MAX_PUBLISHED_QUOTE_CHARS, trimPublishedQuote } from "../lib/quotes";
@@ -111,6 +111,21 @@ test("a short's shown return is the inverse of the stock move, floored at -100%"
   assert.equal(shortReturn(-0.3), 0.3); // stock fell 30% -> short +30% (winning: must read green)
   assert.equal(shortReturn(0.2), -0.2); // stock rose 20% -> short -20% (losing)
   assert.equal(shortReturn(2), -1); // stock tripled -> short capped at -100%
+});
+
+test("directionalReturn is the single source: longs raw, shorts inverse, both floored at -100%", () => {
+  // long = raw move; can't fall below -100% (a stock can't go below zero)
+  assert.equal(directionalReturn(0.4, "long"), 0.4);
+  assert.equal(directionalReturn(-0.6, "long"), -0.6);
+  // short = inverse move; a winning short (stock fell) reads positive
+  assert.equal(directionalReturn(-0.5, "short"), 0.5);
+  // a runaway short on a name that MORE than doubled is capped at -100% — never
+  // a value factor (1 + ret) below 0, which would over-state the loss or, once
+  // compounded across windows, flip the position's sign.
+  assert.equal(directionalReturn(1.8, "short"), -1);
+  assert.ok(1 + directionalReturn(5, "short") >= 0);
+  // shortReturn is exactly the short case (so the funds, leaderboard, and UI agree)
+  assert.equal(shortReturn(0.2), directionalReturn(0.2, "short"));
 });
 
 test("a holding row's return is the scored call's P&L; commentary shows none", () => {

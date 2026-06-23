@@ -2,6 +2,7 @@ import { fetchDailyHistory } from "./market";
 import {
   hostExposureWindows,
   guestExposureWindows,
+  directionalReturn,
   type ExposureWindow,
 } from "../lib/calls";
 import { isTradableCompanyExposure, classifyExcluded, isGoingPrivate } from "../lib/tradability";
@@ -179,12 +180,15 @@ export async function buildGuestLeaderboard(holdings: Holding[]): Promise<GuestL
         const exit = w.end ? series.asOf(w.end) : series.last;
         if (exit == null) continue;
         const stockRet = exit / e.close - 1;
-        // Direction-adjusted; a short's loss floored at −100% (a capped inverse
-        // stake, so one blown bear call can't drag the mean past a total loss).
-        const ret = Math.max(w.direction === "long" ? stockRet : -stockRet, -1);
+        // Direction-adjusted, floored at −100%. The benchmark mirrors the call's
+        // direction over the identical window — a short is measured against
+        // SHORTING SPY (isolating selection), same as the funds — not against
+        // buying it, which would compare a bear bet to a bull one.
+        const ret = directionalReturn(stockRet, w.direction);
         const spyEntry = spyHist?.onOrAfter(w.start);
         const spyExit = w.end ? spyHist?.asOf(w.end) : spyHist?.last;
-        const bench = spyHist && spyEntry && spyExit != null ? spyExit / spyEntry.close - 1 : 0;
+        const spyRet = spyHist && spyEntry && spyExit != null ? spyExit / spyEntry.close - 1 : 0;
+        const bench = directionalReturn(spyRet, w.direction);
         rows.push({
           company: h.company,
           ticker: h.ticker,
@@ -283,10 +287,14 @@ export async function buildWindowFund(
     for (const w of windows) {
       if (w.start > at) break;
       const p0 = s.onOrAfter(w.start)?.close;
-      if (p0 == null) continue;
+      if (p0 == null || p0 <= 0) continue;
       const factor = (p1: number) => {
         const stockReturn = p1 / p0 - 1;
-        return 1 + (w.direction === "long" ? stockReturn : -stockReturn);
+        // Direction-adjusted and floored at a total loss (factor ≥ 0): a runaway
+        // short can never become a negative value factor that over-states the
+        // loss or, compounded, flips the position's sign. Same math the
+        // leaderboard + UI use (1 + directionalReturn).
+        return 1 + directionalReturn(stockReturn, w.direction);
       };
       if (w.end != null && w.end <= at) {
         const p1 = s.onOrAfter(w.end)?.close ?? s.asOf(at);
