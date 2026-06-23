@@ -23,5 +23,29 @@
       "tariffs"
     ],
     "attributionConfidence": "high"
+  },
+  {
+    "id": "E223-ung-Guest-a0",
+    "episodeId": "E223",
+    "episodeNumber": 223,
+    "episodeDate": "2025-04-11T21:47:00.000Z",
+    "company": "Natural Gas",
+    "ticker": "UNG",
+    "isPublic": true,
+    "host": "Guest",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "summary": "Larry Summers (Guest) argues that blocking liquid natural gas exports was a clear policy mistake, implying bullish support for LNG development and energy security via natural gas.",
+    "quote": "I thought the stopping a variety of things involving liquid natural gas were a clear mistake.",
+    "quoteStartMs": 2505211,
+    "topics": [
+      "energy security",
+      "LNG policy",
+      "Biden administration",
+      "trade policy"
+    ],
+    "attributionConfidence": "high",
+    "guestName": "Larry Summers"
   }
 ]

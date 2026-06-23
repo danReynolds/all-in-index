@@ -66,7 +66,7 @@ export default function Home() {
           <HoldingsTable
             holdings={macroHoldings.map((h) => toHoldingRow(h, callReturnByTicker))}
             title="Commodities, sectors & macro"
-            subtitle="priced via ETF proxies · never part of the index or funds"
+            subtitle="priced via ETF proxies · scored in the index alongside the stocks"
             entityLabel="Asset"
           />
         </Reveal>
@@ -121,7 +121,7 @@ function Hero({ fund }: { fund: IndexFund }) {
             <p className="rise mt-4 max-w-md text-sm leading-relaxed text-neutral-400" style={d(280)}>
               If you&apos;d put {dollars(fund.contributionPerCall)} into each of{" "}
               <strong className="text-neutral-200">{fund.constituents.length}</strong>
-              {" companies the besties are still bullish on — at the price the day they called it — you'd have "}
+              {" names the besties are still bullish on — at the price the day they called it — you'd have "}
               <strong className="text-emerald-400">{dollars(fund.portfolioValue)}</strong>
               {" today vs "}
               {dollars(fund.benchmarkValue)}

@@ -51,9 +51,10 @@ export default function IndexPage() {
       <header className="rise space-y-2">
         <h1 className="font-display text-3xl font-bold tracking-tight">The Besties Index</h1>
         <p className="max-w-2xl text-neutral-500 dark:text-neutral-400">
-          Every public stock the besties are still bullish on — equal-weighted, bought at the price
-          the day they called it and held to today, measured against the S&amp;P over the same
-          stretch. Looking for the names they&apos;ve turned bearish on? Those live in{" "}
+          Every name the besties are still bullish on — stocks directly, commodities and sectors via
+          a liquid ETF proxy — equal-weighted, bought at the price the day they called it and held to
+          today, measured against the S&amp;P over the same stretch. Looking for the ones they&apos;ve
+          turned bearish on? Those live in{" "}
           <Link href="#bear-book" className="text-rose-600 hover:underline dark:text-rose-400">the Bear Book</Link>.
         </p>
       </header>
@@ -238,7 +239,7 @@ export default function IndexPage() {
             <div>
               <h2 className="font-display text-xl font-bold tracking-tight">The Bear Book 🐻</h2>
               <p className="mt-1 max-w-2xl text-sm text-neutral-500 dark:text-neutral-400">
-                The flip side of the index: every public stock the besties have turned{" "}
+                The flip side of the index: every name the besties have turned{" "}
                 <em>bearish</em>{" "}on as a real call. Each one is scored as if you&apos;d
                 shorted it the day they made the call.
               </p>
@@ -278,7 +279,7 @@ export default function IndexPage() {
       <section id="methodology" className="scroll-mt-28 rounded-xl border border-neutral-200 bg-neutral-50 p-5 text-sm leading-relaxed text-neutral-500 dark:border-neutral-800 dark:bg-neutral-900/50 dark:text-neutral-400">
         <h2 className="mb-2 font-semibold text-neutral-700 dark:text-neutral-200">Methodology</h2>
         <ul className="list-disc space-y-1 pl-5">
-          <li>The index holds one spot for every public company a bestie is currently <strong>bullish</strong> on as a real call. Names they&apos;ve turned bearish on sit in the Bear Book instead; names they only talked about don&apos;t count.</li>
+          <li>The index holds one spot for every name a bestie is currently <strong>bullish</strong> on as a real call — a company directly, or a commodity/sector tracked through a liquid ETF proxy (copper → CPER, defense → ITA). Names they&apos;ve turned bearish on sit in the Bear Book instead; names they only talked about don&apos;t count.</li>
           <li>A <strong>call</strong> means they actually took a side and committed to it — &quot;I&apos;m long it,&quot; &quot;my #1 pick,&quot; &quot;I&apos;d short this.&quot; Sounding bullish or bearish in passing is <strong>commentary</strong>: it shows up on the company&apos;s page, but it never moves the index.</li>
           <li>We hold each name from the day of the call until they back off it — an exit, or a flip the other way — then it leaves the index.</li>
           <li>A company&apos;s page keeps everything ever said about it, calls and commentary alike; a host&apos;s page shows just the calls behind their score.</li>

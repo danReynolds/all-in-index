@@ -1,4 +1,3 @@
-import { isMacroAsset } from "./assets";
 import type { ExcludedKind } from "./types";
 
 export const EXCLUDED_ETFS = new Set(["SPY", "QQQ", "VOO", "VTI", "DIA", "IWM"]);
@@ -25,6 +24,18 @@ export function isCryptoTicker(ticker: string | null | undefined): boolean {
   return !!ticker && (/-USD$/i.test(ticker) || ["BTC", "ETH", "SOL", "DOGE", "XRP", "ADA", "BNB"].includes(ticker.toUpperCase()));
 }
 
+/**
+ * A scored take counts toward the funds when we can actually price it: a direct
+ * public company (Google → GOOGL) OR a commodity / sector / crypto theme tracked
+ * through a liquid ETF proxy (copper → CPER, defense → ITA). Proxied takes are
+ * scored exactly the way the Predictions scorecard already scores them — we're
+ * extending one interpretation of performance, not inventing a new one.
+ *
+ * Still excluded: broad-market benchmark ETFs (the S&P is what we score
+ * AGAINST, so it can't itself be a position), raw crypto tokens (they
+ * canonicalize to a spot-ETF proxy instead), and take-private targets (pinned
+ * to a deal price, no forward performance).
+ */
 export function isTradableCompanyExposure<T extends TradableCandidate>(
   candidate: T,
 ): candidate is T & { ticker: string } {
@@ -33,7 +44,6 @@ export function isTradableCompanyExposure<T extends TradableCandidate>(
     candidate.isPublic &&
     !isCryptoTicker(candidate.ticker) &&
     !EXCLUDED_ETFS.has(candidate.ticker.toUpperCase()) &&
-    !isMacroAsset(candidate.ticker) &&
     !isGoingPrivate(candidate.ticker)
   );
 }

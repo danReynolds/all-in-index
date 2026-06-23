@@ -74,7 +74,8 @@
       "hyperscaler revenue",
       "xAI"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-anthropic-Sacks-3",
@@ -150,7 +151,8 @@
       "regulation",
       "revenue growth"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-tsla-Jason-6",
@@ -249,7 +251,8 @@
       "memory",
       "AI capex"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-005930.ks-Guest-10",
@@ -274,7 +277,8 @@
       "memory",
       "AI capex"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-mu-Guest-11",
@@ -299,7 +303,8 @@
       "memory",
       "AI capex"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-meta-Guest-12",
@@ -323,7 +328,8 @@
       "valuation",
       "market conditions"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   },
   {
     "id": "E272-nvda-Chamath-13",
@@ -373,6 +379,7 @@
       "valuation",
       "AI competition"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "high",
+    "guestName": "Brad Gerstner"
   }
 ]
