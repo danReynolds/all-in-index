@@ -307,17 +307,29 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
                       </span>
                     )}
                   </Link>
-                  {ret != null && (
-                    <span
-                      className="font-mono text-sm tabular-nums"
-                      title="The stock's move since this episode aired — not a verdict on the call."
-                    >
-                      <span className={returnColor(ret)}>{pct(ret)}</span>
-                      {ctx.asOf && (
-                        <span className="text-neutral-500"> over {fmtDuration(ep.meta.date, ctx.asOf)}</span>
-                      )}
-                    </span>
-                  )}
+                  {ret != null && (() => {
+                    const dur = ctx.asOf ? fmtDuration(ep.meta.date, ctx.asOf) : null;
+                    // A move smaller than the stock's own noise (min 3%) isn't a
+                    // result — don't paint a wiggle green. Say it plainly; the
+                    // per-take verdicts below carry the "too early to call" nuance.
+                    const flat = Math.abs(ret) < Math.max(0.03, ctx.noise ?? 0);
+                    return flat ? (
+                      <span
+                        className="font-mono text-sm tabular-nums text-neutral-500"
+                        title="The stock has barely moved since this episode aired — nothing to read into yet."
+                      >
+                        barely moved{dur && <span className="text-neutral-600"> · {dur}</span>}
+                      </span>
+                    ) : (
+                      <span
+                        className="font-mono text-sm tabular-nums"
+                        title="The stock's move since this episode aired — not a verdict on the call."
+                      >
+                        <span className={returnColor(ret)}>{pct(ret)}</span>
+                        {dur && <span className="text-neutral-500"> over {dur}</span>}
+                      </span>
+                    );
+                  })()}
                 </div>
 
                 <div className="space-y-3">
