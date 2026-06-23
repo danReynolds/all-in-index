@@ -5,6 +5,8 @@ import { verifyArgs, applyVerdicts } from "./verify";
 import { callToolBatch } from "./llm";
 import { nameSpeakers } from "./speakers";
 import { buildIndex } from "./build-index";
+import { extractAssets } from "./extract-assets";
+import { nameGuests } from "./name-guests";
 import { store } from "./store";
 import type { Episode, Thesis } from "../lib/types";
 
@@ -288,6 +290,20 @@ export async function sync(opts: SyncOpts = {}): Promise<void> {
   console.log(`\nProcessed ${ok.length} ok, ${failed.length} failed.`);
   if (failed.length) {
     for (const f of failed) console.log(`  ✖ ${f.id}: ${f.error}`);
+  }
+
+  // processEpisode only runs the COMPANY extractor. Commodity takes
+  // (extract-assets) and guest attribution (name-guests) live in separate
+  // catalog passes — and building straight after, like this used to, ships a new
+  // episode's guest takes UNNAMED, which the Guesties validator rejects ("has no
+  // current open long call" — the #29 failure that wedged the cron). Run both for
+  // the just-processed episodes, scoped to `ok` so each sync only re-LLMs the new
+  // ones, not the whole back catalog.
+  if (ok.length) {
+    console.log("\nextract-assets (commodity takes) for new episodes…");
+    await extractAssets(ok);
+    console.log("name-guests (guest attribution) for new episodes…");
+    await nameGuests(ok);
   }
 
   console.log("\nbuilding index…");
