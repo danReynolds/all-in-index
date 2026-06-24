@@ -14,40 +14,40 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Friedberg argues Cerebras's wafer-scale chip architecture delivers blazing-fast inference by minimizing physical distance between compute and memory, and that OpenAI's large compute deal validates the company's technology; he sees a broader silicon renaissance ahead for specialized AI chip companies.",
-    "quote": "My belief, there's going to be a renaissance in silicon. Young, small teams building decode silicon can make a fortune over the next 10 to 20 years. It's a huge opportunity. It's going to be like the PC wars, Dell versus Compaq versus all",
-    "quoteStartMs": 2013930,
+    "summary": "Friedberg argues Cerebras's wafer-scale chip architecture delivers blazing-fast inference speeds, and OpenAI's $10B+ compute deal validates the company's technology, with an IPO expected soon.",
+    "quote": "If you look at the trail of breadcrumbs, My belief, there's going to be a renaissance in silicon. Young, small teams building decode silicon can make a fortune over the next 10 to 20 years.",
+    "quoteStartMs": 2013000,
     "topics": [
       "AI chips",
       "inference",
-      "silicon renaissance",
-      "IPO"
+      "IPO",
+      "compute"
     ],
     "attributionConfidence": "high"
   },
   {
-    "id": "E258-electric-utilities-us-Chamath-1",
+    "id": "E258-us-electric-utilities-sector-Chamath-1",
     "episodeId": "E258",
     "episodeNumber": 258,
     "episodeDate": "2026-01-17T00:00:00.000Z",
-    "company": "Electric utilities (US)",
+    "company": "US Electric Utilities (sector)",
     "ticker": null,
     "isPublic": false,
     "host": "Friedberg",
     "stance": "bear",
-    "conviction": "high",
+    "conviction": "medium",
     "callType": "explicit_short",
     "excludeReason": null,
-    "scoreNote": "Speaker explicitly labels this 'the single biggest dollar short' on the utilities sector; no direct single-company ticker — broad US utility sector.",
+    "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Chamath argues that if even a fraction of the proposed residential solar/storage or private data-center power buildout materializes, utilities face an existential threat to their rate base, bond repayment capacity, and CapEx returns, making the utilities sector the biggest dollar short opportunity he can foresee.",
-    "quote": "I think the single biggest dollar short, it's not clear when, that one will be able to make will be on these utilities. Because if any version of what we just talked about happens… what do the utilities do? What does all this CapEx go to?",
+    "summary": "Friedberg flags that if distributed solar, storage, and private power generation by data centers materialize at scale, utilities face a severe threat to their rate base, CapEx returns, and bond repayments.",
+    "quote": "I think the single biggest dollar short, it's not clear when, that one will be able to make will be on these utilities. Because if any version of what we just talked about happens... what do the utilities do? What does all this CapEx go",
     "quoteStartMs": 1824988,
     "topics": [
-      "energy",
       "utilities",
-      "decentralization",
-      "AI capex"
+      "energy disruption",
+      "solar",
+      "data centers"
     ],
     "attributionConfidence": "high"
   },
@@ -66,13 +66,13 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Friedberg views Microsoft's pledge to pay full electricity rates and cover water costs at data centers as a smart first step toward securing social license to operate nationwide, and expects other hyperscalers to follow suit.",
+    "summary": "Friedberg views Microsoft's pledge to pay higher electricity rates, cover water costs, and forgo tax breaks for its data centers as a smart first step that earns social license to operate and sets a positive precedent for the hyperscalers.",
     "quote": "I really like it. It's a very good first order set of things to do, which is to step into a local area and take all of these energy issues off the table, at least to the extent that you're contributing to it.",
     "quoteStartMs": 972667,
     "topics": [
       "data centers",
       "energy",
-      "social license",
+      "regulation",
       "AI capex"
     ],
     "attributionConfidence": "high"
