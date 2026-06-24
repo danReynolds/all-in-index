@@ -57,6 +57,10 @@ export interface Episode {
   guests: string[];
   /** Link back to the episode (used for attribution on the public site). */
   link: string | null;
+  /** Diarization health, set by processEpisode after the self-heal attempt.
+   * `suspect` = the namer still counts more distinct speakers than clusters
+   * (a fused cluster the re-transcribe couldn't split) — surfaced by the gate. */
+  diarization?: { clusters: number; distinctSpeakers: number; suspect: boolean };
 }
 
 /** One diarized, speaker-attributed utterance from the transcript. */
@@ -79,6 +83,11 @@ export interface Transcript {
   speakerConfidence?: Record<string, "low" | "medium" | "high">;
   /** Confidence + reasoning from the naming pass, for auditing. */
   speakerMapNotes?: string;
+  /** Distinct humans the namer counts in the content (vs cluster count) — drives
+   * the under-segmentation self-heal. Local artifact; not in the committed data. */
+  distinctSpeakers?: number;
+  /** Clusters the namer thinks fuse more than one speaker. */
+  mergedClusters?: string[];
   utterances: Utterance[];
   /** Free-form provider metadata (transcript id, model, etc.). */
   meta: Record<string, unknown>;

@@ -342,6 +342,30 @@ export async function processEpisode(
   }
 
   await nameSpeakers(transcript, ep);
+
+  // Self-heal an under-segmented diarization: if the namer counts more distinct
+  // speakers than there are clusters, the audio fused two people into one cluster
+  // (the E250/Gerstner failure). Re-transcribe ONCE with the namer's DERIVED count
+  // as the hint — no human guess — then re-name on the finer transcript. Guarded
+  // to the automatic path and to first-assessment (ep.diarization unset) so it
+  // never loops or fights a manual `--speakers` override.
+  const clusterCount = (tr: Transcript) => new Set(tr.utterances.map((u) => u.cluster)).size;
+  const autoPath = !opts.retranscribe && opts.speakersExpected == null;
+  if (autoPath && ep.diarization == null && (transcript.distinctSpeakers ?? 0) > clusterCount(transcript)) {
+    const hint = transcript.distinctSpeakers!;
+    console.warn(`[${tag}] diarization under-segmented (${clusterCount(transcript)} clusters, ~${hint} speakers) — re-transcribing with derived hint…`);
+    transcript = await transcribeEpisode(ep, { speakersExpected: hint });
+    store.saveTranscript(transcript);
+    await nameSpeakers(transcript, ep);
+  }
+
+  // Record diarization health on the (committed) episode so the quality gate can
+  // surface a residual fused cluster the re-transcribe couldn't split.
+  const finalClusters = clusterCount(transcript);
+  const finalDistinct = transcript.distinctSpeakers ?? finalClusters;
+  ep.diarization = { clusters: finalClusters, distinctSpeakers: finalDistinct, suspect: finalDistinct > finalClusters };
+  store.saveEpisode(ep);
+
   store.saveTranscript(transcript);
 
   const theses = dedupeOverlappingTheses(

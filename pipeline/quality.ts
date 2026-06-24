@@ -167,6 +167,23 @@ export async function runQualityCheck(): Promise<void> {
   const snapshot = store.loadIndex();
   if (!snapshot) throw new Error("No data/holdings.json found. Run build-index first.");
   const result = validateIndexSnapshot(snapshot);
+  // Diarization health lives on the episode files, not the snapshot: surface any
+  // episode the self-heal flagged as still under-segmented (a fused cluster the
+  // re-transcribe couldn't split) — so a guest-on-host misattribution can't hide
+  // behind a bad transcript. A warning, not an error: the auto-repair already ran,
+  // and a genuinely unsplittable cluster shouldn't wedge the cron.
+  const suspect: string[] = [];
+  for (const id of store.listEpisodeIds()) {
+    const ep = store.loadEpisode(id);
+    if (ep?.diarization?.suspect) {
+      suspect.push(`${id} (${ep.diarization.clusters} clusters, ~${ep.diarization.distinctSpeakers} speakers)`);
+    }
+  }
+  if (suspect.length) {
+    result.warnings.push(
+      `diarization may have fused speakers in ${suspect.length} episode(s) — re-transcribe to repair (run --id <ep> --retranscribe): ${suspect.join("; ")}`,
+    );
+  }
   for (const warning of result.warnings) console.log(`warning: ${warning}`);
   if (result.errors.length > 0) {
     for (const error of result.errors) console.error(`error: ${error}`);
