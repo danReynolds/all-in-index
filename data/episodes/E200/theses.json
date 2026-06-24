@@ -15,8 +15,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg argues SpaceX's successful booster catch unlocks a path to $10/kg launch costs, making the Mars colony economically feasible, while Starlink at 4M subs could scale to 100M+ and become one of the biggest businesses on earth.",
-    "quote": "Starlink's running at 4 million subs right now. That's like $100 a month, 4 million subs... this could be a 100 million subscriber business. One of the biggest businesses on the, on the, on the earth.",
-    "quoteStartMs": 1279000,
+    "quote": "Starlink's running at 4 million subs right now. That's like $100 a month, 4 million subs. And if you do the math, I mean, how many people have ISPs that are slower than Starlink, right? How many people have cell phone providers that they're",
+    "quoteStartMs": 1282620,
     "topics": [
       "space economics",
       "Starlink growth",
@@ -90,7 +90,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Expedia's core business model — a UI layer on top of licensed third-party travel data — is structurally fragile in an AI agent world where tools like Perplexity can bypass it entirely, making a $30B acquisition a catastrophically bad capital allocation.",
-    "quote": "I cannot think of a more fragile business model than the UI layer on top of widely available data... it would just be a very bad capital allocation decision... $30 billion is too big of a price to pay for that kind of risk.",
+    "quote": "I cannot think of a more fragile business model than the UI layer on top of widely available data... it would just be a very bad capital allocation decision. Now, that's okay to get things wrong, but not for $30 billion wrong... $30 billion",
     "quoteStartMs": 1777208,
     "topics": [
       "AI disruption",
@@ -116,7 +116,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg sees a financial rationale for Uber acquiring Expedia at ~4x pro forma EBITDA via cost synergies and cross-sell, with VRBO as an underutilized asset, but acknowledges significant AI-driven strategic risk to the business model.",
-    "quote": "You could see a scenario where you could increase Expedia's EBITDA by 75 to 100%... $22 billion of enterprise value, and if you can bump the EBITDA up to $6 billion a year, that's a pretty low multiple.",
+    "quote": "You could see a scenario where you could increase Expedia's EBITDA by 75 to 100%, maybe getting it as high as $6 billion. And while Expedia's market cap trades at $20 billion... they're probably paying $26 billion for the company and they g",
     "quoteStartMs": 1994022,
     "topics": [
       "M&A",
@@ -214,7 +214,7 @@
     "conviction": "high",
     "callType": "selection",
     "summary": "Friedberg reiterates his earlier prediction to buy uranium stocks, arguing nuclear is a necessity to meet growing global energy demand — especially with AI-driven GDP growth — and that there is simply no alternative to uranium-based baseload power at scale.",
-    "quote": "it was also my prediction for the year was to by the uranium stocks predicated on what I think is a really important point, which is as GDP per capita grows, energy consumption per capita grows... there is no way to meet the energy demand without nuclear.",
+    "quote": "it was also my prediction for the year was to by the uranium stocks predicated on what I think is a really important point, which is as GDP per capita grows, energy consumption per capita grows... there is no way to meet the energy demand w",
     "quoteStartMs": 2943984,
     "topics": [
       "nuclear energy",

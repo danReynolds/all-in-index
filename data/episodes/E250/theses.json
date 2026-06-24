@@ -15,15 +15,15 @@
     "scoreNote": "Gerstner confirms existing ownership and desire to buy more shares; bullish on the supercycle thesis.",
     "sectorProxy": null,
     "summary": "Gerstner is a current investor in OpenAI, wants to buy more shares, and argues the company is in the biggest supercycle of their lifetimes — with revenue growing steeply toward $100B+ — making the $1.4T spend commitment increasingly justifiable.",
-    "quote": "He knows that I don't want to sell my shares. He knows that I would like to buy more shares in the company... I'm betting in the supercycle. This is the biggest supercycle of all of our lives.",
-    "quoteStartMs": 184000,
+    "quote": "I would love to tell them they could just short the stock and I would love to see them get burned on that.",
+    "quoteStartMs": 153915,
     "topics": [
       "revenue growth",
       "AI supercycle",
       "valuation",
       "capex"
     ],
-    "attributionConfidence": "low",
+    "attributionConfidence": "high",
     "guestName": "Brad Gerstner"
   },
   {
@@ -42,8 +42,8 @@
     "scoreNote": "Chamath confirms investor status and makes forward bull claim on consumer retention and revenue trajectory.",
     "sectorProxy": null,
     "summary": "Chamath is an existing OpenAI investor who believes the $1.4T spend commitment is manageable, that revenues will grow well past $100B, and that OpenAI holds the best consumer retention and engagement metrics ('the verb') in the AI market.",
-    "quote": "I'm an investor in OpenAI and Anthropic and Google and, and Microsoft and Nvidia, etc.",
-    "quoteStartMs": 1969407,
+    "quote": "He knows that I don't want to sell my shares. He knows that I would like to buy more shares in the company, etc.",
+    "quoteStartMs": 204807,
     "topics": [
       "revenue growth",
       "AI supercycle",

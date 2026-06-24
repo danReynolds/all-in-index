@@ -144,7 +144,7 @@
     "scoreNote": "Named as explicit pick ('my choice for the next year') in context of AI positioning discussion.",
     "sectorProxy": null,
     "summary": "Jason argues Apple has the clearest path to becoming a top AI player via local models on its extraordinary hardware, and names it as his pick for the next year.",
-    "quote": "Apple has the clearest path to becoming, you know, a top 2 or 3 player in AI simply by buying something like Perplexity or Mistral... I think Apple's my choice for the next year.",
+    "quote": "Apple has the clearest path to becoming, you know, a top 2 or 3 player in AI simply by buying something like Perplexity or Mistral or, or, or some AI lab. And then using their hardware footprint, which is extraordinary… I think Apple's my c",
     "quoteStartMs": 3259120,
     "topics": [
       "AI hardware",
@@ -220,7 +220,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues the US should sell advanced chips to China specifically to ensure Nvidia wins the AI chip race rather than ceding ground to Huawei.",
-    "quote": "Sell the chips. And the reason we should sell the chips is we want NVIDIA to win. We do not want to give enough oxygen for Huawei to then all of a sudden emerge and have a version of a chip that works... let Jensen win. I'd rather he win",
+    "quote": "sell the chips. And the reason we should sell the chips is we want NVIDIA to win. We do not want to give enough oxygen for Huawei to then all of a sudden emerge and have a version of a chip that works… sell the chips, proliferate, let Jense",
     "quoteStartMs": 1525516,
     "topics": [
       "AI chips",
@@ -245,8 +245,8 @@
     "scoreNote": null,
     "sectorProxy": "IGV",
     "summary": "Chamath argues the low end and vertical SaaS market is essentially finished due to AI disruption, with no safe space remaining for small or mid-market software companies.",
-    "quote": "I think the low end of the market is basically finished. I think there is no safe space. I think the high end of the market where Marc operates, where the large monoliths operate is quite safe.",
-    "quoteStartMs": 2162000,
+    "quote": "I think the low end of the market is basically finished. I think there, there is no safe space. I think the high end of the market where Marc operates, where the large monoliths operate is quite safe.",
+    "quoteStartMs": 2161940,
     "topics": [
       "SaaS disruption",
       "AI",

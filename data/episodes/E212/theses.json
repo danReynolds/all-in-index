@@ -15,8 +15,8 @@
     "scoreNote": "Guest confirms ownership: 'we do own some OpenAI' and explicitly states 'I am bullish on OpenAI'.",
     "sectorProxy": null,
     "summary": "Thomas LaFont is a current investor in OpenAI and is bullish based on ChatGPT's dominant market position (~80%+ share), 300M weekly actives, 1M+ enterprise users, and rapid product improvement — arguing it is a winner-take-most franchise analogous to Uber in ridesharing.",
-    "quote": "I am bullish on OpenAI... it is maintaining 80% plus market share... if this was ridesharing, we would say this company is the winner. The quality of the ChatGPT franchise inside of OpenAI is one of the great most successful, fastest",
-    "quoteStartMs": 4420539,
+    "quote": "we do own some OpenAI. I am bullish on OpenAI… it is maintaining 80% plus market share. You know, J Cal, if this was ridesharing, right? Mm-hmm. We would say, wow, this, this company is the winner, right? So to me, I think the, the quality ",
+    "quoteStartMs": 4418853,
     "topics": [
       "AI",
       "market share",
@@ -42,8 +42,8 @@
     "scoreNote": "Guest confirms existing investment; provides forward valuation framework for TikTok US asset.",
     "sectorProxy": null,
     "summary": "Thomas LaFont is an existing investor in ByteDance and values the TikTok US asset at up to ~$100B using a Meta DAU/time-spent comparison, while noting valuation depends heavily on regulatory outcome and deal structure.",
-    "quote": "we are investors in TikTok... is $100 billion a reasonable scenario? You know, I think the math proves it. And then could it be a trillion-dollar asset the way Trump has mentioned? I mean, in a world where Facebook's $1.5 trillion, right,",
-    "quoteStartMs": 2054000,
+    "quote": "we are investors in TikTok… You know, is $100 billion a reasonable scenario? You know, I think the math proves it. And then could it be a trillion-dollar asset the way Trump has mentioned? I mean, in a world where Facebook's $1.5 trillion, ",
+    "quoteStartMs": null,
     "topics": [
       "valuation",
       "regulation",
@@ -68,7 +68,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues the US government's leverage — the ability to shut TikTok down entirely — means any buyer will pay far below intrinsic value, potentially approaching $1, making the asset worth far less than Thomas's ~$100B estimate for any private acquirer.",
-    "quote": "The president was very clear that it is completely and entirely worthless without his permit, and he wants to own 50% of this asset... you're not going to pay $100 billion if you control whether it can exist or not. You're basically going",
+    "quote": "the president was very clear that it is completely and entirely worthless without his permit, and he wants to own 50% of this asset. Now, if you're a buyer of something, you're not going to pay $100 billion if you control whether it can exi",
     "quoteStartMs": 2825394,
     "topics": [
       "valuation",
@@ -119,8 +119,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath notes Broadcom as a massively underappreciated $1-2 trillion company built through disciplined M&A roll-ups under Hock Tan, contrasting it with peers that get far more attention despite similar or lower scale.",
-    "quote": "It is the only trillion-dollar company that nobody talks about. Everybody knows Nvidia, everybody knows Amazon, Meta, but Broadcom is a $1, $2 trillion business. And it started basically through a whole series of roll-ups.",
-    "quoteStartMs": 6292030,
+    "quote": "it is the only trillion-dollar company that nobody talks about. Everybody knows Nvidia, everybody knows Amazon, Meta, but Broadcom is a $1. $1, $2 trillion business. And it started basically through a whole series of roll-ups.",
+    "quoteStartMs": 6316879,
     "topics": [
       "valuation",
       "M&A",
@@ -194,7 +194,7 @@
     "scoreNote": "Jason explicitly states 'I am a shareholder' confirming an equity position.",
     "sectorProxy": null,
     "summary": "Jason is a shareholder in Netflix and highlights strong subscriber and stock performance, expressing delight at the company's execution.",
-    "quote": "I am a shareholder and I am delighted. I don't know what's going on over there, but they seem to be getting their subs right, and that disgraciado of a fight seems to have somehow driven the stock price up, and there's some strategy that's",
+    "quote": "I am a shareholder and I am delighted. I don't know what's going on over there, but they seem to be getting their subs right, and that disgraciado of a fight seems to have somehow driven the stock price up, and there's some strategy that's ",
     "quoteStartMs": 5783276,
     "topics": [
       "subscriber growth",
@@ -242,8 +242,8 @@
     "scoreNote": "Chamath names this as one of his year-start predictions; framed as a macro crypto sector call on US stablecoin infrastructure rather than a single company.",
     "sectorProxy": null,
     "summary": "Chamath argues that US stablecoin payment rails will be hugely disruptive and value-additive to GDP by making payments instantaneous and costless while cutting fraud, calling it one of his top predictions for the year.",
-    "quote": "I do think that the United States stablecoin rails will be hugely disruptive and value-added.",
-    "quoteStartMs": 6570081,
+    "quote": "I think a set of stablecoin rails that makes payments instantaneous and costless is an enormous acceleration to GDP. It would cut fraud. And I think that David's going to go and figure that out.",
+    "quoteStartMs": 6545280,
     "topics": [
       "stablecoins",
       "crypto regulation",

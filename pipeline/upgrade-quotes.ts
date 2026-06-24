@@ -4,7 +4,7 @@ import { callTool } from "./llm";
 import { isPortfolioScored, isCallShaped } from "../lib/calls";
 import { isQuoteVerbatim, normForMatch } from "../lib/quotes";
 import { store } from "./store";
-import { snapQuoteTimestamps, stampAttribution, enforceVerbatimQuotes } from "./run-episode";
+import { snapQuoteTimestamps, stampAttribution } from "./run-episode";
 import { HOLDINGS_FILE } from "./config";
 import type { IndexSnapshot, Thesis, Transcript } from "../lib/types";
 
@@ -161,12 +161,13 @@ export async function upgradeQuotes(onlyIds?: string[]): Promise<void> {
       changed.push(`${t.id}: "${t.quote.slice(0, 90)}…"`);
     }
     if (epChanged) {
-      // Re-derive confidence on the swapped quotes: a now-verbatim quote clears
-      // the verbatim fail-safe, so a real pick that was demoted out of scoring
-      // for a messy quote is restored — not silently dropped.
+      // Re-derive confidence on the swapped quotes so a pick that was demoted out
+      // of scoring for a messy quote is restored. We do NOT re-run the verbatim
+      // fail-safe here: upgrade-quotes only IMPROVES and restores — it must never
+      // newly demote a take it couldn't repair (that was dropping real calls, like
+      // Friedberg's oil short, on their imperfect-but-real quotes).
       snapQuoteTimestamps(theses, tr);
       stampAttribution(theses, tr);
-      enforceVerbatimQuotes(theses, tr);
       store.saveTheses(epId, theses);
     }
     console.log(`  ${epId}: ${cands.length} checked`);

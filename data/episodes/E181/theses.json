@@ -15,8 +15,8 @@
     "scoreNote": "Not scored: Chamath makes an explicit bull claim on Bitcoin price appreciation post-halving with ETF tailwinds and dollar debasement, but the current quote is truncated mid-sentence. A better verbatim excerpt from Chamath's own lines captures the directional claim more cleanly. However, the callType must be checked: the quote needs to carry his own transaction/selection language to be explicit_long. Reviewing the transcript, Chamath says this is 'not financial advice' and 'just data/guesses' — he never says 'I'm long' or 'I'd buy' in the published quote or nearby. He did say earlier 'I remember I called my family office. I'm like, buy me a million of these things' — but that was a historical anecdote about 2010, not a current position. The analysis/halving data presentation is a view, not an explicit_long. Demote to view.",
     "sectorProxy": null,
     "summary": "Chamath argues that post-halving historical price cycles, combined with the new Bitcoin ETFs enabling mainstream adoption, point to significant price appreciation; he sees Bitcoin increasingly serving as a hard-asset reserve currency for countries moving to dual-currency systems amid dollar debasement.",
-    "quote": "18 months after the first halving, the Bitcoin price returned 45x. After the second halving, it returned almost 28x. And after this third halving, it returned almost an 8x… if you marry that with this worry that some folks have about dollar",
-    "quoteStartMs": null,
+    "quote": "18 months after the first halving, the Bitcoin price returned 45x. After the second halving, it returned almost 28x. And after this third halving, it returned almost an 8x, which is really incredible returns in such a short period of time.",
+    "quoteStartMs": 3356204,
     "topics": [
       "Bitcoin",
       "halving cycle",
@@ -67,7 +67,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Salesforce and other large monolithic SaaS companies are on the wrong side of the AI disruption cycle — generative AI enables delivery of 80% of their functionality at a 90% discount, meaning customers will defect to cheaper alternatives and the big-enterprise revenue model will structurally deteriorate over the next 5–10 years.",
-    "quote": "is Salesforce gonna get 80/90'd? Yeah, because you can deliver 80% of the features at a 90% discount pretty easily today... it is on the wrong side of the life cycle. And the odds are overwhelmingly such that a bunch of small companies",
+    "quote": "is Salesforce gonna get 80/90'd? Yeah, because you can deliver 80% of the features at a 90% discount pretty easily today… it is on the wrong side of the life cycle. And the odds are overwhelmingly such that a bunch of small companies will f",
     "quoteStartMs": 4175329,
     "topics": [
       "AI disruption",

@@ -15,8 +15,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Gavin Baker argues FSD is crossing into mainstream adoption and will continue compounding at an accelerating rate, making Tesla a major winner in the year of robots/autonomy.",
-    "quote": "I think FSD works today and it's gonna— it's gonna cross into mainstream adoption... I think it's going to continue compounding at an accelerating rate.",
-    "quoteStartMs": 1315207,
+    "quote": "I think FSD works today and it's gonna— it's, it's gonna cross into mainstream adoption where I already notice, particularly if I'm taking an Uber late at night, I really, really prefer to have a Tesla… I think it's going to continue compou",
+    "quoteStartMs": 1288657,
     "topics": [
       "FSD",
       "autonomy",
@@ -42,7 +42,7 @@
     "scoreNote": "Named as one of two explicit biggest business winner picks for 2025.",
     "sectorProxy": null,
     "summary": "Jason picks Tesla as one of his biggest business winners of 2025, citing Colossus GPU build-out and AI investment as catalysts that will surprise the market.",
-    "quote": "My biggest business winner prediction for 2025 is Tesla and Google... I am just absolutely amazed at the comeback that Google has made with AI, and I'm absolutely in awe of what Elon did with Colossus.",
+    "quote": "My biggest business winner prediction for 2025 is Tesla and Google.",
     "quoteStartMs": 1743477,
     "topics": [
       "AI",
@@ -68,8 +68,8 @@
     "scoreNote": "Named as one of two explicit biggest business winner picks for 2025.",
     "sectorProxy": null,
     "summary": "Jason picks Google as one of his biggest business winners of 2025, citing Gemini Deep Research as a step-function improvement over competitors and Google's unique data advantages.",
-    "quote": "My biggest business winner prediction for 2025 is Tesla and Google... Gemini, deep research, I keep telling people this and I'm using the app. Is so impressive... It is a step function higher.",
-    "quoteStartMs": 1742000,
+    "quote": "My biggest business winner prediction for 2025 is Tesla and Google. I think this is going to be the year of AI and robotics, obviously. But I am just absolutely amazed at the comeback that Google has made with AI",
+    "quoteStartMs": 1743477,
     "topics": [
       "AI",
       "Gemini",
@@ -94,7 +94,7 @@
     "scoreNote": "Named as biggest business loser pick for 2025; also most contrarian prediction.",
     "sectorProxy": null,
     "summary": "Jason predicts OpenAI will be the biggest business loser of 2025, arguing its valuation is peak, competition from Google/xAI/Microsoft is intensifying, pricing power is eroding, and the nonprofit-to-for-profit conversion could fail.",
-    "quote": "I think the one that is the most overpriced of all of this, and I think is going to see their peak valuation, is OpenAI... I think OpenAI's valuation made no sense. I don't think they're going to be able to keep charging the prices they're",
+    "quote": "I think the one that is the most overpriced of all of this, and I think is going to see their peak valuation, is OpenAI. I think the headwinds for OpenAI are being absolutely underappreciated.",
     "quoteStartMs": 2677064,
     "topics": [
       "valuation",
@@ -172,7 +172,7 @@
     "scoreNote": "Named as biggest business loser pick for 2025; MAGS used as proxy for the Mag 7 basket.",
     "sectorProxy": "MAGS",
     "summary": "Chamath predicts the Mag 7 will see a multi-trillion dollar absolute drawdown in 2025 due to dangerous index concentration near 40%, regardless of underlying business quality.",
-    "quote": "I think when we look back, the absolute dollar drawdown of the Mag Seven will be in the trillions of dollars... I think it's approaching 40%... they've generally foreshadowed a big drawdown.",
+    "quote": "I think when we look back, the absolute dollar drawdown of the Mag Seven will be in the trillions of dollars. Okay. And the reason is not necessarily because of the underlying fundamentals of these companies, but I am a little bit worried… ",
     "quoteStartMs": 2402492,
     "topics": [
       "index concentration",
@@ -197,7 +197,7 @@
     "scoreNote": "Named as best performing asset pick for 2025.",
     "sectorProxy": "MAGS",
     "summary": "Jason picks the Mag 7 as the best performing asset of 2025, arguing their internal AI application will drive earnings growth beyond market expectations.",
-    "quote": "I think the Mag 7 is going to be the best performing asset... the internal application of AI will allow these companies to have earnings growth that people will not be able to comprehend over the next couple of years. So I'm going with Mag",
+    "quote": "I think the Mag 7 is going to be the best performing asset. I'm taking the other side… the internal application of AI will allow these companies to have earnings growth that people will not be able to comprehend over the next couple of year",
     "quoteStartMs": 4930420,
     "topics": [
       "AI",
@@ -222,8 +222,8 @@
     "scoreNote": "Named as best performing asset pick for 2025; basket of SK Hynix and Micron as the two capable HBM producers.",
     "sectorProxy": null,
     "summary": "Gavin Baker picks high-bandwidth memory makers (primarily SK Hynix and Micron) as the best performing asset of 2025, citing HBM being a larger share of Nvidia GPU COGS than TSMC and persistent sold-out conditions driven by inference compute demand.",
-    "quote": "High-bandwidth memory would be my pick... HBM memory, it's in NVIDIA GPUs, AMD GPUs, Amazon Trainiums... it's been sold out for the last 2 years.",
-    "quoteStartMs": 4477193,
+    "quote": "So high bandwidth memory would be my pick.",
+    "quoteStartMs": 4497067,
     "topics": [
       "HBM",
       "AI compute",
@@ -249,7 +249,7 @@
     "scoreNote": "Named as best performing asset pick for 2025; CDS/credit protection is a non-equity macro instrument.",
     "sectorProxy": null,
     "summary": "Chamath's best performing asset pick is buying CDS (credit default swap protection) as an asymmetric insurance against a credit/banking crisis, comparing the potential payoff to Ackman's COVID CDS trade.",
-    "quote": "I would be long CDS... I am buying insurance using credit default swaps... if it hits, it will be the best performing asset of 2025. It will be the equivalent of Ackman buying CDS right at the beginning of the COVID crisis.",
+    "quote": "I would be long CDS. So what am I buying? I am buying insurance. I'm buying insurance using credit default swaps… if it hits, it will be the best performing asset of 2025. It will be the equivalent of Ackman buying CDS right at the, right a",
     "quoteStartMs": 4534567,
     "topics": [
       "CDS",
@@ -275,8 +275,8 @@
     "scoreNote": "Named as best performing asset pick for 2025; KWEB used as proxy for Chinese tech basket.",
     "sectorProxy": "KWEB",
     "summary": "Friedberg picks Chinese tech ETFs as the best performing asset of 2025, arguing stocks look cheap after years of selling, a US-China trade deal under Trump could re-rate them, and China's power buildout strengthens their cost advantage.",
-    "quote": "I went with Chinese tech stocks, uh, Chinese tech ETFs... these stocks look pretty cheap. I was just looking at Alibaba, and it trades at a pretty decent multiple. It seems like these stocks could be poised for a pretty good run in '25 if",
-    "quoteStartMs": 4660000,
+    "quote": "So I went with Chinese tech stocks, uh, Chinese tech ETFs… these stocks look pretty cheap. I was just looking at Alibaba, and it trades at a pretty decent multiple. It seems like these stocks could be poised for a pretty good run in '25 if ",
+    "quoteStartMs": 4659940,
     "topics": [
       "China tech",
       "valuation",
@@ -301,8 +301,8 @@
     "scoreNote": "Named as worst performing asset pick for 2025; IGV used as proxy for enterprise application software.",
     "sectorProxy": "IGV",
     "summary": "Gavin Baker predicts enterprise application software will be the worst performing asset of 2025, as AI agents built by cloud providers and frontier labs will displace white-collar workers these companies serve, and SaaS vendors lack their own models or compute to compete.",
-    "quote": "Enterprise application software... 2025 is going to be, I think, the year of agents... enterprise application software, I think, is going to be in a lot of pain... they don't have their own models, they don't own their own compute, and I",
-    "quoteStartMs": 5015000,
+    "quote": "Gavin, enterprise application software. Okay, this is basically just about like— 2025 is going to be, I think, the year of agents, particularly in the second half… enterprise application software, I think, is going to be in a lot of pain… t",
+    "quoteStartMs": 5014512,
     "topics": [
       "enterprise SaaS",
       "AI agents",
@@ -328,7 +328,7 @@
     "scoreNote": "Explicitly agrees with and doubles down on Gavin's worst performing asset pick for 2025.",
     "sectorProxy": "IGV",
     "summary": "Chamath doubles down on enterprise SaaS as worst performing asset, coining 'software industrial complex' to describe bloated legacy vendors whose go-to-market motions and heuristic-wrapped CRUD databases will be disrupted by AI-native competitors with order-of-magnitude lower cost structures.",
-    "quote": "The software industrial complex... these large bloated enterprise software companies... I think you're going to start to see fissures in those businesses in 2025.",
+    "quote": "the software industrial complex. These are these large bloated, in many cases, enterprise software companies… I think the software industrial complex, these old mainline traditional enterprise software companies, I think you're going to sta",
     "quoteStartMs": 5106482,
     "topics": [
       "enterprise SaaS",
@@ -379,8 +379,8 @@
     "scoreNote": "Named as biggest business deal/loser prediction for 2025; basket of legacy auto OEMs.",
     "sectorProxy": null,
     "summary": "Chamath predicts traditional auto OEMs (Volkswagen, Stellantis, Honda, Nissan etc.) will collapse and be forced into mega mergers in 2025, as Tesla's software/FSD advantage and Chinese EV competition make them uninvestable.",
-    "quote": "I think this is the year that we will see the collapse of the traditional auto OEMs... Tesla is just in an incredible position with the quality of their vehicles and the quality of their software... these auto OEMs are uninvestable.",
-    "quoteStartMs": 2857344,
+    "quote": "I think that this is the year that we will see the collapse of the traditional auto OEMs… I think that Tesla is just in an incredible position with the quality of their vehicles and the quality of their software and the quality of their aut",
+    "quoteStartMs": 2831206,
     "topics": [
       "auto OEMs",
       "EV disruption",
@@ -405,8 +405,8 @@
     "scoreNote": "Named as biggest business winner pick for 2025.",
     "sectorProxy": null,
     "summary": "Chamath predicts dollar-denominated stablecoins will be the biggest business winner of 2025, citing their decoupling from crypto volatility, transaction volumes already exceeding double Visa's, and imminent regulatory tailwinds under Trump that will disrupt the Visa/Mastercard duopoly.",
-    "quote": "I think the biggest business winner of 2025 are going to be dollar-denominated stablecoins... stablecoins could quadruple or quintuple by the end of '25. I think it's just going to be an enormous market.",
-    "quoteStartMs": 1393000,
+    "quote": "I think the biggest business winner of 2025 are going to be dollar-denominated stablecoins… I think stablecoins could quadruple or quintuple by the end of '25. I think it's just going to be an enormous market.",
+    "quoteStartMs": 1392920,
     "topics": [
       "stablecoins",
       "payments",
@@ -482,7 +482,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Gavin Baker, an investor in Zipline, highlights autonomous drone delivery as a key emerging trend and calls Zipline a fantastic company well-positioned to capitalize on suburban delivery.",
-    "quote": "There's a company called Zipline, which my firm is an investor in. Fantastic company... autonomous drones, they really are the best way to deliver almost anything to suburban America.",
+    "quote": "There's a company called Zipline, which my firm is an investor in. Fantastic company. Yeah, but autonomous drones, they really are the best way to deliver almost anything to suburban America.",
     "quoteStartMs": 3223349,
     "topics": [
       "autonomous drones",

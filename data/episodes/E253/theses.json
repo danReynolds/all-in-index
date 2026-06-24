@@ -15,8 +15,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Jason argues OpenAI is at peak market share and will decline to roughly one-third of the AI market as distribution-advantaged rivals (Google, Meta) make their products free and specialized competitors carve out verticals, while deep industry ill-will from Sam Altman's dealmaking accelerates the loss.",
-    "quote": "I think we're at peak OpenAI right now. I said it on the show a couple weeks ago. I think the pair trade is to bet against every— it's ChatGPT versus the world, and I think the world wins two-thirds.",
-    "quoteStartMs": 633550,
+    "quote": "I think we're at peak OpenAI right now. I said it on the show a couple weeks ago. I think the pair trade is to to bet against every— it's ChatGPT versus the world, and I think the world wins two-thirds.",
+    "quoteStartMs": 812290,
     "topics": [
       "AI competition",
       "market share",
@@ -67,7 +67,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg argues OpenAI's defensive, risk-averse posture — driven by being the incumbent consumer product under intense media scrutiny — has fundamentally damaged its product quality and brand, ceding ground to Google which took the opposite risk-taking posture.",
-    "quote": "ChatGPT is now acting, and OpenAI has been acting like an incumbent fearful of losing market share and fearful of getting attacked in the media and attacked by consumers for saying the wrong thing. And so they've taken this kind of",
+    "quote": "ChatGPT is now acting, and OpenAI has been acting like an incumbent fearful of losing market share and fearful of getting attacked in the media and attacked by consumers for saying the wrong thing. And so they've taken this kind of defensiv",
     "quoteStartMs": 1448873,
     "topics": [
       "AI competition",
@@ -119,8 +119,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg argues Google's shift to a risk-taking posture under Sergey and Demis Hassabis — combined with benefiting from regulatory/media attention being focused on OpenAI — has allowed it to close the AI gap and produce what may now be the best or one of the best models.",
-    "quote": "no greater blessing has ever happened to Alphabet than OpenAI's rise. And I think that that rise, not only did it create the foil for Google in the monopoly sense, but it also took the attention away from Google, focused in on OpenAI, and",
-    "quoteStartMs": 1609000,
+    "quote": "no greater blessing has ever happened to Alphabet than OpenAI's rise. And I think that that rise, not only did it create the foil for Google in the monopoly sense,, but it also took the attention away from Google, focused in on OpenAI, and ",
+    "quoteStartMs": 1610482,
     "topics": [
       "AI competition",
       "Gemini",
@@ -145,7 +145,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks acknowledges Anthropic's products are excellent — widely regarded as having the best coding assistant — and that it is successfully carving out a lucrative niche in enterprise, despite his criticism of its regulatory-capture strategy.",
-    "quote": "I don't particularly love what I've called their regulatory capture strategy, but I have to acknowledge their products are very good. Everybody seems to say that they have the best coding assistant. And they're carving out a very lucrative",
+    "quote": "I don't particularly love what I've called their regulatory capture strategy, but I have to acknowledge their products are very good. Everybody seems to say that they have the best coding assistant. And they're carving out a very lucrative ",
     "quoteStartMs": 489769,
     "topics": [
       "AI competition",
@@ -170,8 +170,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks is bullish on xAI, citing its edge in current-events AI via X integration and Elon Musk's ability to scale training infrastructure faster than rivals — with Colossus 2 training Grok 5 on the largest Blackwell cluster — as indicators of strong competitive positioning.",
-    "quote": "xAI, which I think is the best at current events because of the integration with X. And also Elon seems to be able to scale his data center, his training cluster, the fastest. He had Colossus 1, now he's got Colossus 2, and that portends",
-    "quoteStartMs": 504261,
+    "quote": "you've got xAI, which I think is the best at current events because of the integration with X. And also Elon seems to be able to scale his data center, his training cluster, the fastest. He had Colossus 1, now he's got Colossus 2, and that ",
+    "quoteStartMs": 503630,
     "topics": [
       "AI competition",
       "infrastructure",
@@ -195,7 +195,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues the AI silicon layer — led by NVIDIA — is the one part of the AI stack where the competitive outcome has already been largely determined, making it the clearest winner regardless of which model provider ultimately wins.",
-    "quote": "It's too difficult and too early to pick winners other than at the silicon layer where largely that die has been cast... it's roughly NVIDIA plus AMD plus Google plus a bunch of inference silicon.",
+    "quote": "it's too difficult and too early to pick winners other than at the silicon layer where largely that die has been cast. I think that it's going to grow, so we can talk about how there'll be more competition, but it's roughly NVIDIA plus AMD ",
     "quoteStartMs": 117026,
     "topics": [
       "AI infrastructure",

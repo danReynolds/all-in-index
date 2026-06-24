@@ -15,8 +15,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Wiz earned its $32B valuation by combining multi-cloud security with exceptional design and UX taste, and that its explosive revenue growth rate (doubling in months) justifies fantastical but defensible DCF models.",
-    "quote": "they have done one thing better than everybody else, and I think it's really worth rewarding, which is they have incredible taste...it is the most beautiful, it is the most intuitive, it's the most well-integrated. And it's just an incredib",
-    "quoteStartMs": 2223034,
+    "quote": "Wizz does not do something that's necessarily unique, meaning there are other products in market, but they have done one thing better than everybody else, and I think it's really worth rewarding, which is they have incredible taste.",
+    "quoteStartMs": 2217475,
     "topics": [
       "M&A",
       "cloud security",
@@ -41,8 +41,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues the Wiz acquisition is strategically clever as a Trojan horse — Wiz's multi-cloud tentacles give Google visibility and pull-through opportunity for GCP workloads across AWS and Azure customers.",
-    "quote": "The strategic rationale is quite clever, which is you start to gain customer traction and workloads in all of these other environments. And I suspect that TK is smart enough to try to pull these workloads back into GCP.",
-    "quoteStartMs": 3224805,
+    "quote": "I think the strategic rationale is quite clever, which is you start to gain customer traction and workloads in all of these other environments. And I suspect that TK is smart enough to try to pull these workloads back into GCP.",
+    "quoteStartMs": 3224147,
     "topics": [
       "M&A",
       "cloud strategy",
