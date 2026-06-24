@@ -15,6 +15,11 @@ const SpeakerMapSchema = z.object({
     }),
   ),
   notes: z.string(),
+  /** Distinct humans the content shows — counted independently of the clusters,
+   * so distinctSpeakers > clusterCount flags an under-segmented diarization. */
+  distinctSpeakers: z.number(),
+  /** Cluster letters that appear to fuse more than one distinct speaker. */
+  mergedClusters: z.array(z.string()).optional(),
 });
 
 const SYSTEM = `You identify which speaker cluster belongs to which host on the All-In podcast.
@@ -35,7 +40,11 @@ Strong cues to use:
 - Self-reference and known speech patterns / topics (Friedberg = science/biotech/climate; Sacks = policy/SaaS/geopolitics; Chamath = markets/macro/"my number is"; Jason = moderation, startups, ad reads) — use as a tie-breaker only, never to override the first/third-person signals above.
 - A non-host interviewee should be mapped to "Guest". Two clusters may map to the same host if diarization over-split them.
 
-Be honest about confidence: "high" only when direct address or self-identification pins the cluster; "medium" for strong stylistic/topical evidence; "low" when you are guessing. Only use "Unknown" if there is genuinely no signal. Cite the concrete evidence (a quote or cue) for each mapping.`;
+Be honest about confidence: "high" only when direct address or self-identification pins the cluster; "medium" for strong stylistic/topical evidence; "low" when you are guessing. Only use "Unknown" if there is genuinely no signal. Cite the concrete evidence (a quote or cue) for each mapping.
+
+Also report two diagnostics that catch an UNDER-SEGMENTED diarization (clusters that fused two people into one):
+- distinctSpeakers: how many distinct humans you can actually identify in the content. Count CONSERVATIVELY — only people you're confident spoke — but INCLUDE anyone who appears fused into a shared cluster with someone else. If one cluster clearly holds two people (it speaks AS a host yet also refers to that host in the third person, or mixes a host's voice with a guest naming their own firm in the first person), count them as two. So distinctSpeakers can exceed the number of clusters.
+- mergedClusters: list the cluster letters that appear to contain more than one distinct speaker (empty if the diarization looks clean). distinctSpeakers > cluster count is the signal the audio needs re-transcribing at a finer speaker count.`;
 
 const INPUT_SCHEMA = {
   type: "object",
@@ -54,8 +63,10 @@ const INPUT_SCHEMA = {
       },
     },
     notes: { type: "string", description: "Any caveats about the mapping" },
+    distinctSpeakers: { type: "number", description: "How many distinct human speakers the content actually shows (count conservatively; INCLUDE anyone fused into a shared cluster — so this can exceed the cluster count)." },
+    mergedClusters: { type: "array", items: { type: "string" }, description: "Cluster letters that appear to contain more than one distinct speaker; empty if the diarization looks clean." },
   },
-  required: ["mapping", "notes"],
+  required: ["mapping", "notes", "distinctSpeakers"],
 };
 
 /** Build a token-bounded digest: the opening, plus an even sample across the rest. */
@@ -119,12 +130,20 @@ ${digest}`;
   t.speakerMap = map;
   t.speakerConfidence = conf;
   t.speakerMapNotes = result.notes;
+  t.distinctSpeakers = result.distinctSpeakers;
+  t.mergedClusters = result.mergedClusters ?? [];
   for (const u of t.utterances) u.speaker = map[u.cluster] ?? "Unknown";
 
   const summary = result.mapping
     .map((m) => `${m.cluster}→${m.speaker}(${m.confidence})`)
     .join("  ");
-  console.log(`  ✓ speakers resolved: ${summary}`);
+  const underSeg = result.distinctSpeakers > clusters.length;
+  console.log(
+    `  ✓ speakers resolved: ${summary}` +
+      (underSeg
+        ? `  ⚠ ${clusters.length} clusters but ~${result.distinctSpeakers} speakers${result.mergedClusters?.length ? ` (merged: ${result.mergedClusters.join(",")})` : ""}`
+        : ""),
+  );
 
   return t;
 }
