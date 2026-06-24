@@ -224,6 +224,13 @@ export function shortReturn(stockReturn: number): number {
   return directionalReturn(stockReturn, "short");
 }
 
+/** Convert a raw stock move into the displayed P&L for a directional call. */
+export function callReturnFromStockMove(stance: Stance, stockReturn: number): number | null {
+  if (stance === "bull") return directionalReturn(stockReturn, "long");
+  if (stance === "bear") return directionalReturn(stockReturn, "short");
+  return null;
+}
+
 /**
  * Portfolio-scored calls (View ≠ Trade). Note: deliberately NOT gated on
  * conviction — "I have shares, I think it's a good investment" said calmly is
