@@ -191,7 +191,16 @@ export function applyVerdicts(
     if (!v.reattributeHost || v.reattributeHost === th.host) return th;
     reattributed++;
     console.log(`  ⤳ reattribute ${th.company} (${th.host}→${v.reattributeHost}) — ${v.reason}`);
-    return { ...th, host: v.reattributeHost, guestName: undefined };
+    // Keep the prose consistent with the corrected host: a summary often leads
+    // with its speaker ("Chamath argues …"), so when we move a take between
+    // hosts, rewrite that leading name — else it reads as the wrong bestie's
+    // call. (To Guest the extractor already names the person, and the guestName
+    // isn't known here, so rewrite only for host→host.)
+    const summary =
+      v.reattributeHost !== "Guest" && th.summary
+        ? th.summary.replace(new RegExp(`^${th.host}\\b`), v.reattributeHost)
+        : th.summary;
+    return { ...th, host: v.reattributeHost, guestName: undefined, summary };
   };
 
   theses.forEach((t, i) => {

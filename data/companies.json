@@ -1374,5 +1374,9 @@
   "electric-utilities-us": {
     "description": "US-based companies that generate, transmit, and distribute electrical power to residential and commercial customers.",
     "domain": null
+  },
+  "us-electric-utilities-sector": {
+    "description": "Sector encompassing US companies that generate, transmit, and distribute electric power to consumers.",
+    "domain": null
   }
 }
