@@ -17,8 +17,9 @@ import type { Episode, Thesis } from "../lib/types";
  * existing theses. No AssemblyAI cost; one small + maybe one large Claude call
  * per episode.
  */
-export async function renameAll(concurrency = 5): Promise<void> {
-  const ids = store.listEpisodeIds();
+export async function renameAll(concurrency = 5, onlyIds?: string[]): Promise<void> {
+  const only = onlyIds && onlyIds.length ? new Set(onlyIds) : null;
+  const ids = store.listEpisodeIds().filter((id) => !only || only.has(id));
   console.log(`Re-naming speakers for ${ids.length} episodes…`);
   const changed: string[] = [];
   let cursor = 0;
