@@ -1,10 +1,10 @@
 import fs from "node:fs";
 import { z } from "zod";
 import { callTool } from "./llm";
-import { isPortfolioScored } from "../lib/calls";
+import { isPortfolioScored, isCallShaped } from "../lib/calls";
 import { isQuoteVerbatim, normForMatch } from "../lib/quotes";
 import { store } from "./store";
-import { snapQuoteTimestamps } from "./run-episode";
+import { snapQuoteTimestamps, stampAttribution, enforceVerbatimQuotes } from "./run-episode";
 import { HOLDINGS_FILE } from "./config";
 import type { IndexSnapshot, Thesis, Transcript } from "../lib/types";
 
@@ -88,8 +88,9 @@ function contextFor(t: Thesis, tr: Transcript): string {
  * where it doesn't, swap in a verbatim transcript excerpt that does (the
  * Figma-class fix: right classification, wrong receipt). Timestamps re-snap.
  */
-export async function upgradeQuotes(): Promise<void> {
-  const episodeIds = store.listEpisodeIds();
+export async function upgradeQuotes(onlyIds?: string[]): Promise<void> {
+  const only = onlyIds && onlyIds.length ? new Set(onlyIds) : null;
+  const episodeIds = store.listEpisodeIds().filter((id) => !only || only.has(id));
   let candidates = 0;
   let swapped = 0;
   let unevidencedNoFix = 0;
@@ -144,12 +145,15 @@ export async function upgradeQuotes(): Promise<void> {
       // Verify the proposed quote is genuinely verbatim in the transcript.
       const key = normForMatch(v.betterQuote);
       if (v.betterQuote.length < 15 || !isQuoteVerbatim(v.betterQuote, fullText)) continue;
-      // Never let two takes share a quote — the aggregator's passing-mention
-      // filter (correctly) drops shared quotes as list mentions.
+      // A shared quote normally signals a passing list-mention — but a ranked /
+      // explicit pick (call-shaped or scoreNote) legitimately shares the ONE
+      // ranking sentence ("Tesla's one and Google's two" → a #1 and a #2 take).
+      // The aggregator already keeps those (build-index shouldKeepThesisForIndex),
+      // so align with it: only block sharing for non-pick takes.
       const dupe = theses.some(
         (other) => other.id !== t.id && normForMatch(other.quote ?? "").includes(key.slice(0, 60)),
       );
-      if (dupe) continue;
+      if (dupe && !isCallShaped(t) && !t.scoreNote) continue;
       t.quote = v.betterQuote.slice(0, 240);
       t.quoteStartMs = null; // re-snapped below
       swapped++;
@@ -157,7 +161,12 @@ export async function upgradeQuotes(): Promise<void> {
       changed.push(`${t.id}: "${t.quote.slice(0, 90)}…"`);
     }
     if (epChanged) {
+      // Re-derive confidence on the swapped quotes: a now-verbatim quote clears
+      // the verbatim fail-safe, so a real pick that was demoted out of scoring
+      // for a messy quote is restored — not silently dropped.
       snapQuoteTimestamps(theses, tr);
+      stampAttribution(theses, tr);
+      enforceVerbatimQuotes(theses, tr);
       store.saveTheses(epId, theses);
     }
     console.log(`  ${epId}: ${cands.length} checked`);

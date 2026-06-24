@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T15:25:24.175Z",
+  "generatedAt": "2026-06-24T16:36:19.417Z",
   "holdings": [
     {
       "slug": "spcx",
@@ -2084,8 +2084,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath sees Amazon retail as a kingmaker for physical AI (robotics, drones) but views AWS as constrained by being a broad marketplace rather than tightly coupling its own hardware and models — arguing Andy Jassy will need to make difficult, expensive bets including potentially acquiring Anthropic to remain competitive.",
-          "quote": "the Amazon retail side is going to be a kingmaker for all of these physical AI things... The thing that they'll have to embrace is, well, do I differentiate my own hardware from NVIDIA's at some point? Do I actually make a real bet on",
-          "quoteStartMs": 5399804,
+          "quote": "For physical AI, they're a kingmaker in parts because they're a, a sink for demand. So they'll just generate so much demand for robots… But yeah, the Amazon retail side is going to be a kingmaker for all of these physical AI things.",
+          "quoteStartMs": 5350200,
           "topics": [
             "AWS",
             "physical AI",
@@ -3439,8 +3439,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Apple is transitioning into a cash cow with no viable path to AI leadership — it can't attract top AI talent, its revenue growth is stalling, and its culture of optimizing for incremental hardware revenue prevents the bold innovation needed to compete in the AI era.",
-          "quote": "I don't think they have any chance of anything... A company that focuses on this kind of revenue growth is not capable of creating something that's exceptionally unexpected. That will come from a new company who has no ties to the past",
-          "quoteStartMs": 3087000,
+          "quote": "I don't think they have any chance of anything. Okay.",
+          "quoteStartMs": 3086700,
           "topics": [
             "AI strategy",
             "talent",
@@ -6029,8 +6029,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg acknowledges NVIDIA's durable moat but flags a low-probability, high-severity risk from China developing competitive semiconductor manufacturing alternatives, arguing US policy is inadvertently incentivizing China to build NVIDIA substitutes.",
-          "quote": "there's actually a low probability, but very high severity risk to NVIDIA in China... the more we continue to try and isolate China from a policy perspective, The more we are emboldening investment in China... to create alternatives to the",
-          "quoteStartMs": 2180477,
+          "quote": "I think NVIDIA, to Thomas's point, I think the common thesis is it is the most protected, the durability of the business is there, but I would argue that there's actually a low probability, but very high severity risk to NVIDIA in China.",
+          "quoteStartMs": 2170004,
           "topics": [
             "China risk",
             "semiconductor competition",
@@ -6054,8 +6054,8 @@
           "scoreNote": "Named as #1 pick in explicit 'who wins the AI prize in 5 years' ranking prompt",
           "sectorProxy": null,
           "summary": "Thomas LaFont picks NVIDIA as his #1 AI winner, arguing the GPU remains the dominant architecture with all roads still leading to it, and he doesn't see it being displaced.",
-          "quote": "number 1, I, I still think NVIDIA, right? I don't see the GPU kind of getting displaced... at the end of the day, all roads still lead to the GPU for all of these models. So I would kind of still put, NVIDIA on that.",
-          "quoteStartMs": 1799000,
+          "quote": "Look, I, I think to me, number 1, I, I still think NVIDIA, right? I don't see the GPU kind of getting displaced. I see additional architectures kind of coming on board, right? And growing the market. But, um, at the end of the day, all road",
+          "quoteStartMs": 1798900,
           "topics": [
             "GPU",
             "AI infrastructure",
@@ -8128,8 +8128,8 @@
           "scoreNote": "Named as #1 pick in explicit 'who wins the AI prize in 5 years' ranking prompt",
           "sectorProxy": null,
           "summary": "Friedberg picks Google as his #1 pick for the AI prize, citing a diversified portfolio of high-beta moonshots (Waymo, quantum, Isomorphic biologics), deep model research competency beyond LLMs, and Sundar's thoughtful evolution of search — any one bet hitting would offset core business risk.",
-          "quote": "I think Google's in such a position. I mean, look, uh, Demis, I think, has been fairly coy about where they are. They obviously promote Gemini 2.5, but there's a lot still coming.",
-          "quoteStartMs": 2398490,
+          "quote": "I would put Google number 1. I would probably put Tesla, uh, Tesla's valuation, I think already has a premium associated with those options. Yeah. So I don't know if I would really pay that premium.",
+          "quoteStartMs": 2371489,
           "topics": [
             "AI",
             "portfolio optionality",
@@ -8154,15 +8154,15 @@
           "scoreNote": "Named as #2 pick in explicit 'who wins the AI prize in 5 years' ranking prompt",
           "sectorProxy": null,
           "summary": "Chamath picks Google as his #2 AI winner, citing exceptional Gemini models tightly coupled to TPUs, a quantum computing lead, an upcoming generative AI media disruption via tools like VO3, and a massive user funnel across YouTube, Gmail, and Search to monetize via price-per-token.",
-          "quote": "Tesla one, Google two... you'll have the Gemini family of models, which just absolutely kick ass... they have the TPU and the next generation TPU I think is exceptional. They're baking quantum and then they have an entire funnel of",
-          "quoteStartMs": 1847000,
+          "quote": "Tesla's one and Google's two. And the reason is because they are the closest to having that vertically integrated stack that I spoke about.",
+          "quoteStartMs": 1847130,
           "topics": [
             "AI",
             "Gemini",
             "TPU",
             "monetization"
           ],
-          "attributionConfidence": "low"
+          "attributionConfidence": "high"
         },
         {
           "id": "E229-googl-Chamath-2",
@@ -10211,8 +10211,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg sees Tesla as the best place to invest for exposure to the humanoid robotics opportunity, describing it as a low-probability, high-upside call option embedded in the business, though notes valuation already carries a premium for this optionality.",
-          "quote": "Tesla probably has the— it is the best place to invest if you want to have a shot at a massive new industry... this humanoid robot opportunity is absolutely mind-blowingly ginormous. And I don't think that there's a better company on earth",
-          "quoteStartMs": 2129558,
+          "quote": "I think that Tesla probably has the— it is the best place to invest if you want to have a shot at a massive new industry. So they've got a baseline business in, in obviously the automobiles. But I think this humanoid robot opportunity is ab",
+          "quoteStartMs": 2128475,
           "topics": [
             "humanoid robotics",
             "valuation",
@@ -10236,7 +10236,7 @@
           "scoreNote": "Named as #2 pick in explicit 'who wins the AI prize in 5 years' ranking prompt",
           "sectorProxy": null,
           "summary": "Thomas LaFont picks Tesla as his #2 dark horse pick to win the AI prize, citing its potential for full vertical integration from silicon to model to hardware, with Optimus extending beyond cars.",
-          "quote": "My number 2, more of a dark horse, but I would pick Tesla. I do think it has the most potential for vertical integration, right? From all the way, the silicon to the model to actually the hardware",
+          "quote": "My number 2, more of a dark horse, but I would pick Tesla. I do think it has the most potential for vertical integration, right? From all the way, the silicon to the model to actually the hardware, right? That might become super important,",
           "quoteStartMs": 1820303,
           "topics": [
             "AI",
@@ -10263,7 +10263,7 @@
           "scoreNote": "Named as #1 pick in explicit 'who wins the AI prize in 5 years' ranking prompt",
           "sectorProxy": null,
           "summary": "Chamath argues Tesla is misunderstood and undervalued, citing its vertically integrated AI stack spanning vision models, xAI's LLMs, Dojo infrastructure, and physical AI applications in robotics and autonomous vehicles, making it his #1 pick to win the AI prize in 5 years.",
-          "quote": "Tesla's one and Google's two. And the reason is because they are the closest to having that vertically integrated stack that I spoke about. I think that Tesla has the best vision models. Now with xAI, they'll have one of the best LLMs and",
+          "quote": "Tesla's one and Google's two. And the reason is because they are the closest to having that vertically integrated stack that I spoke about. I think that Tesla has the best vision models. Now with xAI, they'll have one of the best LLMs and r",
           "quoteStartMs": 1847130,
           "topics": [
             "AI",
@@ -15195,7 +15195,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues Microsoft's employee base and business will likely grow, as it can bundle point-feature SaaS competitors into its platform and benefit from the broader cloud buildout, even if AI-generated code quality concerns mean layoffs aren't primarily AI-driven.",
-          "quote": "I suspect that Microsoft's business on the margin grows... It'll be cheaper for Microsoft to bundle together a bunch of other products that are point features today, and so they'll have more people... I suspect Microsoft's employee base",
+          "quote": "I suspect that Microsoft's business on the margin grows. Back to Dave's point, some of the 493 shrink and go away. It'll be cheaper for Microsoft to bundle together a bunch of other products that are point features today, and so they'll hav",
           "quoteStartMs": 5617868,
           "topics": [
             "enterprise software",
@@ -15221,7 +15221,7 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Friedberg argues Microsoft faces probable revenue decline over 5 years as its enterprise customer base gets disrupted by AI-native software, with the old-school buyers dying and new AI-native builders not using Microsoft products.",
-          "quote": "I do think like on this, on the application software layer, they're going to have a really hard time in this new world because the old school customers that buy Microsoft are going to die... Microsoft's core business for the— is going to",
+          "quote": "I do think like on this, on the application software layer, they're going to have a really hard time in this new world because the old school customers that buy Microsoft are going to die.",
           "quoteStartMs": 5663932,
           "topics": [
             "enterprise software disruption",
@@ -21768,8 +21768,8 @@
           "scoreNote": null,
           "sectorProxy": null,
           "summary": "Chamath argues consumption-based pricing models like Snowflake's are self-defeating long-term because customers can't tolerate variable escalating costs and will migrate to alternatives like Postgres or Supabase, destroying the business over time.",
-          "quote": "The best example is Snowflake. But in the long term, it destroys your business. And the reason is because you don't know which data's valuable... people go back to Postgres, people go to Supabase, they find all of these ways of saying",
-          "quoteStartMs": 4262137,
+          "quote": "consumption-based pricing. It doesn't work. And what I mean is you can have some adoption in the short term. The best example is Snowflake. But in the long term, it destroys your business. And the reason is because you don't know which data",
+          "quoteStartMs": 4256043,
           "topics": [
             "consumption pricing",
             "competitive threat",
@@ -22036,7 +22036,7 @@
           "sectorProxy": null,
           "summary": "Friedberg argues this is the first time in 20 years he'd feel comfortable shorting the S&P (ex-Mag 7) while picking a few AI winners, as AI creates historic dispersion between companies that adopt and those that don't.",
           "quote": "I think it's the first time you could probably argue that you could go short the S&P Yeah, and pick a couple of winners. It might be the first time that I would feel in the last 20 years— because I'm pretty negative on people being able to",
-          "quoteStartMs": 4781000,
+          "quoteStartMs": 4780990,
           "topics": [
             "AI disruption",
             "S&P 500",
@@ -32508,6 +32508,7 @@
         "benchmarkReturn": 0.2321620532115023,
         "alpha": 0.5260032335259386,
         "hosts": [
+          "Chamath",
           "Jason",
           "Friedberg"
         ]
@@ -34210,13 +34211,13 @@
     },
     {
       "host": "Chamath",
-      "positions": 7,
-      "portfolioReturn": 0.08471428571428574,
-      "benchmarkReturn": -0.026000000000000023,
-      "alpha": 0.11071428571428577,
+      "positions": 8,
+      "portfolioReturn": 0.21100000000000008,
+      "benchmarkReturn": 0.004999999999999893,
+      "alpha": 0.20600000000000018,
       "topCall": {
-        "ticker": "ADBE",
-        "alpha": 0.6581130169337444
+        "ticker": "GOOGL",
+        "alpha": 0.8730170031296078
       }
     },
     {
@@ -34610,13 +34611,33 @@
       "inceptionDate": "2025-01-04",
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
-      "totalInvested": 7000,
-      "portfolioValue": 7593,
-      "benchmarkValue": 6818,
-      "portfolioReturn": 0.08471428571428574,
-      "benchmarkReturn": -0.026000000000000023,
-      "outperformance": 0.11071428571428577,
+      "totalInvested": 8000,
+      "portfolioValue": 9688,
+      "benchmarkValue": 8040,
+      "portfolioReturn": 0.21100000000000008,
+      "benchmarkReturn": 0.004999999999999893,
+      "outperformance": 0.20600000000000018,
       "constituents": [
+        {
+          "slug": "googl",
+          "company": "Google",
+          "ticker": "GOOGL",
+          "sourceSymbol": "GOOGL",
+          "currency": "USD",
+          "direction": "long",
+          "callTypes": [
+            "selection"
+          ],
+          "entryDate": "2025-06-23",
+          "entryPrice": 165.19,
+          "latestPrice": 346.13,
+          "sinceReturn": 1.0953447545250925,
+          "benchmarkReturn": 0.22232775139548466,
+          "alpha": 0.8730170031296078,
+          "hosts": [
+            "Chamath"
+          ]
+        },
         {
           "slug": "adbe",
           "company": "Adobe",
@@ -34899,309 +34920,309 @@
         },
         {
           "date": "2025-06-24",
-          "portfolio": 2955,
-          "benchmark": 2973,
-          "invested": 3000
+          "portfolio": 3965,
+          "benchmark": 3984,
+          "invested": 4000
         },
         {
           "date": "2025-07-01",
-          "portfolio": 2834,
-          "benchmark": 2954,
-          "invested": 3000
+          "portfolio": 3898,
+          "benchmark": 3983,
+          "invested": 4000
         },
         {
           "date": "2025-07-09",
-          "portfolio": 3780,
-          "benchmark": 3938,
-          "invested": 4000
+          "portfolio": 4849,
+          "benchmark": 4978,
+          "invested": 5000
         },
         {
           "date": "2025-07-16",
-          "portfolio": 3884,
-          "benchmark": 3937,
-          "invested": 4000
+          "portfolio": 4991,
+          "benchmark": 4978,
+          "invested": 5000
         },
         {
           "date": "2025-07-23",
-          "portfolio": 3849,
-          "benchmark": 3904,
-          "invested": 4000
+          "portfolio": 5001,
+          "benchmark": 4961,
+          "invested": 5000
         },
         {
           "date": "2025-07-30",
-          "portfolio": 3820,
-          "benchmark": 3904,
-          "invested": 4000
+          "portfolio": 5010,
+          "benchmark": 4961,
+          "invested": 5000
         },
         {
           "date": "2025-08-06",
-          "portfolio": 3864,
-          "benchmark": 3909,
-          "invested": 4000
+          "portfolio": 5051,
+          "benchmark": 4964,
+          "invested": 5000
         },
         {
           "date": "2025-08-13",
-          "portfolio": 3899,
-          "benchmark": 3869,
-          "invested": 4000
+          "portfolio": 5122,
+          "benchmark": 4944,
+          "invested": 5000
         },
         {
           "date": "2025-08-20",
-          "portfolio": 3910,
-          "benchmark": 3892,
-          "invested": 4000
+          "portfolio": 5117,
+          "benchmark": 4955,
+          "invested": 5000
         },
         {
           "date": "2025-08-27",
-          "portfolio": 3936,
-          "benchmark": 3863,
-          "invested": 4000
+          "portfolio": 5192,
+          "benchmark": 4941,
+          "invested": 5000
         },
         {
           "date": "2025-09-04",
-          "portfolio": 3924,
-          "benchmark": 3855,
-          "invested": 4000
+          "portfolio": 5331,
+          "benchmark": 4937,
+          "invested": 5000
         },
         {
           "date": "2025-09-11",
-          "portfolio": 3928,
-          "benchmark": 3827,
-          "invested": 4000
+          "portfolio": 5383,
+          "benchmark": 4923,
+          "invested": 5000
         },
         {
           "date": "2025-09-18",
-          "portfolio": 3951,
-          "benchmark": 3812,
-          "invested": 4000
+          "portfolio": 5477,
+          "benchmark": 4915,
+          "invested": 5000
         },
         {
           "date": "2025-09-25",
-          "portfolio": 4023,
-          "benchmark": 3826,
-          "invested": 4000
+          "portfolio": 5511,
+          "benchmark": 4922,
+          "invested": 5000
         },
         {
           "date": "2025-10-02",
-          "portfolio": 4033,
-          "benchmark": 3789,
-          "invested": 4000
+          "portfolio": 5520,
+          "benchmark": 4904,
+          "invested": 5000
         },
         {
           "date": "2025-10-09",
-          "portfolio": 4038,
-          "benchmark": 3782,
-          "invested": 4000
+          "portfolio": 5500,
+          "benchmark": 4901,
+          "invested": 5000
         },
         {
           "date": "2025-10-16",
-          "portfolio": 4123,
-          "benchmark": 3817,
-          "invested": 4000
+          "portfolio": 5645,
+          "benchmark": 4918,
+          "invested": 5000
         },
         {
           "date": "2025-10-23",
-          "portfolio": 4066,
-          "benchmark": 3780,
-          "invested": 4000
+          "portfolio": 5598,
+          "benchmark": 4900,
+          "invested": 5000
         },
         {
           "date": "2025-10-30",
-          "portfolio": 4060,
-          "benchmark": 3754,
-          "invested": 4000
+          "portfolio": 5764,
+          "benchmark": 4886,
+          "invested": 5000
         },
         {
           "date": "2025-11-06",
-          "portfolio": 4167,
-          "benchmark": 3785,
-          "invested": 4000
+          "portfolio": 5891,
+          "benchmark": 4902,
+          "invested": 5000
         },
         {
           "date": "2025-11-13",
-          "portfolio": 6080,
-          "benchmark": 5783,
-          "invested": 6000
+          "portfolio": 7766,
+          "benchmark": 6902,
+          "invested": 7000
         },
         {
           "date": "2025-11-20",
-          "portfolio": 6126,
-          "benchmark": 5789,
-          "invested": 6000
+          "portfolio": 7878,
+          "benchmark": 6876,
+          "invested": 7000
         },
         {
           "date": "2025-11-28",
-          "portfolio": 6114,
-          "benchmark": 5779,
-          "invested": 6000
+          "portfolio": 8052,
+          "benchmark": 6918,
+          "invested": 7000
         },
         {
           "date": "2025-12-05",
-          "portfolio": 6058,
-          "benchmark": 5778,
-          "invested": 6000
+          "portfolio": 8003,
+          "benchmark": 6921,
+          "invested": 7000
         },
         {
           "date": "2025-12-12",
-          "portfolio": 6035,
-          "benchmark": 5779,
-          "invested": 6000
+          "portfolio": 7907,
+          "benchmark": 6915,
+          "invested": 7000
         },
         {
           "date": "2025-12-19",
-          "portfolio": 6132,
-          "benchmark": 5780,
-          "invested": 6000
+          "portfolio": 7991,
+          "benchmark": 6914,
+          "invested": 7000
         },
         {
           "date": "2025-12-29",
-          "portfolio": 6115,
-          "benchmark": 5778,
-          "invested": 6000
+          "portfolio": 8014,
+          "benchmark": 6924,
+          "invested": 7000
         },
         {
           "date": "2026-01-06",
-          "portfolio": 6118,
-          "benchmark": 5776,
-          "invested": 6000
+          "portfolio": 8021,
+          "benchmark": 6929,
+          "invested": 7000
         },
         {
           "date": "2026-01-13",
-          "portfolio": 7213,
-          "benchmark": 6774,
-          "invested": 7000
+          "portfolio": 9247,
+          "benchmark": 7930,
+          "invested": 8000
         },
         {
           "date": "2026-01-21",
-          "portfolio": 7231,
-          "benchmark": 6764,
-          "invested": 7000
+          "portfolio": 9219,
+          "benchmark": 7906,
+          "invested": 8000
         },
         {
           "date": "2026-01-28",
-          "portfolio": 7279,
-          "benchmark": 6775,
-          "invested": 7000
+          "portfolio": 9313,
+          "benchmark": 7934,
+          "invested": 8000
         },
         {
           "date": "2026-02-04",
-          "portfolio": 7109,
-          "benchmark": 6765,
-          "invested": 7000
+          "portfolio": 9125,
+          "benchmark": 7909,
+          "invested": 8000
         },
         {
           "date": "2026-02-11",
-          "portfolio": 7345,
-          "benchmark": 6772,
-          "invested": 7000
+          "portfolio": 9227,
+          "benchmark": 7925,
+          "invested": 8000
         },
         {
           "date": "2026-02-19",
-          "portfolio": 7326,
-          "benchmark": 6763,
-          "invested": 7000
+          "portfolio": 9159,
+          "benchmark": 7904,
+          "invested": 8000
         },
         {
           "date": "2026-02-26",
-          "portfolio": 7301,
-          "benchmark": 6769,
-          "invested": 7000
+          "portfolio": 9161,
+          "benchmark": 7917,
+          "invested": 8000
         },
         {
           "date": "2026-03-05",
-          "portfolio": 7150,
-          "benchmark": 6760,
-          "invested": 7000
+          "portfolio": 8971,
+          "benchmark": 7895,
+          "invested": 8000
         },
         {
           "date": "2026-03-12",
-          "portfolio": 7165,
-          "benchmark": 6743,
-          "invested": 7000
+          "portfolio": 9002,
+          "benchmark": 7853,
+          "invested": 8000
         },
         {
           "date": "2026-03-19",
-          "portfolio": 7186,
-          "benchmark": 6736,
-          "invested": 7000
+          "portfolio": 9046,
+          "benchmark": 7835,
+          "invested": 8000
         },
         {
           "date": "2026-03-26",
-          "portfolio": 7152,
-          "benchmark": 6719,
-          "invested": 7000
+          "portfolio": 8852,
+          "benchmark": 7794,
+          "invested": 8000
         },
         {
           "date": "2026-04-02",
-          "portfolio": 7142,
-          "benchmark": 6731,
-          "invested": 7000
+          "portfolio": 8932,
+          "benchmark": 7824,
+          "invested": 8000
         },
         {
           "date": "2026-04-10",
-          "portfolio": 7251,
-          "benchmark": 6758,
-          "invested": 7000
+          "portfolio": 9171,
+          "benchmark": 7890,
+          "invested": 8000
         },
         {
           "date": "2026-04-17",
-          "portfolio": 7421,
-          "benchmark": 6792,
-          "invested": 7000
+          "portfolio": 9490,
+          "benchmark": 7975,
+          "invested": 8000
         },
         {
           "date": "2026-04-24",
-          "portfolio": 7403,
-          "benchmark": 6796,
-          "invested": 7000
+          "portfolio": 9488,
+          "benchmark": 7986,
+          "invested": 8000
         },
         {
           "date": "2026-05-01",
-          "portfolio": 7338,
-          "benchmark": 6804,
-          "invested": 7000
+          "portfolio": 9673,
+          "benchmark": 8004,
+          "invested": 8000
         },
         {
           "date": "2026-05-08",
-          "portfolio": 7431,
-          "benchmark": 6823,
-          "invested": 7000
+          "portfolio": 9857,
+          "benchmark": 8052,
+          "invested": 8000
         },
         {
           "date": "2026-05-15",
-          "portfolio": 7478,
-          "benchmark": 6824,
-          "invested": 7000
+          "portfolio": 9880,
+          "benchmark": 8056,
+          "invested": 8000
         },
         {
           "date": "2026-05-22",
-          "portfolio": 7507,
-          "benchmark": 6831,
-          "invested": 7000
+          "portfolio": 9825,
+          "benchmark": 8074,
+          "invested": 8000
         },
         {
           "date": "2026-06-01",
-          "portfolio": 7493,
-          "benchmark": 6846,
-          "invested": 7000
+          "portfolio": 9772,
+          "benchmark": 8110,
+          "invested": 8000
         },
         {
           "date": "2026-06-08",
-          "portfolio": 7464,
-          "benchmark": 6824,
-          "invested": 7000
+          "portfolio": 9664,
+          "benchmark": 8056,
+          "invested": 8000
         },
         {
           "date": "2026-06-15",
-          "portfolio": 7677,
-          "benchmark": 6842,
-          "invested": 7000
+          "portfolio": 9913,
+          "benchmark": 8099,
+          "invested": 8000
         },
         {
           "date": "2026-06-23",
-          "portfolio": 7593,
-          "benchmark": 6818,
-          "invested": 7000
+          "portfolio": 9688,
+          "benchmark": 8040,
+          "invested": 8000
         }
       ],
       "excludedPrivateCount": 8,

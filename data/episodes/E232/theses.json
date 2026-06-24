@@ -66,7 +66,7 @@
     "scoreNote": "Named as #1 pick in explicit 'who wins the AI prize in 5 years' ranking prompt",
     "sectorProxy": null,
     "summary": "Chamath argues Tesla is misunderstood and undervalued, citing its vertically integrated AI stack spanning vision models, xAI's LLMs, Dojo infrastructure, and physical AI applications in robotics and autonomous vehicles, making it his #1 pick to win the AI prize in 5 years.",
-    "quote": "Tesla's one and Google's two. And the reason is because they are the closest to having that vertically integrated stack that I spoke about. I think that Tesla has the best vision models. Now with xAI, they'll have one of the best LLMs and",
+    "quote": "Tesla's one and Google's two. And the reason is because they are the closest to having that vertically integrated stack that I spoke about. I think that Tesla has the best vision models. Now with xAI, they'll have one of the best LLMs and r",
     "quoteStartMs": 1847130,
     "topics": [
       "AI",
@@ -92,7 +92,7 @@
     "scoreNote": "Named as #2 pick in explicit 'who wins the AI prize in 5 years' ranking prompt",
     "sectorProxy": null,
     "summary": "Thomas LaFont picks Tesla as his #2 dark horse pick to win the AI prize, citing its potential for full vertical integration from silicon to model to hardware, with Optimus extending beyond cars.",
-    "quote": "My number 2, more of a dark horse, but I would pick Tesla. I do think it has the most potential for vertical integration, right? From all the way, the silicon to the model to actually the hardware",
+    "quote": "My number 2, more of a dark horse, but I would pick Tesla. I do think it has the most potential for vertical integration, right? From all the way, the silicon to the model to actually the hardware, right? That might become super important, ",
     "quoteStartMs": 1820303,
     "topics": [
       "AI",
@@ -119,8 +119,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg sees Tesla as the best place to invest for exposure to the humanoid robotics opportunity, describing it as a low-probability, high-upside call option embedded in the business, though notes valuation already carries a premium for this optionality.",
-    "quote": "Tesla probably has the— it is the best place to invest if you want to have a shot at a massive new industry... this humanoid robot opportunity is absolutely mind-blowingly ginormous. And I don't think that there's a better company on earth",
-    "quoteStartMs": 2129558,
+    "quote": "I think that Tesla probably has the— it is the best place to invest if you want to have a shot at a massive new industry. So they've got a baseline business in, in obviously the automobiles. But I think this humanoid robot opportunity is ab",
+    "quoteStartMs": 2128475,
     "topics": [
       "humanoid robotics",
       "valuation",
@@ -144,15 +144,15 @@
     "scoreNote": "Named as #2 pick in explicit 'who wins the AI prize in 5 years' ranking prompt",
     "sectorProxy": null,
     "summary": "Chamath picks Google as his #2 AI winner, citing exceptional Gemini models tightly coupled to TPUs, a quantum computing lead, an upcoming generative AI media disruption via tools like VO3, and a massive user funnel across YouTube, Gmail, and Search to monetize via price-per-token.",
-    "quote": "Tesla one, Google two... you'll have the Gemini family of models, which just absolutely kick ass... they have the TPU and the next generation TPU I think is exceptional. They're baking quantum and then they have an entire funnel of",
-    "quoteStartMs": 1847000,
+    "quote": "Tesla's one and Google's two. And the reason is because they are the closest to having that vertically integrated stack that I spoke about.",
+    "quoteStartMs": 1847130,
     "topics": [
       "AI",
       "Gemini",
       "TPU",
       "monetization"
     ],
-    "attributionConfidence": "low"
+    "attributionConfidence": "high"
   },
   {
     "id": "E232-googl-Friedberg-6",
@@ -170,8 +170,8 @@
     "scoreNote": "Named as #1 pick in explicit 'who wins the AI prize in 5 years' ranking prompt",
     "sectorProxy": null,
     "summary": "Friedberg picks Google as his #1 pick for the AI prize, citing a diversified portfolio of high-beta moonshots (Waymo, quantum, Isomorphic biologics), deep model research competency beyond LLMs, and Sundar's thoughtful evolution of search — any one bet hitting would offset core business risk.",
-    "quote": "I think Google's in such a position. I mean, look, uh, Demis, I think, has been fairly coy about where they are. They obviously promote Gemini 2.5, but there's a lot still coming.",
-    "quoteStartMs": 2398490,
+    "quote": "I would put Google number 1. I would probably put Tesla, uh, Tesla's valuation, I think already has a premium associated with those options. Yeah. So I don't know if I would really pay that premium.",
+    "quoteStartMs": 2371489,
     "topics": [
       "AI",
       "portfolio optionality",
@@ -222,8 +222,8 @@
     "scoreNote": "Named as #1 pick in explicit 'who wins the AI prize in 5 years' ranking prompt",
     "sectorProxy": null,
     "summary": "Thomas LaFont picks NVIDIA as his #1 AI winner, arguing the GPU remains the dominant architecture with all roads still leading to it, and he doesn't see it being displaced.",
-    "quote": "number 1, I, I still think NVIDIA, right? I don't see the GPU kind of getting displaced... at the end of the day, all roads still lead to the GPU for all of these models. So I would kind of still put, NVIDIA on that.",
-    "quoteStartMs": 1799000,
+    "quote": "Look, I, I think to me, number 1, I, I still think NVIDIA, right? I don't see the GPU kind of getting displaced. I see additional architectures kind of coming on board, right? And growing the market. But, um, at the end of the day, all road",
+    "quoteStartMs": 1798900,
     "topics": [
       "GPU",
       "AI infrastructure",
@@ -248,8 +248,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg acknowledges NVIDIA's durable moat but flags a low-probability, high-severity risk from China developing competitive semiconductor manufacturing alternatives, arguing US policy is inadvertently incentivizing China to build NVIDIA substitutes.",
-    "quote": "there's actually a low probability, but very high severity risk to NVIDIA in China... the more we continue to try and isolate China from a policy perspective, The more we are emboldening investment in China... to create alternatives to the",
-    "quoteStartMs": 2180477,
+    "quote": "I think NVIDIA, to Thomas's point, I think the common thesis is it is the most protected, the durability of the business is there, but I would argue that there's actually a low probability, but very high severity risk to NVIDIA in China.",
+    "quoteStartMs": 2170004,
     "topics": [
       "China risk",
       "semiconductor competition",
@@ -273,8 +273,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Apple is transitioning into a cash cow with no viable path to AI leadership — it can't attract top AI talent, its revenue growth is stalling, and its culture of optimizing for incremental hardware revenue prevents the bold innovation needed to compete in the AI era.",
-    "quote": "I don't think they have any chance of anything... A company that focuses on this kind of revenue growth is not capable of creating something that's exceptionally unexpected. That will come from a new company who has no ties to the past",
-    "quoteStartMs": 3087000,
+    "quote": "I don't think they have any chance of anything. Okay.",
+    "quoteStartMs": 3086700,
     "topics": [
       "AI strategy",
       "talent",
@@ -325,7 +325,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg argues Microsoft faces probable revenue decline over 5 years as its enterprise customer base gets disrupted by AI-native software, with the old-school buyers dying and new AI-native builders not using Microsoft products.",
-    "quote": "I do think like on this, on the application software layer, they're going to have a really hard time in this new world because the old school customers that buy Microsoft are going to die... Microsoft's core business for the— is going to",
+    "quote": "I do think like on this, on the application software layer, they're going to have a really hard time in this new world because the old school customers that buy Microsoft are going to die.",
     "quoteStartMs": 5663932,
     "topics": [
       "enterprise software disruption",
@@ -350,7 +350,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Microsoft's employee base and business will likely grow, as it can bundle point-feature SaaS competitors into its platform and benefit from the broader cloud buildout, even if AI-generated code quality concerns mean layoffs aren't primarily AI-driven.",
-    "quote": "I suspect that Microsoft's business on the margin grows... It'll be cheaper for Microsoft to bundle together a bunch of other products that are point features today, and so they'll have more people... I suspect Microsoft's employee base",
+    "quote": "I suspect that Microsoft's business on the margin grows. Back to Dave's point, some of the 493 shrink and go away. It'll be cheaper for Microsoft to bundle together a bunch of other products that are point features today, and so they'll hav",
     "quoteStartMs": 5617868,
     "topics": [
       "enterprise software",
@@ -376,8 +376,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath sees Amazon retail as a kingmaker for physical AI (robotics, drones) but views AWS as constrained by being a broad marketplace rather than tightly coupling its own hardware and models — arguing Andy Jassy will need to make difficult, expensive bets including potentially acquiring Anthropic to remain competitive.",
-    "quote": "the Amazon retail side is going to be a kingmaker for all of these physical AI things... The thing that they'll have to embrace is, well, do I differentiate my own hardware from NVIDIA's at some point? Do I actually make a real bet on",
-    "quoteStartMs": 5399804,
+    "quote": "For physical AI, they're a kingmaker in parts because they're a, a sink for demand. So they'll just generate so much demand for robots… But yeah, the Amazon retail side is going to be a kingmaker for all of these physical AI things.",
+    "quoteStartMs": 5350200,
     "topics": [
       "AWS",
       "physical AI",
@@ -402,8 +402,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues consumption-based pricing models like Snowflake's are self-defeating long-term because customers can't tolerate variable escalating costs and will migrate to alternatives like Postgres or Supabase, destroying the business over time.",
-    "quote": "The best example is Snowflake. But in the long term, it destroys your business. And the reason is because you don't know which data's valuable... people go back to Postgres, people go to Supabase, they find all of these ways of saying",
-    "quoteStartMs": 4262137,
+    "quote": "consumption-based pricing. It doesn't work. And what I mean is you can have some adoption in the short term. The best example is Snowflake. But in the long term, it destroys your business. And the reason is because you don't know which data",
+    "quoteStartMs": 4256043,
     "topics": [
       "consumption pricing",
       "competitive threat",
@@ -427,8 +427,8 @@
     "scoreNote": "Explicit 'short the S&P' call paired with picking winners; broad market short, not a single-company call. sectorProxy left null as this is the broad S&P, not a sector ETF.",
     "sectorProxy": null,
     "summary": "Friedberg argues this is the first time in 20 years he'd feel comfortable shorting the S&P (ex-Mag 7) while picking a few AI winners, as AI creates historic dispersion between companies that adopt and those that don't.",
-    "quote": "I think it's the first time you could probably argue that you could go short the S&P Yeah, and pick a couple of winners. It might be the first time that I would feel in the last 20 years— because I'm pretty negative on people being able to",
-    "quoteStartMs": 4781000,
+    "quote": "I think it's the first time you could probably argue that you could go short the S&P Yeah, and pick a couple of winners. It might be the first time that I would feel in the last 20 years— because I'm pretty negative on people being able to ",
+    "quoteStartMs": 4780990,
     "topics": [
       "AI disruption",
       "S&P 500",

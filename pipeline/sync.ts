@@ -7,6 +7,7 @@ import { nameSpeakers } from "./speakers";
 import { buildIndex } from "./build-index";
 import { extractAssets } from "./extract-assets";
 import { nameGuests } from "./name-guests";
+import { upgradeQuotes } from "./upgrade-quotes";
 import { store } from "./store";
 import type { Episode, Thesis } from "../lib/types";
 
@@ -305,6 +306,11 @@ export async function sync(opts: SyncOpts = {}): Promise<void> {
     await extractAssets(ok);
     console.log("name-guests (guest attribution) for new episodes…");
     await nameGuests(ok);
+    // Upgrade messy/stitched quotes on scored picks to a clean verbatim line
+    // BEFORE building — else the verbatim fail-safe silently demotes a real pick
+    // (e.g. a ranked #2) out of scoring for a quote the LLM smoothed.
+    console.log("upgrade-quotes (rescue scored picks with messy quotes) for new episodes…");
+    await upgradeQuotes(ok);
   }
 
   console.log("\nbuilding index…");
