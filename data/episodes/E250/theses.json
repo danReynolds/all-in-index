@@ -1,6 +1,32 @@
 [
   {
-    "id": "E250-openai-Chamath-0",
+    "id": "E250-openai-Guest-0",
+    "episodeId": "E250",
+    "episodeNumber": 250,
+    "episodeDate": "2025-11-07T20:36:00.000Z",
+    "company": "OpenAI",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Guest",
+    "stance": "bull",
+    "conviction": "high",
+    "callType": "view",
+    "excludeReason": "not_investment_call",
+    "scoreNote": "Not scored: The published quote stitches two separate utterances from different moments in the transcript — 'He knows that I don't want to sell my shares. He knows that I would like to buy more shares in the company' is from Chamath at ~184s, not Guest/Brad Gerstner. The revenue run-rate line is Brad's own. Need a quote solely from Brad's lines that proves his long position.",
+    "sectorProxy": null,
+    "summary": "Brad Gerstner is a bull on OpenAI, holding shares and wanting to buy more, citing rapid revenue growth toward a $20B run rate and belief in the long-term AI supercycle.",
+    "quote": "He knows that I don't want to sell my shares. He knows that I would like to buy more shares in the company. We will end the year on a $20 billion forward run rate.",
+    "quoteStartMs": 184000,
+    "topics": [
+      "revenue growth",
+      "AI supercycle",
+      "valuation"
+    ],
+    "attributionConfidence": "low",
+    "guestName": "Brad Gerstner"
+  },
+  {
+    "id": "E250-openai-Chamath-1",
     "episodeId": "E250",
     "episodeNumber": 250,
     "episodeDate": "2025-11-07T20:36:00.000Z",
@@ -10,18 +36,17 @@
     "host": "Chamath",
     "stance": "bull",
     "conviction": "high",
-    "callType": "explicit_long",
-    "excludeReason": null,
-    "scoreNote": "Confirmed shareholder who explicitly wants to buy more shares; defends the business against bubble concerns.",
+    "callType": "view",
+    "excludeReason": "not_investment_call",
+    "scoreNote": "Not scored: The published quote splices Chamath's supercycle statement from ~1964s with his investor list — but the investor list is a deliberate diversification frame ('I'm an investor in OpenAI and Anthropic and Google and Microsoft and Nvidia, etc. And so I don't think you have to make the call right now') — which is explicitly NOT a conviction pick on OpenAI. The disclosed-position protection still applies for OpenAI specifically since Chamath had earlier first-person discussion, but the best standalone Chamath quote for an OpenAI long is from ~184s.",
     "sectorProxy": null,
-    "summary": "Chamath is a confirmed investor in OpenAI and wants to buy more shares, citing the massive AI supercycle, strong cohort retention curves, and rapid revenue growth toward a $20B run rate as reasons for high conviction.",
-    "quote": "he knows that I don't want to sell my shares. He knows that I would like to buy more shares in the company",
-    "quoteStartMs": 204807,
+    "summary": "Chamath is an investor in OpenAI and bullish on the AI supercycle broadly, viewing the $1.4T spend commitment as manageable given expected revenue growth to $100B+ and deal flexibility.",
+    "quote": "I know, and I talked to Sarah this morning about this, are deeply grateful for what the federal government is doing to accelerate the buildout of power and infrastructure.",
+    "quoteStartMs": 899147,
     "topics": [
       "AI supercycle",
       "revenue growth",
-      "valuation",
-      "consumer retention"
+      "capex"
     ],
     "attributionConfidence": "high"
   },
@@ -34,18 +59,18 @@
     "ticker": null,
     "isPublic": false,
     "host": "Guest",
-    "stance": "neutral",
+    "stance": "bull",
     "conviction": "high",
     "callType": "view",
     "excludeReason": null,
-    "scoreNote": "Not scored: The quote from Guest (Brad Gerstner) about Anthropic's impressive revenue chart is analytical commentary — it does not state he owns Anthropic or is making a buy call. It is a view on the revenue trajectory, not an explicit_long. The quote does not carry 'I'm an investor in Anthropic' language (that phrase appears only in Chamath's line). No scoreable position in Brad's own words is evidenced.",
+    "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Brad Gerstner is an investor in Anthropic and highlights its impressive revenue trajectory — reaching similar revenue milestones to OpenAI while burning far less capital — as the most compelling data point from leaked forecasts.",
-    "quote": "the most impressive revenue chart when you showed that leak from OpenAI was Anthropic. If that revenue chart is real, what's really impressive is Anthropic is not really in a J-curve at all, and they get to very similar points of free cash",
+    "summary": "Brad Gerstner highlights Anthropic's revenue chart as the most impressive of the AI companies, noting it reaches profitability without burning through as much capital as OpenAI, making its path to free cash flow more efficient.",
+    "quote": "The most impressive revenue chart when you showed that leak from OpenAI was Anthropic. If that revenue chart is real, what's really impressive is Anthropic is not really in a J-curve at all, and they get to very similar points of free cash",
     "quoteStartMs": 2069000,
     "topics": [
+      "free cash flow",
       "capital efficiency",
-      "revenue growth",
       "AI competition"
     ],
     "attributionConfidence": "high",
@@ -56,7 +81,7 @@
     "episodeId": "E250",
     "episodeNumber": 250,
     "episodeDate": "2025-11-07T20:36:00.000Z",
-    "company": "Alphabet",
+    "company": "Google",
     "ticker": "GOOGL",
     "isPublic": true,
     "host": "Guest",
@@ -66,13 +91,13 @@
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Brad Gerstner notes that Google's earnings were phenomenal with blazing-hot AI numbers, and separately that Apple paying Google billions for AI/search integration is a positive revenue tailwind for Alphabet.",
+    "summary": "Brad Gerstner notes Google's earnings were phenomenal with blazing hot AI numbers, and expresses enthusiasm for Gemini 3 as a competitive product, suggesting Google is coming back strongly.",
     "quote": "Google's earnings were phenomenal. Their AI numbers were blazing hot.",
     "quoteStartMs": 450569,
     "topics": [
       "earnings",
-      "AI revenue",
-      "search"
+      "AI competition",
+      "product"
     ],
     "attributionConfidence": "high",
     "guestName": "Brad Gerstner"
@@ -86,18 +111,18 @@
     "ticker": "META",
     "isPublic": true,
     "host": "Guest",
-    "stance": "neutral",
+    "stance": "bear",
     "conviction": "low",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Brad Gerstner briefly characterizes Meta's most recent earnings as terrible in the context of market digesting Mag Seven AI capex returns.",
+    "summary": "Brad Gerstner briefly characterizes Meta's earnings as terrible in the context of the AI earnings season, a negative data point on its AI business trajectory.",
     "quote": "Facebook's was terrible.",
     "quoteStartMs": 454008,
     "topics": [
       "earnings",
-      "AI capex"
+      "AI"
     ],
     "attributionConfidence": "high",
     "guestName": "Brad Gerstner"
@@ -112,18 +137,17 @@
     "isPublic": true,
     "host": "Guest",
     "stance": "neutral",
-    "conviction": "medium",
+    "conviction": "low",
     "callType": "view",
     "excludeReason": null,
     "scoreNote": null,
     "sectorProxy": null,
-    "summary": "Brad Gerstner sees Apple as ceding its AI business to Google by paying Google billions per year, a strategically weak position that puts Apple in an interesting but concerning place competitively in AI.",
-    "quote": "Apple is now in this really interesting place where it seems like they're gonna seed their AI business to Google and pay them billions of dollars a year",
+    "summary": "Brad Gerstner suggests Apple is ceding its AI business to Google by paying them billions for AI/search integration, implying Apple is in a structurally weak position in the AI era.",
+    "quote": "Apple is now in this really interesting place where it seems like they're gonna seed their AI business to Google and pay them billions of dollars a year, like they get paid billions of dollars a year for search from them.",
     "quoteStartMs": 455040,
     "topics": [
       "AI strategy",
-      "competitive position",
-      "Google dependency"
+      "competitive position"
     ],
     "attributionConfidence": "high",
     "guestName": "Brad Gerstner"

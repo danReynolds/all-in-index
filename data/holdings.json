@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T22:01:28.869Z",
+  "generatedAt": "2026-06-24T22:30:30.079Z",
   "holdings": [
     {
       "slug": "spcx",
@@ -1758,18 +1758,18 @@
           "ticker": null,
           "isPublic": false,
           "host": "Guest",
-          "stance": "neutral",
+          "stance": "bull",
           "conviction": "high",
           "callType": "view",
           "excludeReason": null,
-          "scoreNote": "Not scored: The quote from Guest (Brad Gerstner) about Anthropic's impressive revenue chart is analytical commentary — it does not state he owns Anthropic or is making a buy call. It is a view on the revenue trajectory, not an explicit_long. The quote does not carry 'I'm an investor in Anthropic' language (that phrase appears only in Chamath's line). No scoreable position in Brad's own words is evidenced.",
+          "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Brad Gerstner is an investor in Anthropic and highlights its impressive revenue trajectory — reaching similar revenue milestones to OpenAI while burning far less capital — as the most compelling data point from leaked forecasts.",
-          "quote": "the most impressive revenue chart when you showed that leak from OpenAI was Anthropic. If that revenue chart is real, what's really impressive is Anthropic is not really in a J-curve at all, and they get to very similar points of free cash",
+          "summary": "Brad Gerstner highlights Anthropic's revenue chart as the most impressive of the AI companies, noting it reaches profitability without burning through as much capital as OpenAI, making its path to free cash flow more efficient.",
+          "quote": "The most impressive revenue chart when you showed that leak from OpenAI was Anthropic. If that revenue chart is real, what's really impressive is Anthropic is not really in a J-curve at all, and they get to very similar points of free cash",
           "quoteStartMs": 2069000,
           "topics": [
+            "free cash flow",
             "capital efficiency",
-            "revenue growth",
             "AI competition"
           ],
           "attributionConfidence": "high",
@@ -2586,6 +2586,31 @@
           "attributionConfidence": "high"
         },
         {
+          "id": "E250-meta-Guest-5",
+          "episodeId": "E250",
+          "episodeNumber": 250,
+          "episodeDate": "2025-11-07T20:36:00.000Z",
+          "company": "Meta",
+          "ticker": "META",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bear",
+          "conviction": "low",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Brad Gerstner briefly characterizes Meta's earnings as terrible in the context of the AI earnings season, a negative data point on its AI business trajectory.",
+          "quote": "Facebook's was terrible.",
+          "quoteStartMs": 454008,
+          "topics": [
+            "earnings",
+            "AI"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
+        },
+        {
           "id": "E247-meta-Jason-6",
           "episodeId": "E247",
           "episodeNumber": 247,
@@ -2892,11 +2917,11 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts hold a broadly constructive but increasingly cautious view of Meta, with the bull case resting on its massive compute infrastructure, billions of daily active users, strong ad-revenue execution, and early leadership in open-source AI via Llama — points emphasized by Sacks, Chamath, and guests Baker, LaFont, and Levie. However, sentiment has shifted over time: what began as near-consensus praise for Meta's AI and AR execution (Sacks, Chamath, Cuban, Levie in 2024–early 2025) has given way to mounting skepticism, with Chamath arguing Meta fumbled its Llama open-source strategy by failing to deliver a truly competitive model, Sacks noting the LLaMA 4 release was widely seen as disappointing and that Meta may abandon open source altogether, and guest Keith going furthest by calling Meta's AI efforts a wholesale miss requiring a new team. Additional concerns are raised on separate fronts: Chamath flags a litigation wave from Section 230 verdicts as a structural \"death by a thousand cuts\" risk, while also crediting Meta's strong business model and compute moat as genuine long-term advantages. Valuation is not seen as a concern, with guest Gerstner pointing to 17x GAAP earnings as reasonable, and most hosts agree that Meta's scale and capital position keep it firmly in contention in the AI race even as execution questions grow.",
+      "synthesis": "The hosts hold a broadly constructive but increasingly mixed view of Meta across multiple dimensions. On AI and open source, early sentiment was strongly positive — Sacks and Cuban praised Meta's Llama models and open-source leadership, while Levie argued Llama acts as a permanent price ceiling on rival AI services — but that optimism has eroded: Sacks later called the Llama 4 release disappointing and flagged Meta may abandon open source altogether, and Chamath ultimately judged the entire Llama strategy a significant fumble. On AR hardware, both Sacks and Chamath see Meta as ahead or at least commercially viable, though Chamath hedges that glasses may not prove to be the definitive AI form factor. Chamath has been the most active voice on business strategy, framing Zuckerberg's policy pivots and Scale AI acquisitions as value-maximizing moves while also identifying key gaps — most notably that Meta still lacks infrastructure and compute \"secrets\" held by rivals like OpenAI and DeepSeek — and separately warning that Section 230 litigation could become a compounding liability; the most bearish data points come from a guest (Keith) who argues Meta has missed the AI boat entirely despite heavy spending, and Brad Gerstner who flagged a recent earnings quarter as poor, though another Gerstner appearance and Gavin Baker point to strong revenue beats driven by AI-enhanced ad targeting as evidence of real returns. Valuation-wise, Gerstner notes Meta trades at a modest 17x GAAP earnings, suggesting the market is not pricing in excessive optimism.",
       "netStance": "neutral",
       "firstMentioned": "2024-09-27T17:36:00.000Z",
       "lastMentioned": "2026-06-13T04:51:00.000Z",
-      "mentionCount": 18,
+      "mentionCount": 19,
       "market": {
         "ticker": "META",
         "sourceSymbol": "META",
@@ -3300,32 +3325,6 @@
             "hardware"
           ],
           "attributionConfidence": "high"
-        },
-        {
-          "id": "E250-aapl-Guest-6",
-          "episodeId": "E250",
-          "episodeNumber": 250,
-          "episodeDate": "2025-11-07T20:36:00.000Z",
-          "company": "Apple",
-          "ticker": "AAPL",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Brad Gerstner sees Apple as ceding its AI business to Google by paying Google billions per year, a strategically weak position that puts Apple in an interesting but concerning place competitively in AI.",
-          "quote": "Apple is now in this really interesting place where it seems like they're gonna seed their AI business to Google and pay them billions of dollars a year",
-          "quoteStartMs": 455040,
-          "topics": [
-            "AI strategy",
-            "competitive position",
-            "Google dependency"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Brad Gerstner"
         },
         {
           "id": "E238-aapl-Friedberg-3",
@@ -3873,11 +3872,11 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts are broadly divided, with bears and bulls clustering around Apple's AI positioning as the central fault line. Chamath, Friedberg, and several guests (Baker, LaFont, Gerstner, Kalanick) share a persistent bear-to-skeptical view, arguing Apple has squandered its cash hoard on buybacks instead of bold innovation, missed the AI wave, faces serious regulatory risks to its App Store and Google TAC revenue, and shows declining product quality — with Chamath eventually reaching high conviction that Apple has \"no chance\" at AI leadership. Sacks and Jason are more volatile: Sacks moved from bearish on Apple's innovation stagnation to briefly bullish on the iPhone 16 upgrade cycle thesis contingent on strong on-device AI, before raising concerns about App Store anti-competitiveness; Jason swung from high conviction that Apple would \"win the AI consumer\" in mid-2024 to calling Apple Intelligence \"a piece of garbage\" by early 2025, then back to bullish by mid-2026, arguing Apple's hardware footprint and data-sovereignty positioning make it a dark horse AI contender. Friedberg consistently cautions against counting Apple out, citing its unmatched system and the history of perennial — and repeatedly wrong — Apple decline narratives, while Chamath and Friedberg agree on near-term multiple compression risk tied to regulatory headwinds and revenue ceiling dynamics.",
+      "synthesis": "The hosts are broadly skeptical of Apple's near-term prospects, with the dominant concern being a failure to establish meaningful AI leadership — a view shared across Chamath, Sacks (at times), Jason, and multiple guests including Gavin Baker, Travis Kalanick, and Thomas LaFont, who variously describe Apple Intelligence as poor, Apple's AI execution as inept, and its culture as too incremental to compete in the AI era. Compounding this, Chamath and Friedberg highlight structural financial risks from the potential loss of Google's ~$20B TAC payment, App Store regulatory pressure, and multiple compression as growth stalls, while Chamath and Friedberg also flag deteriorating product quality (iOS 18) as evidence of organizational complacency. Jason and Friedberg represent the most optimistic counterpoints in the later period — Jason arguing Apple's M-series hardware and data-sovereignty positioning make it a dark horse AI player capable of running open-source models locally, and Friedberg cautioning that Apple has repeatedly defied obituaries and its vast install base in personal data could underpin a compelling personal AI assistant. Sacks has oscillated most visibly, moving from bearish on innovation stagnation to bullish on an iPhone 16 AI upgrade cycle before returning to mixed skepticism, while Chamath's trajectory has hardened from medium to high conviction bear, concluding Apple has no viable path to AI leadership and is effectively transitioning into a cash cow.",
       "netStance": "bull",
       "firstMentioned": "2024-05-10T19:47:00.000Z",
       "lastMentioned": "2026-05-29T22:23:00.000Z",
-      "mentionCount": 28,
+      "mentionCount": 27,
       "market": {
         "ticker": "AAPL",
         "sourceSymbol": "AAPL",
@@ -4584,7 +4583,7 @@
           "attributionConfidence": "high"
         },
         {
-          "id": "E250-openai-Chamath-0",
+          "id": "E250-openai-Chamath-1",
           "episodeId": "E250",
           "episodeNumber": 250,
           "episodeDate": "2025-11-07T20:36:00.000Z",
@@ -4594,20 +4593,45 @@
           "host": "Chamath",
           "stance": "bull",
           "conviction": "high",
-          "callType": "explicit_long",
-          "excludeReason": null,
-          "scoreNote": "Confirmed shareholder who explicitly wants to buy more shares; defends the business against bubble concerns.",
+          "callType": "view",
+          "excludeReason": "not_investment_call",
+          "scoreNote": "Not scored: The published quote splices Chamath's supercycle statement from ~1964s with his investor list — but the investor list is a deliberate diversification frame ('I'm an investor in OpenAI and Anthropic and Google and Microsoft and Nvidia, etc. And so I don't think you have to make the call right now') — which is explicitly NOT a conviction pick on OpenAI. The disclosed-position protection still applies for OpenAI specifically since Chamath had earlier first-person discussion, but the best standalone Chamath quote for an OpenAI long is from ~184s.",
           "sectorProxy": null,
-          "summary": "Chamath is a confirmed investor in OpenAI and wants to buy more shares, citing the massive AI supercycle, strong cohort retention curves, and rapid revenue growth toward a $20B run rate as reasons for high conviction.",
-          "quote": "he knows that I don't want to sell my shares. He knows that I would like to buy more shares in the company",
-          "quoteStartMs": 204807,
+          "summary": "Chamath is an investor in OpenAI and bullish on the AI supercycle broadly, viewing the $1.4T spend commitment as manageable given expected revenue growth to $100B+ and deal flexibility.",
+          "quote": "I know, and I talked to Sarah this morning about this, are deeply grateful for what the federal government is doing to accelerate the buildout of power and infrastructure.",
+          "quoteStartMs": 899147,
           "topics": [
             "AI supercycle",
             "revenue growth",
-            "valuation",
-            "consumer retention"
+            "capex"
           ],
           "attributionConfidence": "high"
+        },
+        {
+          "id": "E250-openai-Guest-0",
+          "episodeId": "E250",
+          "episodeNumber": 250,
+          "episodeDate": "2025-11-07T20:36:00.000Z",
+          "company": "OpenAI",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": "not_investment_call",
+          "scoreNote": "Not scored: The published quote stitches two separate utterances from different moments in the transcript — 'He knows that I don't want to sell my shares. He knows that I would like to buy more shares in the company' is from Chamath at ~184s, not Guest/Brad Gerstner. The revenue run-rate line is Brad's own. Need a quote solely from Brad's lines that proves his long position.",
+          "sectorProxy": null,
+          "summary": "Brad Gerstner is a bull on OpenAI, holding shares and wanting to buy more, citing rapid revenue growth toward a $20B run rate and belief in the long-term AI supercycle.",
+          "quote": "He knows that I don't want to sell my shares. He knows that I would like to buy more shares in the company. We will end the year on a $20 billion forward run rate.",
+          "quoteStartMs": 184000,
+          "topics": [
+            "revenue growth",
+            "AI supercycle",
+            "valuation"
+          ],
+          "attributionConfidence": "low",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E249-openai-Guest-2",
@@ -5567,11 +5591,11 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts hold a broadly mixed-to-skeptical view of OpenAI, with meaningful disagreement on durability of its lead. Sacks is the most consistently bullish, arguing OpenAI's dominant developer ecosystem, subscription revenue, semantic-search positioning, and accelerating compute advantage make it a legitimate trillion-dollar-scale business — though he has grown more cautious recently, flagging that Anthropic's ~10x growth rate versus OpenAI's ~3x could erode its lead within two years if the divergence continues. Chamath oscillates between bull and neutral, crediting OpenAI's technical leadership, talent concentration, and consumer mindshare while repeatedly warning that LLM commoditization, open-source alternatives, declining market share (from ~50% to ~33%), and a valuation that may outrun near-term fundamentals are real risks; he nonetheless remains a confirmed investor and sees a multi-trillion-dollar ceiling if it stays focused. Jason is the most consistently bearish, arguing the $150B–$500B+ valuation is unjustifiable given $5B+ annual losses, intensifying competition from Google, Meta, and xAI, and a structural trend toward peak market share — predicting OpenAI falls to the #3–5 slot within three years. Friedberg occupies a cautious middle ground, questioning whether the IPO public can capture meaningful upside at current multiples, flagging model commoditization accelerated by DeepSeek, governance and partnership fragility, and insufficient capital demand to absorb a large listing at current valuations.",
+      "synthesis": "The hosts hold a genuinely divided and evolving view on OpenAI, with no clear consensus across the full timeline. Sacks and Chamath (at various points) acknowledge OpenAI's real revenue, dominant consumer brand, and technical leadership, with Sacks and Gerstner (guest) most consistently bullish on its B2B/API model, search-replacement thesis, and revenue trajectory toward $100B+. However, Jason is the most persistently bearish, arguing the company is overvalued at any price above ~40x revenue given $5B+ annual losses, and predicting it will fall to the #3–5 market position within a few years as Google, Meta, and xAI intensify competition — a view partially echoed by Sacks in early 2026, who flags OpenAI's 3–4x annual growth rate as dangerously slow compared to Anthropic's 10x. Chamath is the most conflicted voice overall, oscillating between bull (dominant consumer brand, talent concentration, trillion-dollar potential) and bear (AOL analogy, open-source commoditization, market share erosion from ~50% to ~33%), ultimately settling on a view that OpenAI will likely capture roughly one-third of a fragmented multi-player AI market — still valuable, but not the runaway winner; structural concerns raised across multiple hosts include governance failures (nonprofit-to-for-profit conversion flagged as self-dealing by Naval and Elon Musk as guests), partnership instability (Friedberg), copyright litigation risk (Jason), and talent departures (Gavin Baker as guest).",
       "netStance": "mixed",
       "firstMentioned": "2024-05-10T19:47:00.000Z",
       "lastMentioned": "2026-05-29T22:23:00.000Z",
-      "mentionCount": 55,
+      "mentionCount": 56,
       "market": null,
       "description": "AI research company that develops large language models and products including ChatGPT and the GPT series.",
       "domain": "openai.com"
@@ -7837,13 +7861,13 @@
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Brad Gerstner notes that Google's earnings were phenomenal with blazing-hot AI numbers, and separately that Apple paying Google billions for AI/search integration is a positive revenue tailwind for Alphabet.",
+          "summary": "Brad Gerstner notes Google's earnings were phenomenal with blazing hot AI numbers, and expresses enthusiasm for Gemini 3 as a competitive product, suggesting Google is coming back strongly.",
           "quote": "Google's earnings were phenomenal. Their AI numbers were blazing hot.",
           "quoteStartMs": 450569,
           "topics": [
             "earnings",
-            "AI revenue",
-            "search"
+            "AI competition",
+            "product"
           ],
           "attributionConfidence": "high",
           "guestName": "Brad Gerstner"
@@ -32982,16 +33006,8 @@
         "invested": 15000
       }
     ],
-    "excludedPrivateCount": 12,
+    "excludedPrivateCount": 11,
     "excludedPrivate": [
-      {
-        "slug": "openai",
-        "company": "OpenAI",
-        "hosts": [
-          "Chamath"
-        ],
-        "kind": "private"
-      },
       {
         "slug": "anthropic",
         "company": "Anthropic",
@@ -34883,16 +34899,8 @@
           "invested": 6000
         }
       ],
-      "excludedPrivateCount": 7,
+      "excludedPrivateCount": 6,
       "excludedPrivate": [
-        {
-          "slug": "openai",
-          "company": "OpenAI",
-          "hosts": [
-            "Chamath"
-          ],
-          "kind": "private"
-        },
         {
           "slug": "glue",
           "company": "Glue",

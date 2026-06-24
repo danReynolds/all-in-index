@@ -69,8 +69,12 @@ const INPUT_SCHEMA = {
   required: ["mapping", "notes", "distinctSpeakers"],
 };
 
-/** Build a token-bounded digest: the opening, plus an even sample across the rest. */
-function buildDigest(t: Transcript, openingCount = 60, sampleCount = 60): string {
+/** Build a token-bounded digest: the opening, an even time-sample, AND each
+ * cluster's most substantive lines. The per-cluster section is what makes a
+ * cluster identifiable: an even time-sample can miss a speaker's defining lines
+ * (self-ID, who-they-address, their own firm) if they talk in bursts — which is
+ * exactly how a guest's cluster gets mislabeled as a host. */
+function buildDigest(t: Transcript, openingCount = 60, sampleCount = 60, perClusterCount = 6): string {
   const u = t.utterances;
   const opening = u.slice(0, openingCount);
   const rest = u.slice(openingCount);
@@ -80,8 +84,19 @@ function buildDigest(t: Transcript, openingCount = 60, sampleCount = 60): string
     x
       .map((s) => `[${s.cluster}] ${s.text.slice(0, 280)}`)
       .join("\n");
+  // The longest few lines per cluster — guarantees every cluster's character is
+  // visible to the namer (longest lines carry the most identifying signal).
+  const clusters = [...new Set(u.map((s) => s.cluster))];
+  const perCluster = clusters.flatMap((c) =>
+    u
+      .filter((s) => s.cluster === c)
+      .sort((a, b) => b.text.length - a.text.length)
+      .slice(0, perClusterCount),
+  );
   return (
-    `=== OPENING ===\n${fmt(opening)}\n\n=== SAMPLED ACROSS EPISODE ===\n${fmt(sampled)}`
+    `=== OPENING ===\n${fmt(opening)}\n\n` +
+    `=== SAMPLED ACROSS EPISODE ===\n${fmt(sampled)}\n\n` +
+    `=== EACH CLUSTER'S MOST SUBSTANTIVE LINES (use these to identify who each cluster is) ===\n${fmt(perCluster)}`
   );
 }
 
