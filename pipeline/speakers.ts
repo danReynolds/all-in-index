@@ -27,10 +27,12 @@ ${Object.values(HOST_PROFILES)
 The transcript was diarized into anonymous clusters labelled with capital letters (A, B, C, …). Each line is prefixed with its cluster. Your job: map every cluster to exactly one of: Chamath, Jason, Sacks, Friedberg, or Guest.
 
 Strong cues to use:
-- The episode TITLE: guests are almost always named in it ("… with Gavin Baker"), and interview episodes lead with the guest's name. If the title names a guest, expect a Guest cluster; if it's a plain roundtable title, expect only hosts (though a host may be absent).
+- The episode TITLE: guests are often named in it ("… with Gavin Baker"), and interview episodes lead with the guest's name. If the title names a guest, expect a Guest cluster. But a plain roundtable title does NOT guarantee there's no guest — a guest can call in, drop in, or be played as a clip without being named in the title or metadata, so never force a clearly-non-host cluster onto a host just because none was announced.
 - The intro. Jason almost always hosts the open ("welcome to episode N…") and introduces the others by name in a set order. Hosts often announce absences ("Sacks is out today") — believe them.
 - Direct address: "Sacks, what do you think?", "Freeberg…", "Chamath…", "J-Cal".
-- Self-reference and known speech patterns / topics (Friedberg = science/biotech/climate; Sacks = policy/SaaS/geopolitics; Chamath = markets/macro/"my number is"; Jason = moderation, startups, ad reads).
+- THIRD-PERSON reference is decisive the other way: a cluster that refers to one of the four hosts in the third person ("Chamath teed this up perfectly", "as Sacks was saying", "I agree with Friedberg") is NOT that host — map it to another host or to Guest. Self-identification is first-person only.
+- FIRST-PERSON for a non-host firm/fund marks a Guest: a cluster speaking as the principal of an outside company or fund ("Altimeter has owned all of compute for three years… we still believe…", "here at Newsmax", "what we're seeing at our firm") is a Guest, not the topically-nearest host — content about one's OWN outside firm outweighs stylistic resemblance to a host.
+- Self-reference and known speech patterns / topics (Friedberg = science/biotech/climate; Sacks = policy/SaaS/geopolitics; Chamath = markets/macro/"my number is"; Jason = moderation, startups, ad reads) — use as a tie-breaker only, never to override the first/third-person signals above.
 - A non-host interviewee should be mapped to "Guest". Two clusters may map to the same host if diarization over-split them.
 
 Be honest about confidence: "high" only when direct address or self-identification pins the cluster; "medium" for strong stylistic/topical evidence; "low" when you are guessing. Only use "Unknown" if there is genuinely no signal. Cite the concrete evidence (a quote or cue) for each mapping.`;

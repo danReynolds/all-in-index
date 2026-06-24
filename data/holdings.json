@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T13:25:05.383Z",
+  "generatedAt": "2026-06-24T14:32:30.047Z",
   "holdings": [
     {
       "slug": "spcx",
@@ -1758,15 +1758,16 @@
           "conviction": "high",
           "callType": "explicit_long",
           "excludeReason": null,
-          "scoreNote": "Chamath explicitly states he is an investor in Anthropic as part of his AI supercycle basket.",
+          "scoreNote": "Chamath confirms investor status and makes forward bull claim on Anthropic's revenue trajectory.",
           "sectorProxy": null,
-          "summary": "Chamath is an investor in Anthropic and notes its enterprise-focused revenue model and off-the-charts growth numbers, trusting the AI supercycle thesis across multiple frontier model companies.",
-          "quote": "I'm an investor in OpenAI and Anthropic and Google and, and Microsoft and Nvidia, etc. And so I don't think you have to make the call right now, one of these, uh, you know, companies winning.",
-          "quoteStartMs": 1969669,
+          "summary": "Chamath is an existing Anthropic investor and argues its numbers are 'off the charts,' its enterprise-first model is winning trust from startups (who see it as not competing with them), and it is one of the fastest-growing companies in Silicon Valley history.",
+          "quote": "I'm an investor in OpenAI and Anthropic and Google and, and Microsoft and Nvidia, etc.",
+          "quoteStartMs": 1969407,
           "topics": [
-            "AI supercycle",
-            "enterprise AI",
-            "revenue growth"
+            "revenue growth",
+            "enterprise",
+            "AI",
+            "capital efficiency"
           ],
           "attributionConfidence": "high"
         },
@@ -1779,19 +1780,20 @@
           "ticker": null,
           "isPublic": false,
           "host": "Guest",
-          "stance": "neutral",
+          "stance": "bull",
           "conviction": "high",
-          "callType": "view",
+          "callType": "explicit_long",
           "excludeReason": null,
-          "scoreNote": "Not scored: The quote is Brad Gerstner's commentary on Anthropic's revenue chart being impressive — it praises the business but contains no explicit position language (no 'I own', 'I'm long', 'I invested in') naming Anthropic. Brad does say he is an investor in Anthropic elsewhere but not in this quote, and the quote itself is analytical commentary. Since fix_quote requires an exact line where Brad names his own Anthropic position with transaction language, and the transcript's closest line ('I'm an investor in OpenAI and Anthropic') is Chamath's words, not Guest's, the stance should be neutralized to avoid inferring a scoreable call from praise framing.",
+          "scoreNote": "Gerstner is an investor (confirmed at 1964); cites Anthropic's superior capital efficiency as forward bull claim.",
           "sectorProxy": null,
-          "summary": "Brad Gerstner is an investor in Anthropic and highlights its revenue chart as the most impressive — reaching similar revenue milestones as OpenAI but burning far less capital, implying a superior path to free cash flow.",
-          "quote": "The most impressive revenue chart when you showed that leak from OpenAI was Anthropic. If that revenue chart is real, what's really impressive is Anthropic is not really in a J-curve at all, and they get to very similar points of free cash",
-          "quoteStartMs": 2069000,
+          "summary": "Gerstner is an investor in Anthropic and highlights that its revenue chart is the most impressive — reaching similar free cash flow milestones as OpenAI but burning far less capital, with enterprise-focused revenue that avoids the consumer commoditization risk.",
+          "quote": "what's really impressive is Anthropic is not really in a J-curve at all, and they get to very similar points of free cash flow, but will not have burned through near as much capital to get there",
+          "quoteStartMs": 2076000,
           "topics": [
-            "capital efficiency",
             "revenue growth",
-            "AI competition"
+            "capital efficiency",
+            "AI",
+            "enterprise"
           ],
           "attributionConfidence": "high",
           "guestName": "Brad Gerstner"
@@ -3319,32 +3321,6 @@
           "attributionConfidence": "high"
         },
         {
-          "id": "E250-aapl-Guest-4",
-          "episodeId": "E250",
-          "episodeNumber": 250,
-          "episodeDate": "2025-11-07T20:36:00.000Z",
-          "company": "Apple",
-          "ticker": "AAPL",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Brad Gerstner sees Apple as ceding its AI business to Google by paying billions for AI/search capabilities, suggesting Apple is not a winner in the AI transition and is now a net payer rather than a platform owner in this cycle.",
-          "quote": "Apple is now in this really interesting place where it seems like they're gonna seed their AI business to Google and pay them billions of dollars a year, like they get paid billions of dollars a year for search from them.",
-          "quoteStartMs": 454566,
-          "topics": [
-            "AI strategy",
-            "competitive position",
-            "Google partnership"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Brad Gerstner"
-        },
-        {
           "id": "E238-aapl-Friedberg-3",
           "episodeId": "E238",
           "episodeNumber": 238,
@@ -3890,11 +3866,11 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts are broadly cautious on Apple, with a recurring bear thesis centered on stalled innovation, AI underperformance, and structural risks — but meaningful disagreement exists on whether these headwinds are terminal or temporary. Chamath, Friedberg, and guests Gavin Baker and Brad Gerstner are most consistently negative, citing Apple's failure to attract AI talent, its apparent ceding of AI to Google, squandered capital on buybacks over AI investment, the potential loss of Google's ~$20B TAC payment, and deteriorating product quality (notably iOS 18); Chamath goes as far as saying Apple has \"no chance\" at AI leadership. Sacks has oscillated — early bearish on innovation limits, then bullish on iPhone 16 driving an LLM-powered upgrade cycle, then critical of App Store anti-competitiveness — while Jason has swung from high conviction bull on Apple's AI consumer potential to bear on its innovation stagnation, though he has recently turned bullish again, arguing Apple's hardware and data advantages make it a \"dark horse\" in AI. Friedberg offers the most consistent counter-argument, warning against perennial \"Apple is dying\" narratives and pointing to its install base, vertical integration, and historical resilience as reasons not to count it out, a view partially echoed by Keith Rabois and Thomas LaFont, who acknowledge real cultural and competitive decay but see the $3T market cap and user monopoly as meaningful buffers.",
+      "synthesis": "The hosts are broadly skeptical of Apple's near-term prospects, with the dominant concern being a failure to establish meaningful AI leadership — a view shared across Chamath, Sacks (at times), Jason, and multiple guests including Gavin Baker, Travis Kalanick, and Thomas LaFont, who variously describe Apple Intelligence as poor, Apple's AI execution as inept, and its culture as too incremental to compete in the AI era. Compounding this, Chamath and Friedberg highlight structural financial risks from the potential loss of Google's ~$20B TAC payment, App Store regulatory pressure, and multiple compression as growth stalls, while Chamath and Friedberg also flag deteriorating product quality (iOS 18) as evidence of organizational complacency. Jason and Friedberg represent the most optimistic counterpoints in the later period — Jason arguing Apple's M-series hardware and data-sovereignty positioning make it a dark horse AI player capable of running open-source models locally, and Friedberg cautioning that Apple has repeatedly defied obituaries and its vast install base in personal data could underpin a compelling personal AI assistant. Sacks has oscillated most visibly, moving from bearish on innovation stagnation to bullish on an iPhone 16 AI upgrade cycle before returning to mixed skepticism, while Chamath's trajectory has hardened from medium to high conviction bear, concluding Apple has no viable path to AI leadership and is effectively transitioning into a cash cow.",
       "netStance": "bull",
       "firstMentioned": "2024-05-10T19:47:00.000Z",
       "lastMentioned": "2026-05-29T22:23:00.000Z",
-      "mentionCount": 28,
+      "mentionCount": 27,
       "market": {
         "ticker": "AAPL",
         "sourceSymbol": "AAPL",
@@ -4613,17 +4589,45 @@
           "conviction": "high",
           "callType": "explicit_long",
           "excludeReason": null,
-          "scoreNote": "Chamath explicitly states he is an investor in OpenAI and frames it as a long-term supercycle bet.",
+          "scoreNote": "Chamath confirms investor status and makes forward bull claim on consumer retention and revenue trajectory.",
           "sectorProxy": null,
-          "summary": "Chamath is an investor in OpenAI and bullish on the AI supercycle broadly, viewing the $1.4T capex concern as overblown and expecting revenues to scale to $100B+, with flexibility built into spend commitments.",
-          "quote": "I'm betting in the supercycle. This is the biggest supercycle of all of our lives. I'm an investor in OpenAI and Anthropic and Google and, and Microsoft and Nvidia",
-          "quoteStartMs": 1965485,
+          "summary": "Chamath is an existing OpenAI investor who believes the $1.4T spend commitment is manageable, that revenues will grow well past $100B, and that OpenAI holds the best consumer retention and engagement metrics ('the verb') in the AI market.",
+          "quote": "I'm an investor in OpenAI and Anthropic and Google and, and Microsoft and Nvidia, etc.",
+          "quoteStartMs": 1969407,
           "topics": [
-            "AI supercycle",
             "revenue growth",
+            "AI supercycle",
+            "consumer retention",
             "capex"
           ],
           "attributionConfidence": "high"
+        },
+        {
+          "id": "E250-openai-Guest-0",
+          "episodeId": "E250",
+          "episodeNumber": 250,
+          "episodeDate": "2025-11-07T20:36:00.000Z",
+          "company": "OpenAI",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "explicit_long",
+          "excludeReason": null,
+          "scoreNote": "Gerstner confirms existing ownership and desire to buy more shares; bullish on the supercycle thesis.",
+          "sectorProxy": null,
+          "summary": "Gerstner is a current investor in OpenAI, wants to buy more shares, and argues the company is in the biggest supercycle of their lifetimes — with revenue growing steeply toward $100B+ — making the $1.4T spend commitment increasingly justifiable.",
+          "quote": "He knows that I don't want to sell my shares. He knows that I would like to buy more shares in the company... I'm betting in the supercycle. This is the biggest supercycle of all of our lives.",
+          "quoteStartMs": 184000,
+          "topics": [
+            "revenue growth",
+            "AI supercycle",
+            "valuation",
+            "capex"
+          ],
+          "attributionConfidence": "low",
+          "guestName": "Brad Gerstner"
         },
         {
           "id": "E249-openai-Guest-2",
@@ -5583,11 +5587,11 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts hold a broadly mixed-to-cautious view on OpenAI, with conviction shifting notably more bearish over time. Sacks and Chamath have each oscillated — both have expressed bullish views on OpenAI's revenue momentum, consumer dominance, and the potential of hardware plays like the Jony Ive acquisition, but both have also raised serious concerns: Chamath repeatedly flags open-source commoditization, the \"AOL risk,\" declining market share (from ~50% to ~33%), and governance/self-dealing issues around the nonprofit-to-for-profit conversion; Sacks increasingly emphasizes that OpenAI's 3–4x annual growth rate is dangerously slow compared to Anthropic's 10x, and warns it risks losing the enterprise coding market if it doesn't close the gap quickly. Jason is the most consistently bearish host, predicting OpenAI will fall to the #3–5 position within a few years as Google, Meta, and xAI gain ground, and calling its valuation ($150B–$500B+) disconnected from fundamentals given ~$5B in annual losses. Friedberg sits in the middle — acknowledging the infrastructure moat thesis and potential multi-trillion-dollar market, but raising doubts about whether the DeepSeek-era commoditization and a lack of durable partnerships undermine that thesis — while guest voices range from Thomas LaFont and Brad Gerstner's high-conviction bullishness (citing dominant consumer share and accelerating revenues) to Elon Musk's and Naval's structural critiques around governance fraud and mission betrayal.",
+      "synthesis": "The hosts hold a genuinely divided and evolving view on OpenAI, with no clear consensus across the full timeline. Sacks and Chamath (at various points) acknowledge OpenAI's real revenue, dominant consumer brand, and technical leadership, with Sacks and Gerstner (guest) most consistently bullish on its B2B/API model, search-replacement thesis, and revenue trajectory toward $100B+. However, Jason is the most persistently bearish, arguing the company is overvalued at any price above ~40x revenue given $5B+ annual losses, and predicting it will fall to the #3–5 market position within a few years as Google, Meta, and xAI intensify competition — a view partially echoed by Sacks in early 2026, who flags OpenAI's 3–4x annual growth rate as dangerously slow compared to Anthropic's 10x. Chamath is the most conflicted voice overall, oscillating between bull (dominant consumer brand, talent concentration, trillion-dollar potential) and bear (AOL analogy, open-source commoditization, market share erosion from ~50% to ~33%), ultimately settling on a view that OpenAI will likely capture roughly one-third of a fragmented multi-player AI market — still valuable, but not the runaway winner; structural concerns raised across multiple hosts include governance failures (nonprofit-to-for-profit conversion flagged as self-dealing by Naval and Elon Musk as guests), partnership instability (Friedberg), copyright litigation risk (Jason), and talent departures (Gavin Baker as guest).",
       "netStance": "mixed",
       "firstMentioned": "2024-05-10T19:47:00.000Z",
       "lastMentioned": "2026-05-29T22:23:00.000Z",
-      "mentionCount": 55,
+      "mentionCount": 56,
       "market": null,
       "description": "AI research company that develops large language models and products including ChatGPT and the GPT series.",
       "domain": "openai.com"
@@ -5799,6 +5803,31 @@
             "competition",
             "Huawei",
             "chip architecture"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E250-nvda-Chamath-7",
+          "episodeId": "E250",
+          "episodeNumber": 250,
+          "episodeDate": "2025-11-07T20:36:00.000Z",
+          "company": "Nvidia",
+          "ticker": "NVDA",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "explicit_long",
+          "excludeReason": null,
+          "scoreNote": "Chamath explicitly names Nvidia as one of his holdings in the AI supercycle basket.",
+          "sectorProxy": null,
+          "summary": "Chamath confirms he is an investor in Nvidia as part of his AI supercycle bet, viewing the compute buildout as a multi-year opportunity.",
+          "quote": "I'm an investor in OpenAI and Anthropic and Google and, and Microsoft and Nvidia, etc. And so I don't think you have to make the call right now, one of these, uh, you know, companies winning.",
+          "quoteStartMs": 1969407,
+          "topics": [
+            "AI supercycle",
+            "compute",
+            "capex"
           ],
           "attributionConfidence": "high"
         },
@@ -6478,11 +6507,11 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts hold a broadly bullish but meaningfully divided view on Nvidia. Sacks, guest contributors Reid Hoffman, Gavin Baker, Brad Gerstner, Thomas LaFont, and Sian are the most consistently positive, citing Nvidia's deep hardware-software moat (CUDA ecosystem, superior performance-per-watt, continuous generational R&D), near-total capture of incremental AI data center revenue, and a demand environment where supply still cannot keep pace; Chamath has oscillated widely — from warning of an \"emperor has no clothes\" moat moment after DeepSeek to turning bullish when large-scale pre-training continued to show gains, and most recently arguing that the domain-specific architecture threat is being absorbed inside Nvidia itself through co-design programs. Friedberg is the most structurally skeptical, persistently flagging customer concentration risk (top-4 hyperscalers representing ~one-third of revenue), the absence of demonstrated ROI from the AI capex cycle, and growing risks from purpose-built competitor chips and a potential Huawei alternative by 2026–2027. A shared concern across Chamath, Friedberg, and to a lesser extent Sacks is China-related revenue and export-control risk, though they differ on the right policy response — Chamath and Baker arguing sales should continue to keep Huawei from gaining ground, while Sacks supports tighter controls on chips like the H20 that exceed safe capability thresholds.",
+      "synthesis": "The hosts hold a broadly constructive but heavily nuanced view on Nvidia, with bulls and bears often coexisting within the same speaker across time. The clearest points of agreement are that Nvidia's current dominance in AI infrastructure is real and that demand for its GPUs remains intense — Sacks, guest bulls Gerstner, LaFont, and Baker, and a more recently converted Chamath all affirm that Nvidia has captured the AI compute buildout and that its full-stack ecosystem gives it an economic advantage competitors cannot easily replicate even at lower prices. The central disagreements concern durability: Chamath has oscillated most visibly, at times warning that DeepSeek's bypassing of CUDA signals an \"emperor has no clothes\" moment for Nvidia's moat, that ~47% China revenue exposure creates serious regulatory risk, and that true value will migrate to HBM memory suppliers and energy — while at other times turning bullish when results like Grok 3 justified massive GPU capex, and most recently arguing that domain-specific architecture disruption is happening inside Nvidia itself via co-design programs. Friedberg is the most consistently cautious, flagging deep customer concentration among hyperscalers, the unproven ROI of the AI capex cycle, the threat from purpose-built chips, and a low-probability but high-severity risk from China developing Huawei-based alternatives — though he also concedes Nvidia is currently the only company that has definitively captured AI-era market cap. Sacks occupies a middle ground, crediting Nvidia's R&D moat and the justification for continued CapEx buildout while acknowledging that chip prices will normalize as supply grows and flagging inference competition as the key long-term uncertainty.",
       "netStance": "bull",
       "firstMentioned": "2024-05-24T20:15:00.000Z",
       "lastMentioned": "2026-05-22T22:46:00.000Z",
-      "mentionCount": 34,
+      "mentionCount": 35,
       "market": {
         "ticker": "NVDA",
         "sourceSymbol": "NVDA",
@@ -7887,19 +7916,19 @@
           "ticker": "GOOGL",
           "isPublic": true,
           "host": "Guest",
-          "stance": "neutral",
+          "stance": "bull",
           "conviction": "medium",
           "callType": "view",
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Brad Gerstner highlights Google's phenomenal earnings with blazing AI numbers and anticipates Gemini 3 will be great, seeing Google as a winner coming back strong in the AI race.",
-          "quote": "Google's earnings were phenomenal. Their AI numbers were blazing hot... I think Gemini 3 is going to be great at Google. They may in fact make it free.",
-          "quoteStartMs": 419000,
+          "summary": "Gerstner highlights that Google's earnings were phenomenal with blazing hot AI numbers, and expects Gemini 3 to be great — viewing Google as a strong AI competitor coming off the mat swinging.",
+          "quote": "Google's earnings were phenomenal.",
+          "quoteStartMs": 451385,
           "topics": [
-            "AI competition",
             "earnings",
-            "Gemini"
+            "AI",
+            "competitive position"
           ],
           "attributionConfidence": "high",
           "guestName": "Brad Gerstner"
@@ -10835,13 +10864,13 @@
         "asOf": "2026-06-24",
         "anchorDate": "2025-10-10",
         "basePrice": 428000,
-        "latestPrice": 2580000,
+        "latestPrice": 2555000,
         "returns": {
           "1m": 0.4158878504672897,
           "3m": 0.75,
           "6m": 1.3995327102803738,
           "1y": null,
-          "since": 5.02803738317757
+          "since": 4.969626168224299
         },
         "history": [
           [
@@ -11075,10 +11104,6 @@
           [
             "2026-06-23",
             2555000
-          ],
-          [
-            "2026-06-24",
-            2580000
           ]
         ],
         "source": "yahoo"
@@ -11131,13 +11156,13 @@
         "asOf": "2026-06-24",
         "anchorDate": "2026-05-08",
         "basePrice": 268500,
-        "latestPrice": 340500,
+        "latestPrice": 310000,
         "returns": {
           "1m": 0.1005586592178771,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": 0.2681564245810056
+          "since": 0.15456238361266295
         },
         "history": [
           [
@@ -11263,10 +11288,6 @@
           [
             "2026-06-23",
             310000
-          ],
-          [
-            "2026-06-24",
-            340500
           ]
         ],
         "source": "yahoo"
@@ -15078,6 +15099,495 @@
       "domain": "moonshot.cn"
     },
     {
+      "slug": "msft",
+      "company": "Microsoft",
+      "ticker": "MSFT",
+      "isPublic": true,
+      "theses": [
+        {
+          "id": "E258-msft-Friedberg-2",
+          "episodeId": "E258",
+          "episodeNumber": 258,
+          "episodeDate": "2026-01-17T00:00:00.000Z",
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Friedberg views Microsoft's pledge to pay full electricity rates and cover water costs at data centers as a smart first step toward securing social license to operate nationwide, and expects other hyperscalers to follow suit.",
+          "quote": "I really like it. It's a very good first order set of things to do, which is to step into a local area and take all of these energy issues off the table, at least to the extent that you're contributing to it.",
+          "quoteStartMs": 972667,
+          "topics": [
+            "data centers",
+            "energy",
+            "social license",
+            "AI capex"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E250-msft-Chamath-8",
+          "episodeId": "E250",
+          "episodeNumber": 250,
+          "episodeDate": "2025-11-07T20:36:00.000Z",
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "explicit_long",
+          "excludeReason": null,
+          "scoreNote": "Chamath explicitly names Microsoft as one of his holdings in the AI supercycle basket.",
+          "sectorProxy": null,
+          "summary": "Chamath confirms he is an investor in Microsoft as part of his AI supercycle bet.",
+          "quote": "I'm an investor in OpenAI and Anthropic and Google and, and Microsoft and Nvidia, etc. And so I don't think you have to make the call right now, one of these, uh, you know, companies winning.",
+          "quoteStartMs": 1969407,
+          "topics": [
+            "AI supercycle",
+            "compute"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E248-msft-Friedberg-5",
+          "episodeId": "E248",
+          "episodeNumber": 248,
+          "episodeDate": "2025-10-24T22:38:00.000Z",
+          "company": "Microsoft Azure / Microsoft",
+          "ticker": "MSFT",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Friedberg highlights Microsoft's 26% YoY cloud growth vs AWS's 17%, and argues the AWS outage will benefit Microsoft Azure as enterprises diversify away from single-cloud dependency.",
+          "quote": "Microsoft's 26% year over year, and Google Cloud is accelerating at 32% year over year... I do think this is actually a very beneficial situation for Microsoft and GCP.",
+          "quoteStartMs": 1875791,
+          "topics": [
+            "cloud",
+            "growth",
+            "competition"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E232-msft-Chamath-13",
+          "episodeId": "E232",
+          "episodeNumber": 232,
+          "episodeDate": "2025-06-21T02:53:00.000Z",
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues Microsoft's employee base and business will likely grow, as it can bundle point-feature SaaS competitors into its platform and benefit from the broader cloud buildout, even if AI-generated code quality concerns mean layoffs aren't primarily AI-driven.",
+          "quote": "I suspect that Microsoft's business on the margin grows... It'll be cheaper for Microsoft to bundle together a bunch of other products that are point features today, and so they'll have more people... I suspect Microsoft's employee base",
+          "quoteStartMs": 5617868,
+          "topics": [
+            "enterprise software",
+            "AI",
+            "bundling",
+            "cloud"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E232-msft-Friedberg-12",
+          "episodeId": "E232",
+          "episodeNumber": 232,
+          "episodeDate": "2025-06-21T02:53:00.000Z",
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "bear",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Friedberg argues Microsoft faces probable revenue decline over 5 years as its enterprise customer base gets disrupted by AI-native software, with the old-school buyers dying and new AI-native builders not using Microsoft products.",
+          "quote": "I do think like on this, on the application software layer, they're going to have a really hard time in this new world because the old school customers that buy Microsoft are going to die... Microsoft's core business for the— is going to",
+          "quoteStartMs": 5663932,
+          "topics": [
+            "enterprise software disruption",
+            "AI",
+            "revenue outlook"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E227-msft-Guest-10",
+          "episodeId": "E227",
+          "episodeNumber": 227,
+          "episodeDate": "2025-05-09T20:26:00.000Z",
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Philippe Lafont cites Microsoft's Q1 report of 100 trillion AI tokens processed — going 'basically vertical' — as a decisive signal that AI demand is real and accelerating, which was a turning point in his own market outlook.",
+          "quote": "Microsoft said that in their Q1, they processed 100 trillion tokens, 50 trillion alone in March... the tokens are really going basically vertical... that was a really big deal.",
+          "quoteStartMs": 1746474,
+          "topics": [
+            "AI demand",
+            "cloud",
+            "tokens",
+            "earnings"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Philippe Laffont"
+        },
+        {
+          "id": "E194-msft-Guest-1",
+          "episodeId": "E194",
+          "episodeNumber": 194,
+          "episodeDate": "2024-08-30T15:04:00.000Z",
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Reid Hoffman praises Microsoft CEO Satya Nadella as the best public-market CEO of his generation, highlighting his disciplined approach of balancing strategic AI platform investment with capital returns and revenue targeting, implying a strong forward business trajectory.",
+          "quote": "I think Satya is like the best public market CEO of our generation. I think he is stunning in kind of blending combination of strategic insight with also kind of being, you know, kind of return on capital, you know, sensible risk-taking.",
+          "quoteStartMs": 738854,
+          "topics": [
+            "AI capex",
+            "management quality",
+            "cloud platform"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Reid Hoffman"
+        },
+        {
+          "id": "E185-msft-Chamath-6",
+          "episodeId": "E185",
+          "episodeNumber": 185,
+          "episodeDate": "2024-06-29T04:05:00.000Z",
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues Microsoft has used illegal bundling for 40 years to kill competitors and regulators need to dust off the old consent decree, noting the strategy directly cost Slack the chance to compete fairly and will stifle future software competition.",
+          "quote": "Microsoft has been bundling products to kill competitors for 40 years... What this comes down to is the FTC and the DOJ need to dust off that old consent decree, read it, and figure out whether this makes sense again.",
+          "quoteStartMs": 4092310,
+          "topics": [
+            "antitrust",
+            "bundling",
+            "regulation",
+            "enterprise software"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E185-msft-Sacks-5",
+          "episodeId": "E185",
+          "episodeNumber": 185,
+          "episodeDate": "2024-06-29T04:05:00.000Z",
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "neutral",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Sacks argues Microsoft's illegal bundling strategy — giving enterprise customers Teams effectively for free via Office bundles, then raising bundle prices after killing competition — harms the tech ecosystem and should be broken up by regulators into à la carte pricing.",
+          "quote": "When you have a monopoly in one product and you systematically use it to keep adding new products that again, on the margins appear to be free because you've bundled them... I do think that Microsoft will use the power of the bundle to",
+          "quoteStartMs": 3955000,
+          "topics": [
+            "antitrust",
+            "bundling",
+            "regulation",
+            "enterprise software"
+          ],
+          "attributionConfidence": "high"
+        }
+      ],
+      "synthesis": "The hosts hold a mixed but cautiously constructive view of Microsoft overall. On the negative side, both Sacks and Chamath (June 2024) are sharply critical of Microsoft's decades-long bundling strategy — used most recently against Slack via Teams — arguing it constitutes anticompetitive behavior that regulators should address by revisiting old consent decrees; Friedberg (June 2025) adds a bearish note, warning that Microsoft's enterprise application software business faces structural decline as AI-native builders replace legacy buyers. On the bullish side, Chamath (June and November 2025) and Friedberg (October 2025) see Microsoft benefiting from the AI supercycle through bundling SaaS competitors into its platform, strong Azure cloud growth (26% YoY), and enterprise diversification away from AWS following an outage, with Chamath holding a personal investment position. Guest contributors reinforce the positive longer-term picture, with Reid Hoffman singling out CEO Satya Nadella as the best public-market CEO of his generation, and Philippe Lafont citing Microsoft's 100 trillion AI tokens processed in Q1 as a decisive signal of accelerating AI demand; Friedberg also praises Microsoft's data center resource commitments as a smart move to secure social license to operate.",
+      "netStance": "bull",
+      "firstMentioned": "2024-06-29T04:05:00.000Z",
+      "lastMentioned": "2026-01-17T00:00:00.000Z",
+      "mentionCount": 9,
+      "market": {
+        "ticker": "MSFT",
+        "sourceSymbol": "MSFT",
+        "currency": "USD",
+        "asOf": "2026-06-24",
+        "anchorDate": "2024-06-29",
+        "basePrice": 456.73,
+        "latestPrice": 373.94,
+        "returns": {
+          "1m": -0.06568432115254089,
+          "3m": -0.05786788693538854,
+          "6m": -0.06984432815886855,
+          "1y": 0.08906793948284546,
+          "since": -0.18126683160729537
+        },
+        "history": [
+          [
+            "2024-07-01",
+            456.73
+          ],
+          [
+            "2024-07-15",
+            453.96
+          ],
+          [
+            "2024-07-26",
+            425.27
+          ],
+          [
+            "2024-08-08",
+            402.69
+          ],
+          [
+            "2024-08-21",
+            424.14
+          ],
+          [
+            "2024-09-04",
+            408.9
+          ],
+          [
+            "2024-09-17",
+            435.15
+          ],
+          [
+            "2024-09-30",
+            430.3
+          ],
+          [
+            "2024-10-11",
+            416.32
+          ],
+          [
+            "2024-10-24",
+            424.73
+          ],
+          [
+            "2024-11-06",
+            420.18
+          ],
+          [
+            "2024-11-19",
+            417.79
+          ],
+          [
+            "2024-12-03",
+            431.2
+          ],
+          [
+            "2024-12-16",
+            451.59
+          ],
+          [
+            "2024-12-30",
+            424.83
+          ],
+          [
+            "2025-01-14",
+            415.67
+          ],
+          [
+            "2025-01-28",
+            447.2
+          ],
+          [
+            "2025-02-10",
+            412.22
+          ],
+          [
+            "2025-02-24",
+            404
+          ],
+          [
+            "2025-03-07",
+            393.31
+          ],
+          [
+            "2025-03-20",
+            386.84
+          ],
+          [
+            "2025-04-02",
+            382.14
+          ],
+          [
+            "2025-04-15",
+            385.73
+          ],
+          [
+            "2025-04-29",
+            394.04
+          ],
+          [
+            "2025-05-12",
+            449.26
+          ],
+          [
+            "2025-05-23",
+            450.18
+          ],
+          [
+            "2025-06-06",
+            470.38
+          ],
+          [
+            "2025-06-20",
+            477.4
+          ],
+          [
+            "2025-07-03",
+            498.84
+          ],
+          [
+            "2025-07-17",
+            511.7
+          ],
+          [
+            "2025-07-30",
+            513.24
+          ],
+          [
+            "2025-08-12",
+            529.24
+          ],
+          [
+            "2025-08-25",
+            504.26
+          ],
+          [
+            "2025-09-08",
+            498.2
+          ],
+          [
+            "2025-09-19",
+            517.93
+          ],
+          [
+            "2025-10-02",
+            515.74
+          ],
+          [
+            "2025-10-15",
+            513.43
+          ],
+          [
+            "2025-10-28",
+            542.07
+          ],
+          [
+            "2025-11-10",
+            506
+          ],
+          [
+            "2025-11-21",
+            472.12
+          ],
+          [
+            "2025-12-05",
+            483.16
+          ],
+          [
+            "2025-12-18",
+            483.98
+          ],
+          [
+            "2026-01-02",
+            472.94
+          ],
+          [
+            "2026-01-15",
+            456.66
+          ],
+          [
+            "2026-01-29",
+            433.5
+          ],
+          [
+            "2026-02-11",
+            404.37
+          ],
+          [
+            "2026-02-25",
+            400.6
+          ],
+          [
+            "2026-03-10",
+            405.76
+          ],
+          [
+            "2026-03-23",
+            383
+          ],
+          [
+            "2026-04-06",
+            372.88
+          ],
+          [
+            "2026-04-17",
+            422.79
+          ],
+          [
+            "2026-04-30",
+            407.78
+          ],
+          [
+            "2026-05-13",
+            405.21
+          ],
+          [
+            "2026-05-27",
+            412.67
+          ],
+          [
+            "2026-06-09",
+            403.41
+          ],
+          [
+            "2026-06-23",
+            373.94
+          ]
+        ],
+        "source": "yahoo"
+      },
+      "description": "Develops software, cloud services, and hardware including Windows, Azure, and Microsoft 365.",
+      "domain": "microsoft.com"
+    },
+    {
       "slug": "cerebras-systems",
       "company": "Cerebras Systems",
       "ticker": null,
@@ -15098,14 +15608,14 @@
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Friedberg argues Cerebras's wafer-scale chip architecture delivers blazing-fast inference by co-locating compute and memory, and that OpenAI's multi-billion dollar compute deal validates the technology — with an IPO expected soon at a $22B valuation.",
-          "quote": "If you look at the trail of breadcrumbs, My belief, there's going to be a renaissance in silicon. Young, small teams building decode silicon can make a fortune over the next 10 to 20 years. It's a huge opportunity.",
-          "quoteStartMs": 2011518,
+          "summary": "Friedberg argues Cerebras's wafer-scale chip architecture delivers blazing-fast inference by minimizing physical distance between compute and memory, and that OpenAI's large compute deal validates the company's technology; he sees a broader silicon renaissance ahead for specialized AI chip companies.",
+          "quote": "My belief, there's going to be a renaissance in silicon. Young, small teams building decode silicon can make a fortune over the next 10 to 20 years. It's a huge opportunity. It's going to be like the PC wars, Dell versus Compaq versus all",
+          "quoteStartMs": 2013930,
           "topics": [
             "AI chips",
             "inference",
-            "IPO",
-            "valuation"
+            "silicon renaissance",
+            "IPO"
           ],
           "attributionConfidence": "high"
         }
@@ -15120,45 +15630,45 @@
       "domain": "cerebras.net"
     },
     {
-      "slug": "utilities-us-electric-grid",
-      "company": "Utilities (US electric grid)",
+      "slug": "electric-utilities-us",
+      "company": "Electric utilities (US)",
       "ticker": null,
       "isPublic": false,
       "theses": [
         {
-          "id": "E258-utilities-us-electric-grid-Friedberg-1",
+          "id": "E258-electric-utilities-us-Chamath-1",
           "episodeId": "E258",
           "episodeNumber": 258,
           "episodeDate": "2026-01-17T00:00:00.000Z",
-          "company": "Utilities (US electric grid)",
+          "company": "Electric utilities (US)",
           "ticker": null,
           "isPublic": false,
           "host": "Friedberg",
           "stance": "bear",
-          "conviction": "medium",
-          "callType": "view",
+          "conviction": "high",
+          "callType": "explicit_short",
           "excludeReason": null,
-          "scoreNote": "Not scored: The quote is cut off and attributed to the wrong speaker — the 'single biggest dollar short' line was actually spoken by Friedberg, not Chamath. The transcript at [1820s Friedberg] shows Friedberg making this call. However, Chamath does engage with and endorse the thesis. Since the host is listed as Chamath, we need a line Chamath actually said. Chamath never makes this explicit short call himself — he only responds 'Yeah' and discusses implications. The explicit_short callType requires the host's own transaction/position language. Since the quote belongs to Friedberg (not Chamath), and Chamath never makes this call in his own words, the stance should be neutralized for Chamath.",
+          "scoreNote": "Speaker explicitly labels this 'the single biggest dollar short' on the utilities sector; no direct single-company ticker — broad US utility sector.",
           "sectorProxy": null,
-          "summary": "Chamath argues that if distributed solar/storage and behind-the-meter private power generation materialize at scale, regulated utilities face an existential threat to their rate base, bond obligations, and capex returns — making them the 'biggest dollar short.'",
-          "quote": "I think the single biggest dollar short, it's not clear when, that one will be able to make will be on these utilities. Because if any version of what we just talked about happens and all of a sudden you have private homeowners that are",
+          "summary": "Chamath argues that if even a fraction of the proposed residential solar/storage or private data-center power buildout materializes, utilities face an existential threat to their rate base, bond repayment capacity, and CapEx returns, making the utilities sector the biggest dollar short opportunity he can foresee.",
+          "quote": "I think the single biggest dollar short, it's not clear when, that one will be able to make will be on these utilities. Because if any version of what we just talked about happens… what do the utilities do? What does all this CapEx go to?",
           "quoteStartMs": 1824988,
           "topics": [
             "energy",
             "utilities",
-            "distributed power",
-            "short thesis"
+            "decentralization",
+            "AI capex"
           ],
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The sole view presented is bearish, from Chamath Palihapitiya (medium conviction), who frames US regulated electric utilities as potentially \"the single biggest dollar short\" over a multi-year horizon. His core thesis is that widespread adoption of distributed solar, battery storage, and behind-the-meter private power generation could erode utilities' rate bases and undermine the bond obligations and capex returns that their regulated business models depend on. No other hosts offered a view on utilities in the supplied material, so there is neither agreement nor disagreement to note. The timing of the trade remains uncertain by Chamath's own admission.",
+      "synthesis": "The only host to weigh in is Friedberg, who holds a high-conviction bearish view on U.S. electric utilities. His core argument is that if even a partial buildout of residential solar/storage or private data-center power generation materializes, utilities will face an existential erosion of their rate base, undermining their ability to service bonds and generate returns on capital expenditure. He characterizes the sector as potentially the largest dollar-value short opportunity he can identify, while acknowledging the timing remains uncertain. No other hosts offered a competing or corroborating view in the supplied material.",
       "netStance": "bear",
       "firstMentioned": "2026-01-17T00:00:00.000Z",
       "lastMentioned": "2026-01-17T00:00:00.000Z",
       "mentionCount": 1,
       "market": null,
-      "description": "Sector of regulated US electric utility companies operating and maintaining the national power grid.",
+      "description": "US-based companies that generate, transmit, and distribute electrical power to residential and commercial customers.",
       "domain": null
     },
     {
@@ -18120,1140 +18630,6 @@
       },
       "description": "Develops data analytics and AI software platforms for government intelligence and commercial enterprise clients.",
       "domain": "palantir.com"
-    },
-    {
-      "slug": "ibit",
-      "company": "Bitcoin",
-      "ticker": "IBIT",
-      "isPublic": true,
-      "theses": [
-        {
-          "id": "E250-btc-Guest-8",
-          "episodeId": "E250",
-          "episodeNumber": 250,
-          "episodeDate": "2025-11-07T20:36:00.000Z",
-          "company": "Bitcoin",
-          "ticker": "IBIT",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Brad Gerstner sees Bitcoin breaking through $100,000 as a psychological barrier with another 5–10% upside to run from there.",
-          "quote": "Bitcoin is about to break through $100,000 to the downside, which I think is a psychological barrier that probably has another 5 or 10% more to run.",
-          "quoteStartMs": 2723960,
-          "topics": [
-            "Bitcoin",
-            "crypto",
-            "market positioning"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Brad Gerstner"
-        },
-        {
-          "id": "E218-btc-usd-Sacks-5",
-          "episodeId": "E218",
-          "episodeNumber": 218,
-          "episodeDate": "2025-03-08T00:58:00.000Z",
-          "company": "Bitcoin",
-          "ticker": "IBIT",
-          "isPublic": true,
-          "host": "Sacks",
-          "stance": "neutral",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": "Not scored: The quote describes Bitcoin's properties and Sacks' historical purchase at $120, but Sacks' role here is as a policy architect explaining the reserve structure, not making a personal portfolio call. His crypto positions were divested before day one of the administration. The 'explicit_long' label is not supported — the quote does not contain Sacks' own current transaction or selection language naming Bitcoin as his trade. The historical purchase anecdote is context, not a current actionable call.",
-          "sectorProxy": null,
-          "summary": "Sacks has been long Bitcoin since 2011 (~$120), views it as uniquely decentralized, secure, and widely accepted as digital gold, and now as White House crypto czar is architecting a strategic Bitcoin reserve that prohibits the government from selling it.",
-          "quote": "Bitcoin's the original cryptocurrency… It's the only one that doesn't have an issuer. It's very decentralized… I remember back in 2011, I think it's the first time I bought a Bitcoin. I think it was at $120. Now it's at $90,000.",
-          "quoteStartMs": 6037368,
-          "topics": [
-            "Bitcoin",
-            "crypto reserve",
-            "store of value",
-            "digital gold"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E204-bitcoin-Chamath-0",
-          "episodeId": "E204",
-          "episodeNumber": 204,
-          "episodeDate": "2024-11-16T16:55:00.000Z",
-          "company": "Bitcoin",
-          "ticker": "IBIT",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath views Bitcoin as the top risk-asset trade he called at the start of the year, treating it currently as a dollar-correlated gold proxy rather than an independent store of value, while believing it will eventually become a non-speculative store of value within his lifetime.",
-          "quote": "What did I say at the beginning of the year was going to be the biggest risk asset winning trade? Yeah, it's great. Bitcoin's great.",
-          "quoteStartMs": 841599,
-          "topics": [
-            "Bitcoin",
-            "risk assets",
-            "store of value",
-            "macro"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E201-bitcoin-Chamath-5",
-          "episodeId": "E201",
-          "episodeNumber": 201,
-          "episodeDate": "2024-10-25T22:51:00.000Z",
-          "company": "Bitcoin",
-          "ticker": "IBIT",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": "Not scored: Chamath's quote is verbatim and carries an explicit bull economic claim — Bitcoin will be the 'resounding inflation hedge asset for the next 50 or 100 years' — but this is forward analytical commentary, not a stated current position or named pick answering a positioning prompt. Should be callType=view.",
-          "sectorProxy": null,
-          "summary": "Chamath argues Bitcoin is the 'resounding inflation hedge asset for the next 50 or 100 years,' having called it as the breakout asset at the start of the year, and sees gold as the last vestige of a fading insurance paradigm that Bitcoin will replace.",
-          "quote": "at the beginning of the year, I said the breakout asset was going to be Bitcoin. I think it looks like it's going to be the resounding inflation hedge asset for the next 50 or 100 years.",
-          "quoteStartMs": 1565271,
-          "topics": [
-            "inflation hedge",
-            "Bitcoin",
-            "macro"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E201-bitcoin-Friedberg-3",
-          "episodeId": "E201",
-          "episodeNumber": 201,
-          "episodeDate": "2024-10-25T22:51:00.000Z",
-          "company": "Bitcoin",
-          "ticker": "IBIT",
-          "isPublic": true,
-          "host": "Friedberg",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "explicit_long",
-          "excludeReason": null,
-          "scoreNote": "First-person explicit long position stated in same sentence as gold and commodities.",
-          "sectorProxy": null,
-          "summary": "Friedberg says he is long Bitcoin as part of his inflation-hedge basket alongside gold and commodities.",
-          "quote": "I'm long gold. I'm long Bitcoin. I think commodities are so ridiculously under-owned. So I'm long commodities.",
-          "quoteStartMs": 856000,
-          "topics": [
-            "inflation hedge",
-            "macro",
-            "Bitcoin"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E181-bitcoin-Chamath-0",
-          "episodeId": "E181",
-          "episodeNumber": 181,
-          "episodeDate": "2024-05-31T21:55:00.000Z",
-          "company": "Bitcoin",
-          "ticker": "IBIT",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": "Not scored: Chamath makes an explicit bull claim on Bitcoin price appreciation post-halving with ETF tailwinds and dollar debasement, but the current quote is truncated mid-sentence. A better verbatim excerpt from Chamath's own lines captures the directional claim more cleanly. However, the callType must be checked: the quote needs to carry his own transaction/selection language to be explicit_long. Reviewing the transcript, Chamath says this is 'not financial advice' and 'just data/guesses' — he never says 'I'm long' or 'I'd buy' in the published quote or nearby. He did say earlier 'I remember I called my family office. I'm like, buy me a million of these things' — but that was a historical anecdote about 2010, not a current position. The analysis/halving data presentation is a view, not an explicit_long. Demote to view.",
-          "sectorProxy": null,
-          "summary": "Chamath argues that post-halving historical price cycles, combined with the new Bitcoin ETFs enabling mainstream adoption, point to significant price appreciation; he sees Bitcoin increasingly serving as a hard-asset reserve currency for countries moving to dual-currency systems amid dollar debasement.",
-          "quote": "18 months after the first halving, the Bitcoin price returned 45x. After the second halving, it returned almost 28x. And after this third halving, it returned almost an 8x… if you marry that with this worry that some folks have about dollar",
-          "quoteStartMs": null,
-          "topics": [
-            "Bitcoin",
-            "halving cycle",
-            "ETF adoption",
-            "dollar debasement"
-          ],
-          "attributionConfidence": "high"
-        }
-      ],
-      "synthesis": "The hosts are broadly bullish on Bitcoin, with Chamath and Friedberg expressing the highest conviction across multiple episodes. Chamath is the most vocal proponent, consistently arguing that Bitcoin is the defining inflation-hedge asset for the next century, set to displace gold, and further supported by post-halving price cycles and the mainstream accessibility unlocked by Bitcoin ETFs; Friedberg echoes the inflation-hedge thesis, holding Bitcoin alongside gold and commodities. Sacks, speaking from his position as White House crypto czar, frames Bitcoin as uniquely decentralized \"digital gold\" and is actively architecting a U.S. strategic Bitcoin reserve — a structurally bullish policy stance, though his on-record tone is more measured. Guest Brad Gerstner offers the most conservative near-term view, seeing only a modest 5–10% upside beyond the $100,000 psychological level, making him the outlier relative to the longer-horizon, higher-magnitude appreciation the other hosts envision.",
-      "netStance": "bull",
-      "firstMentioned": "2024-05-31T21:55:00.000Z",
-      "lastMentioned": "2025-11-07T20:36:00.000Z",
-      "mentionCount": 6,
-      "market": {
-        "ticker": "IBIT",
-        "sourceSymbol": "IBIT",
-        "currency": "USD",
-        "asOf": "2026-06-24",
-        "anchorDate": "2024-05-31",
-        "basePrice": 38.55,
-        "latestPrice": 35.31,
-        "returns": {
-          "1m": -0.06614785992217892,
-          "3m": -0.14448767833981843,
-          "6m": 0.41322957198443583,
-          "1y": 0.5398184176394294,
-          "since": -0.08404669260700376
-        },
-        "history": [
-          [
-            "2024-05-31",
-            38.55
-          ],
-          [
-            "2024-06-13",
-            37.9
-          ],
-          [
-            "2024-06-27",
-            34.98
-          ],
-          [
-            "2024-07-11",
-            32.7
-          ],
-          [
-            "2024-07-24",
-            37.42
-          ],
-          [
-            "2024-08-06",
-            32.34
-          ],
-          [
-            "2024-08-19",
-            33.62
-          ],
-          [
-            "2024-08-30",
-            33.37
-          ],
-          [
-            "2024-09-13",
-            34.04
-          ],
-          [
-            "2024-09-26",
-            36.84
-          ],
-          [
-            "2024-10-09",
-            34.68
-          ],
-          [
-            "2024-10-22",
-            38.41
-          ],
-          [
-            "2024-11-04",
-            38.25
-          ],
-          [
-            "2024-11-15",
-            52.13
-          ],
-          [
-            "2024-11-29",
-            55.21
-          ],
-          [
-            "2024-12-12",
-            56.92
-          ],
-          [
-            "2024-12-26",
-            54.3
-          ],
-          [
-            "2025-01-10",
-            53.84
-          ],
-          [
-            "2025-01-24",
-            59.7
-          ],
-          [
-            "2025-02-06",
-            55.12
-          ],
-          [
-            "2025-02-20",
-            56.04
-          ],
-          [
-            "2025-03-05",
-            51.44
-          ],
-          [
-            "2025-03-18",
-            46.81
-          ],
-          [
-            "2025-03-31",
-            46.81
-          ],
-          [
-            "2025-04-11",
-            47.67
-          ],
-          [
-            "2025-04-25",
-            54.27
-          ],
-          [
-            "2025-05-08",
-            57.62
-          ],
-          [
-            "2025-05-21",
-            61.79
-          ],
-          [
-            "2025-06-04",
-            59.64
-          ],
-          [
-            "2025-06-17",
-            59.5
-          ],
-          [
-            "2025-07-01",
-            59.84
-          ],
-          [
-            "2025-07-15",
-            66.16
-          ],
-          [
-            "2025-07-28",
-            67.1
-          ],
-          [
-            "2025-08-08",
-            66.13
-          ],
-          [
-            "2025-08-21",
-            63.69
-          ],
-          [
-            "2025-09-04",
-            62.35
-          ],
-          [
-            "2025-09-17",
-            65.67
-          ],
-          [
-            "2025-09-30",
-            65
-          ],
-          [
-            "2025-10-13",
-            65.81
-          ],
-          [
-            "2025-10-24",
-            62.83
-          ],
-          [
-            "2025-11-06",
-            57.26
-          ],
-          [
-            "2025-11-19",
-            50.73
-          ],
-          [
-            "2025-12-03",
-            52.74
-          ],
-          [
-            "2025-12-16",
-            49.71
-          ],
-          [
-            "2025-12-30",
-            49.83
-          ],
-          [
-            "2026-01-13",
-            53.57
-          ],
-          [
-            "2026-01-27",
-            50.63
-          ],
-          [
-            "2026-02-09",
-            40.11
-          ],
-          [
-            "2026-02-23",
-            36.55
-          ],
-          [
-            "2026-03-06",
-            38.6
-          ],
-          [
-            "2026-03-19",
-            39.82
-          ],
-          [
-            "2026-04-01",
-            38.64
-          ],
-          [
-            "2026-04-15",
-            42.56
-          ],
-          [
-            "2026-04-28",
-            43.27
-          ],
-          [
-            "2026-05-11",
-            46.47
-          ],
-          [
-            "2026-05-22",
-            42.96
-          ],
-          [
-            "2026-06-05",
-            34.14
-          ],
-          [
-            "2026-06-18",
-            35.62
-          ],
-          [
-            "2026-06-23",
-            35.31
-          ]
-        ],
-        "source": "yahoo"
-      },
-      "description": "BlackRock's iShares Bitcoin Trust ETF providing investors regulated exposure to Bitcoin's price.",
-      "domain": null
-    },
-    {
-      "slug": "botz",
-      "company": "AI infrastructure / compute basket",
-      "ticker": "BOTZ",
-      "isPublic": true,
-      "theses": [
-        {
-          "id": "E250-ai-infrastructure-compute-basket-Chamath-7",
-          "episodeId": "E250",
-          "episodeNumber": 250,
-          "episodeDate": "2025-11-07T20:36:00.000Z",
-          "company": "AI infrastructure / compute basket",
-          "ticker": "BOTZ",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "explicit_long",
-          "excludeReason": null,
-          "scoreNote": "Altimeter's stated multi-year long position in 'all of compute'; trimmed to medium-small but still long. ETF proxy: robotics & AI ETF.",
-          "sectorProxy": "BOTZ",
-          "summary": "Brad Gerstner states Altimeter has owned 'all of compute' for three years and continues to believe the AI trade has room to run, though he has trimmed position size tactically given the 40% market move.",
-          "quote": "we still believe that owning all of compute like we have for 3 years, and this AI trade has room to run.",
-          "quoteStartMs": 2582118,
-          "topics": [
-            "AI capex",
-            "compute",
-            "portfolio positioning"
-          ],
-          "attributionConfidence": "high"
-        }
-      ],
-      "synthesis": "The collective view from the supplied material is bullish on AI infrastructure and compute as a broad basket, with Brad Gerstner (via Chamath's segment) expressing high conviction based on a multi-year thesis that has already returned roughly 40%. Gerstner notes Altimeter has held \"all of compute\" for three years and believes the trade still has further upside, though he has trimmed position size tactically in response to the recent market run-up. Only one host thesis was provided, so no cross-host agreement or disagreement can be assessed. The overall stance is constructive but tempered at the margin by valuation awareness following the significant move.",
-      "netStance": "bull",
-      "firstMentioned": "2025-11-07T20:36:00.000Z",
-      "lastMentioned": "2025-11-07T20:36:00.000Z",
-      "mentionCount": 1,
-      "market": {
-        "ticker": "BOTZ",
-        "sourceSymbol": "BOTZ",
-        "currency": "USD",
-        "asOf": "2026-06-24",
-        "anchorDate": "2025-11-07",
-        "basePrice": 36,
-        "latestPrice": 36.64,
-        "returns": {
-          "1m": 0.02472222222222224,
-          "3m": 0.05944444444444446,
-          "6m": 0.10638888888888884,
-          "1y": null,
-          "since": 0.017777777777777795
-        },
-        "history": [
-          [
-            "2025-11-07",
-            36
-          ],
-          [
-            "2025-11-12",
-            36.19
-          ],
-          [
-            "2025-11-17",
-            34.32
-          ],
-          [
-            "2025-11-20",
-            33.08
-          ],
-          [
-            "2025-11-25",
-            34.55
-          ],
-          [
-            "2025-12-01",
-            35.25
-          ],
-          [
-            "2025-12-04",
-            36.88
-          ],
-          [
-            "2025-12-09",
-            36.88
-          ],
-          [
-            "2025-12-12",
-            36.38
-          ],
-          [
-            "2025-12-17",
-            35
-          ],
-          [
-            "2025-12-22",
-            36.56
-          ],
-          [
-            "2025-12-26",
-            36.59
-          ],
-          [
-            "2025-12-31",
-            36.23
-          ],
-          [
-            "2026-01-06",
-            37.93
-          ],
-          [
-            "2026-01-09",
-            38.23
-          ],
-          [
-            "2026-01-14",
-            38
-          ],
-          [
-            "2026-01-20",
-            37.17
-          ],
-          [
-            "2026-01-23",
-            37.77
-          ],
-          [
-            "2026-01-28",
-            37.99
-          ],
-          [
-            "2026-02-02",
-            36.87
-          ],
-          [
-            "2026-02-05",
-            35.77
-          ],
-          [
-            "2026-02-10",
-            38.36
-          ],
-          [
-            "2026-02-13",
-            38.34
-          ],
-          [
-            "2026-02-19",
-            38.64
-          ],
-          [
-            "2026-02-24",
-            39.01
-          ],
-          [
-            "2026-02-27",
-            39.02
-          ],
-          [
-            "2026-03-04",
-            37.13
-          ],
-          [
-            "2026-03-09",
-            36.09
-          ],
-          [
-            "2026-03-12",
-            35.59
-          ],
-          [
-            "2026-03-17",
-            35.38
-          ],
-          [
-            "2026-03-20",
-            33.6
-          ],
-          [
-            "2026-03-25",
-            34.38
-          ],
-          [
-            "2026-03-30",
-            31.99
-          ],
-          [
-            "2026-04-02",
-            33.4
-          ],
-          [
-            "2026-04-08",
-            35.12
-          ],
-          [
-            "2026-04-13",
-            35.97
-          ],
-          [
-            "2026-04-16",
-            36.71
-          ],
-          [
-            "2026-04-21",
-            36.74
-          ],
-          [
-            "2026-04-24",
-            37.36
-          ],
-          [
-            "2026-04-29",
-            37.33
-          ],
-          [
-            "2026-05-04",
-            38.38
-          ],
-          [
-            "2026-05-07",
-            39.83
-          ],
-          [
-            "2026-05-12",
-            40.72
-          ],
-          [
-            "2026-05-15",
-            40.23
-          ],
-          [
-            "2026-05-20",
-            39.25
-          ],
-          [
-            "2026-05-26",
-            40.9
-          ],
-          [
-            "2026-05-29",
-            40.15
-          ],
-          [
-            "2026-06-03",
-            40.27
-          ],
-          [
-            "2026-06-08",
-            38.32
-          ],
-          [
-            "2026-06-11",
-            37.26
-          ],
-          [
-            "2026-06-16",
-            37.88
-          ],
-          [
-            "2026-06-22",
-            38.33
-          ],
-          [
-            "2026-06-23",
-            36.64
-          ]
-        ],
-        "source": "yahoo"
-      },
-      "description": "Global X Robotics & Artificial Intelligence ETF tracking companies in robotics, AI, and automation infrastructure.",
-      "domain": null
-    },
-    {
-      "slug": "msft",
-      "company": "Microsoft",
-      "ticker": "MSFT",
-      "isPublic": true,
-      "theses": [
-        {
-          "id": "E248-msft-Friedberg-5",
-          "episodeId": "E248",
-          "episodeNumber": 248,
-          "episodeDate": "2025-10-24T22:38:00.000Z",
-          "company": "Microsoft Azure / Microsoft",
-          "ticker": "MSFT",
-          "isPublic": true,
-          "host": "Friedberg",
-          "stance": "bull",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Friedberg highlights Microsoft's 26% YoY cloud growth vs AWS's 17%, and argues the AWS outage will benefit Microsoft Azure as enterprises diversify away from single-cloud dependency.",
-          "quote": "Microsoft's 26% year over year, and Google Cloud is accelerating at 32% year over year... I do think this is actually a very beneficial situation for Microsoft and GCP.",
-          "quoteStartMs": 1875791,
-          "topics": [
-            "cloud",
-            "growth",
-            "competition"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E232-msft-Chamath-13",
-          "episodeId": "E232",
-          "episodeNumber": 232,
-          "episodeDate": "2025-06-21T02:53:00.000Z",
-          "company": "Microsoft",
-          "ticker": "MSFT",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues Microsoft's employee base and business will likely grow, as it can bundle point-feature SaaS competitors into its platform and benefit from the broader cloud buildout, even if AI-generated code quality concerns mean layoffs aren't primarily AI-driven.",
-          "quote": "I suspect that Microsoft's business on the margin grows... It'll be cheaper for Microsoft to bundle together a bunch of other products that are point features today, and so they'll have more people... I suspect Microsoft's employee base",
-          "quoteStartMs": 5617868,
-          "topics": [
-            "enterprise software",
-            "AI",
-            "bundling",
-            "cloud"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E232-msft-Friedberg-12",
-          "episodeId": "E232",
-          "episodeNumber": 232,
-          "episodeDate": "2025-06-21T02:53:00.000Z",
-          "company": "Microsoft",
-          "ticker": "MSFT",
-          "isPublic": true,
-          "host": "Friedberg",
-          "stance": "bear",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Friedberg argues Microsoft faces probable revenue decline over 5 years as its enterprise customer base gets disrupted by AI-native software, with the old-school buyers dying and new AI-native builders not using Microsoft products.",
-          "quote": "I do think like on this, on the application software layer, they're going to have a really hard time in this new world because the old school customers that buy Microsoft are going to die... Microsoft's core business for the— is going to",
-          "quoteStartMs": 5663932,
-          "topics": [
-            "enterprise software disruption",
-            "AI",
-            "revenue outlook"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E227-msft-Guest-10",
-          "episodeId": "E227",
-          "episodeNumber": 227,
-          "episodeDate": "2025-05-09T20:26:00.000Z",
-          "company": "Microsoft",
-          "ticker": "MSFT",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Philippe Lafont cites Microsoft's Q1 report of 100 trillion AI tokens processed — going 'basically vertical' — as a decisive signal that AI demand is real and accelerating, which was a turning point in his own market outlook.",
-          "quote": "Microsoft said that in their Q1, they processed 100 trillion tokens, 50 trillion alone in March... the tokens are really going basically vertical... that was a really big deal.",
-          "quoteStartMs": 1746474,
-          "topics": [
-            "AI demand",
-            "cloud",
-            "tokens",
-            "earnings"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Philippe Laffont"
-        },
-        {
-          "id": "E194-msft-Guest-1",
-          "episodeId": "E194",
-          "episodeNumber": 194,
-          "episodeDate": "2024-08-30T15:04:00.000Z",
-          "company": "Microsoft",
-          "ticker": "MSFT",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Reid Hoffman praises Microsoft CEO Satya Nadella as the best public-market CEO of his generation, highlighting his disciplined approach of balancing strategic AI platform investment with capital returns and revenue targeting, implying a strong forward business trajectory.",
-          "quote": "I think Satya is like the best public market CEO of our generation. I think he is stunning in kind of blending combination of strategic insight with also kind of being, you know, kind of return on capital, you know, sensible risk-taking.",
-          "quoteStartMs": 738854,
-          "topics": [
-            "AI capex",
-            "management quality",
-            "cloud platform"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Reid Hoffman"
-        },
-        {
-          "id": "E185-msft-Chamath-6",
-          "episodeId": "E185",
-          "episodeNumber": 185,
-          "episodeDate": "2024-06-29T04:05:00.000Z",
-          "company": "Microsoft",
-          "ticker": "MSFT",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues Microsoft has used illegal bundling for 40 years to kill competitors and regulators need to dust off the old consent decree, noting the strategy directly cost Slack the chance to compete fairly and will stifle future software competition.",
-          "quote": "Microsoft has been bundling products to kill competitors for 40 years... What this comes down to is the FTC and the DOJ need to dust off that old consent decree, read it, and figure out whether this makes sense again.",
-          "quoteStartMs": 4092310,
-          "topics": [
-            "antitrust",
-            "bundling",
-            "regulation",
-            "enterprise software"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E185-msft-Sacks-5",
-          "episodeId": "E185",
-          "episodeNumber": 185,
-          "episodeDate": "2024-06-29T04:05:00.000Z",
-          "company": "Microsoft",
-          "ticker": "MSFT",
-          "isPublic": true,
-          "host": "Sacks",
-          "stance": "neutral",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Sacks argues Microsoft's illegal bundling strategy — giving enterprise customers Teams effectively for free via Office bundles, then raising bundle prices after killing competition — harms the tech ecosystem and should be broken up by regulators into à la carte pricing.",
-          "quote": "When you have a monopoly in one product and you systematically use it to keep adding new products that again, on the margins appear to be free because you've bundled them... I do think that Microsoft will use the power of the bundle to",
-          "quoteStartMs": 3955000,
-          "topics": [
-            "antitrust",
-            "bundling",
-            "regulation",
-            "enterprise software"
-          ],
-          "attributionConfidence": "high"
-        }
-      ],
-      "synthesis": "The hosts hold a mixed but cautiously constructive overall view of Microsoft, with the most pointed criticism directed at its competitive practices rather than its business quality. Sacks and Chamath (both June 2024) are sharply critical of Microsoft's decades-long bundling strategy — exemplified by Teams — arguing it illegally leverages monopoly power to kill competitors like Slack and that regulators should revive the old consent decree to enforce à la carte pricing. On the business outlook, Friedberg is split across time: in June 2025 he warns that Microsoft's application software revenue will likely decline over five years as AI-native builders replace the enterprise buyers who traditionally drove its core business, yet by October 2025 he turns more constructive, citing Microsoft Azure's 26% YoY cloud growth outpacing AWS's 17% and predicting that the AWS outage will accelerate enterprise diversification toward Azure. Chamath (June 2025) counters Friedberg's bear case, arguing Microsoft will grow by bundling point-SaaS competitors into its platform and riding the broader cloud buildout, while two guests add further positive signals: Reid Hoffman (August 2024) singles out CEO Satya Nadella as the best public-market CEO of his generation for his disciplined blend of AI investment and capital returns, and Philippe Lafont (May 2025) cites Microsoft's report of 100 trillion AI tokens processed — going \"basically vertical\" — as a decisive confirmation that AI demand is real and accelerating.",
-      "netStance": "bull",
-      "firstMentioned": "2024-06-29T04:05:00.000Z",
-      "lastMentioned": "2025-10-24T22:38:00.000Z",
-      "mentionCount": 7,
-      "market": {
-        "ticker": "MSFT",
-        "sourceSymbol": "MSFT",
-        "currency": "USD",
-        "asOf": "2026-06-24",
-        "anchorDate": "2024-06-29",
-        "basePrice": 456.73,
-        "latestPrice": 373.94,
-        "returns": {
-          "1m": -0.06568432115254089,
-          "3m": -0.05786788693538854,
-          "6m": -0.06984432815886855,
-          "1y": 0.08906793948284546,
-          "since": -0.18126683160729537
-        },
-        "history": [
-          [
-            "2024-07-01",
-            456.73
-          ],
-          [
-            "2024-07-15",
-            453.96
-          ],
-          [
-            "2024-07-26",
-            425.27
-          ],
-          [
-            "2024-08-08",
-            402.69
-          ],
-          [
-            "2024-08-21",
-            424.14
-          ],
-          [
-            "2024-09-04",
-            408.9
-          ],
-          [
-            "2024-09-17",
-            435.15
-          ],
-          [
-            "2024-09-30",
-            430.3
-          ],
-          [
-            "2024-10-11",
-            416.32
-          ],
-          [
-            "2024-10-24",
-            424.73
-          ],
-          [
-            "2024-11-06",
-            420.18
-          ],
-          [
-            "2024-11-19",
-            417.79
-          ],
-          [
-            "2024-12-03",
-            431.2
-          ],
-          [
-            "2024-12-16",
-            451.59
-          ],
-          [
-            "2024-12-30",
-            424.83
-          ],
-          [
-            "2025-01-14",
-            415.67
-          ],
-          [
-            "2025-01-28",
-            447.2
-          ],
-          [
-            "2025-02-10",
-            412.22
-          ],
-          [
-            "2025-02-24",
-            404
-          ],
-          [
-            "2025-03-07",
-            393.31
-          ],
-          [
-            "2025-03-20",
-            386.84
-          ],
-          [
-            "2025-04-02",
-            382.14
-          ],
-          [
-            "2025-04-15",
-            385.73
-          ],
-          [
-            "2025-04-29",
-            394.04
-          ],
-          [
-            "2025-05-12",
-            449.26
-          ],
-          [
-            "2025-05-23",
-            450.18
-          ],
-          [
-            "2025-06-06",
-            470.38
-          ],
-          [
-            "2025-06-20",
-            477.4
-          ],
-          [
-            "2025-07-03",
-            498.84
-          ],
-          [
-            "2025-07-17",
-            511.7
-          ],
-          [
-            "2025-07-30",
-            513.24
-          ],
-          [
-            "2025-08-12",
-            529.24
-          ],
-          [
-            "2025-08-25",
-            504.26
-          ],
-          [
-            "2025-09-08",
-            498.2
-          ],
-          [
-            "2025-09-19",
-            517.93
-          ],
-          [
-            "2025-10-02",
-            515.74
-          ],
-          [
-            "2025-10-15",
-            513.43
-          ],
-          [
-            "2025-10-28",
-            542.07
-          ],
-          [
-            "2025-11-10",
-            506
-          ],
-          [
-            "2025-11-21",
-            472.12
-          ],
-          [
-            "2025-12-05",
-            483.16
-          ],
-          [
-            "2025-12-18",
-            483.98
-          ],
-          [
-            "2026-01-02",
-            472.94
-          ],
-          [
-            "2026-01-15",
-            456.66
-          ],
-          [
-            "2026-01-29",
-            433.5
-          ],
-          [
-            "2026-02-11",
-            404.37
-          ],
-          [
-            "2026-02-25",
-            400.6
-          ],
-          [
-            "2026-03-10",
-            405.76
-          ],
-          [
-            "2026-03-23",
-            383
-          ],
-          [
-            "2026-04-06",
-            372.88
-          ],
-          [
-            "2026-04-17",
-            422.79
-          ],
-          [
-            "2026-04-30",
-            407.78
-          ],
-          [
-            "2026-05-13",
-            405.21
-          ],
-          [
-            "2026-05-27",
-            412.67
-          ],
-          [
-            "2026-06-09",
-            403.41
-          ],
-          [
-            "2026-06-23",
-            373.94
-          ]
-        ],
-        "source": "yahoo"
-      },
-      "description": "Develops software, cloud services, and hardware including Windows, Azure, and Microsoft 365.",
-      "domain": "microsoft.com"
     },
     {
       "slug": "mp",
@@ -23142,6 +22518,32 @@
           "guestName": "Philippe Laffont"
         },
         {
+          "id": "E222-mags-Sacks-1",
+          "episodeId": "E222",
+          "episodeNumber": 222,
+          "episodeDate": "2025-04-05T19:03:00.000Z",
+          "company": "Magnificent Seven / Mega-cap tech basket",
+          "ticker": "MAGS",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "neutral",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": "Not scored: The Polymarket bet on Mag 7 shrinking below 30% of the S&P 500 is explicitly a prediction-market/market-structure wager on index composition, not an equity long or short on the named companies. Per the rules, a wager on a market-structure outcome ('the Mag 7 shrinks below 30% of the S&P') is not a long or short of any named stock or ETF; callType should be 'view'. The quote also doesn't carry an explicit short/bear equity position on Mag 7 stocks — it's about index weight, and Sacks even contextualizes it as already closed out.",
+          "sectorProxy": "MAGS",
+          "summary": "Sacks had predicted earlier in the year that the Magnificent Seven would shrink below 30% of the S&P 500 in 2025, framing it as 'free money' because the Trump administration explicitly does not prioritize the asset economy or mega-cap tech stocks, and that call has now played out.",
+          "quote": "This was free money. This was like the stock market giving out free money... it was very clear to me early on that the rhetoric had shifted to say, 'We care about MAGA. We care about people that have working class and middle class jobs.'",
+          "quoteStartMs": 3025000,
+          "topics": [
+            "Mag 7",
+            "tariffs",
+            "market structure",
+            "MAGA economy"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
           "id": "E209-magnificent-seven-basket-Jason-7",
           "episodeId": "E209",
           "episodeNumber": 209,
@@ -23192,11 +22594,11 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts are divided on the Magnificent Seven, with Jason standing as the sole bull and both Chamath and guest Philippe Lafont bearish. Jason argues at high conviction that the basket will be the best-performing asset of 2025, driven by internal AI adoption unlocking earnings growth the market has not yet priced in. Chamath is bearish on structural grounds, warning that index concentration approaching 40% historically foreshadows a multi-trillion-dollar drawdown regardless of the underlying business quality. Lafont takes a different bearish angle, contending that the rapid pace of AI-driven change will dissolve the Mag 7 as a coherent group concept altogether, as correlations break down and a new, partly private set of leaders emerges to replace it.",
+      "synthesis": "The hosts are broadly divided on the Magnificent Seven basket, with no clear consensus. Jason is the lone bull, arguing at high conviction that internal AI adoption will drive earnings growth far beyond market expectations, making Mag 7 the best-performing asset of 2025. Chamath and guest Philippe Lafont are both bearish — Chamath citing dangerous index concentration near 40% as a structural precursor to a multi-trillion dollar drawdown regardless of business quality, while Lafont takes a more structural view that AI-driven disruption is breaking down intra-basket correlations and signaling the end of the Mag 7 as a coherent concept, to be replaced by a new generation of leaders. Sacks, rated neutral, had predicted early in 2025 that the group would shrink below 30% of the S&P 500 on the thesis that the Trump administration's working-class policy priorities deprioritize mega-cap tech, a call he says has since played out.",
       "netStance": "mixed",
       "firstMentioned": "2025-01-04T00:23:00.000Z",
       "lastMentioned": "2025-05-09T20:26:00.000Z",
-      "mentionCount": 3,
+      "mentionCount": 4,
       "market": {
         "ticker": "MAGS",
         "sourceSymbol": "MAGS",
@@ -23824,6 +23226,358 @@
       "domain": "box.com"
     },
     {
+      "slug": "ief",
+      "company": "US Treasuries",
+      "ticker": "IEF",
+      "isPublic": true,
+      "theses": [
+        {
+          "id": "E222-us-treasuries-Friedberg-3",
+          "episodeId": "E222",
+          "episodeNumber": 222,
+          "episodeDate": "2025-04-05T19:03:00.000Z",
+          "company": "US Treasuries",
+          "ticker": "IEF",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "explicit_long",
+          "excludeReason": null,
+          "scoreNote": "Guest (Ben Shapiro) confirming personal portfolio action — went light stocks / heavier bonds in anticipation of tariff shock. Speaker label is Friedberg per transcript prefix; attributed accordingly. ETF proxy: 10-year Treasuries ETF.",
+          "sectorProxy": "IEF",
+          "summary": "Ben Shapiro (guest) repositioned his own portfolio toward Treasuries / light stocks after the State of the Union, anticipating tariff-driven market volatility, and that trade has now paid off.",
+          "quote": "I called my financial advisor after the State of the Union Address and told them to rejigger my stock and bond ratio in my portfolio because I figured that something like this was going to happen... I went light stocks, I'll say that.",
+          "quoteStartMs": 2630000,
+          "topics": [
+            "Treasuries",
+            "tariffs",
+            "portfolio repositioning",
+            "recession risk"
+          ],
+          "attributionConfidence": "low"
+        },
+        {
+          "id": "E201-us-treasuries-Friedberg-1",
+          "episodeId": "E201",
+          "episodeNumber": 201,
+          "episodeDate": "2024-10-25T22:51:00.000Z",
+          "company": "US Treasuries",
+          "ticker": "IEF",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "bear",
+          "conviction": "high",
+          "callType": "explicit_short",
+          "excludeReason": null,
+          "scoreNote": "First-person explicit position statement. ETF proxy: 10-year Treasuries ETF.",
+          "sectorProxy": "IEF",
+          "summary": "Friedberg says he owns zero fixed income, citing inevitable debt monetization, inflation risk, and the structural exit of China from the Treasury market.",
+          "quote": "I would own zero fixed income. If I had my cash, it'd be very short-term.",
+          "quoteStartMs": 875415,
+          "topics": [
+            "inflation",
+            "fiscal deficit",
+            "interest rates",
+            "macro"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E201-us-treasuries-Sacks-0",
+          "episodeId": "E201",
+          "episodeNumber": 201,
+          "episodeDate": "2024-10-25T22:51:00.000Z",
+          "company": "US Treasuries",
+          "ticker": "IEF",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "bear",
+          "conviction": "high",
+          "callType": "selection",
+          "excludeReason": null,
+          "scoreNote": "Named as the explicit bear selection in answer to Friedberg's repositioning prompt. ETF proxy: 10-year Treasuries ETF.",
+          "sectorProxy": "IEF",
+          "summary": "Sacks says the easy positioning call is to avoid US Treasuries, citing looming inflation, rising debt service costs, and the risk that the Fed's rate-cutting cycle was premature.",
+          "quote": "the easy one to avoid is treasuries, right? I mean, do you really want to accept a 4.2% yield for 10 years to own a US bond? And with the looming inflation that is still out there, or the looming debt crisis that might be out there.",
+          "quoteStartMs": 2390709,
+          "topics": [
+            "inflation",
+            "fiscal deficit",
+            "interest rates",
+            "macro"
+          ],
+          "attributionConfidence": "high"
+        }
+      ],
+      "synthesis": "The dominant view among the hosts is bearish on US Treasuries, with both Sacks and Friedberg expressing high conviction against holding them. Sacks argues that a 4.2% 10-year yield is unattractive given lingering inflation and debt crisis risks, while Friedberg goes further, holding zero fixed income and pointing to inevitable debt monetization and China's structural exit from the Treasury market as key reasons to stay away entirely. Guest Ben Shapiro offers a contrasting, medium-conviction bull case, noting that he shifted his own portfolio toward bonds and lighter equities after the State of the Union in anticipation of tariff-driven volatility — a trade he says has since paid off. The hosts themselves are aligned in their bearishness, while Shapiro's bullish view is presented as a tactical, shorter-term positioning call rather than a structural one.",
+      "netStance": "bear",
+      "firstMentioned": "2024-10-25T22:51:00.000Z",
+      "lastMentioned": "2025-04-05T19:03:00.000Z",
+      "mentionCount": 3,
+      "market": {
+        "ticker": "IEF",
+        "sourceSymbol": "IEF",
+        "currency": "USD",
+        "asOf": "2026-06-24",
+        "anchorDate": "2024-10-25",
+        "basePrice": 94.89,
+        "latestPrice": 94.12,
+        "returns": {
+          "1m": -0.0029507851196121943,
+          "3m": -0.019180103277479266,
+          "6m": 0.0033723258509852794,
+          "1y": 0.02740014753925592,
+          "since": -0.00811465907893346
+        },
+        "history": [
+          [
+            "2024-10-25",
+            94.89
+          ],
+          [
+            "2024-11-05",
+            94.22
+          ],
+          [
+            "2024-11-14",
+            93.28
+          ],
+          [
+            "2024-11-25",
+            94.61
+          ],
+          [
+            "2024-12-05",
+            94.97
+          ],
+          [
+            "2024-12-16",
+            93.72
+          ],
+          [
+            "2024-12-26",
+            92.32
+          ],
+          [
+            "2025-01-07",
+            91.84
+          ],
+          [
+            "2025-01-17",
+            92.45
+          ],
+          [
+            "2025-01-29",
+            92.97
+          ],
+          [
+            "2025-02-07",
+            93.14
+          ],
+          [
+            "2025-02-19",
+            92.97
+          ],
+          [
+            "2025-02-28",
+            95.32
+          ],
+          [
+            "2025-03-11",
+            94.71
+          ],
+          [
+            "2025-03-20",
+            95.1
+          ],
+          [
+            "2025-03-31",
+            95.37
+          ],
+          [
+            "2025-04-09",
+            94.63
+          ],
+          [
+            "2025-04-21",
+            94.17
+          ],
+          [
+            "2025-04-30",
+            96.07
+          ],
+          [
+            "2025-05-09",
+            94.35
+          ],
+          [
+            "2025-05-20",
+            93.8
+          ],
+          [
+            "2025-05-30",
+            94.57
+          ],
+          [
+            "2025-06-10",
+            93.84
+          ],
+          [
+            "2025-06-20",
+            94.6
+          ],
+          [
+            "2025-07-01",
+            95.29
+          ],
+          [
+            "2025-07-11",
+            94.32
+          ],
+          [
+            "2025-07-22",
+            95
+          ],
+          [
+            "2025-07-31",
+            94.9
+          ],
+          [
+            "2025-08-11",
+            95.41
+          ],
+          [
+            "2025-08-20",
+            95.52
+          ],
+          [
+            "2025-08-29",
+            96.15
+          ],
+          [
+            "2025-09-10",
+            97.11
+          ],
+          [
+            "2025-09-19",
+            96.63
+          ],
+          [
+            "2025-09-30",
+            96.46
+          ],
+          [
+            "2025-10-09",
+            96.31
+          ],
+          [
+            "2025-10-20",
+            97.52
+          ],
+          [
+            "2025-10-29",
+            96.95
+          ],
+          [
+            "2025-11-07",
+            96.69
+          ],
+          [
+            "2025-11-18",
+            96.71
+          ],
+          [
+            "2025-11-28",
+            97.5
+          ],
+          [
+            "2025-12-09",
+            96.13
+          ],
+          [
+            "2025-12-18",
+            96.77
+          ],
+          [
+            "2025-12-30",
+            96.48
+          ],
+          [
+            "2026-01-09",
+            96.3
+          ],
+          [
+            "2026-01-21",
+            95.8
+          ],
+          [
+            "2026-01-30",
+            95.94
+          ],
+          [
+            "2026-02-10",
+            96.51
+          ],
+          [
+            "2026-02-20",
+            97.09
+          ],
+          [
+            "2026-03-03",
+            97.01
+          ],
+          [
+            "2026-03-12",
+            95.69
+          ],
+          [
+            "2026-03-23",
+            95.18
+          ],
+          [
+            "2026-04-01",
+            95.04
+          ],
+          [
+            "2026-04-13",
+            95.48
+          ],
+          [
+            "2026-04-22",
+            95.52
+          ],
+          [
+            "2026-05-01",
+            94.74
+          ],
+          [
+            "2026-05-12",
+            94.32
+          ],
+          [
+            "2026-05-21",
+            93.8
+          ],
+          [
+            "2026-06-02",
+            94.24
+          ],
+          [
+            "2026-06-11",
+            94.34
+          ],
+          [
+            "2026-06-23",
+            94.12
+          ]
+        ],
+        "source": "yahoo"
+      },
+      "description": "iShares ETF tracking an index of US Treasury bonds with 7–10 year maturities.",
+      "domain": null
+    },
+    {
       "slug": "credit-default-swaps-cds-corporate-credit-protection",
       "company": "Credit Default Swaps (CDS / corporate credit protection)",
       "ticker": null,
@@ -23842,15 +23596,15 @@
           "conviction": "medium",
           "callType": "explicit_long",
           "excludeReason": null,
-          "scoreNote": "Explicit 'I would be long CDS' framed as a named best investment idea / pick for 2025; asymmetric insurance trade on corporate default wave.",
+          "scoreNote": "Explicit statement 'I would be long CDS'; framed as his pick for the best investment idea of 2025. Asymmetric hedge, not a conviction fundamental long — medium conviction.",
           "sectorProxy": null,
-          "summary": "Chamath pitched buying CDS (credit default swap protection) as an asymmetric insurance trade against a corporate debt default wave in 2025, citing tariff-driven revenue pressure on leveraged companies with debt covenants tied to EBITDA.",
+          "summary": "Chamath recommends buying CDS (credit default swap protection) as an asymmetric insurance policy against a corporate debt default wave in 2025, framing it as a low-probability but extremely high-return hedge given tariff-driven recession risk and stretched corporate debt covenants.",
           "quote": "I would be long CDS. So what am I buying? I am buying insurance. I'm buying insurance using credit default swaps... if it hits, it will be the best performing asset of 2025.",
           "quoteStartMs": 6423976,
           "topics": [
-            "credit risk",
-            "tariffs",
+            "credit default swaps",
             "recession risk",
+            "tariffs",
             "corporate debt"
           ],
           "attributionConfidence": "low"
@@ -23872,7 +23626,7 @@
       "isPublic": true,
       "theses": [
         {
-          "id": "E222-nmax-Friedberg-1",
+          "id": "E222-nmax-Friedberg-2",
           "episodeId": "E222",
           "episodeNumber": 222,
           "episodeDate": "2025-04-05T19:03:00.000Z",
@@ -23884,21 +23638,21 @@
           "conviction": "medium",
           "callType": "view",
           "excludeReason": null,
-          "scoreNote": null,
+          "scoreNote": "Speaker label is Friedberg but content is Ben Shapiro (guest) — attributed correctly per transcript prefix convention. Bear valuation view with explicit reversion target.",
           "sectorProxy": null,
-          "summary": "Ben Shapiro argues Newsmax's IPO pop is a GameStop-style retail voting-machine event and that the stock will revert to a valuation in the $2–4 billion range as the weighing machine takes over, well below its peak.",
-          "quote": "I think the PE ratios on the Newsmax trade are ridiculous in the sense that it's going to revert back to something closer to normalcy... it's more like GameStop than anything else.",
-          "quoteStartMs": 6715705,
+          "summary": "Ben Shapiro (guest) argues Newsmax's post-IPO trading is a GameStop-style retail meme event disconnected from fundamentals, and expects the stock to revert to a $2–4 billion market cap range from its peak above $20 billion.",
+          "quote": "the PE ratios on the Newsmax trade are, are, you know, ridiculous in the sense that it's going to revert back to something closer to normalcy... It'll end up being, you know, total market cap will probably be somewhere when it, when it",
+          "quoteStartMs": 6704758,
           "topics": [
-            "valuation",
             "IPO",
-            "media",
-            "retail speculation"
+            "meme stock",
+            "valuation",
+            "media"
           ],
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The lone host view provided comes from Friedberg (attributing arguments made by Ben Shapiro), who holds a bearish, medium-conviction stance on Newsmax as of April 2025. The core argument is that Newsmax's IPO price surge was a retail-driven, sentiment-fueled event akin to the GameStop short squeeze, resulting in PE ratios seen as fundamentally unjustifiable and unsustainable. Friedberg cites a fair market cap of roughly $2–4 billion as a more reasonable anchor, far below the peak valuation of over $20 billion. With only one host's thesis supplied, no cross-host agreement or disagreement can be assessed.",
+      "synthesis": "The only view on record comes from Friedberg (attributing Ben Shapiro's argument), who is bearish on Newsmax at medium conviction. He characterizes the IPO's spike to roughly $240 as a GameStop-style meme trade driven by retail sentiment rather than any fundamental business value, and expects the stock to revert to a more rational $2–4 billion market cap as price-discovery reasserts itself. With only one host's perspective available, there is no agreement or disagreement to note among the broader group.",
       "netStance": "bear",
       "firstMentioned": "2025-04-05T19:03:00.000Z",
       "lastMentioned": "2025-04-05T19:03:00.000Z",
@@ -24132,90 +23886,6 @@
       },
       "description": "Conservative U.S. news television network and digital media outlet offering political commentary.",
       "domain": "newsmax.com"
-    },
-    {
-      "slug": "magnificent-seven-megacap-tech-basket",
-      "company": "Magnificent Seven / megacap tech basket",
-      "ticker": null,
-      "isPublic": true,
-      "theses": [
-        {
-          "id": "E222-magnificent-seven-megacap-tech-basket-Sacks-2",
-          "episodeId": "E222",
-          "episodeNumber": 222,
-          "episodeDate": "2025-04-05T19:03:00.000Z",
-          "company": "Magnificent Seven / megacap tech basket",
-          "ticker": null,
-          "isPublic": true,
-          "host": "Sacks",
-          "stance": "neutral",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": "not_investment_call",
-          "scoreNote": "Not scored: The Mag 7 / S&P 500 composition bet is a prediction-market wager on an index-structure outcome (Mag 7 shrinking below 30% of S&P weight), not an equity long or short on the named companies. Per the rules, a market-structure bet is not a scoreable long/short/selection on the named stocks; callType must be view.",
-          "sectorProxy": "MAGS",
-          "summary": "Sacks described his Polymarket bet that the Mag Seven would shrink below 30% of the S&P 500 in 2025 as 'free money,' arguing the Trump administration explicitly does not care about the asset economy or equity markets and that Bessant framed the sell-off as a 'Mag Seven problem, not a MAGA problem.'",
-          "quote": "This was free money... it was very clear to me early on that the rhetoric had shifted to say, 'We care about MAGA... None of those folks are deeply invested in the asset economy the way maybe some of us are.'",
-          "quoteStartMs": 3024690,
-          "topics": [
-            "tariffs",
-            "policy risk",
-            "megacap tech",
-            "market structure"
-          ],
-          "attributionConfidence": "high"
-        }
-      ],
-      "synthesis": "The collective view is represented solely by Sacks, who holds a high-conviction neutral-to-bearish stance on the Mag Seven's near-term market weight. He argues that the Trump administration has explicitly deprioritized the asset economy and equity markets, framing the ongoing sell-off as a \"Mag Seven problem, not a MAGA problem\" — a rhetorical shift he found so clear that he called his Polymarket bet on the group falling below 30% of the S&P 500 \"free money.\" No other hosts provided theses on this basket, so no cross-host agreement or disagreement can be assessed.",
-      "netStance": "neutral",
-      "firstMentioned": "2025-04-05T19:03:00.000Z",
-      "lastMentioned": "2025-04-05T19:03:00.000Z",
-      "mentionCount": 1,
-      "market": null,
-      "description": "Basket of seven dominant mega-cap technology and growth companies driving U.S. equity market returns.",
-      "domain": null
-    },
-    {
-      "slug": "us-treasuries-long-duration-bonds",
-      "company": "US Treasuries / long-duration bonds",
-      "ticker": null,
-      "isPublic": true,
-      "theses": [
-        {
-          "id": "E222-us-treasuries-long-duration-bonds-Friedberg-3",
-          "episodeId": "E222",
-          "episodeNumber": 222,
-          "episodeDate": "2025-04-05T19:03:00.000Z",
-          "company": "US Treasuries / long-duration bonds",
-          "ticker": null,
-          "isPublic": true,
-          "host": "Friedberg",
-          "stance": "bear",
-          "conviction": "medium",
-          "callType": "explicit_long",
-          "excludeReason": null,
-          "scoreNote": "Explicit personal portfolio action: sold down equities (went 'light stocks') in anticipation of tariff-driven downturn; the directional call is bearish on equities / risk assets.",
-          "sectorProxy": null,
-          "summary": "Ben Shapiro proactively repositioned his portfolio away from stocks and toward bonds (going 'light stocks') after the State of the Union, anticipating tariff-driven equity volatility — effectively a defensive shift out of equities.",
-          "quote": "I called my financial advisor after the State of the Union Address and told them to rejigger my stock and bond ratio in my portfolio because I figured that something like this was going to happen... I went light stocks, I'll say that.",
-          "quoteStartMs": 2630000,
-          "topics": [
-            "tariffs",
-            "portfolio positioning",
-            "macro",
-            "equities"
-          ],
-          "attributionConfidence": "high"
-        }
-      ],
-      "synthesis": "The sole thesis provided comes from Friedberg, who relays that Ben Shapiro shifted his personal portfolio toward bonds and away from stocks following the State of the Union, anticipating tariff-driven equity volatility. Friedberg presents this as a defensive, risk-off repositioning rather than a strong conviction bullish case for bonds on their own merits. With only one host represented and the view framed largely around equity avoidance rather than a direct bull case for long-duration bonds, no cross-host agreement or disagreement can be assessed from the available material.",
-      "netStance": "bear",
-      "firstMentioned": "2025-04-05T19:03:00.000Z",
-      "lastMentioned": "2025-04-05T19:03:00.000Z",
-      "mentionCount": 1,
-      "market": null,
-      "description": "Long-duration U.S. government Treasury bonds, reflecting interest rate sensitivity and sovereign debt exposure.",
-      "domain": null
     },
     {
       "slug": "enterprise-saas-software-industrial-complex",
@@ -24739,6 +24409,404 @@
       "market": null,
       "description": "Mobile game developer known for augmented reality games including Pokémon GO and Ingress.",
       "domain": "nianticlabs.com"
+    },
+    {
+      "slug": "ibit",
+      "company": "Bitcoin",
+      "ticker": "IBIT",
+      "isPublic": true,
+      "theses": [
+        {
+          "id": "E218-btc-usd-Sacks-5",
+          "episodeId": "E218",
+          "episodeNumber": 218,
+          "episodeDate": "2025-03-08T00:58:00.000Z",
+          "company": "Bitcoin",
+          "ticker": "IBIT",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "neutral",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": "Not scored: The quote describes Bitcoin's properties and Sacks' historical purchase at $120, but Sacks' role here is as a policy architect explaining the reserve structure, not making a personal portfolio call. His crypto positions were divested before day one of the administration. The 'explicit_long' label is not supported — the quote does not contain Sacks' own current transaction or selection language naming Bitcoin as his trade. The historical purchase anecdote is context, not a current actionable call.",
+          "sectorProxy": null,
+          "summary": "Sacks has been long Bitcoin since 2011 (~$120), views it as uniquely decentralized, secure, and widely accepted as digital gold, and now as White House crypto czar is architecting a strategic Bitcoin reserve that prohibits the government from selling it.",
+          "quote": "Bitcoin's the original cryptocurrency… It's the only one that doesn't have an issuer. It's very decentralized… I remember back in 2011, I think it's the first time I bought a Bitcoin. I think it was at $120. Now it's at $90,000.",
+          "quoteStartMs": 6037368,
+          "topics": [
+            "Bitcoin",
+            "crypto reserve",
+            "store of value",
+            "digital gold"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E204-bitcoin-Chamath-0",
+          "episodeId": "E204",
+          "episodeNumber": 204,
+          "episodeDate": "2024-11-16T16:55:00.000Z",
+          "company": "Bitcoin",
+          "ticker": "IBIT",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath views Bitcoin as the top risk-asset trade he called at the start of the year, treating it currently as a dollar-correlated gold proxy rather than an independent store of value, while believing it will eventually become a non-speculative store of value within his lifetime.",
+          "quote": "What did I say at the beginning of the year was going to be the biggest risk asset winning trade? Yeah, it's great. Bitcoin's great.",
+          "quoteStartMs": 841599,
+          "topics": [
+            "Bitcoin",
+            "risk assets",
+            "store of value",
+            "macro"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E201-bitcoin-Chamath-5",
+          "episodeId": "E201",
+          "episodeNumber": 201,
+          "episodeDate": "2024-10-25T22:51:00.000Z",
+          "company": "Bitcoin",
+          "ticker": "IBIT",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": "Not scored: Chamath's quote is verbatim and carries an explicit bull economic claim — Bitcoin will be the 'resounding inflation hedge asset for the next 50 or 100 years' — but this is forward analytical commentary, not a stated current position or named pick answering a positioning prompt. Should be callType=view.",
+          "sectorProxy": null,
+          "summary": "Chamath argues Bitcoin is the 'resounding inflation hedge asset for the next 50 or 100 years,' having called it as the breakout asset at the start of the year, and sees gold as the last vestige of a fading insurance paradigm that Bitcoin will replace.",
+          "quote": "at the beginning of the year, I said the breakout asset was going to be Bitcoin. I think it looks like it's going to be the resounding inflation hedge asset for the next 50 or 100 years.",
+          "quoteStartMs": 1565271,
+          "topics": [
+            "inflation hedge",
+            "Bitcoin",
+            "macro"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E201-bitcoin-Friedberg-3",
+          "episodeId": "E201",
+          "episodeNumber": 201,
+          "episodeDate": "2024-10-25T22:51:00.000Z",
+          "company": "Bitcoin",
+          "ticker": "IBIT",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "explicit_long",
+          "excludeReason": null,
+          "scoreNote": "First-person explicit long position stated in same sentence as gold and commodities.",
+          "sectorProxy": null,
+          "summary": "Friedberg says he is long Bitcoin as part of his inflation-hedge basket alongside gold and commodities.",
+          "quote": "I'm long gold. I'm long Bitcoin. I think commodities are so ridiculously under-owned. So I'm long commodities.",
+          "quoteStartMs": 856000,
+          "topics": [
+            "inflation hedge",
+            "macro",
+            "Bitcoin"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E181-bitcoin-Chamath-0",
+          "episodeId": "E181",
+          "episodeNumber": 181,
+          "episodeDate": "2024-05-31T21:55:00.000Z",
+          "company": "Bitcoin",
+          "ticker": "IBIT",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": "Not scored: Chamath makes an explicit bull claim on Bitcoin price appreciation post-halving with ETF tailwinds and dollar debasement, but the current quote is truncated mid-sentence. A better verbatim excerpt from Chamath's own lines captures the directional claim more cleanly. However, the callType must be checked: the quote needs to carry his own transaction/selection language to be explicit_long. Reviewing the transcript, Chamath says this is 'not financial advice' and 'just data/guesses' — he never says 'I'm long' or 'I'd buy' in the published quote or nearby. He did say earlier 'I remember I called my family office. I'm like, buy me a million of these things' — but that was a historical anecdote about 2010, not a current position. The analysis/halving data presentation is a view, not an explicit_long. Demote to view.",
+          "sectorProxy": null,
+          "summary": "Chamath argues that post-halving historical price cycles, combined with the new Bitcoin ETFs enabling mainstream adoption, point to significant price appreciation; he sees Bitcoin increasingly serving as a hard-asset reserve currency for countries moving to dual-currency systems amid dollar debasement.",
+          "quote": "18 months after the first halving, the Bitcoin price returned 45x. After the second halving, it returned almost 28x. And after this third halving, it returned almost an 8x… if you marry that with this worry that some folks have about dollar",
+          "quoteStartMs": null,
+          "topics": [
+            "Bitcoin",
+            "halving cycle",
+            "ETF adoption",
+            "dollar debasement"
+          ],
+          "attributionConfidence": "high"
+        }
+      ],
+      "synthesis": "All four hosts are bullish on Bitcoin, with Chamath, Friedberg, and Sacks each expressing high conviction across multiple points in time. The dominant shared thesis is that Bitcoin is the premier inflation hedge, with Chamath going furthest in arguing it will displace gold and serve as a hard-asset reserve currency over the next 50–100 years amid dollar debasement, while Friedberg holds it more pragmatically as part of a broader inflation-hedge basket alongside gold and commodities. Sacks, speaking from his role as White House crypto czar, grounds his conviction in Bitcoin's unique decentralization and lack of an issuer, framing it as digital gold and actively architecting a U.S. strategic reserve that bars the government from selling it. There is no meaningful disagreement among the hosts, though Chamath adds a nuance in his November 2024 entry — acknowledging that Bitcoin currently trades as a dollar-correlated gold proxy rather than a fully independent store of value, while expecting that to change over time.",
+      "netStance": "bull",
+      "firstMentioned": "2024-05-31T21:55:00.000Z",
+      "lastMentioned": "2025-03-08T00:58:00.000Z",
+      "mentionCount": 5,
+      "market": {
+        "ticker": "IBIT",
+        "sourceSymbol": "IBIT",
+        "currency": "USD",
+        "asOf": "2026-06-24",
+        "anchorDate": "2024-05-31",
+        "basePrice": 38.55,
+        "latestPrice": 35.31,
+        "returns": {
+          "1m": -0.06614785992217892,
+          "3m": -0.14448767833981843,
+          "6m": 0.41322957198443583,
+          "1y": 0.5398184176394294,
+          "since": -0.08404669260700376
+        },
+        "history": [
+          [
+            "2024-05-31",
+            38.55
+          ],
+          [
+            "2024-06-13",
+            37.9
+          ],
+          [
+            "2024-06-27",
+            34.98
+          ],
+          [
+            "2024-07-11",
+            32.7
+          ],
+          [
+            "2024-07-24",
+            37.42
+          ],
+          [
+            "2024-08-06",
+            32.34
+          ],
+          [
+            "2024-08-19",
+            33.62
+          ],
+          [
+            "2024-08-30",
+            33.37
+          ],
+          [
+            "2024-09-13",
+            34.04
+          ],
+          [
+            "2024-09-26",
+            36.84
+          ],
+          [
+            "2024-10-09",
+            34.68
+          ],
+          [
+            "2024-10-22",
+            38.41
+          ],
+          [
+            "2024-11-04",
+            38.25
+          ],
+          [
+            "2024-11-15",
+            52.13
+          ],
+          [
+            "2024-11-29",
+            55.21
+          ],
+          [
+            "2024-12-12",
+            56.92
+          ],
+          [
+            "2024-12-26",
+            54.3
+          ],
+          [
+            "2025-01-10",
+            53.84
+          ],
+          [
+            "2025-01-24",
+            59.7
+          ],
+          [
+            "2025-02-06",
+            55.12
+          ],
+          [
+            "2025-02-20",
+            56.04
+          ],
+          [
+            "2025-03-05",
+            51.44
+          ],
+          [
+            "2025-03-18",
+            46.81
+          ],
+          [
+            "2025-03-31",
+            46.81
+          ],
+          [
+            "2025-04-11",
+            47.67
+          ],
+          [
+            "2025-04-25",
+            54.27
+          ],
+          [
+            "2025-05-08",
+            57.62
+          ],
+          [
+            "2025-05-21",
+            61.79
+          ],
+          [
+            "2025-06-04",
+            59.64
+          ],
+          [
+            "2025-06-17",
+            59.5
+          ],
+          [
+            "2025-07-01",
+            59.84
+          ],
+          [
+            "2025-07-15",
+            66.16
+          ],
+          [
+            "2025-07-28",
+            67.1
+          ],
+          [
+            "2025-08-08",
+            66.13
+          ],
+          [
+            "2025-08-21",
+            63.69
+          ],
+          [
+            "2025-09-04",
+            62.35
+          ],
+          [
+            "2025-09-17",
+            65.67
+          ],
+          [
+            "2025-09-30",
+            65
+          ],
+          [
+            "2025-10-13",
+            65.81
+          ],
+          [
+            "2025-10-24",
+            62.83
+          ],
+          [
+            "2025-11-06",
+            57.26
+          ],
+          [
+            "2025-11-19",
+            50.73
+          ],
+          [
+            "2025-12-03",
+            52.74
+          ],
+          [
+            "2025-12-16",
+            49.71
+          ],
+          [
+            "2025-12-30",
+            49.83
+          ],
+          [
+            "2026-01-13",
+            53.57
+          ],
+          [
+            "2026-01-27",
+            50.63
+          ],
+          [
+            "2026-02-09",
+            40.11
+          ],
+          [
+            "2026-02-23",
+            36.55
+          ],
+          [
+            "2026-03-06",
+            38.6
+          ],
+          [
+            "2026-03-19",
+            39.82
+          ],
+          [
+            "2026-04-01",
+            38.64
+          ],
+          [
+            "2026-04-15",
+            42.56
+          ],
+          [
+            "2026-04-28",
+            43.27
+          ],
+          [
+            "2026-05-11",
+            46.47
+          ],
+          [
+            "2026-05-22",
+            42.96
+          ],
+          [
+            "2026-06-05",
+            34.14
+          ],
+          [
+            "2026-06-18",
+            35.62
+          ],
+          [
+            "2026-06-23",
+            35.31
+          ]
+        ],
+        "source": "yahoo"
+      },
+      "description": "BlackRock's iShares Bitcoin Trust ETF providing investors regulated exposure to Bitcoin's price.",
+      "domain": null
     },
     {
       "slug": "magnificent-seven-mag-7",
@@ -28852,332 +28920,6 @@
       "domain": "starbucks.com"
     },
     {
-      "slug": "ief",
-      "company": "US Treasuries",
-      "ticker": "IEF",
-      "isPublic": true,
-      "theses": [
-        {
-          "id": "E201-us-treasuries-Friedberg-1",
-          "episodeId": "E201",
-          "episodeNumber": 201,
-          "episodeDate": "2024-10-25T22:51:00.000Z",
-          "company": "US Treasuries",
-          "ticker": "IEF",
-          "isPublic": true,
-          "host": "Friedberg",
-          "stance": "bear",
-          "conviction": "high",
-          "callType": "explicit_short",
-          "excludeReason": null,
-          "scoreNote": "First-person explicit position statement. ETF proxy: 10-year Treasuries ETF.",
-          "sectorProxy": "IEF",
-          "summary": "Friedberg says he owns zero fixed income, citing inevitable debt monetization, inflation risk, and the structural exit of China from the Treasury market.",
-          "quote": "I would own zero fixed income. If I had my cash, it'd be very short-term.",
-          "quoteStartMs": 875415,
-          "topics": [
-            "inflation",
-            "fiscal deficit",
-            "interest rates",
-            "macro"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E201-us-treasuries-Sacks-0",
-          "episodeId": "E201",
-          "episodeNumber": 201,
-          "episodeDate": "2024-10-25T22:51:00.000Z",
-          "company": "US Treasuries",
-          "ticker": "IEF",
-          "isPublic": true,
-          "host": "Sacks",
-          "stance": "bear",
-          "conviction": "high",
-          "callType": "selection",
-          "excludeReason": null,
-          "scoreNote": "Named as the explicit bear selection in answer to Friedberg's repositioning prompt. ETF proxy: 10-year Treasuries ETF.",
-          "sectorProxy": "IEF",
-          "summary": "Sacks says the easy positioning call is to avoid US Treasuries, citing looming inflation, rising debt service costs, and the risk that the Fed's rate-cutting cycle was premature.",
-          "quote": "the easy one to avoid is treasuries, right? I mean, do you really want to accept a 4.2% yield for 10 years to own a US bond? And with the looming inflation that is still out there, or the looming debt crisis that might be out there.",
-          "quoteStartMs": 2390709,
-          "topics": [
-            "inflation",
-            "fiscal deficit",
-            "interest rates",
-            "macro"
-          ],
-          "attributionConfidence": "high"
-        }
-      ],
-      "synthesis": "Both Sacks and Friedberg are bears on US Treasuries with high conviction, and there is no disagreement between them. Sacks argues that locking in a 4.2% 10-year yield is unattractive given lingering inflation risks and the possibility that the Fed moved prematurely to cut rates, while also flagging the broader threat of a looming debt crisis. Friedberg goes further, stating he holds zero fixed income entirely, pointing to the structural risks of debt monetization, inflation, and China's ongoing exit from the Treasury market as reasons to stay away from anything beyond very short-term instruments.",
-      "netStance": "bear",
-      "firstMentioned": "2024-10-25T22:51:00.000Z",
-      "lastMentioned": "2024-10-25T22:51:00.000Z",
-      "mentionCount": 2,
-      "market": {
-        "ticker": "IEF",
-        "sourceSymbol": "IEF",
-        "currency": "USD",
-        "asOf": "2026-06-24",
-        "anchorDate": "2024-10-25",
-        "basePrice": 94.89,
-        "latestPrice": 94.12,
-        "returns": {
-          "1m": -0.0029507851196121943,
-          "3m": -0.019180103277479266,
-          "6m": 0.0033723258509852794,
-          "1y": 0.02740014753925592,
-          "since": -0.00811465907893346
-        },
-        "history": [
-          [
-            "2024-10-25",
-            94.89
-          ],
-          [
-            "2024-11-05",
-            94.22
-          ],
-          [
-            "2024-11-14",
-            93.28
-          ],
-          [
-            "2024-11-25",
-            94.61
-          ],
-          [
-            "2024-12-05",
-            94.97
-          ],
-          [
-            "2024-12-16",
-            93.72
-          ],
-          [
-            "2024-12-26",
-            92.32
-          ],
-          [
-            "2025-01-07",
-            91.84
-          ],
-          [
-            "2025-01-17",
-            92.45
-          ],
-          [
-            "2025-01-29",
-            92.97
-          ],
-          [
-            "2025-02-07",
-            93.14
-          ],
-          [
-            "2025-02-19",
-            92.97
-          ],
-          [
-            "2025-02-28",
-            95.32
-          ],
-          [
-            "2025-03-11",
-            94.71
-          ],
-          [
-            "2025-03-20",
-            95.1
-          ],
-          [
-            "2025-03-31",
-            95.37
-          ],
-          [
-            "2025-04-09",
-            94.63
-          ],
-          [
-            "2025-04-21",
-            94.17
-          ],
-          [
-            "2025-04-30",
-            96.07
-          ],
-          [
-            "2025-05-09",
-            94.35
-          ],
-          [
-            "2025-05-20",
-            93.8
-          ],
-          [
-            "2025-05-30",
-            94.57
-          ],
-          [
-            "2025-06-10",
-            93.84
-          ],
-          [
-            "2025-06-20",
-            94.6
-          ],
-          [
-            "2025-07-01",
-            95.29
-          ],
-          [
-            "2025-07-11",
-            94.32
-          ],
-          [
-            "2025-07-22",
-            95
-          ],
-          [
-            "2025-07-31",
-            94.9
-          ],
-          [
-            "2025-08-11",
-            95.41
-          ],
-          [
-            "2025-08-20",
-            95.52
-          ],
-          [
-            "2025-08-29",
-            96.15
-          ],
-          [
-            "2025-09-10",
-            97.11
-          ],
-          [
-            "2025-09-19",
-            96.63
-          ],
-          [
-            "2025-09-30",
-            96.46
-          ],
-          [
-            "2025-10-09",
-            96.31
-          ],
-          [
-            "2025-10-20",
-            97.52
-          ],
-          [
-            "2025-10-29",
-            96.95
-          ],
-          [
-            "2025-11-07",
-            96.69
-          ],
-          [
-            "2025-11-18",
-            96.71
-          ],
-          [
-            "2025-11-28",
-            97.5
-          ],
-          [
-            "2025-12-09",
-            96.13
-          ],
-          [
-            "2025-12-18",
-            96.77
-          ],
-          [
-            "2025-12-30",
-            96.48
-          ],
-          [
-            "2026-01-09",
-            96.3
-          ],
-          [
-            "2026-01-21",
-            95.8
-          ],
-          [
-            "2026-01-30",
-            95.94
-          ],
-          [
-            "2026-02-10",
-            96.51
-          ],
-          [
-            "2026-02-20",
-            97.09
-          ],
-          [
-            "2026-03-03",
-            97.01
-          ],
-          [
-            "2026-03-12",
-            95.69
-          ],
-          [
-            "2026-03-23",
-            95.18
-          ],
-          [
-            "2026-04-01",
-            95.04
-          ],
-          [
-            "2026-04-13",
-            95.48
-          ],
-          [
-            "2026-04-22",
-            95.52
-          ],
-          [
-            "2026-05-01",
-            94.74
-          ],
-          [
-            "2026-05-12",
-            94.32
-          ],
-          [
-            "2026-05-21",
-            93.8
-          ],
-          [
-            "2026-06-02",
-            94.24
-          ],
-          [
-            "2026-06-11",
-            94.34
-          ],
-          [
-            "2026-06-23",
-            94.12
-          ]
-        ],
-        "source": "yahoo"
-      },
-      "description": "iShares ETF tracking an index of US Treasury bonds with 7–10 year maturities.",
-      "domain": null
-    },
-    {
       "slug": "dbc",
       "company": "Commodities basket",
       "ticker": "DBC",
@@ -30398,13 +30140,13 @@
         "asOf": "2026-06-24",
         "anchorDate": "2024-09-06",
         "basePrice": 167.91,
-        "latestPrice": 290.92,
+        "latestPrice": 290.915,
         "returns": {
           "1m": 0.0063129057233041646,
           "3m": 0.2086832231552617,
           "6m": 0.06801262581144671,
           "1y": 0.17551069025072955,
-          "since": 0.7325948424751356
+          "since": 0.7325650646179502
         },
         "history": [
           [
@@ -30633,7 +30375,7 @@
           ],
           [
             "2026-06-23",
-            290.92
+            290.915
           ]
         ],
         "source": "yahoo"
@@ -32721,12 +32463,12 @@
     "inceptionDate": "2024-07-26",
     "benchmarkSymbol": "SPY",
     "contributionPerCall": 1000,
-    "totalInvested": 16000,
-    "portfolioValue": 20601,
-    "benchmarkValue": 18964,
-    "portfolioReturn": 0.28756249999999994,
-    "benchmarkReturn": 0.18524999999999991,
-    "outperformance": 0.10231250000000003,
+    "totalInvested": 17000,
+    "portfolioValue": 21399,
+    "benchmarkValue": 20057,
+    "portfolioReturn": 0.258764705882353,
+    "benchmarkReturn": 0.17982352941176472,
+    "outperformance": 0.07894117647058829,
     "constituents": [
       {
         "slug": "pltr",
@@ -32851,6 +32593,26 @@
         ]
       },
       {
+        "slug": "nvda",
+        "company": "Nvidia",
+        "ticker": "NVDA",
+        "sourceSymbol": "NVDA",
+        "currency": "USD",
+        "direction": "long",
+        "callTypes": [
+          "explicit_long"
+        ],
+        "entryDate": "2025-11-07",
+        "entryPrice": 188.15,
+        "latestPrice": 200.04,
+        "sinceReturn": 0.06319425989901672,
+        "benchmarkReturn": 0.09331266673621763,
+        "alpha": -0.030118406837200906,
+        "hosts": [
+          "Chamath"
+        ]
+      },
+      {
         "slug": "cper",
         "company": "Copper",
         "ticker": "CPER",
@@ -32868,26 +32630,6 @@
         "alpha": -0.04333726632199664,
         "hosts": [
           "Friedberg"
-        ]
-      },
-      {
-        "slug": "botz",
-        "company": "AI infrastructure / compute basket",
-        "ticker": "BOTZ",
-        "sourceSymbol": "BOTZ",
-        "currency": "USD",
-        "direction": "long",
-        "callTypes": [
-          "explicit_long"
-        ],
-        "entryDate": "2025-11-07",
-        "entryPrice": 36,
-        "latestPrice": 36.64,
-        "sinceReturn": 0.017777777777777892,
-        "benchmarkReturn": 0.09331266673621763,
-        "alpha": -0.07553488895843974,
-        "hosts": [
-          "Chamath"
         ]
       },
       {
@@ -32989,6 +32731,26 @@
         "alpha": -0.3379239633060017,
         "hosts": [
           "Friedberg"
+        ]
+      },
+      {
+        "slug": "msft",
+        "company": "Microsoft",
+        "ticker": "MSFT",
+        "sourceSymbol": "MSFT",
+        "currency": "USD",
+        "direction": "long",
+        "callTypes": [
+          "explicit_long"
+        ],
+        "entryDate": "2025-11-07",
+        "entryPrice": 496.82,
+        "latestPrice": 373.94,
+        "sinceReturn": -0.24733303812245888,
+        "benchmarkReturn": 0.09331266673621763,
+        "alpha": -0.3406457048586765,
+        "hosts": [
+          "Chamath"
         ]
       },
       {
@@ -33379,168 +33141,168 @@
       },
       {
         "date": "2025-11-10",
-        "portfolio": 19991,
-        "benchmark": 12679,
-        "invested": 11000
+        "portfolio": 21051,
+        "benchmark": 13694,
+        "invested": 12000
       },
       {
         "date": "2025-11-18",
-        "portfolio": 18320,
-        "benchmark": 12281,
-        "invested": 11000
+        "portfolio": 19342,
+        "benchmark": 13265,
+        "invested": 12000
       },
       {
         "date": "2025-11-26",
-        "portfolio": 18501,
-        "benchmark": 12646,
-        "invested": 11000
+        "portfolio": 19467,
+        "benchmark": 13659,
+        "invested": 12000
       },
       {
         "date": "2025-12-05",
-        "portfolio": 19306,
-        "benchmark": 12758,
-        "invested": 11000
+        "portfolio": 20226,
+        "benchmark": 13780,
+        "invested": 12000
       },
       {
         "date": "2025-12-15",
-        "portfolio": 19051,
-        "benchmark": 12666,
-        "invested": 11000
+        "portfolio": 19940,
+        "benchmark": 13680,
+        "invested": 12000
       },
       {
         "date": "2025-12-23",
-        "portfolio": 19641,
-        "benchmark": 12800,
-        "invested": 11000
+        "portfolio": 20607,
+        "benchmark": 13825,
+        "invested": 12000
       },
       {
         "date": "2026-01-02",
-        "portfolio": 18473,
-        "benchmark": 12711,
-        "invested": 11000
+        "portfolio": 19409,
+        "benchmark": 13729,
+        "invested": 12000
       },
       {
         "date": "2026-01-12",
-        "portfolio": 22453,
-        "benchmark": 15934,
-        "invested": 14000
+        "portfolio": 23329,
+        "benchmark": 16970,
+        "invested": 15000
       },
       {
         "date": "2026-01-21",
-        "portfolio": 21787,
-        "benchmark": 15710,
-        "invested": 14000
+        "portfolio": 22608,
+        "benchmark": 16732,
+        "invested": 15000
       },
       {
         "date": "2026-01-29",
-        "portfolio": 21749,
-        "benchmark": 15908,
-        "invested": 14000
+        "portfolio": 22591,
+        "benchmark": 16943,
+        "invested": 15000
       },
       {
         "date": "2026-02-06",
-        "portfolio": 20048,
-        "benchmark": 15830,
-        "invested": 14000
+        "portfolio": 20800,
+        "benchmark": 16859,
+        "invested": 15000
       },
       {
         "date": "2026-02-17",
-        "portfolio": 19527,
-        "benchmark": 15652,
-        "invested": 14000
+        "portfolio": 20236,
+        "benchmark": 16670,
+        "invested": 15000
       },
       {
         "date": "2026-02-25",
-        "portfolio": 20162,
-        "benchmark": 15888,
-        "invested": 14000
+        "portfolio": 20906,
+        "benchmark": 16921,
+        "invested": 15000
       },
       {
         "date": "2026-03-05",
-        "portfolio": 20604,
-        "benchmark": 15617,
-        "invested": 14000
+        "portfolio": 21389,
+        "benchmark": 16632,
+        "invested": 15000
       },
       {
         "date": "2026-03-13",
-        "portfolio": 20386,
-        "benchmark": 15181,
-        "invested": 14000
+        "portfolio": 21173,
+        "benchmark": 16168,
+        "invested": 15000
       },
       {
         "date": "2026-03-23",
-        "portfolio": 20299,
-        "benchmark": 15022,
-        "invested": 14000
+        "portfolio": 21052,
+        "benchmark": 15999,
+        "invested": 15000
       },
       {
         "date": "2026-03-31",
-        "portfolio": 20705,
-        "benchmark": 15932,
-        "invested": 15000
+        "portfolio": 21454,
+        "benchmark": 16902,
+        "invested": 16000
       },
       {
         "date": "2026-04-09",
-        "portfolio": 20644,
-        "benchmark": 16657,
-        "invested": 15000
+        "portfolio": 21403,
+        "benchmark": 17670,
+        "invested": 16000
       },
       {
         "date": "2026-04-17",
-        "portfolio": 22085,
-        "benchmark": 17397,
-        "invested": 15000
+        "portfolio": 22969,
+        "benchmark": 18456,
+        "invested": 16000
       },
       {
         "date": "2026-04-27",
-        "portfolio": 21962,
-        "benchmark": 17521,
-        "invested": 15000
+        "portfolio": 22899,
+        "benchmark": 18586,
+        "invested": 16000
       },
       {
         "date": "2026-05-05",
-        "portfolio": 22004,
-        "benchmark": 17731,
-        "invested": 15000
+        "portfolio": 22800,
+        "benchmark": 18810,
+        "invested": 16000
       },
       {
         "date": "2026-05-13",
-        "portfolio": 22166,
-        "benchmark": 18185,
-        "invested": 15000
+        "portfolio": 23025,
+        "benchmark": 19292,
+        "invested": 16000
       },
       {
         "date": "2026-05-21",
-        "portfolio": 22920,
-        "benchmark": 19200,
-        "invested": 16000
+        "portfolio": 23829,
+        "benchmark": 20307,
+        "invested": 17000
       },
       {
         "date": "2026-06-01",
-        "portfolio": 23684,
-        "benchmark": 19609,
-        "invested": 16000
+        "portfolio": 24676,
+        "benchmark": 20740,
+        "invested": 17000
       },
       {
         "date": "2026-06-09",
-        "portfolio": 21619,
-        "benchmark": 19054,
-        "invested": 16000
+        "portfolio": 22493,
+        "benchmark": 20152,
+        "invested": 17000
       },
       {
         "date": "2026-06-17",
-        "portfolio": 21561,
-        "benchmark": 19155,
-        "invested": 16000
+        "portfolio": 22367,
+        "benchmark": 20259,
+        "invested": 17000
       },
       {
         "date": "2026-06-23",
-        "portfolio": 20601,
-        "benchmark": 18964,
-        "invested": 16000
+        "portfolio": 21399,
+        "benchmark": 20057,
+        "invested": 17000
       }
     ],
-    "excludedPrivateCount": 13,
+    "excludedPrivateCount": 12,
     "excludedPrivate": [
       {
         "slug": "openai",
@@ -33610,14 +33372,6 @@
         "kind": "macro"
       },
       {
-        "slug": "us-treasuries-long-duration-bonds",
-        "company": "US Treasuries / long-duration bonds",
-        "hosts": [
-          "Friedberg"
-        ],
-        "kind": "macro"
-      },
-      {
         "slug": "stablecoins-us-dollar-backed",
         "company": "Stablecoins (US dollar-backed)",
         "hosts": [
@@ -33652,7 +33406,7 @@
     ],
     "altBenchmark": {
       "symbol": "QQQ",
-      "ret": 0.3122695207843622
+      "ret": 0.30392524891505457
     }
   },
   "guestiesFund": {
@@ -33679,10 +33433,10 @@
         ],
         "entryDate": "2026-05-08",
         "entryPrice": 1686000,
-        "latestPrice": 2580000,
-        "sinceReturn": 0.5302491103202847,
+        "latestPrice": 2555000,
+        "sinceReturn": 0.5154211150652432,
         "benchmarkReturn": -0.0054770749166236365,
-        "alpha": 0.5357261852369083,
+        "alpha": 0.5208981899818669,
         "hosts": [
           "Guest"
         ]
@@ -33708,26 +33462,6 @@
         ]
       },
       {
-        "slug": "005930.ks",
-        "company": "Samsung",
-        "ticker": "005930.KS",
-        "sourceSymbol": "005930.KS",
-        "currency": "KRW",
-        "direction": "long",
-        "callTypes": [
-          "explicit_long"
-        ],
-        "entryDate": "2026-05-08",
-        "entryPrice": 268500,
-        "latestPrice": 340500,
-        "sinceReturn": 0.2681564245810055,
-        "benchmarkReturn": -0.0054770749166236365,
-        "alpha": 0.27363349949762916,
-        "hosts": [
-          "Guest"
-        ]
-      },
-      {
         "slug": "nvda",
         "company": "Nvidia",
         "ticker": "NVDA",
@@ -33743,6 +33477,26 @@
         "sinceReturn": 0.3875286120552126,
         "benchmarkReturn": 0.22232775139548466,
         "alpha": 0.16520086065972794,
+        "hosts": [
+          "Guest"
+        ]
+      },
+      {
+        "slug": "005930.ks",
+        "company": "Samsung",
+        "ticker": "005930.KS",
+        "sourceSymbol": "005930.KS",
+        "currency": "KRW",
+        "direction": "long",
+        "callTypes": [
+          "explicit_long"
+        ],
+        "entryDate": "2026-05-08",
+        "entryPrice": 268500,
+        "latestPrice": 310000,
+        "sinceReturn": 0.15456238361266283,
+        "benchmarkReturn": -0.0054770749166236365,
+        "alpha": 0.16003945852928647,
         "hosts": [
           "Guest"
         ]
@@ -34456,10 +34210,10 @@
     },
     {
       "host": "Chamath",
-      "positions": 6,
-      "portfolioReturn": 0.13250000000000006,
-      "benchmarkReturn": -0.04583333333333328,
-      "alpha": 0.17833333333333334,
+      "positions": 7,
+      "portfolioReturn": 0.08471428571428574,
+      "benchmarkReturn": -0.026000000000000023,
+      "alpha": 0.11071428571428577,
       "topCall": {
         "ticker": "ADBE",
         "alpha": 0.6581130169337444
@@ -34493,14 +34247,14 @@
       "guest": "Brad Gerstner",
       "slug": "brad-gerstner",
       "calls": 3,
-      "followReturn": 0.4022519058929012,
+      "followReturn": 0.3594445604851065,
       "benchmarkReturn": -0.0054770749166236365,
-      "alpha": 0.40772898080952485,
+      "alpha": 0.3649216354017301,
       "best": {
         "company": "SK Hynix",
         "ticker": "000660.KS",
         "slug": "000660.ks",
-        "ret": 0.5302491103202847
+        "ret": 0.5154211150652432
       },
       "picks": [
         {
@@ -34509,9 +34263,9 @@
           "slug": "000660.ks",
           "stance": "bull",
           "date": "2026-05-08",
-          "ret": 0.5302491103202847,
+          "ret": 0.5154211150652432,
           "benchmarkReturn": -0.0054770749166236365,
-          "alpha": 0.5357261852369083
+          "alpha": 0.5208981899818669
         },
         {
           "company": "Samsung",
@@ -34519,9 +34273,9 @@
           "slug": "005930.ks",
           "stance": "bull",
           "date": "2026-05-08",
-          "ret": 0.2681564245810055,
+          "ret": 0.15456238361266283,
           "benchmarkReturn": -0.0054770749166236365,
-          "alpha": 0.27363349949762916
+          "alpha": 0.16003945852928647
         },
         {
           "company": "Micron Technology",
@@ -34856,12 +34610,12 @@
       "inceptionDate": "2025-01-04",
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
-      "totalInvested": 6000,
-      "portfolioValue": 6795,
-      "benchmarkValue": 5725,
-      "portfolioReturn": 0.13250000000000006,
-      "benchmarkReturn": -0.04583333333333328,
-      "outperformance": 0.17833333333333334,
+      "totalInvested": 7000,
+      "portfolioValue": 7593,
+      "benchmarkValue": 6818,
+      "portfolioReturn": 0.08471428571428574,
+      "benchmarkReturn": -0.026000000000000023,
+      "outperformance": 0.11071428571428577,
       "constituents": [
         {
           "slug": "adbe",
@@ -34944,21 +34698,21 @@
           ]
         },
         {
-          "slug": "botz",
-          "company": "AI infrastructure / compute basket",
-          "ticker": "BOTZ",
-          "sourceSymbol": "BOTZ",
+          "slug": "nvda",
+          "company": "Nvidia",
+          "ticker": "NVDA",
+          "sourceSymbol": "NVDA",
           "currency": "USD",
           "direction": "long",
           "callTypes": [
             "explicit_long"
           ],
           "entryDate": "2025-11-07",
-          "entryPrice": 36,
-          "latestPrice": 36.64,
-          "sinceReturn": 0.017777777777777892,
+          "entryPrice": 188.15,
+          "latestPrice": 200.04,
+          "sinceReturn": 0.06319425989901672,
           "benchmarkReturn": 0.09331266673621763,
-          "alpha": -0.07553488895843974,
+          "alpha": -0.030118406837200906,
           "hosts": [
             "Chamath"
           ]
@@ -34979,6 +34733,26 @@
           "sinceReturn": 0.09444189514741308,
           "benchmarkReturn": 0.22232775139548466,
           "alpha": -0.12788585624807158,
+          "hosts": [
+            "Chamath"
+          ]
+        },
+        {
+          "slug": "msft",
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "sourceSymbol": "MSFT",
+          "currency": "USD",
+          "direction": "long",
+          "callTypes": [
+            "explicit_long"
+          ],
+          "entryDate": "2025-11-07",
+          "entryPrice": 496.82,
+          "latestPrice": 373.94,
+          "sinceReturn": -0.24733303812245888,
+          "benchmarkReturn": 0.09331266673621763,
+          "alpha": -0.3406457048586765,
           "hosts": [
             "Chamath"
           ]
@@ -35245,189 +35019,189 @@
         },
         {
           "date": "2025-11-13",
-          "portfolio": 5054,
-          "benchmark": 4781,
-          "invested": 5000
+          "portfolio": 6080,
+          "benchmark": 5783,
+          "invested": 6000
         },
         {
           "date": "2025-11-20",
-          "portfolio": 5121,
-          "benchmark": 4816,
-          "invested": 5000
+          "portfolio": 6126,
+          "benchmark": 5789,
+          "invested": 6000
         },
         {
           "date": "2025-11-28",
-          "portfolio": 5159,
-          "benchmark": 4760,
-          "invested": 5000
+          "portfolio": 6114,
+          "benchmark": 5779,
+          "invested": 6000
         },
         {
           "date": "2025-12-05",
-          "portfolio": 5138,
-          "benchmark": 4756,
-          "invested": 5000
+          "portfolio": 6058,
+          "benchmark": 5778,
+          "invested": 6000
         },
         {
           "date": "2025-12-12",
-          "portfolio": 5152,
-          "benchmark": 4763,
-          "invested": 5000
+          "portfolio": 6035,
+          "benchmark": 5779,
+          "invested": 6000
         },
         {
           "date": "2025-12-19",
-          "portfolio": 5190,
-          "benchmark": 4766,
-          "invested": 5000
+          "portfolio": 6132,
+          "benchmark": 5780,
+          "invested": 6000
         },
         {
           "date": "2025-12-29",
-          "portfolio": 5155,
-          "benchmark": 4752,
-          "invested": 5000
+          "portfolio": 6115,
+          "benchmark": 5778,
+          "invested": 6000
         },
         {
           "date": "2026-01-06",
-          "portfolio": 5213,
-          "benchmark": 4745,
-          "invested": 5000
+          "portfolio": 6118,
+          "benchmark": 5776,
+          "invested": 6000
         },
         {
           "date": "2026-01-13",
-          "portfolio": 6330,
-          "benchmark": 5740,
-          "invested": 6000
+          "portfolio": 7213,
+          "benchmark": 6774,
+          "invested": 7000
         },
         {
           "date": "2026-01-21",
-          "portfolio": 6410,
-          "benchmark": 5743,
-          "invested": 6000
+          "portfolio": 7231,
+          "benchmark": 6764,
+          "invested": 7000
         },
         {
           "date": "2026-01-28",
-          "portfolio": 6347,
-          "benchmark": 5739,
-          "invested": 6000
+          "portfolio": 7279,
+          "benchmark": 6775,
+          "invested": 7000
         },
         {
           "date": "2026-02-04",
-          "portfolio": 6367,
-          "benchmark": 5742,
-          "invested": 6000
+          "portfolio": 7109,
+          "benchmark": 6765,
+          "invested": 7000
         },
         {
           "date": "2026-02-11",
-          "portfolio": 6580,
-          "benchmark": 5740,
-          "invested": 6000
+          "portfolio": 7345,
+          "benchmark": 6772,
+          "invested": 7000
         },
         {
           "date": "2026-02-19",
-          "portfolio": 6598,
-          "benchmark": 5743,
-          "invested": 6000
+          "portfolio": 7326,
+          "benchmark": 6763,
+          "invested": 7000
         },
         {
           "date": "2026-02-26",
-          "portfolio": 6607,
-          "benchmark": 5741,
-          "invested": 6000
+          "portfolio": 7301,
+          "benchmark": 6769,
+          "invested": 7000
         },
         {
           "date": "2026-03-05",
-          "portfolio": 6365,
-          "benchmark": 5744,
-          "invested": 6000
+          "portfolio": 7150,
+          "benchmark": 6760,
+          "invested": 7000
         },
         {
           "date": "2026-03-12",
-          "portfolio": 6371,
-          "benchmark": 5750,
-          "invested": 6000
+          "portfolio": 7165,
+          "benchmark": 6743,
+          "invested": 7000
         },
         {
           "date": "2026-03-19",
-          "portfolio": 6423,
-          "benchmark": 5752,
-          "invested": 6000
+          "portfolio": 7186,
+          "benchmark": 6736,
+          "invested": 7000
         },
         {
           "date": "2026-03-26",
-          "portfolio": 6430,
-          "benchmark": 5758,
-          "invested": 6000
+          "portfolio": 7152,
+          "benchmark": 6719,
+          "invested": 7000
         },
         {
           "date": "2026-04-02",
-          "portfolio": 6375,
-          "benchmark": 5754,
-          "invested": 6000
+          "portfolio": 7142,
+          "benchmark": 6731,
+          "invested": 7000
         },
         {
           "date": "2026-04-10",
-          "portfolio": 6486,
-          "benchmark": 5745,
-          "invested": 6000
+          "portfolio": 7251,
+          "benchmark": 6758,
+          "invested": 7000
         },
         {
           "date": "2026-04-17",
-          "portfolio": 6538,
-          "benchmark": 5733,
-          "invested": 6000
+          "portfolio": 7421,
+          "benchmark": 6792,
+          "invested": 7000
         },
         {
           "date": "2026-04-24",
-          "portfolio": 6479,
-          "benchmark": 5732,
-          "invested": 6000
+          "portfolio": 7403,
+          "benchmark": 6796,
+          "invested": 7000
         },
         {
           "date": "2026-05-01",
-          "portfolio": 6522,
-          "benchmark": 5730,
-          "invested": 6000
+          "portfolio": 7338,
+          "benchmark": 6804,
+          "invested": 7000
         },
         {
           "date": "2026-05-08",
-          "portfolio": 6603,
-          "benchmark": 5723,
-          "invested": 6000
+          "portfolio": 7431,
+          "benchmark": 6823,
+          "invested": 7000
         },
         {
           "date": "2026-05-15",
-          "portfolio": 6549,
-          "benchmark": 5723,
-          "invested": 6000
+          "portfolio": 7478,
+          "benchmark": 6824,
+          "invested": 7000
         },
         {
           "date": "2026-05-22",
-          "portfolio": 6639,
-          "benchmark": 5720,
-          "invested": 6000
+          "portfolio": 7507,
+          "benchmark": 6831,
+          "invested": 7000
         },
         {
           "date": "2026-06-01",
-          "portfolio": 6502,
-          "benchmark": 5715,
-          "invested": 6000
+          "portfolio": 7493,
+          "benchmark": 6846,
+          "invested": 7000
         },
         {
           "date": "2026-06-08",
-          "portfolio": 6591,
-          "benchmark": 5723,
-          "invested": 6000
+          "portfolio": 7464,
+          "benchmark": 6824,
+          "invested": 7000
         },
         {
           "date": "2026-06-15",
-          "portfolio": 6806,
-          "benchmark": 5717,
-          "invested": 6000
+          "portfolio": 7677,
+          "benchmark": 6842,
+          "invested": 7000
         },
         {
           "date": "2026-06-23",
-          "portfolio": 6795,
-          "benchmark": 5725,
-          "invested": 6000
+          "portfolio": 7593,
+          "benchmark": 6818,
+          "invested": 7000
         }
       ],
       "excludedPrivateCount": 8,
@@ -37475,12 +37249,12 @@
           "kind": "private"
         },
         {
-          "slug": "us-treasuries-long-duration-bonds",
-          "company": "US Treasuries / long-duration bonds",
+          "slug": "electric-utilities-us",
+          "company": "Electric utilities (US)",
           "hosts": [
             "Friedberg"
           ],
-          "kind": "macro"
+          "kind": "private"
         }
       ]
     }

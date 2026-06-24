@@ -1370,5 +1370,9 @@
   "dbc": {
     "description": "Exchange-traded fund tracking a diversified basket of commodity futures across energy, metals, and agriculture.",
     "domain": "invesco.com"
+  },
+  "electric-utilities-us": {
+    "description": "US-based companies that generate, transmit, and distribute electrical power to residential and commercial customers.",
+    "domain": null
   }
 }

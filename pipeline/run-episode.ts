@@ -322,16 +322,22 @@ export function enforceVerbatimQuotes(theses: Thesis[], t: Transcript): Thesis[]
  *
  * Returns the number of theses extracted.
  */
-export async function processEpisode(ep: Episode): Promise<number> {
+export async function processEpisode(
+  ep: Episode,
+  opts: { retranscribe?: boolean; speakersExpected?: number } = {},
+): Promise<number> {
   const tag = ep.id;
   store.saveEpisode(ep);
 
   let transcript = store.loadTranscript(ep.id);
-  if (transcript && transcript.utterances.length) {
+  // `--retranscribe` forces a fresh AssemblyAI pass — used to repair a bad
+  // diarization (e.g. a guest fused into a host's cluster) with a finer
+  // `--speakers` hint, rather than reusing the merged transcript.
+  if (!opts.retranscribe && transcript && transcript.utterances.length) {
     console.log(`[${tag}] cached transcript — skipping AssemblyAI`);
   } else {
-    console.log(`[${tag}] transcribing…`);
-    transcript = await transcribeEpisode(ep);
+    console.log(`[${tag}] transcribing…${opts.speakersExpected ? ` (speakers≈${opts.speakersExpected})` : ""}`);
+    transcript = await transcribeEpisode(ep, { speakersExpected: opts.speakersExpected });
     store.saveTranscript(transcript);
   }
 
@@ -353,9 +359,12 @@ export async function processEpisode(ep: Episode): Promise<number> {
 }
 
 /** Process one episode end-to-end and rebuild the index (single-episode CLI path). */
-export async function runEpisode(ep: Episode): Promise<void> {
+export async function runEpisode(
+  ep: Episode,
+  opts: { retranscribe?: boolean; speakersExpected?: number } = {},
+): Promise<void> {
   console.log(`Processing ${ep.id} — ${ep.title}\n`);
-  await processEpisode(ep);
+  await processEpisode(ep, opts);
   console.log("\nbuilding index…");
   await buildIndex();
   console.log(`\n✓ ${ep.id} complete — run \`npm run dev\` to view the site.`);

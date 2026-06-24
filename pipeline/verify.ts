@@ -5,6 +5,7 @@ import type { Episode, Thesis, Transcript } from "../lib/types";
 
 const VERDICT_VALUES = ["keep", "fix_quote", "neutralize", "drop"] as const;
 const CALL_TYPE_VALUES = ["view", "explicit_long", "explicit_short", "explicit_exit", "selection", "pair_trade", "basket"] as const;
+const HOST_VALUES = ["Chamath", "Jason", "Sacks", "Friedberg", "Guest"] as const;
 const MAX_CHARS = 160_000;
 
 const VerdictSchema = z.object({
@@ -16,6 +17,7 @@ const VerdictSchema = z.object({
       newQuote: z.string().nullable().optional(),
       newQuoteStartSec: z.number().nullable().optional(),
       callType: z.enum(CALL_TYPE_VALUES).nullable().optional(),
+      reattributeHost: z.enum(HOST_VALUES).nullable().optional(),
     }),
   ),
 });
@@ -34,6 +36,7 @@ const INPUT_SCHEMA = {
           newQuote: { type: ["string", "null"], description: "For fix_quote only: a verbatim ≤240-char excerpt copied EXACTLY from this host's transcript lines that proves the stance." },
           newQuoteStartSec: { type: ["number", "null"], description: "For fix_quote only: the integer second from the chosen line's [<sec>s <Speaker>] prefix." },
           callType: { type: ["string", "null"], enum: [...CALL_TYPE_VALUES, null], description: "The FINAL callType after your scoreability check. Omit/null to keep the extractor's. Set 'view' to demote a call whose quote doesn't carry the host's own transaction/selection language naming the exposure; set a call shape to correct or upgrade one." },
+          reattributeHost: { type: ["string", "null"], enum: [...HOST_VALUES, null], description: "Only when the content proves a DIFFERENT speaker than host=: the true speaker — a host's name, or 'Guest' for a non-host. Null/omit to keep the attribution." },
         },
         required: ["index", "verdict", "reason"],
       },
@@ -75,6 +78,8 @@ SCOREABILITY — you also decide whether each take is a real portfolio call or j
 
 Rules:
 - QUOTE OWNERSHIP: the published quote must be the attributed host's OWN words. If it was actually spoken by a DIFFERENT person (check the [<sec>s <Speaker>] prefixes — a common error is attaching one host's vivid line, or a moderator's setup stat, to another host's take), it cannot stand. Use fix_quote with a line THIS host actually said that proves the stance; if this host never made the claim in their own words, neutralize (or drop if they never gave the company a real view). Likewise never let a quote stitch words from two different speakers.
+- ATTRIBUTION (the host label itself can be wrong): each thesis shows host=<one of the four hosts, or Guest>. Those labels come from an upstream diarization+naming step that sometimes forces an UNANNOUNCED guest's voice onto the nearest-sounding host (a roundtable title naming no guest does NOT guarantee there was none). If the TRANSCRIPT CONTENT makes clear this thesis's claim was actually spoken by someone OTHER than its host — a guest speaking in the first person about their OWN non-host firm/fund ("Altimeter has owned all of compute for three years… we still believe…", "here at Newsmax"), someone introduced or addressed as a visitor, or unmistakably a DIFFERENT one of the four hosts — set reattributeHost to the true speaker: the host's name if it is one of the four, otherwise "Guest". Require a concrete content signal (a named firm/role spoken in the first person, an introduction, direct address) — NEVER reattribute on style or topic alone. Leave reattributeHost null when the host is right.
+  TWO STRONG SIGNALS the diarization label is wrong: (1) the take's SUMMARY names who is speaking — "Brad Gerstner says…", "Ben Shapiro argues…" — and that named speaker is NOT the host, AND the quote is that person's own first-person words ("we still believe owning all of compute… like WE have for 3 years"), not the host quoting them. The extractor recognized the true speaker from content while the label lagged; reattribute to that speaker (Guest if a non-host). Do NOT reattribute when the named person is merely the OBJECT being discussed ("Chamath argues Gerstner is wrong" keeps host=Chamath). (2) a line attributed to a host that refers to THAT host in the third person ("as Chamath said", "Chamath teed this up perfectly") was not spoken by them. (Reattribution is independent of the quote/stance/scoreability verdict — a reattributed take can still be keep/fix_quote/neutralize/drop on its own merits.)
 - Reserve fix_quote for a REAL claim that exists in the transcript; if no such sentence exists, neutralize (or drop). Never invent or paraphrase — newQuote must be an exact substring of the host's OWN lines.
 - When torn between keep and fix_quote, prefer fix_quote only if the current quote genuinely fails to carry the claim; otherwise keep.
 - When torn between fix_quote and neutralize, neutralize — only supply a new quote when you can point to an unambiguous directional sentence.
@@ -166,6 +171,7 @@ export function applyVerdicts(
   const kept: Thesis[] = [];
   let dropped = 0;
   let neutralized = 0;
+  let reattributed = 0;
   let requoted = 0;
   let keptOriginalRequote = 0;
 
@@ -178,11 +184,21 @@ export function applyVerdicts(
     return { ...th, callType: v.callType, scoreNote: demoted ? `Not scored: ${v.reason}` : th.scoreNote };
   };
 
+  // The auditor can correct a wrong diarization label when the content proves a
+  // different speaker — independent of the quote/stance verdict. Clears guestName
+  // so the downstream name-guests pass re-derives it when reattributed to Guest.
+  const reattr = (th: Thesis, v: (typeof verdicts)[number]): Thesis => {
+    if (!v.reattributeHost || v.reattributeHost === th.host) return th;
+    reattributed++;
+    console.log(`  ⤳ reattribute ${th.company} (${th.host}→${v.reattributeHost}) — ${v.reason}`);
+    return { ...th, host: v.reattributeHost, guestName: undefined };
+  };
+
   theses.forEach((t, i) => {
     const v = byIndex.get(i);
     // Default to keep when the auditor returns no verdict for a row.
     if (!v || v.verdict === "keep") {
-      kept.push(v ? applyCallType(t, v) : t);
+      kept.push(v ? reattr(applyCallType(t, v), v) : t);
       return;
     }
 
@@ -201,13 +217,13 @@ export function applyVerdicts(
       if (isQuoteVerbatim(candidate, hostHay)) {
         requoted++;
         console.log(`  ✎ requote ${t.company} (${t.stance}) — ${v.reason}`);
-        kept.push(applyCallType({
+        kept.push(reattr(applyCallType({
           ...t,
           quote: trimPublishedQuote(candidate),
           // Let the downstream snap re-derive the offset from the new quote;
           // accept the model's hint only as a fallback.
           quoteStartMs: v.newQuoteStartSec != null ? Math.round(v.newQuoteStartSec) * 1000 : null,
-        }, v));
+        }, v), v));
         return;
       }
       // The proposed replacement isn't a verifiable verbatim excerpt — but the
@@ -216,7 +232,7 @@ export function applyVerdicts(
       // a quote-mechanics failure; quote quality is upgrade-quotes' job.
       keptOriginalRequote++;
       console.log(`  ✎ requote unverifiable — keeping original quote+stance: ${t.company} (${t.stance})`);
-      kept.push(applyCallType(t, v));
+      kept.push(reattr(applyCallType(t, v), v));
       return;
     }
 
@@ -229,12 +245,12 @@ export function applyVerdicts(
     }
     const ct = v.callType ?? (t.callType !== "view" && t.callType !== "explicit_exit" ? "view" : t.callType);
     const demoted = ct === "view" && t.callType !== "view";
-    kept.push({ ...t, stance: "neutral", callType: ct, scoreNote: demoted ? `Not scored: ${v.reason}` : t.scoreNote });
+    kept.push(reattr({ ...t, stance: "neutral", callType: ct, scoreNote: demoted ? `Not scored: ${v.reason}` : t.scoreNote }, v));
   });
 
-  if (dropped || neutralized || requoted || keptOriginalRequote) {
+  if (dropped || neutralized || requoted || keptOriginalRequote || reattributed) {
     console.log(
-      `  verify: dropped ${dropped}, requoted ${requoted} (+${keptOriginalRequote} kept-orig), neutralized ${neutralized}, kept ${kept.length}/${theses.length}`,
+      `  verify: dropped ${dropped}, requoted ${requoted} (+${keptOriginalRequote} kept-orig), neutralized ${neutralized}, reattributed ${reattributed}, kept ${kept.length}/${theses.length}`,
     );
   }
 

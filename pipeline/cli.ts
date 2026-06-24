@@ -42,12 +42,14 @@ async function cmdMarket(ticker: string, anchor: string) {
 }
 
 function parseRunArgs(rest: string[]) {
-  const opts: { id?: string; number?: number; roundtableOnly?: boolean } = {};
+  const opts: { id?: string; number?: number; roundtableOnly?: boolean; retranscribe?: boolean; speakersExpected?: number } = {};
   for (let i = 0; i < rest.length; i++) {
     const a = rest[i];
     if (a === "--latest") opts.roundtableOnly = true;
     else if (a === "--number") opts.number = parseInt(rest[++i], 10);
     else if (a === "--id") opts.id = rest[++i];
+    else if (a === "--retranscribe") opts.retranscribe = true;
+    else if (a === "--speakers") opts.speakersExpected = parseInt(rest[++i], 10);
     else if (!a.startsWith("--")) opts.id = a;
   }
   return opts;
@@ -58,7 +60,7 @@ async function cmdRun(rest: string[]) {
   const ep = await selectEpisode(opts);
   console.log(`Selected ${ep.id} — ${ep.title}\n`);
   const { runEpisode } = await import("./run-episode");
-  await runEpisode(ep);
+  await runEpisode(ep, { retranscribe: opts.retranscribe, speakersExpected: opts.speakersExpected });
 }
 
 async function main() {
@@ -158,7 +160,9 @@ async function main() {
     }
     case "rename": {
       const { renameAll } = await import("./sync");
-      return renameAll();
+      const onlyIdx = rest.indexOf("--only");
+      const only = onlyIdx >= 0 ? rest[onlyIdx + 1]?.split(",").map((s) => s.trim()).filter(Boolean) : undefined;
+      return renameAll(5, only);
     }
     case "snap-timestamps": {
       const { snapQuoteTimestamps } = await import("./run-episode");
