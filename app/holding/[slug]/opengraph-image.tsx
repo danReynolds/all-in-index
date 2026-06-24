@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 import { getHolding } from "@/lib/data";
-import { currentCall, displayStance } from "@/lib/calls";
+import { callReturnFromStockMove, currentCall, displayStance } from "@/lib/calls";
 
 export const alt = "What the besties said — The All-Index";
 export const size = { width: 1200, height: 630 };
@@ -23,6 +23,8 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   const stance = ds === "neutral" ? null : STANCE_UI[ds];
   const since = h?.market?.returns.since ?? null;
   const cc = h ? currentCall(h) : null;
+  const ccReturn =
+    cc?.ret != null ? callReturnFromStockMove(cc.stance, cc.ret) : null;
 
   return new ImageResponse(
     (
@@ -106,7 +108,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
           </div>
           {cc && (
             <div style={{ fontSize: 26, color: "#8d9a92" }}>
-              {`current call since ${cc.sinceDate}${cc.ret != null ? ` · ${pct(cc.ret)} since` : ""}`}
+              {`current call since ${cc.sinceDate}${ccReturn != null ? ` · ${pct(ccReturn)} return` : ""}`}
             </div>
           )}
         </div>

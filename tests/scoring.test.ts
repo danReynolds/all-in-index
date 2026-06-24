@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { currentStanceForHosts, hostExposureWindows, tradeDirectionForTake, isScoredPosition, shortReturn, directionalReturn } from "../lib/calls";
+import { currentStanceForHosts, hostExposureWindows, tradeDirectionForTake, isScoredPosition, shortReturn, directionalReturn, callReturnFromStockMove } from "../lib/calls";
 import { toHoldingRow } from "../lib/projections";
 import { isMacroAsset, proxyAssetKind } from "../lib/assets";
 import { MAX_PUBLISHED_QUOTE_CHARS, trimPublishedQuote } from "../lib/quotes";
@@ -126,6 +126,13 @@ test("directionalReturn is the single source: longs raw, shorts inverse, both fl
   assert.ok(1 + directionalReturn(5, "short") >= 0);
   // shortReturn is exactly the short case (so the funds, leaderboard, and UI agree)
   assert.equal(shortReturn(0.2), directionalReturn(0.2, "short"));
+});
+
+test("callReturnFromStockMove keeps bearish call displays capped at a total loss", () => {
+  assert.equal(callReturnFromStockMove("bull", 0.4), 0.4);
+  assert.equal(callReturnFromStockMove("bear", -0.4), 0.4);
+  assert.equal(callReturnFromStockMove("bear", 2), -1);
+  assert.equal(callReturnFromStockMove("mixed", 0.2), null);
 });
 
 test("a holding row's return is the scored call's P&L; commentary shows none", () => {

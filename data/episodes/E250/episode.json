@@ -7,5 +7,10 @@
   "durationSec": 5249,
   "kind": "roundtable",
   "guests": [],
-  "link": "https://allinchamathjason.libsyn.com/does-openai-need-a-bailout-mamdani-wins-socialism-rising-filibuster-nuclear-option"
+  "link": "https://allinchamathjason.libsyn.com/does-openai-need-a-bailout-mamdani-wins-socialism-rising-filibuster-nuclear-option",
+  "diarization": {
+    "clusters": 6,
+    "distinctSpeakers": 6,
+    "suspect": false
+  }
 }
