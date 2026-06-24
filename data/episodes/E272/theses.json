@@ -15,8 +15,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Anthropic's revenue trajectory is entirely supply-constrained, not demand-constrained, and that with new compute secured (including the xAI deal), the 5-year outlook is extremely robust and growth will be even more parabolic.",
-    "quote": "Anthropic and OpenAI's revenue performance has nothing to do with demand. Zero. It is entirely to do with the supply constraints that exist in data centers and specifically in power. If they had infinite power, I think that their revenues",
-    "quoteStartMs": 369753,
+    "quote": "I think the 5-year view for those two companies is quite robust. The thing that they really need is more compute and more power.",
+    "quoteStartMs": 395506,
     "topics": [
       "compute constraints",
       "revenue growth",
@@ -40,8 +40,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues that SpaceX's terrestrial hyperscaler business (EWS) blunts the bear case around orbital data center delays and creates a structural core revenue business that subsidizes Grok training, reinforcing the SpaceX valuation story ahead of the IPO.",
-    "quote": "By actually landing a bunch of terrestrial capacity, I think you start to blunt that because you can now start to say that even if the orbital data centers get delayed by a few months or a few quarters, even if the technological de-risking",
-    "quoteStartMs": 475218,
+    "quote": "I think for Elon, if you look inside of how people try to nitpick the SpaceX valuation case… The biggest element is the on-the-come value around the orbital data centers. And by actually landing a bunch of terrestrial capacity, I think you ",
+    "quoteStartMs": 450283,
     "topics": [
       "hyperscaler",
       "valuation",
@@ -119,8 +119,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks notes OpenAI's growth rate is also accelerating due to GPT-5.5 (Spud base model) and its pivot to coding, suggesting it can take meaningful share back from Anthropic in the coding market.",
-    "quote": "OpenAI has already made the pivot. We hear very good things about Codex now based on GPT-5.5. 5.5 is based on a new base model called Spud. I think they're very optimistic about continuing improvements. Their rate of growth appears to be",
-    "quoteStartMs": 1169661,
+    "quote": "It does look like OpenAI has already made the pivot. We hear very good things about Codex now based on GPT-5.5. 5.5 is based on a new base model called Spud. I think they're very optimistic about continuing improvements. Their rate of growt",
+    "quoteStartMs": 1168488,
     "topics": [
       "AI competition",
       "coding",
@@ -144,7 +144,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Brad Gerstner pushes back on the monopoly framing and emphasizes that Anthropic is still a fledgling startup on an exponential revenue trajectory, and that strong competition (with OpenAI, Google) is exactly what keeps the US at the AI frontier — arguing against any regulatory intervention.",
-    "quote": "We're talking about annual run rate revenues, David, but on a GAAP basis, they're doing about the same revenue as OpenAI in the month of March... we have the best competition in AI on the planet, which is why we're at the frontier and",
+    "quote": "we're talking about annual run rate revenues, David, but on a GAAP basis, they're doing about the same revenue as OpenAI in the month of March",
     "quoteStartMs": 1814199,
     "topics": [
       "AI competition",
@@ -170,8 +170,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Jason argues Tesla benefits from the same 'Elon premium' as SpaceX, with investors pricing in a future innovation pipeline, and that this premium is deserved given Elon's track record.",
-    "quote": "Tesla has that same Elon variable in it as well, which is people value his companies at, I would say, 2 times market, 3 times market, 4 times market because of the future pipeline.",
-    "quoteStartMs": 1423000,
+    "quote": "Tesla has that same Elon, uh, variable in it as well, which is people value his companies at, I would say, 2 times market, 3 times market, 4 times market because of the future pipeline.",
+    "quoteStartMs": 1426737,
     "topics": [
       "valuation",
       "Elon premium",
@@ -195,8 +195,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Jason argues Apple is being penalized in its valuation because it has stopped innovating — shutting down AI and self-driving initiatives — and lacks a visionary like Elon or Steve Jobs to drive a future product pipeline.",
-    "quote": "They have not done anything innovative. And in fact, the things they were doing that were innovating in AI or self-driving cars, they shut down. They won't take any swings for the bat, so they are getting penalized in their valuation.",
-    "quoteStartMs": 1557922,
+    "quote": "If you look at their track record, and I think this is why we had a change there, is they have not done anything innovative. And in fact, the things they were doing that were innovating in AI or self-driving cars, they shut down They won't ",
+    "quoteStartMs": 1552820,
     "topics": [
       "valuation",
       "innovation",

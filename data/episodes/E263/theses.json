@@ -66,8 +66,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Anthropic's politicized terms-of-service and willingness to restrict enterprise customers based on internal philosophy is a structural business risk that could alienate both Republican and progressive constituencies, threatening its enterprise revenue base.",
-    "quote": "I think that they have a massive instance of co-work running internally that helps them come up with business strategy... it's going to turn out to be the stupidest decision.",
-    "quoteStartMs": 4139000,
+    "quote": "I think that they have a massive instance of co-work running internally that helps them come up with business strategy. And I bet you there's some element of AI that says, \"Yeah, you should do it. Do it. It just makes sense.\" Zig where they",
+    "quoteStartMs": 4139111,
     "topics": [
       "government contracts",
       "enterprise risk",
@@ -118,8 +118,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Emil Michael highlights Anduril as a key beneficiary of the shift in defense procurement toward low-cost, attritable unmanned systems, explicitly naming it as a company he wants to win big contracts quickly to drive the defense tech flywheel.",
-    "quote": "I need to have some of these companies win big contracts quick, like whether, you know, Androl, sure, um, uh, Saronic, sure, like a bunch of these companies, so that more money flows in, more entrepreneurs do it.",
-    "quoteStartMs": 4451000,
+    "quote": "What I need to do, and what department needs to do, is have some of these companies win big contracts quick, like whether, you know, Androl, sure, um, uh, Saronic, sure, like a bunch of these companies, so that more money flows in, more ent",
+    "quoteStartMs": 4458933,
     "topics": [
       "defense tech",
       "drones",
@@ -145,15 +145,15 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Emil Michael describes Palantir as a trusted, deeply embedded defense contractor with a forward-deployed enterprise model, implicitly endorsing its strategic position in the defense AI stack as Anthropic is being displaced.",
-    "quote": "Palantir, who's got a trusted relationship with the department... they have not gone as heavy enterprise, enterprise sales, forward deployed engineers, government business. So they have to catch up.",
-    "quoteStartMs": 2819000,
+    "quote": "Palantir, who's got a trusted relationship with the department, to tell me.",
+    "quoteStartMs": 2828499,
     "topics": [
       "defense tech",
       "AI",
       "government contracts",
       "enterprise software"
     ],
-    "attributionConfidence": "low",
+    "attributionConfidence": "high",
     "guestName": "Emil Michael"
   },
   {

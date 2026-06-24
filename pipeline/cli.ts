@@ -249,7 +249,9 @@ async function main() {
     }
     case "upgrade-quotes": {
       const { upgradeQuotes } = await import("./upgrade-quotes");
-      return upgradeQuotes();
+      const onlyIdx = rest.indexOf("--only");
+      const only = onlyIdx >= 0 ? rest[onlyIdx + 1]?.split(",").map((s) => s.trim()).filter(Boolean) : undefined;
+      return upgradeQuotes(only);
     }
     case "extract-assets": {
       const { extractAssets } = await import("./extract-assets");

@@ -15,8 +15,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks argues that Wiz's ~100% growth rate and path to $1B ARR next year makes Google's $23B offer potentially reasonable, and that the founders were right to pursue standalone growth as a high-growth company that could justify a premium multiple.",
-    "quote": "if Wiz is growing at 100%, 100%, I mean, I don't know if it's still growing at 100%, but I mean, I guess they're projecting 50%…They're, they're projecting a billion in ARR next year up from, what is it, roughly 500. Like that offer may not",
-    "quoteStartMs": null,
+    "quote": "if Wiz is growing at 100%, 100%, I mean, I don't know if it's still growing at 100%, but I mean, I guess they're projecting 50%.",
+    "quoteStartMs": 532173,
     "topics": [
       "valuation",
       "cloud security",
@@ -115,7 +115,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg highlights Google Cloud's accelerating profitability—$1.2B operating profit on $10.3B revenue—and argues it could generate $20–30B in annual free cash flow at scale, positioning it as a key strategic growth driver for Alphabet alongside AI.",
-    "quote": "they're running at a $1.2 billion operating profit out of GCP. So, you know, if you kind of think about what cloud margin should be over time and kind of call it 20 to 30% margin, this cloud business could be generating $20 to $30 billion",
+    "quote": "they're running at a $1.2 billion operating profit out of GCP. So, you know, if you kind of think about what cloud margin should be over time and kind of call it 20 to 30% margin, this cloud business could be generating $20 to $30 billion a",
     "quoteStartMs": 610347,
     "topics": [
       "cloud growth",

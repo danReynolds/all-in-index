@@ -15,7 +15,7 @@
     "scoreNote": "Named as Jason's explicit biggest business winner pick for 2026 in the predictions round.",
     "sectorProxy": null,
     "summary": "Jason picks Amazon as his biggest business winner of 2026, citing the company's robotics deployment surge, same-day delivery expansion, and his belief it will be the first company to have more robots driving its bottom line than humans.",
-    "quote": "my prediction for 2026 is that Amazon is gonna have a massive year... I think they'll be the first corporate, uh, singularity, which is to say the first company to have more robots driving their bottom line than humans. So that's my",
+    "quote": "my prediction for 2026 is that Amazon is gonna have a massive year... I think they'll be the first corporate, uh, singularity, which is to say the first company to have more robots driving their bottom line than humans. So that's my predict",
     "quoteStartMs": 2182916,
     "topics": [
       "robotics",
@@ -41,7 +41,7 @@
     "scoreNote": "Named as Sacks's #1 biggest business winner prediction for 2026.",
     "sectorProxy": null,
     "summary": "Sacks picks Huawei as his #1 biggest business winner of 2026, citing its partnership with SMIC to go deeper in the chip stack and firing on all cylinders in a way that will outperform Western expectations.",
-    "quote": "My number 1 is Huawei, which I've mentioned in the past out of China. I think Huawei's effort to partner with SMIC to go deeper in the chip stack. And they're just firing on all cylinders. I do think keep an eye on Huawei over the next",
+    "quote": "My number 1 is Huawei, which I've mentioned in the past out of China. I think Huawei's effort to partner with SMIC to go deeper in the chip stack. And they're just firing on all cylinders. I do think keep an eye on Huawei over the next year",
     "quoteStartMs": 1985413,
     "topics": [
       "semiconductors",
@@ -91,8 +91,8 @@
     "scoreNote": "Named as Chamath's biggest business winner prediction for 2026 in the predictions round.",
     "sectorProxy": "IPO",
     "summary": "Chamath picks the IPO market as his biggest business winner of 2026, predicting a wave of successful public listings creating trillions in new market cap and reversing the trend of shrinking public companies.",
-    "quote": "I said the IPO. I think 2026 is going to be a big year for IPOs... I think there's gonna be a bunch of 'em, a bunch of successful ones, and I think we could see trillions of dollars of new market cap created of public companies.",
-    "quoteStartMs": 2143000,
+    "quote": "I said the IPO. I think 2026 is going to be a big year for IPOs. I'm not going to say which ones. Oh, great. I think there's gonna be a bunch of 'em, a bunch of successful ones, and I think we could see trillions of dollars of new market ca",
+    "quoteStartMs": 2142850,
     "topics": [
       "IPO market",
       "capital markets",
@@ -117,7 +117,7 @@
     "sectorProxy": "IGV",
     "summary": "Friedberg picks the software industrial complex (licensed SaaS companies) as his biggest business loser of 2026, arguing AI agents will shrink the $3-4 trillion maintenance and migration revenue opportunity aggressively.",
     "quote": "I will pick the software industrial complex... I think you're going to see that total economic opportunity shrink and contract aggressively... It's going to impact SaaS companies, public SaaS companies particularly, quite severely in 2026.",
-    "quoteStartMs": 2583000,
+    "quoteStartMs": null,
     "topics": [
       "SaaS",
       "AI disruption",
@@ -191,7 +191,7 @@
     "scoreNote": "Named as Sacks's conditional worst performing asset pick for 2026; conditioned on Warner Brothers deal not closing.",
     "sectorProxy": null,
     "summary": "Sacks picks Netflix as potentially the worst performing asset of 2026 if it doesn't close the Warner Brothers deal, citing commoditization pressure from rivals with deep content libraries and creator backlash against its cost-plus-10% terms shrinking its content pipeline.",
-    "quote": "It would be Netflix if they don't close the Warner Brothers deal. I do think Netflix's service is being challenged from all sides with deep content libraries... their content library's gonna shrink because of the natural economic forces",
+    "quote": "It would be Netflix if they don't close the Warner Brothers deal. I do think Netflix's service is being challenged from all sides with deep content libraries... their content library's gonna shrink because of the natural economic forces.",
     "quoteStartMs": 4361230,
     "topics": [
       "streaming",
@@ -217,15 +217,15 @@
     "scoreNote": "Named as Jason's worst performing asset pick for 2026 in the predictions round.",
     "sectorProxy": null,
     "summary": "Jason picks the US dollar as his worst performing asset of 2026, citing unabated debt growth and potential 50% military budget increases adding to debasement pressures.",
-    "quote": "I went with the US dollar in different permutations of how you can buy it because our debt continues to grow unabated... I just think it's going to be hard for the USD because we're talking about, we've been adding, I think we're going to",
-    "quoteStartMs": 4313000,
+    "quote": "I went with the US dollar in different permutations of how you can buy it because our debt continues to grow unabated... I just think it's going to be hard for the USD because we're talking about, we've been adding, I think we're going to a",
+    "quoteStartMs": null,
     "topics": [
       "USD",
       "debasement",
       "debt",
       "macro"
     ],
-    "attributionConfidence": "low"
+    "attributionConfidence": "high"
   },
   {
     "id": "E257-gambling-prediction-market-basket-Jason-10",

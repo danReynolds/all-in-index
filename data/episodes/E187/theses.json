@@ -41,7 +41,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks sees NVIDIA's current high GPU prices as a function of temporary scarcity that will normalize as supply increases, but believes the overall AI infrastructure buildout — while expensive and arms-race driven — is strategically justified and will ultimately prove worthwhile, analogous to broadband infrastructure.",
-    "quote": "I do think that over time the price of these chips just has to come down. It just doesn't make sense that they'd be so expensive. Just as production increases and they don't have this rate limit on the supply, then I think the price should",
+    "quote": "I do think that over time the price of these chips just has to come down. It just doesn't make sense that they'd be so expensive. Just as production increases and they don't have this rate limit on the supply, then I think the price should ",
     "quoteStartMs": 1347877,
     "topics": [
       "AI capex",
@@ -67,7 +67,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks argues OpenAI is a real, fast-growing business — already at $3.4B in revenue doubling year-over-year after only two years on market — representing a new category of semantic search that could rival Google, making it the clearest example of AI ROI.",
-    "quote": "OpenAI is effectively semantic search, right? It's a different kind of search engine where it understands the question you're asking and gives you an answer instead of blue links. And they're already at, was it, we talked about this",
+    "quote": "OpenAI is effectively semantic search, right? It's a different kind of search engine where it understands the question you're asking and gives you an answer instead of blue links. And they're already at, was it, we talked about this previou",
     "quoteStartMs": 2071489,
     "topics": [
       "AI revenue",
@@ -93,7 +93,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Sacks believes iPhone 16 with LLM-powered Siri will trigger a major upgrade cycle, driving a significant revenue catalyst for Apple — contingent on Apple using its own on-device LLM rather than routing data to a third party.",
-    "quote": "when Apple comes out with iPhone 16, you know, with LLM-powered Siri, assuming they do a decent job with that. I, it's gonna lead to a huge upgrade cycle. I mean, I'm still on an iPhone 13 because I haven't seen a reason to upgrade. I will",
+    "quote": "when Apple comes out with iPhone 16, you know, with LLM-powered Siri, assuming they do a decent job with that. I, it's gonna lead to a huge upgrade cycle. I mean, I'm still on an iPhone 13 because I haven't seen a reason to upgrade. I will ",
     "quoteStartMs": 2124008,
     "topics": [
       "AI",
@@ -145,7 +145,7 @@
     "scoreNote": null,
     "sectorProxy": "IGV",
     "summary": "Chamath argues AI capex spending of $1+ trillion has no near-term revenue justification — only toy apps to show for it — and predicts a reckoning for startups with inflated valuations, with mismatches between spend and ROI likely playing out over years not quarters.",
-    "quote": "you can't spend a trillion dollars and only have toy apps to show for it. So I think we've all been amazed by these AI demos... I think that we are in a bit of a reckoning right now. It's going to be a complicated couple of quarters at a",
+    "quote": "you can't spend a trillion dollars and only have toy apps to show for it. So I think we've all been amazed by these AI demos. I think the four of us have talked pretty incessantly about it now for 18+ months ever since we saw the first Open",
     "quoteStartMs": 1585396,
     "topics": [
       "AI capex",
@@ -197,8 +197,8 @@
     "scoreNote": null,
     "sectorProxy": "IGV",
     "summary": "Sacks is more bullish than his co-hosts on AI infrastructure investment, drawing historical parallels to broadband and railroad buildouts where initial bubbles were followed by justified long-term value creation, arguing the arms race nature of GPU procurement and early real revenue from OpenAI validate the spend.",
-    "quote": "I tend to think that's what's gonna happen with AI... the telecom companies spent a ton of money building out broadband, and people started upgrading to broadband. Then we had the dot-com crash. Everyone thought that telecom companies had",
-    "quoteStartMs": 2019074,
+    "quote": "I'm much more bullish than you guys about this investment that's being made. Remember that when the internet got started in the '90s, it was via dial-up. I mean, you literally had to have a modem and you would dial up the internet and it wa",
+    "quoteStartMs": 1997851,
     "topics": [
       "AI capex",
       "infrastructure",

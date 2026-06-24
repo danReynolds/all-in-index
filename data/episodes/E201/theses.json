@@ -92,8 +92,8 @@
     "scoreNote": "First-person explicit long position on the commodities basket.",
     "sectorProxy": "DBC",
     "summary": "Friedberg states commodities are 'ridiculously under-owned' and that he is long commodities, favoring commodity-linked businesses whose profits grow with underlying commodity prices as an inflation hedge.",
-    "quote": "I think commodities are so ridiculously under-owned. So I'm long commodities.",
-    "quoteStartMs": 856000,
+    "quote": "I'm long gold. I'm long Bitcoin. I think commodities are so ridiculously under-owned. So I'm long commodities. I think most young people find their inflation hedges via the NASDAQ. That's also been great. It's probably some combination. I p",
+    "quoteStartMs": 856320,
     "topics": [
       "inflation hedge",
       "commodities",
@@ -167,8 +167,8 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath argues Starbucks faces an existential structural headwind from GLP-1 adoption reducing demand for its high-sugar products, that the business should be worth far less (~$20B), and that it is trapped between needing sugar-driven ARPU and a shrinking addressable customer base for those products.",
-    "quote": "This business is in trouble... the structural problem is Starbucks should be probably a $20 billion asset.",
-    "quoteStartMs": 5102000,
+    "quote": "This business is in trouble… But the structural problem is Starbucks should be probably a $20 billion asset.",
+    "quoteStartMs": null,
     "topics": [
       "valuation",
       "GLP-1",
@@ -193,7 +193,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Friedberg argues Starbucks has hit a revenue maximization ceiling — brand, coverage, and price are all tapped out — and that the business has reached natural maturity where multiples will compress, leaving only cost-cutting as a profit lever.",
-    "quote": "I would argue that Starbucks is a victim of the same maximization effect, that at some point you get all the customers, you get 'em to come in and spend as— and buy as many products from you as they can, and you charge 'em the highest",
+    "quote": "I would argue that Starbucks is a victim of the same maximization effect, that at some point you get all the customers, you get 'em to come in and spend as— and buy as many products from you as they can, and you charge 'em the highest price",
     "quoteStartMs": 5316665,
     "topics": [
       "valuation",
@@ -219,7 +219,7 @@
     "scoreNote": null,
     "sectorProxy": null,
     "summary": "Chamath sees Apple as still able to run its free-cash-flow-and-buyback playbook for another decade without GLP-1-style competitive disruption, but personally criticizes iOS 18's sloppy product quality as evidence of complacency, suggesting diminishing care from a company making too much money to bother.",
-    "quote": "Apple can still be at the point that you described earlier, which is let me just maximize free cash flow generation, which is what they do. And then let me allocate that back to shareholders via buybacks, which is also what they do. So",
+    "quote": "Apple can still be at the point that you described earlier, which is let me just maximize free cash flow generation, which is what they do. And then let me allocate that back to shareholders via buybacks, which is also what they do. So they",
     "quoteStartMs": 5414319,
     "topics": [
       "free cash flow",
@@ -268,8 +268,8 @@
     "conviction": "high",
     "callType": "explicit_long",
     "summary": "Friedberg states he is long gold as part of an inflation hedge basket, arguing commodities are ridiculously under-owned and that gold will benefit from global debt/inflation dynamics including China buying gold instead of treasuries.",
-    "quote": "I'm long gold. I'm long Bitcoin. I think commodities are so ridiculously under-owned. So I'm long commodities... I probably have some basket of gold, Bitcoin, commodities, and NASDAQ, something like that.",
-    "quoteStartMs": 856000,
+    "quote": "I, I'm long gold. I'm long Bitcoin. I think commodities are so ridiculously under-owned. So I'm long commodities. I think most young people find their inflation hedges via the NASDAQ. That's also been great. It's probably some combination. ",
+    "quoteStartMs": 855960,
     "topics": [
       "inflation hedge",
       "global debt",
