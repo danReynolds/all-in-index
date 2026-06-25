@@ -103,9 +103,9 @@ function Hero({ fund }: { fund: IndexFund }) {
 
         <div className="mt-6 grid items-center gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
           <div>
-            <div className="rise font-display text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400" style={d(60)}>
+            <h1 className="rise font-display text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400" style={d(60)}>
               The Besties Index
-            </div>
+            </h1>
             <div className={`rise mt-1 font-display text-6xl font-bold tracking-tight tabular-nums sm:text-7xl ${fund.portfolioReturn >= 0 ? "text-emerald-400" : "text-rose-400"}`} style={d(120)}>
               {pct(fund.portfolioReturn)}
             </div>
