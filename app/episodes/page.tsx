@@ -6,7 +6,7 @@ import { LinkRow } from "@/app/components/LinkRow";
 import type { Stance } from "@/lib/types";
 
 export const metadata = {
-  title: "Episodes — The All-Index",
+  title: "Episodes",
   description: "Every processed episode and the calls made in it.",
   alternates: { canonical: "/episodes" },
 };
