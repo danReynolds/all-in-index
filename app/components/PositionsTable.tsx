@@ -32,12 +32,10 @@ export function PositionsTable({
   rows,
   episodes,
   episodeLinks,
-  portfolioReturn,
 }: {
   rows: PositionRow[];
   episodes: Record<string, EpisodeMeta>;
   episodeLinks: Record<string, string | null>;
-  portfolioReturn: number;
 }) {
   const [openSlug, setOpenSlug] = useState<string | null>(null);
 
@@ -113,7 +111,6 @@ export function PositionsTable({
                           take={r.take}
                           date={r.entryDate}
                           stats={r.stats}
-                          portfolioReturn={portfolioReturn}
                           episodes={episodes}
                           episodeLinks={episodeLinks}
                           holdingHref={r.href}

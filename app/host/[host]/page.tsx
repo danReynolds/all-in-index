@@ -60,8 +60,8 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
   const ui = HOST_UI[host];
   const profile = HOST_PROFILES[host as keyof typeof HOST_PROFILES];
 
-  // Per-name performance for the chart receipts. Equal weight makes the
-  // contribution exact: this name's return ÷ N is its share of the headline.
+  // Per-name performance + the entry/now prices behind it, for the chart and
+  // positions-table receipts.
   const positionStats: Record<string, PositionStat> = {};
   if (fund) {
     for (const c of fund.constituents) {
@@ -69,7 +69,9 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
         ret: c.sinceReturn,
         bench: c.benchmarkReturn,
         alpha: c.alpha,
-        contribPp: c.sinceReturn / fund.constituents.length,
+        entryPrice: c.entryPrice,
+        latestPrice: c.latestPrice,
+        currency: c.currency,
         direction: c.direction === "short" ? "short" : "long",
       };
     }
@@ -268,14 +270,12 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
             episodeLinks={episodeLinks}
             episodes={episodes}
             positionStats={positionStats}
-            portfolioReturn={fund.portfolioReturn}
           />
 
           <PositionsTable
             rows={fundRows}
             episodes={episodes}
             episodeLinks={episodeLinks}
-            portfolioReturn={fund.portfolioReturn}
           />
         </section>
       )}

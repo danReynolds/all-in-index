@@ -22,7 +22,6 @@ export interface CallReceiptProps {
   date: string;
   /** This name's windowed performance, when it's a scored position. */
   stats?: PositionStat | null;
-  portfolioReturn?: number | null;
   episodes?: Record<string, EpisodeMeta>;
   episodeLinks?: Record<string, string | null>;
   /** Where the name + "Full history →" link to (defaults to the holding page). */
@@ -43,7 +42,6 @@ export function CallReceipt({
   take,
   date,
   stats,
-  portfolioReturn,
   episodes = {},
   episodeLinks = {},
   holdingHref,
@@ -57,6 +55,31 @@ export function CallReceipt({
     (proxyKind === "crypto" ? "Crypto ETF" : proxyKind === "commodity" ? "Commodity ETF" : "Sector ETF");
 
   const pp = (v: number) => (v >= 0 ? "+" : "") + (v * 100).toFixed(1) + "pp";
+
+  // The raw price the call return is derived from, as a plain before/after.
+  // Cheaper names keep cents; both ends share the same precision so the arrow
+  // reads cleanly ($192 → $337, or $4.10 → $6.85). Currency-aware for the
+  // occasional non-USD listing.
+  const money = (n: number, dec: number, currency?: string | null) => {
+    try {
+      return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: currency || "USD",
+        minimumFractionDigits: dec,
+        maximumFractionDigits: dec,
+      }).format(n);
+    } catch {
+      return "$" + n.toFixed(dec);
+    }
+  };
+  const priceMove =
+    stats && stats.entryPrice && stats.latestPrice && stats.entryPrice > 0
+      ? (() => {
+          const dec = stats.latestPrice >= 100 ? 0 : 2;
+          return `${money(stats.entryPrice, dec, stats.currency)} → ${money(stats.latestPrice, dec, stats.currency)}`;
+        })()
+      : null;
+
   const tile = (label: string, value: string, tone: number | null, detail?: string) => (
     <div className="rounded-md bg-white/[0.03] px-3 py-2 ring-1 ring-white/5">
       <div className="text-[10px] font-medium uppercase tracking-[0.14em] text-neutral-500">{label}</div>
@@ -185,8 +208,10 @@ export function CallReceipt({
               ? tile("S&P, shorted", pct(stats.bench), stats.bench, "the same bet, same dates")
               : tile("S&P, same dates", pct(stats.bench), stats.bench, "what the S&P did")}
             {tile("Alpha", pp(stats.alpha), stats.alpha, stats.direction === "short" ? "vs shorting the S&P" : "beat the S&P by")}
-            {portfolioReturn != null &&
-              tile("Share of the total", pp(stats.contribPp), stats.contribPp, `of ${pct(portfolioReturn)} overall`)}
+            {/* The raw price then vs now — kept neutral because it's a factual
+                reference, not a verdict (the return/alpha tiles carry that, and
+                a winning short's price still falls). */}
+            {priceMove && tile("Price", priceMove, null, "at the call → today")}
           </div>
         </div>
       )}
