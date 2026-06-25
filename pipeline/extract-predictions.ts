@@ -4,7 +4,9 @@ import { z } from "zod";
 import { callTool } from "./llm";
 import { store } from "./store";
 import { buildMarketData } from "./market";
+import { findQuoteUtterance } from "./run-episode";
 import { REGULAR_HOSTS } from "../lib/types";
+import type { Transcript } from "../lib/types";
 import { sectorProxyInfo, SECTOR_PROXY_PROMPT, SECTOR_PROXY_TICKER_VALUES } from "../lib/proxies";
 
 const HOST_VALUES = [...REGULAR_HOSTS, "Guest"] as const;
@@ -17,6 +19,16 @@ categories (biggest political winner/loser, biggest business winner/loser, best
 performing asset, worst performing asset, biggest surprise, most anticipated
 trend, etc.). Extract each participant's pick(s) per category.
 
+- ATTRIBUTION — attribute every pick to the speaker in the BRACKETED LABEL of
+  the utterance that actually states it ("[3847s Chamath] …I'd pick the
+  supercycle in tech" → Chamath). The label is the source of truth for WHO made
+  the pick. Do NOT attribute by who the moderator called on: these rounds move
+  fast and a host routinely answers out of turn or jumps in ahead of the person
+  who was asked. "What do you got, Sacks?" tells you who was INVITED, not who
+  answered — if the next labelled speaker is someone else, the pick is theirs.
+- A participant may also circle back to an earlier category later ("by the way,
+  on best performing asset, one we didn't talk about…"). Capture that as a pick
+  in that earlier category, attributed to its bracketed speaker.
 - A participant usually gives ONE pick per category, but sometimes gives several
   distinct, ranked answers ("my number one is Huawei… and the second is
   Polymarket"). When they do, output ONE prediction object PER distinct pick —
@@ -206,6 +218,32 @@ function resolveProxy(p: { pick: string; ticker: string | null; sectorProxy?: st
   return { symbol: proxy.ticker, proxyTicker: proxy.ticker, proxyNote: proxy.note, direction: p.direction ?? directionFromCategory(p.category) };
 }
 
+const GROUNDABLE_SPEAKERS = new Set<string>([...REGULAR_HOSTS, "Guest"]);
+
+/**
+ * Deterministically anchor each pick's attribution to the diarized speaker who
+ * actually said it. The model still mislabels picks in these fast rounds — by
+ * the moderator's hand-off ("what do you got, Sacks?" then a DIFFERENT host
+ * answers) or by a name spoken mid-utterance ("go ahead, Shamath. I would
+ * pick…" is the SPEAKER's own pick, not Chamath's). So we ignore conversational
+ * cues and take the speaker label of the utterance the quote belongs to as the
+ * source of truth — the same mechanical grounding repairQuoteOwnership applies
+ * to the index theses. Picks whose quote can't be located, or that resolve to
+ * "Unknown", keep the model's attribution.
+ */
+function groundHostsByQuote(preds: z.infer<typeof Item>[], tr: Transcript): number {
+  let fixed = 0;
+  for (const p of preds) {
+    if (!p.quote) continue;
+    const owner = findQuoteUtterance(tr, p.quote);
+    if (!owner || !GROUNDABLE_SPEAKERS.has(owner.speaker) || owner.speaker === p.host) continue;
+    p.host = owner.speaker as z.infer<typeof Item>["host"];
+    if (owner.speaker !== "Guest") p.guestName = null; // a regular host owns it, not the guest
+    fixed++;
+  }
+  return fixed;
+}
+
 export interface PredictionsFile {
   generatedAt: string;
   episodes: Array<{
@@ -242,6 +280,9 @@ export async function extractPredictions(): Promise<void> {
       validate: Schema,
       maxTokens: 8192,
     });
+
+    const regrounded = groundHostsByQuote(result.predictions, tr);
+    if (regrounded) console.log(`  ↻ re-attributed ${regrounded} pick(s) to the diarized speaker who said them`);
 
     const nowIso = new Date().toISOString();
     const scored: ScoredPrediction[] = [];
