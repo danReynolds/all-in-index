@@ -34,8 +34,6 @@ interface Props {
   episodes?: Record<string, EpisodeMeta>;
   /** Per-slug performance of each traded name, shown on the receipt. */
   positionStats?: Record<string, PositionStat>;
-  /** The fund's headline return — context for each name's contribution. */
-  portfolioReturn?: number;
 }
 
 export interface PositionStat {
@@ -46,8 +44,12 @@ export interface PositionStat {
    * `direction`, not as a bald "what the S&P did". */
   bench: number;
   alpha: number;
-  /** Exact share of the portfolio's return (equal-weight: ret / N). */
-  contribPp: number;
+  /** Price of the tracked instrument at entry and now — the raw move the return
+   * is derived from, surfaced as a plain before/after in the receipt. */
+  entryPrice?: number;
+  latestPrice?: number;
+  /** Provider quote currency for the prices (USD when absent). */
+  currency?: string | null;
   /** Long vs short — drives the direction-aware benchmark label in the receipt. */
   direction?: "long" | "short";
 }
@@ -103,7 +105,6 @@ export function IndexChart({
   episodeLinks = {},
   episodes = {},
   positionStats = {},
-  portfolioReturn,
 }: Props) {
   const [sel, setSel] = useState<string | null>(null);
   const W = 800;
@@ -377,7 +378,6 @@ export function IndexChart({
           take={selected.take}
           date={selected.date}
           stats={selectedStats}
-          portfolioReturn={portfolioReturn}
           episodes={episodes}
           episodeLinks={episodeLinks}
         />
