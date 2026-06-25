@@ -135,14 +135,24 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
     domainOf.set(h.slug, h.domain ?? null);
     for (const t of h.theses) if (t.host === host) takes.push({ ...t, slug: h.slug });
   }
-  const signature = takes
+  // Pick the strongest quoted take, then cap at ONE per holding so the row
+  // reads as a spread of their views, not three near-duplicates on whichever
+  // name they happened to revisit most (e.g. Sacks on Anthropic).
+  const signature: HostTake[] = [];
+  const signatureSlugs = new Set<string>();
+  const rankedTakes = takes
     .filter((t) => t.quote && t.stance !== "neutral")
     .sort(
       (a, b) =>
         (b.conviction === "high" ? 1 : 0) - (a.conviction === "high" ? 1 : 0) ||
         b.episodeDate.localeCompare(a.episodeDate),
-    )
-    .slice(0, 3);
+    );
+  for (const t of rankedTakes) {
+    if (signatureSlugs.has(t.slug)) continue;
+    signatureSlugs.add(t.slug);
+    signature.push(t);
+    if (signature.length === 3) break;
+  }
 
   // Every company this host has discussed, deduped per name. The badge is
   // their SCORED stance (currentStanceForHosts) — a firm bull/bear call —
