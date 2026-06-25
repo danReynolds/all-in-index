@@ -5,6 +5,7 @@ import { verifyArgs, applyVerdicts } from "./verify";
 import { callToolBatch } from "./llm";
 import { nameSpeakers } from "./speakers";
 import { buildIndex } from "./build-index";
+import { rescorePredictions } from "./extract-predictions";
 import { extractAssets } from "./extract-assets";
 import { nameGuests } from "./name-guests";
 import { upgradeQuotes } from "./upgrade-quotes";
@@ -227,6 +228,23 @@ export interface SyncOpts {
  * the scheduled GitHub Action calls — so the site updates automatically when a
  * new episode drops, and backfills run in parallel.
  */
+/**
+ * Re-price the predictions scorecard in the same pass that refreshes the index,
+ * so /predictions can't silently age while holdings stay fresh. This is the
+ * cheap deterministic rescore (no LLM, no re-extraction — the picks don't
+ * change, only their prices). Non-fatal: a predictions hiccup must never wedge
+ * the primary holdings refresh + deploy, and the stale-price guard still covers
+ * the index itself. (A brand-new annual predictions episode still needs a manual
+ * `extract-predictions`; this only keeps existing picks marked-to-market.)
+ */
+async function refreshPredictions(): Promise<void> {
+  try {
+    await rescorePredictions();
+  } catch (e) {
+    console.warn(`⚠ predictions rescore skipped: ${e instanceof Error ? e.message : String(e)}`);
+  }
+}
+
 export async function sync(opts: SyncOpts = {}): Promise<void> {
   const limit = opts.limit ?? 2;
   const roundtableOnly = opts.roundtableOnly ?? true;
@@ -258,6 +276,7 @@ export async function sync(opts: SyncOpts = {}): Promise<void> {
     }
     console.log("Index is up to date — no new episodes. Rebuilding to refresh market data…");
     await buildIndex();
+    await refreshPredictions();
     return;
   }
 
@@ -315,5 +334,6 @@ export async function sync(opts: SyncOpts = {}): Promise<void> {
 
   console.log("\nbuilding index…");
   await buildIndex();
+  await refreshPredictions();
   console.log("✓ backfill complete.");
 }
