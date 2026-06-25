@@ -58,7 +58,7 @@ function quoteMatches(text: string, quote: string): boolean {
   return fragments.every((frag) => hay.includes(frag) || hasWordsInOrder(text, frag));
 }
 
-function findQuoteUtterance(
+export function findQuoteUtterance(
   t: Transcript,
   quote: string,
   speaker?: Thesis["host"] | null,

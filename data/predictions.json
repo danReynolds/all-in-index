@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T18:36:30.031Z",
+  "generatedAt": "2026-06-25T14:28:02.561Z",
   "episodes": [
     {
       "id": "E257",
@@ -24,7 +24,7 @@
           "host": "Friedberg",
           "guestName": null,
           "category": "Biggest political winner",
-          "pick": "Whoever fights waste, fraud, and abuse at Federal, state, and local level",
+          "pick": "Whoever fights waste, fraud, and abuse at the federal, state, and local level",
           "quote": "Whoever is going to fight waste, fraud, and abuse at the Federal, state, and local level. It's an open lane. It's a political gambit that I think will work really well in '26.",
           "quoteStartMs": 804000,
           "ticker": null,
@@ -37,7 +37,7 @@
           "host": "Chamath",
           "guestName": null,
           "category": "Biggest political winner",
-          "pick": "Trump boom / good economic news",
+          "pick": "The Trump boom",
           "quote": "I'm gonna say that the Trump boom is gonna be the biggest political winner of 2026. The good economic news has started breaking out before 2025 was even over.",
           "quoteStartMs": 826000,
           "ticker": null,
@@ -50,9 +50,9 @@
           "host": "Jason",
           "guestName": null,
           "category": "Biggest political winner",
-          "pick": "Zohran Mamdani / DSA progressive moment",
-          "quote": "I'm going to give the edge to the Mondami moment. He's 34 years old. He's got Ro Khanna at 49 pivoting into a socialist. And I think that's because Democrats believe the easiest way to win in 2026 is to go full socialist.",
-          "quoteStartMs": 960000,
+          "pick": "Mamdani / Democratic Socialist moment",
+          "quote": "My answer is clearly Madami. My second place though, I like to always explain my thinking, is Darth Vance.",
+          "quoteStartMs": 1056000,
           "ticker": null,
           "direction": null,
           "sinceReturn": null,
@@ -77,8 +77,8 @@
           "guestName": null,
           "category": "Biggest political loser",
           "pick": "The Monroe Doctrine",
-          "quote": "My biggest political loser of 2026 is the Monroe Doctrine... I think that there is a clear Trump doctrine that trumped the Monroe Doctrine, and I think that is the political loser.",
-          "quoteStartMs": 1280000,
+          "quote": "I think that there is a clear Trump doctrine that trumped the Monroe Doctrine, and I think that is the political loser... All of that is out the window.",
+          "quoteStartMs": 1247000,
           "ticker": null,
           "direction": null,
           "sinceReturn": null,
@@ -89,7 +89,7 @@
           "host": "Sacks",
           "guestName": null,
           "category": "Biggest political loser",
-          "pick": "Tech industry",
+          "pick": "The tech industry",
           "quote": "My biggest political loser of 2026 is the tech industry. I think AI and tech wealth have become the lightning rod for populism on both sides of the aisle.",
           "quoteStartMs": 1362000,
           "ticker": null,
@@ -104,7 +104,7 @@
           "category": "Biggest political loser",
           "pick": "Centrist Democrats",
           "quote": "I'm going to just align with Sachs here that the centrist Democrats are going to be this year's biggest political losers.",
-          "quoteStartMs": 1614000,
+          "quoteStartMs": 1609000,
           "ticker": null,
           "direction": null,
           "sinceReturn": null,
@@ -116,10 +116,10 @@
           "guestName": null,
           "category": "Biggest business winner",
           "pick": "Huawei",
-          "quote": "My number 1 is Huawei, which I've mentioned in the past out of China. I think Huawei's effort to partner with SMIC to go deeper in the chip stack. And they're just firing on all cylinders.",
+          "quote": "My number 1 is Huawei, which I've mentioned in the past out of China. I think Huawei's effort to partner with SMIC to go deeper in the chip stack... it's going to outperform expectations, at least the Western expectations.",
           "quoteStartMs": 1984000,
           "ticker": null,
-          "direction": null,
+          "direction": "up",
           "sinceReturn": null,
           "proxyTicker": null,
           "proxyNote": null
@@ -129,10 +129,10 @@
           "guestName": null,
           "category": "Biggest business winner",
           "pick": "Polymarket",
-          "quote": "The second is Polymarket. I think Polymarket's evolved from being kind of this one-off quirky prediction market to actually really providing insights into current events and the news in a way that none of us anticipated.",
+          "quote": "The second is, uh, Polymarket. I think Polymarket's evolved from being kind of this one-off quirky prediction market to actually really providing insights into current events and the news... I do think that prediction markets could become not just markets, but also news.",
           "quoteStartMs": 2006000,
           "ticker": null,
-          "direction": null,
+          "direction": "up",
           "sinceReturn": null,
           "proxyTicker": null,
           "proxyNote": null
@@ -142,11 +142,11 @@
           "guestName": null,
           "category": "Biggest business winner",
           "pick": "Copper",
-          "quote": "I will pick Copper. We are still completely underestimating how short we are in terms of the global demand-supply dynamics of a handful of critical elements that we need.",
+          "quote": "I will pick Copper... the asset that is set up to go absolutely parabolic is copper. And the reason is that it is... the most useful, cheap, amenable, conductive material that we have.",
           "quoteStartMs": 2067000,
           "ticker": "CPER",
           "direction": "up",
-          "sinceReturn": 0.053687635574837224,
+          "sinceReturn": 0.0006778741865509375,
           "history": [
             [
               "2026-01-12",
@@ -369,8 +369,16 @@
               38.64
             ],
             [
-              "2026-06-18",
-              38.86
+              "2026-06-22",
+              38.81
+            ],
+            [
+              "2026-06-24",
+              36.31
+            ],
+            [
+              "2026-06-25",
+              36.905
             ]
           ],
           "proxyTicker": null,
@@ -380,12 +388,12 @@
           "host": "Chamath",
           "guestName": null,
           "category": "Biggest business winner",
-          "pick": "IPO market",
-          "quote": "I said the IPO. I think 2026 is going to be a big year for IPOs. I think there's gonna be a bunch of 'em, a bunch of successful ones, and I think we could see trillions of dollars of new market cap created of public companies.",
+          "pick": "IPO market / wave of new public companies",
+          "quote": "I think 2026 is going to be a big year for IPOs... I think there's gonna be a bunch of 'em, a bunch of successful ones, and I think we could see trillions of dollars of new market cap created of public companies.",
           "quoteStartMs": 2143000,
-          "ticker": null,
+          "ticker": "IPO",
           "direction": "up",
-          "sinceReturn": 0.22965716646014037,
+          "sinceReturn": 0.17306897976042948,
           "history": [
             [
               "2026-01-12",
@@ -608,23 +616,31 @@
               57.49
             ],
             [
-              "2026-06-18",
-              59.54
+              "2026-06-22",
+              58.94
+            ],
+            [
+              "2026-06-24",
+              56.55
+            ],
+            [
+              "2026-06-25",
+              56.8
             ]
           ],
-          "proxyTicker": "IPO",
-          "proxyNote": "Renaissance IPO ETF"
+          "proxyTicker": null,
+          "proxyNote": null
         },
         {
           "host": "Jason",
           "guestName": null,
           "category": "Biggest business winner",
           "pick": "Amazon",
-          "quote": "My prediction for 2026 is that Amazon is gonna have a massive year. They're essentially flat in terms of hiring humans and they're surging in deploying robots.",
+          "quote": "My prediction for 2026 is that Amazon is gonna have a massive year... I think they'll be the first corporate, uh, singularity, which is to say the first company to have more robots driving their bottom line than humans.",
           "quoteStartMs": 2172000,
           "ticker": "AMZN",
           "direction": "up",
-          "sinceReturn": -0.008439160952651488,
+          "sinceReturn": -0.06960279141477665,
           "history": [
             [
               "2026-01-12",
@@ -847,8 +863,16 @@
               237.5
             ],
             [
-              "2026-06-18",
-              244.39
+              "2026-06-22",
+              232.79
+            ],
+            [
+              "2026-06-24",
+              234.27
+            ],
+            [
+              "2026-06-25",
+              229.315
             ]
           ],
           "proxyTicker": null,
@@ -858,11 +882,11 @@
           "host": "Sacks",
           "guestName": null,
           "category": "Biggest business loser",
-          "pick": "State governments / unrealized pension liabilities",
-          "quote": "I think these state governments are going to have a real problem with finding financing... The other thing that's going to hit the fan this year in state governments is all of these unrealized pension liabilities.",
+          "pick": "State governments (financing/pension liabilities)",
+          "quote": "I think these state governments are going to have a real problem with finding financing... all of these unrealized pension liabilities. I think when these numbers start to come out this year... folks are going to wake up and be like, holy shit, there's a ginormous hole in these states.",
           "quoteStartMs": 2455000,
           "ticker": null,
-          "direction": null,
+          "direction": "down",
           "sinceReturn": null,
           "proxyTicker": null,
           "proxyNote": null
@@ -871,12 +895,12 @@
           "host": "Friedberg",
           "guestName": null,
           "category": "Biggest business loser",
-          "pick": "Software industrial complex (enterprise SaaS)",
-          "quote": "I will pick the software industrial complex. These are the companies that sell licensed SaaS to the corporations of America... I think you're going to see that total economic opportunity shrink and contract aggressively.",
+          "pick": "Software industrial complex (SaaS)",
+          "quote": "I will pick the software industrial complex. So these are the companies that sell licensed SaaS to the corporations of America... I think you're going to see that total economic opportunity shrink and contract aggressively.",
           "quoteStartMs": 2583000,
           "ticker": null,
           "direction": "down",
-          "sinceReturn": -0.15434266729947785,
+          "sinceReturn": -0.18495491219743712,
           "history": [
             [
               "2026-01-12",
@@ -1099,8 +1123,16 @@
               89.16
             ],
             [
-              "2026-06-18",
-              89.09
+              "2026-06-22",
+              87.31
+            ],
+            [
+              "2026-06-24",
+              86.17
+            ],
+            [
+              "2026-06-25",
+              85.865
             ]
           ],
           "proxyTicker": "IGV",
@@ -1110,8 +1142,8 @@
           "host": "Chamath",
           "guestName": null,
           "category": "Biggest business loser",
-          "pick": "California (wealth tax / regulations driving business out)",
-          "quote": "For me, it was California because of the wealth tax and also the onerous regulations driving business and capital out of the state.",
+          "pick": "California (wealth tax, regulation driving business out)",
+          "quote": "For me, we already talked about this, but it was California because of the wealth tax and also the onerous regulations driving business and capital out of the state.",
           "quoteStartMs": 2698000,
           "ticker": null,
           "direction": null,
@@ -1123,22 +1155,9 @@
           "host": "Jason",
           "guestName": null,
           "category": "Biggest business loser",
-          "pick": "Young white-collar workers in America (entry-level jobs displaced by AI)",
-          "quote": "I went with young white-collar workers in America, I think they're going to be the biggest business loser. I think it's getting really hard for them to get entry-level jobs because companies are having an easier job just automating with AI than training up Gen Z graduates.",
+          "pick": "Young white-collar workers in America",
+          "quote": "I went with Young white-collar workers in America, I think they're going to be the biggest business loser. I think it's getting really hard for them to get entry-level jobs.",
           "quoteStartMs": 2728000,
-          "ticker": null,
-          "direction": null,
-          "sinceReturn": null,
-          "proxyTicker": null,
-          "proxyNote": null
-        },
-        {
-          "host": "Chamath",
-          "guestName": null,
-          "category": "Biggest deal",
-          "pick": "Coding assistants / AI tool use deals",
-          "quote": "There seems to have been another level of quality achieved just in the last month or so with coding assistants. This trend feels to me like chatbots did at the end of 2022 going into '23.",
-          "quoteStartMs": 3023000,
           "ticker": null,
           "direction": null,
           "sinceReturn": null,
@@ -1150,8 +1169,21 @@
           "guestName": null,
           "category": "Biggest deal",
           "pick": "Russia-Ukraine peace settlement",
-          "quote": "I think it's going to settle out this year. I think there's a lot of motivating factors to get it settled out this year, economic and other political factors.",
-          "quoteStartMs": 3081000,
+          "quote": "I think it's going to settle out this year. I think there's a lot of motivating factors to get it settled out this year, economic and other political factors, but I do think it's going to settle out this year.",
+          "quoteStartMs": 3078000,
+          "ticker": null,
+          "direction": null,
+          "sinceReturn": null,
+          "proxyTicker": null,
+          "proxyNote": null
+        },
+        {
+          "host": "Chamath",
+          "guestName": null,
+          "category": "Biggest deal",
+          "pick": "Coding assistant / tool-use AI companies M&A wave",
+          "quote": "I think there was a breakthrough in the last couple of months in terms of these coding assistants... I think these, let's call it coding assistance/tool use, I think will get bigger and bigger this year.",
+          "quoteStartMs": 3023000,
           "ticker": null,
           "direction": null,
           "sinceReturn": null,
@@ -1162,7 +1194,7 @@
           "host": "Friedberg",
           "guestName": null,
           "category": "Biggest deal",
-          "pick": "IP license M&A workaround deals (hundreds of billions)",
+          "pick": "IP license deals replacing traditional M&A (hundreds of billions in deals)",
           "quote": "It's not a specific deal, but it's an approach. I think that M&A cannot happen, and so it's the IP license M&A workaround. And I think you're going to see hundreds of billions of dollars of these kinds of deals.",
           "quoteStartMs": 3113000,
           "ticker": null,
@@ -1175,8 +1207,8 @@
           "host": "Jason",
           "guestName": null,
           "category": "Biggest deal",
-          "pick": "Mag 7 acquisition of a major AI lab (Anthropic, Perplexity, xAI, or Mistral)",
-          "quote": "I think we're going to see a $50 billion plus deal. I think it could be one of the Mag Seven, an Apple, a Meta, a Microsoft, or an Amazon going out and trying to buy XAI, Mistral, Perplexity, Anthropic, one of those four.",
+          "pick": "Mag Seven acquires a major AI lab (Anthropic, Perplexity, Mistral, or XAI) for $50B+",
+          "quote": "I think we're going to see a $50 billion plus deal. And I think it could be, uh, one of the Mag Seven, an Apple, a Meta, a Microsoft, or an Amazon going out and trying to buy XAI, Mistral, Perplexity, Anthropic, one of those four.",
           "quoteStartMs": 3226000,
           "ticker": null,
           "direction": null,
@@ -1188,8 +1220,8 @@
           "host": "Sacks",
           "guestName": null,
           "category": "Most contrarian belief",
-          "pick": "More instability in the Middle East among Gulf states as Iran transitions, not less",
-          "quote": "I think that between UAE, Saudi, Qatar, and this fraction in Yemen... there may be more conflict brewing in the Middle East than anyone anticipates for this year that will not necessarily involve Israel and/or Iran.",
+          "pick": "More conflict among Gulf Arab states as Iran transitions, Middle East nastier than expected",
+          "quote": "I think that this year could end up being a little bit nastier than folks anticipate in the Middle East. As Iran turns over... there is already this brewing conflict amongst the other Arab states.",
           "quoteStartMs": 3408000,
           "ticker": null,
           "direction": null,
@@ -1202,7 +1234,7 @@
           "guestName": null,
           "category": "Most contrarian belief",
           "pick": "AI will increase demand for knowledge workers, not decrease it (Jevons Paradox)",
-          "quote": "I said that AI will increase demand for knowledge workers, not decrease it. I would refer you to Aaron Levy's post called Jevons Paradox for Knowledge Workers.",
+          "quote": "AI will increase demand for knowledge workers, not decrease it... as the cost of a resource goes down, the aggregate demand for it actually increases because you discover more and more use cases.",
           "quoteStartMs": 3507000,
           "ticker": null,
           "direction": null,
@@ -1219,7 +1251,7 @@
           "quoteStartMs": 3628000,
           "ticker": "TSLA",
           "direction": null,
-          "sinceReturn": -0.10796062009978612,
+          "sinceReturn": -0.1615622772630078,
           "history": [
             [
               "2026-01-12",
@@ -1442,8 +1474,16 @@
               396.38
             ],
             [
-              "2026-06-18",
-              400.49
+              "2026-06-22",
+              405.05
+            ],
+            [
+              "2026-06-24",
+              375.53
+            ],
+            [
+              "2026-06-25",
+              376.425
             ]
           ],
           "proxyTicker": null,
@@ -1453,8 +1493,8 @@
           "host": "Friedberg",
           "guestName": null,
           "category": "Most contrarian belief",
-          "pick": "Central banks adopt a new cryptographic paradigm they can control, beyond gold and Bitcoin",
-          "quote": "The central banks will realize that there are limitations to gold and limitations to Bitcoin, and will as a result seek out a completely new cryptographic paradigm that they can control on their balance sheet.",
+          "pick": "Central banks develop a new quantum-safe cryptographic reserve asset to replace gold and Bitcoin",
+          "quote": "I think the central banks will realize that there are limitations to gold and limitations to Bitcoin, and will as a result seek out a completely new cryptographic paradigm that they can control on their balance sheet.",
           "quoteStartMs": 3657000,
           "ticker": null,
           "direction": null,
@@ -1466,253 +1506,14 @@
           "host": "Jason",
           "guestName": null,
           "category": "Most contrarian belief",
-          "pick": "US-China standoff largely resolved; Trump brokers working relationship on Taiwan",
-          "quote": "I think the standoff with China is going to be largely resolved. And I think President Trump's, when he makes his visit there... I do think that the standoff and the issues around Taiwan, are going to be resolved.",
-          "quoteStartMs": 3738000,
+          "pick": "US-China standoff largely resolved; Trump visits China and brokers a working relationship on Taiwan",
+          "quote": "I think the standoff with China is going to be largely resolved... the issues around Taiwan, are going to be resolved. And I think this could be the signature issue of Trump's second term.",
+          "quoteStartMs": 3734000,
           "ticker": null,
           "direction": null,
           "sinceReturn": null,
           "proxyTicker": null,
           "proxyNote": null
-        },
-        {
-          "host": "Sacks",
-          "guestName": null,
-          "category": "Best performing asset",
-          "pick": "Expanding supercycle in tech",
-          "quote": "It's getting a little bit redundant for me, but I just said the expanding supercycle in tech.",
-          "quoteStartMs": 3847000,
-          "ticker": null,
-          "direction": "up",
-          "sinceReturn": 0.18089194317330237,
-          "history": [
-            [
-              "2026-01-12",
-              627.17
-            ],
-            [
-              "2026-01-14",
-              619.55
-            ],
-            [
-              "2026-01-16",
-              621.26
-            ],
-            [
-              "2026-01-21",
-              616.28
-            ],
-            [
-              "2026-01-23",
-              622.72
-            ],
-            [
-              "2026-01-27",
-              631.13
-            ],
-            [
-              "2026-01-29",
-              629.43
-            ],
-            [
-              "2026-02-02",
-              626.14
-            ],
-            [
-              "2026-02-04",
-              605.75
-            ],
-            [
-              "2026-02-06",
-              609.65
-            ],
-            [
-              "2026-02-10",
-              611.47
-            ],
-            [
-              "2026-02-12",
-              600.64
-            ],
-            [
-              "2026-02-17",
-              601.3
-            ],
-            [
-              "2026-02-19",
-              603.47
-            ],
-            [
-              "2026-02-23",
-              601.41
-            ],
-            [
-              "2026-02-25",
-              616.68
-            ],
-            [
-              "2026-02-27",
-              607.29
-            ],
-            [
-              "2026-03-03",
-              601.58
-            ],
-            [
-              "2026-03-05",
-              608.91
-            ],
-            [
-              "2026-03-09",
-              607.76
-            ],
-            [
-              "2026-03-11",
-              607.69
-            ],
-            [
-              "2026-03-13",
-              593.72
-            ],
-            [
-              "2026-03-17",
-              603.31
-            ],
-            [
-              "2026-03-19",
-              593.02
-            ],
-            [
-              "2026-03-23",
-              588
-            ],
-            [
-              "2026-03-25",
-              587.82
-            ],
-            [
-              "2026-03-27",
-              562.58
-            ],
-            [
-              "2026-03-31",
-              577.18
-            ],
-            [
-              "2026-04-02",
-              584.98
-            ],
-            [
-              "2026-04-07",
-              588.59
-            ],
-            [
-              "2026-04-09",
-              610.19
-            ],
-            [
-              "2026-04-13",
-              617.39
-            ],
-            [
-              "2026-04-15",
-              637.4
-            ],
-            [
-              "2026-04-17",
-              648.85
-            ],
-            [
-              "2026-04-21",
-              644.33
-            ],
-            [
-              "2026-04-23",
-              651.42
-            ],
-            [
-              "2026-04-27",
-              664.23
-            ],
-            [
-              "2026-04-29",
-              661.57
-            ],
-            [
-              "2026-05-01",
-              674.15
-            ],
-            [
-              "2026-05-05",
-              681.61
-            ],
-            [
-              "2026-05-07",
-              694.94
-            ],
-            [
-              "2026-05-11",
-              713.29
-            ],
-            [
-              "2026-05-13",
-              714.71
-            ],
-            [
-              "2026-05-15",
-              708.93
-            ],
-            [
-              "2026-05-19",
-              701.53
-            ],
-            [
-              "2026-05-21",
-              714.51
-            ],
-            [
-              "2026-05-26",
-              730.28
-            ],
-            [
-              "2026-05-28",
-              735.6
-            ],
-            [
-              "2026-06-01",
-              742.74
-            ],
-            [
-              "2026-06-03",
-              744.21
-            ],
-            [
-              "2026-06-05",
-              705.06
-            ],
-            [
-              "2026-06-09",
-              707.83
-            ],
-            [
-              "2026-06-11",
-              717.12
-            ],
-            [
-              "2026-06-15",
-              744
-            ],
-            [
-              "2026-06-17",
-              722.51
-            ],
-            [
-              "2026-06-18",
-              740.62
-            ]
-          ],
-          "proxyTicker": "QQQ",
-          "proxyNote": "Nasdaq-100 ETF"
         },
         {
           "host": "Friedberg",
@@ -1723,7 +1524,7 @@
           "quoteStartMs": 3839000,
           "ticker": null,
           "direction": "up",
-          "sinceReturn": 0.07552904097253482,
+          "sinceReturn": 0.003715668617739775,
           "history": [
             [
               "2026-01-12",
@@ -1946,23 +1747,278 @@
               96.04
             ],
             [
-              "2026-06-18",
-              95.55
+              "2026-06-22",
+              97.29
+            ],
+            [
+              "2026-06-24",
+              90.67
+            ],
+            [
+              "2026-06-25",
+              89.1701
             ]
           ],
           "proxyTicker": "REMX",
           "proxyNote": "rare-earth & strategic-metals ETF"
         },
         {
+          "host": "Chamath",
+          "guestName": null,
+          "category": "Best performing asset",
+          "pick": "Tech supercycle / expanding US tech sector",
+          "quote": "It's getting a little bit redundant for me, but I just said the expanding supercycle in tech.",
+          "quoteStartMs": 3847000,
+          "ticker": null,
+          "direction": "up",
+          "sinceReturn": 0.13731524148157598,
+          "history": [
+            [
+              "2026-01-12",
+              627.17
+            ],
+            [
+              "2026-01-14",
+              619.55
+            ],
+            [
+              "2026-01-16",
+              621.26
+            ],
+            [
+              "2026-01-21",
+              616.28
+            ],
+            [
+              "2026-01-23",
+              622.72
+            ],
+            [
+              "2026-01-27",
+              631.13
+            ],
+            [
+              "2026-01-29",
+              629.43
+            ],
+            [
+              "2026-02-02",
+              626.14
+            ],
+            [
+              "2026-02-04",
+              605.75
+            ],
+            [
+              "2026-02-06",
+              609.65
+            ],
+            [
+              "2026-02-10",
+              611.47
+            ],
+            [
+              "2026-02-12",
+              600.64
+            ],
+            [
+              "2026-02-17",
+              601.3
+            ],
+            [
+              "2026-02-19",
+              603.47
+            ],
+            [
+              "2026-02-23",
+              601.41
+            ],
+            [
+              "2026-02-25",
+              616.68
+            ],
+            [
+              "2026-02-27",
+              607.29
+            ],
+            [
+              "2026-03-03",
+              601.58
+            ],
+            [
+              "2026-03-05",
+              608.91
+            ],
+            [
+              "2026-03-09",
+              607.76
+            ],
+            [
+              "2026-03-11",
+              607.69
+            ],
+            [
+              "2026-03-13",
+              593.72
+            ],
+            [
+              "2026-03-17",
+              603.31
+            ],
+            [
+              "2026-03-19",
+              593.02
+            ],
+            [
+              "2026-03-23",
+              588
+            ],
+            [
+              "2026-03-25",
+              587.82
+            ],
+            [
+              "2026-03-27",
+              562.58
+            ],
+            [
+              "2026-03-31",
+              577.18
+            ],
+            [
+              "2026-04-02",
+              584.98
+            ],
+            [
+              "2026-04-07",
+              588.59
+            ],
+            [
+              "2026-04-09",
+              610.19
+            ],
+            [
+              "2026-04-13",
+              617.39
+            ],
+            [
+              "2026-04-15",
+              637.4
+            ],
+            [
+              "2026-04-17",
+              648.85
+            ],
+            [
+              "2026-04-21",
+              644.33
+            ],
+            [
+              "2026-04-23",
+              651.42
+            ],
+            [
+              "2026-04-27",
+              664.23
+            ],
+            [
+              "2026-04-29",
+              661.57
+            ],
+            [
+              "2026-05-01",
+              674.15
+            ],
+            [
+              "2026-05-05",
+              681.61
+            ],
+            [
+              "2026-05-07",
+              694.94
+            ],
+            [
+              "2026-05-11",
+              713.29
+            ],
+            [
+              "2026-05-13",
+              714.71
+            ],
+            [
+              "2026-05-15",
+              708.93
+            ],
+            [
+              "2026-05-19",
+              701.53
+            ],
+            [
+              "2026-05-21",
+              714.51
+            ],
+            [
+              "2026-05-26",
+              730.28
+            ],
+            [
+              "2026-05-28",
+              735.6
+            ],
+            [
+              "2026-06-01",
+              742.74
+            ],
+            [
+              "2026-06-03",
+              744.21
+            ],
+            [
+              "2026-06-05",
+              705.06
+            ],
+            [
+              "2026-06-09",
+              707.83
+            ],
+            [
+              "2026-06-11",
+              717.12
+            ],
+            [
+              "2026-06-15",
+              744
+            ],
+            [
+              "2026-06-17",
+              722.51
+            ],
+            [
+              "2026-06-22",
+              737.95
+            ],
+            [
+              "2026-06-24",
+              710.62
+            ],
+            [
+              "2026-06-25",
+              713.29
+            ]
+          ],
+          "proxyTicker": "QQQ",
+          "proxyNote": "Nasdaq-100 ETF"
+        },
+        {
           "host": "Jason",
           "guestName": null,
           "category": "Best performing asset",
-          "pick": "Wagering / gambling space — Robinhood, Coinbase",
-          "quote": "My pick for best performing asset will be the Robinhood PolyMarket Prize Picks. Gambling, wagering space because people will be able to have a little cash around to make some bets. So you can buy Coinbase in there too, I guess.",
+          "pick": "Wagering/gambling space — Robinhood, Coinbase",
+          "quote": "My pick for best performing asset will be the Robinhood PolyMarket Prize Picks. Gambling, wagering, space because people will be able to have a little cash around to make some bets. So you can buy Coinbase in there too, I guess.",
           "quoteStartMs": 3990000,
           "ticker": "HOOD",
           "direction": "up",
-          "sinceReturn": -0.2039119783731398,
+          "sinceReturn": -0.28575738248044574,
           "history": [
             [
               "2026-01-12",
@@ -2185,8 +2241,16 @@
               78.7
             ],
             [
-              "2026-06-18",
-              79.61
+              "2026-06-22",
+              78.9
+            ],
+            [
+              "2026-06-24",
+              72.24
+            ],
+            [
+              "2026-06-25",
+              71.42
             ]
           ],
           "proxyTicker": null,
@@ -2194,13 +2258,26 @@
           "basket": [
             {
               "ticker": "HOOD",
-              "sinceReturn": -0.07973110959836616
+              "sinceReturn": -0.18345813478556844
             },
             {
               "ticker": "COIN",
-              "sinceReturn": -0.3280928471479134
+              "sinceReturn": -0.38805663017532305
             }
           ]
+        },
+        {
+          "host": "Chamath",
+          "guestName": null,
+          "category": "Best performing asset",
+          "pick": "Capital equipment qualifying for 100% accelerated depreciation",
+          "quote": "The category of assets that qualify for accelerated depreciation, capital equipment... There's now 100% accelerated depreciation... man, that is making those markets super hot right now.",
+          "quoteStartMs": 4452000,
+          "ticker": null,
+          "direction": "up",
+          "sinceReturn": null,
+          "proxyTicker": null,
+          "proxyNote": null
         },
         {
           "host": "Chamath",
@@ -2220,11 +2297,11 @@
           "guestName": null,
           "category": "Worst performing asset",
           "pick": "Hydrocarbons / oil",
-          "quote": "I won't say the worst performing, but I think a very poor performing asset will be hydrocarbons. I just think that the trend in oil is inexorable and it's down.",
+          "quote": "I won't say the worst performing, but I think a very poor performing asset will be hydrocarbons... I think it's more likely to see $45 than $65.",
           "quoteStartMs": 4264000,
           "ticker": "USO",
           "direction": "down",
-          "sinceReturn": 0.6032100488485693,
+          "sinceReturn": 0.5020195394277737,
           "history": [
             [
               "2026-01-12",
@@ -2447,8 +2524,16 @@
               114.23
             ],
             [
-              "2026-06-18",
-              114.87
+              "2026-06-22",
+              112.69
+            ],
+            [
+              "2026-06-24",
+              106.29
+            ],
+            [
+              "2026-06-25",
+              107.6197
             ]
           ],
           "proxyTicker": null,
@@ -2459,7 +2544,7 @@
           "guestName": null,
           "category": "Worst performing asset",
           "pick": "US dollar",
-          "quote": "I went with the US dollar in different permutations of how you can buy it because our debt continues to grow unabated. The debasement trade.",
+          "quote": "I went with the US dollar in different permutations of how you can buy it because our debt continues to grow unabated... I just think it's going to be hard for the USD.",
           "quoteStartMs": 4313000,
           "ticker": null,
           "direction": "down",
@@ -2471,12 +2556,12 @@
           "host": "Sacks",
           "guestName": null,
           "category": "Worst performing asset",
-          "pick": "Netflix (if no Warner Bros deal) / traditional media stocks",
-          "quote": "It would be Netflix if they don't close the Warner Brothers deal. I do think Netflix's service is being challenged from all sides with deep content libraries... Alternative, if they do close on Warner Brothers... my worst performing asset would be traditional media stocks.",
+          "pick": "Netflix (if they don't close Warner Brothers deal) / traditional media stocks",
+          "quote": "It would be Netflix if they don't close the Warner Brothers deal... Alternative, if they do close on Warner Brothers... my worst performing asset would be traditional media stocks.",
           "quoteStartMs": 4361000,
           "ticker": "NFLX",
           "direction": "down",
-          "sinceReturn": -0.13454870819818815,
+          "sinceReturn": -0.19270775081087116,
           "history": [
             [
               "2026-01-12",
@@ -2699,8 +2784,16 @@
               76.96
             ],
             [
-              "2026-06-18",
-              77.38
+              "2026-06-22",
+              72.88
+            ],
+            [
+              "2026-06-24",
+              71.84
+            ],
+            [
+              "2026-06-25",
+              72.18
             ]
           ],
           "proxyTicker": null,
@@ -2723,8 +2816,8 @@
           "host": "Chamath",
           "guestName": null,
           "category": "Most anticipated trend",
-          "pick": "Auditing government spending at all levels (decentralized DOGE)",
-          "quote": "I said auditing government spending at all levels. That's a good one. Decentralized doge. We need to normalize independent audits across the board.",
+          "pick": "Auditing government spending at all levels / decentralized DOGE",
+          "quote": "I said auditing government spending at all levels... Decentralized doge. Love it... We need to normalize independent audits across the board.",
           "quoteStartMs": 4711000,
           "ticker": null,
           "direction": null,
@@ -2736,8 +2829,8 @@
           "host": "Friedberg",
           "guestName": null,
           "category": "Most anticipated trend",
-          "pick": "Expansion of the Trump doctrine (unilateralism, economic resilience)",
-          "quote": "I have a corollary to Freeberg's, which is I think it's the expansion of this Trump doctrine. Independent of your politics... The best framework that I have used to organize myself is this idea of unilateralism, economic resilience.",
+          "pick": "Expansion of the Trump doctrine / economic unilateralism driving massive GDP growth",
+          "quote": "I have a corollary to Freeberg's, which is I think it's the expansion of this Trump doctrine... The best framework that I have used to organize myself is this idea of unilateralism, economic resilience. It's just a ginormous trend.",
           "quoteStartMs": 4766000,
           "ticker": null,
           "direction": null,
@@ -2749,12 +2842,246 @@
           "host": "Jason",
           "guestName": null,
           "category": "Most anticipated trend",
-          "pick": "Mega IPOs — SpaceX, Anduril, Stripe, Anthropic, or OpenAI filing",
-          "quote": "I'll go with IPOs coming back right now. You've gotta anticipate one of the following two will file: SpaceX, Andral, Stripe, Anthropic, and OpenAI. I think two of those file and it is going to be gangbusters.",
+          "pick": "Mega IPOs coming back (SpaceX, Stripe, Anthropic, Andril, OpenAI)",
+          "quote": "I'll go with IPOs coming back right now... I think two of those file and it is going to be gangbusters. The public wants these shares.",
           "quoteStartMs": 4801000,
-          "ticker": null,
+          "ticker": "IPO",
           "direction": "up",
-          "sinceReturn": null,
+          "sinceReturn": 0.17306897976042948,
+          "history": [
+            [
+              "2026-01-12",
+              48.42
+            ],
+            [
+              "2026-01-14",
+              47.85
+            ],
+            [
+              "2026-01-16",
+              48.14
+            ],
+            [
+              "2026-01-21",
+              46.85
+            ],
+            [
+              "2026-01-23",
+              47.28
+            ],
+            [
+              "2026-01-27",
+              47.38
+            ],
+            [
+              "2026-01-29",
+              46.12
+            ],
+            [
+              "2026-02-02",
+              44.33
+            ],
+            [
+              "2026-02-04",
+              42.75
+            ],
+            [
+              "2026-02-06",
+              44.24
+            ],
+            [
+              "2026-02-10",
+              45.5
+            ],
+            [
+              "2026-02-12",
+              42.68
+            ],
+            [
+              "2026-02-17",
+              43.29
+            ],
+            [
+              "2026-02-19",
+              44.7
+            ],
+            [
+              "2026-02-23",
+              43.39
+            ],
+            [
+              "2026-02-25",
+              45.11
+            ],
+            [
+              "2026-02-27",
+              43.53
+            ],
+            [
+              "2026-03-03",
+              42.71
+            ],
+            [
+              "2026-03-05",
+              43.19
+            ],
+            [
+              "2026-03-09",
+              43.38
+            ],
+            [
+              "2026-03-11",
+              43.8
+            ],
+            [
+              "2026-03-13",
+              42.65
+            ],
+            [
+              "2026-03-17",
+              44.34
+            ],
+            [
+              "2026-03-19",
+              43.48
+            ],
+            [
+              "2026-03-23",
+              43.49
+            ],
+            [
+              "2026-03-25",
+              43.43
+            ],
+            [
+              "2026-03-27",
+              40.57
+            ],
+            [
+              "2026-03-31",
+              41.88
+            ],
+            [
+              "2026-04-02",
+              42.43
+            ],
+            [
+              "2026-04-07",
+              42.43
+            ],
+            [
+              "2026-04-09",
+              43.53
+            ],
+            [
+              "2026-04-13",
+              46.19
+            ],
+            [
+              "2026-04-15",
+              48.04
+            ],
+            [
+              "2026-04-17",
+              48.79
+            ],
+            [
+              "2026-04-21",
+              48.74
+            ],
+            [
+              "2026-04-23",
+              48.95
+            ],
+            [
+              "2026-04-27",
+              49.22
+            ],
+            [
+              "2026-04-29",
+              48.02
+            ],
+            [
+              "2026-05-01",
+              49.67
+            ],
+            [
+              "2026-05-05",
+              51.21
+            ],
+            [
+              "2026-05-07",
+              50.37
+            ],
+            [
+              "2026-05-11",
+              49.7
+            ],
+            [
+              "2026-05-13",
+              49.77
+            ],
+            [
+              "2026-05-15",
+              49.04
+            ],
+            [
+              "2026-05-19",
+              49.3
+            ],
+            [
+              "2026-05-21",
+              52.84
+            ],
+            [
+              "2026-05-26",
+              53.8
+            ],
+            [
+              "2026-05-28",
+              55.76
+            ],
+            [
+              "2026-06-01",
+              58.12
+            ],
+            [
+              "2026-06-03",
+              56.85
+            ],
+            [
+              "2026-06-05",
+              53.53
+            ],
+            [
+              "2026-06-09",
+              53.85
+            ],
+            [
+              "2026-06-11",
+              55.07
+            ],
+            [
+              "2026-06-15",
+              58.05
+            ],
+            [
+              "2026-06-17",
+              57.49
+            ],
+            [
+              "2026-06-22",
+              58.94
+            ],
+            [
+              "2026-06-24",
+              56.55
+            ],
+            [
+              "2026-06-25",
+              56.8
+            ]
+          ],
           "proxyTicker": null,
           "proxyNote": null
         },
@@ -2801,9 +3128,9 @@
           "host": "Jason",
           "guestName": null,
           "category": "Most anticipated media",
-          "pick": "Avengers: Doomsday",
-          "quote": "I also like Avengers: Doomsday. Doomsday will be good. Avengers: Doomsday is going to be, I think, fantastic. Robert Downey Jr. as Dr. Doomsday.",
-          "quoteStartMs": 5207000,
+          "pick": "The Odyssey (Christopher Nolan) / Dune Part 3 / Avengers: Doomsday",
+          "quote": "I'm also a big fan of Timothée Chalamet and Dune Part 3 is coming out. I also like Avengers: Doomsday.",
+          "quoteStartMs": 5188000,
           "ticker": null,
           "direction": null,
           "sinceReturn": null,
@@ -2901,7 +3228,7 @@
           "guestName": null,
           "category": "Biggest political loser",
           "pick": "Progressivism",
-          "quote": "The biggest political loser of 2025 is going to be progressivism... What do all of these countries look like by the end of '25? It's very much a repudiation of this class-based identity politics.",
+          "quote": "The biggest political loser of 2025 is going to be progressivism... what you're going to see in 2025, in Canada, Justin Trudeau is going to lose massively to Pierre Poilievre. In Germany, AfD looks like they will win.",
           "quoteStartMs": 775000,
           "ticker": null,
           "direction": null,
@@ -2913,7 +3240,7 @@
           "host": "Jason",
           "guestName": null,
           "category": "Biggest political loser",
-          "pick": "Racist vocal minority on both sides",
+          "pick": "Racist vocal minority of each party",
           "quote": "I said the racist vocal minority of each one of these parties. And there's a little bit of this on either side. You have DEI on one side, and then you just have outright racism on the other side.",
           "quoteStartMs": 889000,
           "ticker": null,
@@ -2926,12 +3253,12 @@
           "host": "Friedberg",
           "guestName": null,
           "category": "Biggest business winner",
-          "pick": "Autonomous hardware / robotics (year of the robot)",
+          "pick": "Autonomous hardware / robotics (year of the robots)",
           "quote": "I feel like we're at a really interesting inflection point that is going to make 2025 the year of autonomous hardware or robotics... I think 2025 will be the year of the robot.",
           "quoteStartMs": 1064000,
           "ticker": null,
           "direction": "up",
-          "sinceReturn": 0.1564195298372513,
+          "sinceReturn": 0.10518384569017486,
           "history": [
             [
               "2025-01-06",
@@ -3142,8 +3469,12 @@
               36.24
             ],
             [
-              "2026-06-18",
-              38.37
+              "2026-06-22",
+              38.33
+            ],
+            [
+              "2026-06-25",
+              36.67
             ]
           ],
           "proxyTicker": "BOTZ",
@@ -3153,14 +3484,232 @@
           "host": "Guest",
           "guestName": "Gavin Baker",
           "category": "Biggest business winner",
-          "pick": "Big businesses using AI / FSD adoption; inference compute winners",
-          "quote": "I think for a while it's going to be big businesses are winners, big businesses that use AI thoughtfully... inference compute is going to be the kind of derivative winner of that. We're going to run out of GPUs, accelerators, compute in 2025.",
+          "pick": "Year of the robots / FSD mainstream adoption; big businesses using AI; inference compute",
+          "quote": "Profoundly agree. I think year of the robots, um, inclusive of FSD... I think big businesses are winners, big businesses that use AI thoughtfully... inference compute is going to be the kind of derivative winner of that.",
           "quoteStartMs": 1283000,
           "ticker": null,
           "direction": "up",
-          "sinceReturn": null,
-          "proxyTicker": null,
-          "proxyNote": null
+          "sinceReturn": 0.10518384569017486,
+          "history": [
+            [
+              "2025-01-06",
+              33.18
+            ],
+            [
+              "2025-01-16",
+              32.59
+            ],
+            [
+              "2025-01-28",
+              33.78
+            ],
+            [
+              "2025-02-06",
+              33.55
+            ],
+            [
+              "2025-02-18",
+              34.49
+            ],
+            [
+              "2025-02-27",
+              32.22
+            ],
+            [
+              "2025-03-10",
+              29.99
+            ],
+            [
+              "2025-03-19",
+              30.83
+            ],
+            [
+              "2025-03-28",
+              28.95
+            ],
+            [
+              "2025-04-08",
+              24.51
+            ],
+            [
+              "2025-04-17",
+              26.62
+            ],
+            [
+              "2025-04-29",
+              28.64
+            ],
+            [
+              "2025-05-08",
+              29.49
+            ],
+            [
+              "2025-05-19",
+              30.99
+            ],
+            [
+              "2025-05-29",
+              31.31
+            ],
+            [
+              "2025-06-09",
+              31.4
+            ],
+            [
+              "2025-06-18",
+              31.04
+            ],
+            [
+              "2025-06-30",
+              32.65
+            ],
+            [
+              "2025-07-10",
+              32.54
+            ],
+            [
+              "2025-07-21",
+              33.01
+            ],
+            [
+              "2025-07-30",
+              33.7
+            ],
+            [
+              "2025-08-08",
+              33.6
+            ],
+            [
+              "2025-08-19",
+              33.48
+            ],
+            [
+              "2025-08-28",
+              34.07
+            ],
+            [
+              "2025-09-09",
+              33.82
+            ],
+            [
+              "2025-09-18",
+              35.03
+            ],
+            [
+              "2025-09-29",
+              35.08
+            ],
+            [
+              "2025-10-08",
+              37.24
+            ],
+            [
+              "2025-10-17",
+              36.05
+            ],
+            [
+              "2025-10-28",
+              38.06
+            ],
+            [
+              "2025-11-06",
+              35.98
+            ],
+            [
+              "2025-11-17",
+              34.32
+            ],
+            [
+              "2025-11-26",
+              34.87
+            ],
+            [
+              "2025-12-08",
+              36.89
+            ],
+            [
+              "2025-12-17",
+              35
+            ],
+            [
+              "2025-12-29",
+              36.75
+            ],
+            [
+              "2026-01-08",
+              37.73
+            ],
+            [
+              "2026-01-20",
+              37.17
+            ],
+            [
+              "2026-01-29",
+              37.96
+            ],
+            [
+              "2026-02-09",
+              38.14
+            ],
+            [
+              "2026-02-19",
+              38.64
+            ],
+            [
+              "2026-03-02",
+              38.19
+            ],
+            [
+              "2026-03-11",
+              36.3
+            ],
+            [
+              "2026-03-20",
+              33.6
+            ],
+            [
+              "2026-03-31",
+              33.22
+            ],
+            [
+              "2026-04-10",
+              35.43
+            ],
+            [
+              "2026-04-21",
+              36.74
+            ],
+            [
+              "2026-04-30",
+              38.45
+            ],
+            [
+              "2026-05-11",
+              41.31
+            ],
+            [
+              "2026-05-20",
+              39.25
+            ],
+            [
+              "2026-06-01",
+              40.6
+            ],
+            [
+              "2026-06-10",
+              36.24
+            ],
+            [
+              "2026-06-22",
+              38.33
+            ],
+            [
+              "2026-06-25",
+              36.67
+            ]
+          ],
+          "proxyTicker": "BOTZ",
+          "proxyNote": "robotics & AI ETF"
         },
         {
           "host": "Chamath",
@@ -3170,7 +3719,7 @@
           "quote": "I think the biggest business winner of 2025 are going to be dollar-denominated stablecoins... I think stablecoins could quadruple or quintuple by the end of '25.",
           "quoteStartMs": 1393000,
           "ticker": null,
-          "direction": "up",
+          "direction": null,
           "sinceReturn": null,
           "proxyTicker": null,
           "proxyNote": null
@@ -3184,7 +3733,7 @@
           "quoteStartMs": 1742000,
           "ticker": "TSLA",
           "direction": "up",
-          "sinceReturn": 0.4218579509130567,
+          "sinceReturn": 0.3212565606862345,
           "history": [
             [
               "2025-01-06",
@@ -3395,8 +3944,12 @@
               136.93
             ],
             [
-              "2026-06-18",
-              142.19
+              "2026-06-22",
+              138.08
+            ],
+            [
+              "2026-06-25",
+              132.13
             ]
           ],
           "proxyTicker": null,
@@ -3404,11 +3957,11 @@
           "basket": [
             {
               "ticker": "TSLA",
-              "sinceReturn": -0.025690305315655033
+              "sinceReturn": -0.0842354944653935
             },
             {
               "ticker": "GOOGL",
-              "sinceReturn": 0.8694062071417685
+              "sinceReturn": 0.7267486158378624
             }
           ]
         },
@@ -3429,12 +3982,12 @@
           "host": "Chamath",
           "guestName": null,
           "category": "Biggest business loser",
-          "pick": "Magnificent Seven (Mag 7) — index concentration unwind",
-          "quote": "I think when we look back, the absolute dollar drawdown of the Mag Seven will be in the trillions of dollars... I think it's approaching 40%... they've generally foreshadowed a big drawdown.",
+          "pick": "Magnificent Seven (Mag 7) — absolute dollar drawdown in trillions",
+          "quote": "I think when we look back, the absolute dollar drawdown of the Mag Seven will be in the trillions of dollars... I think it's approaching 40% [index concentration] and I think that when you look at these historic concentrations, they've generally foreshadowed a big drawdown.",
           "quoteStartMs": 2394000,
           "ticker": null,
           "direction": "down",
-          "sinceReturn": 0.15495940698905755,
+          "sinceReturn": 0.08471584892340284,
           "history": [
             [
               "2025-01-06",
@@ -3645,8 +4198,12 @@
               64.22
             ],
             [
-              "2026-06-18",
-              65.44
+              "2026-06-22",
+              64.02
+            ],
+            [
+              "2026-06-25",
+              61.46
             ]
           ],
           "proxyTicker": "MAGS",
@@ -3656,12 +4213,12 @@
           "host": "Friedberg",
           "guestName": null,
           "category": "Biggest business loser",
-          "pick": "Traditional defense/aerospace primes — Boeing, Lockheed Martin, Raytheon (Defense 1.0)",
-          "quote": "I went with the kind of old defense and aerospace providers, Boeing, Lockheed Martin, Raytheon, Defense 1.0... I think that this government contracting business across the board is going to be deeply challenged this year.",
+          "pick": "Legacy defense and aerospace primes (Boeing, Lockheed Martin, Raytheon)",
+          "quote": "I went with the kind of old defense and aerospace providers, Boeing, Lockheed Martin, Raytheon, Defense 1.0... I think that this government contracting business across the board is going to be deeply challenged this year with all the new blood.",
           "quoteStartMs": 2487000,
           "ticker": "BA",
           "direction": "down",
-          "sinceReturn": 0.3424121654519878,
+          "sinceReturn": 0.35163449890953075,
           "history": [
             [
               "2025-01-06",
@@ -3872,8 +4429,12 @@
               130.18
             ],
             [
-              "2026-06-18",
-              134.24
+              "2026-06-22",
+              131.53
+            ],
+            [
+              "2026-06-25",
+              135.16
             ]
           ],
           "proxyTicker": null,
@@ -3881,15 +4442,15 @@
           "basket": [
             {
               "ticker": "BA",
-              "sinceReturn": 0.3041339735332006
+              "sinceReturn": 0.30612483897411874
             },
             {
               "ticker": "LMT",
-              "sinceReturn": 0.09645922746781113
+              "sinceReturn": 0.09400214592274679
             },
             {
               "ticker": "RTX",
-              "sinceReturn": 0.6266432953549518
+              "sinceReturn": 0.6547765118317267
             }
           ]
         },
@@ -3897,8 +4458,8 @@
           "host": "Jason",
           "guestName": null,
           "category": "Biggest business loser",
-          "pick": "OpenAI peak valuation / collapse",
-          "quote": "I think OpenAI's valuation made no sense... I think that there is a non-zero chance they could lose their process on these court cases of transferring $157 billion in value from a nonprofit into a for-profit.",
+          "pick": "OpenAI — peak valuation, losing lead to Google/xAI/Microsoft",
+          "quote": "I think the one that is the most overpriced of all of this, and I think is going to see their peak valuation, is OpenAI... I think OpenAI's valuation made no sense... that $157 billion valuation and make it the peak valuation of the company.",
           "quoteStartMs": 2630000,
           "ticker": null,
           "direction": "down",
@@ -3910,8 +4471,8 @@
           "host": "Chamath",
           "guestName": null,
           "category": "Biggest business deal",
-          "pick": "Wave of auto OEM mega mergers (Honda/Nissan as signal)",
-          "quote": "I think that this is the year that we will see the collapse of the traditional auto OEMs... I think the result of that will be a wave of auto mega mergers.",
+          "pick": "Collapse and mega-mergers among traditional auto OEMs",
+          "quote": "I think that this is the year that we will see the collapse of the traditional auto OEMs... I think is a bit of a signal to what the industry has to do, which is to go through a massive wave of consolidation.",
           "quoteStartMs": 2825000,
           "ticker": null,
           "direction": null,
@@ -3923,7 +4484,7 @@
           "host": "Friedberg",
           "guestName": null,
           "category": "Biggest business deal",
-          "pick": "Massive funding deals for hardware/manufacturing buildout in the US (robotics/autonomous systems)",
+          "pick": "Massive funding deals for hardware/robotics manufacturing buildout in the US",
           "quote": "I do think that there's going to be massive funding deals similar to what we saw this past year for compute buildout. I think we're going to see massive funding deals for hardware-based manufacturing buildout in the United States.",
           "quoteStartMs": 2991000,
           "ticker": null,
@@ -3936,236 +4497,9 @@
           "host": "Guest",
           "guestName": "Gavin Baker",
           "category": "Biggest business deal",
-          "pick": "Tidal wave of M&A; something happens with Intel; frontier AI labs acquired",
-          "quote": "I think there's going to— you're going to see a tidal wave of M&A after 4 years of not being able to get anything done... something will happen with Intel... I do think you will see a lot of these frontier AI labs that are independent be acquired.",
+          "pick": "Tidal wave of M&A; something happening with Intel; frontier AI labs acquired",
+          "quote": "I think there's going to— you're going to see a tidal wave of M&A after 4 years of not being able to get anything done... something will happen with Intel... you will see a lot of these frontier AI labs that are independent be acquired.",
           "quoteStartMs": 3060000,
-          "ticker": "INTC",
-          "direction": null,
-          "sinceReturn": 5.743331655762456,
-          "history": [
-            [
-              "2025-01-06",
-              19.87
-            ],
-            [
-              "2025-01-16",
-              19.67
-            ],
-            [
-              "2025-01-28",
-              19.8
-            ],
-            [
-              "2025-02-06",
-              19.38
-            ],
-            [
-              "2025-02-18",
-              27.39
-            ],
-            [
-              "2025-02-27",
-              23.09
-            ],
-            [
-              "2025-03-10",
-              19.93
-            ],
-            [
-              "2025-03-19",
-              24.12
-            ],
-            [
-              "2025-03-28",
-              22.71
-            ],
-            [
-              "2025-04-08",
-              18.13
-            ],
-            [
-              "2025-04-17",
-              18.93
-            ],
-            [
-              "2025-04-29",
-              20.34
-            ],
-            [
-              "2025-05-08",
-              21
-            ],
-            [
-              "2025-05-19",
-              21.38
-            ],
-            [
-              "2025-05-29",
-              20.25
-            ],
-            [
-              "2025-06-09",
-              20.48
-            ],
-            [
-              "2025-06-18",
-              21.49
-            ],
-            [
-              "2025-06-30",
-              22.4
-            ],
-            [
-              "2025-07-10",
-              23.82
-            ],
-            [
-              "2025-07-21",
-              23.26
-            ],
-            [
-              "2025-07-30",
-              20.34
-            ],
-            [
-              "2025-08-08",
-              19.95
-            ],
-            [
-              "2025-08-19",
-              25.31
-            ],
-            [
-              "2025-08-28",
-              24.93
-            ],
-            [
-              "2025-09-09",
-              24.44
-            ],
-            [
-              "2025-09-18",
-              30.57
-            ],
-            [
-              "2025-09-29",
-              34.48
-            ],
-            [
-              "2025-10-08",
-              37.43
-            ],
-            [
-              "2025-10-17",
-              37.01
-            ],
-            [
-              "2025-10-28",
-              41.53
-            ],
-            [
-              "2025-11-06",
-              37.24
-            ],
-            [
-              "2025-11-17",
-              34.71
-            ],
-            [
-              "2025-11-26",
-              36.81
-            ],
-            [
-              "2025-12-08",
-              40.3
-            ],
-            [
-              "2025-12-17",
-              36.05
-            ],
-            [
-              "2025-12-29",
-              36.68
-            ],
-            [
-              "2026-01-08",
-              41.11
-            ],
-            [
-              "2026-01-20",
-              48.56
-            ],
-            [
-              "2026-01-29",
-              48.66
-            ],
-            [
-              "2026-02-09",
-              50.24
-            ],
-            [
-              "2026-02-19",
-              44.62
-            ],
-            [
-              "2026-03-02",
-              45.5
-            ],
-            [
-              "2026-03-11",
-              47.98
-            ],
-            [
-              "2026-03-20",
-              43.87
-            ],
-            [
-              "2026-03-31",
-              44.13
-            ],
-            [
-              "2026-04-10",
-              62.38
-            ],
-            [
-              "2026-04-21",
-              66.26
-            ],
-            [
-              "2026-04-30",
-              94.48
-            ],
-            [
-              "2026-05-11",
-              129.44
-            ],
-            [
-              "2026-05-20",
-              118.96
-            ],
-            [
-              "2026-06-01",
-              109.33
-            ],
-            [
-              "2026-06-10",
-              107.04
-            ],
-            [
-              "2026-06-18",
-              133.99
-            ]
-          ],
-          "proxyTicker": null,
-          "proxyNote": null
-        },
-        {
-          "host": "Jason",
-          "guestName": null,
-          "category": "Biggest business deal",
-          "pick": "Consolidation in autonomous transportation — Amazon/DoorDash/Uber/Waymo partnerships or acquisitions",
-          "quote": "I think there is going to be some partnerships that will happen between Amazon, DoorDash, Uber, Tesla, Waymo, and that cohort... Tesla could buy Uber right now for about 10% of its market cap, and Waymo could spin out and partner with Uber.",
-          "quoteStartMs": 3128000,
           "ticker": null,
           "direction": null,
           "sinceReturn": null,
@@ -4173,12 +4507,12 @@
           "proxyNote": null
         },
         {
-          "host": "Guest",
-          "guestName": "Gavin Baker",
-          "category": "Most contrarian belief",
-          "pick": "US prints at least one year of >5% real GDP growth; frontier labs stop releasing leading-edge models publicly",
-          "quote": "I think that America over the next, at some point over the next 4 years, will print at least 1 year of greater than 5% GDP growth, real GDP growth... I think you'll see the frontier labs stop releasing their leading-edge models to prevent knowledge distillation.",
-          "quoteStartMs": 3795000,
+          "host": "Jason",
+          "guestName": null,
+          "category": "Biggest business deal",
+          "pick": "Consolidation / partnerships in autonomy and delivery (Tesla, Uber, Waymo, Amazon, DoorDash)",
+          "quote": "I think there is going to be some partnerships that will happen between Amazon, DoorDash, Uber, Tesla, Waymo, and that cohort... Tesla could buy Uber right now for about 10% of its market cap, and Waymo could spin out and partner with Uber.",
+          "quoteStartMs": 3128000,
           "ticker": null,
           "direction": null,
           "sinceReturn": null,
@@ -4189,9 +4523,22 @@
           "host": "Chamath",
           "guestName": null,
           "category": "Most contrarian belief",
-          "pick": "Banking crisis at a major mainline US bank",
-          "quote": "I think that you're going to see a banking crisis in one of the major mainline banks... I think that there is a non-trivial risk... if you have a mark-to-market problem, if you have a credit default problem.",
+          "pick": "Banking crisis at a major mainline bank",
+          "quote": "I think that you're going to see a banking crisis in one of the major mainline banks.",
           "quoteStartMs": 3645000,
+          "ticker": null,
+          "direction": null,
+          "sinceReturn": null,
+          "proxyTicker": null,
+          "proxyNote": null
+        },
+        {
+          "host": "Guest",
+          "guestName": "Gavin Baker",
+          "category": "Most contrarian belief",
+          "pick": "US prints at least one year of >5% real GDP growth; frontier AI labs stop releasing leading-edge models publicly",
+          "quote": "I think that America over the next, at some point over the next 4 years, will print at least 1 year of greater than 5% GDP growth, real GDP growth... frontier labs stop releasing their leading-edge models to prevent knowledge distillation.",
+          "quoteStartMs": 3795000,
           "ticker": null,
           "direction": null,
           "sinceReturn": null,
@@ -4215,8 +4562,8 @@
           "host": "Jason",
           "guestName": null,
           "category": "Most contrarian belief",
-          "pick": "OpenAI total collapse — loses nonprofit-to-for-profit transition, becomes #4 AI player",
-          "quote": "My most contrarian belief was OpenAI loses its lead, loses its nonprofit to for-profit transition, and becomes the number 4 player in AI. The total collapse of OpenAI is my most contrarian prediction for 2024.",
+          "pick": "OpenAI total collapse — loses nonprofit-to-for-profit conversion, becomes #4 AI player",
+          "quote": "OpenAI loses its lead, loses its nonprofit to for-profit transition, and becomes the number 4 player in AI. The total collapse of OpenAI is my most contrarian prediction for 2024.",
           "quoteStartMs": 4269000,
           "ticker": null,
           "direction": null,
@@ -4228,12 +4575,12 @@
           "host": "Guest",
           "guestName": "Gavin Baker",
           "category": "Best performing asset",
-          "pick": "High-bandwidth memory (HBM) — SK Hynix and Micron",
-          "quote": "I think the companies that make high-bandwidth memory... today there's two companies that can make it: Hynix and Micron... HBM memory, it's in NVIDIA GPUs, AMD GPUs, Amazon Trainiums... high bandwidth memory would be my pick.",
+          "pick": "High-bandwidth memory (HBM) companies — SK Hynix and Micron",
+          "quote": "I think the companies that make high-bandwidth memory... today there's two companies that can make it: Hynix and Micron... high bandwidth memory would be my pick.",
           "quoteStartMs": 4449000,
           "ticker": "MU",
           "direction": "up",
-          "sinceReturn": 10.424440862381624,
+          "sinceReturn": 10.595807979044933,
           "history": [
             [
               "2025-01-06",
@@ -4444,8 +4791,12 @@
               891.88
             ],
             [
-              "2026-06-18",
-              1133.99
+              "2026-06-22",
+              1211.38
+            ],
+            [
+              "2026-06-25",
+              1150.9999
             ]
           ],
           "proxyTicker": null,
@@ -4455,8 +4806,8 @@
           "host": "Chamath",
           "guestName": null,
           "category": "Best performing asset",
-          "pick": "CDS (credit default swaps) — insurance against credit/financial crisis",
-          "quote": "I would be long CDS. So what am I buying? I am buying insurance... if it hits, it will be the best performing asset of 2025. It will be the equivalent of Ackman buying CDS right at the beginning of the COVID crisis.",
+          "pick": "Credit default swaps (CDS) — long protection as insurance against credit/bank crisis",
+          "quote": "I would be long CDS. So what am I buying? I am buying insurance... if it hits, it will be the best performing asset of 2025.",
           "quoteStartMs": 4506000,
           "ticker": null,
           "direction": "up",
@@ -4473,7 +4824,7 @@
           "quoteStartMs": 4660000,
           "ticker": "KWEB",
           "direction": "up",
-          "sinceReturn": -0.11407511407511409,
+          "sinceReturn": -0.1651456651456651,
           "history": [
             [
               "2025-01-06",
@@ -4684,8 +5035,12 @@
               26.44
             ],
             [
-              "2026-06-18",
-              25.24
+              "2026-06-22",
+              25.05
+            ],
+            [
+              "2026-06-25",
+              23.785
             ]
           ],
           "proxyTicker": null,
@@ -4696,11 +5051,11 @@
           "guestName": null,
           "category": "Best performing asset",
           "pick": "Magnificent Seven (Mag 7)",
-          "quote": "I think the Mag 7 is going to be the best performing asset... the internal application of AI will allow these companies to have earnings growth that people will not be able to comprehend over the next couple of years.",
+          "quote": "I think the Mag 7 is going to be the best performing asset... the gains we'll see from AI, which they're producing for other companies and for consumers, they're applying first internally.",
           "quoteStartMs": 4930000,
           "ticker": null,
           "direction": "up",
-          "sinceReturn": 0.15495940698905755,
+          "sinceReturn": 0.08471584892340284,
           "history": [
             [
               "2025-01-06",
@@ -4911,8 +5266,12 @@
               64.22
             ],
             [
-              "2026-06-18",
-              65.44
+              "2026-06-22",
+              64.02
+            ],
+            [
+              "2026-06-25",
+              61.46
             ]
           ],
           "proxyTicker": "MAGS",
@@ -4927,7 +5286,7 @@
           "quoteStartMs": 5015000,
           "ticker": null,
           "direction": "down",
-          "sinceReturn": -0.12381982690794652,
+          "sinceReturn": -0.15553697875688444,
           "history": [
             [
               "2025-01-06",
@@ -5138,8 +5497,12 @@
               91.58
             ],
             [
-              "2026-06-18",
-              89.09
+              "2026-06-22",
+              87.31
+            ],
+            [
+              "2026-06-25",
+              85.865
             ]
           ],
           "proxyTicker": "IGV",
@@ -5150,11 +5513,11 @@
           "guestName": null,
           "category": "Worst performing asset",
           "pick": "Software industrial complex (legacy enterprise software companies)",
-          "quote": "I think Gavin just absolutely nailed it. I'm going to double down... the software industrial complex... these are these large bloated, in many cases, enterprise software companies... you can rebuild a lot of these workflows in very efficient ways.",
+          "quote": "I'm going to double down on what he said. I think that there's a term that we will start to use more... the software industrial complex. These are these large bloated... enterprise software companies... I think you're going to start to see fissures in those businesses in 2025.",
           "quoteStartMs": 5086000,
           "ticker": null,
           "direction": "down",
-          "sinceReturn": -0.12381982690794652,
+          "sinceReturn": -0.15553697875688444,
           "history": [
             [
               "2025-01-06",
@@ -5365,8 +5728,12 @@
               91.58
             ],
             [
-              "2026-06-18",
-              89.09
+              "2026-06-22",
+              87.31
+            ],
+            [
+              "2026-06-25",
+              85.865
             ]
           ],
           "proxyTicker": "IGV",
@@ -5381,7 +5748,7 @@
           "quoteStartMs": 5296000,
           "ticker": null,
           "direction": "down",
-          "sinceReturn": -0.12381982690794652,
+          "sinceReturn": -0.15553697875688444,
           "history": [
             [
               "2025-01-06",
@@ -5592,8 +5959,12 @@
               91.58
             ],
             [
-              "2026-06-18",
-              89.09
+              "2026-06-22",
+              87.31
+            ],
+            [
+              "2026-06-25",
+              85.865
             ]
           ],
           "proxyTicker": "IGV",
@@ -5603,9 +5974,9 @@
           "host": "Jason",
           "guestName": null,
           "category": "Worst performing asset",
-          "pick": "Legacy auto OEMs and real estate",
-          "quote": "I think legacy car companies and real estate are going to face continued headwinds and be terrible assets... I just think real estate is the same. If you look at a place like Texas, two years in a row, housing values have gone down.",
-          "quoteStartMs": 5365000,
+          "pick": "Legacy car companies and real estate",
+          "quote": "I think legacy car companies and real estate are going to face continued headwinds and be terrible assets... I think these are gonna be the two worst performing asset, are people in the legacy OEMs... and then I just think real estate is the same.",
+          "quoteStartMs": 5345000,
           "ticker": null,
           "direction": "down",
           "sinceReturn": null,
@@ -5616,8 +5987,8 @@
           "host": "Chamath",
           "guestName": null,
           "category": "Most anticipated trend",
-          "pick": "Small arcane regulatory changes (e.g. supplemental loss ratio) stop — end of 'deep state' can-kicking",
-          "quote": "I think that there are a handful of canaries in the coal mine for the end of the deep state... if we don't move the goalposts here, it is a great sign that the folks that are running the show are the ones that we all elected.",
+          "pick": "End of regulatory can-kicking (supplemental leverage ratio reform as canary for deep state decline)",
+          "quote": "I think that there are a handful of... canaries in the coal mine for the end of the deep state... this obscure thing called the supplemental loss ratio... small arcane regulatory changes that allow us to kick the can down the road stop in its tracks.",
           "quoteStartMs": 5462000,
           "ticker": null,
           "direction": null,
@@ -5629,7 +6000,7 @@
           "host": "Friedberg",
           "guestName": null,
           "category": "Most anticipated trend",
-          "pick": "Nuclear power buildout announcement in the US driven by deregulation",
+          "pick": "Buildout of nuclear power in the US via deregulation",
           "quote": "My most anticipated trend is around the announcement of buildout of nuclear power in the United States in 2025 as a function of deregulation and some new technologies.",
           "quoteStartMs": 5579000,
           "ticker": null,
@@ -5642,7 +6013,7 @@
           "host": "Guest",
           "guestName": "Gavin Baker",
           "category": "Most anticipated trend",
-          "pick": "AI makes more progress per quarter in 2025 than per year in 2023–2024; rapid path toward ASI via reasoning + scaling",
+          "pick": "AI progress accelerates — reasoning/inference scaling creates path to ASI",
           "quote": "I think AI is going to make more progress per quarter in 2025 than it did per year in '23 and '24... you're scaling along 3 axes that are multiplicative with each other... a guy on the Google team said... it's gonna be a straight shot to ASI.",
           "quoteStartMs": 5640000,
           "ticker": null,
@@ -5655,8 +6026,8 @@
           "host": "Jason",
           "guestName": null,
           "category": "Most anticipated trend",
-          "pick": "Exits and DPI surge — M&A and IPOs flood as Lina Khan era ends",
-          "quote": "Mine is that exits and DPI shower down, and we'll have this incredible distribution as the wrath of Lena Khan ends, and M&A and IPOs will surge. That is my prediction, my most anticipated trend.",
+          "pick": "M&A and IPO surge — exits and DPI shower down as Lina Khan era ends",
+          "quote": "Mine is that exits and DPI shower down, and we'll have this incredible distribution as the wrath of Lena Khan ends, and M&A and IPOs will surge.",
           "quoteStartMs": 5813000,
           "ticker": null,
           "direction": null,
@@ -5668,7 +6039,7 @@
           "host": "Chamath",
           "guestName": null,
           "category": "Most anticipated media",
-          "pick": "Declassified government files released by Trump administration (JFK, Epstein, Diddy, etc.)",
+          "pick": "Declassified files released by Trump administration (JFK, Epstein, etc.)",
           "quote": "It is the enormity of the files that are going to get declassified and released by the Trump administration... the JFK files, the Epstein files, Diddy files, the moon landing— who knows what they find.",
           "quoteStartMs": 6006000,
           "ticker": null,
@@ -5681,8 +6052,8 @@
           "host": "Friedberg",
           "guestName": null,
           "category": "Most anticipated media",
-          "pick": "AI video games with dynamic storylines",
-          "quote": "I'm into AI video games. The cost of production comes way down when you use AI, and you can have dynamic storylines... I do think that there's going to be a rewrite of video games in the video game industry with the variety of AI kind of capabilities.",
+          "pick": "AI-powered video games",
+          "quote": "I'm into AI video games. The cost of production comes way down when you use AI, and you can have dynamic storylines, you can have new gameplay concepts, things that don't exist today.",
           "quoteStartMs": 6055000,
           "ticker": null,
           "direction": null,
@@ -5695,7 +6066,7 @@
           "guestName": "Gavin Baker",
           "category": "Most anticipated media",
           "pick": "1923 Season 2",
-          "quote": "Unquestioned, 1923 season 2. I'm normally a science fiction kind of fantasy kind of guy when it comes to TV, but 1883 and 1923 were the first TV shows that kind of hit me the way Game of Thrones did.",
+          "quote": "Unquestioned, 1923 season 2. I'm normally a science fiction kind of fantasy... but 1883 and 1923 were the first TV shows that kind of hit me the way Game of Thrones did.",
           "quoteStartMs": 6110000,
           "ticker": null,
           "direction": null,
@@ -5707,9 +6078,9 @@
           "host": "Jason",
           "guestName": null,
           "category": "Most anticipated media",
-          "pick": "Legacy media outlets (Washington Post, CNN, LA Times) steering toward the middle",
+          "pick": "Legacy media chaos — Washington Post, CNN, LA Times steering toward the middle",
           "quote": "I think my most anticipated media is seeing what happens with legacy media outlets owned by billionaires... Washington Post, CNN, and LA Times specifically are steering towards the middle and trying to get back to classic journalism.",
-          "quoteStartMs": 5813000,
+          "quoteStartMs": 5970000,
           "ticker": null,
           "direction": null,
           "sinceReturn": null,
