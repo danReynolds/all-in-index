@@ -100,6 +100,47 @@ function buildDigest(t: Transcript, openingCount = 60, sampleCount = 60, perClus
   );
 }
 
+const HOST_ALIASES: Record<string, string[]> = {
+  Chamath: ["chamath"],
+  Jason: ["jason", "jcal", "j-cal", "calacanis"],
+  Sacks: ["sacks"],
+  Friedberg: ["friedberg", "freeberg"],
+};
+
+/**
+ * Clusters that refer to their OWN mapped host by name in the third person.
+ * A speaker doesn't name themselves, so such a cluster has fused that host with
+ * whoever is talking about them — a diarization merge. This is a DETERMINISTIC
+ * backstop to the model's self-reported merge count, which is unreliable (it
+ * reported a clean 6/6 on E250 while cluster C demonstrably fused Chamath +
+ * Gerstner). Self/show introductions ("I'm Jason", "welcome … Jason") are not
+ * third-person references and don't count.
+ */
+export function selfReferencedClusters(
+  map: Record<string, string>,
+  utterances: Array<{ cluster: string; text: string }>,
+): string[] {
+  const flagged = new Set<string>();
+  for (const u of utterances) {
+    const aliases = HOST_ALIASES[map[u.cluster]];
+    if (!aliases || flagged.has(u.cluster)) continue;
+    outer: for (const n of aliases) {
+      const re = new RegExp(`(.{0,24})\\b${n}\\b`, "gi");
+      let m: RegExpExecArray | null;
+      while ((m = re.exec(u.text)) !== null) {
+        // Skip a self-introduction: a name-intro keyword followed only by name
+        // words up to this alias — "I'm Jason Calacanis", "I'm David Sacks",
+        // "this is Chamath". A genuine third-person reference ("Chamath teed
+        // this up") has the name standing on its own, so it still flags.
+        if (/\b(i'?m|i am|this is|my name is)\s+(\w+\s+){0,2}$/i.test(m[1])) continue;
+        flagged.add(u.cluster);
+        break outer;
+      }
+    }
+  }
+  return [...flagged];
+}
+
 /**
  * Resolve diarization clusters to host names and apply the mapping to the
  * transcript in place (mutates and returns it). When episode metadata is
@@ -145,8 +186,17 @@ ${digest}`;
   t.speakerMap = map;
   t.speakerConfidence = conf;
   t.speakerMapNotes = result.notes;
-  t.distinctSpeakers = result.distinctSpeakers;
-  t.mergedClusters = result.mergedClusters ?? [];
+
+  // Deterministic merge guard (see selfReferencedClusters): the model's own
+  // merge-count is unreliable (on E250 it reported a clean 6/6 while cluster C
+  // demonstrably fused Chamath + Gerstner), so we also detect it in code.
+  const merged = new Set([...(result.mergedClusters ?? []), ...selfReferencedClusters(map, t.utterances)]);
+  const mergedArr = [...merged];
+  t.mergedClusters = mergedArr;
+  // A flagged cluster fuses ≥2 people, so the true speaker count is at least
+  // clusterCount + (one extra per merged cluster) — this is what trips the
+  // self-heal's `distinctSpeakers > clusterCount` check.
+  t.distinctSpeakers = Math.max(result.distinctSpeakers, clusters.length + mergedArr.length);
   for (const u of t.utterances) u.speaker = map[u.cluster] ?? "Unknown";
 
   const summary = result.mapping
