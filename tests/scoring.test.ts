@@ -5,6 +5,7 @@ import { toHoldingRow } from "../lib/projections";
 import { isMacroAsset, proxyAssetKind } from "../lib/assets";
 import { MAX_PUBLISHED_QUOTE_CHARS, trimPublishedQuote } from "../lib/quotes";
 import { auditTranscriptCandidates } from "../pipeline/take-candidate-audit";
+import { selfReferencedClusters } from "../pipeline/speakers";
 import { attachSectorProxy, shouldKeepThesisForIndex } from "../pipeline/build-index";
 import { validateIndexSnapshot } from "../pipeline/quality";
 import { dedupeOverlappingTheses, repairQuoteOwnership, snapQuoteTimestamps, stampAttribution } from "../pipeline/run-episode";
@@ -748,6 +749,24 @@ test("prediction-round transcript picks are covered by audited receipts", () => 
     software?.matches.some((m) => /software industrial complex|saas/i.test(m.company)),
     true,
   );
+});
+
+test("a host cluster that names ITSELF in the third person is flagged as a merge", () => {
+  // The E250 hole: the namer reported a clean speaker count, but cluster C
+  // (mapped Chamath) contained "Chamath teed this up" — a third-person self-
+  // reference only possible if a second speaker (Gerstner) was fused into it.
+  // The deterministic guard catches this regardless of what the model reported.
+  const map = { A: "Jason", C: "Chamath", G: "Guest", S: "Sacks" };
+  const utterances = [
+    { cluster: "A", text: "I'm Jason Calacanis, welcome to episode 250 of the All-In podcast." }, // self-intro, not 3rd person
+    { cluster: "C", text: "You know, Chamath teed this up perfectly — I'm an investor in OpenAI." }, // fused: refers to its own host
+    { cluster: "G", text: "Chamath makes a great point about the supercycle." }, // a guest referring to Chamath: fine, not a host cluster
+    { cluster: "S", text: "I think the market is wildly overvalued right now." }, // clean host cluster
+  ];
+
+  // Only cluster C is flagged: A's mention is a self-intro, G isn't a host
+  // cluster, and S never names itself.
+  assert.deepEqual(selfReferencedClusters(map, utterances), ["C"]);
 });
 
 test("explicit pair-trade language is not suppressed by startup context", () => {
