@@ -1378,5 +1378,9 @@
   "us-electric-utilities-sector": {
     "description": "Sector encompassing US companies that generate, transmit, and distribute electric power to consumers.",
     "domain": null
+  },
+  "cbrs": {
+    "description": "Cerebras Systems designs and manufactures large-scale AI accelerator chips and systems for deep learning workloads.",
+    "domain": "cerebras.net"
   }
 }
