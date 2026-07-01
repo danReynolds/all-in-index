@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T00:55:20.526Z",
+  "generatedAt": "2026-07-01T07:35:58.343Z",
   "holdings": [
     {
       "slug": "nvda",
@@ -11389,13 +11389,13 @@
         "asOf": "2026-07-01",
         "anchorDate": "2025-10-10",
         "basePrice": 428000,
-        "latestPrice": 2616000,
+        "latestPrice": 2560000,
         "returns": {
           "1m": 0.4158878504672897,
           "3m": 0.75,
           "6m": 1.3995327102803738,
           "1y": null,
-          "since": 5.11214953271028
+          "since": 4.981308411214953
         },
         "history": [
           [
@@ -11636,7 +11636,7 @@
           ],
           [
             "2026-07-01",
-            2616000
+            2560000
           ]
         ],
         "source": "yahoo"
@@ -11689,13 +11689,13 @@
         "asOf": "2026-07-01",
         "anchorDate": "2026-05-08",
         "basePrice": 268500,
-        "latestPrice": 328750,
+        "latestPrice": 314500,
         "returns": {
           "1m": 0.1005586592178771,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": 0.22439478584729983
+          "since": 0.1713221601489758
         },
         "history": [
           [
@@ -11844,7 +11844,7 @@
           ],
           [
             "2026-07-01",
-            328750
+            314500
           ]
         ],
         "source": "yahoo"
@@ -12205,13 +12205,13 @@
         "asOf": "2026-07-01",
         "anchorDate": "2026-05-01",
         "basePrice": 11.11,
-        "latestPrice": 13.07,
+        "latestPrice": 13.7,
         "returns": {
           "1m": -0.08640864086408633,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": 0.1764176417641765
+          "since": 0.23312331233123312
         },
         "history": [
           [
@@ -12373,6 +12373,10 @@
           [
             "2026-06-29",
             13.07
+          ],
+          [
+            "2026-06-30",
+            13.7
           ]
         ],
         "source": "yahoo"
@@ -30960,13 +30964,13 @@
         "asOf": "2026-07-01",
         "anchorDate": "2024-07-26",
         "basePrice": 256.16,
-        "latestPrice": 763.14,
+        "latestPrice": 701.09,
         "returns": {
           "1m": 0.0379059962523422,
           "3m": 0.17629606495940023,
           "6m": 0.45904903185509044,
           "1y": 0.8433010618363521,
-          "since": 1.9791536539662706
+          "since": 1.736922236102436
         },
         "history": [
           [
@@ -31186,8 +31190,8 @@
             680.92
           ],
           [
-            "2026-06-30",
-            763.14
+            "2026-06-26",
+            701.09
           ]
         ],
         "source": "yahoo"
@@ -33491,26 +33495,6 @@
     "outperformance": 0.12962499999999988,
     "constituents": [
       {
-        "slug": "000660.ks",
-        "company": "SK Hynix",
-        "ticker": "000660.KS",
-        "sourceSymbol": "000660.KS",
-        "currency": "KRW",
-        "direction": "long",
-        "callTypes": [
-          "explicit_long"
-        ],
-        "entryDate": "2026-05-08",
-        "entryPrice": 1686000,
-        "latestPrice": 2616000,
-        "sinceReturn": 0.5516014234875444,
-        "benchmarkReturn": 0.012404761259184882,
-        "alpha": 0.5391966622283595,
-        "hosts": [
-          "Guest"
-        ]
-      },
-      {
         "slug": "mu",
         "company": "Micron Technology",
         "ticker": "MU",
@@ -33531,6 +33515,26 @@
         ]
       },
       {
+        "slug": "000660.ks",
+        "company": "SK Hynix",
+        "ticker": "000660.KS",
+        "sourceSymbol": "000660.KS",
+        "currency": "KRW",
+        "direction": "long",
+        "callTypes": [
+          "explicit_long"
+        ],
+        "entryDate": "2026-05-08",
+        "entryPrice": 1686000,
+        "latestPrice": 2560000,
+        "sinceReturn": 0.5183867141162515,
+        "benchmarkReturn": 0.012404761259184882,
+        "alpha": 0.5059819528570666,
+        "hosts": [
+          "Guest"
+        ]
+      },
+      {
         "slug": "005930.ks",
         "company": "Samsung",
         "ticker": "005930.KS",
@@ -33542,10 +33546,10 @@
         ],
         "entryDate": "2026-05-08",
         "entryPrice": 268500,
-        "latestPrice": 329000,
-        "sinceReturn": 0.22532588454376157,
+        "latestPrice": 314500,
+        "sinceReturn": 0.17132216014897583,
         "benchmarkReturn": 0.012404761259184882,
-        "alpha": 0.21292112328457669,
+        "alpha": 0.15891739888979095,
         "hosts": [
           "Guest"
         ]
@@ -34228,14 +34232,14 @@
       "guest": "Brad Gerstner",
       "slug": "brad-gerstner",
       "calls": 3,
-      "followReturn": 0.4405412037391729,
+      "followReturn": 0.4117787587159672,
       "benchmarkReturn": 0.012404761259184882,
-      "alpha": 0.428136442479988,
+      "alpha": 0.3993739974567823,
       "best": {
-        "company": "SK Hynix",
-        "ticker": "000660.KS",
-        "slug": "000660.ks",
-        "ret": 0.5516014234875444
+        "company": "Micron Technology",
+        "ticker": "MU",
+        "slug": "mu",
+        "ret": 0.5456274018826743
       },
       "picks": [
         {
@@ -34254,9 +34258,9 @@
           "slug": "000660.ks",
           "stance": "bull",
           "date": "2026-05-08",
-          "ret": 0.5516014234875444,
+          "ret": 0.5183867141162515,
           "benchmarkReturn": 0.012404761259184882,
-          "alpha": 0.5391966622283595
+          "alpha": 0.5059819528570666
         },
         {
           "company": "Samsung",
@@ -34264,9 +34268,9 @@
           "slug": "005930.ks",
           "stance": "bull",
           "date": "2026-05-08",
-          "ret": 0.22439478584729988,
+          "ret": 0.17132216014897583,
           "benchmarkReturn": 0.012404761259184882,
-          "alpha": 0.211990024588115
+          "alpha": 0.15891739888979095
         }
       ]
     },
