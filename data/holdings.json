@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T18:31:17.030Z",
+  "generatedAt": "2026-07-04T00:45:13.262Z",
   "holdings": [
     {
       "slug": "nvda",
@@ -7,6 +7,32 @@
       "ticker": "NVDA",
       "isPublic": true,
       "theses": [
+        {
+          "id": "E279-nvda-Jason-4",
+          "episodeId": "E279",
+          "episodeNumber": 279,
+          "episodeDate": "2026-07-03T22:12:00.000Z",
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "isPublic": true,
+          "host": "Jason",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Jason argues NVIDIA is now taking the gloves off to compete across the full AI stack — offering competitive open-source models (NeMoTron) alongside hardware — positioning itself to dominate as a vertically integrated open-source provider against OpenAI and Anthropic.",
+          "quote": "NVIDIA's taking the gloves off, David. They are going to own the whole stack. They are going to be talking about open source a whole bunch. So maybe you could talk a little bit about NVIDIA and their role in this as the open source, at-scal",
+          "quoteStartMs": 1572065,
+          "topics": [
+            "AI strategy",
+            "open source",
+            "vertical integration",
+            "competitive positioning"
+          ],
+          "attributionConfidence": "high"
+        },
         {
           "id": "E278-nvda-Guest-5",
           "episodeId": "E278",
@@ -913,16 +939,16 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts collectively view Nvidia as the undisputed dominant force in AI infrastructure, with its GPU ecosystem, continuous R&D cadence, and full-stack advantages widely acknowledged — though they disagree sharply on how durable that dominance will prove. Sacks and several guests (Gerstner, LaFont, Baker) are the most consistently bullish, arguing Nvidia's moat is technically deep, its chip generations improve 3–4x annually, demand from data centers and future robotics will remain insatiable, and at a low-to-mid teens earnings multiple the stock is not expensive; Baker goes further, saying CFOs of hyperscalers find competitor chips uneconomical even at zero cost. Chamath is the most volatile voice, oscillating between bearish warnings — that hyperscalers cannot sustain the capex required to support Nvidia's market cap, that DeepSeek's bypassing of CUDA signals a heterogeneous chip future, and that ~47% of revenue tied to China-linked entities poses severe regulatory risk — and periodic bullish pivots when evidence (Grok 3 scaling results, co-design programs with AI labs) suggests the capex buildout is justified and that the feared domain-specific architecture disruption is actually being absorbed inside Nvidia itself. Friedberg is the most persistently cautious, flagging deep customer concentration among the top four hyperscalers, the absence of meaningful incremental revenue flowing from AI capex, and a low-probability but high-severity threat from China developing competitive semiconductor alternatives — a view Sacks partially shares on the China chip question but counters by emphasizing that rising compute demand from agentic AI and robotics will far outpace any efficiency gains or competitive encroachment.",
+      "synthesis": "The hosts are broadly bullish on Nvidia's hardware dominance and the durability of GPU demand, but with meaningful disagreements on the depth of its moat and long-term risks. Sacks, guest bulls Gerstner, Baker, LaFont, and Sian consistently argue Nvidia's full-stack ecosystem, rapid chip cadence (3–4x per generation), and unmatched performance-per-watt make it extraordinarily difficult to displace, with Baker noting it trades at a low-to-mid teens multiple of real earnings and Jason arguing Nvidia is now moving to dominate the full AI stack including open-source software. Chamath is the most conflicted voice — oscillating between bullish moments (Grok 3 validating capex, silicon layer being a \"decided\" race, Jensen Huang's unmatched industry insight) and bearish ones (DeepSeek bypassing CUDA as an \"emperor has no clothes\" moment, ~47% China revenue exposure under tightening export controls, and the view that value will ultimately shift to HBM memory suppliers and energy providers). Friedberg is the most consistently cautious, repeatedly flagging customer concentration risk, the unproven ROI of hyperscaler AI capex, the threat of purpose-built chips eroding general-purpose GPU dominance, and a low-probability but high-severity risk from Huawei developing a competitive domestic alternative by 2026–2027.",
       "netStance": "bull",
       "firstMentioned": "2024-05-24T20:15:00.000Z",
-      "lastMentioned": "2026-06-26T23:53:00.000Z",
-      "mentionCount": 35,
+      "lastMentioned": "2026-07-03T22:12:00.000Z",
+      "mentionCount": 36,
       "market": {
         "ticker": "NVDA",
         "sourceSymbol": "NVDA",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-05-24",
         "basePrice": 106.469,
         "latestPrice": 194.83,
@@ -1181,228 +1207,18 @@
       "domain": "nvidia.com"
     },
     {
-      "slug": "spcx",
-      "company": "SpaceX",
-      "ticker": "SPCX",
+      "slug": "pltr",
+      "company": "Palantir",
+      "ticker": "PLTR",
       "isPublic": true,
       "theses": [
         {
-          "id": "E278-spacex-Guest-6",
-          "episodeId": "E278",
-          "episodeNumber": 278,
-          "episodeDate": "2026-06-26T23:53:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "explicit_long",
-          "excludeReason": null,
-          "scoreNote": "Host confirms holding SpaceX since 2018 and explicitly states not a seller.",
-          "sectorProxy": null,
-          "summary": "Gavin Baker is a long-term holder of SpaceX since 2018 and is not a seller, arguing against the short thesis based on lockup selling pressure and noting that most long-term holders on the cap table already had ample liquidity opportunities over the past decade.",
-          "quote": "I've had SpaceX since 2018.",
-          "quoteStartMs": 5405112,
-          "topics": [
-            "IPO",
-            "lockup",
-            "long-term holding"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Gavin Baker"
-        },
-        {
-          "id": "E277-spacex-Sacks-1",
-          "episodeId": "E277",
-          "episodeNumber": 277,
-          "episodeDate": "2026-06-19T22:07:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Sacks",
-          "stance": "neutral",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Sacks is bullish on SpaceX as Elon's life's work and a wealth-creating machine, predicting Elon will hold his shares well beyond the one-year lockup because SpaceX represents a machine that will continue creating value for humanity.",
-          "quote": "He's under a one-year lockup, and I predict that he'll hold on for much longer than that because creating SpaceX is his life's work.",
-          "quoteStartMs": 1166958,
-          "topics": [
-            "SpaceX IPO",
-            "valuation",
-            "long-term hold"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E277-spacex-Chamath-0",
-          "episodeId": "E277",
-          "episodeNumber": 277,
-          "episodeDate": "2026-06-19T22:07:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath views SpaceX as a unique, one-of-a-kind company that has peaked in price-to-sales and will grow into and beyond its current valuation, with a likely Tesla merger ahead that will be transformative.",
-          "quote": "It's an incredible company. It's a one of one. It's just a unique, unique animal. I think that the highest price to sales was essentially these last few days. And now it's just going to grow into its valuation and generally just grow",
-          "quoteStartMs": 985190,
-          "topics": [
-            "valuation",
-            "growth",
-            "IPO",
-            "Tesla merger"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E274-xai-grok-Guest-5",
-          "episodeId": "E274",
-          "episodeNumber": 274,
-          "episodeDate": "2026-05-22T22:46:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Gavin Baker argues xAI is now a frontier model with Grok 4.3, and the launch of Grok Build as a runtime/harness—combined with Cursor's proprietary coding data and Colossus compute—positions xAI to rapidly close the gap and become a dominant coding AI platform.",
-          "quote": "the newest version of Groq 4.3 is on the Pareto frontier for all frontier models. And you're either on the frontier or you're not. And the companies on the frontier are xAI with one build of Groq 4.3... Google 3.1 Pro, and then OpenAI and",
-          "quoteStartMs": 3187402,
-          "topics": [
-            "AI",
-            "competitive moat",
-            "compute",
-            "coding"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Gavin Baker"
-        },
-        {
-          "id": "E274-spacex-Guest-2",
-          "episodeId": "E274",
-          "episodeNumber": 274,
-          "episodeDate": "2026-05-22T22:46:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Gavin Baker is bullish on SpaceX's Elon Web Services / data center business, citing its ability to build data centers faster and cheaper than anyone else, Anthropic's $15B offtake deal as validation, and Cursor's Composer 2.5 breakthrough as evidence of the compute cluster's strategic value.",
-          "quote": "they build data centers dramatically faster than anyone else. At a lower cost. And now that you have a clear offtake partner, and I would expect partner to become partners, there is no reason they can't start stamping these data centers",
-          "quoteStartMs": 2913072,
-          "topics": [
-            "data centers",
-            "AI compute",
-            "IPO",
-            "competitive moat"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Gavin Baker"
-        },
-        {
-          "id": "E274-spacex-Chamath-1",
-          "episodeId": "E274",
-          "episodeNumber": 274,
-          "episodeDate": "2026-05-22T22:46:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues SpaceX at $2T is justifiable by underwriting terrestrial data center revenue alone to $100-200B by 2030, plus Starlink scaling to hundreds of millions of users, a growing AI/compute business with a unique capital and execution moat, and Elon's unique ability to create civilizational-scale innovations.",
-          "quote": "terrestrial data centers alone are $100 or $200 billion of revenue by 2030, 2032. Just— and that means just building it. So already you're buying it at 20 times revenue just for that business.",
-          "quoteStartMs": 3813000,
-          "topics": [
-            "IPO",
-            "valuation",
-            "data centers",
-            "Starlink"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E272-spacex-Guest-2",
-          "episodeId": "E272",
-          "episodeNumber": 272,
-          "episodeDate": "2026-05-08T22:16:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Brad Gerstner estimates the Anthropic compute deal adds $4–5B of incremental revenue to SpaceX/xAI this year, solving the biggest valuation question — CapEx ahead of xAI revenue — and believes the IPO will trade at 40–50x revenue (~$2T) given Elon's unique innovation pipeline.",
-          "quote": "This is going to generate in this year an incremental $4 to $5 billion of revenue on top of what I've seen analyst estimates in the mid-20s... This is why the SpaceX IPO is gonna trade at 40 to 50 times revenue.",
-          "quoteStartMs": 534000,
-          "topics": [
-            "IPO",
-            "valuation",
-            "hyperscaler revenue",
-            "xAI"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Brad Gerstner"
-        },
-        {
-          "id": "E272-spacex-Chamath-1",
-          "episodeId": "E272",
-          "episodeNumber": 272,
-          "episodeDate": "2026-05-08T22:16:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues that SpaceX's terrestrial hyperscaler business (EWS) blunts the bear case around orbital data center delays and creates a structural core revenue business that subsidizes Grok training, reinforcing the SpaceX valuation story ahead of the IPO.",
-          "quote": "I think for Elon, if you look inside of how people try to nitpick the SpaceX valuation case… The biggest element is the on-the-come value around the orbital data centers. And by actually landing a bunch of terrestrial capacity, I think you",
-          "quoteStartMs": 450283,
-          "topics": [
-            "hyperscaler",
-            "valuation",
-            "IPO",
-            "xAI"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E270-spacex-Sacks-3",
-          "episodeId": "E270",
-          "episodeNumber": 270,
-          "episodeDate": "2026-04-24T21:20:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
+          "id": "E279-pltr-Sacks-3",
+          "episodeId": "E279",
+          "episodeNumber": 279,
+          "episodeDate": "2026-07-03T22:12:00.000Z",
+          "company": "Palantir Technologies",
+          "ticker": "PLTR",
           "isPublic": true,
           "host": "Sacks",
           "stance": "neutral",
@@ -1411,363 +1227,24 @@
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Sacks sees the SpaceX-Cursor deal as highly complementary — Cursor brings coding strength, enterprise clients, and training data while xAI provides compute and a foundation model, accelerating xAI in the coding space.",
-          "quote": "Cursor obviously is very strong in coding. That's what it brings to xAI. XAI brings compute and they bring a foundation model... this will accelerate xAI in this area.",
-          "quoteStartMs": 628120,
+          "summary": "Sacks explains that Palantir's partnership with NVIDIA is strategically rational because as an application-layer company, Palantir needs a competitive model layer to avoid dependence on Anthropic/OpenAI's duopoly, and its sovereign AI OS offering directly addresses genuine enterprise demand for data control.",
+          "quote": "If you're an application, you don't wanna be beholden to one model provider, right? You want to have a choice. And if you're an enterprise, you want to have a choice because you don't wanna have to give up all of your proprietary knowledge.",
+          "quoteStartMs": 1705443,
           "topics": [
-            "AI coding",
-            "M&A",
-            "competitive position"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E270-spacex-Chamath-2",
-          "episodeId": "E270",
-          "episodeNumber": 270,
-          "episodeDate": "2026-04-24T21:20:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues the Cursor deal is a smart jiu-jitsu move by Elon — acquiring the most valuable AI coding wrapper at an effective $30B discount by paying in stock at IPO valuation, while gaining valuable RL training data and a crack team.",
-          "quote": "He can issue $60 billion of stock at a $2 trillion valuation and get a model and a service that I think is extremely compelling in coding... He gets all of that, and then he gets a very crack team.",
-          "quoteStartMs": 492212,
-          "topics": [
-            "M&A",
-            "AI coding",
-            "valuation",
-            "IPO"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E270-spacex-Jason-1",
-          "episodeId": "E270",
-          "episodeNumber": 270,
-          "episodeDate": "2026-04-24T21:20:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Jason",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Jason views the Cursor acquisition as highly accretive to SpaceX's revenue story ahead of its IPO, with Cursor's $6B projected run rate adding meaningfully to SpaceX's $22-24B 2026 revenue at a $2 trillion target valuation.",
-          "quote": "SpaceX projected revenue between $22 and $24 billion in 2026. So this is quite accretive to the revenue story at SpaceX, at the IPO of SpaceX, which is now targeting a valuation of $2 trillion.",
-          "quoteStartMs": 351026,
-          "topics": [
-            "IPO",
-            "M&A",
-            "AI coding",
-            "valuation"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E269-spacex-Chamath-9",
-          "episodeId": "E269",
-          "episodeNumber": 269,
-          "episodeDate": "2026-04-17T20:35:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": "Not scored: Chamath says he wants the SpaceX IPO done 'so that I can delever and get some chips off the table' — this describes wanting to EXIT/reduce his SpaceX position, not go long. The extracted stance of 'bull' and callType 'explicit_long' are wrong. However, the exit language ('take chips off the table') implies he holds SpaceX but the quote does not express a bull forward view; it expresses a desire to reduce. This is best treated as a view with no clear directional economic claim about SpaceX's prospects — neutralize.",
-          "sectorProxy": null,
-          "summary": "Chamath states he is personally long SpaceX and views its IPO as crucial and urgent so he can deleverage his position and take chips off the table while valuations are high.",
-          "quote": "I'm waiting for these IPOs so that I can, to be very honest with you, delever and get some chips off the table. I think that it is crucial that this SpaceX IPO get done ASAP.",
-          "quoteStartMs": 4633421,
-          "topics": [
-            "IPO",
-            "valuation",
-            "position management"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E267-spacex-Friedberg-1",
-          "episodeId": "E267",
-          "episodeNumber": 267,
-          "episodeDate": "2026-04-03T21:08:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Friedberg",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Friedberg argues SpaceX is effectively the railroad infrastructure for the next great frontier — the moon and Mars — and has also built a backup extraterrestrial internet via Starlink, making it a foundational technology platform for civilizational-scale value creation.",
-          "quote": "SpaceX will be to the moon and ultimately to Mars, and there's going to be an extraordinary abundance of production that's going to come out of the moon… SpaceX has also created— and this is going to be a a big part of the valuation analysi",
-          "quoteStartMs": 672555,
-          "topics": [
-            "space economy",
-            "Starlink",
-            "infrastructure",
-            "valuation"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E267-spacex-Chamath-0",
-          "episodeId": "E267",
-          "episodeNumber": 267,
-          "episodeDate": "2026-04-03T21:08:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues the SpaceX IPO will provide a validated external mark-to-market valuation that simplifies governance, enables a Tesla merger, and unleashes an enormous economy of downstream space businesses — he views it as the beginning of a massive value creation cycle.",
-          "quote": "I think that this is going to unleash just an unbelievably large economy of things that we have no idea about... dollars to donuts, these things are going to merge.",
-          "quoteStartMs": 803000,
-          "topics": [
-            "IPO",
-            "valuation",
-            "Tesla merger",
-            "space economy"
-          ],
-          "attributionConfidence": "low"
-        },
-        {
-          "id": "E266-spacex-Friedberg-10",
-          "episodeId": "E266",
-          "episodeNumber": 266,
-          "episodeDate": "2026-03-27T20:03:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Friedberg",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Friedberg argues the space industry represents a $15–30 trillion annual economic opportunity on the moon, and that SpaceX's IPO will command an enormous multiple given this runway — making it a durable, AI-unlocked growth story.",
-          "quote": "I actually think there's probably a $15 to $30 trillion a year economic opportunity on the moon. That kind of a business, like you're going to see with SpaceX's IPO, is going to have an insane multiple.",
-          "quoteStartMs": 2185681,
-          "topics": [
-            "space economy",
-            "IPO",
-            "valuation",
-            "durability"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E263-xai-grok-Guest-6",
-          "episodeId": "E263",
-          "episodeNumber": 263,
-          "episodeDate": "2026-03-06T09:23:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Emil Michael states Grok/xAI has agreed to all lawful use cases across all classified and unclassified networks with no policy restrictions, making it the most cooperative AI partner for the Department of War.",
-          "quote": "Grok's all in for all awful use cases across all classified and unclassified networks, as you'd expect, because, and you know, Elon's truth-seeking. We want truth in Department of War. We don't want ideology.",
-          "quoteStartMs": 3130000,
-          "topics": [
-            "AI",
-            "defense tech",
-            "government contracts",
-            "competitive position"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Emil Michael"
-        },
-        {
-          "id": "E257-spacex-Friedberg-15",
-          "episodeId": "E257",
-          "episodeNumber": 257,
-          "episodeDate": "2026-01-10T04:28:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Friedberg",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Friedberg's contrarian prediction is that SpaceX will not IPO but instead reverse merge into Tesla, allowing Elon Musk to consolidate control of his two seminal assets onto one cap table.",
-          "quote": "My contrarian belief number one is I don't think SpaceX will IPO. I think that it will reverse merge into Tesla, and I think Elon will use it as a moment to consolidate control and power of his two seminal assets into one cap table.",
-          "quoteStartMs": 3628000,
-          "topics": [
-            "IPO",
-            "reverse merger",
-            "Elon Musk",
-            "space"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E253-xai-Sacks-6",
-          "episodeId": "E253",
-          "episodeNumber": 253,
-          "episodeDate": "2025-12-06T01:41:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Sacks",
-          "stance": "bull",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Sacks is bullish on xAI, citing its edge in current-events AI via X integration and Elon Musk's ability to scale training infrastructure faster than rivals — with Colossus 2 training Grok 5 on the largest Blackwell cluster — as indicators of strong competitive positioning.",
-          "quote": "you've got xAI, which I think is the best at current events because of the integration with X. And also Elon seems to be able to scale his data center, his training cluster, the fastest. He had Colossus 1, now he's got Colossus 2, and that",
-          "quoteStartMs": 503630,
-          "topics": [
-            "AI competition",
-            "infrastructure",
-            "training compute"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E249-x-twitter-Guest-4",
-          "episodeId": "E249",
-          "episodeNumber": 249,
-          "episodeDate": "2025-10-31T20:11:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "neutral",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Elon Musk describes X's trajectory as transformative: Grok will semantically index 100M posts/day to personalize feeds and enable plain-language search, making X the best source of truth on the planet and dramatically increasing its platform value.",
-          "quote": "Grok is going to... read through 100 million things and show you the things that it thinks out of 100 million posts per day, what are the most interesting posts to you... we want X to be the best source of truth on the planet by far.",
-          "quoteStartMs": 1411000,
-          "topics": [
-            "AI integration",
-            "platform value",
-            "search",
-            "free speech"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Elon Musk"
-        },
-        {
-          "id": "E249-xai-grok-Guest-3",
-          "episodeId": "E249",
-          "episodeNumber": 249,
-          "episodeDate": "2025-10-31T20:11:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Elon Musk argues Grokipedia is a fundamentally superior product to Wikipedia — more accurate, comprehensive, neutral, and soon to include video — and will naturally win because users will recognize and share the better source.",
-          "quote": "I have complete confidence that Grokkoopedia is going to succeed because Wikipedia is actually not a very good product... It's not going to be a little bit better than Wikipedia. It's going to be 100 times better than Wikipedia.",
-          "quoteStartMs": 1115236,
-          "topics": [
-            "Grokipedia",
-            "AI product",
-            "competitive moat",
-            "knowledge platform"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Elon Musk"
-        },
-        {
-          "id": "E238-xai-Guest-1",
-          "episodeId": "E238",
-          "episodeNumber": 238,
-          "episodeDate": "2025-08-09T15:40:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "explicit_long",
-          "excludeReason": null,
-          "scoreNote": "Gavin confirms active ownership position in xAI.",
-          "sectorProxy": null,
-          "summary": "Gavin Baker, a disclosed shareholder of xAI, is bullish on the company due to Grok 4's exceptional benchmark performance, the largest Blackwell cluster positioning it well for Grok 5, and its consistent ability to outpace OpenAI on key metrics.",
-          "quote": "I should note my firm is a shareholder of xAI. So as much as I try to be objective, I am for sure biased because I am human and to be human is to be biased. But they have the largest Blackwell cluster, so I'm optimistic for GROK5.",
-          "quoteStartMs": 771818,
-          "topics": [
-            "AI models",
-            "benchmarks",
-            "GPU infrastructure",
-            "competitive position"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Gavin Baker"
-        },
-        {
-          "id": "E236-xai-grok-Guest-5",
-          "episodeId": "E236",
-          "episodeNumber": 236,
-          "episodeDate": "2025-07-19T02:21:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Gavin Baker says Grok 4 is the biggest leapfrog seen in quite some time — roughly twice as good as state-of-the-art rivals on ARC-AGI-2 (a semi-private benchmark) and 50-75% better on Humanity's Last Exam — establishing xAI as the current technical leader in AI.",
-          "quote": "I would say this is the biggest leapfrog we've seen in quite some time... it did roughly twice as good as, you know, the state-of-the-art Google, OpenAI, and Anthropic models. And then on humanity's last exam, you know, we can call it 50",
-          "quoteStartMs": 1218340,
-          "topics": [
-            "AI benchmarks",
+            "AI strategy",
+            "sovereign AI",
             "competitive positioning",
-            "compute"
+            "partnerships"
           ],
-          "attributionConfidence": "high",
-          "guestName": "Gavin Baker"
+          "attributionConfidence": "high"
         },
         {
-          "id": "E235-xai-grok-Chamath-0",
-          "episodeId": "E235",
-          "episodeNumber": 235,
-          "episodeDate": "2025-07-11T21:28:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
+          "id": "E251-pltr-Chamath-0",
+          "episodeId": "E251",
+          "episodeNumber": 251,
+          "episodeDate": "2025-11-14T21:03:00.000Z",
+          "company": "Palantir Technologies",
+          "ticker": "PLTR",
           "isPublic": true,
           "host": "Chamath",
           "stance": "bull",
@@ -1776,356 +1253,313 @@
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Chamath argues that xAI's bet on massive compute scale and a general-computation approach (the 'Bitter Lesson') has allowed Grok 4 to leapfrog all competitors in under 2.5 years, with future iterations relying on synthetic data rather than human labeling — a compounding structural advantage over rivals like OpenAI, Google, and Meta who remain dependent on human-labeled data.",
-          "quote": "Two things. One is how quickly, starting in March of 2023, so we're talking about less than 2.5 years, what this team has accomplished and how how far ahead they are of everybody else, as demonstrated by this.",
-          "quoteStartMs": 1247989,
+          "summary": "Chamath argues Palantir's premium valuation is justified because it has no viable competitor — enterprises cannot churn to an alternative — making its cash flows uniquely durable compared to peers like Snowflake or MongoDB, so shorting it is a losing trade.",
+          "quote": "Well, I think the Palantir short is stupid, and I think that those people will lose money… Palantir is both unique and well-run, and there's no clear alternative, so there's no place to churn to. And so I think the reason why it has a premi",
+          "quoteStartMs": 916770,
           "topics": [
-            "AI compute scale",
+            "valuation",
             "competitive moat",
-            "synthetic data",
-            "Bitter Lesson"
+            "short thesis rebuttal"
           ],
           "attributionConfidence": "high"
         },
         {
-          "id": "E227-spacex-Chamath-6",
-          "episodeId": "E227",
-          "episodeNumber": 227,
-          "episodeDate": "2025-05-09T20:26:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
+          "id": "E197-pltr-Sacks-4",
+          "episodeId": "E197",
+          "episodeNumber": 197,
+          "episodeDate": "2024-09-27T17:36:00.000Z",
+          "company": "Palantir",
+          "ticker": "PLTR",
           "isPublic": true,
-          "host": "Chamath",
+          "host": "Sacks",
           "stance": "neutral",
           "conviction": "medium",
           "callType": "view",
           "excludeReason": null,
           "scoreNote": null,
           "sectorProxy": null,
-          "summary": "Chamath argues SpaceX belongs in the optimal basket of companies to own for the future and that ignoring it simply because it is private would be a mistake.",
-          "quote": "SpaceX would be in the basket. It's private. Correct. Stripe would be in the basket. To be long some rando public company because it's public and ignore SpaceX and Stripe would just be stupid.",
-          "quoteStartMs": 5391861,
+          "summary": "Sacks argues Palantir is ideally positioned for the AI era because its approach of integrating all enterprise data into a digital twin means AI can immediately be applied to those workflows, explaining why the market awards it the highest ARR multiple among public software companies.",
+          "quote": "the most highly valued public software company right now in terms of ARR multiple is Palantir… The first thing Palantir does when they go into a customer is they integrate with all of its systems… once all the data's in one place with the",
+          "quoteStartMs": 2187938,
           "topics": [
-            "private markets",
-            "portfolio construction"
+            "AI opportunity",
+            "enterprise software",
+            "valuation",
+            "data integration"
           ],
           "attributionConfidence": "high"
         },
         {
-          "id": "E220-spacex-Chamath-3",
-          "episodeId": "E220",
-          "episodeNumber": 220,
-          "episodeDate": "2025-03-22T02:17:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath, a shareholder, argues SpaceX has no economic alternative — it is the only company consistently crushing launch costs and operating at scale, with competitors years away from being viable.",
-          "quote": "The point is SpaceX is the best. There's nobody even close. The next closest alternative is years and years away. Would we benefit from more capacity? Sure. But the reality is they are the only solution and they're safe and they're reliable",
-          "quoteStartMs": 4674584,
-          "topics": [
-            "space",
-            "competitive moat",
-            "cost leadership"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E218-xai-grok-Chamath-3",
-          "episodeId": "E218",
-          "episodeNumber": 218,
-          "episodeDate": "2025-03-08T00:58:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath has switched his consumer AI usage to Grok 3 because of its elegant integration inside X/Twitter, giving it a distribution advantage that he believes makes it more useful than standalone AI tools for news and commentary consumption.",
-          "quote": "As a consumer, I've mostly flipped my usage to Grok 3. And the reason is that it's in line with where I consume most of my information. It's elegantly integrated inside of X.",
-          "quoteStartMs": 5129819,
-          "topics": [
-            "AI models",
-            "distribution",
-            "consumer adoption"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E216-xai-Chamath-3",
-          "episodeId": "E216",
-          "episodeNumber": 216,
-          "episodeDate": "2025-02-21T23:41:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "neutral",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath is highly impressed by xAI's Grok 3 results, arguing that Elon's ability to leverage Tesla Powerpacks, cross-company engineering talent, and artificial time constraints to build the Colossus supercluster in record time proves the keiretsu model creates an enduring competitive advantage in AI.",
-          "quote": "the size of that cluster made no sense. And it could only be a result like this where he basically proved that there was still value in pre-training where size actually led to better outcomes.",
-          "quoteStartMs": 5362599,
-          "topics": [
-            "AI infrastructure",
-            "Grok 3",
-            "competitive moat",
-            "pre-training"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E214-xai-Guest-3",
-          "episodeId": "E214",
-          "episodeNumber": 214,
-          "episodeDate": "2025-02-07T22:20:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Antonio Gracias argues xAI's Colossus data center — the densest coherent GPU cluster in the world, built cheaply and quickly — will deliver the highest ROIC of any AI player and produce superior training outcomes, giving xAI a durable competitive edge.",
-          "quote": "XAI will have the highest return on capital, and I also think the best training data, and therefore will win.",
-          "quoteStartMs": 4421977,
-          "topics": [
-            "AI infrastructure",
-            "ROIC",
-            "competitive moat",
-            "data center"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Antonio Gracias"
-        },
-        {
-          "id": "E206-xai-Guest-1",
-          "episodeId": "E206",
-          "episodeNumber": 206,
-          "episodeDate": "2024-12-07T00:55:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Guest",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": "Gavin discloses his firm is an investor in xAI (FCI).",
-          "sectorProxy": null,
-          "summary": "Gavin Baker argues xAI's Colossus supercomputer (100K+ coherent GPUs, the world's largest) is a breakthrough that no one else achieved, and if scaling laws hold, Grok 3 should take the lead in AI model capability in early 2025; his firm is also an investor in xAI.",
-          "quote": "Grok 3 should take the lead if scaling laws hold in January or February... My firm is an investor in FCI.",
-          "quoteStartMs": 3643000,
-          "topics": [
-            "AI scaling",
-            "compute",
-            "model capability",
-            "competitive position"
-          ],
-          "attributionConfidence": "high",
-          "guestName": "Gavin Baker"
-        },
-        {
-          "id": "E200-spacex-starlink-Jason-1",
-          "episodeId": "E200",
-          "episodeNumber": 200,
-          "episodeDate": "2024-10-18T22:49:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Jason",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Jason believes Starlink could become the largest subscription business in human history, potentially reaching 500 million subscribers and surpassing Netflix, Disney+, and Verizon.",
-          "quote": "It could be the largest subscription business in the history of humanity... it could be the first 500 million subscriber product in the world.",
-          "quoteStartMs": 1310000,
-          "topics": [
-            "Starlink growth",
-            "subscription business"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E200-spacex-starlink-Friedberg-0",
-          "episodeId": "E200",
-          "episodeNumber": 200,
-          "episodeDate": "2024-10-18T22:49:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Friedberg",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Friedberg argues SpaceX's successful booster catch unlocks a path to $10/kg launch costs, making the Mars colony economically feasible, while Starlink at 4M subs could scale to 100M+ and become one of the biggest businesses on earth.",
-          "quote": "Starlink's running at 4 million subs right now. That's like $100 a month, 4 million subs. And if you do the math, I mean, how many people have ISPs that are slower than Starlink, right? How many people have cell phone providers that they're",
-          "quoteStartMs": 1282620,
-          "topics": [
-            "space economics",
-            "Starlink growth",
-            "launch cost",
-            "reusability"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E196-spacex-starlink-Sacks-6",
-          "episodeId": "E196",
-          "episodeNumber": 196,
-          "episodeDate": "2024-09-20T19:58:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
+          "id": "E189-pltr-Sacks-3",
+          "episodeId": "E189",
+          "episodeNumber": 189,
+          "episodeDate": "2024-07-26T22:55:00.000Z",
+          "company": "Palantir",
+          "ticker": "PLTR",
           "isPublic": true,
           "host": "Sacks",
           "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Sacks argues Starlink has already solved the rural internet problem and is the best and cheapest solution available, but is being deliberately excluded by the Biden-Harris administration for political reasons, wasting taxpayer money and depriving rural Americans of connectivity.",
-          "quote": "we could spend a fraction of that giving people Starlink and allowing the private sector to do its job.",
-          "quoteStartMs": 2162402,
-          "topics": [
-            "Starlink",
-            "rural broadband",
-            "government contracts",
-            "political retaliation"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E192-spacex-Chamath-11",
-          "episodeId": "E192",
-          "episodeNumber": 192,
-          "episodeDate": "2024-08-16T18:42:00.000Z",
-          "company": "SpaceX",
-          "ticker": "SPCX",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "neutral",
           "conviction": "medium",
-          "callType": "view",
+          "callType": "explicit_long",
           "excludeReason": null,
-          "scoreNote": null,
+          "scoreNote": "Speaker directly discloses share ownership and investment view.",
           "sectorProxy": null,
-          "summary": "Chamath contrasts SpaceX's reliable, on-time Crew Dragon program favorably against Boeing's Starliner disaster, noting SpaceX delivered a safer and cheaper solution — 40% cheaper — through competitive market dynamics rather than government mandates.",
-          "quote": "The more capable solution was 40% cheaper than the one that they thought was going to work. And the one that was 40% cheaper was also on time and the other one was— and reliable. And this other one, 7, 8, 9, 10 years delayed.",
-          "quoteStartMs": 5418000,
+          "summary": "Sacks discloses he holds shares in Palantir and considers it a good investment.",
+          "quote": "I have shares in the company. I think it's a good investment.",
+          "quoteStartMs": 1031000,
           "topics": [
-            "competitive advantage",
-            "reliability",
-            "cost efficiency",
-            "space program"
+            "ownership",
+            "defense tech"
           ],
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts are broadly and strongly bullish on SpaceX across its core businesses — launch, Starlink, xAI/Grok, and the emerging Elon Web Services data center buildout — with Chamath, Jason, Friedberg, Sacks, and recurring guest Gavin Baker all expressing high conviction at various points. There is near-universal agreement that SpaceX has no meaningful competitor in launch (Chamath calls it \"the only solution\"), that Starlink has transformative subscription potential (Jason projects up to 500M subscribers; Friedberg sees it as one of the biggest businesses on earth), and that xAI's Colossus compute clusters and successive Grok model generations have established xAI as the current frontier AI leader — a view shared by Chamath, Baker, and Antonio Gracias, though Baker and Gracias disclose they are investors in xAI and acknowledge personal bias. The main point of divergence is around the IPO path: Friedberg floated a contrarian prediction that SpaceX will reverse-merge into Tesla rather than IPO, while Chamath — who is personally long and eager to delever — and Friedberg (in a later entry) both argue an IPO is imminent and will command an enormous multiple, with Jason and Gavin Baker also bullish on the IPO valuation story anchored by Starlink, EWS revenue, and the Cursor acquisition. Sacks is consistently supportive but somewhat more measured, focusing on Starlink's policy exclusion and xAI's infrastructure scaling rather than making the most expansive valuation claims.",
+      "synthesis": "The hosts are broadly constructive on Palantir, with Chamath expressing the strongest conviction. Chamath argues the premium valuation is justified by a lack of viable alternatives, meaning enterprise customers have nowhere to churn, making its cash flows uniquely durable — and that shorting the stock is a losing trade. Sacks is consistently supportive across multiple timeframes: he discloses personal ownership, contends Palantir is ideally positioned for the AI era due to its digital-twin approach to enterprise data integration (which he says explains its leading ARR multiple among public software companies), and frames its NVIDIA partnership as strategically sound for an application-layer company seeking to avoid dependence on any single model provider. No meaningful disagreement exists between the hosts; both converge on Palantir's structural advantages, differing only in emphasis — Chamath focusing on competitive moat and valuation durability, Sacks on product architecture and AI positioning.",
       "netStance": "bull",
-      "firstMentioned": "2024-08-16T18:42:00.000Z",
-      "lastMentioned": "2026-06-26T23:53:00.000Z",
-      "mentionCount": 33,
+      "firstMentioned": "2024-07-26T22:55:00.000Z",
+      "lastMentioned": "2026-07-03T22:12:00.000Z",
+      "mentionCount": 4,
       "market": {
-        "ticker": "SPCX",
-        "sourceSymbol": "SPCX",
+        "ticker": "PLTR",
+        "sourceSymbol": "PLTR",
         "currency": "USD",
-        "asOf": "2026-07-03",
-        "anchorDate": "2024-08-16",
-        "basePrice": 160.95,
-        "latestPrice": 162,
+        "asOf": "2026-07-04",
+        "anchorDate": "2024-07-26",
+        "basePrice": 27.18,
+        "latestPrice": 129.3,
         "returns": {
-          "1m": 0,
-          "3m": 0,
-          "6m": 0,
-          "1y": 0,
-          "since": 0.006523765144454871
+          "1m": 0.13502575423105231,
+          "3m": 0.6545253863134658,
+          "6m": 1.7755702722590139,
+          "1y": 4.8086828550404705,
+          "since": 3.7571743929359824
         },
         "history": [
           [
-            "2026-06-12",
-            160.95
+            "2024-07-26",
+            27.18
           ],
           [
-            "2026-06-15",
-            192.5
+            "2024-08-08",
+            29.28
           ],
           [
-            "2026-06-16",
-            211.39
+            "2024-08-21",
+            32.54
           ],
           [
-            "2026-06-17",
-            191.82
+            "2024-09-04",
+            30.59
           ],
           [
-            "2026-06-18",
-            185
+            "2024-09-17",
+            36.45
           ],
           [
-            "2026-06-22",
-            154.6
+            "2024-09-30",
+            37.2
+          ],
+          [
+            "2024-10-11",
+            43.51
+          ],
+          [
+            "2024-10-24",
+            43.56
+          ],
+          [
+            "2024-11-06",
+            55.53
+          ],
+          [
+            "2024-11-19",
+            62.98
+          ],
+          [
+            "2024-12-03",
+            70.96
+          ],
+          [
+            "2024-12-16",
+            75.75
+          ],
+          [
+            "2024-12-30",
+            77.18
+          ],
+          [
+            "2025-01-14",
+            65.91
+          ],
+          [
+            "2025-01-28",
+            80.23
+          ],
+          [
+            "2025-02-10",
+            116.65
+          ],
+          [
+            "2025-02-24",
+            90.68
+          ],
+          [
+            "2025-03-07",
+            84.91
+          ],
+          [
+            "2025-03-20",
+            87.39
+          ],
+          [
+            "2025-04-02",
+            87.45
+          ],
+          [
+            "2025-04-15",
+            98.4
+          ],
+          [
+            "2025-04-29",
+            116.08
+          ],
+          [
+            "2025-05-12",
+            118.46
+          ],
+          [
+            "2025-05-23",
+            123.31
+          ],
+          [
+            "2025-06-06",
+            127.72
+          ],
+          [
+            "2025-06-20",
+            137.3
+          ],
+          [
+            "2025-07-03",
+            134.36
+          ],
+          [
+            "2025-07-17",
+            153.99
+          ],
+          [
+            "2025-07-30",
+            158.61
+          ],
+          [
+            "2025-08-12",
+            186.97
+          ],
+          [
+            "2025-08-25",
+            157.17
+          ],
+          [
+            "2025-09-08",
+            156.1
+          ],
+          [
+            "2025-09-19",
+            182.39
+          ],
+          [
+            "2025-10-02",
+            187.05
+          ],
+          [
+            "2025-10-15",
+            179.62
+          ],
+          [
+            "2025-10-28",
+            189.6
+          ],
+          [
+            "2025-11-10",
+            193.61
+          ],
+          [
+            "2025-11-21",
+            154.85
+          ],
+          [
+            "2025-12-05",
+            181.76
+          ],
+          [
+            "2025-12-18",
+            185.69
+          ],
+          [
+            "2026-01-02",
+            167.86
+          ],
+          [
+            "2026-01-15",
+            177.07
+          ],
+          [
+            "2026-01-29",
+            151.86
+          ],
+          [
+            "2026-02-11",
+            135.68
+          ],
+          [
+            "2026-02-25",
+            134.19
+          ],
+          [
+            "2026-03-10",
+            151.14
+          ],
+          [
+            "2026-03-23",
+            160.84
+          ],
+          [
+            "2026-04-06",
+            147.93
+          ],
+          [
+            "2026-04-17",
+            146.39
+          ],
+          [
+            "2026-04-30",
+            139.11
+          ],
+          [
+            "2026-05-13",
+            130.05
+          ],
+          [
+            "2026-05-27",
+            132.51
+          ],
+          [
+            "2026-06-09",
+            132.07
           ],
           [
             "2026-06-23",
-            156.11
-          ],
-          [
-            "2026-06-24",
-            154.54
-          ],
-          [
-            "2026-06-25",
-            153
-          ],
-          [
-            "2026-06-26",
-            153.23
-          ],
-          [
-            "2026-06-29",
-            164.19
-          ],
-          [
-            "2026-06-30",
-            170.86
-          ],
-          [
-            "2026-07-01",
-            157.54
+            116.7
           ],
           [
             "2026-07-02",
-            162
+            129.3
           ]
         ],
         "source": "yahoo"
       },
-      "description": "Designs, manufactures, and launches rockets and spacecraft, providing commercial and government space transportation services.",
-      "domain": "spacex.com"
+      "description": "Develops data analytics and AI software platforms for government intelligence and commercial enterprise clients.",
+      "domain": "palantir.com"
     },
     {
       "slug": "anthropic",
@@ -2133,6 +1567,32 @@
       "ticker": null,
       "isPublic": false,
       "theses": [
+        {
+          "id": "E279-anthropic-Sacks-0",
+          "episodeId": "E279",
+          "episodeNumber": 279,
+          "episodeDate": "2026-07-03T22:12:00.000Z",
+          "company": "Anthropic",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Sacks",
+          "stance": "neutral",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Sacks argues Anthropic has systematically betrayed enterprise customers by using model-layer dominance to move into lucrative verticals (Claude Code, Claude Design, etc.), eroding trust and pushing enterprises toward open-source alternatives — a pattern that threatens its business model.",
+          "quote": "The pattern is clear. They are going to use their dominant position in the model to then grab more and more territory in any interesting and lucrative vertical. So again, back to Alex Karp's point, if you're an enterprise customer or a",
+          "quoteStartMs": 493985,
+          "topics": [
+            "competitive moat",
+            "enterprise trust",
+            "vertical integration",
+            "AI strategy"
+          ],
+          "attributionConfidence": "high"
+        },
         {
           "id": "E278-anthropic-Sacks-7",
           "episodeId": "E278",
@@ -3208,14 +2668,1054 @@
           "attributionConfidence": "high"
         }
       ],
-      "synthesis": "The hosts broadly agree that Anthropic is a dominant and fast-growing enterprise AI company, with its coding-focused models consistently praised as best-in-class by Chamath, Sacks, Friedberg, and multiple guests including Gerstner, Benioff, and Gavin Baker, who projects a ~$3T public market valuation on the strength of its revenue trajectory and emerging EBIT profitability. Sacks and Gerstner are particularly bullish on Anthropic's unprecedented ARR growth — from $10B to $44B in roughly four months — and its potential to compound coding leadership into agent dominance, while Friedberg and Jason also express strong long conviction. However, significant tensions exist around Anthropic's conduct: Chamath, Sacks, and Friedberg have each raised serious concerns at various points, including Anthropic's alleged regulatory-capture strategy and doomerism-as-marketing (Chamath and Sacks), the covert nerfing of models while still charging customers (Sacks), content restrictions driving enterprise customers to open-source alternatives (Friedberg and Chamath), and the surveillance risk of prompt data retention making the platform a \"non-starter\" for some enterprises (Chamath). By mid-2026, Chamath and Sacks shifted to more critical stances on governance and trust — with Sacks calling Anthropic's strategy \"sophisticated fearmongering\" and warning that broken trust with government and customers is a self-inflicted competitive wound — even as both acknowledged the underlying product and revenue execution remain exceptional.",
+      "synthesis": "The hosts broadly recognize Anthropic as the current leader in enterprise and coding AI, with Chamath, Sacks, Friedberg, and Jason all citing Claude's exceptional model quality, extraordinary revenue growth, and dominant position in coding as core strengths — a view reinforced by repeat guest bulls Brad Gerstner and Gavin Baker, who project valuations of $3T+ and describe Anthropic's revenue ramp as the fastest in tech history. However, significant reservations have grown over time: Sacks has sharpened his criticism into a bear case, arguing Anthropic is secretly degrading models while charging full price, covertly retaining prompt data, and pursuing regulatory capture through deliberate fearmongering, while Friedberg and Chamath separately note that content restrictions are actively driving enterprise customers — including their own organizations — toward open-source alternatives. The most persistent tension is between the hosts' admiration for Anthropic's product execution and commercial momentum on one hand, and their deepening distrust of its leadership's motives, safety messaging (which Chamath repeatedly frames as strategically timed to fundraising), and competitive conduct on the other. Chamath's stance has oscillated most visibly — moving from enthusiastic advocacy to a mixed view that acknowledges multi-trillion-dollar potential while warning that Anthropic's ideological restrictions and prompt surveillance make it a structural risk for enterprise customers.",
       "netStance": "mixed",
       "firstMentioned": "2025-03-08T00:58:00.000Z",
-      "lastMentioned": "2026-06-26T23:53:00.000Z",
-      "mentionCount": 42,
+      "lastMentioned": "2026-07-03T22:12:00.000Z",
+      "mentionCount": 43,
       "market": null,
       "description": "AI safety company that develops and deploys large language models, including the Claude series.",
       "domain": "anthropic.com"
+    },
+    {
+      "slug": "figma",
+      "company": "Figma",
+      "ticker": null,
+      "isPublic": false,
+      "theses": [
+        {
+          "id": "E279-figma-Sacks-5",
+          "episodeId": "E279",
+          "episodeNumber": 279,
+          "episodeDate": "2026-07-03T22:12:00.000Z",
+          "company": "Figma",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Sacks",
+          "stance": "bear",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Sacks cites Figma's ~50% stock decline this year as evidence of the danger of sharing data with frontier AI labs, noting Anthropic blindsided Figma with the launch of Claude Design while Anthropic's CPO sat on Figma's board.",
+          "quote": "Figma's stock has fallen something like 50% this year while Anthropic's valuation has surged. This is not an isolated example.",
+          "quoteStartMs": 382914,
+          "topics": [
+            "competitive threat",
+            "data risk",
+            "valuation"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E234-figma-Friedberg-2",
+          "episodeId": "E234",
+          "episodeNumber": 234,
+          "episodeDate": "2025-07-04T14:07:00.000Z",
+          "company": "Figma",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Friedberg",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Friedberg highlights Figma's strong financials — 40%+ revenue growth, 43% operating cash flow margin, 130% net revenue retention — as evidence of durable land-and-expand dynamics, though he acknowledges AI could overnight obsolete any software.",
+          "quote": "They ran a 43% operating cash flow margin in Q1. So in Q1 of this year, Figma generated $95 million of free cash flow. They've got net revenue retention of like 130%. So this land and expand is proven out and there's real durability.",
+          "quoteStartMs": 4548796,
+          "topics": [
+            "IPO",
+            "revenue quality",
+            "AI disruption",
+            "SaaS metrics"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E234-figma-Chamath-0",
+          "episodeId": "E234",
+          "episodeNumber": 234,
+          "episodeDate": "2025-07-04T14:07:00.000Z",
+          "company": "Figma",
+          "ticker": null,
+          "isPublic": false,
+          "host": "Chamath",
+          "stance": "mixed",
+          "conviction": "medium",
+          "callType": "pair_trade",
+          "excludeReason": null,
+          "scoreNote": "Explicit pair trade: long Figma / short Adobe. Long leg attributed here; Adobe bear leg emitted separately.",
+          "sectorProxy": null,
+          "summary": "Chamath sees Figma as a strong business but with AI uncertainty; he would go long Figma and short an equivalent amount of Adobe to capture the spread, as Adobe would re-rate faster than Figma in any AI-driven valuation compression.",
+          "quote": "if I could get like $50 or $100 million of Figma, I would probably be long it and I would short an equivalent Quantum of Adobe, and I would just book the spread.",
+          "quoteStartMs": 4594446,
+          "topics": [
+            "IPO",
+            "AI disruption",
+            "pair trade",
+            "valuation"
+          ],
+          "attributionConfidence": "high"
+        }
+      ],
+      "synthesis": "The hosts are divided on Figma, with no clear consensus. Friedberg is the most constructive, pointing to strong fundamentals — 40%+ revenue growth, a 43% operating cash flow margin, and 130% net revenue retention — as proof of durable land-and-expand dynamics, though he acknowledges AI poses an existential software risk. Chamath is mixed: he finds the business compelling but hedges his enthusiasm by pairing a long Figma position with a short on Adobe, betting that Adobe would reprice faster than Figma under AI-driven valuation compression. Sacks is the most bearish, arguing that Figma's reported ~50% stock decline illustrates the broader danger of sharing data with frontier AI labs — specifically citing Anthropic's launch of Claude Design while Anthropic's CPO held a board seat at Figma — as evidence that incumbents can be blindsided by their own partners.",
+      "netStance": "mixed",
+      "firstMentioned": "2025-07-04T14:07:00.000Z",
+      "lastMentioned": "2026-07-03T22:12:00.000Z",
+      "mentionCount": 3,
+      "market": null,
+      "description": "Offers a cloud-based collaborative interface design and prototyping platform for product and UX teams.",
+      "domain": "figma.com"
+    },
+    {
+      "slug": "spcx",
+      "company": "SpaceX",
+      "ticker": "SPCX",
+      "isPublic": true,
+      "theses": [
+        {
+          "id": "E278-spacex-Guest-6",
+          "episodeId": "E278",
+          "episodeNumber": 278,
+          "episodeDate": "2026-06-26T23:53:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "explicit_long",
+          "excludeReason": null,
+          "scoreNote": "Host confirms holding SpaceX since 2018 and explicitly states not a seller.",
+          "sectorProxy": null,
+          "summary": "Gavin Baker is a long-term holder of SpaceX since 2018 and is not a seller, arguing against the short thesis based on lockup selling pressure and noting that most long-term holders on the cap table already had ample liquidity opportunities over the past decade.",
+          "quote": "I've had SpaceX since 2018.",
+          "quoteStartMs": 5405112,
+          "topics": [
+            "IPO",
+            "lockup",
+            "long-term holding"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
+        },
+        {
+          "id": "E277-spacex-Sacks-1",
+          "episodeId": "E277",
+          "episodeNumber": 277,
+          "episodeDate": "2026-06-19T22:07:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "neutral",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Sacks is bullish on SpaceX as Elon's life's work and a wealth-creating machine, predicting Elon will hold his shares well beyond the one-year lockup because SpaceX represents a machine that will continue creating value for humanity.",
+          "quote": "He's under a one-year lockup, and I predict that he'll hold on for much longer than that because creating SpaceX is his life's work.",
+          "quoteStartMs": 1166958,
+          "topics": [
+            "SpaceX IPO",
+            "valuation",
+            "long-term hold"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E277-spacex-Chamath-0",
+          "episodeId": "E277",
+          "episodeNumber": 277,
+          "episodeDate": "2026-06-19T22:07:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath views SpaceX as a unique, one-of-a-kind company that has peaked in price-to-sales and will grow into and beyond its current valuation, with a likely Tesla merger ahead that will be transformative.",
+          "quote": "It's an incredible company. It's a one of one. It's just a unique, unique animal. I think that the highest price to sales was essentially these last few days. And now it's just going to grow into its valuation and generally just grow",
+          "quoteStartMs": 985190,
+          "topics": [
+            "valuation",
+            "growth",
+            "IPO",
+            "Tesla merger"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E274-xai-grok-Guest-5",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T22:46:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Gavin Baker argues xAI is now a frontier model with Grok 4.3, and the launch of Grok Build as a runtime/harness—combined with Cursor's proprietary coding data and Colossus compute—positions xAI to rapidly close the gap and become a dominant coding AI platform.",
+          "quote": "the newest version of Groq 4.3 is on the Pareto frontier for all frontier models. And you're either on the frontier or you're not. And the companies on the frontier are xAI with one build of Groq 4.3... Google 3.1 Pro, and then OpenAI and",
+          "quoteStartMs": 3187402,
+          "topics": [
+            "AI",
+            "competitive moat",
+            "compute",
+            "coding"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
+        },
+        {
+          "id": "E274-spacex-Guest-2",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T22:46:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Gavin Baker is bullish on SpaceX's Elon Web Services / data center business, citing its ability to build data centers faster and cheaper than anyone else, Anthropic's $15B offtake deal as validation, and Cursor's Composer 2.5 breakthrough as evidence of the compute cluster's strategic value.",
+          "quote": "they build data centers dramatically faster than anyone else. At a lower cost. And now that you have a clear offtake partner, and I would expect partner to become partners, there is no reason they can't start stamping these data centers",
+          "quoteStartMs": 2913072,
+          "topics": [
+            "data centers",
+            "AI compute",
+            "IPO",
+            "competitive moat"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
+        },
+        {
+          "id": "E274-spacex-Chamath-1",
+          "episodeId": "E274",
+          "episodeNumber": 274,
+          "episodeDate": "2026-05-22T22:46:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues SpaceX at $2T is justifiable by underwriting terrestrial data center revenue alone to $100-200B by 2030, plus Starlink scaling to hundreds of millions of users, a growing AI/compute business with a unique capital and execution moat, and Elon's unique ability to create civilizational-scale innovations.",
+          "quote": "terrestrial data centers alone are $100 or $200 billion of revenue by 2030, 2032. Just— and that means just building it. So already you're buying it at 20 times revenue just for that business.",
+          "quoteStartMs": 3813000,
+          "topics": [
+            "IPO",
+            "valuation",
+            "data centers",
+            "Starlink"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E272-spacex-Guest-2",
+          "episodeId": "E272",
+          "episodeNumber": 272,
+          "episodeDate": "2026-05-08T22:16:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Brad Gerstner estimates the Anthropic compute deal adds $4–5B of incremental revenue to SpaceX/xAI this year, solving the biggest valuation question — CapEx ahead of xAI revenue — and believes the IPO will trade at 40–50x revenue (~$2T) given Elon's unique innovation pipeline.",
+          "quote": "This is going to generate in this year an incremental $4 to $5 billion of revenue on top of what I've seen analyst estimates in the mid-20s... This is why the SpaceX IPO is gonna trade at 40 to 50 times revenue.",
+          "quoteStartMs": 534000,
+          "topics": [
+            "IPO",
+            "valuation",
+            "hyperscaler revenue",
+            "xAI"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Brad Gerstner"
+        },
+        {
+          "id": "E272-spacex-Chamath-1",
+          "episodeId": "E272",
+          "episodeNumber": 272,
+          "episodeDate": "2026-05-08T22:16:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues that SpaceX's terrestrial hyperscaler business (EWS) blunts the bear case around orbital data center delays and creates a structural core revenue business that subsidizes Grok training, reinforcing the SpaceX valuation story ahead of the IPO.",
+          "quote": "I think for Elon, if you look inside of how people try to nitpick the SpaceX valuation case… The biggest element is the on-the-come value around the orbital data centers. And by actually landing a bunch of terrestrial capacity, I think you",
+          "quoteStartMs": 450283,
+          "topics": [
+            "hyperscaler",
+            "valuation",
+            "IPO",
+            "xAI"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E270-spacex-Sacks-3",
+          "episodeId": "E270",
+          "episodeNumber": 270,
+          "episodeDate": "2026-04-24T21:20:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Sacks sees the SpaceX-Cursor deal as highly complementary — Cursor brings coding strength, enterprise clients, and training data while xAI provides compute and a foundation model, accelerating xAI in the coding space.",
+          "quote": "Cursor obviously is very strong in coding. That's what it brings to xAI. XAI brings compute and they bring a foundation model... this will accelerate xAI in this area.",
+          "quoteStartMs": 628120,
+          "topics": [
+            "AI coding",
+            "M&A",
+            "competitive position"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E270-spacex-Chamath-2",
+          "episodeId": "E270",
+          "episodeNumber": 270,
+          "episodeDate": "2026-04-24T21:20:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues the Cursor deal is a smart jiu-jitsu move by Elon — acquiring the most valuable AI coding wrapper at an effective $30B discount by paying in stock at IPO valuation, while gaining valuable RL training data and a crack team.",
+          "quote": "He can issue $60 billion of stock at a $2 trillion valuation and get a model and a service that I think is extremely compelling in coding... He gets all of that, and then he gets a very crack team.",
+          "quoteStartMs": 492212,
+          "topics": [
+            "M&A",
+            "AI coding",
+            "valuation",
+            "IPO"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E270-spacex-Jason-1",
+          "episodeId": "E270",
+          "episodeNumber": 270,
+          "episodeDate": "2026-04-24T21:20:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Jason",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Jason views the Cursor acquisition as highly accretive to SpaceX's revenue story ahead of its IPO, with Cursor's $6B projected run rate adding meaningfully to SpaceX's $22-24B 2026 revenue at a $2 trillion target valuation.",
+          "quote": "SpaceX projected revenue between $22 and $24 billion in 2026. So this is quite accretive to the revenue story at SpaceX, at the IPO of SpaceX, which is now targeting a valuation of $2 trillion.",
+          "quoteStartMs": 351026,
+          "topics": [
+            "IPO",
+            "M&A",
+            "AI coding",
+            "valuation"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E269-spacex-Chamath-9",
+          "episodeId": "E269",
+          "episodeNumber": 269,
+          "episodeDate": "2026-04-17T20:35:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": "Not scored: Chamath says he wants the SpaceX IPO done 'so that I can delever and get some chips off the table' — this describes wanting to EXIT/reduce his SpaceX position, not go long. The extracted stance of 'bull' and callType 'explicit_long' are wrong. However, the exit language ('take chips off the table') implies he holds SpaceX but the quote does not express a bull forward view; it expresses a desire to reduce. This is best treated as a view with no clear directional economic claim about SpaceX's prospects — neutralize.",
+          "sectorProxy": null,
+          "summary": "Chamath states he is personally long SpaceX and views its IPO as crucial and urgent so he can deleverage his position and take chips off the table while valuations are high.",
+          "quote": "I'm waiting for these IPOs so that I can, to be very honest with you, delever and get some chips off the table. I think that it is crucial that this SpaceX IPO get done ASAP.",
+          "quoteStartMs": 4633421,
+          "topics": [
+            "IPO",
+            "valuation",
+            "position management"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E267-spacex-Friedberg-1",
+          "episodeId": "E267",
+          "episodeNumber": 267,
+          "episodeDate": "2026-04-03T21:08:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Friedberg argues SpaceX is effectively the railroad infrastructure for the next great frontier — the moon and Mars — and has also built a backup extraterrestrial internet via Starlink, making it a foundational technology platform for civilizational-scale value creation.",
+          "quote": "SpaceX will be to the moon and ultimately to Mars, and there's going to be an extraordinary abundance of production that's going to come out of the moon… SpaceX has also created— and this is going to be a a big part of the valuation analysi",
+          "quoteStartMs": 672555,
+          "topics": [
+            "space economy",
+            "Starlink",
+            "infrastructure",
+            "valuation"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E267-spacex-Chamath-0",
+          "episodeId": "E267",
+          "episodeNumber": 267,
+          "episodeDate": "2026-04-03T21:08:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues the SpaceX IPO will provide a validated external mark-to-market valuation that simplifies governance, enables a Tesla merger, and unleashes an enormous economy of downstream space businesses — he views it as the beginning of a massive value creation cycle.",
+          "quote": "I think that this is going to unleash just an unbelievably large economy of things that we have no idea about... dollars to donuts, these things are going to merge.",
+          "quoteStartMs": 803000,
+          "topics": [
+            "IPO",
+            "valuation",
+            "Tesla merger",
+            "space economy"
+          ],
+          "attributionConfidence": "low"
+        },
+        {
+          "id": "E266-spacex-Friedberg-10",
+          "episodeId": "E266",
+          "episodeNumber": 266,
+          "episodeDate": "2026-03-27T20:03:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Friedberg argues the space industry represents a $15–30 trillion annual economic opportunity on the moon, and that SpaceX's IPO will command an enormous multiple given this runway — making it a durable, AI-unlocked growth story.",
+          "quote": "I actually think there's probably a $15 to $30 trillion a year economic opportunity on the moon. That kind of a business, like you're going to see with SpaceX's IPO, is going to have an insane multiple.",
+          "quoteStartMs": 2185681,
+          "topics": [
+            "space economy",
+            "IPO",
+            "valuation",
+            "durability"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E263-xai-grok-Guest-6",
+          "episodeId": "E263",
+          "episodeNumber": 263,
+          "episodeDate": "2026-03-06T09:23:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Emil Michael states Grok/xAI has agreed to all lawful use cases across all classified and unclassified networks with no policy restrictions, making it the most cooperative AI partner for the Department of War.",
+          "quote": "Grok's all in for all awful use cases across all classified and unclassified networks, as you'd expect, because, and you know, Elon's truth-seeking. We want truth in Department of War. We don't want ideology.",
+          "quoteStartMs": 3130000,
+          "topics": [
+            "AI",
+            "defense tech",
+            "government contracts",
+            "competitive position"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Emil Michael"
+        },
+        {
+          "id": "E257-spacex-Friedberg-15",
+          "episodeId": "E257",
+          "episodeNumber": 257,
+          "episodeDate": "2026-01-10T04:28:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Friedberg's contrarian prediction is that SpaceX will not IPO but instead reverse merge into Tesla, allowing Elon Musk to consolidate control of his two seminal assets onto one cap table.",
+          "quote": "My contrarian belief number one is I don't think SpaceX will IPO. I think that it will reverse merge into Tesla, and I think Elon will use it as a moment to consolidate control and power of his two seminal assets into one cap table.",
+          "quoteStartMs": 3628000,
+          "topics": [
+            "IPO",
+            "reverse merger",
+            "Elon Musk",
+            "space"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E253-xai-Sacks-6",
+          "episodeId": "E253",
+          "episodeNumber": 253,
+          "episodeDate": "2025-12-06T01:41:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "bull",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Sacks is bullish on xAI, citing its edge in current-events AI via X integration and Elon Musk's ability to scale training infrastructure faster than rivals — with Colossus 2 training Grok 5 on the largest Blackwell cluster — as indicators of strong competitive positioning.",
+          "quote": "you've got xAI, which I think is the best at current events because of the integration with X. And also Elon seems to be able to scale his data center, his training cluster, the fastest. He had Colossus 1, now he's got Colossus 2, and that",
+          "quoteStartMs": 503630,
+          "topics": [
+            "AI competition",
+            "infrastructure",
+            "training compute"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E249-x-twitter-Guest-4",
+          "episodeId": "E249",
+          "episodeNumber": 249,
+          "episodeDate": "2025-10-31T20:11:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "neutral",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Elon Musk describes X's trajectory as transformative: Grok will semantically index 100M posts/day to personalize feeds and enable plain-language search, making X the best source of truth on the planet and dramatically increasing its platform value.",
+          "quote": "Grok is going to... read through 100 million things and show you the things that it thinks out of 100 million posts per day, what are the most interesting posts to you... we want X to be the best source of truth on the planet by far.",
+          "quoteStartMs": 1411000,
+          "topics": [
+            "AI integration",
+            "platform value",
+            "search",
+            "free speech"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Elon Musk"
+        },
+        {
+          "id": "E249-xai-grok-Guest-3",
+          "episodeId": "E249",
+          "episodeNumber": 249,
+          "episodeDate": "2025-10-31T20:11:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Elon Musk argues Grokipedia is a fundamentally superior product to Wikipedia — more accurate, comprehensive, neutral, and soon to include video — and will naturally win because users will recognize and share the better source.",
+          "quote": "I have complete confidence that Grokkoopedia is going to succeed because Wikipedia is actually not a very good product... It's not going to be a little bit better than Wikipedia. It's going to be 100 times better than Wikipedia.",
+          "quoteStartMs": 1115236,
+          "topics": [
+            "Grokipedia",
+            "AI product",
+            "competitive moat",
+            "knowledge platform"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Elon Musk"
+        },
+        {
+          "id": "E238-xai-Guest-1",
+          "episodeId": "E238",
+          "episodeNumber": 238,
+          "episodeDate": "2025-08-09T15:40:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "explicit_long",
+          "excludeReason": null,
+          "scoreNote": "Gavin confirms active ownership position in xAI.",
+          "sectorProxy": null,
+          "summary": "Gavin Baker, a disclosed shareholder of xAI, is bullish on the company due to Grok 4's exceptional benchmark performance, the largest Blackwell cluster positioning it well for Grok 5, and its consistent ability to outpace OpenAI on key metrics.",
+          "quote": "I should note my firm is a shareholder of xAI. So as much as I try to be objective, I am for sure biased because I am human and to be human is to be biased. But they have the largest Blackwell cluster, so I'm optimistic for GROK5.",
+          "quoteStartMs": 771818,
+          "topics": [
+            "AI models",
+            "benchmarks",
+            "GPU infrastructure",
+            "competitive position"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
+        },
+        {
+          "id": "E236-xai-grok-Guest-5",
+          "episodeId": "E236",
+          "episodeNumber": 236,
+          "episodeDate": "2025-07-19T02:21:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Gavin Baker says Grok 4 is the biggest leapfrog seen in quite some time — roughly twice as good as state-of-the-art rivals on ARC-AGI-2 (a semi-private benchmark) and 50-75% better on Humanity's Last Exam — establishing xAI as the current technical leader in AI.",
+          "quote": "I would say this is the biggest leapfrog we've seen in quite some time... it did roughly twice as good as, you know, the state-of-the-art Google, OpenAI, and Anthropic models. And then on humanity's last exam, you know, we can call it 50",
+          "quoteStartMs": 1218340,
+          "topics": [
+            "AI benchmarks",
+            "competitive positioning",
+            "compute"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
+        },
+        {
+          "id": "E235-xai-grok-Chamath-0",
+          "episodeId": "E235",
+          "episodeNumber": 235,
+          "episodeDate": "2025-07-11T21:28:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues that xAI's bet on massive compute scale and a general-computation approach (the 'Bitter Lesson') has allowed Grok 4 to leapfrog all competitors in under 2.5 years, with future iterations relying on synthetic data rather than human labeling — a compounding structural advantage over rivals like OpenAI, Google, and Meta who remain dependent on human-labeled data.",
+          "quote": "Two things. One is how quickly, starting in March of 2023, so we're talking about less than 2.5 years, what this team has accomplished and how how far ahead they are of everybody else, as demonstrated by this.",
+          "quoteStartMs": 1247989,
+          "topics": [
+            "AI compute scale",
+            "competitive moat",
+            "synthetic data",
+            "Bitter Lesson"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E227-spacex-Chamath-6",
+          "episodeId": "E227",
+          "episodeNumber": 227,
+          "episodeDate": "2025-05-09T20:26:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath argues SpaceX belongs in the optimal basket of companies to own for the future and that ignoring it simply because it is private would be a mistake.",
+          "quote": "SpaceX would be in the basket. It's private. Correct. Stripe would be in the basket. To be long some rando public company because it's public and ignore SpaceX and Stripe would just be stupid.",
+          "quoteStartMs": 5391861,
+          "topics": [
+            "private markets",
+            "portfolio construction"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E220-spacex-Chamath-3",
+          "episodeId": "E220",
+          "episodeNumber": 220,
+          "episodeDate": "2025-03-22T02:17:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath, a shareholder, argues SpaceX has no economic alternative — it is the only company consistently crushing launch costs and operating at scale, with competitors years away from being viable.",
+          "quote": "The point is SpaceX is the best. There's nobody even close. The next closest alternative is years and years away. Would we benefit from more capacity? Sure. But the reality is they are the only solution and they're safe and they're reliable",
+          "quoteStartMs": 4674584,
+          "topics": [
+            "space",
+            "competitive moat",
+            "cost leadership"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E218-xai-grok-Chamath-3",
+          "episodeId": "E218",
+          "episodeNumber": 218,
+          "episodeDate": "2025-03-08T00:58:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath has switched his consumer AI usage to Grok 3 because of its elegant integration inside X/Twitter, giving it a distribution advantage that he believes makes it more useful than standalone AI tools for news and commentary consumption.",
+          "quote": "As a consumer, I've mostly flipped my usage to Grok 3. And the reason is that it's in line with where I consume most of my information. It's elegantly integrated inside of X.",
+          "quoteStartMs": 5129819,
+          "topics": [
+            "AI models",
+            "distribution",
+            "consumer adoption"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E216-xai-Chamath-3",
+          "episodeId": "E216",
+          "episodeNumber": 216,
+          "episodeDate": "2025-02-21T23:41:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath is highly impressed by xAI's Grok 3 results, arguing that Elon's ability to leverage Tesla Powerpacks, cross-company engineering talent, and artificial time constraints to build the Colossus supercluster in record time proves the keiretsu model creates an enduring competitive advantage in AI.",
+          "quote": "the size of that cluster made no sense. And it could only be a result like this where he basically proved that there was still value in pre-training where size actually led to better outcomes.",
+          "quoteStartMs": 5362599,
+          "topics": [
+            "AI infrastructure",
+            "Grok 3",
+            "competitive moat",
+            "pre-training"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E214-xai-Guest-3",
+          "episodeId": "E214",
+          "episodeNumber": 214,
+          "episodeDate": "2025-02-07T22:20:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Antonio Gracias argues xAI's Colossus data center — the densest coherent GPU cluster in the world, built cheaply and quickly — will deliver the highest ROIC of any AI player and produce superior training outcomes, giving xAI a durable competitive edge.",
+          "quote": "XAI will have the highest return on capital, and I also think the best training data, and therefore will win.",
+          "quoteStartMs": 4421977,
+          "topics": [
+            "AI infrastructure",
+            "ROIC",
+            "competitive moat",
+            "data center"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Antonio Gracias"
+        },
+        {
+          "id": "E206-xai-Guest-1",
+          "episodeId": "E206",
+          "episodeNumber": 206,
+          "episodeDate": "2024-12-07T00:55:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Guest",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": "Gavin discloses his firm is an investor in xAI (FCI).",
+          "sectorProxy": null,
+          "summary": "Gavin Baker argues xAI's Colossus supercomputer (100K+ coherent GPUs, the world's largest) is a breakthrough that no one else achieved, and if scaling laws hold, Grok 3 should take the lead in AI model capability in early 2025; his firm is also an investor in xAI.",
+          "quote": "Grok 3 should take the lead if scaling laws hold in January or February... My firm is an investor in FCI.",
+          "quoteStartMs": 3643000,
+          "topics": [
+            "AI scaling",
+            "compute",
+            "model capability",
+            "competitive position"
+          ],
+          "attributionConfidence": "high",
+          "guestName": "Gavin Baker"
+        },
+        {
+          "id": "E200-spacex-starlink-Jason-1",
+          "episodeId": "E200",
+          "episodeNumber": 200,
+          "episodeDate": "2024-10-18T22:49:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Jason",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Jason believes Starlink could become the largest subscription business in human history, potentially reaching 500 million subscribers and surpassing Netflix, Disney+, and Verizon.",
+          "quote": "It could be the largest subscription business in the history of humanity... it could be the first 500 million subscriber product in the world.",
+          "quoteStartMs": 1310000,
+          "topics": [
+            "Starlink growth",
+            "subscription business"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E200-spacex-starlink-Friedberg-0",
+          "episodeId": "E200",
+          "episodeNumber": 200,
+          "episodeDate": "2024-10-18T22:49:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Friedberg",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Friedberg argues SpaceX's successful booster catch unlocks a path to $10/kg launch costs, making the Mars colony economically feasible, while Starlink at 4M subs could scale to 100M+ and become one of the biggest businesses on earth.",
+          "quote": "Starlink's running at 4 million subs right now. That's like $100 a month, 4 million subs. And if you do the math, I mean, how many people have ISPs that are slower than Starlink, right? How many people have cell phone providers that they're",
+          "quoteStartMs": 1282620,
+          "topics": [
+            "space economics",
+            "Starlink growth",
+            "launch cost",
+            "reusability"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E196-spacex-starlink-Sacks-6",
+          "episodeId": "E196",
+          "episodeNumber": 196,
+          "episodeDate": "2024-09-20T19:58:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Sacks",
+          "stance": "bull",
+          "conviction": "high",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Sacks argues Starlink has already solved the rural internet problem and is the best and cheapest solution available, but is being deliberately excluded by the Biden-Harris administration for political reasons, wasting taxpayer money and depriving rural Americans of connectivity.",
+          "quote": "we could spend a fraction of that giving people Starlink and allowing the private sector to do its job.",
+          "quoteStartMs": 2162402,
+          "topics": [
+            "Starlink",
+            "rural broadband",
+            "government contracts",
+            "political retaliation"
+          ],
+          "attributionConfidence": "high"
+        },
+        {
+          "id": "E192-spacex-Chamath-11",
+          "episodeId": "E192",
+          "episodeNumber": 192,
+          "episodeDate": "2024-08-16T18:42:00.000Z",
+          "company": "SpaceX",
+          "ticker": "SPCX",
+          "isPublic": true,
+          "host": "Chamath",
+          "stance": "neutral",
+          "conviction": "medium",
+          "callType": "view",
+          "excludeReason": null,
+          "scoreNote": null,
+          "sectorProxy": null,
+          "summary": "Chamath contrasts SpaceX's reliable, on-time Crew Dragon program favorably against Boeing's Starliner disaster, noting SpaceX delivered a safer and cheaper solution — 40% cheaper — through competitive market dynamics rather than government mandates.",
+          "quote": "The more capable solution was 40% cheaper than the one that they thought was going to work. And the one that was 40% cheaper was also on time and the other one was— and reliable. And this other one, 7, 8, 9, 10 years delayed.",
+          "quoteStartMs": 5418000,
+          "topics": [
+            "competitive advantage",
+            "reliability",
+            "cost efficiency",
+            "space program"
+          ],
+          "attributionConfidence": "high"
+        }
+      ],
+      "synthesis": "The hosts are broadly and strongly bullish on SpaceX across its core businesses — launch, Starlink, xAI/Grok, and the emerging Elon Web Services data center buildout — with Chamath, Jason, Friedberg, Sacks, and recurring guest Gavin Baker all expressing high conviction at various points. There is near-universal agreement that SpaceX has no meaningful competitor in launch (Chamath calls it \"the only solution\"), that Starlink has transformative subscription potential (Jason projects up to 500M subscribers; Friedberg sees it as one of the biggest businesses on earth), and that xAI's Colossus compute clusters and successive Grok model generations have established xAI as the current frontier AI leader — a view shared by Chamath, Baker, and Antonio Gracias, though Baker and Gracias disclose they are investors in xAI and acknowledge personal bias. The main point of divergence is around the IPO path: Friedberg floated a contrarian prediction that SpaceX will reverse-merge into Tesla rather than IPO, while Chamath — who is personally long and eager to delever — and Friedberg (in a later entry) both argue an IPO is imminent and will command an enormous multiple, with Jason and Gavin Baker also bullish on the IPO valuation story anchored by Starlink, EWS revenue, and the Cursor acquisition. Sacks is consistently supportive but somewhat more measured, focusing on Starlink's policy exclusion and xAI's infrastructure scaling rather than making the most expansive valuation claims.",
+      "netStance": "bull",
+      "firstMentioned": "2024-08-16T18:42:00.000Z",
+      "lastMentioned": "2026-06-26T23:53:00.000Z",
+      "mentionCount": 33,
+      "market": {
+        "ticker": "SPCX",
+        "sourceSymbol": "SPCX",
+        "currency": "USD",
+        "asOf": "2026-07-04",
+        "anchorDate": "2024-08-16",
+        "basePrice": 160.95,
+        "latestPrice": 162,
+        "returns": {
+          "1m": 0,
+          "3m": 0,
+          "6m": 0,
+          "1y": 0,
+          "since": 0.006523765144454871
+        },
+        "history": [
+          [
+            "2026-06-12",
+            160.95
+          ],
+          [
+            "2026-06-15",
+            192.5
+          ],
+          [
+            "2026-06-16",
+            211.39
+          ],
+          [
+            "2026-06-17",
+            191.82
+          ],
+          [
+            "2026-06-18",
+            185
+          ],
+          [
+            "2026-06-22",
+            154.6
+          ],
+          [
+            "2026-06-23",
+            156.11
+          ],
+          [
+            "2026-06-24",
+            154.54
+          ],
+          [
+            "2026-06-25",
+            153
+          ],
+          [
+            "2026-06-26",
+            153.23
+          ],
+          [
+            "2026-06-29",
+            164.19
+          ],
+          [
+            "2026-06-30",
+            170.86
+          ],
+          [
+            "2026-07-01",
+            157.54
+          ],
+          [
+            "2026-07-02",
+            162
+          ]
+        ],
+        "source": "yahoo"
+      },
+      "description": "Designs, manufactures, and launches rockets and spacecraft, providing commercial and government space transportation services.",
+      "domain": "spacex.com"
     },
     {
       "slug": "cbrs",
@@ -3286,7 +3786,7 @@
         "ticker": "CBRS",
         "sourceSymbol": "CBRS",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2026-01-17",
         "basePrice": 311.07,
         "latestPrice": 204.86,
@@ -3509,7 +4009,7 @@
         "ticker": "MU",
         "sourceSymbol": "MU",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2026-05-08",
         "basePrice": 746.81,
         "latestPrice": 975.56,
@@ -3850,7 +4350,7 @@
         "ticker": "AMZN",
         "sourceSymbol": "AMZN",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-05-02",
         "basePrice": 189.98,
         "latestPrice": 242.67,
@@ -4673,7 +5173,7 @@
         "ticker": "META",
         "sourceSymbol": "META",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-09-27",
         "basePrice": 567.36,
         "latestPrice": 582.9,
@@ -5628,7 +6128,7 @@
         "ticker": "AAPL",
         "sourceSymbol": "AAPL",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-05-10",
         "basePrice": 183.05,
         "latestPrice": 308.63,
@@ -7521,7 +8021,7 @@
         "ticker": "CRWV",
         "sourceSymbol": "CRWV",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-03-08",
         "basePrice": 40,
         "latestPrice": 81.745,
@@ -7915,7 +8415,7 @@
         "ticker": "UNG",
         "sourceSymbol": "UNG",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-04-11",
         "basePrice": 18.63,
         "latestPrice": 11.58,
@@ -9725,7 +10225,7 @@
         "ticker": "GOOGL",
         "sourceSymbol": "GOOGL",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-05-10",
         "basePrice": 168.65,
         "latestPrice": 359.91,
@@ -10290,7 +10790,7 @@
         "ticker": "CRM",
         "sourceSymbol": "CRM",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-05-31",
         "basePrice": 234.44,
         "latestPrice": 166.11,
@@ -11097,7 +11597,7 @@
         "ticker": "TSLA",
         "sourceSymbol": "TSLA",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-06-14",
         "basePrice": 178.01,
         "latestPrice": 393.45,
@@ -11414,16 +11914,16 @@
         "ticker": "000660.KS",
         "sourceSymbol": "000660.KS",
         "currency": "KRW",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-10-10",
         "basePrice": 428000,
-        "latestPrice": 2187000,
+        "latestPrice": 2425000,
         "returns": {
           "1m": 0.4158878504672897,
           "3m": 0.75,
           "6m": 1.3995327102803738,
           "1y": null,
-          "since": 4.109813084112149
+          "since": 4.66588785046729
         },
         "history": [
           [
@@ -11667,8 +12167,8 @@
             2560000
           ],
           [
-            "2026-07-02",
-            2187000
+            "2026-07-03",
+            2425000
           ]
         ],
         "source": "yahoo"
@@ -11718,16 +12218,16 @@
         "ticker": "005930.KS",
         "sourceSymbol": "005930.KS",
         "currency": "KRW",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2026-05-08",
         "basePrice": 268500,
-        "latestPrice": 286000,
+        "latestPrice": 309500,
         "returns": {
           "1m": 0.1005586592178771,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": 0.06517690875232775
+          "since": 0.1527001862197393
         },
         "history": [
           [
@@ -11881,6 +12381,10 @@
           [
             "2026-07-02",
             286000
+          ],
+          [
+            "2026-07-03",
+            309500
           ]
         ],
         "source": "yahoo"
@@ -12014,7 +12518,7 @@
         "ticker": "LLY",
         "sourceSymbol": "LLY",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2026-05-01",
         "basePrice": 963.33,
         "latestPrice": 1213.91,
@@ -12246,7 +12750,7 @@
         "ticker": "BAYRY",
         "sourceSymbol": "BAYRY",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2026-05-01",
         "basePrice": 11.11,
         "latestPrice": 15.19,
@@ -12602,7 +13106,7 @@
         "ticker": "BE",
         "sourceSymbol": "BE",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2026-04-17",
         "basePrice": 207.86,
         "latestPrice": 270.89,
@@ -12898,7 +13402,7 @@
         "ticker": "BIRD",
         "sourceSymbol": "BIRD",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2026-04-17",
         "basePrice": 10.8,
         "latestPrice": 3.85,
@@ -13489,7 +13993,7 @@
         "ticker": "LNG",
         "sourceSymbol": "LNG",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2026-03-27",
         "basePrice": 296.91,
         "latestPrice": 245.97,
@@ -13855,7 +14359,7 @@
         "ticker": "USO",
         "sourceSymbol": "USO",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-06-20",
         "basePrice": 79.41,
         "latestPrice": 103.98,
@@ -14495,7 +14999,7 @@
         "ticker": "GLD",
         "sourceSymbol": "GLD",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-05-31",
         "basePrice": 215.3,
         "latestPrice": 378.13,
@@ -14790,7 +15294,7 @@
         "ticker": "RACE",
         "sourceSymbol": "RACE",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2026-02-13",
         "basePrice": 379.08,
         "latestPrice": 384.97,
@@ -15248,7 +15752,7 @@
         "ticker": "CPER",
         "sourceSymbol": "CPER",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2026-01-10",
         "basePrice": 36.88,
         "latestPrice": 37.29,
@@ -15770,7 +16274,7 @@
         "ticker": "MSFT",
         "sourceSymbol": "MSFT",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-06-29",
         "basePrice": 456.73,
         "latestPrice": 390.49,
@@ -16344,7 +16848,7 @@
         "ticker": "IGV",
         "sourceSymbol": "IGV",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-10-25",
         "basePrice": 92.2,
         "latestPrice": 93.57,
@@ -16645,7 +17149,7 @@
         "ticker": "IPO",
         "sourceSymbol": "IPO",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-11-16",
         "basePrice": 44.3,
         "latestPrice": 57.5,
@@ -16991,7 +17495,7 @@
         "ticker": "NFLX",
         "sourceSymbol": "NFLX",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-01-25",
         "basePrice": 97.189,
         "latestPrice": 77.65,
@@ -17706,7 +18210,7 @@
         "ticker": "ASML",
         "sourceSymbol": "ASML",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-12-19",
         "basePrice": 1056.02,
         "latestPrice": 1769.3199,
@@ -17972,7 +18476,7 @@
         "ticker": "WBD",
         "sourceSymbol": "WBD",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-11-16",
         "basePrice": 9.47,
         "latestPrice": 26.48,
@@ -18317,7 +18821,7 @@
         "ticker": "NYT",
         "sourceSymbol": "NYT",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-02-15",
         "basePrice": 49.19,
         "latestPrice": 73.85,
@@ -18666,335 +19170,6 @@
       "domain": "tether.to"
     },
     {
-      "slug": "pltr",
-      "company": "Palantir",
-      "ticker": "PLTR",
-      "isPublic": true,
-      "theses": [
-        {
-          "id": "E251-pltr-Chamath-0",
-          "episodeId": "E251",
-          "episodeNumber": 251,
-          "episodeDate": "2025-11-14T21:03:00.000Z",
-          "company": "Palantir Technologies",
-          "ticker": "PLTR",
-          "isPublic": true,
-          "host": "Chamath",
-          "stance": "bull",
-          "conviction": "high",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Chamath argues Palantir's premium valuation is justified because it has no viable competitor — enterprises cannot churn to an alternative — making its cash flows uniquely durable compared to peers like Snowflake or MongoDB, so shorting it is a losing trade.",
-          "quote": "Well, I think the Palantir short is stupid, and I think that those people will lose money… Palantir is both unique and well-run, and there's no clear alternative, so there's no place to churn to. And so I think the reason why it has a premi",
-          "quoteStartMs": 916770,
-          "topics": [
-            "valuation",
-            "competitive moat",
-            "short thesis rebuttal"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E197-pltr-Sacks-4",
-          "episodeId": "E197",
-          "episodeNumber": 197,
-          "episodeDate": "2024-09-27T17:36:00.000Z",
-          "company": "Palantir",
-          "ticker": "PLTR",
-          "isPublic": true,
-          "host": "Sacks",
-          "stance": "neutral",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Sacks argues Palantir is ideally positioned for the AI era because its approach of integrating all enterprise data into a digital twin means AI can immediately be applied to those workflows, explaining why the market awards it the highest ARR multiple among public software companies.",
-          "quote": "the most highly valued public software company right now in terms of ARR multiple is Palantir… The first thing Palantir does when they go into a customer is they integrate with all of its systems… once all the data's in one place with the",
-          "quoteStartMs": 2187938,
-          "topics": [
-            "AI opportunity",
-            "enterprise software",
-            "valuation",
-            "data integration"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E189-pltr-Sacks-3",
-          "episodeId": "E189",
-          "episodeNumber": 189,
-          "episodeDate": "2024-07-26T22:55:00.000Z",
-          "company": "Palantir",
-          "ticker": "PLTR",
-          "isPublic": true,
-          "host": "Sacks",
-          "stance": "bull",
-          "conviction": "medium",
-          "callType": "explicit_long",
-          "excludeReason": null,
-          "scoreNote": "Speaker directly discloses share ownership and investment view.",
-          "sectorProxy": null,
-          "summary": "Sacks discloses he holds shares in Palantir and considers it a good investment.",
-          "quote": "I have shares in the company. I think it's a good investment.",
-          "quoteStartMs": 1031000,
-          "topics": [
-            "ownership",
-            "defense tech"
-          ],
-          "attributionConfidence": "high"
-        }
-      ],
-      "synthesis": "The hosts are broadly bullish on Palantir, with Sacks and Chamath both viewing its premium valuation as warranted, though for somewhat complementary reasons. Sacks (disclosing personal ownership) argues that Palantir's data-integration approach — consolidating all enterprise data into a digital twin — makes it uniquely well-suited for AI deployment, which he sees as the basis for it commanding the highest ARR multiple among public software companies. Chamath adds a durability argument, contending that Palantir has no viable competitor to which customers can churn, making its cash flows more durable than peers like Snowflake or MongoDB and rendering short positions a losing trade. There is no meaningful disagreement among the hosts; the only nuance is that Sacks expressed a more measured, medium-conviction view across both appearances, while Chamath stated his bull case at high conviction.",
-      "netStance": "bull",
-      "firstMentioned": "2024-07-26T22:55:00.000Z",
-      "lastMentioned": "2025-11-14T21:03:00.000Z",
-      "mentionCount": 3,
-      "market": {
-        "ticker": "PLTR",
-        "sourceSymbol": "PLTR",
-        "currency": "USD",
-        "asOf": "2026-07-03",
-        "anchorDate": "2024-07-26",
-        "basePrice": 27.18,
-        "latestPrice": 129.3,
-        "returns": {
-          "1m": 0.13502575423105231,
-          "3m": 0.6545253863134658,
-          "6m": 1.7755702722590139,
-          "1y": 4.8086828550404705,
-          "since": 3.7571743929359824
-        },
-        "history": [
-          [
-            "2024-07-26",
-            27.18
-          ],
-          [
-            "2024-08-08",
-            29.28
-          ],
-          [
-            "2024-08-21",
-            32.54
-          ],
-          [
-            "2024-09-04",
-            30.59
-          ],
-          [
-            "2024-09-17",
-            36.45
-          ],
-          [
-            "2024-09-30",
-            37.2
-          ],
-          [
-            "2024-10-11",
-            43.51
-          ],
-          [
-            "2024-10-24",
-            43.56
-          ],
-          [
-            "2024-11-06",
-            55.53
-          ],
-          [
-            "2024-11-19",
-            62.98
-          ],
-          [
-            "2024-12-03",
-            70.96
-          ],
-          [
-            "2024-12-16",
-            75.75
-          ],
-          [
-            "2024-12-30",
-            77.18
-          ],
-          [
-            "2025-01-14",
-            65.91
-          ],
-          [
-            "2025-01-28",
-            80.23
-          ],
-          [
-            "2025-02-10",
-            116.65
-          ],
-          [
-            "2025-02-24",
-            90.68
-          ],
-          [
-            "2025-03-07",
-            84.91
-          ],
-          [
-            "2025-03-20",
-            87.39
-          ],
-          [
-            "2025-04-02",
-            87.45
-          ],
-          [
-            "2025-04-15",
-            98.4
-          ],
-          [
-            "2025-04-29",
-            116.08
-          ],
-          [
-            "2025-05-12",
-            118.46
-          ],
-          [
-            "2025-05-23",
-            123.31
-          ],
-          [
-            "2025-06-06",
-            127.72
-          ],
-          [
-            "2025-06-20",
-            137.3
-          ],
-          [
-            "2025-07-03",
-            134.36
-          ],
-          [
-            "2025-07-17",
-            153.99
-          ],
-          [
-            "2025-07-30",
-            158.61
-          ],
-          [
-            "2025-08-12",
-            186.97
-          ],
-          [
-            "2025-08-25",
-            157.17
-          ],
-          [
-            "2025-09-08",
-            156.1
-          ],
-          [
-            "2025-09-19",
-            182.39
-          ],
-          [
-            "2025-10-02",
-            187.05
-          ],
-          [
-            "2025-10-15",
-            179.62
-          ],
-          [
-            "2025-10-28",
-            189.6
-          ],
-          [
-            "2025-11-10",
-            193.61
-          ],
-          [
-            "2025-11-21",
-            154.85
-          ],
-          [
-            "2025-12-05",
-            181.76
-          ],
-          [
-            "2025-12-18",
-            185.69
-          ],
-          [
-            "2026-01-02",
-            167.86
-          ],
-          [
-            "2026-01-15",
-            177.07
-          ],
-          [
-            "2026-01-29",
-            151.86
-          ],
-          [
-            "2026-02-11",
-            135.68
-          ],
-          [
-            "2026-02-25",
-            134.19
-          ],
-          [
-            "2026-03-10",
-            151.14
-          ],
-          [
-            "2026-03-23",
-            160.84
-          ],
-          [
-            "2026-04-06",
-            147.93
-          ],
-          [
-            "2026-04-17",
-            146.39
-          ],
-          [
-            "2026-04-30",
-            139.11
-          ],
-          [
-            "2026-05-13",
-            130.05
-          ],
-          [
-            "2026-05-27",
-            132.51
-          ],
-          [
-            "2026-06-09",
-            132.07
-          ],
-          [
-            "2026-06-23",
-            116.7
-          ],
-          [
-            "2026-07-02",
-            129.3
-          ]
-        ],
-        "source": "yahoo"
-      },
-      "description": "Develops data analytics and AI software platforms for government intelligence and commercial enterprise clients.",
-      "domain": "palantir.com"
-    },
-    {
       "slug": "mp",
       "company": "MP Materials",
       "ticker": "MP",
@@ -19062,7 +19237,7 @@
         "ticker": "MP",
         "sourceSymbol": "MP",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-10-17",
         "basePrice": 80.79,
         "latestPrice": 53.31,
@@ -19363,7 +19538,7 @@
         "ticker": "AMD",
         "sourceSymbol": "AMD",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-10-10",
         "basePrice": 214.9,
         "latestPrice": 517.82,
@@ -19610,7 +19785,7 @@
         "ticker": "HOOD",
         "sourceSymbol": "HOOD",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-10-10",
         "basePrice": 138.96,
         "latestPrice": 112.73,
@@ -19884,7 +20059,7 @@
         "ticker": "EA",
         "sourceSymbol": "EA",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-10-03",
         "basePrice": 200.69,
         "latestPrice": 205.21,
@@ -20217,7 +20392,7 @@
         "ticker": "U",
         "sourceSymbol": "U",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-10-03",
         "basePrice": 37.89,
         "latestPrice": 29.32,
@@ -20545,7 +20720,7 @@
         "ticker": "INTC",
         "sourceSymbol": "INTC",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-01-25",
         "basePrice": 20.29,
         "latestPrice": 120.35,
@@ -21076,74 +21251,6 @@
       "domain": "scale.com"
     },
     {
-      "slug": "figma",
-      "company": "Figma",
-      "ticker": null,
-      "isPublic": false,
-      "theses": [
-        {
-          "id": "E234-figma-Friedberg-2",
-          "episodeId": "E234",
-          "episodeNumber": 234,
-          "episodeDate": "2025-07-04T14:07:00.000Z",
-          "company": "Figma",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Friedberg",
-          "stance": "bull",
-          "conviction": "medium",
-          "callType": "view",
-          "excludeReason": null,
-          "scoreNote": null,
-          "sectorProxy": null,
-          "summary": "Friedberg highlights Figma's strong financials — 40%+ revenue growth, 43% operating cash flow margin, 130% net revenue retention — as evidence of durable land-and-expand dynamics, though he acknowledges AI could overnight obsolete any software.",
-          "quote": "They ran a 43% operating cash flow margin in Q1. So in Q1 of this year, Figma generated $95 million of free cash flow. They've got net revenue retention of like 130%. So this land and expand is proven out and there's real durability.",
-          "quoteStartMs": 4548796,
-          "topics": [
-            "IPO",
-            "revenue quality",
-            "AI disruption",
-            "SaaS metrics"
-          ],
-          "attributionConfidence": "high"
-        },
-        {
-          "id": "E234-figma-Chamath-0",
-          "episodeId": "E234",
-          "episodeNumber": 234,
-          "episodeDate": "2025-07-04T14:07:00.000Z",
-          "company": "Figma",
-          "ticker": null,
-          "isPublic": false,
-          "host": "Chamath",
-          "stance": "mixed",
-          "conviction": "medium",
-          "callType": "pair_trade",
-          "excludeReason": null,
-          "scoreNote": "Explicit pair trade: long Figma / short Adobe. Long leg attributed here; Adobe bear leg emitted separately.",
-          "sectorProxy": null,
-          "summary": "Chamath sees Figma as a strong business but with AI uncertainty; he would go long Figma and short an equivalent amount of Adobe to capture the spread, as Adobe would re-rate faster than Figma in any AI-driven valuation compression.",
-          "quote": "if I could get like $50 or $100 million of Figma, I would probably be long it and I would short an equivalent Quantum of Adobe, and I would just book the spread.",
-          "quoteStartMs": 4594446,
-          "topics": [
-            "IPO",
-            "AI disruption",
-            "pair trade",
-            "valuation"
-          ],
-          "attributionConfidence": "high"
-        }
-      ],
-      "synthesis": "Both Chamath and Friedberg view Figma as a fundamentally strong business, pointing to impressive financials including 40%+ revenue growth, a 43% operating cash flow margin, and 130% net revenue retention as evidence of a proven land-and-expand model. Friedberg is the more straightforwardly bullish of the two, treating these metrics as signs of near-term durability, though he acknowledges uncertainty about AI disruption in the 3–4 year horizon. Chamath shares appreciation for the business but frames his conviction more cautiously, preferring to express it as a paired trade — long Figma, short an equivalent amount of Adobe — to capture the spread rather than take outright directional risk. The key point of agreement is that Figma is durable for now; the shared uncertainty is whether AI model absorption could erode that position over the longer term.",
-      "netStance": "bull",
-      "firstMentioned": "2025-07-04T14:07:00.000Z",
-      "lastMentioned": "2025-07-04T14:07:00.000Z",
-      "mentionCount": 2,
-      "market": null,
-      "description": "Offers a cloud-based collaborative interface design and prototyping platform for product and UX teams.",
-      "domain": "figma.com"
-    },
-    {
       "slug": "adbe",
       "company": "Adobe",
       "ticker": "ADBE",
@@ -21185,7 +21292,7 @@
         "ticker": "ADBE",
         "sourceSymbol": "ADBE",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-07-04",
         "basePrice": 376.93,
         "latestPrice": 219.72,
@@ -21497,7 +21604,7 @@
         "ticker": "UBER",
         "sourceSymbol": "UBER",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-10-18",
         "basePrice": 79.16,
         "latestPrice": 74.43,
@@ -21942,7 +22049,7 @@
         "ticker": "SNOW",
         "sourceSymbol": "SNOW",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-06-21",
         "basePrice": 213.71,
         "latestPrice": 260.15,
@@ -22762,7 +22869,7 @@
         "ticker": "MAGS",
         "sourceSymbol": "MAGS",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-01-04",
         "basePrice": 56.66,
         "latestPrice": 65.1,
@@ -23150,7 +23257,7 @@
         "ticker": "BOX",
         "sourceSymbol": "BOX",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-12-20",
         "basePrice": 32.03,
         "latestPrice": 27.89,
@@ -23486,7 +23593,7 @@
         "ticker": "IEF",
         "sourceSymbol": "IEF",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-10-25",
         "basePrice": 94.89,
         "latestPrice": 94.12,
@@ -23804,7 +23911,7 @@
         "ticker": "NMAX",
         "sourceSymbol": "NMAX",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-04-05",
         "basePrice": 47.12,
         "latestPrice": 8.99,
@@ -24261,7 +24368,7 @@
         "ticker": "BA",
         "sourceSymbol": "BA",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-08-16",
         "basePrice": 179.99,
         "latestPrice": 226.49,
@@ -24705,7 +24812,7 @@
         "ticker": "IBIT",
         "sourceSymbol": "IBIT",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-05-31",
         "basePrice": 38.55,
         "latestPrice": 34.87,
@@ -25455,7 +25562,7 @@
         "ticker": "URA",
         "sourceSymbol": "URA",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-10-18",
         "basePrice": 33.46,
         "latestPrice": 43.23,
@@ -25818,7 +25925,7 @@
         "ticker": "CEG",
         "sourceSymbol": "CEG",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-01-25",
         "basePrice": 275,
         "latestPrice": 239.25,
@@ -26121,7 +26228,7 @@
         "ticker": "AVGO",
         "sourceSymbol": "AVGO",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-01-25",
         "basePrice": 202.13,
         "latestPrice": 360.45,
@@ -26492,7 +26599,7 @@
         "ticker": "KWEB",
         "sourceSymbol": "KWEB",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-01-04",
         "basePrice": 28.49,
         "latestPrice": 24.99,
@@ -26773,7 +26880,7 @@
         "ticker": "BABA",
         "sourceSymbol": "BABA",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-01-18",
         "basePrice": 85.38,
         "latestPrice": 96.14,
@@ -27113,7 +27220,7 @@
         "ticker": "MSTR",
         "sourceSymbol": "MSTR",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-12-07",
         "basePrice": 365.34,
         "latestPrice": 100.77,
@@ -27443,7 +27550,7 @@
         "ticker": "ITA",
         "sourceSymbol": "ITA",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-01-04",
         "basePrice": 144.97,
         "latestPrice": 248.19,
@@ -27974,7 +28081,7 @@
         "ticker": "DJT",
         "sourceSymbol": "DJT",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2025-01-04",
         "basePrice": 36.17,
         "latestPrice": 8.54,
@@ -28380,7 +28487,7 @@
         "ticker": "BAC",
         "sourceSymbol": "BAC",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-11-01",
         "basePrice": 41.76,
         "latestPrice": 58.73,
@@ -28788,7 +28895,7 @@
         "ticker": "SBUX",
         "sourceSymbol": "SBUX",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-08-16",
         "basePrice": 94.81,
         "latestPrice": 104.27,
@@ -29087,7 +29194,7 @@
         "ticker": "DBC",
         "sourceSymbol": "DBC",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-10-25",
         "basePrice": 22.81,
         "latestPrice": 26.57,
@@ -29414,7 +29521,7 @@
         "ticker": "EXPE",
         "sourceSymbol": "EXPE",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-10-18",
         "basePrice": 159.61,
         "latestPrice": 268.69,
@@ -29929,7 +30036,7 @@
         "ticker": "ABNB",
         "sourceSymbol": "ABNB",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-09-06",
         "basePrice": 114.28,
         "latestPrice": 148.93,
@@ -30220,7 +30327,7 @@
         "ticker": "PANW",
         "sourceSymbol": "PANW",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-09-06",
         "basePrice": 167.91,
         "latestPrice": 348.06,
@@ -30552,7 +30659,7 @@
         "ticker": "CMG",
         "sourceSymbol": "CMG",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-08-16",
         "basePrice": 52.47,
         "latestPrice": 35.39,
@@ -30893,7 +31000,7 @@
         "ticker": "CRWD",
         "sourceSymbol": "CRWD",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-07-26",
         "basePrice": 64.04,
         "latestPrice": 193.98,
@@ -31173,7 +31280,7 @@
         "ticker": "FOXA",
         "sourceSymbol": "FOXA",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-07-26",
         "basePrice": 37.51,
         "latestPrice": 56.48,
@@ -31655,7 +31762,7 @@
         "ticker": "GME",
         "sourceSymbol": "GME",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-06-07",
         "basePrice": 28.22,
         "latestPrice": 22.82,
@@ -31992,7 +32099,7 @@
         "ticker": "DELL",
         "sourceSymbol": "DELL",
         "currency": "USD",
-        "asOf": "2026-07-03",
+        "asOf": "2026-07-04",
         "anchorDate": "2024-05-31",
         "basePrice": 139.56,
         "latestPrice": 394.32,
@@ -32504,9 +32611,9 @@
       "domain": null
     }
   ],
-  "episodesProcessed": 100,
+  "episodesProcessed": 101,
   "indexFund": {
-    "asOf": "2026-07-03",
+    "asOf": "2026-07-04",
     "inceptionDate": "2024-07-26",
     "benchmarkSymbol": "SPY",
     "contributionPerCall": 1000,
@@ -33415,7 +33522,7 @@
     }
   },
   "guestiesFund": {
-    "asOf": "2026-07-03",
+    "asOf": "2026-07-04",
     "inceptionDate": "2025-01-18",
     "benchmarkSymbol": "SPY",
     "contributionPerCall": 1000,
@@ -33426,6 +33533,26 @@
     "benchmarkReturn": 0.1263749999999999,
     "outperformance": 0.028125000000000178,
     "constituents": [
+      {
+        "slug": "000660.ks",
+        "company": "SK Hynix",
+        "ticker": "000660.KS",
+        "sourceSymbol": "000660.KS",
+        "currency": "KRW",
+        "direction": "long",
+        "callTypes": [
+          "explicit_long"
+        ],
+        "entryDate": "2026-05-08",
+        "entryPrice": 1686000,
+        "latestPrice": 2425000,
+        "sinceReturn": 0.43831553973902726,
+        "benchmarkReturn": 0.009706895149263817,
+        "alpha": 0.42860864458976344,
+        "hosts": [
+          "Guest"
+        ]
+      },
       {
         "slug": "mu",
         "company": "Micron Technology",
@@ -33447,21 +33574,21 @@
         ]
       },
       {
-        "slug": "000660.ks",
-        "company": "SK Hynix",
-        "ticker": "000660.KS",
-        "sourceSymbol": "000660.KS",
+        "slug": "005930.ks",
+        "company": "Samsung",
+        "ticker": "005930.KS",
+        "sourceSymbol": "005930.KS",
         "currency": "KRW",
         "direction": "long",
         "callTypes": [
           "explicit_long"
         ],
         "entryDate": "2026-05-08",
-        "entryPrice": 1686000,
-        "latestPrice": 2187000,
-        "sinceReturn": 0.2971530249110321,
+        "entryPrice": 268500,
+        "latestPrice": 309500,
+        "sinceReturn": 0.15270018621973924,
         "benchmarkReturn": 0.009706895149263817,
-        "alpha": 0.2874461297617683,
+        "alpha": 0.14299329107047543,
         "hosts": [
           "Guest"
         ]
@@ -33482,26 +33609,6 @@
         "sinceReturn": 0.35139071928972765,
         "benchmarkReturn": 0.24098975256185962,
         "alpha": 0.11040096672786803,
-        "hosts": [
-          "Guest"
-        ]
-      },
-      {
-        "slug": "005930.ks",
-        "company": "Samsung",
-        "ticker": "005930.KS",
-        "sourceSymbol": "005930.KS",
-        "currency": "KRW",
-        "direction": "long",
-        "callTypes": [
-          "explicit_long"
-        ],
-        "entryDate": "2026-05-08",
-        "entryPrice": 268500,
-        "latestPrice": 286000,
-        "sinceReturn": 0.06517690875232773,
-        "benchmarkReturn": 0.009706895149263817,
-        "alpha": 0.05547001360306392,
         "hosts": [
           "Guest"
         ]
@@ -34164,14 +34271,14 @@
       "guest": "Brad Gerstner",
       "slug": "brad-gerstner",
       "calls": 3,
-      "followReturn": 0.22287758053549264,
+      "followReturn": 0.29910617796729483,
       "benchmarkReturn": 0.009706895149263817,
-      "alpha": 0.21317068538622883,
+      "alpha": 0.289399282818031,
       "best": {
-        "company": "Micron Technology",
-        "ticker": "MU",
-        "slug": "mu",
-        "ret": 0.30630280794311804
+        "company": "SK Hynix",
+        "ticker": "000660.KS",
+        "slug": "000660.ks",
+        "ret": 0.43831553973902726
       },
       "picks": [
         {
@@ -34190,9 +34297,9 @@
           "slug": "000660.ks",
           "stance": "bull",
           "date": "2026-05-08",
-          "ret": 0.2971530249110321,
+          "ret": 0.43831553973902726,
           "benchmarkReturn": 0.009706895149263817,
-          "alpha": 0.2874461297617683
+          "alpha": 0.42860864458976344
         },
         {
           "company": "Samsung",
@@ -34200,9 +34307,9 @@
           "slug": "005930.ks",
           "stance": "bull",
           "date": "2026-05-08",
-          "ret": 0.06517690875232773,
+          "ret": 0.15270018621973924,
           "benchmarkReturn": 0.009706895149263817,
-          "alpha": 0.05547001360306392
+          "alpha": 0.14299329107047543
         }
       ]
     },
@@ -34351,36 +34458,6 @@
       "picks": []
     },
     {
-      "guest": "Emil Michael",
-      "slug": "emil-michael",
-      "calls": 0,
-      "followReturn": null,
-      "benchmarkReturn": null,
-      "alpha": null,
-      "best": null,
-      "picks": []
-    },
-    {
-      "guest": "Elon Musk",
-      "slug": "elon-musk",
-      "calls": 0,
-      "followReturn": null,
-      "benchmarkReturn": null,
-      "alpha": null,
-      "best": null,
-      "picks": []
-    },
-    {
-      "guest": "Antonio Gracias",
-      "slug": "antonio-gracias",
-      "calls": 0,
-      "followReturn": null,
-      "benchmarkReturn": null,
-      "alpha": null,
-      "best": null,
-      "picks": []
-    },
-    {
       "guest": "Bill Gurley",
       "slug": "bill-gurley",
       "calls": 0,
@@ -34403,6 +34480,36 @@
     {
       "guest": "Travis Kalanick",
       "slug": "travis-kalanick",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Emil Michael",
+      "slug": "emil-michael",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Elon Musk",
+      "slug": "elon-musk",
+      "calls": 0,
+      "followReturn": null,
+      "benchmarkReturn": null,
+      "alpha": null,
+      "best": null,
+      "picks": []
+    },
+    {
+      "guest": "Antonio Gracias",
+      "slug": "antonio-gracias",
       "calls": 0,
       "followReturn": null,
       "benchmarkReturn": null,
@@ -34523,7 +34630,7 @@
   ],
   "hostFunds": {
     "Chamath": {
-      "asOf": "2026-07-03",
+      "asOf": "2026-07-04",
       "inceptionDate": "2025-01-04",
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
@@ -35166,7 +35273,7 @@
       ]
     },
     "Jason": {
-      "asOf": "2026-07-03",
+      "asOf": "2026-07-04",
       "inceptionDate": "2025-01-04",
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
@@ -35818,7 +35925,7 @@
       ]
     },
     "Sacks": {
-      "asOf": "2026-07-03",
+      "asOf": "2026-07-04",
       "inceptionDate": "2024-07-26",
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
@@ -36393,7 +36500,7 @@
       ]
     },
     "Friedberg": {
-      "asOf": "2026-07-03",
+      "asOf": "2026-07-04",
       "inceptionDate": "2024-10-18",
       "benchmarkSymbol": "SPY",
       "contributionPerCall": 1000,
@@ -37884,6 +37991,13 @@
       "date": "2026-06-26T23:53:00.000Z",
       "number": 278,
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/secure/allinchamathjason/ALLIN-E278_Ch.mp3?dest-id=1928300"
+    },
+    "E279": {
+      "title": "AI Sovereignty Wars, Palantir-Nvidia Deal, SCOTUS Birthright Ruling, Newsom's CA Budget Lie",
+      "link": "https://allinchamathjason.libsyn.com/ai-sovereignty-wars-palantir-nvidia-deal-scotus-birthright-ruling-newsoms-ca-budget-lie",
+      "date": "2026-07-03T22:12:00.000Z",
+      "number": 279,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/secure/allinchamathjason/ALLIN-E279_Ch.mp3?dest-id=1928300"
     }
   },
   "bearBook": [
