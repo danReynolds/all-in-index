@@ -12,6 +12,11 @@ on:
       - "package.json"
       - "package-lock.json"
   workflow_dispatch:
+    inputs:
+      verify_x_api:
+        description: "Verify configured X credentials with a no-post /2/users/me request"
+        required: true
+        default: "false"
 
 permissions:
   contents: read
@@ -33,3 +38,14 @@ jobs:
         env:
           NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://allindex.fyi' }}
         run: npm run social:check
+
+      - name: Verify X credentials
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.verify_x_api == 'true' }}
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://allindex.fyi' }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+        run: npm run social -- check --require-x-credentials --verify-x-api

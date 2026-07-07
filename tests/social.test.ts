@@ -9,7 +9,7 @@ import { candidateToLedgerEntry, filterFreshCandidates } from "../lib/social/led
 import { buildPublishPosts, publishSocialCandidate } from "../lib/social/publish";
 import { containsUrl } from "../lib/social/policy";
 import { renderCandidateVisualSvg, visualAssetFilename, writeCandidateVisualAssets } from "../lib/social/visual";
-import { buildOAuth1Header } from "../lib/social/x";
+import { buildOAuth1Header, verifyXCredentials } from "../lib/social/x";
 import type { Holding, IndexFund, IndexSnapshot, Thesis } from "../lib/types";
 
 function thesis(overrides: Partial<Thesis>): Thesis {
@@ -273,6 +273,78 @@ test("OAuth 1.0a header builder signs a create-post request", () => {
   assert.match(header, /oauth_nonce="abc123"/);
   assert.match(header, /oauth_signature="/);
   assert.match(header, /oauth_token="token"/);
+});
+
+test("X credential verifier checks authenticated user without posting", async () => {
+  const previousEnv = {
+    X_API_KEY: process.env.X_API_KEY,
+    X_API_SECRET: process.env.X_API_SECRET,
+    X_ACCESS_TOKEN: process.env.X_ACCESS_TOKEN,
+    X_ACCESS_TOKEN_SECRET: process.env.X_ACCESS_TOKEN_SECRET,
+    X_BEARER_TOKEN: process.env.X_BEARER_TOKEN,
+  };
+  const previousFetch = globalThis.fetch;
+  let request: { url: string; method?: string; authorization?: string } | undefined;
+  process.env.X_API_KEY = "key";
+  process.env.X_API_SECRET = "secret";
+  process.env.X_ACCESS_TOKEN = "token";
+  process.env.X_ACCESS_TOKEN_SECRET = "token-secret";
+  delete process.env.X_BEARER_TOKEN;
+  globalThis.fetch = (async (url, init) => {
+    request = {
+      url: String(url),
+      method: init?.method,
+      authorization: new Headers(init?.headers).get("Authorization") ?? undefined,
+    };
+    return new Response(JSON.stringify({ data: { id: "123", name: "All-In Index", username: "allindex" } }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
+  }) as typeof fetch;
+
+  try {
+    const verified = await verifyXCredentials();
+    assert.deepEqual(verified, { id: "123", name: "All-In Index", username: "allindex" });
+    assert.equal(request?.url, "https://api.x.com/2/users/me");
+    assert.equal(request?.method, "GET");
+    assert.match(request?.authorization ?? "", /^OAuth /);
+  } finally {
+    globalThis.fetch = previousFetch;
+    for (const [key, value] of Object.entries(previousEnv)) {
+      if (value == null) delete process.env[key];
+      else process.env[key] = value;
+    }
+  }
+});
+
+test("X credential verifier surfaces API enrollment errors", async () => {
+  const previousEnv = {
+    X_API_KEY: process.env.X_API_KEY,
+    X_API_SECRET: process.env.X_API_SECRET,
+    X_ACCESS_TOKEN: process.env.X_ACCESS_TOKEN,
+    X_ACCESS_TOKEN_SECRET: process.env.X_ACCESS_TOKEN_SECRET,
+    X_BEARER_TOKEN: process.env.X_BEARER_TOKEN,
+  };
+  const previousFetch = globalThis.fetch;
+  process.env.X_API_KEY = "key";
+  process.env.X_API_SECRET = "secret";
+  process.env.X_ACCESS_TOKEN = "token";
+  process.env.X_ACCESS_TOKEN_SECRET = "token-secret";
+  delete process.env.X_BEARER_TOKEN;
+  globalThis.fetch = (async () => new Response(
+    JSON.stringify({ title: "Client Forbidden", reason: "client-not-enrolled" }),
+    { status: 403, headers: { "Content-Type": "application/json" } },
+  )) as typeof fetch;
+
+  try {
+    await assert.rejects(verifyXCredentials(), /client-not-enrolled/);
+  } finally {
+    globalThis.fetch = previousFetch;
+    for (const [key, value] of Object.entries(previousEnv)) {
+      if (value == null) delete process.env[key];
+      else process.env[key] = value;
+    }
+  }
 });
 
 test("visual generator writes deterministic SVG assets for visual candidates", () => {
