@@ -118,6 +118,24 @@ function sortedByAlpha(constituents: IndexConstituent[]): IndexConstituent[] {
   return constituents.slice().sort((a, b) => b.alpha - a.alpha);
 }
 
+function cashtag(ticker: string): string {
+  return `$${ticker.replace(/^\$/, "")}`;
+}
+
+function reportQuarter(now: Date): { year: number; quarter: number; label: string } {
+  const month = now.getUTCMonth();
+  let year = now.getUTCFullYear();
+  let quarter = Math.floor(month / 3) + 1;
+  if ([0, 3, 6, 9].includes(month) && now.getUTCDate() <= 14) {
+    quarter -= 1;
+    if (quarter === 0) {
+      quarter = 4;
+      year -= 1;
+    }
+  }
+  return { year, quarter, label: `Q${quarter} ${year}` };
+}
+
 function portfolioPulse(s: IndexSnapshot, now: Date, siteUrl: string): SocialCandidate | null {
   const fund = s.indexFund;
   if (!fund || fund.constituents.length === 0) return null;
@@ -125,14 +143,13 @@ function portfolioPulse(s: IndexSnapshot, now: Date, siteUrl: string): SocialCan
   const top = byAlpha[0];
   const wins = fund.constituents.filter((c) => c.alpha > 0).length;
   const mainPost = [
-    "Besties Index check-in:",
+    `The All-In portfolio is beating the S&P by ${pp(fund.outperformance)}.`,
     "",
-    `Besties: ${pct(fund.portfolioReturn)}`,
-    `S&P: ${pct(fund.benchmarkReturn)}`,
-    `Edge: ${pp(fund.outperformance)}`,
+    `Besties Index: ${pct(fund.portfolioReturn)}`,
+    `S&P 500: ${pct(fund.benchmarkReturn)}`,
     "",
     `${fund.constituents.length} live longs; ${wins} are beating the benchmark.`,
-    `Top open call: ${top.company} (${top.ticker}), ${pp(top.alpha)} vs S&P.`,
+    `Biggest open receipt: ${cashtag(top.ticker)} ${pp(top.alpha)} alpha.`,
   ].join("\n");
 
   return candidateBase({
@@ -174,12 +191,12 @@ function receipt(s: IndexSnapshot, now: Date, siteUrl: string): SocialCandidate 
   const top = sortedByAlpha(fund.constituents)[0];
   const verb = top.hosts.length === 1 ? "has" : "have";
   const mainPost = [
-    "Receipt of the week:",
+    "This is why the receipts matter.",
     "",
-    `${hostList(top.hosts)} still ${top.direction === "short" ? `${verb} a short call on` : `${verb} an open long call on`} ${top.company} (${top.ticker}).`,
+    `${hostList(top.hosts)} still ${top.direction === "short" ? `${verb} a short call on` : `${verb} an open long call on`} ${top.company} ${cashtag(top.ticker)}.`,
     "",
     `Since entry: ${pct(top.sinceReturn)}`,
-    `Same-window S&P: ${pct(top.benchmarkReturn)}`,
+    `S&P same window: ${pct(top.benchmarkReturn)}`,
     `Alpha: ${pp(top.alpha)}`,
   ].join("\n");
 
@@ -228,14 +245,17 @@ function latestEpisode(s: IndexSnapshot, now: Date, siteUrl: string): SocialCand
     };
     const companies = takesByHolding.slice(0, 4).map((g) => g.holding.company);
     const episodeLabel = episode.number ? `E${episode.number}` : episode.id;
+    const headline = scored.length > 0
+      ? `${episodeLabel} added ${scored.length} portfolio-scored call${scored.length === 1 ? "" : "s"} to The All-Index.`
+      : `${episodeLabel} is indexed. The scorecard is quiet this week.`;
     const mainPost = [
-      `Latest All-In episode added to The All-Index: ${episodeLabel}`,
+      headline,
       "",
       `${takes.length} tracked takes across ${takesByHolding.length} names.`,
       `Portfolio-scored calls: ${scored.length}.`,
-      `Stance mix: ${stance.bull} bull / ${stance.bear} bear / ${stance.mixed} mixed / ${stance.neutral} neutral.`,
       "",
       `Most discussed: ${companies.join(", ")}.`,
+      `Stance mix: ${stance.bull} bull / ${stance.bear} bear / ${stance.mixed} mixed / ${stance.neutral} neutral.`,
     ].join("\n");
 
     return candidateBase({
@@ -272,13 +292,15 @@ function openDuel(s: IndexSnapshot, now: Date, siteUrl: string): SocialCandidate
         ? "The bears are winning the tape so far."
         : "The tape is still basically a push.";
   const mainPost = [
-    `Live bestie disagreement: ${duel.company} (${duel.ticker})`,
+    `The All-In crew is split on ${duel.company} ${cashtag(duel.ticker)}.`,
     "",
-    `Bulls: ${hostList(duel.bulls)}`,
-    `Bears: ${hostList(duel.bears)}`,
+    `Bull side: ${hostList(duel.bulls)}`,
+    `Bear side: ${hostList(duel.bears)}`,
     "",
-    `Since the disagreement crystallized: ${pct(duel.ret)}.`,
+    `Since the split: ${pct(duel.ret)}.`,
     winner,
+    "",
+    "Who had the better read?",
   ].join("\n");
 
   return candidateBase({
@@ -307,9 +329,8 @@ function award(s: IndexSnapshot, now: Date, siteUrl: string): SocialCandidate | 
   if (!picked) return null;
   const route = picked.href ?? "/awards";
   const mainPost = [
-    "All-Index award watch:",
+    `Current All-Index Oracle: ${picked.recipient}.`,
     "",
-    `${picked.title}: ${picked.recipient}`,
     picked.stat,
     "",
     picked.detail,
@@ -325,7 +346,7 @@ function award(s: IndexSnapshot, now: Date, siteUrl: string): SocialCandidate | 
     topicKey: `award:${picked.key}`,
     route,
     mainPost,
-    linkReplyLabel: "Awards board",
+    linkReplyLabel: route === "/awards" ? "Awards board" : "Host receipt",
     risk: reviewRequired ? "medium" : "low",
     reviewRequired,
     autoPublishEligible: !reviewRequired,
@@ -350,10 +371,10 @@ function predictionCheckin(
   const symbol = prediction.ticker ?? prediction.proxyTicker;
   const speaker = prediction.guestName ?? prediction.host;
   const mainPost = [
-    "Prediction check-in:",
+    "One of the wildest prediction receipts in the index:",
     "",
     `${speaker} picked ${prediction.pick} for "${prediction.category}".`,
-    symbol ? `Tracked proxy: ${symbol}, ${pct(prediction.sinceReturn)} since the call.` : `Current tracked move: ${pct(prediction.sinceReturn)}.`,
+    symbol ? `Tracked proxy: ${cashtag(symbol)}, ${pct(prediction.sinceReturn)} since the call.` : `Current tracked move: ${pct(prediction.sinceReturn)}.`,
     "",
     `From ${episode.title}.`,
   ].join("\n");
@@ -383,11 +404,12 @@ function quarterlyReport(s: IndexSnapshot, now: Date, siteUrl: string): SocialCa
   const byAlpha = sortedByAlpha(fund.constituents);
   const best = byAlpha[0];
   const worst = byAlpha[byAlpha.length - 1];
+  const quarter = reportQuarter(now);
   const mainPost = [
-    "Quarterly All-Index report:",
+    `${quarter.label}: The All-In portfolio is ahead of the market.`,
     "",
     `Besties Index: ${pct(fund.portfolioReturn)}`,
-    `S&P: ${pct(fund.benchmarkReturn)}`,
+    `S&P 500: ${pct(fund.benchmarkReturn)}`,
     `Edge: ${pp(fund.outperformance)}`,
     "",
     `${fund.constituents.length} live longs as of ${fmtDate(fund.asOf)}.`,
@@ -399,12 +421,12 @@ function quarterlyReport(s: IndexSnapshot, now: Date, siteUrl: string): SocialCa
     scheduleId: "quarterly-portfolio-report",
     kind: "quarterly_report",
     title: "Quarterly portfolio report",
-    topicKey: `quarterly:${now.getUTCFullYear()}:q${Math.floor(now.getUTCMonth() / 3) + 1}`,
+    topicKey: `quarterly:${quarter.year}:q${quarter.quarter}`,
     route: "/the-index",
     mainPost,
     threadPosts: [
-      `Best open call by alpha: ${best.company} (${best.ticker}), ${pp(best.alpha)} vs S&P.`,
-      `Worst open call by alpha: ${worst.company} (${worst.ticker}), ${pp(worst.alpha)} vs S&P.`,
+      `Best open call by alpha: ${best.company} ${cashtag(best.ticker)}, ${pp(best.alpha)} vs S&P.`,
+      `Worst open call by alpha: ${worst.company} ${cashtag(worst.ticker)}, ${pp(worst.alpha)} vs S&P.`,
     ],
     linkReplyLabel: "Quarterly scoreboard",
     risk: "medium",
