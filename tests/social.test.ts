@@ -5,7 +5,7 @@ import os from "node:os";
 import path from "node:path";
 import { generateSocialCandidates } from "../lib/social/generate";
 import { candidateToLedgerEntry, filterFreshCandidates } from "../lib/social/ledger";
-import { buildPublishPosts } from "../lib/social/publish";
+import { buildPublishPosts, publishSocialCandidate } from "../lib/social/publish";
 import { containsUrl } from "../lib/social/policy";
 import { renderCandidateVisualSvg, visualAssetFilename, writeCandidateVisualAssets } from "../lib/social/visual";
 import { buildOAuth1Header } from "../lib/social/x";
@@ -226,6 +226,31 @@ test("publish plan threads posts and keeps link reply last", () => {
   assert.equal(containsUrl(posts[0].text), false);
   assert.equal(posts.at(-1)?.role, "link_reply");
   assert.equal(containsUrl(posts.at(-1)?.text ?? ""), true);
+});
+
+test("non-dry-run publish refuses review-required candidates without override", async () => {
+  const bundle = generateSocialCandidates(snapshot(), {
+    siteUrl: "https://example.test",
+    now: new Date("2026-07-07T15:00:00.000Z"),
+    scheduleIds: ["weekly-receipt"],
+  });
+
+  await assert.rejects(
+    publishSocialCandidate(bundle.candidates[0]),
+    /not safe for non-dry-run publish/,
+  );
+});
+
+test("dry-run publish allows review-required candidates for preview", async () => {
+  const bundle = generateSocialCandidates(snapshot(), {
+    siteUrl: "https://example.test",
+    now: new Date("2026-07-07T15:00:00.000Z"),
+    scheduleIds: ["weekly-receipt"],
+  });
+
+  const result = await publishSocialCandidate(bundle.candidates[0], { dryRun: true });
+  assert.equal(result.dryRun, true);
+  assert.equal(result.posts.length, 3);
 });
 
 test("OAuth 1.0a header builder signs a create-post request", () => {

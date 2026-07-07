@@ -14,6 +14,14 @@ export interface PublishResult {
   published: Array<PublishPost & XPostResult>;
 }
 
+export interface PublishSafetyOptions {
+  /**
+   * Allows a human-reviewed candidate that is not auto-publish eligible to be
+   * published manually. Dry runs never need this override.
+   */
+  allowReviewed?: boolean;
+}
+
 export function buildPublishPosts(
   candidate: SocialCandidate,
   options: { includeLinkReply?: boolean } = {},
@@ -27,12 +35,28 @@ export function buildPublishPosts(
   return posts;
 }
 
+export function assertCandidatePublishable(
+  candidate: SocialCandidate,
+  options: PublishSafetyOptions = {},
+): void {
+  if (candidate.autoPublishEligible && !candidate.reviewRequired) return;
+  if (options.allowReviewed) return;
+  const reasons = [
+    candidate.reviewRequired ? "reviewRequired=true" : null,
+    candidate.autoPublishEligible ? null : "autoPublishEligible=false",
+  ].filter(Boolean);
+  throw new Error(
+    `Candidate ${candidate.id} is not safe for non-dry-run publish without --allow-reviewed (${reasons.join(", ")}).`,
+  );
+}
+
 export async function publishSocialCandidate(
   candidate: SocialCandidate,
-  options: { dryRun?: boolean; includeLinkReply?: boolean } = {},
+  options: { dryRun?: boolean; includeLinkReply?: boolean; allowReviewed?: boolean } = {},
 ): Promise<PublishResult> {
   const posts = buildPublishPosts(candidate, { includeLinkReply: options.includeLinkReply });
   if (options.dryRun) return { dryRun: true, posts, published: [] };
+  assertCandidatePublishable(candidate, { allowReviewed: options.allowReviewed });
 
   const published: PublishResult["published"] = [];
   let replyToId: string | undefined;
