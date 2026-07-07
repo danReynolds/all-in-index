@@ -323,6 +323,16 @@ Use `npm run social -- check --require-x-credentials` only when verifying a
 real-publish environment; ordinary CI should allow missing X credentials so
 draft generation and dry-run publishing can stay active before launch.
 
+Verify X credentials without creating a public post:
+
+```bash
+npm run social -- check --require-x-credentials --verify-x-api
+```
+
+That check calls X's authenticated-user endpoint (`/2/users/me`). It catches
+misconfigured Apps, missing user-context permissions, and API access enrollment
+issues before a non-dry-run publish attempts `POST /2/tweets`.
+
 ## GitHub Workflows
 
 - `social-drafts.yml` creates or updates stable review issues by schedule slot
@@ -333,6 +343,8 @@ draft generation and dry-run publishing can stay active before launch.
   require `allow_reviewed=true`.
 - `social-review.yml` opens a weekly internal performance-review issue from
   `social/reviews/TEMPLATE.md`.
+- `social-check.yml` validates the generator on PRs. Manual dispatch can also
+  run the no-post X credential verification by setting `verify_x_api=true`.
 
 Draft generation can emit deterministic SVG scorecards for candidates with a
 useful native visual. Today that covers the weekly portfolio pulse and quarterly
@@ -342,7 +354,9 @@ Publishing credentials:
 
 - Preferred for CI: OAuth 1.0a user-context tokens via `X_API_KEY`,
   `X_API_SECRET`, `X_ACCESS_TOKEN`, and `X_ACCESS_TOKEN_SECRET`.
-- Fallback for local/manual experiments: `X_BEARER_TOKEN`.
+- Fallback for local/manual experiments: `X_BEARER_TOKEN` only if it is a
+  user-context token with write scope. App-only bearer tokens are read-only and
+  cannot publish posts.
 
 The publish command posts the main post first, then replies in order with thread
 posts and the optional link reply. This preserves the link-free main-post rule
@@ -364,15 +378,17 @@ After this system merges to `main`, roll it out in order:
    - `X_API_SECRET`
    - `X_ACCESS_TOKEN`
    - `X_ACCESS_TOKEN_SECRET`
-5. Run one controlled non-dry-run publish for `weekly-portfolio-pulse`.
-6. Confirm:
+5. Run `Social Check` manually with `verify_x_api=true`; it must verify the
+   X account before any non-dry-run publish.
+6. Run one controlled non-dry-run publish for `weekly-portfolio-pulse`.
+7. Confirm:
    - the X thread posted in order,
    - the main post has no URL,
    - the link reply points to the right page,
    - `social/ledger.json` was committed by the workflow,
    - the next draft generation skips the recently used topic.
-7. Keep all review-required schedules manual for the first 1-2 weeks.
-8. Fill in one weekly performance review issue before changing cadence or
+8. Keep all review-required schedules manual for the first 1-2 weeks.
+9. Fill in one weekly performance review issue before changing cadence or
    enabling broader auto-publish.
 
 Do not enable unattended publishing for episode recaps, receipts, duels,

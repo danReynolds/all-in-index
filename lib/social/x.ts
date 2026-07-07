@@ -1,6 +1,7 @@
 import crypto from "node:crypto";
 
 const CREATE_POST_URL = "https://api.x.com/2/tweets";
+const VERIFY_USER_URL = "https://api.x.com/2/users/me";
 
 export interface XPostInput {
   text: string;
@@ -11,6 +12,12 @@ export interface XPostResult {
   id: string;
   text: string;
   url: string;
+}
+
+export interface XCredentialVerification {
+  id: string;
+  name: string;
+  username: string;
 }
 
 export interface OAuth1Credentials {
@@ -71,12 +78,12 @@ function bearerTokenFromEnv(): string | null {
   return process.env.X_BEARER_TOKEN ?? null;
 }
 
-function authHeader(): string {
+function userContextAuthHeader(method: string, url: string): string {
   const oauth1 = oauth1CredentialsFromEnv();
   if (oauth1) {
     return buildOAuth1Header({
-      method: "POST",
-      url: CREATE_POST_URL,
+      method,
+      url,
       credentials: oauth1,
     });
   }
@@ -94,7 +101,7 @@ export async function createXPost(input: XPostInput): Promise<XPostResult> {
   const response = await fetch(CREATE_POST_URL, {
     method: "POST",
     headers: {
-      Authorization: authHeader(),
+      Authorization: userContextAuthHeader("POST", CREATE_POST_URL),
       "Content-Type": "application/json",
     },
     body: JSON.stringify(body),
@@ -110,5 +117,25 @@ export async function createXPost(input: XPostInput): Promise<XPostResult> {
     id,
     text: payload.data.text ?? input.text,
     url: `https://x.com/i/web/status/${id}`,
+  };
+}
+
+export async function verifyXCredentials(): Promise<XCredentialVerification> {
+  const response = await fetch(VERIFY_USER_URL, {
+    method: "GET",
+    headers: {
+      Authorization: userContextAuthHeader("GET", VERIFY_USER_URL),
+    },
+  });
+  const payload = await response.json().catch(() => null) as
+    | { data?: { id?: string; name?: string; username?: string }; title?: string; detail?: string; errors?: unknown }
+    | null;
+  if (!response.ok || !payload?.data?.id || !payload.data.username) {
+    throw new Error(`X credential verification failed (${response.status}): ${JSON.stringify(payload)}`);
+  }
+  return {
+    id: payload.data.id,
+    name: payload.data.name ?? payload.data.username,
+    username: payload.data.username,
   };
 }

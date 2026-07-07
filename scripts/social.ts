@@ -11,6 +11,7 @@ import {
 import { publishSocialCandidate } from "../lib/social/publish";
 import { renderSocialDraftsMarkdown } from "../lib/social/render";
 import { writeCandidateVisualAssets } from "../lib/social/visual";
+import { verifyXCredentials } from "../lib/social/x";
 import type { SocialCandidate, SocialDraftBundle, SocialKind } from "../lib/social/types";
 
 interface GenerateArgs {
@@ -162,7 +163,18 @@ async function cmdCheck(rest: string[]): Promise<void> {
     siteUrl: readFlag(rest, "--site-url"),
     requireXCredentials: rest.includes("--require-x-credentials"),
   });
+  let verifiedLine: string | undefined;
+  if (rest.includes("--verify-x-api")) {
+    try {
+      const verified = await verifyXCredentials();
+      verifiedLine = `X credentials verified for @${verified.username} (${verified.id}).`;
+    } catch (err) {
+      result.ok = false;
+      result.errors.push(err instanceof Error ? err.message : String(err));
+    }
+  }
   process.stdout.write(formatSocialCheckResult(result));
+  if (verifiedLine) process.stdout.write(`${verifiedLine}\n`);
   if (!result.ok) process.exitCode = 1;
 }
 
@@ -180,8 +192,8 @@ async function main(): Promise<void> {
       return cmdCheck(rest);
     default:
       console.log(
-        "commands:\n" +
-          "  check [--site-url URL] [--require-x-credentials]\n" +
+          "commands:\n" +
+          "  check [--site-url URL] [--require-x-credentials] [--verify-x-api]\n" +
           "  generate [--kind KIND] [--schedule-id ID] [--json-out FILE] [--md-out FILE]\n" +
           "           [--ledger FILE] [--site-url URL] [--assets-dir DIR] [--include-recent]\n" +
           "  publish --candidate-file FILE [--candidate-id ID] [--dry-run] [--no-link-reply] [--allow-reviewed]\n" +
