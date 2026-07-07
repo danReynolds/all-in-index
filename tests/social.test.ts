@@ -282,6 +282,7 @@ test("X credential verifier checks authenticated user without posting", async ()
     X_ACCESS_TOKEN: process.env.X_ACCESS_TOKEN,
     X_ACCESS_TOKEN_SECRET: process.env.X_ACCESS_TOKEN_SECRET,
     X_BEARER_TOKEN: process.env.X_BEARER_TOKEN,
+    X_EXPECTED_USERNAME: process.env.X_EXPECTED_USERNAME,
   };
   const previousFetch = globalThis.fetch;
   let request: { url: string; method?: string; authorization?: string } | undefined;
@@ -289,6 +290,7 @@ test("X credential verifier checks authenticated user without posting", async ()
   process.env.X_API_SECRET = "secret";
   process.env.X_ACCESS_TOKEN = "token";
   process.env.X_ACCESS_TOKEN_SECRET = "token-secret";
+  process.env.X_EXPECTED_USERNAME = "@AllIndex";
   delete process.env.X_BEARER_TOKEN;
   globalThis.fetch = (async (url, init) => {
     request = {
@@ -324,12 +326,14 @@ test("X credential verifier surfaces API enrollment errors", async () => {
     X_ACCESS_TOKEN: process.env.X_ACCESS_TOKEN,
     X_ACCESS_TOKEN_SECRET: process.env.X_ACCESS_TOKEN_SECRET,
     X_BEARER_TOKEN: process.env.X_BEARER_TOKEN,
+    X_EXPECTED_USERNAME: process.env.X_EXPECTED_USERNAME,
   };
   const previousFetch = globalThis.fetch;
   process.env.X_API_KEY = "key";
   process.env.X_API_SECRET = "secret";
   process.env.X_ACCESS_TOKEN = "token";
   process.env.X_ACCESS_TOKEN_SECRET = "token-secret";
+  delete process.env.X_EXPECTED_USERNAME;
   delete process.env.X_BEARER_TOKEN;
   globalThis.fetch = (async () => new Response(
     JSON.stringify({ title: "Client Forbidden", reason: "client-not-enrolled" }),
@@ -338,6 +342,108 @@ test("X credential verifier surfaces API enrollment errors", async () => {
 
   try {
     await assert.rejects(verifyXCredentials(), /client-not-enrolled/);
+  } finally {
+    globalThis.fetch = previousFetch;
+    for (const [key, value] of Object.entries(previousEnv)) {
+      if (value == null) delete process.env[key];
+      else process.env[key] = value;
+    }
+  }
+});
+
+test("X credential verifier rejects an unexpected authenticated account", async () => {
+  const previousEnv = {
+    X_API_KEY: process.env.X_API_KEY,
+    X_API_SECRET: process.env.X_API_SECRET,
+    X_ACCESS_TOKEN: process.env.X_ACCESS_TOKEN,
+    X_ACCESS_TOKEN_SECRET: process.env.X_ACCESS_TOKEN_SECRET,
+    X_BEARER_TOKEN: process.env.X_BEARER_TOKEN,
+    X_EXPECTED_USERNAME: process.env.X_EXPECTED_USERNAME,
+  };
+  const previousFetch = globalThis.fetch;
+  process.env.X_API_KEY = "key";
+  process.env.X_API_SECRET = "secret";
+  process.env.X_ACCESS_TOKEN = "token";
+  process.env.X_ACCESS_TOKEN_SECRET = "token-secret";
+  process.env.X_EXPECTED_USERNAME = "allindex";
+  delete process.env.X_BEARER_TOKEN;
+  globalThis.fetch = (async () => new Response(
+    JSON.stringify({ data: { id: "456", name: "Personal", username: "TheDerivative" } }),
+    { status: 200, headers: { "Content-Type": "application/json" } },
+  )) as typeof fetch;
+
+  try {
+    await assert.rejects(verifyXCredentials(), /expected @allindex, got @TheDerivative/);
+  } finally {
+    globalThis.fetch = previousFetch;
+    for (const [key, value] of Object.entries(previousEnv)) {
+      if (value == null) delete process.env[key];
+      else process.env[key] = value;
+    }
+  }
+});
+
+test("non-dry-run publish requires an expected X username", async () => {
+  const previous = process.env.X_EXPECTED_USERNAME;
+  delete process.env.X_EXPECTED_USERNAME;
+  const bundle = generateSocialCandidates(snapshot(), {
+    siteUrl: "https://example.test",
+    now: new Date("2026-07-07T15:00:00.000Z"),
+    scheduleIds: ["weekly-portfolio-pulse"],
+  });
+
+  try {
+    await assert.rejects(
+      publishSocialCandidate(bundle.candidates[0]),
+      /Missing X_EXPECTED_USERNAME/,
+    );
+  } finally {
+    if (previous == null) delete process.env.X_EXPECTED_USERNAME;
+    else process.env.X_EXPECTED_USERNAME = previous;
+  }
+});
+
+test("non-dry-run publish verifies the expected X account before posting", async () => {
+  const previousEnv = {
+    X_API_KEY: process.env.X_API_KEY,
+    X_API_SECRET: process.env.X_API_SECRET,
+    X_ACCESS_TOKEN: process.env.X_ACCESS_TOKEN,
+    X_ACCESS_TOKEN_SECRET: process.env.X_ACCESS_TOKEN_SECRET,
+    X_BEARER_TOKEN: process.env.X_BEARER_TOKEN,
+    X_EXPECTED_USERNAME: process.env.X_EXPECTED_USERNAME,
+  };
+  const previousFetch = globalThis.fetch;
+  const requestedUrls: string[] = [];
+  process.env.X_API_KEY = "key";
+  process.env.X_API_SECRET = "secret";
+  process.env.X_ACCESS_TOKEN = "token";
+  process.env.X_ACCESS_TOKEN_SECRET = "token-secret";
+  process.env.X_EXPECTED_USERNAME = "allindex";
+  delete process.env.X_BEARER_TOKEN;
+  globalThis.fetch = (async (url) => {
+    requestedUrls.push(String(url));
+    if (String(url).endsWith("/2/users/me")) {
+      return new Response(JSON.stringify({ data: { id: "123", name: "All-In Index", username: "allindex" } }), {
+        status: 200,
+        headers: { "Content-Type": "application/json" },
+      });
+    }
+    return new Response(JSON.stringify({ data: { id: `post-${requestedUrls.length}`, text: "posted" } }), {
+      status: 201,
+      headers: { "Content-Type": "application/json" },
+    });
+  }) as typeof fetch;
+  const bundle = generateSocialCandidates(snapshot(), {
+    siteUrl: "https://example.test",
+    now: new Date("2026-07-07T15:00:00.000Z"),
+    scheduleIds: ["weekly-portfolio-pulse"],
+  });
+
+  try {
+    const result = await publishSocialCandidate(bundle.candidates[0]);
+    assert.equal(result.published.length, 2);
+    assert.equal(requestedUrls[0], "https://api.x.com/2/users/me");
+    assert.equal(requestedUrls.filter((url) => url === "https://api.x.com/2/tweets").length, 2);
   } finally {
     globalThis.fetch = previousFetch;
     for (const [key, value] of Object.entries(previousEnv)) {

@@ -55,6 +55,7 @@ jobs:
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          X_EXPECTED_USERNAME: ${{ vars.X_EXPECTED_USERNAME }}
         run: |
           ARGS=(--candidate-file social/drafts/publish.json)
           if [ -n "${{ github.event.inputs.candidate_id }}" ]; then
