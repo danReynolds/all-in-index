@@ -83,6 +83,10 @@ prompts doesn't re-spend on transcription.
 episodes, rebuilds the index, and commits `data/`, which triggers a Vercel
 deploy.
 
+Social automation guidance lives in `docs/social-automation.md`, with the draft
+posting cadence seeded in `social/schedule.json`. Social state should stay
+outside `data/`; the index cron owns generated data artifacts.
+
 To enable it:
 1. Push this repo to GitHub.
 2. Add repo secrets `ASSEMBLYAI_API_KEY` and `ANTHROPIC_API_KEY`.
@@ -119,6 +123,9 @@ data/
 | `npm run pipeline sync [--limit N]` | ✓ | process new episodes + rebuild index |
 | `npm run pipeline build-index` | ✓ | re-aggregate processed episodes |
 | `npm run pipeline audit-candidates [-- --all]` | – | scan cached private transcripts for high-signal picks/trades; reports transcript coverage and optionally prints all matched candidates |
+| `npm run social generate` | – | generate review-first X/social draft candidates from the current index |
+| `npm run social publish -- --candidate-file <file> --dry-run` | – | preview the exact X thread that would be published |
+| `npm run social ledger list` | – | inspect the social posting ledger |
 | `npm run quality` | – | validate generated-data invariants |
 | `npm test` | – | run scoring-unit tests |
 | `npm run dev` / `build` / `start` | – | the Next.js site |

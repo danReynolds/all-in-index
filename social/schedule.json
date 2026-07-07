@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "timezone": "America/New_York",
+  "notes": [
+    "All public post times are Eastern Time. GitHub cron schedules must convert these to UTC.",
+    "Main posts should not contain URLs unless allowMainPostUrl is explicitly true.",
+    "This is a seed config for future generators and workflows; it is not executed yet."
+  ],
+  "defaults": {
+    "allowMainPostUrl": false,
+    "linkPlacement": "reply",
+    "maxAutoPostsPerDay": 1,
+    "minDaysBetweenSimilarTopics": 14,
+    "reviewRequired": true
+  },
+  "slots": [
+    {
+      "id": "weekly-portfolio-pulse",
+      "kind": "portfolio_pulse",
+      "cadence": "weekly",
+      "day": "tuesday",
+      "time": "09:10",
+      "route": "/the-index",
+      "format": "single_or_two_post_thread",
+      "reviewRequired": false,
+      "autoPublishEligible": true,
+      "requirements": [
+        "Use latest deployed index data.",
+        "No quote excerpts.",
+        "No host mentions.",
+        "No URL in main post."
+      ]
+    },
+    {
+      "id": "weekly-receipt",
+      "kind": "receipt",
+      "cadence": "weekly",
+      "day": "wednesday",
+      "time": "10:10",
+      "route": "/holding/[slug]",
+      "format": "two_to_three_post_thread",
+      "reviewRequired": true,
+      "autoPublishEligible": false,
+      "requirements": [
+        "Rotate holdings to avoid repeating the same company within 14 days.",
+        "Use short attribution only.",
+        "Prefer alpha or since-call return over hype language."
+      ]
+    },
+    {
+      "id": "weekly-open-duel",
+      "kind": "open_duel",
+      "cadence": "weekly",
+      "day": "thursday",
+      "time": "12:30",
+      "route": "/insights",
+      "format": "single_or_two_post_thread",
+      "reviewRequired": true,
+      "autoPublishEligible": false,
+      "requirements": [
+        "Use activeDuels() output.",
+        "State both sides fairly.",
+        "Avoid tagging hosts automatically."
+      ]
+    },
+    {
+      "id": "latest-episode-recap",
+      "kind": "episode_recap",
+      "cadence": "event_driven",
+      "preferredDay": "friday",
+      "preferredTime": "13:10",
+      "fallback": "30-90 minutes after episode page is live, unless late evening or weekend",
+      "route": "/episode/[id]",
+      "format": "two_to_four_post_thread",
+      "reviewRequired": true,
+      "autoPublishEligible": false,
+      "requirements": [
+        "Only run when a new processed episode exists.",
+        "Draft after site build succeeds.",
+        "Review required for any scored-set change."
+      ]
+    },
+    {
+      "id": "monthly-prediction-checkin",
+      "kind": "prediction_checkin",
+      "cadence": "monthly",
+      "day": "first_tuesday",
+      "time": "10:10",
+      "route": "/predictions",
+      "format": "single_or_two_post_thread",
+      "reviewRequired": true,
+      "autoPublishEligible": false,
+      "requirements": [
+        "Prefer predictions with changed status, nearing deadline, or clear scoreboard value.",
+        "Do not force a prediction post if there is no real update."
+      ]
+    },
+    {
+      "id": "monthly-awards",
+      "kind": "award",
+      "cadence": "monthly",
+      "day": "first_thursday",
+      "time": "12:30",
+      "route": "/awards",
+      "format": "single_or_two_post_thread",
+      "reviewRequired": true,
+      "autoPublishEligible": false,
+      "requirements": [
+        "Use computeAwards() output.",
+        "Review required for fumble, bear trap, or personal comparison framing."
+      ]
+    },
+    {
+      "id": "quarterly-portfolio-report",
+      "kind": "quarterly_report",
+      "cadence": "quarterly",
+      "day": "first_tuesday_after_quarter_end",
+      "time": "10:30",
+      "route": "/the-index",
+      "format": "three_to_five_post_thread",
+      "reviewRequired": true,
+      "autoPublishEligible": false,
+      "requirements": [
+        "Use fresh index data.",
+        "Include benchmark comparison.",
+        "Include best call, worst call, and material membership changes when available."
+      ]
+    },
+    {
+      "id": "weekly-performance-review",
+      "kind": "performance_review",
+      "cadence": "weekly",
+      "day": "monday",
+      "time": "11:00",
+      "route": null,
+      "format": "internal_review",
+      "reviewRequired": false,
+      "autoPublishEligible": false,
+      "requirements": [
+        "No public post.",
+        "Record last 7 days of post performance.",
+        "Pick one experiment for the next week."
+      ]
+    }
+  ]
+}

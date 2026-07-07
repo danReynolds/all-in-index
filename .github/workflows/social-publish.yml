@@ -1,0 +1,75 @@
+name: Social Publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      schedule_id:
+        description: "Schedule ID to generate and publish/dry-run"
+        required: true
+      candidate_id:
+        description: "Candidate ID to publish. Leave blank only when the generated bundle has one candidate."
+        required: false
+      dry_run:
+        description: "Dry run only"
+        required: true
+        default: "true"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: social-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Generate selected candidate
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://allindex.fyi' }}
+        run: |
+          npm run social -- generate \
+            --schedule-id "${{ github.event.inputs.schedule_id }}" \
+            --json-out social/drafts/publish.json \
+            --md-out social/drafts/publish.md \
+            --assets-dir social/drafts/assets
+
+      - name: Publish or dry-run
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+        run: |
+          ARGS=(--candidate-file social/drafts/publish.json)
+          if [ -n "${{ github.event.inputs.candidate_id }}" ]; then
+            ARGS+=(--candidate-id "${{ github.event.inputs.candidate_id }}")
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS+=(--dry-run)
+          fi
+          npm run social -- publish "${ARGS[@]}"
+
+      - name: Commit ledger update
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config user.name "all-in-index-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add social/ledger.json
+          if git diff --staged --quiet; then
+            echo "No ledger changes."
+          else
+            git commit -m "chore: record social post"
+            git push
+          fi
