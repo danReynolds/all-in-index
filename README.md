@@ -127,6 +127,7 @@ data/
 | `npm run social publish -- --candidate-file <file> --dry-run` | – | preview the exact X thread that would be published |
 | `npm run social publish -- --candidate-file <file> --allow-reviewed` | X | publish a manually reviewed candidate that is not auto-eligible |
 | `npm run social ledger list` | – | inspect the social posting ledger |
+| `npm run social:check` | – | validate schedule/candidate policy and social readiness without contacting X |
 | `npm run quality` | – | validate generated-data invariants |
 | `npm test` | – | run scoring-unit tests |
 | `npm run dev` / `build` / `start` | – | the Next.js site |

@@ -313,6 +313,16 @@ Inspect the ledger:
 npm run social -- ledger list
 ```
 
+Validate social automation without contacting X:
+
+```bash
+npm run social:check
+```
+
+Use `npm run social -- check --require-x-credentials` only when verifying a
+real-publish environment; ordinary CI should allow missing X credentials so
+draft generation and dry-run publishing can stay active before launch.
+
 ## GitHub Workflows
 
 - `social-drafts.yml` creates or updates stable review issues by schedule slot
