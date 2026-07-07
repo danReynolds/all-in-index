@@ -3,6 +3,7 @@ import test from "node:test";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
+import { formatSocialCheckResult, runSocialCheck } from "../lib/social/check";
 import { generateSocialCandidates } from "../lib/social/generate";
 import { candidateToLedgerEntry, filterFreshCandidates } from "../lib/social/ledger";
 import { buildPublishPosts, publishSocialCandidate } from "../lib/social/publish";
@@ -293,4 +294,55 @@ test("visual generator writes deterministic SVG assets for visual candidates", (
   assert.equal(written.length, 1);
   assert.equal(path.basename(written[0]), visualAssetFilename(candidate));
   assert.equal(fs.existsSync(written[0]), true);
+});
+
+test("social readiness check passes without X credentials but warns", () => {
+  const previous = {
+    X_API_KEY: process.env.X_API_KEY,
+    X_API_SECRET: process.env.X_API_SECRET,
+    X_ACCESS_TOKEN: process.env.X_ACCESS_TOKEN,
+    X_ACCESS_TOKEN_SECRET: process.env.X_ACCESS_TOKEN_SECRET,
+    X_BEARER_TOKEN: process.env.X_BEARER_TOKEN,
+  };
+  delete process.env.X_API_KEY;
+  delete process.env.X_API_SECRET;
+  delete process.env.X_ACCESS_TOKEN;
+  delete process.env.X_ACCESS_TOKEN_SECRET;
+  delete process.env.X_BEARER_TOKEN;
+  try {
+    const result = runSocialCheck({ siteUrl: "https://example.test" });
+    assert.equal(result.ok, true);
+    assert.ok(result.warnings.some((warning) => warning.includes("X credentials")));
+    assert.match(formatSocialCheckResult(result), /social check: ok/);
+  } finally {
+    for (const [key, value] of Object.entries(previous)) {
+      if (value == null) delete process.env[key];
+      else process.env[key] = value;
+    }
+  }
+});
+
+test("social readiness check can require X credentials", () => {
+  const previous = {
+    X_API_KEY: process.env.X_API_KEY,
+    X_API_SECRET: process.env.X_API_SECRET,
+    X_ACCESS_TOKEN: process.env.X_ACCESS_TOKEN,
+    X_ACCESS_TOKEN_SECRET: process.env.X_ACCESS_TOKEN_SECRET,
+    X_BEARER_TOKEN: process.env.X_BEARER_TOKEN,
+  };
+  delete process.env.X_API_KEY;
+  delete process.env.X_API_SECRET;
+  delete process.env.X_ACCESS_TOKEN;
+  delete process.env.X_ACCESS_TOKEN_SECRET;
+  delete process.env.X_BEARER_TOKEN;
+  try {
+    const result = runSocialCheck({ siteUrl: "https://example.test", requireXCredentials: true });
+    assert.equal(result.ok, false);
+    assert.ok(result.errors.some((error) => error.includes("X credentials")));
+  } finally {
+    for (const [key, value] of Object.entries(previous)) {
+      if (value == null) delete process.env[key];
+      else process.env[key] = value;
+    }
+  }
 });

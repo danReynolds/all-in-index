@@ -1,0 +1,35 @@
+name: Social Check
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/social-*.yml"
+      - "docs/social-automation.md"
+      - "lib/social/**"
+      - "scripts/social.ts"
+      - "social/**"
+      - "tests/social.test.ts"
+      - "package.json"
+      - "package-lock.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  social-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Validate social automation
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://allindex.fyi' }}
+        run: npm run social:check

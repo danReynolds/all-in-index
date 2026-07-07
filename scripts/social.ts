@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { getIndex } from "../lib/data";
+import { formatSocialCheckResult, runSocialCheck } from "../lib/social/check";
 import { generateSocialCandidates, type PredictionsFileLike } from "../lib/social/generate";
 import {
   appendSocialLedgerEntry,
@@ -156,6 +157,15 @@ async function cmdPublish(rest: string[]): Promise<void> {
   process.stdout.write(`${JSON.stringify({ published: result.published, ledgerEntry: entry }, null, 2)}\n`);
 }
 
+async function cmdCheck(rest: string[]): Promise<void> {
+  const result = runSocialCheck({
+    siteUrl: readFlag(rest, "--site-url"),
+    requireXCredentials: rest.includes("--require-x-credentials"),
+  });
+  process.stdout.write(formatSocialCheckResult(result));
+  if (!result.ok) process.exitCode = 1;
+}
+
 async function main(): Promise<void> {
   const [cmd, ...rest] = process.argv.slice(2);
   switch (cmd) {
@@ -166,9 +176,12 @@ async function main(): Promise<void> {
       return cmdLedger(rest);
     case "publish":
       return cmdPublish(rest);
+    case "check":
+      return cmdCheck(rest);
     default:
       console.log(
         "commands:\n" +
+          "  check [--site-url URL] [--require-x-credentials]\n" +
           "  generate [--kind KIND] [--schedule-id ID] [--json-out FILE] [--md-out FILE]\n" +
           "           [--ledger FILE] [--site-url URL] [--assets-dir DIR] [--include-recent]\n" +
           "  publish --candidate-file FILE [--candidate-id ID] [--dry-run] [--no-link-reply] [--allow-reviewed]\n" +

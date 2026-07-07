@@ -10,7 +10,8 @@
     "test": "node --import tsx --test tests/*.test.ts",
     "quality": "npm run pipeline quality",
     "pipeline": "tsx pipeline/cli.ts",
-    "social": "tsx scripts/social.ts"
+    "social": "tsx scripts/social.ts",
+    "social:check": "npm run social -- check"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.102.0",
