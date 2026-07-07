@@ -1,5 +1,5 @@
 import type { SocialCandidate } from "./types";
-import { createXPost, type XPostResult } from "./x";
+import { createXPost, verifyXCredentials, type XPostResult } from "./x";
 
 export type PublishPostRole = "main" | "thread" | "link_reply";
 
@@ -57,6 +57,7 @@ export async function publishSocialCandidate(
   const posts = buildPublishPosts(candidate, { includeLinkReply: options.includeLinkReply });
   if (options.dryRun) return { dryRun: true, posts, published: [] };
   assertCandidatePublishable(candidate, { allowReviewed: options.allowReviewed });
+  await verifyXCredentials({ requireExpectedUsername: true });
 
   const published: PublishResult["published"] = [];
   let replyToId: string | undefined;

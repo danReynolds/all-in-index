@@ -326,7 +326,7 @@ draft generation and dry-run publishing can stay active before launch.
 Verify X credentials without creating a public post:
 
 ```bash
-npm run social -- check --require-x-credentials --verify-x-api
+npm run social -- check --require-x-credentials --verify-x-api --require-expected-x-username
 ```
 
 That check calls X's authenticated-user endpoint (`/2/users/me`). It catches
@@ -340,7 +340,8 @@ issues before a non-dry-run publish attempts `POST /2/tweets`.
 - `social-publish.yml` is manual-dispatch only. Its default is `dry_run=true`.
   Non-dry-run publishing requires X credentials and commits the resulting
   `social/ledger.json` update back to the repo. Review-required candidates also
-  require `allow_reviewed=true`.
+  require `allow_reviewed=true`. The publish step verifies the authenticated X
+  account against `X_EXPECTED_USERNAME` before the first public post.
 - `social-review.yml` opens a weekly internal performance-review issue from
   `social/reviews/TEMPLATE.md`.
 - `social-check.yml` validates the generator on PRs. Manual dispatch can also
@@ -354,9 +355,16 @@ Publishing credentials:
 
 - Preferred for CI: OAuth 1.0a user-context tokens via `X_API_KEY`,
   `X_API_SECRET`, `X_ACCESS_TOKEN`, and `X_ACCESS_TOKEN_SECRET`.
+- Required for CI non-dry-run publishing: GitHub Actions variable
+  `X_EXPECTED_USERNAME`, set to the exact posting-account handle without `@`.
 - Fallback for local/manual experiments: `X_BEARER_TOKEN` only if it is a
   user-context token with write scope. App-only bearer tokens are read-only and
   cannot publish posts.
+
+The user-context tokens must belong to the public All Index posting account, not
+the developer's personal X account. X access tokens represent the account that
+authorized the App; if the verifier prints a personal handle, do not publish
+with those tokens.
 
 The publish command posts the main post first, then replies in order with thread
 posts and the optional link reply. This preserves the link-free main-post rule
@@ -373,22 +381,26 @@ After this system merges to `main`, roll it out in order:
    - evidence and route metadata,
    - uploaded SVG asset when expected.
 3. Run `Social Publish` manually with the same schedule ID and `dry_run=true`.
-4. Add X credentials to GitHub Secrets:
+4. Create or sign in as the dedicated All Index X account, then authorize the
+   developer App from that account. Add the resulting user-context credentials to
+   GitHub Secrets:
    - `X_API_KEY`
    - `X_API_SECRET`
    - `X_ACCESS_TOKEN`
    - `X_ACCESS_TOKEN_SECRET`
-5. Run `Social Check` manually with `verify_x_api=true`; it must verify the
-   X account before any non-dry-run publish.
-6. Run one controlled non-dry-run publish for `weekly-portfolio-pulse`.
-7. Confirm:
+5. Add GitHub Actions variable `X_EXPECTED_USERNAME` with the dedicated account
+   handle, without `@`.
+6. Run `Social Check` manually with `verify_x_api=true`; it must verify the
+   dedicated X account before any non-dry-run publish.
+7. Run one controlled non-dry-run publish for `weekly-portfolio-pulse`.
+8. Confirm:
    - the X thread posted in order,
    - the main post has no URL,
    - the link reply points to the right page,
    - `social/ledger.json` was committed by the workflow,
    - the next draft generation skips the recently used topic.
-8. Keep all review-required schedules manual for the first 1-2 weeks.
-9. Fill in one weekly performance review issue before changing cadence or
+9. Keep all review-required schedules manual for the first 1-2 weeks.
+10. Fill in one weekly performance review issue before changing cadence or
    enabling broader auto-publish.
 
 Do not enable unattended publishing for episode recaps, receipts, duels,

@@ -166,7 +166,9 @@ async function cmdCheck(rest: string[]): Promise<void> {
   let verifiedLine: string | undefined;
   if (rest.includes("--verify-x-api")) {
     try {
-      const verified = await verifyXCredentials();
+      const verified = await verifyXCredentials({
+        requireExpectedUsername: rest.includes("--require-expected-x-username"),
+      });
       verifiedLine = `X credentials verified for @${verified.username} (${verified.id}).`;
     } catch (err) {
       result.ok = false;
@@ -193,7 +195,7 @@ async function main(): Promise<void> {
     default:
       console.log(
           "commands:\n" +
-          "  check [--site-url URL] [--require-x-credentials] [--verify-x-api]\n" +
+          "  check [--site-url URL] [--require-x-credentials] [--verify-x-api] [--require-expected-x-username]\n" +
           "  generate [--kind KIND] [--schedule-id ID] [--json-out FILE] [--md-out FILE]\n" +
           "           [--ledger FILE] [--site-url URL] [--assets-dir DIR] [--include-recent]\n" +
           "  publish --candidate-file FILE [--candidate-id ID] [--dry-run] [--no-link-reply] [--allow-reviewed]\n" +

@@ -27,9 +27,19 @@ export interface OAuth1Credentials {
   accessTokenSecret: string;
 }
 
+export interface XCredentialVerificationOptions {
+  expectedUsername?: string | null;
+  requireExpectedUsername?: boolean;
+}
+
 function percentEncode(value: string): string {
   return encodeURIComponent(value)
     .replace(/[!'()*]/g, (char) => `%${char.charCodeAt(0).toString(16).toUpperCase()}`);
+}
+
+function normalizeUsername(value: string | null | undefined): string | null {
+  const normalized = value?.trim().replace(/^@/, "").toLowerCase();
+  return normalized || null;
 }
 
 export function buildOAuth1Header(opts: {
@@ -78,6 +88,10 @@ function bearerTokenFromEnv(): string | null {
   return process.env.X_BEARER_TOKEN ?? null;
 }
 
+export function expectedXUsernameFromEnv(): string | null {
+  return normalizeUsername(process.env.X_EXPECTED_USERNAME);
+}
+
 function userContextAuthHeader(method: string, url: string): string {
   const oauth1 = oauth1CredentialsFromEnv();
   if (oauth1) {
@@ -120,7 +134,14 @@ export async function createXPost(input: XPostInput): Promise<XPostResult> {
   };
 }
 
-export async function verifyXCredentials(): Promise<XCredentialVerification> {
+export async function verifyXCredentials(
+  options: XCredentialVerificationOptions = {},
+): Promise<XCredentialVerification> {
+  const expectedUsername = normalizeUsername(options.expectedUsername) ?? expectedXUsernameFromEnv();
+  if (options.requireExpectedUsername && !expectedUsername) {
+    throw new Error("Missing X_EXPECTED_USERNAME; set it to the X handle that is allowed to publish, without @.");
+  }
+
   const response = await fetch(VERIFY_USER_URL, {
     method: "GET",
     headers: {
@@ -132,6 +153,10 @@ export async function verifyXCredentials(): Promise<XCredentialVerification> {
     | null;
   if (!response.ok || !payload?.data?.id || !payload.data.username) {
     throw new Error(`X credential verification failed (${response.status}): ${JSON.stringify(payload)}`);
+  }
+  const actualUsername = normalizeUsername(payload.data.username);
+  if (expectedUsername && actualUsername !== expectedUsername) {
+    throw new Error(`X credential username mismatch: expected @${expectedUsername}, got @${payload.data.username}.`);
   }
   return {
     id: payload.data.id,
