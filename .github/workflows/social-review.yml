@@ -1,0 +1,43 @@
+name: Social Performance Review
+
+on:
+  schedule:
+    # Monday 11:00 ET-ish. This creates the internal review issue; it does not
+    # publish anything.
+    - cron: "0 15 * * 1"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+concurrency:
+  group: social-performance-review
+  cancel-in-progress: true
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create review issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create social-review --color 5319E7 --description "Weekly social performance review" 2>/dev/null || true
+
+          WEEK_START="$(TZ=America/New_York date -v-7d +%F 2>/dev/null || TZ=America/New_York date -d '7 days ago' +%F)"
+          WEEK_END="$(TZ=America/New_York date +%F)"
+          TITLE="Social performance review: $WEEK_START to $WEEK_END"
+          BODY_FILE="$(mktemp)"
+
+          {
+            echo "# Social Performance Review"
+            echo
+            echo "Date range: $WEEK_START to $WEEK_END"
+            echo "Reviewer:"
+            echo
+            tail -n +6 social/reviews/TEMPLATE.md
+          } > "$BODY_FILE"
+
+          gh issue create --title "$TITLE" --body-file "$BODY_FILE" --label social-review

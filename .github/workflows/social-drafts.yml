@@ -1,0 +1,129 @@
+name: Social Drafts
+
+on:
+  schedule:
+    # UTC cron approximations for the ET schedule documented in social/schedule.json.
+    # The workflow creates review drafts only; it never publishes to X.
+    - cron: "10 14 * * 2"          # weekly-portfolio-pulse
+    - cron: "10 15 * * 3"          # weekly-receipt
+    - cron: "30 16 * * 4"          # weekly-open-duel
+    - cron: "10 17 * * 5"          # latest-episode-recap candidate
+    - cron: "10 15 1-7 * *"        # monthly prediction/awards gate, filtered by ET weekday
+    - cron: "30 15 1-7 1,4,7,10 *" # quarterly report gate, filtered by ET weekday
+  workflow_dispatch:
+    inputs:
+      schedule_id:
+        description: "Optional schedule ID to generate"
+        required: false
+      kind:
+        description: "Optional candidate kind to generate"
+        required: false
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: social-drafts
+  cancel-in-progress: true
+
+jobs:
+  drafts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Generate social drafts
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://allindex.fyi' }}
+        run: |
+          SCHEDULE_ID="${{ github.event.inputs.schedule_id }}"
+          KIND="${{ github.event.inputs.kind }}"
+
+          if [ -z "$SCHEDULE_ID" ] && [ "${{ github.event_name }}" = "schedule" ]; then
+            case "${{ github.event.schedule }}" in
+              "10 14 * * 2")
+                SCHEDULE_ID="weekly-portfolio-pulse"
+                ;;
+              "10 15 * * 3")
+                SCHEDULE_ID="weekly-receipt"
+                ;;
+              "30 16 * * 4")
+                SCHEDULE_ID="weekly-open-duel"
+                ;;
+              "10 17 * * 5")
+                SCHEDULE_ID="latest-episode-recap"
+                ;;
+              "10 15 1-7 * *")
+                ET_DOW="$(TZ=America/New_York date +%u)"
+                if [ "$ET_DOW" = "2" ]; then
+                  SCHEDULE_ID="monthly-prediction-checkin"
+                elif [ "$ET_DOW" = "4" ]; then
+                  SCHEDULE_ID="monthly-awards"
+                else
+                  echo "No monthly social slot due today."
+                  exit 0
+                fi
+                ;;
+              "30 15 1-7 1,4,7,10 *")
+                ET_DOW="$(TZ=America/New_York date +%u)"
+                if [ "$ET_DOW" = "2" ]; then
+                  SCHEDULE_ID="quarterly-portfolio-report"
+                else
+                  echo "No quarterly social slot due today."
+                  exit 0
+                fi
+                ;;
+            esac
+          fi
+
+          ARGS=()
+          if [ -n "$SCHEDULE_ID" ]; then
+            ARGS+=(--schedule-id "$SCHEDULE_ID")
+          fi
+          if [ -n "$KIND" ]; then
+            ARGS+=(--kind "$KIND")
+          fi
+          npm run social -- generate "${ARGS[@]}" \
+            --json-out social/drafts/latest.json \
+            --md-out social/drafts/latest.md \
+            --assets-dir social/drafts/assets
+
+          if [ -n "$SCHEDULE_ID" ]; then
+            echo "SOCIAL_SCHEDULE_ID=$SCHEDULE_ID" >> "$GITHUB_ENV"
+            echo "SOCIAL_ISSUE_TITLE=Social draft: $SCHEDULE_ID" >> "$GITHUB_ENV"
+          else
+            echo "SOCIAL_SCHEDULE_ID=manual" >> "$GITHUB_ENV"
+            echo "SOCIAL_ISSUE_TITLE=Social drafts: manual $(date -u +%F)" >> "$GITHUB_ENV"
+          fi
+
+      - name: Create or update review issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create social-draft --color 0969DA --description "Review issue for generated social copy" 2>/dev/null || true
+          gh label create needs-review --color FBCA04 --description "Needs human review before publishing" 2>/dev/null || true
+
+          TITLE="$SOCIAL_ISSUE_TITLE"
+          BODY_FILE="social/drafts/latest.md"
+          ISSUE_NUMBER="$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number // empty')"
+          if [ -n "$ISSUE_NUMBER" ]; then
+            gh issue edit "$ISSUE_NUMBER" --body-file "$BODY_FILE"
+            gh issue edit "$ISSUE_NUMBER" --add-label social-draft --add-label needs-review
+          else
+            gh issue create --title "$TITLE" --body-file "$BODY_FILE" --label social-draft --label needs-review
+          fi
+
+      - name: Upload draft assets
+        uses: actions/upload-artifact@v4
+        with:
+          name: social-draft-assets
+          path: social/drafts/assets/
+          if-no-files-found: ignore
