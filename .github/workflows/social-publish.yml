@@ -13,6 +13,10 @@ on:
         description: "Dry run only"
         required: true
         default: "true"
+      allow_reviewed:
+        description: "Allow non-dry-run publish for a candidate that has reviewRequired=true or autoPublishEligible=false"
+        required: true
+        default: "false"
 
 permissions:
   contents: write
@@ -58,6 +62,9 @@ jobs:
           fi
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             ARGS+=(--dry-run)
+          fi
+          if [ "${{ github.event.inputs.allow_reviewed }}" = "true" ]; then
+            ARGS+=(--allow-reviewed)
           fi
           npm run social -- publish "${ARGS[@]}"
 

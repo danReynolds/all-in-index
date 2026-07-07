@@ -125,6 +125,7 @@ data/
 | `npm run pipeline audit-candidates [-- --all]` | – | scan cached private transcripts for high-signal picks/trades; reports transcript coverage and optionally prints all matched candidates |
 | `npm run social generate` | – | generate review-first X/social draft candidates from the current index |
 | `npm run social publish -- --candidate-file <file> --dry-run` | – | preview the exact X thread that would be published |
+| `npm run social publish -- --candidate-file <file> --allow-reviewed` | X | publish a manually reviewed candidate that is not auto-eligible |
 | `npm run social ledger list` | – | inspect the social posting ledger |
 | `npm run quality` | – | validate generated-data invariants |
 | `npm test` | – | run scoring-unit tests |

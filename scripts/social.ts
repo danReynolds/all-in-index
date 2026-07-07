@@ -137,7 +137,8 @@ async function cmdPublish(rest: string[]): Promise<void> {
   const candidate = selectCandidate(readBundle(candidateFile), readFlag(rest, "--candidate-id"));
   const dryRun = rest.includes("--dry-run");
   const includeLinkReply = !rest.includes("--no-link-reply");
-  const result = await publishSocialCandidate(candidate, { dryRun, includeLinkReply });
+  const allowReviewed = rest.includes("--allow-reviewed");
+  const result = await publishSocialCandidate(candidate, { dryRun, includeLinkReply, allowReviewed });
 
   if (dryRun) {
     process.stdout.write(`# Dry run: ${candidate.id}\n\n`);
@@ -170,7 +171,7 @@ async function main(): Promise<void> {
         "commands:\n" +
           "  generate [--kind KIND] [--schedule-id ID] [--json-out FILE] [--md-out FILE]\n" +
           "           [--ledger FILE] [--site-url URL] [--assets-dir DIR] [--include-recent]\n" +
-          "  publish --candidate-file FILE [--candidate-id ID] [--dry-run] [--no-link-reply]\n" +
+          "  publish --candidate-file FILE [--candidate-id ID] [--dry-run] [--no-link-reply] [--allow-reviewed]\n" +
           "  ledger list [--ledger FILE]\n" +
           "  ledger add --candidate-file FILE [--candidate-id ID] [--status posted|approved|skipped]\n" +
           "             [--post-url URL] [--reason TEXT] [--posted-at ISO] [--ledger FILE]",

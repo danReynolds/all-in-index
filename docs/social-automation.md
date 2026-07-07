@@ -291,6 +291,14 @@ Preview a publish thread without contacting X:
 npm run social -- publish --candidate-file social/drafts/latest.json --dry-run
 ```
 
+Publish safety:
+
+- Non-dry-run publishing is allowed by default only for candidates with
+  `reviewRequired=false` and `autoPublishEligible=true`.
+- To publish a manually reviewed candidate that fails that gate, pass
+  `--allow-reviewed` locally or set `allow_reviewed=true` in the manual GitHub
+  workflow dispatch.
+
 Record a manually published post in the ledger:
 
 ```bash
@@ -311,7 +319,8 @@ npm run social -- ledger list
   and labels them `social-draft` + `needs-review`.
 - `social-publish.yml` is manual-dispatch only. Its default is `dry_run=true`.
   Non-dry-run publishing requires X credentials and commits the resulting
-  `social/ledger.json` update back to the repo.
+  `social/ledger.json` update back to the repo. Review-required candidates also
+  require `allow_reviewed=true`.
 - `social-review.yml` opens a weekly internal performance-review issue from
   `social/reviews/TEMPLATE.md`.
 
