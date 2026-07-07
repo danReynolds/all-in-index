@@ -30,6 +30,11 @@ when they do not click through.
 
 Treat these as defaults, not permanent laws. Review them monthly.
 
+- The first line must contain the hook: a surprising result, live disagreement,
+  receipt, or clear scoreboard conclusion. Avoid label-only openers like
+  "Weekly update" or "Prediction check-in".
+- Write the post so it earns attention without a click. Lead with native value,
+  then add the deep link later only when the reader wants receipts.
 - Do not put URLs in the main post by default. Current third-party studies and
   X's own API pricing both make link-first posts a bad default. Put the useful
   content in the main post, then add the deep link in a reply when the link
@@ -46,6 +51,8 @@ Treat these as defaults, not permanent laws. Review them monthly.
 - Use hashtags sparingly. Most posts should use none. A relevant cashtag is fine
   for one or two public names when it is central to the post, but do not turn
   the post into a ticker cloud.
+- Prefer one strong cashtag over multiple company names when the post is about a
+  public market receipt. Do not cashtag every company in an episode recap.
 - Avoid duplicate phrasing. The same template should not run twice in the same
   two-week window unless the underlying event is materially new.
 - Do not automate replies to other accounts, keyword searches, trends, or host
@@ -60,6 +67,26 @@ Useful references:
 - Buffer link-performance study: https://buffer.com/resources/links-on-x/
 - Buffer 2026 X timing study: https://buffer.com/resources/best-time-to-post-on-twitter-x/
 - Sprout 2026 X timing study: https://sproutsocial.com/insights/best-times-to-post-on-twitter/
+
+## Copy Quality Rubric
+
+A draft should not publish just because it is correct. Score it against this
+rubric during review:
+
+- Hook: the first line gives a reason to stop scrolling.
+- Native value: the main post contains the key stat or claim without needing a
+  click.
+- Specificity: at least one concrete number, ticker, host-side split, or
+  receipt appears in the main post.
+- Tension: the post has an angle: beating the market, a live disagreement, a
+  surprising receipt, a quiet episode, or a changed scoreboard.
+- Restraint: no fake urgency, no pile of hashtags, no automatic host tags, and
+  no dunking.
+- Conversation: a question appears only when there is an actual debate.
+- Link placement: the main post stays link-free unless there is a deliberate
+  exception.
+
+Do not auto-publish flat status reports. Rewrite or skip them.
 
 ## Post Types
 

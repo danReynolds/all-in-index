@@ -166,6 +166,27 @@ test("social generator keeps main posts link-free and link replies deep-link", (
   assert.equal(pulse.route, "/the-index");
 });
 
+test("social generator uses social-native hooks instead of flat labels", () => {
+  const bundle = generateSocialCandidates(snapshot(), {
+    siteUrl: "https://example.test",
+    now: new Date("2026-07-07T15:00:00.000Z"),
+  });
+  const pulse = bundle.candidates.find((candidate) => candidate.scheduleId === "weekly-portfolio-pulse");
+  const duel = bundle.candidates.find((candidate) => candidate.scheduleId === "weekly-open-duel");
+  const quarterly = bundle.candidates.find((candidate) => candidate.scheduleId === "quarterly-portfolio-report");
+
+  assert.ok(pulse);
+  assert.match(pulse.mainPost.split("\n")[0], /beating the S&P/);
+  assert.doesNotMatch(pulse.mainPost, /^Besties Index check-in:/);
+
+  assert.ok(duel);
+  assert.match(duel.mainPost, /Who had the better read\?/);
+
+  assert.ok(quarterly);
+  assert.match(quarterly.id, /quarterly-2026-q2/);
+  assert.match(quarterly.mainPost.split("\n")[0], /^Q2 2026:/);
+});
+
 test("public social copy avoids internal workflow language", () => {
   const bundle = generateSocialCandidates(snapshot(), {
     siteUrl: "https://example.test",
