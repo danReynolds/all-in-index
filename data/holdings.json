@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T00:41:26.533Z",
+  "generatedAt": "2026-07-09T07:16:13.335Z",
   "holdings": [
     {
       "slug": "nvda",
@@ -11977,13 +11977,13 @@
         "asOf": "2026-07-09",
         "anchorDate": "2025-10-10",
         "basePrice": 428000,
-        "latestPrice": 2265000,
+        "latestPrice": 2186000,
         "returns": {
           "1m": 0.4158878504672897,
           "3m": 0.75,
           "6m": 1.3995327102803738,
           "1y": null,
-          "since": 4.292056074766355
+          "since": 4.107476635514018
         },
         "history": [
           [
@@ -12172,7 +12172,7 @@
           ],
           [
             "2026-07-09",
-            2265000
+            2186000
           ]
         ],
         "source": "yahoo"
@@ -12225,13 +12225,13 @@
         "asOf": "2026-07-09",
         "anchorDate": "2026-05-08",
         "basePrice": 268500,
-        "latestPrice": 289000,
+        "latestPrice": 278000,
         "returns": {
           "1m": 0.1005586592178771,
           "3m": null,
           "6m": null,
           "1y": null,
-          "since": 0.07635009310986965
+          "since": 0.035381750465549346
         },
         "history": [
           [
@@ -12404,7 +12404,7 @@
           ],
           [
             "2026-07-09",
-            289000
+            278000
           ]
         ],
         "source": "yahoo"
@@ -19541,13 +19541,13 @@
         "asOf": "2026-07-09",
         "anchorDate": "2025-10-10",
         "basePrice": 214.9,
-        "latestPrice": 517.405,
+        "latestPrice": 517.41,
         "returns": {
           "1m": 0.13531875290832937,
           "3m": -0.03355048859934857,
           "6m": 0.14025127966496037,
           "1y": null,
-          "since": 1.4076547231270358
+          "since": 1.4076779897626803
         },
         "history": [
           [
@@ -19736,7 +19736,7 @@
           ],
           [
             "2026-07-08",
-            517.405
+            517.41
           ]
         ],
         "source": "yahoo"
@@ -33507,10 +33507,10 @@
         ],
         "entryDate": "2026-05-08",
         "entryPrice": 1686000,
-        "latestPrice": 2265000,
-        "sinceReturn": 0.3434163701067616,
+        "latestPrice": 2186000,
+        "sinceReturn": 0.2965599051008303,
         "benchmarkReturn": 0.010547436349339634,
-        "alpha": 0.332868933757422,
+        "alpha": 0.28601246875149067,
         "hosts": [
           "Guest"
         ]
@@ -33556,26 +33556,6 @@
         ]
       },
       {
-        "slug": "005930.ks",
-        "company": "Samsung",
-        "ticker": "005930.KS",
-        "sourceSymbol": "005930.KS",
-        "currency": "KRW",
-        "direction": "long",
-        "callTypes": [
-          "explicit_long"
-        ],
-        "entryDate": "2026-05-08",
-        "entryPrice": 268500,
-        "latestPrice": 289000,
-        "sinceReturn": 0.07635009310986973,
-        "benchmarkReturn": 0.010547436349339634,
-        "alpha": 0.0658026567605301,
-        "hosts": [
-          "Guest"
-        ]
-      },
-      {
         "slug": "baba",
         "company": "Alibaba",
         "ticker": "BABA",
@@ -33591,6 +33571,26 @@
         "sinceReturn": 0.27641133754977765,
         "benchmarkReturn": 0.2360500787662716,
         "alpha": 0.04036125878350605,
+        "hosts": [
+          "Guest"
+        ]
+      },
+      {
+        "slug": "005930.ks",
+        "company": "Samsung",
+        "ticker": "005930.KS",
+        "sourceSymbol": "005930.KS",
+        "currency": "KRW",
+        "direction": "long",
+        "callTypes": [
+          "explicit_long"
+        ],
+        "entryDate": "2026-05-08",
+        "entryPrice": 268500,
+        "latestPrice": 278000,
+        "sinceReturn": 0.035381750465549366,
+        "benchmarkReturn": 0.010547436349339634,
+        "alpha": 0.024834314116209733,
         "hosts": [
           "Guest"
         ]
@@ -34239,9 +34239,9 @@
       "guest": "Brad Gerstner",
       "slug": "brad-gerstner",
       "calls": 3,
-      "followReturn": 0.16435851820329841,
+      "followReturn": 0.13737581829351822,
       "benchmarkReturn": 0.010547436349339634,
-      "alpha": 0.15381108185395878,
+      "alpha": 0.1268283819441786,
       "best": {
         "company": "Micron Technology",
         "ticker": "MU",
@@ -34265,9 +34265,9 @@
           "slug": "000660.ks",
           "stance": "bull",
           "date": "2026-05-08",
-          "ret": 0.14625506072874495,
+          "ret": 0.10627530364372473,
           "benchmarkReturn": 0.010547436349339634,
-          "alpha": 0.1357076243794053
+          "alpha": 0.0957278672943851
         },
         {
           "company": "Samsung",
@@ -34275,9 +34275,9 @@
           "slug": "005930.ks",
           "stance": "bull",
           "date": "2026-05-08",
-          "ret": 0.07635009310986973,
+          "ret": 0.035381750465549366,
           "benchmarkReturn": 0.010547436349339634,
-          "alpha": 0.0658026567605301
+          "alpha": 0.024834314116209733
         }
       ]
     },
