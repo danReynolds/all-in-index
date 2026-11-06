@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T14:22:39.736Z",
+  "generatedAt": "2026-11-06T14:30:11.375Z",
   "episodes": [
     {
       "id": "E257",
@@ -2722,7 +2722,7 @@
           "quoteStartMs": 2487000,
           "ticker": "BA",
           "direction": "down",
-          "sinceReturn": 0.3093830070550959,
+          "sinceReturn": 0.2945330962647971,
           "history": [
             [
               "2025-01-06",
@@ -2958,7 +2958,11 @@
             ],
             [
               "2026-11-05",
-              130.94
+              137.6
+            ],
+            [
+              "2026-11-06",
+              129.45
             ]
           ],
           "proxyTicker": null,
@@ -2970,11 +2974,11 @@
             },
             {
               "ticker": "LMT",
-              "sinceReturn": 0.23639484978540765
+              "sinceReturn": 0.22103004291845493
             },
             {
               "ticker": "RTX",
-              "sinceReturn": 0.6816827344434707
+              "sinceReturn": 0.6524978089395269
             }
           ]
         },
