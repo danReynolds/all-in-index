@@ -47,6 +47,9 @@ export const store = {
   loadTheses(episodeId: string) {
     return readJson<Thesis[]>(path.join(episodeDir(episodeId), "theses.json")) ?? [];
   },
+  hasTheses(episodeId: string): boolean {
+    return fs.existsSync(path.join(episodeDir(episodeId), "theses.json"));
+  },
 
   /** All episode ids that have artifacts on disk. */
   listEpisodeIds(): string[] {

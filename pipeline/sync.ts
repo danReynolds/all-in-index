@@ -222,8 +222,28 @@ export interface SyncOpts {
   includeOlder?: boolean;
 }
 
+/** Keep bounded catch-up runs chronological, while retrying incomplete attempts. */
+export function selectSyncEpisodes(
+  pool: Episode[],
+  completed: Episode[],
+  incompleteIds: Set<string>,
+  opts: Pick<SyncOpts, "limit" | "includeOlder"> = {},
+): { todo: Episode[]; skippedOlder: number } {
+  const processed = new Set(completed.map((ep) => ep.id));
+  const dateFloor = opts.includeOlder
+    ? ""
+    : completed.reduce((latest, ep) => ep.date > latest ? ep.date : latest, "");
+  const eligible = (ep: Episode) =>
+    !processed.has(ep.id) && (ep.date > dateFloor || incompleteIds.has(ep.id));
+  return {
+    todo: pool.filter(eligible).sort((a, b) => a.date.localeCompare(b.date))
+      .slice(0, opts.limit ?? 2),
+    skippedOlder: pool.filter((ep) => !processed.has(ep.id) && !eligible(ep)).length,
+  };
+}
+
 /**
- * Process any episodes in the feed that haven't been processed yet (newest
+ * Process any episodes in the feed that haven't been processed yet (oldest
  * first), with bounded concurrency, then rebuild the index once. This is what
  * the scheduled GitHub Action calls — so the site updates automatically when a
  * new episode drops, and backfills run in parallel.
@@ -252,21 +272,20 @@ export async function sync(opts: SyncOpts = {}): Promise<void> {
 
   const eps = await fetchFeed();
   const pool = roundtableOnly ? eps.filter((e) => e.kind === "roundtable") : eps;
-  const processed = new Set(store.listEpisodeIds());
-
-  // Forward-only by default: only episodes newer than the newest processed.
-  let dateFloor = "";
-  if (!opts.includeOlder) {
-    for (const id of processed) {
-      const ep = store.loadEpisode(id);
-      if (ep && ep.date > dateFloor) dateFloor = ep.date;
-    }
+  // processEpisode writes metadata before transcription. Only an extraction
+  // artifact proves completion; otherwise a provider failure becomes a silent
+  // permanent skip. A successful extraction may legitimately contain no takes.
+  const completed: Episode[] = [];
+  const incompleteIds = new Set<string>();
+  for (const id of store.listEpisodeIds()) {
+    const ep = store.loadEpisode(id);
+    if (!ep) continue;
+    if (store.hasTheses(id)) completed.push(ep);
+    else incompleteIds.add(id);
   }
-
-  const skippedOlder = pool.filter((e) => !processed.has(e.id) && e.date <= dateFloor).length;
-  const todo = pool
-    .filter((e) => !processed.has(e.id) && e.date > dateFloor)
-    .slice(0, limit);
+  const { todo, skippedOlder } = selectSyncEpisodes(pool, completed, incompleteIds, {
+    limit, includeOlder: opts.includeOlder,
+  });
 
   if (todo.length === 0) {
     if (skippedOlder > 0) {
@@ -311,6 +330,9 @@ export async function sync(opts: SyncOpts = {}): Promise<void> {
   console.log(`\nProcessed ${ok.length} ok, ${failed.length} failed.`);
   if (failed.length) {
     for (const f of failed) console.log(`  ✖ ${f.id}: ${f.error}`);
+    if (process.env.GITHUB_ACTIONS === "true") {
+      console.warn("::warning::Episode ingestion failed; market prices will still refresh. Failed episodes will be retried on the next sync.");
+    }
   }
 
   // processEpisode only runs the COMPANY extractor. Commodity takes
