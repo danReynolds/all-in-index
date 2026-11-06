@@ -90,7 +90,13 @@ outside `data/`; the index cron owns generated data artifacts.
 To enable it:
 1. Push this repo to GitHub.
 2. Add repo secrets `ASSEMBLYAI_API_KEY` and `ANTHROPIC_API_KEY`.
-3. Connect the repo to Vercel (zero-config Next.js deploy).
+3. In Settings → Actions → General → Workflow permissions, enable **Allow GitHub Actions to create and approve pull requests**. The workflow requests its own write permissions; keep the default token permissions read-only.
+4. Connect the repo to Vercel (zero-config Next.js deploy).
+
+Price-only updates publish automatically. Changes to scored membership open the
+standing `cron/pending-review` PR and require review before merging to deploy.
+Keep AssemblyAI funded: transcription failures prevent new episode analysis even
+when market prices refresh successfully.
 
 Backfill the catalog once with `npm run pipeline sync -- --limit 50` (repeat as
 needed); after that the weekly drop is picked up automatically.
