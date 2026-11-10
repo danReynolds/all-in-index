@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T06:13:04.642Z",
+  "generatedAt": "2026-11-10T12:11:25.656Z",
   "holdings": [
     {
       "slug": "openai",
@@ -12318,13 +12318,13 @@
         "asOf": "2026-11-10",
         "anchorDate": "2025-10-10",
         "basePrice": 428000,
-        "latestPrice": 1223000,
+        "latestPrice": 1212000,
         "returns": {
           "1m": 0.4158878504672897,
           "3m": 0.75,
           "6m": 1.3995327102803738,
           "1y": 2.75,
-          "since": 1.8574766355140186
+          "since": 1.8317757009345794
         },
         "history": [
           [
@@ -12541,7 +12541,7 @@
           ],
           [
             "2026-11-10",
-            1223000
+            1212000
           ]
         ],
         "source": "yahoo"
@@ -12594,13 +12594,13 @@
         "asOf": "2026-11-10",
         "anchorDate": "2026-05-08",
         "basePrice": 268500,
-        "latestPrice": 199600,
+        "latestPrice": 198900,
         "returns": {
           "1m": 0.1005586592178771,
           "3m": -0.14338919925512103,
           "6m": -0.2927374301675978,
           "1y": null,
-          "since": -0.25661080074487896
+          "since": -0.25921787709497207
         },
         "history": [
           [
@@ -12773,7 +12773,7 @@
           ],
           [
             "2026-11-10",
-            199600
+            198900
           ]
         ],
         "source": "yahoo"
@@ -33940,30 +33940,10 @@
         ],
         "entryDate": "2026-05-08",
         "entryPrice": 268500,
-        "latestPrice": 199500,
-        "sinceReturn": -0.25698324022346364,
+        "latestPrice": 198900,
+        "sinceReturn": -0.259217877094972,
         "benchmarkReturn": 0.020430574008297064,
-        "alpha": -0.2774138142317607,
-        "hosts": [
-          "Guest"
-        ]
-      },
-      {
-        "slug": "000660.ks",
-        "company": "SK Hynix",
-        "ticker": "000660.KS",
-        "sourceSymbol": "000660.KS",
-        "currency": "KRW",
-        "direction": "long",
-        "callTypes": [
-          "explicit_long"
-        ],
-        "entryDate": "2026-05-08",
-        "entryPrice": 1686000,
-        "latestPrice": 1223000,
-        "sinceReturn": -0.27461447212336887,
-        "benchmarkReturn": 0.020430574008297064,
-        "alpha": -0.29504504613166593,
+        "alpha": -0.2796484511032691,
         "hosts": [
           "Guest"
         ]
@@ -33984,6 +33964,26 @@
         "sinceReturn": -0.11730351040695863,
         "benchmarkReturn": 0.183623726254875,
         "alpha": -0.30092723666183363,
+        "hosts": [
+          "Guest"
+        ]
+      },
+      {
+        "slug": "000660.ks",
+        "company": "SK Hynix",
+        "ticker": "000660.KS",
+        "sourceSymbol": "000660.KS",
+        "currency": "KRW",
+        "direction": "long",
+        "callTypes": [
+          "explicit_long"
+        ],
+        "entryDate": "2026-05-08",
+        "entryPrice": 1686000,
+        "latestPrice": 1212000,
+        "sinceReturn": -0.28113879003558717,
+        "benchmarkReturn": 0.020430574008297064,
+        "alpha": -0.30156936404388424,
         "hosts": [
           "Guest"
         ]
@@ -34584,9 +34584,9 @@
       "guest": "Brad Gerstner",
       "slug": "brad-gerstner",
       "calls": 4,
-      "followReturn": -0.15251788126077753,
+      "followReturn": -0.1545655894345952,
       "benchmarkReturn": 0.01649756376703143,
-      "alpha": -0.16901544502780896,
+      "alpha": -0.17106315320162663,
       "best": {
         "company": "SpaceX",
         "ticker": "SPCX",
@@ -34620,9 +34620,9 @@
           "slug": "000660.ks",
           "stance": "bull",
           "date": "2026-05-08",
-          "ret": -0.3791878172588833,
+          "ret": -0.3847715736040609,
           "benchmarkReturn": 0.020430574008297064,
-          "alpha": -0.39961839126718035
+          "alpha": -0.40520214761235795
         },
         {
           "company": "Samsung",
@@ -34630,9 +34630,9 @@
           "slug": "005930.ks",
           "stance": "bull",
           "date": "2026-05-08",
-          "ret": -0.25661080074487896,
+          "ret": -0.259217877094972,
           "benchmarkReturn": 0.020430574008297064,
-          "alpha": -0.27704137475317603
+          "alpha": -0.2796484511032691
         }
       ]
     },
