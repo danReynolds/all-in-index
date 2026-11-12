@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T06:13:51.940Z",
+  "generatedAt": "2026-11-12T12:11:50.334Z",
   "holdings": [
     {
       "slug": "openai",
@@ -12626,13 +12626,13 @@
         "asOf": "2026-11-12",
         "anchorDate": "2026-05-08",
         "basePrice": 268500,
-        "latestPrice": 207250,
+        "latestPrice": 208000,
         "returns": {
           "1m": 0.1005586592178771,
           "3m": -0.14338919925512103,
           "6m": -0.2927374301675978,
           "1y": null,
-          "since": -0.22811918063314712
+          "since": -0.22532588454376165
         },
         "history": [
           [
@@ -12805,7 +12805,7 @@
           ],
           [
             "2026-11-12",
-            207250
+            208000
           ]
         ],
         "source": "yahoo"
@@ -33998,10 +33998,10 @@
         ],
         "entryDate": "2026-05-08",
         "entryPrice": 268500,
-        "latestPrice": 207000,
-        "sinceReturn": -0.22905027932960897,
+        "latestPrice": 208000,
+        "sinceReturn": -0.22532588454376168,
         "benchmarkReturn": 0.030083240693039803,
-        "alpha": -0.2591335200226488,
+        "alpha": -0.2554091252368015,
         "hosts": [
           "Guest"
         ]
@@ -34018,10 +34018,10 @@
         ],
         "entryDate": "2026-05-08",
         "entryPrice": 1686000,
-        "latestPrice": 1253000,
-        "sinceReturn": -0.2568208778173191,
+        "latestPrice": 1254000,
+        "sinceReturn": -0.2562277580071174,
         "benchmarkReturn": 0.030083240693039803,
-        "alpha": -0.2869041185103589,
+        "alpha": -0.2863109987001572,
         "hosts": [
           "Guest"
         ]
@@ -34642,9 +34642,9 @@
       "guest": "Brad Gerstner",
       "slug": "brad-gerstner",
       "calls": 4,
-      "followReturn": -0.11956189217435678,
+      "followReturn": -0.11886356815201043,
       "benchmarkReturn": 0.02611302651267866,
-      "alpha": -0.14567491868703544,
+      "alpha": -0.1449765946646891,
       "best": {
         "company": "Micron Technology",
         "ticker": "MU",
@@ -34688,9 +34688,9 @@
           "slug": "005930.ks",
           "stance": "bull",
           "date": "2026-05-08",
-          "ret": -0.22811918063314707,
+          "ret": -0.22532588454376168,
           "benchmarkReturn": 0.030083240693039803,
-          "alpha": -0.25820242132618687
+          "alpha": -0.2554091252368015
         }
       ]
     },
