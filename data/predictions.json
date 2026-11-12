@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T12:12:08.517Z",
+  "generatedAt": "2026-11-12T00:20:22.870Z",
   "episodes": [
     {
       "id": "E257",
@@ -146,7 +146,7 @@
           "quoteStartMs": 2067000,
           "ticker": "CPER",
           "direction": "up",
-          "sinceReturn": 0.02331887201735356,
+          "sinceReturn": 0.023047722342733033,
           "history": [
             [
               "2026-01-12",
@@ -361,8 +361,8 @@
               38.43
             ],
             [
-              "2026-11-10",
-              37.74
+              "2026-11-11",
+              37.73
             ]
           ],
           "proxyTicker": null,
@@ -377,7 +377,7 @@
           "quoteStartMs": 2143000,
           "ticker": "IPO",
           "direction": "up",
-          "sinceReturn": -0.03428335398595629,
+          "sinceReturn": 0.0012391573729862695,
           "history": [
             [
               "2026-01-12",
@@ -592,8 +592,8 @@
               47.29
             ],
             [
-              "2026-11-10",
-              46.76
+              "2026-11-11",
+              48.48
             ]
           ],
           "proxyTicker": null,
@@ -608,7 +608,7 @@
           "quoteStartMs": 2172000,
           "ticker": "AMZN",
           "direction": "up",
-          "sinceReturn": 0.09899784963687266,
+          "sinceReturn": 0.0799285917150161,
           "history": [
             [
               "2026-01-12",
@@ -823,8 +823,8 @@
               266.93
             ],
             [
-              "2026-11-10",
-              270.87
+              "2026-11-11",
+              266.17
             ]
           ],
           "proxyTicker": null,
@@ -969,7 +969,7 @@
           "quoteStartMs": 3628000,
           "ticker": "TSLA",
           "direction": null,
-          "sinceReturn": -0.15408945117605133,
+          "sinceReturn": -0.12945473984319317,
           "history": [
             [
               "2026-01-12",
@@ -1184,8 +1184,8 @@
               378.05
             ],
             [
-              "2026-11-10",
-              379.78
+              "2026-11-11",
+              390.84
             ]
           ],
           "proxyTicker": null,
@@ -1252,7 +1252,7 @@
           "quoteStartMs": 3990000,
           "ticker": "HOOD",
           "direction": "up",
-          "sinceReturn": -0.38207898553814523,
+          "sinceReturn": -0.3597323322209634,
           "history": [
             [
               "2026-01-12",
@@ -1467,8 +1467,8 @@
               63.46
             ],
             [
-              "2026-11-10",
-              61.79
+              "2026-11-11",
+              64.03
             ]
           ],
           "proxyTicker": null,
@@ -1476,11 +1476,11 @@
           "basket": [
             {
               "ticker": "HOOD",
-              "sinceReturn": -0.30794758339006123
+              "sinceReturn": -0.2802927161334241
             },
             {
               "ticker": "COIN",
-              "sinceReturn": -0.4562103876862293
+              "sinceReturn": -0.4391719483085027
             }
           ]
         },
@@ -1519,7 +1519,7 @@
           "quoteStartMs": 4264000,
           "ticker": "USO",
           "direction": "down",
-          "sinceReturn": 0.974180041870202,
+          "sinceReturn": 0.9744591765526865,
           "history": [
             [
               "2026-01-12",
@@ -1734,8 +1734,8 @@
               142.66
             ],
             [
-              "2026-11-10",
-              141.45
+              "2026-11-11",
+              141.47
             ]
           ],
           "proxyTicker": null,
@@ -1763,7 +1763,7 @@
           "quoteStartMs": 4361000,
           "ticker": "NFLX",
           "direction": "down",
-          "sinceReturn": -0.2924728777541662,
+          "sinceReturn": -0.2781568057264287,
           "history": [
             [
               "2026-01-12",
@@ -1978,8 +1978,8 @@
               63.95
             ],
             [
-              "2026-11-10",
-              63.26
+              "2026-11-11",
+              64.54
             ]
           ],
           "proxyTicker": null,
@@ -2033,7 +2033,7 @@
           "quoteStartMs": 4801000,
           "ticker": "IPO",
           "direction": "up",
-          "sinceReturn": -0.03428335398595629,
+          "sinceReturn": 0.0012391573729862695,
           "history": [
             [
               "2026-01-12",
@@ -2248,8 +2248,8 @@
               47.29
             ],
             [
-              "2026-11-10",
-              46.76
+              "2026-11-11",
+              48.48
             ]
           ],
           "proxyTicker": null,
@@ -2467,7 +2467,7 @@
           "quoteStartMs": 1742000,
           "ticker": "TSLA",
           "direction": "up",
-          "sinceReturn": 0.1918357695081658,
+          "sinceReturn": 0.22070538522204075,
           "history": [
             [
               "2025-01-06",
@@ -2702,8 +2702,8 @@
               119.71
             ],
             [
-              "2026-11-10",
-              119.18
+              "2026-11-11",
+              122.07
             ]
           ],
           "proxyTicker": null,
@@ -2711,11 +2711,11 @@
           "basket": [
             {
               "ticker": "TSLA",
-              "sinceReturn": -0.07607347038073237
+              "sinceReturn": -0.04916676803308609
             },
             {
               "ticker": "GOOGL",
-              "sinceReturn": 0.459745009397064
+              "sinceReturn": 0.49057753847716756
             }
           ]
         },
@@ -2754,7 +2754,7 @@
           "quoteStartMs": 2487000,
           "ticker": "BA",
           "direction": "down",
-          "sinceReturn": 0.35489597203381335,
+          "sinceReturn": 0.365097017304352,
           "history": [
             [
               "2025-01-06",
@@ -2989,8 +2989,8 @@
               137.41
             ],
             [
-              "2026-11-10",
-              135.49
+              "2026-11-11",
+              136.51
             ]
           ],
           "proxyTicker": null,
@@ -2998,15 +2998,15 @@
           "basket": [
             {
               "ticker": "BA",
-              "sinceReturn": 0.015224265136432805
+              "sinceReturn": 0.022016629581918204
             },
             {
               "ticker": "LMT",
-              "sinceReturn": 0.2942489270386266
+              "sinceReturn": 0.30912017167381967
             },
             {
               "ticker": "RTX",
-              "sinceReturn": 0.7552147239263806
+              "sinceReturn": 0.7641542506573181
             }
           ]
         },
@@ -3136,7 +3136,7 @@
           "quoteStartMs": 4449000,
           "ticker": "MU",
           "direction": "up",
-          "sinceReturn": 6.305158170461414,
+          "sinceReturn": 7.17348377997179,
           "history": [
             [
               "2025-01-06",
@@ -3371,8 +3371,8 @@
               884.74
             ],
             [
-              "2026-11-10",
-              725.11
+              "2026-11-11",
+              811.3
             ]
           ],
           "proxyTicker": null,
@@ -3400,7 +3400,7 @@
           "quoteStartMs": 4660000,
           "ticker": "KWEB",
           "direction": "up",
-          "sinceReturn": -0.15549315549315548,
+          "sinceReturn": -0.16918216918216908,
           "history": [
             [
               "2025-01-06",
@@ -3635,8 +3635,8 @@
               22.74
             ],
             [
-              "2026-11-10",
-              24.06
+              "2026-11-11",
+              23.67
             ]
           ],
           "proxyTicker": null,
