@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T00:19:41.360Z",
+  "generatedAt": "2026-11-14T06:12:29.872Z",
   "episodes": [
     {
       "id": "E257",
@@ -1252,7 +1252,7 @@
           "quoteStartMs": 3990000,
           "ticker": "HOOD",
           "direction": "up",
-          "sinceReturn": -0.40607158472116217,
+          "sinceReturn": -0.4060612958084945,
           "history": [
             [
               "2026-01-12",
@@ -1480,7 +1480,7 @@
             },
             {
               "ticker": "COIN",
-              "sinceReturn": -0.47466869701209974
+              "sinceReturn": -0.4746481191867643
             }
           ]
         },
