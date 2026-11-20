@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T06:13:10.871Z",
+  "generatedAt": "2026-11-20T12:11:46.869Z",
   "episodes": [
     {
       "id": "E257",
@@ -381,7 +381,7 @@
           "quoteStartMs": 2143000,
           "ticker": "IPO",
           "direction": "up",
-          "sinceReturn": -0.05741429161503513,
+          "sinceReturn": -0.08632796365138372,
           "history": [
             [
               "2026-01-12",
@@ -600,8 +600,8 @@
               46.72
             ],
             [
-              "2026-11-18",
-              45.64
+              "2026-11-19",
+              44.24
             ]
           ],
           "proxyTicker": null,
@@ -1268,7 +1268,7 @@
           "quoteStartMs": 3990000,
           "ticker": "HOOD",
           "direction": "up",
-          "sinceReturn": -0.47830411865804445,
+          "sinceReturn": -0.483891271393584,
           "history": [
             [
               "2026-01-12",
@@ -1487,8 +1487,8 @@
               59.39
             ],
             [
-              "2026-11-18",
-              52.17
+              "2026-11-19",
+              51.61
             ]
           ],
           "proxyTicker": null,
@@ -1496,11 +1496,11 @@
           "basket": [
             {
               "ticker": "HOOD",
-              "sinceReturn": -0.4114193328795098
+              "sinceReturn": -0.4158441116405717
             },
             {
               "ticker": "COIN",
-              "sinceReturn": -0.5451889044365791
+              "sinceReturn": -0.5519384311465964
             }
           ]
         },
@@ -2061,7 +2061,7 @@
           "quoteStartMs": 4801000,
           "ticker": "IPO",
           "direction": "up",
-          "sinceReturn": -0.05741429161503513,
+          "sinceReturn": -0.08632796365138372,
           "history": [
             [
               "2026-01-12",
@@ -2280,8 +2280,8 @@
               46.72
             ],
             [
-              "2026-11-18",
-              45.64
+              "2026-11-19",
+              44.24
             ]
           ],
           "proxyTicker": null,
@@ -3444,7 +3444,7 @@
           "quoteStartMs": 4660000,
           "ticker": "KWEB",
           "direction": "up",
-          "sinceReturn": -0.23797823797823792,
+          "sinceReturn": -0.252018252018252,
           "history": [
             [
               "2025-01-06",
@@ -3683,8 +3683,8 @@
               23.67
             ],
             [
-              "2026-11-18",
-              21.71
+              "2026-11-19",
+              21.31
             ]
           ],
           "proxyTicker": null,
