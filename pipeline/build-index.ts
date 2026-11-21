@@ -105,9 +105,8 @@ export function attachSectorProxy(t: Thesis): void {
     : `ETF proxy: ${proxy.note}; quote is an explicit sector/theme call.`;
 }
 
-// Synthesis cache: keyed by the holding's exact take-set, so unchanged
-// holdings never re-spend tokens (the 6-hourly cron would otherwise
-// re-synthesize ~125 holdings every run).
+// Synthesis cache: keyed by the takes used as source material, so unchanged
+// holdings never re-spend tokens and attribution changes can invalidate a summary.
 const SYNTH_CACHE_FILE = path.join(process.cwd(), "data", "syntheses.json");
 
 function takeSetKey(company: string, theses: Thesis[]): string {
@@ -233,14 +232,19 @@ export async function buildIndex(): Promise<IndexSnapshot> {
       ? await buildMarketData(ticker, firstMentioned, nowIso)
       : null;
 
-    const synthKey = takeSetKey(company, theses);
-    let synthesis = synthCache[synthKey];
-    if (synthesis) {
-      synthHits++;
-    } else {
-      synthesis = await synthesize(company, theses);
-      synthCache[synthKey] = synthesis;
-      synthMisses++;
+    const synthesisTheses = theses.filter((t) => t.attributionConfidence !== "low");
+    let synthesis = "Speaker attribution is uncertain for the available commentary.";
+    if (synthesisTheses.length) {
+      const synthKey = takeSetKey(company, synthesisTheses);
+      const cached = synthCache[synthKey];
+      if (cached) {
+        synthesis = cached;
+        synthHits++;
+      } else {
+        synthesis = await synthesize(company, synthesisTheses);
+        synthCache[synthKey] = synthesis;
+        synthMisses++;
+      }
     }
 
     holdings.push({

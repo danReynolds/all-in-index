@@ -143,7 +143,7 @@ export default async function HostPage({ params }: PageProps<"/host/[host]">) {
   const signature: HostTake[] = [];
   const signatureSlugs = new Set<string>();
   const rankedTakes = takes
-    .filter((t) => t.quote && t.stance !== "neutral")
+    .filter((t) => t.quote && t.stance !== "neutral" && t.attributionConfidence !== "low")
     .sort(
       (a, b) =>
         (b.conviction === "high" ? 1 : 0) - (a.conviction === "high" ? 1 : 0) ||

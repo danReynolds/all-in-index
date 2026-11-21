@@ -58,14 +58,14 @@ function quoteMatches(text: string, quote: string): boolean {
   return fragments.every((frag) => hay.includes(frag) || hasWordsInOrder(text, frag));
 }
 
-export function findQuoteUtterance(
+function findQuoteSpan(
   t: Transcript,
   quote: string,
   speaker?: Thesis["host"] | null,
-): Transcript["utterances"][number] | null {
+): Transcript["utterances"] | null {
   const utterances = speaker ? t.utterances.filter((u) => u.speaker === speaker) : t.utterances;
   const exact = utterances.find((u) => quoteMatches(u.text, quote));
-  if (exact) return exact;
+  if (exact) return [exact];
 
   for (let i = 0; i < t.utterances.length; i++) {
     const first = t.utterances[i];
@@ -75,10 +75,18 @@ export function findQuoteUtterance(
       const next = t.utterances[j];
       if (next.speaker !== first.speaker) break;
       text = `${text} ${next.text}`;
-      if (quoteMatches(text, quote)) return first;
+      if (quoteMatches(text, quote)) return t.utterances.slice(i, j + 1);
     }
   }
   return null;
+}
+
+export function findQuoteUtterance(
+  t: Transcript,
+  quote: string,
+  speaker?: Thesis["host"] | null,
+): Transcript["utterances"][number] | null {
+  return findQuoteSpan(t, quote, speaker)?.[0] ?? null;
 }
 
 function quoteOffsetMs(utterance: Transcript["utterances"][number], quote: string): number {
@@ -261,22 +269,34 @@ export function snapQuoteTimestamps(theses: Thesis[], t: Transcript): Thesis[] {
 }
 
 /**
- * Stamp each thesis with the naming pass's confidence for the cluster it came
- * from: locate the utterance at the quote timestamp (fall back to the host's
- * best-confidence cluster) and inherit that cluster's confidence.
+ * Inherit confidence from the quote's diarization cluster. A quote from a
+ * fused cluster cannot support a scored attribution to one of its voices.
  */
 export function stampAttribution(theses: Thesis[], t: Transcript): Thesis[] {
   const conf = t.speakerConfidence ?? {};
+  const merged = new Set(t.mergedClusters);
+  const mergedText = t.utterances.filter((u) => merged.has(u.cluster)).map((u) => normText(u.text));
   const rank = { low: 0, medium: 1, high: 2 } as const;
   for (const th of theses) {
     let cluster: string | null = null;
-    if (th.quoteStartMs != null) {
-      const u =
-        t.utterances.find(
-          (u) => th.quoteStartMs! >= u.startMs && th.quoteStartMs! < u.endMs,
-        ) ??
-        t.utterances.find((u) => u.startMs >= th.quoteStartMs!) ??
-        null;
+    const quoteStartMs = th.quoteStartMs;
+    const atQuoteTime = quoteStartMs == null ? undefined : t.utterances.find(
+      (u) => quoteStartMs >= u.startMs && quoteStartMs < u.endMs,
+    );
+    if (merged.size && th.quote) {
+      const anchored = atQuoteTime && isQuoteVerbatim(th.quote, atQuoteTime.text);
+      const source = anchored ? [atQuoteTime] : findQuoteSpan(t, th.quote);
+      // A timestamp can itself come from a text match, so it cannot resolve a
+      // repeated quote or fragment that appears in both a clear and a fused cluster.
+      const matchesMerged = quoteFragments(th.quote).some((fragment) => mergedText.some((text) => text.includes(fragment)));
+      if (!source || matchesMerged || source.some((u) => merged.has(u.cluster))) {
+        th.attributionConfidence = "low";
+        continue;
+      }
+      if (source?.[0].speaker === th.host) cluster = source[0].cluster;
+    }
+    if (!cluster && quoteStartMs != null) {
+      const u = atQuoteTime ?? t.utterances.find((u) => u.startMs >= quoteStartMs);
       if (u && u.speaker === th.host) cluster = u.cluster;
       else if (u && u.speaker !== th.host) {
         const owner = findQuoteUtterance(t, th.quote, th.host);
@@ -293,7 +313,7 @@ export function stampAttribution(theses: Thesis[], t: Transcript): Thesis[] {
       candidates.sort((a, b) => (rank[conf[b[0]] ?? "high"] ?? 2) - (rank[conf[a[0]] ?? "high"] ?? 2));
       cluster = candidates[0]?.[0] ?? null;
     }
-    th.attributionConfidence = cluster ? (conf[cluster] ?? "high") : "low";
+    th.attributionConfidence = cluster && !merged.has(cluster) ? (conf[cluster] ?? "high") : "low";
   }
   return theses;
 }
