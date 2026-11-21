@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const takes = ep.groups.reduce((n, g) => n + g.takes.length, 0);
   return {
     title: `${ep.meta.number ? `E${ep.meta.number}` : "Special"} — ${ep.meta.title}`,
-    description: `${takes} scored takes across ${ep.groups.length} companies from this episode, each judged by the price move since it aired.`,
+    description: `${takes} takes across ${ep.groups.length} companies from this episode, with verified calls judged by the price move since it aired.`,
     alternates: { canonical: `/episode/${id}` },
   };
 }
@@ -78,6 +78,7 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
   for (const g of ep.groups) {
     const ctx = holdingContext(g.holding, ep.meta.date);
     for (const t of g.takes) {
+      if (t.attributionConfidence === "low") continue;
       const v = takeVerdict({
         stance: t.stance,
         since: ctx.ret,
@@ -93,7 +94,9 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
   const priced = withCall + against > 0;
   // When nothing is graded yet, say why: directional calls still waiting on time
   // or a real move ("too early"), or calls only on private names.
-  const hasDirectional = allTakes.some((t) => t.stance === "bull" || t.stance === "bear");
+  const hasDirectional = allTakes.some(
+    (t) => t.attributionConfidence !== "low" && (t.stance === "bull" || t.stance === "bear"),
+  );
   const scorableSoon = early > 0;
 
   // Episode "mood": the mix of stances taken, and who showed up.
@@ -113,7 +116,7 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
     url: `${siteUrl}/episode/${id}`,
     datePublished: ep.meta.date,
     ...(ep.meta.number ? { episodeNumber: ep.meta.number } : {}),
-    description: `${takeCount} scored takes across ${ep.groups.length} companies from this episode, each judged by the price move since it aired.`,
+    description: `${takeCount} takes across ${ep.groups.length} companies from this episode, with verified calls judged by the price move since it aired.`,
     partOfSeries: {
       "@type": "PodcastSeries",
       name: "All-In with Chamath, Jason, Sacks & Friedberg",
@@ -334,7 +337,7 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
 
                 <div className="space-y-3">
                   {takes.map((t: Thesis) => {
-                    const v = takeVerdict({
+                    const v = t.attributionConfidence === "low" ? null : takeVerdict({
                       stance: t.stance,
                       since: ret,
                       elapsedDays: ctx.elapsedDays,
@@ -360,6 +363,9 @@ export default async function EpisodePage({ params }: PageProps<"/episode/[id]">
                           </span>
                           <StanceBadge stance={t.stance} callType={t.callType} scored={isScoredPosition(t)} />
                           <ConvictionDots conviction={t.conviction} />
+                          {t.attributionConfidence === "low" && (
+                            <span>Unverified attribution</span>
+                          )}
                           {v && <VerdictPill tone={v.tone} firm={v.firm} label={v.label} />}
                         </div>
                         <p className="mt-2 text-sm leading-relaxed text-neutral-200">{t.summary}</p>
