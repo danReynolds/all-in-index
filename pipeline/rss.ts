@@ -33,32 +33,20 @@ function parseDuration(d: string | number | undefined): number | null {
   return parts.reduce((acc, p) => acc * 60 + p, 0);
 }
 
-/** A stable, filesystem-safe id from the GUID (or audio URL fallback). */
+/** A stable, filesystem-safe id for an unnumbered episode. */
 function makeId(guid: string, audioUrl: string): string {
-  const basis = guid || audioUrl;
-  // Prefer an episode tag if present in the audio filename.
-  const epTag = audioUrl.match(/ALLIN-E(\d+)/i);
-  if (epTag) return `E${epTag[1]}`;
-  return basis
+  return (guid || audioUrl)
     .replace(/^https?:\/\//, "")
     .replace(/[^a-zA-Z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "")
     .slice(0, 64);
 }
 
-function detectNumber(title: string, audioUrl: string): number | null {
-  const fromUrl = audioUrl.match(/ALLIN-E(\d+)/i);
-  if (fromUrl) return parseInt(fromUrl[1], 10);
-  const fromTitle = title.match(/\bE(\d{2,4})\b/);
-  if (fromTitle) return parseInt(fromTitle[1], 10);
-  return null;
-}
-
 function classify(
   title: string,
-  audioUrl: string,
+  episodeTag: string | undefined,
 ): { kind: EpisodeKind; guests: string[] } {
-  if (/ALLIN-E\d+/i.test(audioUrl)) return { kind: "roundtable", guests: [] };
+  if (episodeTag) return { kind: "roundtable", guests: [] };
   // Interview episodes commonly lead with the guest name: "Bill Ackman: ...".
   const m = title.match(/^([A-Z][\w.'-]+(?:\s+[A-Z][\w.'-]+){0,2}):\s/);
   if (m) return { kind: "interview", guests: [m[1].trim()] };
@@ -71,12 +59,15 @@ function toEpisode(item: RawItem): Episode | null {
   if (!audioUrl) return null;
   const title = (item.title ?? "").trim();
   const guid = text(item.guid);
-  const id = makeId(guid, audioUrl);
-  const { kind, guests } = classify(title, audioUrl);
+  const filename = audioUrl.split(/[?#]/, 1)[0].split("/").at(-1) ?? "";
+  // Roundtables usually use ALLIN-E###; some use filenames such as E286_99_AUDIO.mp3.
+  const episodeTag = (filename.match(/ALLIN-E(\d+)/i) ?? filename.match(/^E(\d+)(?=[_.-])/i))?.[1];
+  const number = episodeTag ?? title.match(/\bE(\d{2,4})\b/)?.[1];
+  const { kind, guests } = classify(title, episodeTag);
   const pub = item.pubDate ? new Date(item.pubDate) : null;
   return {
-    id,
-    number: detectNumber(title, audioUrl),
+    id: episodeTag ? `E${episodeTag}` : makeId(guid, audioUrl),
+    number: number ? Number(number) : null,
     title,
     date: pub && !Number.isNaN(pub.getTime()) ? pub.toISOString() : "",
     audioUrl,

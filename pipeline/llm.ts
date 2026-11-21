@@ -19,6 +19,8 @@ export interface CallToolArgs<T> {
   /** Zod schema used to validate + type the model's output. */
   validate: z.ZodType<T>;
   maxTokens?: number;
+  /** Optional larger output budget for one synchronous retry when Claude hits max_tokens. */
+  retryMaxTokens?: number;
   model?: string;
 }
 
@@ -46,11 +48,19 @@ function toolParams(args: CallToolArgs<unknown>): Anthropic.Messages.MessageCrea
 
 /** Pull the forced tool call out of a completed message and validate it. */
 function parseToolMessage<T>(message: Anthropic.Message, args: CallToolArgs<T>): T {
+  const details = `stop_reason=${message.stop_reason ?? "unknown"}, output_tokens=${message.usage.output_tokens}`;
+  if (message.stop_reason === "max_tokens") {
+    throw new Error(`The ${args.toolName} tool response was truncated (${details}).`);
+  }
   const block = message.content.find((b) => b.type === "tool_use");
   if (!block || block.type !== "tool_use") {
-    throw new Error(`Model did not return a ${args.toolName} tool call.`);
+    throw new Error(`Model did not return a ${args.toolName} tool call (${details}).`);
   }
-  return args.validate.parse(block.input);
+  const parsed = args.validate.safeParse(block.input);
+  if (!parsed.success) {
+    throw new Error(`Invalid ${args.toolName} tool input (${details}): ${parsed.error.message}`, { cause: parsed.error });
+  }
+  return parsed.data;
 }
 
 /**
@@ -59,8 +69,15 @@ function parseToolMessage<T>(message: Anthropic.Message, args: CallToolArgs<T>):
  * calls within a run (and across episodes) reuse it cheaply.
  */
 export async function callTool<T>(args: CallToolArgs<T>): Promise<T> {
-  const res = await anthropic().messages.create(toolParams(args));
-  return parseToolMessage(res, args);
+  const messages = anthropic().messages;
+  const params = toolParams(args);
+  const response = await messages.create(params);
+  const retryBudget = args.retryMaxTokens;
+  if (response.stop_reason === "max_tokens" && retryBudget && retryBudget > params.max_tokens) {
+    console.warn(`  ⚠ ${args.toolName} reached max_tokens (${params.max_tokens}). Retrying once with ${retryBudget}.`);
+    return parseToolMessage(await messages.create({ ...params, max_tokens: retryBudget }), args);
+  }
+  return parseToolMessage(response, args);
 }
 
 export type BatchOutcome<T> = { ok: true; value: T } | { ok: false; error: string };

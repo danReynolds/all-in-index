@@ -41,15 +41,33 @@ jobs:
           npm run lint
           npm test
 
+      - name: Check for a pending index review
+        id: review
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          URL=$(gh api --method GET "repos/$GITHUB_REPOSITORY/pulls" -f state=open -f base=main -f "head=$GITHUB_REPOSITORY_OWNER:cron/pending-review" --jq '.[0].html_url // ""')
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+          if [ -n "$URL" ]; then
+            echo "Index review is pending. New episode processing will resume after the PR is closed."
+            printf '### Index review pending\n\n[Review the index update](%s). New episode processing is paused while this PR is open.\n' "$URL" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Process new episodes + rebuild index
+        id: sync
         env:
           ASSEMBLYAI_API_KEY: ${{ secrets.ASSEMBLYAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PENDING_REVIEW_URL: ${{ steps.review.outputs.url }}
+          EPISODE_LIMIT: ${{ github.event.inputs.limit || '2' }}
         run: |
           # Snapshot the live scored set first, so we can tell a membership
           # change from a pure price refresh after the rebuild.
           git show HEAD:data/holdings.json > /tmp/holdings-before.json
-          npm run pipeline sync -- --limit "${{ github.event.inputs.limit || '2' }}"
+          if [ -n "$PENDING_REVIEW_URL" ]; then
+            EPISODE_LIMIT=0
+          fi
+          npm run pipeline sync -- --limit "$EPISODE_LIMIT"
 
       - name: Validate generated site
         run: |
@@ -83,6 +101,7 @@ jobs:
       - name: Commit (auto-push price-only, PR on scored changes)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PENDING_REVIEW_URL: ${{ steps.review.outputs.url }}
         run: |
           git config user.name "all-in-index-bot"
           git config user.email "bot@users.noreply.github.com"
@@ -96,6 +115,9 @@ jobs:
             echo "Price-only refresh — auto-deploying to main."
             git commit -m "chore: update index ($STAMP)"
             git push
+          elif [ -n "$PENDING_REVIEW_URL" ]; then
+            echo "::error::The refresh changed the scored set while an index review was open. Review the pending PR and rerun."
+            exit 1
           else
             echo "Scored set changed — opening a review PR instead of pushing to main."
             cat scored-change.md
@@ -103,9 +125,34 @@ jobs:
             git checkout -b "$BRANCH"
             git commit -m "chore: index update needs review ($STAMP)"
             git push -f origin "$BRANCH"
-            # One standing review PR; the force-push refreshes it each run until merged.
-            gh pr view "$BRANCH" --json state --jq .state 2>/dev/null | grep -q OPEN \
-              || gh pr create --base main --head "$BRANCH" \
-                   --title "Index update needs review ($STAMP)" \
-                   --body-file scored-change.md
+            URL=$(gh pr create --base main --head "$BRANCH" \
+              --title "Index update needs review ($STAMP)" \
+              --body-file scored-change.md)
+            printf '### Index review pending\n\n[Review the index update](%s).\n' "$URL" >> "$GITHUB_STEP_SUMMARY"
           fi
+
+      # Keep the publishable artifacts available if a later gate or push fails.
+      # Full transcripts stay private, as they do in the commit step.
+      - name: Save generated data for recovery
+        if: failure() && (steps.sync.outcome == 'success' || steps.sync.outcome == 'failure')
+        uses: actions/upload-artifact@v4
+        with:
+          name: index-recovery-data
+          path: |
+            data/episodes/*/episode.json
+            data/episodes/*/theses.json
+            data/holdings.json
+            data/predictions.json
+            data/syntheses.json
+            data/companies.json
+          retention-days: 7
+
+      # Surface ingestion failure only after generated data has passed the
+      # publication checks and published prices (or opened a scored-set PR).
+      - name: Report episode ingestion failures
+        if: steps.sync.outputs.failed_ids != ''
+        env:
+          FAILED_EPISODE_IDS: ${{ steps.sync.outputs.failed_ids }}
+        run: |
+          echo "::error::Failed to ingest $FAILED_EPISODE_IDS. See the processing step for provider errors."
+          exit 1

@@ -95,8 +95,15 @@ To enable it:
 
 Price-only updates publish automatically. Changes to scored membership open the
 standing `cron/pending-review` PR and require review before merging to deploy.
+While that PR is open, new episode processing pauses to avoid paying to process
+the same episodes again; price-only refreshes continue. Merge the reviewed PR
+before starting the next catch-up batch.
 Keep AssemblyAI funded: transcription failures prevent new episode analysis even
-when market prices refresh successfully.
+when market prices refresh successfully. The run summary reports completed,
+failed, and remaining episodes, and ingestion failures fail the workflow after
+the price refresh or review PR has been published. If validation or publication
+fails, publishable generated data is retained as a recovery artifact for seven
+days; full transcripts are excluded.
 
 Backfill the catalog once with `npm run pipeline sync -- --limit 50` (repeat as
 needed); after that the weekly drop is picked up automatically.
