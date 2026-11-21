@@ -7,5 +7,10 @@
   "durationSec": 5395,
   "kind": "roundtable",
   "guests": [],
-  "link": "https://allinchamathjason.libsyn.com/can-the-ai-industry-regulate-itself-stripe-wants-paypal-china-catches-up-ny-bans-datacenters"
+  "link": "https://allinchamathjason.libsyn.com/can-the-ai-industry-regulate-itself-stripe-wants-paypal-china-catches-up-ny-bans-datacenters",
+  "diarization": {
+    "clusters": 11,
+    "distinctSpeakers": 17,
+    "suspect": true
+  }
 }

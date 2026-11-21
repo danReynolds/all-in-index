@@ -1,0 +1,50 @@
+[
+  {
+    "id": "E291-uso-Sacks-a0",
+    "episodeId": "E291",
+    "episodeNumber": 291,
+    "episodeDate": "2026-10-02T22:30:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "summary": "Sacks notes gas prices are a little high but not unprecedented (citing 300+ days of Brent over $100 during Obama), and expects prices to come down as more oil moves out of the Strait of Hormuz, which would help inflation fall and enable rate cuts.",
+    "quote": "more oil got out of poor moves this week than since the beginning of the war. So I think we need to wrap up that issue, gas prices come down, and then I think that means inflation will come down.",
+    "quoteStartMs": 3251924,
+    "topics": [
+      "oil prices",
+      "inflation",
+      "rate cuts",
+      "Iran war",
+      "stagflation"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E291-uso-Chamath-a1",
+    "episodeId": "E291",
+    "episodeNumber": 291,
+    "episodeDate": "2026-10-02T22:30:00.000Z",
+    "company": "Oil",
+    "ticker": "USO",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "summary": "Chamath argues the US is no longer as dependent on oil as it once was, suggesting oil's macro influence (Brent crude, WTI, petrodollar) is diminishing and that the global economy is being rewired in ways favorable to the US, implying oil matters less as an investment/price driver.",
+    "quote": "people are sleeping on the fact that we are not nearly as dependent on oil the way that we used to be. And so even though we used to breathlessly look at Brent crude and WTI and all this stuff, I don't think it matters nearly as much as it used to.",
+    "quoteStartMs": 3385450,
+    "topics": [
+      "oil dependence",
+      "petrodollar",
+      "macro economy",
+      "US energy",
+      "inflation"
+    ],
+    "attributionConfidence": "high"
+  }
+]
