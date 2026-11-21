@@ -22,7 +22,7 @@
       "competitive position",
       "regulatory capture"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   },
   {
     "id": "E282-anthropic-Friedberg-1",
@@ -48,7 +48,7 @@
       "AI competition",
       "open source"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   },
   {
     "id": "E282-anthropic-Jason-2",
@@ -74,7 +74,7 @@
       "margin compression",
       "valuation"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   },
   {
     "id": "E282-openai-Sacks-4",
@@ -99,7 +99,7 @@
       "competitive position",
       "AI race"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   },
   {
     "id": "E282-googl-Chamath-5",
@@ -151,7 +151,7 @@
       "cloud",
       "GCP"
     ],
-    "attributionConfidence": "medium"
+    "attributionConfidence": "low"
   },
   {
     "id": "E282-aapl-Jason-9",
@@ -176,6 +176,6 @@
       "buybacks",
       "strategy"
     ],
-    "attributionConfidence": "high"
+    "attributionConfidence": "low"
   }
 ]

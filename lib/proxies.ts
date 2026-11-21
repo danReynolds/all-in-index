@@ -59,7 +59,7 @@ export const SECTOR_PROXIES: ProxyInfo[] = [
     ticker: "DBC",
     name: "Invesco DB Commodity Index Tracking Fund",
     note: "broad commodities ETF",
-    what: "A diversified basket of the major commodity futures — energy, industrial and precious metals, and agriculture. The catch-all for a generic “I’m long commodities / commodities are under-owned” basket call that doesn’t name a specific commodity.",
+    what: "A diversified basket of the major commodity futures — energy, industrial and precious metals, and agriculture. The catch-all for a generic “I’m long commodities / commodities are under-owned” basket call that doesn’t name a specific commodity. NOT for electricity generation, power-grid infrastructure, or electricity storage: those are not this commodity futures basket.",
   },
   {
     ticker: "REMX",

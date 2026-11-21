@@ -1382,5 +1382,77 @@
   "cbrs": {
     "description": "Cerebras Systems designs and manufactures large-scale AI accelerator chips and systems for deep learning workloads.",
     "domain": "cerebras.net"
+  },
+  "bending-spoons": {
+    "description": "Italian software company that acquires and grows consumer mobile apps and digital products.",
+    "domain": "bendingspoons.com"
+  },
+  "ramp": {
+    "description": "Provides corporate cards, expense management, and finance automation software for businesses.",
+    "domain": "ramp.com"
+  },
+  "calico-revel-pharma-aging-research": {
+    "description": "Research-stage biotech ventures focused on understanding and extending human healthspan and lifespan.",
+    "domain": null
+  },
+  "hyperscalers-amazon-meta-microsoft-google-spacex": {
+    "description": "Group of large-scale tech companies operating major cloud, AI, and digital infrastructure platforms.",
+    "domain": null
+  },
+  "ai-sector-frontier-closed-models": {
+    "description": "Sector encompassing companies developing proprietary, large-scale frontier AI models and systems.",
+    "domain": null
+  },
+  "open-source-ai-models-sector": {
+    "description": "Sector covering companies and projects that develop and release publicly accessible AI models.",
+    "domain": null
+  },
+  "french-government-bonds-sovereign-debt": {
+    "description": "Sovereign debt instruments issued by the French government to finance public expenditure.",
+    "domain": null
+  },
+  "open-source-ai-models": {
+    "description": "Publicly released AI models whose weights and code are freely available for use and modification.",
+    "domain": null
+  },
+  "nke": {
+    "description": "Designs, manufactures, and markets athletic footwear, apparel, and sports equipment worldwide.",
+    "domain": "nike.com"
+  },
+  "vertical-saas-sector": {
+    "description": "Sector of software-as-a-service companies building solutions tailored to specific industries or verticals.",
+    "domain": null
+  },
+  "mrna": {
+    "description": "Biotechnology company developing mRNA-based vaccines and therapeutics for infectious diseases and other conditions.",
+    "domain": "modernatx.com"
+  },
+  "us-treasuries-long-dated": {
+    "description": "Long-maturity US government debt securities issued to finance federal spending and obligations.",
+    "domain": null
+  },
+  "enterprise-software-saas-sector": {
+    "description": "Sector comprising companies delivering cloud-based software solutions and services to business customers.",
+    "domain": null
+  },
+  "airtable": {
+    "description": "Cloud-based platform combining spreadsheet and database functionality for team collaboration and workflow management.",
+    "domain": "airtable.com"
+  },
+  "ai-chip-stocks-philadelphia-semiconductor-index": {
+    "description": "Index tracking semiconductor companies, including those producing chips used in AI computing workloads.",
+    "domain": "phlx.com"
+  },
+  "energy-power-infrastructure": {
+    "description": "Develops and operates infrastructure assets supporting energy generation, transmission, and distribution networks.",
+    "domain": null
+  },
+  "energy-electrons-long-energy-infrastructure": {
+    "description": "Invests in and operates long-duration energy infrastructure focused on electricity generation and grid assets.",
+    "domain": null
+  },
+  "electricity-infrastructure-sector": {
+    "description": "Sector encompassing companies that build, operate, and maintain electrical grids, transmission lines, and power infrastructure.",
+    "domain": null
   }
 }

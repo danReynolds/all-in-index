@@ -1,0 +1,78 @@
+[
+  {
+    "id": "E292-anthropic-Sacks-0",
+    "episodeId": "E292",
+    "episodeNumber": 292,
+    "episodeDate": "2026-10-10T02:06:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Sacks",
+    "stance": "neutral",
+    "conviction": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Sacks argues Anthropic is a dangerously schizophrenic company whose Claude Constitution trains the model to defy users and potentially escape human control, making it a safety risk and a flawed product that rational customers will abandon in favor of more predictable AI alternatives.",
+    "quote": "if you simplify down what they're saying, you get a product, you buy a product from them, a piece of software, and they give you the user manual to the software, and the first page of the user manual says the software may not do what you",
+    "quoteStartMs": 1835054,
+    "topics": [
+      "AI safety",
+      "model training",
+      "product reliability",
+      "competitive risk"
+    ],
+    "attributionConfidence": "low"
+  },
+  {
+    "id": "E292-anthropic-Chamath-1",
+    "episodeId": "E292",
+    "episodeNumber": 292,
+    "episodeDate": "2026-10-10T02:06:00.000Z",
+    "company": "Anthropic",
+    "ticker": null,
+    "isPublic": false,
+    "host": "Chamath",
+    "stance": "neutral",
+    "conviction": "medium",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Chamath argues that Anthropic's overly complex moral alignment system creates unpredictable corner-case failures, and that enterprise customers will migrate to simpler, more reliable competing models that just follow user instructions subject to law.",
+    "quote": "I think that it was probably a well-intentioned idea to create this concept of alignment, but the problem is alignment has these 3 almost conflicting sets of priorities... how do you make AI conform to a particular concept of morality? And ",
+    "quoteStartMs": 1657323,
+    "topics": [
+      "AI alignment",
+      "enterprise adoption",
+      "competitive risk"
+    ],
+    "attributionConfidence": "high"
+  },
+  {
+    "id": "E292-adbe-Chamath-2",
+    "episodeId": "E292",
+    "episodeNumber": 292,
+    "episodeDate": "2026-10-10T02:06:00.000Z",
+    "company": "Adobe",
+    "ticker": "ADBE",
+    "isPublic": true,
+    "host": "Chamath",
+    "stance": "bear",
+    "conviction": "high",
+    "callType": "view",
+    "excludeReason": null,
+    "scoreNote": null,
+    "sectorProxy": null,
+    "summary": "Chamath argues that the open-sourcing of Adobe's core products in Rust effectively renders software IP worthless, destroying the moat that Adobe's suite has relied upon for years.",
+    "quote": "I think that IP in software was effectively rendered worthless 2 days ago. Because if you think about it, when everything is headless... the value of IP does no longer exist in software. It doesn't exist.",
+    "quoteStartMs": 5125000,
+    "topics": [
+      "IP moat",
+      "open source disruption",
+      "software valuation"
+    ],
+    "attributionConfidence": "low"
+  }
+]

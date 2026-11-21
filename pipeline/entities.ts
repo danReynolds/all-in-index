@@ -46,6 +46,7 @@ const CANON: Canon[] = [
   { company: "Meta", ticker: "META", isPublic: true, aliases: ["meta", "meta platforms", "facebook", "instagram"] },
   { company: "Microsoft", ticker: "MSFT", isPublic: true, aliases: ["microsoft", "microsoft azure", "azure", "github"] },
   { company: "Salesforce", ticker: "CRM", isPublic: true, aliases: ["salesforce", "slack", "tableau", "mulesoft"] },
+  { company: "Figma", ticker: "FIG", isPublic: true, aliases: ["figma", "figma inc"] },
   // Feb 2026: SpaceX consolidated xAI in a $1.25T all-stock merger; Starlink is
   // a SpaceX division and Grok is xAI's model, so the whole rocket / satellite /
   // AI / social (X) cluster is one company — public since the Jun 12 2026 IPO

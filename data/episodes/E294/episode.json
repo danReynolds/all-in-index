@@ -7,5 +7,10 @@
   "durationSec": 6203,
   "kind": "roundtable",
   "guests": [],
-  "link": "https://allinchamathjason.libsyn.com/ai-cyber-panic-ken-griffins-bubble-warning-the-fall-of-france"
+  "link": "https://allinchamathjason.libsyn.com/ai-cyber-panic-ken-griffins-bubble-warning-the-fall-of-france",
+  "diarization": {
+    "clusters": 9,
+    "distinctSpeakers": 14,
+    "suspect": true
+  }
 }

@@ -7,5 +7,10 @@
   "durationSec": 5147,
   "kind": "roundtable",
   "guests": [],
-  "link": "https://allinchamathjason.libsyn.com/anthropic-s-1-shocker-greatest-business-ever-googles-500b-wipeout-midterm-predictions"
+  "link": "https://allinchamathjason.libsyn.com/anthropic-s-1-shocker-greatest-business-ever-googles-500b-wipeout-midterm-predictions",
+  "diarization": {
+    "clusters": 7,
+    "distinctSpeakers": 7,
+    "suspect": false
+  }
 }
