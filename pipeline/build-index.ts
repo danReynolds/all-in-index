@@ -161,7 +161,7 @@ async function synthesize(company: string, theses: Thesis[]): Promise<string> {
  * cross-host view, and write data/holdings.json.
  */
 export async function buildIndex(): Promise<IndexSnapshot> {
-  const episodeIds = store.listEpisodeIds();
+  const episodeIds = store.listEpisodeIds().filter(store.hasTheses);
   const allTheses: Thesis[] = [];
   for (const id of episodeIds) allTheses.push(...store.loadTheses(id));
   console.log(`Aggregating ${allTheses.length} theses from ${episodeIds.length} episodes…`);
@@ -362,7 +362,9 @@ export async function buildFundOnly(): Promise<void> {
   const lb = await buildLeaderboard(snapshot.holdings, nowIso);
   snapshot.leaderboard = lb.entries;
   snapshot.hostFunds = lb.hostFunds;
-  snapshot.episodes = buildEpisodeMap(store.listEpisodeIds());
+  const episodeIds = store.listEpisodeIds().filter(store.hasTheses);
+  snapshot.episodes = buildEpisodeMap(episodeIds);
+  snapshot.episodesProcessed = episodeIds.length;
   snapshot.bearBook = await buildBearBook(snapshot.holdings);
   snapshot.guestLeaderboard = await buildGuestLeaderboard(snapshot.holdings);
   snapshot.generatedAt = nowIso;

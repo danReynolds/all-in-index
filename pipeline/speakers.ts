@@ -40,7 +40,7 @@ Strong cues to use:
 - Self-reference and known speech patterns / topics (Friedberg = science/biotech/climate; Sacks = policy/SaaS/geopolitics; Chamath = markets/macro/"my number is"; Jason = moderation, startups, ad reads) — use as a tie-breaker only, never to override the first/third-person signals above.
 - A non-host interviewee should be mapped to "Guest". Two clusters may map to the same host if diarization over-split them.
 
-Be honest about confidence: "high" only when direct address or self-identification pins the cluster; "medium" for strong stylistic/topical evidence; "low" when you are guessing. Only use "Unknown" if there is genuinely no signal. Cite the concrete evidence (a quote or cue) for each mapping.
+Be honest about confidence: "high" only when direct address or self-identification pins the cluster; "medium" for strong stylistic/topical evidence; "low" when you are guessing. Only use "Unknown" if there is genuinely no signal. Cite a concrete quote or cue in one short sentence per cluster. Include any material caveats in notes.
 
 Also report two diagnostics that catch an UNDER-SEGMENTED diarization (clusters that fused two people into one):
 - distinctSpeakers: how many distinct humans you can actually identify in the content. Count CONSERVATIVELY — only people you're confident spoke — but INCLUDE anyone who appears fused into a shared cluster with someone else. If one cluster clearly holds two people (it speaks AS a host yet also refers to that host in the third person, or mixes a host's voice with a guest naming their own firm in the first person), count them as two. So distinctSpeakers can exceed the number of clusters.
@@ -159,6 +159,9 @@ Map every one of these clusters. Transcript excerpt:
 
 ${digest}`;
 
+  // Reserve room for per-cluster evidence and the diarization diagnostics.
+  const maxTokens = Math.min(4096, Math.max(2048, 512 + 256 * clusters.length));
+
   const result = await callTool({
     system: SYSTEM,
     user,
@@ -166,7 +169,8 @@ ${digest}`;
     toolDescription: "Submit the cluster→host mapping for this episode.",
     inputSchema: INPUT_SCHEMA,
     validate: SpeakerMapSchema,
-    maxTokens: 2048,
+    maxTokens,
+    retryMaxTokens: maxTokens * 2,
   });
 
   const map: Record<string, Host> = {};

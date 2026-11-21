@@ -281,7 +281,21 @@ async function main() {
       const concurrency = concIdx >= 0 ? parseInt(rest[concIdx + 1], 10) : undefined;
       const roundtableOnly = !rest.includes("--include-interviews");
       const includeOlder = rest.includes("--include-older");
-      return sync({ limit, roundtableOnly, concurrency, includeOlder });
+      const { succeeded, failed, remaining } = await sync({ limit, roundtableOnly, concurrency, includeOlder });
+      const output = process.env.GITHUB_OUTPUT;
+      const summary = process.env.GITHUB_STEP_SUMMARY;
+      if (output || summary) {
+        const { appendFileSync } = await import("node:fs");
+        if (output) appendFileSync(output, `failed_ids=${failed.join(", ")}\n`);
+        if (summary) {
+          appendFileSync(summary,
+            `### Episode ingestion\n\n${succeeded.length} succeeded, ${failed.length} failed, ` +
+            `${remaining} eligible episodes remain.\n\n` +
+            (failed.length ? `Failed to ingest ${failed.join(", ")}. See the processing step for errors.\n\n` : ""),
+          );
+        }
+      }
+      return;
     }
     default:
       console.log(

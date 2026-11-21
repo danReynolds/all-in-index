@@ -228,17 +228,17 @@ export function selectSyncEpisodes(
   completed: Episode[],
   incompleteIds: Set<string>,
   opts: Pick<SyncOpts, "limit" | "includeOlder"> = {},
-): { todo: Episode[]; skippedOlder: number } {
+): { todo: Episode[]; eligibleCount: number; skippedOlder: number } {
   const processed = new Set(completed.map((ep) => ep.id));
   const dateFloor = opts.includeOlder
     ? ""
     : completed.reduce((latest, ep) => ep.date > latest ? ep.date : latest, "");
-  const eligible = (ep: Episode) =>
-    !processed.has(ep.id) && (ep.date > dateFloor || incompleteIds.has(ep.id));
+  const unprocessed = pool.filter((ep) => !processed.has(ep.id));
+  const eligible = unprocessed.filter((ep) => ep.date > dateFloor || incompleteIds.has(ep.id));
   return {
-    todo: pool.filter(eligible).sort((a, b) => a.date.localeCompare(b.date))
-      .slice(0, opts.limit ?? 2),
-    skippedOlder: pool.filter((ep) => !processed.has(ep.id) && !eligible(ep)).length,
+    todo: eligible.sort((a, b) => a.date.localeCompare(b.date)).slice(0, opts.limit ?? 2),
+    eligibleCount: eligible.length,
+    skippedOlder: unprocessed.length - eligible.length,
   };
 }
 
@@ -265,7 +265,13 @@ async function refreshPredictions(): Promise<void> {
   }
 }
 
-export async function sync(opts: SyncOpts = {}): Promise<void> {
+interface SyncResult {
+  succeeded: string[];
+  failed: string[];
+  remaining: number;
+}
+
+export async function sync(opts: SyncOpts = {}): Promise<SyncResult> {
   const limit = opts.limit ?? 2;
   const roundtableOnly = opts.roundtableOnly ?? true;
   const concurrency = Math.max(1, opts.concurrency ?? 5);
@@ -283,7 +289,7 @@ export async function sync(opts: SyncOpts = {}): Promise<void> {
     if (store.hasTheses(id)) completed.push(ep);
     else incompleteIds.add(id);
   }
-  const { todo, skippedOlder } = selectSyncEpisodes(pool, completed, incompleteIds, {
+  const { todo, eligibleCount, skippedOlder } = selectSyncEpisodes(pool, completed, incompleteIds, {
     limit, includeOlder: opts.includeOlder,
   });
 
@@ -293,10 +299,12 @@ export async function sync(opts: SyncOpts = {}): Promise<void> {
         `${skippedOlder} older unprocessed episode(s) in the feed — skipped (forward-only; use --include-older to backfill).`,
       );
     }
-    console.log("Index is up to date — no new episodes. Rebuilding to refresh market data…");
+    console.log(eligibleCount
+      ? `${eligibleCount} episode(s) awaiting ingestion. Rebuilding to refresh market data…`
+      : "No new episodes. Rebuilding to refresh market data…");
     await buildIndex();
     await refreshPredictions();
-    return;
+    return { succeeded: [], failed: [], remaining: eligibleCount };
   }
 
   console.log(
@@ -306,7 +314,7 @@ export async function sync(opts: SyncOpts = {}): Promise<void> {
   );
 
   const ok: string[] = [];
-  const failed: Array<{ id: string; error: string }> = [];
+  const failed: string[] = [];
   let cursor = 0;
 
   async function worker() {
@@ -318,7 +326,7 @@ export async function sync(opts: SyncOpts = {}): Promise<void> {
       } catch (e) {
         const error = e instanceof Error ? e.message : String(e);
         console.error(`[${ep.id}] FAILED: ${error}`);
-        failed.push({ id: ep.id, error });
+        failed.push(ep.id);
       }
     }
   }
@@ -328,12 +336,6 @@ export async function sync(opts: SyncOpts = {}): Promise<void> {
   );
 
   console.log(`\nProcessed ${ok.length} ok, ${failed.length} failed.`);
-  if (failed.length) {
-    for (const f of failed) console.log(`  ✖ ${f.id}: ${f.error}`);
-    if (process.env.GITHUB_ACTIONS === "true") {
-      console.warn("::warning::Episode ingestion failed; market prices will still refresh. Failed episodes will be retried on the next sync.");
-    }
-  }
 
   // processEpisode only runs the COMPANY extractor. Commodity takes
   // (extract-assets) and guest attribution (name-guests) live in separate
@@ -357,5 +359,5 @@ export async function sync(opts: SyncOpts = {}): Promise<void> {
   console.log("\nbuilding index…");
   await buildIndex();
   await refreshPredictions();
-  console.log("✓ backfill complete.");
+  return { succeeded: ok.sort(), failed: failed.sort(), remaining: eligibleCount - ok.length };
 }
