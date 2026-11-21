@@ -7,5 +7,10 @@
   "durationSec": 5624,
   "kind": "roundtable",
   "guests": [],
-  "link": "https://allinchamathjason.libsyn.com/the-fight-over-open-source-ai-anthropics-15b-payout-nyc-socialists-evictions-violence"
+  "link": "https://allinchamathjason.libsyn.com/the-fight-over-open-source-ai-anthropics-15b-payout-nyc-socialists-evictions-violence",
+  "diarization": {
+    "clusters": 9,
+    "distinctSpeakers": 15,
+    "suspect": true
+  }
 }
