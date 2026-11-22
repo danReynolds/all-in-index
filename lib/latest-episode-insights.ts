@@ -3,7 +3,7 @@ import { REGULAR_HOSTS } from "./types";
 import type { EpisodeMeta, Holding, IndexSnapshot, Thesis } from "./types";
 
 type FeaturedCall = {
-  holding: Pick<Holding, "slug" | "company" | "domain">;
+  holding: Pick<Holding, "slug" | "company" | "domain" | "ticker">;
   take: Thesis;
   speaker: string;
   action: "Long call" | "Short call" | "Exit";
