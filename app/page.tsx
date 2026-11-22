@@ -10,9 +10,11 @@ import { HoldingsTable } from "@/app/components/HoldingsTable";
 import { toHoldingRow } from "@/lib/projections";
 import { HostStack } from "@/app/components/host";
 import { CompanyLogo } from "@/app/components/CompanyLogo";
+import { LatestEpisodeInsights } from "@/app/components/LatestEpisodeInsights";
 import { Logo } from "@/app/components/Logo";
 import { Reveal } from "@/app/components/Reveal";
 import { isMacroAsset } from "@/lib/assets";
+import { selectLatestEpisodeInsights } from "@/lib/latest-episode-insights";
 import type { Holding, IndexFund } from "@/lib/types";
 
 const d = (ms: number) => ({ "--d": `${ms}ms` }) as CSSProperties;
@@ -26,6 +28,7 @@ export default function Home() {
   const holdings = snapshot.holdings;
   const fund = snapshot.indexFund ?? null;
   const guesties = snapshot.guestiesFund ?? null;
+  const latestEpisode = isSample ? null : selectLatestEpisodeInsights(snapshot);
   const leaderboard = snapshot.leaderboard ?? [];
   const publicHoldings = holdings.filter((h) => h.ticker && !isMacroAsset(h.ticker));
   const macroHoldings = holdings.filter((h) => isMacroAsset(h.ticker));
@@ -46,6 +49,8 @@ export default function Home() {
   return (
     <div className="space-y-10">
       {fund ? <Hero fund={fund} /> : <PlainHeader />}
+
+      <LatestEpisodeInsights insight={latestEpisode} />
 
       {guesties && (
         <Reveal>
