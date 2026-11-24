@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T00:03:40.934Z",
+  "generatedAt": "2026-11-24T06:03:11.768Z",
   "holdings": [
     {
       "slug": "aapl",
@@ -19410,13 +19410,13 @@
         "asOf": "2026-11-24",
         "anchorDate": "2025-10-10",
         "basePrice": 428000,
-        "latestPrice": 1085000,
+        "latestPrice": 1176000,
         "returns": {
           "1m": 0.4158878504672897,
           "3m": 0.75,
           "6m": 1.3995327102803738,
           "1y": 2.75,
-          "since": 1.5350467289719627
+          "since": 1.7476635514018692
         },
         "history": [
           [
@@ -19640,8 +19640,8 @@
             1098000
           ],
           [
-            "2026-11-23",
-            1085000
+            "2026-11-24",
+            1176000
           ]
         ],
         "source": "yahoo"
@@ -19694,13 +19694,13 @@
         "asOf": "2026-11-24",
         "anchorDate": "2026-05-08",
         "basePrice": 268500,
-        "latestPrice": 177500,
+        "latestPrice": 191950,
         "returns": {
           "1m": 0.1005586592178771,
           "3m": -0.14338919925512103,
           "6m": -0.2927374301675978,
           "1y": null,
-          "since": -0.33891992551210426
+          "since": -0.2851024208566108
         },
         "history": [
           [
@@ -19884,8 +19884,8 @@
             183100
           ],
           [
-            "2026-11-23",
-            177500
+            "2026-11-24",
+            191950
           ]
         ],
         "source": "yahoo"
@@ -20278,13 +20278,13 @@
         "asOf": "2026-11-24",
         "anchorDate": "2026-05-01",
         "basePrice": 11.11,
-        "latestPrice": 14.44,
+        "latestPrice": 14.45,
         "returns": {
           "1m": -0.08640864086408633,
           "3m": 0.22142214221422152,
           "6m": 0.2556255625562556,
           "1y": null,
-          "since": 0.29972997299729975
+          "since": 0.30063006300630063
         },
         "history": [
           [
@@ -20481,7 +20481,7 @@
           ],
           [
             "2026-11-23",
-            14.44
+            14.45
           ]
         ],
         "source": "yahoo"
@@ -38978,26 +38978,6 @@
         ]
       },
       {
-        "slug": "spcx",
-        "company": "SpaceX",
-        "ticker": "SPCX",
-        "sourceSymbol": "SPCX",
-        "currency": "USD",
-        "direction": "long",
-        "callTypes": [
-          "explicit_long"
-        ],
-        "entryDate": "2026-06-12",
-        "entryPrice": 160.95,
-        "latestPrice": 133.35,
-        "sinceReturn": -0.1714818266542404,
-        "benchmarkReturn": 0.13581897093974082,
-        "alpha": -0.3073007975939812,
-        "hosts": [
-          "Guest"
-        ]
-      },
-      {
         "slug": "005930.ks",
         "company": "Samsung",
         "ticker": "005930.KS",
@@ -39009,10 +38989,10 @@
         ],
         "entryDate": "2026-05-08",
         "entryPrice": 268500,
-        "latestPrice": 177500,
-        "sinceReturn": -0.33891992551210426,
+        "latestPrice": 192000,
+        "sinceReturn": -0.2849162011173184,
         "benchmarkReturn": -0.020783059027683737,
-        "alpha": -0.3181368664844205,
+        "alpha": -0.2641331420896347,
         "hosts": [
           "Guest"
         ]
@@ -39029,10 +39009,30 @@
         ],
         "entryDate": "2026-05-08",
         "entryPrice": 1686000,
-        "latestPrice": 1085000,
-        "sinceReturn": -0.3564650059311981,
+        "latestPrice": 1176000,
+        "sinceReturn": -0.302491103202847,
         "benchmarkReturn": -0.020783059027683737,
-        "alpha": -0.3356819469035144,
+        "alpha": -0.28170804417516326,
+        "hosts": [
+          "Guest"
+        ]
+      },
+      {
+        "slug": "spcx",
+        "company": "SpaceX",
+        "ticker": "SPCX",
+        "sourceSymbol": "SPCX",
+        "currency": "USD",
+        "direction": "long",
+        "callTypes": [
+          "explicit_long"
+        ],
+        "entryDate": "2026-06-12",
+        "entryPrice": 160.95,
+        "latestPrice": 133.35,
+        "sinceReturn": -0.1714818266542404,
+        "benchmarkReturn": 0.13581897093974082,
+        "alpha": -0.3073007975939812,
         "hosts": [
           "Guest"
         ]
@@ -39645,9 +39645,9 @@
       "guest": "Brad Gerstner",
       "slug": "brad-gerstner",
       "calls": 4,
-      "followReturn": -0.21514741095411585,
+      "followReturn": -0.19014481143998868,
       "benchmarkReturn": -0.024557220989665063,
-      "alpha": -0.1905901899644508,
+      "alpha": -0.16558759045032362,
       "best": {
         "company": "SpaceX",
         "ticker": "SPCX",
@@ -39681,9 +39681,9 @@
           "slug": "000660.ks",
           "stance": "bull",
           "date": "2026-05-08",
-          "ret": -0.449238578680203,
+          "ret": -0.4030456852791878,
           "benchmarkReturn": -0.020783059027683737,
-          "alpha": -0.42845551965251927
+          "alpha": -0.3822626262515041
         },
         {
           "company": "Samsung",
@@ -39691,9 +39691,9 @@
           "slug": "005930.ks",
           "stance": "bull",
           "date": "2026-05-08",
-          "ret": -0.33891992551210426,
+          "ret": -0.28510242085661075,
           "benchmarkReturn": -0.020783059027683737,
-          "alpha": -0.3181368664844205
+          "alpha": -0.264319361828927
         }
       ]
     },
