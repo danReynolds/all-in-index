@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T00:03:52.995Z",
+  "generatedAt": "2026-11-25T06:03:18.489Z",
   "episodes": [
     {
       "id": "E257",
@@ -385,7 +385,7 @@
           "quoteStartMs": 2143000,
           "ticker": "IPO",
           "direction": "up",
-          "sinceReturn": -0.10593556381660478,
+          "sinceReturn": -0.10594795539033462,
           "history": [
             [
               "2026-01-12",
@@ -609,7 +609,7 @@
             ],
             [
               "2026-11-24",
-              43.2906
+              43.29
             ]
           ],
           "proxyTicker": null,
@@ -1284,7 +1284,7 @@
           "quoteStartMs": 3990000,
           "ticker": "HOOD",
           "direction": "up",
-          "sinceReturn": -0.5100820873126234,
+          "sinceReturn": -0.5100717983999556,
           "history": [
             [
               "2026-01-12",
@@ -1520,7 +1520,7 @@
             },
             {
               "ticker": "COIN",
-              "sinceReturn": -0.5787924932093176
+              "sinceReturn": -0.5787719153839822
             }
           ]
         },
@@ -2089,7 +2089,7 @@
           "quoteStartMs": 4801000,
           "ticker": "IPO",
           "direction": "up",
-          "sinceReturn": -0.10593556381660478,
+          "sinceReturn": -0.10594795539033462,
           "history": [
             [
               "2026-01-12",
@@ -2313,7 +2313,7 @@
             ],
             [
               "2026-11-24",
-              43.2906
+              43.29
             ]
           ],
           "proxyTicker": null,
