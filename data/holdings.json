@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T00:03:02.493Z",
+  "generatedAt": "2026-11-27T06:03:30.895Z",
   "holdings": [
     {
       "slug": "aapl",
@@ -19306,13 +19306,13 @@
         "asOf": "2026-11-27",
         "anchorDate": "2025-10-10",
         "basePrice": 428000,
-        "latestPrice": 1053000,
+        "latestPrice": 1108000,
         "returns": {
           "1m": 0.4158878504672897,
           "3m": 0.75,
           "6m": 1.3995327102803738,
           "1y": 2.75,
-          "since": 1.4602803738317758
+          "since": 1.588785046728972
         },
         "history": [
           [
@@ -19540,8 +19540,8 @@
             1158000
           ],
           [
-            "2026-11-26",
-            1053000
+            "2026-11-27",
+            1108000
           ]
         ],
         "source": "yahoo"
@@ -19594,13 +19594,13 @@
         "asOf": "2026-11-27",
         "anchorDate": "2026-05-08",
         "basePrice": 268500,
-        "latestPrice": 171300,
+        "latestPrice": 179700,
         "returns": {
           "1m": 0.1005586592178771,
           "3m": -0.14338919925512103,
           "6m": -0.2927374301675978,
           "1y": null,
-          "since": -0.36201117318435755
+          "since": -0.3307262569832402
         },
         "history": [
           [
@@ -19788,8 +19788,8 @@
             170700
           ],
           [
-            "2026-11-26",
-            171300
+            "2026-11-27",
+            179700
           ]
         ],
         "source": "yahoo"
@@ -38945,10 +38945,30 @@
         ],
         "entryDate": "2026-05-08",
         "entryPrice": 268500,
-        "latestPrice": 171300,
-        "sinceReturn": -0.3620111731843575,
+        "latestPrice": 179700,
+        "sinceReturn": -0.3307262569832402,
         "benchmarkReturn": -0.02836148694449714,
-        "alpha": -0.33364968623986035,
+        "alpha": -0.30236477003874307,
+        "hosts": [
+          "Guest"
+        ]
+      },
+      {
+        "slug": "000660.ks",
+        "company": "SK Hynix",
+        "ticker": "000660.KS",
+        "sourceSymbol": "000660.KS",
+        "currency": "KRW",
+        "direction": "long",
+        "callTypes": [
+          "explicit_long"
+        ],
+        "entryDate": "2026-05-08",
+        "entryPrice": 1686000,
+        "latestPrice": 1108000,
+        "sinceReturn": -0.3428232502965599,
+        "benchmarkReturn": -0.02836148694449714,
+        "alpha": -0.3144617633520628,
         "hosts": [
           "Guest"
         ]
@@ -38969,26 +38989,6 @@
         "sinceReturn": -0.2082013047530289,
         "benchmarkReturn": 0.12702855705120153,
         "alpha": -0.3352298618042304,
-        "hosts": [
-          "Guest"
-        ]
-      },
-      {
-        "slug": "000660.ks",
-        "company": "SK Hynix",
-        "ticker": "000660.KS",
-        "sourceSymbol": "000660.KS",
-        "currency": "KRW",
-        "direction": "long",
-        "callTypes": [
-          "explicit_long"
-        ],
-        "entryDate": "2026-05-08",
-        "entryPrice": 1686000,
-        "latestPrice": 1053000,
-        "sinceReturn": -0.3754448398576512,
-        "benchmarkReturn": -0.02836148694449714,
-        "alpha": -0.34708335291315406,
         "hosts": [
           "Guest"
         ]
@@ -39601,9 +39601,9 @@
       "guest": "Brad Gerstner",
       "slug": "brad-gerstner",
       "calls": 4,
-      "followReturn": -0.27147362079523185,
+      "followReturn": -0.25667269631348044,
       "benchmarkReturn": -0.03210643963407059,
-      "alpha": -0.23936718116116126,
+      "alpha": -0.22456625667940985,
       "best": {
         "company": "SpaceX",
         "ticker": "SPCX",
@@ -39637,9 +39637,9 @@
           "slug": "000660.ks",
           "stance": "bull",
           "date": "2026-05-08",
-          "ret": -0.46548223350253803,
+          "ret": -0.4375634517766498,
           "benchmarkReturn": -0.02836148694449714,
-          "alpha": -0.4371207465580409
+          "alpha": -0.40920196483215265
         },
         {
           "company": "Samsung",
@@ -39647,9 +39647,9 @@
           "slug": "005930.ks",
           "stance": "bull",
           "date": "2026-05-08",
-          "ret": -0.3620111731843575,
+          "ret": -0.3307262569832402,
           "benchmarkReturn": -0.02836148694449714,
-          "alpha": -0.33364968623986035
+          "alpha": -0.30236477003874307
         }
       ]
     },
